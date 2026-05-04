@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--XBRL Document Created with the Workiva Platform-->
+<!--Copyright 2023 Workiva-->
+<!--r:3b82f5d0-58c8-4e18-9662-44f43124e7d6,g:df48d5e3-7e87-4448-8203-12de64448703-->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:wmt="http://www.walmart.com/20231031" xmlns:xbrli="http://www.xbrl.org/2003/instance" xmlns:dtr-types1="http://www.xbrl.org/dtr/type/2020-01-21" xmlns:dtr-types="http://www.xbrl.org/dtr/type/2022-03-31" xmlns:xbrldt="http://xbrl.org/2005/xbrldt" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://www.walmart.com/20231031">
+  <xs:import namespace="http://fasb.org/srt/2023" schemaLocation="https://xbrl.fasb.org/srt/2023/elts/srt-2023.xsd"/>
+  <xs:import namespace="http://fasb.org/us-gaap/2023" schemaLocation="https://xbrl.fasb.org/us-gaap/2023/elts/us-gaap-2023.xsd"/>
+  <xs:import namespace="http://www.w3.org/1999/xlink" schemaLocation="http://www.xbrl.org/2003/xlink-2003-12-31.xsd"/>
+  <xs:import namespace="http://www.xbrl.org/2003/instance" schemaLocation="http://www.xbrl.org/2003/xbrl-instance-2003-12-31.xsd"/>
+  <xs:import namespace="http://www.xbrl.org/2003/linkbase" schemaLocation="http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd"/>
+  <xs:import namespace="http://www.xbrl.org/dtr/type/2020-01-21" schemaLocation="https://www.xbrl.org/dtr/type/2020-01-21/types.xsd"/>
+  <xs:import namespace="http://www.xbrl.org/dtr/type/2022-03-31" schemaLocation="https://www.xbrl.org/dtr/type/2022-03-31/types.xsd"/>
+  <xs:import namespace="http://xbrl.org/2005/xbrldt" schemaLocation="http://www.xbrl.org/2005/xbrldt-2005.xsd"/>
+  <xs:import namespace="http://xbrl.sec.gov/country/2023" schemaLocation="https://xbrl.sec.gov/country/2023/country-2023.xsd"/>
+  <xs:import namespace="http://xbrl.sec.gov/dei/2023" schemaLocation="https://xbrl.sec.gov/dei/2023/dei-2023.xsd"/>
+  <xs:import namespace="http://xbrl.sec.gov/ecd/2023" schemaLocation="https://xbrl.sec.gov/ecd/2023/ecd-2023.xsd"/>
+  <xs:annotation>
+    <xs:appinfo>
+      <link:linkbaseRef xmlns:xlink="http://www.w3.org/1999/xlink" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="wmt-20231031_lab.xml" xlink:role="http://www.xbrl.org/2003/role/labelLinkbaseRef" xlink:type="simple"/>
+      <link:linkbaseRef xmlns:xlink="http://www.w3.org/1999/xlink" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="wmt-20231031_pre.xml" xlink:role="http://www.xbrl.org/2003/role/presentationLinkbaseRef" xlink:type="simple"/>
+      <link:linkbaseRef xmlns:xlink="http://www.w3.org/1999/xlink" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="wmt-20231031_cal.xml" xlink:role="http://www.xbrl.org/2003/role/calculationLinkbaseRef" xlink:type="simple"/>
+      <link:linkbaseRef xmlns:xlink="http://www.w3.org/1999/xlink" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="wmt-20231031_def.xml" xlink:role="http://www.xbrl.org/2003/role/definitionLinkbaseRef" xlink:type="simple"/>
+      <link:roleType id="CoverPage" roleURI="http://www.walmart.com/role/CoverPage">
+        <link:definition>0000001 - Document - Cover Page</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CondensedConsolidatedStatementsofIncomeUnaudited" roleURI="http://www.walmart.com/role/CondensedConsolidatedStatementsofIncomeUnaudited">
+        <link:definition>0000002 - Statement - Condensed Consolidated Statements of Income (Unaudited)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CondensedConsolidatedStatementsofComprehensiveIncomeUnaudited" roleURI="http://www.walmart.com/role/CondensedConsolidatedStatementsofComprehensiveIncomeUnaudited">
+        <link:definition>0000003 - Statement - Condensed Consolidated Statements of Comprehensive Income (Unaudited)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CondensedConsolidatedBalanceSheetsUnaudited" roleURI="http://www.walmart.com/role/CondensedConsolidatedBalanceSheetsUnaudited">
+        <link:definition>0000004 - Statement - Condensed Consolidated Balance Sheets (Unaudited)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CondensedConsolidatedStatementsofShareholdersEquityUnaudited" roleURI="http://www.walmart.com/role/CondensedConsolidatedStatementsofShareholdersEquityUnaudited">
+        <link:definition>0000005 - Statement - Condensed Consolidated Statements of Shareholders' Equity (Unaudited)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CondensedConsolidatedStatementsofShareholdersEquityUnauditedParenthetical" roleURI="http://www.walmart.com/role/CondensedConsolidatedStatementsofShareholdersEquityUnauditedParenthetical">
+        <link:definition>0000006 - Statement - Condensed Consolidated Statements of Shareholders' Equity (Unaudited) (Parenthetical)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CondensedConsolidatedStatementsofCashFlowsUnaudited" roleURI="http://www.walmart.com/role/CondensedConsolidatedStatementsofCashFlowsUnaudited">
+        <link:definition>0000007 - Statement - Condensed Consolidated Statements of Cash Flows (Unaudited)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SummaryofSignificantAccountingPolicies" roleURI="http://www.walmart.com/role/SummaryofSignificantAccountingPolicies">
+        <link:definition>0000008 - Disclosure - Summary of Significant Accounting Policies</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="NetIncomeLossPerCommonShare" roleURI="http://www.walmart.com/role/NetIncomeLossPerCommonShare">
+        <link:definition>0000009 - Disclosure - Net Income (Loss) Per Common Share</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="AccumulatedOtherComprehensiveLoss" roleURI="http://www.walmart.com/role/AccumulatedOtherComprehensiveLoss">
+        <link:definition>0000010 - Disclosure - Accumulated Other Comprehensive Loss</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ShorttermBorrowingsandLongtermDebt" roleURI="http://www.walmart.com/role/ShorttermBorrowingsandLongtermDebt">
+        <link:definition>0000011 - Disclosure - Short-term Borrowings and Long-term Debt</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FairValueMeasurements" roleURI="http://www.walmart.com/role/FairValueMeasurements">
+        <link:definition>0000012 - Disclosure - Fair Value Measurements</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="Contingencies" roleURI="http://www.walmart.com/role/Contingencies">
+        <link:definition>0000013 - Disclosure - Contingencies</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SegmentsandDisaggregatedRevenue" roleURI="http://www.walmart.com/role/SegmentsandDisaggregatedRevenue">
+        <link:definition>0000014 - Disclosure - Segments and Disaggregated Revenue</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SummaryofSignificantAccountingPoliciesPolicies" roleURI="http://www.walmart.com/role/SummaryofSignificantAccountingPoliciesPolicies">
+        <link:definition>9954471 - Disclosure - Summary of Significant Accounting Policies (Policies)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="NetIncomeLossPerCommonShareTables" roleURI="http://www.walmart.com/role/NetIncomeLossPerCommonShareTables">
+        <link:definition>9954472 - Disclosure - Net Income (Loss) Per Common Share (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="AccumulatedOtherComprehensiveLossTables" roleURI="http://www.walmart.com/role/AccumulatedOtherComprehensiveLossTables">
+        <link:definition>9954473 - Disclosure - Accumulated Other Comprehensive Loss (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ShorttermBorrowingsandLongtermDebtTables" roleURI="http://www.walmart.com/role/ShorttermBorrowingsandLongtermDebtTables">
+        <link:definition>9954474 - Disclosure - Short-term Borrowings and Long-term Debt (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FairValueMeasurementsTables" roleURI="http://www.walmart.com/role/FairValueMeasurementsTables">
+        <link:definition>9954475 - Disclosure - Fair Value Measurements (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SegmentsandDisaggregatedRevenueTables" roleURI="http://www.walmart.com/role/SegmentsandDisaggregatedRevenueTables">
+        <link:definition>9954476 - Disclosure - Segments and Disaggregated Revenue (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SummaryofSignificantAccountingPoliciesNarrativeDetails" roleURI="http://www.walmart.com/role/SummaryofSignificantAccountingPoliciesNarrativeDetails">
+        <link:definition>9954477 - Disclosure - Summary of Significant Accounting Policies (Narrative) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="NetIncomeLossPerCommonShareDetails" roleURI="http://www.walmart.com/role/NetIncomeLossPerCommonShareDetails">
+        <link:definition>9954478 - Disclosure - Net Income (Loss) Per Common Share (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="AccumulatedOtherComprehensiveLossDetails" roleURI="http://www.walmart.com/role/AccumulatedOtherComprehensiveLossDetails">
+        <link:definition>9954479 - Disclosure - Accumulated Other Comprehensive Loss (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ShorttermBorrowingsandLongtermDebtNarrativeDetails" roleURI="http://www.walmart.com/role/ShorttermBorrowingsandLongtermDebtNarrativeDetails">
+        <link:definition>9954480 - Disclosure - Short-term Borrowings and Long-term Debt (Narrative) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ShorttermBorrowingsandLongtermDebtScheduleofLongtermDebtInstrumentsDetails" roleURI="http://www.walmart.com/role/ShorttermBorrowingsandLongtermDebtScheduleofLongtermDebtInstrumentsDetails">
+        <link:definition>9954481 - Disclosure - Short-term Borrowings and Long-term Debt (Schedule of Long-term Debt Instruments) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ShorttermBorrowingsandLongtermDebtSignificantDebtIssuedDetails" roleURI="http://www.walmart.com/role/ShorttermBorrowingsandLongtermDebtSignificantDebtIssuedDetails">
+        <link:definition>9954482 - Disclosure - Short-term Borrowings and Long-term Debt (Significant Debt Issued) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ShorttermBorrowingsandLongtermDebtSignificantDebtRepaymentsDetails" roleURI="http://www.walmart.com/role/ShorttermBorrowingsandLongtermDebtSignificantDebtRepaymentsDetails">
+        <link:definition>9954483 - Disclosure - Short-term Borrowings and Long-term Debt (Significant Debt Repayments) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FairValueMeasurementsEquityInvestmentsDetails" roleURI="http://www.walmart.com/role/FairValueMeasurementsEquityInvestmentsDetails">
+        <link:definition>9954484 - Disclosure - Fair Value Measurements (Equity Investments) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FairValueMeasurementsNarrativeDetails" roleURI="http://www.walmart.com/role/FairValueMeasurementsNarrativeDetails">
+        <link:definition>9954485 - Disclosure - Fair Value Measurements (Narrative) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FairValueMeasurementsNotionalAmountsandFairValuesofDerivativesDetails" roleURI="http://www.walmart.com/role/FairValueMeasurementsNotionalAmountsandFairValuesofDerivativesDetails">
+        <link:definition>9954486 - Disclosure - Fair Value Measurements (Notional Amounts and Fair Values of Derivatives) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FairValueMeasurementsCarryingValueandFairValueofLongTermDebtIncludingCurrentPortionDetails" roleURI="http://www.walmart.com/role/FairValueMeasurementsCarryingValueandFairValueofLongTermDebtIncludingCurrentPortionDetails">
+        <link:definition>9954487 - Disclosure - Fair Value Measurements (Carrying Value and Fair Value of Long-Term Debt, Including Current Portion) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ContingenciesDetails" roleURI="http://www.walmart.com/role/ContingenciesDetails">
+        <link:definition>9954488 - Disclosure - Contingencies (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SegmentsandDisaggregatedRevenueNarrativeDetails" roleURI="http://www.walmart.com/role/SegmentsandDisaggregatedRevenueNarrativeDetails">
+        <link:definition>9954489 - Disclosure - Segments and Disaggregated Revenue (Narrative) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SegmentsandDisaggregatedRevenueNetSalesDetails" roleURI="http://www.walmart.com/role/SegmentsandDisaggregatedRevenueNetSalesDetails">
+        <link:definition>9954490 - Disclosure - Segments and Disaggregated Revenue (Net Sales) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SegmentsandDisaggregatedRevenueOperatingIncomebySegmentInterestandOtherGainsandLossesDetails" roleURI="http://www.walmart.com/role/SegmentsandDisaggregatedRevenueOperatingIncomebySegmentInterestandOtherGainsandLossesDetails">
+        <link:definition>9954491 - Disclosure - Segments and Disaggregated Revenue (Operating Income by Segment, Interest and Other (Gains) and Losses) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SegmentsandDisaggregatedRevenueRevenueWalmartUSDetails" roleURI="http://www.walmart.com/role/SegmentsandDisaggregatedRevenueRevenueWalmartUSDetails">
+        <link:definition>9954492 - Disclosure - Segments and Disaggregated Revenue (Revenue, Walmart US) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SegmentsandDisaggregatedRevenueRevenueInternationalDetails" roleURI="http://www.walmart.com/role/SegmentsandDisaggregatedRevenueRevenueInternationalDetails">
+        <link:definition>9954493 - Disclosure - Segments and Disaggregated Revenue (Revenue, International) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SegmentsandDisaggregatedRevenueRevenueSamsClubDetails" roleURI="http://www.walmart.com/role/SegmentsandDisaggregatedRevenueRevenueSamsClubDetails">
+        <link:definition>9954494 - Disclosure - Segments and Disaggregated Revenue (Revenue, Sam's Club) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element id="wmt_AmountsReclassifiedToLongTermDebtCurrentMaturities" abstract="false" name="AmountsReclassifiedToLongTermDebtCurrentMaturities" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="wmt_A255DebtDue2023Member" abstract="true" name="A255DebtDue2023Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="wmt_CorporateAndReconcilingItemsMember" abstract="true" name="CorporateAndReconcilingItemsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="wmt_FueltobaccoandothercategoriesMember" abstract="true" name="FueltobaccoandothercategoriesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="wmt_LongTermDebtCurrentMaturitiesOtherChanges" abstract="false" name="LongTermDebtCurrentMaturitiesOtherChanges" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="wmt_NumberOfDaysFollowingASatisfiedConditionFromASettlementAdministrator" abstract="false" name="NumberOfDaysFollowingASatisfiedConditionFromASettlementAdministrator" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="xbrli:durationItemType"/>
+  <xs:element id="wmt_NumberOfCasesBroughtByThirdPartyPayers" abstract="false" name="NumberOfCasesBroughtByThirdPartyPayers" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="xbrli:integerItemType"/>
+  <xs:element id="wmt_LossContingencyNumberOfStatesWithSettlementAgreements" abstract="false" name="LossContingencyNumberOfStatesWithSettlementAgreements" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="xbrli:integerItemType"/>
+  <xs:element id="wmt_A4100DebtDue2033Member" abstract="true" name="A4100DebtDue2033Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="wmt_A4500DebtDue2053Member" abstract="true" name="A4500DebtDue2053Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="wmt_GroceryandconsumablesMember" abstract="true" name="GroceryandconsumablesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="wmt_A4000DebtDue2026Member" abstract="true" name="A4000DebtDue2026Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="wmt_ECommerceMember" abstract="true" name="ECommerceMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="wmt_A2.550NotesDue2026Member" abstract="true" name="A2.550NotesDue2026Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="wmt_GroceryMember" abstract="true" name="GroceryMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="wmt_ScheduleOfDebtIssuancesTableTextBlock" abstract="false" name="ScheduleOfDebtIssuancesTableTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:textBlockItemType"/>
+  <xs:element id="wmt_NumberOfShareholdersThatFiledDerivativeActions" abstract="false" name="NumberOfShareholdersThatFiledDerivativeActions" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="xbrli:integerItemType"/>
+  <xs:element id="wmt_SeniorUnsecuredNotesMember" abstract="true" name="SeniorUnsecuredNotesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="wmt_TechnologyofficesandentertainmentMember" abstract="true" name="TechnologyofficesandentertainmentMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="wmt_LongtermDebtExcludingCurrentMaturitiesRollForward" abstract="true" name="LongtermDebtExcludingCurrentMaturitiesRollForward" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="wmt_LongtermDebtCurrentMaturitiesRollForward" abstract="true" name="LongtermDebtCurrentMaturitiesRollForward" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="wmt_A1050NotesDue2026Member" abstract="true" name="A1050NotesDue2026Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="wmt_RepaymentsofLongtermDebtExcludingCurrentMaturitiesBookValue" abstract="false" name="RepaymentsofLongtermDebtExcludingCurrentMaturitiesBookValue" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="wmt_AccountingPoliciesTable" abstract="true" name="AccountingPoliciesTable" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrldt:hypercubeItem" type="xbrli:stringItemType"/>
+  <xs:element id="wmt_A4000DebtDue2030Member" abstract="true" name="A4000DebtDue2030Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="wmt_A1800NotesDue2031Member" abstract="true" name="A1800NotesDue2031Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="wmt_LongtermandShorttermDebtRollForward" abstract="true" name="LongtermandShorttermDebtRollForward" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="wmt_A5625NotesDue2034Member" abstract="true" name="A5625NotesDue2034Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="wmt_LongTermDebtExcludingCurrentMaturitiesOtherChanges" abstract="false" name="LongTermDebtExcludingCurrentMaturitiesOtherChanges" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="wmt_A4875NotesDue2029Member" abstract="true" name="A4875NotesDue2029Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="wmt_OtherCategoriesMember" abstract="true" name="OtherCategoriesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="wmt_OtherMember" abstract="true" name="OtherMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="wmt_AccumulatedNetInvestmentGainOrLossIncludingPortionAttributableToNoncontrollingInterestMember" abstract="true" name="AccumulatedNetInvestmentGainOrLossIncludingPortionAttributableToNoncontrollingInterestMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="wmt_AccountingPoliciesLineItems" abstract="true" name="AccountingPoliciesLineItems" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="wmt_LossContingencyDamagesAwardedPeriod" abstract="false" name="LossContingencyDamagesAwardedPeriod" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="xbrli:durationItemType"/>
+  <xs:element id="wmt_NumberOfSingleCountyCases" abstract="false" name="NumberOfSingleCountyCases" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="xbrli:integerItemType"/>
+  <xs:element id="wmt_MexicoandCentralAmericaMember" abstract="true" name="MexicoandCentralAmericaMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="wmt_RepaymentsOfSignificantLongTermDebt" abstract="false" name="RepaymentsOfSignificantLongTermDebt" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="wmt_A5250NotesDue2035Member" abstract="true" name="A5250NotesDue2035Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="wmt_A5750NotesDue2030Member" abstract="true" name="A5750NotesDue2030Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="wmt_SupplierFinancingProgramObligationsPolicyTextBlock" abstract="false" name="SupplierFinancingProgramObligationsPolicyTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:textBlockItemType"/>
+  <xs:element id="wmt_RepaymentsofLongtermDebtBookValueCurrentMaturities" abstract="false" name="RepaymentsofLongtermDebtBookValueCurrentMaturities" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="wmt_CanadaOpioidsClassActionComplaintsMember" abstract="true" name="CanadaOpioidsClassActionComplaintsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="wmt_NumberOfPutativeClassActions" abstract="false" name="NumberOfPutativeClassActions" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="xbrli:integerItemType"/>
+  <xs:element id="wmt_ReclassifiedfromLongTermDebt" abstract="false" name="ReclassifiedfromLongTermDebt" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="wmt_LossContingencyOfficersInConnectionWithDisclosure" abstract="false" name="LossContingencyOfficersInConnectionWithDisclosure" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="xbrli:integerItemType"/>
+  <xs:element id="wmt_FairValueEquityInvestmentsTable" abstract="true" name="FairValueEquityInvestmentsTable" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrldt:hypercubeItem" type="xbrli:stringItemType"/>
+  <xs:element id="wmt_NumberOfSecuritiesClassActions" abstract="false" name="NumberOfSecuritiesClassActions" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="xbrli:integerItemType"/>
+  <xs:element id="wmt_SamsClubSegmentMember" abstract="true" name="SamsClubSegmentMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="wmt_WalmartInternationalSegmentMember" abstract="true" name="WalmartInternationalSegmentMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="wmt_ProceedsFromLongTermDebtBookValueCurrentMaturities" abstract="false" name="ProceedsFromLongTermDebtBookValueCurrentMaturities" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="wmt_FairValueEquityInvestmentsLineItems" abstract="true" name="FairValueEquityInvestmentsLineItems" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="wmt_FiveYearCreditFacilityMember" abstract="true" name="FiveYearCreditFacilityMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="wmt_A3900DebtDue2028Member" abstract="true" name="A3900DebtDue2028Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="wmt_A340DebtDue2023Member" abstract="true" name="A340DebtDue2023Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="wmt_OpioidsLitigationMember" abstract="true" name="OpioidsLitigationMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="wmt_LongTermDebtOtherChanges" abstract="false" name="LongTermDebtOtherChanges" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="wmt_A1500NotesDue2028Member" abstract="true" name="A1500NotesDue2028Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="wmt_CommonStockparvalue0.10pershareMember" abstract="true" name="CommonStockparvalue0.10pershareMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="wmt_AmountsReclassifiedBetweenLongTermDebtDueWithinOneYearAndLongTermDebtNet" abstract="false" name="AmountsReclassifiedBetweenLongTermDebtDueWithinOneYearAndLongTermDebtNet" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="wmt_GeneralMerchandiseMember" abstract="true" name="GeneralMerchandiseMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="wmt_HealthandWellnessMember" abstract="true" name="HealthandWellnessMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="wmt_WalmartUSSegmentMember" abstract="true" name="WalmartUSSegmentMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="wmt_A4875NotesDue2039Member" abstract="true" name="A4875NotesDue2039Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="wmt_NumberOfOrdersIssued" abstract="false" name="NumberOfOrdersIssued" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="xbrli:integerItemType"/>
+  <xs:element id="wmt_HomeandapparelMember" abstract="true" name="HomeandapparelMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+</xs:schema>

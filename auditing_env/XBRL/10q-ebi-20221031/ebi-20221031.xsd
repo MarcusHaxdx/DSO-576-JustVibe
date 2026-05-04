@@ -1,0 +1,404 @@
+<?xml version="1.0" encoding="us-ascii" standalone="yes"?>
+<!--XBRL Document Created with XBRLMaster-->
+<!--Version: 2.3.08-->
+<!--Based on XBRL 2.1-->
+<!--Date of creation: 12/19/2022-->
+<!--Software architectural design and coding: A'c Dharmapremananda Avt.-->
+<!--Copyright (c) 2022 I-NET Business Solutions, Inc. All Rights Reserved.-->
+<schema xmlns:xl="http://www.xbrl.org/2003/XLink" xmlns:ref="http://www.xbrl.org/2006/ref" xmlns:currency="http://xbrl.sec.gov/currency/2022" xmlns:us-gaap-att="http://fasb.org/us-gaap/attributes" xmlns:sic="http://xbrl.sec.gov/sic/2022" xmlns:exch="http://xbrl.sec.gov/exch/2022" xmlns:invest="http://xbrl.sec.gov/invest/2013-01-31" xmlns:negated="http://www.xbrl.org/2009/role/negated" xmlns:naics="http://xbrl.sec.gov/naics/2022" xmlns:us-types="http://fasb.org/us-types/2022" xmlns:stpr="http://xbrl.sec.gov/stpr/2022" xmlns="http://www.w3.org/2001/XMLSchema" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:xbrli="http://www.xbrl.org/2003/instance" xmlns:xbrldt="http://xbrl.org/2005/xbrldt" xmlns:xbrldi="http://xbrl.org/2006/xbrldi" xmlns:country="http://xbrl.sec.gov/country/2022" xmlns:utr="http://www.xbrl.org/2009/utr" xmlns:srt-types="http://fasb.org/srt-types/2022" xmlns:dtr-types="http://www.xbrl.org/dtr/type/2020-01-21" xmlns:srt-roles="http://fasb.org/srt-roles/2022" xmlns:dei="http://xbrl.sec.gov/dei/2022" xmlns:num="http://www.xbrl.org/dtr/type/numeric" xmlns:nonnum="http://www.xbrl.org/dtr/type/non-numeric" xmlns:srt="http://fasb.org/srt/2022" xmlns:us-gaap="http://fasb.org/us-gaap/2022" xmlns:ebi="http://ebi.com/20221031" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://ebi.com/20221031">
+  <annotation>
+    <appinfo>
+      <link:roleType roleURI="http://ebi.com/role/Cover" id="Cover">
+        <link:definition>000001 - Document - Cover</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://ebi.com/role/ConsolidatedBalanceSheets" id="ConsolidatedBalanceSheets">
+        <link:definition>000002 - Statement - Consolidated Balance Sheets</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://ebi.com/role/ConsolidatedBalanceSheetsParenthetical" id="ConsolidatedBalanceSheetsParenthetical">
+        <link:definition>000003 - Statement - Consolidated Balance Sheets (Parenthetical)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://ebi.com/role/ConsolidatedStatementsOfIncomeUnaudited" id="ConsolidatedStatementsOfIncomeUnaudited">
+        <link:definition>000004 - Statement - Consolidated Statements of Income (unaudited)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://ebi.com/role/ConsolidatedStatementsOfStockholdersEquityUnaudited" id="ConsolidatedStatementsOfStockholdersEquityUnaudited">
+        <link:definition>000005 - Statement - Consolidated Statements of Stockholders Equity (unaudited)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://ebi.com/role/ConsolidatedStatementsOfCashFlowsUnaudited" id="ConsolidatedStatementsOfCashFlowsUnaudited">
+        <link:definition>000006 - Statement - Consolidated Statements of Cash Flows (unaudited)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://ebi.com/role/OrganizationAndBasisOfPresentation" id="OrganizationAndBasisOfPresentation">
+        <link:definition>000007 - Disclosure - Organization and Basis of Presentation</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://ebi.com/role/SummaryOfSignificantAccountingPolicies" id="SummaryOfSignificantAccountingPolicies">
+        <link:definition>000008 - Disclosure - Summary of Significant Accounting Policies</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://ebi.com/role/GoingConcern" id="GoingConcern">
+        <link:definition>000009 - Disclosure - Going Concern</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://ebi.com/role/IntangibleAssets" id="IntangibleAssets">
+        <link:definition>000010 - Disclosure - Intangible Assets</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://ebi.com/role/CryptocurrencyAssets" id="CryptocurrencyAssets">
+        <link:definition>000011 - Disclosure - Cryptocurrency Assets</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://ebi.com/role/PropertyPlantAndEquipment" id="PropertyPlantAndEquipment">
+        <link:definition>000012 - Disclosure - Property Plant and Equipment</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://ebi.com/role/Debt" id="Debt">
+        <link:definition>000013 - Disclosure - Debt</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://ebi.com/role/CommitmentsAndContingencies" id="CommitmentsAndContingencies">
+        <link:definition>000014 - Disclosure - Commitments and Contingencies</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://ebi.com/role/LegalProceedings" id="LegalProceedings">
+        <link:definition>000015 - Disclosure - Legal Proceedings</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://ebi.com/role/RelatedPartiesAndRelatedPartyTransactions" id="RelatedPartiesAndRelatedPartyTransactions">
+        <link:definition>000016 - Disclosure - Related Parties and Related Party Transactions</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://ebi.com/role/StockholdersEquity" id="StockholdersEquity">
+        <link:definition>000017 - Disclosure - Stockholders Equity</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://ebi.com/role/Warrants" id="Warrants">
+        <link:definition>000018 - Disclosure - Warrants</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://ebi.com/role/TreasuryStock" id="TreasuryStock">
+        <link:definition>000019 - Disclosure - Treasury Stock</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://ebi.com/role/IncomeTaxes" id="IncomeTaxes">
+        <link:definition>000020 - Disclosure - Income Taxes</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://ebi.com/role/NetIncomeLossPerCommonShare" id="NetIncomeLossPerCommonShare">
+        <link:definition>000021 - Disclosure - Net Income (Loss) Per Common Share</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://ebi.com/role/SubsequentEvents" id="SubsequentEvents">
+        <link:definition>000022 - Disclosure - Subsequent Events</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://ebi.com/role/SummaryOfSignificantAccountingPoliciesPolicies" id="SummaryOfSignificantAccountingPoliciesPolicies">
+        <link:definition>000023 - Disclosure - Summary of Significant Accounting Policies (Policies)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://ebi.com/role/IntangibleAssetsTables" id="IntangibleAssetsTables">
+        <link:definition>000024 - Disclosure - Intangible Assets (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://ebi.com/role/CryptocurrencyAssetsTables" id="CryptocurrencyAssetsTables">
+        <link:definition>000025 - Disclosure - Cryptocurrency Assets (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://ebi.com/role/PropertyPlantAndEquipmentTables" id="PropertyPlantAndEquipmentTables">
+        <link:definition>000026 - Disclosure - Property Plant and Equipment (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://ebi.com/role/RelatedPartiesAndRelatedPartyTransactionsTables" id="RelatedPartiesAndRelatedPartyTransactionsTables">
+        <link:definition>000027 - Disclosure - Related Parties and Related Party Transactions (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://ebi.com/role/WarrantsTables" id="WarrantsTables">
+        <link:definition>000028 - Disclosure - Warrants (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://ebi.com/role/NetIncomeLossPerCommonShareTables" id="NetIncomeLossPerCommonShareTables">
+        <link:definition>000029 - Disclosure - Net Income (Loss) Per Common Share (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://ebi.com/role/SummaryOfSignificantAccountingPoliciesDetailsNarrative" id="SummaryOfSignificantAccountingPoliciesDetailsNarrative">
+        <link:definition>000030 - Disclosure - Summary of Significant Accounting Policies (Details Narrative)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://ebi.com/role/IntangibleAssetsDetails" id="IntangibleAssetsDetails">
+        <link:definition>000031 - Disclosure - Intangible Assets (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://ebi.com/role/IntangibleAssetsDetailsNarrative" id="IntangibleAssetsDetailsNarrative">
+        <link:definition>000032 - Disclosure - Intangible Assets (Details Narrative)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://ebi.com/role/CryptocurrencyAssetsDetails" id="CryptocurrencyAssetsDetails">
+        <link:definition>000033 - Disclosure - Cryptocurrency Assets (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://ebi.com/role/CryptocurrencyAssetsDetailsNarrative" id="CryptocurrencyAssetsDetailsNarrative">
+        <link:definition>000034 - Disclosure - Cryptocurrency Assets (Details Narrative)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://ebi.com/role/PropertyPlantAndEquipmentDetails" id="PropertyPlantAndEquipmentDetails">
+        <link:definition>000035 - Disclosure - Property Plant and Equipment (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://ebi.com/role/DebtDetailsNarrative" id="DebtDetailsNarrative">
+        <link:definition>000036 - Disclosure - Debt (Details Narrative)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://ebi.com/role/RelatedPartiesAndRelatedPartyTransactionsDetails" id="RelatedPartiesAndRelatedPartyTransactionsDetails">
+        <link:definition>000037 - Disclosure - Related Parties and Related Party Transactions (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://ebi.com/role/RelatedPartiesAndRelatedPartyTransactionsDetails1" id="RelatedPartiesAndRelatedPartyTransactionsDetails1">
+        <link:definition>000038 - Disclosure - Related Parties and Related Party Transactions (Details 1)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://ebi.com/role/RelatedPartiesAndRelatedPartyTransactionsDetailsNarrative" id="RelatedPartiesAndRelatedPartyTransactionsDetailsNarrative">
+        <link:definition>000039 - Disclosure - Related Parties and Related Party Transactions (Details Narrative)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://ebi.com/role/StockholdersEquityDetailsNarrative" id="StockholdersEquityDetailsNarrative">
+        <link:definition>000040 - Disclosure - Stockholders Equity (Details Narrative)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://ebi.com/role/WarrantsDetails" id="WarrantsDetails">
+        <link:definition>000041 - Disclosure - Warrants (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://ebi.com/role/WarrantsDetailsNarrative" id="WarrantsDetailsNarrative">
+        <link:definition>000042 - Disclosure - Warrants (Details Narrative)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://ebi.com/role/TreasuryStockDetailsNarrative" id="TreasuryStockDetailsNarrative">
+        <link:definition>000043 - Disclosure - Treasury Stock (Details Narrative)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://ebi.com/role/IncomeTaxesDetailsNarrative" id="IncomeTaxesDetailsNarrative">
+        <link:definition>000044 - Disclosure - Income Taxes (Details Narrative)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://ebi.com/role/NetIncomeLossPerCommonShareDetails" id="NetIncomeLossPerCommonShareDetails">
+        <link:definition>000045 - Disclosure - Net Income (Loss) Per Common Share (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:linkbaseRef xlink:type="simple" xlink:href="ebi-20221031_pre.xml" xlink:role="http://www.xbrl.org/2003/role/presentationLinkbaseRef" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" />
+      <link:linkbaseRef xlink:type="simple" xlink:href="ebi-20221031_lab.xml" xlink:role="http://www.xbrl.org/2003/role/labelLinkbaseRef" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" />
+      <link:linkbaseRef xlink:type="simple" xlink:href="ebi-20221031_cal.xml" xlink:role="http://www.xbrl.org/2003/role/calculationLinkbaseRef" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" />
+      <link:linkbaseRef xlink:type="simple" xlink:href="ebi-20221031_def.xml" xlink:role="http://www.xbrl.org/2003/role/definitionLinkbaseRef" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" />
+    </appinfo>
+  </annotation>
+  <import namespace="http://www.xbrl.org/2003/instance" schemaLocation="http://www.xbrl.org/2003/xbrl-instance-2003-12-31.xsd" />
+  <import namespace="http://www.xbrl.org/2003/linkbase" schemaLocation="http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd" />
+  <import namespace="http://xbrl.org/2005/xbrldt" schemaLocation="http://www.xbrl.org/2005/xbrldt-2005.xsd" />
+  <import namespace="http://xbrl.sec.gov/country/2022" schemaLocation="https://xbrl.sec.gov/country/2022/country-2022.xsd" />
+  <import namespace="http://xbrl.sec.gov/currency/2022" schemaLocation="https://xbrl.sec.gov/currency/2022/currency-2022.xsd" />
+  <import namespace="http://xbrl.sec.gov/dei/2022" schemaLocation="https://xbrl.sec.gov/dei/2022/dei-2022.xsd" />
+  <import namespace="http://www.xbrl.org/dtr/type/non-numeric" schemaLocation="http://www.xbrl.org/dtr/type/nonNumeric-2009-12-16.xsd" />
+  <import namespace="http://www.xbrl.org/dtr/type/numeric" schemaLocation="http://www.xbrl.org/dtr/type/numeric-2009-12-16.xsd" />
+  <import namespace="http://xbrl.sec.gov/exch/2022" schemaLocation="https://xbrl.sec.gov/exch/2022/exch-2022.xsd" />
+  <import namespace="http://www.xbrl.org/2009/arcrole/fact-explanatoryFact" schemaLocation="http://www.xbrl.org/lrr/arcrole/factExplanatory-2009-12-16.xsd" />
+  <import namespace="http://www.xbrl.org/2009/role/negated" schemaLocation="http://www.xbrl.org/lrr/role/negated-2009-12-16.xsd" />
+  <import namespace="http://www.xbrl.org/2009/role/net" schemaLocation="http://www.xbrl.org/lrr/role/net-2009-12-16.xsd" />
+  <import namespace="http://xbrl.sec.gov/naics/2022" schemaLocation="https://xbrl.sec.gov/naics/2022/naics-2022.xsd" />
+  <import namespace="http://xbrl.sec.gov/sic/2022" schemaLocation="https://xbrl.sec.gov/sic/2022/sic-2022.xsd" />
+  <import namespace="http://fasb.org/srt-roles/2022" schemaLocation="https://xbrl.fasb.org/srt/2022/elts/srt-roles-2022.xsd" />
+  <import namespace="http://fasb.org/srt-types/2022" schemaLocation="https://xbrl.fasb.org/srt/2022/elts/srt-types-2022.xsd" />
+  <import namespace="http://www.xbrl.org/dtr/type/2020-01-21" schemaLocation="https://www.xbrl.org/dtr/type/2020-01-21/types.xsd" />
+  <import namespace="http://xbrl.sec.gov/stpr/2022" schemaLocation="https://xbrl.sec.gov/stpr/2022/stpr-2022.xsd" />
+  <import namespace="http://fasb.org/us-roles/2022" schemaLocation="https://xbrl.fasb.org/us-gaap/2022/elts/us-roles-2022.xsd" />
+  <import namespace="http://fasb.org/us-types/2022" schemaLocation="https://xbrl.fasb.org/us-gaap/2022/elts/us-types-2022.xsd" />
+  <import namespace="http://fasb.org/srt/2022" schemaLocation="https://xbrl.fasb.org/srt/2022/elts/srt-2022.xsd" />
+  <import namespace="http://fasb.org/us-gaap/2022" schemaLocation="https://xbrl.fasb.org/us-gaap/2022/elts/us-gaap-2022.xsd" />
+  <element id="ebi_CurrentCryptocurrenciesNet" name="CurrentCryptocurrenciesNet" nillable="true" xbrli:balance="debit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="ebi_IntangibleAssetsNonCurrent" name="IntangibleAssetsNonCurrent" nillable="true" xbrli:balance="debit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="ebi_ReservesForLegalSettlements" name="ReservesForLegalSettlements" nillable="true" xbrli:balance="credit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="ebi_LongTermLiabilitiesAbstract" name="LongTermLiabilitiesAbstract" nillable="true" abstract="true" xbrli:periodType="duration" type="xbrli:stringItemType" substitutionGroup="xbrli:item" />
+  <element id="ebi_ReceivableFromStockholder" name="ReceivableFromStockholder" nillable="true" xbrli:balance="credit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="ebi_EarningsPerShareBasicsAndDilutedAbstract" name="EarningsPerShareBasicsAndDilutedAbstract" nillable="true" abstract="true" xbrli:periodType="duration" type="xbrli:stringItemType" substitutionGroup="xbrli:item" />
+  <element id="ebi_StockissuedDuringPeriodShareIssuedForWarrantsExercises" name="StockissuedDuringPeriodShareIssuedForWarrantsExercises" nillable="true" xbrli:periodType="duration" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" />
+  <element id="ebi_StockissuedDuringPeriodValueIssuedForWarrantsExercises" name="StockissuedDuringPeriodValueIssuedForWarrantsExercises" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="ebi_IssuanceOfSeriesAPreferredForServicesShares" name="IssuanceOfSeriesAPreferredForServicesShares" nillable="true" xbrli:periodType="duration" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" />
+  <element id="ebi_IssuanceOfSeriesAPreferredForServicesAmount" name="IssuanceOfSeriesAPreferredForServicesAmount" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="ebi_ConversionOfNoteReceivableShares" name="ConversionOfNoteReceivableShares" nillable="true" xbrli:periodType="duration" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" />
+  <element id="ebi_ConversionOfNoteReceivableAmount" name="ConversionOfNoteReceivableAmount" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="ebi_IssuanceOfSeriesCPreferredShares" name="IssuanceOfSeriesCPreferredShares" nillable="true" xbrli:periodType="duration" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" />
+  <element id="ebi_IssuanceOfSeriesCPreferredAmount" name="IssuanceOfSeriesCPreferredAmount" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="ebi_ConversionOfSeriesCPreferredIntoCommonStockShares" name="ConversionOfSeriesCPreferredIntoCommonStockShares" nillable="true" xbrli:periodType="duration" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" />
+  <element id="ebi_ConversionOfSeriesCPreferredIntoCommonStockAmount" name="ConversionOfSeriesCPreferredIntoCommonStockAmount" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="ebi_WarrantExerciseShares" name="WarrantExerciseShares" nillable="true" xbrli:periodType="duration" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" />
+  <element id="ebi_SaleOfAssetShares" name="SaleOfAssetShares" nillable="true" xbrli:periodType="duration" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" />
+  <element id="ebi_SaleOfAssetAmount" name="SaleOfAssetAmount" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="ebi_ReverseOfBadDebt" name="ReverseOfBadDebt" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="ebi_NetLossOnExchanges" name="NetLossOnExchanges" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="ebi_RealizedNetGainLossOnInvestmentInCryptocurrency" name="RealizedNetGainLossOnInvestmentInCryptocurrency" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="ebi_AcquisitionOfCryptocurrenciesNet" name="AcquisitionOfCryptocurrenciesNet" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="ebi_ConversionOfStocksSharesIssued1" name="ConversionOfStocksSharesIssued1" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="ebi_TradeInOfVehicle" name="TradeInOfVehicle" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="ebi_ExerciseOfWarrantForReceivable" name="ExerciseOfWarrantForReceivable" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="ebi_ConversionOfNoteReceivableInExchangeForCommonStockAndPreferredStock" name="ConversionOfNoteReceivableInExchangeForCommonStockAndPreferredStock" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="ebi_StockIssuedDuringPeriodValueIssuedForServices1" name="StockIssuedDuringPeriodValueIssuedForServices1" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="ebi_CryptocurrencyAssetsTextBlock" name="CryptocurrencyAssetsTextBlock" nillable="true" xbrli:periodType="duration" type="nonnum:textBlockItemType" substitutionGroup="xbrli:item" />
+  <element id="ebi_WarrantsTextBlock" name="WarrantsTextBlock" nillable="true" xbrli:periodType="duration" type="nonnum:textBlockItemType" substitutionGroup="xbrli:item" />
+  <element id="ebi_ScheduleOfCryptocurrencyAssetsTableTextBlock" name="ScheduleOfCryptocurrencyAssetsTableTextBlock" nillable="true" xbrli:periodType="duration" type="nonnum:textBlockItemType" substitutionGroup="xbrli:item" />
+  <element id="ebi_ScheduleOfWarrantActivityTableTextBlock" name="ScheduleOfWarrantActivityTableTextBlock" nillable="true" xbrli:periodType="duration" type="nonnum:textBlockItemType" substitutionGroup="xbrli:item" />
+  <element id="ebi_ThirdPartyInsuredLimit" name="ThirdPartyInsuredLimit" nillable="true" xbrli:balance="credit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="ebi_FederallyInsuredLimit" name="FederallyInsuredLimit" nillable="true" xbrli:balance="debit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="ebi_FairValueMarketPrice" name="FairValueMarketPrice" nillable="true" xbrli:balance="debit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="ebi_NetOfAssociatedCosts" name="NetOfAssociatedCosts" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="ebi_OutstandingDebt" name="OutstandingDebt" nillable="true" xbrli:balance="credit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="ebi_DebtMaturityRange" name="DebtMaturityRange" nillable="true" xbrli:periodType="duration" type="xbrli:stringItemType" substitutionGroup="xbrli:item" />
+  <element id="ebi_InterestRate" name="InterestRate" nillable="true" xbrli:periodType="instant" type="num:percentItemType" substitutionGroup="xbrli:item" />
+  <element id="ebi_LoanFinanced" name="LoanFinanced" nillable="true" xbrli:balance="debit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="ebi_PayrollExpenses" name="PayrollExpenses" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="ebi_SeriesAPreferredStockSharesIssued" name="SeriesAPreferredStockSharesIssued" nillable="true" xbrli:periodType="duration" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" />
+  <element id="ebi_SaleOfStockNumberOfSharesIssuedInTransaction1" name="SaleOfStockNumberOfSharesIssuedInTransaction1" nillable="true" xbrli:periodType="duration" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" />
+  <element id="ebi_SalaesConsideration" name="SalaesConsideration" nillable="true" xbrli:balance="credit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="ebi_LossOnSaleOfSecurity" name="LossOnSaleOfSecurity" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="ebi_SaleOfHexToken" name="SaleOfHexToken" nillable="true" xbrli:periodType="instant" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" />
+  <element id="ebi_WarrantsExercised" name="WarrantsExercised" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="ebi_CommonStockResultingInTheCompanyReceivable" name="CommonStockResultingInTheCompanyReceivable" nillable="true" xbrli:balance="credit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="ebi_PaymentToConsultants" name="PaymentToConsultants" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="ebi_StrikePrice" name="StrikePrice" nillable="true" xbrli:periodType="duration" type="num:perShareItemType" substitutionGroup="xbrli:item" />
+  <element id="ebi_PreferredStockDescription" name="PreferredStockDescription" nillable="true" xbrli:periodType="duration" type="xbrli:stringItemType" substitutionGroup="xbrli:item" />
+  <element id="ebi_SeriesAPreferredStockSharesAuthorized" name="SeriesAPreferredStockSharesAuthorized" nillable="true" xbrli:periodType="instant" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" />
+  <element id="ebi_SeriesCPreferredStockSharesAuthorized" name="SeriesCPreferredStockSharesAuthorized" nillable="true" xbrli:periodType="instant" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" />
+  <element id="ebi_SeriesAPreferredStockSharesOutstanding" name="SeriesAPreferredStockSharesOutstanding" nillable="true" xbrli:periodType="instant" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" />
+  <element id="ebi_SeriesBPreferredStockSharesAuthorized" name="SeriesBPreferredStockSharesAuthorized" nillable="true" xbrli:periodType="instant" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" />
+  <element id="ebi_SeriesBPreferredStockSharesOutstanding" name="SeriesBPreferredStockSharesOutstanding" nillable="true" xbrli:periodType="instant" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" />
+  <element id="ebi_PreferredStockBlankShraes" name="PreferredStockBlankShraes" nillable="true" xbrli:periodType="duration" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" />
+  <element id="ebi_NumberOfWarrantOutstandingShares" name="NumberOfWarrantOutstandingShares" nillable="true" xbrli:periodType="instant" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" />
+  <element id="ebi_NumberOfWarrantOutstandingSharesExpired" name="NumberOfWarrantOutstandingSharesExpired" nillable="true" xbrli:periodType="duration" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" />
+  <element id="ebi_NumberOfWarrantOutstandingSharesExercised" name="NumberOfWarrantOutstandingSharesExercised" nillable="true" xbrli:periodType="duration" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" />
+  <element id="ebi_NumberOfWarrantOutstandingSharesGranted" name="NumberOfWarrantOutstandingSharesGranted" nillable="true" xbrli:periodType="duration" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" />
+  <element id="ebi_WeightedAverageConversionPriceOfWarrants" name="WeightedAverageConversionPriceOfWarrants" nillable="true" xbrli:periodType="instant" type="num:perShareItemType" substitutionGroup="xbrli:item" />
+  <element id="ebi_WeightedAverageConversionPriceOfWarrantsExpired" name="WeightedAverageConversionPriceOfWarrantsExpired" nillable="true" xbrli:periodType="duration" type="num:perShareItemType" substitutionGroup="xbrli:item" />
+  <element id="ebi_WeightedAverageConversionPriceOfWarrantsExercised" name="WeightedAverageConversionPriceOfWarrantsExercised" nillable="true" xbrli:periodType="duration" type="num:perShareItemType" substitutionGroup="xbrli:item" />
+  <element id="ebi_WeightedAverageConversionPriceOfWarrantsGranted" name="WeightedAverageConversionPriceOfWarrantsGranted" nillable="true" xbrli:periodType="duration" type="num:perShareItemType" substitutionGroup="xbrli:item" />
+  <element id="ebi_NumberOfPreferredStockReceived" name="NumberOfPreferredStockReceived" nillable="true" xbrli:periodType="duration" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" />
+  <element id="ebi_StockBasedCompensastion" name="StockBasedCompensastion" nillable="true" xbrli:periodType="duration" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" />
+  <element id="ebi_SeriesBPreferredStock" name="SeriesBPreferredStock" nillable="true" xbrli:periodType="instant" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" />
+  <element id="ebi_CommonStock" name="CommonStock" nillable="true" xbrli:periodType="instant" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" />
+  <element id="ebi_DilutedSharesOutstanding" name="DilutedSharesOutstanding" nillable="true" xbrli:periodType="duration" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" />
+  <element id="ebi_DilutedNetIncomeLossPerCommonShare" name="DilutedNetIncomeLossPerCommonShare" nillable="true" xbrli:periodType="duration" type="num:perShareItemType" substitutionGroup="xbrli:item" />
+  <element id="ebi_WarrantsAbstract" name="WarrantsAbstract" nillable="true" abstract="true" xbrli:periodType="duration" type="xbrli:stringItemType" substitutionGroup="xbrli:item" />
+  <element id="ebi_TreasuryStockAbstract" name="TreasuryStockAbstract" nillable="true" abstract="true" xbrli:periodType="duration" type="xbrli:stringItemType" substitutionGroup="xbrli:item" />
+  <element id="ebi_IntangibleAssetsabstract" name="IntangibleAssetsabstract" nillable="true" abstract="true" xbrli:periodType="duration" type="xbrli:stringItemType" substitutionGroup="xbrli:item" />
+  <element name="NonCompeteAgreementsMember" id="ebi_NonCompeteAgreementsMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="ComputerEquipmentandComputerSoftwareMember" id="ebi_ComputerEquipmentandComputerSoftwareMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="RelatedPartiesMember" id="ebi_RelatedPartiesMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="EpicMember" id="ebi_EpicMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="EricJaffeMember" id="ebi_EricJaffeMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="BtcMember" id="ebi_BtcMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="EthMember" id="ebi_EthMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="GUSDMember" id="ebi_GUSDMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="HexMember" id="ebi_HexMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="EpicIndustryCorpMember" id="ebi_EpicIndustryCorpMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="CFOMember" id="ebi_CFOMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="LawOfficerOfCarlGHawkinMember" id="ebi_LawOfficerOfCarlGHawkinMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="ReceivableFromShareholderMember" id="ebi_ReceivableFromShareholderMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="StockPurchaseWarrantsMember" id="ebi_StockPurchaseWarrantsMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="WarrantsOneMember" id="ebi_WarrantsOneMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="SeriesCMember" id="ebi_SeriesCMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="WarrantsMember" id="ebi_WarrantsMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="EmployeesMember" id="ebi_EmployeesMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="ConsultantsMember" id="ebi_ConsultantsMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="IPTechnologyMember" id="ebi_IPTechnologyMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="OneCustomerMember" id="ebi_OneCustomerMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+</schema>

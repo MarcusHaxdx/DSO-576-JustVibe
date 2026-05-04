@@ -1,0 +1,1279 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--XBRL Document Created with Wdesk from Workiva-->
+<!--Copyright 2022 Workiva-->
+<!--r:8b634348-f40d-43b2-a462-d64ab7ad00d6,g:584b9a20-cddd-4d17-a371-abb14167ed1f-->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:nmrk="http://www.ngkf.com/20211231" xmlns:xbrli="http://www.xbrl.org/2003/instance" xmlns:dtr-types="http://www.xbrl.org/dtr/type/2020-01-21" xmlns:xbrldt="http://xbrl.org/2005/xbrldt" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://www.ngkf.com/20211231">
+  <xs:import namespace="http://fasb.org/srt/2021-01-31" schemaLocation="https://xbrl.fasb.org/srt/2021/elts/srt-2021-01-31.xsd"/>
+  <xs:import namespace="http://fasb.org/us-gaap/2021-01-31" schemaLocation="https://xbrl.fasb.org/us-gaap/2021/elts/us-gaap-2021-01-31.xsd"/>
+  <xs:import namespace="http://www.w3.org/1999/xlink" schemaLocation="http://www.xbrl.org/2003/xlink-2003-12-31.xsd"/>
+  <xs:import namespace="http://www.xbrl.org/2003/instance" schemaLocation="http://www.xbrl.org/2003/xbrl-instance-2003-12-31.xsd"/>
+  <xs:import namespace="http://www.xbrl.org/2003/linkbase" schemaLocation="http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd"/>
+  <xs:import namespace="http://www.xbrl.org/dtr/type/2020-01-21" schemaLocation="https://www.xbrl.org/dtr/type/2020-01-21/types.xsd"/>
+  <xs:import namespace="http://xbrl.org/2005/xbrldt" schemaLocation="http://www.xbrl.org/2005/xbrldt-2005.xsd"/>
+  <xs:import namespace="http://xbrl.sec.gov/dei/2021q4" schemaLocation="https://xbrl.sec.gov/dei/2021q4/dei-2021q4.xsd"/>
+  <xs:import namespace="http://xbrl.sec.gov/stpr/2021" schemaLocation="https://xbrl.sec.gov/stpr/2021/stpr-2021.xsd"/>
+  <xs:annotation>
+    <xs:appinfo>
+      <link:linkbaseRef xmlns:xlink="http://www.w3.org/1999/xlink" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="nmrk-20211231_lab.xml" xlink:role="http://www.xbrl.org/2003/role/labelLinkbaseRef" xlink:type="simple"/>
+      <link:linkbaseRef xmlns:xlink="http://www.w3.org/1999/xlink" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="nmrk-20211231_pre.xml" xlink:role="http://www.xbrl.org/2003/role/presentationLinkbaseRef" xlink:type="simple"/>
+      <link:linkbaseRef xmlns:xlink="http://www.w3.org/1999/xlink" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="nmrk-20211231_cal.xml" xlink:role="http://www.xbrl.org/2003/role/calculationLinkbaseRef" xlink:type="simple"/>
+      <link:linkbaseRef xmlns:xlink="http://www.w3.org/1999/xlink" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="nmrk-20211231_def.xml" xlink:role="http://www.xbrl.org/2003/role/definitionLinkbaseRef" xlink:type="simple"/>
+      <link:roleType id="CoverPage" roleURI="http://www.ngkf.com/role/CoverPage">
+        <link:definition>000010001 - Document - Cover Page</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="AuditInformation" roleURI="http://www.ngkf.com/role/AuditInformation">
+        <link:definition>000020002 - Document - Audit Information</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CONSOLIDATEDBALANCESHEETS" roleURI="http://www.ngkf.com/role/CONSOLIDATEDBALANCESHEETS">
+        <link:definition>100010003 - Statement - CONSOLIDATED BALANCE SHEETS</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CONSOLIDATEDBALANCESHEETSParenthetical" roleURI="http://www.ngkf.com/role/CONSOLIDATEDBALANCESHEETSParenthetical">
+        <link:definition>100020004 - Statement - CONSOLIDATED BALANCE SHEETS (Parenthetical)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CONSOLIDATEDSTATEMENTSOFOPERATIONS" roleURI="http://www.ngkf.com/role/CONSOLIDATEDSTATEMENTSOFOPERATIONS">
+        <link:definition>100030005 - Statement - CONSOLIDATED STATEMENTS OF OPERATIONS</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CONSOLIDATEDSTATEMENTSOFOPERATIONSParenthetical" roleURI="http://www.ngkf.com/role/CONSOLIDATEDSTATEMENTSOFOPERATIONSParenthetical">
+        <link:definition>100040006 - Statement - CONSOLIDATED STATEMENTS OF OPERATIONS (Parenthetical)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CONSOLIDATEDSTATEMENTSOFCOMPREHENSIVEINCOME" roleURI="http://www.ngkf.com/role/CONSOLIDATEDSTATEMENTSOFCOMPREHENSIVEINCOME">
+        <link:definition>100050007 - Statement - CONSOLIDATED STATEMENTS OF COMPREHENSIVE INCOME</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CONSOLIDATEDSTATEMENTSOFCHANGESINEQUITY" roleURI="http://www.ngkf.com/role/CONSOLIDATEDSTATEMENTSOFCHANGESINEQUITY">
+        <link:definition>100060008 - Statement - CONSOLIDATED STATEMENTS OF CHANGES IN EQUITY</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CONSOLIDATEDSTATEMENTSOFCHANGESINEQUITYParenthetical" roleURI="http://www.ngkf.com/role/CONSOLIDATEDSTATEMENTSOFCHANGESINEQUITYParenthetical">
+        <link:definition>100070009 - Statement - CONSOLIDATED STATEMENTS OF CHANGES IN EQUITY (Parenthetical)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CONSOLIDATEDSTATEMENTSOFCASHFLOWS" roleURI="http://www.ngkf.com/role/CONSOLIDATEDSTATEMENTSOFCASHFLOWS">
+        <link:definition>100080010 - Statement - CONSOLIDATED STATEMENTS OF CASH FLOWS</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="OrganizationandBasisofPresentation" roleURI="http://www.ngkf.com/role/OrganizationandBasisofPresentation">
+        <link:definition>210011001 - Disclosure - Organization and Basis of Presentation</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="OrganizationandBasisofPresentationDetails" roleURI="http://www.ngkf.com/role/OrganizationandBasisofPresentationDetails">
+        <link:definition>240024001 - Disclosure - Organization and Basis of Presentation (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LimitedPartnershipInterestsinNewmarkHoldingsandBGCHoldings" roleURI="http://www.ngkf.com/role/LimitedPartnershipInterestsinNewmarkHoldingsandBGCHoldings">
+        <link:definition>210031002 - Disclosure - Limited Partnership Interests in Newmark Holdings and BGC Holdings</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LimitedPartnershipInterestsinNewmarkHoldingsandBGCHoldingsDetails" roleURI="http://www.ngkf.com/role/LimitedPartnershipInterestsinNewmarkHoldingsandBGCHoldingsDetails">
+        <link:definition>240044002 - Disclosure - Limited Partnership Interests in Newmark Holdings and BGC Holdings (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SummaryofSignificantAccountingPolicies" roleURI="http://www.ngkf.com/role/SummaryofSignificantAccountingPolicies">
+        <link:definition>210051003 - Disclosure - Summary of Significant Accounting Policies</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SummaryofSignificantAccountingPoliciesPolicies" roleURI="http://www.ngkf.com/role/SummaryofSignificantAccountingPoliciesPolicies">
+        <link:definition>220062001 - Disclosure - Summary of Significant Accounting Policies (Policies)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SummaryofSignificantAccountingPoliciesTables" roleURI="http://www.ngkf.com/role/SummaryofSignificantAccountingPoliciesTables">
+        <link:definition>230073001 - Disclosure - Summary of Significant Accounting Policies (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SummaryofSignificantAccountingPoliciesNarrativeDetails" roleURI="http://www.ngkf.com/role/SummaryofSignificantAccountingPoliciesNarrativeDetails">
+        <link:definition>240084003 - Disclosure - Summary of Significant Accounting Policies - Narrative (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SummaryofSignificantAccountingPoliciesRevenueDetails" roleURI="http://www.ngkf.com/role/SummaryofSignificantAccountingPoliciesRevenueDetails">
+        <link:definition>240094004 - Disclosure - Summary of Significant Accounting Policies - Revenue (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SummaryofSignificantAccountingPoliciesFixedassetsNetDetails" roleURI="http://www.ngkf.com/role/SummaryofSignificantAccountingPoliciesFixedassetsNetDetails">
+        <link:definition>240104005 - Disclosure - Summary of Significant Accounting Policies - Fixed assets, Net (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="Acquisitions" roleURI="http://www.ngkf.com/role/Acquisitions">
+        <link:definition>210111004 - Disclosure - Acquisitions</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="AcquisitionsTables" roleURI="http://www.ngkf.com/role/AcquisitionsTables">
+        <link:definition>230123002 - Disclosure - Acquisitions (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="AcquisitionsNarrativeDetails" roleURI="http://www.ngkf.com/role/AcquisitionsNarrativeDetails">
+        <link:definition>240134006 - Disclosure - Acquisitions - Narrative (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="AcquisitionsSummaryofComponentsofPurchaseConsiderationTransferredandPreliminaryAllocationofAssetsAcquiredandLiabilitiesAssumedDetails" roleURI="http://www.ngkf.com/role/AcquisitionsSummaryofComponentsofPurchaseConsiderationTransferredandPreliminaryAllocationofAssetsAcquiredandLiabilitiesAssumedDetails">
+        <link:definition>240144007 - Disclosure - Acquisitions - Summary of Components of Purchase Consideration Transferred and Preliminary Allocation of Assets Acquired and Liabilities Assumed (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="EarningsPerShareandWeightedAverageSharesOutstanding" roleURI="http://www.ngkf.com/role/EarningsPerShareandWeightedAverageSharesOutstanding">
+        <link:definition>210151005 - Disclosure - Earnings Per Share and Weighted-Average Shares Outstanding</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="EarningsPerShareandWeightedAverageSharesOutstandingTables" roleURI="http://www.ngkf.com/role/EarningsPerShareandWeightedAverageSharesOutstandingTables">
+        <link:definition>230163003 - Disclosure - Earnings Per Share and Weighted-Average Shares Outstanding (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="EarningsPerShareandWeightedAverageSharesOutstandingCalculationofBasicEarningsPerShareDetails" roleURI="http://www.ngkf.com/role/EarningsPerShareandWeightedAverageSharesOutstandingCalculationofBasicEarningsPerShareDetails">
+        <link:definition>240174008 - Disclosure - Earnings Per Share and Weighted-Average Shares Outstanding - Calculation of Basic Earnings Per Share (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="EarningsPerShareandWeightedAverageSharesOutstandingCalculationofFullyDilutedEarningsPerShareDetails" roleURI="http://www.ngkf.com/role/EarningsPerShareandWeightedAverageSharesOutstandingCalculationofFullyDilutedEarningsPerShareDetails">
+        <link:definition>240184009 - Disclosure - Earnings Per Share and Weighted-Average Shares Outstanding - Calculation of Fully Diluted Earnings Per Share (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="EarningsPerShareandWeightedAverageSharesOutstandingNarrativeDetails" roleURI="http://www.ngkf.com/role/EarningsPerShareandWeightedAverageSharesOutstandingNarrativeDetails">
+        <link:definition>240194010 - Disclosure - Earnings Per Share and Weighted-Average Shares Outstanding - Narrative (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="StockTransactionsandUnitRedemptions" roleURI="http://www.ngkf.com/role/StockTransactionsandUnitRedemptions">
+        <link:definition>210201006 - Disclosure - Stock Transactions and Unit Redemptions</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="StockTransactionsandUnitRedemptionsTables" roleURI="http://www.ngkf.com/role/StockTransactionsandUnitRedemptionsTables">
+        <link:definition>230213004 - Disclosure - Stock Transactions and Unit Redemptions (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="StockTransactionsandUnitRedemptionsNarrativeDetails" roleURI="http://www.ngkf.com/role/StockTransactionsandUnitRedemptionsNarrativeDetails">
+        <link:definition>240224011 - Disclosure - Stock Transactions and Unit Redemptions - Narrative (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="StockTransactionsandUnitRedemptionsScheduleofChangesinSharesofCommonStockOutstandingDetails" roleURI="http://www.ngkf.com/role/StockTransactionsandUnitRedemptionsScheduleofChangesinSharesofCommonStockOutstandingDetails">
+        <link:definition>240234012 - Disclosure - Stock Transactions and Unit Redemptions - Schedule of Changes in Shares of Common Stock Outstanding (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="StockTransactionsandUnitRedemptionsScheduleofShareRepurchaseActivityDetails" roleURI="http://www.ngkf.com/role/StockTransactionsandUnitRedemptionsScheduleofShareRepurchaseActivityDetails">
+        <link:definition>240244013 - Disclosure - Stock Transactions and Unit Redemptions - Schedule of Share Repurchase Activity (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="StockTransactionsandUnitRedemptionsScheduleofChangesinCarryingAmountofRedeemablePartnershipInterestDetails" roleURI="http://www.ngkf.com/role/StockTransactionsandUnitRedemptionsScheduleofChangesinCarryingAmountofRedeemablePartnershipInterestDetails">
+        <link:definition>240254014 - Disclosure - Stock Transactions and Unit Redemptions - Schedule of Changes in Carrying Amount of Redeemable Partnership Interest (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="MarketableSecurities" roleURI="http://www.ngkf.com/role/MarketableSecurities">
+        <link:definition>210261007 - Disclosure - Marketable Securities</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="MarketableSecuritiesDetails" roleURI="http://www.ngkf.com/role/MarketableSecuritiesDetails">
+        <link:definition>240274015 - Disclosure - Marketable Securities (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="Investments" roleURI="http://www.ngkf.com/role/Investments">
+        <link:definition>210281008 - Disclosure - Investments</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="InvestmentsDetails" roleURI="http://www.ngkf.com/role/InvestmentsDetails">
+        <link:definition>240294016 - Disclosure - Investments (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CapitalandLiquidityRequirements" roleURI="http://www.ngkf.com/role/CapitalandLiquidityRequirements">
+        <link:definition>210301009 - Disclosure - Capital and Liquidity Requirements</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CapitalandLiquidityRequirementsDetails" roleURI="http://www.ngkf.com/role/CapitalandLiquidityRequirementsDetails">
+        <link:definition>240314017 - Disclosure - Capital and Liquidity Requirements (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LoansHeldforSaleatFairValue" roleURI="http://www.ngkf.com/role/LoansHeldforSaleatFairValue">
+        <link:definition>210321010 - Disclosure - Loans Held for Sale, at Fair Value</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LoansHeldforSaleatFairValueTables" roleURI="http://www.ngkf.com/role/LoansHeldforSaleatFairValueTables">
+        <link:definition>230333005 - Disclosure - Loans Held for Sale, at Fair Value (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LoansHeldforSaleatFairValueNarrativeDetails" roleURI="http://www.ngkf.com/role/LoansHeldforSaleatFairValueNarrativeDetails">
+        <link:definition>240344018 - Disclosure - Loans Held for Sale, at Fair Value - Narrative (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LoansHeldforSaleatFairValueSummaryofLoansHeldforSaleatCostBasisandFairValueDetails" roleURI="http://www.ngkf.com/role/LoansHeldforSaleatFairValueSummaryofLoansHeldforSaleatCostBasisandFairValueDetails">
+        <link:definition>240354019 - Disclosure - Loans Held for Sale, at Fair Value - Summary of Loans Held for Sale at Cost Basis and Fair Value (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LoansHeldforSaleatFairValueFairValueAdjustmentsonLoansHeldforSaleDetails" roleURI="http://www.ngkf.com/role/LoansHeldforSaleatFairValueFairValueAdjustmentsonLoansHeldforSaleDetails">
+        <link:definition>240364020 - Disclosure - Loans Held for Sale, at Fair Value - Fair Value Adjustments on Loans Held for Sale (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="Derivatives" roleURI="http://www.ngkf.com/role/Derivatives">
+        <link:definition>210371011 - Disclosure - Derivatives</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="DerivativesTables" roleURI="http://www.ngkf.com/role/DerivativesTables">
+        <link:definition>230383006 - Disclosure - Derivatives (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="DerivativesFairValueofDerivativeContractsDetails" roleURI="http://www.ngkf.com/role/DerivativesFairValueofDerivativeContractsDetails">
+        <link:definition>240394021 - Disclosure - Derivatives - Fair Value of Derivative Contracts (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="DerivativesNarrativeDetails" roleURI="http://www.ngkf.com/role/DerivativesNarrativeDetails">
+        <link:definition>240404022 - Disclosure - Derivatives - Narrative (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="DerivativesSummaryofGainsLossesonDerivativeContractsIncludedinCondensedConsolidatedStatementsofOperationsDetails" roleURI="http://www.ngkf.com/role/DerivativesSummaryofGainsLossesonDerivativeContractsIncludedinCondensedConsolidatedStatementsofOperationsDetails">
+        <link:definition>240414023 - Disclosure - Derivatives - Summary of Gains Losses on Derivative Contracts Included in Condensed Consolidated Statements of Operations (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CreditEnhancementReceivableCreditEnhancementDepositandContingentLiability" roleURI="http://www.ngkf.com/role/CreditEnhancementReceivableCreditEnhancementDepositandContingentLiability">
+        <link:definition>210421012 - Disclosure - Credit Enhancement Receivable, Credit Enhancement Deposit and Contingent Liability</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CreditEnhancementReceivableCreditEnhancementDepositandContingentLiabilityTables" roleURI="http://www.ngkf.com/role/CreditEnhancementReceivableCreditEnhancementDepositandContingentLiabilityTables">
+        <link:definition>230433007 - Disclosure - Credit Enhancement Receivable, Credit Enhancement Deposit and Contingent Liability (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CreditEnhancementReceivableCreditEnhancementDepositandContingentLiabilityNarrativeDetails" roleURI="http://www.ngkf.com/role/CreditEnhancementReceivableCreditEnhancementDepositandContingentLiabilityNarrativeDetails">
+        <link:definition>240444024 - Disclosure - Credit Enhancement Receivable, Credit Enhancement Deposit and Contingent Liability - Narrative (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CreditEnhancementReceivableCreditEnhancementDepositandContingentLiabilityServicingPortfolioDetails" roleURI="http://www.ngkf.com/role/CreditEnhancementReceivableCreditEnhancementDepositandContingentLiabilityServicingPortfolioDetails">
+        <link:definition>240454025 - Disclosure - Credit Enhancement Receivable, Credit Enhancement Deposit and Contingent Liability - Servicing Portfolio (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RevenuesfromContractswithCustomers" roleURI="http://www.ngkf.com/role/RevenuesfromContractswithCustomers">
+        <link:definition>210461013 - Disclosure - Revenues from Contracts with Customers</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RevenuesfromContractswithCustomersTables" roleURI="http://www.ngkf.com/role/RevenuesfromContractswithCustomersTables">
+        <link:definition>230473008 - Disclosure - Revenues from Contracts with Customers (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RevenuesfromContractswithCustomersScheduleofRevenuesfromContractswithCustomersandOurOtherSourcesofRevenuesDetails" roleURI="http://www.ngkf.com/role/RevenuesfromContractswithCustomersScheduleofRevenuesfromContractswithCustomersandOurOtherSourcesofRevenuesDetails">
+        <link:definition>240484026 - Disclosure - Revenues from Contracts with Customers - Schedule of Revenues from Contracts with Customers and Our Other Sources of Revenues (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RevenuesfromContractswithCustomersNarrativeDetails" roleURI="http://www.ngkf.com/role/RevenuesfromContractswithCustomersNarrativeDetails">
+        <link:definition>240494027 - Disclosure - Revenues from Contracts with Customers - Narrative (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RevenuesfromContractswithCustomersScheduleofRevenueRemainingPerformanceObligationDetails" roleURI="http://www.ngkf.com/role/RevenuesfromContractswithCustomersScheduleofRevenueRemainingPerformanceObligationDetails">
+        <link:definition>240504028 - Disclosure - Revenues from Contracts with Customers - Schedule of Revenue Remaining Performance Obligation (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RevenuesfromContractswithCustomersScheduleofRevenueRemainingPerformanceObligationDetails_1" roleURI="http://www.ngkf.com/role/RevenuesfromContractswithCustomersScheduleofRevenueRemainingPerformanceObligationDetails_1">
+        <link:definition>240504028 - Disclosure - Revenues from Contracts with Customers - Schedule of Revenue Remaining Performance Obligation (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="GainsfromMortgageBankingActivitiesOriginationsNet" roleURI="http://www.ngkf.com/role/GainsfromMortgageBankingActivitiesOriginationsNet">
+        <link:definition>210511014 - Disclosure - Gains from Mortgage Banking Activities/Originations, Net</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="GainsfromMortgageBankingActivitiesOriginationsNetTables" roleURI="http://www.ngkf.com/role/GainsfromMortgageBankingActivitiesOriginationsNetTables">
+        <link:definition>230523009 - Disclosure - Gains from Mortgage Banking Activities/Originations, Net (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="GainsfromMortgageBankingActivitiesOriginationsNetDetails" roleURI="http://www.ngkf.com/role/GainsfromMortgageBankingActivitiesOriginationsNetDetails">
+        <link:definition>240534029 - Disclosure - Gains from Mortgage Banking Activities/Originations, Net (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="MortgageServicingRightsNet" roleURI="http://www.ngkf.com/role/MortgageServicingRightsNet">
+        <link:definition>210541015 - Disclosure - Mortgage Servicing Rights, Net</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="MortgageServicingRightsNetTables" roleURI="http://www.ngkf.com/role/MortgageServicingRightsNetTables">
+        <link:definition>230553010 - Disclosure - Mortgage Servicing Rights, Net (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="MortgageServicingRightsNetSummaryofChangesintheCarryingAmountofMortgageServicingRightsDetails" roleURI="http://www.ngkf.com/role/MortgageServicingRightsNetSummaryofChangesintheCarryingAmountofMortgageServicingRightsDetails">
+        <link:definition>240564030 - Disclosure - Mortgage Servicing Rights, Net - Summary of Changes in the Carrying Amount of Mortgage Servicing Rights (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="MortgageServicingRightsNetScheduleofServicingFeesandEscrowInterestDetails" roleURI="http://www.ngkf.com/role/MortgageServicingRightsNetScheduleofServicingFeesandEscrowInterestDetails">
+        <link:definition>240574031 - Disclosure - Mortgage Servicing Rights, Net - Schedule of Servicing Fees and Escrow Interest (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="MortgageServicingRightsNetNarrativeDetails" roleURI="http://www.ngkf.com/role/MortgageServicingRightsNetNarrativeDetails">
+        <link:definition>240584032 - Disclosure - Mortgage Servicing Rights, Net - Narrative (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="GoodwillandOtherIntangibleAssetsNet" roleURI="http://www.ngkf.com/role/GoodwillandOtherIntangibleAssetsNet">
+        <link:definition>210591016 - Disclosure - Goodwill and Other Intangible Assets, Net</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="GoodwillandOtherIntangibleAssetsNetTables" roleURI="http://www.ngkf.com/role/GoodwillandOtherIntangibleAssetsNetTables">
+        <link:definition>230603011 - Disclosure - Goodwill and Other Intangible Assets, Net (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="GoodwillandOtherIntangibleAssetsNetSummaryofChangesinCarryingAmountofGoodwillDetails" roleURI="http://www.ngkf.com/role/GoodwillandOtherIntangibleAssetsNetSummaryofChangesinCarryingAmountofGoodwillDetails">
+        <link:definition>240614033 - Disclosure - Goodwill and Other Intangible Assets, Net - Summary of Changes in Carrying Amount of Goodwill (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="GoodwillandOtherIntangibleAssetsNetNarrativeDetails" roleURI="http://www.ngkf.com/role/GoodwillandOtherIntangibleAssetsNetNarrativeDetails">
+        <link:definition>240624034 - Disclosure - Goodwill and Other Intangible Assets, Net - Narrative (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="GoodwillandOtherIntangibleAssetsNetComponentsofOtherIntangibleAssetsDetails" roleURI="http://www.ngkf.com/role/GoodwillandOtherIntangibleAssetsNetComponentsofOtherIntangibleAssetsDetails">
+        <link:definition>240634035 - Disclosure - Goodwill and Other Intangible Assets, Net - Components of Other Intangible Assets (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="GoodwillandOtherIntangibleAssetsNetComponentsofOtherIntangibleAssetsDetails_1" roleURI="http://www.ngkf.com/role/GoodwillandOtherIntangibleAssetsNetComponentsofOtherIntangibleAssetsDetails_1">
+        <link:definition>240634035 - Disclosure - Goodwill and Other Intangible Assets, Net - Components of Other Intangible Assets (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="GoodwillandOtherIntangibleAssetsNetScheduleofEstimatedFutureAmortizationofDefiniteLifeIntangibleAssetsDetails" roleURI="http://www.ngkf.com/role/GoodwillandOtherIntangibleAssetsNetScheduleofEstimatedFutureAmortizationofDefiniteLifeIntangibleAssetsDetails">
+        <link:definition>240644036 - Disclosure - Goodwill and Other Intangible Assets, Net - Schedule of Estimated Future Amortization of Definite Life Intangible Assets (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FixedAssetsNet" roleURI="http://www.ngkf.com/role/FixedAssetsNet">
+        <link:definition>210651017 - Disclosure - Fixed Assets, Net</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FixedAssetsNetTables" roleURI="http://www.ngkf.com/role/FixedAssetsNetTables">
+        <link:definition>230663012 - Disclosure - Fixed Assets, Net (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FixedAssetsNetComponentsofFixedAssetsNetDetails" roleURI="http://www.ngkf.com/role/FixedAssetsNetComponentsofFixedAssetsNetDetails">
+        <link:definition>240674037 - Disclosure - Fixed Assets, Net - Components of Fixed Assets, Net (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FixedAssetsNetNarrativeDetails" roleURI="http://www.ngkf.com/role/FixedAssetsNetNarrativeDetails">
+        <link:definition>240684038 - Disclosure - Fixed Assets, Net - Narrative (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="Leases" roleURI="http://www.ngkf.com/role/Leases">
+        <link:definition>210691018 - Disclosure - Leases</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LeasesTables" roleURI="http://www.ngkf.com/role/LeasesTables">
+        <link:definition>230703013 - Disclosure - Leases (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LeasesNarrativeDetails" roleURI="http://www.ngkf.com/role/LeasesNarrativeDetails">
+        <link:definition>240714039 - Disclosure - Leases - Narrative (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LeasesScheduleofLeasePaymentsDetails" roleURI="http://www.ngkf.com/role/LeasesScheduleofLeasePaymentsDetails">
+        <link:definition>240724040 - Disclosure - Leases - Schedule of Lease Payments (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LeasesScheduleofLeasePaymentsDetails_1" roleURI="http://www.ngkf.com/role/LeasesScheduleofLeasePaymentsDetails_1">
+        <link:definition>240724040 - Disclosure - Leases - Schedule of Lease Payments (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="OtherCurrentAssetsandOtherAssets" roleURI="http://www.ngkf.com/role/OtherCurrentAssetsandOtherAssets">
+        <link:definition>210731019 - Disclosure - Other Current Assets and Other Assets</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="OtherCurrentAssetsandOtherAssetsTables" roleURI="http://www.ngkf.com/role/OtherCurrentAssetsandOtherAssetsTables">
+        <link:definition>230743014 - Disclosure - Other Current Assets and Other Assets (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="OtherCurrentAssetsandOtherAssetsSummaryofOtherCurrentAssetsDetails" roleURI="http://www.ngkf.com/role/OtherCurrentAssetsandOtherAssetsSummaryofOtherCurrentAssetsDetails">
+        <link:definition>240754041 - Disclosure - Other Current Assets and Other Assets - Summary of Other Current Assets (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="OtherCurrentAssetsandOtherAssetsSummaryofOtherAssetsDetails" roleURI="http://www.ngkf.com/role/OtherCurrentAssetsandOtherAssetsSummaryofOtherAssetsDetails">
+        <link:definition>240764042 - Disclosure - Other Current Assets and Other Assets - Summary of Other Assets (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RepurchaseAgreementsandSecuritiesLoaned" roleURI="http://www.ngkf.com/role/RepurchaseAgreementsandSecuritiesLoaned">
+        <link:definition>210771020 - Disclosure - Repurchase Agreements and Securities Loaned</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RepurchaseAgreementsandSecuritiesLoanedDetails" roleURI="http://www.ngkf.com/role/RepurchaseAgreementsandSecuritiesLoanedDetails">
+        <link:definition>240784043 - Disclosure - Repurchase Agreements and Securities Loaned (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="WarehouseFacilitiesCollateralizedbyUSGovernmentSponsoredEnterprises" roleURI="http://www.ngkf.com/role/WarehouseFacilitiesCollateralizedbyUSGovernmentSponsoredEnterprises">
+        <link:definition>210791021 - Disclosure - Warehouse Facilities Collateralized by U.S. Government Sponsored Enterprises</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="WarehouseFacilitiesCollateralizedbyUSGovernmentSponsoredEnterprisesTables" roleURI="http://www.ngkf.com/role/WarehouseFacilitiesCollateralizedbyUSGovernmentSponsoredEnterprisesTables">
+        <link:definition>230803015 - Disclosure - Warehouse Facilities Collateralized by U.S. Government Sponsored Enterprises (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="WarehouseFacilitiesCollateralizedbyUSGovernmentSponsoredEnterprisesDetails" roleURI="http://www.ngkf.com/role/WarehouseFacilitiesCollateralizedbyUSGovernmentSponsoredEnterprisesDetails">
+        <link:definition>240814044 - Disclosure - Warehouse Facilities Collateralized by U.S. Government Sponsored Enterprises (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LongTermDebt" roleURI="http://www.ngkf.com/role/LongTermDebt">
+        <link:definition>210821022 - Disclosure - Long-Term Debt</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LongTermDebtTables" roleURI="http://www.ngkf.com/role/LongTermDebtTables">
+        <link:definition>230833016 - Disclosure - Long-Term Debt (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LongTermDebtScheduleofLongTermDebtDetails" roleURI="http://www.ngkf.com/role/LongTermDebtScheduleofLongTermDebtDetails">
+        <link:definition>240844045 - Disclosure - Long-Term Debt - Schedule of Long-Term Debt (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LongTermDebtSeniorNotesNarrativeDetails" roleURI="http://www.ngkf.com/role/LongTermDebtSeniorNotesNarrativeDetails">
+        <link:definition>240854046 - Disclosure - Long-Term Debt - Senior Notes Narrative (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LongTermDebtSeniorNotesCarryingAmountDetails" roleURI="http://www.ngkf.com/role/LongTermDebtSeniorNotesCarryingAmountDetails">
+        <link:definition>240864047 - Disclosure - Long-Term Debt - Senior Notes Carrying Amount (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LongTermDebtSeniorNotesNetInterestExpenseDetails" roleURI="http://www.ngkf.com/role/LongTermDebtSeniorNotesNetInterestExpenseDetails">
+        <link:definition>240874048 - Disclosure - Long-Term Debt - Senior Notes Net Interest Expense (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LongTermDebtDebtRepurchaseProgramNarrativeDetails" roleURI="http://www.ngkf.com/role/LongTermDebtDebtRepurchaseProgramNarrativeDetails">
+        <link:definition>240884049 - Disclosure - Long-Term Debt - Debt Repurchase Program Narrative (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LongTermDebtCreditFacilityNarrativeDetails" roleURI="http://www.ngkf.com/role/LongTermDebtCreditFacilityNarrativeDetails">
+        <link:definition>240894050 - Disclosure - Long-Term Debt - Credit Facility Narrative (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LongTermDebtCreditFacilityNetDetails" roleURI="http://www.ngkf.com/role/LongTermDebtCreditFacilityNetDetails">
+        <link:definition>240904051 - Disclosure - Long-Term Debt - Credit Facility Net (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LongTermDebtCreditFacilityNetInterestExpenseDetails" roleURI="http://www.ngkf.com/role/LongTermDebtCreditFacilityNetInterestExpenseDetails">
+        <link:definition>240914052 - Disclosure - Long-Term Debt - Credit Facility Net Interest Expense (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FinancialGuaranteeLiability" roleURI="http://www.ngkf.com/role/FinancialGuaranteeLiability">
+        <link:definition>210921023 - Disclosure - Financial Guarantee Liability</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FinancialGuaranteeLiabilityTables" roleURI="http://www.ngkf.com/role/FinancialGuaranteeLiabilityTables">
+        <link:definition>230933017 - Disclosure - Financial Guarantee Liability (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FinancialGuaranteeLiabilityNarrativeDetails" roleURI="http://www.ngkf.com/role/FinancialGuaranteeLiabilityNarrativeDetails">
+        <link:definition>240944053 - Disclosure - Financial Guarantee Liability - Narrative (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FinancialGuaranteeLiabilitySummaryofChangesonEstimatedLiabilityUnderGuaranteeLiabilityDetails" roleURI="http://www.ngkf.com/role/FinancialGuaranteeLiabilitySummaryofChangesonEstimatedLiabilityUnderGuaranteeLiabilityDetails">
+        <link:definition>240954054 - Disclosure - Financial Guarantee Liability - Summary of Changes on Estimated Liability Under Guarantee Liability (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ConcentrationsofCreditRisk" roleURI="http://www.ngkf.com/role/ConcentrationsofCreditRisk">
+        <link:definition>210961024 - Disclosure - Concentrations of Credit Risk</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ConcentrationsofCreditRiskDetails" roleURI="http://www.ngkf.com/role/ConcentrationsofCreditRiskDetails">
+        <link:definition>240974055 - Disclosure - Concentrations of Credit Risk (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="EscrowandCustodialFunds" roleURI="http://www.ngkf.com/role/EscrowandCustodialFunds">
+        <link:definition>210981025 - Disclosure - Escrow and Custodial Funds</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="EscrowandCustodialFundsDetails" roleURI="http://www.ngkf.com/role/EscrowandCustodialFundsDetails">
+        <link:definition>240994056 - Disclosure - Escrow and Custodial Funds (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FairValueofFinancialAssetsandLiabilities" roleURI="http://www.ngkf.com/role/FairValueofFinancialAssetsandLiabilities">
+        <link:definition>211001026 - Disclosure - Fair Value of Financial Assets and Liabilities</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FairValueofFinancialAssetsandLiabilitiesTables" roleURI="http://www.ngkf.com/role/FairValueofFinancialAssetsandLiabilitiesTables">
+        <link:definition>231013018 - Disclosure - Fair Value of Financial Assets and Liabilities (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FairValueofFinancialAssetsandLiabilitiesFairValueHierarchyofFinancialAssetsandLiabilitiesunderUSGAAPGuidanceDetails" roleURI="http://www.ngkf.com/role/FairValueofFinancialAssetsandLiabilitiesFairValueHierarchyofFinancialAssetsandLiabilitiesunderUSGAAPGuidanceDetails">
+        <link:definition>241024057 - Disclosure - Fair Value of Financial Assets and Liabilities - Fair Value Hierarchy of Financial Assets and Liabilities under U.S. GAAP Guidance (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FairValueofFinancialAssetsandLiabilitiesChangesinLevel3AssetsandLiabilitiesMeasuredatFairValueonRecurringBasisDetails" roleURI="http://www.ngkf.com/role/FairValueofFinancialAssetsandLiabilitiesChangesinLevel3AssetsandLiabilitiesMeasuredatFairValueonRecurringBasisDetails">
+        <link:definition>241034058 - Disclosure - Fair Value of Financial Assets and Liabilities - Changes in Level 3 Assets and Liabilities Measured at Fair Value on Recurring Basis (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FairValueofFinancialAssetsandLiabilitiesQuantitativeInformationaboutLevel3FairValueMeasurementsDetails" roleURI="http://www.ngkf.com/role/FairValueofFinancialAssetsandLiabilitiesQuantitativeInformationaboutLevel3FairValueMeasurementsDetails">
+        <link:definition>241044059 - Disclosure - Fair Value of Financial Assets and Liabilities - Quantitative Information about Level 3 Fair Value Measurements (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FairValueofFinancialAssetsandLiabilitiesNarrativeDetails" roleURI="http://www.ngkf.com/role/FairValueofFinancialAssetsandLiabilitiesNarrativeDetails">
+        <link:definition>241054060 - Disclosure - Fair Value of Financial Assets and Liabilities - Narrative (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RelatedPartyTransactions" roleURI="http://www.ngkf.com/role/RelatedPartyTransactions">
+        <link:definition>211061027 - Disclosure - Related Party Transactions</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RelatedPartyTransactionsServiceAgreementsandLoansDetails" roleURI="http://www.ngkf.com/role/RelatedPartyTransactionsServiceAgreementsandLoansDetails">
+        <link:definition>241074061 - Disclosure - Related Party Transactions - Service Agreements and Loans (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RelatedPartyTransactionsTransferofEmployeestoNewmarkandOtherRelatedPartyTransactionsDetails" roleURI="http://www.ngkf.com/role/RelatedPartyTransactionsTransferofEmployeestoNewmarkandOtherRelatedPartyTransactionsDetails">
+        <link:definition>241084062 - Disclosure - Related Party Transactions - Transfer of Employees to Newmark and Other Related Party Transactions (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RelatedPartyTransactionsTransactionswithCCREDetails" roleURI="http://www.ngkf.com/role/RelatedPartyTransactionsTransactionswithCCREDetails">
+        <link:definition>241094063 - Disclosure - Related Party Transactions - Transactions with CCRE (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RelatedPartyTransactionsTransactionsWithExecutiveOfficersandDirectorsDetails" roleURI="http://www.ngkf.com/role/RelatedPartyTransactionsTransactionsWithExecutiveOfficersandDirectorsDetails">
+        <link:definition>241104064 - Disclosure - Related Party Transactions - Transactions With Executive Officers and Directors (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RelatedPartyTransactionsCFRealEstateFinanceHoldingsLPDetails" roleURI="http://www.ngkf.com/role/RelatedPartyTransactionsCFRealEstateFinanceHoldingsLPDetails">
+        <link:definition>241114065 - Disclosure - Related Party Transactions - CF Real Estate Finance Holdings, LP (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RelatedPartyTransactionsCFCoDetails" roleURI="http://www.ngkf.com/role/RelatedPartyTransactionsCFCoDetails">
+        <link:definition>241124066 - Disclosure - Related Party Transactions - CF&amp;Co (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RelatedPartyTransactionsOtherRelatedPartyTransactionsandCantorRightstoPurchaseCantorUnitsfromNewmarkHoldingsDetails" roleURI="http://www.ngkf.com/role/RelatedPartyTransactionsOtherRelatedPartyTransactionsandCantorRightstoPurchaseCantorUnitsfromNewmarkHoldingsDetails">
+        <link:definition>241134067 - Disclosure - Related Party Transactions - Other Related Party Transactions and Cantor Rights to Purchase Cantor Units from Newmark Holdings (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RelatedPartyTransactionsSpecialPurposeAcquisitionCompanyDetails" roleURI="http://www.ngkf.com/role/RelatedPartyTransactionsSpecialPurposeAcquisitionCompanyDetails">
+        <link:definition>241144068 - Disclosure - Related Party Transactions - Special Purpose Acquisition Company (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RelatedPartyTransactionsNewmarkOpCoBorrowingFacilitywithCantorDetails" roleURI="http://www.ngkf.com/role/RelatedPartyTransactionsNewmarkOpCoBorrowingFacilitywithCantorDetails">
+        <link:definition>241154069 - Disclosure - Related Party Transactions - Newmark OpCo Borrowing Facility with Cantor (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RelatedPartyTransactionsReferralFeedtoCantorDetails" roleURI="http://www.ngkf.com/role/RelatedPartyTransactionsReferralFeedtoCantorDetails">
+        <link:definition>241164070 - Disclosure - Related Party Transactions - Referral Feed to Cantor (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IncomeTaxes" roleURI="http://www.ngkf.com/role/IncomeTaxes">
+        <link:definition>211171028 - Disclosure - Income Taxes</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IncomeTaxesTables" roleURI="http://www.ngkf.com/role/IncomeTaxesTables">
+        <link:definition>231183019 - Disclosure - Income Taxes (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IncomeTaxesProvisionforIncomeTaxesDetails" roleURI="http://www.ngkf.com/role/IncomeTaxesProvisionforIncomeTaxesDetails">
+        <link:definition>241194071 - Disclosure - Income Taxes - Provision for Income Taxes (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IncomeTaxesNarrativeDetails" roleURI="http://www.ngkf.com/role/IncomeTaxesNarrativeDetails">
+        <link:definition>241204072 - Disclosure - Income Taxes - Narrative (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IncomeTaxesScheduleofDifferenceBetweenActualIncomeTaxExpenseandtheAmountCalculatedUtilizingtheUSFederalStatutoryRatesDetails" roleURI="http://www.ngkf.com/role/IncomeTaxesScheduleofDifferenceBetweenActualIncomeTaxExpenseandtheAmountCalculatedUtilizingtheUSFederalStatutoryRatesDetails">
+        <link:definition>241214073 - Disclosure - Income Taxes - Schedule of Difference Between Actual Income Tax Expense and the Amount Calculated Utilizing the U.S. Federal Statutory Rates (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IncomeTaxesScheduleofDeferredTaxAssetsandLiabilityDetails" roleURI="http://www.ngkf.com/role/IncomeTaxesScheduleofDeferredTaxAssetsandLiabilityDetails">
+        <link:definition>241224074 - Disclosure - Income Taxes - Schedule of Deferred Tax Assets and Liability (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IncomeTaxesScheduleofReconciliationofBeginningandEndingAmountsofUnrecognizedTaxBenefitsDetails" roleURI="http://www.ngkf.com/role/IncomeTaxesScheduleofReconciliationofBeginningandEndingAmountsofUnrecognizedTaxBenefitsDetails">
+        <link:definition>241234075 - Disclosure - Income Taxes - Schedule of Reconciliation of Beginning and Ending Amounts of Unrecognized Tax Benefits (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="AccountsPayableAccruedExpensesandOtherLiabilities" roleURI="http://www.ngkf.com/role/AccountsPayableAccruedExpensesandOtherLiabilities">
+        <link:definition>211241029 - Disclosure - Accounts Payable, Accrued Expenses and Other Liabilities</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="AccountsPayableAccruedExpensesandOtherLiabilitiesTables" roleURI="http://www.ngkf.com/role/AccountsPayableAccruedExpensesandOtherLiabilitiesTables">
+        <link:definition>231253020 - Disclosure - Accounts Payable, Accrued Expenses and Other Liabilities (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="AccountsPayableAccruedExpensesandOtherLiabilitiesComponentsofCurrentPortionofAccountsPayableAccruedExpensesandOtherLiabilitiesDetails" roleURI="http://www.ngkf.com/role/AccountsPayableAccruedExpensesandOtherLiabilitiesComponentsofCurrentPortionofAccountsPayableAccruedExpensesandOtherLiabilitiesDetails">
+        <link:definition>241264076 - Disclosure - Accounts Payable, Accrued Expenses and Other Liabilities - Components of Current Portion of Accounts Payable, Accrued Expenses and Other Liabilities (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="AccountsPayableAccruedExpensesandOtherLiabilitiesComponentsofOtherLiabilitiesDetails" roleURI="http://www.ngkf.com/role/AccountsPayableAccruedExpensesandOtherLiabilitiesComponentsofOtherLiabilitiesDetails">
+        <link:definition>241274077 - Disclosure - Accounts Payable, Accrued Expenses and Other Liabilities - Components of Other Liabilities (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="Compensation" roleURI="http://www.ngkf.com/role/Compensation">
+        <link:definition>211281030 - Disclosure - Compensation</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CompensationTables" roleURI="http://www.ngkf.com/role/CompensationTables">
+        <link:definition>231293021 - Disclosure - Compensation (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CompensationNarrativeDetails" roleURI="http://www.ngkf.com/role/CompensationNarrativeDetails">
+        <link:definition>241304078 - Disclosure - Compensation - Narrative (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CompensationCompensationExpenseRelatedtoLimitedPartnershipUnitsandRestrictedStockUnitsDetails" roleURI="http://www.ngkf.com/role/CompensationCompensationExpenseRelatedtoLimitedPartnershipUnitsandRestrictedStockUnitsDetails">
+        <link:definition>241314079 - Disclosure - Compensation - Compensation Expense Related to Limited Partnership Units and Restricted Stock Units (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CompensationActivityAssociatedwithLimitedPartnershipUnitsDetails" roleURI="http://www.ngkf.com/role/CompensationActivityAssociatedwithLimitedPartnershipUnitsDetails">
+        <link:definition>241324080 - Disclosure - Compensation - Activity Associated with Limited Partnership Units (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CompensationUnitsRedeemedinConnectionwithIssuanceofClassACommonStockDetails" roleURI="http://www.ngkf.com/role/CompensationUnitsRedeemedinConnectionwithIssuanceofClassACommonStockDetails">
+        <link:definition>241334081 - Disclosure - Compensation - Units Redeemed in Connection with Issuance of Class A Common Stock (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CompensationLimitedPartnershipUnitswithaPostTerminationPayoutDetails" roleURI="http://www.ngkf.com/role/CompensationLimitedPartnershipUnitswithaPostTerminationPayoutDetails">
+        <link:definition>241344082 - Disclosure - Compensation - Limited Partnership Units with a Post-Termination Payout (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CompensationGrantofConversionRightstoNewmarkEmployeesDetails" roleURI="http://www.ngkf.com/role/CompensationGrantofConversionRightstoNewmarkEmployeesDetails">
+        <link:definition>241354083 - Disclosure - Compensation - Grant of Conversion Rights to Newmark Employees (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CompensationActivityAssociatedwithRestrictedStockUnitsDetails" roleURI="http://www.ngkf.com/role/CompensationActivityAssociatedwithRestrictedStockUnitsDetails">
+        <link:definition>241364084 - Disclosure - Compensation - Activity Associated with Restricted Stock Units (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CommitmentsandContingencies" roleURI="http://www.ngkf.com/role/CommitmentsandContingencies">
+        <link:definition>211371031 - Disclosure - Commitments and Contingencies</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CommitmentsandContingenciesTables" roleURI="http://www.ngkf.com/role/CommitmentsandContingenciesTables">
+        <link:definition>231383022 - Disclosure - Commitments and Contingencies (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CommitmentsandContingenciesScheduleofContractualObligationsDetails" roleURI="http://www.ngkf.com/role/CommitmentsandContingenciesScheduleofContractualObligationsDetails">
+        <link:definition>241394085 - Disclosure - Commitments and Contingencies - Schedule of Contractual Obligations (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CommitmentsandContingenciesScheduleofContractualObligationsFootnotesDetails" roleURI="http://www.ngkf.com/role/CommitmentsandContingenciesScheduleofContractualObligationsFootnotesDetails">
+        <link:definition>241404086 - Disclosure - Commitments and Contingencies - Schedule of Contractual Obligations (Footnotes) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CommitmentsandContingenciesNarrativeDetails" roleURI="http://www.ngkf.com/role/CommitmentsandContingenciesNarrativeDetails">
+        <link:definition>241414087 - Disclosure - Commitments and Contingencies - Narrative (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SubsequentEvents" roleURI="http://www.ngkf.com/role/SubsequentEvents">
+        <link:definition>211421032 - Disclosure - Subsequent Events</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SubsequentEventsDetails" roleURI="http://www.ngkf.com/role/SubsequentEventsDetails">
+        <link:definition>241434088 - Disclosure - Subsequent Events (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element id="nmrk_NewmarkHoldingsMember" abstract="true" name="NewmarkHoldingsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="nmrk_SharebasedCompensationArrangementbySharebasedPaymentAwardEquityInstrumentsOtherthanOptionsGrantedFairValue" abstract="false" name="SharebasedCompensationArrangementbySharebasedPaymentAwardEquityInstrumentsOtherthanOptionsGrantedFairValue" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="nmrk_BGCHoldingsLimitedPartnershipMember" abstract="true" name="BGCHoldingsLimitedPartnershipMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="nmrk_PaymentToRedeemNonExchangeableSharesNet" abstract="false" name="PaymentToRedeemNonExchangeableSharesNet" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="nmrk_PaymentToRedeemSharesNet" abstract="false" name="PaymentToRedeemSharesNet" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="nmrk_InterestOnWarehouseLinesOfCreditMember" abstract="true" name="InterestOnWarehouseLinesOfCreditMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="nmrk_ExecutivesAndNonExecutivesEmployeesMember" abstract="true" name="ExecutivesAndNonExecutivesEmployeesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="nmrk_A1MonthSOFRMember" abstract="true" name="A1MonthSOFRMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="nmrk_MinimumMaintenanceMarginOfCollateralProvidedPercent" abstract="false" name="MinimumMaintenanceMarginOfCollateralProvidedPercent" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="dtr-types:percentItemType"/>
+  <xs:element id="nmrk_OtherRevenueSourcesDomain" abstract="true" name="OtherRevenueSourcesDomain" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="nmrk_NewmarkAcquisitionHoldingsLLCMember" abstract="true" name="NewmarkAcquisitionHoldingsLLCMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="nmrk_GovernmentSponsoredEnterpriseLoansMember" abstract="true" name="GovernmentSponsoredEnterpriseLoansMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="nmrk_NewmarkOpCoMember" abstract="true" name="NewmarkOpCoMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="nmrk_PeriodForPaymentUnderCommonStockTransaction" abstract="false" name="PeriodForPaymentUnderCommonStockTransaction" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:durationItemType"/>
+  <xs:element id="nmrk_CreditEnhancementDeposits" abstract="false" name="CreditEnhancementDeposits" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="nmrk_InterestRateOptionTwoMember" abstract="true" name="InterestRateOptionTwoMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="nmrk_BusinessCombinationConsiderationTransferredCashAndEquityInterestsIssued" abstract="false" name="BusinessCombinationConsiderationTransferredCashAndEquityInterestsIssued" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="nmrk_AuditorInformationAbstract" abstract="true" name="AuditorInformationAbstract" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="nmrk_EmployeeCompensationAnnualBaseSalary" abstract="false" name="EmployeeCompensationAnnualBaseSalary" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="nmrk_StockRepurchaseProgramAmountReceivedFromSharesPledgedForRepurchase" abstract="false" name="StockRepurchaseProgramAmountReceivedFromSharesPledgedForRepurchase" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="nmrk_EscrowInterestAndPlacementFeesAmount" abstract="false" name="EscrowInterestAndPlacementFeesAmount" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="nmrk_KnotelMember" abstract="true" name="KnotelMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="nmrk_LimitedPartnershipUnitsExchangeRatio" abstract="false" name="LimitedPartnershipUnitsExchangeRatio" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="xbrli:pureItemType"/>
+  <xs:element id="nmrk_CommissionsMember" abstract="true" name="CommissionsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="nmrk_NonMarketableInvestments" abstract="false" name="NonMarketableInvestments" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="nmrk_NasdaqEarnout" abstract="false" name="NasdaqEarnout" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="nmrk_ShareRepurchaseAndRedemptionUnitRemainingAuthorizedAmount" abstract="false" name="ShareRepurchaseAndRedemptionUnitRemainingAuthorizedAmount" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="nmrk_IssuanceOfAdditionalLimitedPartnersUnitsInExchangeForCashPayment" abstract="false" name="IssuanceOfAdditionalLimitedPartnersUnitsInExchangeForCashPayment" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="nmrk_PreferredUnitsMember" abstract="true" name="PreferredUnitsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="nmrk_LoansReceivableWithFixedRatesOfInterestPercentage" abstract="false" name="LoansReceivableWithFixedRatesOfInterestPercentage" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:percentItemType"/>
+  <xs:element id="nmrk_DeferredTaxAssetsOtherDeferredAndAccruedExpenses" abstract="false" name="DeferredTaxAssetsOtherDeferredAndAccruedExpenses" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="nmrk_ShareBasedCompensationArrangementByShareBasedPaymentAwardEquityInstrumentsOtherThanOptionsNonvestedFairValue" abstract="false" name="ShareBasedCompensationArrangementByShareBasedPaymentAwardEquityInstrumentsOtherThanOptionsNonvestedFairValue" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="nmrk_ManagementServicesMember" abstract="true" name="ManagementServicesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="nmrk_BusinessCombinationRecognizedIdentifiableAssetsAcquiredAndLiabilitiesAssumedNonControllingInterest" abstract="false" name="BusinessCombinationRecognizedIdentifiableAssetsAcquiredAndLiabilitiesAssumedNonControllingInterest" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="nmrk_CantorCreditAgreementMember" abstract="true" name="CantorCreditAgreementMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="nmrk_UncommittedLinesMember" abstract="true" name="UncommittedLinesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="nmrk_RelatedPartyTransactionLimitOnLoanNotYetAcquiredOrSold" abstract="false" name="RelatedPartyTransactionLimitOnLoanNotYetAcquiredOrSold" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="nmrk_WarehouseFacilityDueJuneFifteenTwoThousandTwentyTwoNumberTwoMember" abstract="true" name="WarehouseFacilityDueJuneFifteenTwoThousandTwentyTwoNumberTwoMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="nmrk_LimitedPartnershipUnitsConversionRatio" abstract="false" name="LimitedPartnershipUnitsConversionRatio" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="xbrli:pureItemType"/>
+  <xs:element id="nmrk_NumberOfVotesPerCommonShare" abstract="false" name="NumberOfVotesPerCommonShare" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="xbrli:integerItemType"/>
+  <xs:element id="nmrk_EscrowAndCustodialFundsTextBlock" abstract="false" name="EscrowAndCustodialFundsTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:textBlockItemType"/>
+  <xs:element id="nmrk_BGCHoldingPartnershipUnitsMember" abstract="true" name="BGCHoldingPartnershipUnitsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="nmrk_InterestRateOptionAxis" abstract="true" name="InterestRateOptionAxis" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrldt:dimensionItem" type="xbrli:stringItemType"/>
+  <xs:element id="nmrk_ScheduleOfContractualObligationsTableTextBlock" abstract="false" name="ScheduleOfContractualObligationsTableTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:textBlockItemType"/>
+  <xs:element id="nmrk_GainsFromMortgageBankingActivitiesOriginationNetMember" abstract="true" name="GainsFromMortgageBankingActivitiesOriginationNetMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="nmrk_IncomeTaxReconciliationUnincorporatedBusinessTax" abstract="false" name="IncomeTaxReconciliationUnincorporatedBusinessTax" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="nmrk_CreditEnhancementReceivableContingentLiabilityAndCreditEnhancementDepositAbstract" abstract="true" name="CreditEnhancementReceivableContingentLiabilityAndCreditEnhancementDepositAbstract" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="nmrk_ThirdPartyBankAndCantorCommercialRealEstateLPMember" abstract="true" name="ThirdPartyBankAndCantorCommercialRealEstateLPMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="nmrk_EquityBasedCompensationContributionsOfCapitalToAndFromCantor" abstract="false" name="EquityBasedCompensationContributionsOfCapitalToAndFromCantor" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="nmrk_ExchangeablePPSUMember" abstract="true" name="ExchangeablePPSUMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="nmrk_RealizedGainLossOnNonMarketableInvestments" abstract="false" name="RealizedGainLossOnNonMarketableInvestments" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="nmrk_RedeemablePartnershipInterestPolicyTextBlock" abstract="false" name="RedeemablePartnershipInterestPolicyTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:textBlockItemType"/>
+  <xs:element id="nmrk_MinorityInterestDecreaseFromRedemptionsOfExchangeablePartnershipUnits" abstract="false" name="MinorityInterestDecreaseFromRedemptionsOfExchangeablePartnershipUnits" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="nmrk_NumberOfShareIssuedForNonExchangeablePPSU" abstract="false" name="NumberOfShareIssuedForNonExchangeablePPSU" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="xbrli:sharesItemType"/>
+  <xs:element id="nmrk_ForwardSaleContractsMember" abstract="true" name="ForwardSaleContractsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="nmrk_ScheduleOfShareRepurchaseActivityTableTextBlock" abstract="false" name="ScheduleOfShareRepurchaseActivityTableTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:textBlockItemType"/>
+  <xs:element id="nmrk_SharesRedeemedOrExchanged" abstract="false" name="SharesRedeemedOrExchanged" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:sharesItemType"/>
+  <xs:element id="nmrk_OtherOwnershipInterestsUnitsExchangeable" abstract="false" name="OtherOwnershipInterestsUnitsExchangeable" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="xbrli:sharesItemType"/>
+  <xs:element id="nmrk_CreditEnhancementReceivableContingentLiabilityAndCreditEnhancementDepositTable" abstract="true" name="CreditEnhancementReceivableContingentLiabilityAndCreditEnhancementDepositTable" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrldt:hypercubeItem" type="xbrli:stringItemType"/>
+  <xs:element id="nmrk_NasdaqForwardsMember" abstract="true" name="NasdaqForwardsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="nmrk_IncomeTaxReconciliationReturnToProvisionAdjustments" abstract="false" name="IncomeTaxReconciliationReturnToProvisionAdjustments" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="nmrk_BusinessCombinationRecognizedIdentifiableAssetsAcquiredAndLiabilitiesAssumedRightOfUseLiabilities" abstract="false" name="BusinessCombinationRecognizedIdentifiableAssetsAcquiredAndLiabilitiesAssumedRightOfUseLiabilities" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="nmrk_CFRealEstateFinanceHoldingsLimitedPartnershipMember" abstract="true" name="CFRealEstateFinanceHoldingsLimitedPartnershipMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="nmrk_MaximumRevenueShareToRelatedPartyInFirstTwoYears" abstract="false" name="MaximumRevenueShareToRelatedPartyInFirstTwoYears" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="nmrk_InterestRateOptionDomain" abstract="true" name="InterestRateOptionDomain" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="nmrk_FairValueOfExpectedNetFutureCashFlowsFromServicingRecognizedAtCommitmentNet" abstract="false" name="FairValueOfExpectedNetFutureCashFlowsFromServicingRecognizedAtCommitmentNet" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="nmrk_PercentageOfIncreaseInDiscountRateOfServicingRights" abstract="false" name="PercentageOfIncreaseInDiscountRateOfServicingRights" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="dtr-types:percentItemType"/>
+  <xs:element id="nmrk_ScheduleOfAccountsPayableAccruedLiabilitiesAndOtherLiabilitiesCurrentTableTextBlock" abstract="false" name="ScheduleOfAccountsPayableAccruedLiabilitiesAndOtherLiabilitiesCurrentTableTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:textBlockItemType"/>
+  <xs:element id="nmrk_NumberOfAuthorizedClassesOfCommonStock" abstract="false" name="NumberOfAuthorizedClassesOfCommonStock" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="xbrli:integerItemType"/>
+  <xs:element id="nmrk_SellerServicerAgreementsMember" abstract="true" name="SellerServicerAgreementsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="nmrk_ScheduleOfAcquiredFiniteAndIndefiniteLivedIntangibleAssetByMajorClassLineItems" abstract="true" name="ScheduleOfAcquiredFiniteAndIndefiniteLivedIntangibleAssetByMajorClassLineItems" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="nmrk_OutsideBrokerPayableCurrent" abstract="false" name="OutsideBrokerPayableCurrent" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="nmrk_NewmarkHoldingsLimitedPartnershipMember" abstract="true" name="NewmarkHoldingsLimitedPartnershipMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="nmrk_AccountsPayableAndAccruedExpensesCurrent" abstract="false" name="AccountsPayableAndAccruedExpensesCurrent" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="nmrk_HopkinsAppraisalServicesMember" abstract="true" name="HopkinsAppraisalServicesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="nmrk_NotionalValueOfLimitedPartnershipUnitsEligibleForConversion" abstract="false" name="NotionalValueOfLimitedPartnershipUnitsEligibleForConversion" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="nmrk_RelatedPartyTransactionDueFromToRelatedPartyPercentageFromSale" abstract="false" name="RelatedPartyTransactionDueFromToRelatedPartyPercentageFromSale" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:percentItemType"/>
+  <xs:element id="nmrk_PSUMember" abstract="true" name="PSUMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="nmrk_DeferredTaxAssetsNetOperatingLossAndCreditCarryforwards" abstract="false" name="DeferredTaxAssetsNetOperatingLossAndCreditCarryforwards" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="nmrk_TreasuryStockAcquiredAndRedeemedAverageCostPerShare" abstract="false" name="TreasuryStockAcquiredAndRedeemedAverageCostPerShare" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:perShareItemType"/>
+  <xs:element id="nmrk_DBCaymanMember" abstract="true" name="DBCaymanMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="nmrk_PercentageOfOwnershipInterestOfLoansReceivable" abstract="false" name="PercentageOfOwnershipInterestOfLoansReceivable" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:percentItemType"/>
+  <xs:element id="nmrk_NasdaqEarnOutMember" abstract="true" name="NasdaqEarnOutMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="nmrk_NumberOfNonExchangeablePPSURedeemed" abstract="false" name="NumberOfNonExchangeablePPSURedeemed" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:sharesItemType"/>
+  <xs:element id="nmrk_NonDistributionEarningUnitsMember" abstract="true" name="NonDistributionEarningUnitsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="nmrk_HoldingsPSUMember" abstract="true" name="HoldingsPSUMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="nmrk_GainsFromMortgageBankingActivitiesOriginationsNetTextBlock" abstract="false" name="GainsFromMortgageBankingActivitiesOriginationsNetTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:textBlockItemType"/>
+  <xs:element id="nmrk_NewmarkUnitsMember" abstract="true" name="NewmarkUnitsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="nmrk_IssuanceOfLimitedPartnersUnitsExchanges" abstract="false" name="IssuanceOfLimitedPartnersUnitsExchanges" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:sharesItemType"/>
+  <xs:element id="nmrk_CantorFitzgeraldCoMember" abstract="true" name="CantorFitzgeraldCoMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="nmrk_LesseeOperatingSubleaseLeasePayment" abstract="false" name="LesseeOperatingSubleaseLeasePayment" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="nmrk_EmployeeLoansMember" abstract="true" name="EmployeeLoansMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="nmrk_BusinessCombinationRecognizedIdentifiableAssetsAcquiredAndLiabilitiesAssumedUnrealizedGainOnInitialInvestment" abstract="false" name="BusinessCombinationRecognizedIdentifiableAssetsAcquiredAndLiabilitiesAssumedUnrealizedGainOnInitialInvestment" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="nmrk_WarehouseLinesOfCreditTextBlock" abstract="false" name="WarehouseLinesOfCreditTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:textBlockItemType"/>
+  <xs:element id="nmrk_ExchangeableAPSUMember" abstract="true" name="ExchangeableAPSUMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="nmrk_LiabilityBalanceAcquisitionRelatedPostTerminationUnits" abstract="false" name="LiabilityBalanceAcquisitionRelatedPostTerminationUnits" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="nmrk_DeskeoMember" abstract="true" name="DeskeoMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="nmrk_NasdaqMember" abstract="true" name="NasdaqMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="nmrk_AllocationsOfNetIncomeAndGrantOfExchangeabilityToLimitedPartnershipUnitsAndFPUsAndIssuanceOfCommonStock" abstract="false" name="AllocationsOfNetIncomeAndGrantOfExchangeabilityToLimitedPartnershipUnitsAndFPUsAndIssuanceOfCommonStock" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="nmrk_RKFRetailHoldingsLLCMember" abstract="true" name="RKFRetailHoldingsLLCMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="nmrk_SummaryOfGainsFromMortgageBankingActivitiesNetTableTableTextBlock" abstract="false" name="SummaryOfGainsFromMortgageBankingActivitiesNetTableTableTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:textBlockItemType"/>
+  <xs:element id="nmrk_ChiefLegalOfficerMember" abstract="true" name="ChiefLegalOfficerMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="nmrk_EarnOutSharesReceivableUnderCommonStockTransaction" abstract="false" name="EarnOutSharesReceivableUnderCommonStockTransaction" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:sharesItemType"/>
+  <xs:element id="nmrk_InterestRateOptionOneMember" abstract="true" name="InterestRateOptionOneMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="nmrk_EmployeeOfChairmanMember" abstract="true" name="EmployeeOfChairmanMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="nmrk_RelatedPartyTransactionWithholdingTaxRate" abstract="false" name="RelatedPartyTransactionWithholdingTaxRate" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:percentItemType"/>
+  <xs:element id="nmrk_TemporaryEquityRedemptions" abstract="false" name="TemporaryEquityRedemptions" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="nmrk_DebtInstrumentDiscountRate" abstract="false" name="DebtInstrumentDiscountRate" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="dtr-types:percentItemType"/>
+  <xs:element id="nmrk_BusinessCombinationConsiderationTransferredFirstAndSecondLienDebt" abstract="false" name="BusinessCombinationConsiderationTransferredFirstAndSecondLienDebt" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="nmrk_PaymentsToAcquireInvestmentInCostMethodInvestments" abstract="false" name="PaymentsToAcquireInvestmentInCostMethodInvestments" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="nmrk_OutstandingBorrowerAdvancesToInvestors" abstract="false" name="OutstandingBorrowerAdvancesToInvestors" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="nmrk_NonExchangeableAPSUMember" abstract="true" name="NonExchangeableAPSUMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="nmrk_LiquidationValueOfLoansOutstanding" abstract="false" name="LiquidationValueOfLoansOutstanding" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="nmrk_CantorCommercialRealEstateCompanyMember" abstract="true" name="CantorCommercialRealEstateCompanyMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="nmrk_EquityBasedCompensationAndAllocationOfNetIncomeToLimitedPartnershipUnitsAndFPUs" abstract="false" name="EquityBasedCompensationAndAllocationOfNetIncomeToLimitedPartnershipUnitsAndFPUs" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="nmrk_ValueOfLPUIssuedInExchange" abstract="false" name="ValueOfLPUIssuedInExchange" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="nmrk_PercentageOfContingentPayment" abstract="false" name="PercentageOfContingentPayment" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="dtr-types:percentItemType"/>
+  <xs:element id="nmrk_LoanReferralAgreementMember" abstract="true" name="LoanReferralAgreementMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="nmrk_NonExchangeablePPSUMember" abstract="true" name="NonExchangeablePPSUMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="nmrk_MortgageServicingRightsMember" abstract="true" name="MortgageServicingRightsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="nmrk_BusinessCombinationConsiderationTransferredLiabilitiesIncurredCash" abstract="false" name="BusinessCombinationConsiderationTransferredLiabilitiesIncurredCash" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="nmrk_NumberOfNonExchangeableHUD" abstract="false" name="NumberOfNonExchangeableHUD" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:sharesItemType"/>
+  <xs:element id="nmrk_BusinessCombinationRecognizedIdentifiableAssetsAcquiredAndLiabilitiesAssumedRightOfUseAsset" abstract="false" name="BusinessCombinationRecognizedIdentifiableAssetsAcquiredAndLiabilitiesAssumedRightOfUseAsset" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="nmrk_SixPointOneTwoFivePercentSeniorNotesMember" abstract="true" name="SixPointOneTwoFivePercentSeniorNotesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="nmrk_ScheduleOfServicingFeesAndEscrowInterestTableTextBlock" abstract="false" name="ScheduleOfServicingFeesAndEscrowInterestTableTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:textBlockItemType"/>
+  <xs:element id="nmrk_GrossUnitsRedeemed" abstract="false" name="GrossUnitsRedeemed" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:sharesItemType"/>
+  <xs:element id="nmrk_ShareBasedCompensationArrangementByShareBasedPaymentAwardUnitsRedeemed" abstract="false" name="ShareBasedCompensationArrangementByShareBasedPaymentAwardUnitsRedeemed" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:sharesItemType"/>
+  <xs:element id="nmrk_TemporaryEquityDistributionOfIncome" abstract="false" name="TemporaryEquityDistributionOfIncome" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="nmrk_SecuritiesLoanedFairValue" abstract="false" name="SecuritiesLoanedFairValue" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="nmrk_FeesToRelatedPartiesPolicyTextBlock" abstract="false" name="FeesToRelatedPartiesPolicyTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:textBlockItemType"/>
+  <xs:element id="nmrk_NumberOfExchangeablePPSURedeemed" abstract="false" name="NumberOfExchangeablePPSURedeemed" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:sharesItemType"/>
+  <xs:element id="nmrk_MortgageServicingRightsTable" abstract="true" name="MortgageServicingRightsTable" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrldt:hypercubeItem" type="xbrli:stringItemType"/>
+  <xs:element id="nmrk_DiscountRateTwoMember" abstract="true" name="DiscountRateTwoMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="nmrk_ShareIssuanceAbstract" abstract="true" name="ShareIssuanceAbstract" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="nmrk_SublimitLinesMember" abstract="true" name="SublimitLinesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="nmrk_LongTermEquityIncentivePlanMember" abstract="true" name="LongTermEquityIncentivePlanMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="nmrk_OperatingLeasesMember" abstract="true" name="OperatingLeasesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="nmrk_IndependentContractorsMember" abstract="true" name="IndependentContractorsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="nmrk_LeaseHoldImprovementsAndOtherFixedAssetsMember" abstract="true" name="LeaseHoldImprovementsAndOtherFixedAssetsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="nmrk_BusinessCombinationContingentConsiderationLiabilityAtCost" abstract="false" name="BusinessCombinationContingentConsiderationLiabilityAtCost" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="nmrk_CostOfServicesDirectLaborMember" abstract="true" name="CostOfServicesDirectLaborMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="nmrk_WarehouseFacilityDueJuneFifteenTwoThousandTwentyTwoNumberOneMember" abstract="true" name="WarehouseFacilityDueJuneFifteenTwoThousandTwentyTwoNumberOneMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="nmrk_RelatedPartyTransactionServiceFeesPaid" abstract="false" name="RelatedPartyTransactionServiceFeesPaid" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="nmrk_GainsFromMortgageBankingActivitiesOriginationsNetMember" abstract="true" name="GainsFromMortgageBankingActivitiesOriginationsNetMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="nmrk_AccruedPayrollAndOtherTaxesPayableNoncurrent" abstract="false" name="AccruedPayrollAndOtherTaxesPayableNoncurrent" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="nmrk_BusinessCombinationConsiderationTransferredDebtorInPossessionFinancing" abstract="false" name="BusinessCombinationConsiderationTransferredDebtorInPossessionFinancing" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="nmrk_NoncashChangesInAcquisitionEarnouts" abstract="false" name="NoncashChangesInAcquisitionEarnouts" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="nmrk_IncrementalCommonSharesAttributableToExchange" abstract="false" name="IncrementalCommonSharesAttributableToExchange" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:sharesItemType"/>
+  <xs:element id="nmrk_ProceedsFromLimitedPartnershipUnits" abstract="false" name="ProceedsFromLimitedPartnershipUnits" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="nmrk_DescriptionOfBusinessLineItems" abstract="true" name="DescriptionOfBusinessLineItems" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="nmrk_ManagementServicesServicingFeesAndOtherMember" abstract="true" name="ManagementServicesServicingFeesAndOtherMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="nmrk_IncrementalCommonSharesAttributableToCantorUnits" abstract="false" name="IncrementalCommonSharesAttributableToCantorUnits" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:sharesItemType"/>
+  <xs:element id="nmrk_NasdaqOmxMember" abstract="true" name="NasdaqOmxMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="nmrk_PrimaryServicingPortfolio" abstract="false" name="PrimaryServicingPortfolio" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="nmrk_NoncontrollingInterestIncreaseDecreaseFromGrantOfExchangeabilityRedemptionAndIssuanceOfLimitedPartnershipInterests" abstract="false" name="NoncontrollingInterestIncreaseDecreaseFromGrantOfExchangeabilityRedemptionAndIssuanceOfLimitedPartnershipInterests" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="nmrk_RightOfUseAssetIncreaseDecrease" abstract="false" name="RightOfUseAssetIncreaseDecrease" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="nmrk_NumberOfNonExchangeablePSURedeemed" abstract="false" name="NumberOfNonExchangeablePSURedeemed" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:sharesItemType"/>
+  <xs:element id="nmrk_CapitalMarketsMember" abstract="true" name="CapitalMarketsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="nmrk_MarketableSecuritiesNumberOfSharesSold" abstract="false" name="MarketableSecuritiesNumberOfSharesSold" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:sharesItemType"/>
+  <xs:element id="nmrk_CantorMember" abstract="true" name="CantorMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="nmrk_AnnualDiscretionaryBonusRate" abstract="false" name="AnnualDiscretionaryBonusRate" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="dtr-types:percentItemType"/>
+  <xs:element id="nmrk_PercentageOfLiquidityRequirementOfOutstandingPrincipalOfTargetedAffordableHousingLoansServiced" abstract="false" name="PercentageOfLiquidityRequirementOfOutstandingPrincipalOfTargetedAffordableHousingLoansServiced" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:percentItemType"/>
+  <xs:element id="nmrk_PercentageOfContingentLiabilityOfActualLossesIncurredOnOutstandingLoans" abstract="false" name="PercentageOfContingentLiabilityOfActualLossesIncurredOnOutstandingLoans" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:percentItemType"/>
+  <xs:element id="nmrk_PercentageOfThirdPartyBankPurchasedLoanValue" abstract="false" name="PercentageOfThirdPartyBankPurchasedLoanValue" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:percentItemType"/>
+  <xs:element id="nmrk_SharebasedCompensationArrangementbySharebasedPaymentAwardEquityInstrumentsOtherthanOptionsForfeitedFairValue" abstract="false" name="SharebasedCompensationArrangementbySharebasedPaymentAwardEquityInstrumentsOtherthanOptionsForfeitedFairValue" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="nmrk_LimitedPartnershipUnitsMember" abstract="true" name="LimitedPartnershipUnitsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="nmrk_CommittedLinesMember" abstract="true" name="CommittedLinesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="nmrk_WarehouseFacilityDueOctober72022Member" abstract="true" name="WarehouseFacilityDueOctober72022Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="nmrk_MaximumPeriodOfLoansHeldForSaleSold" abstract="false" name="MaximumPeriodOfLoansHeldForSaleSold" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:durationItemType"/>
+  <xs:element id="nmrk_RelatedPartyTransactionLimitOnLoanOutstanding" abstract="false" name="RelatedPartyTransactionLimitOnLoanOutstanding" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="nmrk_MeasurementInputExpectedEarnoutAndContingenciesRateMember" abstract="true" name="MeasurementInputExpectedEarnoutAndContingenciesRateMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="nmrk_MortgageServicingRightsTextBlock" abstract="false" name="MortgageServicingRightsTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:textBlockItemType"/>
+  <xs:element id="nmrk_NotionalValueOfLimitedPartnershipUnitsWithPostTerminationPayOutAmount" abstract="false" name="NotionalValueOfLimitedPartnershipUnitsWithPostTerminationPayOutAmount" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="nmrk_NumberOfNonExchangeableNPPSURedeemed" abstract="false" name="NumberOfNonExchangeableNPPSURedeemed" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:sharesItemType"/>
+  <xs:element id="nmrk_FinancialGuaranteeLiabilityMaximumPotentialLossCoveredByCreditEnhancementAgreement" abstract="false" name="FinancialGuaranteeLiabilityMaximumPotentialLossCoveredByCreditEnhancementAgreement" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="nmrk_PostTerminationAwardPayoutPeriod" abstract="false" name="PostTerminationAwardPayoutPeriod" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:durationItemType"/>
+  <xs:element id="nmrk_NumberOfLoans" abstract="false" name="NumberOfLoans" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="xbrli:integerItemType"/>
+  <xs:element id="nmrk_ExchangeablePreferredLimitedPartnershipUnitsNumberOfTranches" abstract="false" name="ExchangeablePreferredLimitedPartnershipUnitsNumberOfTranches" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="xbrli:integerItemType"/>
+  <xs:element id="nmrk_CFSecuredLLCMember" abstract="true" name="CFSecuredLLCMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="nmrk_AveragePriceOfUnitsRedeemed" abstract="false" name="AveragePriceOfUnitsRedeemed" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:perShareItemType"/>
+  <xs:element id="nmrk_ProceedsFromIssuanceOfAdditionalLimitedPartnersUnitsWithCapitalAccount" abstract="false" name="ProceedsFromIssuanceOfAdditionalLimitedPartnersUnitsWithCapitalAccount" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="nmrk_CreditEnhancementReceivableContingentLiabilityAndCreditEnhancementDepositLineItems" abstract="true" name="CreditEnhancementReceivableContingentLiabilityAndCreditEnhancementDepositLineItems" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="nmrk_InvestmentOwnedSharesSettled" abstract="false" name="InvestmentOwnedSharesSettled" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:sharesItemType"/>
+  <xs:element id="nmrk_RemainingNumberOfEarnOutSharesReceivedUnderCommonStockTransaction" abstract="false" name="RemainingNumberOfEarnOutSharesReceivedUnderCommonStockTransaction" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="xbrli:sharesItemType"/>
+  <xs:element id="nmrk_FannieMaeRepurchaseAgreementOpenMaturityMember" abstract="true" name="FannieMaeRepurchaseAgreementOpenMaturityMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="nmrk_HoldingsUnitMember" abstract="true" name="HoldingsUnitMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="nmrk_TheRoyalBankOfCanadaMember" abstract="true" name="TheRoyalBankOfCanadaMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="nmrk_CommonStockExchangeabilityGrantedIssuedExpense" abstract="false" name="CommonStockExchangeabilityGrantedIssuedExpense" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="nmrk_ServicingFeesAndOtherMember" abstract="true" name="ServicingFeesAndOtherMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="nmrk_CapitalAccountThreshold" abstract="false" name="CapitalAccountThreshold" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="nmrk_CreditEnhancementReceivable" abstract="false" name="CreditEnhancementReceivable" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="nmrk_CapitalMarketsCommissionsMember" abstract="true" name="CapitalMarketsCommissionsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="nmrk_BusinessCombinationConsiderationTransferredCash" abstract="false" name="BusinessCombinationConsiderationTransferredCash" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="nmrk_WarehouseFacilityDueOctoberEightTwoThousandTwentyOneMember" abstract="true" name="WarehouseFacilityDueOctoberEightTwoThousandTwentyOneMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="nmrk_EmployeesMember" abstract="true" name="EmployeesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="nmrk_ContractuallySpecifiedServicingFeesAncillaryFeesEscrowInterestAndPlacementFeesEarnedInExchangeForServicingFinancialAssets" abstract="false" name="ContractuallySpecifiedServicingFeesAncillaryFeesEscrowInterestAndPlacementFeesEarnedInExchangeForServicingFinancialAssets" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="nmrk_RepaymentOfSecurityDeposit" abstract="false" name="RepaymentOfSecurityDeposit" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="nmrk_PeriodForEarnOutReceivableUnderCommonStockTransaction" abstract="false" name="PeriodForEarnOutReceivableUnderCommonStockTransaction" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:durationItemType"/>
+  <xs:element id="nmrk_FannieMaeDUSOrFreddieTargetedAffordableHousingLoansMember" abstract="true" name="FannieMaeDUSOrFreddieTargetedAffordableHousingLoansMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="nmrk_DescriptionOfBusinessTable" abstract="true" name="DescriptionOfBusinessTable" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrldt:hypercubeItem" type="xbrli:stringItemType"/>
+  <xs:element id="nmrk_NonExchangeableHDUMember" abstract="true" name="NonExchangeableHDUMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="nmrk_PercentageOfProfitsAllocatedToPreferredPartnershipUnits" abstract="false" name="PercentageOfProfitsAllocatedToPreferredPartnershipUnits" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:percentItemType"/>
+  <xs:element id="nmrk_NonExchangeableNPPSUMember" abstract="true" name="NonExchangeableNPPSUMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="nmrk_BusinessCombinationRecognizedIdentifiableAssetsAcquiredAndLiabilitiesAssumedOtherAssets" abstract="false" name="BusinessCombinationRecognizedIdentifiableAssetsAcquiredAndLiabilitiesAssumedOtherAssets" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="nmrk_NetIncomeLossAfterAdjustmentsForNonCashAndNonoperatingItems" abstract="false" name="NetIncomeLossAfterAdjustmentsForNonCashAndNonoperatingItems" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="nmrk_RemainingEarnOutSharesReceivableUnderCommonStockTransaction" abstract="false" name="RemainingEarnOutSharesReceivableUnderCommonStockTransaction" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:sharesItemType"/>
+  <xs:element id="nmrk_ShareRepurchaseProgramValueOfSharesPledgedToBeRepurchased" abstract="false" name="ShareRepurchaseProgramValueOfSharesPledgedToBeRepurchased" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="nmrk_CurrentUnincorporatedBusinessTaxExpenseBenefit" abstract="false" name="CurrentUnincorporatedBusinessTaxExpenseBenefit" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="nmrk_PercentageAboveFairMarketValueOfEquityProvidedAsCollateral" abstract="false" name="PercentageAboveFairMarketValueOfEquityProvidedAsCollateral" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="dtr-types:percentItemType"/>
+  <xs:element id="nmrk_IncomeTaxReconciliationSection453AInterest" abstract="false" name="IncomeTaxReconciliationSection453AInterest" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="nmrk_ContingentClassACommonStockMember" abstract="true" name="ContingentClassACommonStockMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="nmrk_BusinessCombinationConsiderationTransferredEquityInterestsIssued" abstract="false" name="BusinessCombinationConsiderationTransferredEquityInterestsIssued" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="nmrk_ExchangeablePartnershipUnits" abstract="false" name="ExchangeablePartnershipUnits" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="xbrli:sharesItemType"/>
+  <xs:element id="nmrk_DebtInstrumentDebtRepurchaseProgramAuthorizedAmount" abstract="false" name="DebtInstrumentDebtRepurchaseProgramAuthorizedAmount" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="nmrk_ProvisionReversalForRiskSharingObligations" abstract="false" name="ProvisionReversalForRiskSharingObligations" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="nmrk_IssuanceAndRedemptionOfLimitedPartnershipUnitsIncludingContingentUnits" abstract="false" name="IssuanceAndRedemptionOfLimitedPartnershipUnitsIncludingContingentUnits" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="nmrk_ProceedsFromRepaymentsOfSecuritiesLoaned" abstract="false" name="ProceedsFromRepaymentsOfSecuritiesLoaned" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="nmrk_FinancialGuaranteeLiabilityMaximumPotentialLoss" abstract="false" name="FinancialGuaranteeLiabilityMaximumPotentialLoss" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="nmrk_CantorRealtyCapitalAdvisorsLPMember" abstract="true" name="CantorRealtyCapitalAdvisorsLPMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="nmrk_CreditEnhancementReceivableContingentLiabilityAndCreditEnhancementDepositTextBlock" abstract="false" name="CreditEnhancementReceivableContingentLiabilityAndCreditEnhancementDepositTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:textBlockItemType"/>
+  <xs:element id="nmrk_IncrementalCommonSharesAttributableToOtherInstruments" abstract="false" name="IncrementalCommonSharesAttributableToOtherInstruments" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:sharesItemType"/>
+  <xs:element id="nmrk_DeferredUnincorporatedBusinessTaxExpenseBenefit" abstract="false" name="DeferredUnincorporatedBusinessTaxExpenseBenefit" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="nmrk_NoncontrollingInterestEarningsDistributionsToLimitedPartnershipInterestsAndOtherNoncontrollingInterest" abstract="false" name="NoncontrollingInterestEarningsDistributionsToLimitedPartnershipInterestsAndOtherNoncontrollingInterest" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="nmrk_ShareBasedCompensationArrangementByShareBasedPaymentAwardNumberOfSharesRegistered" abstract="false" name="ShareBasedCompensationArrangementByShareBasedPaymentAwardNumberOfSharesRegistered" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="xbrli:sharesItemType"/>
+  <xs:element id="nmrk_ExpectedPaymentOfSharesUnderCommonStockTransaction" abstract="false" name="ExpectedPaymentOfSharesUnderCommonStockTransaction" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:sharesItemType"/>
+  <xs:element id="nmrk_DiscountRateOneMember" abstract="true" name="DiscountRateOneMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="nmrk_LesseeOperatingLeaseLiabilityToBePaidAfterYearSix" abstract="false" name="LesseeOperatingLeaseLiabilityToBePaidAfterYearSix" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="nmrk_FoundingWorkingPartnerUnitsMember" abstract="true" name="FoundingWorkingPartnerUnitsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="nmrk_RegularUnitsMember" abstract="true" name="RegularUnitsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="nmrk_PercentageOfThirdPartyBankRetainingLoanValue" abstract="false" name="PercentageOfThirdPartyBankRetainingLoanValue" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:percentItemType"/>
+  <xs:element id="nmrk_PrimaryServicingRightsMember" abstract="true" name="PrimaryServicingRightsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="nmrk_ScheduleOfAcquiredFiniteAndIndefiniteLivedIntangibleAssetByMajorClassTable" abstract="true" name="ScheduleOfAcquiredFiniteAndIndefiniteLivedIntangibleAssetByMajorClassTable" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrldt:hypercubeItem" type="xbrli:stringItemType"/>
+  <xs:element id="nmrk_CantorFitzgeraldLimitedPartnershipAndBGCPartnersIncorporationMember" abstract="true" name="CantorFitzgeraldLimitedPartnershipAndBGCPartnersIncorporationMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="nmrk_LimitedPartnershipUnitCashDistributions" abstract="false" name="LimitedPartnershipUnitCashDistributions" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="nmrk_AcquisitionsFromTwoThousandFourteenThroughTwoThousandEighteenMember" abstract="true" name="AcquisitionsFromTwoThousandFourteenThroughTwoThousandEighteenMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="nmrk_OtherRevenueSourcesAxis" abstract="true" name="OtherRevenueSourcesAxis" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrldt:dimensionItem" type="xbrli:stringItemType"/>
+  <xs:element id="nmrk_GainsLossesRecognizedForChangeInFairValueOnLoansHeldForSale" abstract="false" name="GainsLossesRecognizedForChangeInFairValueOnLoansHeldForSale" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="nmrk_LeasingAndOtherCommissionsMember" abstract="true" name="LeasingAndOtherCommissionsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="nmrk_PotentialLossOnLiquidationOfLoan" abstract="false" name="PotentialLossOnLiquidationOfLoan" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="nmrk_StockPurchaseProgramNumberOfSharesPledgedToBeRepurchased" abstract="false" name="StockPurchaseProgramNumberOfSharesPledgedToBeRepurchased" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="xbrli:sharesItemType"/>
+  <xs:element id="nmrk_InvestmentOwnedSharesSettledFairValue" abstract="false" name="InvestmentOwnedSharesSettledFairValue" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="nmrk_ExchangeablePreferredLimitedPartnershipUnitsSharesOutstanding" abstract="false" name="ExchangeablePreferredLimitedPartnershipUnitsSharesOutstanding" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="xbrli:sharesItemType"/>
+  <xs:element id="nmrk_ServicingAssetAtAmortizedValuePurchasesFromAffiliate" abstract="false" name="ServicingAssetAtAmortizedValuePurchasesFromAffiliate" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="nmrk_SubleaseAgreeementMember" abstract="true" name="SubleaseAgreeementMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="nmrk_NonExchangeablePSUMember" abstract="true" name="NonExchangeablePSUMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="nmrk_BusinessCombinationConsiderationTransferredCashStockAndUnitsIssued" abstract="false" name="BusinessCombinationConsiderationTransferredCashStockAndUnitsIssued" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="nmrk_ContingentConsiderationFairValue" abstract="false" name="ContingentConsiderationFairValue" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="nmrk_RelatedPartyTransactionRedemptionOfRemainingMonetizedShares" abstract="false" name="RelatedPartyTransactionRedemptionOfRemainingMonetizedShares" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:sharesItemType"/>
+  <xs:element id="nmrk_IncomeTaxExpenseBenefitGlobalIntangibleLowTaxedIncomeNetOfForeignTaxCredits" abstract="false" name="IncomeTaxExpenseBenefitGlobalIntangibleLowTaxedIncomeNetOfForeignTaxCredits" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="nmrk_FairValueAmountRollForward" abstract="true" name="FairValueAmountRollForward" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="nmrk_DeterminationPrice" abstract="false" name="DeterminationPrice" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:perShareItemType"/>
+  <xs:element id="nmrk_GrossRevenueOnEarnOutSharesReceivablePerYearUnderCommonStockTransaction" abstract="false" name="GrossRevenueOnEarnOutSharesReceivablePerYearUnderCommonStockTransaction" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="nmrk_IncreaseDecreaseInRightOfUseLiability" abstract="false" name="IncreaseDecreaseInRightOfUseLiability" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="nmrk_ExchangeOrRedemptionForLimitedPartnershipUnit" abstract="false" name="ExchangeOrRedemptionForLimitedPartnershipUnit" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:sharesItemType"/>
+  <xs:element id="nmrk_AccruedCompensationNoncurrent" abstract="false" name="AccruedCompensationNoncurrent" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="nmrk_ScheduleOfLoansHeldForSaleTableTextBlock" abstract="false" name="ScheduleOfLoansHeldForSaleTableTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:textBlockItemType"/>
+  <xs:element id="nmrk_ConversionOfCommonStock" abstract="false" name="ConversionOfCommonStock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:integerItemType"/>
+  <xs:element id="nmrk_GrantOfExchangeabilityRedemptionAndIssuanceOfLimitedPartnershipInterestsAndIssuanceOfCommonStockShares" abstract="false" name="GrantOfExchangeabilityRedemptionAndIssuanceOfLimitedPartnershipInterestsAndIssuanceOfCommonStockShares" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:sharesItemType"/>
+  <xs:element id="nmrk_IncrementalCommonSharesAttributableToLimitedPartnershipInterests" abstract="false" name="IncrementalCommonSharesAttributableToLimitedPartnershipInterests" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:sharesItemType"/>
+  <xs:element id="nmrk_WarehouseFacilityDueJuneSeventeenthTwoThousandTwentyMember" abstract="true" name="WarehouseFacilityDueJuneSeventeenthTwoThousandTwentyMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="nmrk_WarehouseFacilityDueSeptember252021Member" abstract="true" name="WarehouseFacilityDueSeptember252021Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="nmrk_NoncontrollingInterestPolicyTextBlock" abstract="false" name="NoncontrollingInterestPolicyTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:textBlockItemType"/>
+  <xs:element id="nmrk_LesseeOperatingLeaseLiabilityToBePaidYearSix" abstract="false" name="LesseeOperatingLeaseLiabilityToBePaidYearSix" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="nmrk_NumberOfExchangeablePSURedeemed" abstract="false" name="NumberOfExchangeablePSURedeemed" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:sharesItemType"/>
+  <xs:element id="nmrk_LoanAndLeaseReceivableBrokerageAmount" abstract="false" name="LoanAndLeaseReceivableBrokerageAmount" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="nmrk_ScheduleOfProvisionForRiskSharingObligationsTableTextBlock" abstract="false" name="ScheduleOfProvisionForRiskSharingObligationsTableTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:textBlockItemType"/>
+  <xs:element id="nmrk_PaymentsToRepurchasePartnershipUnit" abstract="false" name="PaymentsToRepurchasePartnershipUnit" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="nmrk_RelatedPartyTransactionSharesIssuedExchangeRatio" abstract="false" name="RelatedPartyTransactionSharesIssuedExchangeRatio" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="dtr-types:percentItemType"/>
+  <xs:element id="nmrk_FairValueAssetsAndLiabilitiesMeasuredOnRecurringBasisUnobservableInputReconciliationTableTextBlock" abstract="false" name="FairValueAssetsAndLiabilitiesMeasuredOnRecurringBasisUnobservableInputReconciliationTableTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:textBlockItemType"/>
+  <xs:element id="nmrk_OtherIncomeLossNetPolicyTextBlock" abstract="false" name="OtherIncomeLossNetPolicyTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:textBlockItemType"/>
+  <xs:element id="nmrk_ServicingFeesMember" abstract="true" name="ServicingFeesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="nmrk_NumberOfNonExchangeablePSUConverted" abstract="false" name="NumberOfNonExchangeablePSUConverted" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:sharesItemType"/>
+  <xs:element id="nmrk_A1MonthLIBORMember" abstract="true" name="A1MonthLIBORMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="nmrk_GuarantyLiabilitiesRollForward" abstract="true" name="GuarantyLiabilitiesRollForward" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="nmrk_SettlementSharePrice" abstract="false" name="SettlementSharePrice" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="dtr-types:perShareItemType"/>
+  <xs:element id="nmrk_ReimbursementsUnderServingAgreement" abstract="false" name="ReimbursementsUnderServingAgreement" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="nmrk_CollateralizedTransactionsDisclosureTextBlock" abstract="false" name="CollateralizedTransactionsDisclosureTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:textBlockItemType"/>
+  <xs:element id="nmrk_RelatedPartyTransactionRedemptionOfRemainingMonetizedSharesValue" abstract="false" name="RelatedPartyTransactionRedemptionOfRemainingMonetizedSharesValue" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="nmrk_GrossRevenueOnExpectedPaymentPerYearUnderCommonStockTransaction" abstract="false" name="GrossRevenueOnExpectedPaymentPerYearUnderCommonStockTransaction" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="nmrk_ReferralFeesMember" abstract="true" name="ReferralFeesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="nmrk_MortgageBankingActivitiesAndOriginationsMember" abstract="true" name="MortgageBankingActivitiesAndOriginationsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="nmrk_ProvisionReversalForCreditLossesSharingGuarantee" abstract="false" name="ProvisionReversalForCreditLossesSharingGuarantee" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="nmrk_SharebasedCompensationArrangementbySharebasedPaymentAwardEquityInstrumentsOtherthanOptionsSettledFairValue" abstract="false" name="SharebasedCompensationArrangementbySharebasedPaymentAwardEquityInstrumentsOtherthanOptionsSettledFairValue" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="nmrk_SpecialServicingPortfolio" abstract="false" name="SpecialServicingPortfolio" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="nmrk_NumberOfExchangeableShares" abstract="false" name="NumberOfExchangeableShares" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:sharesItemType"/>
+  <xs:element id="nmrk_PaymentToRedeemExchangeableSharesNet" abstract="false" name="PaymentToRedeemExchangeableSharesNet" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="nmrk_BusinessCombinationRecognizedIdentifiableAssetsAcquiredAndLiabilitiesAssumedAccruedCompensation" abstract="false" name="BusinessCombinationRecognizedIdentifiableAssetsAcquiredAndLiabilitiesAssumedAccruedCompensation" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="nmrk_FinancialGuaranteeLiability.CreditRiskServiceLoans" abstract="false" name="FinancialGuaranteeLiability.CreditRiskServiceLoans" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="nmrk_ConcentrationRiskCreditRiskFinancialInstrumentMaximumExposureWithoutCreditProtection" abstract="false" name="ConcentrationRiskCreditRiskFinancialInstrumentMaximumExposureWithoutCreditProtection" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="nmrk_FannieMaeDUSAndFreddieMacTAHLoansMember" abstract="true" name="FannieMaeDUSAndFreddieMacTAHLoansMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="nmrk_EarnOutSharesReceivedUnderCommonStockTransaction" abstract="false" name="EarnOutSharesReceivedUnderCommonStockTransaction" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:sharesItemType"/>
+  <xs:element id="nmrk_UnrealizedGainsLossOnLoansHeldForSale" abstract="false" name="UnrealizedGainsLossOnLoansHeldForSale" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="nmrk_A2021EquityEventMember" abstract="true" name="A2021EquityEventMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="nmrk_FiniteLivedIntangibleAssetExpectedAmortizationExpense" abstract="false" name="FiniteLivedIntangibleAssetExpectedAmortizationExpense" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="nmrk_ShareBasedCompensationArrangementByShareBasedPaymentAwardNonOptionEquityInstrumentRedeemedExchanged" abstract="false" name="ShareBasedCompensationArrangementByShareBasedPaymentAwardNonOptionEquityInstrumentRedeemedExchanged" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:sharesItemType"/>
+  <xs:element id="nmrk_OneMonthLIBORMember" abstract="true" name="OneMonthLIBORMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="nmrk_PaymentsForSettlementOfRelatedPartyReceivablesBeforeSpinOff" abstract="false" name="PaymentsForSettlementOfRelatedPartyReceivablesBeforeSpinOff" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="nmrk_ShareBasedCompensationArrangementByShareBasedPaymentAwardEquityInstrumentsOtherThanOptionsOutstandingGrantDateFairValue" abstract="false" name="ShareBasedCompensationArrangementByShareBasedPaymentAwardEquityInstrumentsOtherThanOptionsOutstandingGrantDateFairValue" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="nmrk_SurveillanceFeesMember" abstract="true" name="SurveillanceFeesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="nmrk_InterestOnLongTermDebtMember" abstract="true" name="InterestOnLongTermDebtMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="nmrk_GainOnOriginatedMortgageServicingRights" abstract="false" name="GainOnOriginatedMortgageServicingRights" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="nmrk_DebtInstrumentDebtRepurchaseProgramRemainingAuthorizedRepurchaseAmount" abstract="false" name="DebtInstrumentDebtRepurchaseProgramRemainingAuthorizedRepurchaseAmount" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="nmrk_NumberOfEmployeesTransferred" abstract="false" name="NumberOfEmployeesTransferred" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="xbrli:integerItemType"/>
+  <xs:element id="nmrk_BGCHoldingsHUDMember" abstract="true" name="BGCHoldingsHUDMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="nmrk_WarehouseFacilitiesMember" abstract="true" name="WarehouseFacilitiesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="nmrk_AllocationOfIncomeLossToLimitedPartnershipInterestDiluted" abstract="false" name="AllocationOfIncomeLossToLimitedPartnershipInterestDiluted" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="nmrk_WarehouseLinesOfCreditMember" abstract="true" name="WarehouseLinesOfCreditMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="nmrk_BusinessCombinationRecognizedIdentifiableAssetsAcquiredAndLiabilitiesAssumedInterestInvestmentRecordedAtCost" abstract="false" name="BusinessCombinationRecognizedIdentifiableAssetsAcquiredAndLiabilitiesAssumedInterestInvestmentRecordedAtCost" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="nmrk_MortgageServiceRightsInterestRate" abstract="false" name="MortgageServiceRightsInterestRate" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="dtr-types:percentItemType"/>
+  <xs:element id="nmrk_ExchangeableUnits" abstract="false" name="ExchangeableUnits" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:sharesItemType"/>
+  <xs:element id="nmrk_ContingentConsiderationLiabilityMember" abstract="true" name="ContingentConsiderationLiabilityMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="nmrk_RelatedPartyTransactionMaximumAmountPerLoan" abstract="false" name="RelatedPartyTransactionMaximumAmountPerLoan" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="nmrk_MortgageServicingRightsLineItems" abstract="true" name="MortgageServicingRightsLineItems" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="nmrk_ExchangeablePreferredLimitedPartnershipUnitsIssued" abstract="false" name="ExchangeablePreferredLimitedPartnershipUnitsIssued" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="nmrk_BGCPartnersIncMember" abstract="true" name="BGCPartnersIncMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="nmrk_NonCashTreasuryStockRepurchase" abstract="false" name="NonCashTreasuryStockRepurchase" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="nmrk_LineOfCreditFacilityNumberOfSharesPledged" abstract="false" name="LineOfCreditFacilityNumberOfSharesPledged" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="xbrli:sharesItemType"/>
+  <xs:element id="nmrk_IncomeTaxReconciliationOtherPermanentDifferences" abstract="false" name="IncomeTaxReconciliationOtherPermanentDifferences" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="nmrk_CashPaidDuringPeriodForAbstract" abstract="true" name="CashPaidDuringPeriodForAbstract" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+</xs:schema>

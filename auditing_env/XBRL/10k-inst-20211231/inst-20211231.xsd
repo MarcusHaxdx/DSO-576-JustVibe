@@ -1,0 +1,788 @@
+<?xml version="1.0" encoding="US-ASCII"?>
+<!-- DFIN New ActiveDisclosure (SM) XBRL Schema Document - http://www.dfinsolutions.com/ -->
+<!-- Creation Date :2022-02-22T19:46:48.1410+00:00 -->
+<!-- Copyright (c) 2022 Donnelly Financial Solutions, Inc. All Rights Reserved. -->
+<xsd:schema targetNamespace="http://instructure.com/20211231" attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:country="http://xbrl.sec.gov/country/2021" xmlns:dtr-types="http://www.xbrl.org/dtr/type/2020-01-21" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:dei="http://xbrl.sec.gov/dei/2021q4" xmlns:xbrldt="http://xbrl.org/2005/xbrldt" xmlns:xbrli="http://www.xbrl.org/2003/instance" xmlns:us-types="http://fasb.org/us-types/2021-01-31" xmlns:enum2="http://xbrl.org/2020/extensible-enumerations-2.0" xmlns:srt="http://fasb.org/srt/2021-01-31" xmlns:inst="http://instructure.com/20211231" xmlns:us-gaap="http://fasb.org/us-gaap/2021-01-31" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <xsd:import schemaLocation="http://www.xbrl.org/2003/xbrl-instance-2003-12-31.xsd" namespace="http://www.xbrl.org/2003/instance"/>
+  <xsd:import schemaLocation="http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd" namespace="http://www.xbrl.org/2003/linkbase"/>
+  <xsd:import schemaLocation="http://www.xbrl.org/2005/xbrldt-2005.xsd" namespace="http://xbrl.org/2005/xbrldt"/>
+  <xsd:import schemaLocation="https://xbrl.sec.gov/country/2021/country-2021.xsd" namespace="http://xbrl.sec.gov/country/2021"/>
+  <xsd:import schemaLocation="https://xbrl.fasb.org/srt/2021/elts/srt-2021-01-31.xsd" namespace="http://fasb.org/srt/2021-01-31"/>
+  <xsd:import schemaLocation="https://xbrl.fasb.org/us-gaap/2021/elts/us-gaap-2021-01-31.xsd" namespace="http://fasb.org/us-gaap/2021-01-31"/>
+  <xsd:import schemaLocation="https://xbrl.sec.gov/dei/2021q4/dei-2021q4.xsd" namespace="http://xbrl.sec.gov/dei/2021q4"/>
+  <xsd:import schemaLocation="https://xbrl.fasb.org/us-gaap/2021/elts/us-types-2021-01-31.xsd" namespace="http://fasb.org/us-types/2021-01-31"/>
+  <xsd:import schemaLocation="https://www.xbrl.org/dtr/type/2020-01-21/types.xsd" namespace="http://www.xbrl.org/dtr/type/2020-01-21"/>
+  <xsd:annotation>
+    <xsd:appinfo>
+      <link:linkbaseRef xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="inst-20211231_lab.xml" xlink:role="http://www.xbrl.org/2003/role/labelLinkbaseRef" xlink:title="Labels link" xlink:type="simple"/>
+      <link:linkbaseRef xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="inst-20211231_pre.xml" xlink:role="http://www.xbrl.org/2003/role/presentationLinkbaseRef" xlink:title="Presentation link" xlink:type="simple"/>
+      <link:linkbaseRef xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="inst-20211231_def.xml" xlink:role="http://www.xbrl.org/2003/role/definitionLinkbaseRef" xlink:title="Definition link" xlink:type="simple"/>
+      <link:linkbaseRef xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="inst-20211231_cal.xml" xlink:role="http://www.xbrl.org/2003/role/calculationLinkbaseRef" xlink:title="Calculation link" xlink:type="simple"/>
+      <link:roleType roleURI="http://instructure.com/20211231/taxonomy/role/Role_DocumentDocumentAndEntityInformation" id="Role_DocumentDocumentAndEntityInformation">
+        <link:definition>100000 - Document - Document and Entity Information</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://instructure.com/20211231/taxonomy/role/Role_StatementConsolidatedBalanceSheets" id="Role_StatementConsolidatedBalanceSheets">
+        <link:definition>100010 - Statement - Consolidated Balance Sheets</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://instructure.com/20211231/taxonomy/role/Role_StatementConsolidatedBalanceSheetsParenthetical" id="Role_StatementConsolidatedBalanceSheetsParenthetical">
+        <link:definition>100020 - Statement - Consolidated Balance Sheets (Parenthetical)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://instructure.com/20211231/taxonomy/role/StatementConsolidatedStatementsOfCashFlows2" id="StatementConsolidatedStatementsOfCashFlows2">
+        <link:definition>100030 - Statement - Consolidated Statements of Cash Flows 2</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://instructure.com/20211231/taxonomy/role/StatementConsolidatedStatementsOfOperations2" id="StatementConsolidatedStatementsOfOperations2">
+        <link:definition>100040 - Statement - Consolidated Statements of Operations 2</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://instructure.com/20211231/taxonomy/role/Role_StatementConsolidatedStatementsOfOperations" id="Role_StatementConsolidatedStatementsOfOperations">
+        <link:definition>100050 - Statement - Consolidated Statements of Operations</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://instructure.com/20211231/taxonomy/role/Role_StatementConsolidatedStatementsOfComprehensiveLoss" id="Role_StatementConsolidatedStatementsOfComprehensiveLoss">
+        <link:definition>100060 - Statement - Consolidated Statements of Comprehensive Loss</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://instructure.com/20211231/taxonomy/role/DisclosureLeasesScheduleOfMaturitiesOfOperatingLeaseLiabilitiesDetails5" id="DisclosureLeasesScheduleOfMaturitiesOfOperatingLeaseLiabilitiesDetails5">
+        <link:definition>100070 - Disclosure - Leases - Schedule of Maturities of Operating Lease Liabilities (Details) 5</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://instructure.com/20211231/taxonomy/role/Role_StatementConsolidatedStatementsOfStockholdersEquity" id="Role_StatementConsolidatedStatementsOfStockholdersEquity">
+        <link:definition>100080 - Statement - Consolidated Statements of Stockholders' Equity</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://instructure.com/20211231/taxonomy/role/DisclosureLeasesScheduleOfMaturitiesOfOperatingLeaseLiabilitiesDetails6" id="DisclosureLeasesScheduleOfMaturitiesOfOperatingLeaseLiabilitiesDetails6">
+        <link:definition>100090 - Disclosure - Leases - Schedule of Maturities of Operating Lease Liabilities (Details) 6</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://instructure.com/20211231/taxonomy/role/Role_StatementConsolidatedStatementsOfStockholdersEquityParenthetical" id="Role_StatementConsolidatedStatementsOfStockholdersEquityParenthetical">
+        <link:definition>100100 - Statement - Consolidated Statements of Stockholders' Equity (Parenthetical)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://instructure.com/20211231/taxonomy/role/Role_StatementConsolidatedStatementsOfCashFlows" id="Role_StatementConsolidatedStatementsOfCashFlows">
+        <link:definition>100110 - Statement - Consolidated Statements of Cash Flows</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://instructure.com/20211231/taxonomy/role/StatementConsolidatedStatementsOfCashFlowsParenthetical" id="StatementConsolidatedStatementsOfCashFlowsParenthetical">
+        <link:definition>100120 - Statement - Consolidated Statements of Cash Flows (Parenthetical)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://instructure.com/20211231/taxonomy/role/Role_DisclosureDescriptionOfBusinessAndSummaryOfSignificantAccountingPolicies" id="Role_DisclosureDescriptionOfBusinessAndSummaryOfSignificantAccountingPolicies">
+        <link:definition>100130 - Disclosure - Description of Business and Summary of Significant Accounting Policies</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://instructure.com/20211231/taxonomy/role/Role_DisclosurePropertyAndEquipment" id="Role_DisclosurePropertyAndEquipment">
+        <link:definition>100140 - Disclosure - Property and Equipment</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://instructure.com/20211231/taxonomy/role/Role_DisclosureAcquisition" id="Role_DisclosureAcquisition">
+        <link:definition>100150 - Disclosure - Acquisition</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://instructure.com/20211231/taxonomy/role/Role_DisclosureGoodwillAndIntangibleAssets" id="Role_DisclosureGoodwillAndIntangibleAssets">
+        <link:definition>100160 - Disclosure - Goodwill and Intangible Assets</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://instructure.com/20211231/taxonomy/role/Role_DisclosureMarketableSecurities" id="Role_DisclosureMarketableSecurities">
+        <link:definition>100170 - Disclosure - Marketable Securities</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://instructure.com/20211231/taxonomy/role/Role_DisclosureCreditFacility" id="Role_DisclosureCreditFacility">
+        <link:definition>100180 - Disclosure - Credit Facility</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://instructure.com/20211231/taxonomy/role/DisclosureRevenue" id="DisclosureRevenue">
+        <link:definition>100190 - Disclosure - Revenue</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://instructure.com/20211231/taxonomy/role/Role_DisclosureDeferredCommissions" id="Role_DisclosureDeferredCommissions">
+        <link:definition>100200 - Disclosure - Deferred Commissions</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://instructure.com/20211231/taxonomy/role/DisclosureAssetsAndLiabilitiesHeldForSale" id="DisclosureAssetsAndLiabilitiesHeldForSale">
+        <link:definition>100210 - Disclosure - Assets and Liabilities Held for Sale</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://instructure.com/20211231/taxonomy/role/Role_DisclosureStockholdersEquity" id="Role_DisclosureStockholdersEquity">
+        <link:definition>100220 - Disclosure - Stockholders' Equity</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://instructure.com/20211231/taxonomy/role/Role_DisclosureStockBasedCompensation" id="Role_DisclosureStockBasedCompensation">
+        <link:definition>100230 - Disclosure - Stock-Based Compensation</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://instructure.com/20211231/taxonomy/role/Role_DisclosureIncomeTaxes" id="Role_DisclosureIncomeTaxes">
+        <link:definition>100240 - Disclosure - Income Taxes</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://instructure.com/20211231/taxonomy/role/Role_DisclosureFairValueOfFinancialInstruments" id="Role_DisclosureFairValueOfFinancialInstruments">
+        <link:definition>100250 - Disclosure - Fair Value of Financial Instruments</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://instructure.com/20211231/taxonomy/role/Role_DisclosureLeases" id="Role_DisclosureLeases">
+        <link:definition>100260 - Disclosure - Leases</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://instructure.com/20211231/taxonomy/role/Role_DisclosureCommitmentsAndContingencies" id="Role_DisclosureCommitmentsAndContingencies">
+        <link:definition>100270 - Disclosure - Commitments and Contingencies</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://instructure.com/20211231/taxonomy/role/Role_DisclosureEmployeeBenefitPlan" id="Role_DisclosureEmployeeBenefitPlan">
+        <link:definition>100280 - Disclosure - Employee Benefit Plan</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://instructure.com/20211231/taxonomy/role/Role_DisclosureRelatedPartyTransactions" id="Role_DisclosureRelatedPartyTransactions">
+        <link:definition>100290 - Disclosure - Related-Party Transactions</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://instructure.com/20211231/taxonomy/role/Role_DisclosureSelectedQuarterlyFinancialDataUnaudited" id="Role_DisclosureSelectedQuarterlyFinancialDataUnaudited">
+        <link:definition>100300 - Disclosure - Selected Quarterly Financial Data (unaudited)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://instructure.com/20211231/taxonomy/role/Role_DisclosureSubsequentEvents" id="Role_DisclosureSubsequentEvents">
+        <link:definition>100310 - Disclosure - Subsequent Events</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://instructure.com/20211231/taxonomy/role/Role_DisclosureDescriptionOfBusinessAndSummaryOfSignificantAccountingPoliciesPolicies" id="Role_DisclosureDescriptionOfBusinessAndSummaryOfSignificantAccountingPoliciesPolicies">
+        <link:definition>100320 - Disclosure - Description of Business and Summary of Significant Accounting Policies (Policies)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://instructure.com/20211231/taxonomy/role/Role_DisclosureDescriptionOfBusinessAndSummaryOfSignificantAccountingPoliciesTables" id="Role_DisclosureDescriptionOfBusinessAndSummaryOfSignificantAccountingPoliciesTables">
+        <link:definition>100330 - Disclosure - Description of Business and Summary of Significant Accounting Policies (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://instructure.com/20211231/taxonomy/role/Role_DisclosurePropertyAndEquipmentTables" id="Role_DisclosurePropertyAndEquipmentTables">
+        <link:definition>100340 - Disclosure - Property and Equipment (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://instructure.com/20211231/taxonomy/role/Role_DisclosureAcquisitionsTables" id="Role_DisclosureAcquisitionsTables">
+        <link:definition>100350 - Disclosure - Acquisitions (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://instructure.com/20211231/taxonomy/role/Role_DisclosureGoodwillAndIntangibleAssetsTables" id="Role_DisclosureGoodwillAndIntangibleAssetsTables">
+        <link:definition>100360 - Disclosure - Goodwill and Intangible Assets (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://instructure.com/20211231/taxonomy/role/Role_DisclosureMarketableSecuritiesTables" id="Role_DisclosureMarketableSecuritiesTables">
+        <link:definition>100370 - Disclosure - Marketable Securities (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://instructure.com/20211231/taxonomy/role/DisclosureCreditFacilityTables" id="DisclosureCreditFacilityTables">
+        <link:definition>100380 - Disclosure - Credit Facility (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://instructure.com/20211231/taxonomy/role/DisclosureRevenueTables" id="DisclosureRevenueTables">
+        <link:definition>100390 - Disclosure - Revenue (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://instructure.com/20211231/taxonomy/role/DisclosureAssetsAndLiabilitiesHeldForSaleTables" id="DisclosureAssetsAndLiabilitiesHeldForSaleTables">
+        <link:definition>100400 - Disclosure - Assets and Liabilities Held for Sale (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://instructure.com/20211231/taxonomy/role/Role_DisclosureStockBasedCompensationTables" id="Role_DisclosureStockBasedCompensationTables">
+        <link:definition>100410 - Disclosure - Stock-Based Compensation (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://instructure.com/20211231/taxonomy/role/Role_DisclosureIncomeTaxesTables" id="Role_DisclosureIncomeTaxesTables">
+        <link:definition>100420 - Disclosure - Income Taxes (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://instructure.com/20211231/taxonomy/role/Role_DisclosureFairValueOfFinancialInstrumentsTables" id="Role_DisclosureFairValueOfFinancialInstrumentsTables">
+        <link:definition>100430 - Disclosure - Fair Value of Financial Instruments (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://instructure.com/20211231/taxonomy/role/Role_DisclosureLeasesTables" id="Role_DisclosureLeasesTables">
+        <link:definition>100440 - Disclosure - Leases (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://instructure.com/20211231/taxonomy/role/Role_DisclosureSelectedQuarterlyFinancialDataUnauditedTables" id="Role_DisclosureSelectedQuarterlyFinancialDataUnauditedTables">
+        <link:definition>100450 - Disclosure - Selected Quarterly Financial Data (unaudited) (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://instructure.com/20211231/taxonomy/role/Role_DisclosureDescriptionOfBusinessAndSummaryOfSignificantAccountingPoliciesAdditionalInformationDetails" id="Role_DisclosureDescriptionOfBusinessAndSummaryOfSignificantAccountingPoliciesAdditionalInformationDetails">
+        <link:definition>100460 - Disclosure - Description of Business and Summary of Significant Accounting Policies - Additional Information (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://instructure.com/20211231/taxonomy/role/Role_DisclosureDescriptionOfBusinessAndSummaryOfSignificantAccountingPoliciesSummaryOfReconciliationOfDenominatorUsedInCalculationOfBasicAndDilutedNetLossPerShareDetails" id="Role_DisclosureDescriptionOfBusinessAndSummaryOfSignificantAccountingPoliciesSummaryOfReconciliationOfDenominatorUsedInCalculationOfBasicAndDilutedNetLossPerShareDetails">
+        <link:definition>100470 - Disclosure - Description of Business and Summary of Significant Accounting Policies - Summary of Reconciliation of the Denominator Used in the Calculation of Basic and Diluted Net Loss Per Share (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://instructure.com/20211231/taxonomy/role/Role_DisclosureDescriptionOfBusinessAndSummaryOfSignificantAccountingPoliciesSummaryOfSharesExcludedFromCalculationOfDilutedNetLossPerShareWithPotentialDilutiveImpactDetails" id="Role_DisclosureDescriptionOfBusinessAndSummaryOfSignificantAccountingPoliciesSummaryOfSharesExcludedFromCalculationOfDilutedNetLossPerShareWithPotentialDilutiveImpactDetails">
+        <link:definition>100480 - Disclosure - Description of Business and Summary of Significant Accounting Policies - Summary of Shares Excluded from Calculation of Diluted Net Loss Per Share with a Potential Dilutive Impact (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://instructure.com/20211231/taxonomy/role/Role_DisclosureDescriptionOfBusinessAndSummaryOfSignificantAccountingPoliciesSummaryOfAllowanceForDoubtfulAccountsDetails" id="Role_DisclosureDescriptionOfBusinessAndSummaryOfSignificantAccountingPoliciesSummaryOfAllowanceForDoubtfulAccountsDetails">
+        <link:definition>100490 - Disclosure - Description of Business and Summary of Significant Accounting Policies - Summary of Allowance for Doubtful Accounts (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://instructure.com/20211231/taxonomy/role/Role_DisclosureDescriptionOfBusinessAndSummaryOfSignificantAccountingPoliciesSummaryOfEstimatedUsefulLifeAssetsCategoryDetails" id="Role_DisclosureDescriptionOfBusinessAndSummaryOfSignificantAccountingPoliciesSummaryOfEstimatedUsefulLifeAssetsCategoryDetails">
+        <link:definition>100500 - Disclosure - Description of Business and Summary of Significant Accounting Policies - Summary of Estimated Useful Life Assets Category (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://instructure.com/20211231/taxonomy/role/Role_DisclosureDescriptionOfBusinessAndSummaryOfSignificantAccountingPoliciesSummaryOfConsolidatedStatementOfOperationsReflectingAdoptionOfTopic606Details" id="Role_DisclosureDescriptionOfBusinessAndSummaryOfSignificantAccountingPoliciesSummaryOfConsolidatedStatementOfOperationsReflectingAdoptionOfTopic606Details">
+        <link:definition>100510 - Disclosure - Description of Business and Summary of Significant Accounting Policies - Summary of Consolidated Statement of Operations Reflecting Adoption of Topic 606 (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://instructure.com/20211231/taxonomy/role/Role_DisclosureDescriptionOfBusinessAndSummaryOfSignificantAccountingPoliciesSummaryOfConsolidatedStatementOfCashFlowsReflectingAdoptionOfTopic606Details" id="Role_DisclosureDescriptionOfBusinessAndSummaryOfSignificantAccountingPoliciesSummaryOfConsolidatedStatementOfCashFlowsReflectingAdoptionOfTopic606Details">
+        <link:definition>100520 - Disclosure - Description of Business and Summary of Significant Accounting Policies - Summary of Consolidated Statement of Cash Flows Reflecting Adoption of Topic 606 (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://instructure.com/20211231/taxonomy/role/Role_DisclosurePropertyAndEquipmentScheduleOfPropertyAndEquipmentDetails" id="Role_DisclosurePropertyAndEquipmentScheduleOfPropertyAndEquipmentDetails">
+        <link:definition>100530 - Disclosure - Property and Equipment - Schedule of Property and Equipment (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://instructure.com/20211231/taxonomy/role/Role_DisclosurePropertyAndEquipmentAdditionalInformationDetails" id="Role_DisclosurePropertyAndEquipmentAdditionalInformationDetails">
+        <link:definition>100540 - Disclosure - Property and Equipment - Additional Information (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://instructure.com/20211231/taxonomy/role/Role_DisclosureAcquisitionAdditionalInformationDetails" id="Role_DisclosureAcquisitionAdditionalInformationDetails">
+        <link:definition>100550 - Disclosure - Acquisition - Additional Information (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://instructure.com/20211231/taxonomy/role/Role_DisclosureAcquisitionsSummaryOfEstimatedFairValuesOfConsiderationTransferredAssetsAcquiredAndLiabilitiesAssumedDetails" id="Role_DisclosureAcquisitionsSummaryOfEstimatedFairValuesOfConsiderationTransferredAssetsAcquiredAndLiabilitiesAssumedDetails">
+        <link:definition>100560 - Disclosure - Acquisitions - Summary of Estimated Fair Values of Consideration transferred, Assets Acquired and Liabilities Assumed (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://instructure.com/20211231/taxonomy/role/Role_DisclosureAcquisitionsSummaryOfEstimatedFairValuesOfConsiderationTransferredAssetsAcquiredAndLiabilitiesAssumedParentheticalDetails" id="Role_DisclosureAcquisitionsSummaryOfEstimatedFairValuesOfConsiderationTransferredAssetsAcquiredAndLiabilitiesAssumedParentheticalDetails">
+        <link:definition>100570 - Disclosure - Acquisitions - Summary of Estimated Fair Values of Consideration transferred, Assets Acquired and Liabilities Assumed (Parenthetical) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://instructure.com/20211231/taxonomy/role/Role_DisclosureGoodwillAndIntangibleAssetsAdditionalInformationDetails" id="Role_DisclosureGoodwillAndIntangibleAssetsAdditionalInformationDetails">
+        <link:definition>100580 - Disclosure - Goodwill and Intangible Assets - Additional Information (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://instructure.com/20211231/taxonomy/role/DisclosureGoodwillAndIntangibleAssetsScheduleOfGoodwillDetails" id="DisclosureGoodwillAndIntangibleAssetsScheduleOfGoodwillDetails">
+        <link:definition>100590 - Disclosure - Goodwill and Intangible Assets - Schedule of Goodwill (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://instructure.com/20211231/taxonomy/role/Role_DisclosureGoodwillAndIntangibleAssetsSummaryOfIntangibleAssetsDetails" id="Role_DisclosureGoodwillAndIntangibleAssetsSummaryOfIntangibleAssetsDetails">
+        <link:definition>100600 - Disclosure - Goodwill and Intangible Assets - Summary of Intangible Assets (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://instructure.com/20211231/taxonomy/role/Role_DisclosureGoodwillAndIntangibleAssetsEstimatedAmortizationExpenseDetails" id="Role_DisclosureGoodwillAndIntangibleAssetsEstimatedAmortizationExpenseDetails">
+        <link:definition>100610 - Disclosure - Goodwill and Intangible Assets - Estimated Amortization Expense (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://instructure.com/20211231/taxonomy/role/Role_DisclosureMarketableSecuritiesSummaryOfMajorSecurityTypeAssetsMeasuredAtFairValueOnRecurringBasisDetails" id="Role_DisclosureMarketableSecuritiesSummaryOfMajorSecurityTypeAssetsMeasuredAtFairValueOnRecurringBasisDetails">
+        <link:definition>100620 - Disclosure - Marketable Securities - Summary of Major Security Type Assets Measured at Fair Value on Recurring Basis (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://instructure.com/20211231/taxonomy/role/Role_DisclosureMarketableSecuritiesAdditionalInformationDetails" id="Role_DisclosureMarketableSecuritiesAdditionalInformationDetails">
+        <link:definition>100630 - Disclosure - Marketable Securities - Additional Information (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://instructure.com/20211231/taxonomy/role/Role_DisclosureMarketableSecuritiesScheduleOfEstimatedFairValueOfInvestmentsByContractualMaturityDetails" id="Role_DisclosureMarketableSecuritiesScheduleOfEstimatedFairValueOfInvestmentsByContractualMaturityDetails">
+        <link:definition>100640 - Disclosure - Marketable Securities - Schedule of Estimated Fair Value of Investments by Contractual Maturity (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://instructure.com/20211231/taxonomy/role/Role_DisclosureCreditFacilityAdditionalInformationDetails" id="Role_DisclosureCreditFacilityAdditionalInformationDetails">
+        <link:definition>100650 - Disclosure - Credit Facility - Additional Information (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://instructure.com/20211231/taxonomy/role/DisclosureCreditFacilityScheduleOfMaturitiesOfOutstandingDebtDetails" id="DisclosureCreditFacilityScheduleOfMaturitiesOfOutstandingDebtDetails">
+        <link:definition>100660 - Disclosure - Credit Facility - Schedule of Maturities of outstanding debt (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://instructure.com/20211231/taxonomy/role/DisclosureRevenueAdditionalInformationDetails" id="DisclosureRevenueAdditionalInformationDetails">
+        <link:definition>100670 - Disclosure - Revenue - Additional Information (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://instructure.com/20211231/taxonomy/role/DisclosureRevenueScheduleOfRevenueByGeographicRegionDetails" id="DisclosureRevenueScheduleOfRevenueByGeographicRegionDetails">
+        <link:definition>100680 - Disclosure - Revenue - Schedule of Revenue by Geographic Region (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://instructure.com/20211231/taxonomy/role/DisclosureRevenueAdditionalInformationDetails1" id="DisclosureRevenueAdditionalInformationDetails1">
+        <link:definition>100690 - Disclosure - Revenue - Additional Information (Details1)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://instructure.com/20211231/taxonomy/role/Role_DisclosureDeferredCommissionsAdditionalInformationDetails" id="Role_DisclosureDeferredCommissionsAdditionalInformationDetails">
+        <link:definition>100700 - Disclosure - Deferred Commissions - Additional Information (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://instructure.com/20211231/taxonomy/role/DisclosureAssetsAndLiabilitiesHeldForSaleAdditionalInformationDetails" id="DisclosureAssetsAndLiabilitiesHeldForSaleAdditionalInformationDetails">
+        <link:definition>100710 - Disclosure - Assets and Liabilities Held for Sale (Additional Information) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://instructure.com/20211231/taxonomy/role/DisclosureAssetsAndLiabilitiesHeldForSaleSummaryOfAssetsAndLiabilitiesHeldForSaleDetails" id="DisclosureAssetsAndLiabilitiesHeldForSaleSummaryOfAssetsAndLiabilitiesHeldForSaleDetails">
+        <link:definition>100720 - Disclosure - Assets and Liabilities Held for Sale - Summary of Assets And Liabilities Held for Sale (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://instructure.com/20211231/taxonomy/role/Role_DisclosureStockholdersEquityAdditionalInformationDetails" id="Role_DisclosureStockholdersEquityAdditionalInformationDetails">
+        <link:definition>100730 - Disclosure - Stockholders' Equity - Additional Information (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://instructure.com/20211231/taxonomy/role/Role_DisclosureStockBasedCompensationAdditionalInformationDetails" id="Role_DisclosureStockBasedCompensationAdditionalInformationDetails">
+        <link:definition>100740 - Disclosure - Stock-Based Compensation - Additional Information (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://instructure.com/20211231/taxonomy/role/Role_DisclosureStockBasedCompensationSummaryOfStockBasedCompensationExpenseByAwardTypeDetails" id="Role_DisclosureStockBasedCompensationSummaryOfStockBasedCompensationExpenseByAwardTypeDetails">
+        <link:definition>100750 - Disclosure - Stock-Based Compensation - Summary of Stock-Based Compensation Expense by Award Type (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://instructure.com/20211231/taxonomy/role/Role_DisclosureStockBasedCompensationSummaryOfAssumptionsRelatingToStockOptionsAndESPPPurchaseRightsDetails" id="Role_DisclosureStockBasedCompensationSummaryOfAssumptionsRelatingToStockOptionsAndESPPPurchaseRightsDetails">
+        <link:definition>100760 - Disclosure - Stock-Based Compensation - Summary of Assumptions Relating to Stock Options and ESPP Purchase Rights (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://instructure.com/20211231/taxonomy/role/Role_DisclosureStockBasedCompensationSummaryOfStockBasedCompensationExpenseRecordedInConsolidatedStatementOfOperationsDetails" id="Role_DisclosureStockBasedCompensationSummaryOfStockBasedCompensationExpenseRecordedInConsolidatedStatementOfOperationsDetails">
+        <link:definition>100770 - Disclosure - Stock-Based Compensation - Summary of Stock-Based Compensation Expense Recorded in Consolidated Statement of Operations (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://instructure.com/20211231/taxonomy/role/DisclosureStockbasedCompensationSummaryOfActivityUnderStockPlanDetails" id="DisclosureStockbasedCompensationSummaryOfActivityUnderStockPlanDetails">
+        <link:definition>100780 - Disclosure - Stock-Based Compensation - Summary of Activity Under Stock Plan (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://instructure.com/20211231/taxonomy/role/Role_DisclosureStockBasedCompensationSummaryOfStockOptionActivityDetails" id="Role_DisclosureStockBasedCompensationSummaryOfStockOptionActivityDetails">
+        <link:definition>100790 - Disclosure - Stock-Based Compensation - Summary of Stock Option Activity (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://instructure.com/20211231/taxonomy/role/Role_DisclosureStockBasedCompensationSummaryOfActivityOfUnvestedStockOptionsDetails" id="Role_DisclosureStockBasedCompensationSummaryOfActivityOfUnvestedStockOptionsDetails">
+        <link:definition>100800 - Disclosure - Stock-Based Compensation - Summary of Activity of Unvested Stock Options (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://instructure.com/20211231/taxonomy/role/Role_DisclosureStockBasedCompensationSummaryOfRestrictedStockUnitsActivityDetails" id="Role_DisclosureStockBasedCompensationSummaryOfRestrictedStockUnitsActivityDetails">
+        <link:definition>100810 - Disclosure - Stock-Based Compensation - Summary of Restricted Stock Units Activity (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://instructure.com/20211231/taxonomy/role/Role_DisclosureIncomeTaxesScheduleOfLossBeforeProvisionForIncomeTaxesDetails" id="Role_DisclosureIncomeTaxesScheduleOfLossBeforeProvisionForIncomeTaxesDetails">
+        <link:definition>100820 - Disclosure - Income Taxes - Schedule of Loss Before Provision for Income Taxes (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://instructure.com/20211231/taxonomy/role/Role_DisclosureIncomeTaxesComponentsOfProvisionBenefitForIncomeTaxesDetails" id="Role_DisclosureIncomeTaxesComponentsOfProvisionBenefitForIncomeTaxesDetails">
+        <link:definition>100830 - Disclosure - Income Taxes - Components of Provision (Benefit) for Income Taxes (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://instructure.com/20211231/taxonomy/role/Role_DisclosureIncomeTaxesAdditionalInformationDetails" id="Role_DisclosureIncomeTaxesAdditionalInformationDetails">
+        <link:definition>100840 - Disclosure - Income Taxes - Additional Information (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://instructure.com/20211231/taxonomy/role/Role_DisclosureIncomeTaxesReconciliationOfIncomeTaxesComputedAtFederalStatutoryRateAndProvisionForIncomeTaxesDetails" id="Role_DisclosureIncomeTaxesReconciliationOfIncomeTaxesComputedAtFederalStatutoryRateAndProvisionForIncomeTaxesDetails">
+        <link:definition>100850 - Disclosure - Income Taxes - Reconciliation of Income Taxes Computed at Federal Statutory Rate and Provision for Income Taxes (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://instructure.com/20211231/taxonomy/role/Role_DisclosureIncomeTaxesSignificantComponentsOfDeferredTaxAssetsAndLiabilitiesDetails" id="Role_DisclosureIncomeTaxesSignificantComponentsOfDeferredTaxAssetsAndLiabilitiesDetails">
+        <link:definition>100860 - Disclosure - Income Taxes - Significant Components of Deferred Tax Assets and Liabilities (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://instructure.com/20211231/taxonomy/role/Role_DisclosureIncomeTaxesSummaryOfActivityRelatedToUnrecognizedTaxBenefitsDetails" id="Role_DisclosureIncomeTaxesSummaryOfActivityRelatedToUnrecognizedTaxBenefitsDetails">
+        <link:definition>100870 - Disclosure - Income Taxes - Summary of Activity Related to Unrecognized Tax Benefits (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://instructure.com/20211231/taxonomy/role/Role_DisclosureFairValueOfFinancialInstrumentsAdditionalInformationDetails" id="Role_DisclosureFairValueOfFinancialInstrumentsAdditionalInformationDetails">
+        <link:definition>100880 - Disclosure - Fair Value of Financial Instruments - Additional Information (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://instructure.com/20211231/taxonomy/role/Role_DisclosureFairValueOfFinancialInstrumentsSummaryOfAssetsAndLiabilitiesMeasuredAtFairValueOnRecurringBasisDetails" id="Role_DisclosureFairValueOfFinancialInstrumentsSummaryOfAssetsAndLiabilitiesMeasuredAtFairValueOnRecurringBasisDetails">
+        <link:definition>100890 - Disclosure - Fair Value of Financial Instruments - Summary of Assets and Liabilities Measured at Fair Value on Recurring Basis (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://instructure.com/20211231/taxonomy/role/Role_DisclosureFairValueOfFinancialInstrumentsSummaryOfChangesInFairValueAdjustmentsForLiabilitiesDetails" id="Role_DisclosureFairValueOfFinancialInstrumentsSummaryOfChangesInFairValueAdjustmentsForLiabilitiesDetails">
+        <link:definition>100900 - Disclosure - Fair Value of Financial Instruments - Summary of Changes in Fair Value Adjustments for Liabilities (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://instructure.com/20211231/taxonomy/role/Role_DisclosureLeasesAdditionalInformationDetails" id="Role_DisclosureLeasesAdditionalInformationDetails">
+        <link:definition>100910 - Disclosure - Leases - Additional Information (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://instructure.com/20211231/taxonomy/role/Role_DisclosureLeasesScheduleOfComponentsOfOperatingLeaseExpenseDetails" id="Role_DisclosureLeasesScheduleOfComponentsOfOperatingLeaseExpenseDetails">
+        <link:definition>100920 - Disclosure - Leases - Schedule of Components of Operating Lease Expense (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://instructure.com/20211231/taxonomy/role/DisclosureLeasesSummaryOfMeasurementOfOperatingLeaseLiabilitiesAdditionalInformationDetails" id="DisclosureLeasesSummaryOfMeasurementOfOperatingLeaseLiabilitiesAdditionalInformationDetails">
+        <link:definition>100930 - Disclosure - Leases - Summary of Measurement of Operating Lease Liabilities - Additional Information (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://instructure.com/20211231/taxonomy/role/Role_DisclosureLeasesScheduleOfMaturitiesOfOperatingLeaseLiabilitiesDetails" id="Role_DisclosureLeasesScheduleOfMaturitiesOfOperatingLeaseLiabilitiesDetails">
+        <link:definition>100940 - Disclosure - Leases - Schedule of Maturities of Operating Lease Liabilities (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://instructure.com/20211231/taxonomy/role/DisclosureLeasesSummaryOfWeightedAverageRemainingLeaseTermAdditionalInformationDetails" id="DisclosureLeasesSummaryOfWeightedAverageRemainingLeaseTermAdditionalInformationDetails">
+        <link:definition>100950 - Disclosure - Leases - Summary of Weighted Average Remaining Lease Term - Additional Information (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://instructure.com/20211231/taxonomy/role/Role_DisclosureCommitmentsAndContingenciesAdditionalInformationDetails" id="Role_DisclosureCommitmentsAndContingenciesAdditionalInformationDetails">
+        <link:definition>100960 - Disclosure - Commitments and Contingencies - Additional Information (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://instructure.com/20211231/taxonomy/role/Role_DisclosureEmployeeBenefitPlanAdditionalInformationDetails" id="Role_DisclosureEmployeeBenefitPlanAdditionalInformationDetails">
+        <link:definition>100970 - Disclosure - Employee Benefit Plan - Additional Information (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://instructure.com/20211231/taxonomy/role/Role_DisclosureRelatedPartyTransactionsAdditionalInformationDetails" id="Role_DisclosureRelatedPartyTransactionsAdditionalInformationDetails">
+        <link:definition>100980 - Disclosure - Related-Party Transactions - Additional Information (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://instructure.com/20211231/taxonomy/role/Role_DisclosureSelectedQuarterlyFinancialDataUnauditedSummaryOfSelectedUnauditedQuarterlyConsolidatedStatementsOfOperationsDataDetails" id="Role_DisclosureSelectedQuarterlyFinancialDataUnauditedSummaryOfSelectedUnauditedQuarterlyConsolidatedStatementsOfOperationsDataDetails">
+        <link:definition>100990 - Disclosure - Selected Quarterly Financial Data (unaudited) - Summary of Selected Unaudited Quarterly Consolidated Statements of Operations Data (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://instructure.com/20211231/taxonomy/role/Role_DisclosureSubsequentEventsAdditionalInformationDetails" id="Role_DisclosureSubsequentEventsAdditionalInformationDetails">
+        <link:definition>101000 - Disclosure - Subsequent Events - Additional Information (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+    </xsd:appinfo>
+  </xsd:annotation>
+  <xsd:element id="inst_WeightedAverageNumberOfShareOutstandingBasicAndDilutedAbstract" name="WeightedAverageNumberOfShareOutstandingBasicAndDilutedAbstract" type="xbrli:stringItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="inst_AccruedEstimateContingentLiabilityRelatedToAcquisition" name="AccruedEstimateContingentLiabilityRelatedToAcquisition" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="instant" nillable="true" abstract="false" xbrli:balance="credit"/>
+  <xsd:element id="inst_AccumulatedLossesEvaluationPeriod" name="AccumulatedLossesEvaluationPeriod" type="xbrli:durationItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false"/>
+  <xsd:element id="inst_AdditionalDebtDiscountCosts" name="AdditionalDebtDiscountCosts" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="instant" nillable="true" abstract="false" xbrli:balance="debit"/>
+  <xsd:element id="inst_AdjustedAssetsHeldForSale" name="AdjustedAssetsHeldForSale" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="instant" nillable="true" abstract="false" xbrli:balance="debit"/>
+  <xsd:element id="inst_AllowanceForDoubtfulAccountsReceivableWriteOffsNetOfRecoveries" name="AllowanceForDoubtfulAccountsReceivableWriteOffsNetOfRecoveries" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false" xbrli:balance="debit"/>
+  <xsd:element id="inst_BusinessCombinationConsiderationFairValueOfAssumedPortfoliumAwardsAttributableToPreCombinationServices" name="BusinessCombinationConsiderationFairValueOfAssumedPortfoliumAwardsAttributableToPreCombinationServices" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false" xbrli:balance="credit"/>
+  <xsd:element id="inst_BusinessCombinationProvisionalInformationAdjustmentDeferredTaxLiabilities" name="BusinessCombinationProvisionalInformationAdjustmentDeferredTaxLiabilities" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false" xbrli:balance="credit"/>
+  <xsd:element id="inst_BusinessCombinationRecognizedIdentifiableAssetsAcquiredAndLiabilitiesAssumedCurrentLiabilitiesAccountsPayableAndAccruedLiabilities" name="BusinessCombinationRecognizedIdentifiableAssetsAcquiredAndLiabilitiesAssumedCurrentLiabilitiesAccountsPayableAndAccruedLiabilities" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="instant" nillable="true" abstract="false" xbrli:balance="credit"/>
+  <xsd:element id="inst_BusinessCombinationRecognizedIdentifiableAssetsAcquiredAndLiabilitiesAssumedDeposit" name="BusinessCombinationRecognizedIdentifiableAssetsAcquiredAndLiabilitiesAssumedDeposit" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="instant" nillable="true" abstract="false" xbrli:balance="debit"/>
+  <xsd:element id="inst_BusinessCombinationRecognizedIdentifiableAssetsAcquiredAndLiabilitiesAssumedOtherAssets" name="BusinessCombinationRecognizedIdentifiableAssetsAcquiredAndLiabilitiesAssumedOtherAssets" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="instant" nillable="true" abstract="false" xbrli:balance="debit"/>
+  <xsd:element id="inst_BusinessCombinationRecognizedIdentifiableAssetsAcquiredAndLiabilitiesAssumedRightOfUseAssets" name="BusinessCombinationRecognizedIdentifiableAssetsAcquiredAndLiabilitiesAssumedRightOfUseAssets" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="instant" nillable="true" abstract="false" xbrli:balance="debit"/>
+  <xsd:element id="inst_BusinessCombinationReverseTerminationFee" name="BusinessCombinationReverseTerminationFee" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="instant" nillable="true" abstract="false" xbrli:balance="credit"/>
+  <xsd:element id="inst_CancellationOfPredecessorEquity" name="CancellationOfPredecessorEquity" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false" xbrli:balance="credit"/>
+  <xsd:element id="inst_CancellationOfPredecessorEquityShares" name="CancellationOfPredecessorEquityShares" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false"/>
+  <xsd:element id="inst_CapitalizedContractCostsAmortizationPeriod" name="CapitalizedContractCostsAmortizationPeriod" type="xbrli:durationItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false"/>
+  <xsd:element id="inst_CashInvestmentForCommonStockIssued" name="CashInvestmentForCommonStockIssued" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false" xbrli:balance="debit"/>
+  <xsd:element id="inst_ClassOfWarrantsOrRightsExercised" name="ClassOfWarrantsOrRightsExercised" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false"/>
+  <xsd:element id="inst_ConsiderationNotYetPaidInConnectionWithAcquisition" name="ConsiderationNotYetPaidInConnectionWithAcquisition" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false" xbrli:balance="debit"/>
+  <xsd:element id="inst_DebtDiscountCosts" name="DebtDiscountCosts" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="instant" nillable="true" abstract="false" xbrli:balance="debit"/>
+  <xsd:element id="inst_DeferredCommissionsCurrent" name="DeferredCommissionsCurrent" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="instant" nillable="true" abstract="false" xbrli:balance="debit"/>
+  <xsd:element id="inst_DeferredCommissionsCurrentAndNoncurrent" name="DeferredCommissionsCurrentAndNoncurrent" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="instant" nillable="true" abstract="false" xbrli:balance="debit"/>
+  <xsd:element id="inst_DeferredCommissionsImpairmentCharges" name="DeferredCommissionsImpairmentCharges" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false"/>
+  <xsd:element id="inst_DeferredCommissionsNoncurrent" name="DeferredCommissionsNoncurrent" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="instant" nillable="true" abstract="false" xbrli:balance="debit"/>
+  <xsd:element id="inst_DeferredCostsAmortizationPeriod" name="DeferredCostsAmortizationPeriod" type="xbrli:durationItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false"/>
+  <xsd:element id="inst_DeferredTaxAssetsDepreciationAndAmortization" name="DeferredTaxAssetsDepreciationAndAmortization" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="instant" nillable="true" abstract="false" xbrli:balance="debit"/>
+  <xsd:element id="inst_DeferredTaxAssetsLeaseLiability" name="DeferredTaxAssetsLeaseLiability" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="instant" nillable="true" abstract="false" xbrli:balance="debit"/>
+  <xsd:element id="inst_DeferredTaxLiabilitiesDeferredCommissions" name="DeferredTaxLiabilitiesDeferredCommissions" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="instant" nillable="true" abstract="false" xbrli:balance="credit"/>
+  <xsd:element id="inst_DeferredTaxLiabilitiesRightOfUseAsset" name="DeferredTaxLiabilitiesRightOfUseAsset" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="instant" nillable="true" abstract="false" xbrli:balance="credit"/>
+  <xsd:element id="inst_DefinedContributionPlanCliffVestPeriod" name="DefinedContributionPlanCliffVestPeriod" type="xbrli:durationItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false"/>
+  <xsd:element id="inst_DefinedContributionPlanVestingPeriod" name="DefinedContributionPlanVestingPeriod" type="xbrli:durationItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false"/>
+  <xsd:element id="inst_DisposalGroupIncludingDiscontinuedOperationDeferredCommissionsCurrent" name="DisposalGroupIncludingDiscontinuedOperationDeferredCommissionsCurrent" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="instant" nillable="true" abstract="false" xbrli:balance="debit"/>
+  <xsd:element id="inst_DisposalGroupIncludingDiscontinuedOperationDeferredCommissionsNetOfCurrentPortion" name="DisposalGroupIncludingDiscontinuedOperationDeferredCommissionsNetOfCurrentPortion" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="instant" nillable="true" abstract="false" xbrli:balance="debit"/>
+  <xsd:element id="inst_DisposalGroupIncludingDiscontinuedOperationSalesPrice" name="DisposalGroupIncludingDiscontinuedOperationSalesPrice" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false" xbrli:balance="credit"/>
+  <xsd:element id="inst_DistributionToStockholders" name="DistributionToStockholders" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false" xbrli:balance="debit"/>
+  <xsd:element id="inst_EmployeeServiceShareBasedCompensationNonvestedAwardsCompensationCostNotYetRecognizedDateForRecognition" name="EmployeeServiceShareBasedCompensationNonvestedAwardsCompensationCostNotYetRecognizedDateForRecognition" type="xbrli:dateItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false"/>
+  <xsd:element id="inst_EmployeeStockPurchasePlanMaximumOfferingPeriod" name="EmployeeStockPurchasePlanMaximumOfferingPeriod" type="xbrli:durationItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false"/>
+  <xsd:element id="inst_EntityIncorporationMonthAndYear" name="EntityIncorporationMonthAndYear" type="xbrli:gYearMonthItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false"/>
+  <xsd:element id="inst_EstimatedFairValueLessCostsToSell" name="EstimatedFairValueLessCostsToSell" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="instant" nillable="true" abstract="false" xbrli:balance="debit"/>
+  <xsd:element id="inst_FairValueAdjustmentOfMarkToMarketLiabilities" name="FairValueAdjustmentOfMarkToMarketLiabilities" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false" xbrli:balance="debit"/>
+  <xsd:element id="inst_FairValueMeasurementWithUnobservableInputsReconciliationRecurringBasisLiabilityChangeInFairValueOfContingentLiability" name="FairValueMeasurementWithUnobservableInputsReconciliationRecurringBasisLiabilityChangeInFairValueOfContingentLiability" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false" xbrli:balance="credit"/>
+  <xsd:element id="inst_FairValueMeasurementWithUnobservableInputsReconciliationRecurringBasisLiabilityInitialEstimateOfFairValueOfContingentLiability" name="FairValueMeasurementWithUnobservableInputsReconciliationRecurringBasisLiabilityInitialEstimateOfFairValueOfContingentLiability" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false" xbrli:balance="credit"/>
+  <xsd:element id="inst_FairValueOfWarrantsRecordedAsDeferredFinancingCost" name="FairValueOfWarrantsRecordedAsDeferredFinancingCost" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false" xbrli:balance="debit"/>
+  <xsd:element id="inst_GrossInterestIncomeOnSecurities" name="GrossInterestIncomeOnSecurities" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false"/>
+  <xsd:element id="inst_HoldbackAmount" name="HoldbackAmount" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false" xbrli:balance="credit"/>
+  <xsd:element id="inst_ImpairmentOfAssetsToBeDisposedOf" name="ImpairmentOfAssetsToBeDisposedOf" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="instant" nillable="true" abstract="false" xbrli:balance="debit"/>
+  <xsd:element id="inst_ImpairmentOfHeldForSaleGoodwillAndAssets" name="ImpairmentOfHeldForSaleGoodwillAndAssets" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="instant" nillable="true" abstract="false" xbrli:balance="debit"/>
+  <xsd:element id="inst_ImpairmentOnHeldForSaleGoodwill" name="ImpairmentOnHeldForSaleGoodwill" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false" xbrli:balance="debit"/>
+  <xsd:element id="inst_IncomeTaxReconciliationChangeInStockWarrantsLiability" name="IncomeTaxReconciliationChangeInStockWarrantsLiability" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false" xbrli:balance="debit"/>
+  <xsd:element id="inst_IncreaseDecreaseInDeferredCommissions" name="IncreaseDecreaseInDeferredCommissions" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false" xbrli:balance="credit"/>
+  <xsd:element id="inst_IncreaseDecreaseInDeferredRent" name="IncreaseDecreaseInDeferredRent" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false" xbrli:balance="credit"/>
+  <xsd:element id="inst_IncreaseDecreaseInRightOfUseAssetForOperatingLease" name="IncreaseDecreaseInRightOfUseAssetForOperatingLease" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false" xbrli:balance="credit"/>
+  <xsd:element id="inst_InitialCashBaseSalary" name="InitialCashBaseSalary" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false" xbrli:balance="debit"/>
+  <xsd:element id="inst_LesseeOperatingSubLeaseRemainingTerm" name="LesseeOperatingSubLeaseRemainingTerm" type="xbrli:durationItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false"/>
+  <xsd:element id="inst_LineOfCreditFacilityMaximumBorrowingCapacityBasedOnBorrowingBaseCalculation" name="LineOfCreditFacilityMaximumBorrowingCapacityBasedOnBorrowingBaseCalculation" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="instant" nillable="true" abstract="false" xbrli:balance="credit"/>
+  <xsd:element id="inst_LineOfCreditPercentageOfOutstandingAmount" name="LineOfCreditPercentageOfOutstandingAmount" type="dtr-types:percentItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false"/>
+  <xsd:element id="inst_LongTermIncentiveAwards" name="LongTermIncentiveAwards" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false" xbrli:balance="debit"/>
+  <xsd:element id="inst_MinimumAvailabilityTrainingPeriod" name="MinimumAvailabilityTrainingPeriod" type="xbrli:durationItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false"/>
+  <xsd:element id="inst_NetAssetsOfDisposalGroupIncludingDiscontinuedOperation" name="NetAssetsOfDisposalGroupIncludingDiscontinuedOperation" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="instant" nillable="true" abstract="false" xbrli:balance="debit"/>
+  <xsd:element id="inst_NumberOfCommonStockVotingRights" name="NumberOfCommonStockVotingRights" type="xbrli:integerItemType" substitutionGroup="xbrli:item" xbrli:periodType="instant" nillable="true" abstract="false"/>
+  <xsd:element id="inst_NumberOfCustomerBases" name="NumberOfCustomerBases" type="xbrli:integerItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false"/>
+  <xsd:element id="inst_NumberOfCustomersGreaterThanTenPercentageOfAccountsReceivable" name="NumberOfCustomersGreaterThanTenPercentageOfAccountsReceivable" type="xbrli:integerItemType" substitutionGroup="xbrli:item" xbrli:periodType="instant" nillable="true" abstract="false"/>
+  <xsd:element id="inst_NumberOfCustomersGreaterThanTenPercentageOfTotalRevenue" name="NumberOfCustomersGreaterThanTenPercentageOfTotalRevenue" type="xbrli:integerItemType" substitutionGroup="xbrli:item" xbrli:periodType="instant" nillable="true" abstract="false"/>
+  <xsd:element id="inst_NumberOfLocationsSubleased" name="NumberOfLocationsSubleased" type="xbrli:integerItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false"/>
+  <xsd:element id="inst_OperatingLeaseLiabilityNet" name="OperatingLeaseLiabilityNet" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="instant" nillable="true" abstract="false" xbrli:balance="credit"/>
+  <xsd:element id="inst_OperatingLeasesSubleaseExpiryDate" name="OperatingLeasesSubleaseExpiryDate" type="xbrli:gYearItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false"/>
+  <xsd:element id="inst_OperatingLossCarryForwardsExpirationYear" name="OperatingLossCarryForwardsExpirationYear" type="xbrli:gYearItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false"/>
+  <xsd:element id="inst_PercentageAnnualReturnOnRemainingUnreturnedCapitalContributions" name="PercentageAnnualReturnOnRemainingUnreturnedCapitalContributions" type="dtr-types:percentItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false"/>
+  <xsd:element id="inst_PercentageOfRevenueRecognizedIncludedInDeferredRevenue" name="PercentageOfRevenueRecognizedIncludedInDeferredRevenue" type="dtr-types:percentItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false"/>
+  <xsd:element id="inst_PercentageOfSecurityOfCapitalStockOfOurForeignSubsidiaries" name="PercentageOfSecurityOfCapitalStockOfOurForeignSubsidiaries" type="dtr-types:percentItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false"/>
+  <xsd:element id="inst_PrepaymentPremiumInConjunctionWithPrincipalPayment" name="PrepaymentPremiumInConjunctionWithPrincipalPayment" type="dtr-types:percentItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false"/>
+  <xsd:element id="inst_ProceedsFromCommonSockOfferingsNetOfOfferingCosts" name="ProceedsFromCommonSockOfferingsNetOfOfferingCosts" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false" xbrli:balance="debit"/>
+  <xsd:element id="inst_ProceedsFromSaleOfBusiness" name="ProceedsFromSaleOfBusiness" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false" xbrli:balance="debit"/>
+  <xsd:element id="inst_PurchasePriceFuturePayment" name="PurchasePriceFuturePayment" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false" xbrli:balance="credit"/>
+  <xsd:element id="inst_ShareBasedCompensationArrangementByShareBasedPaymentAwardEquityInstrumentsOtherThanOptionsLongTermGrantDateFairValue" name="ShareBasedCompensationArrangementByShareBasedPaymentAwardEquityInstrumentsOtherThanOptionsLongTermGrantDateFairValue" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false" xbrli:balance="debit"/>
+  <xsd:element id="inst_ShareBasedCompensationArrangementByShareBasedPaymentAwardEquityInstrumentsOtherThanOptionsShortTermGrantDateFairValue" name="ShareBasedCompensationArrangementByShareBasedPaymentAwardEquityInstrumentsOtherThanOptionsShortTermGrantDateFairValue" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false" xbrli:balance="debit"/>
+  <xsd:element id="inst_ShareBasedCompensationArrangementByShareBasedPaymentAwardOptionsForfeitedOrCancelledInPeriodTotalIntrinsicValue" name="ShareBasedCompensationArrangementByShareBasedPaymentAwardOptionsForfeitedOrCancelledInPeriodTotalIntrinsicValue" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false" xbrli:balance="debit"/>
+  <xsd:element id="inst_SharebasedCompensationArrangementBySharebasedPaymentAwardOptionsNonvestedOptionsGrantedNumberOfShares" name="SharebasedCompensationArrangementBySharebasedPaymentAwardOptionsNonvestedOptionsGrantedNumberOfShares" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false"/>
+  <xsd:element id="inst_SharebasedCompensationArrangementBySharebasedPaymentAwardOptionsNonvestedOptionsGrantedWeightedAverageGrantDateFairValue" name="SharebasedCompensationArrangementBySharebasedPaymentAwardOptionsNonvestedOptionsGrantedWeightedAverageGrantDateFairValue" type="dtr-types:perShareItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false"/>
+  <xsd:element id="inst_SharebasedCompensationArrangementBySharebasedPaymentAwardOptionsNonvestedOptionsVestedNumberOfShares" name="SharebasedCompensationArrangementBySharebasedPaymentAwardOptionsNonvestedOptionsVestedNumberOfShares" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false"/>
+  <xsd:element id="inst_SharebasedCompensationArrangementBySharebasedPaymentAwardOptionsNonvestedOptionsVestedWeightedAverageGrantDateFairValue" name="SharebasedCompensationArrangementBySharebasedPaymentAwardOptionsNonvestedOptionsVestedWeightedAverageGrantDateFairValue" type="dtr-types:perShareItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false"/>
+  <xsd:element id="inst_SharesWithheldToCoverWarrantExerciseCosts" name="SharesWithheldToCoverWarrantExerciseCosts" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false"/>
+  <xsd:element id="inst_StockIssuedDuringPeriodSharesVestedRestrictedStockUnitsNet" name="StockIssuedDuringPeriodSharesVestedRestrictedStockUnitsNet" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false"/>
+  <xsd:element id="inst_StockIssuedDuringPeriodValueVestedRestrictedStockUnitsNet" name="StockIssuedDuringPeriodValueVestedRestrictedStockUnitsNet" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false" xbrli:balance="credit"/>
+  <xsd:element id="inst_StockRepurchasedAndRetiredDuringPeriodCashValuePerShare" name="StockRepurchasedAndRetiredDuringPeriodCashValuePerShare" type="dtr-types:perShareItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false"/>
+  <xsd:element id="inst_TakePrivateTransaction" name="TakePrivateTransaction" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false" xbrli:balance="credit"/>
+  <xsd:element id="inst_TakePrivateTransactionShares" name="TakePrivateTransactionShares" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false"/>
+  <xsd:element id="inst_TaxCutsAndJobsActOf2017ChangeInTaxRate" name="TaxCutsAndJobsActOf2017ChangeInTaxRate" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false" xbrli:balance="debit"/>
+  <xsd:element id="inst_TenantReimbursements1" name="TenantReimbursements1" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="instant" nillable="true" abstract="false" xbrli:balance="credit"/>
+  <xsd:element id="inst_TermLoanPrepaymentPremium" name="TermLoanPrepaymentPremium" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false" xbrli:balance="credit"/>
+  <xsd:element id="inst_UnrecognizedTaxBenefitsIncreasesDecreasesResultingFromCurrentPeriodTaxPositions" name="UnrecognizedTaxBenefitsIncreasesDecreasesResultingFromCurrentPeriodTaxPositions" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false" xbrli:balance="credit"/>
+  <xsd:element id="inst_WarrantExerciseTerm" name="WarrantExerciseTerm" type="xbrli:durationItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false"/>
+  <xsd:element id="inst_DescriptionOfBusinessAndSummaryOfSignificantAccountingPoliciesLineItems" name="DescriptionOfBusinessAndSummaryOfSignificantAccountingPoliciesLineItems" type="xbrli:stringItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="inst_IncomeTaxesLineItems" name="IncomeTaxesLineItems" type="xbrli:stringItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="inst_ABRLoanMember" name="ABRLoanMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="inst_AffiliatesOfThomaBravoMember" name="AffiliatesOfThomaBravoMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="inst_BoardCarryMember" name="BoardCarryMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="inst_CapitalizedLearningContentMember" name="CapitalizedLearningContentMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="inst_CapitalizedSoftwareDevelopmentCostsMember" name="CapitalizedSoftwareDevelopmentCostsMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="inst_CashReplacementAwardsMember" name="CashReplacementAwardsMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="inst_CerticaHoldingsLLCMember" name="CerticaHoldingsLLCMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="inst_ChiefStrategyOfficerMember" name="ChiefStrategyOfficerMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="inst_ClassAAndClassBUnitsMember" name="ClassAAndClassBUnitsMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="inst_CommonStockWarrantWithoutContingentMember" name="CommonStockWarrantWithoutContingentMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="inst_ContingentLiabilityMember" name="ContingentLiabilityMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="inst_CorporateCustomersMember" name="CorporateCustomersMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="inst_DevelopedTechnologyMember" name="DevelopedTechnologyMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="inst_EducationMember" name="EducationMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="inst_EesysoftSoftwareInternationalBVMember" name="EesysoftSoftwareInternationalBVMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="inst_ElevateDataSyncMember" name="ElevateDataSyncMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="inst_EmployeeStockPurchasePlanMember" name="EmployeeStockPurchasePlanMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="inst_EuroDollarFloorMember" name="EuroDollarFloorMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="inst_EuroDollarLoanMember" name="EuroDollarLoanMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="inst_FederalAndStateMember" name="FederalAndStateMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="inst_FederalFundMember" name="FederalFundMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="inst_FederalStateAndForeignMember" name="FederalStateAndForeignMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="inst_FirstSubleaseMember" name="FirstSubleaseMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="inst_IncentiveCarryMember" name="IncentiveCarryMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="inst_IncrementalTermLoanMember" name="IncrementalTermLoanMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="inst_InitialTermLoanMember" name="InitialTermLoanMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="inst_LeaseholdImprovementsAndOtherMember" name="LeaseholdImprovementsAndOtherMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="inst_MergerAgreementsMember" name="MergerAgreementsMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="inst_PortfoliumIncorporationMember" name="PortfoliumIncorporationMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="inst_PortfoliumTwoThousandFourteenPlanMember" name="PortfoliumTwoThousandFourteenPlanMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="inst_PracticeXYZIncMember" name="PracticeXYZIncMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="inst_ProfessionalServicesAndOtherCostOfRevenueMember" name="ProfessionalServicesAndOtherCostOfRevenueMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="inst_ProfessionalServicesAndOtherMember" name="ProfessionalServicesAndOtherMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="inst_PropertyFiveMember" name="PropertyFiveMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="inst_PropertyFourMember" name="PropertyFourMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="inst_PropertyOneMember" name="PropertyOneMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="inst_PropertyThreeMember" name="PropertyThreeMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="inst_PropertyTwoMember" name="PropertyTwoMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="inst_PurchasedSoftwareMember" name="PurchasedSoftwareMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="inst_ResearchAndDevelopmentTaxCreditCarryforwardMember" name="ResearchAndDevelopmentTaxCreditCarryforwardMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="inst_ResearchAndInvestmentTaxCreditCarryforwardMember" name="ResearchAndInvestmentTaxCreditCarryforwardMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="inst_SecondSubleaseMember" name="SecondSubleaseMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="inst_SeniorRevolverMember" name="SeniorRevolverMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="inst_SeniorTermLoanMember" name="SeniorTermLoanMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="inst_SubscriptionAndSupportCostOfRevenueMember" name="SubscriptionAndSupportCostOfRevenueMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="inst_SubscriptionAndSupportMember" name="SubscriptionAndSupportMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="inst_TakePrivateTransactionMember" name="TakePrivateTransactionMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="inst_TermLoanMember" name="TermLoanMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="inst_TopCoMember" name="TopCoMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="inst_TradeNamesAndCustomerRelationshipsMember" name="TradeNamesAndCustomerRelationshipsMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="inst_TwoThousandFifteenEmployeeStockPurchasePlanMember" name="TwoThousandFifteenEmployeeStockPurchasePlanMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="inst_TwoThousandFifteenEquityIncentivePlanMember" name="TwoThousandFifteenEquityIncentivePlanMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="inst_TwoThousandFourteenEquityIncentivePlanMember" name="TwoThousandFourteenEquityIncentivePlanMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="inst_TwoThousandTenEquityIncentivePlanMember" name="TwoThousandTenEquityIncentivePlanMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="inst_TwoThousandTwentyOneEmployeeStockPurchasePlanMember" name="TwoThousandTwentyOneEmployeeStockPurchasePlanMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="inst_TwoThousandTwentyOneOmnibusIncentivePlanMember" name="TwoThousandTwentyOneOmnibusIncentivePlanMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="inst_WarrantLiabilityAndEarnOutConsiderationMember" name="WarrantLiabilityAndEarnOutConsiderationMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="inst_RisksAndUncertaintiesPolicyTextBlock" name="RisksAndUncertaintiesPolicyTextBlock" type="dtr-types:textBlockItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false"/>
+  <xsd:element id="inst_ServiceAvailabilityWarrantyPolicyTextBlock" name="ServiceAvailabilityWarrantyPolicyTextBlock" type="dtr-types:textBlockItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false"/>
+  <xsd:element id="inst_DescriptionOfBusinessAndSummaryOfSignificantAccountingPoliciesTable" name="DescriptionOfBusinessAndSummaryOfSignificantAccountingPoliciesTable" type="xbrli:stringItemType" substitutionGroup="xbrldt:hypercubeItem" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="inst_IncomeTaxesTable" name="IncomeTaxesTable" type="xbrli:stringItemType" substitutionGroup="xbrldt:hypercubeItem" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="inst_ScheduleOfEstimatedUsefulLifeOfAssetTableTextBlock" name="ScheduleOfEstimatedUsefulLifeOfAssetTableTextBlock" type="dtr-types:textBlockItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false"/>
+  <xsd:element id="inst_ChangeInFairValueOfContingentLiabilityPolicyTextBlock" name="ChangeInFairValueOfContingentLiabilityPolicyTextBlock" type="dtr-types:textBlockItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false"/>
+  <xsd:element id="inst_DeferredCommissionsDisclosureTextBlock" name="DeferredCommissionsDisclosureTextBlock" type="dtr-types:textBlockItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false"/>
+  <xsd:element id="inst_RevenueFromExternalCustomersByGeographicAreasDisclosureTextBlock" name="RevenueFromExternalCustomersByGeographicAreasDisclosureTextBlock" type="dtr-types:textBlockItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false"/>
+</xsd:schema>

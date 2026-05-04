@@ -1,0 +1,563 @@
+<?xml version="1.0" encoding="us-ascii" standalone="yes"?>
+<!--XBRL Document Created with XBRLMaster-->
+<!--Version: 2.3.08-->
+<!--Based on XBRL 2.1-->
+<!--Date of creation: 11/15/2022-->
+<!--Software architectural design and coding: A'c Dharmapremananda Avt.-->
+<!--Copyright (c) 2022 I-NET Business Solutions, Inc. All Rights Reserved.-->
+<schema xmlns:xl="http://www.xbrl.org/2003/XLink" xmlns:ref="http://www.xbrl.org/2006/ref" xmlns:currency="http://xbrl.sec.gov/currency/2022" xmlns:us-gaap-att="http://fasb.org/us-gaap/attributes" xmlns:sic="http://xbrl.sec.gov/sic/2022" xmlns:exch="http://xbrl.sec.gov/exch/2022" xmlns:invest="http://xbrl.sec.gov/invest/2013-01-31" xmlns:negated="http://www.xbrl.org/2009/role/negated" xmlns:naics="http://xbrl.sec.gov/naics/2022" xmlns:us-types="http://fasb.org/us-types/2022" xmlns:stpr="http://xbrl.sec.gov/stpr/2022" xmlns="http://www.w3.org/2001/XMLSchema" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:xbrli="http://www.xbrl.org/2003/instance" xmlns:xbrldt="http://xbrl.org/2005/xbrldt" xmlns:xbrldi="http://xbrl.org/2006/xbrldi" xmlns:country="http://xbrl.sec.gov/country/2022" xmlns:utr="http://www.xbrl.org/2009/utr" xmlns:srt-types="http://fasb.org/srt-types/2022" xmlns:dtr-types="http://www.xbrl.org/dtr/type/2020-01-21" xmlns:srt-roles="http://fasb.org/srt-roles/2022" xmlns:dei="http://xbrl.sec.gov/dei/2022" xmlns:num="http://www.xbrl.org/dtr/type/numeric" xmlns:nonnum="http://www.xbrl.org/dtr/type/non-numeric" xmlns:srt="http://fasb.org/srt/2022" xmlns:us-gaap="http://fasb.org/us-gaap/2022" xmlns:hlco="http://thcc.com/20220930" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://thcc.com/20220930">
+  <annotation>
+    <appinfo>
+      <link:roleType roleURI="http://thcc.com/role/Cover" id="Cover">
+        <link:definition>000001 - Document - Cover</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://thcc.com/role/CondensedConsolidatedBalanceSheets" id="CondensedConsolidatedBalanceSheets">
+        <link:definition>000002 - Statement - Condensed Consolidated Balance Sheets</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://thcc.com/role/CondensedConsolidatedBalanceSheetsParenthetical" id="CondensedConsolidatedBalanceSheetsParenthetical">
+        <link:definition>000003 - Statement - Condensed Consolidated Balance Sheets (Parenthetical)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://thcc.com/role/CondensedConsolidatedStatementsOfOperationsAndComprehensiveLossUnaudited" id="CondensedConsolidatedStatementsOfOperationsAndComprehensiveLossUnaudited">
+        <link:definition>000004 - Statement - Condensed Consolidated Statements of Operations and Comprehensive Loss (Unaudited)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://thcc.com/role/CondensedConsolidatedStatementOfStockholdersEquityDeficitUnaudited" id="CondensedConsolidatedStatementOfStockholdersEquityDeficitUnaudited">
+        <link:definition>000005 - Statement - Condensed Consolidated Statement of Stockholders Equity (Deficit) (Unaudited)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://thcc.com/role/CondensedConsolidatedStatementsOfCashFlowsUnaudited" id="CondensedConsolidatedStatementsOfCashFlowsUnaudited">
+        <link:definition>000006 - Statement - Condensed Consolidated Statements of Cash Flows (Unaudited)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://thcc.com/role/DescriptionOfBusinessAndHistory" id="DescriptionOfBusinessAndHistory">
+        <link:definition>000007 - Disclosure - DESCRIPTION OF BUSINESS AND HISTORY</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://thcc.com/role/SummaryOfSignificantAccountingPolicies" id="SummaryOfSignificantAccountingPolicies">
+        <link:definition>000008 - Disclosure - SUMMARY OF SIGNIFICANT ACCOUNTING POLICIES</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://thcc.com/role/GoingConcern" id="GoingConcern">
+        <link:definition>000009 - Disclosure - GOING CONCERN</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://thcc.com/role/ACQUISITION" id="ACQUISITION">
+        <link:definition>000010 - Disclosure - ACQUISITION</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://thcc.com/role/IntangibleAssets" id="IntangibleAssets">
+        <link:definition>000011 - Disclosure - INTANGIBLE ASSETS</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://thcc.com/role/RelatedPartyTransactions" id="RelatedPartyTransactions">
+        <link:definition>000012 - Disclosure - RELATED PARTY TRANSACTIONS</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://thcc.com/role/CommitmentsAndContingencies" id="CommitmentsAndContingencies">
+        <link:definition>000013 - Disclosure - COMMITMENTS AND CONTINGENCIES</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://thcc.com/role/StockholdersEquityDeficit" id="StockholdersEquityDeficit">
+        <link:definition>000014 - Disclosure - STOCKHOLDERS EQUITY (DEFICIT)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://thcc.com/role/StockBasedCompensation" id="StockBasedCompensation">
+        <link:definition>000015 - Disclosure - STOCK BASED COMPENSATION</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://thcc.com/role/WARRANTS" id="WARRANTS">
+        <link:definition>000016 - Disclosure - WARRANTS</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://thcc.com/role/COMMITMENTS" id="COMMITMENTS">
+        <link:definition>000017 - Disclosure - COMMITMENTS</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://thcc.com/role/LoanPurchaseAndSaleAgreement" id="LoanPurchaseAndSaleAgreement">
+        <link:definition>000018 - Disclosure - LOAN PURCHASE AND SALE AGREEMENT</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://thcc.com/role/SubsequentEvents" id="SubsequentEvents">
+        <link:definition>000019 - Disclosure - SUBSEQUENT EVENTS</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://thcc.com/role/SummaryOfSignificantAccountingPoliciesPolicies" id="SummaryOfSignificantAccountingPoliciesPolicies">
+        <link:definition>000020 - Disclosure - SUMMARY OF SIGNIFICANT ACCOUNTING POLICIES (Policies)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://thcc.com/role/SummaryOfSignificantAccountingPoliciesTables" id="SummaryOfSignificantAccountingPoliciesTables">
+        <link:definition>000021 - Disclosure - SUMMARY OF SIGNIFICANT ACCOUNTING POLICIES (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://thcc.com/role/AcquisitionTables" id="AcquisitionTables">
+        <link:definition>000022 - Disclosure - ACQUISITION (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://thcc.com/role/IntangibleAssetsTables" id="IntangibleAssetsTables">
+        <link:definition>000023 - Disclosure - INTANGIBLE ASSETS (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://thcc.com/role/StockBasedCompensationTables" id="StockBasedCompensationTables">
+        <link:definition>000024 - Disclosure - STOCK BASED COMPENSATION (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://thcc.com/role/WarrantsTables" id="WarrantsTables">
+        <link:definition>000025 - Disclosure - WARRANTS (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://thcc.com/role/DescriptionOfBusinessHistoryAndSummaryOfSignificantAccountingPoliciesDetailsNarrative" id="DescriptionOfBusinessHistoryAndSummaryOfSignificantAccountingPoliciesDetailsNarrative">
+        <link:definition>000026 - Disclosure - DESCRIPTION OF BUSINESS, HISTORY AND SUMMARY OF SIGNIFICANT ACCOUNTING POLICIES (Details Narrative)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://thcc.com/role/SummaryOfSignificantAccountingPoliciesDetails" id="SummaryOfSignificantAccountingPoliciesDetails">
+        <link:definition>000027 - Disclosure - SUMMARY OF SIGNIFICANT ACCOUNTING POLICIES (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://thcc.com/role/SummaryOfSignificantAccountingPoliciesDetailsNarrative" id="SummaryOfSignificantAccountingPoliciesDetailsNarrative">
+        <link:definition>000028 - Disclosure - SUMMARY OF SIGNIFICANT ACCOUNTING POLICIES (Details Narrative)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://thcc.com/role/GoingConcernDetailsNarrative" id="GoingConcernDetailsNarrative">
+        <link:definition>000029 - Disclosure - GOING CONCERN (Details Narrative)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://thcc.com/role/AcquisitionDetails" id="AcquisitionDetails">
+        <link:definition>000030 - Disclosure - ACQUISITION (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://thcc.com/role/AcquisitionDetailsNarrative" id="AcquisitionDetailsNarrative">
+        <link:definition>000031 - Disclosure - ACQUISITION (Details Narrative)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://thcc.com/role/IntangibleAssetsDetails" id="IntangibleAssetsDetails">
+        <link:definition>000032 - Disclosure - INTANGIBLE ASSETS (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://thcc.com/role/IntangibleAssetsDetailsNarrative" id="IntangibleAssetsDetailsNarrative">
+        <link:definition>000033 - Disclosure - INTANGIBLE ASSETS (Details Narrative)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://thcc.com/role/RelatedPartyTransactionsDetailsNarrative" id="RelatedPartyTransactionsDetailsNarrative">
+        <link:definition>000034 - Disclosure - RELATED PARTY TRANSACTIONS (Details Narrative)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://thcc.com/role/StockholdersEquityDeficitDetailsNarrative" id="StockholdersEquityDeficitDetailsNarrative">
+        <link:definition>000035 - Disclosure - STOCKHOLDERS EQUITY (DEFICIT) (Details Narrative)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://thcc.com/role/StockBasedCompensationDetails" id="StockBasedCompensationDetails">
+        <link:definition>000036 - Disclosure - STOCK BASED COMPENSATION (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://thcc.com/role/StockBasedCompensationDetails1" id="StockBasedCompensationDetails1">
+        <link:definition>000037 - Disclosure - STOCK BASED COMPENSATION (Details 1)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://thcc.com/role/StockBasedCompensationDetails2" id="StockBasedCompensationDetails2">
+        <link:definition>000038 - Disclosure - STOCK BASED COMPENSATION (Details 2)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://thcc.com/role/StockBasedCompensationDetailsNarrative" id="StockBasedCompensationDetailsNarrative">
+        <link:definition>000039 - Disclosure - STOCK BASED COMPENSATION (Details Narrative)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://thcc.com/role/WarrantsDetails" id="WarrantsDetails">
+        <link:definition>000040 - Disclosure - WARRANTS (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://thcc.com/role/WarrantsDetails1" id="WarrantsDetails1">
+        <link:definition>000041 - Disclosure - WARRANTS (Details 1)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://thcc.com/role/WarrantsDetails2" id="WarrantsDetails2">
+        <link:definition>000042 - Disclosure - WARRANTS (Details2)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://thcc.com/role/WarrantsDetailsNarrative" id="WarrantsDetailsNarrative">
+        <link:definition>000043 - Disclosure - WARRANTS (Details Narrative)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://thcc.com/role/CommitmentsDetailsNarrative" id="CommitmentsDetailsNarrative">
+        <link:definition>000044 - Disclosure - COMMITMENTS (Details Narrative)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://thcc.com/role/LoanPurchaseAndSaleAgreementDetailsNarrative" id="LoanPurchaseAndSaleAgreementDetailsNarrative">
+        <link:definition>000045 - Disclosure - LOAN PURCHASE AND SALE AGREEMENT (Details Narrative)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://thcc.com/role/SubsequentEventsDetailsNarrative" id="SubsequentEventsDetailsNarrative">
+        <link:definition>000046 - Disclosure - SUBSEQUENT EVENTS (Details Narrative)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:linkbaseRef xlink:type="simple" xlink:href="hlco-20220930_pre.xml" xlink:role="http://www.xbrl.org/2003/role/presentationLinkbaseRef" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" />
+      <link:linkbaseRef xlink:type="simple" xlink:href="hlco-20220930_lab.xml" xlink:role="http://www.xbrl.org/2003/role/labelLinkbaseRef" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" />
+      <link:linkbaseRef xlink:type="simple" xlink:href="hlco-20220930_cal.xml" xlink:role="http://www.xbrl.org/2003/role/calculationLinkbaseRef" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" />
+      <link:linkbaseRef xlink:type="simple" xlink:href="hlco-20220930_def.xml" xlink:role="http://www.xbrl.org/2003/role/definitionLinkbaseRef" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" />
+    </appinfo>
+  </annotation>
+  <import namespace="http://www.xbrl.org/2003/instance" schemaLocation="http://www.xbrl.org/2003/xbrl-instance-2003-12-31.xsd" />
+  <import namespace="http://www.xbrl.org/2003/linkbase" schemaLocation="http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd" />
+  <import namespace="http://xbrl.org/2005/xbrldt" schemaLocation="http://www.xbrl.org/2005/xbrldt-2005.xsd" />
+  <import namespace="http://xbrl.sec.gov/country/2022" schemaLocation="https://xbrl.sec.gov/country/2022/country-2022.xsd" />
+  <import namespace="http://xbrl.sec.gov/currency/2022" schemaLocation="https://xbrl.sec.gov/currency/2022/currency-2022.xsd" />
+  <import namespace="http://xbrl.sec.gov/dei/2022" schemaLocation="https://xbrl.sec.gov/dei/2022/dei-2022.xsd" />
+  <import namespace="http://www.xbrl.org/dtr/type/non-numeric" schemaLocation="http://www.xbrl.org/dtr/type/nonNumeric-2009-12-16.xsd" />
+  <import namespace="http://www.xbrl.org/dtr/type/numeric" schemaLocation="http://www.xbrl.org/dtr/type/numeric-2009-12-16.xsd" />
+  <import namespace="http://xbrl.sec.gov/exch/2022" schemaLocation="https://xbrl.sec.gov/exch/2022/exch-2022.xsd" />
+  <import namespace="http://www.xbrl.org/2009/arcrole/fact-explanatoryFact" schemaLocation="http://www.xbrl.org/lrr/arcrole/factExplanatory-2009-12-16.xsd" />
+  <import namespace="http://www.xbrl.org/2009/role/negated" schemaLocation="http://www.xbrl.org/lrr/role/negated-2009-12-16.xsd" />
+  <import namespace="http://www.xbrl.org/2009/role/net" schemaLocation="http://www.xbrl.org/lrr/role/net-2009-12-16.xsd" />
+  <import namespace="http://xbrl.sec.gov/naics/2022" schemaLocation="https://xbrl.sec.gov/naics/2022/naics-2022.xsd" />
+  <import namespace="http://xbrl.sec.gov/sic/2022" schemaLocation="https://xbrl.sec.gov/sic/2022/sic-2022.xsd" />
+  <import namespace="http://fasb.org/srt-roles/2022" schemaLocation="https://xbrl.fasb.org/srt/2022/elts/srt-roles-2022.xsd" />
+  <import namespace="http://fasb.org/srt-types/2022" schemaLocation="https://xbrl.fasb.org/srt/2022/elts/srt-types-2022.xsd" />
+  <import namespace="http://www.xbrl.org/dtr/type/2020-01-21" schemaLocation="https://www.xbrl.org/dtr/type/2020-01-21/types.xsd" />
+  <import namespace="http://xbrl.sec.gov/stpr/2022" schemaLocation="https://xbrl.sec.gov/stpr/2022/stpr-2022.xsd" />
+  <import namespace="http://fasb.org/us-roles/2022" schemaLocation="https://xbrl.fasb.org/us-gaap/2022/elts/us-roles-2022.xsd" />
+  <import namespace="http://fasb.org/us-types/2022" schemaLocation="https://xbrl.fasb.org/us-gaap/2022/elts/us-types-2022.xsd" />
+  <import namespace="http://fasb.org/srt/2022" schemaLocation="https://xbrl.fasb.org/srt/2022/elts/srt-2022.xsd" />
+  <import namespace="http://fasb.org/us-gaap/2022" schemaLocation="https://xbrl.fasb.org/us-gaap/2022/elts/us-gaap-2022.xsd" />
+  <element id="hlco_AccountsPayablesRelatedPartiesCurrent" name="AccountsPayablesRelatedPartiesCurrent" nillable="true" xbrli:balance="credit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="hlco_PreferredStockDesignatedShares" name="PreferredStockDesignatedShares" nillable="true" xbrli:periodType="instant" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" />
+  <element id="hlco_OtherComprehensiveIncomeLossForeignCurrencyTranslationAdjustmentTaxes" name="OtherComprehensiveIncomeLossForeignCurrencyTranslationAdjustmentTaxes" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="hlco_EarningsPerShareBasicAndDiluted1" name="EarningsPerShareBasicAndDiluted1" nillable="true" xbrli:periodType="duration" type="num:perShareItemType" substitutionGroup="xbrli:item" />
+  <element id="hlco_WeightedAverageNumberOfShareOutstandingBasicAndDiluted1" name="WeightedAverageNumberOfShareOutstandingBasicAndDiluted1" nillable="true" xbrli:periodType="duration" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" />
+  <element id="hlco_IssuanceOfStockAwardsShares" name="IssuanceOfStockAwardsShares" nillable="true" xbrli:periodType="duration" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" />
+  <element id="hlco_IssuanceOfStockAwardsAmount" name="IssuanceOfStockAwardsAmount" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="hlco_StockBasedCompensationStockAwards" name="StockBasedCompensationStockAwards" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="hlco_StockBasedCompensationStockOptions" name="StockBasedCompensationStockOptions" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="hlco_WarrantsIssuedAsFinancingCost" name="WarrantsIssuedAsFinancingCost" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="hlco_OtherComprehensiveIncomeLossForeignCurrencyTranslationsAdjustmentTax" name="OtherComprehensiveIncomeLossForeignCurrencyTranslationsAdjustmentTax" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="hlco_RefundOnTrademarkRegistration" name="RefundOnTrademarkRegistration" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="hlco_WarrantsIssuedAsFinancingCosts1" name="WarrantsIssuedAsFinancingCosts1" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="hlco_CommonStockAwardsIssuedAsDeferredCompensation" name="CommonStockAwardsIssuedAsDeferredCompensation" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="hlco_StockBasedCompensationDisclosureTextBlock" name="StockBasedCompensationDisclosureTextBlock" nillable="true" xbrli:periodType="duration" type="nonnum:textBlockItemType" substitutionGroup="xbrli:item" />
+  <element id="hlco_WarrantDisclosureTextBlock" name="WarrantDisclosureTextBlock" nillable="true" xbrli:periodType="duration" type="nonnum:textBlockItemType" substitutionGroup="xbrli:item" />
+  <element id="hlco_LoanPurchaseAndSaleAgreementDisclosureTextBlock" name="LoanPurchaseAndSaleAgreementDisclosureTextBlock" nillable="true" xbrli:periodType="duration" type="nonnum:textBlockItemType" substitutionGroup="xbrli:item" />
+  <element id="hlco_SchduleOfPotentiallyDilutiveSecuritiesTableTextBlock" name="SchduleOfPotentiallyDilutiveSecuritiesTableTextBlock" nillable="true" xbrli:periodType="duration" type="nonnum:textBlockItemType" substitutionGroup="xbrli:item" />
+  <element id="hlco_SchduleOfGrantedStockOptionsAndStockAwardsTableTextblock" name="SchduleOfGrantedStockOptionsAndStockAwardsTableTextblock" nillable="true" xbrli:periodType="duration" type="nonnum:textBlockItemType" substitutionGroup="xbrli:item" />
+  <element id="hlco_ScheduleOfStockAwardActivitiesTableTextBlock" name="ScheduleOfStockAwardActivitiesTableTextBlock" nillable="true" xbrli:periodType="duration" type="nonnum:textBlockItemType" substitutionGroup="xbrli:item" />
+  <element id="hlco_ScheduleofWarrantToPurchaseSeedPreferredStockTransactionstabletextblock" name="ScheduleofWarrantToPurchaseSeedPreferredStockTransactionstabletextblock" nillable="true" xbrli:periodType="duration" type="nonnum:textBlockItemType" substitutionGroup="xbrli:item" />
+  <element id="hlco_SchduleOfWarrantsToPurchaseCommonStocktableTextblock" name="SchduleOfWarrantsToPurchaseCommonStocktableTextblock" nillable="true" xbrli:periodType="duration" type="nonnum:textBlockItemType" substitutionGroup="xbrli:item" />
+  <element id="hlco_PreferredStockSharesAuthorized1" name="PreferredStockSharesAuthorized1" nillable="true" xbrli:periodType="instant" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" />
+  <element id="hlco_PreferredStockSharesAuthorizedIncrease" name="PreferredStockSharesAuthorizedIncrease" nillable="true" xbrli:periodType="instant" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" />
+  <element id="hlco_CashConsiderationPayble" name="CashConsiderationPayble" nillable="true" xbrli:balance="debit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="hlco_WarrantExercisePriceIncreases" name="WarrantExercisePriceIncreases" nillable="true" xbrli:periodType="instant" type="num:perShareItemType" substitutionGroup="xbrli:item" />
+  <element id="hlco_CreditFacility" name="CreditFacility" nillable="true" xbrli:balance="debit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="hlco_CreditFacilityIncreased" name="CreditFacilityIncreased" nillable="true" xbrli:balance="debit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="hlco_VestedWarrants" name="VestedWarrants" nillable="true" xbrli:periodType="instant" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" />
+  <element id="hlco_CashPayment" name="CashPayment" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="hlco_WarrantToPurchaseDescription" name="WarrantToPurchaseDescription" nillable="true" xbrli:periodType="duration" type="xbrli:stringItemType" substitutionGroup="xbrli:item" />
+  <element id="hlco_SaleOfStockRepresentInPercetage" name="SaleOfStockRepresentInPercetage" nillable="true" xbrli:periodType="duration" type="num:percentItemType" substitutionGroup="xbrli:item" />
+  <element id="hlco_SeedPreferredStock" name="SeedPreferredStock" nillable="true" xbrli:periodType="instant" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" />
+  <element id="hlco_SeedPreferredWarrants" name="SeedPreferredWarrants" nillable="true" xbrli:periodType="instant" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" />
+  <element id="hlco_CommonStockWarrants" name="CommonStockWarrants" nillable="true" xbrli:periodType="instant" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" />
+  <element id="hlco_TotalDilutiveSecurities" name="TotalDilutiveSecurities" nillable="true" xbrli:periodType="instant" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" />
+  <element id="hlco_ImpairedOnHandInventory" name="ImpairedOnHandInventory" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="hlco_AssetsAcquired" name="AssetsAcquired" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="hlco_OtherIntangibleAssets" name="OtherIntangibleAssets" nillable="true" xbrli:balance="debit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="hlco_TrademarkApplicationAmount" name="TrademarkApplicationAmount" nillable="true" xbrli:balance="debit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="hlco_SaleOfSeedPreferredStocksPerShare" name="SaleOfSeedPreferredStocksPerShare" nillable="true" xbrli:periodType="duration" type="num:perShareItemType" substitutionGroup="xbrli:item" />
+  <element id="hlco_StockholdersEquityNoteSubscriptionsReceived" name="StockholdersEquityNoteSubscriptionsReceived" nillable="true" xbrli:balance="debit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="hlco_SaleOfSeedPreferredsStock" name="SaleOfSeedPreferredsStock" nillable="true" xbrli:periodType="duration" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" />
+  <element id="hlco_StockholdersEquityNoteSubscriptionsReceivableRemaining" name="StockholdersEquityNoteSubscriptionsReceivableRemaining" nillable="true" xbrli:balance="debit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="hlco_SaleOfSeedPreferredStockPerShare" name="SaleOfSeedPreferredStockPerShare" nillable="true" xbrli:periodType="duration" type="num:perShareItemType" substitutionGroup="xbrli:item" />
+  <element id="hlco_AggregatePrincipalAmountOfTermLoanCommitments" name="AggregatePrincipalAmountOfTermLoanCommitments" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="hlco_BusinessCombinationAcquiredRecoverableValueAddedTax" name="BusinessCombinationAcquiredRecoverableValueAddedTax" nillable="true" xbrli:balance="debit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="hlco_AccountsPayableAndOtherAccruedLiability" name="AccountsPayableAndOtherAccruedLiability" nillable="true" xbrli:balance="credit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="hlco_BusinessCombinationRecognizedIdentifiableAssetsAcquiredAndLiabilitiesAssumedCurrentLiabilitiesAdvancesAndAccountsPayableRelatedParty" name="BusinessCombinationRecognizedIdentifiableAssetsAcquiredAndLiabilitiesAssumedCurrentLiabilitiesAdvancesAndAccountsPayableRelatedParty" nillable="true" xbrli:balance="credit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="hlco_BusinessCombinationRecognizedIdentifiableAssetsAcquiredAndLiabilitiesAssumedCurrentLiabilitiesLoanPayableRelatedParty" name="BusinessCombinationRecognizedIdentifiableAssetsAcquiredAndLiabilitiesAssumedCurrentLiabilitiesLoanPayableRelatedParty" nillable="true" xbrli:balance="credit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="hlco_ConsiderationCashPurchase" name="ConsiderationCashPurchase" nillable="true" xbrli:balance="credit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="hlco_AdditionsToIntangibleAssets" name="AdditionsToIntangibleAssets" nillable="true" xbrli:balance="debit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="hlco_IntangibleAssetsAcquired" name="IntangibleAssetsAcquired" nillable="true" xbrli:balance="debit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="hlco_ImpactOfForeignExchange" name="ImpactOfForeignExchange" nillable="true" xbrli:balance="credit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="hlco_ImpairmentOfIntangibleAssets" name="ImpairmentOfIntangibleAssets" nillable="true" xbrli:balance="debit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="hlco_GrossIntangibleAssets" name="GrossIntangibleAssets" nillable="true" xbrli:balance="debit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="hlco_AbandonedTrademarkApplication" name="AbandonedTrademarkApplication" nillable="true" xbrli:balance="debit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="hlco_OfficersCompensationOneandtwoYear" name="OfficersCompensationOneandtwoYear" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="hlco_OfficersCompensationThreeYear" name="OfficersCompensationThreeYear" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="hlco_SigningBonus" name="SigningBonus" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="hlco_BonusYearOne" name="BonusYearOne" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="hlco_BonusYearTwo" name="BonusYearTwo" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="hlco_AwardVestsOnTheOneYearAnniversary" name="AwardVestsOnTheOneYearAnniversary" nillable="true" xbrli:periodType="duration" type="num:percentItemType" substitutionGroup="xbrli:item" />
+  <element id="hlco_NonStatutoryStockOptions" name="NonStatutoryStockOptions" nillable="true" xbrli:periodType="duration" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" />
+  <element id="hlco_ReimbursementOfExpenses" name="ReimbursementOfExpenses" nillable="true" xbrli:balance="credit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="hlco_SharesAcquiredByRelatedParty" name="SharesAcquiredByRelatedParty" nillable="true" xbrli:periodType="instant" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" />
+  <element id="hlco_VestedStockAwardsShares" name="VestedStockAwardsShares" nillable="true" xbrli:periodType="duration" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" />
+  <element id="hlco_ExpensePayable" name="ExpensePayable" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="hlco_AnnualFee" name="AnnualFee" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="hlco_SharesIssuedOfRestrictedCommonStock" name="SharesIssuedOfRestrictedCommonStock" nillable="true" xbrli:periodType="duration" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" />
+  <element id="hlco_RestrictedStockAwardAgreement" name="RestrictedStockAwardAgreement" nillable="true" xbrli:periodType="duration" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" />
+  <element id="hlco_AccruedAmount" name="AccruedAmount" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="hlco_SharesVestedAsSecondAnniversaryOfTheVestingStartDate" name="SharesVestedAsSecondAnniversaryOfTheVestingStartDate" nillable="true" xbrli:periodType="duration" type="num:percentItemType" substitutionGroup="xbrli:item" />
+  <element id="hlco_VestedStockOptionsShares" name="VestedStockOptionsShares" nillable="true" xbrli:periodType="duration" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" />
+  <element id="hlco_FurtherVestedStockOptions" name="FurtherVestedStockOptions" nillable="true" xbrli:periodType="duration" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" />
+  <element id="hlco_FslPaidForServiceRendered" name="FslPaidForServiceRendered" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="hlco_MarketingServiceRendered" name="MarketingServiceRendered" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="hlco_ExercisePricePerShare" name="ExercisePricePerShare" nillable="true" xbrli:periodType="duration" type="num:perShareItemType" substitutionGroup="xbrli:item" />
+  <element id="hlco_OptionSharesVesting" name="OptionSharesVesting" nillable="true" xbrli:periodType="duration" type="num:percentItemType" substitutionGroup="xbrli:item" />
+  <element id="hlco_CashPaidToRelatedParty" name="CashPaidToRelatedParty" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="hlco_PaymentMadeToRelatedParty" name="PaymentMadeToRelatedParty" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="hlco_InvoicedRate" name="InvoicedRate" nillable="true" xbrli:balance="credit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="hlco_CashConsideration" name="CashConsideration" nillable="true" xbrli:balance="debit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="hlco_InvoicedAmount" name="InvoicedAmount" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="hlco_AdditionProceedsFromRelatedPartyDebt" name="AdditionProceedsFromRelatedPartyDebt" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="hlco_AccruedAndUnpaidInterest" name="AccruedAndUnpaidInterest" nillable="true" xbrli:balance="credit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="hlco_ProceedsFromSaleOfSubscriptionAgreement" name="ProceedsFromSaleOfSubscriptionAgreement" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="hlco_ProceedsFromAforementionedSubscription" name="ProceedsFromAforementionedSubscription" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="hlco_SharesIssuedOfSeedPreferredStock" name="SharesIssuedOfSeedPreferredStock" nillable="true" xbrli:periodType="duration" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" />
+  <element id="hlco_RemainingSubscribedSeedPreferredStockShares" name="RemainingSubscribedSeedPreferredStockShares" nillable="true" xbrli:periodType="duration" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" />
+  <element id="hlco_PurchaseOfUnregisteredSharesOfSeedPreferredStock" name="PurchaseOfUnregisteredSharesOfSeedPreferredStock" nillable="true" xbrli:periodType="duration" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" />
+  <element id="hlco_UnregisteredSharesOfSeedPreferredStockParValue" name="UnregisteredSharesOfSeedPreferredStockParValue" nillable="true" xbrli:periodType="duration" type="num:perShareItemType" substitutionGroup="xbrli:item" />
+  <element id="hlco_StockAwards" name="StockAwards" nillable="true" xbrli:periodType="instant" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" />
+  <element id="hlco_DescriptionOfShareHoldersRightsAndPowers" name="DescriptionOfShareHoldersRightsAndPowers" nillable="true" xbrli:periodType="duration" type="xbrli:stringItemType" substitutionGroup="xbrli:item" />
+  <element id="hlco_PreferredStockSubscriptionReceived" name="PreferredStockSubscriptionReceived" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="hlco_SeedPreferredStockIssued" name="SeedPreferredStockIssued" nillable="true" xbrli:periodType="duration" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" />
+  <element id="hlco_ShareBasedCompensationArrangementByShareBasedPaymentAwardOptionsOutstandingNumber1" name="ShareBasedCompensationArrangementByShareBasedPaymentAwardOptionsOutstandingNumber1" nillable="true" xbrli:periodType="instant" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" />
+  <element id="hlco_NumberOfStockAward" name="NumberOfStockAward" nillable="true" xbrli:periodType="instant" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" />
+  <element id="hlco_StockAwardRoleDescription" name="StockAwardRoleDescription" nillable="true" xbrli:periodType="duration" type="xbrli:stringItemType" substitutionGroup="xbrli:item" />
+  <element id="hlco_VestingStartDate" name="VestingStartDate" nillable="true" xbrli:periodType="duration" type="xbrli:stringItemType" substitutionGroup="xbrli:item" />
+  <element id="hlco_ShareBasedCompensationArrangementByShareBasedPaymentAwardNonvestedOptionsGrantsInPeriodGross" name="ShareBasedCompensationArrangementByShareBasedPaymentAwardNonvestedOptionsGrantsInPeriodGross" nillable="true" xbrli:periodType="duration" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" />
+  <element id="hlco_SharebasedCompensationArrangementBySharebasedPaymentAwardOptionsVestedNumberOfShare" name="SharebasedCompensationArrangementBySharebasedPaymentAwardOptionsVestedNumberOfShare" nillable="true" xbrli:periodType="duration" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" />
+  <element id="hlco_ShareBasedCompensationArrangementByShareBasedPaymentAwardEquityInstrumentsOtherThanOptionsOutstandingGrantedWeightedAverageRemainingContractualTerms" name="ShareBasedCompensationArrangementByShareBasedPaymentAwardEquityInstrumentsOtherThanOptionsOutstandingGrantedWeightedAverageRemainingContractualTerms" nillable="true" xbrli:periodType="duration" type="xbrli:durationItemType" substitutionGroup="xbrli:item" />
+  <element id="hlco_WeightedAverageRemainingTermInYearsGranted" name="WeightedAverageRemainingTermInYearsGranted" nillable="true" xbrli:periodType="duration" type="xbrli:durationItemType" substitutionGroup="xbrli:item" />
+  <element id="hlco_ShareBasedCompensationArrangementByShareBasedPaymentAwardAwardVestingPeriod" name="ShareBasedCompensationArrangementByShareBasedPaymentAwardAwardVestingPeriod" nillable="true" xbrli:periodType="duration" type="xbrli:durationItemType" substitutionGroup="xbrli:item" />
+  <element id="hlco_SharebasedCompensationArrangementBySharebasedPaymentAwardVestingRightsPercentage" name="SharebasedCompensationArrangementBySharebasedPaymentAwardVestingRightsPercentage" nillable="true" xbrli:periodType="duration" type="num:percentItemType" substitutionGroup="xbrli:item" />
+  <element id="hlco_SharesVestedUponIssuanceOfOption" name="SharesVestedUponIssuanceOfOption" nillable="true" xbrli:periodType="duration" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" />
+  <element id="hlco_AdditionalSharesVestedUponAchievingCertainRevenue" name="AdditionalSharesVestedUponAchievingCertainRevenue" nillable="true" xbrli:periodType="duration" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" />
+  <element id="hlco_AchievedRevenue" name="AchievedRevenue" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="hlco_AdditionalShares" name="AdditionalShares" nillable="true" xbrli:periodType="instant" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" />
+  <element id="hlco_VestingUponAchieving" name="VestingUponAchieving" nillable="true" xbrli:balance="credit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="hlco_RevenueAndAnAdditionalShares" name="RevenueAndAnAdditionalShares" nillable="true" xbrli:periodType="instant" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" />
+  <element id="hlco_VestingUponAchievingRevenue" name="VestingUponAchievingRevenue" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="hlco_ServicesAgreementShares" name="ServicesAgreementShares" nillable="true" xbrli:periodType="duration" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" />
+  <element id="hlco_CommonStockOnSustainedMarketCapitalization" name="CommonStockOnSustainedMarketCapitalization" nillable="true" xbrli:periodType="instant" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" />
+  <element id="hlco_AssumingAverageDailyTradingVolume" name="AssumingAverageDailyTradingVolume" nillable="true" xbrli:periodType="duration" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" />
+  <element id="hlco_SustainedMarketCapitalization" name="SustainedMarketCapitalization" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="hlco_ExpectedVolatility" name="ExpectedVolatility" nillable="true" xbrli:periodType="instant" type="num:percentItemType" substitutionGroup="xbrli:item" />
+  <element id="hlco_WarrantToPurchasePreferredStockWarrantIssued" name="WarrantToPurchasePreferredStockWarrantIssued" nillable="true" xbrli:periodType="duration" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" />
+  <element id="hlco_WarrantsExpired" name="WarrantsExpired" nillable="true" xbrli:periodType="duration" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" />
+  <element id="hlco_ShareBasedCompensationArrangementsByShareBasedPaymentAwardWarrantsIssuedInPeriodWeightedAverageExercisePrice" name="ShareBasedCompensationArrangementsByShareBasedPaymentAwardWarrantsIssuedInPeriodWeightedAverageExercisePrice" nillable="true" xbrli:periodType="duration" type="num:perShareItemType" substitutionGroup="xbrli:item" />
+  <element id="hlco_ShareBasedCompensationArrangementsByShareBasedPaymentAwardWarrantsExpiredInPeriodWeightedAverageExercisePrice" name="ShareBasedCompensationArrangementsByShareBasedPaymentAwardWarrantsExpiredInPeriodWeightedAverageExercisePrice" nillable="true" xbrli:periodType="duration" type="num:perShareItemType" substitutionGroup="xbrli:item" />
+  <element id="hlco_WeightedAverageRemainingTermInYearsWarrantsIssued" name="WeightedAverageRemainingTermInYearsWarrantsIssued" nillable="true" xbrli:periodType="duration" type="xbrli:durationItemType" substitutionGroup="xbrli:item" />
+  <element id="hlco_WarrantIssued" name="WarrantIssued" nillable="true" xbrli:periodType="duration" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" />
+  <element id="hlco_ShareBasedCompensationArrangementsByShareBasedPaymentsAwardWarrantsIssuedInPeriodWeightedAverageExercisePrice" name="ShareBasedCompensationArrangementsByShareBasedPaymentsAwardWarrantsIssuedInPeriodWeightedAverageExercisePrice" nillable="true" xbrli:periodType="duration" type="num:perShareItemType" substitutionGroup="xbrli:item" />
+  <element id="hlco_WarrantsExpirationDate" name="WarrantsExpirationDate" nillable="true" xbrli:periodType="duration" type="xbrli:stringItemType" substitutionGroup="xbrli:item" />
+  <element id="hlco_SharebasedCompensationArrangementOptionsOutstandingWeightedAverageRemainingContractualTerm2" name="SharebasedCompensationArrangementOptionsOutstandingWeightedAverageRemainingContractualTerm2" nillable="true" xbrli:periodType="duration" type="xbrli:durationItemType" substitutionGroup="xbrli:item" />
+  <element id="hlco_WarrantsTransactionValue" name="WarrantsTransactionValue" nillable="true" xbrli:balance="debit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="hlco_WarrantsToPurchaseCommonStockDescription" name="WarrantsToPurchaseCommonStockDescription" nillable="true" xbrli:periodType="duration" type="xbrli:stringItemType" substitutionGroup="xbrli:item" />
+  <element id="hlco_WarrantsIssuedToPurchaseShare" name="WarrantsIssuedToPurchaseShare" nillable="true" xbrli:periodType="instant" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" />
+  <element id="hlco_RestrictedSharesPurchase" name="RestrictedSharesPurchase" nillable="true" xbrli:periodType="instant" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" />
+  <element id="hlco_ShareBasedCompensationArrangementBySharesBasedPaymentAwardEquityInstrumentsOtherThanOptionsGrantsInPeriodWeightedAverageGrantDateFairValue" name="ShareBasedCompensationArrangementBySharesBasedPaymentAwardEquityInstrumentsOtherThanOptionsGrantsInPeriodWeightedAverageGrantDateFairValue" nillable="true" xbrli:periodType="instant" type="num:perShareItemType" substitutionGroup="xbrli:item" />
+  <element id="hlco_ShareBasedCompensationArrangementsByShareBasedPaymentAwardFairValueAssumptionsRiskFreeInterestRate" name="ShareBasedCompensationArrangementsByShareBasedPaymentAwardFairValueAssumptionsRiskFreeInterestRate" nillable="true" xbrli:periodType="instant" type="num:percentItemType" substitutionGroup="xbrli:item" />
+  <element id="hlco_ShareBasedCompensationArrangementByShareBasedPaymentAwardsEquityInstrumentsOtherThanOptionsGrantsInPeriodWeightedAverageGrantDateFairValue" name="ShareBasedCompensationArrangementByShareBasedPaymentAwardsEquityInstrumentsOtherThanOptionsGrantsInPeriodWeightedAverageGrantDateFairValue" nillable="true" xbrli:periodType="instant" type="num:perShareItemType" substitutionGroup="xbrli:item" />
+  <element id="hlco_ShareBasedCompensationArrangementBySharesBasedPaymentAwardFairValueAssumptionsRiskFreeInterestRate" name="ShareBasedCompensationArrangementBySharesBasedPaymentAwardFairValueAssumptionsRiskFreeInterestRate" nillable="true" xbrli:periodType="instant" type="num:percentItemType" substitutionGroup="xbrli:item" />
+  <element id="hlco_ShareBasedCompensationArrangementBySharesBasedPaymentAwardFairValueAssumptionsExpectedDividendRate" name="ShareBasedCompensationArrangementBySharesBasedPaymentAwardFairValueAssumptionsExpectedDividendRate" nillable="true" xbrli:periodType="instant" type="num:percentItemType" substitutionGroup="xbrli:item" />
+  <element id="hlco_MarketingStrategyAndAssessmentRate" name="MarketingStrategyAndAssessmentRate" nillable="true" xbrli:balance="debit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="hlco_PrincipalAmount" name="PrincipalAmount" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="hlco_InterestRate" name="InterestRate" nillable="true" xbrli:periodType="instant" type="num:percentItemType" substitutionGroup="xbrli:item" />
+  <element id="hlco_AdvisoryRatePerMonth" name="AdvisoryRatePerMonth" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="hlco_CompnayCreditFacilityDescription" name="CompnayCreditFacilityDescription" nillable="true" xbrli:periodType="duration" type="xbrli:stringItemType" substitutionGroup="xbrli:item" />
+  <element id="hlco_UpfrontFeePaid" name="UpfrontFeePaid" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="hlco_QuarterlyFee" name="QuarterlyFee" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="hlco_MinimumFundingDrawn" name="MinimumFundingDrawn" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="hlco_FinanceCost" name="FinanceCost" nillable="true" xbrli:balance="credit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="hlco_PreferredStockShareIssue" name="PreferredStockShareIssue" nillable="true" xbrli:periodType="instant" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" />
+  <element id="hlco_ExercisablePrice" name="ExercisablePrice" nillable="true" xbrli:periodType="duration" type="num:perShareItemType" substitutionGroup="xbrli:item" />
+  <element id="hlco_VestingTerm" name="VestingTerm" nillable="true" xbrli:periodType="duration" type="xbrli:durationItemType" substitutionGroup="xbrli:item" />
+  <element id="hlco_RestrictedCommonStockAtFairMarketValue" name="RestrictedCommonStockAtFairMarketValue" nillable="true" xbrli:periodType="duration" type="num:perShareItemType" substitutionGroup="xbrli:item" />
+  <element id="hlco_FeeOfIndividualTalent" name="FeeOfIndividualTalent" nillable="true" xbrli:balance="debit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="hlco_DescriptionOfAgreement" name="DescriptionOfAgreement" nillable="true" xbrli:periodType="duration" type="xbrli:stringItemType" substitutionGroup="xbrli:item" />
+  <element id="hlco_FeePaid" name="FeePaid" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="hlco_DonationPaid" name="DonationPaid" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="hlco_ShareBasedCompensationsArrangementByShareBasedPaymentAwardOptionsGrantsInPeriodGross" name="ShareBasedCompensationsArrangementByShareBasedPaymentAwardOptionsGrantsInPeriodGross" nillable="true" xbrli:periodType="duration" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" />
+  <element id="hlco_OptionsTerm" name="OptionsTerm" nillable="true" xbrli:periodType="duration" type="xbrli:durationItemType" substitutionGroup="xbrli:item" />
+  <element id="hlco_OptionsFullyVested" name="OptionsFullyVested" nillable="true" xbrli:periodType="duration" type="num:percentItemType" substitutionGroup="xbrli:item" />
+  <element id="hlco_OptionsVestedQuarter" name="OptionsVestedQuarter" nillable="true" xbrli:periodType="duration" type="num:percentItemType" substitutionGroup="xbrli:item" />
+  <element id="hlco_NonStatutoryStockOptionsIssued" name="NonStatutoryStockOptionsIssued" nillable="true" xbrli:periodType="duration" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" />
+  <element id="hlco_SharebasedCompensationArrangementBySharebasedPaymentAwardOptionVestedNumberOfShares" name="SharebasedCompensationArrangementBySharebasedPaymentAwardOptionVestedNumberOfShares" nillable="true" xbrli:periodType="instant" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" />
+  <element id="hlco_OptionsIssuedDuringPeriod" name="OptionsIssuedDuringPeriod" nillable="true" xbrli:periodType="duration" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" />
+  <element id="hlco_ConsiderationForTheServicesToBeProvidedPerMonth" name="ConsiderationForTheServicesToBeProvidedPerMonth" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="hlco_AgreementExpireDate" name="AgreementExpireDate" nillable="true" xbrli:periodType="duration" type="xbrli:dateItemType" substitutionGroup="xbrli:item" />
+  <element id="hlco_WarrantsToPurchaseShares" name="WarrantsToPurchaseShares" nillable="true" xbrli:periodType="instant" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" />
+  <element id="hlco_ProceedsFromCash" name="ProceedsFromCash" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="hlco_PercentageOfWarrantAmounts" name="PercentageOfWarrantAmounts" nillable="true" xbrli:periodType="duration" type="num:percentItemType" substitutionGroup="xbrli:item" />
+  <element id="hlco_WarrantVested" name="WarrantVested" nillable="true" xbrli:periodType="duration" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" />
+  <element id="hlco_UnpaidInterest" name="UnpaidInterest" nillable="true" xbrli:balance="credit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="hlco_LoansReceivable" name="LoansReceivable" nillable="true" xbrli:balance="debit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="hlco_WarrantSharesIncresed" name="WarrantSharesIncresed" nillable="true" xbrli:periodType="instant" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" />
+  <element id="hlco_LoansPledgedAsCollaterals" name="LoansPledgedAsCollaterals" nillable="true" xbrli:balance="debit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="hlco_ShareSold" name="ShareSold" nillable="true" xbrli:periodType="duration" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" />
+  <element id="hlco_PurchaseTransactionDescripion" name="PurchaseTransactionDescripion" nillable="true" xbrli:periodType="duration" type="xbrli:stringItemType" substitutionGroup="xbrli:item" />
+  <element id="hlco_DescriptionOfBusinessAndHistoryAbstract" name="DescriptionOfBusinessAndHistoryAbstract" nillable="true" abstract="true" xbrli:periodType="duration" type="xbrli:stringItemType" substitutionGroup="xbrli:item" />
+  <element id="hlco_GoingConcernAbstract" name="GoingConcernAbstract" nillable="true" abstract="true" xbrli:periodType="duration" type="xbrli:stringItemType" substitutionGroup="xbrli:item" />
+  <element id="hlco_ACQUISITIONsAbstract" name="ACQUISITIONsAbstract" nillable="true" abstract="true" xbrli:periodType="duration" type="xbrli:stringItemType" substitutionGroup="xbrli:item" />
+  <element id="hlco_IntangibleAssetsAbstract" name="IntangibleAssetsAbstract" nillable="true" abstract="true" xbrli:periodType="duration" type="xbrli:stringItemType" substitutionGroup="xbrli:item" />
+  <element id="hlco_StockBasedCompensationAbstract" name="StockBasedCompensationAbstract" nillable="true" abstract="true" xbrli:periodType="duration" type="xbrli:stringItemType" substitutionGroup="xbrli:item" />
+  <element id="hlco_WarrantsAbstract" name="WarrantsAbstract" nillable="true" abstract="true" xbrli:periodType="duration" type="xbrli:stringItemType" substitutionGroup="xbrli:item" />
+  <element id="hlco_ComitmentsAbstract" name="ComitmentsAbstract" nillable="true" abstract="true" xbrli:periodType="duration" type="xbrli:stringItemType" substitutionGroup="xbrli:item" />
+  <element id="hlco_LoanPurchaseAndSaleAgreementAbstract" name="LoanPurchaseAndSaleAgreementAbstract" nillable="true" abstract="true" xbrli:periodType="duration" type="xbrli:stringItemType" substitutionGroup="xbrli:item" />
+  <element id="hlco_AcquisitionAbstract" name="AcquisitionAbstract" nillable="true" abstract="true" xbrli:periodType="duration" type="xbrli:stringItemType" substitutionGroup="xbrli:item" />
+  <element id="hlco_DescriptionOfBusinessHistoryAndSummaryOfSignificantAccountingPoliciesAbstract" name="DescriptionOfBusinessHistoryAndSummaryOfSignificantAccountingPoliciesAbstract" nillable="true" abstract="true" xbrli:periodType="duration" type="xbrli:stringItemType" substitutionGroup="xbrli:item" />
+  <element id="hlco_IntangibleAssetsabstract" name="IntangibleAssetsabstract" nillable="true" abstract="true" xbrli:periodType="duration" type="xbrli:stringItemType" substitutionGroup="xbrli:item" />
+  <element name="TheHealingCompanyIncMember" id="hlco_TheHealingCompanyIncMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="SeedPreferredStock1Member" id="hlco_SeedPreferredStock1Member" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="KETConsultingLLCMember" id="hlco_KETConsultingLLCMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="EquityIncentivePlanMember" id="hlco_EquityIncentivePlanMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="KellyZuarMember" id="hlco_KellyZuarMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="MintPerformanceMarketingMember" id="hlco_MintPerformanceMarketingMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="DeepakChopraLLCMember" id="hlco_DeepakChopraLLCMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="RAgencyMember" id="hlco_RAgencyMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="SimonBelshamCEOPresidentAndDirectorMember" id="hlco_SimonBelshamCEOPresidentAndDirectorMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="StevenBartlettDirectorMember" id="hlco_StevenBartlettDirectorMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="PoonachaMachaiahDirectorMember" id="hlco_PoonachaMachaiahDirectorMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="JeffreyTaylorMember" id="hlco_JeffreyTaylorMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="LeeLarsonElmoreMember" id="hlco_LeeLarsonElmoreMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="SeedPreferredSharesMember" id="hlco_SeedPreferredSharesMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="PurchaseAgreementsMember" id="hlco_PurchaseAgreementsMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="YourSuperIncMember" id="hlco_YourSuperIncMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="SeedPreferredShareMember" id="hlco_SeedPreferredShareMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="StockAwardSevenMember" id="hlco_StockAwardSevenMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="StockOptionTenMember" id="hlco_StockOptionTenMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="StockOptionElevenMember" id="hlco_StockOptionElevenMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="DirectorAndMajorShareholderMember" id="hlco_DirectorAndMajorShareholderMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="OnOctoberSevenTwoThousandTwentyOneMember" id="hlco_OnOctoberSevenTwoThousandTwentyOneMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="NOEOGmbHMember" id="hlco_NOEOGmbHMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="AnabelOlemannDirectorMember" id="hlco_AnabelOlemannDirectorMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="AstutiaVentureCapitalAGMember" id="hlco_AstutiaVentureCapitalAGMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="DefinitiveAgreementsWithFourtyOneNonUSPersonsMember" id="hlco_DefinitiveAgreementsWithFourtyOneNonUSPersonsMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="FinancialIndustryRegulatoryAuthorityMember" id="hlco_FinancialIndustryRegulatoryAuthorityMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="SeedPreferredStockMember" id="hlco_SeedPreferredStockMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="DeferredCompensationMember" id="hlco_DeferredCompensationMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="WAOWAdvisoryGroupGmbhMember" id="hlco_WAOWAdvisoryGroupGmbhMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="MaturityOneMember" id="hlco_MaturityOneMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="NOEOMember" id="hlco_NOEOMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="AmitKapurCFOMember" id="hlco_AmitKapurCFOMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="KayKoplovitzChairpersonoftheBoardMember" id="hlco_KayKoplovitzChairpersonoftheBoardMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="StockAwardOneMember" id="hlco_StockAwardOneMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="StockOptionOneMember" id="hlco_StockOptionOneMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="StockAwardTwoMember" id="hlco_StockAwardTwoMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="StockAwardThreeMember" id="hlco_StockAwardThreeMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="StockAwardFourMember" id="hlco_StockAwardFourMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="StockAwardFiveMember" id="hlco_StockAwardFiveMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="StockAwardSixMember" id="hlco_StockAwardSixMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="StockOptionTwoMember" id="hlco_StockOptionTwoMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="StockOptionThreeMember" id="hlco_StockOptionThreeMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="StockOptionFourMember" id="hlco_StockOptionFourMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="StockOptionFiveMember" id="hlco_StockOptionFiveMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="StockOptionSixMember" id="hlco_StockOptionSixMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="StockOptionSevenMember" id="hlco_StockOptionSevenMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="StockOptionEightMember" id="hlco_StockOptionEightMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="StockOptionNineMember" id="hlco_StockOptionNineMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="UponAchievingFirstTargetMember" id="hlco_UponAchievingFirstTargetMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="FirstThreeMonthsAnniversaryMember" id="hlco_FirstThreeMonthsAnniversaryMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="SecondThreeMonthsAnniversaryMember" id="hlco_SecondThreeMonthsAnniversaryMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="ThreeMonthsAnniversaryMember" id="hlco_ThreeMonthsAnniversaryMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="FourThreeMonthsAnniversaryMember" id="hlco_FourThreeMonthsAnniversaryMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="VestedAwardMember" id="hlco_VestedAwardMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="OnJulyEightTwoThousandTwentyTwoMember" id="hlco_OnJulyEightTwoThousandTwentyTwoMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="MarketHireLLCMember" id="hlco_MarketHireLLCMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="RayRosHoldingLLCMember" id="hlco_RayRosHoldingLLCMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="HLCOBorrowerMember" id="hlco_HLCOBorrowerMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="LeeForesterMember" id="hlco_LeeForesterMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="WarrantsMember" id="hlco_WarrantsMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="WarrantstopurchaseCommonStockMember" id="hlco_WarrantstopurchaseCommonStockMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="WarrantstopurchaseCommonStockOneMember" id="hlco_WarrantstopurchaseCommonStockOneMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="OtherComprehensiveIncomeLossMember" id="hlco_OtherComprehensiveIncomeLossMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="CircleUpCreditAdvisorsLLCMember" id="hlco_CircleUpCreditAdvisorsLLCMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+</schema>
