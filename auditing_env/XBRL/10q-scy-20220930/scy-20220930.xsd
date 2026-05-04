@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="us-ascii" standalone="yes"?>
+<!--XBRL Document Created with XBRLMaster-->
+<!--Version: 2.3.08-->
+<!--Based on XBRL 2.1-->
+<!--Date of creation: 11/10/2022-->
+<!--Software architectural design and coding: A'c Dharmapremananda Avt.-->
+<!--Copyright (c) 2022 I-NET Business Solutions, Inc. All Rights Reserved.-->
+<schema xmlns:xl="http://www.xbrl.org/2003/XLink" xmlns:ref="http://www.xbrl.org/2006/ref" xmlns:currency="http://xbrl.sec.gov/currency/2022" xmlns:us-gaap-att="http://fasb.org/us-gaap/attributes" xmlns:sic="http://xbrl.sec.gov/sic/2022" xmlns:exch="http://xbrl.sec.gov/exch/2022" xmlns:invest="http://xbrl.sec.gov/invest/2013-01-31" xmlns:negated="http://www.xbrl.org/2009/role/negated" xmlns:naics="http://xbrl.sec.gov/naics/2022" xmlns:us-types="http://fasb.org/us-types/2022" xmlns:stpr="http://xbrl.sec.gov/stpr/2022" xmlns="http://www.w3.org/2001/XMLSchema" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:xbrli="http://www.xbrl.org/2003/instance" xmlns:xbrldt="http://xbrl.org/2005/xbrldt" xmlns:xbrldi="http://xbrl.org/2006/xbrldi" xmlns:country="http://xbrl.sec.gov/country/2022" xmlns:utr="http://www.xbrl.org/2009/utr" xmlns:srt-types="http://fasb.org/srt-types/2022" xmlns:dtr-types="http://www.xbrl.org/dtr/type/2020-01-21" xmlns:srt-roles="http://fasb.org/srt-roles/2022" xmlns:dei="http://xbrl.sec.gov/dei/2022" xmlns:num="http://www.xbrl.org/dtr/type/numeric" xmlns:nonnum="http://www.xbrl.org/dtr/type/non-numeric" xmlns:srt="http://fasb.org/srt/2022" xmlns:us-gaap="http://fasb.org/us-gaap/2022" xmlns:scy="http://scy.com/20220930" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://scy.com/20220930">
+  <annotation>
+    <appinfo>
+      <link:roleType roleURI="http://scy.com/role/Cover" id="Cover">
+        <link:definition>000001 - Document - Cover</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://scy.com/role/CondensedConsolidatedBalanceSheets" id="CondensedConsolidatedBalanceSheets">
+        <link:definition>000002 - Statement - CONDENSED CONSOLIDATED BALANCE SHEETS</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://scy.com/role/CondensedConsolidatedBalanceSheetsParenthetical" id="CondensedConsolidatedBalanceSheetsParenthetical">
+        <link:definition>000003 - Statement - CONDENSED CONSOLIDATED BALANCE SHEETS (Parenthetical)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://scy.com/role/CondensedConsolidatedStatementsOfOperationsAndComprehensiveIncomeLossUnaudited" id="CondensedConsolidatedStatementsOfOperationsAndComprehensiveIncomeLossUnaudited">
+        <link:definition>000004 - Statement - CONDENSED CONSOLIDATED STATEMENTS OF OPERATIONS AND COMPREHENSIVE INCOME (LOSS) (Unaudited)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://scy.com/role/CondensedConsolidatedStatementsOfCashFlowsUnaudited" id="CondensedConsolidatedStatementsOfCashFlowsUnaudited">
+        <link:definition>000005 - Statement - CONDENSED CONSOLIDATED STATEMENTS OF CASH FLOWS (Unaudited)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://scy.com/role/CondensedConsolidatedStatementsOfChangesInShareholdersEquityDeficiencyUnaudited" id="CondensedConsolidatedStatementsOfChangesInShareholdersEquityDeficiencyUnaudited">
+        <link:definition>000006 - Statement - CONDENSED CONSOLIDATED STATEMENTS OF CHANGES IN SHAREHOLDERS EQUITY (DEFICIENCY) (Unaudited)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://scy.com/role/NatureAndContinuanceOfOperations" id="NatureAndContinuanceOfOperations">
+        <link:definition>000007 - Disclosure - NATURE AND CONTINUANCE OF OPERATIONS</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://scy.com/role/BasisOfPresentation" id="BasisOfPresentation">
+        <link:definition>000008 - Disclosure - BASIS OF PRESENTATION</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://scy.com/role/EQUIPMENT" id="EQUIPMENT">
+        <link:definition>000009 - Disclosure - EQUIPMENT</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://scy.com/role/MineralPropertyInterests" id="MineralPropertyInterests">
+        <link:definition>000010 - Disclosure - MINERAL PROPERTY INTERESTS</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://scy.com/role/RelatedPartyTransactions" id="RelatedPartyTransactions">
+        <link:definition>000011 - Disclosure - RELATED PARTY TRANSACTIONS</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://scy.com/role/CapitalStockAndAdditionalPaidInCapital" id="CapitalStockAndAdditionalPaidInCapital">
+        <link:definition>000012 - Disclosure - CAPITAL STOCK AND ADDITIONAL PAID IN CAPITAL</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://scy.com/role/TreasuryStock" id="TreasuryStock">
+        <link:definition>000013 - Disclosure - TREASURY STOCK</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://scy.com/role/SegmentedInformation" id="SegmentedInformation">
+        <link:definition>000014 - Disclosure - SEGMENTED INFORMATION</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://scy.com/role/AccrualsReversal" id="AccrualsReversal">
+        <link:definition>000015 - Disclosure - ACCRUALS REVERSAL</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://scy.com/role/BasisOfPresentationPolicies" id="BasisOfPresentationPolicies">
+        <link:definition>000016 - Disclosure - BASIS OF PRESENTATION (Policies)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://scy.com/role/BasisOfPresentationTables" id="BasisOfPresentationTables">
+        <link:definition>000017 - Disclosure - BASIS OF PRESENTATION (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://scy.com/role/EquipmentTables" id="EquipmentTables">
+        <link:definition>000018 - Disclosure - EQUIPMENT (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://scy.com/role/MineralPropertyInterestsTables" id="MineralPropertyInterestsTables">
+        <link:definition>000019 - Disclosure - MINERAL PROPERTY INTERESTS (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://scy.com/role/CapitalStockAndAdditionalPaidInCapitalTables" id="CapitalStockAndAdditionalPaidInCapitalTables">
+        <link:definition>000020 - Disclosure - CAPITAL STOCK AND ADDITIONAL PAID IN CAPITAL (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://scy.com/role/TreasuryStockTables" id="TreasuryStockTables">
+        <link:definition>000021 - Disclosure - TREASURY STOCK (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://scy.com/role/SegmentedInformationTables" id="SegmentedInformationTables">
+        <link:definition>000022 - Disclosure - SEGMENTED INFORMATION (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://scy.com/role/BasisOfPresentationDetails" id="BasisOfPresentationDetails">
+        <link:definition>000023 - Disclosure - BASIS OF PRESENTATION (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://scy.com/role/BasisOfPresentationDetailsNarrative" id="BasisOfPresentationDetailsNarrative">
+        <link:definition>000024 - Disclosure - BASIS OF PRESENTATION (Details Narrative)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://scy.com/role/EquipmentDetails" id="EquipmentDetails">
+        <link:definition>000025 - Disclosure - EQUIPMENT (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://scy.com/role/MineralPropertyInterestsDetails" id="MineralPropertyInterestsDetails">
+        <link:definition>000026 - Disclosure - MINERAL PROPERTY INTERESTS (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://scy.com/role/MineralPropertyInterestsDetailsNarrative" id="MineralPropertyInterestsDetailsNarrative">
+        <link:definition>000027 - Disclosure - MINERAL PROPERTY INTERESTS (Details Narrative)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://scy.com/role/RelatedPartyTransactionsDetailsNarrative" id="RelatedPartyTransactionsDetailsNarrative">
+        <link:definition>000028 - Disclosure - RELATED PARTY TRANSACTIONS (Details Narrative)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://scy.com/role/CapitalStockAndAdditionalPaidInCapitalDetails" id="CapitalStockAndAdditionalPaidInCapitalDetails">
+        <link:definition>000029 - Disclosure - CAPITAL STOCK AND ADDITIONAL PAID IN CAPITAL (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://scy.com/role/CapitalStockAndAdditionalPaidInCapitalDetails1" id="CapitalStockAndAdditionalPaidInCapitalDetails1">
+        <link:definition>000030 - Disclosure - CAPITAL STOCK AND ADDITIONAL PAID IN CAPITAL (Details 1)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://scy.com/role/CapitalStockAndAdditionalPaidInCapitalDetails2" id="CapitalStockAndAdditionalPaidInCapitalDetails2">
+        <link:definition>000031 - Disclosure - CAPITAL STOCK AND ADDITIONAL PAID IN CAPITAL (Details 2)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://scy.com/role/CapitalStockAndAdditionalPaidInCapitalDetails3" id="CapitalStockAndAdditionalPaidInCapitalDetails3">
+        <link:definition>000032 - Disclosure - CAPITAL STOCK AND ADDITIONAL PAID IN CAPITAL (Details 3)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://scy.com/role/CapitalStockAndAdditionalPaidInCapitalDetails4" id="CapitalStockAndAdditionalPaidInCapitalDetails4">
+        <link:definition>000033 - Disclosure - CAPITAL STOCK AND ADDITIONAL PAID IN CAPITAL (Details 4)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://scy.com/role/CapitalStockAndAdditionalPaidInCapitalDetailsNarrative1" id="CapitalStockAndAdditionalPaidInCapitalDetailsNarrative1">
+        <link:definition>000034 - Disclosure - CAPITAL STOCK AND ADDITIONAL PAID IN CAPITAL (Details Narrative1)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://scy.com/role/TreasuryStockDetails" id="TreasuryStockDetails">
+        <link:definition>000035 - Disclosure - TREASURY STOCK (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://scy.com/role/SegmentedInformationDetails" id="SegmentedInformationDetails">
+        <link:definition>000036 - Disclosure - SEGMENTED INFORMATION (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://scy.com/role/AccrualsReversalDetailsNarrative" id="AccrualsReversalDetailsNarrative">
+        <link:definition>000037 - Disclosure - ACCRUALS REVERSAL (Details Narrative)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:linkbaseRef xlink:type="simple" xlink:href="scy-20220930_pre.xml" xlink:role="http://www.xbrl.org/2003/role/presentationLinkbaseRef" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" />
+      <link:linkbaseRef xlink:type="simple" xlink:href="scy-20220930_lab.xml" xlink:role="http://www.xbrl.org/2003/role/labelLinkbaseRef" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" />
+      <link:linkbaseRef xlink:type="simple" xlink:href="scy-20220930_cal.xml" xlink:role="http://www.xbrl.org/2003/role/calculationLinkbaseRef" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" />
+      <link:linkbaseRef xlink:type="simple" xlink:href="scy-20220930_def.xml" xlink:role="http://www.xbrl.org/2003/role/definitionLinkbaseRef" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" />
+    </appinfo>
+  </annotation>
+  <import namespace="http://www.xbrl.org/2003/instance" schemaLocation="http://www.xbrl.org/2003/xbrl-instance-2003-12-31.xsd" />
+  <import namespace="http://www.xbrl.org/2003/linkbase" schemaLocation="http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd" />
+  <import namespace="http://xbrl.org/2005/xbrldt" schemaLocation="http://www.xbrl.org/2005/xbrldt-2005.xsd" />
+  <import namespace="http://xbrl.sec.gov/country/2022" schemaLocation="https://xbrl.sec.gov/country/2022/country-2022.xsd" />
+  <import namespace="http://xbrl.sec.gov/currency/2022" schemaLocation="https://xbrl.sec.gov/currency/2022/currency-2022.xsd" />
+  <import namespace="http://xbrl.sec.gov/dei/2022" schemaLocation="https://xbrl.sec.gov/dei/2022/dei-2022.xsd" />
+  <import namespace="http://www.xbrl.org/dtr/type/non-numeric" schemaLocation="http://www.xbrl.org/dtr/type/nonNumeric-2009-12-16.xsd" />
+  <import namespace="http://www.xbrl.org/dtr/type/numeric" schemaLocation="http://www.xbrl.org/dtr/type/numeric-2009-12-16.xsd" />
+  <import namespace="http://xbrl.sec.gov/exch/2022" schemaLocation="https://xbrl.sec.gov/exch/2022/exch-2022.xsd" />
+  <import namespace="http://www.xbrl.org/2009/arcrole/fact-explanatoryFact" schemaLocation="http://www.xbrl.org/lrr/arcrole/factExplanatory-2009-12-16.xsd" />
+  <import namespace="http://www.xbrl.org/2009/role/negated" schemaLocation="http://www.xbrl.org/lrr/role/negated-2009-12-16.xsd" />
+  <import namespace="http://www.xbrl.org/2009/role/net" schemaLocation="http://www.xbrl.org/lrr/role/net-2009-12-16.xsd" />
+  <import namespace="http://xbrl.sec.gov/naics/2022" schemaLocation="https://xbrl.sec.gov/naics/2022/naics-2022.xsd" />
+  <import namespace="http://xbrl.sec.gov/sic/2022" schemaLocation="https://xbrl.sec.gov/sic/2022/sic-2022.xsd" />
+  <import namespace="http://fasb.org/srt-roles/2022" schemaLocation="https://xbrl.fasb.org/srt/2022/elts/srt-roles-2022.xsd" />
+  <import namespace="http://fasb.org/srt-types/2022" schemaLocation="https://xbrl.fasb.org/srt/2022/elts/srt-types-2022.xsd" />
+  <import namespace="http://www.xbrl.org/dtr/type/2020-01-21" schemaLocation="https://www.xbrl.org/dtr/type/2020-01-21/types.xsd" />
+  <import namespace="http://xbrl.sec.gov/stpr/2022" schemaLocation="https://xbrl.sec.gov/stpr/2022/stpr-2022.xsd" />
+  <import namespace="http://fasb.org/us-roles/2022" schemaLocation="https://xbrl.fasb.org/us-gaap/2022/elts/us-roles-2022.xsd" />
+  <import namespace="http://fasb.org/us-types/2022" schemaLocation="https://xbrl.fasb.org/us-gaap/2022/elts/us-types-2022.xsd" />
+  <import namespace="http://fasb.org/srt/2022" schemaLocation="https://xbrl.fasb.org/srt/2022/elts/srt-2022.xsd" />
+  <import namespace="http://fasb.org/us-gaap/2022" schemaLocation="https://xbrl.fasb.org/us-gaap/2022/elts/us-gaap-2022.xsd" />
+  <element id="scy_ReclamationBondNonCurrentAsset" name="ReclamationBondNonCurrentAsset" nillable="true" xbrli:balance="debit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="scy_TreasuryStock" name="TreasuryStock" nillable="true" xbrli:balance="credit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="scy_ExplorationRecovery" name="ExplorationRecovery" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="scy_GeneralAndAdministrativeExpenses" name="GeneralAndAdministrativeExpenses" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="scy_AccrualsReversal" name="AccrualsReversal" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="scy_EarningPerShareBasicAndDiluted" name="EarningPerShareBasicAndDiluted" nillable="true" xbrli:periodType="duration" type="num:perShareItemType" substitutionGroup="xbrli:item" />
+  <element id="scy_WeightedAverageNumberOfSharesOutstandingBasicAndDiluted" name="WeightedAverageNumberOfSharesOutstandingBasicAndDiluted" nillable="true" xbrli:periodType="duration" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" />
+  <element id="scy_ProfitsLoss" name="ProfitsLoss" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="scy_StockBasedCompensation" name="StockBasedCompensation" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="scy_AccrualReversal" name="AccrualReversal" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="scy_StockIssuedDuringPeriodSharesStockOptionsExercisedShares" name="StockIssuedDuringPeriodSharesStockOptionsExercisedShares" nillable="true" xbrli:periodType="duration" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" />
+  <element id="scy_DerivativeLiability" name="DerivativeLiability" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="scy_CapitalStockAndAdditionalPaidInCapitalcontdTextBlock" name="CapitalStockAndAdditionalPaidInCapitalcontdTextBlock" nillable="true" xbrli:periodType="duration" type="nonnum:textBlockItemType" substitutionGroup="xbrli:item" />
+  <element id="scy_WriteoffOfAccrualstextblock" name="WriteoffOfAccrualstextblock" nillable="true" xbrli:periodType="duration" type="nonnum:textBlockItemType" substitutionGroup="xbrli:item" />
+  <element id="scy_MineralInterestsTableTextBlock" name="MineralInterestsTableTextBlock" nillable="true" xbrli:periodType="duration" type="nonnum:textBlockItemType" substitutionGroup="xbrli:item" />
+  <element id="scy_ScheduleOfStockBasedCompensation" name="ScheduleOfStockBasedCompensation" nillable="true" xbrli:periodType="duration" type="nonnum:textBlockItemType" substitutionGroup="xbrli:item" />
+  <element id="scy_RoyaltyPercentageOnGrossMineralSales" name="RoyaltyPercentageOnGrossMineralSales" nillable="true" xbrli:periodType="duration" type="num:percentItemType" substitutionGroup="xbrli:item" />
+  <element id="scy_NetProfitsInterestRoyaltyPercentage" name="NetProfitsInterestRoyaltyPercentage" nillable="true" xbrli:periodType="duration" type="num:percentItemType" substitutionGroup="xbrli:item" />
+  <element id="scy_RevenueRoyaltyPayablePercentage" name="RevenueRoyaltyPayablePercentage" nillable="true" xbrli:periodType="duration" type="num:percentItemType" substitutionGroup="xbrli:item" />
+  <element id="scy_RevenueRoyaltyIsPayable" name="RevenueRoyaltyIsPayable" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="scy_NetSmelterReturnsRoyaltyPercentage" name="NetSmelterReturnsRoyaltyPercentage" nillable="true" xbrli:periodType="duration" type="num:percentItemType" substitutionGroup="xbrli:item" />
+  <element id="scy_NswMineralsRoyaltyPercentage" name="NswMineralsRoyaltyPercentage" nillable="true" xbrli:periodType="duration" type="num:percentItemType" substitutionGroup="xbrli:item" />
+  <element id="scy_ReclamationBond" name="ReclamationBond" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="scy_AccrualsToRelatedParties" name="AccrualsToRelatedParties" nillable="true" xbrli:balance="credit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="scy_StockBasedCompensationForStockOptions" name="StockBasedCompensationForStockOptions" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="scy_WeightedAverageExercisePriceOfWarrantsOutstanding" name="WeightedAverageExercisePriceOfWarrantsOutstanding" nillable="true" xbrli:periodType="instant" type="num:perShareItemType" substitutionGroup="xbrli:item" />
+  <element id="scy_WeightedAverageExercisePriceGrantedOfWarrants" name="WeightedAverageExercisePriceGrantedOfWarrants" nillable="true" xbrli:periodType="duration" type="num:perShareItemType" substitutionGroup="xbrli:item" />
+  <element id="scy_ExpirationDate" name="ExpirationDate" nillable="true" xbrli:periodType="duration" type="xbrli:stringItemType" substitutionGroup="xbrli:item" />
+  <element id="scy_SharebasedCompensationArrangementBySharebasedPaymentAwardFairValueAssumptionsExpectedTerm" name="SharebasedCompensationArrangementBySharebasedPaymentAwardFairValueAssumptionsExpectedTerm" nillable="true" xbrli:periodType="duration" type="xbrli:durationItemType" substitutionGroup="xbrli:item" />
+  <element id="scy_ShareBasedCompensationArrangementByShareBasedPaymentAwardFairValueAssumptionsExpectedVolatilityRate1" name="ShareBasedCompensationArrangementByShareBasedPaymentAwardFairValueAssumptionsExpectedVolatilityRate1" nillable="true" xbrli:periodType="duration" type="num:percentItemType" substitutionGroup="xbrli:item" />
+  <element id="scy_NumberCurrentlyExercisable" name="NumberCurrentlyExercisable" nillable="true" xbrli:periodType="duration" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" />
+  <element id="scy_NumberCurrentlyExercisablePrice" name="NumberCurrentlyExercisablePrice" nillable="true" xbrli:periodType="duration" type="num:perShareItemType" substitutionGroup="xbrli:item" />
+  <element id="scy_RiskFreeInterestRate" name="RiskFreeInterestRate" nillable="true" xbrli:periodType="duration" type="num:percentItemType" substitutionGroup="xbrli:item" />
+  <element id="scy_ShareBasedCompensationArrangementByShareBasedPaymentAwardFairValueAssumptionsExpectedForfeitureRate" name="ShareBasedCompensationArrangementByShareBasedPaymentAwardFairValueAssumptionsExpectedForfeitureRate" nillable="true" xbrli:periodType="duration" type="num:percentItemType" substitutionGroup="xbrli:item" />
+  <element id="scy_CommonShares" name="CommonShares" nillable="true" xbrli:balance="credit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="scy_FairValueDerivativeLiability" name="FairValueDerivativeLiability" nillable="true" xbrli:balance="credit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="scy_WeightedAverageExercisePriceOfStock" name="WeightedAverageExercisePriceOfStock" nillable="true" xbrli:periodType="duration" type="num:perShareItemType" substitutionGroup="xbrli:item" />
+  <element id="scy_NumberOfSharesGranted" name="NumberOfSharesGranted" nillable="true" xbrli:periodType="instant" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" />
+  <element id="scy_StockIssuedDuringPeriodValueSharesBasedCompensation" name="StockIssuedDuringPeriodValueSharesBasedCompensation" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="scy_BasisOfPresentationabstract" name="BasisOfPresentationabstract" nillable="true" abstract="true" xbrli:periodType="duration" type="xbrli:stringItemType" substitutionGroup="xbrli:item" />
+  <element id="scy_CapitalStockAndAdditionalPaidInCapitalcontdAbstract" name="CapitalStockAndAdditionalPaidInCapitalcontdAbstract" nillable="true" abstract="true" xbrli:periodType="duration" type="xbrli:stringItemType" substitutionGroup="xbrli:item" />
+  <element id="scy_WriteoffOfAccrualsAbstract" name="WriteoffOfAccrualsAbstract" nillable="true" abstract="true" xbrli:periodType="duration" type="xbrli:stringItemType" substitutionGroup="xbrli:item" />
+  <element id="scy_BasisOfPresentationPoliciesAbstract" name="BasisOfPresentationPoliciesAbstract" nillable="true" abstract="true" xbrli:periodType="duration" type="xbrli:stringItemType" substitutionGroup="xbrli:item" />
+  <element id="scy_BasisOfPresentationTablesAbstract" name="BasisOfPresentationTablesAbstract" nillable="true" abstract="true" xbrli:periodType="duration" type="xbrli:stringItemType" substitutionGroup="xbrli:item" />
+  <element id="scy_BasisOfPresentationDetailsAbstract" name="BasisOfPresentationDetailsAbstract" nillable="true" abstract="true" xbrli:periodType="duration" type="xbrli:stringItemType" substitutionGroup="xbrli:item" />
+  <element name="NynganPropertyMember" id="scy_NynganPropertyMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="HoneybuglePropertyMember" id="scy_HoneybuglePropertyMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="KiviniemiScandiumPropertyFinlandMember" id="scy_KiviniemiScandiumPropertyFinlandMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="Option1Member" id="scy_Option1Member" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="Option2Member" id="scy_Option2Member" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="Option3Member" id="scy_Option3Member" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="Option4Member" id="scy_Option4Member" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="Option5Member" id="scy_Option5Member" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="Option6Member" id="scy_Option6Member" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="Option7Member" id="scy_Option7Member" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="Option8Member" id="scy_Option8Member" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="Option9Member" id="scy_Option9Member" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="Option10Member" id="scy_Option10Member" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="CommonStockIssuancesMember" id="scy_CommonStockIssuancesMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="StockBasedCompensationMember" id="scy_StockBasedCompensationMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="AUMember" id="scy_AUMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="UnitedStateMember" id="scy_UnitedStateMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="TotalMember" id="scy_TotalMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="FormerContractorsAndConsultantsMember" id="scy_FormerContractorsAndConsultantsMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+</schema>

@@ -1,0 +1,857 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--XBRL Document Created with Wdesk from Workiva-->
+<!--Copyright 2022 Workiva-->
+<!--r:53a3c4f5-a8a4-4d5f-9586-673c2fdfaadf,g:2e4c55df-fbd0-4c94-b68f-1412c5100e73-->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:aep="http://www.aep.com/20220331" xmlns:xbrli="http://www.xbrl.org/2003/instance" xmlns:dtr-types="http://www.xbrl.org/dtr/type/2020-01-21" xmlns:xbrldt="http://xbrl.org/2005/xbrldt" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://www.aep.com/20220331">
+  <xs:import namespace="http://fasb.org/srt/2021-01-31" schemaLocation="https://xbrl.fasb.org/srt/2021/elts/srt-2021-01-31.xsd"/>
+  <xs:import namespace="http://fasb.org/us-gaap/2021-01-31" schemaLocation="https://xbrl.fasb.org/us-gaap/2021/elts/us-gaap-2021-01-31.xsd"/>
+  <xs:import namespace="http://www.w3.org/1999/xlink" schemaLocation="http://www.xbrl.org/2003/xlink-2003-12-31.xsd"/>
+  <xs:import namespace="http://www.xbrl.org/2003/instance" schemaLocation="http://www.xbrl.org/2003/xbrl-instance-2003-12-31.xsd"/>
+  <xs:import namespace="http://www.xbrl.org/2003/linkbase" schemaLocation="http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd"/>
+  <xs:import namespace="http://www.xbrl.org/dtr/type/2020-01-21" schemaLocation="https://www.xbrl.org/dtr/type/2020-01-21/types.xsd"/>
+  <xs:import namespace="http://xbrl.org/2005/xbrldt" schemaLocation="http://www.xbrl.org/2005/xbrldt-2005.xsd"/>
+  <xs:import namespace="http://xbrl.sec.gov/dei/2021q4" schemaLocation="https://xbrl.sec.gov/dei/2021q4/dei-2021q4.xsd"/>
+  <xs:import namespace="http://xbrl.sec.gov/exch/2021" schemaLocation="https://xbrl.sec.gov/exch/2021/exch-2021.xsd"/>
+  <xs:import namespace="http://xbrl.sec.gov/stpr/2021" schemaLocation="https://xbrl.sec.gov/stpr/2021/stpr-2021.xsd"/>
+  <xs:annotation>
+    <xs:appinfo>
+      <link:linkbaseRef xmlns:xlink="http://www.w3.org/1999/xlink" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="aep-20220331_lab.xml" xlink:role="http://www.xbrl.org/2003/role/labelLinkbaseRef" xlink:type="simple"/>
+      <link:linkbaseRef xmlns:xlink="http://www.w3.org/1999/xlink" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="aep-20220331_pre.xml" xlink:role="http://www.xbrl.org/2003/role/presentationLinkbaseRef" xlink:type="simple"/>
+      <link:linkbaseRef xmlns:xlink="http://www.w3.org/1999/xlink" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="aep-20220331_cal.xml" xlink:role="http://www.xbrl.org/2003/role/calculationLinkbaseRef" xlink:type="simple"/>
+      <link:linkbaseRef xmlns:xlink="http://www.w3.org/1999/xlink" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="aep-20220331_def.xml" xlink:role="http://www.xbrl.org/2003/role/definitionLinkbaseRef" xlink:type="simple"/>
+      <link:roleType id="DocumentandEntityInformation" roleURI="http://www.aep.com/role/DocumentandEntityInformation">
+        <link:definition>0001001 - Document - Document and Entity Information</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ConsolidatedStatementsofIncome" roleURI="http://www.aep.com/role/ConsolidatedStatementsofIncome">
+        <link:definition>1001002 - Statement - Consolidated Statements of Income</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ConsolidatedStatementsofComprehensiveIncomeLoss" roleURI="http://www.aep.com/role/ConsolidatedStatementsofComprehensiveIncomeLoss">
+        <link:definition>1002003 - Statement - Consolidated Statements of Comprehensive Income (Loss)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CondensedConsolidatedStatementsofChangesinEquity" roleURI="http://www.aep.com/role/CondensedConsolidatedStatementsofChangesinEquity">
+        <link:definition>1003004 - Statement - Condensed Consolidated Statements of Changes in Equity</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CondensedConsolidatedBalanceSheets" roleURI="http://www.aep.com/role/CondensedConsolidatedBalanceSheets">
+        <link:definition>1004005 - Statement - Condensed Consolidated Balance Sheets</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CondensedConsolidatedStatementsofCashFlows" roleURI="http://www.aep.com/role/CondensedConsolidatedStatementsofCashFlows">
+        <link:definition>1005006 - Statement - Condensed Consolidated Statements of Cash Flows</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SignificantAccountingMatters" roleURI="http://www.aep.com/role/SignificantAccountingMatters">
+        <link:definition>2101101 - Disclosure - Significant Accounting Matters</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SignificantAccountingMattersPolicies" roleURI="http://www.aep.com/role/SignificantAccountingMattersPolicies">
+        <link:definition>2202201 - Disclosure - Significant Accounting Matters (Policies)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SignificantAccountingMattersTables" roleURI="http://www.aep.com/role/SignificantAccountingMattersTables">
+        <link:definition>2303301 - Disclosure - Significant Accounting Matters (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SignificantAccountingMattersDetails" roleURI="http://www.aep.com/role/SignificantAccountingMattersDetails">
+        <link:definition>2404401 - Disclosure - Significant Accounting Matters (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="NewAccountingStandards" roleURI="http://www.aep.com/role/NewAccountingStandards">
+        <link:definition>2105102 - Disclosure - New Accounting Standards</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ComprehensiveIncome" roleURI="http://www.aep.com/role/ComprehensiveIncome">
+        <link:definition>2106103 - Disclosure - Comprehensive Income</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ComprehensiveIncomeTables" roleURI="http://www.aep.com/role/ComprehensiveIncomeTables">
+        <link:definition>2307302 - Disclosure - Comprehensive Income (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ComprehensiveIncomeDetails" roleURI="http://www.aep.com/role/ComprehensiveIncomeDetails">
+        <link:definition>2408402 - Disclosure - Comprehensive Income (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RateMatters" roleURI="http://www.aep.com/role/RateMatters">
+        <link:definition>2109104 - Disclosure - Rate Matters</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RateMattersTables" roleURI="http://www.aep.com/role/RateMattersTables">
+        <link:definition>2310303 - Disclosure - Rate Matters (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RateMattersRegulatedOperationsDetails" roleURI="http://www.aep.com/role/RateMattersRegulatedOperationsDetails">
+        <link:definition>2411403 - Disclosure - Rate Matters Regulated Operations (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RateMattersEastCompaniesDetails" roleURI="http://www.aep.com/role/RateMattersEastCompaniesDetails">
+        <link:definition>2412404 - Disclosure - Rate Matters East Companies (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RateMattersWestCompaniesDetails" roleURI="http://www.aep.com/role/RateMattersWestCompaniesDetails">
+        <link:definition>2413405 - Disclosure - Rate Matters West Companies (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CommitmentsGuaranteesandContingencies" roleURI="http://www.aep.com/role/CommitmentsGuaranteesandContingencies">
+        <link:definition>2114105 - Disclosure - Commitments, Guarantees and Contingencies</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CommitmentsGuaranteesandContingenciesTables" roleURI="http://www.aep.com/role/CommitmentsGuaranteesandContingenciesTables">
+        <link:definition>2315304 - Disclosure - Commitments, Guarantees and Contingencies (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CommitmentsGuaranteesandContingenciesDetails" roleURI="http://www.aep.com/role/CommitmentsGuaranteesandContingenciesDetails">
+        <link:definition>2416406 - Disclosure - Commitments, Guarantees and Contingencies (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="AcquisitionsandDispositions" roleURI="http://www.aep.com/role/AcquisitionsandDispositions">
+        <link:definition>2117106 - Disclosure - Acquisitions and Dispositions</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="AcquisitionsandDispositionsDetails" roleURI="http://www.aep.com/role/AcquisitionsandDispositionsDetails">
+        <link:definition>2418407 - Disclosure - Acquisitions and Dispositions (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="DiscontinuedOperationsandDisposalGroupsTables" roleURI="http://www.aep.com/role/DiscontinuedOperationsandDisposalGroupsTables">
+        <link:definition>2319305 - Disclosure - Discontinued Operations and Disposal Groups (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="BenefitPlans" roleURI="http://www.aep.com/role/BenefitPlans">
+        <link:definition>2120107 - Disclosure - Benefit Plans</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="BenefitPlansTables" roleURI="http://www.aep.com/role/BenefitPlansTables">
+        <link:definition>2321306 - Disclosure - Benefit Plans (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="BenefitPlansDetails" roleURI="http://www.aep.com/role/BenefitPlansDetails">
+        <link:definition>2422408 - Disclosure - Benefit Plans (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="BusinessSegments" roleURI="http://www.aep.com/role/BusinessSegments">
+        <link:definition>2123108 - Disclosure - Business Segments</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="BusinessSegmentsTables" roleURI="http://www.aep.com/role/BusinessSegmentsTables">
+        <link:definition>2324307 - Disclosure - Business Segments (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="BusinessSegmentsDetails" roleURI="http://www.aep.com/role/BusinessSegmentsDetails">
+        <link:definition>2425409 - Disclosure - Business Segments (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="DerivativesandHedging" roleURI="http://www.aep.com/role/DerivativesandHedging">
+        <link:definition>2126109 - Disclosure - Derivatives and Hedging</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="DerivativesandHedgingPolicies" roleURI="http://www.aep.com/role/DerivativesandHedgingPolicies">
+        <link:definition>2227202 - Disclosure - Derivatives and Hedging (Policies)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="DerivativesandHedgingTables" roleURI="http://www.aep.com/role/DerivativesandHedgingTables">
+        <link:definition>2328308 - Disclosure - Derivatives and Hedging (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="DerivativesandHedgingDetails" roleURI="http://www.aep.com/role/DerivativesandHedgingDetails">
+        <link:definition>2429410 - Disclosure - Derivatives and Hedging (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FairValueMeasurements" roleURI="http://www.aep.com/role/FairValueMeasurements">
+        <link:definition>2130110 - Disclosure - Fair Value Measurements</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FairValueMeasurementsPolicies" roleURI="http://www.aep.com/role/FairValueMeasurementsPolicies">
+        <link:definition>2231203 - Disclosure - Fair Value Measurements (Policies)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FairValueMeasurementsTables" roleURI="http://www.aep.com/role/FairValueMeasurementsTables">
+        <link:definition>2332309 - Disclosure - Fair Value Measurements (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FairValueLongtermDebtOtherTemporaryInvestmentsNuclearTrustsDetails" roleURI="http://www.aep.com/role/FairValueLongtermDebtOtherTemporaryInvestmentsNuclearTrustsDetails">
+        <link:definition>2433411 - Disclosure - Fair Value Long-term Debt, Other Temporary Investments, Nuclear Trusts (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FairValueAssetsandLiabilitiesDetails" roleURI="http://www.aep.com/role/FairValueAssetsandLiabilitiesDetails">
+        <link:definition>2434412 - Disclosure - Fair Value Assets and Liabilities (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IncomeTaxes" roleURI="http://www.aep.com/role/IncomeTaxes">
+        <link:definition>2135111 - Disclosure - Income Taxes</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IncomeTaxesPolicies" roleURI="http://www.aep.com/role/IncomeTaxesPolicies">
+        <link:definition>2236204 - Disclosure - Income Taxes (Policies)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IncomeTaxesTables" roleURI="http://www.aep.com/role/IncomeTaxesTables">
+        <link:definition>2337310 - Disclosure - Income Taxes (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IncomeTaxesDetails" roleURI="http://www.aep.com/role/IncomeTaxesDetails">
+        <link:definition>2438413 - Disclosure - Income Taxes (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FinancingActivities" roleURI="http://www.aep.com/role/FinancingActivities">
+        <link:definition>2139112 - Disclosure - Financing Activities</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FinancingActivitiesTables" roleURI="http://www.aep.com/role/FinancingActivitiesTables">
+        <link:definition>2340311 - Disclosure - Financing Activities (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FinancingActivitiesDetails" roleURI="http://www.aep.com/role/FinancingActivitiesDetails">
+        <link:definition>2441414 - Disclosure - Financing Activities (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="PropertyPlantandEquipment" roleURI="http://www.aep.com/role/PropertyPlantandEquipment">
+        <link:definition>2142113 - Disclosure - Property, Plant and Equipment</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="PropertyPlantandEquipmentPolicies" roleURI="http://www.aep.com/role/PropertyPlantandEquipmentPolicies">
+        <link:definition>2243205 - Disclosure - Property, Plant and Equipment (Policies)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="PropertyPlantandEquipmentTables" roleURI="http://www.aep.com/role/PropertyPlantandEquipmentTables">
+        <link:definition>2344312 - Disclosure - Property, Plant and Equipment (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="PropertyPlantandEquipmentDetails" roleURI="http://www.aep.com/role/PropertyPlantandEquipmentDetails">
+        <link:definition>2445415 - Disclosure - Property, Plant and Equipment (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RevenuefromContractswithCustomers" roleURI="http://www.aep.com/role/RevenuefromContractswithCustomers">
+        <link:definition>2146114 - Disclosure - Revenue from Contracts with Customers</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RevenuefromContractwithCustomerPolicies" roleURI="http://www.aep.com/role/RevenuefromContractwithCustomerPolicies">
+        <link:definition>2247206 - Disclosure - Revenue from Contract with Customer (Policies)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RevenuefromContractswithCustomersTables" roleURI="http://www.aep.com/role/RevenuefromContractswithCustomersTables">
+        <link:definition>2348313 - Disclosure - Revenue from Contracts with Customers (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RevenuefromContractswithCustomersDetails" roleURI="http://www.aep.com/role/RevenuefromContractswithCustomersDetails">
+        <link:definition>2449416 - Disclosure - Revenue from Contracts with Customers (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element id="aep_EstimatedCCRELGCosts" abstract="false" name="EstimatedCCRELGCosts" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="aep_ResidentialMember" abstract="true" name="ResidentialMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="aep_AEPTexasInterimTransmissionAndDistributionRatesMember" abstract="true" name="AEPTexasInterimTransmissionAndDistributionRatesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="aep_ProposedSettlementAnnualRateIncrease" abstract="false" name="ProposedSettlementAnnualRateIncrease" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="aep_MitchellPowerPlantMember" abstract="true" name="MitchellPowerPlantMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="aep_MinimumInterestRate" abstract="false" name="MinimumInterestRate" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:percentItemType"/>
+  <xs:element id="aep_AlternativeandOtherMember" abstract="true" name="AlternativeandOtherMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="aep_MobileGenerationLeasePaymentsMember" abstract="true" name="MobileGenerationLeasePaymentsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="aep_EquityUnitsAxis" abstract="true" name="EquityUnitsAxis" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrldt:dimensionItem" type="xbrli:stringItemType"/>
+  <xs:element id="aep_A2021ProjectedENECCostIncease" abstract="false" name="A2021ProjectedENECCostIncease" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="aep_MutualFundsFixedIncomeMember" abstract="true" name="MutualFundsFixedIncomeMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="aep_MaximumFuturePaymentsforLettersofCreditUncommittedFacilitiesTableTextBlock" abstract="false" name="MaximumFuturePaymentsforLettersofCreditUncommittedFacilitiesTableTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:textBlockItemType"/>
+  <xs:element id="aep_FinancingActivitiesTextualsAbstract" abstract="true" name="FinancingActivitiesTextualsAbstract" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="aep_NetUnderRecoveredFuelCosts" abstract="false" name="NetUnderRecoveredFuelCosts" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="aep_A2016TexasBaseRateCaseMember" abstract="true" name="A2016TexasBaseRateCaseMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="aep_RegulatoryAssetsCurrentlyNotEarningReturnMember" abstract="true" name="RegulatoryAssetsCurrentlyNotEarningReturnMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="aep_OtherCashDepositsMember" abstract="true" name="OtherCashDepositsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="aep_MichiganPowerSupplyCostRecoveryReconciliationMember" abstract="true" name="MichiganPowerSupplyCostRecoveryReconciliationMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="aep_WheelingPowerCompanyMember" abstract="true" name="WheelingPowerCompanyMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="aep_CCRELGFilingsMember" abstract="true" name="CCRELGFilingsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="aep_MezzanineEquity" abstract="false" name="MezzanineEquity" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="aep_FairValueOfDerivativeLiabilitiesSubjectToCrossDefaultProvisions" abstract="false" name="FairValueOfDerivativeLiabilitiesSubjectToCrossDefaultProvisions" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="aep_SecuritiesActivityWithinDecommissioningAndSnfTrustsAbstract" abstract="true" name="SecuritiesActivityWithinDecommissioningAndSnfTrustsAbstract" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="aep_FACCreditToCustomers" abstract="false" name="FACCreditToCustomers" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="aep_NotesPayableOtherPayableTwoMember" abstract="true" name="NotesPayableOtherPayableTwoMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="aep_AROTypeDomain" abstract="true" name="AROTypeDomain" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="aep_BadDebtReservesRelatedToSecuritizedSaleOfAccountsReceivable" abstract="false" name="BadDebtReservesRelatedToSecuritizedSaleOfAccountsReceivable" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="aep_CumulativeFairValueHedgingAdjustmentintheCarryingAmountoftheHedgedAssetLiability" abstract="false" name="CumulativeFairValueHedgingAdjustmentintheCarryingAmountoftheHedgedAssetLiability" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="aep_ImpairmentChargeDisallowedPlantInvestments" abstract="false" name="ImpairmentChargeDisallowedPlantInvestments" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="aep_RegulatedStatusAxis" abstract="true" name="RegulatedStatusAxis" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrldt:dimensionItem" type="xbrli:stringItemType"/>
+  <xs:element id="aep_FairValueSignificantUnobservableInputPricePerUnit" abstract="false" name="FairValueSignificantUnobservableInputPricePerUnit" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="aep_ArkansasMember" abstract="true" name="ArkansasMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="aep_MaxPotentialLossonMasterLeaseAgreementsTableTextBlock" abstract="false" name="MaxPotentialLossonMasterLeaseAgreementsTableTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:textBlockItemType"/>
+  <xs:element id="aep_CommercialMember" abstract="true" name="CommercialMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="aep_ChangesInFairValueAllocatedToRegulatedJurisdiction" abstract="false" name="ChangesInFairValueAllocatedToRegulatedJurisdiction" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="aep_AEPTransmissionHoldcoMember" abstract="true" name="AEPTransmissionHoldcoMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="aep_AverageLoanstoMoneyPool" abstract="false" name="AverageLoanstoMoneyPool" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="aep_EstimatedAlternativeCCRInvestment" abstract="false" name="EstimatedAlternativeCCRInvestment" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="aep_NorthCentralWindEnergyFacilitiesAxis" abstract="true" name="NorthCentralWindEnergyFacilitiesAxis" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrldt:dimensionItem" type="xbrli:stringItemType"/>
+  <xs:element id="aep_PaymentAtClosingMember" abstract="true" name="PaymentAtClosingMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="aep_EffectiveIncomeTaxRateReconciliationproductionandinvestmenttaxcredits" abstract="false" name="EffectiveIncomeTaxRateReconciliationproductionandinvestmenttaxcredits" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:percentItemType"/>
+  <xs:element id="aep_RegulatoryAssetsMember" abstract="true" name="RegulatoryAssetsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="aep_EstimatedAlternativeCCRELGInvestment" abstract="false" name="EstimatedAlternativeCCRELGInvestment" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="aep_ReductionOfPurchasePrice" abstract="false" name="ReductionOfPurchasePrice" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="aep_DoletHillsPowerStationFuelCostsLouisianaMember" abstract="true" name="DoletHillsPowerStationFuelCostsLouisianaMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="aep_EmployeeBenefitsAndPensionAssets" abstract="false" name="EmployeeBenefitsAndPensionAssets" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="aep_VoluntaryRetirementIncentiveProgramAbstract" abstract="true" name="VoluntaryRetirementIncentiveProgramAbstract" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="aep_IncomeTaxesTextualsAbstract" abstract="true" name="IncomeTaxesTextualsAbstract" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="aep_AccruedReimbursementofSpentNuclearFuelCosts" abstract="false" name="AccruedReimbursementofSpentNuclearFuelCosts" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="aep_EffectiveIncomeTaxRateReconciliationDiscreteTaxAdjustmentsPercentage" abstract="false" name="EffectiveIncomeTaxRateReconciliationDiscreteTaxAdjustmentsPercentage" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:percentItemType"/>
+  <xs:element id="aep_COVID19WestVirginiaMember" abstract="true" name="COVID19WestVirginiaMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="aep_SabineMiningCoMember" abstract="true" name="SabineMiningCoMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="aep_LettersOfCreditMember" abstract="true" name="LettersOfCreditMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="aep_AssetRetirementObligationRelatedtoRetiredPlantsMember" abstract="true" name="AssetRetirementObligationRelatedtoRetiredPlantsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="aep_AEPSharePriceforEquityUnitConversion" abstract="false" name="AEPSharePriceforEquityUnitConversion" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="dtr-types:perShareItemType"/>
+  <xs:element id="aep_TotalLongTermDebtDueWithinOneYearAxis" abstract="true" name="TotalLongTermDebtDueWithinOneYearAxis" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrldt:dimensionItem" type="xbrli:stringItemType"/>
+  <xs:element id="aep_OtherVariousExpensesMember" abstract="true" name="OtherVariousExpensesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="aep_ApprovedAdditionalVegetationManagementExpenses" abstract="false" name="ApprovedAdditionalVegetationManagementExpenses" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="aep_DirectBorrowingActivityTableTextBlock" abstract="false" name="DirectBorrowingActivityTableTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:textBlockItemType"/>
+  <xs:element id="aep_OrganizationAndSummaryOfSignificantAccountingPoliciesTextualsAbstract" abstract="true" name="OrganizationAndSummaryOfSignificantAccountingPoliciesTextualsAbstract" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="aep_CommodityAbstract" abstract="true" name="CommodityAbstract" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="aep_IndianaEarningsTestFilingsMember" abstract="true" name="IndianaEarningsTestFilingsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="aep_AlternativeMember" abstract="true" name="AlternativeMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="aep_EstimatedTurkAFUDCDisallowance" abstract="false" name="EstimatedTurkAFUDCDisallowance" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="aep_PaymentForAllegedFutureIncreasedCosts" abstract="false" name="PaymentForAllegedFutureIncreasedCosts" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="aep_DepreciationExpenseMember" abstract="true" name="DepreciationExpenseMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="aep_AffiliatedAccountsReceivableContractswithCustomersTableTextBlock" abstract="false" name="AffiliatedAccountsReceivableContractswithCustomersTableTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:textBlockItemType"/>
+  <xs:element id="aep_AROTypeAxis" abstract="true" name="AROTypeAxis" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrldt:dimensionItem" type="xbrli:stringItemType"/>
+  <xs:element id="aep_CurrentCumulativeENECUnderRecovery" abstract="false" name="CurrentCumulativeENECUnderRecovery" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="aep_AffiliatedDividendsCommonStock" abstract="false" name="AffiliatedDividendsCommonStock" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="aep_OtherRegulatoryAssetsNotYetBeingRecoveredMember" abstract="true" name="OtherRegulatoryAssetsNotYetBeingRecoveredMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="aep_RequestedDeferredStormCosts" abstract="false" name="RequestedDeferredStormCosts" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="aep_PirkeyPowerPlantAcceleratedDepreciationMember" abstract="true" name="PirkeyPowerPlantAcceleratedDepreciationMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="aep_GlenLynStationMember" abstract="true" name="GlenLynStationMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="aep_AdjustedCostOfDebtSecurities" abstract="false" name="AdjustedCostOfDebtSecurities" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="aep_OtherLongTermDebtFourMember" abstract="true" name="OtherLongTermDebtFourMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="aep_SpentNuclearFuelAndDecommissioningTrusts" abstract="false" name="SpentNuclearFuelAndDecommissioningTrusts" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="aep_PirkeyPowerPlantAndRelatedFuelOperationsMember" abstract="true" name="PirkeyPowerPlantAndRelatedFuelOperationsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="aep_RevenueTextualsAbstract" abstract="true" name="RevenueTextualsAbstract" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="aep_AEPShareOfIndependenceEnergyConnectionCapitalCosts" abstract="false" name="AEPShareOfIndependenceEnergyConnectionCapitalCosts" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="aep_MaximumPercentageDebtToCapitalization" abstract="false" name="MaximumPercentageDebtToCapitalization" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:percentItemType"/>
+  <xs:element id="aep_ImpairmentChargeTotal" abstract="false" name="ImpairmentChargeTotal" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="aep_BorrowingsfromParent" abstract="false" name="BorrowingsfromParent" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="aep_GuaranteeObligationsCurrentCarryingValueOtherLiabilitiesNoncurrent" abstract="false" name="GuaranteeObligationsCurrentCarryingValueOtherLiabilitiesNoncurrent" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="aep_PlantInServiceMember" abstract="true" name="PlantInServiceMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="aep_ElectricGenerationTransmissionDistributionRevenuesMember" abstract="true" name="ElectricGenerationTransmissionDistributionRevenuesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="aep_MaturityPeriodFourMember" abstract="true" name="MaturityPeriodFourMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="aep_SouthwesternElectricPowerCoMember" abstract="true" name="SouthwesternElectricPowerCoMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="aep_AmountOfIncreaseRelatedToAnnualDepreciationExpense" abstract="false" name="AmountOfIncreaseRelatedToAnnualDepreciationExpense" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="aep_AEPWindHoldingsLLCMember" abstract="true" name="AEPWindHoldingsLLCMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="aep_MaintenanceExpenseMember" abstract="true" name="MaintenanceExpenseMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="aep_AEPShareOfETTCumulativeRevenuesSubjectToReview" abstract="false" name="AEPShareOfETTCumulativeRevenuesSubjectToReview" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="aep_TransmissionAndDistributionCompaniesMember" abstract="true" name="TransmissionAndDistributionCompaniesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="aep_CarryingCostsIncome" abstract="false" name="CarryingCostsIncome" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="aep_ReversalofaRegulatoryProvision" abstract="false" name="ReversalofaRegulatoryProvision" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="aep_MaximumPotentialLeasePaymentsAEPROBargeandBoatLeases" abstract="false" name="MaximumPotentialLeasePaymentsAEPROBargeandBoatLeases" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="aep_CrossDefaultProvisionsMaximumThirdPartyObligationAmount" abstract="false" name="CrossDefaultProvisionsMaximumThirdPartyObligationAmount" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="aep_A23YearsMember" abstract="true" name="A23YearsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="aep_ChangesInAccumulatedOtherComprehensiveIncomeByComponentAbstract" abstract="true" name="ChangesInAccumulatedOtherComprehensiveIncomeByComponentAbstract" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="aep_KentuckyPowerCoMember" abstract="true" name="KentuckyPowerCoMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="aep_PirkeyGeneratingStationUnitNo1Member" abstract="true" name="PirkeyGeneratingStationUnitNo1Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="aep_AppleBlossomandBlackOakMember" abstract="true" name="AppleBlossomandBlackOakMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="aep_MaturityOfFairValueRiskManagementContractsAxis" abstract="true" name="MaturityOfFairValueRiskManagementContractsAxis" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrldt:dimensionItem" type="xbrli:stringItemType"/>
+  <xs:element id="aep_EmployeeBenefitsAndPensionObligations" abstract="false" name="EmployeeBenefitsAndPensionObligations" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="aep_StateTranscosMember" abstract="true" name="StateTranscosMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="aep_IntervenorRecommendedAnnualIncrease" abstract="false" name="IntervenorRecommendedAnnualIncrease" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="aep_GrossRealizedGainsOnInvestmentSalesOnShortTermInvestment" abstract="false" name="GrossRealizedGainsOnInvestmentSalesOnShortTermInvestment" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="aep_MaturityYearDomain" abstract="true" name="MaturityYearDomain" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="aep_HeldForSaleMember" abstract="true" name="HeldForSaleMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="aep_VegetationManagementMember" abstract="true" name="VegetationManagementMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="aep_NuclearTrustFundInvestmentsTextBlock" abstract="false" name="NuclearTrustFundInvestmentsTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:textBlockItemType"/>
+  <xs:element id="aep_RegulatoryLiabilitiesMember" abstract="true" name="RegulatoryLiabilitiesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="aep_CarryingAmountofHedgedAssetLiability" abstract="false" name="CarryingAmountofHedgedAssetLiability" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="aep_TrustAssetsForDecommissioningAndSpentNuclearFuelDisposalPolicyTextBlock" abstract="false" name="TrustAssetsForDecommissioningAndSpentNuclearFuelDisposalPolicyTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:textBlockItemType"/>
+  <xs:element id="aep_DeferralOfOhioCapacityCosts" abstract="false" name="DeferralOfOhioCapacityCosts" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="aep_PurchasedElectricityFuelAndOtherConsumablesUsedForElectricGenerationMember" abstract="true" name="PurchasedElectricityFuelAndOtherConsumablesUsedForElectricGenerationMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="aep_February2021SevereStormFuelCostsMember" abstract="true" name="February2021SevereStormFuelCostsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="aep_TrentandDesertSkyWindFarmsMember" abstract="true" name="TrentandDesertSkyWindFarmsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="aep_PropertyPlantAndEquipmentTextualsAbstract" abstract="true" name="PropertyPlantAndEquipmentTextualsAbstract" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="aep_DerivativesAndHedgingTextualsAbstract" abstract="true" name="DerivativesAndHedgingTextualsAbstract" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="aep_OtherComprehensiveIncomeUnrealizedGainLossArisingDuringPeriodNetOfTax" abstract="false" name="OtherComprehensiveIncomeUnrealizedGainLossArisingDuringPeriodNetOfTax" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="aep_VegetationManagementProgramsMember" abstract="true" name="VegetationManagementProgramsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="aep_IntervenorRecommendedReturnOnCommonEquity" abstract="false" name="IntervenorRecommendedReturnOnCommonEquity" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:percentItemType"/>
+  <xs:element id="aep_AmountOfIncreaseRelatedToVegetationManagement" abstract="false" name="AmountOfIncreaseRelatedToVegetationManagement" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="aep_A2020LouisianaBaseRateCaseMember" abstract="true" name="A2020LouisianaBaseRateCaseMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="aep_EquityDistributionAgreementMember" abstract="true" name="EquityDistributionAgreementMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="aep_NotesPayableOtherPayableThreeMember" abstract="true" name="NotesPayableOtherPayableThreeMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="aep_PublicServiceCoOfOklahomaMember" abstract="true" name="PublicServiceCoOfOklahomaMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="aep_IncomeTaxBenefitReMeasurement" abstract="false" name="IncomeTaxBenefitReMeasurement" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="aep_AmountOfApprovedIncreaseRelatedToStormCatastropheReserve" abstract="false" name="AmountOfApprovedIncreaseRelatedToStormCatastropheReserve" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="aep_OklaunionPurchasePowerAgreementCurrent" abstract="false" name="OklaunionPurchasePowerAgreementCurrent" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="aep_ALJRecommendedDisallowance" abstract="false" name="ALJRecommendedDisallowance" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="aep_ImpactOfCashFlowHedgesOnBalanceSheetTextBlock" abstract="false" name="ImpactOfCashFlowHedgesOnBalanceSheetTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:textBlockItemType"/>
+  <xs:element id="aep_LessThan1YearMember" abstract="true" name="LessThan1YearMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="aep_PercentageofanAssetAcquired" abstract="false" name="PercentageofanAssetAcquired" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="dtr-types:percentItemType"/>
+  <xs:element id="aep_TraverseMember" abstract="true" name="TraverseMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="aep_UnprotectedExcessADITAmortizationPolicyPolicyTextBlock" abstract="false" name="UnprotectedExcessADITAmortizationPolicyPolicyTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:textBlockItemType"/>
+  <xs:element id="aep_NotionalAmountOfADiscontinuedHedge" abstract="false" name="NotionalAmountOfADiscontinuedHedge" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="aep_AmortizationOfNuclearFuel" abstract="false" name="AmortizationOfNuclearFuel" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="aep_SharesPerEquityUnit" abstract="false" name="SharesPerEquityUnit" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="xbrli:sharesItemType"/>
+  <xs:element id="aep_PaymentTimingAxis" abstract="true" name="PaymentTimingAxis" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrldt:dimensionItem" type="xbrli:stringItemType"/>
+  <xs:element id="aep_DisallowanceItemDomain" abstract="true" name="DisallowanceItemDomain" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="aep_EstimatedReducedAnnualRevenues" abstract="false" name="EstimatedReducedAnnualRevenues" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="aep_MaturityofCreditFacilityAxis" abstract="true" name="MaturityofCreditFacilityAxis" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrldt:dimensionItem" type="xbrli:stringItemType"/>
+  <xs:element id="aep_ConesvilleGeneratingStationUnitNo4Member" abstract="true" name="ConesvilleGeneratingStationUnitNo4Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="aep_NuclearFuelAndDecommissioningTrustsAbstract" abstract="true" name="NuclearFuelAndDecommissioningTrustsAbstract" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="aep_AEPTexasInc.Member" abstract="true" name="AEPTexasInc.Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="aep_ProposedAdjustmentsAxis" abstract="true" name="ProposedAdjustmentsAxis" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrldt:dimensionItem" type="xbrli:stringItemType"/>
+  <xs:element id="aep_DIRRevenueAmountAbove2019AuthorizedLimit" abstract="false" name="DIRRevenueAmountAbove2019AuthorizedLimit" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="aep_TotalMezzanineEquity" abstract="false" name="TotalMezzanineEquity" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="aep_InterestRateMember" abstract="true" name="InterestRateMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="aep_FairValueMeasurements1TextualsAbstract" abstract="true" name="FairValueMeasurements1TextualsAbstract" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="aep_AROAdditionMember" abstract="true" name="AROAdditionMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="aep_KentuckyDeferredPurchasePowerExpensesMember" abstract="true" name="KentuckyDeferredPurchasePowerExpensesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="aep_TotalLongTermDebtMember" abstract="true" name="TotalLongTermDebtMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="aep_AssetRetirementObligationMember" abstract="true" name="AssetRetirementObligationMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="aep_MaximumPercentageofConsolidatedTangibleNetAssets" abstract="false" name="MaximumPercentageofConsolidatedTangibleNetAssets" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="dtr-types:percentItemType"/>
+  <xs:element id="aep_IntervenorRecommendedWACC" abstract="false" name="IntervenorRecommendedWACC" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:percentItemType"/>
+  <xs:element id="aep_EstimatedELGCosts" abstract="false" name="EstimatedELGCosts" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="aep_FuelOverUnderRecoveryNet" abstract="false" name="FuelOverUnderRecoveryNet" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="aep_AmortizationOfGenerationDeferrals" abstract="false" name="AmortizationOfGenerationDeferrals" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="aep_GuaranteeObligationsCurrentCarryingValueOtherLiabilitiesCurrent" abstract="false" name="GuaranteeObligationsCurrentCarryingValueOtherLiabilitiesCurrent" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="aep_LongTermDebtAndOtherSecuritiesIssuedTextBlock" abstract="false" name="LongTermDebtAndOtherSecuritiesIssuedTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:textBlockItemType"/>
+  <xs:element id="aep_CurrentLongTermDebtDomain" abstract="true" name="CurrentLongTermDebtDomain" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="aep_RegulatedStatusDomain" abstract="true" name="RegulatedStatusDomain" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="aep_SubLimitofSecuredDebt" abstract="false" name="SubLimitofSecuredDebt" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="aep_GainLossOnFairValuePortionOfLongTermDebt" abstract="false" name="GainLossOnFairValuePortionOfLongTermDebt" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="aep_DomesticMember" abstract="true" name="DomesticMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="aep_CashCollateralNettingTableTextBlockTableTextBlock" abstract="false" name="CashCollateralNettingTableTextBlockTableTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:textBlockItemType"/>
+  <xs:element id="aep_UncommittedFacility" abstract="false" name="UncommittedFacility" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="aep_ReverseCommonStockSplit" abstract="false" name="ReverseCommonStockSplit" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="aep_RequestedWeightedAverageCostOfCapital" abstract="false" name="RequestedWeightedAverageCostOfCapital" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:percentItemType"/>
+  <xs:element id="aep_StaffRecommendedAnnualRateIncrease" abstract="false" name="StaffRecommendedAnnualRateIncrease" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="aep_MaximumPercentagePaidToSellingAgents" abstract="false" name="MaximumPercentagePaidToSellingAgents" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:percentItemType"/>
+  <xs:element id="aep_DoletHillsPowerStationMember" abstract="true" name="DoletHillsPowerStationMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="aep_NotesPayableOtherPayableNineMember" abstract="true" name="NotesPayableOtherPayableNineMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="aep_DisallowanceItemAxis" abstract="true" name="DisallowanceItemAxis" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrldt:dimensionItem" type="xbrli:stringItemType"/>
+  <xs:element id="aep_ChangeInRegulatoryAssets" abstract="false" name="ChangeInRegulatoryAssets" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="aep_PreferredStock2Member" abstract="true" name="PreferredStock2Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="aep_KentuckyTransmissionCompanyMember" abstract="true" name="KentuckyTransmissionCompanyMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="aep_AverageInterestRatesForFundsBorrowedFromAndLoanedToUtilityMoneyPoolTextBlock" abstract="false" name="AverageInterestRatesForFundsBorrowedFromAndLoanedToUtilityMoneyPoolTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:textBlockItemType"/>
+  <xs:element id="aep_TexasRetailElectricProviderBadDebtExpenseMember" abstract="true" name="TexasRetailElectricProviderBadDebtExpenseMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="aep_SeniorUnsecuredNotesTwoMember" abstract="true" name="SeniorUnsecuredNotesTwoMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="aep_ShareofNetInvestmentinDoletHillsPowerStation" abstract="false" name="ShareofNetInvestmentinDoletHillsPowerStation" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="aep_TotalBasisPointBandForAuthorizedReturnOnEquity" abstract="false" name="TotalBasisPointBandForAuthorizedReturnOnEquity" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:percentItemType"/>
+  <xs:element id="aep_SecuritizationBondsMember" abstract="true" name="SecuritizationBondsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="aep_AssetsAndLiabilitiesHeldForSaleRelatedToKPCo" abstract="false" name="AssetsAndLiabilitiesHeldForSaleRelatedToKPCo" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="aep_StaffRecommendedAdjustmentsToCompaniesRequest" abstract="false" name="StaffRecommendedAdjustmentsToCompaniesRequest" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="aep_AmountOfIncreaseRelatedToStormCatastropheReserve" abstract="false" name="AmountOfIncreaseRelatedToStormCatastropheReserve" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="aep_TotalLongTermDebtDueWithinOneYearDomain" abstract="true" name="TotalLongTermDebtDueWithinOneYearDomain" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="aep_LouisianaJurisdictionMember" abstract="true" name="LouisianaJurisdictionMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="aep_A2020TexasBaseRateCaseMember" abstract="true" name="A2020TexasBaseRateCaseMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="aep_AcceleratedDepreciation" abstract="false" name="AcceleratedDepreciation" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="aep_AmountOfApprovedIncreaseRelatedToVegetationManagement" abstract="false" name="AmountOfApprovedIncreaseRelatedToVegetationManagement" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="aep_NetBookValueOfAmosAndMountaineerPlantsVirginia" abstract="false" name="NetBookValueOfAmosAndMountaineerPlantsVirginia" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="aep_AcquisitionOfNuclearFuelIncludedInCurrentLiabilities" abstract="false" name="AcquisitionOfNuclearFuelIncludedInCurrentLiabilities" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="aep_NetUncollectibleAccountsReceivableWrittenOff" abstract="false" name="NetUncollectibleAccountsReceivableWrittenOff" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="aep_AmountOfIncreaseRelatedToSPPExpenses" abstract="false" name="AmountOfIncreaseRelatedToSPPExpenses" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="aep_WestVirginiaMember" abstract="true" name="WestVirginiaMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="aep_MaximumInterestRateForFundsLoaned" abstract="false" name="MaximumInterestRateForFundsLoaned" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:percentItemType"/>
+  <xs:element id="aep_WelshUnit1And3AcceleratedDepreciationMember" abstract="true" name="WelshUnit1And3AcceleratedDepreciationMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="aep_OklaunionPowerStationAcceleratedDepreciationMember" abstract="true" name="OklaunionPowerStationAcceleratedDepreciationMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="aep_FeesPaidToAepCreditForCustomerAccountsReceivableSoldTextBlock" abstract="false" name="FeesPaidToAepCreditForCustomerAccountsReceivableSoldTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:textBlockItemType"/>
+  <xs:element id="aep_OtherLongTermDebtThreeMember" abstract="true" name="OtherLongTermDebtThreeMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="aep_DccFuelMember" abstract="true" name="DccFuelMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="aep_AccountsReceivableRetainedInterestAndPledgedAsCollateralLessUncollectibleAccounts" abstract="false" name="AccountsReceivableRetainedInterestAndPledgedAsCollateralLessUncollectibleAccounts" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="aep_MoneyPoolParticipantbyCompanyTypeAxis" abstract="true" name="MoneyPoolParticipantbyCompanyTypeAxis" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrldt:dimensionItem" type="xbrli:stringItemType"/>
+  <xs:element id="aep_MaximumPotentialLossAbstract" abstract="true" name="MaximumPotentialLossAbstract" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="aep_AssetsAndLiabilitiesHeldForSaleTableTextBlock" abstract="false" name="AssetsAndLiabilitiesHeldForSaleTableTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:textBlockItemType"/>
+  <xs:element id="aep_IndianaMichiganPowerCoMember" abstract="true" name="IndianaMichiganPowerCoMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="aep_A2020OhioBaseRateCaseMember" abstract="true" name="A2020OhioBaseRateCaseMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="aep_MaturityOfFairValueRiskManagementContractsDomain" abstract="true" name="MaturityOfFairValueRiskManagementContractsDomain" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="aep_EquityUnitsDomain" abstract="true" name="EquityUnitsDomain" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="aep_AssetsAndLiabilitiesHeldForSaleDomain" abstract="true" name="AssetsAndLiabilitiesHeldForSaleDomain" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="aep_ETTInterimTransmissionRatesMember" abstract="true" name="ETTInterimTransmissionRatesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="aep_EquityunitsMember" abstract="true" name="EquityunitsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="aep_StaffRecommendedDebtCapitalStructure" abstract="false" name="StaffRecommendedDebtCapitalStructure" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:percentItemType"/>
+  <xs:element id="aep_IndustrialMember" abstract="true" name="IndustrialMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="aep_RegulatoryAssetReturnDisclosureAxis" abstract="true" name="RegulatoryAssetReturnDisclosureAxis" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrldt:dimensionItem" type="xbrli:stringItemType"/>
+  <xs:element id="aep_DerivativeNonmonetaryEnergyNotionalAmount" abstract="false" name="DerivativeNonmonetaryEnergyNotionalAmount" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="dtr-types:energyItemType"/>
+  <xs:element id="aep_A2021ApprovedReductionInENECProjectedCosts" abstract="false" name="A2021ApprovedReductionInENECProjectedCosts" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="aep_NonutilityMoneyPoolActivityTableTextBlock" abstract="false" name="NonutilityMoneyPoolActivityTableTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:textBlockItemType"/>
+  <xs:element id="aep_A2021And2022ENECFilingMember" abstract="true" name="A2021And2022ENECFilingMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="aep_ApprovedAnnualRevenueIncrease" abstract="false" name="ApprovedAnnualRevenueIncrease" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="aep_A2021LouisianaStormCostFilingMember" abstract="true" name="A2021LouisianaStormCostFilingMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="aep_AccumulatedProvisionsForRateRefunds" abstract="false" name="AccumulatedProvisionsForRateRefunds" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="aep_RestrictedStockUnitsandPerformanceShareUnitsMember" abstract="true" name="RestrictedStockUnitsandPerformanceShareUnitsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="aep_StaffRecommendedEquityCapitalStructure" abstract="false" name="StaffRecommendedEquityCapitalStructure" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:percentItemType"/>
+  <xs:element id="aep_RiskManagementCommodityContractsMember" abstract="true" name="RiskManagementCommodityContractsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="aep_StaffRecommendedAnnualRateDecrease" abstract="false" name="StaffRecommendedAnnualRateDecrease" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="aep_AffiliatedandNonaffiliatedMember" abstract="true" name="AffiliatedandNonaffiliatedMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="aep_TransmissionOperationsMember" abstract="true" name="TransmissionOperationsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="aep_VirginiaERACMember" abstract="true" name="VirginiaERACMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="aep_OperatingLeasePaymentsRockport" abstract="false" name="OperatingLeasePaymentsRockport" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="aep_MaturityOfNetFairValueOfRiskManagementContractsPriorToCashCollateralAssetsOrLiabilities" abstract="false" name="MaturityOfNetFairValueOfRiskManagementContractsPriorToCashCollateralAssetsOrLiabilities" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="aep_GuarantorObligationsCurrentCarryingValueContingentPortion" abstract="false" name="GuarantorObligationsCurrentCarryingValueContingentPortion" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="aep_DerivativeRiskManagementContractsGainLossRecognizedAsRegulatoryAssetLiability" abstract="false" name="DerivativeRiskManagementContractsGainLossRecognizedAsRegulatoryAssetLiability" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="aep_DemandSideManagementProgramsMember" abstract="true" name="DemandSideManagementProgramsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="aep_AverageInterestRateForFundsLoaned" abstract="false" name="AverageInterestRateForFundsLoaned" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:percentItemType"/>
+  <xs:element id="aep_CommitmentFromBankConduitsToFinanceReceivablesTwo" abstract="false" name="CommitmentFromBankConduitsToFinanceReceivablesTwo" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="aep_WholesaleTransmissionMember" abstract="true" name="WholesaleTransmissionMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="aep_CostOfPurchasedPowerFromAffiliate" abstract="false" name="CostOfPurchasedPowerFromAffiliate" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="aep_NetEquityUnitsIssuanceProceeds" abstract="false" name="NetEquityUnitsIssuanceProceeds" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="aep_CostofRemovalRegulatoryLiability" abstract="false" name="CostofRemovalRegulatoryLiability" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="aep_EstimatedELGInvestment" abstract="false" name="EstimatedELGInvestment" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="aep_OtherOperationExpenseMember" abstract="true" name="OtherOperationExpenseMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="aep_MaximumInterestRateforFundsBorrowed" abstract="false" name="MaximumInterestRateforFundsBorrowed" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:percentItemType"/>
+  <xs:element id="aep_UnbilledReceivablesRelatedToSecuritizationSaleOfAccountsReceivable" abstract="false" name="UnbilledReceivablesRelatedToSecuritizationSaleOfAccountsReceivable" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="aep_CurrentLongTermDebtAxis" abstract="true" name="CurrentLongTermDebtAxis" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrldt:dimensionItem" type="xbrli:stringItemType"/>
+  <xs:element id="aep_MaximumInterestRate" abstract="false" name="MaximumInterestRate" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:percentItemType"/>
+  <xs:element id="aep_PirkeyPowerPlantAndSabineUnbilledFixedCosts" abstract="false" name="PirkeyPowerPlantAndSabineUnbilledFixedCosts" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="aep_VirginiaLegislationAffectingBiennialReviewsMember" abstract="true" name="VirginiaLegislationAffectingBiennialReviewsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="aep_A2022ModifiedReductionInENECProjectedCosts" abstract="false" name="A2022ModifiedReductionInENECProjectedCosts" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="aep_CreditFacilitiesStructured" abstract="false" name="CreditFacilitiesStructured" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="aep_TotalLongTermDebtDueWithinOneYearMember" abstract="true" name="TotalLongTermDebtDueWithinOneYearMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="aep_AverageBorrowingsfromMoneyPool" abstract="false" name="AverageBorrowingsfromMoneyPool" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="aep_EstimatedTurkAFUDCRefunds" abstract="false" name="EstimatedTurkAFUDCRefunds" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="aep_OperatingLeaseCostRockport" abstract="false" name="OperatingLeaseCostRockport" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="aep_TermLoan2Member" abstract="true" name="TermLoan2Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="aep_WelshPlantUnit2Member" abstract="true" name="WelshPlantUnit2Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="aep_LongTermDebtAndOtherSecuritiesIssuedRetiredAndPrincipalPaymentsMadeAbstract" abstract="true" name="LongTermDebtAndOtherSecuritiesIssuedRetiredAndPrincipalPaymentsMadeAbstract" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="aep_TotalCommitmentFromBankConduitsToFinanceReceivables" abstract="false" name="TotalCommitmentFromBankConduitsToFinanceReceivables" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="aep_DeferralOfIncrementalNuclearRefuelingOutageExpensesNet" abstract="false" name="DeferralOfIncrementalNuclearRefuelingOutageExpensesNet" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="aep_EffectiveIncomeTaxRateReconciliationFlowThroughPercentage" abstract="false" name="EffectiveIncomeTaxRateReconciliationFlowThroughPercentage" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:percentItemType"/>
+  <xs:element id="aep_AverageInterestRatesforFundsBorrowedFromandLoanedtoMoneyPoolAbstract" abstract="true" name="AverageInterestRatesforFundsBorrowedFromandLoanedtoMoneyPoolAbstract" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="aep_NotesPayableOtherPayablesSixMember" abstract="true" name="NotesPayableOtherPayablesSixMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="aep_RecognitionPeriodDomain" abstract="true" name="RecognitionPeriodDomain" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="aep_FairValueAssetsAndLiabilitiesMeasuredOnRecurringBasisPolicyTextBlock" abstract="false" name="FairValueAssetsAndLiabilitiesMeasuredOnRecurringBasisPolicyTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:textBlockItemType"/>
+  <xs:element id="aep_SundanceMember" abstract="true" name="SundanceMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="aep_ComprehensiveIncomeAbstract" abstract="true" name="ComprehensiveIncomeAbstract" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="aep_PerUnitConversionforEquityUnits" abstract="false" name="PerUnitConversionforEquityUnits" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="aep_NetAmountsOfAssetsLiabilitiesPresentedInStatementOfFinancialPositionMember" abstract="true" name="NetAmountsOfAssetsLiabilitiesPresentedInStatementOfFinancialPositionMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="aep_EquityUnitsAnnualDistributionRate" abstract="false" name="EquityUnitsAnnualDistributionRate" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="dtr-types:percentItemType"/>
+  <xs:element id="aep_UtilityMoneyPoolParticipantsMoneyPoolActivityAndAuthorizedBorrowingLimitsTextBlock" abstract="false" name="UtilityMoneyPoolParticipantsMoneyPoolActivityAndAuthorizedBorrowingLimitsTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:textBlockItemType"/>
+  <xs:element id="aep_InterestRateAbstract" abstract="true" name="InterestRateAbstract" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="aep_IncomeTaxExpenseReMeasurement" abstract="false" name="IncomeTaxExpenseReMeasurement" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="aep_OtherRevenuesAffiliatedandNonaffiliatedMember" abstract="true" name="OtherRevenuesAffiliatedandNonaffiliatedMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="aep_PurchasedElectricityForResaleMember" abstract="true" name="PurchasedElectricityForResaleMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="aep_DerivativeNonmonetaryVolumeNotionalAmount" abstract="false" name="DerivativeNonmonetaryVolumeNotionalAmount" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="dtr-types:volumeItemType"/>
+  <xs:element id="aep_InterimWACC" abstract="false" name="InterimWACC" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:percentItemType"/>
+  <xs:element id="aep_StormRelatedCostsLouisianaMember" abstract="true" name="StormRelatedCostsLouisianaMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="aep_MichiganPowerSupplyCostRecoveryReconciliation" abstract="false" name="MichiganPowerSupplyCostRecoveryReconciliation" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="aep_MarketingCompetitiveRetailandRenewableMember" abstract="true" name="MarketingCompetitiveRetailandRenewableMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="aep_ForwardEquityContractPaymentRate" abstract="false" name="ForwardEquityContractPaymentRate" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="dtr-types:percentItemType"/>
+  <xs:element id="aep_AEPTexasTransitionFundingandRestorationFundingMember" abstract="true" name="AEPTexasTransitionFundingandRestorationFundingMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="aep_DebtInstrumentMaturityDate1" abstract="false" name="DebtInstrumentMaturityDate1" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:gYearItemType"/>
+  <xs:element id="aep_FairValueOfDerivativeLiabilitiesSubjectToCrossAccelerationProvisions" abstract="false" name="FairValueOfDerivativeLiabilitiesSubjectToCrossAccelerationProvisions" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="aep_MakeWholePremiumonExtinguishmentofLongtermDebt" abstract="false" name="MakeWholePremiumonExtinguishmentofLongtermDebt" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="aep_MaximumPotentialAmountofFuturePaymentsAssociatedwithGuarantee" abstract="false" name="MaximumPotentialAmountofFuturePaymentsAssociatedwithGuarantee" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="aep_ProposedRateAdjustmentsDomain" abstract="true" name="ProposedRateAdjustmentsDomain" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="aep_A45YearsMember" abstract="true" name="A45YearsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="aep_TotalLongTermDebtAxis" abstract="true" name="TotalLongTermDebtAxis" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrldt:dimensionItem" type="xbrli:stringItemType"/>
+  <xs:element id="aep_MaxPotentialLossOnMasterLeaseAgreements" abstract="false" name="MaxPotentialLossOnMasterLeaseAgreements" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="aep_CustomerAccountsReceivableManagedPortfolioAbstract" abstract="true" name="CustomerAccountsReceivableManagedPortfolioAbstract" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="aep_GrossAmountsOffsetInStatementOfFinancialPositionMember" abstract="true" name="GrossAmountsOffsetInStatementOfFinancialPositionMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="aep_SpentNuclearFuelandDecommissioningTrustsMember" abstract="true" name="SpentNuclearFuelandDecommissioningTrustsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="aep_AmountOfDoletHillsFuelCostsApprovedToRecover" abstract="false" name="AmountOfDoletHillsFuelCostsApprovedToRecover" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="aep_GenerationAndMarketingMember" abstract="true" name="GenerationAndMarketingMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="aep_VerticallyIntegratedUtilitiesRevenuesMember" abstract="true" name="VerticallyIntegratedUtilitiesRevenuesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="aep_RenewableGenerationMember" abstract="true" name="RenewableGenerationMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="aep_ImpactofFairValueHedgesonBalanceSheetTableTextBlock" abstract="false" name="ImpactofFairValueHedgesonBalanceSheetTableTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:textBlockItemType"/>
+  <xs:element id="aep_GrossAmountsOfRiskManagementAssetsLiabilitiesRecognizedMember" abstract="true" name="GrossAmountsOfRiskManagementAssetsLiabilitiesRecognizedMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="aep_MaximumMinimumandAverageInterestRatesforFundsBorrowedfromandLoanedtoAEPTableTextBlock" abstract="false" name="MaximumMinimumandAverageInterestRatesforFundsBorrowedfromandLoanedtoAEPTableTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:textBlockItemType"/>
+  <xs:element id="aep_RequestedNetAnnualIncrease" abstract="false" name="RequestedNetAnnualIncrease" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="aep_LoanstoParent" abstract="false" name="LoanstoParent" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="aep_NorthCentralWindEnergyFacilitiesMember" abstract="true" name="NorthCentralWindEnergyFacilitiesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="aep_CCRInvestment" abstract="false" name="CCRInvestment" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="aep_AROAdditionalLiabilityIncurredMember" abstract="true" name="AROAdditionalLiabilityIncurredMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="aep_WindGenerationMWs" abstract="false" name="WindGenerationMWs" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:powerItemType"/>
+  <xs:element id="aep_AppalachianPowerCoMember" abstract="true" name="AppalachianPowerCoMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="aep_RevisedRequestedNetAnnualIncrease" abstract="false" name="RevisedRequestedNetAnnualIncrease" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="aep_MoneyPoolParticipantsMoneyPoolActivityAndAuthorizedBorrowingLimitsAbstract" abstract="true" name="MoneyPoolParticipantsMoneyPoolActivityAndAuthorizedBorrowingLimitsAbstract" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="aep_WholesaleGenerationMember" abstract="true" name="WholesaleGenerationMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="aep_AEPTCoParentMember" abstract="true" name="AEPTCoParentMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="aep_ForwardEquityPurchaseContractDate" abstract="false" name="ForwardEquityPurchaseContractDate" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:gYearItemType"/>
+  <xs:element id="aep_AdditionalRecognizedExpensesConsistingPrimarilyofDepreciationandVegetationManagement" abstract="false" name="AdditionalRecognizedExpensesConsistingPrimarilyofDepreciationandVegetationManagement" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="aep_ImpactOfCashFlowHedgesOnBalanceSheetAbstract" abstract="true" name="ImpactOfCashFlowHedgesOnBalanceSheetAbstract" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="aep_ApprovedDeferralOfDoletHillsFuelCosts" abstract="false" name="ApprovedDeferralOfDoletHillsFuelCosts" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="aep_OtherLongTermDebtMember" abstract="true" name="OtherLongTermDebtMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="aep_AEPTransmissionCoMember" abstract="true" name="AEPTransmissionCoMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="aep_RequestedEquityCapitalStructure" abstract="false" name="RequestedEquityCapitalStructure" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:percentItemType"/>
+  <xs:element id="aep_DryLakeSolarProjectMember" abstract="true" name="DryLakeSolarProjectMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="aep_A2021RequestedIncreaseInENECRates" abstract="false" name="A2021RequestedIncreaseInENECRates" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="aep_OwnershipInterestInMitchellPowerPlant" abstract="false" name="OwnershipInterestInMitchellPowerPlant" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="dtr-types:percentItemType"/>
+  <xs:element id="aep_CookPlantStudyCostsMember" abstract="true" name="CookPlantStudyCostsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="aep_OhioPowerCoMember" abstract="true" name="OhioPowerCoMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="aep_CrossDefaultProvisionTextBlock" abstract="false" name="CrossDefaultProvisionTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:textBlockItemType"/>
+  <xs:element id="aep_HedgingContractsMember" abstract="true" name="HedgingContractsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="aep_MaximumSharesIssuedUnderEquityUnitsConversion" abstract="false" name="MaximumSharesIssuedUnderEquityUnitsConversion" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:sharesItemType"/>
+  <xs:element id="aep_FeesPaidToAepCreditForCustomerAccountsReceivableSoldAbstract" abstract="true" name="FeesPaidToAepCreditForCustomerAccountsReceivableSoldAbstract" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="aep_AmortizationOfPensionAndOtherPostretirementBenefitPlansAbstract" abstract="true" name="AmortizationOfPensionAndOtherPostretirementBenefitPlansAbstract" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="aep_MaximumValueOfSharesToBeIssuedUnderATMProgram" abstract="false" name="MaximumValueOfSharesToBeIssuedUnderATMProgram" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="aep_TrustAssetsDomain" abstract="true" name="TrustAssetsDomain" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="aep_TrustFundAssetsOneTimeFeeObligationForNuclearFuelDisposition" abstract="false" name="TrustFundAssetsOneTimeFeeObligationForNuclearFuelDisposition" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="aep_NotesPayableOtherPayableFourMember" abstract="true" name="NotesPayableOtherPayableFourMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="aep_MoneyPoolParticipantByCompanyTypeDomain" abstract="true" name="MoneyPoolParticipantByCompanyTypeDomain" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="aep_ProvisionforRefund" abstract="false" name="ProvisionforRefund" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="aep_NotesPayableOtherPayableEightMember" abstract="true" name="NotesPayableOtherPayableEightMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="aep_BaseRateDomain" abstract="true" name="BaseRateDomain" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="aep_FairValueHeldForSaleMember" abstract="true" name="FairValueHeldForSaleMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="aep_GenerationAndMarketingRevenuesMember" abstract="true" name="GenerationAndMarketingRevenuesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="aep_KentuckyPowerCompanyAndKentuckyTransmissionCompanyMember" abstract="true" name="KentuckyPowerCompanyAndKentuckyTransmissionCompanyMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="aep_InvestmentInChargePointMember" abstract="true" name="InvestmentInChargePointMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="aep_COVID19VirginiaMember" abstract="true" name="COVID19VirginiaMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="aep_CustomerAccountsReceivableManagedPortfolioTextBlock" abstract="false" name="CustomerAccountsReceivableManagedPortfolioTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:textBlockItemType"/>
+  <xs:element id="aep_RegulatoryAssetsPendingFinalRegulatoryApprovalMember" abstract="true" name="RegulatoryAssetsPendingFinalRegulatoryApprovalMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="aep_NaturalGasContractMember" abstract="true" name="NaturalGasContractMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="aep_HeatingOilAndGasolineContractMember" abstract="true" name="HeatingOilAndGasolineContractMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="aep_FinancialTrasnsmissionRightsMember" abstract="true" name="FinancialTrasnsmissionRightsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="aep_RateBaseMember" abstract="true" name="RateBaseMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="aep_RegulatedGeneratingUnitstobeRetiredTableTextBlock" abstract="false" name="RegulatedGeneratingUnitstobeRetiredTableTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:textBlockItemType"/>
+  <xs:element id="aep_FairValueMeasurementsTextualsAbstract" abstract="true" name="FairValueMeasurementsTextualsAbstract" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="aep_RequestedAnnualIncrease" abstract="false" name="RequestedAnnualIncrease" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="aep_DebtInstrumentInterestVariableRate" abstract="false" name="DebtInstrumentInterestVariableRate" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="aep_SantaRitaEastMember" abstract="true" name="SantaRitaEastMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="aep_A2013ReversalOfPreviouslyRecordedRegulatoryDisallowances" abstract="false" name="A2013ReversalOfPreviouslyRecordedRegulatoryDisallowances" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="aep_FutureMinimumLeasePaymentsforSaleandLeasebackTableTextBlock" abstract="false" name="FutureMinimumLeasePaymentsforSaleandLeasebackTableTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:textBlockItemType"/>
+  <xs:element id="aep_WelshPlantUnit1and3Member" abstract="true" name="WelshPlantUnit1and3Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="aep_RequestedRecoveryOfDoletHillsPowerStation" abstract="false" name="RequestedRecoveryOfDoletHillsPowerStation" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="aep_VerticallyIntegratedUtilitiesMember" abstract="true" name="VerticallyIntegratedUtilitiesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="aep_NotesPayableOtherPayableSevenMember" abstract="true" name="NotesPayableOtherPayableSevenMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="aep_ReclassificationsFromAccumulatedOtherComprehensiveIncomeAbstract" abstract="true" name="ReclassificationsFromAccumulatedOtherComprehensiveIncomeAbstract" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="aep_RecognitionPeriodAxis" abstract="true" name="RecognitionPeriodAxis" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrldt:dimensionItem" type="xbrli:stringItemType"/>
+  <xs:element id="aep_EnvironmentalExpenseDeferralVirginiaMember" abstract="true" name="EnvironmentalExpenseDeferralVirginiaMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="aep_AuthorizedShortTermBorrowingLimit" abstract="false" name="AuthorizedShortTermBorrowingLimit" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="aep_A2021ApprovedENECRateIncrease" abstract="false" name="A2021ApprovedENECRateIncrease" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="aep_InterestRateForeignCurrencyHedgesMember" abstract="true" name="InterestRateForeignCurrencyHedgesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="aep_PollutionControlBondMember" abstract="true" name="PollutionControlBondMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="aep_EffectiveIncomeTaxRateReconciliationParentCompanyLossBenefitPercentage" abstract="false" name="EffectiveIncomeTaxRateReconciliationParentCompanyLossBenefitPercentage" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:percentItemType"/>
+  <xs:element id="aep_MaturityofcreditfacilityDomain" abstract="true" name="MaturityofcreditfacilityDomain" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="aep_ReturnOnCommonEquityMember" abstract="true" name="ReturnOnCommonEquityMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="aep_TermLoanMember" abstract="true" name="TermLoanMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="aep_AEPTexasCumulativeRevenuesSubjectToReview" abstract="false" name="AEPTexasCumulativeRevenuesSubjectToReview" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="aep_PowerContractMember" abstract="true" name="PowerContractMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="aep_RequestedFuelCostDeferral" abstract="false" name="RequestedFuelCostDeferral" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="aep_TrustAssetsAxis" abstract="true" name="TrustAssetsAxis" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrldt:dimensionItem" type="xbrli:stringItemType"/>
+  <xs:element id="aep_MaximumBorrowingsfromMoneyPool" abstract="false" name="MaximumBorrowingsfromMoneyPool" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="aep_After5YearsMember" abstract="true" name="After5YearsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="aep_A2022RequestedIncreaseInENECRatesSecondFiling" abstract="false" name="A2022RequestedIncreaseInENECRatesSecondFiling" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="aep_DoletHillsPowerStationAndRelatedFuelOperationsMember" abstract="true" name="DoletHillsPowerStationAndRelatedFuelOperationsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="aep_CustomerRefundsDueToDisposition" abstract="false" name="CustomerRefundsDueToDisposition" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="aep_EffectiveInterestRatesOnSecuritizationOfAccountsReceivable" abstract="false" name="EffectiveInterestRatesOnSecuritizationOfAccountsReceivable" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:percentItemType"/>
+  <xs:element id="aep_RequestedReturnOnEquity" abstract="false" name="RequestedReturnOnEquity" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:percentItemType"/>
+  <xs:element id="aep_ApprovedNetIncreaseinTexasAnnualRevenues" abstract="false" name="ApprovedNetIncreaseinTexasAnnualRevenues" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="aep_EnterpriseValue" abstract="false" name="EnterpriseValue" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="aep_AffiliatedLongTermDebtNoncurrent" abstract="false" name="AffiliatedLongTermDebtNoncurrent" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="aep_A2021CumulativeENECUnderRecovery" abstract="false" name="A2021CumulativeENECUnderRecovery" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="aep_RevenuefromContractswithCustomersAbstract" abstract="true" name="RevenuefromContractswithCustomersAbstract" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="aep_RegulatoryAssetReturnDisclosureDomain" abstract="true" name="RegulatoryAssetReturnDisclosureDomain" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="aep_ComparativeAccountsReceivableInformationTextBlock" abstract="false" name="ComparativeAccountsReceivableInformationTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:textBlockItemType"/>
+  <xs:element id="aep_TotalLongTermDebtOutstandingDomain" abstract="true" name="TotalLongTermDebtOutstandingDomain" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="aep_RecommendedDisallowancefromStafforIntervenors" abstract="false" name="RecommendedDisallowancefromStafforIntervenors" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="aep_AdjustedCostOfEquitySecurities" abstract="false" name="AdjustedCostOfEquitySecurities" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="aep_CollateralTriggeringEventsAbstract" abstract="true" name="CollateralTriggeringEventsAbstract" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="aep_MinimumInterestRateForFundsBorrowed" abstract="false" name="MinimumInterestRateForFundsBorrowed" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:percentItemType"/>
+  <xs:element id="aep_NorthCentralWindEnergyFacilitiesDomain" abstract="true" name="NorthCentralWindEnergyFacilitiesDomain" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="aep_SecuritizationBondsTwoMember" abstract="true" name="SecuritizationBondsTwoMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="aep_EffectiveIncomeTaxRateReconciliationAFUDCEquityPercentage" abstract="false" name="EffectiveIncomeTaxRateReconciliationAFUDCEquityPercentage" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:percentItemType"/>
+  <xs:element id="aep_NortheasternPlantUnit3Member" abstract="true" name="NortheasternPlantUnit3Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="aep_NotionalVolumeOfDerivativeInstrumentsAbstract" abstract="true" name="NotionalVolumeOfDerivativeInstrumentsAbstract" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="aep_CommitmentsGuaranteesAndContingenciesAbstract" abstract="true" name="CommitmentsGuaranteesAndContingenciesAbstract" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="aep_OtherRevenuesMember" abstract="true" name="OtherRevenuesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="aep_PlantRetirementCostsUnrecoveredPlantLouisianaMember" abstract="true" name="PlantRetirementCostsUnrecoveredPlantLouisianaMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="aep_RegulatoryAssetApprovedForRecoveryMember" abstract="true" name="RegulatoryAssetApprovedForRecoveryMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="aep_BookValuesAndFairValuesOfLongTermDebtPolicyTextBlock" abstract="false" name="BookValuesAndFairValuesOfLongTermDebtPolicyTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:textBlockItemType"/>
+  <xs:element id="aep_BoatandBargeLeasesMember" abstract="true" name="BoatandBargeLeasesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="aep_MaximumFuturePaymentsForLettersOfCreditAbstract" abstract="true" name="MaximumFuturePaymentsForLettersOfCreditAbstract" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="aep_PropertyTaxMember" abstract="true" name="PropertyTaxMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="aep_MaturityPeriod3Member" abstract="true" name="MaturityPeriod3Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="aep_MaximumLoanstoMoneyPool" abstract="false" name="MaximumLoanstoMoneyPool" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="aep_A2012TexasBaseRateCaseMember" abstract="true" name="A2012TexasBaseRateCaseMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="aep_SeniorUnsecuredNotesMember" abstract="true" name="SeniorUnsecuredNotesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="aep_SeniorUnsecuredNotesThreeMember" abstract="true" name="SeniorUnsecuredNotesThreeMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="aep_ProceedsOnSaleOfReceivablesToAepCreditTextBlock" abstract="false" name="ProceedsOnSaleOfReceivablesToAepCreditTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:textBlockItemType"/>
+  <xs:element id="aep_CorporateUnitOwnershipShareOfAnEquityUnit" abstract="false" name="CorporateUnitOwnershipShareOfAnEquityUnit" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="dtr-types:percentItemType"/>
+  <xs:element id="aep_AssetsAndLiabilitiesHeldForSaleAxis" abstract="true" name="AssetsAndLiabilitiesHeldForSaleAxis" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrldt:dimensionItem" type="xbrli:stringItemType"/>
+  <xs:element id="aep_PaymentTimingDomain" abstract="true" name="PaymentTimingDomain" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="aep_MaverickMember" abstract="true" name="MaverickMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="aep_EnergyContractsMember" abstract="true" name="EnergyContractsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="aep_StaffRecommendedReturnOnCommonEquity" abstract="false" name="StaffRecommendedReturnOnCommonEquity" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:percentItemType"/>
+  <xs:element id="aep_RevisedRequestedAnnualIncrease" abstract="false" name="RevisedRequestedAnnualIncrease" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="aep_DebtAndEquitySecuritiesWithinOtherTemporaryInvestmentsAbstract" abstract="true" name="DebtAndEquitySecuritiesWithinOtherTemporaryInvestmentsAbstract" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="aep_SolarGenerationMWs" abstract="false" name="SolarGenerationMWs" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:powerItemType"/>
+  <xs:element id="aep_OtherLongTermDebtTwoMember" abstract="true" name="OtherLongTermDebtTwoMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="aep_DirectBorrowingMember" abstract="true" name="DirectBorrowingMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="aep_NuclearTrustFundInvestmentsAbstract" abstract="true" name="NuclearTrustFundInvestmentsAbstract" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="aep_ShareOfNetInvestmentInPirkeyPowerPlant" abstract="false" name="ShareOfNetInvestmentInPirkeyPowerPlant" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="aep_A2020EquityUnitsMember" abstract="true" name="A2020EquityUnitsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="aep_PrincipalAmountsOfJuniorSubordinatedDebt" abstract="false" name="PrincipalAmountsOfJuniorSubordinatedDebt" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="aep_EmployeeRelatedExpenseMember" abstract="true" name="EmployeeRelatedExpenseMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="aep_CommitmentsGuaranteesAndContingenciesTextualsAbstract" abstract="true" name="CommitmentsGuaranteesAndContingenciesTextualsAbstract" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="aep_GrossRealizedLossesOnInvestmentSalesOnShortTermInvestment" abstract="false" name="GrossRealizedLossesOnInvestmentSalesOnShortTermInvestment" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="aep_AdditionalRevenuesRecognizedtobeSurchargedtoCustomers" abstract="false" name="AdditionalRevenuesRecognizedtobeSurchargedtoCustomers" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="aep_PlantRetirementCostsUnrecoveredPlantMember" abstract="true" name="PlantRetirementCostsUnrecoveredPlantMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="aep_AuctionRateTaxExemptLongTermDebtOutstanding" abstract="false" name="AuctionRateTaxExemptLongTermDebtOutstanding" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="aep_CrossAccelerationProvisionsMaximumThirdPartyObligationAmount" abstract="false" name="CrossAccelerationProvisionsMaximumThirdPartyObligationAmount" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="aep_A2022RequestedIncreaseInENECRates" abstract="false" name="A2022RequestedIncreaseInENECRates" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="aep_RegulatoryAssetsReturnDisclosureDomain" abstract="true" name="RegulatoryAssetsReturnDisclosureDomain" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="aep_CashCollateralNettingAbstract" abstract="true" name="CashCollateralNettingAbstract" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="aep_NotesPayableOtherPayableFiveMember" abstract="true" name="NotesPayableOtherPayableFiveMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="aep_ProvisionforRefundGlobalSettlement" abstract="false" name="ProvisionforRefundGlobalSettlement" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="aep_AssetRetirementObligationLouisianaMember" abstract="true" name="AssetRetirementObligationLouisianaMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="aep_RequestedAnnualIncreaseInRebuttal" abstract="false" name="RequestedAnnualIncreaseInRebuttal" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="aep_TexasMember" abstract="true" name="TexasMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="aep_March2026Member" abstract="true" name="March2026Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="aep_AmountOfIncreaseRelatedToNorthCentralWindFacilities" abstract="false" name="AmountOfIncreaseRelatedToNorthCentralWindFacilities" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="aep_BaseRateAxis" abstract="true" name="BaseRateAxis" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrldt:dimensionItem" type="xbrli:stringItemType"/>
+  <xs:element id="aep_SupplementaryInformationTextBlock" abstract="false" name="SupplementaryInformationTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:textBlockItemType"/>
+  <xs:element id="aep_COVID19Member" abstract="true" name="COVID19Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="aep_AffiliatedLongTermDebtCurrent" abstract="false" name="AffiliatedLongTermDebtCurrent" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="aep_WithinCurrentYearMember" abstract="true" name="WithinCurrentYearMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="aep_DoletHillsGeneratingStationUnitNo1Member" abstract="true" name="DoletHillsGeneratingStationUnitNo1Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="aep_OtherRetailMember" abstract="true" name="OtherRetailMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="aep_CreditDowngradeTriggerExposure" abstract="false" name="CreditDowngradeTriggerExposure" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="aep_A2019EquityUnitsMember" abstract="true" name="A2019EquityUnitsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="aep_ExpectedReimbursementForSpentNuclearFuelDryCaskStorage" abstract="false" name="ExpectedReimbursementForSpentNuclearFuelDryCaskStorage" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="aep_MaximumAndMinimumInterestRatesForFundsEitherBorrowedFromOrLoanedToUtilityMoneyPoolTextBlock" abstract="false" name="MaximumAndMinimumInterestRatesForFundsEitherBorrowedFromOrLoanedToUtilityMoneyPoolTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:textBlockItemType"/>
+  <xs:element id="aep_CommitmentFromBankConduitsToFinanceReceivables" abstract="false" name="CommitmentFromBankConduitsToFinanceReceivables" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="aep_StockholdersEquityASU201613Adoption" abstract="false" name="StockholdersEquityASU201613Adoption" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="aep_MinimumInterestRateforFundsLoaned" abstract="false" name="MinimumInterestRateforFundsLoaned" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:percentItemType"/>
+  <xs:element id="aep_DoletHillsPowerStationAcceleratedDepreciationMember" abstract="true" name="DoletHillsPowerStationAcceleratedDepreciationMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="aep_RateMatters" abstract="false" name="RateMatters" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="aep_TotalLongTermDebtDomain" abstract="true" name="TotalLongTermDebtDomain" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="aep_RequestedNetIncreaseinTexasAnnualRevenues" abstract="false" name="RequestedNetIncreaseinTexasAnnualRevenues" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="aep_A2021ArkansasRateCaseMember" abstract="true" name="A2021ArkansasRateCaseMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="aep_ApprovedCarryingCharge" abstract="false" name="ApprovedCarryingCharge" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:percentItemType"/>
+  <xs:element id="aep_MaximumMinimumAverageInterestRatesForFundsBorrowedFromLoanedToNonutilityMoneyPoolTextBlock" abstract="false" name="MaximumMinimumAverageInterestRatesForFundsBorrowedFromLoanedToNonutilityMoneyPoolTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:textBlockItemType"/>
+  <xs:element id="aep_DebtAndEquitySecuritiesWithinOtherTemporaryInvestmentsTextBlock" abstract="false" name="DebtAndEquitySecuritiesWithinOtherTemporaryInvestmentsTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:textBlockItemType"/>
+  <xs:element id="aep_WholesaleandCompetitiveMember" abstract="true" name="WholesaleandCompetitiveMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="aep_ImpairmentChargeWelshPlantUnit2" abstract="false" name="ImpairmentChargeWelshPlantUnit2" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="aep_BasisOfAccountingTextBlock" abstract="false" name="BasisOfAccountingTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:textBlockItemType"/>
+  <xs:element id="aep_MaterialsandSuppliesRelatedtoRetiredPlantsMember" abstract="true" name="MaterialsandSuppliesRelatedtoRetiredPlantsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="aep_AccountsReceivableAndAccruedUnbilledRevenuesTextBlock" abstract="false" name="AccountsReceivableAndAccruedUnbilledRevenuesTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:textBlockItemType"/>
+  <xs:element id="aep_UtilityMember" abstract="true" name="UtilityMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="aep_CashCashEquivalentsandRestrictedCashAbstract" abstract="true" name="CashCashEquivalentsandRestrictedCashAbstract" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="aep_RockportPlantUnit2AcquisitionPrice" abstract="false" name="RockportPlantUnit2AcquisitionPrice" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="aep_TotalLongTermDebtTwoDomain" abstract="true" name="TotalLongTermDebtTwoDomain" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="aep_MaximumAndMinimumInterestRatesAbstract" abstract="true" name="MaximumAndMinimumInterestRatesAbstract" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="aep_RegulatoryAssetsCurrentlyEarningReturnMember" abstract="true" name="RegulatoryAssetsCurrentlyEarningReturnMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="aep_VirginiaMember" abstract="true" name="VirginiaMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="aep_March2023Member" abstract="true" name="March2023Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="aep_RenewableEnergyCredits" abstract="false" name="RenewableEnergyCredits" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="aep_RequestedDebtCapitalStructure" abstract="false" name="RequestedDebtCapitalStructure" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:percentItemType"/>
+  <xs:element id="aep_AverageInterestRateForFundsBorrowed" abstract="false" name="AverageInterestRateForFundsBorrowed" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:percentItemType"/>
+  <xs:element id="aep_TransmissionandDistributionUtilitiesRevenuesMember" abstract="true" name="TransmissionandDistributionUtilitiesRevenuesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="aep_ParentOwnershipInterestInETT" abstract="false" name="ParentOwnershipInterestInETT" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:percentItemType"/>
+  <xs:element id="aep_DilutiveSecurities1" abstract="false" name="DilutiveSecurities1" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:perShareItemType"/>
+  <xs:element id="aep_WarrantsHeldInChargePointMember" abstract="true" name="WarrantsHeldInChargePointMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="aep_MaturityPeriod2Member" abstract="true" name="MaturityPeriod2Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="aep_RockportLeaseMember" abstract="true" name="RockportLeaseMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="aep_UtilityPlantGenerationCapacity" abstract="false" name="UtilityPlantGenerationCapacity" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="dtr-types:powerItemType"/>
+  <xs:element id="aep_OtherTemporaryInvestmentsTextBlock" abstract="false" name="OtherTemporaryInvestmentsTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:textBlockItemType"/>
+  <xs:element id="aep_GeneratingUnitsProbableofAbandonmentMember" abstract="true" name="GeneratingUnitsProbableofAbandonmentMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="aep_TotalLongTermDebtDueWithinOneYrAxis" abstract="true" name="TotalLongTermDebtDueWithinOneYrAxis" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrldt:dimensionItem" type="xbrli:stringItemType"/>
+  <xs:element id="aep_PrepaidPensionAndOPEBAssetsMember" abstract="true" name="PrepaidPensionAndOPEBAssetsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="aep_StaffCalculatedRevenueDeficiency" abstract="false" name="StaffCalculatedRevenueDeficiency" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="aep_TransourceEnergyMember" abstract="true" name="TransourceEnergyMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="aep_PaymentWhenPutInServiceMember" abstract="true" name="PaymentWhenPutInServiceMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="aep_EquityUnitsIssued" abstract="false" name="EquityUnitsIssued" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:sharesItemType"/>
+  <xs:element id="aep_MaximumFuturePaymentsforLettersofCreditIssuedUndertheUncommittedFacility" abstract="false" name="MaximumFuturePaymentsforLettersofCreditIssuedUndertheUncommittedFacility" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="aep_SecuritiesActivityWithinDecommissioningAndSnfTrustsTextBlock" abstract="false" name="SecuritiesActivityWithinDecommissioningAndSnfTrustsTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:textBlockItemType"/>
+  <xs:element id="aep_NonutilityMember" abstract="true" name="NonutilityMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+</xs:schema>

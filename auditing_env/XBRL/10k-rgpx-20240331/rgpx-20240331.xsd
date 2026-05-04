@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="US-ASCII" ?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:xbrli="http://www.xbrl.org/2003/instance" xmlns:xbrldt="http://xbrl.org/2005/xbrldt" xmlns:xbrldi="http://xbrl.org/2006/xbrldi" xmlns:dei="http://xbrl.sec.gov/dei/2023" xmlns:us-gaap="http://fasb.org/us-gaap/2023" xmlns:srt="http://fasb.org/srt/2023" xmlns:srt-types="http://fasb.org/srt-types/2023" xmlns:dtr-types="http://www.xbrl.org/dtr/type/2022-03-31" xmlns:RGPX="http://regenerexpharmainc.com/20240331" elementFormDefault="qualified" targetNamespace="http://regenerexpharmainc.com/20240331">
+    <annotation>
+      <appinfo>
+        <link:roleType roleURI="http://regenerexpharmainc.com/role/Cover" id="Cover">
+          <link:definition>00000001 - Document - Cover</link:definition>
+          <link:usedOn>link:presentationLink</link:usedOn>
+          <link:usedOn>link:calculationLink</link:usedOn>
+          <link:usedOn>link:definitionLink</link:usedOn>
+        </link:roleType>
+        <link:roleType roleURI="http://regenerexpharmainc.com/role/BalanceSheets" id="BalanceSheets">
+          <link:definition>00000002 - Statement - BALANCE SHEETS</link:definition>
+          <link:usedOn>link:presentationLink</link:usedOn>
+          <link:usedOn>link:calculationLink</link:usedOn>
+          <link:usedOn>link:definitionLink</link:usedOn>
+        </link:roleType>
+        <link:roleType roleURI="http://regenerexpharmainc.com/role/BalanceSheetsParenthetical" id="BalanceSheetsParenthetical">
+          <link:definition>00000003 - Statement - BALANCE SHEETS (Parenthetical)</link:definition>
+          <link:usedOn>link:presentationLink</link:usedOn>
+          <link:usedOn>link:calculationLink</link:usedOn>
+          <link:usedOn>link:definitionLink</link:usedOn>
+        </link:roleType>
+        <link:roleType roleURI="http://regenerexpharmainc.com/role/StatementsOfOperations" id="StatementsOfOperations">
+          <link:definition>00000004 - Statement - STATEMENTS OF OPERATIONS</link:definition>
+          <link:usedOn>link:presentationLink</link:usedOn>
+          <link:usedOn>link:calculationLink</link:usedOn>
+          <link:usedOn>link:definitionLink</link:usedOn>
+        </link:roleType>
+        <link:roleType roleURI="http://regenerexpharmainc.com/role/StatementsOfCashFlows" id="StatementsOfCashFlows">
+          <link:definition>00000005 - Statement - STATEMENTS OF CASH FLOWS (UNAUDITED)</link:definition>
+          <link:usedOn>link:presentationLink</link:usedOn>
+          <link:usedOn>link:calculationLink</link:usedOn>
+          <link:usedOn>link:definitionLink</link:usedOn>
+        </link:roleType>
+        <link:roleType roleURI="http://regenerexpharmainc.com/role/StatementsOfStockholdersDeficit" id="StatementsOfStockholdersDeficit">
+          <link:definition>00000006 - Statement - STATEMENTS OF STOCKHOLDERS' DEFICIT (UNAUDITED)</link:definition>
+          <link:usedOn>link:presentationLink</link:usedOn>
+          <link:usedOn>link:calculationLink</link:usedOn>
+          <link:usedOn>link:definitionLink</link:usedOn>
+        </link:roleType>
+        <link:roleType roleURI="http://regenerexpharmainc.com/role/NatureOfOperations" id="NatureOfOperations">
+          <link:definition>00000007 - Disclosure - NATURE OF OPERATIONS</link:definition>
+          <link:usedOn>link:presentationLink</link:usedOn>
+          <link:usedOn>link:calculationLink</link:usedOn>
+          <link:usedOn>link:definitionLink</link:usedOn>
+        </link:roleType>
+        <link:roleType roleURI="http://regenerexpharmainc.com/role/GoingConcern" id="GoingConcern">
+          <link:definition>00000008 - Disclosure - GOING CONCERN</link:definition>
+          <link:usedOn>link:presentationLink</link:usedOn>
+          <link:usedOn>link:calculationLink</link:usedOn>
+          <link:usedOn>link:definitionLink</link:usedOn>
+        </link:roleType>
+        <link:roleType roleURI="http://regenerexpharmainc.com/role/SignificantAccountingPolicies" id="SignificantAccountingPolicies">
+          <link:definition>00000009 - Disclosure - SIGNIFICANT ACCOUNTING POLICIES</link:definition>
+          <link:usedOn>link:presentationLink</link:usedOn>
+          <link:usedOn>link:calculationLink</link:usedOn>
+          <link:usedOn>link:definitionLink</link:usedOn>
+        </link:roleType>
+        <link:roleType roleURI="http://regenerexpharmainc.com/role/AccruedLiabilities" id="AccruedLiabilities">
+          <link:definition>00000010 - Disclosure - ACCRUED LIABILITIES</link:definition>
+          <link:usedOn>link:presentationLink</link:usedOn>
+          <link:usedOn>link:calculationLink</link:usedOn>
+          <link:usedOn>link:definitionLink</link:usedOn>
+        </link:roleType>
+        <link:roleType roleURI="http://regenerexpharmainc.com/role/RelatedPartyTransactions" id="RelatedPartyTransactions">
+          <link:definition>00000011 - Disclosure - RELATED PARTY TRANSACTIONS</link:definition>
+          <link:usedOn>link:presentationLink</link:usedOn>
+          <link:usedOn>link:calculationLink</link:usedOn>
+          <link:usedOn>link:definitionLink</link:usedOn>
+        </link:roleType>
+        <link:roleType roleURI="http://regenerexpharmainc.com/role/IntangibleAssetsAndIntellectualProperty" id="IntangibleAssetsAndIntellectualProperty">
+          <link:definition>00000012 - Disclosure - INTANGIBLE ASSETS AND INTELLECTUAL PROPERTY</link:definition>
+          <link:usedOn>link:presentationLink</link:usedOn>
+          <link:usedOn>link:calculationLink</link:usedOn>
+          <link:usedOn>link:definitionLink</link:usedOn>
+        </link:roleType>
+        <link:roleType roleURI="http://regenerexpharmainc.com/role/NotesPayableToShareholder" id="NotesPayableToShareholder">
+          <link:definition>00000013 - Disclosure - NOTES PAYABLE TO SHAREHOLDER</link:definition>
+          <link:usedOn>link:presentationLink</link:usedOn>
+          <link:usedOn>link:calculationLink</link:usedOn>
+          <link:usedOn>link:definitionLink</link:usedOn>
+        </link:roleType>
+        <link:roleType roleURI="http://regenerexpharmainc.com/role/OperatingLeases" id="OperatingLeases">
+          <link:definition>00000014 - Disclosure - OPERATING LEASES</link:definition>
+          <link:usedOn>link:presentationLink</link:usedOn>
+          <link:usedOn>link:calculationLink</link:usedOn>
+          <link:usedOn>link:definitionLink</link:usedOn>
+        </link:roleType>
+        <link:roleType roleURI="http://regenerexpharmainc.com/role/StockholdersDeficit" id="StockholdersDeficit">
+          <link:definition>00000015 - Disclosure - STOCKHOLDERS&#8217; DEFICIT</link:definition>
+          <link:usedOn>link:presentationLink</link:usedOn>
+          <link:usedOn>link:calculationLink</link:usedOn>
+          <link:usedOn>link:definitionLink</link:usedOn>
+        </link:roleType>
+        <link:roleType roleURI="http://regenerexpharmainc.com/role/IncomeTaxes" id="IncomeTaxes">
+          <link:definition>00000016 - Disclosure - INCOME TAXES</link:definition>
+          <link:usedOn>link:presentationLink</link:usedOn>
+          <link:usedOn>link:calculationLink</link:usedOn>
+          <link:usedOn>link:definitionLink</link:usedOn>
+        </link:roleType>
+        <link:roleType roleURI="http://regenerexpharmainc.com/role/CommitmentsAndContingencies" id="CommitmentsAndContingencies">
+          <link:definition>00000017 - Disclosure - COMMITMENTS AND CONTINGENCIES</link:definition>
+          <link:usedOn>link:presentationLink</link:usedOn>
+          <link:usedOn>link:calculationLink</link:usedOn>
+          <link:usedOn>link:definitionLink</link:usedOn>
+        </link:roleType>
+        <link:roleType roleURI="http://regenerexpharmainc.com/role/SubsequentEvents" id="SubsequentEvents">
+          <link:definition>00000018 - Disclosure - SUBSEQUENT EVENTS</link:definition>
+          <link:usedOn>link:presentationLink</link:usedOn>
+          <link:usedOn>link:calculationLink</link:usedOn>
+          <link:usedOn>link:definitionLink</link:usedOn>
+        </link:roleType>
+        <link:roleType roleURI="http://regenerexpharmainc.com/role/SignificantAccountingPoliciesPolicies" id="SignificantAccountingPoliciesPolicies">
+          <link:definition>00000019 - Disclosure - SIGNIFICANT ACCOUNTING POLICIES (Policies)</link:definition>
+          <link:usedOn>link:presentationLink</link:usedOn>
+          <link:usedOn>link:calculationLink</link:usedOn>
+          <link:usedOn>link:definitionLink</link:usedOn>
+        </link:roleType>
+        <link:roleType roleURI="http://regenerexpharmainc.com/role/AccruedLiabilitiesTables" id="AccruedLiabilitiesTables">
+          <link:definition>00000020 - Disclosure - ACCRUED LIABILITIES (Tables)</link:definition>
+          <link:usedOn>link:presentationLink</link:usedOn>
+          <link:usedOn>link:calculationLink</link:usedOn>
+          <link:usedOn>link:definitionLink</link:usedOn>
+        </link:roleType>
+        <link:roleType roleURI="http://regenerexpharmainc.com/role/NotesPayableToShareholderTables" id="NotesPayableToShareholderTables">
+          <link:definition>00000021 - Disclosure - NOTES PAYABLE TO SHAREHOLDER (Tables)</link:definition>
+          <link:usedOn>link:presentationLink</link:usedOn>
+          <link:usedOn>link:calculationLink</link:usedOn>
+          <link:usedOn>link:definitionLink</link:usedOn>
+        </link:roleType>
+        <link:roleType roleURI="http://regenerexpharmainc.com/role/OperatingLeasesTables" id="OperatingLeasesTables">
+          <link:definition>00000022 - Disclosure - OPERATING LEASES (Tables)</link:definition>
+          <link:usedOn>link:presentationLink</link:usedOn>
+          <link:usedOn>link:calculationLink</link:usedOn>
+          <link:usedOn>link:definitionLink</link:usedOn>
+        </link:roleType>
+        <link:roleType roleURI="http://regenerexpharmainc.com/role/IncomeTaxesTables" id="IncomeTaxesTables">
+          <link:definition>00000023 - Disclosure - INCOME TAXES (Tables)</link:definition>
+          <link:usedOn>link:presentationLink</link:usedOn>
+          <link:usedOn>link:calculationLink</link:usedOn>
+          <link:usedOn>link:definitionLink</link:usedOn>
+        </link:roleType>
+        <link:roleType roleURI="http://regenerexpharmainc.com/role/NatureOfOperationsDetailsNarrative" id="NatureOfOperationsDetailsNarrative">
+          <link:definition>00000024 - Disclosure - NATURE OF OPERATIONS (Details Narrative)</link:definition>
+          <link:usedOn>link:presentationLink</link:usedOn>
+          <link:usedOn>link:calculationLink</link:usedOn>
+          <link:usedOn>link:definitionLink</link:usedOn>
+        </link:roleType>
+        <link:roleType roleURI="http://regenerexpharmainc.com/role/GoingConcernDetailsNarrative" id="GoingConcernDetailsNarrative">
+          <link:definition>00000025 - Disclosure - GOING CONCERN (Details Narrative)</link:definition>
+          <link:usedOn>link:presentationLink</link:usedOn>
+          <link:usedOn>link:calculationLink</link:usedOn>
+          <link:usedOn>link:definitionLink</link:usedOn>
+        </link:roleType>
+        <link:roleType roleURI="http://regenerexpharmainc.com/role/SignificantAccountingPoliciesDetailsNarrative" id="SignificantAccountingPoliciesDetailsNarrative">
+          <link:definition>00000026 - Disclosure - SIGNIFICANT ACCOUNTING POLICIES (Details Narrative)</link:definition>
+          <link:usedOn>link:presentationLink</link:usedOn>
+          <link:usedOn>link:calculationLink</link:usedOn>
+          <link:usedOn>link:definitionLink</link:usedOn>
+        </link:roleType>
+        <link:roleType roleURI="http://regenerexpharmainc.com/role/ScheduleOfAccruedLiabilitiesDetails" id="ScheduleOfAccruedLiabilitiesDetails">
+          <link:definition>00000027 - Disclosure - Schedule of Accrued Liabilities (Details)</link:definition>
+          <link:usedOn>link:presentationLink</link:usedOn>
+          <link:usedOn>link:calculationLink</link:usedOn>
+          <link:usedOn>link:definitionLink</link:usedOn>
+        </link:roleType>
+        <link:roleType roleURI="http://regenerexpharmainc.com/role/ScheduleOfOtherAccruedLiabilitiesDetails" id="ScheduleOfOtherAccruedLiabilitiesDetails">
+          <link:definition>00000028 - Disclosure - Schedule of Other Accrued Liabilities (Details)</link:definition>
+          <link:usedOn>link:presentationLink</link:usedOn>
+          <link:usedOn>link:calculationLink</link:usedOn>
+          <link:usedOn>link:definitionLink</link:usedOn>
+        </link:roleType>
+        <link:roleType roleURI="http://regenerexpharmainc.com/role/RelatedPartyTransactionsDetailsNarrative" id="RelatedPartyTransactionsDetailsNarrative">
+          <link:definition>00000029 - Disclosure - RELATED PARTY TRANSACTIONS (Details Narrative)</link:definition>
+          <link:usedOn>link:presentationLink</link:usedOn>
+          <link:usedOn>link:calculationLink</link:usedOn>
+          <link:usedOn>link:definitionLink</link:usedOn>
+        </link:roleType>
+        <link:roleType roleURI="http://regenerexpharmainc.com/role/IntangibleAssetsAndIntellectualPropertyDetailsNarrative" id="IntangibleAssetsAndIntellectualPropertyDetailsNarrative">
+          <link:definition>00000030 - Disclosure - INTANGIBLE ASSETS AND INTELLECTUAL PROPERTY (Details Narrative)</link:definition>
+          <link:usedOn>link:presentationLink</link:usedOn>
+          <link:usedOn>link:calculationLink</link:usedOn>
+          <link:usedOn>link:definitionLink</link:usedOn>
+        </link:roleType>
+        <link:roleType roleURI="http://regenerexpharmainc.com/role/FutureMinimumPrincipalPaymentsOnNotesPayableDetails" id="FutureMinimumPrincipalPaymentsOnNotesPayableDetails">
+          <link:definition>00000031 - Disclosure - Future Minimum Principal Payments On The Notes Payable (Details)</link:definition>
+          <link:usedOn>link:presentationLink</link:usedOn>
+          <link:usedOn>link:calculationLink</link:usedOn>
+          <link:usedOn>link:definitionLink</link:usedOn>
+        </link:roleType>
+        <link:roleType roleURI="http://regenerexpharmainc.com/role/NotesPayableToShareholderDetailsNarrative" id="NotesPayableToShareholderDetailsNarrative">
+          <link:definition>00000032 - Disclosure - NOTES PAYABLE TO SHAREHOLDER (Details Narrative)</link:definition>
+          <link:usedOn>link:presentationLink</link:usedOn>
+          <link:usedOn>link:calculationLink</link:usedOn>
+          <link:usedOn>link:definitionLink</link:usedOn>
+        </link:roleType>
+        <link:roleType roleURI="http://regenerexpharmainc.com/role/ScheduleOfFutureMinimumOperatingLeasePaymentsDetails" id="ScheduleOfFutureMinimumOperatingLeasePaymentsDetails">
+          <link:definition>00000033 - Disclosure - Schedule Of Future Minimum Operating Lease Payments (Details)</link:definition>
+          <link:usedOn>link:presentationLink</link:usedOn>
+          <link:usedOn>link:calculationLink</link:usedOn>
+          <link:usedOn>link:definitionLink</link:usedOn>
+        </link:roleType>
+        <link:roleType roleURI="http://regenerexpharmainc.com/role/OperatingLeasesDetailsNarrative" id="OperatingLeasesDetailsNarrative">
+          <link:definition>00000034 - Disclosure - OPERATING LEASES (Details Narrative)</link:definition>
+          <link:usedOn>link:presentationLink</link:usedOn>
+          <link:usedOn>link:calculationLink</link:usedOn>
+          <link:usedOn>link:definitionLink</link:usedOn>
+        </link:roleType>
+        <link:roleType roleURI="http://regenerexpharmainc.com/role/StockholdersDeficitDetailsNarrative" id="StockholdersDeficitDetailsNarrative">
+          <link:definition>00000035 - Disclosure - STOCKHOLDERS&#8217; DEFICIT (Details Narrative)</link:definition>
+          <link:usedOn>link:presentationLink</link:usedOn>
+          <link:usedOn>link:calculationLink</link:usedOn>
+          <link:usedOn>link:definitionLink</link:usedOn>
+        </link:roleType>
+        <link:roleType roleURI="http://regenerexpharmainc.com/role/ReconciliationOfIncomeTaxProvisionDetails" id="ReconciliationOfIncomeTaxProvisionDetails">
+          <link:definition>00000036 - Disclosure - Reconciliation Of The Income Tax Provision (Details)</link:definition>
+          <link:usedOn>link:presentationLink</link:usedOn>
+          <link:usedOn>link:calculationLink</link:usedOn>
+          <link:usedOn>link:definitionLink</link:usedOn>
+        </link:roleType>
+        <link:roleType roleURI="http://regenerexpharmainc.com/role/DeferredIncomeTaxAssetsAndLiabilitiesDetails" id="DeferredIncomeTaxAssetsAndLiabilitiesDetails">
+          <link:definition>00000037 - Disclosure - Deferred Income Tax Assets And Liabilities (Details)</link:definition>
+          <link:usedOn>link:presentationLink</link:usedOn>
+          <link:usedOn>link:calculationLink</link:usedOn>
+          <link:usedOn>link:definitionLink</link:usedOn>
+        </link:roleType>
+        <link:roleType roleURI="http://regenerexpharmainc.com/role/IncomeTaxesDetailsNarrative" id="IncomeTaxesDetailsNarrative">
+          <link:definition>00000038 - Disclosure - INCOME TAXES (Details Narrative)</link:definition>
+          <link:usedOn>link:presentationLink</link:usedOn>
+          <link:usedOn>link:calculationLink</link:usedOn>
+          <link:usedOn>link:definitionLink</link:usedOn>
+        </link:roleType>
+        <link:roleType roleURI="http://regenerexpharmainc.com/role/CommitmentsAndContingenciesDetailsNarrative" id="CommitmentsAndContingenciesDetailsNarrative">
+          <link:definition>00000039 - Disclosure - COMMITMENTS AND CONTINGENCIES (Details Narrative)</link:definition>
+          <link:usedOn>link:presentationLink</link:usedOn>
+          <link:usedOn>link:calculationLink</link:usedOn>
+          <link:usedOn>link:definitionLink</link:usedOn>
+        </link:roleType>
+        <link:roleType roleURI="http://regenerexpharmainc.com/role/SubsequentEventsDetailsNarrative" id="SubsequentEventsDetailsNarrative">
+          <link:definition>00000040 - Disclosure - SUBSEQUENT EVENTS (Details Narrative)</link:definition>
+          <link:usedOn>link:presentationLink</link:usedOn>
+          <link:usedOn>link:calculationLink</link:usedOn>
+          <link:usedOn>link:definitionLink</link:usedOn>
+        </link:roleType>
+        <link:linkbaseRef xlink:type="simple" xlink:href="rgpx-20240331_pre.xml" xlink:role="http://www.xbrl.org/2003/role/presentationLinkbaseRef" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:title="Presentation Links" />
+        <link:linkbaseRef xlink:type="simple" xlink:href="rgpx-20240331_lab.xml" xlink:role="http://www.xbrl.org/2003/role/labelLinkbaseRef" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:title="Label Links" />
+        <link:linkbaseRef xlink:type="simple" xlink:href="rgpx-20240331_cal.xml" xlink:role="http://www.xbrl.org/2003/role/calculationLinkbaseRef" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:title="Calculation Links" />
+        <link:linkbaseRef xlink:type="simple" xlink:href="rgpx-20240331_def.xml" xlink:role="http://www.xbrl.org/2003/role/definitionLinkbaseRef" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:title="Definition Links" />
+      </appinfo>
+    </annotation>
+    <import namespace="http://www.xbrl.org/2003/instance" schemaLocation="http://www.xbrl.org/2003/xbrl-instance-2003-12-31.xsd" />
+    <import namespace="http://www.xbrl.org/2003/linkbase" schemaLocation="http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd" />
+    <import namespace="http://xbrl.org/2005/xbrldt" schemaLocation="http://www.xbrl.org/2005/xbrldt-2005.xsd" />
+    <import namespace="http://xbrl.sec.gov/dei/2023" schemaLocation="https://xbrl.sec.gov/dei/2023/dei-2023.xsd" />
+    <import namespace="http://fasb.org/us-gaap/2023" schemaLocation="https://xbrl.fasb.org/us-gaap/2023/elts/us-gaap-2023.xsd" />
+    <import namespace="http://fasb.org/us-types/2023" schemaLocation="https://xbrl.fasb.org/us-gaap/2023/elts/us-types-2023.xsd" />
+    <import namespace="http://www.xbrl.org/dtr/type/2022-03-31" schemaLocation="https://www.xbrl.org/dtr/type/2022-03-31/types.xsd" />
+    <import namespace="http://xbrl.sec.gov/country/2023" schemaLocation="https://xbrl.sec.gov/country/2023/country-2023.xsd" />
+    <import namespace="http://fasb.org/srt/2023" schemaLocation="https://xbrl.fasb.org/srt/2023/elts/srt-2023.xsd" />
+    <import namespace="http://fasb.org/srt-types/2023" schemaLocation="https://xbrl.fasb.org/srt/2023/elts/srt-types-2023.xsd" />
+    <element id="RGPX_ShareholderMember" name="ShareholderMember" nillable="true" xbrli:periodType="duration" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" />
+    <element id="RGPX_PurchaseIntellectualPropertyMember" name="PurchaseIntellectualPropertyMember" nillable="true" xbrli:periodType="duration" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" />
+    <element id="RGPX_AffiliatesMember" name="AffiliatesMember" nillable="true" xbrli:periodType="duration" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" />
+    <element id="RGPX_CEOandCFOAdvancesMember" name="CEOandCFOAdvancesMember" nillable="true" xbrli:periodType="duration" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" />
+    <element id="RGPX_CEOandCFOAdvancedForOperatingExpensesMember" name="CEOandCFOAdvancedForOperatingExpensesMember" nillable="true" xbrli:periodType="duration" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" />
+    <element id="RGPX_RelatedPartyNotesMember" name="RelatedPartyNotesMember" nillable="true" xbrli:periodType="duration" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" />
+    <element id="RGPX_PromissoryNotes2019Member" name="PromissoryNotes2019Member" nillable="true" xbrli:periodType="duration" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" />
+    <element id="RGPX_PromissoryNotes2020Member" name="PromissoryNotes2020Member" nillable="true" xbrli:periodType="duration" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" />
+    <element id="RGPX_PromissoryNotes2021Member" name="PromissoryNotes2021Member" nillable="true" xbrli:periodType="duration" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" />
+    <element id="RGPX_PromissoryNotes2022Member" name="PromissoryNotes2022Member" nillable="true" xbrli:periodType="duration" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" />
+    <element id="RGPX_PromissoryNotes2023Member" name="PromissoryNotes2023Member" nillable="true" xbrli:periodType="duration" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" />
+    <element id="RGPX_PromissoryNotes2024Member" name="PromissoryNotes2024Member" nillable="true" xbrli:periodType="duration" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" />
+    <element id="RGPX_OfficeLeaseMember" name="OfficeLeaseMember" nillable="true" xbrli:periodType="duration" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" />
+    <element id="RGPX_MonthlyRentalPaymentsMember" name="MonthlyRentalPaymentsMember" nillable="true" xbrli:periodType="duration" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" />
+    <element id="RGPX_SecurityDepositMember" name="SecurityDepositMember" nillable="true" xbrli:periodType="duration" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" />
+    <element id="RGPX_PlantFacilityMember" name="PlantFacilityMember" nillable="true" xbrli:periodType="duration" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" />
+    <element id="RGPX_PlantLeaseMember" name="PlantLeaseMember" nillable="true" xbrli:periodType="duration" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" />
+    <element id="RGPX_EquipmentLeaseMember" name="EquipmentLeaseMember" nillable="true" xbrli:periodType="duration" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" />
+    <element id="RGPX_PlantFacilityLeaseMember" name="PlantFacilityLeaseMember" nillable="true" xbrli:periodType="duration" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" />
+    <element id="RGPX_TotalLeaseLiabilityMember" name="TotalLeaseLiabilityMember" nillable="true" xbrli:periodType="duration" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" />
+    <element id="RGPX_BoardMembersAndConsultantsMember" name="BoardMembersAndConsultantsMember" nillable="true" xbrli:periodType="duration" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" />
+    <element id="RGPX_ServicesRenderedMember" name="ServicesRenderedMember" nillable="true" xbrli:periodType="duration" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" />
+    <element id="RGPX_WarrantsMember" name="WarrantsMember" nillable="true" xbrli:periodType="duration" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" />
+    <element id="RGPX_StockIssuance1Member" name="StockIssuance1Member" nillable="true" xbrli:periodType="duration" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" />
+    <element id="RGPX_StockIssuance2Member" name="StockIssuance2Member" nillable="true" xbrli:periodType="duration" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" />
+    <element id="RGPX_ChiefExecutiveOfficerAndChiefFinancialOfficerMember" name="ChiefExecutiveOfficerAndChiefFinancialOfficerMember" nillable="true" xbrli:periodType="duration" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" />
+    <element id="RGPX_ReissuedNotes1Member" name="ReissuedNotes1Member" nillable="true" xbrli:periodType="duration" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" />
+    <element id="RGPX_ReissuedNotes2Member" name="ReissuedNotes2Member" nillable="true" xbrli:periodType="duration" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" />
+    <element id="RGPX_ReissuedNotesMember" name="ReissuedNotesMember" nillable="true" xbrli:periodType="duration" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" />
+    <element id="RGPX_ReissuedNotes3Member" name="ReissuedNotes3Member" nillable="true" xbrli:periodType="duration" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" />
+    <element id="RGPX_RelatedPartyAdvances" name="RelatedPartyAdvances" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+    <element id="RGPX_NotesPayableRelatedParties" name="NotesPayableRelatedParties" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+    <element id="RGPX_IncreaseDecreaseInAccruedCompensation" name="IncreaseDecreaseInAccruedCompensation" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+    <element id="RGPX_AccruedInterestConvertedIntoNotePayableToShareholder" name="AccruedInterestConvertedIntoNotePayableToShareholder" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+    <element id="RGPX_AccruedInterestConvertedIntoNotePayable" name="AccruedInterestConvertedIntoNotePayable" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+    <element id="RGPX_OperatingLeasesRouAssetAndLiabilities" name="OperatingLeasesRouAssetAndLiabilities" nillable="true" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+    <element id="RGPX_NoncashOrPartNoncashAcquisitionOfIntangibleAssetsExcludingGoodwill" name="NoncashOrPartNoncashAcquisitionOfIntangibleAssetsExcludingGoodwill" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+    <element id="RGPX_DisclosureOperatingLeasesAbstract" name="DisclosureOperatingLeasesAbstract" abstract="true" nillable="true" xbrli:periodType="duration" type="xbrli:stringItemType" substitutionGroup="xbrli:item" />
+    <element id="RGPX_EmergingGrowthCompanyPolicyTextBlock" name="EmergingGrowthCompanyPolicyTextBlock" nillable="true" xbrli:periodType="duration" type="dtr-types:textBlockItemType" substitutionGroup="xbrli:item" />
+    <element id="RGPX_CurrentLiabilitiesInExcessOfCurrentAssets" name="CurrentLiabilitiesInExcessOfCurrentAssets" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+    <element id="RGPX_AccruedAdministrationExpenses" name="AccruedAdministrationExpenses" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+    <element id="RGPX_AccruedAssetPurchaseAgreementLiability" name="AccruedAssetPurchaseAgreementLiability" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+    <element id="RGPX_LeaseTypeAxis" name="LeaseTypeAxis" abstract="true" nillable="true" xbrli:periodType="duration" type="xbrli:stringItemType" substitutionGroup="xbrldt:dimensionItem" />
+    <element id="RGPX_LeaseTypeDomain" name="LeaseTypeDomain" abstract="true" nillable="true" xbrli:periodType="duration" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" />
+    <element id="RGPX_LesseeOperatingLeaseLiabilityImputedInterest" name="LesseeOperatingLeaseLiabilityImputedInterest" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+    <element id="RGPX_StockIssuanceTypeAxis" name="StockIssuanceTypeAxis" abstract="true" nillable="true" xbrli:periodType="duration" type="xbrli:stringItemType" substitutionGroup="xbrldt:dimensionItem" />
+    <element id="RGPX_StockIssuanceTypeDomain" name="StockIssuanceTypeDomain" abstract="true" nillable="true" xbrli:periodType="duration" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" />
+    <element id="RGPX_StockBasedCompensationUnrecognizedCompensationCost" name="StockBasedCompensationUnrecognizedCompensationCost" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+    <element id="RGPX_EffectiveIncomeTaxRateReconciliationAccountsPayableAndAccruedLiabilities" name="EffectiveIncomeTaxRateReconciliationAccountsPayableAndAccruedLiabilities" nillable="true" xbrli:periodType="duration" type="dtr-types:percentItemType" substitutionGroup="xbrli:item" />
+    <element id="RGPX_OperatingLossCarryforwardsExpirationDateYear" name="OperatingLossCarryforwardsExpirationDateYear" nillable="true" xbrli:periodType="duration" type="xbrli:stringItemType" substitutionGroup="xbrli:item" />
+</schema>

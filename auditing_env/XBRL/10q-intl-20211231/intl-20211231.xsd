@@ -1,0 +1,609 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--XBRL Document Created with Wdesk from Workiva-->
+<!--Copyright 2022 Workiva-->
+<!--r:a1266f98-9d31-4219-9bd6-aea82cfe1fc9,g:f7509898-fa62-4048-8984-179b076a3ad8-->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:intl="http://www.intlfcstone.com/20211231" xmlns:xbrli="http://www.xbrl.org/2003/instance" xmlns:dtr-types="http://www.xbrl.org/dtr/type/2020-01-21" xmlns:xbrldt="http://xbrl.org/2005/xbrldt" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://www.intlfcstone.com/20211231">
+  <xs:import namespace="http://fasb.org/srt/2021-01-31" schemaLocation="https://xbrl.fasb.org/srt/2021/elts/srt-2021-01-31.xsd"/>
+  <xs:import namespace="http://fasb.org/us-gaap/2021-01-31" schemaLocation="https://xbrl.fasb.org/us-gaap/2021/elts/us-gaap-2021-01-31.xsd"/>
+  <xs:import namespace="http://www.w3.org/1999/xlink" schemaLocation="http://www.xbrl.org/2003/xlink-2003-12-31.xsd"/>
+  <xs:import namespace="http://www.xbrl.org/2003/instance" schemaLocation="http://www.xbrl.org/2003/xbrl-instance-2003-12-31.xsd"/>
+  <xs:import namespace="http://www.xbrl.org/2003/linkbase" schemaLocation="http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd"/>
+  <xs:import namespace="http://www.xbrl.org/dtr/type/2020-01-21" schemaLocation="https://www.xbrl.org/dtr/type/2020-01-21/types.xsd"/>
+  <xs:import namespace="http://xbrl.org/2005/xbrldt" schemaLocation="http://www.xbrl.org/2005/xbrldt-2005.xsd"/>
+  <xs:import namespace="http://xbrl.sec.gov/country/2021" schemaLocation="https://xbrl.sec.gov/country/2021/country-2021.xsd"/>
+  <xs:import namespace="http://xbrl.sec.gov/dei/2021" schemaLocation="https://xbrl.sec.gov/dei/2021/dei-2021.xsd"/>
+  <xs:annotation>
+    <xs:appinfo>
+      <link:linkbaseRef xmlns:xlink="http://www.w3.org/1999/xlink" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="intl-20211231_lab.xml" xlink:role="http://www.xbrl.org/2003/role/labelLinkbaseRef" xlink:type="simple"/>
+      <link:linkbaseRef xmlns:xlink="http://www.w3.org/1999/xlink" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="intl-20211231_pre.xml" xlink:role="http://www.xbrl.org/2003/role/presentationLinkbaseRef" xlink:type="simple"/>
+      <link:linkbaseRef xmlns:xlink="http://www.w3.org/1999/xlink" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="intl-20211231_cal.xml" xlink:role="http://www.xbrl.org/2003/role/calculationLinkbaseRef" xlink:type="simple"/>
+      <link:linkbaseRef xmlns:xlink="http://www.w3.org/1999/xlink" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="intl-20211231_def.xml" xlink:role="http://www.xbrl.org/2003/role/definitionLinkbaseRef" xlink:type="simple"/>
+      <link:roleType id="Cover" roleURI="http://www.intlfcstone.com/role/Cover">
+        <link:definition>0001001 - Document - Cover</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CondensedConsolidatedBalanceSheets" roleURI="http://www.intlfcstone.com/role/CondensedConsolidatedBalanceSheets">
+        <link:definition>1001002 - Statement - Condensed Consolidated Balance Sheets</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CondensedConsolidatedBalanceSheetsParenthetical" roleURI="http://www.intlfcstone.com/role/CondensedConsolidatedBalanceSheetsParenthetical">
+        <link:definition>1002003 - Statement - Condensed Consolidated Balance Sheets (Parenthetical)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CondensedConsolidatedIncomeStatements" roleURI="http://www.intlfcstone.com/role/CondensedConsolidatedIncomeStatements">
+        <link:definition>1003004 - Statement - Condensed Consolidated Income Statements</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CondensedConsolidatedStatementsofComprehensiveIncome" roleURI="http://www.intlfcstone.com/role/CondensedConsolidatedStatementsofComprehensiveIncome">
+        <link:definition>1004005 - Statement - Condensed Consolidated Statements of Comprehensive Income</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CondensedConsolidatedStatementsofCashFlows" roleURI="http://www.intlfcstone.com/role/CondensedConsolidatedStatementsofCashFlows">
+        <link:definition>1005006 - Statement - Condensed Consolidated Statements of Cash Flows</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CondensedConsolidatedStatementsofStockholdersEquity" roleURI="http://www.intlfcstone.com/role/CondensedConsolidatedStatementsofStockholdersEquity">
+        <link:definition>1006007 - Statement - Condensed Consolidated Statements of Stockholders' Equity</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="BasisofPresentationandConsolidationandAccountingStandardsAdopted" roleURI="http://www.intlfcstone.com/role/BasisofPresentationandConsolidationandAccountingStandardsAdopted">
+        <link:definition>2101101 - Disclosure - Basis of Presentation and Consolidation and Accounting Standards Adopted</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="BasisofPresentationandConsolidationandAccountingStandardsAdoptedPolicies" roleURI="http://www.intlfcstone.com/role/BasisofPresentationandConsolidationandAccountingStandardsAdoptedPolicies">
+        <link:definition>2202201 - Disclosure - Basis of Presentation and Consolidation and Accounting Standards Adopted (Policies)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="BasisofPresentationandConsolidationandAccountingStandardsAdoptedDetails" roleURI="http://www.intlfcstone.com/role/BasisofPresentationandConsolidationandAccountingStandardsAdoptedDetails">
+        <link:definition>2403401 - Disclosure - Basis of Presentation and Consolidation and Accounting Standards Adopted (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="EarningsperShare" roleURI="http://www.intlfcstone.com/role/EarningsperShare">
+        <link:definition>2104102 - Disclosure - Earnings per Share</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="EarningsperShareTables" roleURI="http://www.intlfcstone.com/role/EarningsperShareTables">
+        <link:definition>2305301 - Disclosure - Earnings per Share (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="EarningsperShareEPSReconciliationDetails" roleURI="http://www.intlfcstone.com/role/EarningsperShareEPSReconciliationDetails">
+        <link:definition>2406402 - Disclosure - Earnings per Share - EPS Reconciliation (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="EarningsperShareNarrativeDetails" roleURI="http://www.intlfcstone.com/role/EarningsperShareNarrativeDetails">
+        <link:definition>2407403 - Disclosure - Earnings per Share - Narrative (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="AssetsandLiabilitiesatFairValue" roleURI="http://www.intlfcstone.com/role/AssetsandLiabilitiesatFairValue">
+        <link:definition>2108103 - Disclosure - Assets and Liabilities, at Fair Value</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="AssetsandLiabilitiesatFairValueTables" roleURI="http://www.intlfcstone.com/role/AssetsandLiabilitiesatFairValueTables">
+        <link:definition>2309302 - Disclosure - Assets and Liabilities, at Fair Value (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="AssetsandLiabilitiesatFairValueNarrativeDetails" roleURI="http://www.intlfcstone.com/role/AssetsandLiabilitiesatFairValueNarrativeDetails">
+        <link:definition>2410404 - Disclosure - Assets and Liabilities, at Fair Value - Narrative (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="AssetsandLiabilitiesatFairValueFinancialAssetsandLiabilitiesMeasuredatFairValueDetails" roleURI="http://www.intlfcstone.com/role/AssetsandLiabilitiesatFairValueFinancialAssetsandLiabilitiesMeasuredatFairValueDetails">
+        <link:definition>2411405 - Disclosure - Assets and Liabilities, at Fair Value - Financial Assets and Liabilities Measured at Fair Value (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FinancialInstrumentswithOffBalanceSheetRiskandConcentrationsofCreditRisk" roleURI="http://www.intlfcstone.com/role/FinancialInstrumentswithOffBalanceSheetRiskandConcentrationsofCreditRisk">
+        <link:definition>2112104 - Disclosure - Financial Instruments with Off-Balance Sheet Risk and Concentrations of Credit Risk</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FinancialInstrumentswithOffBalanceSheetRiskandConcentrationsofCreditRiskTables" roleURI="http://www.intlfcstone.com/role/FinancialInstrumentswithOffBalanceSheetRiskandConcentrationsofCreditRiskTables">
+        <link:definition>2313303 - Disclosure - Financial Instruments with Off-Balance Sheet Risk and Concentrations of Credit Risk (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FinancialInstrumentswithOffBalanceSheetRiskandConcentrationsofCreditRiskNarrativeDetails" roleURI="http://www.intlfcstone.com/role/FinancialInstrumentswithOffBalanceSheetRiskandConcentrationsofCreditRiskNarrativeDetails">
+        <link:definition>2414406 - Disclosure - Financial Instruments with Off-Balance Sheet Risk and Concentrations of Credit Risk - Narrative (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FinancialInstrumentswithOffBalanceSheetRiskandConcentrationsofCreditRiskGrossDerivativeAssetsandLiabilitiesbyTypeandBalanceSheetLocationDetails" roleURI="http://www.intlfcstone.com/role/FinancialInstrumentswithOffBalanceSheetRiskandConcentrationsofCreditRiskGrossDerivativeAssetsandLiabilitiesbyTypeandBalanceSheetLocationDetails">
+        <link:definition>2415407 - Disclosure - Financial Instruments with Off-Balance Sheet Risk and Concentrations of Credit Risk - Gross Derivative Assets and Liabilities by Type and Balance Sheet Location (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FinancialInstrumentswithOffBalanceSheetRiskandConcentrationsofCreditRiskFairValuesofDerivativeInstrumentsDesignatedforHedgingHeldDetails" roleURI="http://www.intlfcstone.com/role/FinancialInstrumentswithOffBalanceSheetRiskandConcentrationsofCreditRiskFairValuesofDerivativeInstrumentsDesignatedforHedgingHeldDetails">
+        <link:definition>2416408 - Disclosure - Financial Instruments with Off-Balance Sheet Risk and Concentrations of Credit Risk - Fair Values of Derivative Instruments Designated for Hedging Held (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FinancialInstrumentswithOffBalanceSheetRiskandConcentrationsofCreditRiskIncomeStatementEffectsofDerivativeInstrumentsDetails" roleURI="http://www.intlfcstone.com/role/FinancialInstrumentswithOffBalanceSheetRiskandConcentrationsofCreditRiskIncomeStatementEffectsofDerivativeInstrumentsDetails">
+        <link:definition>2417409 - Disclosure - Financial Instruments with Off-Balance Sheet Risk and Concentrations of Credit Risk - Income Statement Effects of Derivative Instruments (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FinancialInstrumentswithOffBalanceSheetRiskandConcentrationsofCreditRiskAccumulatedOtherComprehensiveIncomeEffectsofDerivativeInstrumentsDetails" roleURI="http://www.intlfcstone.com/role/FinancialInstrumentswithOffBalanceSheetRiskandConcentrationsofCreditRiskAccumulatedOtherComprehensiveIncomeEffectsofDerivativeInstrumentsDetails">
+        <link:definition>2418410 - Disclosure - Financial Instruments with Off-Balance Sheet Risk and Concentrations of Credit Risk - Accumulated Other Comprehensive Income Effects of Derivative Instruments (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FinancialInstrumentswithOffBalanceSheetRiskandConcentrationsofCreditRiskTBAsandForwardSettlingSecuritiesDetails" roleURI="http://www.intlfcstone.com/role/FinancialInstrumentswithOffBalanceSheetRiskandConcentrationsofCreditRiskTBAsandForwardSettlingSecuritiesDetails">
+        <link:definition>2419411 - Disclosure - Financial Instruments with Off-Balance Sheet Risk and Concentrations of Credit Risk - TBAs and Forward Settling Securities (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FinancialInstrumentswithOffBalanceSheetRiskandConcentrationsofCreditRiskRealizedGainsLossesonDerivativeContractsDetails" roleURI="http://www.intlfcstone.com/role/FinancialInstrumentswithOffBalanceSheetRiskandConcentrationsofCreditRiskRealizedGainsLossesonDerivativeContractsDetails">
+        <link:definition>2420412 - Disclosure - Financial Instruments with Off-Balance Sheet Risk and Concentrations of Credit Risk - Realized Gains/Losses on Derivative Contracts (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="AllowanceforDoubtfulAccounts" roleURI="http://www.intlfcstone.com/role/AllowanceforDoubtfulAccounts">
+        <link:definition>2121105 - Disclosure - Allowance for Doubtful Accounts</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="AllowanceforDoubtfulAccountsTables" roleURI="http://www.intlfcstone.com/role/AllowanceforDoubtfulAccountsTables">
+        <link:definition>2322304 - Disclosure - Allowance for Doubtful Accounts (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="AllowanceforDoubtfulAccountsNarrativeDetails" roleURI="http://www.intlfcstone.com/role/AllowanceforDoubtfulAccountsNarrativeDetails">
+        <link:definition>2423413 - Disclosure - Allowance for Doubtful Accounts - Narrative (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="AllowanceforDoubtfulAccountsAllowanceforBadDebtsDetails" roleURI="http://www.intlfcstone.com/role/AllowanceforDoubtfulAccountsAllowanceforBadDebtsDetails">
+        <link:definition>2424414 - Disclosure - Allowance for Doubtful Accounts - Allowance for Bad Debts (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="PhysicalCommoditiesInventory" roleURI="http://www.intlfcstone.com/role/PhysicalCommoditiesInventory">
+        <link:definition>2125106 - Disclosure - Physical Commodities Inventory</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="PhysicalCommoditiesInventoryTables" roleURI="http://www.intlfcstone.com/role/PhysicalCommoditiesInventoryTables">
+        <link:definition>2326305 - Disclosure - Physical Commodities Inventory (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="PhysicalCommoditiesInventoryPhysicalCommoditiesInventoryDetails" roleURI="http://www.intlfcstone.com/role/PhysicalCommoditiesInventoryPhysicalCommoditiesInventoryDetails">
+        <link:definition>2427415 - Disclosure - Physical Commodities Inventory - Physical Commodities Inventory (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="PhysicalCommoditiesInventoryNarrativeDetails" roleURI="http://www.intlfcstone.com/role/PhysicalCommoditiesInventoryNarrativeDetails">
+        <link:definition>2428416 - Disclosure - Physical Commodities Inventory - Narrative (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="Goodwill" roleURI="http://www.intlfcstone.com/role/Goodwill">
+        <link:definition>2129107 - Disclosure - Goodwill</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="GoodwillTables" roleURI="http://www.intlfcstone.com/role/GoodwillTables">
+        <link:definition>2330306 - Disclosure - Goodwill (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="GoodwillGoodwillbySegmentDetails" roleURI="http://www.intlfcstone.com/role/GoodwillGoodwillbySegmentDetails">
+        <link:definition>2431417 - Disclosure - Goodwill - Goodwill by Segment (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IntangibleAssets" roleURI="http://www.intlfcstone.com/role/IntangibleAssets">
+        <link:definition>2132108 - Disclosure - Intangible Assets</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IntangibleAssetsTables" roleURI="http://www.intlfcstone.com/role/IntangibleAssetsTables">
+        <link:definition>2333307 - Disclosure - Intangible Assets (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IntangibleAssetsGrossandNetIntangibleAssetsbyMajorClassDetails" roleURI="http://www.intlfcstone.com/role/IntangibleAssetsGrossandNetIntangibleAssetsbyMajorClassDetails">
+        <link:definition>2434418 - Disclosure - Intangible Assets - Gross and Net Intangible Assets by Major Class (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IntangibleAssetsNarrativeDetails" roleURI="http://www.intlfcstone.com/role/IntangibleAssetsNarrativeDetails">
+        <link:definition>2435419 - Disclosure - Intangible Assets - Narrative (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IntangibleAssetsFiniteLivedIntangibleAssetsFutureAmortizationExpenseDetails" roleURI="http://www.intlfcstone.com/role/IntangibleAssetsFiniteLivedIntangibleAssetsFutureAmortizationExpenseDetails">
+        <link:definition>2436420 - Disclosure - Intangible Assets - Finite-Lived Intangible Assets Future Amortization Expense (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CreditFacilities" roleURI="http://www.intlfcstone.com/role/CreditFacilities">
+        <link:definition>2137109 - Disclosure - Credit Facilities</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CreditFacilitiesTables" roleURI="http://www.intlfcstone.com/role/CreditFacilitiesTables">
+        <link:definition>2338308 - Disclosure - Credit Facilities (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CreditFacilitiesNumberofCreditFacilitiesDetails" roleURI="http://www.intlfcstone.com/role/CreditFacilitiesNumberofCreditFacilitiesDetails">
+        <link:definition>2439421 - Disclosure - Credit Facilities - Number of Credit Facilities (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CreditFacilitiesSeniorSecuredNotesDetails" roleURI="http://www.intlfcstone.com/role/CreditFacilitiesSeniorSecuredNotesDetails">
+        <link:definition>2440422 - Disclosure - Credit Facilities - Senior Secured Notes (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CreditFacilitiesCreditFacilitiesandFinancingBridgeCommitmentDetails" roleURI="http://www.intlfcstone.com/role/CreditFacilitiesCreditFacilitiesandFinancingBridgeCommitmentDetails">
+        <link:definition>2441423 - Disclosure - Credit Facilities - Credit Facilities and Financing Bridge Commitment (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SecuritiesandCommodityFinancingTransactions" roleURI="http://www.intlfcstone.com/role/SecuritiesandCommodityFinancingTransactions">
+        <link:definition>2142110 - Disclosure - Securities and Commodity Financing Transactions</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SecuritiesandCommodityFinancingTransactionsTables" roleURI="http://www.intlfcstone.com/role/SecuritiesandCommodityFinancingTransactionsTables">
+        <link:definition>2343309 - Disclosure - Securities and Commodity Financing Transactions (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SecuritiesandCommodityFinancingTransactionsNarrativeDetails" roleURI="http://www.intlfcstone.com/role/SecuritiesandCommodityFinancingTransactionsNarrativeDetails">
+        <link:definition>2444424 - Disclosure - Securities and Commodity Financing Transactions - Narrative (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SecuritiesandCommodityFinancingTransactionsCollateralMaturitiesofGrossObligationsDetails" roleURI="http://www.intlfcstone.com/role/SecuritiesandCommodityFinancingTransactionsCollateralMaturitiesofGrossObligationsDetails">
+        <link:definition>2445425 - Disclosure - Securities and Commodity Financing Transactions - Collateral Maturities of Gross Obligations (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SecuritiesandCommodityFinancingTransactionsUnderlyingCollateralTypesofGrossObligationsDetails" roleURI="http://www.intlfcstone.com/role/SecuritiesandCommodityFinancingTransactionsUnderlyingCollateralTypesofGrossObligationsDetails">
+        <link:definition>2446426 - Disclosure - Securities and Commodity Financing Transactions - Underlying Collateral Types of Gross Obligations (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SecuritiesandCommodityFinancingTransactionsNettingofSecuritiesPurchasedUnderAgreementsDetails" roleURI="http://www.intlfcstone.com/role/SecuritiesandCommodityFinancingTransactionsNettingofSecuritiesPurchasedUnderAgreementsDetails">
+        <link:definition>2447427 - Disclosure - Securities and Commodity Financing Transactions - Netting of Securities Purchased Under Agreements (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CommitmentsandContingencies" roleURI="http://www.intlfcstone.com/role/CommitmentsandContingencies">
+        <link:definition>2148111 - Disclosure - Commitments and Contingencies</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CommitmentsandContingenciesDetails" roleURI="http://www.intlfcstone.com/role/CommitmentsandContingenciesDetails">
+        <link:definition>2449428 - Disclosure - Commitments and Contingencies (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="AccumulatedOtherComprehensiveLossNet" roleURI="http://www.intlfcstone.com/role/AccumulatedOtherComprehensiveLossNet">
+        <link:definition>2150112 - Disclosure - Accumulated Other Comprehensive Loss, Net</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="AccumulatedOtherComprehensiveLossNetTables" roleURI="http://www.intlfcstone.com/role/AccumulatedOtherComprehensiveLossNetTables">
+        <link:definition>2351310 - Disclosure - Accumulated Other Comprehensive Loss, Net (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="AccumulatedOtherComprehensiveLossNetDetails" roleURI="http://www.intlfcstone.com/role/AccumulatedOtherComprehensiveLossNetDetails">
+        <link:definition>2452429 - Disclosure - Accumulated Other Comprehensive Loss, Net (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RevenuefromContractswithClients" roleURI="http://www.intlfcstone.com/role/RevenuefromContractswithClients">
+        <link:definition>2153113 - Disclosure - Revenue from Contracts with Clients</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RevenuefromContractswithClientsTables" roleURI="http://www.intlfcstone.com/role/RevenuefromContractswithClientsTables">
+        <link:definition>2354311 - Disclosure - Revenue from Contracts with Clients (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RevenuefromContractswithClientsNarrativeDetails" roleURI="http://www.intlfcstone.com/role/RevenuefromContractswithClientsNarrativeDetails">
+        <link:definition>2455430 - Disclosure - Revenue from Contracts with Clients - Narrative (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RevenuefromContractswithClientsRevenuefromContractswithClientsDetails" roleURI="http://www.intlfcstone.com/role/RevenuefromContractswithClientsRevenuefromContractswithClientsDetails">
+        <link:definition>2456431 - Disclosure - Revenue from Contracts with Clients - Revenue from Contracts with Clients (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="OtherExpenses" roleURI="http://www.intlfcstone.com/role/OtherExpenses">
+        <link:definition>2157114 - Disclosure - Other Expenses</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="OtherExpensesTables" roleURI="http://www.intlfcstone.com/role/OtherExpensesTables">
+        <link:definition>2358312 - Disclosure - Other Expenses (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="OtherExpensesOtherExpensesBreakoutDetails" roleURI="http://www.intlfcstone.com/role/OtherExpensesOtherExpensesBreakoutDetails">
+        <link:definition>2459432 - Disclosure - Other Expenses - Other Expenses Breakout (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IncomeTaxes" roleURI="http://www.intlfcstone.com/role/IncomeTaxes">
+        <link:definition>2160115 - Disclosure - Income Taxes</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IncomeTaxesDetails" roleURI="http://www.intlfcstone.com/role/IncomeTaxesDetails">
+        <link:definition>2461433 - Disclosure - Income Taxes (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CapitalandOtherRegulatoryRequirements" roleURI="http://www.intlfcstone.com/role/CapitalandOtherRegulatoryRequirements">
+        <link:definition>2162116 - Disclosure - Capital and Other Regulatory Requirements</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CapitalandOtherRegulatoryRequirementsTables" roleURI="http://www.intlfcstone.com/role/CapitalandOtherRegulatoryRequirementsTables">
+        <link:definition>2363313 - Disclosure - Capital and Other Regulatory Requirements (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CapitalandOtherRegulatoryRequirementsRegulatoryCapitalRequirementsDetails" roleURI="http://www.intlfcstone.com/role/CapitalandOtherRegulatoryRequirementsRegulatoryCapitalRequirementsDetails">
+        <link:definition>2464434 - Disclosure - Capital and Other Regulatory Requirements - Regulatory Capital Requirements (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SegmentAnalysis" roleURI="http://www.intlfcstone.com/role/SegmentAnalysis">
+        <link:definition>2165117 - Disclosure - Segment Analysis</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SegmentAnalysisTables" roleURI="http://www.intlfcstone.com/role/SegmentAnalysisTables">
+        <link:definition>2366314 - Disclosure - Segment Analysis (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SegmentAnalysisNarrativeDetails" roleURI="http://www.intlfcstone.com/role/SegmentAnalysisNarrativeDetails">
+        <link:definition>2467435 - Disclosure - Segment Analysis - Narrative (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SegmentAnalysisSegmentReportingDetails" roleURI="http://www.intlfcstone.com/role/SegmentAnalysisSegmentReportingDetails">
+        <link:definition>2468436 - Disclosure - Segment Analysis - Segment Reporting (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element id="intl_AgriculturalRelatedInventoryVolumeAmount" abstract="false" name="AgriculturalRelatedInventoryVolumeAmount" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="dtr-types:volumeItemType"/>
+  <xs:element id="intl_CapitalAndOtherRegulatoryRequirementsAbstract" abstract="true" name="CapitalAndOtherRegulatoryRequirementsAbstract" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="intl_ForwardSettingSecuritiesSoldUnrealizedLossMember" abstract="true" name="ForwardSettingSecuritiesSoldUnrealizedLossMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="intl_DebtInstrumentDiscountRateAtIssuanceOfFaceValue" abstract="false" name="DebtInstrumentDiscountRateAtIssuanceOfFaceValue" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="dtr-types:percentItemType"/>
+  <xs:element id="intl_Payablestobdsandcounterpartiesatfairvalue" abstract="false" name="Payablestobdsandcounterpartiesatfairvalue" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="intl_OtherGeographicLocationMember" abstract="true" name="OtherGeographicLocationMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="intl_FinancialInstrumentsSoldNotYetPurchasedMember" abstract="true" name="FinancialInstrumentsSoldNotYetPurchasedMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="intl_OtherMember" abstract="true" name="OtherMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="intl_ExchangeTradedCommodityContractsMember" abstract="true" name="ExchangeTradedCommodityContractsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="intl_TrailingCommissionsMember" abstract="true" name="TrailingCommissionsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="intl_TermLoanPeriodicPrincipalPaymentPercent" abstract="false" name="TermLoanPeriodicPrincipalPaymentPercent" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:percentItemType"/>
+  <xs:element id="intl_LossContingencyIndividualAccountsMaximumReceivable" abstract="false" name="LossContingencyIndividualAccountsMaximumReceivable" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="intl_ReceivablesFromCustomersFairValueDisclosure" abstract="false" name="ReceivablesFromCustomersFairValueDisclosure" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="intl_DenominatorBasicAbstract" abstract="true" name="DenominatorBasicAbstract" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="intl_OTCEquityAndIndicesContractMember" abstract="true" name="OTCEquityAndIndicesContractMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="intl_MutualFundsAndOtherMember" abstract="true" name="MutualFundsAndOtherMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="intl_DirectorAndPublicCompanyExpenses" abstract="false" name="DirectorAndPublicCompanyExpenses" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="intl_OTCDerivativeBrokerageMember" abstract="true" name="OTCDerivativeBrokerageMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="intl_InstitutionalSegmentMember" abstract="true" name="InstitutionalSegmentMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="intl_IncreaseDecreaseInOperatingLeaseLiabilities" abstract="false" name="IncreaseDecreaseInOperatingLeaseLiabilities" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="intl_BrokerDealerPayableToCustomerFairValue" abstract="false" name="BrokerDealerPayableToCustomerFairValue" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="intl_OtherComprehensiveIncomeLossCashFlowHedgeGainLossReclassificationBeforeTaxForecastedTransactionNotProbable" abstract="false" name="OtherComprehensiveIncomeLossCashFlowHedgeGainLossReclassificationBeforeTaxForecastedTransactionNotProbable" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="intl_DerivativeNettingAdjustmentAxis" abstract="true" name="DerivativeNettingAdjustmentAxis" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrldt:dimensionItem" type="xbrli:stringItemType"/>
+  <xs:element id="intl_NumberOfDifferentTypesOfForeignCurrencies" abstract="false" name="NumberOfDifferentTypesOfForeignCurrencies" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:integerItemType"/>
+  <xs:element id="intl_SweepProgramFeesMember" abstract="true" name="SweepProgramFeesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="intl_SoybeansMember" abstract="true" name="SoybeansMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="intl_DepositsAndReceivablesFromBDSAndCounterpartiesAtFairValue" abstract="false" name="DepositsAndReceivablesFromBDSAndCounterpartiesAtFairValue" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="intl_PayablesToBrokerDealersClearingOrganizationsAndCounterpartiesMember" abstract="true" name="PayablesToBrokerDealersClearingOrganizationsAndCounterpartiesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="intl_Noncashequivalentsegregatedassets" abstract="false" name="Noncashequivalentsegregatedassets" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="intl_RabobankUncommitedLineOfCreditMember" abstract="true" name="RabobankUncommitedLineOfCreditMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="intl_DepositsAndReceivablesFromExchangeClearingOrganizationsDomain" abstract="true" name="DepositsAndReceivablesFromExchangeClearingOrganizationsDomain" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="intl_NumberOfCommercialAndInstitutionalClients" abstract="false" name="NumberOfCommercialAndInstitutionalClients" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="xbrli:integerItemType"/>
+  <xs:element id="intl_ForwardSettlingSecuritiesPurchasedUnrealizedLossMember" abstract="true" name="ForwardSettlingSecuritiesPurchasedUnrealizedLossMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="intl_ExchangeTradedFuturesAndOptionsMember" abstract="true" name="ExchangeTradedFuturesAndOptionsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="intl_NumberOfGlobalFinancialMarkets" abstract="false" name="NumberOfGlobalFinancialMarkets" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="xbrli:integerItemType"/>
+  <xs:element id="intl_NetSegmentContribution" abstract="false" name="NetSegmentContribution" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="intl_ForwardSettlingSecuritiesPurchasedMember" abstract="true" name="ForwardSettlingSecuritiesPurchasedMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="intl_TBASecuritiesSoldUnrealizedLossMember" abstract="true" name="TBASecuritiesSoldUnrealizedLossMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="intl_SeniorNotesDueTwentyTwentyFiveMember" abstract="true" name="SeniorNotesDueTwentyTwentyFiveMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="intl_MaximumBorrowingCapacityUnderCreditFacilities" abstract="false" name="MaximumBorrowingCapacityUnderCreditFacilities" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="intl_StoneXLtdMember" abstract="true" name="StoneXLtdMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="intl_OtherDirectBusinessExpenses" abstract="false" name="OtherDirectBusinessExpenses" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="intl_Costsnotallocatedtooperatingsegments" abstract="false" name="Costsnotallocatedtooperatingsegments" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="intl_MutualFundSalesBasedCommissionsMember" abstract="true" name="MutualFundSalesBasedCommissionsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="intl_DepositsAndReceivablesFromBrokerDealersClearingOrganizationsAndCounterpartiesAxis" abstract="true" name="DepositsAndReceivablesFromBrokerDealersClearingOrganizationsAndCounterpartiesAxis" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrldt:dimensionItem" type="xbrli:stringItemType"/>
+  <xs:element id="intl_TradeConversionFeesMember" abstract="true" name="TradeConversionFeesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="intl_PayablesToBrokerDealersClearingOrganizationsAndCounterpartiesDomain" abstract="true" name="PayablesToBrokerDealersClearingOrganizationsAndCounterpartiesDomain" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="intl_PhysicalCommoditiesInventoryDomain" abstract="true" name="PhysicalCommoditiesInventoryDomain" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="intl_MutualFundTrailingCommissionsMember" abstract="true" name="MutualFundTrailingCommissionsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="intl_DepositsAndReceivablesFromBrokerDealersClearingOrganizationsAndCounterpartiesDomain" abstract="true" name="DepositsAndReceivablesFromBrokerDealersClearingOrganizationsAndCounterpartiesDomain" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="intl_ScheduleOfFiniteAndIndefiniteLivedIntangibleAssetsTableTextBlock" abstract="false" name="ScheduleOfFiniteAndIndefiniteLivedIntangibleAssetsTableTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:textBlockItemType"/>
+  <xs:element id="intl_OtherSalesBasedCommissionsMember" abstract="true" name="OtherSalesBasedCommissionsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="intl_CashFlowHedgesMember" abstract="true" name="CashFlowHedgesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="intl_InterestExpenseOnCorporateFunding" abstract="false" name="InterestExpenseOnCorporateFunding" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="intl_FinancialInstrumentsOwnedNetMember" abstract="true" name="FinancialInstrumentsOwnedNetMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="intl_IFFIUncommittedLinesofCreditMemberMember" abstract="true" name="IFFIUncommittedLinesofCreditMemberMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="intl_PayablesToClientsMember" abstract="true" name="PayablesToClientsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="intl_GlobalPaymentsSegmentMember" abstract="true" name="GlobalPaymentsSegmentMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="intl_MiddleEastAndAsiaMember" abstract="true" name="MiddleEastAndAsiaMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="intl_DepositsAndReceivablesFromExchangeClearingOrganizationsAxis" abstract="true" name="DepositsAndReceivablesFromExchangeClearingOrganizationsAxis" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrldt:dimensionItem" type="xbrli:stringItemType"/>
+  <xs:element id="intl_SecuritiesAndOtherAssetsSegregatedUnderFederalAndOtherRegulationsDomain" abstract="true" name="SecuritiesAndOtherAssetsSegregatedUnderFederalAndOtherRegulationsDomain" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="intl_RevenuesFromContractsWithClientsOfTotalRevenues" abstract="false" name="RevenuesFromContractsWithClientsOfTotalRevenues" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:percentItemType"/>
+  <xs:element id="intl_ClientAccountFeesMember" abstract="true" name="ClientAccountFeesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="intl_TermLoanInitialBalance" abstract="false" name="TermLoanInitialBalance" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="intl_AmountOutstandingOnCommittedCreditFacilities" abstract="false" name="AmountOutstandingOnCommittedCreditFacilities" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="intl_OverCounterOtcCommodityContractsMember" abstract="true" name="OverCounterOtcCommodityContractsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="intl_PhysicalCommoditiesInventoryAtFairValue" abstract="false" name="PhysicalCommoditiesInventoryAtFairValue" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="intl_FinancialInstrumentSoldNotYetPurchasedMember" abstract="true" name="FinancialInstrumentSoldNotYetPurchasedMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="intl_TBASecuritiesPurchasedUnrealizedLossMember" abstract="true" name="TBASecuritiesPurchasedUnrealizedLossMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="intl_ExchangeTradedInterestRateContractsMember" abstract="true" name="ExchangeTradedInterestRateContractsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="intl_StoneXMarketsLLCMember" abstract="true" name="StoneXMarketsLLCMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="intl_AccountsPayableAndOtherAccruedLiabilitiesIncludingContingentLiabilitiesAxis" abstract="true" name="AccountsPayableAndOtherAccruedLiabilitiesIncludingContingentLiabilitiesAxis" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrldt:dimensionItem" type="xbrli:stringItemType"/>
+  <xs:element id="intl_StoneXFinancialIncUncommittedCommoditiesDeliveryLineMember" abstract="true" name="StoneXFinancialIncUncommittedCommoditiesDeliveryLineMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="intl_SegmentIncome" abstract="false" name="SegmentIncome" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="intl_RetainedEarningsAccumulatedDeficitBeforeTax" abstract="false" name="RetainedEarningsAccumulatedDeficitBeforeTax" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="intl_RetailSegmentMember" abstract="true" name="RetailSegmentMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="intl_CommissionandClearingFeesMember" abstract="true" name="CommissionandClearingFeesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="intl_SecuritiesAndOtherAssetsSegregatedUnderFederalAndOtherRegulationsAxis" abstract="true" name="SecuritiesAndOtherAssetsSegregatedUnderFederalAndOtherRegulationsAxis" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrldt:dimensionItem" type="xbrli:stringItemType"/>
+  <xs:element id="intl_TBASecuritiesSoldUnrealizedGainMember" abstract="true" name="TBASecuritiesSoldUnrealizedGainMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="intl_GainCapitalGroupLLCMember" abstract="true" name="GainCapitalGroupLLCMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="intl_EmployeeRelatedExpenses" abstract="false" name="EmployeeRelatedExpenses" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="intl_NumeratorBasicAbstract" abstract="true" name="NumeratorBasicAbstract" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="intl_ContingentConsiderationMember" abstract="true" name="ContingentConsiderationMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="intl_ReceivableFromClientsNetMember" abstract="true" name="ReceivableFromClientsNetMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="intl_FinancialInstrumentsOwnedMember" abstract="true" name="FinancialInstrumentsOwnedMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="intl_AdvisoryandConsultingFeesMember" abstract="true" name="AdvisoryandConsultingFeesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="intl_PreciousMetalsRetailSalesMember" abstract="true" name="PreciousMetalsRetailSalesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="intl_InsuranceAnnuityTrailingCommissionsMember" abstract="true" name="InsuranceAnnuityTrailingCommissionsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="intl_ConsultingManagementAndAccountFeesMember" abstract="true" name="ConsultingManagementAndAccountFeesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="intl_EquitiesandFixedIncomeCommissionsMember" abstract="true" name="EquitiesandFixedIncomeCommissionsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="intl_HCOSyndicatedLineOfCreditFacilityMember" abstract="true" name="HCOSyndicatedLineOfCreditFacilityMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="intl_DepositsAndReceivablesFromExchangeClearingOrganizationsMember" abstract="true" name="DepositsAndReceivablesFromExchangeClearingOrganizationsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="intl_AccountsPayableAndOtherAccruedLiabilitiesDomain" abstract="true" name="AccountsPayableAndOtherAccruedLiabilitiesDomain" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="intl_MembershipExpense" abstract="false" name="MembershipExpense" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="intl_CommercialSegmentMember" abstract="true" name="CommercialSegmentMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="intl_UndistributedEarningsAllocatedtoParticipatingSecuritiesContinuingOperations" abstract="false" name="UndistributedEarningsAllocatedtoParticipatingSecuritiesContinuingOperations" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="intl_FinancialInstrumentsWithOffBalanceSheetRiskAndConcentrationsOfCreditRiskAbstract" abstract="true" name="FinancialInstrumentsWithOffBalanceSheetRiskAndConcentrationsOfCreditRiskAbstract" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="intl_CommoditiesLeasesAndUnpricedPositionsMember" abstract="true" name="CommoditiesLeasesAndUnpricedPositionsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="intl_PhysicalCommoditiesInventoryAxis" abstract="true" name="PhysicalCommoditiesInventoryAxis" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrldt:dimensionItem" type="xbrli:stringItemType"/>
+  <xs:element id="intl_TBAAndForwardSettlingSecuritiesMember" abstract="true" name="TBAAndForwardSettlingSecuritiesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="intl_CounterpartyAndCashCollateralNettingAdjustmentMember" abstract="true" name="CounterpartyAndCashCollateralNettingAdjustmentMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="intl_GoodwillAndIntangibleAssetsAcquiredDuringThePeriod" abstract="false" name="GoodwillAndIntangibleAssetsAcquiredDuringThePeriod" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="intl_NumberRetailClients" abstract="false" name="NumberRetailClients" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="xbrli:integerItemType"/>
+  <xs:element id="intl_SalesBasedCommissionsMember" abstract="true" name="SalesBasedCommissionsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="intl_FCSMarginLineOfCreditFacilityMember" abstract="true" name="FCSMarginLineOfCreditFacilityMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="intl_FMSSubNoteCommodityLineOfCreditFacilityMember" abstract="true" name="FMSSubNoteCommodityLineOfCreditFacilityMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="intl_StoneXFinancialLtdMember" abstract="true" name="StoneXFinancialLtdMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="intl_ExchangeFirmCommonStockMember" abstract="true" name="ExchangeFirmCommonStockMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="intl_OfficeExpenses" abstract="false" name="OfficeExpenses" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="intl_TBASecuritiesPurchasedUnrealizedGainMember" abstract="true" name="TBASecuritiesPurchasedUnrealizedGainMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="intl_AllowanceForDoubtfulAccountsDepositswithandReceivablesfromBrokerDealersClearingsOrganizationsandCounterparties" abstract="false" name="AllowanceForDoubtfulAccountsDepositswithandReceivablesfromBrokerDealersClearingsOrganizationsandCounterparties" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="intl_GoodwillAndIntangibleAssetsNet" abstract="false" name="GoodwillAndIntangibleAssetsNet" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="intl_DerivativeNettingDomain" abstract="true" name="DerivativeNettingDomain" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="intl_NumberOfAccounts" abstract="false" name="NumberOfAccounts" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:integerItemType"/>
+  <xs:element id="intl_AgriculturalAndEnergyProductTradingMember" abstract="true" name="AgriculturalAndEnergyProductTradingMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="intl_OverCounterOtcForeignExchangeContractsMember" abstract="true" name="OverCounterOtcForeignExchangeContractsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="intl_IFFIUncommittedLinesOfCreditMember" abstract="true" name="IFFIUncommittedLinesOfCreditMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="intl_DepositsAndReceivablesFromBrokerDealersClearingOrganizationsAndCounterpartiesMember" abstract="true" name="DepositsAndReceivablesFromBrokerDealersClearingOrganizationsAndCounterpartiesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="intl_ForwardSettingSecuritiesSoldUnrealizedGainMember" abstract="true" name="ForwardSettingSecuritiesSoldUnrealizedGainMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="intl_StoneXIncBankOfAmericaSyndicatedCreditFacilityMember" abstract="true" name="StoneXIncBankOfAmericaSyndicatedCreditFacilityMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="intl_Nonsegregatedcashandothernoncashequivalentassetsincludedwithindepositsandreceivablesfrombrokerdealersclearingorganizationsandcounterparties" abstract="false" name="Nonsegregatedcashandothernoncashequivalentassetsincludedwithindepositsandreceivablesfrombrokerdealersclearingorganizationsandcounterparties" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="intl_StoneXFinancialMember" abstract="true" name="StoneXFinancialMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="intl_StoneXFinancialIncMember" abstract="true" name="StoneXFinancialIncMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="intl_PayablesToBrokerDealersClearingOrganizationsAndCounterpartiesAxis" abstract="true" name="PayablesToBrokerDealersClearingOrganizationsAndCounterpartiesAxis" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrldt:dimensionItem" type="xbrli:stringItemType"/>
+  <xs:element id="intl_NumberOfCreditFacilities" abstract="false" name="NumberOfCreditFacilities" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="xbrli:integerItemType"/>
+  <xs:element id="intl_Incomefromcontinuingoperationsallocatedtocommonshareholders" abstract="false" name="Incomefromcontinuingoperationsallocatedtocommonshareholders" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="intl_CommoditiesWarehouseReceiptsMember" abstract="true" name="CommoditiesWarehouseReceiptsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="intl_OtherCommissionAndClearingFeesMember" abstract="true" name="OtherCommissionAndClearingFeesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="intl_AccountsPayableAndOtherAccruedLiabilitiesContingentConsiderationFairValue" abstract="false" name="AccountsPayableAndOtherAccruedLiabilitiesContingentConsiderationFairValue" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="intl_Tradingsystemsandmarketinformation" abstract="false" name="Tradingsystemsandmarketinformation" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="intl_OtherConsultingManagementandAccountFeesMember" abstract="true" name="OtherConsultingManagementandAccountFeesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="intl_UnderwritingFeesMember" abstract="true" name="UnderwritingFeesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="intl_CashSegregatedAndDepositedWithOrPledgedToExchangeClearingOrganizationsAndOtherFuturesCommissionMerchants" abstract="false" name="CashSegregatedAndDepositedWithOrPledgedToExchangeClearingOrganizationsAndOtherFuturesCommissionMerchants" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="intl_PreciousMetalsTradingMember" abstract="true" name="PreciousMetalsTradingMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="intl_PhysicalCommoditiesInventoryPreciousMetalsMember" abstract="true" name="PhysicalCommoditiesInventoryPreciousMetalsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+</xs:schema>

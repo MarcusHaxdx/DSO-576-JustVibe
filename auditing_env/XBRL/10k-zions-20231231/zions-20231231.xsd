@@ -1,0 +1,1030 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--XBRL Document Created with the Workiva Platform-->
+<!--Copyright 2024 Workiva-->
+<!--r:0a861138-270c-4adf-a44f-645c51935d40,g:b3b558b7-f818-4df4-a4b2-c38348eadc14-->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:zions="http://www.zionsbancorp.com/20231231" xmlns:xbrli="http://www.xbrl.org/2003/instance" xmlns:dtr-types1="http://www.xbrl.org/dtr/type/2020-01-21" xmlns:dtr-types="http://www.xbrl.org/dtr/type/2022-03-31" xmlns:xbrldt="http://xbrl.org/2005/xbrldt" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://www.zionsbancorp.com/20231231">
+  <xs:import namespace="http://fasb.org/srt/2023" schemaLocation="https://xbrl.fasb.org/srt/2023/elts/srt-2023.xsd"/>
+  <xs:import namespace="http://fasb.org/us-gaap/2023" schemaLocation="https://xbrl.fasb.org/us-gaap/2023/elts/us-gaap-2023.xsd"/>
+  <xs:import namespace="http://www.w3.org/1999/xlink" schemaLocation="http://www.xbrl.org/2003/xlink-2003-12-31.xsd"/>
+  <xs:import namespace="http://www.xbrl.org/2003/instance" schemaLocation="http://www.xbrl.org/2003/xbrl-instance-2003-12-31.xsd"/>
+  <xs:import namespace="http://www.xbrl.org/2003/linkbase" schemaLocation="http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd"/>
+  <xs:import namespace="http://www.xbrl.org/dtr/type/2020-01-21" schemaLocation="https://www.xbrl.org/dtr/type/2020-01-21/types.xsd"/>
+  <xs:import namespace="http://www.xbrl.org/dtr/type/2022-03-31" schemaLocation="https://www.xbrl.org/dtr/type/2022-03-31/types.xsd"/>
+  <xs:import namespace="http://xbrl.org/2005/xbrldt" schemaLocation="http://www.xbrl.org/2005/xbrldt-2005.xsd"/>
+  <xs:import namespace="http://xbrl.sec.gov/dei/2023" schemaLocation="https://xbrl.sec.gov/dei/2023/dei-2023.xsd"/>
+  <xs:import namespace="http://xbrl.sec.gov/ecd/2023" schemaLocation="https://xbrl.sec.gov/ecd/2023/ecd-2023.xsd"/>
+  <xs:import namespace="http://xbrl.sec.gov/stpr/2023" schemaLocation="https://xbrl.sec.gov/stpr/2023/stpr-2023.xsd"/>
+  <xs:annotation>
+    <xs:appinfo>
+      <link:linkbaseRef xmlns:xlink="http://www.w3.org/1999/xlink" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="zions-20231231_pre.xml" xlink:role="http://www.xbrl.org/2003/role/presentationLinkbaseRef" xlink:type="simple"/>
+      <link:linkbaseRef xmlns:xlink="http://www.w3.org/1999/xlink" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="zions-20231231_def.xml" xlink:role="http://www.xbrl.org/2003/role/definitionLinkbaseRef" xlink:type="simple"/>
+      <link:linkbaseRef xmlns:xlink="http://www.w3.org/1999/xlink" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="zions-20231231_lab.xml" xlink:role="http://www.xbrl.org/2003/role/labelLinkbaseRef" xlink:type="simple"/>
+      <link:linkbaseRef xmlns:xlink="http://www.w3.org/1999/xlink" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="zions-20231231_cal.xml" xlink:role="http://www.xbrl.org/2003/role/calculationLinkbaseRef" xlink:type="simple"/>
+      <link:roleType id="Cover" roleURI="http://www.zionsbancorp.com/role/Cover">
+        <link:definition>0000001 - Document - Cover</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="AuditInformation" roleURI="http://www.zionsbancorp.com/role/AuditInformation">
+        <link:definition>0000002 - Document - Audit Information</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ConsolidatedBalanceSheets" roleURI="http://www.zionsbancorp.com/role/ConsolidatedBalanceSheets">
+        <link:definition>0000003 - Statement - Consolidated Balance Sheets</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ConsolidatedBalanceSheetsParenthetical" roleURI="http://www.zionsbancorp.com/role/ConsolidatedBalanceSheetsParenthetical">
+        <link:definition>0000004 - Statement - Consolidated Balance Sheets (Parenthetical)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ConsolidatedStatementsofIncome" roleURI="http://www.zionsbancorp.com/role/ConsolidatedStatementsofIncome">
+        <link:definition>0000005 - Statement - Consolidated Statements of Income</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ConsolidatedStatementsofComprehensiveIncomeLoss" roleURI="http://www.zionsbancorp.com/role/ConsolidatedStatementsofComprehensiveIncomeLoss">
+        <link:definition>0000006 - Statement - Consolidated Statements of Comprehensive Income (Loss)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ConsolidatedStatementsofChangesinShareholdersEquity" roleURI="http://www.zionsbancorp.com/role/ConsolidatedStatementsofChangesinShareholdersEquity">
+        <link:definition>0000007 - Statement - Consolidated Statements of Changes in Shareholders' Equity</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ConsolidatedStatementsofChangesinShareholdersEquityParenthetical" roleURI="http://www.zionsbancorp.com/role/ConsolidatedStatementsofChangesinShareholdersEquityParenthetical">
+        <link:definition>0000008 - Statement - Consolidated Statements of Changes in Shareholders' Equity (Parenthetical)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ConsolidatedStatementsofCashFlows" roleURI="http://www.zionsbancorp.com/role/ConsolidatedStatementsofCashFlows">
+        <link:definition>0000009 - Statement - Consolidated Statements of Cash Flows</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ConsolidatedStatementsofCashFlowsParenthetical" roleURI="http://www.zionsbancorp.com/role/ConsolidatedStatementsofCashFlowsParenthetical">
+        <link:definition>0000010 - Statement - Consolidated Statements of Cash Flows (Parenthetical)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SummaryofSignificantAccountingPolicies" roleURI="http://www.zionsbancorp.com/role/SummaryofSignificantAccountingPolicies">
+        <link:definition>0000011 - Disclosure - Summary of Significant Accounting Policies</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RecentAccountingPronouncements" roleURI="http://www.zionsbancorp.com/role/RecentAccountingPronouncements">
+        <link:definition>0000012 - Disclosure - Recent Accounting Pronouncements</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FairValue" roleURI="http://www.zionsbancorp.com/role/FairValue">
+        <link:definition>0000013 - Disclosure - Fair Value</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="OffsettingAssetsandLiabilities" roleURI="http://www.zionsbancorp.com/role/OffsettingAssetsandLiabilities">
+        <link:definition>0000014 - Disclosure - Offsetting Assets and Liabilities</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="Investments" roleURI="http://www.zionsbancorp.com/role/Investments">
+        <link:definition>0000015 - Disclosure - Investments</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LoansLeasesandAllowanceForCreditLosses" roleURI="http://www.zionsbancorp.com/role/LoansLeasesandAllowanceForCreditLosses">
+        <link:definition>0000016 - Disclosure - Loans, Leases, and Allowance For Credit Losses</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="DerivativeInstrumentsandHedgingActivities" roleURI="http://www.zionsbancorp.com/role/DerivativeInstrumentsandHedgingActivities">
+        <link:definition>0000017 - Disclosure - Derivative Instruments and Hedging Activities</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="Leases" roleURI="http://www.zionsbancorp.com/role/Leases">
+        <link:definition>0000018 - Disclosure - Leases</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="PremisesEquipmentandSoftware" roleURI="http://www.zionsbancorp.com/role/PremisesEquipmentandSoftware">
+        <link:definition>0000019 - Disclosure - Premises, Equipment and Software</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="GoodwillandOtherIntangibleAssets" roleURI="http://www.zionsbancorp.com/role/GoodwillandOtherIntangibleAssets">
+        <link:definition>0000020 - Disclosure - Goodwill and Other Intangible Assets</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="Deposits" roleURI="http://www.zionsbancorp.com/role/Deposits">
+        <link:definition>0000021 - Disclosure - Deposits</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ShortTermBorrowings" roleURI="http://www.zionsbancorp.com/role/ShortTermBorrowings">
+        <link:definition>0000022 - Disclosure - Short-Term Borrowings</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LongTermDebt" roleURI="http://www.zionsbancorp.com/role/LongTermDebt">
+        <link:definition>0000023 - Disclosure - Long-Term Debt</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ShareholdersEquity" roleURI="http://www.zionsbancorp.com/role/ShareholdersEquity">
+        <link:definition>0000024 - Disclosure - Shareholders' Equity</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RegulatoryMatters" roleURI="http://www.zionsbancorp.com/role/RegulatoryMatters">
+        <link:definition>0000025 - Disclosure - Regulatory Matters</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CommitmentsGuaranteesContingentLiabilitiesandRelatedParties" roleURI="http://www.zionsbancorp.com/role/CommitmentsGuaranteesContingentLiabilitiesandRelatedParties">
+        <link:definition>0000026 - Disclosure - Commitments, Guarantees, Contingent Liabilities, and Related Parties</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RevenueRecognition" roleURI="http://www.zionsbancorp.com/role/RevenueRecognition">
+        <link:definition>0000027 - Disclosure - Revenue Recognition</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RetirementPlans" roleURI="http://www.zionsbancorp.com/role/RetirementPlans">
+        <link:definition>0000028 - Disclosure - Retirement Plans</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ShareBasedCompensation" roleURI="http://www.zionsbancorp.com/role/ShareBasedCompensation">
+        <link:definition>0000029 - Disclosure - Share-Based Compensation</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IncomeTaxes" roleURI="http://www.zionsbancorp.com/role/IncomeTaxes">
+        <link:definition>0000030 - Disclosure - Income Taxes</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="NetEarningsPerCommonShare" roleURI="http://www.zionsbancorp.com/role/NetEarningsPerCommonShare">
+        <link:definition>0000031 - Disclosure - Net Earnings Per Common Share</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="OperatingSegmentInformation" roleURI="http://www.zionsbancorp.com/role/OperatingSegmentInformation">
+        <link:definition>0000032 - Disclosure - Operating Segment Information</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="QuarterlyFinancialInformationUnaudited" roleURI="http://www.zionsbancorp.com/role/QuarterlyFinancialInformationUnaudited">
+        <link:definition>0000033 - Disclosure - Quarterly Financial Information (Unaudited)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SummaryofSignificantAccountingPoliciesPolicy" roleURI="http://www.zionsbancorp.com/role/SummaryofSignificantAccountingPoliciesPolicy">
+        <link:definition>9954471 - Disclosure - Summary of Significant Accounting Policies (Policy)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RecentAccountingPronouncementsTables" roleURI="http://www.zionsbancorp.com/role/RecentAccountingPronouncementsTables">
+        <link:definition>9954472 - Disclosure - Recent Accounting Pronouncements (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FairValueTables" roleURI="http://www.zionsbancorp.com/role/FairValueTables">
+        <link:definition>9954473 - Disclosure - Fair Value (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="OffsettingAssetsandLiabilitiesTables" roleURI="http://www.zionsbancorp.com/role/OffsettingAssetsandLiabilitiesTables">
+        <link:definition>9954474 - Disclosure - Offsetting Assets and Liabilities (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="InvestmentsTables" roleURI="http://www.zionsbancorp.com/role/InvestmentsTables">
+        <link:definition>9954475 - Disclosure - Investments (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LoansLeasesandAllowanceForCreditLossesTables" roleURI="http://www.zionsbancorp.com/role/LoansLeasesandAllowanceForCreditLossesTables">
+        <link:definition>9954476 - Disclosure - Loans, Leases, and Allowance For Credit Losses (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="DerivativeInstrumentsandHedgingActivitiesTables" roleURI="http://www.zionsbancorp.com/role/DerivativeInstrumentsandHedgingActivitiesTables">
+        <link:definition>9954477 - Disclosure - Derivative Instruments and Hedging Activities (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LeasesTables" roleURI="http://www.zionsbancorp.com/role/LeasesTables">
+        <link:definition>9954478 - Disclosure - Leases (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="PremisesEquipmentandSoftwareTables" roleURI="http://www.zionsbancorp.com/role/PremisesEquipmentandSoftwareTables">
+        <link:definition>9954479 - Disclosure - Premises, Equipment and Software (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="GoodwillandOtherIntangibleAssetsTables" roleURI="http://www.zionsbancorp.com/role/GoodwillandOtherIntangibleAssetsTables">
+        <link:definition>9954480 - Disclosure - Goodwill and Other Intangible Assets (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="DepositsTables" roleURI="http://www.zionsbancorp.com/role/DepositsTables">
+        <link:definition>9954481 - Disclosure - Deposits (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ShortTermBorrowingsTables" roleURI="http://www.zionsbancorp.com/role/ShortTermBorrowingsTables">
+        <link:definition>9954482 - Disclosure - Short-Term Borrowings (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LongTermDebtTables" roleURI="http://www.zionsbancorp.com/role/LongTermDebtTables">
+        <link:definition>9954483 - Disclosure - Long-Term Debt (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ShareholdersEquityTables" roleURI="http://www.zionsbancorp.com/role/ShareholdersEquityTables">
+        <link:definition>9954484 - Disclosure - Shareholders' Equity (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RegulatoryMattersTables" roleURI="http://www.zionsbancorp.com/role/RegulatoryMattersTables">
+        <link:definition>9954485 - Disclosure - Regulatory Matters (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CommitmentsGuaranteesContingentLiabilitiesandRelatedPartiesTables" roleURI="http://www.zionsbancorp.com/role/CommitmentsGuaranteesContingentLiabilitiesandRelatedPartiesTables">
+        <link:definition>9954486 - Disclosure - Commitments, Guarantees, Contingent Liabilities, and Related Parties (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RevenueRecognitionTables" roleURI="http://www.zionsbancorp.com/role/RevenueRecognitionTables">
+        <link:definition>9954487 - Disclosure - Revenue Recognition (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ShareBasedCompensationTables" roleURI="http://www.zionsbancorp.com/role/ShareBasedCompensationTables">
+        <link:definition>9954488 - Disclosure - Share-Based Compensation (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IncomeTaxesTables" roleURI="http://www.zionsbancorp.com/role/IncomeTaxesTables">
+        <link:definition>9954489 - Disclosure - Income Taxes (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="NetEarningsPerCommonShareTables" roleURI="http://www.zionsbancorp.com/role/NetEarningsPerCommonShareTables">
+        <link:definition>9954490 - Disclosure - Net Earnings Per Common Share (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="OperatingSegmentInformationTables" roleURI="http://www.zionsbancorp.com/role/OperatingSegmentInformationTables">
+        <link:definition>9954491 - Disclosure - Operating Segment Information (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="QuarterlyFinancialInformationUnauditedTables" roleURI="http://www.zionsbancorp.com/role/QuarterlyFinancialInformationUnauditedTables">
+        <link:definition>9954492 - Disclosure - Quarterly Financial Information (Unaudited) (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SummaryofSignificantAccountingPoliciesDetails" roleURI="http://www.zionsbancorp.com/role/SummaryofSignificantAccountingPoliciesDetails">
+        <link:definition>9954493 - Disclosure - Summary of Significant Accounting Policies (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FairValueScheduleofAssetsandLiabilitiesMeasuredatFairValuebyClassonaRecurringBasisDetails" roleURI="http://www.zionsbancorp.com/role/FairValueScheduleofAssetsandLiabilitiesMeasuredatFairValuebyClassonaRecurringBasisDetails">
+        <link:definition>9954494 - Disclosure - Fair Value (Schedule of Assets and Liabilities Measured at Fair Value by Class on a Recurring Basis) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FairValueScheduleofAssetsandLiabilitiesMeasuredatFairValuebyClassonaRecurringBasisUsingLevel3InputsDetails" roleURI="http://www.zionsbancorp.com/role/FairValueScheduleofAssetsandLiabilitiesMeasuredatFairValuebyClassonaRecurringBasisUsingLevel3InputsDetails">
+        <link:definition>9954495 - Disclosure - Fair Value (Schedule of Assets and Liabilities Measured at Fair Value by Class on a Recurring Basis Using Level 3 Inputs) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FairValueScheduleofRealizedGainsLossesUsingLevel3InputsDetails" roleURI="http://www.zionsbancorp.com/role/FairValueScheduleofRealizedGainsLossesUsingLevel3InputsDetails">
+        <link:definition>9954496 - Disclosure - Fair Value (Schedule of Realized Gains (Losses) Using Level 3 Inputs) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FairValueNarrativeDetails" roleURI="http://www.zionsbancorp.com/role/FairValueNarrativeDetails">
+        <link:definition>9954497 - Disclosure - Fair Value (Narrative) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FairValueScheduleofCarryingValuesandEstimatedFairValuesofFinancialInstrumentsDetails" roleURI="http://www.zionsbancorp.com/role/FairValueScheduleofCarryingValuesandEstimatedFairValuesofFinancialInstrumentsDetails">
+        <link:definition>9954498 - Disclosure - Fair Value (Schedule of Carrying Values and Estimated Fair Values of Financial Instruments) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="OffsettingAssetsandLiabilitiesDetails" roleURI="http://www.zionsbancorp.com/role/OffsettingAssetsandLiabilitiesDetails">
+        <link:definition>9954499 - Disclosure - Offsetting Assets and Liabilities (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="OffsettingAssetsandLiabilitiesDetails_1" roleURI="http://www.zionsbancorp.com/role/OffsettingAssetsandLiabilitiesDetails_1">
+        <link:definition>9954499 - Disclosure - Offsetting Assets and Liabilities (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="InvestmentsNarrativeDetails" roleURI="http://www.zionsbancorp.com/role/InvestmentsNarrativeDetails">
+        <link:definition>9954500 - Disclosure - Investments (Narrative) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="InvestmentsSummaryofInvestmentSecuritiesDetails" roleURI="http://www.zionsbancorp.com/role/InvestmentsSummaryofInvestmentSecuritiesDetails">
+        <link:definition>9954501 - Disclosure - Investments (Summary of Investment Securities) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="InvestmentsContractualMaturitiesDebtSecuritiesDetails" roleURI="http://www.zionsbancorp.com/role/InvestmentsContractualMaturitiesDebtSecuritiesDetails">
+        <link:definition>9954502 - Disclosure - Investments (Contractual Maturities Debt Securities) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="InvestmentsSummaryofAmountofGrossUnrealizedLossesforDebtSecuritiesandEstimatedFairValueDetails" roleURI="http://www.zionsbancorp.com/role/InvestmentsSummaryofAmountofGrossUnrealizedLossesforDebtSecuritiesandEstimatedFairValueDetails">
+        <link:definition>9954503 - Disclosure - Investments (Summary of Amount of Gross Unrealized Losses for Debt Securities and Estimated Fair Value) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="InvestmentsSecuritiesGainsandLossesRecognizedinIncomeDetails" roleURI="http://www.zionsbancorp.com/role/InvestmentsSecuritiesGainsandLossesRecognizedinIncomeDetails">
+        <link:definition>9954504 - Disclosure - Investments (Securities Gains and Losses Recognized in Income) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="InvestmentsTaxandNontaxableIncomebyInvestmentTypeDetails" roleURI="http://www.zionsbancorp.com/role/InvestmentsTaxandNontaxableIncomebyInvestmentTypeDetails">
+        <link:definition>9954505 - Disclosure - Investments (Tax and Nontaxable Income by Investment Type) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LoansLeasesandAllowanceforCreditLossesSummaryofMajorPortfolioSegmentandSpecificLoanClassDetails" roleURI="http://www.zionsbancorp.com/role/LoansLeasesandAllowanceforCreditLossesSummaryofMajorPortfolioSegmentandSpecificLoanClassDetails">
+        <link:definition>9954506 - Disclosure - Loans, Leases, and Allowance for Credit Losses (Summary of Major Portfolio Segment and Specific Loan Class) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LoansLeasesandAllowanceforCreditLossesNarrativeDetails" roleURI="http://www.zionsbancorp.com/role/LoansLeasesandAllowanceforCreditLossesNarrativeDetails">
+        <link:definition>9954507 - Disclosure - Loans, Leases, and Allowance for Credit Losses (Narrative) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LoansLeasesandAllowanceForCreditLossesLoansHeldForSaleDetails" roleURI="http://www.zionsbancorp.com/role/LoansLeasesandAllowanceForCreditLossesLoansHeldForSaleDetails">
+        <link:definition>9954508 - Disclosure - Loans, Leases, and Allowance For Credit Losses (Loans Held For Sale) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LoansLeasesandAllowanceforCreditLossesSummaryofChangesintheAllowanceforCreditLossesDetails" roleURI="http://www.zionsbancorp.com/role/LoansLeasesandAllowanceforCreditLossesSummaryofChangesintheAllowanceforCreditLossesDetails">
+        <link:definition>9954509 - Disclosure - Loans, Leases, and Allowance for Credit Losses (Summary of Changes in the Allowance for Credit Losses) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LoansLeasesandAllowanceforCreditLossesSummaryofNonaccrualLoansDetails" roleURI="http://www.zionsbancorp.com/role/LoansLeasesandAllowanceforCreditLossesSummaryofNonaccrualLoansDetails">
+        <link:definition>9954510 - Disclosure - Loans, Leases, and Allowance for Credit Losses (Summary of Nonaccrual Loans) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LoansLeasesandAllowanceforCreditLossesSummaryofAccruedInterestReceivablesReversedDetails" roleURI="http://www.zionsbancorp.com/role/LoansLeasesandAllowanceforCreditLossesSummaryofAccruedInterestReceivablesReversedDetails">
+        <link:definition>9954511 - Disclosure - Loans, Leases, and Allowance for Credit Losses (Summary of Accrued Interest Receivables Reversed) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LoansLeasesandAllowanceforCreditLossesSummaryofPastDueLoansAccruingandNonaccruingDetails" roleURI="http://www.zionsbancorp.com/role/LoansLeasesandAllowanceforCreditLossesSummaryofPastDueLoansAccruingandNonaccruingDetails">
+        <link:definition>9954512 - Disclosure - Loans, Leases, and Allowance for Credit Losses (Summary of Past Due Loans (Accruing and Nonaccruing)) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LoansLeasesandAllowanceforCreditLossesSummaryofOutstandingLoanBalancesAccruingandNonaccruingCategorizedbyCreditQualityIndicatorsCurrentYearDetails" roleURI="http://www.zionsbancorp.com/role/LoansLeasesandAllowanceforCreditLossesSummaryofOutstandingLoanBalancesAccruingandNonaccruingCategorizedbyCreditQualityIndicatorsCurrentYearDetails">
+        <link:definition>9954513 - Disclosure - Loans, Leases, and Allowance for Credit Losses (Summary of Outstanding Loan Balances (Accruing and Nonaccruing) Categorized by Credit Quality Indicators - Current Year) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LoansLeasesandAllowanceforCreditLossesSummaryofOutstandingLoanBalancesAccruingandNonaccruingCategorizedbyCreditQualityIndicatorsPriorYearDetails" roleURI="http://www.zionsbancorp.com/role/LoansLeasesandAllowanceforCreditLossesSummaryofOutstandingLoanBalancesAccruingandNonaccruingCategorizedbyCreditQualityIndicatorsPriorYearDetails">
+        <link:definition>9954514 - Disclosure - Loans, Leases, and Allowance for Credit Losses (Summary of Outstanding Loan Balances (Accruing and Nonaccruing) Categorized by Credit Quality Indicators - Prior Year) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LoansLeasesandAllowanceforCreditLossesSummaryofSelectedInformationonTDRsDetails" roleURI="http://www.zionsbancorp.com/role/LoansLeasesandAllowanceforCreditLossesSummaryofSelectedInformationonTDRsDetails">
+        <link:definition>9954515 - Disclosure - Loans, Leases, and Allowance for Credit Losses (Summary of Selected Information on TDRs) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LoansLeasesandAllowanceforCreditLossesSummaryofFinancialImpactofLoanModificationsDetails" roleURI="http://www.zionsbancorp.com/role/LoansLeasesandAllowanceforCreditLossesSummaryofFinancialImpactofLoanModificationsDetails">
+        <link:definition>9954516 - Disclosure - Loans, Leases, and Allowance for Credit Losses (Summary of Financial Impact of Loan Modifications) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LoansLeasesandAllowanceforCreditLossesSummaryAgingAnalysisModifiedDetails" roleURI="http://www.zionsbancorp.com/role/LoansLeasesandAllowanceforCreditLossesSummaryAgingAnalysisModifiedDetails">
+        <link:definition>9954517 - Disclosure - Loans, Leases, and Allowance for Credit Losses (Summary Aging Analysis, Modified) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LoansLeasesandAllowanceforCreditLossesCollateralDependentLoansDetails" roleURI="http://www.zionsbancorp.com/role/LoansLeasesandAllowanceforCreditLossesCollateralDependentLoansDetails">
+        <link:definition>9954518 - Disclosure - Loans, Leases, and Allowance for Credit Losses (Collateral-Dependent Loans) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="DerivativeInstrumentsandHedgingActivitiesNarrativeDetails" roleURI="http://www.zionsbancorp.com/role/DerivativeInstrumentsandHedgingActivitiesNarrativeDetails">
+        <link:definition>9954519 - Disclosure - Derivative Instruments and Hedging Activities (Narrative) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="DerivativeInstrumentsandHedgingActivitiesNotionalandRecordedFairValuesDetails" roleURI="http://www.zionsbancorp.com/role/DerivativeInstrumentsandHedgingActivitiesNotionalandRecordedFairValuesDetails">
+        <link:definition>9954520 - Disclosure - Derivative Instruments and Hedging Activities (Notional and Recorded Fair Values) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="DerivativeInstrumentsandHedgingActivitiesDerivativegainlossrecognizedreclassifiedDetails" roleURI="http://www.zionsbancorp.com/role/DerivativeInstrumentsandHedgingActivitiesDerivativegainlossrecognizedreclassifiedDetails">
+        <link:definition>9954521 - Disclosure - Derivative Instruments and Hedging Activities (Derivative gain (loss) recognized/reclassified) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="DerivativeInstrumentsandHedgingActivitiesDerivativesNotDesignatedAsHedgesDetails" roleURI="http://www.zionsbancorp.com/role/DerivativeInstrumentsandHedgingActivitiesDerivativesNotDesignatedAsHedgesDetails">
+        <link:definition>9954522 - Disclosure - Derivative Instruments and Hedging Activities (Derivatives Not Designated As Hedges) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="DerivativeInstrumentsandHedgingActivitiesGainlossrecordedinincomeDetails" roleURI="http://www.zionsbancorp.com/role/DerivativeInstrumentsandHedgingActivitiesGainlossrecordedinincomeDetails">
+        <link:definition>9954523 - Disclosure - Derivative Instruments and Hedging Activities (Gain (loss) recorded in income) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="DerivativeInstrumentsandHedgingActivitiesLongtermdebthedgeditemsDetails" roleURI="http://www.zionsbancorp.com/role/DerivativeInstrumentsandHedgingActivitiesLongtermdebthedgeditemsDetails">
+        <link:definition>9954524 - Disclosure - Derivative Instruments and Hedging Activities (Long-term debt hedged items) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LeasesNarrativeDetails" roleURI="http://www.zionsbancorp.com/role/LeasesNarrativeDetails">
+        <link:definition>9954525 - Disclosure - Leases (Narrative) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LeasesAssetsandLiabilitiesDetails" roleURI="http://www.zionsbancorp.com/role/LeasesAssetsandLiabilitiesDetails">
+        <link:definition>9954526 - Disclosure - Leases (Assets and Liabilities) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LeasesComponentsofLeaseExpenseDetails" roleURI="http://www.zionsbancorp.com/role/LeasesComponentsofLeaseExpenseDetails">
+        <link:definition>9954527 - Disclosure - Leases (Components of Lease Expense) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LeasesMaturitiesAnalysisDetails" roleURI="http://www.zionsbancorp.com/role/LeasesMaturitiesAnalysisDetails">
+        <link:definition>9954528 - Disclosure - Leases (Maturities Analysis) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="PremisesEquipmentandSoftwareDetails" roleURI="http://www.zionsbancorp.com/role/PremisesEquipmentandSoftwareDetails">
+        <link:definition>9954529 - Disclosure - Premises, Equipment and Software (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="GoodwillandOtherIntangibleAssetsNarrativeDetails" roleURI="http://www.zionsbancorp.com/role/GoodwillandOtherIntangibleAssetsNarrativeDetails">
+        <link:definition>9954530 - Disclosure - Goodwill and Other Intangible Assets (Narrative) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="GoodwillandOtherIntangibleAssetsScheduleOfGoodwillDetails" roleURI="http://www.zionsbancorp.com/role/GoodwillandOtherIntangibleAssetsScheduleOfGoodwillDetails">
+        <link:definition>9954531 - Disclosure - Goodwill and Other Intangible Assets (Schedule Of Goodwill) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="DepositsCategoriesDetails" roleURI="http://www.zionsbancorp.com/role/DepositsCategoriesDetails">
+        <link:definition>9954532 - Disclosure - Deposits - (Categories) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="DepositsScheduledMaturitiesOfAllTimeDepositsDetails" roleURI="http://www.zionsbancorp.com/role/DepositsScheduledMaturitiesOfAllTimeDepositsDetails">
+        <link:definition>9954533 - Disclosure - Deposits (Scheduled Maturities Of All Time Deposits) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="DepositsScheduleofContractualMaturitiesofTimeDepositsWithaDenominationof100000andOverDetails" roleURI="http://www.zionsbancorp.com/role/DepositsScheduleofContractualMaturitiesofTimeDepositsWithaDenominationof100000andOverDetails">
+        <link:definition>9954534 - Disclosure - Deposits (Schedule of Contractual Maturities of Time Deposits With a Denomination of $100,000 and Over) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="DepositsNarrativeDetails" roleURI="http://www.zionsbancorp.com/role/DepositsNarrativeDetails">
+        <link:definition>9954535 - Disclosure - Deposits (Narrative) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ShortTermBorrowingsSummaryofShortTermBorrowingsDetails" roleURI="http://www.zionsbancorp.com/role/ShortTermBorrowingsSummaryofShortTermBorrowingsDetails">
+        <link:definition>9954536 - Disclosure - Short-Term Borrowings (Summary of Short-Term Borrowings) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ShortTermBorrowingsNarrativeDetails" roleURI="http://www.zionsbancorp.com/role/ShortTermBorrowingsNarrativeDetails">
+        <link:definition>9954537 - Disclosure - Short-Term Borrowings (Narrative) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LongTermDebtScheduleofLongTermDebtDetails" roleURI="http://www.zionsbancorp.com/role/LongTermDebtScheduleofLongTermDebtDetails">
+        <link:definition>9954538 - Disclosure - Long-Term Debt (Schedule of Long-Term Debt) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LongTermDebtNarrativeDetails" roleURI="http://www.zionsbancorp.com/role/LongTermDebtNarrativeDetails">
+        <link:definition>9954539 - Disclosure - Long-Term Debt (Narrative) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LongTermDebtScheduleofSubordinatedNotesDetails" roleURI="http://www.zionsbancorp.com/role/LongTermDebtScheduleofSubordinatedNotesDetails">
+        <link:definition>9954540 - Disclosure - Long-Term Debt (Schedule of Subordinated Notes) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LongTermDebtScheduleofMaturitiesonLongTermDebtDetails" roleURI="http://www.zionsbancorp.com/role/LongTermDebtScheduleofMaturitiesonLongTermDebtDetails">
+        <link:definition>9954541 - Disclosure - Long-Term Debt (Schedule of Maturities on Long-Term Debt) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ShareholdersEquityNarrativeDetails" roleURI="http://www.zionsbancorp.com/role/ShareholdersEquityNarrativeDetails">
+        <link:definition>9954542 - Disclosure - Shareholders' Equity (Narrative) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ShareholdersEquityPreferredStockDetails" roleURI="http://www.zionsbancorp.com/role/ShareholdersEquityPreferredStockDetails">
+        <link:definition>9954543 - Disclosure - Shareholders' Equity (Preferred Stock) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ShareholdersEquitySummaryOfChangesInAccumulatedOtherComprehensiveIncomeLossDetails" roleURI="http://www.zionsbancorp.com/role/ShareholdersEquitySummaryOfChangesInAccumulatedOtherComprehensiveIncomeLossDetails">
+        <link:definition>9954544 - Disclosure - Shareholders' Equity (Summary Of Changes In Accumulated Other Comprehensive Income (Loss)) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ShareholdersEquityAmountsReclassifiedfromAOCIDetails" roleURI="http://www.zionsbancorp.com/role/ShareholdersEquityAmountsReclassifiedfromAOCIDetails">
+        <link:definition>9954545 - Disclosure - Shareholders' Equity (Amounts Reclassified from AOCI) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RegulatoryMattersSummaryofActualCapitalAmountsandRatiosfortheCompanyandItsThreeLargestSubsidiaryBanksDetails" roleURI="http://www.zionsbancorp.com/role/RegulatoryMattersSummaryofActualCapitalAmountsandRatiosfortheCompanyandItsThreeLargestSubsidiaryBanksDetails">
+        <link:definition>9954546 - Disclosure - Regulatory Matters (Summary of Actual Capital Amounts and Ratios for the Company and Its Three Largest Subsidiary Banks) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RegulatoryMattersCapitalRatiosDetails" roleURI="http://www.zionsbancorp.com/role/RegulatoryMattersCapitalRatiosDetails">
+        <link:definition>9954547 - Disclosure - Regulatory Matters (Capital Ratios) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CommitmentsGuaranteesContingentLiabilitiesandRelatedPartiesScheduleofOffBalanceSheetFinancialInstrumentsDetails" roleURI="http://www.zionsbancorp.com/role/CommitmentsGuaranteesContingentLiabilitiesandRelatedPartiesScheduleofOffBalanceSheetFinancialInstrumentsDetails">
+        <link:definition>9954548 - Disclosure - Commitments, Guarantees, Contingent Liabilities, and Related Parties (Schedule of Off-Balance Sheet Financial Instruments) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CommitmentsGuaranteesContingentLiabilitiesandRelatedPartiesNarrativeDetails" roleURI="http://www.zionsbancorp.com/role/CommitmentsGuaranteesContingentLiabilitiesandRelatedPartiesNarrativeDetails">
+        <link:definition>9954549 - Disclosure - Commitments, Guarantees, Contingent Liabilities, and Related Parties (Narrative) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RevenueRecognitionDetails" roleURI="http://www.zionsbancorp.com/role/RevenueRecognitionDetails">
+        <link:definition>9954550 - Disclosure - Revenue Recognition (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RetirementPlansNarrativeDetails" roleURI="http://www.zionsbancorp.com/role/RetirementPlansNarrativeDetails">
+        <link:definition>9954551 - Disclosure - Retirement Plans (Narrative) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ShareBasedCompensationNarrativeDetails" roleURI="http://www.zionsbancorp.com/role/ShareBasedCompensationNarrativeDetails">
+        <link:definition>9954552 - Disclosure - Share-Based Compensation (Narrative) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ShareBasedCompensationCompensationExpenseAndRelatedTaxBenefitForAllShareBasedAwardsDetails" roleURI="http://www.zionsbancorp.com/role/ShareBasedCompensationCompensationExpenseAndRelatedTaxBenefitForAllShareBasedAwardsDetails">
+        <link:definition>9954553 - Disclosure - Share-Based Compensation (Compensation Expense And Related Tax Benefit For All Share-Based Awards) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ShareBasedCompensationWeightedAverageOfFairValueAndSignificantAssumptionsUsedInApplyingBlackScholesModelForOptionsGrantedDetails" roleURI="http://www.zionsbancorp.com/role/ShareBasedCompensationWeightedAverageOfFairValueAndSignificantAssumptionsUsedInApplyingBlackScholesModelForOptionsGrantedDetails">
+        <link:definition>9954554 - Disclosure - Share-Based Compensation (Weighted Average Of Fair Value And Significant Assumptions Used In Applying Black-Scholes Model For Options Granted) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ShareBasedCompensationSummaryofStockOptionActivityDetails" roleURI="http://www.zionsbancorp.com/role/ShareBasedCompensationSummaryofStockOptionActivityDetails">
+        <link:definition>9954555 - Disclosure - Share-Based Compensation (Summary of Stock Option Activity) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ShareBasedCompensationScheduleofAdditionalSelectedInformationonStockOptionsDetails" roleURI="http://www.zionsbancorp.com/role/ShareBasedCompensationScheduleofAdditionalSelectedInformationonStockOptionsDetails">
+        <link:definition>9954556 - Disclosure - Share-Based Compensation (Schedule of Additional Selected Information on Stock Options) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ShareBasedCompensationSummaryofRestrictedStockActivityDetails" roleURI="http://www.zionsbancorp.com/role/ShareBasedCompensationSummaryofRestrictedStockActivityDetails">
+        <link:definition>9954557 - Disclosure - Share-Based Compensation (Summary of Restricted Stock Activity) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ShareBasedCompensationSummaryofRestrictedStockUnitActivityDetails" roleURI="http://www.zionsbancorp.com/role/ShareBasedCompensationSummaryofRestrictedStockUnitActivityDetails">
+        <link:definition>9954558 - Disclosure - Share Based Compensation (Summary of Restricted Stock Unit Activity) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IncomeTaxesScheduleofIncomeTaxExpenseBenefitDetails" roleURI="http://www.zionsbancorp.com/role/IncomeTaxesScheduleofIncomeTaxExpenseBenefitDetails">
+        <link:definition>9954559 - Disclosure - Income Taxes (Schedule of Income Tax Expense (Benefit)) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IncomeTaxesScheduleofStatutoryFederalIncomeTaxRateReconcilestoActualIncomeTaxExpenseBenefitDetails" roleURI="http://www.zionsbancorp.com/role/IncomeTaxesScheduleofStatutoryFederalIncomeTaxRateReconcilestoActualIncomeTaxExpenseBenefitDetails">
+        <link:definition>9954560 - Disclosure - Income Taxes (Schedule of Statutory Federal Income Tax Rate Reconciles to Actual Income Tax Expense (Benefit)) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IncomeTaxesScheduleofTaxEffectsofDeferredTaxAssetsandDeferredTaxLiabilitiesDetails" roleURI="http://www.zionsbancorp.com/role/IncomeTaxesScheduleofTaxEffectsofDeferredTaxAssetsandDeferredTaxLiabilitiesDetails">
+        <link:definition>9954561 - Disclosure - Income Taxes (Schedule of Tax Effects of Deferred Tax Assets and Deferred Tax Liabilities) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IncomeTaxesNarrativeDetails" roleURI="http://www.zionsbancorp.com/role/IncomeTaxesNarrativeDetails">
+        <link:definition>9954562 - Disclosure - Income Taxes (Narrative) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IncomeTaxesScheduleofReconciliationofGrossUnrecognizedTaxBenefitsDetails" roleURI="http://www.zionsbancorp.com/role/IncomeTaxesScheduleofReconciliationofGrossUnrecognizedTaxBenefitsDetails">
+        <link:definition>9954563 - Disclosure - Income Taxes (Schedule of Reconciliation of Gross Unrecognized Tax Benefits) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="NetEarningsPerCommonShareBasicAndDilutedNetEarningsPerCommonShareBasedOnTheWeightedAverageOutstandingSharesDetails" roleURI="http://www.zionsbancorp.com/role/NetEarningsPerCommonShareBasicAndDilutedNetEarningsPerCommonShareBasedOnTheWeightedAverageOutstandingSharesDetails">
+        <link:definition>9954564 - Disclosure - Net Earnings Per Common Share (Basic And Diluted Net Earnings Per Common Share Based On The Weighted Average Outstanding Shares) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="NetEarningsPerCommonShareBasicAndDilutedNetEarningsPerCommonShareBasedOnTheWeightedAverageOutstandingSharesDetails_1" roleURI="http://www.zionsbancorp.com/role/NetEarningsPerCommonShareBasicAndDilutedNetEarningsPerCommonShareBasedOnTheWeightedAverageOutstandingSharesDetails_1">
+        <link:definition>9954564 - Disclosure - Net Earnings Per Common Share (Basic And Diluted Net Earnings Per Common Share Based On The Weighted Average Outstanding Shares) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="NetEarningsPerCommonShareStockAwardsThatWereAntiDilutiveDetails" roleURI="http://www.zionsbancorp.com/role/NetEarningsPerCommonShareStockAwardsThatWereAntiDilutiveDetails">
+        <link:definition>9954565 - Disclosure - Net Earnings Per Common Share (Stock Awards That Were Anti-Dilutive) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="OperatingSegmentInformationDetails" roleURI="http://www.zionsbancorp.com/role/OperatingSegmentInformationDetails">
+        <link:definition>9954566 - Disclosure - Operating Segment Information (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="QuarterlyFinancialInformationUnauditedFinancialInformationbyQuarterDetails" roleURI="http://www.zionsbancorp.com/role/QuarterlyFinancialInformationUnauditedFinancialInformationbyQuarterDetails">
+        <link:definition>9954567 - Disclosure - Quarterly Financial Information (Unaudited) (Financial Information by Quarter) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element id="zions_EmployeesContributionRateForSecondTimeMatching" abstract="false" name="EmployeesContributionRateForSecondTimeMatching" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+  <xs:element id="zions_CommonStockAndAdditionalPaidInCapital" abstract="false" name="CommonStockAndAdditionalPaidInCapital" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="zions_DebtSecuritiesWeightedAverageYieldMaturityAfterYear5Through10" abstract="false" name="DebtSecuritiesWeightedAverageYieldMaturityAfterYear5Through10" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+  <xs:element id="zions_WealthManagementFees" abstract="false" name="WealthManagementFees" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="zions_ExercisePriceRangeSitxyPointZeroZeroToSeventyThreePointTwoTwoMember" abstract="true" name="ExercisePriceRangeSitxyPointZeroZeroToSeventyThreePointTwoTwoMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="zions_NevadaStateBankSegmentMember" abstract="true" name="NevadaStateBankSegmentMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="zions_DeferredTaxLiabilitiesPrepaidPensionCost" abstract="false" name="DeferredTaxLiabilitiesPrepaidPensionCost" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="zions_SmallBusinessAdministrationLoanBackedSecuritiesMember" abstract="true" name="SmallBusinessAdministrationLoanBackedSecuritiesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="zions_SubordinatedNotesInterestRate6.95PercentMember" abstract="true" name="SubordinatedNotesInterestRate6.95PercentMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="zions_CommonStockAndAdditionalPaidInCapitalChange" abstract="false" name="CommonStockAndAdditionalPaidInCapitalChange" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="zions_DebtSecuritiesHeldToMaturityMaturityWeightedAverageYield" abstract="false" name="DebtSecuritiesHeldToMaturityMaturityWeightedAverageYield" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+  <xs:element id="zions_OtherNoninterestBearingInvestmentsNonmarketableEquitySecuritiesGrossLosses" abstract="false" name="OtherNoninterestBearingInvestmentsNonmarketableEquitySecuritiesGrossLosses" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="zions_AmegyCorporationSegmentMember" abstract="true" name="AmegyCorporationSegmentMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="zions_SecurityResellAgreementsMaturityDays" abstract="false" name="SecurityResellAgreementsMaturityDays" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:durationItemType"/>
+  <xs:element id="zions_InterestRateBelowMarketMember" abstract="true" name="InterestRateBelowMarketMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="zions_MultipleModificationTypesMember" abstract="true" name="MultipleModificationTypesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="zions_OtherNoninterestBearingInvestmentsFairValueDisclosure" abstract="false" name="OtherNoninterestBearingInvestmentsFairValueDisclosure" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="zions_FinancingReceivableExcludingAccruedInterestNonaccrualRelatedAllowance" abstract="false" name="FinancingReceivableExcludingAccruedInterestNonaccrualRelatedAllowance" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="zions_DebtAndEquitySecuritiesUnrealizedGainLossMember" abstract="true" name="DebtAndEquitySecuritiesUnrealizedGainLossMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="zions_SecuritiesSoldUnderAgreementsToRepurchaseAndPurchasedUnderAgreementsToResellAmountOffsetAgainstCollateralAbstract" abstract="true" name="SecuritiesSoldUnderAgreementsToRepurchaseAndPurchasedUnderAgreementsToResellAmountOffsetAgainstCollateralAbstract" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="zions_FinancingReceivableAfterAllowanceForCreditLossAndHeldForSaleNotPartOfDisposalGroup" abstract="false" name="FinancingReceivableAfterAllowanceForCreditLossAndHeldForSaleNotPartOfDisposalGroup" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="zions_ConstructionAndLandDevelopmentMember" abstract="true" name="ConstructionAndLandDevelopmentMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="zions_RetailAndBusinessBankingFees" abstract="false" name="RetailAndBusinessBankingFees" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="zions_NonaccrualMember" abstract="true" name="NonaccrualMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="zions_FinancialAsset30To89DaysPastDueMember" abstract="true" name="FinancialAsset30To89DaysPastDueMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="zions_LoanRelatedFeesAndIncome" abstract="false" name="LoanRelatedFeesAndIncome" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="zions_EstimatedFairValueofInvestmentSecurities" abstract="false" name="EstimatedFairValueofInvestmentSecurities" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="zions_SecuritiesSoldUnderAgreementsToRepurchaseAndPurchasedUnderAgreementsToResellGrossAbstract" abstract="true" name="SecuritiesSoldUnderAgreementsToRepurchaseAndPurchasedUnderAgreementsToResellGrossAbstract" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="zions_LoansHeldForSaleMember" abstract="true" name="LoansHeldForSaleMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="zions_CapitalMarketsFeesGainLoss" abstract="false" name="CapitalMarketsFeesGainLoss" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="zions_DebtSecuritiesAmortizedCostMaturityAllocatedAndSingleMaturityDateAfterYear5Through10" abstract="false" name="DebtSecuritiesAmortizedCostMaturityAllocatedAndSingleMaturityDateAfterYear5Through10" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="zions_DerivativeInstrumentNoninterestIncomeExpense" abstract="false" name="DerivativeInstrumentNoninterestIncomeExpense" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="zions_ProductsAndServicesWealthManagementFeesMember" abstract="true" name="ProductsAndServicesWealthManagementFeesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="zions_DebtSecuritiesHeldToMaturityUnrealizedLossUnamortizedAfterTax" abstract="false" name="DebtSecuritiesHeldToMaturityUnrealizedLossUnamortizedAfterTax" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="zions_NationalBankOfArizonaSegmentMember" abstract="true" name="NationalBankOfArizonaSegmentMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="zions_DebtSecuritiesFairValueAbstract" abstract="true" name="DebtSecuritiesFairValueAbstract" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="zions_NumberOfBranchesOwned" abstract="false" name="NumberOfBranchesOwned" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="xbrli:integerItemType"/>
+  <xs:element id="zions_FinancingReceivableAndOffBalanceSheetLiabilityAllowanceForCreditLoss" abstract="false" name="FinancingReceivableAndOffBalanceSheetLiabilityAllowanceForCreditLoss" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="zions_SecuritiesSoldUnderAgreementsToRepurchaseAndPurchasedUnderAgreementsToResellNetAmountAbstract" abstract="true" name="SecuritiesSoldUnderAgreementsToRepurchaseAndPurchasedUnderAgreementsToResellNetAmountAbstract" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="zions_ExercisePriceRangeFortyPointZeroZeroToFortyFourPointNineNineMember" abstract="true" name="ExercisePriceRangeFortyPointZeroZeroToFortyFourPointNineNineMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="zions_CommercialAccountFees" abstract="false" name="CommercialAccountFees" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="zions_SingleFamilyResidentialMember" abstract="true" name="SingleFamilyResidentialMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="zions_FinancingReceivableAndOffBalanceSheetLiabilityCreditLossExpenseReversal" abstract="false" name="FinancingReceivableAndOffBalanceSheetLiabilityCreditLossExpenseReversal" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="zions_PurchasedCreditDerivativeMember" abstract="true" name="PurchasedCreditDerivativeMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="zions_InvestmentSecuritiesImpairmentPolicyPolicyTextBlock" abstract="false" name="InvestmentSecuritiesImpairmentPolicyPolicyTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:textBlockItemType"/>
+  <xs:element id="zions_PreferredStockLiquidationPreferencePerDepositaryShare" abstract="false" name="PreferredStockLiquidationPreferencePerDepositaryShare" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="dtr-types1:perShareItemType"/>
+  <xs:element id="zions_RateOfEmployeeContributionFromEarnings" abstract="false" name="RateOfEmployeeContributionFromEarnings" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+  <xs:element id="zions_ProductsAndServicesCardFeesMember" abstract="true" name="ProductsAndServicesCardFeesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="zions_PayFixedInterestRateSwapMember" abstract="true" name="PayFixedInterestRateSwapMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="zions_SummaryOfInvestmentSecuritiesTableTextBlock" abstract="false" name="SummaryOfInvestmentSecuritiesTableTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:textBlockItemType"/>
+  <xs:element id="zions_MultifamilyRetailMember" abstract="true" name="MultifamilyRetailMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="zions_ProductsAndServicesCommercialAccountFeesMember" abstract="true" name="ProductsAndServicesCommercialAccountFeesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="zions_OtherCustomerRelatedFees" abstract="false" name="OtherCustomerRelatedFees" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="zions_TaxableVSNontaxableIncomeDomain" abstract="true" name="TaxableVSNontaxableIncomeDomain" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="zions_PercentageOfAcquiredAssetsAndLiabilitiesRecognizedInBusinessCombination" abstract="false" name="PercentageOfAcquiredAssetsAndLiabilitiesRecognizedInBusinessCombination" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+  <xs:element id="zions_SecurityResellAgreementsMaximumAmountOutstanding" abstract="false" name="SecurityResellAgreementsMaximumAmountOutstanding" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="zions_ExercisePriceRangeTwentyFivePointZeroZeroToTwentyNinePointNineNineMember" abstract="true" name="ExercisePriceRangeTwentyFivePointZeroZeroToTwentyNinePointNineNineMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="zions_DebtSecuritiesUnrealizedGainAbstract" abstract="true" name="DebtSecuritiesUnrealizedGainAbstract" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="zions_GrossUnrealizedGainsofInvestmentSecuritiesRecognizedinOCI" abstract="false" name="GrossUnrealizedGainsofInvestmentSecuritiesRecognizedinOCI" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="zions_AdditionalCollateralThatWouldBeRequiredToBePledgeIfCreditRatingWasDowngradedByOneNotch" abstract="false" name="AdditionalCollateralThatWouldBeRequiredToBePledgeIfCreditRatingWasDowngradedByOneNotch" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="zions_OwnerOccupiedMember" abstract="true" name="OwnerOccupiedMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="zions_ZionsBankSegmentMember" abstract="true" name="ZionsBankSegmentMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="zions_SeriesGFixedFloatingRateNonCumulativePerpetualPreferredStockMember" abstract="true" name="SeriesGFixedFloatingRateNonCumulativePerpetualPreferredStockMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="zions_TermMember" abstract="true" name="TermMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="zions_EffectiveIncomeTaxRateReconciliationOtherTaxesAmount" abstract="false" name="EffectiveIncomeTaxRateReconciliationOtherTaxesAmount" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="zions_SubordinatedNotesParAmount" abstract="false" name="SubordinatedNotesParAmount" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="zions_NumberOfBranchesLeased" abstract="false" name="NumberOfBranchesLeased" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="xbrli:integerItemType"/>
+  <xs:element id="zions_OtherConsumerLoansMember" abstract="true" name="OtherConsumerLoansMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="zions_AssetHedgePayFixedInterestRateSwapMember" abstract="true" name="AssetHedgePayFixedInterestRateSwapMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="zions_ShortTermDebtWeightedAverageRate" abstract="false" name="ShortTermDebtWeightedAverageRate" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+  <xs:element id="zions_DepositsSavingsAndMoneyMarket" abstract="false" name="DepositsSavingsAndMoneyMarket" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="zions_SecurityResellAgreementsAverageAmount" abstract="false" name="SecurityResellAgreementsAverageAmount" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="zions_DebtSecuritiesHeldToMaturityFairValueTransferAmount" abstract="false" name="DebtSecuritiesHeldToMaturityFairValueTransferAmount" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="zions_DebtSecuritiesWeightedAverageYieldMaturityAfterYearOneThroughFive" abstract="false" name="DebtSecuritiesWeightedAverageYieldMaturityAfterYearOneThroughFive" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+  <xs:element id="zions_DebtAndEquitySecuritiesRealizedGrossGain" abstract="false" name="DebtAndEquitySecuritiesRealizedGrossGain" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="zions_FinancingReceivableTroubledDebtRestructurtingMinimumNumberOfMonthsForBorrowerToMeetTermsForTdrStatus" abstract="false" name="FinancingReceivableTroubledDebtRestructurtingMinimumNumberOfMonthsForBorrowerToMeetTermsForTdrStatus" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:integerItemType"/>
+  <xs:element id="zions_FinancingReceivableAccruingMember" abstract="true" name="FinancingReceivableAccruingMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="zions_NontaxableMember" abstract="true" name="NontaxableMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="zions_HospitalMember" abstract="true" name="HospitalMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="zions_DebtAndEquitySecuritiesRealizedGrossLoss" abstract="false" name="DebtAndEquitySecuritiesRealizedGrossLoss" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="zions_BankownedlifeinsuranceMember" abstract="true" name="BankownedlifeinsuranceMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="zions_AvailableforsaleOtherdebtsecuritiesMember" abstract="true" name="AvailableforsaleOtherdebtsecuritiesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="zions_ProductsAndServicesRetailAndBusinessBankingFeesMember" abstract="true" name="ProductsAndServicesRetailAndBusinessBankingFeesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="zions_LoansHeldForSaleTableTextBlock" abstract="false" name="LoansHeldForSaleTableTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:textBlockItemType"/>
+  <xs:element id="zions_MatchingContributionAllocationRateFirstTime" abstract="false" name="MatchingContributionAllocationRateFirstTime" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+  <xs:element id="zions_TradingSecuritiesReclassifiedToMoneyMarketInvestments" abstract="false" name="TradingSecuritiesReclassifiedToMoneyMarketInvestments" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="zions_DeferredTaxLiabilitiesRightOfUseAssets" abstract="false" name="DeferredTaxLiabilitiesRightOfUseAssets" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="zions_CommonStockAndAdditionalPaidInCapitalPercentageChange" abstract="false" name="CommonStockAndAdditionalPaidInCapitalPercentageChange" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+  <xs:element id="zions_NoninterestIncomeCustomerRelated" abstract="false" name="NoninterestIncomeCustomerRelated" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="zions_SeniorNoteInterestRate450Member" abstract="true" name="SeniorNoteInterestRate450Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="zions_DebtSecuritiesAmortizedCostMaturityAllocatedAndSingleMaturityDateAfterYear10" abstract="false" name="DebtSecuritiesAmortizedCostMaturityAllocatedAndSingleMaturityDateAfterYear10" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="zions_AvailableForSaleUnrealizedGainsOtherMember" abstract="true" name="AvailableForSaleUnrealizedGainsOtherMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="zions_FinancingReceivablePeriodOncePastDueChargedOffOrChargedDown" abstract="false" name="FinancingReceivablePeriodOncePastDueChargedOffOrChargedDown" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:durationItemType"/>
+  <xs:element id="zions_MinimumRangeOfEligibleCompensationForNoncontributoryProfitSharingFeature" abstract="false" name="MinimumRangeOfEligibleCompensationForNoncontributoryProfitSharingFeature" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+  <xs:element id="zions_ShareBasedCompensationArrangementByShareBasedPaymentAwardEquityInstrumentsOtherThanOptionsVestedAndExpectedToVestOutstandingNumber" abstract="false" name="ShareBasedCompensationArrangementByShareBasedPaymentAwardEquityInstrumentsOtherThanOptionsVestedAndExpectedToVestOutstandingNumber" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="xbrli:sharesItemType"/>
+  <xs:element id="zions_ShareBasedCompensationArrangementByShareBasedPaymentAwardRatioOfCommonStockToShareBasedPaymentAward" abstract="false" name="ShareBasedCompensationArrangementByShareBasedPaymentAwardRatioOfCommonStockToShareBasedPaymentAward" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="xbrli:sharesItemType"/>
+  <xs:element id="zions_DeferredTaxLiabilitiesFederalHomeLoanBankStockDividends" abstract="false" name="DeferredTaxLiabilitiesFederalHomeLoanBankStockDividends" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="zions_DebtSecuritiesWeightedAverageYieldMaturityAbstract" abstract="true" name="DebtSecuritiesWeightedAverageYieldMaturityAbstract" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="zions_DeferredTaxAssetsNetOperatingLossesCapitalLossesAndTaxCredits" abstract="false" name="DeferredTaxAssetsNetOperatingLossesCapitalLossesAndTaxCredits" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="zions_CaliforniaBankAndTrustSegmentMember" abstract="true" name="CaliforniaBankAndTrustSegmentMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="zions_ProductsAndServicesOtherCustomerRelatedFeesMember" abstract="true" name="ProductsAndServicesOtherCustomerRelatedFeesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="zions_CardFees" abstract="false" name="CardFees" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="zions_AvailableforsaleUnrealizedlossesOtherMember" abstract="true" name="AvailableforsaleUnrealizedlossesOtherMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="zions_DebtSecuritiesHeldToMaturityTransferInAccumulatedUnrecognizedLoss" abstract="false" name="DebtSecuritiesHeldToMaturityTransferInAccumulatedUnrecognizedLoss" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="zions_EmployeesContributionRateForFirstTimeMatching" abstract="false" name="EmployeesContributionRateForFirstTimeMatching" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+  <xs:element id="zions_DepositarySharePreferredStockOwnershipInterest" abstract="false" name="DepositarySharePreferredStockOwnershipInterest" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+  <xs:element id="zions_MortgageLoansUnderSecuritiesPurchaseAgreementPrincipalAmount" abstract="false" name="MortgageLoansUnderSecuritiesPurchaseAgreementPrincipalAmount" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="zions_BankingRegulationCommonEquityTierOneRiskBasedCapitalRatioExcessActual" abstract="false" name="BankingRegulationCommonEquityTierOneRiskBasedCapitalRatioExcessActual" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="xbrli:pureItemType"/>
+  <xs:element id="zions_AuditInformationAbstract" abstract="true" name="AuditInformationAbstract" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="zions_FixedToFloatingRateSubordinatedNotesMember" abstract="true" name="FixedToFloatingRateSubordinatedNotesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="zions_ProductsAndServicesCapitalMarketsFeesMember" abstract="true" name="ProductsAndServicesCapitalMarketsFeesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="zions_CommitmentsToExtendCreditExpiringInOneYear" abstract="false" name="CommitmentsToExtendCreditExpiringInOneYear" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="zions_RestrictedStockAndRestrictedStockUnitsRSUsMember" abstract="true" name="RestrictedStockAndRestrictedStockUnitsRSUsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="zions_ExercisePriceRangeZeroPointThreeTwoToNineteenPointNineNineMember" abstract="true" name="ExercisePriceRangeZeroPointThreeTwoToNineteenPointNineNineMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="zions_DeferredTaxLiabilitiesQualifiedOpportunityFundDeferredGains" abstract="false" name="DeferredTaxLiabilitiesQualifiedOpportunityFundDeferredGains" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="zions_StandbyLettersOfCreditExpiringInOneYear" abstract="false" name="StandbyLettersOfCreditExpiringInOneYear" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="zions_ExercisePriceRangeFortyFivePointZeroZeroToFortyNinePointNineNineMember" abstract="true" name="ExercisePriceRangeFortyFivePointZeroZeroToFortyNinePointNineNineMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="zions_CommercialAndIndustrialMember" abstract="true" name="CommercialAndIndustrialMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="zions_BankcardAndOtherRevolvingPlansMember" abstract="true" name="BankcardAndOtherRevolvingPlansMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="zions_DebtSecuritiesMaturityAllocatedAndSingleMaturityDateAmortizedCost" abstract="false" name="DebtSecuritiesMaturityAllocatedAndSingleMaturityDateAmortizedCost" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="zions_LandAcquisitionAndDevelopmentMember" abstract="true" name="LandAcquisitionAndDevelopmentMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="zions_MatchingContributionAllocationRateSecondTime" abstract="false" name="MatchingContributionAllocationRateSecondTime" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+  <xs:element id="zions_DebtSecuritiesMaturityAllocatedAndSingleMaturityDateAmortizedCostAbstract" abstract="true" name="DebtSecuritiesMaturityAllocatedAndSingleMaturityDateAmortizedCostAbstract" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="zions_MaturityOrTermExtensionMember" abstract="true" name="MaturityOrTermExtensionMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="zions_TerminatedSwapsOnLongTermDebtMember" abstract="true" name="TerminatedSwapsOnLongTermDebtMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="zions_StockholdersEquityChangeInDeferredCompensation" abstract="false" name="StockholdersEquityChangeInDeferredCompensation" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="zions_MunicipalMember" abstract="true" name="MunicipalMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="zions_SeriesAFloatingRateNonCumulativePerpetualPreferredStockMember" abstract="true" name="SeriesAFloatingRateNonCumulativePerpetualPreferredStockMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="zions_DebtSecuritiesMaturityWeightedAverageYield" abstract="false" name="DebtSecuritiesMaturityWeightedAverageYield" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+  <xs:element id="zions_GuaranteesCommitmentsAndContingenciesAbstract" abstract="true" name="GuaranteesCommitmentsAndContingenciesAbstract" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="zions_UndistributedEarningsApplicabletoNonvestedShares" abstract="false" name="UndistributedEarningsApplicabletoNonvestedShares" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="zions_TaxandNontaxableInterestIncomebyInvestmentTypeTableTextBlock" abstract="false" name="TaxandNontaxableInterestIncomebyInvestmentTypeTableTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:textBlockItemType"/>
+  <xs:element id="zions_AssetsAndLiabilitiesLesseeTableTextBlock" abstract="false" name="AssetsAndLiabilitiesLesseeTableTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:textBlockItemType"/>
+  <xs:element id="zions_AccruedProfitSharingExpense" abstract="false" name="AccruedProfitSharingExpense" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="zions_MarketingAndBusinessDevelopmentExpense" abstract="false" name="MarketingAndBusinessDevelopmentExpense" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="zions_PrincipalBalanceofLoansSoldServicedLoans" abstract="false" name="PrincipalBalanceofLoansSoldServicedLoans" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="zions_SecuritiesSoldUnderAgreementsToRepurchaseAndPurchasedUnderAgreementsToResellObligationToReturnAndRightToReclaimSecuritiesAbstract" abstract="true" name="SecuritiesSoldUnderAgreementsToRepurchaseAndPurchasedUnderAgreementsToResellObligationToReturnAndRightToReclaimSecuritiesAbstract" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="zions_TerminatedSwapsOnAssetHedgesMember" abstract="true" name="TerminatedSwapsOnAssetHedgesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="zions_DebtSecuritiesAmortizedCostAbstract" abstract="true" name="DebtSecuritiesAmortizedCostAbstract" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="zions_DebtSecuritiesAvailableForSaleMaturityWeightedAverageYield" abstract="false" name="DebtSecuritiesAvailableForSaleMaturityWeightedAverageYield" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+  <xs:element id="zions_CollateralDependentLoansTableTextBlock" abstract="false" name="CollateralDependentLoansTableTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:textBlockItemType"/>
+  <xs:element id="zions_AverageDeposits" abstract="false" name="AverageDeposits" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="zions_PreferredStockDividendPaymentRateBasisSpreadOnVariableRate" abstract="false" name="PreferredStockDividendPaymentRateBasisSpreadOnVariableRate" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+  <xs:element id="zions_DilutiveEffectofStockOptions" abstract="false" name="DilutiveEffectofStockOptions" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:sharesItemType"/>
+  <xs:element id="zions_PayFixedReceiveFloatingSwapMember" abstract="true" name="PayFixedReceiveFloatingSwapMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="zions_StockOptionsWithoutFixedExpirationDate" abstract="false" name="StockOptionsWithoutFixedExpirationDate" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="xbrli:sharesItemType"/>
+  <xs:element id="zions_CollateralDependentLoansMember" abstract="true" name="CollateralDependentLoansMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="zions_GrossUnrealizedLossesofInvestmentSecuritiesRecognizedinOCI" abstract="false" name="GrossUnrealizedLossesofInvestmentSecuritiesRecognizedinOCI" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="zions_DeferredTaxAssetsSecurityInvestmentsAndDerivativeFairValueAdjustments" abstract="false" name="DeferredTaxAssetsSecurityInvestmentsAndDerivativeFairValueAdjustments" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="zions_ShareBasedCompensationArrangementByShareBasedPaymentAwardEquityInstrumentsOtherThanOptionsVestedAndExpectedToVestOutstandingAggregateIntrinsicValue" abstract="false" name="ShareBasedCompensationArrangementByShareBasedPaymentAwardEquityInstrumentsOtherThanOptionsVestedAndExpectedToVestOutstandingAggregateIntrinsicValue" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="zions_TotalUnfundedLendingCommitments" abstract="false" name="TotalUnfundedLendingCommitments" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="zions_SecuritiesSoldUnderAgreementsToRepurchaseAndPurchasedUnderAgreementsToResellAmountsOffsetAbstract" abstract="true" name="SecuritiesSoldUnderAgreementsToRepurchaseAndPurchasedUnderAgreementsToResellAmountsOffsetAbstract" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="zions_SecuritiesSoldUnderAgreementsToRepurchaseAndPurchasedUnderAgreementsToResellObligationToReturnAndRightToReclaimCashAbstract" abstract="true" name="SecuritiesSoldUnderAgreementsToRepurchaseAndPurchasedUnderAgreementsToResellObligationToReturnAndRightToReclaimCashAbstract" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="zions_Netchangeinothernoninterestbearinginvestments" abstract="false" name="Netchangeinothernoninterestbearinginvestments" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="zions_OtherNoninterestBearingInvestmentsPolicyTextBlock" abstract="false" name="OtherNoninterestBearingInvestmentsPolicyTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:textBlockItemType"/>
+  <xs:element id="zions_ChangeInFairValueOfDerivativeAssetByCreditValueAdjustment" abstract="false" name="ChangeInFairValueOfDerivativeAssetByCreditValueAdjustment" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="zions_NumberOfBranches" abstract="false" name="NumberOfBranches" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="xbrli:decimalItemType"/>
+  <xs:element id="zions_NumberOfCivilCases" abstract="false" name="NumberOfCivilCases" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="xbrli:integerItemType"/>
+  <xs:element id="zions_BankingRegulationTier1LeverageCapitalRatioExcessActual" abstract="false" name="BankingRegulationTier1LeverageCapitalRatioExcessActual" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="dtr-types:percentItemType"/>
+  <xs:element id="zions_DebtSecuritiesAmortizedCostMaturityAllocatedAndSingleMaturityDateYearOne" abstract="false" name="DebtSecuritiesAmortizedCostMaturityAllocatedAndSingleMaturityDateYearOne" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="zions_FinancingReceivableCommitmentsThresholdForEvaluatingCollectivelyOrIndividually" abstract="false" name="FinancingReceivableCommitmentsThresholdForEvaluatingCollectivelyOrIndividually" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="zions_OCIOtherNonInterestBearingInvestmentsUnrealizedGainLossAfterTax" abstract="false" name="OCIOtherNonInterestBearingInvestmentsUnrealizedGainLossAfterTax" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="zions_TaxableVSNontaxableIncomeAxis" abstract="true" name="TaxableVSNontaxableIncomeAxis" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrldt:dimensionItem" type="xbrli:stringItemType"/>
+  <xs:element id="zions_LettersOfCreditStandby" abstract="false" name="LettersOfCreditStandby" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="zions_DeferredTaxAssetsLeaseLiabilities" abstract="false" name="DeferredTaxAssetsLeaseLiabilities" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="zions_OtherNoninterestExpenseMember" abstract="true" name="OtherNoninterestExpenseMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="zions_CreditAndCollectionServices" abstract="false" name="CreditAndCollectionServices" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="zions_DebtToValueRatioWeightedAverage" abstract="false" name="DebtToValueRatioWeightedAverage" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+  <xs:element id="zions_FinancingReceivableExcludingAccruedInterestNonaccrualWithAllowance" abstract="false" name="FinancingReceivableExcludingAccruedInterestNonaccrualWithAllowance" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="zions_TaxableMember" abstract="true" name="TaxableMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="zions_SwapMarginCollateralMember" abstract="true" name="SwapMarginCollateralMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="zions_TransferOfPortfolioLoansAndLeasesToHeldForSaleAndTransferOfLoansHeldForSaleToPortfolioLoansNet" abstract="false" name="TransferOfPortfolioLoansAndLeasesToHeldForSaleAndTransferOfLoansHeldForSaleToPortfolioLoansNet" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="zions_DebtSecuritiesWeightedAverageYieldMaturityAfterYear10" abstract="false" name="DebtSecuritiesWeightedAverageYieldMaturityAfterYear10" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+  <xs:element id="zions_CommercialLettersOfCredit" abstract="false" name="CommercialLettersOfCredit" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="zions_LongTermDebtExcludingAssociatedHedges" abstract="false" name="LongTermDebtExcludingAssociatedHedges" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="zions_InterestRateSwapsForCustomersMember" abstract="true" name="InterestRateSwapsForCustomersMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="zions_PercentageOfOutstandingAdvanceForUnencumberedCollateral" abstract="false" name="PercentageOfOutstandingAdvanceForUnencumberedCollateral" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+  <xs:element id="zions_ExercisePriceRangeFiftyPointZeroZeroToFiftyNinePointNineNineMember" abstract="true" name="ExercisePriceRangeFiftyPointZeroZeroToFiftyNinePointNineNineMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="zions_DebtSecuritiesUnrealizedLossAbstract" abstract="true" name="DebtSecuritiesUnrealizedLossAbstract" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="zions_NumberOfCommunityRegionalBanksOperatingInDistinctGeographicalAreas" abstract="false" name="NumberOfCommunityRegionalBanksOperatingInDistinctGeographicalAreas" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="xbrli:integerItemType"/>
+  <xs:element id="zions_SoldMortgageLoansLimitedRecourseProvisionPeriod" abstract="false" name="SoldMortgageLoansLimitedRecourseProvisionPeriod" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:durationItemType"/>
+  <xs:element id="zions_NumberOfBranchesPurchased" abstract="false" name="NumberOfBranchesPurchased" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:integerItemType"/>
+  <xs:element id="zions_SeniorNotes350Member" abstract="true" name="SeniorNotes350Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="zions_SecuredOvernightFinancingRateSOFROvernightIndexSwapRate1Member" abstract="true" name="SecuredOvernightFinancingRateSOFROvernightIndexSwapRate1Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="zions_NoncashOrPartNoncashAcquisitionDepositsAcquired" abstract="false" name="NoncashOrPartNoncashAcquisitionDepositsAcquired" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="zions_FinancingReceivableNonaccruingMember" abstract="true" name="FinancingReceivableNonaccruingMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="zions_CorporateReconcilingItemsAndEliminationsMember" abstract="true" name="CorporateReconcilingItemsAndEliminationsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="zions_OtherNoninterestBearingInvestmentsNonmarketableEquitySecuritiesGrossGains" abstract="false" name="OtherNoninterestBearingInvestmentsNonmarketableEquitySecuritiesGrossGains" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="zions_TerminatedAndRedesignatedSwapsUnamortizedBasisAdjustments" abstract="false" name="TerminatedAndRedesignatedSwapsUnamortizedBasisAdjustments" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="zions_MaximumRangeOfEligibleCompensationForNoncontributoryProfitSharingFeature" abstract="false" name="MaximumRangeOfEligibleCompensationForNoncontributoryProfitSharingFeature" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+  <xs:element id="zions_SeriesJPreferredStockMember" abstract="true" name="SeriesJPreferredStockMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="zions_SubordinatedNotesInterestRate325PercentMember" abstract="true" name="SubordinatedNotesInterestRate325PercentMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="zions_CommerceBankOfWashingtonSegmentMember" abstract="true" name="CommerceBankOfWashingtonSegmentMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="zions_AgencyGuaranteedMortgageBackedSecuritiesMember" abstract="true" name="AgencyGuaranteedMortgageBackedSecuritiesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="zions_VectraBankColoradoSegmentMember" abstract="true" name="VectraBankColoradoSegmentMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="zions_DebtSecuritiesAmortizedCostMaturityAllocatedAndSingleMaturityDateAfterYearOneThroughFive" abstract="false" name="DebtSecuritiesAmortizedCostMaturityAllocatedAndSingleMaturityDateAfterYearOneThroughFive" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="zions_PPPMember" abstract="true" name="PPPMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="zions_NumberOfBankOperatingSegments" abstract="false" name="NumberOfBankOperatingSegments" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:integerItemType"/>
+  <xs:element id="zions_EmployerContributionInCommonStock" abstract="false" name="EmployerContributionInCommonStock" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="zions_DebtSecuritiesWeightedAverageYieldMaturityYearOne" abstract="false" name="DebtSecuritiesWeightedAverageYieldMaturityYearOne" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+  <xs:element id="zions_CashCollateralPledgedForDerivativeLiabilities" abstract="false" name="CashCollateralPledgedForDerivativeLiabilities" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="zions_OtherRecordedInvestmentResultingFromFollowingModificationMember" abstract="true" name="OtherRecordedInvestmentResultingFromFollowingModificationMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="zions_AssetHedgePayFixedReceiveFloatingInterestRateSwapMember" abstract="true" name="AssetHedgePayFixedReceiveFloatingInterestRateSwapMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="zions_ScheduleOfPreferredStockTableTextBlock" abstract="false" name="ScheduleOfPreferredStockTableTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:textBlockItemType"/>
+  <xs:element id="zions_DebtSecuritiesHeldToMaturityExcludingAccruedInterestAfterAllowanceForCreditLossTransferFromAvailableForSale" abstract="false" name="DebtSecuritiesHeldToMaturityExcludingAccruedInterestAfterAllowanceForCreditLossTransferFromAvailableForSale" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="zions_ConstructionAndOtherConsumerRealEstateMember" abstract="true" name="ConstructionAndOtherConsumerRealEstateMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="zions_OneThroughFourFamilyResidentialMember" abstract="true" name="OneThroughFourFamilyResidentialMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="zions_SeriesIPreferredStockMember" abstract="true" name="SeriesIPreferredStockMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="zions_AverageLoansAndLeases" abstract="false" name="AverageLoansAndLeases" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="zions_AccruingSubstandardMember" abstract="true" name="AccruingSubstandardMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="zions_ClosedEndConsumerLoanMember" abstract="true" name="ClosedEndConsumerLoanMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="zions_ProductsAndServicesInterestIncomeOnLoansAndSecuritiesMember" abstract="true" name="ProductsAndServicesInterestIncomeOnLoansAndSecuritiesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+</xs:schema>

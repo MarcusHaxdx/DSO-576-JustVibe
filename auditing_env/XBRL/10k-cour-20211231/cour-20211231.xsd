@@ -1,0 +1,605 @@
+<?xml version="1.0" encoding="US-ASCII"?>
+<!-- DFIN New ActiveDisclosure (SM) XBRL Schema Document - http://www.dfinsolutions.com/ -->
+<!-- Creation Date :2022-03-03T06:01:18.6910+00:00 -->
+<!-- Copyright (c) 2022 Donnelly Financial Solutions, Inc. All Rights Reserved. -->
+<xsd:schema targetNamespace="http://www.coursera.org/20211231" attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:country="http://xbrl.sec.gov/country/2021" xmlns:dtr-types="http://www.xbrl.org/dtr/type/2020-01-21" xmlns:enum2="http://xbrl.org/2020/extensible-enumerations-2.0" xmlns:srt="http://fasb.org/srt/2021-01-31" xmlns:cour="http://www.coursera.org/20211231" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:us-gaap="http://fasb.org/us-gaap/2021-01-31" xmlns:dei="http://xbrl.sec.gov/dei/2021q4" xmlns:xbrldt="http://xbrl.org/2005/xbrldt" xmlns:xbrli="http://www.xbrl.org/2003/instance" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <xsd:import schemaLocation="http://www.xbrl.org/2003/xbrl-instance-2003-12-31.xsd" namespace="http://www.xbrl.org/2003/instance"/>
+  <xsd:import schemaLocation="http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd" namespace="http://www.xbrl.org/2003/linkbase"/>
+  <xsd:import schemaLocation="http://www.xbrl.org/2005/xbrldt-2005.xsd" namespace="http://xbrl.org/2005/xbrldt"/>
+  <xsd:import schemaLocation="https://xbrl.sec.gov/country/2021/country-2021.xsd" namespace="http://xbrl.sec.gov/country/2021"/>
+  <xsd:import schemaLocation="https://xbrl.fasb.org/srt/2021/elts/srt-2021-01-31.xsd" namespace="http://fasb.org/srt/2021-01-31"/>
+  <xsd:import schemaLocation="https://xbrl.fasb.org/us-gaap/2021/elts/us-gaap-2021-01-31.xsd" namespace="http://fasb.org/us-gaap/2021-01-31"/>
+  <xsd:import schemaLocation="https://xbrl.sec.gov/dei/2021q4/dei-2021q4.xsd" namespace="http://xbrl.sec.gov/dei/2021q4"/>
+  <xsd:import schemaLocation="https://www.xbrl.org/dtr/type/2020-01-21/types.xsd" namespace="http://www.xbrl.org/dtr/type/2020-01-21"/>
+  <xsd:annotation>
+    <xsd:appinfo>
+      <link:linkbaseRef xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="cour-20211231_lab.xml" xlink:role="http://www.xbrl.org/2003/role/labelLinkbaseRef" xlink:title="Labels link" xlink:type="simple"/>
+      <link:linkbaseRef xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="cour-20211231_pre.xml" xlink:role="http://www.xbrl.org/2003/role/presentationLinkbaseRef" xlink:title="Presentation link" xlink:type="simple"/>
+      <link:linkbaseRef xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="cour-20211231_def.xml" xlink:role="http://www.xbrl.org/2003/role/definitionLinkbaseRef" xlink:title="Definition link" xlink:type="simple"/>
+      <link:linkbaseRef xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="cour-20211231_cal.xml" xlink:role="http://www.xbrl.org/2003/role/calculationLinkbaseRef" xlink:title="Calculation link" xlink:type="simple"/>
+      <link:roleType roleURI="http://www.coursera.org/20211231/taxonomy/role/Role_DocumentCover" id="Role_DocumentCover">
+        <link:definition>100000 - Document - Cover</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.coursera.org/20211231/taxonomy/role/Role_StatementCondensedConsolidatedBalanceSheetsUnaudited" id="Role_StatementCondensedConsolidatedBalanceSheetsUnaudited">
+        <link:definition>100010 - Statement - Condensed Consolidated Balance Sheets (Unaudited)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.coursera.org/20211231/taxonomy/role/DisclosureLeasesScheduleOfFutureLeasePaymentsDetails2" id="DisclosureLeasesScheduleOfFutureLeasePaymentsDetails2">
+        <link:definition>100020 - Disclosure - Leases - Schedule of Future Lease Payments (Details) 2</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.coursera.org/20211231/taxonomy/role/Role_StatementCondensedConsolidatedBalanceSheetsUnauditedParenthetical" id="Role_StatementCondensedConsolidatedBalanceSheetsUnauditedParenthetical">
+        <link:definition>100030 - Statement - Condensed Consolidated Balance Sheets (Unaudited) (Parenthetical)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.coursera.org/20211231/taxonomy/role/Role_StatementCondensedConsolidatedStatementsOfOperationsUnaudited" id="Role_StatementCondensedConsolidatedStatementsOfOperationsUnaudited">
+        <link:definition>100040 - Statement - Condensed Consolidated Statements of Operations (Unaudited)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.coursera.org/20211231/taxonomy/role/Role_StatementCondensedConsolidatedStatementsOfComprehensiveLossUnaudited" id="Role_StatementCondensedConsolidatedStatementsOfComprehensiveLossUnaudited">
+        <link:definition>100050 - Statement - Condensed Consolidated Statements of Comprehensive Loss (Unaudited)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.coursera.org/20211231/taxonomy/role/StatementCondensedConsolidatedStatementsOfRedeemableConvertiblePreferredStockAndStockholdersEquityDeficitUnaudited" id="StatementCondensedConsolidatedStatementsOfRedeemableConvertiblePreferredStockAndStockholdersEquityDeficitUnaudited">
+        <link:definition>100060 - Statement - Condensed Consolidated Statements of Redeemable Convertible Preferred Stock and Stockholders' Equity (Deficit) (Unaudited)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.coursera.org/20211231/taxonomy/role/Role_StatementCondensedConsolidatedStatementsOfCashFlowsUnaudited" id="Role_StatementCondensedConsolidatedStatementsOfCashFlowsUnaudited">
+        <link:definition>100070 - Statement - Condensed Consolidated Statements of Cash Flows (Unaudited)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.coursera.org/20211231/taxonomy/role/Role_DisclosureOrganizationAndDescriptionOfBusiness" id="Role_DisclosureOrganizationAndDescriptionOfBusiness">
+        <link:definition>100080 - Disclosure - Organization and Description of Business</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.coursera.org/20211231/taxonomy/role/Role_DisclosureBasisOfPresentationAndSummaryOfSignificantAccountingPolicies" id="Role_DisclosureBasisOfPresentationAndSummaryOfSignificantAccountingPolicies">
+        <link:definition>100090 - Disclosure - Basis of Presentation and Summary of Significant Accounting Policies</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.coursera.org/20211231/taxonomy/role/Role_DisclosureRevenueRecognition" id="Role_DisclosureRevenueRecognition">
+        <link:definition>100100 - Disclosure - Revenue Recognition</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.coursera.org/20211231/taxonomy/role/Role_DisclosureFairValueMeasurements" id="Role_DisclosureFairValueMeasurements">
+        <link:definition>100110 - Disclosure - Fair Value Measurements</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.coursera.org/20211231/taxonomy/role/Role_DisclosureMarketableSecurities" id="Role_DisclosureMarketableSecurities">
+        <link:definition>100120 - Disclosure - Marketable Securities</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.coursera.org/20211231/taxonomy/role/Role_DisclosureConsolidatedBalanceSheetComponents" id="Role_DisclosureConsolidatedBalanceSheetComponents">
+        <link:definition>100130 - Disclosure -  Consolidated Balance Sheet Components</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.coursera.org/20211231/taxonomy/role/Role_DisclosureIncomeTaxes" id="Role_DisclosureIncomeTaxes">
+        <link:definition>100140 - Disclosure - Income Taxes</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.coursera.org/20211231/taxonomy/role/Role_DisclosureRedeemableConvertiblePreferredStock" id="Role_DisclosureRedeemableConvertiblePreferredStock">
+        <link:definition>100150 - Disclosure - Redeemable Convertible Preferred Stock</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.coursera.org/20211231/taxonomy/role/DisclosureStockholdersEquityDeficit" id="DisclosureStockholdersEquityDeficit">
+        <link:definition>100160 - Disclosure - Stockholders' Equity (Deficit)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.coursera.org/20211231/taxonomy/role/Role_DisclosureNetLossPerShare" id="Role_DisclosureNetLossPerShare">
+        <link:definition>100170 - Disclosure - Net Loss Per Share</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.coursera.org/20211231/taxonomy/role/Role_DisclosureLeases" id="Role_DisclosureLeases">
+        <link:definition>100180 - Disclosure - Leases</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.coursera.org/20211231/taxonomy/role/Role_DisclosureCommitmentsAndContingencies" id="Role_DisclosureCommitmentsAndContingencies">
+        <link:definition>100190 - Disclosure - Commitments and Contingencies</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.coursera.org/20211231/taxonomy/role/Role_Disclosure401KPlan" id="Role_Disclosure401KPlan">
+        <link:definition>100200 - Disclosure - 401(k) Plan</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.coursera.org/20211231/taxonomy/role/Role_DisclosureRelatedPartyTransaction" id="Role_DisclosureRelatedPartyTransaction">
+        <link:definition>100210 - Disclosure - Related Party Transaction</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.coursera.org/20211231/taxonomy/role/Role_DisclosureSegmentAndGeographicInformation" id="Role_DisclosureSegmentAndGeographicInformation">
+        <link:definition>100220 - Disclosure - Segment and Geographic Information</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.coursera.org/20211231/taxonomy/role/Role_DisclosureSubsequentEvents" id="Role_DisclosureSubsequentEvents">
+        <link:definition>100230 - Disclosure - Subsequent Events</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.coursera.org/20211231/taxonomy/role/Role_DisclosureBasisOfPresentationAndSummaryOfSignificantAccountingPoliciesPolicies" id="Role_DisclosureBasisOfPresentationAndSummaryOfSignificantAccountingPoliciesPolicies">
+        <link:definition>100240 - Disclosure - Basis of Presentation and Summary of Significant Accounting Policies (Policies)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.coursera.org/20211231/taxonomy/role/DisclosureBasisOfPresentationAndSummaryOfSignificantAccountingPoliciesTables" id="DisclosureBasisOfPresentationAndSummaryOfSignificantAccountingPoliciesTables">
+        <link:definition>100250 - Disclosure - Basis of Presentation and Summary of Significant Accounting Policies (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.coursera.org/20211231/taxonomy/role/Role_DisclosureRevenueRecognitionTables" id="Role_DisclosureRevenueRecognitionTables">
+        <link:definition>100260 - Disclosure - Revenue Recognition (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.coursera.org/20211231/taxonomy/role/Role_DisclosureFairValueMeasurementsTables" id="Role_DisclosureFairValueMeasurementsTables">
+        <link:definition>100270 - Disclosure - Fair Value Measurements (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.coursera.org/20211231/taxonomy/role/Role_DisclosureMarketableSecuritiesTables" id="Role_DisclosureMarketableSecuritiesTables">
+        <link:definition>100280 - Disclosure - Marketable Securities (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.coursera.org/20211231/taxonomy/role/Role_DisclosureConsolidatedBalanceSheetComponentsTables" id="Role_DisclosureConsolidatedBalanceSheetComponentsTables">
+        <link:definition>100290 - Disclosure - Consolidated Balance Sheet Components (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.coursera.org/20211231/taxonomy/role/DisclosureIncomeTaxesTables" id="DisclosureIncomeTaxesTables">
+        <link:definition>100300 - Disclosure - Income Taxes (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.coursera.org/20211231/taxonomy/role/Role_DisclosureRedeemableConvertiblePreferredStockTables" id="Role_DisclosureRedeemableConvertiblePreferredStockTables">
+        <link:definition>100310 - Disclosure - Redeemable Convertible Preferred Stock (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.coursera.org/20211231/taxonomy/role/DisclosureStockholdersEquityDeficitTables" id="DisclosureStockholdersEquityDeficitTables">
+        <link:definition>100320 - Disclosure - Stockholders' Equity (Deficit) (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.coursera.org/20211231/taxonomy/role/Role_DisclosureNetLossPerShareTables" id="Role_DisclosureNetLossPerShareTables">
+        <link:definition>100330 - Disclosure - Net Loss Per Share (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.coursera.org/20211231/taxonomy/role/DisclosureLeasesTables" id="DisclosureLeasesTables">
+        <link:definition>100340 - Disclosure - Leases (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.coursera.org/20211231/taxonomy/role/Role_DisclosureCommitmentsAndContingenciesTables" id="Role_DisclosureCommitmentsAndContingenciesTables">
+        <link:definition>100350 - Disclosure - Commitments and Contingencies (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.coursera.org/20211231/taxonomy/role/Role_DisclosureSegmentAndGeographicInformationTables" id="Role_DisclosureSegmentAndGeographicInformationTables">
+        <link:definition>100360 - Disclosure - Segment and Geographic Information (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.coursera.org/20211231/taxonomy/role/Role_DisclosureOrganizationAndDescriptionOfBusinessDetails" id="Role_DisclosureOrganizationAndDescriptionOfBusinessDetails">
+        <link:definition>100370 - Disclosure - Organization and Description of Business (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.coursera.org/20211231/taxonomy/role/Role_DisclosureBasisOfPresentationAndSummaryOfSignificantAccountingPoliciesAdditionalInformationDetails" id="Role_DisclosureBasisOfPresentationAndSummaryOfSignificantAccountingPoliciesAdditionalInformationDetails">
+        <link:definition>100380 - Disclosure - Basis of Presentation and Summary of Significant Accounting Policies - Additional Information (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.coursera.org/20211231/taxonomy/role/DisclosureBasisOfPresentationAndSummaryOfSignificantAccountingPoliciesFairValueMeasurementsAtFairValueByLevelWithinFairValueHierarchyDet" id="DisclosureBasisOfPresentationAndSummaryOfSignificantAccountingPoliciesFairValueMeasurementsAtFairValueByLevelWithinFairValueHierarchyDet">
+        <link:definition>100390 - Disclosure - Basis of Presentation and Summary of Significant Accounting Policies - Fair Value Measurements at Fair Value by Level Within Fair Value Hierarchy (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.coursera.org/20211231/taxonomy/role/Role_DisclosureRevenueRecognitionSummaryOfContractAssetsAndLiabilitiesDetails" id="Role_DisclosureRevenueRecognitionSummaryOfContractAssetsAndLiabilitiesDetails">
+        <link:definition>100400 - Disclosure - Revenue Recognition - Summary of Contract Assets and Liabilities (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.coursera.org/20211231/taxonomy/role/Role_DisclosureRevenueRecognitionAdditionalInformationDetails" id="Role_DisclosureRevenueRecognitionAdditionalInformationDetails">
+        <link:definition>100410 - Disclosure - Revenue Recognition - Additional Information (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.coursera.org/20211231/taxonomy/role/Role_DisclosureRevenueRecognitionAdditionalInformationDetails1" id="Role_DisclosureRevenueRecognitionAdditionalInformationDetails1">
+        <link:definition>100420 - Disclosure - Revenue Recognition - Additional Information (Details 1)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.coursera.org/20211231/taxonomy/role/Role_DisclosureMarketableSecuritiesSummaryOfAvailableForSaleMarketableSecuritiesDetails" id="Role_DisclosureMarketableSecuritiesSummaryOfAvailableForSaleMarketableSecuritiesDetails">
+        <link:definition>100430 - Disclosure - Marketable Securities - Summary of Available-for-Sale Marketable Securities (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.coursera.org/20211231/taxonomy/role/Role_DisclosureMarketableSecuritiesScheduleOfCostBasisAndFairValueOfAvailableForSaleSecuritiesByContractualMaturityDateDetails" id="Role_DisclosureMarketableSecuritiesScheduleOfCostBasisAndFairValueOfAvailableForSaleSecuritiesByContractualMaturityDateDetails">
+        <link:definition>100440 - Disclosure - Marketable Securities - Schedule of the Cost Basis and Fair Value of Available-for-sale Securities by Contractual Maturity Date (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.coursera.org/20211231/taxonomy/role/Role_DisclosureMarketableSecuritiesScheduleOfInvestmentsInUnrealizedLossPositionDetails" id="Role_DisclosureMarketableSecuritiesScheduleOfInvestmentsInUnrealizedLossPositionDetails">
+        <link:definition>100450 - Disclosure - Marketable Securities - Schedule of Investments in an Unrealized Loss Position (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.coursera.org/20211231/taxonomy/role/Role_DisclosureMarketableSecuritiesAdditionalInformationDetails" id="Role_DisclosureMarketableSecuritiesAdditionalInformationDetails">
+        <link:definition>100460 - Disclosure - Marketable Securities - Additional Information (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.coursera.org/20211231/taxonomy/role/Role_DisclosureConsolidatedBalanceSheetComponentsScheduleOfPropertyEquipmentAndSoftwareDetails" id="Role_DisclosureConsolidatedBalanceSheetComponentsScheduleOfPropertyEquipmentAndSoftwareDetails">
+        <link:definition>100470 - Disclosure - Consolidated Balance Sheet Components - Schedule of Property, Equipment and Software (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.coursera.org/20211231/taxonomy/role/Role_DisclosureConsolidatedBalanceSheetComponentsAdditionalInformationDetails" id="Role_DisclosureConsolidatedBalanceSheetComponentsAdditionalInformationDetails">
+        <link:definition>100480 - Disclosure - Consolidated Balance Sheet Components - Additional Information (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.coursera.org/20211231/taxonomy/role/Role_DisclosureConsolidatedBalanceSheetComponentsScheduleOfIntangibleAssetsDetails" id="Role_DisclosureConsolidatedBalanceSheetComponentsScheduleOfIntangibleAssetsDetails">
+        <link:definition>100490 - Disclosure - Consolidated Balance Sheet Components - Schedule of Intangible Assets (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.coursera.org/20211231/taxonomy/role/Role_DisclosureConsolidatedBalanceSheetComponentsScheduleOfFutureExpectedAmortizationExpenseForIntangibleAssetsDetails" id="Role_DisclosureConsolidatedBalanceSheetComponentsScheduleOfFutureExpectedAmortizationExpenseForIntangibleAssetsDetails">
+        <link:definition>100500 - Disclosure - Consolidated Balance Sheet Components - Schedule of Future Expected Amortization Expense for Intangible Assets (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.coursera.org/20211231/taxonomy/role/DisclosureIncomeTaxesScheduleOfComponentsOfLossBeforeIncomeTaxDetails" id="DisclosureIncomeTaxesScheduleOfComponentsOfLossBeforeIncomeTaxDetails">
+        <link:definition>100510 - Disclosure - Income Taxes - Schedule of Components of Loss Before Income Tax (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.coursera.org/20211231/taxonomy/role/DisclosureIncomeTaxesScheduleOfIncomeTaxExpenseDetails" id="DisclosureIncomeTaxesScheduleOfIncomeTaxExpenseDetails">
+        <link:definition>100520 - Disclosure - Income Taxes - Schedule of Income Tax Expense (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.coursera.org/20211231/taxonomy/role/Role_DisclosureIncomeTaxesAdditionalInformationDetails" id="Role_DisclosureIncomeTaxesAdditionalInformationDetails">
+        <link:definition>100530 - Disclosure - Income Taxes - Additional Information (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.coursera.org/20211231/taxonomy/role/DisclosureIncomeTaxesScheduleOfReconciliationBetweenTheStatutoryUsFederalIncomeTaxRateAndTheCompanysEffectiveTaxRateAsAPercentageOfLos" id="DisclosureIncomeTaxesScheduleOfReconciliationBetweenTheStatutoryUsFederalIncomeTaxRateAndTheCompanysEffectiveTaxRateAsAPercentageOfLos">
+        <link:definition>100540 - Disclosure - Income Taxes - Schedule of Reconciliation Between the Statutory U.S. Federal Income Tax Rate and the Company's Effective Tax Rate as a Percentage of Loss Before Income Taxes (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.coursera.org/20211231/taxonomy/role/DisclosureIncomeTaxesScheduleOfComponentsOfDeferredTaxAssetsForFederalAndStateIncomeTaxesDetails" id="DisclosureIncomeTaxesScheduleOfComponentsOfDeferredTaxAssetsForFederalAndStateIncomeTaxesDetails">
+        <link:definition>100550 - Disclosure - Income Taxes - Schedule of Components of Deferred Tax Assets for Federal and State Income Taxes (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.coursera.org/20211231/taxonomy/role/DisclosureIncomeTaxesSummaryOfIncomeTaxContingenciesDetails" id="DisclosureIncomeTaxesSummaryOfIncomeTaxContingenciesDetails">
+        <link:definition>100560 - Disclosure - Income Taxes - Summary of income tax contingencies (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.coursera.org/20211231/taxonomy/role/Role_DisclosureRedeemableConvertiblePreferredStockAdditionalInformationDetails" id="Role_DisclosureRedeemableConvertiblePreferredStockAdditionalInformationDetails">
+        <link:definition>100570 - Disclosure - Redeemable Convertible Preferred Stock - Additional Information (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.coursera.org/20211231/taxonomy/role/DisclosureRedeemableConvertiblePreferredStockScheduleOfRedeemableConvertiblePreferredStockDetails" id="DisclosureRedeemableConvertiblePreferredStockScheduleOfRedeemableConvertiblePreferredStockDetails">
+        <link:definition>100580 - Disclosure - Redeemable Convertible Preferred Stock - Schedule of Redeemable Convertible Preferred Stock (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.coursera.org/20211231/taxonomy/role/DisclosureStockholdersEquityDeficitAdditionalInformationDetails" id="DisclosureStockholdersEquityDeficitAdditionalInformationDetails">
+        <link:definition>100590 - Disclosure - Stockholders' Equity (Deficit) - Additional Information (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.coursera.org/20211231/taxonomy/role/DisclosureStockholdersEquityDeficitScheduleOfStockOptionActivityUnderThePlansDetails" id="DisclosureStockholdersEquityDeficitScheduleOfStockOptionActivityUnderThePlansDetails">
+        <link:definition>100600 - Disclosure - Stockholders' Equity (Deficit )- Schedule of Stock Option Activity under the Plans (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.coursera.org/20211231/taxonomy/role/DisclosureStockholdersEquityDeficitScheduleOfStockOptionActivityUnderThePlansParentheticalDetails" id="DisclosureStockholdersEquityDeficitScheduleOfStockOptionActivityUnderThePlansParentheticalDetails">
+        <link:definition>100610 - Disclosure - Stockholders' Equity (Deficit)- Schedule of Stock Option Activity under the Plans (Parenthetical) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.coursera.org/20211231/taxonomy/role/DisclosureStockholdersEquityDeficitScheduleOfSharebasedCompensationRestrictedStockUnitsAwardActivityDetails" id="DisclosureStockholdersEquityDeficitScheduleOfSharebasedCompensationRestrictedStockUnitsAwardActivityDetails">
+        <link:definition>100620 - Disclosure - Stockholders' Equity (Deficit) - Schedule of Share-based Compensation, Restricted Stock Units Award Activity (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.coursera.org/20211231/taxonomy/role/DisclosureStockholdersEquityDeficitSummaryOfWeightedaverageAssumptionsToRecordCompensationExpensesForStockOptionsGrantedDetails" id="DisclosureStockholdersEquityDeficitSummaryOfWeightedaverageAssumptionsToRecordCompensationExpensesForStockOptionsGrantedDetails">
+        <link:definition>100630 - Disclosure - Stockholders' Equity (Deficit) - Summary of weighted-average assumptions to record compensation expenses for stock options granted (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.coursera.org/20211231/taxonomy/role/DisclosureStockholdersEquityDeficitSummaryOfEstimatedAssumptionsUsedInTheBlackscholesValuationModelToValueOutEsppPurchaseRightsDetails" id="DisclosureStockholdersEquityDeficitSummaryOfEstimatedAssumptionsUsedInTheBlackscholesValuationModelToValueOutEsppPurchaseRightsDetails">
+        <link:definition>100640 - Disclosure - Stockholders' Equity (Deficit) - Summary of Estimated Assumptions Used in the Black-Scholes Valuation Model to Value out ESPP Purchase Rights (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.coursera.org/20211231/taxonomy/role/DisclosureStockholdersEquityDeficitSummaryOfStockbasedCompensationExpenseInTheConsolidatedStatementsOfOperationsDetails" id="DisclosureStockholdersEquityDeficitSummaryOfStockbasedCompensationExpenseInTheConsolidatedStatementsOfOperationsDetails">
+        <link:definition>100650 - Disclosure - Stockholders' Equity (Deficit) - Summary of Stock-Based Compensation Expense in the Consolidated Statements of Operations (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.coursera.org/20211231/taxonomy/role/DisclosureStockholdersEquityDeficitSummaryOfSharesOfCommonStockReservedForFutureIssuanceDetails" id="DisclosureStockholdersEquityDeficitSummaryOfSharesOfCommonStockReservedForFutureIssuanceDetails">
+        <link:definition>100660 - Disclosure - Stockholders' Equity (Deficit) - Summary of Shares of Common Stock Reserved for Future Issuance (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.coursera.org/20211231/taxonomy/role/Role_DisclosureNetLossPerShareCalculationOfBasicAndDilutedDetails" id="Role_DisclosureNetLossPerShareCalculationOfBasicAndDilutedDetails">
+        <link:definition>100670 - Disclosure - Net Loss Per Share - Calculation of Basic and Diluted (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.coursera.org/20211231/taxonomy/role/Role_DisclosureNetLossPerShareScheduleOfSecuritiesWithPotentiallyDilutiveImpactDetails" id="Role_DisclosureNetLossPerShareScheduleOfSecuritiesWithPotentiallyDilutiveImpactDetails">
+        <link:definition>100680 - Disclosure - Net Loss Per Share - Schedule of Securities with a Potentially Dilutive Impact (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.coursera.org/20211231/taxonomy/role/DisclosureLeasesAdditionalInformationDetails" id="DisclosureLeasesAdditionalInformationDetails">
+        <link:definition>100690 - Disclosure - Leases - Additional Information (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.coursera.org/20211231/taxonomy/role/DisclosureLeasesScheduleOfComponentsOfLeaseCostsDetails" id="DisclosureLeasesScheduleOfComponentsOfLeaseCostsDetails">
+        <link:definition>100700 - Disclosure - Leases - Schedule of Components of Lease Costs (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.coursera.org/20211231/taxonomy/role/DisclosureLeasesScheduleOfFutureLeasePaymentsDetails3" id="DisclosureLeasesScheduleOfFutureLeasePaymentsDetails3">
+        <link:definition>100710 - Disclosure - Leases - Schedule of Future Lease Payments (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.coursera.org/20211231/taxonomy/role/DisclosureLeasesScheduleOfSupplementalCashFlowAndWeightedaverageRemainingLeaseTermAndDiscountRateDetails" id="DisclosureLeasesScheduleOfSupplementalCashFlowAndWeightedaverageRemainingLeaseTermAndDiscountRateDetails">
+        <link:definition>100720 - Disclosure - Leases - Schedule of Supplemental Cash Flow and Weighted-Average Remaining Lease Term and Discount Rate (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.coursera.org/20211231/taxonomy/role/DisclosureCommitmentsAndContingenciesAdditionalInformationDetails" id="DisclosureCommitmentsAndContingenciesAdditionalInformationDetails">
+        <link:definition>100730 - Disclosure - Commitments and Contingencies (Additional Information) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.coursera.org/20211231/taxonomy/role/DisclosureCommitmentsAndContigenciesFutureMinimumPaymentsUnderTheCompanysNoncancelablePurchaseObligationsDetails" id="DisclosureCommitmentsAndContigenciesFutureMinimumPaymentsUnderTheCompanysNoncancelablePurchaseObligationsDetails">
+        <link:definition>100740 - Disclosure - Commitments and Contigencies - Future Minimum Payments under the Company's Non-Cancelable Purchase Obligations (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.coursera.org/20211231/taxonomy/role/Role_Disclosure401KPlanDetails" id="Role_Disclosure401KPlanDetails">
+        <link:definition>100750 - Disclosure - 401(k) Plan (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.coursera.org/20211231/taxonomy/role/Role_DisclosureRelatedPartyTransactionAdditionalInformationDetails" id="Role_DisclosureRelatedPartyTransactionAdditionalInformationDetails">
+        <link:definition>100760 - Disclosure - Related Party Transaction - Additional Information (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.coursera.org/20211231/taxonomy/role/Role_DisclosureSegmentAndGeographicInformationSegmentResultsOfOperationsDetails" id="Role_DisclosureSegmentAndGeographicInformationSegmentResultsOfOperationsDetails">
+        <link:definition>100770 - Disclosure - Segment and Geographic Information - Segment Results of Operations (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.coursera.org/20211231/taxonomy/role/Role_DisclosureSegmentAndGeographicInformationSummaryOfRevenueByRegionBasedOnBillingAddressDetails" id="Role_DisclosureSegmentAndGeographicInformationSummaryOfRevenueByRegionBasedOnBillingAddressDetails">
+        <link:definition>100780 - Disclosure - Segment and Geographic Information - Summary of Revenue By Region Based On Billing Address (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.coursera.org/20211231/taxonomy/role/Role_DisclosureSegmentAndGeographicInformationAdditionalInformationDetails" id="Role_DisclosureSegmentAndGeographicInformationAdditionalInformationDetails">
+        <link:definition>100790 - Disclosure - Segment and Geographic Information - Additional Information (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.coursera.org/20211231/taxonomy/role/Role_DisclosureSegmentAndGeographicInformationSummaryOfLongLivedAssetsByGeographicRegionDetails" id="Role_DisclosureSegmentAndGeographicInformationSummaryOfLongLivedAssetsByGeographicRegionDetails">
+        <link:definition>100800 - Disclosure - Segment and Geographic Information - Summary of Long Lived Assets By Geographic Region (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+    </xsd:appinfo>
+  </xsd:annotation>
+  <xsd:element id="cour_ContractLiablitiesAbstract" name="ContractLiablitiesAbstract" type="xbrli:stringItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="cour_AdjustmentsToAdditionalPaidInCapitalVestingOfEarlyExerciseStockOptions" name="AdjustmentsToAdditionalPaidInCapitalVestingOfEarlyExerciseStockOptions" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false" xbrli:balance="credit"/>
+  <xsd:element id="cour_ClassOfWarrantOrRightExercisePriceOfWarrantsOrRights" name="ClassOfWarrantOrRightExercisePriceOfWarrantsOrRights" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false"/>
+  <xsd:element id="cour_CommissionsAndRelatedPayrollTaxExpenditures" name="CommissionsAndRelatedPayrollTaxExpenditures" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false" xbrli:balance="debit"/>
+  <xsd:element id="cour_ConversionOfStockConversionRatio" name="ConversionOfStockConversionRatio" type="xbrli:pureItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false"/>
+  <xsd:element id="cour_DeferredOfferingCostsPolicyTextBlock" name="DeferredOfferingCostsPolicyTextBlock" type="xbrli:stringItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false"/>
+  <xsd:element id="cour_DeferredTaxAssetsOperatingLeaseLiabilities" name="DeferredTaxAssetsOperatingLeaseLiabilities" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="instant" nillable="true" abstract="false" xbrli:balance="debit"/>
+  <xsd:element id="cour_DeferredTaxLiabilitiesDeferredCommissions" name="DeferredTaxLiabilitiesDeferredCommissions" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="instant" nillable="true" abstract="false" xbrli:balance="credit"/>
+  <xsd:element id="cour_DeferredTaxLiabilitiesDepreciationAndAmortization" name="DeferredTaxLiabilitiesDepreciationAndAmortization" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="instant" nillable="true" abstract="false" xbrli:balance="credit"/>
+  <xsd:element id="cour_ExerciseAndConversionOfCommonStockWarrants" name="ExerciseAndConversionOfCommonStockWarrants" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" xbrli:periodType="instant" nillable="true" abstract="false"/>
+  <xsd:element id="cour_FiniteLivedIntangibleAssetsAmortizationExpenseAfterYearFour" name="FiniteLivedIntangibleAssetsAmortizationExpenseAfterYearFour" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="instant" nillable="true" abstract="false" xbrli:balance="debit"/>
+  <xsd:element id="cour_ImpairmentLossesOnContractAssets" name="ImpairmentLossesOnContractAssets" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false" xbrli:balance="debit"/>
+  <xsd:element id="cour_IncomeLossFromContinuingOperationsBeforeIncomeTaxesCheck" name="IncomeLossFromContinuingOperationsBeforeIncomeTaxesCheck" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false" xbrli:balance="credit"/>
+  <xsd:element id="cour_IndefiniteOperatingLossCarryforwards" name="IndefiniteOperatingLossCarryforwards" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="instant" nillable="true" abstract="false" xbrli:balance="debit"/>
+  <xsd:element id="cour_IssuanceCostsOfSerieseRedeemableConvertiblePreferredstock" name="IssuanceCostsOfSerieseRedeemableConvertiblePreferredstock" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false" xbrli:balance="credit"/>
+  <xsd:element id="cour_IssuanceCostsOfSeriesFRedeemableConvertiblePreferredStock" name="IssuanceCostsOfSeriesFRedeemableConvertiblePreferredStock" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false" xbrli:balance="credit"/>
+  <xsd:element id="cour_IssuanceOfCommonStockInConnectionWithAssetAcquisition" name="IssuanceOfCommonStockInConnectionWithAssetAcquisition" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false" xbrli:balance="credit"/>
+  <xsd:element id="cour_IssuanceOfCommonStockInConnectionWithContentAsset" name="IssuanceOfCommonStockInConnectionWithContentAsset" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false" xbrli:balance="credit"/>
+  <xsd:element id="cour_IssuanceOfCommonStockInConnectionWithSettlementLiability" name="IssuanceOfCommonStockInConnectionWithSettlementLiability" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false" xbrli:balance="credit"/>
+  <xsd:element id="cour_IssuanceOfCommonStockInConnectionWithSettlementLiabilityShare" name="IssuanceOfCommonStockInConnectionWithSettlementLiabilityShare" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false"/>
+  <xsd:element id="cour_IssuanceOfCommonStockInConnectionWithSettlementLiabilityShares" name="IssuanceOfCommonStockInConnectionWithSettlementLiabilityShares" type="dtr-types:perShareItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false"/>
+  <xsd:element id="cour_IssuanceOfCommonStockSharesInConnectionWithContentAsset" name="IssuanceOfCommonStockSharesInConnectionWithContentAsset" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false"/>
+  <xsd:element id="cour_IssuanceOfPreferredStock" name="IssuanceOfPreferredStock" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false"/>
+  <xsd:element id="cour_IssuanceOfSerieseRedeemableConvertiblePreferredStock" name="IssuanceOfSerieseRedeemableConvertiblePreferredStock" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false" xbrli:balance="credit"/>
+  <xsd:element id="cour_IssuanceOfSerieseRedeemableConvertiblePreferredstockShares" name="IssuanceOfSerieseRedeemableConvertiblePreferredstockShares" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false"/>
+  <xsd:element id="cour_IssuanceOfSeriesFRedeemableConvertiblePreferredStock" name="IssuanceOfSeriesFRedeemableConvertiblePreferredStock" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false" xbrli:balance="credit"/>
+  <xsd:element id="cour_IssuanceOfSeriesFRedeemableConvertiblePreferredStockShares" name="IssuanceOfSeriesFRedeemableConvertiblePreferredStockShares" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false"/>
+  <xsd:element id="cour_LesseeOperatingLeaseLiabilityPaymentsDueYearFourAndThereafter" name="LesseeOperatingLeaseLiabilityPaymentsDueYearFourAndThereafter" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="instant" nillable="true" abstract="false" xbrli:balance="credit"/>
+  <xsd:element id="cour_NumberOfCustomers" name="NumberOfCustomers" type="xbrli:integerItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false"/>
+  <xsd:element id="cour_OperatingLeaseAgreement" name="OperatingLeaseAgreement" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="instant" nillable="true" abstract="false" xbrli:balance="debit"/>
+  <xsd:element id="cour_OperatingLossCarryforwardsDeductionLimitation" name="OperatingLossCarryforwardsDeductionLimitation" type="dtr-types:percentItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false"/>
+  <xsd:element id="cour_PaymentOfDeferredOfferingCosts" name="PaymentOfDeferredOfferingCosts" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false" xbrli:balance="credit"/>
+  <xsd:element id="cour_PaymentOfHoldbackConsiderationRelatedToAssetAcquisition" name="PaymentOfHoldbackConsiderationRelatedToAssetAcquisition" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false" xbrli:balance="credit"/>
+  <xsd:element id="cour_PaymentsToCapitalizedInternalUseSoftwareCosts" name="PaymentsToCapitalizedInternalUseSoftwareCosts" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false" xbrli:balance="credit"/>
+  <xsd:element id="cour_PlatformAndSupportCosts" name="PlatformAndSupportCosts" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false" xbrli:balance="debit"/>
+  <xsd:element id="cour_ProceedsFromAcquisitionOfAssets" name="ProceedsFromAcquisitionOfAssets" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false" xbrli:balance="debit"/>
+  <xsd:element id="cour_ProceedsFromExerciseOfUnvestedOptionsNetOfRepurchases" name="ProceedsFromExerciseOfUnvestedOptionsNetOfRepurchases" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false" xbrli:balance="debit"/>
+  <xsd:element id="cour_PropertyEquipmentAndSoftwareEstimatedUsefulLives" name="PropertyEquipmentAndSoftwareEstimatedUsefulLives" type="xbrli:durationItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false"/>
+  <xsd:element id="cour_PropertyEquipmentAndSoftwarePolicyPolicyTextBlock" name="PropertyEquipmentAndSoftwarePolicyPolicyTextBlock" type="xbrli:stringItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false"/>
+  <xsd:element id="cour_PurchaseOfInvestmentInPrivateCompany" name="PurchaseOfInvestmentInPrivateCompany" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false" xbrli:balance="credit"/>
+  <xsd:element id="cour_RelatedPartyContentFees" name="RelatedPartyContentFees" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false" xbrli:balance="debit"/>
+  <xsd:element id="cour_RepaymentOfDebtAssociatedWithAssetAcquisition" name="RepaymentOfDebtAssociatedWithAssetAcquisition" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false" xbrli:balance="credit"/>
+  <xsd:element id="cour_RestrictedCashInPrepaidExpensesAndOtherCurrentAssets" name="RestrictedCashInPrepaidExpensesAndOtherCurrentAssets" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="instant" nillable="true" abstract="false" xbrli:balance="debit"/>
+  <xsd:element id="cour_SegmentGrossProfitLoss" name="SegmentGrossProfitLoss" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false" xbrli:balance="credit"/>
+  <xsd:element id="cour_SegmentShareBasedCompensation" name="SegmentShareBasedCompensation" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false" xbrli:balance="debit"/>
+  <xsd:element id="cour_ShareBasedCompensationArrangementByShareBasedPaymentAwardEquityInstrumentsOtherThanOptionsReleasedInPeriod" name="ShareBasedCompensationArrangementByShareBasedPaymentAwardEquityInstrumentsOtherThanOptionsReleasedInPeriod" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false"/>
+  <xsd:element id="cour_ShareBasedCompensationArrangementByShareBasedPaymentAwardEquityInstrumentsOtherThanOptionsReleasedWeightedAverageGrantDateFairValue" name="ShareBasedCompensationArrangementByShareBasedPaymentAwardEquityInstrumentsOtherThanOptionsReleasedWeightedAverageGrantDateFairValue" type="dtr-types:perShareItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false"/>
+  <xsd:element id="cour_ShareBasedCompensationArrangementByShareBasedPaymentAwardFairValueOfCommonStock" name="ShareBasedCompensationArrangementByShareBasedPaymentAwardFairValueOfCommonStock" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false" xbrli:balance="credit"/>
+  <xsd:element id="cour_ShareBasedCompensationArrangementByShareBasedPaymentAwardOptionsRSUsOutstanding" name="ShareBasedCompensationArrangementByShareBasedPaymentAwardOptionsRSUsOutstanding" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" xbrli:periodType="instant" nillable="true" abstract="false"/>
+  <xsd:element id="cour_ShareBasedCompensationArrangementByShareBasedPaymentAwardOptionsVestingOfRestrictedStockUnitsNumber" name="ShareBasedCompensationArrangementByShareBasedPaymentAwardOptionsVestingOfRestrictedStockUnitsNumber" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false"/>
+  <xsd:element id="cour_ShareBasedCompensationCapitalizedAsInternalUseSoftware" name="ShareBasedCompensationCapitalizedAsInternalUseSoftware" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false" xbrli:balance="debit"/>
+  <xsd:element id="cour_StockIssuedDuringPeriodSharesRestrictedStockUnitsGross" name="StockIssuedDuringPeriodSharesRestrictedStockUnitsGross" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false"/>
+  <xsd:element id="cour_StockIssuedDuringPeriodSharesUnvestedOptionsExercised" name="StockIssuedDuringPeriodSharesUnvestedOptionsExercised" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false"/>
+  <xsd:element id="cour_StockIssuedDuringPeriodSharesWarrantsExercised" name="StockIssuedDuringPeriodSharesWarrantsExercised" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false"/>
+  <xsd:element id="cour_StockIssuedDuringPeriodValueWarrantsExercised" name="StockIssuedDuringPeriodValueWarrantsExercised" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false" xbrli:balance="credit"/>
+  <xsd:element id="cour_TaxWithholdingOnVestingOfRestrictedStockUnits" name="TaxWithholdingOnVestingOfRestrictedStockUnits" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false" xbrli:balance="credit"/>
+  <xsd:element id="cour_TemporaryEquitySharesIssuedDate" name="TemporaryEquitySharesIssuedDate" type="xbrli:stringItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false"/>
+  <xsd:element id="cour_TotalReconciliationItemOfSegmentGrossProfitToGrossProfit" name="TotalReconciliationItemOfSegmentGrossProfitToGrossProfit" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false" xbrli:balance="debit"/>
+  <xsd:element id="cour_UnpaidDeferredOfferingCosts" name="UnpaidDeferredOfferingCosts" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false" xbrli:balance="credit"/>
+  <xsd:element id="cour_UnpaidProceedsFromExerciseOfStockOptions" name="UnpaidProceedsFromExerciseOfStockOptions" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false" xbrli:balance="credit"/>
+  <xsd:element id="cour_VestingOfEarlyExercisedStockOptions" name="VestingOfEarlyExercisedStockOptions" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false" xbrli:balance="debit"/>
+  <xsd:element id="cour_BasisOfPresentationAndSummaryOfSignificantAccountingPoliciesLineItems" name="BasisOfPresentationAndSummaryOfSignificantAccountingPoliciesLineItems" type="xbrli:stringItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="cour_AcquiredIntangiblesMember" name="AcquiredIntangiblesMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="cour_AssembledWorkforceMember" name="AssembledWorkforceMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="cour_CommonStockOptionsMember" name="CommonStockOptionsMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="cour_CommonStockWarrantsMember" name="CommonStockWarrantsMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="cour_ComputerEquipmentAndSoftwareMember" name="ComputerEquipmentAndSoftwareMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="cour_ConsumerSegmentMember" name="ConsumerSegmentMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="cour_ContentAssetMember" name="ContentAssetMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="cour_ContentSourcingAgreementMember" name="ContentSourcingAgreementMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="cour_CustomerOneMember" name="CustomerOneMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="cour_DegreesSegmentMember" name="DegreesSegmentMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="cour_EmployeesDirectorsAndServiceProvidersMember" name="EmployeesDirectorsAndServiceProvidersMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="cour_EmployeeStockPurchasePlanMember" name="EmployeeStockPurchasePlanMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="cour_EnterpriseSegmentMember" name="EnterpriseSegmentMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="cour_EsppMember" name="EsppMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="cour_EsppPlanMember" name="EsppPlanMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="cour_InternalUseSoftwareMember" name="InternalUseSoftwareMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="cour_NoCustomersMember" name="NoCustomersMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="cour_OtherMember" name="OtherMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="cour_PropertyEquipmentAndSoftwareMember" name="PropertyEquipmentAndSoftwareMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="cour_RedeemableConvertiblePreferredStockClassAMember" name="RedeemableConvertiblePreferredStockClassAMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="cour_RedeemableConvertiblePreferredStockClassBMember" name="RedeemableConvertiblePreferredStockClassBMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="cour_RedeemableConvertiblePreferredStockClassCMember" name="RedeemableConvertiblePreferredStockClassCMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="cour_RedeemableConvertiblePreferredStockClassDMember" name="RedeemableConvertiblePreferredStockClassDMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="cour_RedeemableConvertiblePreferredStockClassEMember" name="RedeemableConvertiblePreferredStockClassEMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="cour_RedeemableConvertiblePreferredStockClassFMember" name="RedeemableConvertiblePreferredStockClassFMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="cour_ResearchAndDevelopmentMember" name="ResearchAndDevelopmentMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="cour_SharesSubjectToRepurchaseMember" name="SharesSubjectToRepurchaseMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="cour_TwoThousandThirteenAndTwoThousandFourteenExecutiveStockIncentivePlanMember" name="TwoThousandThirteenAndTwoThousandFourteenExecutiveStockIncentivePlanMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="cour_TwoThousandTwentyOneEmployeeStockPurchasePlanMember" name="TwoThousandTwentyOneEmployeeStockPurchasePlanMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="cour_UnvestedStockOptionsMember" name="UnvestedStockOptionsMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="cour_BasisOfPresentationAndSummaryOfSignificantAccountingPoliciesTable" name="BasisOfPresentationAndSummaryOfSignificantAccountingPoliciesTable" type="xbrli:stringItemType" substitutionGroup="xbrldt:hypercubeItem" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="cour_ScheduleOfCommonStockReservedForFutureIssuanceTableTextBlock" name="ScheduleOfCommonStockReservedForFutureIssuanceTableTextBlock" type="dtr-types:textBlockItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false"/>
+  <xsd:element id="cour_ContractAcquisitionAndFulfillmentCostsPolicyTextBlock" name="ContractAcquisitionAndFulfillmentCostsPolicyTextBlock" type="dtr-types:textBlockItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false"/>
+  <xsd:element id="cour_ContractAssetsAndLiabilitiesPolicyTextBlock" name="ContractAssetsAndLiabilitiesPolicyTextBlock" type="dtr-types:textBlockItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false"/>
+  <xsd:element id="cour_DisclosureOfSupplementalCashFlowInformationRelatedToLeasesTableTextBlock" name="DisclosureOfSupplementalCashFlowInformationRelatedToLeasesTableTextBlock" type="dtr-types:textBlockItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false"/>
+</xsd:schema>

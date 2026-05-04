@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="US-ASCII" standalone="no"?>
+    <!-- Field: Doc-Info; Name: Generator; Value: GoFiler Complete; Version: 5.16b -->
+    <!-- Field: Doc-Info; Name: VendorURI; Value: https://www.novaworks.com -->
+    <!-- Field: Doc-Info; Name: Status; Value: 0x00000000 -->
+<link:linkbase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:xbrli="http://www.xbrl.org/2003/instance" xsi:schemaLocation="http://www.xbrl.org/2003/linkbase http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd">
+    <link:roleRef roleURI="http://minaro-corp.com/role/Cover" xlink:href="mnao-20221031.xsd#Cover" xlink:type="simple" />
+    <link:roleRef roleURI="http://minaro-corp.com/role/BalanceSheet" xlink:href="mnao-20221031.xsd#BalanceSheet" xlink:type="simple" />
+    <link:roleRef roleURI="http://minaro-corp.com/role/BalanceSheetParenthetical" xlink:href="mnao-20221031.xsd#BalanceSheetParenthetical" xlink:type="simple" />
+    <link:roleRef roleURI="http://minaro-corp.com/role/StatementsOfOperations" xlink:href="mnao-20221031.xsd#StatementsOfOperations" xlink:type="simple" />
+    <link:roleRef roleURI="http://minaro-corp.com/role/StatementsOfChangesInStockholdersEquity" xlink:href="mnao-20221031.xsd#StatementsOfChangesInStockholdersEquity" xlink:type="simple" />
+    <link:roleRef roleURI="http://minaro-corp.com/role/StatementsOfCashFlows" xlink:href="mnao-20221031.xsd#StatementsOfCashFlows" xlink:type="simple" />
+    <link:roleRef roleURI="http://minaro-corp.com/role/OrganizationAndNatureOfBusiness" xlink:href="mnao-20221031.xsd#OrganizationAndNatureOfBusiness" xlink:type="simple" />
+    <link:roleRef roleURI="http://minaro-corp.com/role/GoingConcern" xlink:href="mnao-20221031.xsd#GoingConcern" xlink:type="simple" />
+    <link:roleRef roleURI="http://minaro-corp.com/role/SummaryOfSignificantAccountingPolicies" xlink:href="mnao-20221031.xsd#SummaryOfSignificantAccountingPolicies" xlink:type="simple" />
+    <link:roleRef roleURI="http://minaro-corp.com/role/RelatedPartyTransactions" xlink:href="mnao-20221031.xsd#RelatedPartyTransactions" xlink:type="simple" />
+    <link:roleRef roleURI="http://minaro-corp.com/role/IncomeTaxes" xlink:href="mnao-20221031.xsd#IncomeTaxes" xlink:type="simple" />
+    <link:roleRef roleURI="http://minaro-corp.com/role/SubsequentEvents" xlink:href="mnao-20221031.xsd#SubsequentEvents" xlink:type="simple" />
+    <link:roleRef roleURI="http://minaro-corp.com/role/SummaryOfSignificantAccountingPoliciesPolicies" xlink:href="mnao-20221031.xsd#SummaryOfSignificantAccountingPoliciesPolicies" xlink:type="simple" />
+    <link:roleRef roleURI="http://minaro-corp.com/role/IncomeTaxesTables" xlink:href="mnao-20221031.xsd#IncomeTaxesTables" xlink:type="simple" />
+    <link:roleRef roleURI="http://minaro-corp.com/role/RelatedPartyTransactionsDetailsNarrative" xlink:href="mnao-20221031.xsd#RelatedPartyTransactionsDetailsNarrative" xlink:type="simple" />
+    <link:roleRef roleURI="http://minaro-corp.com/role/ActualTaxBenefitDetails" xlink:href="mnao-20221031.xsd#ActualTaxBenefitDetails" xlink:type="simple" />
+    <link:calculationLink xlink:type="extended" xlink:role="http://minaro-corp.com/role/Cover" xlink:title="00000001 - Document - Cover" />
+    <link:calculationLink xlink:type="extended" xlink:role="http://minaro-corp.com/role/BalanceSheet" xlink:title="00000002 - Statement - BALANCE SHEET">
+      <link:loc xlink:type="locator" xlink:href="https://xbrl.fasb.org/us-gaap/2022/elts/us-gaap-2022.xsd#us-gaap_AssetsCurrent" xlink:label="loc_us-gaapAssetsCurrent" />
+      <link:loc xlink:type="locator" xlink:href="https://xbrl.fasb.org/us-gaap/2022/elts/us-gaap-2022.xsd#us-gaap_CashAndCashEquivalentsAtCarryingValue" xlink:label="loc_us-gaapCashAndCashEquivalentsAtCarryingValue" />
+      <link:calculationArc order="1" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="loc_us-gaapAssetsCurrent" xlink:to="loc_us-gaapCashAndCashEquivalentsAtCarryingValue" xlink:type="arc" weight="1" />
+      <link:loc xlink:type="locator" xlink:href="https://xbrl.fasb.org/us-gaap/2022/elts/us-gaap-2022.xsd#us-gaap_AssetsNoncurrent" xlink:label="loc_us-gaapAssetsNoncurrent" />
+      <link:loc xlink:type="locator" xlink:href="https://xbrl.fasb.org/us-gaap/2022/elts/us-gaap-2022.xsd#us-gaap_PropertyPlantAndEquipmentNetExcludingCapitalLeasedAssets" xlink:label="loc_us-gaapPropertyPlantAndEquipmentNetExcludingCapitalLeasedAssets" />
+      <link:calculationArc order="1" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="loc_us-gaapAssetsNoncurrent" xlink:to="loc_us-gaapPropertyPlantAndEquipmentNetExcludingCapitalLeasedAssets" xlink:type="arc" weight="1" />
+      <link:loc xlink:type="locator" xlink:href="https://xbrl.fasb.org/us-gaap/2022/elts/us-gaap-2022.xsd#us-gaap_LiabilitiesCurrent" xlink:label="loc_us-gaapLiabilitiesCurrent" />
+      <link:loc xlink:type="locator" xlink:href="https://xbrl.fasb.org/us-gaap/2022/elts/us-gaap-2022.xsd#us-gaap_DueToRelatedPartiesCurrent" xlink:label="loc_us-gaapDueToRelatedPartiesCurrent" />
+      <link:calculationArc order="1" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="loc_us-gaapLiabilitiesCurrent" xlink:to="loc_us-gaapDueToRelatedPartiesCurrent" xlink:type="arc" weight="1" />
+      <link:loc xlink:type="locator" xlink:href="https://xbrl.fasb.org/us-gaap/2022/elts/us-gaap-2022.xsd#us-gaap_AccountsPayableCurrent" xlink:label="loc_us-gaapAccountsPayableCurrent" />
+      <link:calculationArc order="2" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="loc_us-gaapLiabilitiesCurrent" xlink:to="loc_us-gaapAccountsPayableCurrent" xlink:type="arc" weight="1" />
+    </link:calculationLink>
+    <link:calculationLink xlink:type="extended" xlink:role="http://minaro-corp.com/role/BalanceSheetParenthetical" xlink:title="00000003 - Statement - BALANCE SHEET (Parenthetical)" />
+    <link:calculationLink xlink:type="extended" xlink:role="http://minaro-corp.com/role/StatementsOfOperations" xlink:title="00000004 - Statement - STATEMENTS OF OPERATIONS">
+      <link:loc xlink:type="locator" xlink:href="https://xbrl.fasb.org/us-gaap/2022/elts/us-gaap-2022.xsd#us-gaap_GrossProfit" xlink:label="loc_us-gaapGrossProfit" />
+      <link:loc xlink:type="locator" xlink:href="https://xbrl.fasb.org/us-gaap/2022/elts/us-gaap-2022.xsd#us-gaap_Revenues" xlink:label="loc_us-gaapRevenues" />
+      <link:calculationArc order="1" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="loc_us-gaapGrossProfit" xlink:to="loc_us-gaapRevenues" xlink:type="arc" weight="1" />
+      <link:loc xlink:type="locator" xlink:href="https://xbrl.fasb.org/us-gaap/2022/elts/us-gaap-2022.xsd#us-gaap_CostOfRevenue" xlink:label="loc_us-gaapCostOfRevenue" />
+      <link:calculationArc order="2" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="loc_us-gaapGrossProfit" xlink:to="loc_us-gaapCostOfRevenue" xlink:type="arc" weight="-1" />
+      <link:loc xlink:type="locator" xlink:href="https://xbrl.fasb.org/us-gaap/2022/elts/us-gaap-2022.xsd#us-gaap_OperatingExpenses" xlink:label="loc_us-gaapOperatingExpenses" />
+      <link:loc xlink:type="locator" xlink:href="https://xbrl.fasb.org/us-gaap/2022/elts/us-gaap-2022.xsd#us-gaap_GeneralAndAdministrativeExpense" xlink:label="loc_us-gaapGeneralAndAdministrativeExpense" />
+      <link:calculationArc order="1" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="loc_us-gaapOperatingExpenses" xlink:to="loc_us-gaapGeneralAndAdministrativeExpense" xlink:type="arc" weight="1" />
+    </link:calculationLink>
+    <link:calculationLink xlink:type="extended" xlink:role="http://minaro-corp.com/role/StatementsOfChangesInStockholdersEquity" xlink:title="00000005 - Statement - Statements of Changes in Stockholders Equity" />
+    <link:calculationLink xlink:type="extended" xlink:role="http://minaro-corp.com/role/StatementsOfCashFlows" xlink:title="00000006 - Statement - STATEMENTS OF CASH FLOWS">
+      <link:loc xlink:type="locator" xlink:href="https://xbrl.fasb.org/us-gaap/2022/elts/us-gaap-2022.xsd#us-gaap_NetCashProvidedByUsedInOperatingActivities" xlink:label="loc_us-gaapNetCashProvidedByUsedInOperatingActivities" />
+      <link:loc xlink:type="locator" xlink:href="https://xbrl.fasb.org/us-gaap/2022/elts/us-gaap-2022.xsd#us-gaap_Depreciation" xlink:label="loc_us-gaapDepreciation" />
+      <link:calculationArc order="1" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="loc_us-gaapNetCashProvidedByUsedInOperatingActivities" xlink:to="loc_us-gaapDepreciation" xlink:type="arc" weight="1" />
+      <link:loc xlink:type="locator" xlink:href="https://xbrl.fasb.org/us-gaap/2022/elts/us-gaap-2022.xsd#us-gaap_IncreaseDecreaseInAccountsPayable" xlink:label="loc_us-gaapIncreaseDecreaseInAccountsPayable" />
+      <link:calculationArc order="2" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="loc_us-gaapNetCashProvidedByUsedInOperatingActivities" xlink:to="loc_us-gaapIncreaseDecreaseInAccountsPayable" xlink:type="arc" weight="1" />
+      <link:loc xlink:type="locator" xlink:href="https://xbrl.fasb.org/us-gaap/2022/elts/us-gaap-2022.xsd#us-gaap_IncreaseDecreaseInPrepaidExpense" xlink:label="loc_us-gaapIncreaseDecreaseInPrepaidExpense" />
+      <link:calculationArc order="3" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="loc_us-gaapNetCashProvidedByUsedInOperatingActivities" xlink:to="loc_us-gaapIncreaseDecreaseInPrepaidExpense" xlink:type="arc" weight="-1" />
+      <link:loc xlink:type="locator" xlink:href="https://xbrl.fasb.org/us-gaap/2022/elts/us-gaap-2022.xsd#us-gaap_NetCashProvidedByUsedInFinancingActivities" xlink:label="loc_us-gaapNetCashProvidedByUsedInFinancingActivities" />
+      <link:loc xlink:type="locator" xlink:href="https://xbrl.fasb.org/us-gaap/2022/elts/us-gaap-2022.xsd#us-gaap_ProceedsFromIssuanceOfCommonStock" xlink:label="loc_us-gaapProceedsFromIssuanceOfCommonStock" />
+      <link:calculationArc order="1" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="loc_us-gaapNetCashProvidedByUsedInFinancingActivities" xlink:to="loc_us-gaapProceedsFromIssuanceOfCommonStock" xlink:type="arc" weight="1" />
+    </link:calculationLink>
+    <link:calculationLink xlink:type="extended" xlink:role="http://minaro-corp.com/role/OrganizationAndNatureOfBusiness" xlink:title="00000007 - Disclosure - ORGANIZATION AND NATURE OF BUSINESS" />
+    <link:calculationLink xlink:type="extended" xlink:role="http://minaro-corp.com/role/GoingConcern" xlink:title="00000008 - Disclosure - GOING CONCERN" />
+    <link:calculationLink xlink:type="extended" xlink:role="http://minaro-corp.com/role/SummaryOfSignificantAccountingPolicies" xlink:title="00000009 - Disclosure - SUMMARY OF SIGNIFICANT ACCOUNTING POLICIES" />
+    <link:calculationLink xlink:type="extended" xlink:role="http://minaro-corp.com/role/RelatedPartyTransactions" xlink:title="00000010 - Disclosure - RELATED PARTY TRANSACTIONS" />
+    <link:calculationLink xlink:type="extended" xlink:role="http://minaro-corp.com/role/IncomeTaxes" xlink:title="00000011 - Disclosure - INCOME TAXES" />
+    <link:calculationLink xlink:type="extended" xlink:role="http://minaro-corp.com/role/SubsequentEvents" xlink:title="00000012 - Disclosure - SUBSEQUENT EVENTS" />
+    <link:calculationLink xlink:type="extended" xlink:role="http://minaro-corp.com/role/SummaryOfSignificantAccountingPoliciesPolicies" xlink:title="00000013 - Disclosure - SUMMARY OF SIGNIFICANT ACCOUNTING POLICIES (Policies)" />
+    <link:calculationLink xlink:type="extended" xlink:role="http://minaro-corp.com/role/IncomeTaxesTables" xlink:title="00000014 - Disclosure - INCOME TAXES (Tables)" />
+    <link:calculationLink xlink:type="extended" xlink:role="http://minaro-corp.com/role/RelatedPartyTransactionsDetailsNarrative" xlink:title="00000015 - Disclosure - RELATED PARTY TRANSACTIONS (Details Narrative)" />
+    <link:calculationLink xlink:type="extended" xlink:role="http://minaro-corp.com/role/ActualTaxBenefitDetails" xlink:title="00000016 - Disclosure - actual tax benefit (Details)" />
+</link:linkbase>

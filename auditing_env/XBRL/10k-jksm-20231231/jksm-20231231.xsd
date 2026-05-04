@@ -1,0 +1,510 @@
+<?xml version="1.0" encoding="us-ascii" standalone="yes"?>
+<!--XBRL Document Created with XBRLMaster-->
+<!--Version: 2.3.08-->
+<!--Based on XBRL 2.1-->
+<!--Date of creation: 04/16/2024-->
+<!--Software architectural design and coding: A'c Dharmapremananda Avt.-->
+<!--Copyright (c) 2024 I-NET Business Solutions, Inc. All Rights Reserved.-->
+<schema xmlns:xl="http://www.xbrl.org/2003/XLink" xmlns:ref="http://www.xbrl.org/2006/ref" xmlns:currency="http://xbrl.sec.gov/currency/2023" xmlns:us-gaap-att="http://fasb.org/us-gaap/attributes" xmlns:sic="http://xbrl.sec.gov/sic/2023" xmlns:exch="http://xbrl.sec.gov/exch/2023" xmlns:invest="http://xbrl.sec.gov/invest/2013-01-31" xmlns:negated="http://www.xbrl.org/2009/role/negated" xmlns:naics="http://xbrl.sec.gov/naics/2023" xmlns:us-types="http://fasb.org/us-types/2023" xmlns:stpr="http://xbrl.sec.gov/stpr/2023" xmlns="http://www.w3.org/2001/XMLSchema" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:xbrli="http://www.xbrl.org/2003/instance" xmlns:xbrldt="http://xbrl.org/2005/xbrldt" xmlns:xbrldi="http://xbrl.org/2006/xbrldi" xmlns:country="http://xbrl.sec.gov/country/2023" xmlns:utr="http://www.xbrl.org/2009/utr" xmlns:srt-types="http://fasb.org/srt-types/2023" xmlns:dtr-types="http://www.xbrl.org/dtr/type/2020-01-21" xmlns:srt-roles="http://fasb.org/srt-roles/2023" xmlns:dei="http://xbrl.sec.gov/dei/2023" xmlns:num="http://www.xbrl.org/dtr/type/numeric" xmlns:nonnum="http://www.xbrl.org/dtr/type/non-numeric" xmlns:srt="http://fasb.org/srt/2023" xmlns:us-gaap="http://fasb.org/us-gaap/2023" xmlns:jksm="http://jksm.com/20231231" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://jksm.com/20231231">
+  <annotation>
+    <appinfo>
+      <link:roleType roleURI="http://jksm.com/role/Cover" id="Cover">
+        <link:definition>000001 - Document - Cover</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://jksm.com/role/ConsolidatedBalanceSheets" id="ConsolidatedBalanceSheets">
+        <link:definition>000002 - Statement - Consolidated Balance Sheets</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://jksm.com/role/ConsolidatedBalanceSheetsParenthetical" id="ConsolidatedBalanceSheetsParenthetical">
+        <link:definition>000003 - Statement - Consolidated Balance Sheets (Parenthetical)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://jksm.com/role/ConsolidatedStatementsOfOperations" id="ConsolidatedStatementsOfOperations">
+        <link:definition>000004 - Statement - Consolidated Statements of Operations</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://jksm.com/role/ConsolidatedStatementsOfStockholdersDeficit" id="ConsolidatedStatementsOfStockholdersDeficit">
+        <link:definition>000005 - Statement - Consolidated Statements of Stockholders' Deficit</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://jksm.com/role/ConsolidatedStatementsOfCashFlows" id="ConsolidatedStatementsOfCashFlows">
+        <link:definition>000006 - Statement - Consolidated Statements of Cash Flows</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://jksm.com/role/OrganizationAndNatureOfOperations" id="OrganizationAndNatureOfOperations">
+        <link:definition>000007 - Disclosure - Organization and Nature of Operations</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://jksm.com/role/SignificantAccountingPolicies" id="SignificantAccountingPolicies">
+        <link:definition>000008 - Disclosure - Significant Accounting Policies</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://jksm.com/role/PropertyAndEquipment" id="PropertyAndEquipment">
+        <link:definition>000009 - Disclosure - Property and Equipment</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://jksm.com/role/AccountsPayableAndAccruedExpenses" id="AccountsPayableAndAccruedExpenses">
+        <link:definition>000010 - Disclosure - Accounts Payable and Accrued Expenses</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://jksm.com/role/NotesPayableAndLineOfCredit" id="NotesPayableAndLineOfCredit">
+        <link:definition>000011 - Disclosure - Notes Payable and Line of Credit</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://jksm.com/role/ConvertibleNotesPayableAndDerivativeLiabilities" id="ConvertibleNotesPayableAndDerivativeLiabilities">
+        <link:definition>000012 - Disclosure - Convertible Notes Payable and Derivative Liabilities</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://jksm.com/role/Equity" id="Equity">
+        <link:definition>000013 - Disclosure - Equity</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://jksm.com/role/RelatedParty" id="RelatedParty">
+        <link:definition>000014 - Disclosure - Related Party</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://jksm.com/role/LeasesCommitmentsAndContingencies" id="LeasesCommitmentsAndContingencies">
+        <link:definition>000015 - Disclosure - Leases, Commitments and Contingencies</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://jksm.com/role/AccruedLiabilitiesOther" id="AccruedLiabilitiesOther">
+        <link:definition>000016 - Disclosure - Accrued Liabilities Other</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://jksm.com/role/IncomeTaxes" id="IncomeTaxes">
+        <link:definition>000017 - Disclosure - Income Taxes</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://jksm.com/role/SubsequentEvents" id="SubsequentEvents">
+        <link:definition>000018 - Disclosure - Subsequent Events</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://jksm.com/role/SignificantAccountingPoliciesPolicies" id="SignificantAccountingPoliciesPolicies">
+        <link:definition>000019 - Disclosure - Significant Accounting Policies (Policies)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://jksm.com/role/SignificantAccountingPoliciesTables" id="SignificantAccountingPoliciesTables">
+        <link:definition>000020 - Disclosure - Significant Accounting Policies (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://jksm.com/role/PropertyAndEquipmentTables" id="PropertyAndEquipmentTables">
+        <link:definition>000021 - Disclosure - Property and Equipment (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://jksm.com/role/AccountsPayableAndAccruedExpensesTables" id="AccountsPayableAndAccruedExpensesTables">
+        <link:definition>000022 - Disclosure - Accounts payable and accrued expenses (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://jksm.com/role/NotesPayableAndLineOfCreditTables" id="NotesPayableAndLineOfCreditTables">
+        <link:definition>000023 - Disclosure - Notes Payable and Line of Credit (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://jksm.com/role/ConvertibleNotesPayableAndDerivativeLiabilitiesTables" id="ConvertibleNotesPayableAndDerivativeLiabilitiesTables">
+        <link:definition>000024 - Disclosure - Convertible Notes Payable and Derivative Liabilities (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://jksm.com/role/EquityTables" id="EquityTables">
+        <link:definition>000025 - Disclosure - Equity (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://jksm.com/role/LeasesCommitmentsAndContingenciesTables" id="LeasesCommitmentsAndContingenciesTables">
+        <link:definition>000026 - Disclosure - Leases, Commitments and Contingencies (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://jksm.com/role/IncomeTaxesTables" id="IncomeTaxesTables">
+        <link:definition>000027 - Disclosure - Income Taxes (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://jksm.com/role/SignificantAccountingPoliciesDetails" id="SignificantAccountingPoliciesDetails">
+        <link:definition>000028 - Disclosure - Significant Accounting Policies (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://jksm.com/role/SignificantAccountingPoliciesDetails1" id="SignificantAccountingPoliciesDetails1">
+        <link:definition>000029 - Disclosure - Significant Accounting Policies (Details 1)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://jksm.com/role/SignificantAccountingPoliciesDetailsNarrative" id="SignificantAccountingPoliciesDetailsNarrative">
+        <link:definition>000030 - Disclosure - Significant Accounting Policies (Details Narrative)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://jksm.com/role/PropertyAndEquipmentDetails" id="PropertyAndEquipmentDetails">
+        <link:definition>000031 - Disclosure - Property and Equipment (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://jksm.com/role/PropertyAndEquipmentDetailsNarrative" id="PropertyAndEquipmentDetailsNarrative">
+        <link:definition>000032 - Disclosure - Property and Equipment (Details Narrative)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://jksm.com/role/AccountsPayableAndAccruedExpensesDetails" id="AccountsPayableAndAccruedExpensesDetails">
+        <link:definition>000033 - Disclosure - Accounts Payable and Accrued Expenses (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://jksm.com/role/NotesPayableAndLineOfCreditDetails" id="NotesPayableAndLineOfCreditDetails">
+        <link:definition>000034 - Disclosure - Notes Payable and Line of Credit (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://jksm.com/role/NotesPayableAndLineOfCreditDetails1" id="NotesPayableAndLineOfCreditDetails1">
+        <link:definition>000035 - Disclosure - Notes Payable and Line of Credit (Details 1)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://jksm.com/role/NotesPayableAndLineOfCreditDetailsNarrative" id="NotesPayableAndLineOfCreditDetailsNarrative">
+        <link:definition>000036 - Disclosure - Notes Payable and Line of Credit (Details Narrative)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://jksm.com/role/ConvertibleNotesPayableAndDerivativeLiabilitiesDetails" id="ConvertibleNotesPayableAndDerivativeLiabilitiesDetails">
+        <link:definition>000037 - Disclosure - Convertible Notes Payable and Derivative Liabilities (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://jksm.com/role/ConvertibleNotesPayableAndDerivativeLiabilitiesDetails1" id="ConvertibleNotesPayableAndDerivativeLiabilitiesDetails1">
+        <link:definition>000038 - Disclosure - Convertible Notes Payable and Derivative Liabilities (Details 1)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://jksm.com/role/ConvertibleNotesPayableAndDerivativeLiabilitiesDetails2" id="ConvertibleNotesPayableAndDerivativeLiabilitiesDetails2">
+        <link:definition>000039 - Disclosure - Convertible Notes Payable and Derivative Liabilities (Details 2)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://jksm.com/role/ConvertibleNotesPayableAndDerivativeLiabilitiesDetails3" id="ConvertibleNotesPayableAndDerivativeLiabilitiesDetails3">
+        <link:definition>000040 - Disclosure - Convertible Notes Payable and Derivative Liabilities (Details 3)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://jksm.com/role/ConvertibleNotesPayableAndDerivativeLiabilitiesDetailsNarrative" id="ConvertibleNotesPayableAndDerivativeLiabilitiesDetailsNarrative">
+        <link:definition>000041 - Disclosure - Convertible Notes Payable and Derivative Liabilities (Details Narrative)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://jksm.com/role/EquityDetails" id="EquityDetails">
+        <link:definition>000042 - Disclosure - Equity (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://jksm.com/role/EquityDetailsNarrative" id="EquityDetailsNarrative">
+        <link:definition>000043 - Disclosure - Equity (Details Narrative)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://jksm.com/role/RelatedPartyDetailsNarrative" id="RelatedPartyDetailsNarrative">
+        <link:definition>000044 - Disclosure - Related Party (Details Narrative)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://jksm.com/role/LeasesCommitmentsAndContingenciesDetails" id="LeasesCommitmentsAndContingenciesDetails">
+        <link:definition>000045 - Disclosure - Leases, Commitments and Contingencies (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://jksm.com/role/LeasesCommitmentsAndContingenciesDetails1" id="LeasesCommitmentsAndContingenciesDetails1">
+        <link:definition>000046 - Disclosure - Leases, Commitments and Contingencies (Details 1)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://jksm.com/role/LeasesCommitmentsAndContingenciesDetails2" id="LeasesCommitmentsAndContingenciesDetails2">
+        <link:definition>000047 - Disclosure - Leases, Commitments and Contingencies (Details 2)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://jksm.com/role/LeasesCommitmentsAndContingenciesDetailsNarrative" id="LeasesCommitmentsAndContingenciesDetailsNarrative">
+        <link:definition>000048 - Disclosure - Leases, Commitments and Contingencies (Details Narrative)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://jksm.com/role/AccruedLiabilitiesOtherDetailsNarrative" id="AccruedLiabilitiesOtherDetailsNarrative">
+        <link:definition>000049 - Disclosure - Accrued Liabilities Other (Details Narrative)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://jksm.com/role/IncomeTaxesDetails" id="IncomeTaxesDetails">
+        <link:definition>000050 - Disclosure - Income Taxes (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://jksm.com/role/IncomeTaxesDetails1" id="IncomeTaxesDetails1">
+        <link:definition>000051 - Disclosure - Income Taxes (Details 1)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://jksm.com/role/IncomeTaxesDetails2" id="IncomeTaxesDetails2">
+        <link:definition>000052 - Disclosure - Income Taxes (Details 2)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://jksm.com/role/IncomeTaxesDetailsNarrative" id="IncomeTaxesDetailsNarrative">
+        <link:definition>000053 - Disclosure - Income Taxes (Details Narrative)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://jksm.com/role/SubsequentEventsDetailsNarrative" id="SubsequentEventsDetailsNarrative">
+        <link:definition>000054 - Disclosure - Subsequent Events (Details Narrative)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:linkbaseRef xlink:type="simple" xlink:href="jksm-20231231_pre.xml" xlink:role="http://www.xbrl.org/2003/role/presentationLinkbaseRef" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" />
+      <link:linkbaseRef xlink:type="simple" xlink:href="jksm-20231231_lab.xml" xlink:role="http://www.xbrl.org/2003/role/labelLinkbaseRef" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" />
+      <link:linkbaseRef xlink:type="simple" xlink:href="jksm-20231231_cal.xml" xlink:role="http://www.xbrl.org/2003/role/calculationLinkbaseRef" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" />
+      <link:linkbaseRef xlink:type="simple" xlink:href="jksm-20231231_def.xml" xlink:role="http://www.xbrl.org/2003/role/definitionLinkbaseRef" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" />
+    </appinfo>
+  </annotation>
+  <import namespace="http://www.xbrl.org/2003/instance" schemaLocation="http://www.xbrl.org/2003/xbrl-instance-2003-12-31.xsd" />
+  <import namespace="http://www.xbrl.org/2003/linkbase" schemaLocation="http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd" />
+  <import namespace="http://xbrl.org/2005/xbrldt" schemaLocation="http://www.xbrl.org/2005/xbrldt-2005.xsd" />
+  <import namespace="http://xbrl.sec.gov/country/2023" schemaLocation="https://xbrl.sec.gov/country/2023/country-2023.xsd" />
+  <import namespace="http://xbrl.sec.gov/currency/2023" schemaLocation="https://xbrl.sec.gov/currency/2023/currency-2023.xsd" />
+  <import namespace="http://xbrl.sec.gov/dei/2023" schemaLocation="https://xbrl.sec.gov/dei/2023/dei-2023.xsd" />
+  <import namespace="http://www.xbrl.org/dtr/type/non-numeric" schemaLocation="http://www.xbrl.org/dtr/type/nonNumeric-2009-12-16.xsd" />
+  <import namespace="http://www.xbrl.org/dtr/type/numeric" schemaLocation="http://www.xbrl.org/dtr/type/numeric-2009-12-16.xsd" />
+  <import namespace="http://xbrl.sec.gov/exch/2023" schemaLocation="https://xbrl.sec.gov/exch/2023/exch-2023.xsd" />
+  <import namespace="http://www.xbrl.org/2009/arcrole/fact-explanatoryFact" schemaLocation="http://www.xbrl.org/lrr/arcrole/factExplanatory-2009-12-16.xsd" />
+  <import namespace="http://www.xbrl.org/2009/role/negated" schemaLocation="http://www.xbrl.org/lrr/role/negated-2009-12-16.xsd" />
+  <import namespace="http://www.xbrl.org/2009/role/net" schemaLocation="http://www.xbrl.org/lrr/role/net-2009-12-16.xsd" />
+  <import namespace="http://xbrl.sec.gov/naics/2023" schemaLocation="https://xbrl.sec.gov/naics/2023/naics-2023.xsd" />
+  <import namespace="http://xbrl.sec.gov/sic/2023" schemaLocation="https://xbrl.sec.gov/sic/2023/sic-2023.xsd" />
+  <import namespace="http://fasb.org/srt-roles/2023" schemaLocation="https://xbrl.fasb.org/srt/2023/elts/srt-roles-2023.xsd" />
+  <import namespace="http://fasb.org/srt-types/2023" schemaLocation="https://xbrl.fasb.org/srt/2023/elts/srt-types-2023.xsd" />
+  <import namespace="http://www.xbrl.org/dtr/type/2020-01-21" schemaLocation="https://www.xbrl.org/dtr/type/2020-01-21/types.xsd" />
+  <import namespace="http://xbrl.sec.gov/stpr/2023" schemaLocation="https://xbrl.sec.gov/stpr/2023/stpr-2023.xsd" />
+  <import namespace="http://fasb.org/us-roles/2023" schemaLocation="https://xbrl.fasb.org/us-gaap/2023/elts/us-roles-2023.xsd" />
+  <import namespace="http://fasb.org/us-types/2023" schemaLocation="https://xbrl.fasb.org/us-gaap/2023/elts/us-types-2023.xsd" />
+  <import namespace="http://fasb.org/srt/2023" schemaLocation="https://xbrl.fasb.org/srt/2023/elts/srt-2023.xsd" />
+  <import namespace="http://fasb.org/us-gaap/2023" schemaLocation="https://xbrl.fasb.org/us-gaap/2023/elts/us-gaap-2023.xsd" />
+  <element id="jksm_SubscriptionPayableCurrent" name="SubscriptionPayableCurrent" nillable="true" xbrli:balance="credit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="jksm_CommitmentAbstract" name="CommitmentAbstract" nillable="true" abstract="true" xbrli:periodType="duration" type="xbrli:stringItemType" substitutionGroup="xbrli:item" />
+  <element id="jksm_PreferredStockStatedValuePerShare" name="PreferredStockStatedValuePerShare" nillable="true" xbrli:periodType="instant" type="num:perShareItemType" substitutionGroup="xbrli:item" />
+  <element id="jksm_IssuanceOfSeriesBPreferredStockNetOfFeesShares" name="IssuanceOfSeriesBPreferredStockNetOfFeesShares" nillable="true" xbrli:periodType="duration" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" />
+  <element id="jksm_IssuanceOfSeriesBPreferredStockNetOfFeesAmount" name="IssuanceOfSeriesBPreferredStockNetOfFeesAmount" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="jksm_CommonStockIssuedForSharePayableShares" name="CommonStockIssuedForSharePayableShares" nillable="true" xbrli:periodType="duration" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" />
+  <element id="jksm_CommonStockIssuedForSharePayableAmount" name="CommonStockIssuedForSharePayableAmount" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="jksm_CommonStockAndWarrantsIssuedInConnectionWithPreferredStockShares" name="CommonStockAndWarrantsIssuedInConnectionWithPreferredStockShares" nillable="true" xbrli:periodType="duration" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" />
+  <element id="jksm_CommonStockAndWarrantsIssuedInConnectionWithPreferredStockAmount" name="CommonStockAndWarrantsIssuedInConnectionWithPreferredStockAmount" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="jksm_DividendsOnSeriesAAndBPreferredStock" name="DividendsOnSeriesAAndBPreferredStock" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="jksm_ReclassificationOfDerivativeLiabilityToEquity" name="ReclassificationOfDerivativeLiabilityToEquity" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="jksm_ImpairmentOfInventory" name="ImpairmentOfInventory" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="jksm_CashPaidForAbstract" name="CashPaidForAbstract" nillable="true" abstract="true" xbrli:periodType="duration" type="xbrli:stringItemType" substitutionGroup="xbrli:item" />
+  <element id="jksm_RightOfUseAssetAndLiabilityRecognizedOperatingLeases" name="RightOfUseAssetAndLiabilityRecognizedOperatingLeases" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="jksm_CommonStockIssuedForDeferredFinanceCosts" name="CommonStockIssuedForDeferredFinanceCosts" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="jksm_CommonStockIssuedToSettleSharePayable" name="CommonStockIssuedToSettleSharePayable" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="jksm_LossOnAdditionalSharesIssuedInConnectionWithCommonStockUnits" name="LossOnAdditionalSharesIssuedInConnectionWithCommonStockUnits" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="jksm_SettlementOfDerivativeLiabilities" name="SettlementOfDerivativeLiabilities" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="jksm_ConvertibleNotesPayableAndDerivativeLiabilitiesDisclosureTextBlock" name="ConvertibleNotesPayableAndDerivativeLiabilitiesDisclosureTextBlock" nillable="true" xbrli:periodType="duration" type="nonnum:textBlockItemType" substitutionGroup="xbrli:item" />
+  <element id="jksm_BinomialCalculationModelPolicyTextBlock" name="BinomialCalculationModelPolicyTextBlock" nillable="true" xbrli:periodType="duration" type="nonnum:textBlockItemType" substitutionGroup="xbrli:item" />
+  <element id="jksm_PreferredStockSubjectToPossibleRedemptionPolicyTextBlock" name="PreferredStockSubjectToPossibleRedemptionPolicyTextBlock" nillable="true" xbrli:periodType="duration" type="nonnum:textBlockItemType" substitutionGroup="xbrli:item" />
+  <element id="jksm_LeaseArrangementsPolicyTextBlock" name="LeaseArrangementsPolicyTextBlock" nillable="true" xbrli:periodType="duration" type="nonnum:textBlockItemType" substitutionGroup="xbrli:item" />
+  <element id="jksm_SummaryOfEffectOfPotentialDilutiveIssuances" name="SummaryOfEffectOfPotentialDilutiveIssuances" nillable="true" xbrli:periodType="duration" type="nonnum:textBlockItemType" substitutionGroup="xbrli:item" />
+  <element id="jksm_NotesPayableTablesTextBlock" name="NotesPayableTablesTextBlock" nillable="true" xbrli:periodType="duration" type="nonnum:textBlockItemType" substitutionGroup="xbrli:item" />
+  <element id="jksm_ScheduleOfFairValueOfDerivativeLiabilityTableTextBlock" name="ScheduleOfFairValueOfDerivativeLiabilityTableTextBlock" nillable="true" xbrli:periodType="duration" type="nonnum:textBlockItemType" substitutionGroup="xbrli:item" />
+  <element id="jksm_SummaryOfStockWarrantTablesTextBlock" name="SummaryOfStockWarrantTablesTextBlock" nillable="true" xbrli:periodType="duration" type="nonnum:textBlockItemType" substitutionGroup="xbrli:item" />
+  <element id="jksm_ScheduleOfProvisionForIncomeTaxesTablesTextBlock" name="ScheduleOfProvisionForIncomeTaxesTablesTextBlock" nillable="true" xbrli:periodType="duration" type="nonnum:textBlockItemType" substitutionGroup="xbrli:item" />
+  <element id="jksm_MachineSales" name="MachineSales" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="jksm_NonMachineSales" name="NonMachineSales" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="jksm_DividendsPreferredStock1" name="DividendsPreferredStock1" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="jksm_NetIncomeLossForDilutiveCalculation" name="NetIncomeLossForDilutiveCalculation" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="jksm_WeightedAverageSharesOutstanding" name="WeightedAverageSharesOutstanding" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="jksm_DilutiveEffectOfConvertibleDebt" name="DilutiveEffectOfConvertibleDebt" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="jksm_DilutiveEffectOfCommonStockWarrants" name="DilutiveEffectOfCommonStockWarrants" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="jksm_WeightedAverageSharesOutstandingForDilutedNetIncomeLossPerShare" name="WeightedAverageSharesOutstandingForDilutedNetIncomeLossPerShare" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="jksm_BadDebtsExpense" name="BadDebtsExpense" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="jksm_InventoryAllowance" name="InventoryAllowance" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="jksm_ReservesForInventory" name="ReservesForInventory" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="jksm_EffectOfConvertibleDebtShares" name="EffectOfConvertibleDebtShares" nillable="true" xbrli:periodType="duration" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" />
+  <element id="jksm_DescriptionOfPerformanceObligation" name="DescriptionOfPerformanceObligation" nillable="true" xbrli:periodType="duration" type="xbrli:stringItemType" substitutionGroup="xbrli:item" />
+  <element id="jksm_DebtInstrumentUnamortizedDiscount1" name="DebtInstrumentUnamortizedDiscount1" nillable="true" xbrli:balance="debit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="jksm_NotesPayableNetOfCurrentPortion" name="NotesPayableNetOfCurrentPortion" nillable="true" xbrli:balance="credit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="jksm_TotalRemainingIntangiblesAmortization" name="TotalRemainingIntangiblesAmortization" nillable="true" xbrli:balance="credit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="jksm_InvestorFees" name="InvestorFees" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="jksm_FinancingFees" name="FinancingFees" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="jksm_ProceedsFromLoanOriginations" name="ProceedsFromLoanOriginations" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="jksm_PrincipalAmount" name="PrincipalAmount" nillable="true" xbrli:balance="credit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="jksm_CashProceedsFromAnUnsecuredShortTermFinancingAgreement" name="CashProceedsFromAnUnsecuredShortTermFinancingAgreement" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="jksm_PenaltyAmountNotYetAssesed" name="PenaltyAmountNotYetAssesed" nillable="true" xbrli:balance="debit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="jksm_TotalOutstandingPayment" name="TotalOutstandingPayment" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="jksm_InventoryFinancingArrangementDescription" name="InventoryFinancingArrangementDescription" nillable="true" xbrli:periodType="duration" type="xbrli:stringItemType" substitutionGroup="xbrli:item" />
+  <element id="jksm_CurrentConvertibleNotesPayableNetOfDiscount" name="CurrentConvertibleNotesPayableNetOfDiscount" nillable="true" xbrli:balance="credit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="jksm_ExpectedTerm" name="ExpectedTerm" nillable="true" xbrli:periodType="duration" type="xbrli:durationItemType" substitutionGroup="xbrli:item" />
+  <element id="jksm_StockPrice" name="StockPrice" nillable="true" xbrli:periodType="duration" type="num:perShareItemType" substitutionGroup="xbrli:item" />
+  <element id="jksm_DerivativeLiabilityFairValue" name="DerivativeLiabilityFairValue" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="jksm_FairValueOnTheDateOfIssuanceOfNewDerivatives" name="FairValueOnTheDateOfIssuanceOfNewDerivatives" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="jksm_ReclassificationOfDerivativeLiabilitiesToEquityUponRemovalOfVariableConversionOption" name="ReclassificationOfDerivativeLiabilitiesToEquityUponRemovalOfVariableConversionOption" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="jksm_ExtinguishmentDueToRepaymentOfDebt" name="ExtinguishmentDueToRepaymentOfDebt" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="jksm_ConvertibleNotesPayable1" name="ConvertibleNotesPayable1" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="jksm_TotalGain" name="TotalGain" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="jksm_SubscriptionsPayableLiabilityBalance" name="SubscriptionsPayableLiabilityBalance" nillable="true" xbrli:balance="credit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="jksm_DebtInstrumentsRepaidPrincipal" name="DebtInstrumentsRepaidPrincipal" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="jksm_CommonStockWarrants" name="CommonStockWarrants" nillable="true" xbrli:periodType="duration" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" />
+  <element id="jksm_LesserConversionPrice" name="LesserConversionPrice" nillable="true" xbrli:periodType="duration" type="num:perShareItemType" substitutionGroup="xbrli:item" />
+  <element id="jksm_NoteDefaults" name="NoteDefaults" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="jksm_ProceedsFromConvertibleNotesPayable1" name="ProceedsFromConvertibleNotesPayable1" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="jksm_AggregateNumberAbstract" name="AggregateNumberAbstract" nillable="true" abstract="true" xbrli:periodType="duration" type="xbrli:stringItemType" substitutionGroup="xbrli:item" />
+  <element id="jksm_AggregateNumberBeginning" name="AggregateNumberBeginning" nillable="true" xbrli:periodType="duration" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" />
+  <element id="jksm_AggregateExercisePriceExercised1" name="AggregateExercisePriceExercised1" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="jksm_LessForfeitedAndCancelled" name="LessForfeitedAndCancelled" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="jksm_AggregateNumberEnding" name="AggregateNumberEnding" nillable="true" xbrli:periodType="duration" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" />
+  <element id="jksm_AggregateExercisePriceAbstract" name="AggregateExercisePriceAbstract" nillable="true" abstract="true" xbrli:periodType="duration" type="xbrli:stringItemType" substitutionGroup="xbrli:item" />
+  <element id="jksm_AggregateExercisePriceBeginning" name="AggregateExercisePriceBeginning" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="jksm_AggregateExercisePriceGranted" name="AggregateExercisePriceGranted" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="jksm_AggregateExercisePriceExercised" name="AggregateExercisePriceExercised" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="jksm_AggregateExercisePriceForfeitedAndCancelled" name="AggregateExercisePriceForfeitedAndCancelled" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="jksm_AggregateExercisePriceEnding" name="AggregateExercisePriceEnding" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="jksm_WeightedAverageExercisePriceBeginning" name="WeightedAverageExercisePriceBeginning" nillable="true" xbrli:periodType="duration" type="num:perShareItemType" substitutionGroup="xbrli:item" />
+  <element id="jksm_WeightedAverageExercisePriceEnding" name="WeightedAverageExercisePriceEnding" nillable="true" xbrli:periodType="duration" type="num:perShareItemType" substitutionGroup="xbrli:item" />
+  <element id="jksm_CommonStockDesignated" name="CommonStockDesignated" nillable="true" xbrli:periodType="instant" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" />
+  <element id="jksm_PreferredStockDesignated" name="PreferredStockDesignated" nillable="true" xbrli:periodType="instant" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" />
+  <element id="jksm_SharesRemainingToBeIssued" name="SharesRemainingToBeIssued" nillable="true" xbrli:periodType="duration" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" />
+  <element id="jksm_FairValueOfCommonStock" name="FairValueOfCommonStock" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="jksm_DebtIntrinsicValue" name="DebtIntrinsicValue" nillable="true" xbrli:balance="debit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="jksm_CommonStockShareIssued" name="CommonStockShareIssued" nillable="true" xbrli:periodType="instant" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" />
+  <element id="jksm_StockExercisePrice" name="StockExercisePrice" nillable="true" xbrli:periodType="instant" type="num:perShareItemType" substitutionGroup="xbrli:item" />
+  <element id="jksm_AccruedInterest" name="AccruedInterest" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="jksm_AccruedDividends" name="AccruedDividends" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="jksm_RedemptionValue" name="RedemptionValue" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="jksm_DesignatedPreferredShares" name="DesignatedPreferredShares" nillable="true" xbrli:periodType="duration" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" />
+  <element id="jksm_CommonStockPurchasePrice" name="CommonStockPurchasePrice" nillable="true" xbrli:periodType="instant" type="num:perShareItemType" substitutionGroup="xbrli:item" />
+  <element id="jksm_DescriptionOfBusiness" name="DescriptionOfBusiness" nillable="true" xbrli:periodType="duration" type="xbrli:stringItemType" substitutionGroup="xbrli:item" />
+  <element id="jksm_NumberOfVotes" name="NumberOfVotes" nillable="true" xbrli:periodType="duration" type="xbrli:integerItemType" substitutionGroup="xbrli:item" />
+  <element id="jksm_IncreasedTheAuthorizedCommonShares" name="IncreasedTheAuthorizedCommonShares" nillable="true" xbrli:periodType="instant" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" />
+  <element id="jksm_StockIssuedDuringPeriodSharesAdditionalConversionOfUnits" name="StockIssuedDuringPeriodSharesAdditionalConversionOfUnits" nillable="true" xbrli:periodType="duration" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" />
+  <element id="jksm_LesseeOperatingLeaseLiabilityPaymentsDueAfterYearSix" name="LesseeOperatingLeaseLiabilityPaymentsDueAfterYearSix" nillable="true" xbrli:balance="credit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="jksm_LessInterestLesseeOperatingLeaseLiability" name="LessInterestLesseeOperatingLeaseLiability" nillable="true" xbrli:balance="credit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="jksm_LeasePaymentsIncreasedPercentage" name="LeasePaymentsIncreasedPercentage" nillable="true" xbrli:periodType="duration" type="num:percentItemType" substitutionGroup="xbrli:item" />
+  <element id="jksm_RightOfUseAssetAndLeaseLiability" name="RightOfUseAssetAndLeaseLiability" nillable="true" xbrli:balance="debit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="jksm_IncrementalBorrowingRatePercentage" name="IncrementalBorrowingRatePercentage" nillable="true" xbrli:periodType="instant" type="num:percentItemType" substitutionGroup="xbrli:item" />
+  <element id="jksm_LeaseRemainingTerms" name="LeaseRemainingTerms" nillable="true" xbrli:periodType="duration" type="xbrli:durationItemType" substitutionGroup="xbrli:item" />
+  <element id="jksm_AccruedLiabilitiesOther" name="AccruedLiabilitiesOther" nillable="true" xbrli:balance="credit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="jksm_EarnRestrictedSharesByConsultants" name="EarnRestrictedSharesByConsultants" nillable="true" xbrli:periodType="duration" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" />
+  <element id="jksm_AgreementDescription" name="AgreementDescription" nillable="true" xbrli:periodType="duration" type="xbrli:stringItemType" substitutionGroup="xbrli:item" />
+  <element id="jksm_PeriodGrantedForEarnedShares" name="PeriodGrantedForEarnedShares" nillable="true" xbrli:periodType="duration" type="xbrli:durationItemType" substitutionGroup="xbrli:item" />
+  <element id="jksm_ConvertibleNotesPayableAndDerivativeLiabilitiesAbstract" name="ConvertibleNotesPayableAndDerivativeLiabilitiesAbstract" nillable="true" abstract="true" xbrli:periodType="duration" type="xbrli:stringItemType" substitutionGroup="xbrli:item" />
+  <element id="jksm_AccruedLiabilitiesOtherAbstract" name="AccruedLiabilitiesOtherAbstract" nillable="true" abstract="true" xbrli:periodType="duration" type="xbrli:stringItemType" substitutionGroup="xbrli:item" />
+  <element id="jksm_NotesPayableAndLineOfCreditabstract" name="NotesPayableAndLineOfCreditabstract" nillable="true" abstract="true" xbrli:periodType="duration" type="xbrli:stringItemType" substitutionGroup="xbrli:item" />
+  <element name="PreferredStockSeriesAMember" id="jksm_PreferredStockSeriesAMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="PreferredStockSeriesBMember" id="jksm_PreferredStockSeriesBMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="SharesPayableMember" id="jksm_SharesPayableMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="EquipmentsMember" id="jksm_EquipmentsMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="AdvertisingsMember" id="jksm_AdvertisingsMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="AccruedInterestMember" id="jksm_AccruedInterestMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="SalesTaxPayableMember" id="jksm_SalesTaxPayableMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="SBALoanMayMember" id="jksm_SBALoanMayMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="NotesPayableToBanksOneMember" id="jksm_NotesPayableToBanksOneMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="NotePayableSeptember2022Member" id="jksm_NotePayableSeptember2022Member" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="RevenueLoanandSecurityAgreementMember" id="jksm_RevenueLoanandSecurityAgreementMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="UnsecuredshorttermfinanceagreementMember" id="jksm_UnsecuredshorttermfinanceagreementMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="LenderMember" id="jksm_LenderMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="InventoryFinancingAgreementMember" id="jksm_InventoryFinancingAgreementMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="PayrollProtectionProgramMember" id="jksm_PayrollProtectionProgramMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="ConvertibleNotesPayableOneMember" id="jksm_ConvertibleNotesPayableOneMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="WarrantsMember" id="jksm_WarrantsMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="AfterAmendmentMember" id="jksm_AfterAmendmentMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="SeriesARedeemablePreferredStockMember" id="jksm_SeriesARedeemablePreferredStockMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="SubscriptionAgreementMember" id="jksm_SubscriptionAgreementMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="ScottWesslerMember" id="jksm_ScottWesslerMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="MrMarkAdamsandMrDavidHallMember" id="jksm_MrMarkAdamsandMrDavidHallMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="MrAdamsMember" id="jksm_MrAdamsMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="MarkAdamsMember" id="jksm_MarkAdamsMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="FormerVPMember" id="jksm_FormerVPMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="ConversionOptionMember" id="jksm_ConversionOptionMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="ConvertibleNotesJuneTwoThousandNinteenNotesMember" id="jksm_ConvertibleNotesJuneTwoThousandNinteenNotesMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="ConvertibleNotesMember" id="jksm_ConvertibleNotesMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="InvestorsMember" id="jksm_InvestorsMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="ConvertibleNotesJuneAndJulyTwoThousandNinteenNotesMember" id="jksm_ConvertibleNotesJuneAndJulyTwoThousandNinteenNotesMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="BeforeAmendmentMember" id="jksm_BeforeAmendmentMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="ChinaGrandResortMember" id="jksm_ChinaGrandResortMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="DeferredMember" id="jksm_DeferredMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="SecurityPurchaseAgreementMember" id="jksm_SecurityPurchaseAgreementMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="ConsultingAgreementMember" id="jksm_ConsultingAgreementMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="DavidShinMember" id="jksm_DavidShinMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="SungchulSinMember" id="jksm_SungchulSinMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="RichardYooMember" id="jksm_RichardYooMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="BaronHuberMember" id="jksm_BaronHuberMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+</schema>

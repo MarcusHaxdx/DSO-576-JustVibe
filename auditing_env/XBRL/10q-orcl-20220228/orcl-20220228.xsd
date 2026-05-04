@@ -1,0 +1,418 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<!-- DFIN ActiveDisclosure(SM) XBRL Schema Document - http://www.dfinsolutions.com/ -->
+<!-- Creation Date      : 2022-03-11T17:22:32.8208976+00:00 -->
+<!-- Version            : 5.0.1.728 -->
+<!-- Package ID         : 76d0438a92e247b289925b9f4dcfd825 -->
+<!-- Copyright (c) 2022 Donnelley Financial Solutions, Inc. All Rights Reserved. -->
+<xsd:schema xmlns:dei="http://xbrl.sec.gov/dei/2021" xmlns:us-types="http://fasb.org/us-types/2021-01-31" xmlns:stpr="http://xbrl.sec.gov/stpr/2021" xmlns:srt-types="http://fasb.org/srt-types/2021-01-31" xmlns:exch="http://xbrl.sec.gov/exch/2021" xmlns:sic="http://xbrl.sec.gov/sic/2021" xmlns:xbrldt="http://xbrl.org/2005/xbrldt" xmlns:srt="http://fasb.org/srt/2021-01-31" xmlns:enum2="http://xbrl.org/2020/extensible-enumerations-2.0" xmlns:us-gaap="http://fasb.org/us-gaap/2021-01-31" xmlns:naics="http://xbrl.sec.gov/naics/2021" xmlns:xbrli="http://www.xbrl.org/2003/instance" xmlns:country="http://xbrl.sec.gov/country/2021" xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:currency="http://xbrl.sec.gov/currency/2021" xmlns:dtr-types="http://www.xbrl.org/dtr/type/2020-01-21" xmlns:orcl="http://www.oracle.com/20220228" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://www.oracle.com/20220228" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <xsd:import schemaLocation="http://www.xbrl.org/2003/xbrl-instance-2003-12-31.xsd" namespace="http://www.xbrl.org/2003/instance" />
+  <xsd:import schemaLocation="http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd" namespace="http://www.xbrl.org/2003/linkbase" />
+  <xsd:import schemaLocation="http://www.xbrl.org/2005/xbrldt-2005.xsd" namespace="http://xbrl.org/2005/xbrldt" />
+  <xsd:import schemaLocation="https://www.xbrl.org/2020/extensible-enumerations-2.0.xsd" namespace="http://xbrl.org/2020/extensible-enumerations-2.0" />
+  <xsd:import schemaLocation="https://xbrl.sec.gov/country/2021/country-2021.xsd" namespace="http://xbrl.sec.gov/country/2021" />
+  <xsd:import schemaLocation="https://xbrl.sec.gov/currency/2021/currency-2021.xsd" namespace="http://xbrl.sec.gov/currency/2021" />
+  <xsd:import schemaLocation="https://xbrl.sec.gov/dei/2021/dei-2021.xsd" namespace="http://xbrl.sec.gov/dei/2021" />
+  <xsd:import schemaLocation="https://www.xbrl.org/dtr/type/2020-01-21/types.xsd" namespace="http://www.xbrl.org/dtr/type/2020-01-21" />
+  <xsd:import schemaLocation="https://xbrl.sec.gov/exch/2021/exch-2021.xsd" namespace="http://xbrl.sec.gov/exch/2021" />
+  <xsd:import schemaLocation="http://www.xbrl.org/lrr/arcrole/factExplanatory-2009-12-16.xsd" namespace="http://www.xbrl.org/2009/arcrole/fact-explanatoryFact" />
+  <xsd:import schemaLocation="http://www.xbrl.org/lrr/role/negated-2009-12-16.xsd" namespace="http://www.xbrl.org/2009/role/negated" />
+  <xsd:import schemaLocation="http://www.xbrl.org/lrr/role/net-2009-12-16.xsd" namespace="http://www.xbrl.org/2009/role/net" />
+  <xsd:import schemaLocation="https://xbrl.sec.gov/naics/2021/naics-2021.xsd" namespace="http://xbrl.sec.gov/naics/2021" />
+  <xsd:import schemaLocation="https://xbrl.sec.gov/sic/2021/sic-2021.xsd" namespace="http://xbrl.sec.gov/sic/2021" />
+  <xsd:import schemaLocation="https://xbrl.fasb.org/srt/2021/elts/srt-2021-01-31.xsd" namespace="http://fasb.org/srt/2021-01-31" />
+  <xsd:import schemaLocation="https://xbrl.fasb.org/srt/2021/elts/srt-roles-2021-01-31.xsd" namespace="http://fasb.org/srt-roles/2021-01-31" />
+  <xsd:import schemaLocation="https://xbrl.fasb.org/srt/2021/elts/srt-types-2021-01-31.xsd" namespace="http://fasb.org/srt-types/2021-01-31" />
+  <xsd:import schemaLocation="https://xbrl.sec.gov/stpr/2021/stpr-2021.xsd" namespace="http://xbrl.sec.gov/stpr/2021" />
+  <xsd:import schemaLocation="https://xbrl.fasb.org/us-gaap/2021/elts/us-gaap-2021-01-31.xsd" namespace="http://fasb.org/us-gaap/2021-01-31" />
+  <xsd:import schemaLocation="https://xbrl.fasb.org/us-gaap/2021/elts/us-roles-2021-01-31.xsd" namespace="http://fasb.org/us-roles/2021-01-31" />
+  <xsd:import schemaLocation="https://xbrl.fasb.org/us-gaap/2021/elts/us-types-2021-01-31.xsd" namespace="http://fasb.org/us-types/2021-01-31" />
+  <xsd:annotation>
+    <xsd:appinfo>
+      <link:roleType id="TemplateLink" roleURI="http://www.oracle.com/20220228/role/TemplateLink" xmlns:link="http://www.xbrl.org/2003/linkbase">
+        <link:definition>00000 - Document - Template Link</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:linkbaseRef xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="orcl-20220228_cal.xml" xlink:role="http://www.xbrl.org/2003/role/calculationLinkbaseRef" xlink:title="Calculation Links, all" xlink:type="simple" xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:xlink="http://www.w3.org/1999/xlink" />
+      <link:linkbaseRef xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="orcl-20220228_def.xml" xlink:role="http://www.xbrl.org/2003/role/definitionLinkbaseRef" xlink:title="Definition Links, all" xlink:type="simple" />
+      <link:linkbaseRef xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="orcl-20220228_lab.xml" xlink:role="http://www.xbrl.org/2003/role/labelLinkbaseRef" xlink:title="Label Links, all" xlink:type="simple" />
+      <link:linkbaseRef xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="orcl-20220228_pre.xml" xlink:role="http://www.xbrl.org/2003/role/presentationLinkbaseRef" xlink:title="Presentation Links, all" xlink:type="simple" />
+      <link:roleType roleURI="http://www.oracle.com/20220228/taxonomy/role/DocumentDOCUMENTANDENTITYINFORMATION" id="Role_DocumentDOCUMENTANDENTITYINFORMATION">
+        <link:definition>100000 - Document - DOCUMENT AND ENTITY INFORMATION</link:definition>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.oracle.com/20220228/taxonomy/role/StatementCONDENSEDCONSOLIDATEDBALANCESHEETS" id="Role_StatementCONDENSEDCONSOLIDATEDBALANCESHEETS">
+        <link:definition>100010 - Statement - CONDENSED CONSOLIDATED BALANCE SHEETS</link:definition>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.oracle.com/20220228/taxonomy/role/StatementCONDENSEDCONSOLIDATEDBALANCESHEETSPARENTHETICAL" id="Role_StatementCONDENSEDCONSOLIDATEDBALANCESHEETSPARENTHETICAL">
+        <link:definition>100020 - Statement - CONDENSED CONSOLIDATED BALANCE SHEETS PARENTHETICAL</link:definition>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.oracle.com/20220228/taxonomy/role/StatementCONDENSEDCONSOLIDATEDSTATEMENTSOFOPERATIONS" id="Role_StatementCONDENSEDCONSOLIDATEDSTATEMENTSOFOPERATIONS">
+        <link:definition>100030 - Statement - CONDENSED CONSOLIDATED STATEMENTS OF OPERATIONS</link:definition>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.oracle.com/20220228/taxonomy/role/StatementCONDENSEDCONSOLIDATEDSTATEMENTSOFCOMPREHENSIVEINCOME" id="Role_StatementCONDENSEDCONSOLIDATEDSTATEMENTSOFCOMPREHENSIVEINCOME">
+        <link:definition>100040 - Statement - CONDENSED CONSOLIDATED STATEMENTS OF COMPREHENSIVE INCOME</link:definition>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.oracle.com/20220228/taxonomy/role/StatementCONDENSEDCONSOLIDATEDSTATEMENTSOFSTOCKHOLDERSDEFICITEQUITY" id="Role_StatementCONDENSEDCONSOLIDATEDSTATEMENTSOFSTOCKHOLDERSDEFICITEQUITY">
+        <link:definition>100050 - Statement - CONDENSED CONSOLIDATED STATEMENTS OF STOCKHOLDERS&apos; (DEFICIT) EQUITY</link:definition>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.oracle.com/20220228/taxonomy/role/StatementCONDENSEDCONSOLIDATEDSTATEMENTSOFCASHFLOWS" id="Role_StatementCONDENSEDCONSOLIDATEDSTATEMENTSOFCASHFLOWS">
+        <link:definition>100060 - Statement - CONDENSED CONSOLIDATED STATEMENTS OF CASH FLOWS</link:definition>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.oracle.com/20220228/taxonomy/role/DisclosureBASISOFPRESENTATIONRECENTACCOUNTINGPRONOUNCEMENTSANDOTHER" id="Role_DisclosureBASISOFPRESENTATIONRECENTACCOUNTINGPRONOUNCEMENTSANDOTHER">
+        <link:definition>100070 - Disclosure - BASIS OF PRESENTATION, RECENT ACCOUNTING PRONOUNCEMENTS AND OTHER</link:definition>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.oracle.com/20220228/taxonomy/role/DisclosureACQUISITIONS" id="Role_DisclosureACQUISITIONS">
+        <link:definition>100080 - Disclosure - ACQUISITIONS</link:definition>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.oracle.com/20220228/taxonomy/role/DisclosureFAIRVALUEMEASUREMENTS" id="Role_DisclosureFAIRVALUEMEASUREMENTS">
+        <link:definition>100090 - Disclosure - FAIR VALUE MEASUREMENTS</link:definition>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.oracle.com/20220228/taxonomy/role/DisclosureINTANGIBLEASSETSANDGOODWILL" id="Role_DisclosureINTANGIBLEASSETSANDGOODWILL">
+        <link:definition>100100 - Disclosure - INTANGIBLE ASSETS AND GOODWILL</link:definition>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.oracle.com/20220228/taxonomy/role/DisclosureRESTRUCTURINGACTIVITIES" id="Role_DisclosureRESTRUCTURINGACTIVITIES">
+        <link:definition>100110 - Disclosure - RESTRUCTURING ACTIVITIES</link:definition>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.oracle.com/20220228/taxonomy/role/DisclosureDEFERREDREVENUES" id="Role_DisclosureDEFERREDREVENUES">
+        <link:definition>100120 - Disclosure - DEFERRED REVENUES</link:definition>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.oracle.com/20220228/taxonomy/role/DisclosureSTOCKHOLDERSDEFICITEQUITY" id="Role_DisclosureSTOCKHOLDERSDEFICITEQUITY">
+        <link:definition>100130 - Disclosure - STOCKHOLDERS&apos; (DEFICIT) EQUITY</link:definition>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.oracle.com/20220228/taxonomy/role/DisclosureINCOMETAXES" id="Role_DisclosureINCOMETAXES">
+        <link:definition>100140 - Disclosure - INCOME TAXES</link:definition>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.oracle.com/20220228/taxonomy/role/DisclosureSEGMENTINFORMATION" id="Role_DisclosureSEGMENTINFORMATION">
+        <link:definition>100150 - Disclosure - SEGMENT INFORMATION</link:definition>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.oracle.com/20220228/taxonomy/role/DisclosureEARNINGSPERSHARE" id="Role_DisclosureEARNINGSPERSHARE">
+        <link:definition>100160 - Disclosure - EARNINGS PER SHARE</link:definition>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.oracle.com/20220228/taxonomy/role/DisclosureLEGALPROCEEDINGS" id="Role_DisclosureLEGALPROCEEDINGS">
+        <link:definition>100170 - Disclosure - LEGAL PROCEEDINGS</link:definition>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.oracle.com/20220228/taxonomy/role/DisclosureSUBSEQUENTEVENTS" id="Role_DisclosureSUBSEQUENTEVENTS">
+        <link:definition>100180 - Disclosure - SUBSEQUENT EVENTS</link:definition>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.oracle.com/20220228/taxonomy/role/DisclosureBASISOFPRESENTATIONRECENTACCOUNTINGPRONOUNCEMENTSANDOTHERPolicies" id="Role_DisclosureBASISOFPRESENTATIONRECENTACCOUNTINGPRONOUNCEMENTSANDOTHERPolicies">
+        <link:definition>100190 - Disclosure - BASIS OF PRESENTATION, RECENT ACCOUNTING PRONOUNCEMENTS AND OTHER (Policies)</link:definition>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.oracle.com/20220228/taxonomy/role/DisclosureBASISOFPRESENTATIONRECENTACCOUNTINGPRONOUNCEMENTSANDOTHERTables" id="Role_DisclosureBASISOFPRESENTATIONRECENTACCOUNTINGPRONOUNCEMENTSANDOTHERTables">
+        <link:definition>100200 - Disclosure - BASIS OF PRESENTATION, RECENT ACCOUNTING PRONOUNCEMENTS AND OTHER (Tables)</link:definition>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.oracle.com/20220228/taxonomy/role/DisclosureFAIRVALUEMEASUREMENTSTables" id="Role_DisclosureFAIRVALUEMEASUREMENTSTables">
+        <link:definition>100210 - Disclosure - FAIR VALUE MEASUREMENTS (Tables)</link:definition>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.oracle.com/20220228/taxonomy/role/DisclosureINTANGIBLEASSETSANDGOODWILLTables" id="Role_DisclosureINTANGIBLEASSETSANDGOODWILLTables">
+        <link:definition>100220 - Disclosure - INTANGIBLE ASSETS AND GOODWILL (Tables)</link:definition>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.oracle.com/20220228/taxonomy/role/DisclosureRESTRUCTURINGACTIVITIESTables" id="Role_DisclosureRESTRUCTURINGACTIVITIESTables">
+        <link:definition>100230 - Disclosure - RESTRUCTURING ACTIVITIES (Tables)</link:definition>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.oracle.com/20220228/taxonomy/role/DisclosureDEFERREDREVENUESTables" id="Role_DisclosureDEFERREDREVENUESTables">
+        <link:definition>100240 - Disclosure - DEFERRED REVENUES (Tables)</link:definition>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.oracle.com/20220228/taxonomy/role/DisclosureSTOCKHOLDERSDEFICITEQUITYTables" id="Role_DisclosureSTOCKHOLDERSDEFICITEQUITYTables">
+        <link:definition>100250 - Disclosure - STOCKHOLDERS&apos; (DEFICIT) EQUITY (Tables)</link:definition>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.oracle.com/20220228/taxonomy/role/DisclosureSEGMENTINFORMATIONTables" id="Role_DisclosureSEGMENTINFORMATIONTables">
+        <link:definition>100260 - Disclosure - SEGMENT INFORMATION (Tables)</link:definition>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.oracle.com/20220228/taxonomy/role/DisclosureEARNINGSPERSHARETables" id="Role_DisclosureEARNINGSPERSHARETables">
+        <link:definition>100270 - Disclosure - EARNINGS PER SHARE (Tables)</link:definition>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.oracle.com/20220228/taxonomy/role/DisclosureBASISOFPRESENTATIONRECENTACCOUNTINGPRONOUNCEMENTSANDOTHERNarrativeDetails" id="Role_DisclosureBASISOFPRESENTATIONRECENTACCOUNTINGPRONOUNCEMENTSANDOTHERNarrativeDetails">
+        <link:definition>100280 - Disclosure - BASIS OF PRESENTATION, RECENT ACCOUNTING PRONOUNCEMENTS AND OTHER Narrative (Details)</link:definition>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.oracle.com/20220228/taxonomy/role/DisclosureBASISOFPRESENTATIONRECENTACCOUNTINGPRONOUNCEMENTSANDOTHERNarrativeDetails1" id="Role_DisclosureBASISOFPRESENTATIONRECENTACCOUNTINGPRONOUNCEMENTSANDOTHERNarrativeDetails1">
+        <link:definition>100290 - Disclosure - BASIS OF PRESENTATION, RECENT ACCOUNTING PRONOUNCEMENTS AND OTHER Narrative (Details1)</link:definition>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.oracle.com/20220228/taxonomy/role/DisclosureBASISOFPRESENTATIONRECENTACCOUNTINGPRONOUNCEMENTSANDOTHERNarrativeDetails1Default" id="Role_DisclosureBASISOFPRESENTATIONRECENTACCOUNTINGPRONOUNCEMENTSANDOTHERNarrativeDetails1Default">
+        <link:definition>100290 - Disclosure - BASIS OF PRESENTATION, RECENT ACCOUNTING PRONOUNCEMENTS AND OTHER Narrative (Details1)</link:definition>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.oracle.com/20220228/taxonomy/role/DisclosureBASISOFPRESENTATIONRECENTACCOUNTINGPRONOUNCEMENTSANDOTHERDetails" id="Role_DisclosureBASISOFPRESENTATIONRECENTACCOUNTINGPRONOUNCEMENTSANDOTHERDetails">
+        <link:definition>100300 - Disclosure - BASIS OF PRESENTATION, RECENT ACCOUNTING PRONOUNCEMENTS AND OTHER (Details)</link:definition>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.oracle.com/20220228/taxonomy/role/DisclosureACQUISITIONSNarrativeDetails" id="Role_DisclosureACQUISITIONSNarrativeDetails">
+        <link:definition>100310 - Disclosure - ACQUISITIONS Narrative (Details)</link:definition>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.oracle.com/20220228/taxonomy/role/DisclosureFAIRVALUEMEASUREMENTSDetails" id="Role_DisclosureFAIRVALUEMEASUREMENTSDetails">
+        <link:definition>100320 - Disclosure - FAIR VALUE MEASUREMENTS (Details)</link:definition>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.oracle.com/20220228/taxonomy/role/DisclosureFAIRVALUEMEASUREMENTSNarrativeDetails" id="Role_DisclosureFAIRVALUEMEASUREMENTSNarrativeDetails">
+        <link:definition>100330 - Disclosure - FAIR VALUE MEASUREMENTS Narrative (Details)</link:definition>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.oracle.com/20220228/taxonomy/role/DisclosureINTANGIBLEASSETSDetails" id="Role_DisclosureINTANGIBLEASSETSDetails">
+        <link:definition>100340 - Disclosure - INTANGIBLE ASSETS (Details)</link:definition>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.oracle.com/20220228/taxonomy/role/DisclosureINTANGIBLEASSETSAMORTIZATIONDetails" id="Role_DisclosureINTANGIBLEASSETSAMORTIZATIONDetails">
+        <link:definition>100350 - Disclosure - INTANGIBLE ASSETS AMORTIZATION (Details)</link:definition>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.oracle.com/20220228/taxonomy/role/DisclosureGOODWILLDetails" id="Role_DisclosureGOODWILLDetails">
+        <link:definition>100360 - Disclosure - GOODWILL (Details)</link:definition>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.oracle.com/20220228/taxonomy/role/DisclosureRESTRUCTURINGACTIVITIESNarrativeDetails" id="Role_DisclosureRESTRUCTURINGACTIVITIESNarrativeDetails">
+        <link:definition>100370 - Disclosure - RESTRUCTURING ACTIVITIES Narrative (Details)</link:definition>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.oracle.com/20220228/taxonomy/role/DisclosureRESTRUCTURINGACTIVITIESDetails" id="Role_DisclosureRESTRUCTURINGACTIVITIESDetails">
+        <link:definition>100380 - Disclosure - RESTRUCTURING ACTIVITIES (Details)</link:definition>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.oracle.com/20220228/taxonomy/role/DisclosureDEFERREDREVENUESDetails" id="Role_DisclosureDEFERREDREVENUESDetails">
+        <link:definition>100390 - Disclosure - DEFERRED REVENUES (Details)</link:definition>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.oracle.com/20220228/taxonomy/role/DisclosureSTOCKHOLDERSDEFICITEQUITYNarrativeDetails" id="Role_DisclosureSTOCKHOLDERSDEFICITEQUITYNarrativeDetails">
+        <link:definition>100400 - Disclosure - STOCKHOLDERS&apos; (DEFICIT) EQUITY Narrative (Details)</link:definition>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.oracle.com/20220228/taxonomy/role/DisclosureSTOCKHOLDERSDEFICITEQUITYDetails" id="Role_DisclosureSTOCKHOLDERSDEFICITEQUITYDetails">
+        <link:definition>100410 - Disclosure - STOCKHOLDERS&apos; (DEFICIT) EQUITY (Details)</link:definition>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.oracle.com/20220228/taxonomy/role/DisclosureINCOMETAXESDetails" id="Role_DisclosureINCOMETAXESDetails">
+        <link:definition>100420 - Disclosure - INCOME TAXES (Details)</link:definition>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.oracle.com/20220228/taxonomy/role/DisclosureSEGMENTINFORMATIONNarrativeDetails" id="Role_DisclosureSEGMENTINFORMATIONNarrativeDetails">
+        <link:definition>100430 - Disclosure - SEGMENT INFORMATION Narrative (Details)</link:definition>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.oracle.com/20220228/taxonomy/role/DisclosureSEGMENTINFORMATIONDetails" id="Role_DisclosureSEGMENTINFORMATIONDetails">
+        <link:definition>100440 - Disclosure - SEGMENT INFORMATION (Details)</link:definition>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.oracle.com/20220228/taxonomy/role/DisclosureSEGMENTINFORMATIONRECONCILIATIONDetails" id="Role_DisclosureSEGMENTINFORMATIONRECONCILIATIONDetails">
+        <link:definition>100450 - Disclosure - SEGMENT INFORMATION RECONCILIATION (Details)</link:definition>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.oracle.com/20220228/taxonomy/role/DisclosureSUMMARYOFTOTALREVENUESBYGEOGRAPHICREGIONDetails" id="Role_DisclosureSUMMARYOFTOTALREVENUESBYGEOGRAPHICREGIONDetails">
+        <link:definition>100460 - Disclosure - SUMMARY OF TOTAL REVENUES BY GEOGRAPHIC REGION (Details)</link:definition>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.oracle.com/20220228/taxonomy/role/DisclosureSUMMARYOFCLOUDSERVICESANDLICENSESUPPORTREVENUESBYECOSYSTEMSDetails" id="Role_DisclosureSUMMARYOFCLOUDSERVICESANDLICENSESUPPORTREVENUESBYECOSYSTEMSDetails">
+        <link:definition>100470 - Disclosure - SUMMARY OF CLOUD SERVICES AND LICENSE SUPPORT REVENUES BY ECOSYSTEMS (Details)</link:definition>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.oracle.com/20220228/taxonomy/role/DisclosureEARNINGSPERSHAREDetails" id="Role_DisclosureEARNINGSPERSHAREDetails">
+        <link:definition>100480 - Disclosure - EARNINGS PER SHARE (Details)</link:definition>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.oracle.com/20220228/taxonomy/role/DisclosureLEGALPROCEEDINGSDetails" id="Role_DisclosureLEGALPROCEEDINGSDetails">
+        <link:definition>100490 - Disclosure - LEGAL PROCEEDINGS (Details)</link:definition>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.oracle.com/20220228/taxonomy/role/DisclosureSUBSEQUENTEVENTSNarrativeDetails" id="Role_DisclosureSUBSEQUENTEVENTSNarrativeDetails">
+        <link:definition>100500 - Disclosure - SUBSEQUENT EVENTS Narrative (Details)</link:definition>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+    </xsd:appinfo>
+  </xsd:annotation>
+  <xsd:element id="orcl_NonoperatingIncomeExpenseIncludingEliminationOfNetIncomeLossAttributableToNoncontrollingInterests" name="NonoperatingIncomeExpenseIncludingEliminationOfNetIncomeLossAttributableToNoncontrollingInterests" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false" xbrli:balance="credit" />
+  <xsd:element id="orcl_StockBasedCompensationSegment" name="StockBasedCompensationSegment" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false" xbrli:balance="debit" />
+  <xsd:element id="orcl_ExpenseAllocationsAndOtherNet" name="ExpenseAllocationsAndOtherNet" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false" xbrli:balance="debit" />
+  <xsd:element id="orcl_DocumentAndEntityInformationAbstract" name="DocumentAndEntityInformationAbstract" type="xbrli:stringItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true" />
+  <xsd:element id="orcl_SeniorNotesDueJuly2025Member" name="SeniorNotesDueJuly2025Member" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true" />
+  <xsd:element id="orcl_CloudServicesAndLicenseSupportRevenue" name="CloudServicesAndLicenseSupportRevenue" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false" xbrli:balance="credit" />
+  <xsd:element id="orcl_CloudLicenseAndOnPremiseLicenseRevenue" name="CloudLicenseAndOnPremiseLicenseRevenue" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false" xbrli:balance="credit" />
+  <xsd:element id="orcl_HardwareRevenues" name="HardwareRevenues" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false" xbrli:balance="credit" />
+  <xsd:element id="orcl_SalesRevenueServicesNet1" name="SalesRevenueServicesNet1" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false" xbrli:balance="credit" />
+  <xsd:element id="orcl_CloudServicesAndLicenseSupportExpenses" name="CloudServicesAndLicenseSupportExpenses" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false" xbrli:balance="debit" />
+  <xsd:element id="orcl_HardwareExpenses" name="HardwareExpenses" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false" xbrli:balance="debit" />
+  <xsd:element id="orcl_ServicesExpense" name="ServicesExpense" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false" xbrli:balance="debit" />
+  <xsd:element id="orcl_IncomeLossFromContinuingOperationsIncludingNoncontrollingInterestBeforeIncomeTaxesExtraordinaryItems" name="IncomeLossFromContinuingOperationsIncludingNoncontrollingInterestBeforeIncomeTaxesExtraordinaryItems" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false" xbrli:balance="credit" />
+  <xsd:element id="orcl_StockIssuedDuringPeriodValueStockOptionPlansEmployeeStockPurchasePlanAndAcquisitions" name="StockIssuedDuringPeriodValueStockOptionPlansEmployeeStockPurchasePlanAndAcquisitions" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false" xbrli:balance="credit" />
+  <xsd:element id="orcl_IncreaseDecreaseInUnsettledRepurchasesCommonStock" name="IncreaseDecreaseInUnsettledRepurchasesCommonStock" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false" xbrli:balance="debit" />
+  <xsd:element id="orcl_LegalProceedingsAbstract" name="LegalProceedingsAbstract" type="xbrli:stringItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true" />
+  <xsd:element id="orcl_SalesOfFinancingReceivablesPolicyTextBlock" name="SalesOfFinancingReceivablesPolicyTextBlock" type="dtr-types:textBlockItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false" />
+  <xsd:element id="orcl_AcquisitionRelatedAndOtherExpensesPolicyTextBlock" name="AcquisitionRelatedAndOtherExpensesPolicyTextBlock" type="dtr-types:textBlockItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false" />
+  <xsd:element id="orcl_OtherNonOperatingIncomeAndExpensePolicyTextBlock" name="OtherNonOperatingIncomeAndExpensePolicyTextBlock" type="dtr-types:textBlockItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false" />
+  <xsd:element id="orcl_AcquisitionRelatedOtherExpensesTableTextBlock" name="AcquisitionRelatedOtherExpensesTableTextBlock" type="dtr-types:textBlockItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false" />
+  <xsd:element id="orcl_LossContingencyDamagesPaidValueIncludingPostJudgmentInterest" name="LossContingencyDamagesPaidValueIncludingPostJudgmentInterest" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false" xbrli:balance="credit" />
+  <xsd:element id="orcl_IncomeTaxExpenseBenefitNet" name="IncomeTaxExpenseBenefitNet" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false" xbrli:balance="debit" />
+  <xsd:element id="orcl_TransitionalAndOtherEmployeeRelatedCosts" name="TransitionalAndOtherEmployeeRelatedCosts" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false" xbrli:balance="debit" />
+  <xsd:element id="orcl_BusinessCombinationAdjustmentsNet" name="BusinessCombinationAdjustmentsNet" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false" xbrli:balance="debit" />
+  <xsd:element id="orcl_BusinessCombinationAcquisitionRelatedExpensesOtherNet" name="BusinessCombinationAcquisitionRelatedExpensesOtherNet" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false" xbrli:balance="debit" />
+  <xsd:element id="orcl_AcquisitionRelatedAndOtherExpensesAbstract" name="AcquisitionRelatedAndOtherExpensesAbstract" type="xbrli:stringItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true" />
+  <xsd:element id="orcl_NonOperatingIncomeExpenseAttributableToMinorityInterest" name="NonOperatingIncomeExpenseAttributableToMinorityInterest" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false" xbrli:balance="debit" />
+  <xsd:element id="orcl_BusinessAcquisitionDateOfExpire" name="BusinessAcquisitionDateOfExpire" type="xbrli:dateItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false" />
+  <xsd:element id="orcl_CernerCorporationMember" name="CernerCorporationMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true" />
+  <xsd:element id="orcl_InvestmentsAndCashAndCashEquivalentsFairValueDisclosure" name="InvestmentsAndCashAndCashEquivalentsFairValueDisclosure" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="instant" nillable="true" abstract="false" xbrli:balance="debit" />
+  <xsd:element id="orcl_FairValueMeasurementAbstract" name="FairValueMeasurementAbstract" type="xbrli:stringItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true" />
+  <xsd:element id="orcl_FiniteLivedIntangibleAssetsAcquiredAndPurchaseAccountingAdjustmentsNet" name="FiniteLivedIntangibleAssetsAcquiredAndPurchaseAccountingAdjustmentsNet" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false" xbrli:balance="debit" />
+  <xsd:element id="orcl_CloudServicesAndLicenseSupportAgreementsAndRelatedRelationshipsMember" name="CloudServicesAndLicenseSupportAgreementsAndRelatedRelationshipsMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true" />
+  <xsd:element id="orcl_CloudAndLicenseBusinessMember" name="CloudAndLicenseBusinessMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true" />
+  <xsd:element id="orcl_HardwareBusinessMember" name="HardwareBusinessMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true" />
+  <xsd:element id="orcl_ServicesBusinessMember" name="ServicesBusinessMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true" />
+  <xsd:element id="orcl_Fiscal2022OracleRestructuringMember" name="Fiscal2022OracleRestructuringMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true" />
+  <xsd:element id="orcl_InitialRestructuringCosts" name="InitialRestructuringCosts" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false" xbrli:balance="debit" />
+  <xsd:element id="orcl_OtherRestructuringPlansIncludingSunMember" name="OtherRestructuringPlansIncludingSunMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true" />
+  <xsd:element id="orcl_CloudServicesAndLicenseSupportMember" name="CloudServicesAndLicenseSupportMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true" />
+  <xsd:element id="orcl_HardwareMember" name="HardwareMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true" />
+  <xsd:element id="orcl_ServicesToCustomersAndPartnersMember" name="ServicesToCustomersAndPartnersMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true" />
+  <xsd:element id="orcl_CloudLicenseAndOnPremiseLicenseMember" name="CloudLicenseAndOnPremiseLicenseMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true" />
+  <xsd:element id="orcl_RepurchasedSharesThatWereNotSettled" name="RepurchasedSharesThatWereNotSettled" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false" />
+  <xsd:element id="orcl_RepurchasedAmountThatWasNotSettled" name="RepurchasedAmountThatWasNotSettled" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false" xbrli:balance="credit" />
+  <xsd:element id="orcl_StockRepurchasesAbstract" name="StockRepurchasesAbstract" type="xbrli:stringItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true" />
+  <xsd:element id="orcl_PerformanceBasedStockOptionsMember" name="PerformanceBasedStockOptionsMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true" />
+  <xsd:element id="orcl_ShareBasedCompensationArrangementByShareBasedPaymentAwardNumberOfVestingTranchesRequireAttainmentOfBothPerformanceMetricAndMarketMetric" name="ShareBasedCompensationArrangementByShareBasedPaymentAwardNumberOfVestingTranchesRequireAttainmentOfBothPerformanceMetricAndMarketMetric" type="xbrli:integerItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false" />
+  <xsd:element id="orcl_ShareBasedCompensationArrangementByShareBasedPaymentAwardAwardServicePeriodForMarketBasedMetric" name="ShareBasedCompensationArrangementByShareBasedPaymentAwardAwardServicePeriodForMarketBasedMetric" type="xbrli:durationItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false" />
+  <xsd:element id="orcl_ShareBasedCompensationArrangementByShareBasedPaymentAwardNumberOfTranchesVestsOnAttainmentOfMarketBasedMetric" name="ShareBasedCompensationArrangementByShareBasedPaymentAwardNumberOfTranchesVestsOnAttainmentOfMarketBasedMetric" type="xbrli:integerItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false" />
+  <xsd:element id="orcl_DeferredTaxAssetsAndLiabilitiesNarrativeAbstract" name="DeferredTaxAssetsAndLiabilitiesNarrativeAbstract" type="xbrli:stringItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true" />
+  <xsd:element id="orcl_IncomeTaxExaminationsAbstract" name="IncomeTaxExaminationsAbstract" type="xbrli:stringItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true" />
+  <xsd:element id="orcl_NumberOfBusinesses" name="NumberOfBusinesses" type="xbrli:integerItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false" />
+  <xsd:element id="orcl_HardwareProductsAndSupportExpenses" name="HardwareProductsAndSupportExpenses" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false" xbrli:balance="debit" />
+  <xsd:element id="orcl_ServicesSegmentExpenses" name="ServicesSegmentExpenses" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false" xbrli:balance="debit" />
+  <xsd:element id="orcl_DirectExpenses" name="DirectExpenses" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false" xbrli:balance="debit" />
+  <xsd:element id="orcl_ReconciliationOfOperatingSegmentRevenuesToRevenuesAbstract" name="ReconciliationOfOperatingSegmentRevenuesToRevenuesAbstract" type="xbrli:stringItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true" />
+  <xsd:element id="orcl_ApplicationsCloudServicesAndLicenseSupportMember" name="ApplicationsCloudServicesAndLicenseSupportMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true" />
+  <xsd:element id="orcl_InfrastructureCloudServicesAndLicenseSupportMember" name="InfrastructureCloudServicesAndLicenseSupportMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true" />
+  <xsd:element id="orcl_HewlettPackardLitigationMember" name="HewlettPackardLitigationMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true" />
+  <xsd:element id="orcl_LossContingencyPostJudgmentInterest" name="LossContingencyPostJudgmentInterest" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false" xbrli:balance="debit" />
+  <xsd:element id="orcl_BridgeCreditAgreementMember" name="BridgeCreditAgreementMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true" />
+  <xsd:element id="orcl_ConsolidatedEBITDAToConsolidatedNetInterestExpenseRatio" name="ConsolidatedEBITDAToConsolidatedNetInterestExpenseRatio" type="xbrli:pureItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false" />
+</xsd:schema>

@@ -1,0 +1,778 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--XBRL Document Created with Wdesk from Workiva-->
+<!--Copyright 2022 Workiva-->
+<!--r:0586ee0b-6760-4160-9eeb-1bbff07b58f1,g:db413630-d114-452d-84ce-f7102cf019bb-->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:brn="http://brninc.com/20220930" xmlns:xbrli="http://www.xbrl.org/2003/instance" xmlns:dtr-types="http://www.xbrl.org/dtr/type/2020-01-21" xmlns:xbrldt="http://xbrl.org/2005/xbrldt" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://brninc.com/20220930">
+  <xs:import namespace="http://fasb.org/srt/2021-01-31" schemaLocation="https://xbrl.fasb.org/srt/2021/elts/srt-2021-01-31.xsd"/>
+  <xs:import namespace="http://fasb.org/us-gaap/2021-01-31" schemaLocation="https://xbrl.fasb.org/us-gaap/2021/elts/us-gaap-2021-01-31.xsd"/>
+  <xs:import namespace="http://www.w3.org/1999/xlink" schemaLocation="http://www.xbrl.org/2003/xlink-2003-12-31.xsd"/>
+  <xs:import namespace="http://www.xbrl.org/2003/instance" schemaLocation="http://www.xbrl.org/2003/xbrl-instance-2003-12-31.xsd"/>
+  <xs:import namespace="http://www.xbrl.org/2003/linkbase" schemaLocation="http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd"/>
+  <xs:import namespace="http://www.xbrl.org/dtr/type/2020-01-21" schemaLocation="https://www.xbrl.org/dtr/type/2020-01-21/types.xsd"/>
+  <xs:import namespace="http://xbrl.org/2005/xbrldt" schemaLocation="http://www.xbrl.org/2005/xbrldt-2005.xsd"/>
+  <xs:import namespace="http://xbrl.sec.gov/country/2021" schemaLocation="https://xbrl.sec.gov/country/2021/country-2021.xsd"/>
+  <xs:import namespace="http://xbrl.sec.gov/dei/2021q4" schemaLocation="https://xbrl.sec.gov/dei/2021q4/dei-2021q4.xsd"/>
+  <xs:annotation>
+    <xs:appinfo>
+      <link:linkbaseRef xmlns:xlink="http://www.w3.org/1999/xlink" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="brn-20220930_lab.xml" xlink:role="http://www.xbrl.org/2003/role/labelLinkbaseRef" xlink:type="simple"/>
+      <link:linkbaseRef xmlns:xlink="http://www.w3.org/1999/xlink" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="brn-20220930_pre.xml" xlink:role="http://www.xbrl.org/2003/role/presentationLinkbaseRef" xlink:type="simple"/>
+      <link:linkbaseRef xmlns:xlink="http://www.w3.org/1999/xlink" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="brn-20220930_cal.xml" xlink:role="http://www.xbrl.org/2003/role/calculationLinkbaseRef" xlink:type="simple"/>
+      <link:linkbaseRef xmlns:xlink="http://www.w3.org/1999/xlink" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="brn-20220930_def.xml" xlink:role="http://www.xbrl.org/2003/role/definitionLinkbaseRef" xlink:type="simple"/>
+      <link:roleType id="CoverPage" roleURI="http://brninc.com/role/CoverPage">
+        <link:definition>0000001 - Document - Cover Page</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="AuditInformation" roleURI="http://brninc.com/role/AuditInformation">
+        <link:definition>0000002 - Document - Audit Information</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CONSOLIDATEDBALANCESHEETS" roleURI="http://brninc.com/role/CONSOLIDATEDBALANCESHEETS">
+        <link:definition>0000003 - Statement - CONSOLIDATED BALANCE SHEETS</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CONSOLIDATEDBALANCESHEETSParenthetical" roleURI="http://brninc.com/role/CONSOLIDATEDBALANCESHEETSParenthetical">
+        <link:definition>0000004 - Statement - CONSOLIDATED BALANCE SHEETS (Parenthetical)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CONSOLIDATEDSTATEMENTSOFOPERATIONS" roleURI="http://brninc.com/role/CONSOLIDATEDSTATEMENTSOFOPERATIONS">
+        <link:definition>0000005 - Statement - CONSOLIDATED STATEMENTS OF OPERATIONS</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CONSOLIDATEDSTATEMENTSOFCOMPREHENSIVEINCOME" roleURI="http://brninc.com/role/CONSOLIDATEDSTATEMENTSOFCOMPREHENSIVEINCOME">
+        <link:definition>0000006 - Statement - CONSOLIDATED STATEMENTS OF COMPREHENSIVE INCOME</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CONSOLIDATEDSTATEMENTSOFCOMPREHENSIVEINCOMEParenthetical" roleURI="http://brninc.com/role/CONSOLIDATEDSTATEMENTSOFCOMPREHENSIVEINCOMEParenthetical">
+        <link:definition>0000007 - Statement - CONSOLIDATED STATEMENTS OF COMPREHENSIVE INCOME (Parenthetical)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CONSOLIDATEDSTATEMENTSOFEQUITY" roleURI="http://brninc.com/role/CONSOLIDATEDSTATEMENTSOFEQUITY">
+        <link:definition>0000008 - Statement - CONSOLIDATED STATEMENTS OF EQUITY</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CONSOLIDATEDSTATEMENTSOFEQUITYParenthetical" roleURI="http://brninc.com/role/CONSOLIDATEDSTATEMENTSOFEQUITYParenthetical">
+        <link:definition>0000009 - Statement - CONSOLIDATED STATEMENTS OF EQUITY (Parenthetical)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CONSOLIDATEDSTATEMENTSOFCASHFLOWS" roleURI="http://brninc.com/role/CONSOLIDATEDSTATEMENTSOFCASHFLOWS">
+        <link:definition>0000010 - Statement - CONSOLIDATED STATEMENTS OF CASH FLOWS</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SUMMARYOFSIGNIFICANTACCOUNTINGPOLICIES" roleURI="http://brninc.com/role/SUMMARYOFSIGNIFICANTACCOUNTINGPOLICIES">
+        <link:definition>0000011 - Disclosure - SUMMARY OF SIGNIFICANT ACCOUNTING POLICIES</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="OrganizationConsolidationandPresentationofFinancialStatements" roleURI="http://brninc.com/role/OrganizationConsolidationandPresentationofFinancialStatements">
+        <link:definition>0000012 - Disclosure - Organization, Consolidation and Presentation of Financial Statements</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="EARNINGSPERCOMMONSHARE" roleURI="http://brninc.com/role/EARNINGSPERCOMMONSHARE">
+        <link:definition>0000013 - Disclosure - EARNINGS PER COMMON SHARE</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="INVESTMENTS" roleURI="http://brninc.com/role/INVESTMENTS">
+        <link:definition>0000014 - Disclosure - INVESTMENTS</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CONSOLIDATEDVARIABLEINTERESTENTITY" roleURI="http://brninc.com/role/CONSOLIDATEDVARIABLEINTERESTENTITY">
+        <link:definition>0000015 - Disclosure - CONSOLIDATED VARIABLE INTEREST ENTITY</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ASSETSHELDFORSALE" roleURI="http://brninc.com/role/ASSETSHELDFORSALE">
+        <link:definition>0000016 - Disclosure - ASSETS HELD FOR SALE</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="OILANDNATURALGASPROPERTIES" roleURI="http://brninc.com/role/OILANDNATURALGASPROPERTIES">
+        <link:definition>0000017 - Disclosure - OIL AND NATURAL GAS PROPERTIES</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="PROPERTYANDEQUIPMENTANDASSETRETIREMENTOBLIGATION" roleURI="http://brninc.com/role/PROPERTYANDEQUIPMENTANDASSETRETIREMENTOBLIGATION">
+        <link:definition>0000018 - Disclosure - PROPERTY AND EQUIPMENT AND ASSET RETIREMENT OBLIGATION</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RETIREMENTPLANS" roleURI="http://brninc.com/role/RETIREMENTPLANS">
+        <link:definition>0000019 - Disclosure - RETIREMENT PLANS</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="INCOMETAXES" roleURI="http://brninc.com/role/INCOMETAXES">
+        <link:definition>0000020 - Disclosure - INCOME TAXES</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="REVENUEFROMCONTRACTSWITHCUSTOMERS" roleURI="http://brninc.com/role/REVENUEFROMCONTRACTSWITHCUSTOMERS">
+        <link:definition>0000021 - Disclosure - REVENUE FROM CONTRACTS WITH CUSTOMERS</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SEGMENTANDGEOGRAPHICINFORMATION" roleURI="http://brninc.com/role/SEGMENTANDGEOGRAPHICINFORMATION">
+        <link:definition>0000022 - Disclosure - SEGMENT AND GEOGRAPHIC INFORMATION</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ACCUMULATEDOTHERCOMPREHENSIVEINCOME" roleURI="http://brninc.com/role/ACCUMULATEDOTHERCOMPREHENSIVEINCOME">
+        <link:definition>0000023 - Disclosure - ACCUMULATED OTHER COMPREHENSIVE INCOME</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FAIRVALUEMEASUREMENTS" roleURI="http://brninc.com/role/FAIRVALUEMEASUREMENTS">
+        <link:definition>0000024 - Disclosure - FAIR VALUE MEASUREMENTS</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="DEBT" roleURI="http://brninc.com/role/DEBT">
+        <link:definition>0000025 - Disclosure - DEBT</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LEASES" roleURI="http://brninc.com/role/LEASES">
+        <link:definition>0000026 - Disclosure - LEASES</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="STOCKHOLDERSEQUITY" roleURI="http://brninc.com/role/STOCKHOLDERSEQUITY">
+        <link:definition>0000027 - Disclosure - STOCKHOLDERS' EQUITY</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="COMMITMENTSANDCONTINGENCIES" roleURI="http://brninc.com/role/COMMITMENTSANDCONTINGENCIES">
+        <link:definition>0000028 - Disclosure - COMMITMENTS AND CONTINGENCIES</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="INFORMATIONRELATINGTOTHECONSOLIDATEDSTATEMENTSOFCASHFLOWS" roleURI="http://brninc.com/role/INFORMATIONRELATINGTOTHECONSOLIDATEDSTATEMENTSOFCASHFLOWS">
+        <link:definition>0000029 - Disclosure - INFORMATION RELATING TO THE CONSOLIDATED STATEMENTS OF CASH FLOWS</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RELATEDPARTYTRANSACTIONS" roleURI="http://brninc.com/role/RELATEDPARTYTRANSACTIONS">
+        <link:definition>0000030 - Disclosure - RELATED PARTY TRANSACTIONS</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SUBSEQUENTEVENTS" roleURI="http://brninc.com/role/SUBSEQUENTEVENTS">
+        <link:definition>0000031 - Disclosure - SUBSEQUENT EVENTS</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SUMMARYOFSELECTEDQUARTERLYFINANCIALDATAUNAUDITED" roleURI="http://brninc.com/role/SUMMARYOFSELECTEDQUARTERLYFINANCIALDATAUNAUDITED">
+        <link:definition>0000032 - Disclosure - SUMMARY OF SELECTED QUARTERLY FINANCIAL DATA (UNAUDITED)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SUPPLEMENTARYOILANDNATURALGASINFORMATIONUNAUDITED" roleURI="http://brninc.com/role/SUPPLEMENTARYOILANDNATURALGASINFORMATIONUNAUDITED">
+        <link:definition>0000033 - Disclosure - SUPPLEMENTARY OIL AND NATURAL GAS INFORMATION (UNAUDITED)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SUMMARYOFSIGNIFICANTACCOUNTINGPOLICIESPolicies" roleURI="http://brninc.com/role/SUMMARYOFSIGNIFICANTACCOUNTINGPOLICIESPolicies">
+        <link:definition>0000034 - Disclosure - SUMMARY OF SIGNIFICANT ACCOUNTING POLICIES (Policies)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="OrganizationConsolidationandPresentationofFinancialStatementsTables" roleURI="http://brninc.com/role/OrganizationConsolidationandPresentationofFinancialStatementsTables">
+        <link:definition>0000035 - Disclosure - Organization, Consolidation and Presentation of Financial Statements (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="EARNINGSPERCOMMONSHARETables" roleURI="http://brninc.com/role/EARNINGSPERCOMMONSHARETables">
+        <link:definition>0000036 - Disclosure - EARNINGS PER COMMON SHARE (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="INVESTMENTSTables" roleURI="http://brninc.com/role/INVESTMENTSTables">
+        <link:definition>0000037 - Disclosure - INVESTMENTS (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CONSOLIDATEDVARIABLEINTERESTENTITYTables" roleURI="http://brninc.com/role/CONSOLIDATEDVARIABLEINTERESTENTITYTables">
+        <link:definition>0000038 - Disclosure - CONSOLIDATED VARIABLE INTEREST ENTITY (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="PROPERTYANDEQUIPMENTANDASSETRETIREMENTOBLIGATIONTables" roleURI="http://brninc.com/role/PROPERTYANDEQUIPMENTANDASSETRETIREMENTOBLIGATIONTables">
+        <link:definition>0000039 - Disclosure - PROPERTY AND EQUIPMENT AND ASSET RETIREMENT OBLIGATION (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RETIREMENTPLANSTables" roleURI="http://brninc.com/role/RETIREMENTPLANSTables">
+        <link:definition>0000040 - Disclosure - RETIREMENT PLANS (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="INCOMETAXESTables" roleURI="http://brninc.com/role/INCOMETAXESTables">
+        <link:definition>0000041 - Disclosure - INCOME TAXES (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="REVENUEFROMCONTRACTSWITHCUSTOMERSTables" roleURI="http://brninc.com/role/REVENUEFROMCONTRACTSWITHCUSTOMERSTables">
+        <link:definition>0000042 - Disclosure - REVENUE FROM CONTRACTS WITH CUSTOMERS (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SEGMENTANDGEOGRAPHICINFORMATIONTables" roleURI="http://brninc.com/role/SEGMENTANDGEOGRAPHICINFORMATIONTables">
+        <link:definition>0000043 - Disclosure - SEGMENT AND GEOGRAPHIC INFORMATION (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ACCUMULATEDOTHERCOMPREHENSIVEINCOMETables" roleURI="http://brninc.com/role/ACCUMULATEDOTHERCOMPREHENSIVEINCOMETables">
+        <link:definition>0000044 - Disclosure - ACCUMULATED OTHER COMPREHENSIVE INCOME (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LEASESTables" roleURI="http://brninc.com/role/LEASESTables">
+        <link:definition>0000045 - Disclosure - LEASES (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="STOCKHOLDERSEQUITYTables" roleURI="http://brninc.com/role/STOCKHOLDERSEQUITYTables">
+        <link:definition>0000046 - Disclosure - STOCKHOLDERS' EQUITY (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="INFORMATIONRELATINGTOTHECONSOLIDATEDSTATEMENTSOFCASHFLOWSTables" roleURI="http://brninc.com/role/INFORMATIONRELATINGTOTHECONSOLIDATEDSTATEMENTSOFCASHFLOWSTables">
+        <link:definition>0000047 - Disclosure - INFORMATION RELATING TO THE CONSOLIDATED STATEMENTS OF CASH FLOWS (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SUPPLEMENTARYOILANDNATURALGASINFORMATIONUNAUDITEDTables" roleURI="http://brninc.com/role/SUPPLEMENTARYOILANDNATURALGASINFORMATIONUNAUDITEDTables">
+        <link:definition>0000048 - Disclosure - SUPPLEMENTARY OIL AND NATURAL GAS INFORMATION (UNAUDITED) (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SUMMARYOFSIGNIFICANTACCOUNTINGPOLICIESDetails" roleURI="http://brninc.com/role/SUMMARYOFSIGNIFICANTACCOUNTINGPOLICIESDetails">
+        <link:definition>0000049 - Disclosure - SUMMARY OF SIGNIFICANT ACCOUNTING POLICIES (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="OrganizationConsolidationandPresentationofFinancialStatementsDetails" roleURI="http://brninc.com/role/OrganizationConsolidationandPresentationofFinancialStatementsDetails">
+        <link:definition>0000050 - Disclosure - Organization, Consolidation and Presentation of Financial Statements (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="EARNINGSPERCOMMONSHAREDetails" roleURI="http://brninc.com/role/EARNINGSPERCOMMONSHAREDetails">
+        <link:definition>0000051 - Disclosure - EARNINGS PER COMMON SHARE (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="INVESTMENTSINVESTMENTINKUKIORESORTLANDDEVELOPMENTPARTNERSHIPDetails" roleURI="http://brninc.com/role/INVESTMENTSINVESTMENTINKUKIORESORTLANDDEVELOPMENTPARTNERSHIPDetails">
+        <link:definition>0000052 - Disclosure - INVESTMENTS - INVESTMENT IN KUKIO RESORT LAND DEVELOPMENT PARTNERSHIP (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="INVESTMENTSSUMMARIZEDFINANCIALINFORMATIONDetails" roleURI="http://brninc.com/role/INVESTMENTSSUMMARIZEDFINANCIALINFORMATIONDetails">
+        <link:definition>0000053 - Disclosure - INVESTMENTS - SUMMARIZED FINANCIAL INFORMATION (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="INVESTMENTSSALEOFINTERESTINLEASEHOLDLANDDetails" roleURI="http://brninc.com/role/INVESTMENTSSALEOFINTERESTINLEASEHOLDLANDDetails">
+        <link:definition>0000054 - Disclosure - INVESTMENTS - SALE OF INTEREST IN LEASEHOLD LAND (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="INVESTMENTSSUMMARYOFREVENUESDetails" roleURI="http://brninc.com/role/INVESTMENTSSUMMARYOFREVENUESDetails">
+        <link:definition>0000055 - Disclosure - INVESTMENTS - SUMMARY OF REVENUES (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="INVESTMENTSINVESTMENTSINLEASEHOLDLANDINTERESTSLOT4CDetails" roleURI="http://brninc.com/role/INVESTMENTSINVESTMENTSINLEASEHOLDLANDINTERESTSLOT4CDetails">
+        <link:definition>0000056 - Disclosure - INVESTMENTS - INVESTMENTS IN LEASEHOLD LAND INTERESTS - LOT 4C (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CONSOLIDATEDVARIABLEINTERESTENTITYNARRATIVEDetails" roleURI="http://brninc.com/role/CONSOLIDATEDVARIABLEINTERESTENTITYNARRATIVEDetails">
+        <link:definition>0000057 - Disclosure - CONSOLIDATED VARIABLE INTEREST ENTITY - NARRATIVE (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CONSOLIDATEDVARIABLEINTERESTENTITYCARRYINGVALUEOFASSETSANDLIABILITIESDetails" roleURI="http://brninc.com/role/CONSOLIDATEDVARIABLEINTERESTENTITYCARRYINGVALUEOFASSETSANDLIABILITIESDetails">
+        <link:definition>0000058 - Disclosure - CONSOLIDATED VARIABLE INTEREST ENTITY - CARRYING VALUE OF ASSETS AND LIABILITIES (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ASSETHELDFORSALEDetails" roleURI="http://brninc.com/role/ASSETHELDFORSALEDetails">
+        <link:definition>0000059 - Disclosure - ASSET HELD FOR SALE (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="OILANDNATURALGASPROPERTIESDetails" roleURI="http://brninc.com/role/OILANDNATURALGASPROPERTIESDetails">
+        <link:definition>0000060 - Disclosure - OIL AND NATURAL GAS PROPERTIES (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="PROPERTYANDEQUIPMENTANDASSETRETIREMENTOBLIGATIONDetails" roleURI="http://brninc.com/role/PROPERTYANDEQUIPMENTANDASSETRETIREMENTOBLIGATIONDetails">
+        <link:definition>0000061 - Disclosure - PROPERTY AND EQUIPMENT AND ASSET RETIREMENT OBLIGATION (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="PROPERTYANDEQUIPMENTANDASSETRETIREMENTOBLIGATIONDetails_1" roleURI="http://brninc.com/role/PROPERTYANDEQUIPMENTANDASSETRETIREMENTOBLIGATIONDetails_1">
+        <link:definition>0000061 - Disclosure - PROPERTY AND EQUIPMENT AND ASSET RETIREMENT OBLIGATION (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RETIREMENTPLANSNARRATIVEDetails" roleURI="http://brninc.com/role/RETIREMENTPLANSNARRATIVEDetails">
+        <link:definition>0000062 - Disclosure - RETIREMENT PLANS - NARRATIVE (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RETIREMENTPLANSCHANGESINBENEFITOBLIGATIONSDetails" roleURI="http://brninc.com/role/RETIREMENTPLANSCHANGESINBENEFITOBLIGATIONSDetails">
+        <link:definition>0000063 - Disclosure - RETIREMENT PLANS - CHANGES IN BENEFIT OBLIGATIONS (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RETIREMENTPLANSWEIGHTEDAVEARAGEBENEFITOBLIGATIONSANDNETBENEFITINCOMECOSTDetails" roleURI="http://brninc.com/role/RETIREMENTPLANSWEIGHTEDAVEARAGEBENEFITOBLIGATIONSANDNETBENEFITINCOMECOSTDetails">
+        <link:definition>0000064 - Disclosure - RETIREMENT PLANS - WEIGHTED AVEARAGE BENEFIT OBLIGATIONS AND NET BENEFIT (INCOME) COST (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RETIREMENTPLANSNETPERIODICBENEFITINCOMECOSTDetails" roleURI="http://brninc.com/role/RETIREMENTPLANSNETPERIODICBENEFITINCOMECOSTDetails">
+        <link:definition>0000065 - Disclosure - RETIREMENT PLANS - NET PERIODIC BENEFIT (INCOME) COST (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RETIREMENTPLANSEXPECTEDBENEFITPAYMENTSDetails" roleURI="http://brninc.com/role/RETIREMENTPLANSEXPECTEDBENEFITPAYMENTSDetails">
+        <link:definition>0000066 - Disclosure - RETIREMENT PLANS - EXPECTED BENEFIT PAYMENTS (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RETIREMENTPLANSASSETCATERGORYALLOCATIONDetails" roleURI="http://brninc.com/role/RETIREMENTPLANSASSETCATERGORYALLOCATIONDetails">
+        <link:definition>0000067 - Disclosure - RETIREMENT PLANS - ASSET CATERGORY ALLOCATION (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RETIREMENTPLANSFAIRVALUEDetails" roleURI="http://brninc.com/role/RETIREMENTPLANSFAIRVALUEDetails">
+        <link:definition>0000068 - Disclosure - RETIREMENT PLANS - FAIR VALUE (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="INCOMETAXESDetails" roleURI="http://brninc.com/role/INCOMETAXESDetails">
+        <link:definition>0000069 - Disclosure - INCOME TAXES (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="INCOMETAXESDetails_1" roleURI="http://brninc.com/role/INCOMETAXESDetails_1">
+        <link:definition>0000069 - Disclosure - INCOME TAXES (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="REVENUEFROMCONTRACTSWITHCUSTOMERSDISAGGREGATIONOFREVENUEDetails" roleURI="http://brninc.com/role/REVENUEFROMCONTRACTSWITHCUSTOMERSDISAGGREGATIONOFREVENUEDetails">
+        <link:definition>0000070 - Disclosure - REVENUE FROM CONTRACTS WITH CUSTOMERS - DISAGGREGATION OF REVENUE (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="REVENUEFROMCONTRACTSWITHCUSTOMERSCONTRACTBALANCESDetails" roleURI="http://brninc.com/role/REVENUEFROMCONTRACTSWITHCUSTOMERSCONTRACTBALANCESDetails">
+        <link:definition>0000071 - Disclosure - REVENUE FROM CONTRACTS WITH CUSTOMERS -CONTRACT BALANCES (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="REVENUEFROMCONTRACTSWITHCUSTOMERSNARRATIVEDetails" roleURI="http://brninc.com/role/REVENUEFROMCONTRACTSWITHCUSTOMERSNARRATIVEDetails">
+        <link:definition>0000072 - Disclosure - REVENUE FROM CONTRACTS WITH CUSTOMERS - NARRATIVE (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="REVENUEFROMCONTRACTSWITHCUSTOMERSUNINSTALLEDMATERIALSDetails" roleURI="http://brninc.com/role/REVENUEFROMCONTRACTSWITHCUSTOMERSUNINSTALLEDMATERIALSDetails">
+        <link:definition>0000073 - Disclosure - REVENUE FROM CONTRACTS WITH CUSTOMERS - UNINSTALLED MATERIALS (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SEGMENTANDGEOGRAPHICINFORMATIONDetails" roleURI="http://brninc.com/role/SEGMENTANDGEOGRAPHICINFORMATIONDetails">
+        <link:definition>0000074 - Disclosure - SEGMENT AND GEOGRAPHIC INFORMATION (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SEGMENTANDGEOGRAPHICINFORMATIONGEOGRAPHICAREASDetails" roleURI="http://brninc.com/role/SEGMENTANDGEOGRAPHICINFORMATIONGEOGRAPHICAREASDetails">
+        <link:definition>0000075 - Disclosure - SEGMENT AND GEOGRAPHIC INFORMATION - GEOGRAPHIC AREAS (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ACCUMULATEDOTHERCOMPREHENSIVEINCOMEDetails" roleURI="http://brninc.com/role/ACCUMULATEDOTHERCOMPREHENSIVEINCOMEDetails">
+        <link:definition>0000076 - Disclosure - ACCUMULATED OTHER COMPREHENSIVE INCOME (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="DEBTDetails" roleURI="http://brninc.com/role/DEBTDetails">
+        <link:definition>0000077 - Disclosure - DEBT (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LEASESNARRATIVEDetails" roleURI="http://brninc.com/role/LEASESNARRATIVEDetails">
+        <link:definition>0000078 - Disclosure - LEASES - NARRATIVE (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LEASESASSETSANDLIABILITIESDetails" roleURI="http://brninc.com/role/LEASESASSETSANDLIABILITIESDetails">
+        <link:definition>0000079 - Disclosure - LEASES - ASSETS AND LIABILITIES (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LEASESLEASECOSTSDetails" roleURI="http://brninc.com/role/LEASESLEASECOSTSDetails">
+        <link:definition>0000080 - Disclosure - LEASES - LEASE COSTS (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LEASESSUPPLEMENTALLEASEINFORMATIONDetails" roleURI="http://brninc.com/role/LEASESSUPPLEMENTALLEASEINFORMATIONDetails">
+        <link:definition>0000081 - Disclosure - LEASES - SUPPLEMENTAL LEASE INFORMATION (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LEASESOPEARTINGLEASEMATURITYSCHEDULEDetails" roleURI="http://brninc.com/role/LEASESOPEARTINGLEASEMATURITYSCHEDULEDetails">
+        <link:definition>0000082 - Disclosure - LEASES - OPEARTING LEASE MATURITY SCHEDULE (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LEASESOPEARTINGLEASEMATURITYSCHEDULEDetails_1" roleURI="http://brninc.com/role/LEASESOPEARTINGLEASEMATURITYSCHEDULEDetails_1">
+        <link:definition>0000082 - Disclosure - LEASES - OPEARTING LEASE MATURITY SCHEDULE (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="STOCKHOLDERSEQUITYSHAREBASEDCOMPENSATIONDetails" roleURI="http://brninc.com/role/STOCKHOLDERSEQUITYSHAREBASEDCOMPENSATIONDetails">
+        <link:definition>0000083 - Disclosure - STOCKHOLDERS' EQUITY - SHARE-BASED COMPENSATION (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="STOCKHOLDERSEQUITYEQUITYCLASSIFIEDAWARDSDetails" roleURI="http://brninc.com/role/STOCKHOLDERSEQUITYEQUITYCLASSIFIEDAWARDSDetails">
+        <link:definition>0000084 - Disclosure - STOCKHOLDERS' EQUITY - EQUITY-CLASSIFIED AWARDS (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="STOCKHOLDERSEQUITYESTIMATEDFAIRVALUEOFEQUITYCLASSIFIEDAWARDSDetails" roleURI="http://brninc.com/role/STOCKHOLDERSEQUITYESTIMATEDFAIRVALUEOFEQUITYCLASSIFIEDAWARDSDetails">
+        <link:definition>0000085 - Disclosure - STOCKHOLDERS' EQUITY - ESTIMATED FAIR VALUE OF EQUITY-CLASSIFIED AWARDS (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="STOCKHOLDERSEQUITYATTHEMARKETOFFERINGDetails" roleURI="http://brninc.com/role/STOCKHOLDERSEQUITYATTHEMARKETOFFERINGDetails">
+        <link:definition>0000086 - Disclosure - STOCKHOLDERS' EQUITY - AT THE MARKET OFFERING (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="COMMITMENTSANDCONTINGENCIESDetail" roleURI="http://brninc.com/role/COMMITMENTSANDCONTINGENCIESDetail">
+        <link:definition>0000087 - Disclosure - COMMITMENTS AND CONTINGENCIES (Detail)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="INFORMATIONRELATINGTOTHECONSOLIDATEDSTATEMENTSOFCASHFLOWSDetails" roleURI="http://brninc.com/role/INFORMATIONRELATINGTOTHECONSOLIDATEDSTATEMENTSOFCASHFLOWSDetails">
+        <link:definition>0000088 - Disclosure - INFORMATION RELATING TO THE CONSOLIDATED STATEMENTS OF CASH FLOWS (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RELATEDPARTYTRANSACTIONSDetails" roleURI="http://brninc.com/role/RELATEDPARTYTRANSACTIONSDetails">
+        <link:definition>0000089 - Disclosure - RELATED PARTY TRANSACTIONS (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SUBSEQUENTEVENTSDetails" roleURI="http://brninc.com/role/SUBSEQUENTEVENTSDetails">
+        <link:definition>0000090 - Disclosure - SUBSEQUENT EVENTS (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SUPPLEMENTARYOILANDNATURALGASINFORMATIONUNAUDITEDDetails" roleURI="http://brninc.com/role/SUPPLEMENTARYOILANDNATURALGASINFORMATIONUNAUDITEDDetails">
+        <link:definition>0000091 - Disclosure - SUPPLEMENTARY OIL AND NATURAL GAS INFORMATION (UNAUDITED) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element id="brn_KDManiniowaliLLLPMember" abstract="false" name="KDManiniowaliLLLPMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="brn_IncrementDomain" abstract="true" name="IncrementDomain" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="brn_DefinedBenefitPlanMinimumRequisiteServicePeriodAtSpecifiedPost" abstract="false" name="DefinedBenefitPlanMinimumRequisiteServicePeriodAtSpecifiedPost" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:durationItemType"/>
+  <xs:element id="brn_OilAndGasPropertiedAccumulatedDepreciationDepletionAndAmortizationPropertyPlantAndEquipment" abstract="false" name="OilAndGasPropertiedAccumulatedDepreciationDepletionAndAmortizationPropertyPlantAndEquipment" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="brn_KDAcquisitionLLLPMember" abstract="true" name="KDAcquisitionLLLPMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="brn_StandardizedMeasureOfDiscountedFutureNetCashFlowOfProvedOilAndGasReservesOtherDueToChangesInTimingOfFutureProductionAndOther" abstract="false" name="StandardizedMeasureOfDiscountedFutureNetCashFlowOfProvedOilAndGasReservesOtherDueToChangesInTimingOfFutureProductionAndOther" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="brn_ShareBasedCompensationArrangementByShareBasedPaymentAwardOptionsWeightedAverageRemainingContractualTermAbstract" abstract="true" name="ShareBasedCompensationArrangementByShareBasedPaymentAwardOptionsWeightedAverageRemainingContractualTermAbstract" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="brn_TwiningAlbertaCanadaMember" abstract="true" name="TwiningAlbertaCanadaMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="brn_DeferredTaxAssetsTaxDeferredExpenseReservesAndAccrualsAccruedLiabilitiesForeign" abstract="false" name="DeferredTaxAssetsTaxDeferredExpenseReservesAndAccrualsAccruedLiabilitiesForeign" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="brn_OwnershipInterestInAffiliatedCompaniesRequiredToAccountInvestmentsUnderEquityMethodInvestments" abstract="false" name="OwnershipInterestInAffiliatedCompaniesRequiredToAccountInvestmentsUnderEquityMethodInvestments" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:percentItemType"/>
+  <xs:element id="brn_PercentageOfCapitalContributionsToVariableInterestEntity" abstract="false" name="PercentageOfCapitalContributionsToVariableInterestEntity" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="dtr-types:percentItemType"/>
+  <xs:element id="brn_KDKaupulehuLLLPIncrementIIPhase2ALotsCompletedMember" abstract="true" name="KDKaupulehuLLLPIncrementIIPhase2ALotsCompletedMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="brn_IncomeLossFromContinuingOperationsBeforeIncomeTaxesAndAfterAdjustingIncomeLossForNoncontrollingInterests" abstract="false" name="IncomeLossFromContinuingOperationsBeforeIncomeTaxesAndAfterAdjustingIncomeLossForNoncontrollingInterests" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="brn_LeaseLiability" abstract="false" name="LeaseLiability" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="brn_AggregateGrossProceedsToBeRaisedByIssuerUnderThePrivatePlacementOffering" abstract="false" name="AggregateGrossProceedsToBeRaisedByIssuerUnderThePrivatePlacementOffering" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="brn_IncrementAxis" abstract="true" name="IncrementAxis" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrldt:dimensionItem" type="xbrli:stringItemType"/>
+  <xs:element id="brn_PrinciplesOfConsolidationAbstract" abstract="true" name="PrinciplesOfConsolidationAbstract" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="brn_PercentageOfLoanToBeRepaidForDebtForgiveness" abstract="false" name="PercentageOfLoanToBeRepaidForDebtForgiveness" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:percentItemType"/>
+  <xs:element id="brn_DeferredTaxLiabilitiesInvestmentInNoncontrolledAffiliatesDomestic" abstract="false" name="DeferredTaxLiabilitiesInvestmentInNoncontrolledAffiliatesDomestic" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="brn_BOKDrillingLLCMember" abstract="true" name="BOKDrillingLLCMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="brn_ValuationAllowanceDeferredTaxAssetChangeInAmountRecognizedInIncomeTaxBenefitExpense" abstract="false" name="ValuationAllowanceDeferredTaxAssetChangeInAmountRecognizedInIncomeTaxBenefitExpense" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="brn_KKMMakaiLLLPMember" abstract="true" name="KKMMakaiLLLPMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="brn_PoolOfVariousIndividualsMember" abstract="true" name="PoolOfVariousIndividualsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="brn_CollaborativeAgreementPercentageOfCumulativeNetProfitsPriorityPaymentMaximumAmount" abstract="false" name="CollaborativeAgreementPercentageOfCumulativeNetProfitsPriorityPaymentMaximumAmount" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="brn_CumulativeCashDistributionsfromKukioResortLandDevelopmentPartnershipsMadetoDate" abstract="false" name="CumulativeCashDistributionsfromKukioResortLandDevelopmentPartnershipsMadetoDate" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="brn_PaymentsToAcquireWorkingInterestsInOilAndGasLeaseholdAcreageAndToDrillOilWells" abstract="false" name="PaymentsToAcquireWorkingInterestsInOilAndGasLeaseholdAcreageAndToDrillOilWells" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="brn_A1287398BCLtdMember" abstract="true" name="A1287398BCLtdMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="brn_CumulativeCashDistributionsfromKukioResortLandDevelopmentPartnershipsThreshold" abstract="false" name="CumulativeCashDistributionsfromKukioResortLandDevelopmentPartnershipsThreshold" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="brn_CapitalContributionsMadeToVariableInterestEntity" abstract="false" name="CapitalContributionsMadeToVariableInterestEntity" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="brn_StandardizedMeasureOfDiscountedFutureNetCashFlowOfProvedOilAndGasReservesOtherDueToChangeInForeignCurrencyTranslationRate" abstract="false" name="StandardizedMeasureOfDiscountedFutureNetCashFlowOfProvedOilAndGasReservesOtherDueToChangeInForeignCurrencyTranslationRate" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="brn_FutureNetCashFlowsRelatingToProvedOilAndGasReservesAbandonmentDecommissioningAndReclamation" abstract="false" name="FutureNetCashFlowsRelatingToProvedOilAndGasReservesAbandonmentDecommissioningAndReclamation" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="brn_IncomeLossFromContinuingOperationsBeforeIncomeTaxesAndAfterAdjustingIncomeLossForNoncontrollingInterestsDomestic" abstract="false" name="IncomeLossFromContinuingOperationsBeforeIncomeTaxesAndAfterAdjustingIncomeLossForNoncontrollingInterestsDomestic" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="brn_WorkingInterestInOilWellsPercentage" abstract="false" name="WorkingInterestInOilWellsPercentage" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="dtr-types:percentItemType"/>
+  <xs:element id="brn_UnprovedOilAndGasPropertyFullCostMethodNet" abstract="false" name="UnprovedOilAndGasPropertyFullCostMethodNet" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="brn_RevenuesExcludingInterestIncome" abstract="false" name="RevenuesExcludingInterestIncome" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="brn_DefinedBenefitPlanIncreaseDecreaseFromExpectedReturnOnPlanAssets" abstract="false" name="DefinedBenefitPlanIncreaseDecreaseFromExpectedReturnOnPlanAssets" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="brn_UnprovedOilAndGasPropertyFullCostMethodDepletion" abstract="false" name="UnprovedOilAndGasPropertyFullCostMethodDepletion" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="brn_AssetManagementFeePercentFeeOfCumulativeCapitalContributions" abstract="false" name="AssetManagementFeePercentFeeOfCumulativeCapitalContributions" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="dtr-types:percentItemType"/>
+  <xs:element id="brn_UninstalledMaterialsCurrent" abstract="false" name="UninstalledMaterialsCurrent" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="brn_ShareBasedCompensationArrangementbySharebasedPaymentAwardOptionsAggregateIntrinsicValueAbstract" abstract="true" name="ShareBasedCompensationArrangementbySharebasedPaymentAwardOptionsAggregateIntrinsicValueAbstract" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="brn_SegmentReportingInformationCapitalExpendituresAbstract" abstract="true" name="SegmentReportingInformationCapitalExpendituresAbstract" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="brn_CollaborativeAgreementPercentageOfDistributions" abstract="false" name="CollaborativeAgreementPercentageOfDistributions" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="dtr-types:percentItemType"/>
+  <xs:element id="brn_DeferredTaxLiabilitiesInvestmentInNoncontrolledAffiliatesStateAndLocal" abstract="false" name="DeferredTaxLiabilitiesInvestmentInNoncontrolledAffiliatesStateAndLocal" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="brn_DefinedBenefitPlanAssumptionsUsedCalculatingNetPeriodicBenefitCostRateOfExpectedLongTermReturnOnAssetsIncreaseDecrease" abstract="false" name="DefinedBenefitPlanAssumptionsUsedCalculatingNetPeriodicBenefitCostRateOfExpectedLongTermReturnOnAssetsIncreaseDecrease" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:percentItemType"/>
+  <xs:element id="brn_StockIssuanceCostsAxis" abstract="true" name="StockIssuanceCostsAxis" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrldt:dimensionItem" type="xbrli:stringItemType"/>
+  <xs:element id="brn_OilAndNaturalGasPropertiesAbstract" abstract="true" name="OilAndNaturalGasPropertiesAbstract" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="brn_HillsdownAlbertaCanadaMember" abstract="true" name="HillsdownAlbertaCanadaMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="brn_ScheduleOfFairValueOfPlanAssetsTableTextBlock" abstract="false" name="ScheduleOfFairValueOfPlanAssetsTableTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:textBlockItemType"/>
+  <xs:element id="brn_CommissionsAndFeesMember" abstract="true" name="CommissionsAndFeesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="brn_OilAndGasAbandonmentAndReclamationCostCashDeposit" abstract="false" name="OilAndGasAbandonmentAndReclamationCostCashDeposit" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="brn_SaleOfStockMaximumAggregateSalesPrice" abstract="false" name="SaleOfStockMaximumAggregateSalesPrice" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="brn_AggregateGrossProceedsFromSaleOfResidentialLotsRangeAxis" abstract="true" name="AggregateGrossProceedsFromSaleOfResidentialLotsRangeAxis" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrldt:dimensionItem" type="xbrli:stringItemType"/>
+  <xs:element id="brn_DeferredTaxLiabilitiesUSOilAndGasPropertyAndEquipmentState" abstract="false" name="DeferredTaxLiabilitiesUSOilAndGasPropertyAndEquipmentState" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="brn_PropertyAndEquipmentAndAssetRetirementObligationDisclosureTextBlock" abstract="false" name="PropertyAndEquipmentAndAssetRetirementObligationDisclosureTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:textBlockItemType"/>
+  <xs:element id="brn_ShareBasedCompensationArrangementByShareBasedPaymentAwardFairValueAssumptionsExpectedForfeitureRate" abstract="false" name="ShareBasedCompensationArrangementByShareBasedPaymentAwardFairValueAssumptionsExpectedForfeitureRate" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:percentItemType"/>
+  <xs:element id="brn_PaymentsEntitledtobeReceivedasPercentageofGrossProceedsfromSaleofSingleFamilyLots" abstract="false" name="PaymentsEntitledtobeReceivedasPercentageofGrossProceedsfromSaleofSingleFamilyLots" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:percentItemType"/>
+  <xs:element id="brn_CashDistributionFromVariableInterestEntityNet" abstract="false" name="CashDistributionFromVariableInterestEntityNet" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="brn_NumberOfSingleFamilyLotsSold" abstract="false" name="NumberOfSingleFamilyLotsSold" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:integerItemType"/>
+  <xs:element id="brn_NumberOfLargeResidentialLotsRemainingToBeSold" abstract="false" name="NumberOfLargeResidentialLotsRemainingToBeSold" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="xbrli:integerItemType"/>
+  <xs:element id="brn_ShareBasedPaymentArrangementOthersMember" abstract="true" name="ShareBasedPaymentArrangementOthersMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="brn_DeferredTaxAssetsCanadaForeignCurrencyTranslationLoss" abstract="false" name="DeferredTaxAssetsCanadaForeignCurrencyTranslationLoss" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="brn_AggregateGrossProceedsFromSaleOfResidentialLotsRangeDomain" abstract="true" name="AggregateGrossProceedsFromSaleOfResidentialLotsRangeDomain" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="brn_EquityIncentivePlan2018Member" abstract="true" name="EquityIncentivePlan2018Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="brn_AdditionalGrossProceedsToBeRaisedByIssuerFromOtherPartiesUnderThePrivatePlacementOffering" abstract="false" name="AdditionalGrossProceedsToBeRaisedByIssuerFromOtherPartiesUnderThePrivatePlacementOffering" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="brn_PaycheckProtectionProgramLoanMember" abstract="true" name="PaycheckProtectionProgramLoanMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="brn_ValuationAllowanceDeferredTaxAssetChangeInAmountRecognizedInAccumulatedOtherComprehensiveIncomeLoss" abstract="false" name="ValuationAllowanceDeferredTaxAssetChangeInAmountRecognizedInAccumulatedOtherComprehensiveIncomeLoss" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="brn_SaleOfInterestInLeaseholdLandMember" abstract="true" name="SaleOfInterestInLeaseholdLandMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="brn_NonCashRentIncomeExpense" abstract="false" name="NonCashRentIncomeExpense" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="brn_ContractDrillingMember" abstract="true" name="ContractDrillingMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="brn_ProfitSharingRatioOfVariableInterestEntity" abstract="false" name="ProfitSharingRatioOfVariableInterestEntity" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="dtr-types:percentItemType"/>
+  <xs:element id="brn_CommitmentsAndContingenciesLineItems" abstract="true" name="CommitmentsAndContingenciesLineItems" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="brn_ScheduleOfPercentageOfSalesPaymentRevenuesTableTextBlock" abstract="false" name="ScheduleOfPercentageOfSalesPaymentRevenuesTableTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:textBlockItemType"/>
+  <xs:element id="brn_DeferredTaxAssetsTaxDeferredExpenseReservesAndAccrualsAccruedLiabilitiesDomestic" abstract="false" name="DeferredTaxAssetsTaxDeferredExpenseReservesAndAccrualsAccruedLiabilitiesDomestic" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="brn_RevenueRecognitionInvestmentsInRealEstatePolicyTextBlock" abstract="false" name="RevenueRecognitionInvestmentsInRealEstatePolicyTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:textBlockItemType"/>
+  <xs:element id="brn_DrillingRigsAndEquipmentMember" abstract="true" name="DrillingRigsAndEquipmentMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="brn_CanadaEmergencyBusinessAccountLoanMember" abstract="true" name="CanadaEmergencyBusinessAccountLoanMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="brn_IncentiveCompensationPlanRecordedLiability" abstract="false" name="IncentiveCompensationPlanRecordedLiability" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="brn_FutureNetCashFlowsRelatingToProvedOilAndGasReservesExcludingAbandonmentDecommissioningAndReclamation" abstract="false" name="FutureNetCashFlowsRelatingToProvedOilAndGasReservesExcludingAbandonmentDecommissioningAndReclamation" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="brn_LandDevelopmentPartnershipsMember" abstract="true" name="LandDevelopmentPartnershipsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="brn_CumulativeCashDistributionsFromKukioResortLandDevelopmentPartnershipsInExcessOfOurInvestmentBalance" abstract="false" name="CumulativeCashDistributionsFromKukioResortLandDevelopmentPartnershipsInExcessOfOurInvestmentBalance" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="brn_IndirectlyAcquiredInterestMember" abstract="true" name="IndirectlyAcquiredInterestMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="brn_ContractReceivableRetainagePercentage" abstract="false" name="ContractReceivableRetainagePercentage" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="dtr-types:percentItemType"/>
+  <xs:element id="brn_StockIssuanceCostsDomain" abstract="true" name="StockIssuanceCostsDomain" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="brn_NumberofLotsRemainingtobeSold" abstract="false" name="NumberofLotsRemainingtobeSold" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="xbrli:integerItemType"/>
+  <xs:element id="brn_KDAcquisitionIILPMember" abstract="true" name="KDAcquisitionIILPMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="brn_FederalTaxExpenseBenefitOfOperatingLossCarryforwards" abstract="false" name="FederalTaxExpenseBenefitOfOperatingLossCarryforwards" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="brn_AggregateGrossProceedsRangeTwoMember" abstract="true" name="AggregateGrossProceedsRangeTwoMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="brn_FixedIncomeExchangeTradedFundsMember" abstract="true" name="FixedIncomeExchangeTradedFundsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="brn_BrokersFeePercentFeeOfCapitalInvested" abstract="false" name="BrokersFeePercentFeeOfCapitalInvested" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="dtr-types:percentItemType"/>
+  <xs:element id="brn_GainLossonSaleofAssetsMember" abstract="true" name="GainLossonSaleofAssetsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="brn_AggregatePurchasePriceForNumberOfSubscriptionReceiptsToBePurchased" abstract="false" name="AggregatePurchasePriceForNumberOfSubscriptionReceiptsToBePurchased" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="brn_StateAndLocalTaxExpenseBenefitOfOperatingLossCarryforwards" abstract="false" name="StateAndLocalTaxExpenseBenefitOfOperatingLossCarryforwards" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="brn_Netchangeduetopurchasesandsalesofmineralsinplace" abstract="false" name="Netchangeduetopurchasesandsalesofmineralsinplace" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="brn_OilAndNaturalGasMember" abstract="true" name="OilAndNaturalGasMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="brn_PropertyPromotionAndMarketingFeePercentFee" abstract="false" name="PropertyPromotionAndMarketingFeePercentFee" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:percentItemType"/>
+  <xs:element id="brn_CollaborativeAgreementCommitmentToConstructImprovementsTerm" abstract="false" name="CollaborativeAgreementCommitmentToConstructImprovementsTerm" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="xbrli:integerItemType"/>
+  <xs:element id="brn_ProvedOilAndGasPropertyFullCostMethodDepletion" abstract="false" name="ProvedOilAndGasPropertyFullCostMethodDepletion" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="brn_DeferredTaxLiabilitiesPropertyPlantAndEquipmentForeign" abstract="false" name="DeferredTaxLiabilitiesPropertyPlantAndEquipmentForeign" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="brn_IncomeLossFromContinuingOperationsBeforeIncomeTaxesAndAfterAdjustingIncomeLossForNoncontrollingInterestsForeign" abstract="false" name="IncomeLossFromContinuingOperationsBeforeIncomeTaxesAndAfterAdjustingIncomeLossForNoncontrollingInterestsForeign" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="brn_GrosVentrePartnersLLCMember" abstract="true" name="GrosVentrePartnersLLCMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="brn_SegmentReportingInformationAssetsAbstract" abstract="true" name="SegmentReportingInformationAssetsAbstract" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="brn_LeaseRightOfUseAsset" abstract="false" name="LeaseRightOfUseAsset" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="brn_AssetRetirementObligationLiabilitiesDivested" abstract="false" name="AssetRetirementObligationLiabilitiesDivested" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="brn_StateAndLocalTaxExpenseBenefitBeforeOperatingLossCarryforward" abstract="false" name="StateAndLocalTaxExpenseBenefitBeforeOperatingLossCarryforward" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="brn_LandInterestMember" abstract="true" name="LandInterestMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="brn_GasProcessingandOtherMember" abstract="true" name="GasProcessingandOtherMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="brn_OilAndGasPropertiesPropertyPlanAndEquipmentNet" abstract="false" name="OilAndGasPropertiesPropertyPlanAndEquipmentNet" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="brn_KDDevelopmentLLCMember" abstract="true" name="KDDevelopmentLLCMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="brn_AccumulatedOtherComprehensiveIncomeLossDefinedBenefitPensionAndOtherPostretirementPlansNetOfTaxRollForward" abstract="true" name="AccumulatedOtherComprehensiveIncomeLossDefinedBenefitPensionAndOtherPostretirementPlansNetOfTaxRollForward" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="brn_NumberofResidentialLotsRemainingtobeSold" abstract="false" name="NumberofResidentialLotsRemainingtobeSold" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="xbrli:integerItemType"/>
+  <xs:element id="brn_CashDistributionFromEquityMethodInvestmentGross" abstract="false" name="CashDistributionFromEquityMethodInvestmentGross" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="brn_ProceedsFromSaleofInterestinLeaseholdLand" abstract="false" name="ProceedsFromSaleofInterestinLeaseholdLand" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="brn_PropertyAndEquipmentAndAssetRetirementObligationDisclosureAbstract" abstract="true" name="PropertyAndEquipmentAndAssetRetirementObligationDisclosureAbstract" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="brn_IncomeTaxReconciliationChangeInForeignTaxNetCreditables" abstract="false" name="IncomeTaxReconciliationChangeInForeignTaxNetCreditables" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="brn_CashDistributionFromEquityMethodInvestmentNet" abstract="false" name="CashDistributionFromEquityMethodInvestmentNet" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="brn_KDKaupulehuLLLPIncrementIMember" abstract="true" name="KDKaupulehuLLLPIncrementIMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="brn_NumberOfOriginalSizeResidentialLotsRemainingToBeSold" abstract="false" name="NumberOfOriginalSizeResidentialLotsRemainingToBeSold" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="xbrli:integerItemType"/>
+  <xs:element id="brn_AccruedCapitalExpendituresCurrent" abstract="false" name="AccruedCapitalExpendituresCurrent" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="brn_AssetsAndLeaseLiabilitiesLesseeTableTextBlock" abstract="false" name="AssetsAndLeaseLiabilitiesLesseeTableTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:textBlockItemType"/>
+  <xs:element id="brn_AssetRetirementObligationAbandonmentAndReclamationCostCashDepositReduction" abstract="false" name="AssetRetirementObligationAbandonmentAndReclamationCostCashDepositReduction" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="brn_DefinedBenefitPlanBenefitObligationTerminationOfPostRetirementMedicalPlan" abstract="false" name="DefinedBenefitPlanBenefitObligationTerminationOfPostRetirementMedicalPlan" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="brn_TheTaxBenefitsPreservationPlanMember" abstract="true" name="TheTaxBenefitsPreservationPlanMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="brn_FederalTaxExpenseBenefitBeforeOperatingLossCarryforwards" abstract="false" name="FederalTaxExpenseBenefitBeforeOperatingLossCarryforwards" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="brn_SupplementalLeaseInformationLesseeTableTextBlock" abstract="false" name="SupplementalLeaseInformationLesseeTableTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:textBlockItemType"/>
+  <xs:element id="brn_ShareBasedPaymentArrangement10OwnerEmployeeMember" abstract="true" name="ShareBasedPaymentArrangement10OwnerEmployeeMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="brn_PercentDifferenceInCapitalizedCostsDividedByProvedReservesIfTheGainIsRecordedAsOpposedToBeingCreditedAgainstTheFullCostPool" abstract="false" name="PercentDifferenceInCapitalizedCostsDividedByProvedReservesIfTheGainIsRecordedAsOpposedToBeingCreditedAgainstTheFullCostPool" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:percentItemType"/>
+  <xs:element id="brn_FeesRelatedToSaleOfInterestInLeaseholdLand" abstract="false" name="FeesRelatedToSaleOfInterestInLeaseholdLand" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="brn_IncreaseDecreaseinOilandNaturalGasExplorationandDevelopmentAccruals" abstract="false" name="IncreaseDecreaseinOilandNaturalGasExplorationandDevelopmentAccruals" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="brn_KaupulehuDevelopmentsMember" abstract="true" name="KaupulehuDevelopmentsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="brn_AuditorInformationAbstract" abstract="true" name="AuditorInformationAbstract" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="brn_NumberOfLimitedLiabilityLimitedPartnershipsFormed" abstract="false" name="NumberOfLimitedLiabilityLimitedPartnershipsFormed" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:integerItemType"/>
+  <xs:element id="brn_SaleofInterestinLeaseholdLandNetofFeesPaid" abstract="false" name="SaleofInterestinLeaseholdLandNetofFeesPaid" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="brn_CollaborativeAgreementPercentageOfCumulativeNetProfitsPriorityPayment" abstract="false" name="CollaborativeAgreementPercentageOfCumulativeNetProfitsPriorityPayment" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="dtr-types:percentItemType"/>
+  <xs:element id="brn_ProceedsFromSaleOfInterestInLeaseholdLandNet" abstract="false" name="ProceedsFromSaleOfInterestInLeaseholdLandNet" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="brn_ReplayKaupulehuDevelopmentMember" abstract="true" name="ReplayKaupulehuDevelopmentMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="brn_AssetRetirementOblgationDiscountRate" abstract="false" name="AssetRetirementOblgationDiscountRate" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:percentItemType"/>
+  <xs:element id="brn_ForeignTaxExpenseBenefitOfOperatingLossCarryforwards" abstract="false" name="ForeignTaxExpenseBenefitOfOperatingLossCarryforwards" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="brn_OilAndNaturalGasPropertiesLineItems" abstract="true" name="OilAndNaturalGasPropertiesLineItems" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="brn_LandInvestmentMember" abstract="true" name="LandInvestmentMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="brn_SignificantAccountingPoliciesLineItems" abstract="true" name="SignificantAccountingPoliciesLineItems" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="brn_CommonStockPurchaseRightsMember" abstract="true" name="CommonStockPurchaseRightsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="brn_PropertyLegalFeesPercentage" abstract="false" name="PropertyLegalFeesPercentage" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:percentItemType"/>
+  <xs:element id="brn_IncrementIILotsize" abstract="false" name="IncrementIILotsize" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="dtr-types:areaItemType"/>
+  <xs:element id="brn_DefinedBenefitPlanMinimumRequisiteServicePeriod" abstract="false" name="DefinedBenefitPlanMinimumRequisiteServicePeriod" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:durationItemType"/>
+  <xs:element id="brn_ProvedOilAndGasPropertyFullCostMethodGross" abstract="false" name="ProvedOilAndGasPropertyFullCostMethodGross" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="brn_CumulativeCashDistributionsFromKukioResortLandDevelopmentPartnershipsPreferredReturnMadeToDate" abstract="false" name="CumulativeCashDistributionsFromKukioResortLandDevelopmentPartnershipsPreferredReturnMadeToDate" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="brn_BarnwellIndustriesIncMember" abstract="true" name="BarnwellIndustriesIncMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="brn_AtTheMarketRelatedProfessionalServicesMember" abstract="true" name="AtTheMarketRelatedProfessionalServicesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="brn_UnprovedOilAndGasPropertyFullCostMethodGross" abstract="false" name="UnprovedOilAndGasPropertyFullCostMethodGross" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="brn_OilAndGasPropertiesPropertyPlantAndEquipmentGross" abstract="false" name="OilAndGasPropertiesPropertyPlantAndEquipmentGross" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="brn_DrillingAndPumpMember" abstract="true" name="DrillingAndPumpMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="brn_UnrecognizedTaxBenefitsIncreaseDecreaseResultingfromAccruedInterestRelatedtoTaxPositionsTaken" abstract="false" name="UnrecognizedTaxBenefitsIncreaseDecreaseResultingfromAccruedInterestRelatedtoTaxPositionsTaken" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="brn_DeferredTaxAssetsPropertyPlantAndEquipmentDomestic" abstract="false" name="DeferredTaxAssetsPropertyPlantAndEquipmentDomestic" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="brn_KDKaupulehuLLLPIncrementIIMember" abstract="true" name="KDKaupulehuLLLPIncrementIIMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="brn_NumberOfSingleFamilyLotsRightsTo" abstract="false" name="NumberOfSingleFamilyLotsRightsTo" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="xbrli:integerItemType"/>
+  <xs:element id="brn_ShareBasedPaymentArrangementIndependentDirectorMember" abstract="true" name="ShareBasedPaymentArrangementIndependentDirectorMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="brn_ProvedOilAndGasPropertyFullCostMethodNet" abstract="false" name="ProvedOilAndGasPropertyFullCostMethodNet" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="brn_ForeignTaxExpenseBenefitBeforeOperatingLossCarryforwards" abstract="false" name="ForeignTaxExpenseBenefitBeforeOperatingLossCarryforwards" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="brn_PricePerSubscriptionReceipt" abstract="false" name="PricePerSubscriptionReceipt" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="dtr-types:perShareItemType"/>
+  <xs:element id="brn_NumberOfSubscriptionReceiptsAgreedToBePurchased" abstract="false" name="NumberOfSubscriptionReceiptsAgreedToBePurchased" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="xbrli:sharesItemType"/>
+  <xs:element id="brn_AtTheMarketOfferingMember" abstract="true" name="AtTheMarketOfferingMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="brn_NumberofLotsDeveloped" abstract="false" name="NumberofLotsDeveloped" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:integerItemType"/>
+  <xs:element id="brn_CumulativeCashDistributionsFromKukioResortLandDevelopmentPartnershipsPartialPaymentPreferredReturn" abstract="false" name="CumulativeCashDistributionsFromKukioResortLandDevelopmentPartnershipsPartialPaymentPreferredReturn" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="brn_SignificantAccountingPoliciesTable" abstract="true" name="SignificantAccountingPoliciesTable" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrldt:hypercubeItem" type="xbrli:stringItemType"/>
+  <xs:element id="brn_AccumulatedOtherComprehensiveIncomeLossForeignCurrencyTranslationAdjustmentNetOfTaxRollForward" abstract="true" name="AccumulatedOtherComprehensiveIncomeLossForeignCurrencyTranslationAdjustmentNetOfTaxRollForward" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="brn_DefinedBenefitPlanBasisConsecutivePeriodOfEmployeesHighestAverageEarnings" abstract="false" name="DefinedBenefitPlanBasisConsecutivePeriodOfEmployeesHighestAverageEarnings" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:durationItemType"/>
+  <xs:element id="brn_OilAndNaturalGasPropertiesTable" abstract="true" name="OilAndNaturalGasPropertiesTable" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrldt:hypercubeItem" type="xbrli:stringItemType"/>
+  <xs:element id="brn_EquitySecuritiesExchangeTradedFundsMember" abstract="true" name="EquitySecuritiesExchangeTradedFundsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="brn_CapitalizedCostsProvedPropertiesNet" abstract="false" name="CapitalizedCostsProvedPropertiesNet" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="brn_FourPinesOperatingLLCMember" abstract="true" name="FourPinesOperatingLLCMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="brn_WorkingInterestInOilAndGasLeaseholdAcreagePercentage" abstract="false" name="WorkingInterestInOilAndGasLeaseholdAcreagePercentage" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="dtr-types:percentItemType"/>
+  <xs:element id="brn_KDKaupulehuLLLPMember" abstract="false" name="KDKaupulehuLLLPMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="brn_DeferredTaxLiabilitiesUSTaxLawImpactOfForeignBranchDeferredTaxAssetForeign" abstract="false" name="DeferredTaxLiabilitiesUSTaxLawImpactOfForeignBranchDeferredTaxAssetForeign" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="brn_AssetPurchaseAndSaleAgreementMember" abstract="true" name="AssetPurchaseAndSaleAgreementMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="brn_DeferredTaxAssetsUSForeignCurrencyTranslationLoss" abstract="false" name="DeferredTaxAssetsUSForeignCurrencyTranslationLoss" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="brn_DeferredTaxLiabilitiesUSOilAndGasPropertyAndEquipmentDomestic" abstract="false" name="DeferredTaxLiabilitiesUSOilAndGasPropertyAndEquipmentDomestic" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="brn_KDKukioResortsLLLPMember" abstract="false" name="KDKukioResortsLLLPMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="brn_RevenuefromSaleofInterestinLeaseholdLand" abstract="false" name="RevenuefromSaleofInterestinLeaseholdLand" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="brn_CollaborativeAgreementFeesPercentageOfCumulativeNetProfits" abstract="false" name="CollaborativeAgreementFeesPercentageOfCumulativeNetProfits" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="dtr-types:percentItemType"/>
+  <xs:element id="brn_KDKaupulehuLLLPIncrementIIPhase2AMember" abstract="true" name="KDKaupulehuLLLPIncrementIIPhase2AMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="brn_IncomeLossFromContinuingOperationsBeforeIncomeTaxesAbstract" abstract="true" name="IncomeLossFromContinuingOperationsBeforeIncomeTaxesAbstract" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="brn_IncrementIMember" abstract="true" name="IncrementIMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="brn_OilAndNaturalGasLiquidsReservesMember" abstract="true" name="OilAndNaturalGasLiquidsReservesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="brn_SpiritRiverAlbertaCanadaMember" abstract="true" name="SpiritRiverAlbertaCanadaMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="brn_DeferredTaxAssetsPropertyPlantandEquipmentForeign" abstract="false" name="DeferredTaxAssetsPropertyPlantandEquipmentForeign" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="brn_PercentageOfDebtForgiveness" abstract="false" name="PercentageOfDebtForgiveness" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:percentItemType"/>
+  <xs:element id="brn_CommitmentsAndContingenciesTable" abstract="true" name="CommitmentsAndContingenciesTable" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrldt:hypercubeItem" type="xbrli:stringItemType"/>
+  <xs:element id="brn_ScheduleOfFinancialInformationRelatedToEquityMethodInvestmentsTableTextBlock" abstract="false" name="ScheduleOfFinancialInformationRelatedToEquityMethodInvestmentsTableTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:textBlockItemType"/>
+  <xs:element id="brn_KDKona2013LLLPMember" abstract="true" name="KDKona2013LLLPMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="brn_BarnwellTexasLLPMember" abstract="true" name="BarnwellTexasLLPMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+</xs:schema>

@@ -1,0 +1,987 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--XBRL Document Created with Wdesk from Workiva-->
+<!--Copyright 2022 Workiva-->
+<!--r:c043ae69-3ab7-47d3-b173-6a80a46bc105,g:b4a49dc4-6ebd-44b9-9c32-52f5e5f8b8c0-->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:cnx="http://www.cnx.com/20211231" xmlns:xbrli="http://www.xbrl.org/2003/instance" xmlns:dtr-types="http://www.xbrl.org/dtr/type/2020-01-21" xmlns:xbrldt="http://xbrl.org/2005/xbrldt" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://www.cnx.com/20211231">
+  <xs:import namespace="http://fasb.org/srt/2021-01-31" schemaLocation="https://xbrl.fasb.org/srt/2021/elts/srt-2021-01-31.xsd"/>
+  <xs:import namespace="http://fasb.org/us-gaap/2021-01-31" schemaLocation="https://xbrl.fasb.org/us-gaap/2021/elts/us-gaap-2021-01-31.xsd"/>
+  <xs:import namespace="http://www.w3.org/1999/xlink" schemaLocation="http://www.xbrl.org/2003/xlink-2003-12-31.xsd"/>
+  <xs:import namespace="http://www.xbrl.org/2003/instance" schemaLocation="http://www.xbrl.org/2003/xbrl-instance-2003-12-31.xsd"/>
+  <xs:import namespace="http://www.xbrl.org/2003/linkbase" schemaLocation="http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd"/>
+  <xs:import namespace="http://www.xbrl.org/dtr/type/2020-01-21" schemaLocation="https://www.xbrl.org/dtr/type/2020-01-21/types.xsd"/>
+  <xs:import namespace="http://xbrl.org/2005/xbrldt" schemaLocation="http://www.xbrl.org/2005/xbrldt-2005.xsd"/>
+  <xs:import namespace="http://xbrl.sec.gov/dei/2021q4" schemaLocation="https://xbrl.sec.gov/dei/2021q4/dei-2021q4.xsd"/>
+  <xs:annotation>
+    <xs:appinfo>
+      <link:linkbaseRef xmlns:xlink="http://www.w3.org/1999/xlink" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="cnx-20211231_lab.xml" xlink:role="http://www.xbrl.org/2003/role/labelLinkbaseRef" xlink:type="simple"/>
+      <link:linkbaseRef xmlns:xlink="http://www.w3.org/1999/xlink" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="cnx-20211231_pre.xml" xlink:role="http://www.xbrl.org/2003/role/presentationLinkbaseRef" xlink:type="simple"/>
+      <link:linkbaseRef xmlns:xlink="http://www.w3.org/1999/xlink" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="cnx-20211231_cal.xml" xlink:role="http://www.xbrl.org/2003/role/calculationLinkbaseRef" xlink:type="simple"/>
+      <link:linkbaseRef xmlns:xlink="http://www.w3.org/1999/xlink" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="cnx-20211231_def.xml" xlink:role="http://www.xbrl.org/2003/role/definitionLinkbaseRef" xlink:type="simple"/>
+      <link:roleType id="CoverPage" roleURI="http://www.cnx.com/role/CoverPage">
+        <link:definition>000010001 - Document - Cover Page</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="AuditInformation" roleURI="http://www.cnx.com/role/AuditInformation">
+        <link:definition>000020002 - Document - Audit Information</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ConsolidatedStatementsofIncome" roleURI="http://www.cnx.com/role/ConsolidatedStatementsofIncome">
+        <link:definition>100010003 - Statement - Consolidated Statements of Income</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ConsolidatedStatementofComprehensiveIncome" roleURI="http://www.cnx.com/role/ConsolidatedStatementofComprehensiveIncome">
+        <link:definition>100020004 - Statement - Consolidated Statement of Comprehensive Income</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ConsolidatedStatementofComprehensiveIncomeParentheticals" roleURI="http://www.cnx.com/role/ConsolidatedStatementofComprehensiveIncomeParentheticals">
+        <link:definition>100030005 - Statement - Consolidated Statement of Comprehensive Income (Parentheticals)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ConsolidatedBalanceSheets" roleURI="http://www.cnx.com/role/ConsolidatedBalanceSheets">
+        <link:definition>100040006 - Statement - Consolidated Balance Sheets</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ConsolidatedBalanceSheetsParentheticals" roleURI="http://www.cnx.com/role/ConsolidatedBalanceSheetsParentheticals">
+        <link:definition>100050007 - Statement - Consolidated Balance Sheets (Parentheticals)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ConsolidatedStatementsofStockholdersEquity" roleURI="http://www.cnx.com/role/ConsolidatedStatementsofStockholdersEquity">
+        <link:definition>100060008 - Statement - Consolidated Statements of Stockholders' Equity</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ConsolidatedStatementsofCashFlows" roleURI="http://www.cnx.com/role/ConsolidatedStatementsofCashFlows">
+        <link:definition>100070009 - Statement - Consolidated Statements of Cash Flows</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SignificantAccountingPolicies" roleURI="http://www.cnx.com/role/SignificantAccountingPolicies">
+        <link:definition>210011001 - Disclosure - Significant Accounting Policies</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SignificantAccountingPoliciesPolicies" roleURI="http://www.cnx.com/role/SignificantAccountingPoliciesPolicies">
+        <link:definition>220022001 - Disclosure - Significant Accounting Policies (Policies)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SignificantAccountingPoliciesTables" roleURI="http://www.cnx.com/role/SignificantAccountingPoliciesTables">
+        <link:definition>230033001 - Disclosure - Significant Accounting Policies (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SignificantAccountingPoliciesBasisofConsolidationDetails" roleURI="http://www.cnx.com/role/SignificantAccountingPoliciesBasisofConsolidationDetails">
+        <link:definition>240044001 - Disclosure - Significant Accounting Policies - Basis of Consolidation (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SignificantAccountingPoliciesScheduleofCashandRestrictedCashDetails" roleURI="http://www.cnx.com/role/SignificantAccountingPoliciesScheduleofCashandRestrictedCashDetails">
+        <link:definition>240054002 - Disclosure - Significant Accounting Policies - Schedule of Cash and Restricted Cash (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SignificantAccountingPoliciesTradeAccountsReceivableandAllowanceforCreditLossesDetails" roleURI="http://www.cnx.com/role/SignificantAccountingPoliciesTradeAccountsReceivableandAllowanceforCreditLossesDetails">
+        <link:definition>240064003 - Disclosure - Significant Accounting Policies - Trade Accounts Receivable and Allowance for Credit Losses (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SignificantAccountingPoliciesPropertyPlantandEquipmentDetails" roleURI="http://www.cnx.com/role/SignificantAccountingPoliciesPropertyPlantandEquipmentDetails">
+        <link:definition>240074004 - Disclosure - Significant Accounting Policies - Property, Plant and Equipment (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SignificantAccountingPoliciesImpairmentofProvedandUnprovedPropertiesDetails" roleURI="http://www.cnx.com/role/SignificantAccountingPoliciesImpairmentofProvedandUnprovedPropertiesDetails">
+        <link:definition>240084005 - Disclosure - Significant Accounting Policies - Impairment of Proved and Unproved Properties (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SignificantAccountingPoliciesImpairmentofGoodwillandDefiniteLivedIntangibleAssetsDetails" roleURI="http://www.cnx.com/role/SignificantAccountingPoliciesImpairmentofGoodwillandDefiniteLivedIntangibleAssetsDetails">
+        <link:definition>240094006 - Disclosure - Significant Accounting Policies - Impairment of Goodwill and Definite-Lived Intangible Assets (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SignificantAccountingPoliciesInvestmentPlanDetails" roleURI="http://www.cnx.com/role/SignificantAccountingPoliciesInvestmentPlanDetails">
+        <link:definition>240104007 - Disclosure - Significant Accounting Policies - Investment Plan (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="EarningsPerShare" roleURI="http://www.cnx.com/role/EarningsPerShare">
+        <link:definition>210111002 - Disclosure - Earnings Per Share</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="EarningsPerShareTables" roleURI="http://www.cnx.com/role/EarningsPerShareTables">
+        <link:definition>230123002 - Disclosure - Earnings Per Share (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="EarningsPerShareNarrativeDetails" roleURI="http://www.cnx.com/role/EarningsPerShareNarrativeDetails">
+        <link:definition>240134008 - Disclosure - Earnings Per Share - Narrative (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="EarningsPerShareAntiDilutiveOptionsandUnitsExcludedfromEarningsPerShareDetails" roleURI="http://www.cnx.com/role/EarningsPerShareAntiDilutiveOptionsandUnitsExcludedfromEarningsPerShareDetails">
+        <link:definition>240144009 - Disclosure - Earnings Per Share - Anti-Dilutive Options and Units Excluded from Earnings Per Share (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="EarningsPerShareComputationofBasicandDilutedLossDetails" roleURI="http://www.cnx.com/role/EarningsPerShareComputationofBasicandDilutedLossDetails">
+        <link:definition>240154010 - Disclosure - Earnings Per Share - Computation of Basic and Diluted (Loss) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="EarningsPerShareSharesofCommonStockOutstandingDetails" roleURI="http://www.cnx.com/role/EarningsPerShareSharesofCommonStockOutstandingDetails">
+        <link:definition>240164011 - Disclosure - Earnings Per Share - Shares of Common Stock Outstanding (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RevenueFromContractsWithCustomers" roleURI="http://www.cnx.com/role/RevenueFromContractsWithCustomers">
+        <link:definition>210171003 - Disclosure - Revenue From Contracts With Customers</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RevenueFromContractsWithCustomersTables" roleURI="http://www.cnx.com/role/RevenueFromContractsWithCustomersTables">
+        <link:definition>230183003 - Disclosure - Revenue From Contracts With Customers (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RevenueFromContractsWithCustomersNarrativeDetails" roleURI="http://www.cnx.com/role/RevenueFromContractsWithCustomersNarrativeDetails">
+        <link:definition>240194012 - Disclosure - Revenue From Contracts With Customers - Narrative (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RevenueFromContractsWithCustomersDisaggregationofRevenueDetails" roleURI="http://www.cnx.com/role/RevenueFromContractsWithCustomersDisaggregationofRevenueDetails">
+        <link:definition>240204013 - Disclosure - Revenue From Contracts With Customers - Disaggregation of Revenue (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RevenueFromContractsWithCustomersPerformanceObligationDetails" roleURI="http://www.cnx.com/role/RevenueFromContractsWithCustomersPerformanceObligationDetails">
+        <link:definition>240214014 - Disclosure - Revenue From Contracts With Customers - Performance Obligation (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RevenueFromContractsWithCustomersPerformanceObligationDetails_1" roleURI="http://www.cnx.com/role/RevenueFromContractsWithCustomersPerformanceObligationDetails_1">
+        <link:definition>240214014 - Disclosure - Revenue From Contracts With Customers - Performance Obligation (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="AcquisitionsandDispositions" roleURI="http://www.cnx.com/role/AcquisitionsandDispositions">
+        <link:definition>210221004 - Disclosure - Acquisitions and Dispositions</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="AcquisitionsandDispositionsNarrativeDetails" roleURI="http://www.cnx.com/role/AcquisitionsandDispositionsNarrativeDetails">
+        <link:definition>240234015 - Disclosure - Acquisitions and Dispositions - Narrative (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="StockRepurchase" roleURI="http://www.cnx.com/role/StockRepurchase">
+        <link:definition>210241005 - Disclosure - Stock Repurchase</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="StockRepurchaseDetails" roleURI="http://www.cnx.com/role/StockRepurchaseDetails">
+        <link:definition>240254016 - Disclosure - Stock Repurchase (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IncomeTaxes" roleURI="http://www.cnx.com/role/IncomeTaxes">
+        <link:definition>210261006 - Disclosure - Income Taxes</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IncomeTaxesTables" roleURI="http://www.cnx.com/role/IncomeTaxesTables">
+        <link:definition>230273004 - Disclosure - Income Taxes (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IncomeTaxesIncomeTaxBenefitsDetails" roleURI="http://www.cnx.com/role/IncomeTaxesIncomeTaxBenefitsDetails">
+        <link:definition>240284017 - Disclosure - Income Taxes - Income Tax Benefits (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IncomeTaxesNetDeferredTaxAssetsLiabilitiesDetails" roleURI="http://www.cnx.com/role/IncomeTaxesNetDeferredTaxAssetsLiabilitiesDetails">
+        <link:definition>240294018 - Disclosure - Income Taxes - Net Deferred Tax Assets/Liabilities (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IncomeTaxesNarrativeDetails" roleURI="http://www.cnx.com/role/IncomeTaxesNarrativeDetails">
+        <link:definition>240304019 - Disclosure - Income Taxes - Narrative (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IncomeTaxesEffectiveTaxRateReconciliationDetails" roleURI="http://www.cnx.com/role/IncomeTaxesEffectiveTaxRateReconciliationDetails">
+        <link:definition>240314020 - Disclosure - Income Taxes - Effective Tax Rate Reconciliation (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IncomeTaxesReconciliationofUnrecognizedTaxBenefitsDetails" roleURI="http://www.cnx.com/role/IncomeTaxesReconciliationofUnrecognizedTaxBenefitsDetails">
+        <link:definition>240324021 - Disclosure - Income Taxes - Reconciliation of Unrecognized Tax Benefits (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="AssetRetirementObligations" roleURI="http://www.cnx.com/role/AssetRetirementObligations">
+        <link:definition>210331007 - Disclosure - Asset Retirement Obligations</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="AssetRetirementObligationsTables" roleURI="http://www.cnx.com/role/AssetRetirementObligationsTables">
+        <link:definition>230343005 - Disclosure - Asset Retirement Obligations (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="AssetRetirementObligationsDetails" roleURI="http://www.cnx.com/role/AssetRetirementObligationsDetails">
+        <link:definition>240354022 - Disclosure - Asset Retirement Obligations (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="PropertyPlantandEquipment" roleURI="http://www.cnx.com/role/PropertyPlantandEquipment">
+        <link:definition>210361008 - Disclosure - Property, Plant and Equipment</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="PropertyPlantandEquipmentTables" roleURI="http://www.cnx.com/role/PropertyPlantandEquipmentTables">
+        <link:definition>230373006 - Disclosure - Property, Plant and Equipment (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="PropertyPlantandEquipmentSummaryDetails" roleURI="http://www.cnx.com/role/PropertyPlantandEquipmentSummaryDetails">
+        <link:definition>240384023 - Disclosure - Property, Plant and Equipment - Summary (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="PropertyPlantandEquipmentAssetsAmortizedbyUnitsofProductionDetails" roleURI="http://www.cnx.com/role/PropertyPlantandEquipmentAssetsAmortizedbyUnitsofProductionDetails">
+        <link:definition>240394024 - Disclosure - Property, Plant and Equipment - Assets Amortized by Units of Production (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="GoodwillandOtherIntangibleAssets" roleURI="http://www.cnx.com/role/GoodwillandOtherIntangibleAssets">
+        <link:definition>210401009 - Disclosure - Goodwill and Other Intangible Assets</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="GoodwillandOtherIntangibleAssetsTables" roleURI="http://www.cnx.com/role/GoodwillandOtherIntangibleAssetsTables">
+        <link:definition>230413007 - Disclosure - Goodwill and Other Intangible Assets (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="GoodwillandOtherIntangibleAssetsNarrativeDetails" roleURI="http://www.cnx.com/role/GoodwillandOtherIntangibleAssetsNarrativeDetails">
+        <link:definition>240424025 - Disclosure - Goodwill and Other Intangible Assets - Narrative (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="GoodwillandOtherIntangibleAssetsChangesinCarryingAmountofGoodwillDetails" roleURI="http://www.cnx.com/role/GoodwillandOtherIntangibleAssetsChangesinCarryingAmountofGoodwillDetails">
+        <link:definition>240434026 - Disclosure - Goodwill and Other Intangible Assets - Changes in Carrying Amount of Goodwill (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="GoodwillandOtherIntangibleAssetsCarryingAmountandAccumulatedAmortizationofIntangibleAssetsDetails" roleURI="http://www.cnx.com/role/GoodwillandOtherIntangibleAssetsCarryingAmountandAccumulatedAmortizationofIntangibleAssetsDetails">
+        <link:definition>240444027 - Disclosure - Goodwill and Other Intangible Assets - Carrying Amount and Accumulated Amortization of Intangible Assets (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RevolvingCreditFacilities" roleURI="http://www.cnx.com/role/RevolvingCreditFacilities">
+        <link:definition>210451010 - Disclosure - Revolving Credit Facilities</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RevolvingCreditFacilitiesDetails" roleURI="http://www.cnx.com/role/RevolvingCreditFacilitiesDetails">
+        <link:definition>240464028 - Disclosure - Revolving Credit Facilities (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="OtherAccruedLiabilities" roleURI="http://www.cnx.com/role/OtherAccruedLiabilities">
+        <link:definition>210471011 - Disclosure - Other Accrued Liabilities</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="OtherAccruedLiabilitiesTables" roleURI="http://www.cnx.com/role/OtherAccruedLiabilitiesTables">
+        <link:definition>230483008 - Disclosure - Other Accrued Liabilities (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="OtherAccruedLiabilitiesDetails" roleURI="http://www.cnx.com/role/OtherAccruedLiabilitiesDetails">
+        <link:definition>240494029 - Disclosure - Other Accrued Liabilities (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LongTermDebt" roleURI="http://www.cnx.com/role/LongTermDebt">
+        <link:definition>210501012 - Disclosure - Long-Term Debt</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LongTermDebtTables" roleURI="http://www.cnx.com/role/LongTermDebtTables">
+        <link:definition>230513009 - Disclosure - Long-Term Debt (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LongTermDebtScheduleofLongTermDebtDetails" roleURI="http://www.cnx.com/role/LongTermDebtScheduleofLongTermDebtDetails">
+        <link:definition>240524030 - Disclosure - Long-Term Debt - Schedule of Long-Term Debt (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LongTermDebtMaturitiesofLongTermDebtDetails" roleURI="http://www.cnx.com/role/LongTermDebtMaturitiesofLongTermDebtDetails">
+        <link:definition>240534031 - Disclosure - Long-Term Debt - Maturities of Long-Term Debt (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LongTermDebtNarrativeDetails" roleURI="http://www.cnx.com/role/LongTermDebtNarrativeDetails">
+        <link:definition>240544032 - Disclosure - Long-Term Debt - Narrative (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LongTermDebtScheduleofConvertibleDebtDetails" roleURI="http://www.cnx.com/role/LongTermDebtScheduleofConvertibleDebtDetails">
+        <link:definition>240554033 - Disclosure - Long-Term Debt - Schedule of Convertible Debt (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LongTermDebtScheduleofInterestDetails" roleURI="http://www.cnx.com/role/LongTermDebtScheduleofInterestDetails">
+        <link:definition>240564034 - Disclosure - Long-Term Debt - Schedule of Interest (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="Leases" roleURI="http://www.cnx.com/role/Leases">
+        <link:definition>210571013 - Disclosure - Leases</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LeasesTables" roleURI="http://www.cnx.com/role/LeasesTables">
+        <link:definition>230583010 - Disclosure - Leases (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LeasesNarrativeDetails" roleURI="http://www.cnx.com/role/LeasesNarrativeDetails">
+        <link:definition>240594035 - Disclosure - Leases - Narrative (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LeasesComponentsofLeaseCostDetails" roleURI="http://www.cnx.com/role/LeasesComponentsofLeaseCostDetails">
+        <link:definition>240604036 - Disclosure - Leases - Components of Lease Cost (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LeasesBalanceSheetInformationDetailsDetails" roleURI="http://www.cnx.com/role/LeasesBalanceSheetInformationDetailsDetails">
+        <link:definition>240614037 - Disclosure - Leases - Balance Sheet Information (Details) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LeasesSupplementalCashFlowInformationDetails" roleURI="http://www.cnx.com/role/LeasesSupplementalCashFlowInformationDetails">
+        <link:definition>240624038 - Disclosure - Leases - Supplemental Cash Flow Information (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LeasesMaturityofLeaseLiabilityDetails" roleURI="http://www.cnx.com/role/LeasesMaturityofLeaseLiabilityDetails">
+        <link:definition>240634039 - Disclosure - Leases - Maturity of Lease Liability (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LeasesMaturityofLeaseLiabilityDetails_1" roleURI="http://www.cnx.com/role/LeasesMaturityofLeaseLiabilityDetails_1">
+        <link:definition>240634039 - Disclosure - Leases - Maturity of Lease Liability (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LeasesTermsandDiscountRatesDetails" roleURI="http://www.cnx.com/role/LeasesTermsandDiscountRatesDetails">
+        <link:definition>240644040 - Disclosure - Leases - Terms and Discount Rates (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="Pension" roleURI="http://www.cnx.com/role/Pension">
+        <link:definition>210651014 - Disclosure - Pension</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="PensionTables" roleURI="http://www.cnx.com/role/PensionTables">
+        <link:definition>230663011 - Disclosure - Pension (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="PensionReconciliationofChangedinBenefitObligationsPlanAssetsandFundedStatusofPensionBenefitsDetails" roleURI="http://www.cnx.com/role/PensionReconciliationofChangedinBenefitObligationsPlanAssetsandFundedStatusofPensionBenefitsDetails">
+        <link:definition>240674041 - Disclosure - Pension - Reconciliation of Changed in Benefit Obligations, Plan Assets, and Funded Status of Pension Benefits (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="PensionComponentsofNetPeriodicBenefitCostDetails" roleURI="http://www.cnx.com/role/PensionComponentsofNetPeriodicBenefitCostDetails">
+        <link:definition>240684042 - Disclosure - Pension - Components of Net Periodic Benefit Cost (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="PensionAccumulatedBenefitObligationinExcessofPlanAssetsDetails" roleURI="http://www.cnx.com/role/PensionAccumulatedBenefitObligationinExcessofPlanAssetsDetails">
+        <link:definition>240694043 - Disclosure - Pension - Accumulated Benefit Obligation in Excess of Plan Assets (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="PensionWeightedAverageAssumptionsDetails" roleURI="http://www.cnx.com/role/PensionWeightedAverageAssumptionsDetails">
+        <link:definition>240704044 - Disclosure - Pension - Weighted Average Assumptions (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="PensionExpectedFutureBenefitPaymentDetails" roleURI="http://www.cnx.com/role/PensionExpectedFutureBenefitPaymentDetails">
+        <link:definition>240714045 - Disclosure - Pension - Expected Future Benefit Payment (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="StockBasedCompensation" roleURI="http://www.cnx.com/role/StockBasedCompensation">
+        <link:definition>210721015 - Disclosure - Stock-Based Compensation</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="StockBasedCompensationTables" roleURI="http://www.cnx.com/role/StockBasedCompensationTables">
+        <link:definition>230733012 - Disclosure - Stock-Based Compensation (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="StockBasedCompensationNarrativeDetails" roleURI="http://www.cnx.com/role/StockBasedCompensationNarrativeDetails">
+        <link:definition>240744046 - Disclosure - Stock-Based Compensation - Narrative (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="StockBasedCompensationOptionsGrantedAssumptionsandWeightedAverageFairValueDetails" roleURI="http://www.cnx.com/role/StockBasedCompensationOptionsGrantedAssumptionsandWeightedAverageFairValueDetails">
+        <link:definition>240754047 - Disclosure - Stock-Based Compensation - Options Granted, Assumptions and Weighted Average Fair Value (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="StockBasedCompensationStockandPerformanceOptionsRollforwardDetails" roleURI="http://www.cnx.com/role/StockBasedCompensationStockandPerformanceOptionsRollforwardDetails">
+        <link:definition>240764048 - Disclosure - Stock-Based Compensation - Stock and Performance Options Rollforward (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="StockBasedCompensationRestrictedandPerformanceStockUnitRollforwardDetails" roleURI="http://www.cnx.com/role/StockBasedCompensationRestrictedandPerformanceStockUnitRollforwardDetails">
+        <link:definition>240774049 - Disclosure - Stock-Based Compensation - Restricted and Performance Stock Unit Rollforward (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SupplementalCashFlowInformation" roleURI="http://www.cnx.com/role/SupplementalCashFlowInformation">
+        <link:definition>210781016 - Disclosure - Supplemental Cash Flow Information</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SupplementalCashFlowInformationTables" roleURI="http://www.cnx.com/role/SupplementalCashFlowInformationTables">
+        <link:definition>230793013 - Disclosure - Supplemental Cash Flow Information (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SupplementalCashFlowInformationDetails" roleURI="http://www.cnx.com/role/SupplementalCashFlowInformationDetails">
+        <link:definition>240804050 - Disclosure - Supplemental Cash Flow Information (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ConcentrationofCreditRiskandMajorCustomers" roleURI="http://www.cnx.com/role/ConcentrationofCreditRiskandMajorCustomers">
+        <link:definition>210811017 - Disclosure - Concentration of Credit Risk and Major Customers</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ConcentrationofCreditRiskandMajorCustomersTables" roleURI="http://www.cnx.com/role/ConcentrationofCreditRiskandMajorCustomersTables">
+        <link:definition>230823014 - Disclosure - Concentration of Credit Risk and Major Customers - (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ConcentrationofCreditRiskandMajorCustomersSummaryDetails" roleURI="http://www.cnx.com/role/ConcentrationofCreditRiskandMajorCustomersSummaryDetails">
+        <link:definition>240834051 - Disclosure - Concentration of Credit Risk and Major Customers - Summary (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ConcentrationofCreditRiskandMajorCustomersNarrativeDetails" roleURI="http://www.cnx.com/role/ConcentrationofCreditRiskandMajorCustomersNarrativeDetails">
+        <link:definition>240844052 - Disclosure - Concentration of Credit Risk and Major Customers - Narrative (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FairValueofFinancialInstruments" roleURI="http://www.cnx.com/role/FairValueofFinancialInstruments">
+        <link:definition>210851018 - Disclosure - Fair Value of Financial Instruments</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FairValueofFinancialInstrumentsTables" roleURI="http://www.cnx.com/role/FairValueofFinancialInstrumentsTables">
+        <link:definition>230863015 - Disclosure - Fair Value of Financial Instruments (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FairValueofFinancialInstrumentsFinancialInstrumentsMeasuredatFairValueonaRecurringBasisDetails" roleURI="http://www.cnx.com/role/FairValueofFinancialInstrumentsFinancialInstrumentsMeasuredatFairValueonaRecurringBasisDetails">
+        <link:definition>240874053 - Disclosure - Fair Value of Financial Instruments - Financial Instruments Measured at Fair Value on a Recurring Basis (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FairValueofFinancialInstrumentsFairValueDisclosuresDetails" roleURI="http://www.cnx.com/role/FairValueofFinancialInstrumentsFairValueDisclosuresDetails">
+        <link:definition>240884054 - Disclosure - Fair Value of Financial Instruments - Fair Value Disclosures (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="DerivativeInstruments" roleURI="http://www.cnx.com/role/DerivativeInstruments">
+        <link:definition>210891019 - Disclosure - Derivative Instruments</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="DerivativeInstrumentsTables" roleURI="http://www.cnx.com/role/DerivativeInstrumentsTables">
+        <link:definition>230903016 - Disclosure - Derivative Instruments (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="DerivativeInstrumentsNarrativeDetails" roleURI="http://www.cnx.com/role/DerivativeInstrumentsNarrativeDetails">
+        <link:definition>240914055 - Disclosure - Derivative Instruments - Narrative (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="DerivativeInstrumentsNotionalAmountsofDerivativeInstrumentsDetails" roleURI="http://www.cnx.com/role/DerivativeInstrumentsNotionalAmountsofDerivativeInstrumentsDetails">
+        <link:definition>240924056 - Disclosure - Derivative Instruments - Notional Amounts of Derivative Instruments (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="DerivativeInstrumentsFairValueofDerivativeInstrumentsDetails" roleURI="http://www.cnx.com/role/DerivativeInstrumentsFairValueofDerivativeInstrumentsDetails">
+        <link:definition>240934057 - Disclosure - Derivative Instruments - Fair Value of Derivative Instruments (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="DerivativeInstrumentsEffectofDerivativeInstrumentonStatementofIncomeDetails" roleURI="http://www.cnx.com/role/DerivativeInstrumentsEffectofDerivativeInstrumentonStatementofIncomeDetails">
+        <link:definition>240944058 - Disclosure - Derivative Instruments - Effect of Derivative Instrument on Statement of Income (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CommitmentsandContingentLiabilities" roleURI="http://www.cnx.com/role/CommitmentsandContingentLiabilities">
+        <link:definition>210951020 - Disclosure - Commitments and Contingent Liabilities</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CommitmentsandContingentLiabilitiesTables" roleURI="http://www.cnx.com/role/CommitmentsandContingentLiabilitiesTables">
+        <link:definition>230963017 - Disclosure - Commitments and Contingent Liabilities (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CommitmentsandContingentLiabilitiesNarrativeDetails" roleURI="http://www.cnx.com/role/CommitmentsandContingentLiabilitiesNarrativeDetails">
+        <link:definition>240974059 - Disclosure - Commitments and Contingent Liabilities - Narrative (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CommitmentsandContingentLiabilitiesMaximumPotentialTotalofFuturePaymentsUnderCommitmentInstrumentsDetails" roleURI="http://www.cnx.com/role/CommitmentsandContingentLiabilitiesMaximumPotentialTotalofFuturePaymentsUnderCommitmentInstrumentsDetails">
+        <link:definition>240984060 - Disclosure - Commitments and Contingent Liabilities - Maximum Potential Total of Future Payments Under Commitment Instruments (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CommitmentsandContingentLiabilitiesUnrecordedUnconditionalPurchaseObligationDetails" roleURI="http://www.cnx.com/role/CommitmentsandContingentLiabilitiesUnrecordedUnconditionalPurchaseObligationDetails">
+        <link:definition>240994061 - Disclosure - Commitments and Contingent Liabilities - Unrecorded Unconditional Purchase Obligation (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SegmentInformation" roleURI="http://www.cnx.com/role/SegmentInformation">
+        <link:definition>211001021 - Disclosure - Segment Information</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SegmentInformationTables" roleURI="http://www.cnx.com/role/SegmentInformationTables">
+        <link:definition>231013018 - Disclosure - Segment Information (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SegmentInformationIndustrySegmentResultsDetails" roleURI="http://www.cnx.com/role/SegmentInformationIndustrySegmentResultsDetails">
+        <link:definition>241024062 - Disclosure - Segment Information - Industry Segment Results (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SegmentInformationReconciliationofSegmentInformationRevenueandOtherIncomeDetails" roleURI="http://www.cnx.com/role/SegmentInformationReconciliationofSegmentInformationRevenueandOtherIncomeDetails">
+        <link:definition>241034063 - Disclosure - Segment Information - Reconciliation of Segment Information, Revenue and Other Income (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SupplementalGasDataunaudited" roleURI="http://www.cnx.com/role/SupplementalGasDataunaudited">
+        <link:definition>211041022 - Disclosure - Supplemental Gas Data (unaudited)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SupplementalGasDataunauditedTables" roleURI="http://www.cnx.com/role/SupplementalGasDataunauditedTables">
+        <link:definition>231053019 - Disclosure - Supplemental Gas Data (unaudited) (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SupplementalGasDataunauditedCapitalizedCostsDetails" roleURI="http://www.cnx.com/role/SupplementalGasDataunauditedCapitalizedCostsDetails">
+        <link:definition>241064064 - Disclosure - Supplemental Gas Data (unaudited) - Capitalized Costs (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SupplementalGasDataunauditedCostsIncurredforPropertyAcquisitionExplorationandDevelopmentDetails" roleURI="http://www.cnx.com/role/SupplementalGasDataunauditedCostsIncurredforPropertyAcquisitionExplorationandDevelopmentDetails">
+        <link:definition>241074065 - Disclosure - Supplemental Gas Data (unaudited) - Costs Incurred for Property Acquisition, Exploration and Development (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SupplementalGasDataunauditedResultsofOperationsDetails" roleURI="http://www.cnx.com/role/SupplementalGasDataunauditedResultsofOperationsDetails">
+        <link:definition>241084066 - Disclosure - Supplemental Gas Data (unaudited) - Results of Operations (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SupplementalGasDataunauditedAverageUnitPricesandAverageProductionCostsDetails" roleURI="http://www.cnx.com/role/SupplementalGasDataunauditedAverageUnitPricesandAverageProductionCostsDetails">
+        <link:definition>241094067 - Disclosure - Supplemental Gas Data (unaudited) - Average Unit Prices and Average Production Costs (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SupplementalGasDataunauditedNarrativeDetails" roleURI="http://www.cnx.com/role/SupplementalGasDataunauditedNarrativeDetails">
+        <link:definition>241104068 - Disclosure - Supplemental Gas Data (unaudited) - Narrative (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SupplementalGasDataunauditedProducingWellsDevelopedAcreageandUndevelopedAcreageDetails" roleURI="http://www.cnx.com/role/SupplementalGasDataunauditedProducingWellsDevelopedAcreageandUndevelopedAcreageDetails">
+        <link:definition>241114069 - Disclosure - Supplemental Gas Data (unaudited) - Producing Wells, Developed Acreage and Undeveloped Acreage (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SupplementalGasDataunauditedProvedUndevelopedReservesDetails" roleURI="http://www.cnx.com/role/SupplementalGasDataunauditedProvedUndevelopedReservesDetails">
+        <link:definition>241124070 - Disclosure - Supplemental Gas Data (unaudited) - Proved Undeveloped Reserves (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SupplementalGasDataunauditedCapitalizedExploratoryWellCostActivityDetails" roleURI="http://www.cnx.com/role/SupplementalGasDataunauditedCapitalizedExploratoryWellCostActivityDetails">
+        <link:definition>241134071 - Disclosure - Supplemental Gas Data (unaudited) - Capitalized Exploratory Well Cost Activity (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SupplementalGasDataunauditedFutureCashFlowofProvedReservesDetails" roleURI="http://www.cnx.com/role/SupplementalGasDataunauditedFutureCashFlowofProvedReservesDetails">
+        <link:definition>241144072 - Disclosure - Supplemental Gas Data (unaudited) - Future Cash Flow of Proved Reserves (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SupplementalGasDataunauditedChangeinStandardizedMeasureofDiscountedFutureNetCashFlowsDetails" roleURI="http://www.cnx.com/role/SupplementalGasDataunauditedChangeinStandardizedMeasureofDiscountedFutureNetCashFlowsDetails">
+        <link:definition>241154073 - Disclosure - Supplemental Gas Data (unaudited) - Change in Standardized Measure of Discounted Future Net Cash Flows (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ScheduleIIValuationandQualifyingAccounts" roleURI="http://www.cnx.com/role/ScheduleIIValuationandQualifyingAccounts">
+        <link:definition>211161023 - Disclosure - Schedule II - Valuation and Qualifying Accounts</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ScheduleIIValuationandQualifyingAccountsDetails" roleURI="http://www.cnx.com/role/ScheduleIIValuationandQualifyingAccountsDetails">
+        <link:definition>241174074 - Disclosure - Schedule II - Valuation and Qualifying Accounts (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element id="cnx_PaymentsForPurchaseOfCappedCallRelatedToConvertibleDebt" abstract="false" name="PaymentsForPurchaseOfCappedCallRelatedToConvertibleDebt" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="cnx_PreferredSharePurchaseRightsMember" abstract="true" name="PreferredSharePurchaseRightsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="cnx_CappedCallTransactionMember" abstract="true" name="CappedCallTransactionMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="cnx_AverageLiftingCostsExcludingAdValoremAndSeveranceTaxes" abstract="false" name="AverageLiftingCostsExcludingAdValoremAndSeveranceTaxes" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:decimalItemType"/>
+  <xs:element id="cnx_MarcellusShaleMember" abstract="true" name="MarcellusShaleMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="cnx_ShaleMember" abstract="true" name="ShaleMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="cnx_ProvedDevelopedAndUndevelopedReserveRevisionDueToFiveYearRule" abstract="false" name="ProvedDevelopedAndUndevelopedReserveRevisionDueToFiveYearRule" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:energyItemType"/>
+  <xs:element id="cnx_GrantedIn2020Member" abstract="true" name="GrantedIn2020Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="cnx_DevelopmentCostsPluggingAndAbandonmentCostsPresentValueOnDiscountedBasis" abstract="false" name="DevelopmentCostsPluggingAndAbandonmentCostsPresentValueOnDiscountedBasis" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="cnx_DefinedContributionPlanEmployerDiscretionaryContributionPercent" abstract="false" name="DefinedContributionPlanEmployerDiscretionaryContributionPercent" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:percentItemType"/>
+  <xs:element id="cnx_CapitalizedCostsOtherGasAssets" abstract="false" name="CapitalizedCostsOtherGasAssets" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="cnx_ProvedDevelopedAndUndevelopedReserveRevisionDueToRiskInWellDevelopment" abstract="false" name="ProvedDevelopedAndUndevelopedReserveRevisionDueToRiskInWellDevelopment" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:energyItemType"/>
+  <xs:element id="cnx_InterestRateSwapOnRevolvingCreditFacilityMember" abstract="true" name="InterestRateSwapOnRevolvingCreditFacilityMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="cnx_FutureNetCashFlowsRelatingToProvedOilAndGasReservesDevelopmentCostsCapital" abstract="false" name="FutureNetCashFlowsRelatingToProvedOilAndGasReservesDevelopmentCostsCapital" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="cnx_OtherRevenueAndOperatingIncome" abstract="false" name="OtherRevenueAndOperatingIncome" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="cnx_Convertible225SeniorNotesDue2026Member" abstract="true" name="Convertible225SeniorNotesDue2026Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="cnx_DebtInstrumentIssuancePeriodTwoMember" abstract="true" name="DebtInstrumentIssuancePeriodTwoMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="cnx_BoardApprovedShareIncreaseMember" abstract="true" name="BoardApprovedShareIncreaseMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="cnx_ResultsOfOperationsPurchasedGasCosts" abstract="false" name="ResultsOfOperationsPurchasedGasCosts" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="cnx_ShareBasedCompensationArrangementByShareBasedPaymentAwardOptionsVestedAndExpectedToVestOutstandingWeightedAverageRemainingContractualTe" abstract="false" name="ShareBasedCompensationArrangementByShareBasedPaymentAwardOptionsVestedAndExpectedToVestOutstandingWeightedAverageRemainingContractualTe" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="cnx_NetProceedsfromRevolverMLP" abstract="false" name="NetProceedsfromRevolverMLP" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="cnx_GasRoyaltyInterestsandPurchasedGasSales" abstract="false" name="GasRoyaltyInterestsandPurchasedGasSales" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="cnx_OtherCommitmentsMember" abstract="true" name="OtherCommitmentsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="cnx_LesseeOperatingLeaseLeaseNotYetCommencedLiability" abstract="false" name="LesseeOperatingLeaseLeaseNotYetCommencedLiability" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="cnx_SeniorNotesDueJanuary2029Member" abstract="true" name="SeniorNotesDueJanuary2029Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="cnx_SettlementAgreementBetweenMurrayAndUMWAMember" abstract="true" name="SettlementAgreementBetweenMurrayAndUMWAMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="cnx_SeniorNotesDueMarch2027Member" abstract="true" name="SeniorNotesDueMarch2027Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="cnx_EffectiveIncomeTaxRateReconciliationChangeinDeferredTaxAssetsValuationAllowanceStateAmount" abstract="false" name="EffectiveIncomeTaxRateReconciliationChangeinDeferredTaxAssetsValuationAllowanceStateAmount" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="cnx_NetExploratoryWellsCompletedAwaitingTieInToProduction" abstract="false" name="NetExploratoryWellsCompletedAwaitingTieInToProduction" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="xbrli:decimalItemType"/>
+  <xs:element id="cnx_RestrictedStockUnitsAndPerformanceShareUnitsMember" abstract="true" name="RestrictedStockUnitsAndPerformanceShareUnitsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="cnx_DebtConversionConvertedInstrumentAmountDifference" abstract="false" name="DebtConversionConvertedInstrumentAmountDifference" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="cnx_TotalDeferredCreditsAndOtherLiabilities" abstract="false" name="TotalDeferredCreditsAndOtherLiabilities" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="cnx_ProvedDevelopedAndUndevelopedReservesWorkingInterestPercentage" abstract="false" name="ProvedDevelopedAndUndevelopedReservesWorkingInterestPercentage" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="dtr-types:percentItemType"/>
+  <xs:element id="cnx_NGLsMember" abstract="true" name="NGLsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="cnx_EmployeeServiceSharebasedCompensationNonvestedAwardsTotalCompensationCostNotyetRecognizedPeriodforRecognition" abstract="false" name="EmployeeServiceSharebasedCompensationNonvestedAwardsTotalCompensationCostNotyetRecognizedPeriodforRecognition" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:durationItemType"/>
+  <xs:element id="cnx_AdjustmentsToAdditionalPaidInCapitalPurchaseOfCappedCall" abstract="false" name="AdjustmentsToAdditionalPaidInCapitalPurchaseOfCappedCall" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="cnx_GatheringandTransmissionMember" abstract="true" name="GatheringandTransmissionMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="cnx_AuditInformationAbstract" abstract="true" name="AuditInformationAbstract" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="cnx_BalanceOnFirstAnniversaryMember" abstract="true" name="BalanceOnFirstAnniversaryMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="cnx_ContractsWithCustomersPaymentTerms" abstract="false" name="ContractsWithCustomersPaymentTerms" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:durationItemType"/>
+  <xs:element id="cnx_ProvedDevelopedandUndevelopedReserveRevisionofPreviousEstimateResultingFromPUDRemovalEnergy" abstract="false" name="ProvedDevelopedandUndevelopedReserveRevisionofPreviousEstimateResultingFromPUDRemovalEnergy" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:energyItemType"/>
+  <xs:element id="cnx_A6.50SeniorNotesdueMarch2026Member" abstract="true" name="A6.50SeniorNotesdueMarch2026Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="cnx_EffectiveIncomeTaxRateReconciliationOtherDeferredAdjustmentsPercent" abstract="false" name="EffectiveIncomeTaxRateReconciliationOtherDeferredAdjustmentsPercent" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:percentItemType"/>
+  <xs:element id="cnx_Minimumcurrentratiopercreditfacility" abstract="false" name="Minimumcurrentratiopercreditfacility" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="xbrli:decimalItemType"/>
+  <xs:element id="cnx_PerformanceShareOptionsMember" abstract="true" name="PerformanceShareOptionsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="cnx_AdjustmentForActuariallyDeterminedLiabilitiesMember" abstract="true" name="AdjustmentForActuariallyDeterminedLiabilitiesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="cnx_SharebasedCompensationArrangementbySharebasedPaymentAwardEquityInstrumentsOtherthanOptionsIssuedInPeriodResultofPayout" abstract="false" name="SharebasedCompensationArrangementbySharebasedPaymentAwardEquityInstrumentsOtherthanOptionsIssuedInPeriodResultofPayout" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:sharesItemType"/>
+  <xs:element id="cnx_PerformanceShareUnitsMember" abstract="true" name="PerformanceShareUnitsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="cnx_Valuationallowanceonforeigntaxcredits" abstract="false" name="Valuationallowanceonforeigntaxcredits" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="cnx_ProvedDevelopedandUndevelopedReservesPriceChangesEnergy" abstract="false" name="ProvedDevelopedandUndevelopedReservesPriceChangesEnergy" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:energyItemType"/>
+  <xs:element id="cnx_CashPaidForAmountsIncludedInMeasurementOfLeaseLiabilitiesAbstract" abstract="true" name="CashPaidForAmountsIncludedInMeasurementOfLeaseLiabilitiesAbstract" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="cnx_MarcellusMember" abstract="true" name="MarcellusMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="cnx_ShareBasedCompensationArrangementByShareBasedPaymentAwardFairValueAssumptionsNumberOfEmployeePopulations" abstract="false" name="ShareBasedCompensationArrangementByShareBasedPaymentAwardFairValueAssumptionsNumberOfEmployeePopulations" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:integerItemType"/>
+  <xs:element id="cnx_GasGatheringSystemsNet" abstract="false" name="GasGatheringSystemsNet" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="cnx_BusinessCombinationConsiderationTransferredEquityInterestsIssuedAndIssuableEntitySharesIssuedPerAcquireeShare" abstract="false" name="BusinessCombinationConsiderationTransferredEquityInterestsIssuedAndIssuableEntitySharesIssuedPerAcquireeShare" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:sharesItemType"/>
+  <xs:element id="cnx_InterestRateSwapOnLineOfCreditMember" abstract="true" name="InterestRateSwapOnLineOfCreditMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="cnx_ProvedDevelopedandUndevelopedReserveRevisionofPreviousEstimateForIncreasedPerformanceEnergy" abstract="false" name="ProvedDevelopedandUndevelopedReserveRevisionofPreviousEstimateForIncreasedPerformanceEnergy" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:energyItemType"/>
+  <xs:element id="cnx_OtherCustomersMember" abstract="true" name="OtherCustomersMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="cnx_DevelopmentWellsDrilledNetProductive1" abstract="false" name="DevelopmentWellsDrilledNetProductive1" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:decimalItemType"/>
+  <xs:element id="cnx_GasWellsAndRelatedEquipment" abstract="false" name="GasWellsAndRelatedEquipment" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="cnx_SeniorNotesDueInJanuary2029Member" abstract="true" name="SeniorNotesDueInJanuary2029Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="cnx_CardinalStatesFacilityMember" abstract="true" name="CardinalStatesFacilityMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="cnx_CNXSeniorNotesMember" abstract="true" name="CNXSeniorNotesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="cnx_SeniorNotesDueApril2030Member" abstract="true" name="SeniorNotesDueApril2030Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="cnx_Convertible225SeniorNotesDue2026LiabilityComponentMember" abstract="true" name="Convertible225SeniorNotesDue2026LiabilityComponentMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="cnx_EffectiveIncomeTaxRateReconciliationChangeinDeferredTaxAssetsValuationAllowanceFederalAmount" abstract="false" name="EffectiveIncomeTaxRateReconciliationChangeinDeferredTaxAssetsValuationAllowanceFederalAmount" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="cnx_DeferredTaxAssetsOperatingLeaseLiability" abstract="false" name="DeferredTaxAssetsOperatingLeaseLiability" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="cnx_UndevelopedReservesTransferredToDeveloped" abstract="false" name="UndevelopedReservesTransferredToDeveloped" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:energyItemType"/>
+  <xs:element id="cnx_ProductionRoyaltyInterestsandPurchasedGasCosts" abstract="false" name="ProductionRoyaltyInterestsandPurchasedGasCosts" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="cnx_DeferredTaxAssetsGasWellClosing" abstract="false" name="DeferredTaxAssetsGasWellClosing" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="cnx_CNXMCNXMidstreamGPLLCCNXResourcesHoldingLLCMergerAgreementsMember" abstract="true" name="CNXMCNXMidstreamGPLLCCNXResourcesHoldingLLCMergerAgreementsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="cnx_EffectiveIncomeTaxRateReconciliationChangeinDeferredTaxAssetsValuationAllowanceStatePercent" abstract="false" name="EffectiveIncomeTaxRateReconciliationChangeinDeferredTaxAssetsValuationAllowanceStatePercent" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:percentItemType"/>
+  <xs:element id="cnx_GrantedIn20162019Member" abstract="true" name="GrantedIn20162019Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="cnx_TotalAcreageGross" abstract="false" name="TotalAcreageGross" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="dtr-types:areaItemType"/>
+  <xs:element id="cnx_SECSchedule1209ValuationAllowanceForeignTaxCreditMember" abstract="true" name="SECSchedule1209ValuationAllowanceForeignTaxCreditMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="cnx_CoalbedMethaneMember" abstract="true" name="CoalbedMethaneMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="cnx_UnproductivePropertiesNumberOfWells" abstract="false" name="UnproductivePropertiesNumberOfWells" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="xbrli:integerItemType"/>
+  <xs:element id="cnx_PublicUnitholdersMember" abstract="true" name="PublicUnitholdersMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="cnx_SurfaceLandAndOtherEquipment" abstract="false" name="SurfaceLandAndOtherEquipment" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="cnx_DevelopmentCostsPluggingAndAbandonmentCosts" abstract="false" name="DevelopmentCostsPluggingAndAbandonmentCosts" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="cnx_NumberOfRetiredEmployees" abstract="false" name="NumberOfRetiredEmployees" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="xbrli:integerItemType"/>
+  <xs:element id="cnx_PlanChangesMember" abstract="true" name="PlanChangesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="cnx_ProvedDevelopedandUndevelopedReserveReservesReportedForMoreThanFiveYearsEnergy" abstract="false" name="ProvedDevelopedandUndevelopedReserveReservesReportedForMoreThanFiveYearsEnergy" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="dtr-types:energyItemType"/>
+  <xs:element id="cnx_FederalFundsOpenRateMember" abstract="true" name="FederalFundsOpenRateMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="cnx_ProvedDevelopedAndUndevelopedReserveExtensionsAndDiscoveries" abstract="false" name="ProvedDevelopedAndUndevelopedReserveExtensionsAndDiscoveries" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:energyItemType"/>
+  <xs:element id="cnx_ProvedDevelopedAndUndevelopedReserveRevisionOfPreviousEstimateForAcreageConsolidationInitiatives" abstract="false" name="ProvedDevelopedAndUndevelopedReserveRevisionOfPreviousEstimateForAcreageConsolidationInitiatives" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:energyItemType"/>
+  <xs:element id="cnx_CNXMidstreamPartnersLPRevolvingCreditFacilityMember" abstract="true" name="CNXMidstreamPartnersLPRevolvingCreditFacilityMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="cnx_EffectiveIncomeTaxRateReconciliationOtherDeferredAdjustmentsAmount" abstract="false" name="EffectiveIncomeTaxRateReconciliationOtherDeferredAdjustmentsAmount" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="cnx_PriceChangesMember" abstract="true" name="PriceChangesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="cnx_OtherGasMember" abstract="true" name="OtherGasMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="cnx_ProducingWellsInterestDomain" abstract="true" name="ProducingWellsInterestDomain" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="cnx_A5.875SeniorNotesdue2022Member" abstract="true" name="A5.875SeniorNotesdue2022Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="cnx_MoreThanOneAndWithinThreeYearsFromBalanceSheetDateMember" abstract="true" name="MoreThanOneAndWithinThreeYearsFromBalanceSheetDateMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="cnx_WorkingInterestMember" abstract="true" name="WorkingInterestMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="cnx_ShareBasedCompExpectedForfeitureRate" abstract="false" name="ShareBasedCompExpectedForfeitureRate" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:percentItemType"/>
+  <xs:element id="cnx_NumberOfWellsPendingDeterminationOfProvedReserves" abstract="false" name="NumberOfWellsPendingDeterminationOfProvedReserves" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="xbrli:integerItemType"/>
+  <xs:element id="cnx_EmployeeRelatedCommitmentsMember" abstract="true" name="EmployeeRelatedCommitmentsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="cnx_NetDevelopmentWellsDrilledButUncompleted" abstract="false" name="NetDevelopmentWellsDrilledButUncompleted" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="xbrli:decimalItemType"/>
+  <xs:element id="cnx_DeferredTaxLiabilitiesDeferredExpenseDebtDiscount" abstract="false" name="DeferredTaxLiabilitiesDeferredExpenseDebtDiscount" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="cnx_CSGHoldingsFacilityMember" abstract="true" name="CSGHoldingsFacilityMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="cnx_DeferredTaxAssetValuationAllowanceForeignTaxCreditsMember" abstract="true" name="DeferredTaxAssetValuationAllowanceForeignTaxCreditsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="cnx_MoreThanThreeAndWithinFiveYearsFromBalanceSheetDateMember" abstract="true" name="MoreThanThreeAndWithinFiveYearsFromBalanceSheetDateMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="cnx_FutureNetCashFlowsRelatingToProvedOilAndGasReservesDevelopmentCostsCapitalPresentValueOnDiscountedBasis" abstract="false" name="FutureNetCashFlowsRelatingToProvedOilAndGasReservesDevelopmentCostsCapitalPresentValueOnDiscountedBasis" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="cnx_NJREnergyServicesCompanyMember" abstract="true" name="NJREnergyServicesCompanyMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="cnx_NumberOfWellsRemovedFromDevelopmentPlan" abstract="false" name="NumberOfWellsRemovedFromDevelopmentPlan" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:integerItemType"/>
+  <xs:element id="cnx_BeyondFiveYearsOfBalanceSheetDateMember" abstract="true" name="BeyondFiveYearsOfBalanceSheetDateMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="cnx_AverageGasSalesPricebeforeeffectsoffinancialsettlements" abstract="false" name="AverageGasSalesPricebeforeeffectsoffinancialsettlements" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:decimalItemType"/>
+  <xs:element id="cnx_RevisionsDuetoFiveYearRuleMember" abstract="true" name="RevisionsDuetoFiveYearRuleMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="cnx_CentralPennsylvaniaMember" abstract="true" name="CentralPennsylvaniaMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="cnx_ImpairmentOfOilAndGasPropertiesUnprovedProperties" abstract="false" name="ImpairmentOfOilAndGasPropertiesUnprovedProperties" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="cnx_ProvedDevelopedAndUndevelopedReserveChangeDueToChangeInOperatingCostsEnergy" abstract="false" name="ProvedDevelopedAndUndevelopedReserveChangeDueToChangeInOperatingCostsEnergy" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:energyItemType"/>
+  <xs:element id="cnx_UnprovedAcreageGross" abstract="false" name="UnprovedAcreageGross" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="dtr-types:areaItemType"/>
+  <xs:element id="cnx_CNXMMember" abstract="true" name="CNXMMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="cnx_OtherGasAssets" abstract="false" name="OtherGasAssets" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="cnx_CentralPennsylvaniaAndSouthwestPennsylvaniaMember" abstract="true" name="CentralPennsylvaniaAndSouthwestPennsylvaniaMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="cnx_SharebasedCompensationArrangementbySharebasedPaymentAwardEquityInstrumentsOtherthanOptionsIssuedInPeriodResultofPayoutWeightedAverageGrantDateFairValue" abstract="false" name="SharebasedCompensationArrangementbySharebasedPaymentAwardEquityInstrumentsOtherthanOptionsIssuedInPeriodResultofPayoutWeightedAverageGrantDateFairValue" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:perShareItemType"/>
+  <xs:element id="cnx_DeferredTaxAssetsTaxCreditCarryforwardsDomestic" abstract="false" name="DeferredTaxAssetsTaxCreditCarryforwardsDomestic" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="cnx_CNXRevolvingCreditFacilityMember" abstract="true" name="CNXRevolvingCreditFacilityMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="cnx_InterestRatioPerCreditFacilityCovenant" abstract="false" name="InterestRatioPerCreditFacilityCovenant" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:decimalItemType"/>
+  <xs:element id="cnx_CondensateMember" abstract="true" name="CondensateMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="cnx_StandardizedMeasureofDiscountedFutureNetCashFlowofProvedOilandGasReservesTimingandOther" abstract="false" name="StandardizedMeasureofDiscountedFutureNetCashFlowofProvedOilandGasReservesTimingandOther" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="cnx_DebtInstrumentBorrowingBase" abstract="false" name="DebtInstrumentBorrowingBase" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="cnx_CNXGatheringLLCMember" abstract="true" name="CNXGatheringLLCMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="cnx_EarningsPerShareBasicAndDiluted1Abstract" abstract="true" name="EarningsPerShareBasicAndDiluted1Abstract" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="cnx_DebtInstrumentInterestCoverageRatio" abstract="false" name="DebtInstrumentInterestCoverageRatio" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:decimalItemType"/>
+  <xs:element id="cnx_ExploratoryWellsDrilledNetProductive1" abstract="false" name="ExploratoryWellsDrilledNetProductive1" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:decimalItemType"/>
+  <xs:element id="cnx_LesseeOperatingLeaseLeaseNotYetCommencedRightOfUseAsset" abstract="false" name="LesseeOperatingLeaseLeaseNotYetCommencedRightOfUseAsset" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="cnx_CNXMCNXMidstreamGPLLCCNXResourcesHoldingLLCMergerAgreementMember" abstract="true" name="CNXMCNXMidstreamGPLLCCNXResourcesHoldingLLCMergerAgreementMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="cnx_UticaMember" abstract="true" name="UticaMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="cnx_ProducingWellsInterestAxis" abstract="true" name="ProducingWellsInterestAxis" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrldt:dimensionItem" type="xbrli:stringItemType"/>
+  <xs:element id="cnx_MidstreamAcquisitionMember" abstract="true" name="MidstreamAcquisitionMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="cnx_DebtInstrumentPurchaseofOutstandingDebt" abstract="false" name="DebtInstrumentPurchaseofOutstandingDebt" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="cnx_GasCustomersMember" abstract="true" name="GasCustomersMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="cnx_Averageeffectsoffinancialsettlementsperthousandcubicfeet" abstract="false" name="Averageeffectsoffinancialsettlementsperthousandcubicfeet" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:decimalItemType"/>
+  <xs:element id="cnx_DevelopmentWellsDrilledNetNonproductive1" abstract="false" name="DevelopmentWellsDrilledNetNonproductive1" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:decimalItemType"/>
+  <xs:element id="cnx_RealizedGainLossOnHedgingActivity" abstract="false" name="RealizedGainLossOnHedgingActivity" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="cnx_CNXMember" abstract="true" name="CNXMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="cnx_DrillingCost" abstract="false" name="DrillingCost" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="cnx_AcquisitionsAndDispositionsDisclosureTextBlock" abstract="false" name="AcquisitionsAndDispositionsDisclosureTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:textBlockItemType"/>
+  <xs:element id="cnx_WellsAndAcreageNetAbstract" abstract="true" name="WellsAndAcreageNetAbstract" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="cnx_SegmentReportingCapitalExpenditures" abstract="false" name="SegmentReportingCapitalExpenditures" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="cnx_WellsAndAcreageGrossAbstract" abstract="true" name="WellsAndAcreageGrossAbstract" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="cnx_DebtInstrumentModificationPeriod" abstract="false" name="DebtInstrumentModificationPeriod" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:durationItemType"/>
+  <xs:element id="cnx_NGLCondensateAndProcessingFacilitiesMember" abstract="true" name="NGLCondensateAndProcessingFacilitiesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="cnx_ProvedUndevelopedMember" abstract="true" name="ProvedUndevelopedMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="cnx_Convertible225SeniorNotesDue2026AdditionalOptionToInitialPurchasersMember" abstract="true" name="Convertible225SeniorNotesDue2026AdditionalOptionToInitialPurchasersMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="cnx_Convertible225SeniorNotesDue2026EquityComponentMember" abstract="true" name="Convertible225SeniorNotesDue2026EquityComponentMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="cnx_EnvironmentRelatedCommitmentsMember" abstract="true" name="EnvironmentRelatedCommitmentsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="cnx_ProvedDevelopedAndUndevelopedReservePerformanceRevision" abstract="false" name="ProvedDevelopedAndUndevelopedReservePerformanceRevision" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:energyItemType"/>
+  <xs:element id="cnx_A225SeniorNotesDueMay2026Member" abstract="true" name="A225SeniorNotesDueMay2026Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="cnx_LettersOfCreditAmountOutstanding" abstract="false" name="LettersOfCreditAmountOutstanding" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="cnx_FutureNetCashFlowsRelatingtoProvedOilandGasReservesAdjustedPrice" abstract="false" name="FutureNetCashFlowsRelatingtoProvedOilandGasReservesAdjustedPrice" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:decimalItemType"/>
+  <xs:element id="cnx_LineOfCreditFacilityAvailabilityUnderCreditFacilityPercentageOfAggregateCommitments" abstract="false" name="LineOfCreditFacilityAvailabilityUnderCreditFacilityPercentageOfAggregateCommitments" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:percentItemType"/>
+  <xs:element id="cnx_ImpairmentofExplorationandProductionProperties" abstract="false" name="ImpairmentofExplorationandProductionProperties" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="cnx_CNXMSeniorNotesMember" abstract="true" name="CNXMSeniorNotesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="cnx_OtherReceivablesMember" abstract="true" name="OtherReceivablesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="cnx_EffectiveIncomeTaxRateReconciliationChangeinDeferredTaxAssetsValuationAllowanceFederalPercent" abstract="false" name="EffectiveIncomeTaxRateReconciliationChangeinDeferredTaxAssetsValuationAllowanceFederalPercent" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:percentItemType"/>
+  <xs:element id="cnx_CreditFacilityDebtCovenantSecuredLeverageRatio" abstract="false" name="CreditFacilityDebtCovenantSecuredLeverageRatio" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:decimalItemType"/>
+  <xs:element id="cnx_OneMonthLIBORMember" abstract="true" name="OneMonthLIBORMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="cnx_CommonStockOutstandingRollForward" abstract="true" name="CommonStockOutstandingRollForward" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="cnx_DirectEnergyBusinessMarketingLLCMember" abstract="true" name="DirectEnergyBusinessMarketingLLCMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="cnx_CitadelEnergyMarketingLLCMember" abstract="true" name="CitadelEnergyMarketingLLCMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="cnx_SoutheasternAssetManagementInc.Member" abstract="true" name="SoutheasternAssetManagementInc.Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="cnx_AcceleratedVestingMember" abstract="true" name="AcceleratedVestingMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="cnx_DeferredTaxAssetValuationAllowanceStateOperatingLossesMember" abstract="true" name="DeferredTaxAssetValuationAllowanceStateOperatingLossesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="cnx_DebtInstrumentIssuancePeriodAxis" abstract="true" name="DebtInstrumentIssuancePeriodAxis" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrldt:dimensionItem" type="xbrli:stringItemType"/>
+  <xs:element id="cnx_DeferredTaxLiabilitiesAdvanceRoyalties" abstract="false" name="DeferredTaxLiabilitiesAdvanceRoyalties" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="cnx_CommoditySwapMember" abstract="true" name="CommoditySwapMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="cnx_AssetsAmortizedByUnitsOfProductionMember" abstract="true" name="AssetsAmortizedByUnitsOfProductionMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="cnx_RightOfUseAssetsObtainedInExchangeForLeaseObligationsAbstract" abstract="true" name="RightOfUseAssetsObtainedInExchangeForLeaseObligationsAbstract" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="cnx_ProvedDevelopedandUndevelopedReserveRevisionofPreviousEstimateForPlanChangesEnergy" abstract="false" name="ProvedDevelopedandUndevelopedReserveRevisionofPreviousEstimateForPlanChangesEnergy" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:energyItemType"/>
+  <xs:element id="cnx_MidstreamMember" abstract="true" name="MidstreamMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="cnx_LineofCreditFacilityMaximumBorrowingCapacityAccordionFeature" abstract="false" name="LineofCreditFacilityMaximumBorrowingCapacityAccordionFeature" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="cnx_PaymentsOnLongTermNotesIncludingRedemptionPremium" abstract="false" name="PaymentsOnLongTermNotesIncludingRedemptionPremium" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="cnx_NotesReceivedFromPropertySalesMember" abstract="true" name="NotesReceivedFromPropertySalesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="cnx_AccruedTransportationCharges" abstract="false" name="AccruedTransportationCharges" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="cnx_ProvedUndevelopedReservesPeriodToBeFullyDeveloped" abstract="false" name="ProvedUndevelopedReservesPeriodToBeFullyDeveloped" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:durationItemType"/>
+  <xs:element id="cnx_ExplorationAndProductionSegmentMember" abstract="true" name="ExplorationAndProductionSegmentMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="cnx_FirmTransportationMember" abstract="true" name="FirmTransportationMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="cnx_LettersOfCreditMaximumBorrowingCapacity" abstract="false" name="LettersOfCreditMaximumBorrowingCapacity" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="cnx_EPDepreciationDepletionandAmortization" abstract="false" name="EPDepreciationDepletionandAmortization" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="cnx_AssetsAndLiabilitiesLesseeTableTextBlock" abstract="false" name="AssetsAndLiabilitiesLesseeTableTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:textBlockItemType"/>
+  <xs:element id="cnx_SouthwestPennsylvaniaAndWestVirginiaMember" abstract="true" name="SouthwestPennsylvaniaAndWestVirginiaMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="cnx_ProvedDevelopedandUndevelopedReservesPriceChanges" abstract="false" name="ProvedDevelopedandUndevelopedReservesPriceChanges" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:volumeItemType"/>
+  <xs:element id="cnx_Averagegassalespriceincludingeffectsoffinancialsettlementsperthousandcubicfeet" abstract="false" name="Averagegassalespriceincludingeffectsoffinancialsettlementsperthousandcubicfeet" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:decimalItemType"/>
+  <xs:element id="cnx_ShaleAndOtherMember" abstract="true" name="ShaleAndOtherMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="cnx_RoyaltyInterestMember" abstract="true" name="RoyaltyInterestMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="cnx_MurrayEnergyCorporationMember" abstract="true" name="MurrayEnergyCorporationMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="cnx_DebtInstrumentIssuancePeriodDomain" abstract="true" name="DebtInstrumentIssuancePeriodDomain" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="cnx_ScheduleOfAssetsAmortizedByUnitsOfProductionTableTable" abstract="true" name="ScheduleOfAssetsAmortizedByUnitsOfProductionTableTable" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrldt:hypercubeItem" type="xbrli:stringItemType"/>
+  <xs:element id="cnx_SharebasedCompensationArrangementbySharebasedPaymentAwardAwardConversationRatio" abstract="false" name="SharebasedCompensationArrangementbySharebasedPaymentAwardAwardConversationRatio" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="xbrli:pureItemType"/>
+  <xs:element id="cnx_SECSchedule1209ValuationAllowanceCharitableContributionsMember" abstract="true" name="SECSchedule1209ValuationAllowanceCharitableContributionsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="cnx_PlanAndOtherRevisionsMember" abstract="true" name="PlanAndOtherRevisionsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="cnx_TotalAcreageNet" abstract="false" name="TotalAcreageNet" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="dtr-types:areaItemType"/>
+  <xs:element id="cnx_StockholdersEquityMergerRelatedAdjustments" abstract="false" name="StockholdersEquityMergerRelatedAdjustments" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="cnx_GasAndOilAcreageUnprovedNet" abstract="false" name="GasAndOilAcreageUnprovedNet" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="dtr-types:areaItemType"/>
+</xs:schema>

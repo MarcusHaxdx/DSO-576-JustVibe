@@ -1,0 +1,654 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--XBRL Document Created with Wdesk from Workiva-->
+<!--Copyright 2023 Workiva-->
+<!--r:552f5560-c888-4887-974f-2401da1a904a,g:33999950-94cd-4178-a311-8cc91332b95e-->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:sbux="http://www.starbucks.com/20230101" xmlns:xbrli="http://www.xbrl.org/2003/instance" xmlns:dtr-types="http://www.xbrl.org/dtr/type/2020-01-21" xmlns:xbrldt="http://xbrl.org/2005/xbrldt" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://www.starbucks.com/20230101">
+  <xs:import namespace="http://fasb.org/srt/2022" schemaLocation="https://xbrl.fasb.org/srt/2022/elts/srt-2022.xsd"/>
+  <xs:import namespace="http://fasb.org/us-gaap/2022" schemaLocation="https://xbrl.fasb.org/us-gaap/2022/elts/us-gaap-2022.xsd"/>
+  <xs:import namespace="http://www.w3.org/1999/xlink" schemaLocation="http://www.xbrl.org/2003/xlink-2003-12-31.xsd"/>
+  <xs:import namespace="http://www.xbrl.org/2003/instance" schemaLocation="http://www.xbrl.org/2003/xbrl-instance-2003-12-31.xsd"/>
+  <xs:import namespace="http://www.xbrl.org/2003/linkbase" schemaLocation="http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd"/>
+  <xs:import namespace="http://www.xbrl.org/dtr/type/2020-01-21" schemaLocation="https://www.xbrl.org/dtr/type/2020-01-21/types.xsd"/>
+  <xs:import namespace="http://xbrl.org/2005/xbrldt" schemaLocation="http://www.xbrl.org/2005/xbrldt-2005.xsd"/>
+  <xs:import namespace="http://xbrl.sec.gov/currency/2022" schemaLocation="https://xbrl.sec.gov/currency/2022/currency-2022.xsd"/>
+  <xs:import namespace="http://xbrl.sec.gov/dei/2022" schemaLocation="https://xbrl.sec.gov/dei/2022/dei-2022.xsd"/>
+  <xs:annotation>
+    <xs:appinfo>
+      <link:linkbaseRef xmlns:xlink="http://www.w3.org/1999/xlink" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="sbux-20230101_lab.xml" xlink:role="http://www.xbrl.org/2003/role/labelLinkbaseRef" xlink:type="simple"/>
+      <link:linkbaseRef xmlns:xlink="http://www.w3.org/1999/xlink" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="sbux-20230101_pre.xml" xlink:role="http://www.xbrl.org/2003/role/presentationLinkbaseRef" xlink:type="simple"/>
+      <link:linkbaseRef xmlns:xlink="http://www.w3.org/1999/xlink" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="sbux-20230101_cal.xml" xlink:role="http://www.xbrl.org/2003/role/calculationLinkbaseRef" xlink:type="simple"/>
+      <link:linkbaseRef xmlns:xlink="http://www.w3.org/1999/xlink" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="sbux-20230101_def.xml" xlink:role="http://www.xbrl.org/2003/role/definitionLinkbaseRef" xlink:type="simple"/>
+      <link:roleType id="DocumentAndEntityInformation" roleURI="http://www.starbucks.com/role/DocumentAndEntityInformation">
+        <link:definition>0000001 - Document - Document And Entity Information</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CondensedConsolidatedStatementsofEarnings" roleURI="http://www.starbucks.com/role/CondensedConsolidatedStatementsofEarnings">
+        <link:definition>0000002 - Statement - Condensed Consolidated Statements of Earnings</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ConsolidatedStatementsofComprehensiveIncome" roleURI="http://www.starbucks.com/role/ConsolidatedStatementsofComprehensiveIncome">
+        <link:definition>0000003 - Statement - Consolidated Statements of Comprehensive Income</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CondensedConsolidatedBalanceSheets" roleURI="http://www.starbucks.com/role/CondensedConsolidatedBalanceSheets">
+        <link:definition>0000004 - Statement - Condensed Consolidated Balance Sheets</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CondensedConsolidatedBalanceSheetsParenthetical" roleURI="http://www.starbucks.com/role/CondensedConsolidatedBalanceSheetsParenthetical">
+        <link:definition>0000005 - Statement - Condensed Consolidated Balance Sheets (Parenthetical)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CondensedConsolidatedStatementsofCashFlows" roleURI="http://www.starbucks.com/role/CondensedConsolidatedStatementsofCashFlows">
+        <link:definition>0000006 - Statement - Condensed Consolidated Statements of Cash Flows</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CondensedConsolidatedStatementsofEquity" roleURI="http://www.starbucks.com/role/CondensedConsolidatedStatementsofEquity">
+        <link:definition>0000007 - Statement - Condensed Consolidated Statements of Equity</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="AcquisitionsandDivestitures" roleURI="http://www.starbucks.com/role/AcquisitionsandDivestitures">
+        <link:definition>0000008 - Disclosure - Acquisitions and Divestitures</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="DerivativeFinancialInstruments" roleURI="http://www.starbucks.com/role/DerivativeFinancialInstruments">
+        <link:definition>0000009 - Disclosure - Derivative Financial Instruments</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FairValueMeasurements" roleURI="http://www.starbucks.com/role/FairValueMeasurements">
+        <link:definition>0000010 - Disclosure - Fair Value Measurements</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="Inventories" roleURI="http://www.starbucks.com/role/Inventories">
+        <link:definition>0000011 - Disclosure - Inventories</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SupplementalBalanceSheetandIncomeStatement" roleURI="http://www.starbucks.com/role/SupplementalBalanceSheetandIncomeStatement">
+        <link:definition>0000012 - Disclosure - Supplemental Balance Sheet and Income Statement</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="OtherIntangibleAssetsandGoodwill" roleURI="http://www.starbucks.com/role/OtherIntangibleAssetsandGoodwill">
+        <link:definition>0000013 - Disclosure - Other Intangible Assets and Goodwill</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="Debt" roleURI="http://www.starbucks.com/role/Debt">
+        <link:definition>0000014 - Disclosure - Debt</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="Leases" roleURI="http://www.starbucks.com/role/Leases">
+        <link:definition>0000015 - Disclosure - Leases</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="DeferredRevenue" roleURI="http://www.starbucks.com/role/DeferredRevenue">
+        <link:definition>0000016 - Disclosure - Deferred Revenue</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="Equity" roleURI="http://www.starbucks.com/role/Equity">
+        <link:definition>0000017 - Disclosure - Equity</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="EmployeeStockPlans" roleURI="http://www.starbucks.com/role/EmployeeStockPlans">
+        <link:definition>0000018 - Disclosure - Employee Stock Plans</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IncomeTaxes" roleURI="http://www.starbucks.com/role/IncomeTaxes">
+        <link:definition>0000019 - Disclosure - Income Taxes</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="EarningsPerShare" roleURI="http://www.starbucks.com/role/EarningsPerShare">
+        <link:definition>0000020 - Disclosure - Earnings Per Share</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CommitmentsandContingencies" roleURI="http://www.starbucks.com/role/CommitmentsandContingencies">
+        <link:definition>0000021 - Disclosure - Commitments and Contingencies</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SegmentReporting" roleURI="http://www.starbucks.com/role/SegmentReporting">
+        <link:definition>0000022 - Disclosure - Segment Reporting</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SubsequentEvents" roleURI="http://www.starbucks.com/role/SubsequentEvents">
+        <link:definition>0000023 - Disclosure - Subsequent Events</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SummaryofSignificantAccountingPoliciesPolicies" roleURI="http://www.starbucks.com/role/SummaryofSignificantAccountingPoliciesPolicies">
+        <link:definition>0000024 - Disclosure - Summary of Significant Accounting Policies (Policies)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="AcquisitionsandDivestituresAcquisitionsandDivestituresTables" roleURI="http://www.starbucks.com/role/AcquisitionsandDivestituresAcquisitionsandDivestituresTables">
+        <link:definition>0000025 - Disclosure - Acquisitions and Divestitures Acquisitions and Divestitures (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="DerivativeFinancialInstrumentsTables" roleURI="http://www.starbucks.com/role/DerivativeFinancialInstrumentsTables">
+        <link:definition>0000026 - Disclosure - Derivative Financial Instruments (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FairValueMeasurementsTables" roleURI="http://www.starbucks.com/role/FairValueMeasurementsTables">
+        <link:definition>0000027 - Disclosure - Fair Value Measurements (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="InventoriesTables" roleURI="http://www.starbucks.com/role/InventoriesTables">
+        <link:definition>0000028 - Disclosure - Inventories (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SupplementalBalanceSheetandStatementofEarningsInformationTables" roleURI="http://www.starbucks.com/role/SupplementalBalanceSheetandStatementofEarningsInformationTables">
+        <link:definition>0000029 - Disclosure - Supplemental Balance Sheet and Statement of Earnings Information (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="OtherIntangibleAssetsandGoodwillTables" roleURI="http://www.starbucks.com/role/OtherIntangibleAssetsandGoodwillTables">
+        <link:definition>0000030 - Disclosure - Other Intangible Assets and Goodwill (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="DebtTables" roleURI="http://www.starbucks.com/role/DebtTables">
+        <link:definition>0000031 - Disclosure - Debt (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LeasesTables" roleURI="http://www.starbucks.com/role/LeasesTables">
+        <link:definition>0000032 - Disclosure - Leases (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="DeferredRevenueTables" roleURI="http://www.starbucks.com/role/DeferredRevenueTables">
+        <link:definition>0000033 - Disclosure - Deferred Revenue (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="EquityTables" roleURI="http://www.starbucks.com/role/EquityTables">
+        <link:definition>0000034 - Disclosure - Equity (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="EmployeeStockPlansTables" roleURI="http://www.starbucks.com/role/EmployeeStockPlansTables">
+        <link:definition>0000035 - Disclosure - Employee Stock Plans (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IncomeTaxesTables" roleURI="http://www.starbucks.com/role/IncomeTaxesTables">
+        <link:definition>0000036 - Disclosure - Income Taxes (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="EarningsPerShareTables" roleURI="http://www.starbucks.com/role/EarningsPerShareTables">
+        <link:definition>0000037 - Disclosure - Earnings Per Share (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CommitmentsandContingenciesTables" roleURI="http://www.starbucks.com/role/CommitmentsandContingenciesTables">
+        <link:definition>0000038 - Disclosure - Commitments and Contingencies (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SegmentReportingTables" roleURI="http://www.starbucks.com/role/SegmentReportingTables">
+        <link:definition>0000039 - Disclosure - Segment Reporting (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SummaryofSignificantAccountingPoliciesNarrativeDetails" roleURI="http://www.starbucks.com/role/SummaryofSignificantAccountingPoliciesNarrativeDetails">
+        <link:definition>0000040 - Disclosure - Summary of Significant Accounting Policies (Narrative) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="AcquisitionsandDivestituresNarrativeDetails" roleURI="http://www.starbucks.com/role/AcquisitionsandDivestituresNarrativeDetails">
+        <link:definition>0000041 - Disclosure - Acquisitions and Divestitures (Narrative) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="AcquisitionsandDivestituresDefinitelivedintangibleassetsacquiredDetails" roleURI="http://www.starbucks.com/role/AcquisitionsandDivestituresDefinitelivedintangibleassetsacquiredDetails">
+        <link:definition>0000042 - Disclosure - Acquisitions and Divestitures Definite-lived intangible assets acquired (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="DerivativeFinancialInstrumentsDerivativeGainsandLossesIncludedinAOCIandExpectedtobeReclassifiedintoEarningsin12MonthsNetofTaxDetails" roleURI="http://www.starbucks.com/role/DerivativeFinancialInstrumentsDerivativeGainsandLossesIncludedinAOCIandExpectedtobeReclassifiedintoEarningsin12MonthsNetofTaxDetails">
+        <link:definition>0000043 - Disclosure - Derivative Financial Instruments (Derivative Gains and Losses Included in AOCI and Expected to be Reclassified into Earnings in 12 Months, Net of Tax) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="DerivativeFinancialInstrumentsPretaxGainsandLossesonDerivativeContractsDesignatedasHedgingInstrumentsRecognizedinOCIandReclassificationsfromAOCItoEarningsDetails" roleURI="http://www.starbucks.com/role/DerivativeFinancialInstrumentsPretaxGainsandLossesonDerivativeContractsDesignatedasHedgingInstrumentsRecognizedinOCIandReclassificationsfromAOCItoEarningsDetails">
+        <link:definition>0000044 - Disclosure - Derivative Financial Instruments (Pretax Gains and Losses on Derivative Contracts Designated as Hedging Instruments Recognized in OCI and Reclassifications from AOCI to Earnings) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="DerivativeFinancialInstrumentsPretaxGainsandLossesonDerivativeContractsNotDesignatedasHedgingInstrumentsRecognizedinEarningsDetails" roleURI="http://www.starbucks.com/role/DerivativeFinancialInstrumentsPretaxGainsandLossesonDerivativeContractsNotDesignatedasHedgingInstrumentsRecognizedinEarningsDetails">
+        <link:definition>0000045 - Disclosure - Derivative Financial Instruments (Pretax Gains and Losses on Derivative Contracts Not Designated as Hedging Instruments Recognized in Earnings) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="DerivativeandFinancialInstrumentsNotionalAmountsofOutstandingDerivativeContractsDetails" roleURI="http://www.starbucks.com/role/DerivativeandFinancialInstrumentsNotionalAmountsofOutstandingDerivativeContractsDetails">
+        <link:definition>0000046 - Disclosure - Derivative and Financial Instruments (Notional Amounts of Outstanding Derivative Contracts) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="DerivativeFinancialInstrumentsDerivativeFinancialInstrumentsFairValueofOutstandingDerivativeContractsDetails" roleURI="http://www.starbucks.com/role/DerivativeFinancialInstrumentsDerivativeFinancialInstrumentsFairValueofOutstandingDerivativeContractsDetails">
+        <link:definition>0000047 - Disclosure - Derivative Financial Instruments Derivative Financial Instruments (Fair Value of Outstanding Derivative Contracts) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="DerivativeFinancialInstrumentsInterestRateSwapsScheduleofFairValueHedgingInstrumentsStatementsofFinancialPerformanceandFinancialPositionDetails" roleURI="http://www.starbucks.com/role/DerivativeFinancialInstrumentsInterestRateSwapsScheduleofFairValueHedgingInstrumentsStatementsofFinancialPerformanceandFinancialPositionDetails">
+        <link:definition>0000048 - Disclosure - Derivative Financial Instruments Interest Rate Swaps (Schedule of Fair Value Hedging Instruments, Statements of Financial Performance and Financial Position) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FairValueMeasuresandDisclosuresNarrativeDetails" roleURI="http://www.starbucks.com/role/FairValueMeasuresandDisclosuresNarrativeDetails">
+        <link:definition>0000049 - Disclosure - Fair Value Measures and Disclosures(Narrative) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FairValueMeasurementsAssetsAndLiabilitiesMeasuredAtFairValueOnARecurringBasisDetails" roleURI="http://www.starbucks.com/role/FairValueMeasurementsAssetsAndLiabilitiesMeasuredAtFairValueOnARecurringBasisDetails">
+        <link:definition>0000050 - Disclosure - Fair Value Measurements (Assets And Liabilities Measured At Fair Value On A Recurring Basis) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="InventoriesNarrativeDetails" roleURI="http://www.starbucks.com/role/InventoriesNarrativeDetails">
+        <link:definition>0000051 - Disclosure - Inventories (Narrative) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="InventoriesComponentsofInventoryDetails" roleURI="http://www.starbucks.com/role/InventoriesComponentsofInventoryDetails">
+        <link:definition>0000052 - Disclosure - Inventories (Components of Inventory) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SupplementalBalanceSheetInformationPrepaidExpensesandOtherCurrentAssetsDetails" roleURI="http://www.starbucks.com/role/SupplementalBalanceSheetInformationPrepaidExpensesandOtherCurrentAssetsDetails">
+        <link:definition>0000053 - Disclosure - Supplemental Balance Sheet Information (Prepaid Expenses and Other Current Assets) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SupplementalBalanceSheetInformationPropertyPlantAndEquipmentnetDetails" roleURI="http://www.starbucks.com/role/SupplementalBalanceSheetInformationPropertyPlantAndEquipmentnetDetails">
+        <link:definition>0000054 - Disclosure - Supplemental Balance Sheet Information (Property, Plant And Equipment, net) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SupplementalBalanceSheetInformationAccruedLiabilitiesDetails" roleURI="http://www.starbucks.com/role/SupplementalBalanceSheetInformationAccruedLiabilitiesDetails">
+        <link:definition>0000055 - Disclosure - Supplemental Balance Sheet Information (Accrued Liabilities) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SupplementalIncomeStatementInformationStoreOperatingExpensesDetails" roleURI="http://www.starbucks.com/role/SupplementalIncomeStatementInformationStoreOperatingExpensesDetails">
+        <link:definition>0000056 - Disclosure - Supplemental Income Statement Information (Store Operating Expenses) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IntangibleAssetsGoodwillandOtherNarrativeDetails" roleURI="http://www.starbucks.com/role/IntangibleAssetsGoodwillandOtherNarrativeDetails">
+        <link:definition>0000057 - Disclosure - Intangible Assets, Goodwill and Other (Narrative) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="OtherIntangibleAssetsandGoodwillIndefiniteLivedIntangibleAssetsDetails" roleURI="http://www.starbucks.com/role/OtherIntangibleAssetsandGoodwillIndefiniteLivedIntangibleAssetsDetails">
+        <link:definition>0000058 - Disclosure - Other Intangible Assets and Goodwill (Indefinite-Lived Intangible Assets) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="OtherIntangibleAssetsandGoodwillFiniteLivedIntangibleAssetsDetails" roleURI="http://www.starbucks.com/role/OtherIntangibleAssetsandGoodwillFiniteLivedIntangibleAssetsDetails">
+        <link:definition>0000059 - Disclosure - Other Intangible Assets and Goodwill (Finite-Lived Intangible Assets) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="OtherIntangibleAssetsandGoodwillEstimatedFutureAmortizationExpenseDetails" roleURI="http://www.starbucks.com/role/OtherIntangibleAssetsandGoodwillEstimatedFutureAmortizationExpenseDetails">
+        <link:definition>0000060 - Disclosure - Other Intangible Assets and Goodwill (Estimated Future Amortization Expense) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IntangibleAssetsGoodwillandOtherChangesinCarryingAmountofGoodwillbyReportableOperatingSegmentDetails" roleURI="http://www.starbucks.com/role/IntangibleAssetsGoodwillandOtherChangesinCarryingAmountofGoodwillbyReportableOperatingSegmentDetails">
+        <link:definition>0000061 - Disclosure - Intangible Assets, Goodwill and Other (Changes in Carrying Amount of Goodwill by Reportable Operating Segment) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="DebtNarrativeDetails" roleURI="http://www.starbucks.com/role/DebtNarrativeDetails">
+        <link:definition>0000062 - Disclosure - Debt (Narrative) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ComponentsofLongTermDebtIncludingAssociatedInterestRatesandRelatedFairValuesDetails" roleURI="http://www.starbucks.com/role/ComponentsofLongTermDebtIncludingAssociatedInterestRatesandRelatedFairValuesDetails">
+        <link:definition>0000063 - Disclosure - (Components of Long-Term Debt Including Associated Interest Rates and Related Fair Values) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="DebtSummaryoflongtermdebtmaturitiesDetails" roleURI="http://www.starbucks.com/role/DebtSummaryoflongtermdebtmaturitiesDetails">
+        <link:definition>0000064 - Disclosure - Debt (Summary of long-term debt maturities) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LeasesNarrativeDetails" roleURI="http://www.starbucks.com/role/LeasesNarrativeDetails">
+        <link:definition>0000065 - Disclosure - Leases - Narrative (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LeasesScheduleofLeaseCostDetails" roleURI="http://www.starbucks.com/role/LeasesScheduleofLeaseCostDetails">
+        <link:definition>0000066 - Disclosure - Leases - Schedule of Lease Cost (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LeasesScheduleSupplementalDisclosuresDetails" roleURI="http://www.starbucks.com/role/LeasesScheduleSupplementalDisclosuresDetails">
+        <link:definition>0000067 - Disclosure - Leases - Schedule Supplemental Disclosures (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LeasesScheduleofMaturityofOperatingLeasePaymentsDetails" roleURI="http://www.starbucks.com/role/LeasesScheduleofMaturityofOperatingLeasePaymentsDetails">
+        <link:definition>0000068 - Disclosure - Leases - Schedule of Maturity of Operating Lease Payments (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LeasesScheduleofMaturityofOperatingLeasePaymentsDetails_1" roleURI="http://www.starbucks.com/role/LeasesScheduleofMaturityofOperatingLeasePaymentsDetails_1">
+        <link:definition>0000068 - Disclosure - Leases - Schedule of Maturity of Operating Lease Payments (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RevenueRecognitionNarrativeDetails" roleURI="http://www.starbucks.com/role/RevenueRecognitionNarrativeDetails">
+        <link:definition>0000069 - Disclosure - Revenue Recognition (Narrative) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RevenuefromContractwithCustomerDetails" roleURI="http://www.starbucks.com/role/RevenuefromContractwithCustomerDetails">
+        <link:definition>0000070 - Disclosure - Revenue from Contract with Customer (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="EquityNarrativeDetails" roleURI="http://www.starbucks.com/role/EquityNarrativeDetails">
+        <link:definition>0000071 - Disclosure - Equity (Narrative) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="EquityComponentsOfAccumulatedOtherComprehensiveIncomeNetOfTaxDetails" roleURI="http://www.starbucks.com/role/EquityComponentsOfAccumulatedOtherComprehensiveIncomeNetOfTaxDetails">
+        <link:definition>0000072 - Disclosure - Equity (Components Of Accumulated Other Comprehensive Income, Net Of Tax) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="EquityImpactofReclassificationsfromAccumulatedOtherComprehensiveIncomeonEarningsDetails" roleURI="http://www.starbucks.com/role/EquityImpactofReclassificationsfromAccumulatedOtherComprehensiveIncomeonEarningsDetails">
+        <link:definition>0000073 - Disclosure - Equity (Impact of Reclassifications from Accumulated Other Comprehensive Income on Earnings) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="EmployeeStockPlansNarrativeDetails" roleURI="http://www.starbucks.com/role/EmployeeStockPlansNarrativeDetails">
+        <link:definition>0000074 - Disclosure - Employee Stock Plans (Narrative) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="EmployeeStockPlansStockBasedCompensationExpenseRecognizedinConsolidatedStatementofEarningsDetails" roleURI="http://www.starbucks.com/role/EmployeeStockPlansStockBasedCompensationExpenseRecognizedinConsolidatedStatementofEarningsDetails">
+        <link:definition>0000075 - Disclosure - Employee Stock Plans (Stock-Based Compensation Expense Recognized in Consolidated Statement of Earnings) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="EmployeeStockPlansStockOptionandRSUTransactionsDetails" roleURI="http://www.starbucks.com/role/EmployeeStockPlansStockOptionandRSUTransactionsDetails">
+        <link:definition>0000076 - Disclosure - Employee Stock Plans (Stock Option and RSU Transactions) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IncomeTaxesNarrativeDetails" roleURI="http://www.starbucks.com/role/IncomeTaxesNarrativeDetails">
+        <link:definition>0000077 - Disclosure - Income Taxes (Narrative) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="EarningsPerShareNarrativeDetails" roleURI="http://www.starbucks.com/role/EarningsPerShareNarrativeDetails">
+        <link:definition>0000078 - Disclosure - Earnings Per Share (Narrative) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="EarningsPerShareCalculationofNetEarningsPerCommonShareEPSBasicandDilutedDetails" roleURI="http://www.starbucks.com/role/EarningsPerShareCalculationofNetEarningsPerCommonShareEPSBasicandDilutedDetails">
+        <link:definition>0000079 - Disclosure - Earnings Per Share (Calculation of Net Earnings Per Common Share (EPS) - Basic and Diluted) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CommitmentsandContingenciesDetails" roleURI="http://www.starbucks.com/role/CommitmentsandContingenciesDetails">
+        <link:definition>0000080 - Disclosure - Commitments and Contingencies (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SegmentReportingNarrativeDetails" roleURI="http://www.starbucks.com/role/SegmentReportingNarrativeDetails">
+        <link:definition>0000081 - Disclosure - Segment Reporting (Narrative) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SegmentReportingRevenuefromExternalCustomersbyProductsandServicesDetails" roleURI="http://www.starbucks.com/role/SegmentReportingRevenuefromExternalCustomersbyProductsandServicesDetails">
+        <link:definition>0000082 - Disclosure - Segment Reporting (Revenue from External Customers by Products and Services) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SegmentReportingReconciliationOfTotalSegmentOperatingIncomeToConsolidatedEarningsBeforeIncomeTaxesDetails" roleURI="http://www.starbucks.com/role/SegmentReportingReconciliationOfTotalSegmentOperatingIncomeToConsolidatedEarningsBeforeIncomeTaxesDetails">
+        <link:definition>0000083 - Disclosure - Segment Reporting (Reconciliation Of Total Segment Operating Income To Consolidated Earnings Before Income Taxes) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SubsequentEventsNarrativeDetails" roleURI="http://www.starbucks.com/role/SubsequentEventsNarrativeDetails">
+        <link:definition>0000084 - Disclosure - Subsequent Events (Narrative) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element id="sbux_IncomeLossfromEquityMethodInvestments1" abstract="false" name="IncomeLossfromEquityMethodInvestments1" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sbux_ShortTermBondFundsMember" abstract="true" name="ShortTermBondFundsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="sbux_RoastingEquipmentMember" abstract="true" name="RoastingEquipmentMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="sbux_A202210YearThreePercentSeniorNotesMember" abstract="true" name="A202210YearThreePercentSeniorNotesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="sbux_DairyContractsMember" abstract="true" name="DairyContractsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="sbux_DeferredRevenueOther" abstract="false" name="DeferredRevenueOther" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sbux_A202030YearThreePointFivePercentageSeniorNotesMember" abstract="true" name="A202030YearThreePointFivePercentageSeniorNotesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="sbux_OtherAccruedRestructuringLiabilities" abstract="false" name="OtherAccruedRestructuringLiabilities" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sbux_LesseeOperatingLeaseLiabilityToBePaidAfterYearFour" abstract="false" name="LesseeOperatingLeaseLiabilityToBePaidAfterYearFour" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sbux_StoreOperatingExpensesTable" abstract="true" name="StoreOperatingExpensesTable" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrldt:hypercubeItem" type="xbrli:stringItemType"/>
+  <xs:element id="sbux_MaximumIncreaseInCommitmentAmountAllowableUnderCreditFacility" abstract="false" name="MaximumIncreaseInCommitmentAmountAllowableUnderCreditFacility" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sbux_UpFrontPaymentUnderAcceleratedShareRepurchaseProgram" abstract="false" name="UpFrontPaymentUnderAcceleratedShareRepurchaseProgram" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sbux_StoreOperatingExpenses" abstract="false" name="StoreOperatingExpenses" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sbux_A201930YearFourPointFourFivePercentageSeniorNotesMember" abstract="true" name="A201930YearFourPointFourFivePercentageSeniorNotesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="sbux_PortionOfDebtInstrumentDesignatedInFairValueHedge" abstract="false" name="PortionOfDebtInstrumentDesignatedInFairValueHedge" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sbux_LesseeOperatingLeaseLeaseNotYetCommencedAmount" abstract="false" name="LesseeOperatingLeaseLeaseNotYetCommencedAmount" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sbux_NestleGlobalCoffeeAllianceMember" abstract="true" name="NestleGlobalCoffeeAllianceMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="sbux_DocumentAndEntityInformationAbstract" abstract="true" name="DocumentAndEntityInformationAbstract" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="sbux_DeferredPayrollTaxPayments" abstract="false" name="DeferredPayrollTaxPayments" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sbux_AccumulatedNetInvestmentHedgeGainLossAttributabletoParentMember" abstract="true" name="AccumulatedNetInvestmentHedgeGainLossAttributabletoParentMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="sbux_OpenMarketMember" abstract="true" name="OpenMarketMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="sbux_InternationalSegmentMember" abstract="true" name="InternationalSegmentMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="sbux_AccruedLiabilitiesLineItems" abstract="true" name="AccruedLiabilitiesLineItems" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="sbux_TimingOfStoreClosures" abstract="false" name="TimingOfStoreClosures" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="sbux_NorthAmericaSegmentMember" abstract="true" name="NorthAmericaSegmentMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="sbux_ForeignExchangeYenDebtMember" abstract="true" name="ForeignExchangeYenDebtMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="sbux_A201810YearThreePointFivePercentageSeniorNotesMember" abstract="true" name="A201810YearThreePointFivePercentageSeniorNotesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="sbux_CashPaidDuringPeriodForAbstract" abstract="true" name="CashPaidDuringPeriodForAbstract" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="sbux_StoreOperatingExpensesLineItems" abstract="true" name="StoreOperatingExpensesLineItems" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="sbux_TwothousandtwentyonecreditfacilityMember" abstract="true" name="TwothousandtwentyonecreditfacilityMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="sbux_NetInvestmentHedgeGainLossToBeReclassifiedWithinTwelveMonths" abstract="false" name="NetInvestmentHedgeGainLossToBeReclassifiedWithinTwelveMonths" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sbux_A201810YearFourPointZeroPercentageSeniorNotesMember" abstract="true" name="A201810YearFourPointZeroPercentageSeniorNotesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="sbux_USAndCanadaMember" abstract="true" name="USAndCanadaMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="sbux_GainOnDiscontinuationOfForeignCurrencyAndDairyCashFlowHedge" abstract="false" name="GainOnDiscontinuationOfForeignCurrencyAndDairyCashFlowHedge" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sbux_A202010YearTwoPointTwoFivePercentageSeniorNotesMember" abstract="true" name="A202010YearTwoPointTwoFivePercentageSeniorNotesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="sbux_A20207YearTwoPointZeroPercentageSeniorNotesMember" abstract="true" name="A20207YearTwoPointZeroPercentageSeniorNotesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="sbux_TokyoInterbankOfferedRateTIBORMember" abstract="true" name="TokyoInterbankOfferedRateTIBORMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="sbux_FiscalYearEnd53Weeks" abstract="false" name="FiscalYearEnd53Weeks" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:dateItemType"/>
+  <xs:element id="sbux_OtherComprehensiveIncomeLossReclassificationAdjustmentfromAOCIonDerivativesSalesofSecuritiesorForeignCurrencyTransactionandTranslationRealizedonSaleorLiquidationbeforeTax" abstract="false" name="OtherComprehensiveIncomeLossReclassificationAdjustmentfromAOCIonDerivativesSalesofSecuritiesorForeignCurrencyTransactionandTranslationRealizedonSaleorLiquidationbeforeTax" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sbux_A201910YearThreePointFiveFivePercentageSeniorNotesMember" abstract="true" name="A201910YearThreePointFiveFivePercentageSeniorNotesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="sbux_DeferredPayrollTaxPaymentsNoncurrent" abstract="false" name="DeferredPayrollTaxPaymentsNoncurrent" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sbux_A202030YearThreePointThreeFivePercentageSeniorNotesMember" abstract="true" name="A202030YearThreePointThreeFivePercentageSeniorNotesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="sbux_DeferredPayrollTaxPaymentsCurrent" abstract="false" name="DeferredPayrollTaxPaymentsCurrent" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sbux_AccruedLiabilitiesTable" abstract="true" name="AccruedLiabilitiesTable" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrldt:hypercubeItem" type="xbrli:stringItemType"/>
+  <xs:element id="sbux_A201310YearThreePointEightFivePercentageSeniorNotesMember" abstract="true" name="A201310YearThreePointEightFivePercentageSeniorNotesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="sbux_FoodMember" abstract="false" name="FoodMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="sbux_PrepaidExpensesandOtherCurrentAssetsTable" abstract="true" name="PrepaidExpensesandOtherCurrentAssetsTable" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrldt:hypercubeItem" type="xbrli:stringItemType"/>
+  <xs:element id="sbux_StoreOperatingExpensesTableTextBlock" abstract="false" name="StoreOperatingExpensesTableTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:textBlockItemType"/>
+  <xs:element id="sbux_ProductTypeMember" abstract="true" name="ProductTypeMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="sbux_AcceleratedLeaseROUAssetAmortizationAndOtherLeaseCostsMember" abstract="true" name="AcceleratedLeaseROUAssetAmortizationAndOtherLeaseCostsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="sbux_CumulativeEffectOfNewAccountingPronouncementInPeriodOfAdoption" abstract="false" name="CumulativeEffectOfNewAccountingPronouncementInPeriodOfAdoption" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sbux_SupplementalBalanceSheetAndIncomeStatementDisclosuresTextBlock" abstract="false" name="SupplementalBalanceSheetAndIncomeStatementDisclosuresTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:textBlockItemType"/>
+  <xs:element id="sbux_BorrowingOutstandingUnderYenDenominatedCreditFacilityMember" abstract="true" name="BorrowingOutstandingUnderYenDenominatedCreditFacilityMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="sbux_TradeNamesTrademarksandPatentsMember" abstract="true" name="TradeNamesTrademarksandPatentsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="sbux_PayrollTaxIncentives" abstract="false" name="PayrollTaxIncentives" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sbux_AccruedLiabilitiesAxis" abstract="true" name="AccruedLiabilitiesAxis" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrldt:dimensionItem" type="xbrli:stringItemType"/>
+  <xs:element id="sbux_AccruedOccupancyCosts" abstract="false" name="AccruedOccupancyCosts" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sbux_A20187YearThreePointEightPercentageSeniorNotesMember" abstract="true" name="A20187YearThreePointEightPercentageSeniorNotesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="sbux_DieselandOtherContractsMember" abstract="true" name="DieselandOtherContractsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="sbux_PrepaidExpensesandOtherCurrentAssetsTableTextBlock" abstract="false" name="PrepaidExpensesandOtherCurrentAssetsTableTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:textBlockItemType"/>
+  <xs:element id="sbux_ApfinInvestmentPteLtdAnAffiliateOfGICPrivateLimitedMember" abstract="true" name="ApfinInvestmentPteLtdAnAffiliateOfGICPrivateLimitedMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="sbux_A201830YearFourPointFivePercentageSeniorNotesMember" abstract="true" name="A201830YearFourPointFivePercentageSeniorNotesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="sbux_AccruedLiabilitiesDomain" abstract="true" name="AccruedLiabilitiesDomain" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="sbux_BeverageMember" abstract="false" name="BeverageMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="sbux_A5BillionYenCreditFacilityMember" abstract="true" name="A5BillionYenCreditFacilityMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="sbux_JointVenturePartnersDomain" abstract="true" name="JointVenturePartnersDomain" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="sbux_BusinessAcquisitionExpectedTimingOfAcquisition" abstract="false" name="BusinessAcquisitionExpectedTimingOfAcquisition" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="sbux_DebtInstrumentBorrowingCapacityAmount" abstract="false" name="DebtInstrumentBorrowingCapacityAmount" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sbux_PrepaidExpensesandOtherCurrentAssetsLineItems" abstract="true" name="PrepaidExpensesandOtherCurrentAssetsLineItems" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="sbux_StockOptionsAndRestrictedStockUnitsMember" abstract="true" name="StockOptionsAndRestrictedStockUnitsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="sbux_ProceedsfromSalesofInvestments" abstract="false" name="ProceedsfromSalesofInvestments" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sbux_DeferredRevenueTableTable" abstract="true" name="DeferredRevenueTableTable" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrldt:hypercubeItem" type="xbrli:stringItemType"/>
+  <xs:element id="sbux_A10BillionYenCreditFacilityMember" abstract="true" name="A10BillionYenCreditFacilityMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="sbux_PrepaidExpensesandOtherCurrentAssetsAxis" abstract="true" name="PrepaidExpensesandOtherCurrentAssetsAxis" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrldt:dimensionItem" type="xbrli:stringItemType"/>
+  <xs:element id="sbux_StoreOperatingExpenseDomain" abstract="true" name="StoreOperatingExpenseDomain" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="sbux_ChangesInDeferredRevenueBalanceRelatedToStoredValueCardsAndLoyaltyProgramTableTextBlock" abstract="false" name="ChangesInDeferredRevenueBalanceRelatedToStoredValueCardsAndLoyaltyProgramTableTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:textBlockItemType"/>
+  <xs:element id="sbux_NonCashLeaseExpense" abstract="false" name="NonCashLeaseExpense" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sbux_KoreaJVMember" abstract="true" name="KoreaJVMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="sbux_CoffeeContractsMember" abstract="true" name="CoffeeContractsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="sbux_PrepaidExpensesandOtherCurrentAssetsDomain" abstract="true" name="PrepaidExpensesandOtherCurrentAssetsDomain" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="sbux_DeferredRevenueTableLineItems" abstract="true" name="DeferredRevenueTableLineItems" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="sbux_March2022ASRMember" abstract="true" name="March2022ASRMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="sbux_StructuredDeposits" abstract="false" name="StructuredDeposits" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sbux_StoreEquipmentMember" abstract="true" name="StoreEquipmentMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="sbux_EquityMethodInvestmentIncrementalOwnershipPercentage" abstract="false" name="EquityMethodInvestmentIncrementalOwnershipPercentage" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="dtr-types:percentItemType"/>
+  <xs:element id="sbux_EMartIncMember" abstract="true" name="EMartIncMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="sbux_ProductAndDistributionCostsMember" abstract="true" name="ProductAndDistributionCostsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="sbux_RentConcession" abstract="false" name="RentConcession" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sbux_OtherProductsMember" abstract="false" name="OtherProductsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="sbux_A20222YearFloatingrateSeniorNotesMember" abstract="true" name="A20222YearFloatingrateSeniorNotesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="sbux_RevenueRecognitionPeriodStoredValueCardsandLoyaltyProgramBreakageMember" abstract="true" name="RevenueRecognitionPeriodStoredValueCardsandLoyaltyProgramBreakageMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="sbux_A20185YearThreePointOnePercentageSeniorNotesMember" abstract="true" name="A20185YearThreePointOnePercentageSeniorNotesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="sbux_A201730YearThreePointSevenFivePercentageSeniorNotesMember" abstract="true" name="A201730YearThreePointSevenFivePercentageSeniorNotesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="sbux_A5BillionAnd10BillionYenCreditFacilityMember" abstract="true" name="A5BillionAnd10BillionYenCreditFacilityMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="sbux_IdentifiedStoreClosures" abstract="false" name="IdentifiedStoreClosures" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="xbrli:integerItemType"/>
+  <xs:element id="sbux_FranchisedUnitsRevenueMember" abstract="true" name="FranchisedUnitsRevenueMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="sbux_InterestandOtherIncomeMember" abstract="true" name="InterestandOtherIncomeMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="sbux_ExpectedTimingOfRestructuringPlan" abstract="false" name="ExpectedTimingOfRestructuringPlan" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="sbux_OtherStoreOperatingExpenses" abstract="false" name="OtherStoreOperatingExpenses" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sbux_ChannelDevelopmentMember" abstract="true" name="ChannelDevelopmentMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="sbux_OtherComprehensiveIncomeLossReclassificationAdjustmentfromAOCIonDerivativesSalesofSecuritiesorfromForeignCurrencyTransactionandTranslationRealizeduponSaleorLiquidationTax" abstract="false" name="OtherComprehensiveIncomeLossReclassificationAdjustmentfromAOCIonDerivativesSalesofSecuritiesorfromForeignCurrencyTransactionandTranslationRealizeduponSaleorLiquidationTax" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sbux_SeptemberASRMember" abstract="true" name="SeptemberASRMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="sbux_StoreOccupancyCost" abstract="false" name="StoreOccupancyCost" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sbux_A201610YearTwoPointFourFivePercentageSeniorNotesMember" abstract="true" name="A201610YearTwoPointFourFivePercentageSeniorNotesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="sbux_JointVenturePartnersAxis" abstract="true" name="JointVenturePartnersAxis" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrldt:dimensionItem" type="xbrli:stringItemType"/>
+  <xs:element id="sbux_MarchASRMember" abstract="true" name="MarchASRMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="sbux_FiniteLivedIntangibleAssetExpectedAmortizationAfterYearFour" abstract="false" name="FiniteLivedIntangibleAssetExpectedAmortizationAfterYearFour" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sbux_A201530YearFourPointThreePercentageSeniorNotesMember" abstract="true" name="A201530YearFourPointThreePercentageSeniorNotesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="sbux_PriceToBeFixedContractMember" abstract="true" name="PriceToBeFixedContractMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="sbux_AmountOfCreditFacilityAvailableForIssuancesOfLettersOfCredit" abstract="false" name="AmountOfCreditFacilityAvailableForIssuancesOfLettersOfCredit" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sbux_RoastedCoffeeInventory" abstract="false" name="RoastedCoffeeInventory" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sbux_StoreOperatingExpenseAxis" abstract="true" name="StoreOperatingExpenseAxis" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrldt:dimensionItem" type="xbrli:stringItemType"/>
+  <xs:element id="sbux_NumberOfStoreClosures" abstract="false" name="NumberOfStoreClosures" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="xbrli:integerItemType"/>
+  <xs:element id="sbux_EquityInvestments" abstract="false" name="EquityInvestments" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sbux_A202010YearTwoPointFiveFiveSeniorNotesMember" abstract="true" name="A202010YearTwoPointFiveFiveSeniorNotesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="sbux_UnroastedCoffeeInventory" abstract="false" name="UnroastedCoffeeInventory" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sbux_A10BillionYenCreditFacilityDueOctober2021Member" abstract="true" name="A10BillionYenCreditFacilityDueOctober2021Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="sbux_A20177YearPointThreeSevenTwoPercentageYenDenominatedSeniorNotesMember" abstract="true" name="A20177YearPointThreeSevenTwoPercentageYenDenominatedSeniorNotesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="sbux_FiscalYearEnd52Weeks" abstract="false" name="FiscalYearEnd52Weeks" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:dateItemType"/>
+  <xs:element id="sbux_SupplementalLeaseDisclosureTableTextBlock" abstract="false" name="SupplementalLeaseDisclosureTableTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:textBlockItemType"/>
+</xs:schema>

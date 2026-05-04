@@ -1,0 +1,426 @@
+<?xml version="1.0" encoding="us-ascii" standalone="yes"?>
+<!--XBRL Document Created with XBRLMaster-->
+<!--Version: 2.3.08-->
+<!--Based on XBRL 2.1-->
+<!--Date of creation: 11/19/2024-->
+<!--Software architectural design and coding: A'c Dharmapremananda Avt.-->
+<!--Copyright (c) 2024 I-NET Business Solutions, Inc. All Rights Reserved.-->
+<schema xmlns:xl="http://www.xbrl.org/2003/XLink" xmlns:ref="http://www.xbrl.org/2006/ref" xmlns:currency="http://xbrl.sec.gov/currency/2024" xmlns:us-gaap-att="http://fasb.org/us-gaap/attributes" xmlns:sic="http://xbrl.sec.gov/sic/2024" xmlns:exch="http://xbrl.sec.gov/exch/2024" xmlns:invest="http://xbrl.sec.gov/invest/2013-01-31" xmlns:negated="http://www.xbrl.org/2009/role/negated" xmlns:naics="http://xbrl.sec.gov/naics/2024" xmlns:us-types="http://fasb.org/us-types/2024" xmlns:stpr="http://xbrl.sec.gov/stpr/2024" xmlns="http://www.w3.org/2001/XMLSchema" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:xbrli="http://www.xbrl.org/2003/instance" xmlns:xbrldt="http://xbrl.org/2005/xbrldt" xmlns:xbrldi="http://xbrl.org/2006/xbrldi" xmlns:country="http://xbrl.sec.gov/country/2024" xmlns:utr="http://www.xbrl.org/2009/utr" xmlns:srt-types="http://fasb.org/srt-types/2024" xmlns:dtr-types="http://www.xbrl.org/dtr/type/2020-01-21" xmlns:srt-roles="http://fasb.org/srt-roles/2024" xmlns:dei="http://xbrl.sec.gov/dei/2024" xmlns:num="http://www.xbrl.org/dtr/type/numeric" xmlns:nonnum="http://www.xbrl.org/dtr/type/non-numeric" xmlns:srt="http://fasb.org/srt/2024" xmlns:us-gaap="http://fasb.org/us-gaap/2024" xmlns:ecd="http://xbrl.sec.gov/ecd/2024" xmlns:crwe="http://crwe.com/20240930" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://crwe.com/20240930">
+  <annotation>
+    <appinfo>
+      <link:roleType roleURI="http://crwe.com/role/Cover" id="Cover">
+        <link:definition>000001 - Document - Cover</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://crwe.com/role/CondensedConsolidatedBalanceSheets" id="CondensedConsolidatedBalanceSheets">
+        <link:definition>000002 - Statement - CONDENSED CONSOLIDATED BALANCE SHEETS</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://crwe.com/role/CondensedConsolidatedBalanceSheetsParenthetical" id="CondensedConsolidatedBalanceSheetsParenthetical">
+        <link:definition>000003 - Statement - CONDENSED CONSOLIDATED BALANCE SHEETS (Parenthetical)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://crwe.com/role/CondensedConsolidatedStatementsOfOperationsUnaudited" id="CondensedConsolidatedStatementsOfOperationsUnaudited">
+        <link:definition>000004 - Statement - CONDENSED CONSOLIDATED STATEMENTS OF OPERATIONS (Unaudited)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://crwe.com/role/CondensedConsolidatedStatementsOfChangesInStockholdersDeficitUnaudited" id="CondensedConsolidatedStatementsOfChangesInStockholdersDeficitUnaudited">
+        <link:definition>000005 - Statement - CONDENSED CONSOLIDATED STATEMENTS OF CHANGES IN STOCKHOLDERS' DEFICIT (Unaudited)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://crwe.com/role/CondensedConsolidatedStatementsOfCashFlowsUnaudited" id="CondensedConsolidatedStatementsOfCashFlowsUnaudited">
+        <link:definition>000006 - Statement - CONDENSED CONSOLIDATED STATEMENTS OF CASH FLOWS (Unaudited)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://crwe.com/role/NatureOfBusinessAndSummaryOfAccountingPolicies" id="NatureOfBusinessAndSummaryOfAccountingPolicies">
+        <link:definition>000007 - Disclosure - NATURE OF BUSINESS AND SUMMARY OF ACCOUNTING POLICIES</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://crwe.com/role/GoingConcern" id="GoingConcern">
+        <link:definition>000008 - Disclosure - GOING CONCERN</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://crwe.com/role/PropertyAndEquipment" id="PropertyAndEquipment">
+        <link:definition>000009 - Disclosure - PROPERTY AND EQUIPMENT</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://crwe.com/role/FinanceLeases" id="FinanceLeases">
+        <link:definition>000010 - Disclosure - FINANCE LEASES</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://crwe.com/role/NotesPayableAndConvertibleNotePayables" id="NotesPayableAndConvertibleNotePayables">
+        <link:definition>000011 - Disclosure - NOTES PAYABLE AND CONVERTIBLE NOTE PAYABLES</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://crwe.com/role/CommitmentsAndContingencies" id="CommitmentsAndContingencies">
+        <link:definition>000012 - Disclosure - COMMITMENTS AND CONTINGENCIES</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://crwe.com/role/RelatedPartyTransactions" id="RelatedPartyTransactions">
+        <link:definition>000013 - Disclosure - RELATED PARTY TRANSACTIONS</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://crwe.com/role/StockHoldersEquityDeficit" id="StockHoldersEquityDeficit">
+        <link:definition>000014 - Disclosure - STOCK HOLDERS' EQUITY (DEFICIT)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://crwe.com/role/IncomeTaxes" id="IncomeTaxes">
+        <link:definition>000015 - Disclosure - INCOME TAXES</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://crwe.com/role/SubsequentEvents" id="SubsequentEvents">
+        <link:definition>000016 - Disclosure - SUBSEQUENT EVENTS</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://crwe.com/role/NatureOfBusinessAndSummaryOfAccountingPoliciesPolicies" id="NatureOfBusinessAndSummaryOfAccountingPoliciesPolicies">
+        <link:definition>000017 - Disclosure - NATURE OF BUSINESS AND SUMMARY OF ACCOUNTING POLICIES (Policies)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://crwe.com/role/NatureOfBusinessAndSummaryOfAccountingPoliciesTables" id="NatureOfBusinessAndSummaryOfAccountingPoliciesTables">
+        <link:definition>000018 - Disclosure - NATURE OF BUSINESS AND SUMMARY OF ACCOUNTING POLICIES (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://crwe.com/role/PropertyAndEquipmentTables" id="PropertyAndEquipmentTables">
+        <link:definition>000019 - Disclosure - PROPERTY AND EQUIPMENT (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://crwe.com/role/NotesPayableAndConvertibleNotePayablesTables" id="NotesPayableAndConvertibleNotePayablesTables">
+        <link:definition>000020 - Disclosure - NOTES PAYABLE AND CONVERTIBLE NOTE PAYABLES (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://crwe.com/role/StockHoldersEquityDeficitTables" id="StockHoldersEquityDeficitTables">
+        <link:definition>000021 - Disclosure - STOCK HOLDERS' EQUITY (DEFICIT) (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://crwe.com/role/IncomeTaxesTables" id="IncomeTaxesTables">
+        <link:definition>000022 - Disclosure - INCOME TAXES (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://crwe.com/role/NatureOfBusinessAndSummaryOfAccountingPoliciesDetails" id="NatureOfBusinessAndSummaryOfAccountingPoliciesDetails">
+        <link:definition>000023 - Disclosure - NATURE OF BUSINESS AND SUMMARY OF ACCOUNTING POLICIES (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://crwe.com/role/NatureOfBusinessAndSummaryOfAccountingPoliciesDetails1" id="NatureOfBusinessAndSummaryOfAccountingPoliciesDetails1">
+        <link:definition>000024 - Disclosure - NATURE OF BUSINESS AND SUMMARY OF ACCOUNTING POLICIES (Details 1)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://crwe.com/role/NatureOfBusinessAndSummaryOfAccountingPoliciesDetails2" id="NatureOfBusinessAndSummaryOfAccountingPoliciesDetails2">
+        <link:definition>000025 - Disclosure - NATURE OF BUSINESS AND SUMMARY OF ACCOUNTING POLICIES (Details 2)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://crwe.com/role/NatureOfBusinessAndSummaryOfAccountingPoliciesDetails3" id="NatureOfBusinessAndSummaryOfAccountingPoliciesDetails3">
+        <link:definition>000026 - Disclosure - NATURE OF BUSINESS AND SUMMARY OF ACCOUNTING POLICIES (Details 3)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://crwe.com/role/NatureOfBusinessAndSummaryOfAccountingDetailsNarrative" id="NatureOfBusinessAndSummaryOfAccountingDetailsNarrative">
+        <link:definition>000027 - Disclosure - NATURE OF BUSINESS AND SUMMARY OF ACCOUNTING (Details Narrative)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://crwe.com/role/GoingConcernDetailsNarrative" id="GoingConcernDetailsNarrative">
+        <link:definition>000028 - Disclosure - GOING CONCERN (Details Narrative)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://crwe.com/role/PropertyAndEquipmentDetails" id="PropertyAndEquipmentDetails">
+        <link:definition>000029 - Disclosure - PROPERTY AND EQUIPMENT (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://crwe.com/role/PropertyAndEquipmentDetailsNarrative" id="PropertyAndEquipmentDetailsNarrative">
+        <link:definition>000030 - Disclosure - PROPERTY AND EQUIPMENT (Details Narrative)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://crwe.com/role/NotesPayableAndConvertibleNotePayablesDetails" id="NotesPayableAndConvertibleNotePayablesDetails">
+        <link:definition>000031 - Disclosure - NOTES PAYABLE AND CONVERTIBLE NOTE PAYABLES (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://crwe.com/role/NotesPayableAndConvertibleNotePayablesDetailsNarrative" id="NotesPayableAndConvertibleNotePayablesDetailsNarrative">
+        <link:definition>000032 - Disclosure - NOTES PAYABLE AND CONVERTIBLE NOTE PAYABLES (Details Narrative)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://crwe.com/role/CommitmentsAndContingenciesDetailsNarrative" id="CommitmentsAndContingenciesDetailsNarrative">
+        <link:definition>000033 - Disclosure - COMMITMENTS AND CONTINGENCIES (Details Narrative)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://crwe.com/role/RelatedPartyTransactionsDetailsNarrative" id="RelatedPartyTransactionsDetailsNarrative">
+        <link:definition>000034 - Disclosure - RELATED PARTY TRANSACTIONS (Details Narrative)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://crwe.com/role/StockholdersDeficitDetails" id="StockholdersDeficitDetails">
+        <link:definition>000035 - Disclosure - STOCKHOLDERS' DEFICIT (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://crwe.com/role/StockholdersDeficitDetailsNarrative" id="StockholdersDeficitDetailsNarrative">
+        <link:definition>000036 - Disclosure - STOCKHOLDERS' DEFICIT (Details Narrative)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://crwe.com/role/IncomeTaxesDetails" id="IncomeTaxesDetails">
+        <link:definition>000037 - Disclosure - INCOME TAXES (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://crwe.com/role/IncomeTaxesDetailsNarrative" id="IncomeTaxesDetailsNarrative">
+        <link:definition>000038 - Disclosure - INCOME TAXES (Details Narrative)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://crwe.com/role/SubsequentEventsDetailsNarrative" id="SubsequentEventsDetailsNarrative">
+        <link:definition>000039 - Disclosure - SUBSEQUENT EVENTS (Details Narrative)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:linkbaseRef xlink:type="simple" xlink:href="crwe-20240930_pre.xml" xlink:role="http://www.xbrl.org/2003/role/presentationLinkbaseRef" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" />
+      <link:linkbaseRef xlink:type="simple" xlink:href="crwe-20240930_lab.xml" xlink:role="http://www.xbrl.org/2003/role/labelLinkbaseRef" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" />
+      <link:linkbaseRef xlink:type="simple" xlink:href="crwe-20240930_cal.xml" xlink:role="http://www.xbrl.org/2003/role/calculationLinkbaseRef" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" />
+      <link:linkbaseRef xlink:type="simple" xlink:href="crwe-20240930_def.xml" xlink:role="http://www.xbrl.org/2003/role/definitionLinkbaseRef" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" />
+    </appinfo>
+  </annotation>
+  <import namespace="http://www.xbrl.org/2003/instance" schemaLocation="http://www.xbrl.org/2003/xbrl-instance-2003-12-31.xsd" />
+  <import namespace="http://www.xbrl.org/2003/linkbase" schemaLocation="http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd" />
+  <import namespace="http://xbrl.org/2005/xbrldt" schemaLocation="http://www.xbrl.org/2005/xbrldt-2005.xsd" />
+  <import namespace="http://xbrl.sec.gov/country/2024" schemaLocation="https://xbrl.sec.gov/country/2024/country-2024.xsd" />
+  <import namespace="http://xbrl.sec.gov/currency/2024" schemaLocation="https://xbrl.sec.gov/currency/2024/currency-2024.xsd" />
+  <import namespace="http://xbrl.sec.gov/dei/2024" schemaLocation="https://xbrl.sec.gov/dei/2024/dei-2024.xsd" />
+  <import namespace="http://www.xbrl.org/dtr/type/non-numeric" schemaLocation="http://www.xbrl.org/dtr/type/nonNumeric-2009-12-16.xsd" />
+  <import namespace="http://www.xbrl.org/dtr/type/numeric" schemaLocation="http://www.xbrl.org/dtr/type/numeric-2009-12-16.xsd" />
+  <import namespace="http://xbrl.sec.gov/exch/2024" schemaLocation="https://xbrl.sec.gov/exch/2024/exch-2024.xsd" />
+  <import namespace="http://www.xbrl.org/2009/arcrole/fact-explanatoryFact" schemaLocation="http://www.xbrl.org/lrr/arcrole/factExplanatory-2009-12-16.xsd" />
+  <import namespace="http://www.xbrl.org/2009/role/negated" schemaLocation="http://www.xbrl.org/lrr/role/negated-2009-12-16.xsd" />
+  <import namespace="http://www.xbrl.org/2009/role/net" schemaLocation="http://www.xbrl.org/lrr/role/net-2009-12-16.xsd" />
+  <import namespace="http://xbrl.sec.gov/naics/2024" schemaLocation="https://xbrl.sec.gov/naics/2024/naics-2024.xsd" />
+  <import namespace="http://xbrl.sec.gov/sic/2024" schemaLocation="https://xbrl.sec.gov/sic/2024/sic-2024.xsd" />
+  <import namespace="http://fasb.org/srt-roles/2024" schemaLocation="https://xbrl.fasb.org/srt/2024/elts/srt-roles-2024.xsd" />
+  <import namespace="http://fasb.org/srt-types/2024" schemaLocation="https://xbrl.fasb.org/srt/2024/elts/srt-types-2024.xsd" />
+  <import namespace="http://www.xbrl.org/dtr/type/2020-01-21" schemaLocation="https://www.xbrl.org/dtr/type/2020-01-21/types.xsd" />
+  <import namespace="http://xbrl.sec.gov/stpr/2024" schemaLocation="https://xbrl.sec.gov/stpr/2024/stpr-2024.xsd" />
+  <import namespace="http://fasb.org/us-roles/2024" schemaLocation="https://xbrl.fasb.org/us-gaap/2024/elts/us-roles-2024.xsd" />
+  <import namespace="http://fasb.org/us-types/2024" schemaLocation="https://xbrl.fasb.org/us-gaap/2024/elts/us-types-2024.xsd" />
+  <import namespace="http://fasb.org/srt/2024" schemaLocation="https://xbrl.fasb.org/srt/2024/elts/srt-2024.xsd" />
+  <import namespace="http://fasb.org/us-gaap/2024" schemaLocation="https://xbrl.fasb.org/us-gaap/2024/elts/us-gaap-2024.xsd" />
+  <import namespace="http://xbrl.sec.gov/ecd/2024" schemaLocation="https://xbrl.sec.gov/ecd/2024/ecd-2024.xsd" />
+  <element id="crwe_AccountsPayableAndAccruedExpensesToRelatedPartyCurrent" name="AccountsPayableAndAccruedExpensesToRelatedPartyCurrent" nillable="true" xbrli:balance="credit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="crwe_NotesPayableRelatedPartiesCurrent" name="NotesPayableRelatedPartiesCurrent" nillable="true" xbrli:balance="credit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="crwe_ConvertibleNotesPayableNetOfDebtDiscount" name="ConvertibleNotesPayableNetOfDebtDiscount" nillable="true" xbrli:balance="credit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="crwe_Revenue" name="Revenue" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="crwe_RevenueRelatedParty" name="RevenueRelatedParty" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="crwe_GainLossOnRelatedPartyAPConversion" name="GainLossOnRelatedPartyAPConversion" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="crwe_GainLossOnInvestmentsConversion" name="GainLossOnInvestmentsConversion" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="crwe_GainLossOnDebtConversion" name="GainLossOnDebtConversion" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="crwe_EarningsPerSharesBasicAndDiluted" name="EarningsPerSharesBasicAndDiluted" nillable="true" xbrli:periodType="duration" type="num:perShareItemType" substitutionGroup="xbrli:item" />
+  <element id="crwe_WeightedAverageNumberOfSharesOutstandingBasicAndDiluted" name="WeightedAverageNumberOfSharesOutstandingBasicAndDiluted" nillable="true" xbrli:periodType="duration" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" />
+  <element id="crwe_WarrantSubscriptions" name="WarrantSubscriptions" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="crwe_CsIssuedForRelatedPartyAccruedExpenseAndApConversionShares" name="CsIssuedForRelatedPartyAccruedExpenseAndApConversionShares" nillable="true" xbrli:periodType="duration" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" />
+  <element id="crwe_CsIssuedForRelatedPartyAccruedExpenseAndApConversionAmount" name="CsIssuedForRelatedPartyAccruedExpenseAndApConversionAmount" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="crwe_CommonStockIssuedForNotePayableAndInterestShares" name="CommonStockIssuedForNotePayableAndInterestShares" nillable="true" xbrli:periodType="duration" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" />
+  <element id="crwe_CommonStockIssuedForNotePayableAndInterestAmount" name="CommonStockIssuedForNotePayableAndInterestAmount" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="crwe_CommonStockIssuedForApSettlementShares" name="CommonStockIssuedForApSettlementShares" nillable="true" xbrli:periodType="duration" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" />
+  <element id="crwe_CommonStockIssuedForApSettlementAmount" name="CommonStockIssuedForApSettlementAmount" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="crwe_WarrantDiscount" name="WarrantDiscount" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="crwe_AmortizationOfWarrantDiscount" name="AmortizationOfWarrantDiscount" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="crwe_Rounding" name="Rounding" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="crwe_DiscountOnWarrant" name="DiscountOnWarrant" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="crwe_IssuanceOfStockForAccruedExpensesRelatedParty" name="IssuanceOfStockForAccruedExpensesRelatedParty" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="crwe_UnrealizedGainLossSecurities" name="UnrealizedGainLossSecurities" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="crwe_IncreaseDecreaseInAccountsPayableAndAccruedLiabilitiesRelatedParty" name="IncreaseDecreaseInAccountsPayableAndAccruedLiabilitiesRelatedParty" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="crwe_BorrowingsFromConvertibleNotesPayableRelatedPartyDebt" name="BorrowingsFromConvertibleNotesPayableRelatedPartyDebt" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="crwe_BorrowingsFromConvertibleNotesPayable" name="BorrowingsFromConvertibleNotesPayable" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="crwe_WarrantSubscription" name="WarrantSubscription" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="crwe_IssuanceOfCommonStockForAccountsPayable" name="IssuanceOfCommonStockForAccountsPayable" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="crwe_NewAccountingPronouncementEarlyAdoptionPolicyTextBlock" name="NewAccountingPronouncementEarlyAdoptionPolicyTextBlock" nillable="true" xbrli:periodType="duration" type="nonnum:textBlockItemType" substitutionGroup="xbrli:item" />
+  <element id="crwe_AccountsReceivableAndAllowanceForDoubtfulAccountsPolicyTextBlock" name="AccountsReceivableAndAllowanceForDoubtfulAccountsPolicyTextBlock" nillable="true" xbrli:periodType="duration" type="nonnum:textBlockItemType" substitutionGroup="xbrli:item" />
+  <element id="crwe_ScheduleOfSalesRecognizedPromisedTableTextBlock" name="ScheduleOfSalesRecognizedPromisedTableTextBlock" nillable="true" xbrli:periodType="duration" type="nonnum:textBlockItemType" substitutionGroup="xbrli:item" />
+  <element id="crwe_ScheduleOfDeferredTaxAssetsTableTextBlock" name="ScheduleOfDeferredTaxAssetsTableTextBlock" nillable="true" xbrli:periodType="duration" type="nonnum:textBlockItemType" substitutionGroup="xbrli:item" />
+  <element id="crwe_AdvertisingServices" name="AdvertisingServices" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="crwe_Accounting" name="Accounting" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="crwe_ClickBasedAndImpressionsAds" name="ClickBasedAndImpressionsAds" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="crwe_PublishingAndDistribution" name="PublishingAndDistribution" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="crwe_CostOfServer" name="CostOfServer" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="crwe_TotalSales" name="TotalSales" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="crwe_AccountingServices" name="AccountingServices" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="crwe_NumeratorAbstract" name="NumeratorAbstract" nillable="true" abstract="true" xbrli:periodType="duration" type="xbrli:stringItemType" substitutionGroup="xbrli:item" />
+  <element id="crwe_DenominatorAbstract" name="DenominatorAbstract" nillable="true" abstract="true" xbrli:periodType="duration" type="xbrli:stringItemType" substitutionGroup="xbrli:item" />
+  <element id="crwe_ReducedTheFederalStatutoryCorporateTaxRateDescription" name="ReducedTheFederalStatutoryCorporateTaxRateDescription" nillable="true" xbrli:periodType="duration" type="xbrli:stringItemType" substitutionGroup="xbrli:item" />
+  <element id="crwe_RevenuesFromPublishingAndDistribution" name="RevenuesFromPublishingAndDistribution" nillable="true" xbrli:periodType="duration" type="num:percentItemType" substitutionGroup="xbrli:item" />
+  <element id="crwe_RevenueEarnedWasReceivedFromTheDisplayOfClickBased" name="RevenueEarnedWasReceivedFromTheDisplayOfClickBased" nillable="true" xbrli:periodType="duration" type="num:percentItemType" substitutionGroup="xbrli:item" />
+  <element id="crwe_NumberOfPotentialAntiDilutiveShares" name="NumberOfPotentialAntiDilutiveShares" nillable="true" xbrli:periodType="duration" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" />
+  <element id="crwe_WorkingCapitalDeficit" name="WorkingCapitalDeficit" nillable="true" xbrli:balance="credit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="crwe_CapitalizedPropertyAmount" name="CapitalizedPropertyAmount" nillable="true" xbrli:balance="debit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="crwe_PropertyPlantAndEquipmentUsefulLifes" name="PropertyPlantAndEquipmentUsefulLifes" nillable="true" xbrli:periodType="duration" type="xbrli:durationItemType" substitutionGroup="xbrli:item" />
+  <element id="crwe_OriginalNoteDate" name="OriginalNoteDate" nillable="true" xbrli:periodType="instant" type="xbrli:dateItemType" substitutionGroup="xbrli:item" />
+  <element id="crwe_ConversionRate" name="ConversionRate" nillable="true" xbrli:periodType="duration" type="num:perShareItemType" substitutionGroup="xbrli:item" />
+  <element id="crwe_PromissoryNote" name="PromissoryNote" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="crwe_PrincipalBalanceOfPromissoryNote" name="PrincipalBalanceOfPromissoryNote" nillable="true" xbrli:balance="credit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="crwe_PrincipalBalanceOfPromissoryNotes" name="PrincipalBalanceOfPromissoryNotes" nillable="true" xbrli:balance="credit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="crwe_ConvertibleNotesRelatedParties" name="ConvertibleNotesRelatedParties" nillable="true" xbrli:balance="credit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="crwe_NonConvertibleNotesNotesFromRelatedParties" name="NonConvertibleNotesNotesFromRelatedParties" nillable="true" xbrli:balance="credit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="crwe_ClassOfWarrantOrRightOutstandingIssued" name="ClassOfWarrantOrRightOutstandingIssued" nillable="true" xbrli:periodType="duration" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" />
+  <element id="crwe_ClassOfWarrantOrRightOutstandingExpired" name="ClassOfWarrantOrRightOutstandingExpired" nillable="true" xbrli:periodType="duration" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" />
+  <element id="crwe_ClassOfWarrantOrRightExercisePriceOfWarrantsOrRightsIssued" name="ClassOfWarrantOrRightExercisePriceOfWarrantsOrRightsIssued" nillable="true" xbrli:periodType="duration" type="num:perShareItemType" substitutionGroup="xbrli:item" />
+  <element id="crwe_ClassOfWarrantOrRightExercisePriceOfWarrantsOrRightsExercised" name="ClassOfWarrantOrRightExercisePriceOfWarrantsOrRightsExercised" nillable="true" xbrli:periodType="duration" type="num:perShareItemType" substitutionGroup="xbrli:item" />
+  <element id="crwe_CommonStockIssuedForAccountPayableShares" name="CommonStockIssuedForAccountPayableShares" nillable="true" xbrli:periodType="duration" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" />
+  <element id="crwe_CommonStockIssuedForServicesShares" name="CommonStockIssuedForServicesShares" nillable="true" xbrli:periodType="duration" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" />
+  <element id="crwe_CommonStockIssuedForNotePayableShares" name="CommonStockIssuedForNotePayableShares" nillable="true" xbrli:periodType="duration" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" />
+  <element id="crwe_CommonStockSharesAvailableForIssuance" name="CommonStockSharesAvailableForIssuance" nillable="true" xbrli:periodType="instant" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" />
+  <element id="crwe_PreferredStockSharesDesignated" name="PreferredStockSharesDesignated" nillable="true" xbrli:periodType="instant" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" />
+  <element id="crwe_RestrictedShareIssued" name="RestrictedShareIssued" nillable="true" xbrli:periodType="duration" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" />
+  <element id="crwe_NetLossOnConversion" name="NetLossOnConversion" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="crwe_ConversionPricePerShare" name="ConversionPricePerShare" nillable="true" xbrli:periodType="duration" type="num:perShareItemType" substitutionGroup="xbrli:item" />
+  <element id="crwe_CorporateTaxRate" name="CorporateTaxRate" nillable="true" xbrli:periodType="duration" type="num:percentItemType" substitutionGroup="xbrli:item" />
+  <element id="crwe_FinanceLeasesAbstract" name="FinanceLeasesAbstract" nillable="true" abstract="true" xbrli:periodType="duration" type="xbrli:stringItemType" substitutionGroup="xbrli:item" />
+  <element name="ConvertiblePromissoryNoteMember" id="crwe_ConvertiblePromissoryNoteMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="MikeZamanMember" id="crwe_MikeZamanMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="JulyTwentyTwoTwentyTwentyFourMember" id="crwe_JulyTwentyTwoTwentyTwentyFourMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="JulyThiteeOneTwentyFourMember" id="crwe_JulyThiteeOneTwentyFourMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="AugustFifteenTwentyTwentyFourMember" id="crwe_AugustFifteenTwentyTwentyFourMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="JulyTwentyTwoTwentyTwentyFiveMember" id="crwe_JulyTwentyTwoTwentyTwentyFiveMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="JulyThiteeOneTwentyFiveMember" id="crwe_JulyThiteeOneTwentyFiveMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="AugustThirteenTwentyTwentyFiveMember" id="crwe_AugustThirteenTwentyTwentyFiveMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="SeriesAConvertiblePreferredStockMember" id="crwe_SeriesAConvertiblePreferredStockMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="WarrantDiscountMember" id="crwe_WarrantDiscountMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="MinimumRangeMember" id="crwe_MinimumRangeMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="MaximumRangeMember" id="crwe_MaximumRangeMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="AutomobileLeaseMember" id="crwe_AutomobileLeaseMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="AutomobileLeaseOneMember" id="crwe_AutomobileLeaseOneMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="MikeZamanIrrevocableTrustMember" id="crwe_MikeZamanIrrevocableTrustMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="DecemberTwentyFiveTwentyTwentyTwoMember" id="crwe_DecemberTwentyFiveTwentyTwentyTwoMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="JanuaryElevenTwentyTwentyThreeMember" id="crwe_JanuaryElevenTwentyTwentyThreeMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="JanuaryTwentyThreeTwentyTwentyThreeMember" id="crwe_JanuaryTwentyThreeTwentyTwentyThreeMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="JanuaryThirtyFirstTwentyTwentyThreeMember" id="crwe_JanuaryThirtyFirstTwentyTwentyThreeMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="FebruaryFourteenTwentyTwentyThreeMember" id="crwe_FebruaryFourteenTwentyTwentyThreeMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="MarchTwentyThreeTwentyTwentyThreeMember" id="crwe_MarchTwentyThreeTwentyTwentyThreeMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="MayEightTwentyTwentyThreeMember" id="crwe_MayEightTwentyTwentyThreeMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="JuneTwoTwentyTwentyThreeMember" id="crwe_JuneTwoTwentyTwentyThreeMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="JuneTwentyTwentyTwentyThreeMember" id="crwe_JuneTwentyTwentyTwentyThreeMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="JulyEighteenTwentyTwentyThreeMember" id="crwe_JulyEighteenTwentyTwentyThreeMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="AugustFourTwentyTwentyThreeMember" id="crwe_AugustFourTwentyTwentyThreeMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="SeptemberTwentyTwentyThreeMember" id="crwe_SeptemberTwentyTwentyThreeMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="SeptemberTwentyTwoTwentyTwentyThreeMember" id="crwe_SeptemberTwentyTwoTwentyTwentyThreeMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="SeptemberTwentyThreeTwentyTwentyThreeMember" id="crwe_SeptemberTwentyThreeTwentyTwentyThreeMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="OctoberTwentyTwentyTwentyThreeMember" id="crwe_OctoberTwentyTwentyTwentyThreeMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="NovemberSixTwentyTwentyTwentyThreeMember" id="crwe_NovemberSixTwentyTwentyTwentyThreeMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="DecemberTweleveTwentyTwentyThreeMember" id="crwe_DecemberTweleveTwentyTwentyThreeMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="FebruaryOneTwoThousandTwentyFourMember" id="crwe_FebruaryOneTwoThousandTwentyFourMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="MarchTwentyFiveTwoThousandTwentyFourMember" id="crwe_MarchTwentyFiveTwoThousandTwentyFourMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="MarchTwentyOneTwoThousandTwentyFourMember" id="crwe_MarchTwentyOneTwoThousandTwentyFourMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="MayFourteenTwentyTwentyFourMember" id="crwe_MayFourteenTwentyTwentyFourMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="JuneSixTwentyTwentyFourMember" id="crwe_JuneSixTwentyTwentyFourMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="MikeZamanoneMember" id="crwe_MikeZamanoneMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="JuneTwentyFourTwentyTwentyFourMember" id="crwe_JuneTwentyFourTwentyTwentyFourMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="MayTwentyEightTwoThousandTwentyFourMember" id="crwe_MayTwentyEightTwoThousandTwentyFourMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="ThirdPartyMember" id="crwe_ThirdPartyMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="RelatedPartysMember" id="crwe_RelatedPartysMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="WarrantsMember" id="crwe_WarrantsMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="JamieHadfieldMember" id="crwe_JamieHadfieldMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="ArnulfoSaucedoBardanMember" id="crwe_ArnulfoSaucedoBardanMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="KennethBosketMember" id="crwe_KennethBosketMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="VinothSambandamMember" id="crwe_VinothSambandamMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="MontseZamanMember" id="crwe_MontseZamanMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="CloudNetworkSystemsIncMember" id="crwe_CloudNetworkSystemsIncMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="TwoThousandSixEquityIncentivePlanMember" id="crwe_TwoThousandSixEquityIncentivePlanMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="RelatedPartyNotesPayableMember" id="crwe_RelatedPartyNotesPayableMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="MikeZamanIrrevocableTrustTwelveMember" id="crwe_MikeZamanIrrevocableTrustTwelveMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="MikeZamanIrrevocableTrustThirteenMember" id="crwe_MikeZamanIrrevocableTrustThirteenMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="MikeZamanIrrevocableTrustFourteenMember" id="crwe_MikeZamanIrrevocableTrustFourteenMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="MikeZamanIrrevocableTrustOneMember" id="crwe_MikeZamanIrrevocableTrustOneMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="MikeZamanIrrevocableTrustTwoMember" id="crwe_MikeZamanIrrevocableTrustTwoMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="MikeZamanIrrevocableTrustThreeMember" id="crwe_MikeZamanIrrevocableTrustThreeMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="MikeZamanIrrevocableTrustFourMember" id="crwe_MikeZamanIrrevocableTrustFourMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="MikeZamanOneMember" id="crwe_MikeZamanOneMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="MikeZamanIrrevocableTrustFiveMember" id="crwe_MikeZamanIrrevocableTrustFiveMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="MikeZamanIrrevocableTrustSixMember" id="crwe_MikeZamanIrrevocableTrustSixMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="MikeZamanIrrevocableTrustSevenMember" id="crwe_MikeZamanIrrevocableTrustSevenMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="MikeZamanIrrevocableTrustEightMember" id="crwe_MikeZamanIrrevocableTrustEightMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="MikeZamanIrrevocableTrustNineMember" id="crwe_MikeZamanIrrevocableTrustNineMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="MikeZamanIrrevocableTrustTenMember" id="crwe_MikeZamanIrrevocableTrustTenMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="MikeZamanIrrevocableTrustElevenMember" id="crwe_MikeZamanIrrevocableTrustElevenMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="RelatedPartyNotesPayableDuringPeriodMember" id="crwe_RelatedPartyNotesPayableDuringPeriodMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="ConvertibleNotesPayableRelatedPartyMember" id="crwe_ConvertibleNotesPayableRelatedPartyMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="CnvertibleNotePayableRelatedPartyMember" id="crwe_CnvertibleNotePayableRelatedPartyMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="ConvertibleNotesRelatedPartyNotesPayableDuringPeriodMember" id="crwe_ConvertibleNotesRelatedPartyNotesPayableDuringPeriodMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="MikeZamanTwoMember" id="crwe_MikeZamanTwoMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="MikeZamanIrrevocableTrustFifteenMember" id="crwe_MikeZamanIrrevocableTrustFifteenMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="MikeZamanThreeMember" id="crwe_MikeZamanThreeMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="MikeZamanFourMember" id="crwe_MikeZamanFourMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="MikeZamanFiveMember" id="crwe_MikeZamanFiveMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="MarchTwentyFiveTwoThausnadTwentyFourMember" id="crwe_MarchTwentyFiveTwoThausnadTwentyFourMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="ConvertibleDebtAanNotePayableMember" id="crwe_ConvertibleDebtAanNotePayableMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="JuneSixTwentyTwentyFourOneMember" id="crwe_JuneSixTwentyTwentyFourOneMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="MayTwentyEightTwoThausnadTwentyFourMember" id="crwe_MayTwentyEightTwoThausnadTwentyFourMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="LynnManagementLlcMember" id="crwe_LynnManagementLlcMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="MikeZamanIrrevocableTrustSixteenMember" id="crwe_MikeZamanIrrevocableTrustSixteenMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="MikeZamanIrrevocableTrustSeventeenMember" id="crwe_MikeZamanIrrevocableTrustSeventeenMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="MikeZamanIrrevocableTrustEighteenMember" id="crwe_MikeZamanIrrevocableTrustEighteenMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+</schema>

@@ -1,0 +1,774 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--XBRL Document Created with Wdesk from Workiva-->
+<!--Copyright 2022 Workiva-->
+<!--r:b90b9e92-428a-49ba-8f7c-7f4064260cb8,g:4c939056-9207-432b-ba60-8e3368d4b72a-->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:oii="http://www.oceaneering.com/20211231" xmlns:xbrli="http://www.xbrl.org/2003/instance" xmlns:dtr-types="http://www.xbrl.org/dtr/type/2020-01-21" xmlns:xbrldt="http://xbrl.org/2005/xbrldt" xmlns:srt-types="http://fasb.org/srt-types/2021-01-31" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://www.oceaneering.com/20211231">
+  <xs:import namespace="http://fasb.org/srt-types/2021-01-31" schemaLocation="https://xbrl.fasb.org/srt/2021/elts/srt-types-2021-01-31.xsd"/>
+  <xs:import namespace="http://fasb.org/srt/2021-01-31" schemaLocation="https://xbrl.fasb.org/srt/2021/elts/srt-2021-01-31.xsd"/>
+  <xs:import namespace="http://fasb.org/us-gaap/2021-01-31" schemaLocation="https://xbrl.fasb.org/us-gaap/2021/elts/us-gaap-2021-01-31.xsd"/>
+  <xs:import namespace="http://www.w3.org/1999/xlink" schemaLocation="http://www.xbrl.org/2003/xlink-2003-12-31.xsd"/>
+  <xs:import namespace="http://www.xbrl.org/2003/instance" schemaLocation="http://www.xbrl.org/2003/xbrl-instance-2003-12-31.xsd"/>
+  <xs:import namespace="http://www.xbrl.org/2003/linkbase" schemaLocation="http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd"/>
+  <xs:import namespace="http://www.xbrl.org/dtr/type/2020-01-21" schemaLocation="https://www.xbrl.org/dtr/type/2020-01-21/types.xsd"/>
+  <xs:import namespace="http://xbrl.org/2005/xbrldt" schemaLocation="http://www.xbrl.org/2005/xbrldt-2005.xsd"/>
+  <xs:import namespace="http://xbrl.sec.gov/country/2021" schemaLocation="https://xbrl.sec.gov/country/2021/country-2021.xsd"/>
+  <xs:import namespace="http://xbrl.sec.gov/currency/2021" schemaLocation="https://xbrl.sec.gov/currency/2021/currency-2021.xsd"/>
+  <xs:import namespace="http://xbrl.sec.gov/dei/2021q4" schemaLocation="https://xbrl.sec.gov/dei/2021q4/dei-2021q4.xsd"/>
+  <xs:annotation>
+    <xs:appinfo>
+      <link:linkbaseRef xmlns:xlink="http://www.w3.org/1999/xlink" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="oii-20211231_lab.xml" xlink:role="http://www.xbrl.org/2003/role/labelLinkbaseRef" xlink:type="simple"/>
+      <link:linkbaseRef xmlns:xlink="http://www.w3.org/1999/xlink" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="oii-20211231_pre.xml" xlink:role="http://www.xbrl.org/2003/role/presentationLinkbaseRef" xlink:type="simple"/>
+      <link:linkbaseRef xmlns:xlink="http://www.w3.org/1999/xlink" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="oii-20211231_cal.xml" xlink:role="http://www.xbrl.org/2003/role/calculationLinkbaseRef" xlink:type="simple"/>
+      <link:linkbaseRef xmlns:xlink="http://www.w3.org/1999/xlink" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="oii-20211231_def.xml" xlink:role="http://www.xbrl.org/2003/role/definitionLinkbaseRef" xlink:type="simple"/>
+      <link:roleType id="DocumentAndEntityInformation" roleURI="http://www.oceaneering.com/role/DocumentAndEntityInformation">
+        <link:definition>0001001 - Document - Document And Entity Information</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ConsolidatedBalanceSheets" roleURI="http://www.oceaneering.com/role/ConsolidatedBalanceSheets">
+        <link:definition>1001002 - Statement - Consolidated Balance Sheets</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ConsolidatedBalanceSheetsParenthetical" roleURI="http://www.oceaneering.com/role/ConsolidatedBalanceSheetsParenthetical">
+        <link:definition>1002003 - Statement - Consolidated Balance Sheets (Parenthetical)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ConsolidatedStatementsOfIncome" roleURI="http://www.oceaneering.com/role/ConsolidatedStatementsOfIncome">
+        <link:definition>1003004 - Statement - Consolidated Statements Of Income</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ConsolidatedStatementsofComprehensiveIncome" roleURI="http://www.oceaneering.com/role/ConsolidatedStatementsofComprehensiveIncome">
+        <link:definition>1004005 - Statement - Consolidated Statements of Comprehensive Income</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ConsolidatedStatementsOfCashFlows" roleURI="http://www.oceaneering.com/role/ConsolidatedStatementsOfCashFlows">
+        <link:definition>1005006 - Statement - Consolidated Statements Of Cash Flows</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ConsolidatedStatementsOfCashFlowsParenthetical" roleURI="http://www.oceaneering.com/role/ConsolidatedStatementsOfCashFlowsParenthetical">
+        <link:definition>1006007 - Statement - Consolidated Statements Of Cash Flows (Parenthetical)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ConsolidatedStatementsofShareholdersEquity" roleURI="http://www.oceaneering.com/role/ConsolidatedStatementsofShareholdersEquity">
+        <link:definition>1007008 - Statement - Consolidated Statements of Shareholders' Equity</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ConsolidatedStatementsofShareholdersEquityParenthetical" roleURI="http://www.oceaneering.com/role/ConsolidatedStatementsofShareholdersEquityParenthetical">
+        <link:definition>1008009 - Statement - Consolidated Statements of Shareholders' Equity (Parenthetical)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LeasesStatement" roleURI="http://www.oceaneering.com/role/LeasesStatement">
+        <link:definition>2001010 - Disclosure - Leases Statement</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LeasesAssetandLiabilities" roleURI="http://www.oceaneering.com/role/LeasesAssetandLiabilities">
+        <link:definition>2002011 - Disclosure - Leases Asset and Liabilities</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LeasesLeaseTermandDiscountRate" roleURI="http://www.oceaneering.com/role/LeasesLeaseTermandDiscountRate">
+        <link:definition>2003012 - Disclosure - Leases Lease Term and Discount Rate</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LeasesOperatingLeaseMaturities" roleURI="http://www.oceaneering.com/role/LeasesOperatingLeaseMaturities">
+        <link:definition>2004013 - Disclosure - Leases Operating Lease Maturities</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LeasesCodificationTopic842" roleURI="http://www.oceaneering.com/role/LeasesCodificationTopic842">
+        <link:definition>2105101 - Disclosure - Leases, Codification Topic 842</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CoststoObtainorFulfillaContractStatement" roleURI="http://www.oceaneering.com/role/CoststoObtainorFulfillaContractStatement">
+        <link:definition>2006014 - Disclosure - Costs to Obtain or Fulfill a Contract Statement</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SummaryOfMajorAccountingPolicies" roleURI="http://www.oceaneering.com/role/SummaryOfMajorAccountingPolicies">
+        <link:definition>2107102 - Disclosure - Summary Of Major Accounting Policies</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SummaryOfMajorAccountingPoliciesLeases" roleURI="http://www.oceaneering.com/role/SummaryOfMajorAccountingPoliciesLeases">
+        <link:definition>2408401 - Disclosure - Summary Of Major Accounting Policies-Leases</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SummaryOfMajorAccountingPoliciesTreasuryStock" roleURI="http://www.oceaneering.com/role/SummaryOfMajorAccountingPoliciesTreasuryStock">
+        <link:definition>2409402 - Disclosure - Summary Of Major Accounting Policies-Treasury Stock</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SummaryOfMajorAccountingPoliciesInventory" roleURI="http://www.oceaneering.com/role/SummaryOfMajorAccountingPoliciesInventory">
+        <link:definition>2410403 - Disclosure - Summary Of Major Accounting Policies-Inventory</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SummaryOfMajorAccountingPoliciesPrinciplesofConsolidationAndRepurchasesDetails" roleURI="http://www.oceaneering.com/role/SummaryOfMajorAccountingPoliciesPrinciplesofConsolidationAndRepurchasesDetails">
+        <link:definition>2411404 - Disclosure - Summary Of Major Accounting Policies - Principles of Consolidation And Repurchases (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SummaryOfMajorAccountingPoliciesSummaryofMajorAccountingPoliciesInventoryDetails" roleURI="http://www.oceaneering.com/role/SummaryOfMajorAccountingPoliciesSummaryofMajorAccountingPoliciesInventoryDetails">
+        <link:definition>2412405 - Disclosure - Summary Of Major Accounting Policies Summary of Major Accounting Policies - Inventory (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SummaryOfMajorAccountingPoliciesPropertyPlantandEquipmentandLongLivedIntangibleAssetsDetails" roleURI="http://www.oceaneering.com/role/SummaryOfMajorAccountingPoliciesPropertyPlantandEquipmentandLongLivedIntangibleAssetsDetails">
+        <link:definition>2413406 - Disclosure - Summary Of Major Accounting Policies - Property, Plant and Equipment and Long-Lived Intangible Assets (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SummaryOfMajorAccountingPoliciesAcquisitionsDetails" roleURI="http://www.oceaneering.com/role/SummaryOfMajorAccountingPoliciesAcquisitionsDetails">
+        <link:definition>2414407 - Disclosure - Summary Of Major Accounting Policies - Acquisitions (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SummaryofMajorAccountingPoliciesProFormaInformationDetails" roleURI="http://www.oceaneering.com/role/SummaryofMajorAccountingPoliciesProFormaInformationDetails">
+        <link:definition>2415408 - Disclosure - Summary of Major Accounting Policies - Pro Forma Information (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SummaryofMajorAccountingPoliciesGoodwillDetails" roleURI="http://www.oceaneering.com/role/SummaryofMajorAccountingPoliciesGoodwillDetails">
+        <link:definition>2416409 - Disclosure - Summary of Major Accounting Policies - Goodwill (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SummaryOfMajorAccountingPoliciesPercentageofCompletionDetails" roleURI="http://www.oceaneering.com/role/SummaryOfMajorAccountingPoliciesPercentageofCompletionDetails">
+        <link:definition>2417410 - Disclosure - Summary Of Major Accounting Policies - Percentage-of-Completion (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SummaryOfMajorAccountingPoliciesForeignCurrencyTranslationDetails" roleURI="http://www.oceaneering.com/role/SummaryOfMajorAccountingPoliciesForeignCurrencyTranslationDetails">
+        <link:definition>2418411 - Disclosure - Summary Of Major Accounting Policies - Foreign Currency Translation (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SummaryOfMajorAccountingPoliciesSummaryOfMajorAccountingPoliciesRevenueRecognitionDetails" roleURI="http://www.oceaneering.com/role/SummaryOfMajorAccountingPoliciesSummaryOfMajorAccountingPoliciesRevenueRecognitionDetails">
+        <link:definition>2419412 - Disclosure - Summary Of Major Accounting Policies Summary Of Major Accounting Policies - Revenue Recognition (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SummaryOfMajorAccountingPoliciesSummaryofMajorAccountingPoliciesDispositionsDetails" roleURI="http://www.oceaneering.com/role/SummaryOfMajorAccountingPoliciesSummaryofMajorAccountingPoliciesDispositionsDetails">
+        <link:definition>2420413 - Disclosure - Summary Of Major Accounting Policies Summary of Major Accounting Policies - Dispositions (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SummaryOfMajorAccountingPoliciesDetails" roleURI="http://www.oceaneering.com/role/SummaryOfMajorAccountingPoliciesDetails">
+        <link:definition>2421414 - Disclosure - Summary Of Major Accounting Policies (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SummaryOfMajorAccountingPoliciesDetailsAllowanceforCreditLosses" roleURI="http://www.oceaneering.com/role/SummaryOfMajorAccountingPoliciesDetailsAllowanceforCreditLosses">
+        <link:definition>2422415 - Disclosure - Summary Of Major Accounting Policies (Details)-Allowance for Credit Losses</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RevenueNotes" roleURI="http://www.oceaneering.com/role/RevenueNotes">
+        <link:definition>2123103 - Disclosure - Revenue (Notes)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RevenueBusinessSegmentDetails" roleURI="http://www.oceaneering.com/role/RevenueBusinessSegmentDetails">
+        <link:definition>2424416 - Disclosure - Revenue Business Segment (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RevenueGeographicareasDetails" roleURI="http://www.oceaneering.com/role/RevenueGeographicareasDetails">
+        <link:definition>2425417 - Disclosure - Revenue Geographic areas (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RevenueTimingofTransferofGoodsorServicesDetails" roleURI="http://www.oceaneering.com/role/RevenueTimingofTransferofGoodsorServicesDetails">
+        <link:definition>2426418 - Disclosure - Revenue Timing of Transfer of Goods or Services (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RevenueContractAssetsandContractLiabilitiesDetails" roleURI="http://www.oceaneering.com/role/RevenueContractAssetsandContractLiabilitiesDetails">
+        <link:definition>2427419 - Disclosure - Revenue Contract Assets and Contract Liabilities (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RevenuePerformanceObligationsDetails" roleURI="http://www.oceaneering.com/role/RevenuePerformanceObligationsDetails">
+        <link:definition>2428420 - Disclosure - Revenue Performance Obligations (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RevenuefromContractwithCustomerTables" roleURI="http://www.oceaneering.com/role/RevenuefromContractwithCustomerTables">
+        <link:definition>2329301 - Disclosure - Revenue from Contract with Customer (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SelectedBalanceSheetInformation" roleURI="http://www.oceaneering.com/role/SelectedBalanceSheetInformation">
+        <link:definition>2130104 - Disclosure - Selected Balance Sheet Information</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SelectedBalanceSheetInformationDetails" roleURI="http://www.oceaneering.com/role/SelectedBalanceSheetInformationDetails">
+        <link:definition>2431421 - Disclosure - Selected Balance Sheet Information (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SelectedBalanceSheetInformationDetails2" roleURI="http://www.oceaneering.com/role/SelectedBalanceSheetInformationDetails2">
+        <link:definition>2432422 - Disclosure - Selected Balance Sheet Information (Details 2)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IncomeTaxes" roleURI="http://www.oceaneering.com/role/IncomeTaxes">
+        <link:definition>2133105 - Disclosure - Income Taxes</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IncomeTaxesProvisionsforIncomeTaxesDetails" roleURI="http://www.oceaneering.com/role/IncomeTaxesProvisionsforIncomeTaxesDetails">
+        <link:definition>2434423 - Disclosure - Income Taxes - Provisions for Income Taxes (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IncomeTaxesIncomeBeforeIncomeTaxDomesticandForeignDetails" roleURI="http://www.oceaneering.com/role/IncomeTaxesIncomeBeforeIncomeTaxDomesticandForeignDetails">
+        <link:definition>2435424 - Disclosure - Income Taxes - Income Before Income Tax, Domestic and Foreign (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IncomeTaxesDeferredTaxAssetsandLiabilitiesDetails" roleURI="http://www.oceaneering.com/role/IncomeTaxesDeferredTaxAssetsandLiabilitiesDetails">
+        <link:definition>2436425 - Disclosure - Income Taxes - Deferred Tax Assets and Liabilities (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IncomeTaxesNarrativeDetails" roleURI="http://www.oceaneering.com/role/IncomeTaxesNarrativeDetails">
+        <link:definition>2437426 - Disclosure - Income Taxes - Narrative (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IncomeTaxesSummaryofUnrecognizedTaxBenefitsDetails" roleURI="http://www.oceaneering.com/role/IncomeTaxesSummaryofUnrecognizedTaxBenefitsDetails">
+        <link:definition>2438427 - Disclosure - Income Taxes - Summary of Unrecognized Tax Benefits (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IncomeTaxesSummaryOfEarliestTaxYearsOpenToExaminationDetails" roleURI="http://www.oceaneering.com/role/IncomeTaxesSummaryOfEarliestTaxYearsOpenToExaminationDetails">
+        <link:definition>2439428 - Disclosure - Income Taxes - Summary Of Earliest Tax Years Open To Examination (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IncomeTaxesIncomeTaxesIncomeTaxReconciliationDetails" roleURI="http://www.oceaneering.com/role/IncomeTaxesIncomeTaxesIncomeTaxReconciliationDetails">
+        <link:definition>2440429 - Disclosure - Income Taxes Income Taxes - Income Tax Reconciliation (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IncomeTaxesIncomeTaxesReconciliationofUncertainTaxPositionsDetails" roleURI="http://www.oceaneering.com/role/IncomeTaxesIncomeTaxesReconciliationofUncertainTaxPositionsDetails">
+        <link:definition>2441430 - Disclosure - Income Taxes Income Taxes - Reconciliation of Uncertain Tax Positions (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IncomeTaxesTaxNarrativeDetails" roleURI="http://www.oceaneering.com/role/IncomeTaxesTaxNarrativeDetails">
+        <link:definition>2442431 - Disclosure - Income Taxes Tax Narrative (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IncomeTaxesIncomeTaxNarrativeDetails" roleURI="http://www.oceaneering.com/role/IncomeTaxesIncomeTaxNarrativeDetails">
+        <link:definition>2443432 - Disclosure - Income Taxes Income Tax Narrative (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IncomeTaxesIncomeTaxNarrativeDetailsDetails" roleURI="http://www.oceaneering.com/role/IncomeTaxesIncomeTaxNarrativeDetailsDetails">
+        <link:definition>2444433 - Disclosure - Income Taxes Income Tax Narrative Details (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SelectedIncomeStatementInformationSelectedIncomeStatementInformationNotes" roleURI="http://www.oceaneering.com/role/SelectedIncomeStatementInformationSelectedIncomeStatementInformationNotes">
+        <link:definition>2145106 - Disclosure - Selected Income Statement Information Selected Income Statement Information (Notes)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SelectedIncomeStatementInformationDetails" roleURI="http://www.oceaneering.com/role/SelectedIncomeStatementInformationDetails">
+        <link:definition>1409434 - Statement - Selected Income Statement Information (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="Debt" roleURI="http://www.oceaneering.com/role/Debt">
+        <link:definition>2146107 - Disclosure - Debt</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="DebtLongTermDebtDetails" roleURI="http://www.oceaneering.com/role/DebtLongTermDebtDetails">
+        <link:definition>2447435 - Disclosure - Debt - Long-Term Debt (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="DebtLineofCreditDetails" roleURI="http://www.oceaneering.com/role/DebtLineofCreditDetails">
+        <link:definition>2448436 - Disclosure - Debt - Line of Credit (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="DebtTermLoanDetails" roleURI="http://www.oceaneering.com/role/DebtTermLoanDetails">
+        <link:definition>1410437 - Statement - Debt Term Loan (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="DebtInterestRateSwapDetails" roleURI="http://www.oceaneering.com/role/DebtInterestRateSwapDetails">
+        <link:definition>2449438 - Disclosure - Debt Interest Rate Swap (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="OperationsbyBusinessSegmentandGeographicArea" roleURI="http://www.oceaneering.com/role/OperationsbyBusinessSegmentandGeographicArea">
+        <link:definition>2150108 - Disclosure - Operations by Business Segment and Geographic Area</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="OperationsbyBusinessSegmentandGeographicAreaNarrativeDetails" roleURI="http://www.oceaneering.com/role/OperationsbyBusinessSegmentandGeographicAreaNarrativeDetails">
+        <link:definition>2451439 - Disclosure - Operations by Business Segment and Geographic Area - Narrative (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="OperationsbyBusinessSegmentandGeographicAreaFinancialDataByBusinessSegmentDetails" roleURI="http://www.oceaneering.com/role/OperationsbyBusinessSegmentandGeographicAreaFinancialDataByBusinessSegmentDetails">
+        <link:definition>2452440 - Disclosure - Operations by Business Segment and Geographic Area - Financial Data By Business Segment (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="OperationsbyBusinessSegmentandGeographicAreaOperationsbyBusinessSegmentandGeographicAreasScheduleofAssetsDetails" roleURI="http://www.oceaneering.com/role/OperationsbyBusinessSegmentandGeographicAreaOperationsbyBusinessSegmentandGeographicAreasScheduleofAssetsDetails">
+        <link:definition>2453441 - Disclosure - Operations by Business Segment and Geographic Area Operations by Business Segment and Geographic Areas - Schedule of Assets (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="OperationsbyBusinessSegmentandGeographicAreaOperationsbyBusinessSegmentandGeographicAreaOtherSignificantReconcilingItemsDetails" roleURI="http://www.oceaneering.com/role/OperationsbyBusinessSegmentandGeographicAreaOperationsbyBusinessSegmentandGeographicAreaOtherSignificantReconcilingItemsDetails">
+        <link:definition>2454442 - Disclosure - Operations by Business Segment and Geographic Area Operations by Business Segment and Geographic Area - Other Significant Reconciling Items (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="OperationsbyBusinessSegmentandGeographicAreaRevenuesandLongLivedAssetsbyLocationDetails" roleURI="http://www.oceaneering.com/role/OperationsbyBusinessSegmentandGeographicAreaRevenuesandLongLivedAssetsbyLocationDetails">
+        <link:definition>2455443 - Disclosure - Operations by Business Segment and Geographic Area - Revenues and Long-Lived Assets by Location (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CommitmentsAndContingencies" roleURI="http://www.oceaneering.com/role/CommitmentsAndContingencies">
+        <link:definition>2156109 - Disclosure - Commitments And Contingencies</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CommitmentsandContingenciesFutureLeasePaymentsDetails" roleURI="http://www.oceaneering.com/role/CommitmentsandContingenciesFutureLeasePaymentsDetails">
+        <link:definition>2457444 - Disclosure - Commitments and Contingencies - Future Lease Payments (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CommitmentsAndContingenciesNarrativeDetails" roleURI="http://www.oceaneering.com/role/CommitmentsAndContingenciesNarrativeDetails">
+        <link:definition>2458445 - Disclosure - Commitments And Contingencies - Narrative (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="EmployeeBenefitPlansandShareholderRightsPlan" roleURI="http://www.oceaneering.com/role/EmployeeBenefitPlansandShareholderRightsPlan">
+        <link:definition>2159110 - Disclosure - Employee Benefit Plans and Shareholder Rights Plan</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="EmployeeBenefitPlansandShareholderRightsPlanNarrativeDetails" roleURI="http://www.oceaneering.com/role/EmployeeBenefitPlansandShareholderRightsPlanNarrativeDetails">
+        <link:definition>2460446 - Disclosure - Employee Benefit Plans and Shareholder Rights Plan - Narrative (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="EmployeeBenefitPlansandShareholderRightsPlanStockOptionActivityDetails" roleURI="http://www.oceaneering.com/role/EmployeeBenefitPlansandShareholderRightsPlanStockOptionActivityDetails">
+        <link:definition>2461447 - Disclosure - Employee Benefit Plans and Shareholder Rights Plan - Stock Option Activity (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="EmployeeBenefitPlansandShareholderRightsPlanRestrictedStockandRestrictedStockUnitsActivityDetails" roleURI="http://www.oceaneering.com/role/EmployeeBenefitPlansandShareholderRightsPlanRestrictedStockandRestrictedStockUnitsActivityDetails">
+        <link:definition>2462448 - Disclosure - Employee Benefit Plans and Shareholder Rights Plan - Restricted Stock and Restricted Stock Units Activity (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="AccountingStandardsUpdatesNotes" roleURI="http://www.oceaneering.com/role/AccountingStandardsUpdatesNotes">
+        <link:definition>2163111 - Disclosure - Accounting Standards Updates (Notes)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="AccountingStandardsUpdatesPolicies" roleURI="http://www.oceaneering.com/role/AccountingStandardsUpdatesPolicies">
+        <link:definition>2264201 - Disclosure - Accounting Standards Updates (Policies)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="AccountingStandardsUpdatesTables" roleURI="http://www.oceaneering.com/role/AccountingStandardsUpdatesTables">
+        <link:definition>2365302 - Disclosure - Accounting Standards Updates (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="AccountingStandardsUpdatesDetails" roleURI="http://www.oceaneering.com/role/AccountingStandardsUpdatesDetails">
+        <link:definition>2466449 - Disclosure - Accounting Standards Updates (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="AccountingStandardsUpdatesLeasesDetails" roleURI="http://www.oceaneering.com/role/AccountingStandardsUpdatesLeasesDetails">
+        <link:definition>2467450 - Disclosure - Accounting Standards Updates Leases (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LeaseNotes" roleURI="http://www.oceaneering.com/role/LeaseNotes">
+        <link:definition>2168112 - Disclosure - Lease (Notes)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LeaseDetails" roleURI="http://www.oceaneering.com/role/LeaseDetails">
+        <link:definition>2469451 - Disclosure - Lease (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LesseeOperatingLeaseBalancesNotes" roleURI="http://www.oceaneering.com/role/LesseeOperatingLeaseBalancesNotes">
+        <link:definition>1111113 - Statement - Lessee Operating Lease Balances (Notes)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LesseeOperatingLeaseBalancesDetails" roleURI="http://www.oceaneering.com/role/LesseeOperatingLeaseBalancesDetails">
+        <link:definition>1412452 - Statement - Lessee Operating Lease Balances (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LesseeoperatingleasecostsNotes" roleURI="http://www.oceaneering.com/role/LesseeoperatingleasecostsNotes">
+        <link:definition>2170114 - Disclosure - Lessee operating lease costs (Notes)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LeasesCodificationTopic842Details" roleURI="http://www.oceaneering.com/role/LeasesCodificationTopic842Details">
+        <link:definition>2471453 - Disclosure - Leases, Codification Topic 842 (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LesseeoperatingleasecostsDetails" roleURI="http://www.oceaneering.com/role/LesseeoperatingleasecostsDetails">
+        <link:definition>2472454 - Disclosure - Lessee operating lease costs (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LeaseCostsNotes" roleURI="http://www.oceaneering.com/role/LeaseCostsNotes">
+        <link:definition>2173115 - Disclosure - Lease Costs (Notes)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LeasesCodificationTopic842Policies" roleURI="http://www.oceaneering.com/role/LeasesCodificationTopic842Policies">
+        <link:definition>2274202 - Disclosure - Leases, Codification Topic 842 (Policies)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LeaseCostsDetails" roleURI="http://www.oceaneering.com/role/LeaseCostsDetails">
+        <link:definition>2475455 - Disclosure - Lease Costs (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LeasesCodificationTopic842Details_1" roleURI="http://www.oceaneering.com/role/LeasesCodificationTopic842Details_1">
+        <link:definition>2476456 - Disclosure - Leases, Codification Topic 842 (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IntangibleAssetsGoodwillandOther" roleURI="http://www.oceaneering.com/role/IntangibleAssetsGoodwillandOther">
+        <link:definition>2177116 - Disclosure - Intangible Assets, Goodwill and Other</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IntangibleAssetsGoodwillandOtherStatement" roleURI="http://www.oceaneering.com/role/IntangibleAssetsGoodwillandOtherStatement">
+        <link:definition>2078015 - Disclosure - Intangible Assets, Goodwill and Other (Statement)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IntangibleAssetsGoodwillandOtherDetails" roleURI="http://www.oceaneering.com/role/IntangibleAssetsGoodwillandOtherDetails">
+        <link:definition>2479457 - Disclosure - Intangible Assets, Goodwill and Other (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element id="oii_Cashrepatriated" abstract="false" name="Cashrepatriated" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="oii_LandsurveybusinessMember" abstract="true" name="LandsurveybusinessMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="oii_RevenuebyGeographicAreaTable" abstract="true" name="RevenuebyGeographicAreaTable" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrldt:hypercubeItem" type="xbrli:stringItemType"/>
+  <xs:element id="oii_ScheduleTemporaryDifferencesUsingPercentageOfCompletionLineItems" abstract="true" name="ScheduleTemporaryDifferencesUsingPercentageOfCompletionLineItems" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="oii_Uncertaintaxposition" abstract="false" name="Uncertaintaxposition" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="oii_RevenueAbstract" abstract="true" name="RevenueAbstract" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="oii_DeferredCompensationPlanCashAwardNumberOfUnits" abstract="false" name="DeferredCompensationPlanCashAwardNumberOfUnits" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="xbrli:pureItemType"/>
+  <xs:element id="oii_DispositionsAbstract" abstract="true" name="DispositionsAbstract" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="oii_OperatingLeasesOperatingLeaseOptionTerm" abstract="false" name="OperatingLeasesOperatingLeaseOptionTerm" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:durationItemType"/>
+  <xs:element id="oii_ContractsInUnearnedRevenuePositionMember" abstract="true" name="ContractsInUnearnedRevenuePositionMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="oii_GrossProfitProducts" abstract="false" name="GrossProfitProducts" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="oii_UnallocatedExpensesMember" abstract="true" name="UnallocatedExpensesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="oii_CustomerPaymentDeferrals" abstract="false" name="CustomerPaymentDeferrals" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="oii_AdjustedBaseRateMember" abstract="true" name="AdjustedBaseRateMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="oii_BaseRateTypeAxis" abstract="true" name="BaseRateTypeAxis" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrldt:dimensionItem" type="xbrli:stringItemType"/>
+  <xs:element id="oii_RevenueunderASC605" abstract="false" name="RevenueunderASC605" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="oii_Effectofchangeotherlongtermliabilities" abstract="false" name="Effectofchangeotherlongtermliabilities" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="oii_InspectionMember" abstract="true" name="InspectionMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="oii_OtherGeographicalMemberMember" abstract="true" name="OtherGeographicalMemberMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="oii_EmployeeBenefitPlansAndShareholderRightsPlanAbstract" abstract="true" name="EmployeeBenefitPlansAndShareholderRightsPlanAbstract" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="oii_EquityMethodInvestmentSignificantPropertyPlantAndEquipmentOwnedByEquityMethodInvestee" abstract="false" name="EquityMethodInvestmentSignificantPropertyPlantAndEquipmentOwnedByEquityMethodInvestee" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="dtr-types:percentItemType"/>
+  <xs:element id="oii_SDSRosythMember" abstract="true" name="SDSRosythMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="oii_ContractAssetsMember" abstract="true" name="ContractAssetsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="oii_A2028SeniorNotesMember" abstract="true" name="A2028SeniorNotesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="oii_InterestRateComponentDomain" abstract="true" name="InterestRateComponentDomain" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="oii_IncomeTaxRateTable" abstract="true" name="IncomeTaxRateTable" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrldt:hypercubeItem" type="xbrli:stringItemType"/>
+  <xs:element id="oii_RestrictedStockPlanMember" abstract="true" name="RestrictedStockPlanMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="oii_RevenueRecognitionforRemainingPerformanceObligations" abstract="false" name="RevenueRecognitionforRemainingPerformanceObligations" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="oii_SeniorNotesdue2024Member" abstract="true" name="SeniorNotesdue2024Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="oii_PercentageOfCompletionContractPositionAxis" abstract="true" name="PercentageOfCompletionContractPositionAxis" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrldt:dimensionItem" type="xbrli:stringItemType"/>
+  <xs:element id="oii_UnremittedEarningsOfForeignSubsidiariesToBeIndefinitelyReinvested" abstract="false" name="UnremittedEarningsOfForeignSubsidiariesToBeIndefinitelyReinvested" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="oii_Uncertaintaxpositionsatendofyear" abstract="false" name="Uncertaintaxpositionsatendofyear" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="oii_AgrFieldOperationsMember" abstract="true" name="AgrFieldOperationsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="oii_Retainedearningsadjusted" abstract="false" name="Retainedearningsadjusted" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="oii_ManufacturedProductsMember" abstract="true" name="ManufacturedProductsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="oii_Effectofchangeaccruedliabilities" abstract="false" name="Effectofchangeaccruedliabilities" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="oii_DefinedContributionPlanAxis" abstract="true" name="DefinedContributionPlanAxis" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrldt:dimensionItem" type="xbrli:stringItemType"/>
+  <xs:element id="oii_SubseaRoboticsMember" abstract="true" name="SubseaRoboticsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="oii_Srt_WeightedAverageMemberMember" abstract="true" name="Srt_WeightedAverageMemberMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="oii_PercentageOfReservedAllowanceForCreditLoss" abstract="false" name="PercentageOfReservedAllowanceForCreditLoss" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:percentItemType"/>
+  <xs:element id="oii_ScheduleOfTemporaryDifferencesUnderPercentageOfCompletionMethodTableTextBlock" abstract="false" name="ScheduleOfTemporaryDifferencesUnderPercentageOfCompletionMethodTableTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:textBlockItemType"/>
+  <xs:element id="oii_BpMember" abstract="true" name="BpMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="oii_TaxRateReconciliationDomain" abstract="true" name="TaxRateReconciliationDomain" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="oii_LineOfCreditFacilityAvailableAdditionalBorrowingCapacity" abstract="false" name="LineOfCreditFacilityAvailableAdditionalBorrowingCapacity" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="oii_SelectedIncomeStatementInformationAbstract" abstract="true" name="SelectedIncomeStatementInformationAbstract" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="oii_NoncashIncomeTaxBenefit" abstract="false" name="NoncashIncomeTaxBenefit" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="oii_OceaneeringEntertainmentSystemMember" abstract="true" name="OceaneeringEntertainmentSystemMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="oii_IncomeTaxReconciliationCARESTaxActNetOperatingLossCarryback" abstract="false" name="IncomeTaxReconciliationCARESTaxActNetOperatingLossCarryback" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="oii_MajorCustomerAboveBenchmarkThresholdNumber" abstract="false" name="MajorCustomerAboveBenchmarkThresholdNumber" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="xbrli:integerItemType"/>
+  <xs:element id="oii_Oiitermloanfacilityspreadonvariablerate" abstract="false" name="Oiitermloanfacilityspreadonvariablerate" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="dtr-types:percentItemType"/>
+  <xs:element id="oii_Accountsreceivableadjusted" abstract="false" name="Accountsreceivableadjusted" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="oii_Totalaccountsreceivableadjusted" abstract="false" name="Totalaccountsreceivableadjusted" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="oii_Effectofchangedeferredrevenue" abstract="false" name="Effectofchangedeferredrevenue" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="oii_Effectofchangeinventory" abstract="false" name="Effectofchangeinventory" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="oii_DispositionLineItems" abstract="true" name="DispositionLineItems" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="oii_RevenuebyGeographicAreaLineItems" abstract="true" name="RevenuebyGeographicAreaLineItems" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="oii_DeferredCompensationPlanCashAwardAnnualExpense" abstract="false" name="DeferredCompensationPlanCashAwardAnnualExpense" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="oii_EnergyServicesAndProductsMember" abstract="true" name="EnergyServicesAndProductsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="oii_ConsolidatedStatementsOfShareholdersEquityAndComprehensiveIncomeAbstract" abstract="true" name="ConsolidatedStatementsOfShareholdersEquityAndComprehensiveIncomeAbstract" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="oii_AdjustedBaseRateAdvancesMember" abstract="true" name="AdjustedBaseRateAdvancesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="oii_InterestRateComponentAxis" abstract="true" name="InterestRateComponentAxis" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrldt:dimensionItem" type="xbrli:stringItemType"/>
+  <xs:element id="oii_AdvanceTypeAxis" abstract="true" name="AdvanceTypeAxis" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrldt:dimensionItem" type="xbrli:stringItemType"/>
+  <xs:element id="oii_ScheduleTemporaryDifferencesUsingPercentageOfCompletionTable" abstract="true" name="ScheduleTemporaryDifferencesUsingPercentageOfCompletionTable" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrldt:hypercubeItem" type="xbrli:stringItemType"/>
+  <xs:element id="oii_RevenuebyTimingofTransferofGoodsorServicesTableTextBlock" abstract="false" name="RevenuebyTimingofTransferofGoodsorServicesTableTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:textBlockItemType"/>
+  <xs:element id="oii_DispositionTable" abstract="true" name="DispositionTable" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrldt:hypercubeItem" type="xbrli:stringItemType"/>
+  <xs:element id="oii_ForeignEmployeeSavingsPlansMember" abstract="true" name="ForeignEmployeeSavingsPlansMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="oii_RevenueRecognitionforRemainingPerformanceObligationsinnext24months" abstract="false" name="RevenueRecognitionforRemainingPerformanceObligationsinnext24months" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="oii_ForeignDeferredTaxAsset" abstract="false" name="ForeignDeferredTaxAsset" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="oii_Accruedliabilitiesexcludingdeferredrevenue" abstract="false" name="Accruedliabilitiesexcludingdeferredrevenue" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="oii_ContractAssetsAllowanceForCreditLossesWriteOff" abstract="false" name="ContractAssetsAllowanceForCreditLossesWriteOff" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="oii_ContractLiabilitiesMember" abstract="true" name="ContractLiabilitiesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="oii_ContractInUnbilledReceivablePositionMember" abstract="true" name="ContractInUnbilledReceivablePositionMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="oii_DeferredCompensationPlanCashAwardPerUnit" abstract="false" name="DeferredCompensationPlanCashAwardPerUnit" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="srt-types:perUnitItemType"/>
+  <xs:element id="oii_IntegrityManagementDigitalSolutionsMember" abstract="true" name="IntegrityManagementDigitalSolutionsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="oii_Totalaccruedliabilitiesadjusted" abstract="false" name="Totalaccruedliabilitiesadjusted" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="oii_TaxRateReconciliationAxis" abstract="true" name="TaxRateReconciliationAxis" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrldt:dimensionItem" type="xbrli:stringItemType"/>
+  <xs:element id="oii_OperatingLeaseMaturitiesAbstract" abstract="true" name="OperatingLeaseMaturitiesAbstract" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="oii_Effectofchangeretainedearnings" abstract="false" name="Effectofchangeretainedearnings" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="oii_MedusaSparLlcInvestmentMember" abstract="true" name="MedusaSparLlcInvestmentMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="oii_ApplicableMarginMember" abstract="true" name="ApplicableMarginMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="oii_IncomeTaxRateLineItems" abstract="true" name="IncomeTaxRateLineItems" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="oii_StockSplitPolicyTextBlock" abstract="false" name="StockSplitPolicyTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:textBlockItemType"/>
+  <xs:element id="oii_FederalFundsRateMember" abstract="true" name="FederalFundsRateMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="oii_Effectofchangeincometaxes" abstract="false" name="Effectofchangeincometaxes" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="oii_EffectiveIncomeTaxRateReconciliationUncertainTaxPosition" abstract="false" name="EffectiveIncomeTaxRateReconciliationUncertainTaxPosition" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="oii_SubseaProductsMember" abstract="true" name="SubseaProductsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="oii_LeasesoflesseedisclosuretableLineItems" abstract="true" name="LeasesoflesseedisclosuretableLineItems" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="oii_Incometaxesadjusted" abstract="false" name="Incometaxesadjusted" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="oii_Netincomeadjusted" abstract="false" name="Netincomeadjusted" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="oii_AssetsAndLiabilitiesLesseeTableTextBlock" abstract="false" name="AssetsAndLiabilitiesLesseeTableTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:textBlockItemType"/>
+  <xs:element id="oii_PercentageOfCompletionContractPositionDomain" abstract="true" name="PercentageOfCompletionContractPositionDomain" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="oii_SubseaProductsAngolaMemberMember" abstract="true" name="SubseaProductsAngolaMemberMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="oii_Percentageofcommitmentoflenders" abstract="false" name="Percentageofcommitmentoflenders" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="dtr-types:percentItemType"/>
+  <xs:element id="oii_PercentageofCompletionPercentofRevenue" abstract="false" name="PercentageofCompletionPercentofRevenue" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:percentItemType"/>
+  <xs:element id="oii_Effectofchangecontractassets" abstract="false" name="Effectofchangecontractassets" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="oii_Deferredtaxassetreserveslongtermoperatingleaseliabilities" abstract="false" name="Deferredtaxassetreserveslongtermoperatingleaseliabilities" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="oii_USCorporateIncomeTaxRate" abstract="false" name="USCorporateIncomeTaxRate" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="dtr-types:percentItemType"/>
+  <xs:element id="oii_LeasesoflesseedisclosuretableTable" abstract="true" name="LeasesoflesseedisclosuretableTable" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrldt:hypercubeItem" type="xbrli:stringItemType"/>
+  <xs:element id="oii_Contractassetscurrent" abstract="false" name="Contractassetscurrent" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="oii_ShallowWaterMemberMember" abstract="true" name="ShallowWaterMemberMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="oii_NorseCuttingAndAbandonmentAsMember" abstract="true" name="NorseCuttingAndAbandonmentAsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="oii_GoodwillImpairmentLossAllocationTableTableTextBlock" abstract="false" name="GoodwillImpairmentLossAllocationTableTableTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:textBlockItemType"/>
+  <xs:element id="oii_SDSBrazilMember" abstract="true" name="SDSBrazilMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="oii_DefinedContributionPlanDomain" abstract="true" name="DefinedContributionPlanDomain" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="oii_PriceAllocatedtoRemainingPerformanceObligations" abstract="false" name="PriceAllocatedtoRemainingPerformanceObligations" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="oii_LesseeOperatingLeaseCostsAbstract" abstract="true" name="LesseeOperatingLeaseCostsAbstract" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="oii_OceaneeringAGVSystemMemberMember" abstract="true" name="OceaneeringAGVSystemMemberMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="oii_GrossProfitUnallocatedExpenses" abstract="false" name="GrossProfitUnallocatedExpenses" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="oii_WriteoffEquipmentandIntangibles" abstract="false" name="WriteoffEquipmentandIntangibles" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="oii_RevenueRecognitionforRemainingPerformanceObligationsinnext12months" abstract="false" name="RevenueRecognitionforRemainingPerformanceObligationsinnext12months" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="oii_Coststofulfillacontract" abstract="false" name="Coststofulfillacontract" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="oii_BaseRateTypeDomain" abstract="true" name="BaseRateTypeDomain" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="oii_CharteredVesselMember" abstract="true" name="CharteredVesselMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="oii_FixedPriceContractPercentageOfCompletionRevenueRecognizedToDate" abstract="false" name="FixedPriceContractPercentageOfCompletionRevenueRecognizedToDate" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="oii_OperatingleaseLeaseTermandDiscountRateTableTextBlock" abstract="false" name="OperatingleaseLeaseTermandDiscountRateTableTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:textBlockItemType"/>
+  <xs:element id="oii_Contractassetscurrentadjusted" abstract="false" name="Contractassetscurrentadjusted" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="oii_ConsolidationLessThanWhollyOwnedSubsidiaryParentOwnershipInterestThreholdForConsolidationPercentage" abstract="false" name="ConsolidationLessThanWhollyOwnedSubsidiaryParentOwnershipInterestThreholdForConsolidationPercentage" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="dtr-types:percentItemType"/>
+  <xs:element id="oii_EurodollarRateMember" abstract="true" name="EurodollarRateMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="oii_DeferredTaxAssetsTaxDeferredExpenseReservesAndAccrualsInterest" abstract="false" name="DeferredTaxAssetsTaxDeferredExpenseReservesAndAccrualsInterest" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="oii_Inventoryadjusted" abstract="false" name="Inventoryadjusted" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="oii_EffectiveIncomeTaxRateReconciliationRepatriationTax" abstract="false" name="EffectiveIncomeTaxRateReconciliationRepatriationTax" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="oii_DeferredrevenuewithoutadoptionofASC606" abstract="false" name="DeferredrevenuewithoutadoptionofASC606" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="oii_ShareBasedCompensationArrangementByShareBasedPaymentAwardEquityInstrumentsOtherThanOptionsVestedInPeriodFinalValue" abstract="false" name="ShareBasedCompensationArrangementByShareBasedPaymentAwardEquityInstrumentsOtherThanOptionsVestedInPeriodFinalValue" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:perShareItemType"/>
+  <xs:element id="oii_ShareBasedCompensationArrangementByShareBasedPaymentAwardPercentageOfAwardsVestingInFullAtEndOfServicePeriod" abstract="false" name="ShareBasedCompensationArrangementByShareBasedPaymentAwardPercentageOfAwardsVestingInFullAtEndOfServicePeriod" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:percentItemType"/>
+  <xs:element id="oii_OperatingLeasesOperatingLeaseOptionNumber" abstract="false" name="OperatingLeasesOperatingLeaseOptionNumber" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:integerItemType"/>
+  <xs:element id="oii_Effectofchangetotalaccountsreceivable" abstract="false" name="Effectofchangetotalaccountsreceivable" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="oii_LesseeOperatingLeaseCostsTableTextBlock" abstract="false" name="LesseeOperatingLeaseCostsTableTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:textBlockItemType"/>
+  <xs:element id="oii_Effectofchangerevenue" abstract="false" name="Effectofchangerevenue" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="oii_Rightofuseassetimpairment" abstract="false" name="Rightofuseassetimpairment" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="oii_CoverPageAbstract" abstract="true" name="CoverPageAbstract" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="oii_OperatingLeasesOperatingLeaseTerm" abstract="false" name="OperatingLeasesOperatingLeaseTerm" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:durationItemType"/>
+  <xs:element id="oii_SegmentGeographicalGroupsOfCountriesGroupThreeMember" abstract="true" name="SegmentGeographicalGroupsOfCountriesGroupThreeMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="oii_SegmentGeographicalGroupsOfCountriesForeignMember" abstract="true" name="SegmentGeographicalGroupsOfCountriesForeignMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="oii_EffectOfExchangeRateOnWorkingCapital" abstract="false" name="EffectOfExchangeRateOnWorkingCapital" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="oii_Accountsreceivablebilled" abstract="false" name="Accountsreceivablebilled" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="oii_U.S.ManufacturingDeductionMember" abstract="true" name="U.S.ManufacturingDeductionMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="oii_LineofCreditFacilityMaximumCapitalizationRatio" abstract="false" name="LineofCreditFacilityMaximumCapitalizationRatio" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="dtr-types:percentItemType"/>
+  <xs:element id="oii_IncomeTaxBusinessCredits" abstract="false" name="IncomeTaxBusinessCredits" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="oii_Otherlongtermliabilitiesadjusted" abstract="false" name="Otherlongtermliabilitiesadjusted" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="oii_EurodollarAdvancesMember" abstract="true" name="EurodollarAdvancesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="oii_UnallocatedExpensesMemberMember" abstract="true" name="UnallocatedExpensesMemberMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="oii_GlobalDataSolutionMemberMember" abstract="true" name="GlobalDataSolutionMemberMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="oii_Us401KPlanMember" abstract="true" name="Us401KPlanMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="oii_IncomeTaxDisclosureUncertainTaxPositionsAbstract" abstract="true" name="IncomeTaxDisclosureUncertainTaxPositionsAbstract" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="oii_WeightedAverageMemberLowRangeMember" abstract="true" name="WeightedAverageMemberLowRangeMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="oii_IncomeTaxReconciliationCARESTaxActDeferredImpact" abstract="false" name="IncomeTaxReconciliationCARESTaxActDeferredImpact" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="oii_Businessacquisitionpurchasepriceallocationintangibleassetsotherthangoodwil" abstract="false" name="Businessacquisitionpurchasepriceallocationintangibleassetsotherthangoodwil" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="oii_SubseaProjectsMember" abstract="true" name="SubseaProjectsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="oii_AssetIntegrityMember" abstract="true" name="AssetIntegrityMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="oii_SeniorNotesdue2028Member" abstract="true" name="SeniorNotesdue2028Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="oii_WeightedAverageMemberHighRangeMember" abstract="true" name="WeightedAverageMemberHighRangeMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="oii_Uncertaintaxpositionsnext12months" abstract="false" name="Uncertaintaxpositionsnext12months" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="oii_GrossProfitServices" abstract="false" name="GrossProfitServices" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="oii_ExcessTaxBenefitFromEmployeeBenefitPlansAxis" abstract="true" name="ExcessTaxBenefitFromEmployeeBenefitPlansAxis" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrldt:dimensionItem" type="xbrli:stringItemType"/>
+  <xs:element id="oii_IncomeTaxRateReconciliationPermanentDifferences" abstract="false" name="IncomeTaxRateReconciliationPermanentDifferences" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="oii_Costofservicesandproductsadjusted" abstract="false" name="Costofservicesandproductsadjusted" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="oii_UsGaap_IncomeTaxReconciliationForeignIncomeTaxRateDifferential" abstract="false" name="UsGaap_IncomeTaxReconciliationForeignIncomeTaxRateDifferential" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="oii_StockRepurchaseProgramTotalSharesRepurchasedToDateAmount" abstract="false" name="StockRepurchaseProgramTotalSharesRepurchasedToDateAmount" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="oii_IncomeIncludingEquityAffiliateEarningsBeforeIncomeTaxes" abstract="false" name="IncomeIncludingEquityAffiliateEarningsBeforeIncomeTaxes" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="oii_RovsMember" abstract="true" name="RovsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="oii_RemotelyOperatedVehiclesMember" abstract="true" name="RemotelyOperatedVehiclesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="oii_Revenueatapointintime" abstract="false" name="Revenueatapointintime" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="oii_HistoricalCreditLossAnalysisPeriod" abstract="false" name="HistoricalCreditLossAnalysisPeriod" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:durationItemType"/>
+  <xs:element id="oii_UnrecognizedTaxBenefitsProbabilityThresholdOfRealizingForTaxBenefitsRecognitionMinimumPercentage" abstract="false" name="UnrecognizedTaxBenefitsProbabilityThresholdOfRealizingForTaxBenefitsRecognitionMinimumPercentage" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:percentItemType"/>
+  <xs:element id="oii_Effectofchangeaccountsreceivable" abstract="false" name="Effectofchangeaccountsreceivable" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="oii_Effectofchangeunbilledaccountsreceivable" abstract="false" name="Effectofchangeunbilledaccountsreceivable" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="oii_UncertainTaxpositionstoberesolvedinnext12months" abstract="false" name="UncertainTaxpositionstoberesolvedinnext12months" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="oii_StockRepurchaseProgramTotalNumberofSharesRepurchasedToDate" abstract="false" name="StockRepurchaseProgramTotalNumberofSharesRepurchasedToDate" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="xbrli:sharesItemType"/>
+  <xs:element id="oii_DeferredTaxLiabilitiesNoncurrentTaxActtransitiontax" abstract="false" name="DeferredTaxLiabilitiesNoncurrentTaxActtransitiontax" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="oii_Effectofchangetotalaccruedliabilities" abstract="false" name="Effectofchangetotalaccruedliabilities" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="oii_EffectofchangeNetIncome" abstract="false" name="EffectofchangeNetIncome" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="oii_EcosseMember" abstract="true" name="EcosseMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="oii_TotalAdjustmentsToIncomeFromContinuingOperations" abstract="false" name="TotalAdjustmentsToIncomeFromContinuingOperations" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="oii_CreditAgreementMember" abstract="true" name="CreditAgreementMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="oii_Revenueovertime" abstract="false" name="Revenueovertime" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="oii_TrustValueThresholdForPayoutToCompany" abstract="false" name="TrustValueThresholdForPayoutToCompany" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="oii_OtheradjustmentstoIncomefromcontinuingoperations" abstract="false" name="OtheradjustmentstoIncomefromcontinuingoperations" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="oii_OtherEquityMethodInvesteesMember" abstract="true" name="OtherEquityMethodInvesteesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="oii_DeepwaterandShallowWaterMember" abstract="true" name="DeepwaterandShallowWaterMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="oii_AdvanceTypeDomain" abstract="true" name="AdvanceTypeDomain" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="oii_AccountReceivablePresentValueEstimateReclassifiedToNonCurrentAsset" abstract="false" name="AccountReceivablePresentValueEstimateReclassifiedToNonCurrentAsset" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="oii_OffshoreProjectsGroupMember" abstract="true" name="OffshoreProjectsGroupMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="oii_Impairmentpropertyplantequipment" abstract="false" name="Impairmentpropertyplantequipment" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="oii_AmortizationOfDeferredFinanceCost" abstract="false" name="AmortizationOfDeferredFinanceCost" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="oii_DeferredTaxLiabilitiesInterest" abstract="false" name="DeferredTaxLiabilitiesInterest" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="oii_Effectofchangecostsofservicesandproducts" abstract="false" name="Effectofchangecostsofservicesandproducts" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="oii_SeniorNotes2028" abstract="false" name="SeniorNotes2028" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="oii_AdvancedTechnologiesMember" abstract="true" name="AdvancedTechnologiesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="oii_ExcessTaxBenefitFromEmployeeBenefitPlansDomain" abstract="true" name="ExcessTaxBenefitFromEmployeeBenefitPlansDomain" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="oii_CARESActTaxRefund" abstract="false" name="CARESActTaxRefund" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="oii_AccountsReceivableAndContractAssets" abstract="false" name="AccountsReceivableAndContractAssets" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="oii_LineOfCreditFacilityBasisSpreadOnVariableRate" abstract="false" name="LineOfCreditFacilityBasisSpreadOnVariableRate" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="dtr-types:percentItemType"/>
+  <xs:element id="oii_RevenueRecognitionMultipleDeliverableArrangementsPercentageOfRevenueAccountedUnderPercentageOfCompletionMethod" abstract="false" name="RevenueRecognitionMultipleDeliverableArrangementsPercentageOfRevenueAccountedUnderPercentageOfCompletionMethod" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="dtr-types:percentItemType"/>
+  <xs:element id="oii_Accruedliabilitiesexcldeferredrevenueadjusted" abstract="false" name="Accruedliabilitiesexcldeferredrevenueadjusted" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="oii_A2024SeniorNotesMember" abstract="true" name="A2024SeniorNotesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="oii_AerospaceAndDefenseTechnologiesMember" abstract="true" name="AerospaceAndDefenseTechnologiesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+</xs:schema>

@@ -1,0 +1,694 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--XBRL Document Created with Wdesk from Workiva-->
+<!--Copyright 2022 Workiva-->
+<!--r:4a5d783b-2ff5-452f-a62d-01fee16e69f8,g:58a4a0ce-41c5-4a19-9ccb-80226dd07fd2-->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:cmlf="http://www.cmlifesciencesinc.com/20220930" xmlns:xbrli="http://www.xbrl.org/2003/instance" xmlns:dtr-types="http://www.xbrl.org/dtr/type/2020-01-21" xmlns:xbrldt="http://xbrl.org/2005/xbrldt" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://www.cmlifesciencesinc.com/20220930">
+  <xs:import namespace="http://fasb.org/srt/2022" schemaLocation="https://xbrl.fasb.org/srt/2022/elts/srt-2022.xsd"/>
+  <xs:import namespace="http://fasb.org/us-gaap/2022" schemaLocation="https://xbrl.fasb.org/us-gaap/2022/elts/us-gaap-2022.xsd"/>
+  <xs:import namespace="http://www.w3.org/1999/xlink" schemaLocation="http://www.xbrl.org/2003/xlink-2003-12-31.xsd"/>
+  <xs:import namespace="http://www.xbrl.org/2003/instance" schemaLocation="http://www.xbrl.org/2003/xbrl-instance-2003-12-31.xsd"/>
+  <xs:import namespace="http://www.xbrl.org/2003/linkbase" schemaLocation="http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd"/>
+  <xs:import namespace="http://www.xbrl.org/dtr/type/2020-01-21" schemaLocation="https://www.xbrl.org/dtr/type/2020-01-21/types.xsd"/>
+  <xs:import namespace="http://xbrl.org/2005/xbrldt" schemaLocation="http://www.xbrl.org/2005/xbrldt-2005.xsd"/>
+  <xs:import namespace="http://xbrl.sec.gov/dei/2022" schemaLocation="https://xbrl.sec.gov/dei/2022/dei-2022.xsd"/>
+  <xs:annotation>
+    <xs:appinfo>
+      <link:linkbaseRef xmlns:xlink="http://www.w3.org/1999/xlink" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="cmlf-20220930_lab.xml" xlink:role="http://www.xbrl.org/2003/role/labelLinkbaseRef" xlink:type="simple"/>
+      <link:linkbaseRef xmlns:xlink="http://www.w3.org/1999/xlink" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="cmlf-20220930_pre.xml" xlink:role="http://www.xbrl.org/2003/role/presentationLinkbaseRef" xlink:type="simple"/>
+      <link:linkbaseRef xmlns:xlink="http://www.w3.org/1999/xlink" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="cmlf-20220930_cal.xml" xlink:role="http://www.xbrl.org/2003/role/calculationLinkbaseRef" xlink:type="simple"/>
+      <link:linkbaseRef xmlns:xlink="http://www.w3.org/1999/xlink" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="cmlf-20220930_def.xml" xlink:role="http://www.xbrl.org/2003/role/definitionLinkbaseRef" xlink:type="simple"/>
+      <link:roleType id="Cover" roleURI="http://www.cmlifesciencesinc.com/role/Cover">
+        <link:definition>0000001 - Document - Cover</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CondensedConsolidatedBalanceSheets" roleURI="http://www.cmlifesciencesinc.com/role/CondensedConsolidatedBalanceSheets">
+        <link:definition>0000002 - Statement - Condensed Consolidated Balance Sheets</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CondensedConsolidatedBalanceSheetsParentheticals" roleURI="http://www.cmlifesciencesinc.com/role/CondensedConsolidatedBalanceSheetsParentheticals">
+        <link:definition>0000003 - Statement - Condensed Consolidated Balance Sheets (Parentheticals)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CondensedConsolidatedStatementsofOperationsandComprehensiveLoss" roleURI="http://www.cmlifesciencesinc.com/role/CondensedConsolidatedStatementsofOperationsandComprehensiveLoss">
+        <link:definition>0000004 - Statement - Condensed Consolidated Statements of Operations and Comprehensive Loss</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CondensedConsolidatedStatementsofOperationsandComprehensiveLossParenthetical" roleURI="http://www.cmlifesciencesinc.com/role/CondensedConsolidatedStatementsofOperationsandComprehensiveLossParenthetical">
+        <link:definition>0000005 - Statement - Condensed Consolidated Statements of Operations and Comprehensive Loss (Parenthetical)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CondensedConsolidatedStatementofRedeemableConvertiblePreferredStockStockholdersEquityDeficit" roleURI="http://www.cmlifesciencesinc.com/role/CondensedConsolidatedStatementofRedeemableConvertiblePreferredStockStockholdersEquityDeficit">
+        <link:definition>0000006 - Statement - Condensed Consolidated Statement of Redeemable Convertible Preferred Stock Stockholders' Equity (Deficit)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CondensedConsolidatedStatementofRedeemableConvertiblePreferredStockStockholdersEquityDeficitParenthetical" roleURI="http://www.cmlifesciencesinc.com/role/CondensedConsolidatedStatementofRedeemableConvertiblePreferredStockStockholdersEquityDeficitParenthetical">
+        <link:definition>0000007 - Statement - Condensed Consolidated Statement of Redeemable Convertible Preferred Stock Stockholders' Equity (Deficit) (Parenthetical)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CondensedConsolidatedStatementsofCashFlows" roleURI="http://www.cmlifesciencesinc.com/role/CondensedConsolidatedStatementsofCashFlows">
+        <link:definition>0000008 - Statement - Condensed Consolidated Statements of Cash Flows</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="OrganizationandDescriptionofBusiness" roleURI="http://www.cmlifesciencesinc.com/role/OrganizationandDescriptionofBusiness">
+        <link:definition>0000009 - Disclosure - Organization and Description of Business</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SummaryofSignificantAccountingPolicies" roleURI="http://www.cmlifesciencesinc.com/role/SummaryofSignificantAccountingPolicies">
+        <link:definition>0000010 - Disclosure - Summary of Significant Accounting Policies</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="BusinessCombinations" roleURI="http://www.cmlifesciencesinc.com/role/BusinessCombinations">
+        <link:definition>0000011 - Disclosure - Business Combinations</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RevenueRecognition" roleURI="http://www.cmlifesciencesinc.com/role/RevenueRecognition">
+        <link:definition>0000012 - Disclosure - Revenue Recognition</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FairValueMeasurements" roleURI="http://www.cmlifesciencesinc.com/role/FairValueMeasurements">
+        <link:definition>0000013 - Disclosure - Fair Value Measurements</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="PropertyandEquipment" roleURI="http://www.cmlifesciencesinc.com/role/PropertyandEquipment">
+        <link:definition>0000014 - Disclosure - Property and Equipment</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RelatedPartyTransactions" roleURI="http://www.cmlifesciencesinc.com/role/RelatedPartyTransactions">
+        <link:definition>0000015 - Disclosure - Related Party Transactions</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LongTermDebt" roleURI="http://www.cmlifesciencesinc.com/role/LongTermDebt">
+        <link:definition>0000016 - Disclosure - Long-Term Debt</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="Leases" roleURI="http://www.cmlifesciencesinc.com/role/Leases">
+        <link:definition>0000017 - Disclosure - Leases</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CommitmentsandContingencies" roleURI="http://www.cmlifesciencesinc.com/role/CommitmentsandContingencies">
+        <link:definition>0000018 - Disclosure - Commitments and Contingencies</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="StockBasedCompensation" roleURI="http://www.cmlifesciencesinc.com/role/StockBasedCompensation">
+        <link:definition>0000019 - Disclosure - Stock-Based Compensation</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IncomeTaxes" roleURI="http://www.cmlifesciencesinc.com/role/IncomeTaxes">
+        <link:definition>0000020 - Disclosure - Income Taxes</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="NetIncomelossperShare" roleURI="http://www.cmlifesciencesinc.com/role/NetIncomelossperShare">
+        <link:definition>0000021 - Disclosure - Net Income (loss) per Share</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RestructuringCosts" roleURI="http://www.cmlifesciencesinc.com/role/RestructuringCosts">
+        <link:definition>0000022 - Disclosure - Restructuring Costs</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SupplementalFinancialInformation" roleURI="http://www.cmlifesciencesinc.com/role/SupplementalFinancialInformation">
+        <link:definition>0000023 - Disclosure - Supplemental Financial Information</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="Goodwillandintangibleassets" roleURI="http://www.cmlifesciencesinc.com/role/Goodwillandintangibleassets">
+        <link:definition>0000024 - Disclosure - Goodwill and intangible assets</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SubsequentEvents" roleURI="http://www.cmlifesciencesinc.com/role/SubsequentEvents">
+        <link:definition>0000025 - Disclosure - Subsequent Events</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SummaryofSignificantAccountingPoliciesPolicies" roleURI="http://www.cmlifesciencesinc.com/role/SummaryofSignificantAccountingPoliciesPolicies">
+        <link:definition>0000026 - Disclosure - Summary of Significant Accounting Policies (Policies)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SummaryofSignificantAccountingPoliciesTables" roleURI="http://www.cmlifesciencesinc.com/role/SummaryofSignificantAccountingPoliciesTables">
+        <link:definition>0000027 - Disclosure - Summary of Significant Accounting Policies (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="BusinessCombinationsTables" roleURI="http://www.cmlifesciencesinc.com/role/BusinessCombinationsTables">
+        <link:definition>0000028 - Disclosure - Business Combinations (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RevenueRecognitionTables" roleURI="http://www.cmlifesciencesinc.com/role/RevenueRecognitionTables">
+        <link:definition>0000029 - Disclosure - Revenue Recognition (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FairValueMeasurementsTables" roleURI="http://www.cmlifesciencesinc.com/role/FairValueMeasurementsTables">
+        <link:definition>0000030 - Disclosure - Fair Value Measurements (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="PropertyandEquipmentTables" roleURI="http://www.cmlifesciencesinc.com/role/PropertyandEquipmentTables">
+        <link:definition>0000031 - Disclosure - Property and Equipment (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RelatedPartyTransactionsTables" roleURI="http://www.cmlifesciencesinc.com/role/RelatedPartyTransactionsTables">
+        <link:definition>0000032 - Disclosure - Related Party Transactions (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LongTermDebtTables" roleURI="http://www.cmlifesciencesinc.com/role/LongTermDebtTables">
+        <link:definition>0000033 - Disclosure - Long-Term Debt (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LeasesTables" roleURI="http://www.cmlifesciencesinc.com/role/LeasesTables">
+        <link:definition>0000034 - Disclosure - Leases (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="StockBasedCompensationTables" roleURI="http://www.cmlifesciencesinc.com/role/StockBasedCompensationTables">
+        <link:definition>0000035 - Disclosure - Stock-Based Compensation (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="NetIncomelossperShareTables" roleURI="http://www.cmlifesciencesinc.com/role/NetIncomelossperShareTables">
+        <link:definition>0000036 - Disclosure - Net Income (loss) per Share (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RestructuringCostsTables" roleURI="http://www.cmlifesciencesinc.com/role/RestructuringCostsTables">
+        <link:definition>0000037 - Disclosure - Restructuring Costs (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SupplementalFinancialInformationTables" roleURI="http://www.cmlifesciencesinc.com/role/SupplementalFinancialInformationTables">
+        <link:definition>0000038 - Disclosure - Supplemental Financial Information (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="GoodwillandintangibleassetsTables" roleURI="http://www.cmlifesciencesinc.com/role/GoodwillandintangibleassetsTables">
+        <link:definition>0000039 - Disclosure - Goodwill and intangible assets (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="OrganizationandDescriptionofBusinessDetails" roleURI="http://www.cmlifesciencesinc.com/role/OrganizationandDescriptionofBusinessDetails">
+        <link:definition>0000040 - Disclosure - Organization and Description of Business (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SummaryofSignificantAccountingPoliciesNarrativeDetails" roleURI="http://www.cmlifesciencesinc.com/role/SummaryofSignificantAccountingPoliciesNarrativeDetails">
+        <link:definition>0000041 - Disclosure - Summary of Significant Accounting Policies - Narrative (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SummaryofSignificantAccountingPoliciesConcentrationRiskDetails" roleURI="http://www.cmlifesciencesinc.com/role/SummaryofSignificantAccountingPoliciesConcentrationRiskDetails">
+        <link:definition>0000042 - Disclosure - Summary of Significant Accounting Policies - Concentration Risk (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SummaryofSignificantAccountingPoliciesCashCashEquivalentsandRestrictedCashDetails" roleURI="http://www.cmlifesciencesinc.com/role/SummaryofSignificantAccountingPoliciesCashCashEquivalentsandRestrictedCashDetails">
+        <link:definition>0000043 - Disclosure - Summary of Significant Accounting Policies - Cash, Cash Equivalents and Restricted Cash (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="BusinessCombinationsDetails" roleURI="http://www.cmlifesciencesinc.com/role/BusinessCombinationsDetails">
+        <link:definition>0000044 - Disclosure - Business Combinations (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="BusinessCombinationsProFormaFinancialInformationDetails" roleURI="http://www.cmlifesciencesinc.com/role/BusinessCombinationsProFormaFinancialInformationDetails">
+        <link:definition>0000045 - Disclosure - Business Combinations - Pro Forma Financial Information (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RevenueRecognitionDisaggregationofRevenueDetails" roleURI="http://www.cmlifesciencesinc.com/role/RevenueRecognitionDisaggregationofRevenueDetails">
+        <link:definition>0000046 - Disclosure - Revenue Recognition - Disaggregation of Revenue (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RevenueRecognitionNarrativeDetails" roleURI="http://www.cmlifesciencesinc.com/role/RevenueRecognitionNarrativeDetails">
+        <link:definition>0000047 - Disclosure - Revenue Recognition - Narrative (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RevenueRecognitionRemainingPerformanceObligationsDetails" roleURI="http://www.cmlifesciencesinc.com/role/RevenueRecognitionRemainingPerformanceObligationsDetails">
+        <link:definition>0000048 - Disclosure - Revenue Recognition - Remaining Performance Obligations (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RevenueRecognitionRemainingPerformanceObligationsDetails_1" roleURI="http://www.cmlifesciencesinc.com/role/RevenueRecognitionRemainingPerformanceObligationsDetails_1">
+        <link:definition>0000048 - Disclosure - Revenue Recognition - Remaining Performance Obligations (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RevenueRecognitionContractAssetsandContractLiabilitiesDetails" roleURI="http://www.cmlifesciencesinc.com/role/RevenueRecognitionContractAssetsandContractLiabilitiesDetails">
+        <link:definition>0000049 - Disclosure - Revenue Recognition - Contract Assets and Contract Liabilities (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FairValueMeasurementsNarrativeDetails" roleURI="http://www.cmlifesciencesinc.com/role/FairValueMeasurementsNarrativeDetails">
+        <link:definition>0000050 - Disclosure - Fair Value Measurements - Narrative (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FairValueMeasurementsScheduleofFairValueonaRecurringBasisDetails" roleURI="http://www.cmlifesciencesinc.com/role/FairValueMeasurementsScheduleofFairValueonaRecurringBasisDetails">
+        <link:definition>0000051 - Disclosure - Fair Value Measurements - Schedule of Fair Value on a Recurring Basis (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FairValueMeasurementsSummaryofutilizedindeterminingvaluationDetails" roleURI="http://www.cmlifesciencesinc.com/role/FairValueMeasurementsSummaryofutilizedindeterminingvaluationDetails">
+        <link:definition>0000052 - Disclosure - Fair Value Measurements - Summary of utilized in determining valuation (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="PropertyandEquipmentComponentsDetails" roleURI="http://www.cmlifesciencesinc.com/role/PropertyandEquipmentComponentsDetails">
+        <link:definition>0000053 - Disclosure - Property and Equipment - Components (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="PropertyandEquipmentNarrativeDetails" roleURI="http://www.cmlifesciencesinc.com/role/PropertyandEquipmentNarrativeDetails">
+        <link:definition>0000054 - Disclosure - Property and Equipment - Narrative (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="PropertyandEquipmentDepreciationandAmortizationDetails" roleURI="http://www.cmlifesciencesinc.com/role/PropertyandEquipmentDepreciationandAmortizationDetails">
+        <link:definition>0000055 - Disclosure - Property and Equipment - Depreciation and Amortization (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RelatedPartyTransactionsNarrativeDetails" roleURI="http://www.cmlifesciencesinc.com/role/RelatedPartyTransactionsNarrativeDetails">
+        <link:definition>0000056 - Disclosure - Related Party Transactions - Narrative (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RelatedPartyTransactionsRelatedPartyExpensesDetails" roleURI="http://www.cmlifesciencesinc.com/role/RelatedPartyTransactionsRelatedPartyExpensesDetails">
+        <link:definition>0000057 - Disclosure - Related Party Transactions - Related Party Expenses (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LongTermDebtLoanandSecurityAgreementDetails" roleURI="http://www.cmlifesciencesinc.com/role/LongTermDebtLoanandSecurityAgreementDetails">
+        <link:definition>0000058 - Disclosure - Long-Term Debt - Loan and Security Agreement (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LongTermDebt2016FundingCommitmentDetails" roleURI="http://www.cmlifesciencesinc.com/role/LongTermDebt2016FundingCommitmentDetails">
+        <link:definition>0000059 - Disclosure - Long-Term Debt - 2016 Funding Commitment (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LongTermDebtMaturitiesDetails" roleURI="http://www.cmlifesciencesinc.com/role/LongTermDebtMaturitiesDetails">
+        <link:definition>0000060 - Disclosure - Long-Term Debt - Maturities (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LongTermDebtMaturitiesDetails_1" roleURI="http://www.cmlifesciencesinc.com/role/LongTermDebtMaturitiesDetails_1">
+        <link:definition>0000060 - Disclosure - Long-Term Debt - Maturities (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LongTermDebt2020MasterLoanAgreementDetails" roleURI="http://www.cmlifesciencesinc.com/role/LongTermDebt2020MasterLoanAgreementDetails">
+        <link:definition>0000061 - Disclosure - Long-Term Debt - 2020 Master Loan Agreement (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LongTermDebt2020MasterLeaseAgreementDetails" roleURI="http://www.cmlifesciencesinc.com/role/LongTermDebt2020MasterLeaseAgreementDetails">
+        <link:definition>0000062 - Disclosure - Long-Term Debt - 2020 Master Lease Agreement (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LeasesNarrativeDetails" roleURI="http://www.cmlifesciencesinc.com/role/LeasesNarrativeDetails">
+        <link:definition>0000063 - Disclosure - Leases - Narrative (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LeasesLeasecostDetails" roleURI="http://www.cmlifesciencesinc.com/role/LeasesLeasecostDetails">
+        <link:definition>0000064 - Disclosure - Leases - Lease, cost (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LeasesSummaryDetails" roleURI="http://www.cmlifesciencesinc.com/role/LeasesSummaryDetails">
+        <link:definition>0000065 - Disclosure - Leases - Summary (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LeasesScheduleofFutureMinimumRentalPaymentsforLeasesDetails" roleURI="http://www.cmlifesciencesinc.com/role/LeasesScheduleofFutureMinimumRentalPaymentsforLeasesDetails">
+        <link:definition>0000066 - Disclosure - Leases - Schedule of Future Minimum Rental Payments for Leases (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LeasesScheduleofFutureMinimumRentalPaymentsforLeasesDetails_1" roleURI="http://www.cmlifesciencesinc.com/role/LeasesScheduleofFutureMinimumRentalPaymentsforLeasesDetails_1">
+        <link:definition>0000066 - Disclosure - Leases - Schedule of Future Minimum Rental Payments for Leases (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LeasesScheduleofSupplementalInformationRelatedtoLeasesDetails" roleURI="http://www.cmlifesciencesinc.com/role/LeasesScheduleofSupplementalInformationRelatedtoLeasesDetails">
+        <link:definition>0000067 - Disclosure - Leases - Schedule of Supplemental Information Related to Leases (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CommitmentsandContingenciesDetails" roleURI="http://www.cmlifesciencesinc.com/role/CommitmentsandContingenciesDetails">
+        <link:definition>0000068 - Disclosure - Commitments and Contingencies (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="StockBasedCompensationNarrativeDetails" roleURI="http://www.cmlifesciencesinc.com/role/StockBasedCompensationNarrativeDetails">
+        <link:definition>0000069 - Disclosure - Stock-Based Compensation - Narrative (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="StockBasedCompensationSummaryofStockOptionActivityDetails" roleURI="http://www.cmlifesciencesinc.com/role/StockBasedCompensationSummaryofStockOptionActivityDetails">
+        <link:definition>0000070 - Disclosure - Stock-Based Compensation - Summary of Stock Option Activity (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="StockBasedCompensationSummaryofAssumptionsDetails" roleURI="http://www.cmlifesciencesinc.com/role/StockBasedCompensationSummaryofAssumptionsDetails">
+        <link:definition>0000071 - Disclosure - Stock-Based Compensation - Summary of Assumptions (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="StockBasedCompensationScheduleofRestrictedStockUnitsDetails" roleURI="http://www.cmlifesciencesinc.com/role/StockBasedCompensationScheduleofRestrictedStockUnitsDetails">
+        <link:definition>0000072 - Disclosure - Stock-Based Compensation - Schedule of Restricted Stock Units (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="StockBasedCompensationSummaryofStockBasedCompensationExpenseDetails" roleURI="http://www.cmlifesciencesinc.com/role/StockBasedCompensationSummaryofStockBasedCompensationExpenseDetails">
+        <link:definition>0000073 - Disclosure - Stock-Based Compensation - Summary of Stock-Based Compensation Expense (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IncomeTaxesDetails" roleURI="http://www.cmlifesciencesinc.com/role/IncomeTaxesDetails">
+        <link:definition>0000074 - Disclosure - Income Taxes (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="NetIncomelossperShareBasicandDilutedDetails" roleURI="http://www.cmlifesciencesinc.com/role/NetIncomelossperShareBasicandDilutedDetails">
+        <link:definition>0000075 - Disclosure - Net Income (loss) per Share - Basic and Diluted (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="NetIncomelossperSharePotentiallyDilutiveSecuritiesDetails" roleURI="http://www.cmlifesciencesinc.com/role/NetIncomelossperSharePotentiallyDilutiveSecuritiesDetails">
+        <link:definition>0000076 - Disclosure - Net Income (loss) per Share - Potentially Dilutive Securities (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RestructuringCostsDetails" roleURI="http://www.cmlifesciencesinc.com/role/RestructuringCostsDetails">
+        <link:definition>0000077 - Disclosure - Restructuring Costs (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SupplementalFinancialInformationAccountsPayableandAccruedExpensesDetails" roleURI="http://www.cmlifesciencesinc.com/role/SupplementalFinancialInformationAccountsPayableandAccruedExpensesDetails">
+        <link:definition>0000078 - Disclosure - Supplemental Financial Information - Accounts Payable and Accrued Expenses (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SupplementalFinancialInformationOtherCurrentLiabilitiesDetails" roleURI="http://www.cmlifesciencesinc.com/role/SupplementalFinancialInformationOtherCurrentLiabilitiesDetails">
+        <link:definition>0000079 - Disclosure - Supplemental Financial Information - Other Current Liabilities (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="GoodwillandintangibleassetsScheduleofGoodwillDetails" roleURI="http://www.cmlifesciencesinc.com/role/GoodwillandintangibleassetsScheduleofGoodwillDetails">
+        <link:definition>0000080 - Disclosure - Goodwill and intangible assets - Schedule of Goodwill (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="GoodwillandintangibleassetsScheduleofAcquiredIntangibleAssetsDetails" roleURI="http://www.cmlifesciencesinc.com/role/GoodwillandintangibleassetsScheduleofAcquiredIntangibleAssetsDetails">
+        <link:definition>0000081 - Disclosure - Goodwill and intangible assets - Schedule of Acquired Intangible Assets (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="GoodwillandintangibleassetsNarrativeDetails" roleURI="http://www.cmlifesciencesinc.com/role/GoodwillandintangibleassetsNarrativeDetails">
+        <link:definition>0000082 - Disclosure - Goodwill and intangible assets - Narrative (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="GoodwillandintangibleassetsScheduleofFutureAmortizationExpenseDetails" roleURI="http://www.cmlifesciencesinc.com/role/GoodwillandintangibleassetsScheduleofFutureAmortizationExpenseDetails">
+        <link:definition>0000083 - Disclosure - Goodwill and intangible assets - Schedule of Future Amortization Expense (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SubsequentEventsDetails" roleURI="http://www.cmlifesciencesinc.com/role/SubsequentEventsDetails">
+        <link:definition>0000084 - Disclosure - Subsequent Events (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element id="cmlf_TransitionServicesAgreementMember" abstract="true" name="TransitionServicesAgreementMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="cmlf_PayorEMember" abstract="true" name="PayorEMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="cmlf_LesseeOperatingAndFinanceAndLiabilityToBePaidYearFive" abstract="false" name="LesseeOperatingAndFinanceAndLiabilityToBePaidYearFive" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="cmlf_LegacyBusinessMember" abstract="true" name="LegacyBusinessMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="cmlf_DECDLoanAgreementMember" abstract="true" name="DECDLoanAgreementMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="cmlf_BusinessCombinationContingentConsiderationSecondMilestonePaymentEstimatedRevenue" abstract="false" name="BusinessCombinationContingentConsiderationSecondMilestonePaymentEstimatedRevenue" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="cmlf_EscrowPeriod" abstract="false" name="EscrowPeriod" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:durationItemType"/>
+  <xs:element id="cmlf_LeaseAssets" abstract="false" name="LeaseAssets" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="cmlf_ShareBasedCompensationArrangementByShareBasedPaymentAwardOptionsReMeasurementPeriod" abstract="false" name="ShareBasedCompensationArrangementByShareBasedPaymentAwardOptionsReMeasurementPeriod" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:durationItemType"/>
+  <xs:element id="cmlf_ConversionOfStockConversionRatio" abstract="false" name="ConversionOfStockConversionRatio" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="xbrli:pureItemType"/>
+  <xs:element id="cmlf_DiagnosticTestMember" abstract="true" name="DiagnosticTestMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="cmlf_GovernmentAssistanceAxis" abstract="true" name="GovernmentAssistanceAxis" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrldt:dimensionItem" type="xbrli:stringItemType"/>
+  <xs:element id="cmlf_LineOfCreditFacilityCovenantLiquidityThreshold" abstract="false" name="LineOfCreditFacilityCovenantLiquidityThreshold" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="cmlf_EquipmentHeldUnderCapitalLeaseMember" abstract="true" name="EquipmentHeldUnderCapitalLeaseMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="cmlf_FinanceLeaseCosts" abstract="false" name="FinanceLeaseCosts" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="cmlf_MinimumThresholdPriceOfCommonStockSpecifiedToSendNoticeOfRedemptionToTheWarrantHolders" abstract="false" name="MinimumThresholdPriceOfCommonStockSpecifiedToSendNoticeOfRedemptionToTheWarrantHolders" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:perShareItemType"/>
+  <xs:element id="cmlf_LongTermDebtMaturityAfterYearFour" abstract="false" name="LongTermDebtMaturityAfterYearFour" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="cmlf_LeaseLiabilities" abstract="false" name="LeaseLiabilities" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="cmlf_PayorCMember" abstract="true" name="PayorCMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="cmlf_LeaseLiabilitiesNoncurrent" abstract="false" name="LeaseLiabilitiesNoncurrent" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="cmlf_PaymentOfDeferredPayrollTaxes" abstract="false" name="PaymentOfDeferredPayrollTaxes" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="cmlf_CertainPayorMattersMember" abstract="true" name="CertainPayorMattersMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="cmlf_OperatingFinanceLeaseLiabilityAbstract" abstract="true" name="OperatingFinanceLeaseLiabilityAbstract" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="cmlf_EmergingGrowthCompanyPolicyTextBlock" abstract="false" name="EmergingGrowthCompanyPolicyTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:textBlockItemType"/>
+  <xs:element id="cmlf_DebtInstrumentMaximumLoanForgiveness" abstract="false" name="DebtInstrumentMaximumLoanForgiveness" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="cmlf_LesseeOperatingAndFinanceAndLiabilityToBePaidYearOne" abstract="false" name="LesseeOperatingAndFinanceAndLiabilityToBePaidYearOne" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="cmlf_EffectOfDilutiveSecuritiesAbstract" abstract="true" name="EffectOfDilutiveSecuritiesAbstract" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="cmlf_PurchaseOfDiagnosticTestingKitsAndMaterialsMember" abstract="true" name="PurchaseOfDiagnosticTestingKitsAndMaterialsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="cmlf_ChangeInContractWithCustomerLiabilityRollForward" abstract="true" name="ChangeInContractWithCustomerLiabilityRollForward" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="cmlf_LesseeOperatingAndFinanceAndLiabilityUndiscountedExcessAmount" abstract="false" name="LesseeOperatingAndFinanceAndLiabilityUndiscountedExcessAmount" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="cmlf_LineOfCreditCovenantTrailingPeriodForMinimumRevenueTargets" abstract="false" name="LineOfCreditCovenantTrailingPeriodForMinimumRevenueTargets" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:durationItemType"/>
+  <xs:element id="cmlf_SupplierAMember" abstract="true" name="SupplierAMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="cmlf_LesseeOperatingAndFinanceAndLiabilityToBePaid" abstract="false" name="LesseeOperatingAndFinanceAndLiabilityToBePaid" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="cmlf_LesseeOperatingLeaseEarlyTerminationPeriod" abstract="false" name="LesseeOperatingLeaseEarlyTerminationPeriod" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:durationItemType"/>
+  <xs:element id="cmlf_EarnOutSharesMember" abstract="true" name="EarnOutSharesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="cmlf_BusinessAcquisitionCashAndConsiderationHeldAsEscrowPeriod" abstract="false" name="BusinessAcquisitionCashAndConsiderationHeldAsEscrowPeriod" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:durationItemType"/>
+  <xs:element id="cmlf_BusinessAcquisitionPercentageOfProformaRevenue" abstract="false" name="BusinessAcquisitionPercentageOfProformaRevenue" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:percentItemType"/>
+  <xs:element id="cmlf_ContingentConsiderationMilestoneTwoMember" abstract="true" name="ContingentConsiderationMilestoneTwoMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="cmlf_PublicWarrantsMember" abstract="true" name="PublicWarrantsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="cmlf_ContractWithCustomerLiabilityRevenueRecognizedIncludingOpeningBalance" abstract="false" name="ContractWithCustomerLiabilityRevenueRecognizedIncludingOpeningBalance" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="cmlf_WeightedAverageDiscountRateAbstract" abstract="true" name="WeightedAverageDiscountRateAbstract" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="cmlf_TemporaryEquityEliminationAsPartOfReorganization" abstract="false" name="TemporaryEquityEliminationAsPartOfReorganization" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="cmlf_A2021EmployeeStockPurchasePlanMember" abstract="true" name="A2021EmployeeStockPurchasePlanMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="cmlf_RestructuringAndRelatedCostExpectedNumberOfPositionsEliminatedPercent" abstract="false" name="RestructuringAndRelatedCostExpectedNumberOfPositionsEliminatedPercent" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:percentItemType"/>
+  <xs:element id="cmlf_IncreaseDecreaseInDueToFromRelatedParties" abstract="false" name="IncreaseDecreaseInDueToFromRelatedParties" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="cmlf_CommonStockThresholdConsecutiveTradingDays" abstract="false" name="CommonStockThresholdConsecutiveTradingDays" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:integerItemType"/>
+  <xs:element id="cmlf_LeaseNumberOfRenewalTerms" abstract="false" name="LeaseNumberOfRenewalTerms" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:integerItemType"/>
+  <xs:element id="cmlf_ReverseRecapitalizationExchangeRatio" abstract="false" name="ReverseRecapitalizationExchangeRatio" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:pureItemType"/>
+  <xs:element id="cmlf_LesseeFinanceLeaseInterestRate" abstract="false" name="LesseeFinanceLeaseInterestRate" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="dtr-types:percentItemType"/>
+  <xs:element id="cmlf_ContractWithCustomerAmountTransferredToReceived" abstract="false" name="ContractWithCustomerAmountTransferredToReceived" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="cmlf_LesseeOperatingAndFinanceAndLiabilityToBePaidYearThree" abstract="false" name="LesseeOperatingAndFinanceAndLiabilityToBePaidYearThree" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="cmlf_LineOfCreditFacilityCovenantOutstandingBorrowings" abstract="false" name="LineOfCreditFacilityCovenantOutstandingBorrowings" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="cmlf_CashPaidForAmountsIncludedInTheMeasurementOfLeaseLiabilitiesAbstract" abstract="true" name="CashPaidForAmountsIncludedInTheMeasurementOfLeaseLiabilitiesAbstract" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="cmlf_NoncashLeaseExpense" abstract="false" name="NoncashLeaseExpense" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="cmlf_NumberOfSharesIssuedAndOutstanding" abstract="false" name="NumberOfSharesIssuedAndOutstanding" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:sharesItemType"/>
+  <xs:element id="cmlf_DiagnosticTestSelfPayMember" abstract="true" name="DiagnosticTestSelfPayMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="cmlf_RelatedPartyExpensesMember" abstract="true" name="RelatedPartyExpensesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="cmlf_GovernmentAssistanceDomain" abstract="true" name="GovernmentAssistanceDomain" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="cmlf_ContractWithCustomerLiabilityPrepayments" abstract="false" name="ContractWithCustomerLiabilityPrepayments" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="cmlf_A2017StockIncentivePlanMember" abstract="true" name="A2017StockIncentivePlanMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="cmlf_DebtInstrumentDebtIssuanceCostsEachAnniversary" abstract="false" name="DebtInstrumentDebtIssuanceCostsEachAnniversary" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="cmlf_DiagnosticTestThirdPartyInsuranceMember" abstract="true" name="DiagnosticTestThirdPartyInsuranceMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="cmlf_RedemptionOnWarrantHolders" abstract="false" name="RedemptionOnWarrantHolders" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:perShareItemType"/>
+  <xs:element id="cmlf_GeneDXHolding2IncMember" abstract="true" name="GeneDXHolding2IncMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="cmlf_DebtInstrumentPercentageOfExistingIssuedAndOutstandingShares" abstract="false" name="DebtInstrumentPercentageOfExistingIssuedAndOutstandingShares" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:percentItemType"/>
+  <xs:element id="cmlf_ShareBasedPaymentArrangementNumberOfIndividualsGranted" abstract="false" name="ShareBasedPaymentArrangementNumberOfIndividualsGranted" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:integerItemType"/>
+  <xs:element id="cmlf_A2021PlanMember" abstract="true" name="A2021PlanMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="cmlf_EscrowAgentMember" abstract="true" name="EscrowAgentMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="cmlf_FiniteLivedIntangibleAssetsAmortizationExpenseAfterYearFour" abstract="false" name="FiniteLivedIntangibleAssetsAmortizationExpenseAfterYearFour" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="cmlf_BusinessCombinationContingentConsiderationSecondMilestonePayment" abstract="false" name="BusinessCombinationContingentConsiderationSecondMilestonePayment" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="cmlf_MasterLoanAgreementMember" abstract="true" name="MasterLoanAgreementMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="cmlf_GeneDxMember" abstract="true" name="GeneDxMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="cmlf_BusinessCombinationContingentConsiderationRevenueTargetOfMilestoneEvent" abstract="false" name="BusinessCombinationContingentConsiderationRevenueTargetOfMilestoneEvent" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:percentItemType"/>
+  <xs:element id="cmlf_LesseeOperatingAndFinanceAndLiability" abstract="false" name="LesseeOperatingAndFinanceAndLiability" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="cmlf_IndemnificationLiabilities" abstract="false" name="IndemnificationLiabilities" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="cmlf_BusinessCombinationContingentConsiderationFirstMilestonePaymentEstimatedRevenue" abstract="false" name="BusinessCombinationContingentConsiderationFirstMilestonePaymentEstimatedRevenue" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="cmlf_OPKOMember" abstract="true" name="OPKOMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="cmlf_EarnOutRestrictedStockUnitsMember" abstract="true" name="EarnOutRestrictedStockUnitsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="cmlf_TemporaryEquityEliminationAsPartOfReorganizationShares" abstract="false" name="TemporaryEquityEliminationAsPartOfReorganizationShares" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:sharesItemType"/>
+  <xs:element id="cmlf_StockIssuedDuringPeriodConversionOfTemporaryEquityAsPartOfReorganizationShares" abstract="false" name="StockIssuedDuringPeriodConversionOfTemporaryEquityAsPartOfReorganizationShares" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:sharesItemType"/>
+  <xs:element id="cmlf_RedemptionPricePerWarrant" abstract="false" name="RedemptionPricePerWarrant" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:perShareItemType"/>
+  <xs:element id="cmlf_RelatedPartyTSAAgreementMember" abstract="true" name="RelatedPartyTSAAgreementMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="cmlf_RevenueRecognizedIncludedContractLiability" abstract="false" name="RevenueRecognizedIncludedContractLiability" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="cmlf_LetterOfCreditDepositRequiredPercentage" abstract="false" name="LetterOfCreditDepositRequiredPercentage" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="dtr-types:percentItemType"/>
+  <xs:element id="cmlf_RelatedPartyServiceAgreementsMember" abstract="true" name="RelatedPartyServiceAgreementsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="cmlf_PayorBMember" abstract="true" name="PayorBMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="cmlf_OptionsAndRSUsMember" abstract="true" name="OptionsAndRSUsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="cmlf_PrivateWarrantMember" abstract="true" name="PrivateWarrantMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="cmlf_DebtInstrumentPrincipalRepaymentRequested" abstract="false" name="DebtInstrumentPrincipalRepaymentRequested" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="cmlf_WarrantLiability" abstract="false" name="WarrantLiability" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="cmlf_ChangeInFairMarketValueOfWarrantAndEarnOutContingentLiabilities" abstract="false" name="ChangeInFairMarketValueOfWarrantAndEarnOutContingentLiabilities" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="cmlf_DebtInstrumentPeriodicPaymentPrincipalAndInterest" abstract="false" name="DebtInstrumentPeriodicPaymentPrincipalAndInterest" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="cmlf_FurnitureFixturesAndOtherEquipmentMember" abstract="true" name="FurnitureFixturesAndOtherEquipmentMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="cmlf_ShortTermLeaseLiabilitiesMember" abstract="true" name="ShortTermLeaseLiabilitiesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="cmlf_TradeNamesTrademarksAndDevelopedTechnologyMember" abstract="true" name="TradeNamesTrademarksAndDevelopedTechnologyMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="cmlf_BusinessCombinationContingentConsiderationPercentageOfMilestonePaymentBasedOnRevenueTarget" abstract="false" name="BusinessCombinationContingentConsiderationPercentageOfMilestonePaymentBasedOnRevenueTarget" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:percentItemType"/>
+  <xs:element id="cmlf_ContingentMilestoneLiabilityMember" abstract="true" name="ContingentMilestoneLiabilityMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="cmlf_BusinessCombinationContingentConsiderationFirstMilestonePayment" abstract="false" name="BusinessCombinationContingentConsiderationFirstMilestonePayment" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="cmlf_DebtInstrumentFundingCommitment" abstract="false" name="DebtInstrumentFundingCommitment" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="cmlf_DueToRelatedPartiesMember" abstract="true" name="DueToRelatedPartiesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="cmlf_OrganizationAndDescriptionOfBusinessTable" abstract="true" name="OrganizationAndDescriptionOfBusinessTable" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrldt:hypercubeItem" type="xbrli:stringItemType"/>
+  <xs:element id="cmlf_ClassOfWarrantOrRightTargetSharePriceOfWarrantsOrRightsForRedemption" abstract="false" name="ClassOfWarrantOrRightTargetSharePriceOfWarrantsOrRightsForRedemption" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="dtr-types:perShareItemType"/>
+  <xs:element id="cmlf_GovernmentAssistanceCARESActEmployeeRetentionCreditMember" abstract="true" name="GovernmentAssistanceCARESActEmployeeRetentionCreditMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="cmlf_ProceedsFromGovernmentAssistance" abstract="false" name="ProceedsFromGovernmentAssistance" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="cmlf_Sema4OpCoIncMember" abstract="true" name="Sema4OpCoIncMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="cmlf_BusinessAcquisitionInitialPublicOffering" abstract="false" name="BusinessAcquisitionInitialPublicOffering" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="cmlf_ContingentConsiderationMilestoneOneMember" abstract="true" name="ContingentConsiderationMilestoneOneMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="cmlf_LeaseLiabilitiesCurrent" abstract="false" name="LeaseLiabilitiesCurrent" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="cmlf_BusinessAcquisitionReceivablesRelatedToAcquisitionClosingWorkingCapitalAdjustment" abstract="false" name="BusinessAcquisitionReceivablesRelatedToAcquisitionClosingWorkingCapitalAdjustment" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="cmlf_PrivatePlacementWarrantsMember" abstract="true" name="PrivatePlacementWarrantsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="cmlf_LesseeOperatingLeaseLandToTotalValuePercentage" abstract="false" name="LesseeOperatingLeaseLandToTotalValuePercentage" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="dtr-types:percentItemType"/>
+  <xs:element id="cmlf_ChangeInContractWithCustomerAssetRollForward" abstract="true" name="ChangeInContractWithCustomerAssetRollForward" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="cmlf_SVBAgreementMember" abstract="true" name="SVBAgreementMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="cmlf_ShareBasedPaymentArrangementExpenseReversal" abstract="false" name="ShareBasedPaymentArrangementExpenseReversal" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="cmlf_LesseeOperatingAndFinanceAndLiabilityToBePaidYearTwo" abstract="false" name="LesseeOperatingAndFinanceAndLiabilityToBePaidYearTwo" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="cmlf_SoftwareDevelopmentCostsIncurredButNotYetPaid" abstract="false" name="SoftwareDevelopmentCostsIncurredButNotYetPaid" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="cmlf_LesseeOperatingAndFinanceAndLiabilityToBePaidYearFour" abstract="false" name="LesseeOperatingAndFinanceAndLiabilityToBePaidYearFour" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="cmlf_StockIssuedDuringPeriodConversionOfTemporaryEquityAsPartOfReorganization" abstract="false" name="StockIssuedDuringPeriodConversionOfTemporaryEquityAsPartOfReorganization" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="cmlf_ShareBasedCompensationArrangementByShareBasedPaymentAwardExercisableAfterTermOfAwardNumber" abstract="false" name="ShareBasedCompensationArrangementByShareBasedPaymentAwardExercisableAfterTermOfAwardNumber" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:decimalItemType"/>
+  <xs:element id="cmlf_CommonStockThresholdNumberOfTradingDaysBeforeNoticeOfRedemption" abstract="false" name="CommonStockThresholdNumberOfTradingDaysBeforeNoticeOfRedemption" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:integerItemType"/>
+  <xs:element id="cmlf_BusinessAcquisitionsIncreaseInProformaRevenue" abstract="false" name="BusinessAcquisitionsIncreaseInProformaRevenue" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="cmlf_ClassACommonStockEqualsOrExceedsThresholdOneMember" abstract="true" name="ClassACommonStockEqualsOrExceedsThresholdOneMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="cmlf_PublicWarrantMember" abstract="true" name="PublicWarrantMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="cmlf_ContractWithCustomerAssetOtherIncreaseDecrease" abstract="false" name="ContractWithCustomerAssetOtherIncreaseDecrease" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="cmlf_ShareBasedCompensationModificationReclassification" abstract="false" name="ShareBasedCompensationModificationReclassification" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="cmlf_CMLSHoldingsLLCMember" abstract="true" name="CMLSHoldingsLLCMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="cmlf_ClassACommonStockEqualsOrExceedsThresholdTwoMember" abstract="true" name="ClassACommonStockEqualsOrExceedsThresholdTwoMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="cmlf_LineOfCreditCovenantAdjustedQuickRatio" abstract="false" name="LineOfCreditCovenantAdjustedQuickRatio" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="xbrli:pureItemType"/>
+  <xs:element id="cmlf_OrganizationAndDescriptionOfBusinessLineItems" abstract="true" name="OrganizationAndDescriptionOfBusinessLineItems" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="cmlf_EarnOutLiabilityMember" abstract="true" name="EarnOutLiabilityMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="cmlf_BusinessAcquisitionSharesConvertedRatio" abstract="false" name="BusinessAcquisitionSharesConvertedRatio" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="xbrli:pureItemType"/>
+  <xs:element id="cmlf_MasterLeaseAgreementMember" abstract="true" name="MasterLeaseAgreementMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="cmlf_PaymentForSettlementOfUnvestedStockAppreciationRights" abstract="false" name="PaymentForSettlementOfUnvestedStockAppreciationRights" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="cmlf_CommonStockThresholdTradingDays" abstract="false" name="CommonStockThresholdTradingDays" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:integerItemType"/>
+  <xs:element id="cmlf_EmployeeStockOptionAndRestrictedStockUnitsMember" abstract="true" name="EmployeeStockOptionAndRestrictedStockUnitsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="cmlf_OneRenewalPeriodMember" abstract="true" name="OneRenewalPeriodMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="cmlf_PayorDMember" abstract="true" name="PayorDMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="cmlf_DiagnosticTestInstitutionalCustomersMember" abstract="true" name="DiagnosticTestInstitutionalCustomersMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="cmlf_PayorAMember" abstract="true" name="PayorAMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="cmlf_NumberOfDaysForWrittenNoticeOfRedemption" abstract="false" name="NumberOfDaysForWrittenNoticeOfRedemption" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:integerItemType"/>
+  <xs:element id="cmlf_ContractWithCustomerAssetAdditions" abstract="false" name="ContractWithCustomerAssetAdditions" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="cmlf_BusinessCombinationContingentConsiderationMilestonePaymentPercentage" abstract="false" name="BusinessCombinationContingentConsiderationMilestonePaymentPercentage" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:percentItemType"/>
+  <xs:element id="cmlf_ReserveForRefundsToInsuranceCarriersTerm" abstract="false" name="ReserveForRefundsToInsuranceCarriersTerm" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:durationItemType"/>
+  <xs:element id="cmlf_LesseeOperatingAndFinanceAndLiabilityToBePaidRemainderOfFiscalYear" abstract="false" name="LesseeOperatingAndFinanceAndLiabilityToBePaidRemainderOfFiscalYear" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="cmlf_TwoRenewalPeriodsMember" abstract="true" name="TwoRenewalPeriodsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="cmlf_BuildingHeldUnderCapitalLeaseMember" abstract="true" name="BuildingHeldUnderCapitalLeaseMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="cmlf_GovernmentAssistanceCARESActProviderReliefFundMember" abstract="true" name="GovernmentAssistanceCARESActProviderReliefFundMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="cmlf_DebtInstrumentNumberOfConsecutiveMonthlyPaymentsRequired" abstract="false" name="DebtInstrumentNumberOfConsecutiveMonthlyPaymentsRequired" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="xbrli:integerItemType"/>
+  <xs:element id="cmlf_AssetsAndLiabilitiesLesseeTableTextBlock" abstract="false" name="AssetsAndLiabilitiesLesseeTableTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:textBlockItemType"/>
+</xs:schema>

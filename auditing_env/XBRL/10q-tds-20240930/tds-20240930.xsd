@@ -1,0 +1,454 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--XBRL Document Created with the Workiva Platform-->
+<!--Copyright 2024 Workiva-->
+<!--r:823aa48a-bad3-48d8-b920-1658db043391,g:7a7c2f05-33f6-49a1-87f4-3d13a1c086c6-->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:tds="http://www.tdsinc.com/20240930" xmlns:xbrli="http://www.xbrl.org/2003/instance" xmlns:dtr-types1="http://www.xbrl.org/dtr/type/2020-01-21" xmlns:xbrldt="http://xbrl.org/2005/xbrldt" xmlns:dtr-types="http://www.xbrl.org/dtr/type/2022-03-31" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://www.tdsinc.com/20240930">
+  <xs:import namespace="http://fasb.org/srt/2024" schemaLocation="https://xbrl.fasb.org/srt/2024/elts/srt-2024.xsd"/>
+  <xs:import namespace="http://fasb.org/us-gaap/2024" schemaLocation="https://xbrl.fasb.org/us-gaap/2024/elts/us-gaap-2024.xsd"/>
+  <xs:import namespace="http://www.xbrl.org/2003/instance" schemaLocation="http://www.xbrl.org/2003/xbrl-instance-2003-12-31.xsd"/>
+  <xs:import namespace="http://www.xbrl.org/2003/linkbase" schemaLocation="http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd"/>
+  <xs:import namespace="http://www.xbrl.org/dtr/type/2020-01-21" schemaLocation="https://www.xbrl.org/dtr/type/2020-01-21/types.xsd"/>
+  <xs:import namespace="http://www.xbrl.org/dtr/type/2022-03-31" schemaLocation="https://www.xbrl.org/dtr/type/2022-03-31/types.xsd"/>
+  <xs:import namespace="http://xbrl.org/2005/xbrldt" schemaLocation="http://www.xbrl.org/2005/xbrldt-2005.xsd"/>
+  <xs:import namespace="http://xbrl.sec.gov/dei/2024" schemaLocation="https://xbrl.sec.gov/dei/2024/dei-2024.xsd"/>
+  <xs:import namespace="http://xbrl.sec.gov/ecd/2024" schemaLocation="https://xbrl.sec.gov/ecd/2024/ecd-2024.xsd"/>
+  <xs:annotation>
+    <xs:appinfo>
+      <link:linkbaseRef xmlns:xlink="http://www.w3.org/1999/xlink" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="tds-20240930_pre.xml" xlink:role="http://www.xbrl.org/2003/role/presentationLinkbaseRef" xlink:type="simple"/>
+      <link:linkbaseRef xmlns:xlink="http://www.w3.org/1999/xlink" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="tds-20240930_def.xml" xlink:role="http://www.xbrl.org/2003/role/definitionLinkbaseRef" xlink:type="simple"/>
+      <link:linkbaseRef xmlns:xlink="http://www.w3.org/1999/xlink" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="tds-20240930_lab.xml" xlink:role="http://www.xbrl.org/2003/role/labelLinkbaseRef" xlink:type="simple"/>
+      <link:linkbaseRef xmlns:xlink="http://www.w3.org/1999/xlink" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="tds-20240930_cal.xml" xlink:role="http://www.xbrl.org/2003/role/calculationLinkbaseRef" xlink:type="simple"/>
+      <link:roleType id="DocumentAndEntityInformation" roleURI="http://www.tdsinc.com/role/DocumentAndEntityInformation">
+        <link:definition>0000001 - Document - Document And Entity Information</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ConsolidatedStatementofOperations" roleURI="http://www.tdsinc.com/role/ConsolidatedStatementofOperations">
+        <link:definition>9952151 - Statement - Consolidated Statement of Operations</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ConsolidatedStatementofCashFlows" roleURI="http://www.tdsinc.com/role/ConsolidatedStatementofCashFlows">
+        <link:definition>9952152 - Statement - Consolidated Statement of Cash Flows</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ConsolidatedBalanceSheet" roleURI="http://www.tdsinc.com/role/ConsolidatedBalanceSheet">
+        <link:definition>9952153 - Statement - Consolidated Balance Sheet</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ConsolidatedBalanceSheetParenthetical" roleURI="http://www.tdsinc.com/role/ConsolidatedBalanceSheetParenthetical">
+        <link:definition>9952154 - Statement - Consolidated Balance Sheet (Parenthetical)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ConsolidatedStatementofChangesinEquity" roleURI="http://www.tdsinc.com/role/ConsolidatedStatementofChangesinEquity">
+        <link:definition>9952155 - Statement - Consolidated Statement of Changes in Equity</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ConsolidatedStatementofChangesinEquityParenthetical" roleURI="http://www.tdsinc.com/role/ConsolidatedStatementofChangesinEquityParenthetical">
+        <link:definition>9952156 - Statement - Consolidated Statement of Changes in Equity (Parenthetical)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="BasisofPresentation" roleURI="http://www.tdsinc.com/role/BasisofPresentation">
+        <link:definition>9952157 - Disclosure - Basis of Presentation</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RevenueRecognition" roleURI="http://www.tdsinc.com/role/RevenueRecognition">
+        <link:definition>9952158 - Disclosure - Revenue Recognition</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FairValueMeasurements" roleURI="http://www.tdsinc.com/role/FairValueMeasurements">
+        <link:definition>9952159 - Disclosure - Fair Value Measurements</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="EquipmentInstallmentPlans" roleURI="http://www.tdsinc.com/role/EquipmentInstallmentPlans">
+        <link:definition>9952160 - Disclosure - Equipment Installment Plans</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IncomeTaxes" roleURI="http://www.tdsinc.com/role/IncomeTaxes">
+        <link:definition>9952161 - Disclosure - Income Taxes</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="EarningsPerShare" roleURI="http://www.tdsinc.com/role/EarningsPerShare">
+        <link:definition>9952162 - Disclosure - Earnings Per Share</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="Divestitures" roleURI="http://www.tdsinc.com/role/Divestitures">
+        <link:definition>9952163 - Disclosure - Divestitures</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IntangibleAssets" roleURI="http://www.tdsinc.com/role/IntangibleAssets">
+        <link:definition>9952164 - Disclosure - Intangible Assets</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="InvestmentsInUnconsolidatedEntities" roleURI="http://www.tdsinc.com/role/InvestmentsInUnconsolidatedEntities">
+        <link:definition>9952165 - Disclosure - Investments In Unconsolidated Entities</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="AssetRetirementObligations" roleURI="http://www.tdsinc.com/role/AssetRetirementObligations">
+        <link:definition>9952166 - Disclosure - Asset Retirement Obligations</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="Debt" roleURI="http://www.tdsinc.com/role/Debt">
+        <link:definition>9952167 - Disclosure - Debt</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="VariableInterestEntities" roleURI="http://www.tdsinc.com/role/VariableInterestEntities">
+        <link:definition>9952168 - Disclosure - Variable Interest Entities</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="NoncontrollingInterests" roleURI="http://www.tdsinc.com/role/NoncontrollingInterests">
+        <link:definition>9952169 - Disclosure - Noncontrolling Interests</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="BusinessSegmentInformation" roleURI="http://www.tdsinc.com/role/BusinessSegmentInformation">
+        <link:definition>9952170 - Disclosure - Business Segment Information</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="BasisofPresentationPolicies" roleURI="http://www.tdsinc.com/role/BasisofPresentationPolicies">
+        <link:definition>9954471 - Disclosure - Basis of Presentation (Policies)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="BasisofPresentationTables" roleURI="http://www.tdsinc.com/role/BasisofPresentationTables">
+        <link:definition>9954472 - Disclosure - Basis of Presentation (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RevenueRecognitionTables" roleURI="http://www.tdsinc.com/role/RevenueRecognitionTables">
+        <link:definition>9954473 - Disclosure - Revenue Recognition (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FairValueMeasurementsTables" roleURI="http://www.tdsinc.com/role/FairValueMeasurementsTables">
+        <link:definition>9954474 - Disclosure - Fair Value Measurements (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="EquipmentInstallmentPlansTable" roleURI="http://www.tdsinc.com/role/EquipmentInstallmentPlansTable">
+        <link:definition>9954475 - Disclosure - Equipment Installment Plans (Table)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="EarningsPerShareTables" roleURI="http://www.tdsinc.com/role/EarningsPerShareTables">
+        <link:definition>9954476 - Disclosure - Earnings Per Share (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IntangibleAssetsTables" roleURI="http://www.tdsinc.com/role/IntangibleAssetsTables">
+        <link:definition>9954477 - Disclosure - Intangible Assets (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="InvestmentsinUnconsolidatedEntitiesTables" roleURI="http://www.tdsinc.com/role/InvestmentsinUnconsolidatedEntitiesTables">
+        <link:definition>9954478 - Disclosure - Investments in Unconsolidated Entities (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="AssetRetirementObligationsTables" roleURI="http://www.tdsinc.com/role/AssetRetirementObligationsTables">
+        <link:definition>9954479 - Disclosure - Asset Retirement Obligations (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="VariableInterestEntitiesTables" roleURI="http://www.tdsinc.com/role/VariableInterestEntitiesTables">
+        <link:definition>9954480 - Disclosure - Variable Interest Entities (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="NoncontrollingInterestsTables" roleURI="http://www.tdsinc.com/role/NoncontrollingInterestsTables">
+        <link:definition>9954481 - Disclosure - Noncontrolling Interests (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="BusinessSegmentInformationTables" roleURI="http://www.tdsinc.com/role/BusinessSegmentInformationTables">
+        <link:definition>9954482 - Disclosure - Business Segment Information (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="BasisofPresentationNarrativeDetails" roleURI="http://www.tdsinc.com/role/BasisofPresentationNarrativeDetails">
+        <link:definition>9954483 - Disclosure - Basis of Presentation - Narrative (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="BasisofPresentationCashCashEquivalentsandRestrictedCashDetails" roleURI="http://www.tdsinc.com/role/BasisofPresentationCashCashEquivalentsandRestrictedCashDetails">
+        <link:definition>9954484 - Disclosure - Basis of Presentation - Cash, Cash Equivalents and Restricted Cash (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RevenueRecognitionDisaggregationofRevenueDetails" roleURI="http://www.tdsinc.com/role/RevenueRecognitionDisaggregationofRevenueDetails">
+        <link:definition>9954485 - Disclosure - Revenue Recognition - Disaggregation of Revenue (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RevenueRecognitionContractAssetsandContractLiabilitiesDetails" roleURI="http://www.tdsinc.com/role/RevenueRecognitionContractAssetsandContractLiabilitiesDetails">
+        <link:definition>9954486 - Disclosure - Revenue Recognition - Contract Assets and Contract Liabilities (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RevenueRecognitionPerformanceObligationsDetails" roleURI="http://www.tdsinc.com/role/RevenueRecognitionPerformanceObligationsDetails">
+        <link:definition>9954487 - Disclosure - Revenue Recognition - Performance Obligations (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RevenueRecognitionPerformanceObligationsDetails_1" roleURI="http://www.tdsinc.com/role/RevenueRecognitionPerformanceObligationsDetails_1">
+        <link:definition>9954487 - Disclosure - Revenue Recognition - Performance Obligations (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RevenueRecognitionContractCostAssetsDetails" roleURI="http://www.tdsinc.com/role/RevenueRecognitionContractCostAssetsDetails">
+        <link:definition>9954488 - Disclosure - Revenue Recognition - Contract Cost Assets (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RevenueRecognitionNarrativeDetails" roleURI="http://www.tdsinc.com/role/RevenueRecognitionNarrativeDetails">
+        <link:definition>9954489 - Disclosure - Revenue Recognition - Narrative (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FairValueMeasurementsDetails" roleURI="http://www.tdsinc.com/role/FairValueMeasurementsDetails">
+        <link:definition>9954490 - Disclosure - Fair Value Measurements (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="EquipmentInstallmentPlansEIPReceivablesDetails" roleURI="http://www.tdsinc.com/role/EquipmentInstallmentPlansEIPReceivablesDetails">
+        <link:definition>9954491 - Disclosure - Equipment Installment Plans - EIP Receivables (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="EquipmentInstallmentPlansGrossReceivablesbyCreditCategoryDetails" roleURI="http://www.tdsinc.com/role/EquipmentInstallmentPlansGrossReceivablesbyCreditCategoryDetails">
+        <link:definition>9954492 - Disclosure - Equipment Installment Plans - Gross Receivables by Credit Category (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="EquipmentInstallmentPlansAllowanceforCreditLossesDetails" roleURI="http://www.tdsinc.com/role/EquipmentInstallmentPlansAllowanceforCreditLossesDetails">
+        <link:definition>9954493 - Disclosure - Equipment Installment Plans - Allowance for Credit Losses (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IncomeTaxesDetails" roleURI="http://www.tdsinc.com/role/IncomeTaxesDetails">
+        <link:definition>9954494 - Disclosure - Income Taxes (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="EarningsPerShareReconciliationDetails" roleURI="http://www.tdsinc.com/role/EarningsPerShareReconciliationDetails">
+        <link:definition>9954495 - Disclosure - Earnings Per Share - Reconciliation (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="EarningsPerShareNarrativeDetails" roleURI="http://www.tdsinc.com/role/EarningsPerShareNarrativeDetails">
+        <link:definition>9954496 - Disclosure - Earnings Per Share - Narrative (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="DivestituresNarrativeDetails" roleURI="http://www.tdsinc.com/role/DivestituresNarrativeDetails">
+        <link:definition>9954497 - Disclosure - Divestitures - Narrative (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IntangibleAssetsNarrativeDetails" roleURI="http://www.tdsinc.com/role/IntangibleAssetsNarrativeDetails">
+        <link:definition>9954498 - Disclosure - Intangible Assets - Narrative (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="InvestmentsinUnconsolidatedEntitiesScheduleofInvestmentsDetails" roleURI="http://www.tdsinc.com/role/InvestmentsinUnconsolidatedEntitiesScheduleofInvestmentsDetails">
+        <link:definition>9954499 - Disclosure - Investments in Unconsolidated Entities - Schedule of Investments (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="AssetRetirementObligationsDetails" roleURI="http://www.tdsinc.com/role/AssetRetirementObligationsDetails">
+        <link:definition>9954500 - Disclosure - Asset Retirement Obligations (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="DebtRevolvingCreditAgreementsDetails" roleURI="http://www.tdsinc.com/role/DebtRevolvingCreditAgreementsDetails">
+        <link:definition>9954501 - Disclosure - Debt - Revolving Credit Agreements (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="DebtReceivablesSecuritizationAgreementDetails" roleURI="http://www.tdsinc.com/role/DebtReceivablesSecuritizationAgreementDetails">
+        <link:definition>9954502 - Disclosure - Debt - Receivables Securitization Agreement (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="DebtTermLoanAgreementDetails" roleURI="http://www.tdsinc.com/role/DebtTermLoanAgreementDetails">
+        <link:definition>9954503 - Disclosure - Debt - Term Loan Agreement (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="DebtNarrativeDetails" roleURI="http://www.tdsinc.com/role/DebtNarrativeDetails">
+        <link:definition>9954504 - Disclosure - Debt - Narrative (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="VariableInterestEntitiesConsolidatedBalanceSheetDetails" roleURI="http://www.tdsinc.com/role/VariableInterestEntitiesConsolidatedBalanceSheetDetails">
+        <link:definition>9954505 - Disclosure - Variable Interest Entities - Consolidated Balance Sheet (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="VariableInterestEntitiesNarrativeDetails" roleURI="http://www.tdsinc.com/role/VariableInterestEntitiesNarrativeDetails">
+        <link:definition>9954506 - Disclosure - Variable Interest Entities - Narrative (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="NoncontrollingInterestsDetails" roleURI="http://www.tdsinc.com/role/NoncontrollingInterestsDetails">
+        <link:definition>9954507 - Disclosure - Noncontrolling Interests (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="BusinessSegmentInformationDetails" roleURI="http://www.tdsinc.com/role/BusinessSegmentInformationDetails">
+        <link:definition>9954508 - Disclosure - Business Segment Information (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element id="tds_DocumentEntityInformationAbstract" abstract="true" name="DocumentEntityInformationAbstract" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="tds_PreferredStockMember1Member" abstract="true" name="PreferredStockMember1Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="tds_PreferredStockMember2Member" abstract="true" name="PreferredStockMember2Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="tds_PaymentsRelatedToTaxWithholdingForShareBasedCompensationSubsidiary" abstract="false" name="PaymentsRelatedToTaxWithholdingForShareBasedCompensationSubsidiary" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="tds_PaymentsForRepurchaseOfCommonStockSubsidiary" abstract="false" name="PaymentsForRepurchaseOfCommonStockSubsidiary" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="tds_AssetsHeldMember" abstract="true" name="AssetsHeldMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="tds_VariableInterestEntitiesAbstract" abstract="true" name="VariableInterestEntitiesAbstract" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="tds_MinorityInterestInNetIncomeLossEquityMinorityInterests" abstract="false" name="MinorityInterestInNetIncomeLossEquityMinorityInterests" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="tds_StatementofStockholdersEquityParentheticalAbstract" abstract="true" name="StatementofStockholdersEquityParentheticalAbstract" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="tds_DivestituresAbstract" abstract="true" name="DivestituresAbstract" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="tds_AccountingPolicyDisclosuresTable" abstract="true" name="AccountingPolicyDisclosuresTable" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrldt:hypercubeItem" type="xbrli:stringItemType"/>
+  <xs:element id="tds_USCellularTotalMember" abstract="true" name="USCellularTotalMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="tds_TDSTelecomSegmentMember" abstract="true" name="TDSTelecomSegmentMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="tds_AccountingPolicyDisclosuresLineItems" abstract="true" name="AccountingPolicyDisclosuresLineItems" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="tds_UnitedStatesCellularCorporationMember" abstract="true" name="UnitedStatesCellularCorporationMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="tds_BasisOfPresentationLineItems" abstract="true" name="BasisOfPresentationLineItems" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="tds_OtherSegmentMember" abstract="true" name="OtherSegmentMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="tds_RetailServiceRevenueMember" abstract="true" name="RetailServiceRevenueMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="tds_InboundRoamingRevenueMember" abstract="true" name="InboundRoamingRevenueMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="tds_ResidentialRevenueMember" abstract="true" name="ResidentialRevenueMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="tds_CommercialRevenueMember" abstract="true" name="CommercialRevenueMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="tds_WholesaleRevenueMember" abstract="true" name="WholesaleRevenueMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="tds_OtherServiceRevenueMember" abstract="true" name="OtherServiceRevenueMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="tds_EquipmentAndProductSalesMember" abstract="true" name="EquipmentAndProductSalesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="tds_SalesCommissionsMember" abstract="true" name="SalesCommissionsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="tds_InstallationCostsMember" abstract="true" name="InstallationCostsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="tds_PublicDebtMember" abstract="true" name="PublicDebtMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="tds_NonPublicDebtMember" abstract="true" name="NonPublicDebtMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="tds_OtherDebtMember" abstract="true" name="OtherDebtMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="tds_InstitutionalAndOtherDebtMember" abstract="true" name="InstitutionalAndOtherDebtMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="tds_SixPointSevenPercentSeniorNotesMember" abstract="true" name="SixPointSevenPercentSeniorNotesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="tds_LowestRiskMember" abstract="true" name="LowestRiskMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="tds_SlightRiskMember" abstract="true" name="SlightRiskMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="tds_EquipmentInstallmentPlanReceivableMember" abstract="true" name="EquipmentInstallmentPlanReceivableMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="tds_NoncontrollingIncomeAdjustmentEarningsPerShare" abstract="false" name="NoncontrollingIncomeAdjustmentEarningsPerShare" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="tds_PutCallOptionMember" abstract="true" name="PutCallOptionMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="tds_DispositionEventAxisAxis" abstract="true" name="DispositionEventAxisAxis" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrldt:dimensionItem" type="xbrli:stringItemType"/>
+  <xs:element id="tds_DispositionEventAxisDomain" abstract="true" name="DispositionEventAxisDomain" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="tds_WirelessSpectrumLicensesMember" abstract="true" name="WirelessSpectrumLicensesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="tds_BusinessDivestitureAgreementAmount" abstract="false" name="BusinessDivestitureAgreementAmount" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="tds_BusinessDivestitureAgreementAssumptionOfDebt" abstract="false" name="BusinessDivestitureAgreementAssumptionOfDebt" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="tds_DivestitureOfIntangibleAssetsAgreementAmount" abstract="false" name="DivestitureOfIntangibleAssetsAgreementAmount" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="tds_ExpensesRelatedToStrategicAlternativesReview" abstract="false" name="ExpensesRelatedToStrategicAlternativesReview" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="tds_AssetGroups" abstract="false" name="AssetGroups" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="xbrli:integerItemType"/>
+  <xs:element id="tds_PutCallOptionAmountFairValue" abstract="false" name="PutCallOptionAmountFairValue" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="tds_BusinessDivestitureContingentConsiderationArrangementsRangeOfOutcomesValueHigh" abstract="false" name="BusinessDivestitureContingentConsiderationArrangementsRangeOfOutcomesValueHigh" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="tds_IntangibleAssetsAbstract" abstract="true" name="IntangibleAssetsAbstract" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="tds_HighBandSpectrumMember" abstract="true" name="HighBandSpectrumMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="tds_FCCLicensesNumberOfAccountingUnits" abstract="false" name="FCCLicensesNumberOfAccountingUnits" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="xbrli:integerItemType"/>
+  <xs:element id="tds_WirelessSpectrumLicenseFairValueExceedsCarryingValue" abstract="false" name="WirelessSpectrumLicenseFairValueExceedsCarryingValue" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="dtr-types:percentItemType"/>
+  <xs:element id="tds_UsGaap_RevolvingCreditFacilityMemberBMember" abstract="true" name="UsGaap_RevolvingCreditFacilityMemberBMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="tds_UsGaap_RevolvingCreditFacilityMemberCMember" abstract="true" name="UsGaap_RevolvingCreditFacilityMemberCMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="tds_LendersCostOfFundsMember" abstract="true" name="LendersCostOfFundsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="tds_ReceivablesSecuritizationFacilityMember" abstract="true" name="ReceivablesSecuritizationFacilityMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="tds_TDSTermLoan1Member" abstract="true" name="TDSTermLoan1Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="tds_TDSTermLoan2Member" abstract="true" name="TDSTermLoan2Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="tds_TDSSecuredTermLoanMember" abstract="true" name="TDSSecuredTermLoanMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="tds_TDSTermLoanAgreementsMember" abstract="true" name="TDSTermLoanAgreementsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="tds_UScellularTermLoan1Member" abstract="true" name="UScellularTermLoan1Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="tds_UScellularTermLoan2Member" abstract="true" name="UScellularTermLoan2Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="tds_UScellularTermLoan3Member" abstract="true" name="UScellularTermLoan3Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="tds_UScellularTermLoanAgreementsMember" abstract="true" name="UScellularTermLoanAgreementsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="tds_LineOfCreditAmountsBorrowedAndRepaid" abstract="false" name="LineOfCreditAmountsBorrowedAndRepaid" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="tds_DebtInstrumentPeriodicPaymentRate" abstract="false" name="DebtInstrumentPeriodicPaymentRate" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:percentItemType"/>
+  <xs:element id="tds_DebtInstrumentCovenantLeverageRatioRequiredMaximum" abstract="false" name="DebtInstrumentCovenantLeverageRatioRequiredMaximum" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="xbrli:pureItemType"/>
+  <xs:element id="tds_DebtInstrumentCovenantInterestCoverageRatioRequiredMinimum" abstract="false" name="DebtInstrumentCovenantInterestCoverageRatioRequiredMinimum" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="xbrli:pureItemType"/>
+  <xs:element id="tds_VariableInterestEntityUsccEipLlcMember" abstract="true" name="VariableInterestEntityUsccEipLlcMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="tds_WirelessSegmentMember" abstract="true" name="WirelessSegmentMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="tds_TowersSegmentMember" abstract="true" name="TowersSegmentMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="tds_AdjustedEBITDA" abstract="false" name="AdjustedEBITDA" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+</xs:schema>

@@ -1,0 +1,380 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--XBRL Document Created with the Workiva Platform-->
+<!--Copyright 2024 Workiva-->
+<!--r:821c9089-9cb6-4a53-ba9c-820b1cd4ef96,g:49923c9f-d591-4f97-ba37-3cbcca801cb1-->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:bned="http://www.bned.com/20241026" xmlns:xbrli="http://www.xbrl.org/2003/instance" xmlns:dtr-types="http://www.xbrl.org/dtr/type/2022-03-31" xmlns:xbrldt="http://xbrl.org/2005/xbrldt" xmlns:dtr-types1="http://www.xbrl.org/dtr/type/2020-01-21" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://www.bned.com/20241026">
+  <xs:import namespace="http://fasb.org/srt/2024" schemaLocation="https://xbrl.fasb.org/srt/2024/elts/srt-2024.xsd"/>
+  <xs:import namespace="http://fasb.org/us-gaap/2024" schemaLocation="https://xbrl.fasb.org/us-gaap/2024/elts/us-gaap-2024.xsd"/>
+  <xs:import namespace="http://www.xbrl.org/2003/instance" schemaLocation="http://www.xbrl.org/2003/xbrl-instance-2003-12-31.xsd"/>
+  <xs:import namespace="http://www.xbrl.org/2003/linkbase" schemaLocation="http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd"/>
+  <xs:import namespace="http://www.xbrl.org/dtr/type/2020-01-21" schemaLocation="https://www.xbrl.org/dtr/type/2020-01-21/types.xsd"/>
+  <xs:import namespace="http://www.xbrl.org/dtr/type/2022-03-31" schemaLocation="https://www.xbrl.org/dtr/type/2022-03-31/types.xsd"/>
+  <xs:import namespace="http://xbrl.org/2005/xbrldt" schemaLocation="http://www.xbrl.org/2005/xbrldt-2005.xsd"/>
+  <xs:import namespace="http://xbrl.sec.gov/dei/2024" schemaLocation="https://xbrl.sec.gov/dei/2024/dei-2024.xsd"/>
+  <xs:import namespace="http://xbrl.sec.gov/ecd/2024" schemaLocation="https://xbrl.sec.gov/ecd/2024/ecd-2024.xsd"/>
+  <xs:annotation>
+    <xs:appinfo>
+      <link:linkbaseRef xmlns:xlink="http://www.w3.org/1999/xlink" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="bned-20241026_pre.xml" xlink:role="http://www.xbrl.org/2003/role/presentationLinkbaseRef" xlink:type="simple"/>
+      <link:linkbaseRef xmlns:xlink="http://www.w3.org/1999/xlink" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="bned-20241026_def.xml" xlink:role="http://www.xbrl.org/2003/role/definitionLinkbaseRef" xlink:type="simple"/>
+      <link:linkbaseRef xmlns:xlink="http://www.w3.org/1999/xlink" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="bned-20241026_lab.xml" xlink:role="http://www.xbrl.org/2003/role/labelLinkbaseRef" xlink:type="simple"/>
+      <link:linkbaseRef xmlns:xlink="http://www.w3.org/1999/xlink" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="bned-20241026_cal.xml" xlink:role="http://www.xbrl.org/2003/role/calculationLinkbaseRef" xlink:type="simple"/>
+      <link:roleType id="DocumentandEntityInformation" roleURI="http://www.bned.com/role/DocumentandEntityInformation">
+        <link:definition>0000001 - Document - Document and Entity Information</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ConsolidatedStatementsofOperationsandComprehensiveLoss" roleURI="http://www.bned.com/role/ConsolidatedStatementsofOperationsandComprehensiveLoss">
+        <link:definition>9952151 - Statement - Consolidated Statements of Operations and Comprehensive Loss</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ConsolidatedBalanceSheets" roleURI="http://www.bned.com/role/ConsolidatedBalanceSheets">
+        <link:definition>9952152 - Statement - Consolidated Balance Sheets</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="StatementofCashFlowsStatement" roleURI="http://www.bned.com/role/StatementofCashFlowsStatement">
+        <link:definition>9952153 - Statement - Statement of Cash Flows (Statement)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ConsolidatedStatementofEquityStatement" roleURI="http://www.bned.com/role/ConsolidatedStatementofEquityStatement">
+        <link:definition>9952154 - Statement - Consolidated Statement of Equity Statement</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="Organization" roleURI="http://www.bned.com/role/Organization">
+        <link:definition>9952155 - Statement - Organization</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="EmployeesBenefitPlan" roleURI="http://www.bned.com/role/EmployeesBenefitPlan">
+        <link:definition>9952156 - Statement - Employees Benefit Plan</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="StatementofFinancialPositionClassifiedPolicies" roleURI="http://www.bned.com/role/StatementofFinancialPositionClassifiedPolicies">
+        <link:definition>9952157 - Statement - Statement of Financial Position, Classified (Policies)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="OrganizationAdditionalInformation" roleURI="http://www.bned.com/role/OrganizationAdditionalInformation">
+        <link:definition>9952158 - Statement - Organization - Additional Information</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="EmployeesBenefitPlansAdditionalInformation" roleURI="http://www.bned.com/role/EmployeesBenefitPlansAdditionalInformation">
+        <link:definition>9952159 - Statement - Employees Benefit Plans - Additional Information</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SummaryofSignificantAccountingPoliciesNotes" roleURI="http://www.bned.com/role/SummaryofSignificantAccountingPoliciesNotes">
+        <link:definition>9952160 - Disclosure - Summary of Significant Accounting Policies (Notes)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RevenueNotes" roleURI="http://www.bned.com/role/RevenueNotes">
+        <link:definition>9952161 - Disclosure - Revenue (Notes)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SegmentReportingNotes" roleURI="http://www.bned.com/role/SegmentReportingNotes">
+        <link:definition>9952162 - Disclosure - Segment Reporting (Notes)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="EquityandEarningsPerShareNotes" roleURI="http://www.bned.com/role/EquityandEarningsPerShareNotes">
+        <link:definition>9952163 - Disclosure - Equity and Earnings Per Share (Notes)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FairValuesofFinancialInstrumentsNotes" roleURI="http://www.bned.com/role/FairValuesofFinancialInstrumentsNotes">
+        <link:definition>9952164 - Disclosure - Fair Values of Financial Instruments (Notes)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="DebtNotes" roleURI="http://www.bned.com/role/DebtNotes">
+        <link:definition>9952165 - Disclosure - Debt (Notes)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LeasesNotes" roleURI="http://www.bned.com/role/LeasesNotes">
+        <link:definition>9952166 - Disclosure - Leases (Notes)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SupplementaryInformationNotes" roleURI="http://www.bned.com/role/SupplementaryInformationNotes">
+        <link:definition>9952167 - Disclosure - Supplementary Information (Notes)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="StockBasedCompensationStockBasedCompensationNotes" roleURI="http://www.bned.com/role/StockBasedCompensationStockBasedCompensationNotes">
+        <link:definition>9952168 - Disclosure - Stock-Based Compensation Stock-Based Compensation (Notes)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IncomeTaxesIncomeTaxesNotes" roleURI="http://www.bned.com/role/IncomeTaxesIncomeTaxesNotes">
+        <link:definition>9952169 - Disclosure - Income Taxes Income Taxes (Notes)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LegalProceedingsNotes" roleURI="http://www.bned.com/role/LegalProceedingsNotes">
+        <link:definition>9952170 - Disclosure - Legal Proceedings (Notes)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RecentAccountingPronouncementsNotes" roleURI="http://www.bned.com/role/RecentAccountingPronouncementsNotes">
+        <link:definition>9952171 - Disclosure - Recent Accounting Pronouncements (Notes)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SubsequentEvents" roleURI="http://www.bned.com/role/SubsequentEvents">
+        <link:definition>9952172 - Disclosure - Subsequent Events</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SummaryofSignificantAccountingPoliciesPolicies" roleURI="http://www.bned.com/role/SummaryofSignificantAccountingPoliciesPolicies">
+        <link:definition>9955511 - Disclosure - Summary of Significant Accounting Policies (Policies)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RevenuePolicies" roleURI="http://www.bned.com/role/RevenuePolicies">
+        <link:definition>9955512 - Disclosure - Revenue (Policies)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SegmentReportingPolicies" roleURI="http://www.bned.com/role/SegmentReportingPolicies">
+        <link:definition>9955513 - Disclosure - Segment Reporting (Policies)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LeasesPolicies" roleURI="http://www.bned.com/role/LeasesPolicies">
+        <link:definition>9955514 - Disclosure - Leases (Policies)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CompensationRelatedCostsShareBasedPaymentsPolicies" roleURI="http://www.bned.com/role/CompensationRelatedCostsShareBasedPaymentsPolicies">
+        <link:definition>9955515 - Disclosure - Compensation Related Costs, Share Based Payments (Policies)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="DebtTables" roleURI="http://www.bned.com/role/DebtTables">
+        <link:definition>9955516 - Disclosure - Debt (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RevenueTables" roleURI="http://www.bned.com/role/RevenueTables">
+        <link:definition>9955517 - Disclosure - Revenue (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SegmentReportingSegmentReportingTables" roleURI="http://www.bned.com/role/SegmentReportingSegmentReportingTables">
+        <link:definition>9955518 - Disclosure - Segment Reporting Segment Reporting (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="NetEarningsLossPerShareTables" roleURI="http://www.bned.com/role/NetEarningsLossPerShareTables">
+        <link:definition>9955519 - Disclosure - Net Earnings (Loss) Per Share (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FairValueMeasuresandDisclosuresTables" roleURI="http://www.bned.com/role/FairValueMeasuresandDisclosuresTables">
+        <link:definition>9955520 - Disclosure - Fair Value Measures and Disclosures (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="DebtTables_1" roleURI="http://www.bned.com/role/DebtTables_1">
+        <link:definition>9955521 - Disclosure - Debt (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LeasesTables" roleURI="http://www.bned.com/role/LeasesTables">
+        <link:definition>9955522 - Disclosure - Leases (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SupplementaryInformationTables" roleURI="http://www.bned.com/role/SupplementaryInformationTables">
+        <link:definition>9955523 - Disclosure - Supplementary Information (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="StockBasedCompensationStockBasedCompensationTables" roleURI="http://www.bned.com/role/StockBasedCompensationStockBasedCompensationTables">
+        <link:definition>9955524 - Disclosure - Stock-Based Compensation Stock-Based Compensation (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SubsequentEventsTables" roleURI="http://www.bned.com/role/SubsequentEventsTables">
+        <link:definition>9955525 - Disclosure - Subsequent Events (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SummaryofSignificantAccountingPoliciesSummaryofSignificantAccountingPoliciesDetails" roleURI="http://www.bned.com/role/SummaryofSignificantAccountingPoliciesSummaryofSignificantAccountingPoliciesDetails">
+        <link:definition>9955526 - Disclosure - Summary of Significant Accounting Policies Summary of Significant Accounting Policies (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RevenueDetails" roleURI="http://www.bned.com/role/RevenueDetails">
+        <link:definition>9955527 - Disclosure - Revenue (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SegmentReportingSegmentReportingDetails" roleURI="http://www.bned.com/role/SegmentReportingSegmentReportingDetails">
+        <link:definition>9955528 - Disclosure - Segment Reporting Segment Reporting (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="NetEarningsLossPerShareAdditionalInformationDetail" roleURI="http://www.bned.com/role/NetEarningsLossPerShareAdditionalInformationDetail">
+        <link:definition>9955529 - Disclosure - Net Earnings (Loss) Per Share - Additional Information (Detail)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="EquityIssuanceDetails" roleURI="http://www.bned.com/role/EquityIssuanceDetails">
+        <link:definition>9955530 - Disclosure - Equity Issuance (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FairValuesofFinancialInstrumentsFairValuesofFinancialInstrumentsDetails" roleURI="http://www.bned.com/role/FairValuesofFinancialInstrumentsFairValuesofFinancialInstrumentsDetails">
+        <link:definition>9955531 - Disclosure - Fair Values of Financial Instruments Fair Values of Financial Instruments (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="DebtAdditionalInformationDetails" roleURI="http://www.bned.com/role/DebtAdditionalInformationDetails">
+        <link:definition>9955532 - Disclosure - Debt - Additional Information (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LeasesLeasesDetails" roleURI="http://www.bned.com/role/LeasesLeasesDetails">
+        <link:definition>9955533 - Disclosure - Leases Leases (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SupplementaryInformationDetails" roleURI="http://www.bned.com/role/SupplementaryInformationDetails">
+        <link:definition>9955534 - Disclosure - Supplementary Information (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="StockBasedCompensationStockBasedCompensationDetails" roleURI="http://www.bned.com/role/StockBasedCompensationStockBasedCompensationDetails">
+        <link:definition>9955535 - Disclosure - Stock-Based Compensation Stock-Based Compensation (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IncomeTaxesIncomeTaxesDetails" roleURI="http://www.bned.com/role/IncomeTaxesIncomeTaxesDetails">
+        <link:definition>9955536 - Disclosure - Income Taxes Income Taxes (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SubsequentEventsDetails" roleURI="http://www.bned.com/role/SubsequentEventsDetails">
+        <link:definition>9955537 - Disclosure - Subsequent Events (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element id="bned_DocumentAndEntityInformationAbstract" abstract="true" name="DocumentAndEntityInformationAbstract" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="bned_Productsalesandother" abstract="false" name="Productsalesandother" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="bned_RentalIncomeOperating" abstract="false" name="RentalIncomeOperating" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="bned_Bned_CostofProductandOtherCostofSales" abstract="false" name="Bned_CostofProductandOtherCostofSales" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="bned_CostOfRentalSalesAndOccupancyCosts" abstract="false" name="CostOfRentalSalesAndOccupancyCosts" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="bned_RentalInventory" abstract="false" name="RentalInventory" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="bned_IncreaseDecreaseInRentalInventories" abstract="false" name="IncreaseDecreaseInRentalInventories" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="bned_ProceedsFromSalesOfCommonStockUnderATMFacilityNetOfCommissions" abstract="false" name="ProceedsFromSalesOfCommonStockUnderATMFacilityNetOfCommissions" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="bned_RightsOfferingMember" abstract="true" name="RightsOfferingMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="bned_PrivateInvestmentEquityMember" abstract="true" name="PrivateInvestmentEquityMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="bned_PrincipalStockholderExpenseReimbursementMember" abstract="true" name="PrincipalStockholderExpenseReimbursementMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="bned_TermLoanConversionMember" abstract="true" name="TermLoanConversionMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="bned_ATMMember" abstract="true" name="ATMMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="bned_CostOfRepurchasedSharesForTaxWittholdingForShareBasedCompensation" abstract="false" name="CostOfRepurchasedSharesForTaxWittholdingForShareBasedCompensation" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="bned_OrganizationConsolidationAndPresentationOfFinancialStatementsTable" abstract="true" name="OrganizationConsolidationAndPresentationOfFinancialStatementsTable" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrldt:hypercubeItem" type="xbrli:stringItemType"/>
+  <xs:element id="bned_OrganizationConsolidationAndPresentationOfFinancialStatementsLineItems" abstract="true" name="OrganizationConsolidationAndPresentationOfFinancialStatementsLineItems" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="bned_NumberOfStudents" abstract="false" name="NumberOfStudents" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:integerItemType"/>
+  <xs:element id="bned_EquityandEarningsPerShareTextBlock" abstract="false" name="EquityandEarningsPerShareTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:textBlockItemType"/>
+  <xs:element id="bned_SupplementaryinfoAbstract" abstract="true" name="SupplementaryinfoAbstract" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="bned_SupplementaryInformationTextBlock" abstract="false" name="SupplementaryInformationTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:textBlockItemType"/>
+  <xs:element id="bned_TextbookRentalsInventoriesPolicyTextBlock" abstract="false" name="TextbookRentalsInventoriesPolicyTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:textBlockItemType"/>
+  <xs:element id="bned_ScheduleOfDiscontinuedOperationsStatementOfIncomeTableTextBlock" abstract="false" name="ScheduleOfDiscontinuedOperationsStatementOfIncomeTableTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:textBlockItemType"/>
+  <xs:element id="bned_ScheduleOfDeferredFinancingCostsTableTextBlock" abstract="false" name="ScheduleOfDeferredFinancingCostsTableTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:textBlockItemType"/>
+  <xs:element id="bned_SupplementalOperatingLeaseDisclosuresTableTextBlock" abstract="false" name="SupplementalOperatingLeaseDisclosuresTableTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:textBlockItemType"/>
+  <xs:element id="bned_SummaryofSignificantAccountingPoliciesAbstract" abstract="true" name="SummaryofSignificantAccountingPoliciesAbstract" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="bned_NewCreditFacilityMember" abstract="true" name="NewCreditFacilityMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="bned_TermLoanAxis" abstract="true" name="TermLoanAxis" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrldt:dimensionItem" type="xbrli:stringItemType"/>
+  <xs:element id="bned_TermLoanDomain" abstract="true" name="TermLoanDomain" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="bned_OperatingLeaseAssetTypeAxis" abstract="true" name="OperatingLeaseAssetTypeAxis" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrldt:dimensionItem" type="xbrli:stringItemType"/>
+  <xs:element id="bned_OperatingLeaseAssetTypeDomain" abstract="true" name="OperatingLeaseAssetTypeDomain" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="bned_DisposalGroupIncludingDiscontinuedOperationsImpairmentExpense" abstract="false" name="DisposalGroupIncludingDiscontinuedOperationsImpairmentExpense" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="bned_DisposalGroupIncludingDiscontinuedOperationTransactionCosts" abstract="false" name="DisposalGroupIncludingDiscontinuedOperationTransactionCosts" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="bned_CourseMaterialsProductMember" abstract="true" name="CourseMaterialsProductMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="bned_GeneralMerchandiseProductMember" abstract="true" name="GeneralMerchandiseProductMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="bned_ServiceandOtherMember" abstract="true" name="ServiceandOtherMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="bned_StoreTypeAxis" abstract="true" name="StoreTypeAxis" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrldt:dimensionItem" type="xbrli:stringItemType"/>
+  <xs:element id="bned_TermLoanMember" abstract="true" name="TermLoanMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="bned_EquityInvestorAxis" abstract="true" name="EquityInvestorAxis" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrldt:dimensionItem" type="xbrli:stringItemType"/>
+  <xs:element id="bned_EquityInvestorDomain" abstract="true" name="EquityInvestorDomain" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="bned_ImmersionMember" abstract="true" name="ImmersionMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="bned_ProceedsFromIssuanceOrSaleOfEquityNetOfExpenses" abstract="false" name="ProceedsFromIssuanceOrSaleOfEquityNetOfExpenses" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="bned_VitalSourceMember" abstract="true" name="VitalSourceMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="bned_SubscribersMember" abstract="true" name="SubscribersMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="bned_BackstopCommitmentMember" abstract="true" name="BackstopCommitmentMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="bned_SelzMember" abstract="true" name="SelzMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="bned_OuterbridgeMember" abstract="true" name="OuterbridgeMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="bned_ATMTransactionSept24Member" abstract="true" name="ATMTransactionSept24Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="bned_RightsOfferingBonusElement" abstract="false" name="RightsOfferingBonusElement" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="xbrli:sharesItemType"/>
+  <xs:element id="bned_TotalDebtExcludingDeferredFinancingCosts" abstract="false" name="TotalDebtExcludingDeferredFinancingCosts" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="bned_ROUAsstObtainedinExchangeforLeaseLiabilites" abstract="false" name="ROUAsstObtainedinExchangeforLeaseLiabilites" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="bned_PerformanceShareUnitsPSUsMember" abstract="true" name="PerformanceShareUnitsPSUsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="bned_PSUTranche1Member" abstract="true" name="PSUTranche1Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="bned_PSUTranche2Member" abstract="true" name="PSUTranche2Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="bned_PSUTranche3Member" abstract="true" name="PSUTranche3Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="bned_BODMemberMember" abstract="true" name="BODMemberMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="bned_UsGaap_LongTermIncentivePlanCompensation" abstract="false" name="UsGaap_LongTermIncentivePlanCompensation" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+</xs:schema>
