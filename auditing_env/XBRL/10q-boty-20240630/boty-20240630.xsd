@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="us-ascii" standalone="yes"?>
+<!--XBRL Document Created with XBRLMaster-->
+<!--Version: 2.3.08-->
+<!--Based on XBRL 2.1-->
+<!--Date of creation: 10/11/2024-->
+<!--Software architectural design and coding: A'c Dharmapremananda Avt.-->
+<!--Copyright (c) 2024 I-NET Business Solutions, Inc. All Rights Reserved.-->
+<schema xmlns:xl="http://www.xbrl.org/2003/XLink" xmlns:ref="http://www.xbrl.org/2006/ref" xmlns:currency="http://xbrl.sec.gov/currency/2024" xmlns:us-gaap-att="http://fasb.org/us-gaap/attributes" xmlns:sic="http://xbrl.sec.gov/sic/2024" xmlns:exch="http://xbrl.sec.gov/exch/2024" xmlns:invest="http://xbrl.sec.gov/invest/2013-01-31" xmlns:negated="http://www.xbrl.org/2009/role/negated" xmlns:naics="http://xbrl.sec.gov/naics/2024" xmlns:us-types="http://fasb.org/us-types/2024" xmlns:stpr="http://xbrl.sec.gov/stpr/2024" xmlns="http://www.w3.org/2001/XMLSchema" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:xbrli="http://www.xbrl.org/2003/instance" xmlns:xbrldt="http://xbrl.org/2005/xbrldt" xmlns:xbrldi="http://xbrl.org/2006/xbrldi" xmlns:country="http://xbrl.sec.gov/country/2024" xmlns:utr="http://www.xbrl.org/2009/utr" xmlns:srt-types="http://fasb.org/srt-types/2024" xmlns:dtr-types="http://www.xbrl.org/dtr/type/2020-01-21" xmlns:srt-roles="http://fasb.org/srt-roles/2024" xmlns:dei="http://xbrl.sec.gov/dei/2024" xmlns:num="http://www.xbrl.org/dtr/type/numeric" xmlns:nonnum="http://www.xbrl.org/dtr/type/non-numeric" xmlns:srt="http://fasb.org/srt/2024" xmlns:us-gaap="http://fasb.org/us-gaap/2024" xmlns:boty="http://boty.com/20240630" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://boty.com/20240630">
+  <annotation>
+    <appinfo>
+      <link:roleType roleURI="http://boty.com/role/Cover" id="Cover">
+        <link:definition>000001 - Document - Cover</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://boty.com/role/BalanceSheets" id="BalanceSheets">
+        <link:definition>000002 - Statement - BALANCE SHEETS</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://boty.com/role/BalanceSheetsParenthetical" id="BalanceSheetsParenthetical">
+        <link:definition>000003 - Statement - BALANCE SHEETS (Parenthetical)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://boty.com/role/StatementsOfOperationsUnaudited" id="StatementsOfOperationsUnaudited">
+        <link:definition>000004 - Statement - STATEMENTS OF OPERATIONS (UNAUDITED)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://boty.com/role/StatementsOfStockholdersDeficitUnaudited" id="StatementsOfStockholdersDeficitUnaudited">
+        <link:definition>000005 - Statement - STATEMENTS OF STOCKHOLDERS DEFICIT (UNAUDITED)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://boty.com/role/StatementsOfCashFlowsUnaudited" id="StatementsOfCashFlowsUnaudited">
+        <link:definition>000006 - Statement - STATEMENTS OF CASH FLOWS (UNAUDITED)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://boty.com/role/OrganizationAndNatureOfBusiness" id="OrganizationAndNatureOfBusiness">
+        <link:definition>000007 - Disclosure - ORGANIZATION AND NATURE OF BUSINESS</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://boty.com/role/BasisOfPresentationAndAccountingPolicies" id="BasisOfPresentationAndAccountingPolicies">
+        <link:definition>000008 - Disclosure - BASIS OF PRESENTATION AND ACCOUNTING POLICIES</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://boty.com/role/GoingConcern" id="GoingConcern">
+        <link:definition>000009 - Disclosure - GOING CONCERN</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://boty.com/role/StockholdersDeficit" id="StockholdersDeficit">
+        <link:definition>000010 - Disclosure - STOCKHOLDERS DEFICIT</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://boty.com/role/WARRANTS" id="WARRANTS">
+        <link:definition>000011 - Disclosure - WARRANTS</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://boty.com/role/PromissoryNotes" id="PromissoryNotes">
+        <link:definition>000012 - Disclosure - PROMISSORY NOTES</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://boty.com/role/ConvertibleNotes" id="ConvertibleNotes">
+        <link:definition>000013 - Disclosure - CONVERTIBLE NOTES</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://boty.com/role/DerivativeLiability" id="DerivativeLiability">
+        <link:definition>000014 - Disclosure - DERIVATIVE LIABILITY</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://boty.com/role/RelatedPartyTransactions" id="RelatedPartyTransactions">
+        <link:definition>000015 - Disclosure - RELATED PARTY TRANSACTIONS</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://boty.com/role/CommitmentsAndContingencies" id="CommitmentsAndContingencies">
+        <link:definition>000016 - Disclosure - COMMITMENTS AND CONTINGENCIES</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://boty.com/role/SubsequentEvents" id="SubsequentEvents">
+        <link:definition>000017 - Disclosure - SUBSEQUENT EVENTS</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://boty.com/role/BasisOfPresentationAndAccountingPoliciesPolicies" id="BasisOfPresentationAndAccountingPoliciesPolicies">
+        <link:definition>000018 - Disclosure - BASIS OF PRESENTATION AND ACCOUNTING POLICIES (Policies)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://boty.com/role/BasisOfPresentationAndAccountingPoliciesTables" id="BasisOfPresentationAndAccountingPoliciesTables">
+        <link:definition>000019 - Disclosure - BASIS OF PRESENTATION AND ACCOUNTING POLICIES (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://boty.com/role/WarrantsTables" id="WarrantsTables">
+        <link:definition>000020 - Disclosure - WARRANTS (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://boty.com/role/PromissoryNotesTables" id="PromissoryNotesTables">
+        <link:definition>000021 - Disclosure - PROMISSORY NOTES (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://boty.com/role/ConvertibleNotesTables" id="ConvertibleNotesTables">
+        <link:definition>000022 - Disclosure - CONVERTIBLE NOTES (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://boty.com/role/DerivativeLiabilityTables" id="DerivativeLiabilityTables">
+        <link:definition>000023 - Disclosure - DERIVATIVE LIABILITY (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://boty.com/role/BasisOfPresentationAndAccountingPoliciesDetails" id="BasisOfPresentationAndAccountingPoliciesDetails">
+        <link:definition>000024 - Disclosure - BASIS OF PRESENTATION AND ACCOUNTING POLICIES (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://boty.com/role/BasisOfPresentationAndAccountingPoliciesDetails1" id="BasisOfPresentationAndAccountingPoliciesDetails1">
+        <link:definition>000025 - Disclosure - BASIS OF PRESENTATION AND ACCOUNTING POLICIES (Details 1)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://boty.com/role/BasisOfPresentationAndAccountingPoliciesDetails2" id="BasisOfPresentationAndAccountingPoliciesDetails2">
+        <link:definition>000026 - Disclosure - BASIS OF PRESENTATION AND ACCOUNTING POLICIES (Details 2)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://boty.com/role/BasisOfPresentationAndAccountingPoliciesDetailsNarrative" id="BasisOfPresentationAndAccountingPoliciesDetailsNarrative">
+        <link:definition>000027 - Disclosure - BASIS OF PRESENTATION AND ACCOUNTING POLICIES (Details Narrative)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://boty.com/role/StockholdersDeficitDetailsNarrative" id="StockholdersDeficitDetailsNarrative">
+        <link:definition>000028 - Disclosure - STOCKHOLDERS DEFICIT (Details Narrative)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://boty.com/role/WarrantsDetails" id="WarrantsDetails">
+        <link:definition>000029 - Disclosure - WARRANTS (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://boty.com/role/WarrantsDetails1" id="WarrantsDetails1">
+        <link:definition>000030 - Disclosure - WARRANTS (Details 1)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://boty.com/role/WarrantsDetails2" id="WarrantsDetails2">
+        <link:definition>000031 - Disclosure - WARRANTS (Details 2)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://boty.com/role/WarrantsDetailsNarrative" id="WarrantsDetailsNarrative">
+        <link:definition>000032 - Disclosure - WARRANTS (Details Narrative)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://boty.com/role/PromissoryNotesDetails" id="PromissoryNotesDetails">
+        <link:definition>000033 - Disclosure - PROMISSORY NOTES (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://boty.com/role/PromissoryNoteDetailsNarrative" id="PromissoryNoteDetailsNarrative">
+        <link:definition>000034 - Disclosure - PROMISSORY NOTE (Details Narrative)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://boty.com/role/ConvertibleNotesDetails" id="ConvertibleNotesDetails">
+        <link:definition>000035 - Disclosure - CONVERTIBLE NOTES (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://boty.com/role/ConvertibleNotesDetailsNarrative" id="ConvertibleNotesDetailsNarrative">
+        <link:definition>000036 - Disclosure - CONVERTIBLE NOTES (Details Narrative)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://boty.com/role/DerivativeLiabilityDetails" id="DerivativeLiabilityDetails">
+        <link:definition>000037 - Disclosure - DERIVATIVE LIABILITY (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://boty.com/role/DerivativeLiabilityDetails1" id="DerivativeLiabilityDetails1">
+        <link:definition>000038 - Disclosure - DERIVATIVE LIABILITY (Details 1)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://boty.com/role/DerivativeLiabilityDetails2" id="DerivativeLiabilityDetails2">
+        <link:definition>000039 - Disclosure - DERIVATIVE LIABILITY (Details 2)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://boty.com/role/RelatedPartyTransactionsDetailsNarrative" id="RelatedPartyTransactionsDetailsNarrative">
+        <link:definition>000040 - Disclosure - RELATED PARTY TRANSACTIONS (Details Narrative)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://boty.com/role/SubsequentEventsDetailsNarrative" id="SubsequentEventsDetailsNarrative">
+        <link:definition>000041 - Disclosure - SUBSEQUENT EVENTS (Details Narrative)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:linkbaseRef xlink:type="simple" xlink:href="boty-20240630_pre.xml" xlink:role="http://www.xbrl.org/2003/role/presentationLinkbaseRef" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" />
+      <link:linkbaseRef xlink:type="simple" xlink:href="boty-20240630_lab.xml" xlink:role="http://www.xbrl.org/2003/role/labelLinkbaseRef" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" />
+      <link:linkbaseRef xlink:type="simple" xlink:href="boty-20240630_cal.xml" xlink:role="http://www.xbrl.org/2003/role/calculationLinkbaseRef" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" />
+      <link:linkbaseRef xlink:type="simple" xlink:href="boty-20240630_def.xml" xlink:role="http://www.xbrl.org/2003/role/definitionLinkbaseRef" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" />
+    </appinfo>
+  </annotation>
+  <import namespace="http://www.xbrl.org/2003/instance" schemaLocation="http://www.xbrl.org/2003/xbrl-instance-2003-12-31.xsd" />
+  <import namespace="http://www.xbrl.org/2003/linkbase" schemaLocation="http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd" />
+  <import namespace="http://xbrl.org/2005/xbrldt" schemaLocation="http://www.xbrl.org/2005/xbrldt-2005.xsd" />
+  <import namespace="http://xbrl.sec.gov/country/2024" schemaLocation="https://xbrl.sec.gov/country/2024/country-2024.xsd" />
+  <import namespace="http://xbrl.sec.gov/currency/2024" schemaLocation="https://xbrl.sec.gov/currency/2024/currency-2024.xsd" />
+  <import namespace="http://xbrl.sec.gov/dei/2024" schemaLocation="https://xbrl.sec.gov/dei/2024/dei-2024.xsd" />
+  <import namespace="http://www.xbrl.org/dtr/type/non-numeric" schemaLocation="http://www.xbrl.org/dtr/type/nonNumeric-2009-12-16.xsd" />
+  <import namespace="http://www.xbrl.org/dtr/type/numeric" schemaLocation="http://www.xbrl.org/dtr/type/numeric-2009-12-16.xsd" />
+  <import namespace="http://xbrl.sec.gov/exch/2024" schemaLocation="https://xbrl.sec.gov/exch/2024/exch-2024.xsd" />
+  <import namespace="http://www.xbrl.org/2009/arcrole/fact-explanatoryFact" schemaLocation="http://www.xbrl.org/lrr/arcrole/factExplanatory-2009-12-16.xsd" />
+  <import namespace="http://www.xbrl.org/2009/role/negated" schemaLocation="http://www.xbrl.org/lrr/role/negated-2009-12-16.xsd" />
+  <import namespace="http://www.xbrl.org/2009/role/net" schemaLocation="http://www.xbrl.org/lrr/role/net-2009-12-16.xsd" />
+  <import namespace="http://xbrl.sec.gov/naics/2024" schemaLocation="https://xbrl.sec.gov/naics/2024/naics-2024.xsd" />
+  <import namespace="http://xbrl.sec.gov/sic/2024" schemaLocation="https://xbrl.sec.gov/sic/2024/sic-2024.xsd" />
+  <import namespace="http://fasb.org/srt-roles/2024" schemaLocation="https://xbrl.fasb.org/srt/2024/elts/srt-roles-2024.xsd" />
+  <import namespace="http://fasb.org/srt-types/2024" schemaLocation="https://xbrl.fasb.org/srt/2024/elts/srt-types-2024.xsd" />
+  <import namespace="http://www.xbrl.org/dtr/type/2020-01-21" schemaLocation="https://www.xbrl.org/dtr/type/2020-01-21/types.xsd" />
+  <import namespace="http://xbrl.sec.gov/stpr/2024" schemaLocation="https://xbrl.sec.gov/stpr/2024/stpr-2024.xsd" />
+  <import namespace="http://fasb.org/us-roles/2024" schemaLocation="https://xbrl.fasb.org/us-gaap/2024/elts/us-roles-2024.xsd" />
+  <import namespace="http://fasb.org/us-types/2024" schemaLocation="https://xbrl.fasb.org/us-gaap/2024/elts/us-types-2024.xsd" />
+  <import namespace="http://fasb.org/srt/2024" schemaLocation="https://xbrl.fasb.org/srt/2024/elts/srt-2024.xsd" />
+  <import namespace="http://fasb.org/us-gaap/2024" schemaLocation="https://xbrl.fasb.org/us-gaap/2024/elts/us-gaap-2024.xsd" />
+  <element id="boty_RelatedPartyTransactionAmountsOfTransactionAccountsPayable" name="RelatedPartyTransactionAmountsOfTransactionAccountsPayable" nillable="true" xbrli:balance="credit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="boty_EarningsPerCommonSharesBasicAndDiluted" name="EarningsPerCommonSharesBasicAndDiluted" nillable="true" xbrli:periodType="duration" type="num:perShareItemType" substitutionGroup="xbrli:item" />
+  <element id="boty_BasicAndDilutedWeightedAverageSharesOfCommonStockOutstanding" name="BasicAndDilutedWeightedAverageSharesOfCommonStockOutstanding" nillable="true" xbrli:periodType="duration" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" />
+  <element id="boty_StockIssuedDuringPeriodSharesStockWarrantsExercised" name="StockIssuedDuringPeriodSharesStockWarrantsExercised" nillable="true" xbrli:periodType="duration" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" />
+  <element id="boty_StockIssuedDuringPeriodValueStockWarrantsExercised" name="StockIssuedDuringPeriodValueStockWarrantsExercised" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="boty_CommonStockIssuedForExerciseOfWarrants" name="CommonStockIssuedForExerciseOfWarrants" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="boty_WarrantsDisclosureTextBlock" name="WarrantsDisclosureTextBlock" nillable="true" xbrli:periodType="duration" type="nonnum:textBlockItemType" substitutionGroup="xbrli:item" />
+  <element id="boty_PromissoryNotesTextBlock" name="PromissoryNotesTextBlock" nillable="true" xbrli:periodType="duration" type="nonnum:textBlockItemType" substitutionGroup="xbrli:item" />
+  <element id="boty_RelatedPartyBalancesAndTransactionPolicyTextBlock" name="RelatedPartyBalancesAndTransactionPolicyTextBlock" nillable="true" xbrli:periodType="duration" type="nonnum:textBlockItemType" substitutionGroup="xbrli:item" />
+  <element id="boty_ScheduleOfWarrantsExercisableForCommonSharesTableTextBlock" name="ScheduleOfWarrantsExercisableForCommonSharesTableTextBlock" nillable="true" xbrli:periodType="duration" type="nonnum:textBlockItemType" substitutionGroup="xbrli:item" />
+  <element id="boty_ScheduleOfShareBasedPaymentAwardStockWarrantsValuationAssumptionsTableTextBlock" name="ScheduleOfShareBasedPaymentAwardStockWarrantsValuationAssumptionsTableTextBlock" nillable="true" xbrli:periodType="duration" type="nonnum:textBlockItemType" substitutionGroup="xbrli:item" />
+  <element id="boty_ScheduleOfPromissoryNotesPayableTableTextBlock" name="ScheduleOfPromissoryNotesPayableTableTextBlock" nillable="true" xbrli:periodType="duration" type="nonnum:textBlockItemType" substitutionGroup="xbrli:item" />
+  <element id="boty_ScheduleOfGainLossOnDerivativeLiabilityTableTextBlock" name="ScheduleOfGainLossOnDerivativeLiabilityTableTextBlock" nillable="true" xbrli:periodType="duration" type="nonnum:textBlockItemType" substitutionGroup="xbrli:item" />
+  <element id="boty_ShareBasedCompensationArrangementByShareBasedPaymentAwardOptionsRedeemed" name="ShareBasedCompensationArrangementByShareBasedPaymentAwardOptionsRedeemed" nillable="true" xbrli:periodType="duration" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" />
+  <element id="boty_ShareBasedCompensationArrangementByShareBasedPaymentAwardOptionsExercised" name="ShareBasedCompensationArrangementByShareBasedPaymentAwardOptionsExercised" nillable="true" xbrli:periodType="duration" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" />
+  <element id="boty_WeightedAverageExercisePriceAbstract" name="WeightedAverageExercisePriceAbstract" nillable="true" abstract="true" xbrli:periodType="duration" type="xbrli:stringItemType" substitutionGroup="xbrli:item" />
+  <element id="boty_ShareBasedCompensationArrangementsByShareBasedPaymentAwardOptionsRedeemedInPeriodWeightedAverageExercisePrice" name="ShareBasedCompensationArrangementsByShareBasedPaymentAwardOptionsRedeemedInPeriodWeightedAverageExercisePrice" nillable="true" xbrli:periodType="duration" type="num:perShareItemType" substitutionGroup="xbrli:item" />
+  <element id="boty_ExpectedTerm" name="ExpectedTerm" nillable="true" xbrli:periodType="duration" type="xbrli:durationItemType" substitutionGroup="xbrli:item" />
+  <element id="boty_ClosingMarketPrice" name="ClosingMarketPrice" nillable="true" xbrli:periodType="instant" type="num:perShareItemType" substitutionGroup="xbrli:item" />
+  <element id="boty_WarrantsDerivativeAmount" name="WarrantsDerivativeAmount" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="boty_DebtInstrumentAggregateDiscount" name="DebtInstrumentAggregateDiscount" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="boty_WarrantsPricePerShare" name="WarrantsPricePerShare" nillable="true" xbrli:periodType="instant" type="num:perShareItemType" substitutionGroup="xbrli:item" />
+  <element id="boty_ConvertibleNotePayableGrossCurrent" name="ConvertibleNotePayableGrossCurrent" nillable="true" xbrli:balance="credit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="boty_DefaultInterestRate" name="DefaultInterestRate" nillable="true" xbrli:periodType="duration" type="num:percentItemType" substitutionGroup="xbrli:item" />
+  <element id="boty_ConvertibleNotesWarrantIssuedToPurchaseCommonStock" name="ConvertibleNotesWarrantIssuedToPurchaseCommonStock" nillable="true" xbrli:periodType="duration" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" />
+  <element id="boty_ConvertiblePromissoryNotes" name="ConvertiblePromissoryNotes" nillable="true" xbrli:balance="debit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="boty_ConvertibleNotesPayableOtherCurrent" name="ConvertibleNotesPayableOtherCurrent" nillable="true" xbrli:balance="credit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="boty_UnamortizationOfDebtDiscount" name="UnamortizationOfDebtDiscount" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="boty_ReductionOfDerivativeLiabilitiesFromExerciseOfWarrants" name="ReductionOfDerivativeLiabilitiesFromExerciseOfWarrants" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="boty_AdditionOfNewDerivativeLiabilitiesUponIssuanceOfWarrantsAsDebtDiscount" name="AdditionOfNewDerivativeLiabilitiesUponIssuanceOfWarrantsAsDebtDiscount" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="boty_GainLossOnChangeInFairValueOfTheDerivativeLiability" name="GainLossOnChangeInFairValueOfTheDerivativeLiability" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="boty_DayOneLossDueToDerivativeLiabilitiesOnConvertibleNotesAndWarrants" name="DayOneLossDueToDerivativeLiabilitiesOnConvertibleNotesAndWarrants" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="boty_GainLossOnChangeInFairValueOfDerivativeLiabilitiesOnConvertibleNotesAndWarrants" name="GainLossOnChangeInFairValueOfDerivativeLiabilitiesOnConvertibleNotesAndWarrants" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="boty_SalaryAccruedDuringPeriodToRelatedParty" name="SalaryAccruedDuringPeriodToRelatedParty" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="boty_PaymentOfAccruedSalaryToRelatedPartyDuringPeriod" name="PaymentOfAccruedSalaryToRelatedPartyDuringPeriod" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="boty_WarrantExercisablePeriod" name="WarrantExercisablePeriod" nillable="true" xbrli:periodType="duration" type="xbrli:stringItemType" substitutionGroup="xbrli:item" />
+  <element id="boty_PromissoryNotesAbstract" name="PromissoryNotesAbstract" nillable="true" abstract="true" xbrli:periodType="duration" type="xbrli:stringItemType" substitutionGroup="xbrli:item" />
+  <element id="boty_CommitmentsAndContingenciesAbstract" name="CommitmentsAndContingenciesAbstract" nillable="true" abstract="true" xbrli:periodType="duration" type="xbrli:stringItemType" substitutionGroup="xbrli:item" />
+  <element name="WarrantsOutstandingMember" id="boty_WarrantsOutstandingMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="WarrantsExercisableMember" id="boty_WarrantsExercisableMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="AuctusFundLLCMember" id="boty_AuctusFundLLCMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="SecondWarrantsMember" id="boty_SecondWarrantsMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="FirstWarrantsMember" id="boty_FirstWarrantsMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="LiveEventsAndSiteSubscriptionsMember" id="boty_LiveEventsAndSiteSubscriptionsMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="SponsorshipMember" id="boty_SponsorshipMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="WarrantsMember" id="boty_WarrantsMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="FairValueInputsLevelOneMember" id="boty_FairValueInputsLevelOneMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="FairValueInputsLevelTwoMember" id="boty_FairValueInputsLevelTwoMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="FairValueInputLevel3Member" id="boty_FairValueInputLevel3Member" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="ChiefExecutiveOfficersMember" id="boty_ChiefExecutiveOfficersMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="SeriesAPreferredStocksMember" id="boty_SeriesAPreferredStocksMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="CommonSharesMember" id="boty_CommonSharesMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="PromissoryNotesToAuctusFundMember" id="boty_PromissoryNotesToAuctusFundMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="AuctusFundMember" id="boty_AuctusFundMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="MarchFourTwentyTwentyOneMember" id="boty_MarchFourTwentyTwentyOneMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="DecemberSixTwentyTwentyOneMember" id="boty_DecemberSixTwentyTwentyOneMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="NovemberTwoSevenTwoZeroOneSevenMember" id="boty_NovemberTwoSevenTwoZeroOneSevenMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="PowerUpLendingGroupMember" id="boty_PowerUpLendingGroupMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="ConvertibleNotePaybleMember" id="boty_ConvertibleNotePaybleMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="MarchSevenTwoOneEightMember" id="boty_MarchSevenTwoOneEightMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="AuctusFundFiveMember" id="boty_AuctusFundFiveMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="JulyNineTwoOneEightMember" id="boty_JulyNineTwoOneEightMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="AuctusFundSixMember" id="boty_AuctusFundSixMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="MarchTwoTwoTwoZeroOneNineMember" id="boty_MarchTwoTwoTwoZeroOneNineMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="AuctusFundSevenMember" id="boty_AuctusFundSevenMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="OctoberTwoThreeTwoZeroOneNineMember" id="boty_OctoberTwoThreeTwoZeroOneNineMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="AuctusFundEightMember" id="boty_AuctusFundEightMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="AuctusFundNineMember" id="boty_AuctusFundNineMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="NovemberTwoTwoThousandTwentyMember" id="boty_NovemberTwoTwoThousandTwentyMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="AuctusFundTenMember" id="boty_AuctusFundTenMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="MayTwelveTwoThousandTwentyTwoMember" id="boty_MayTwelveTwoThousandTwentyTwoMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="AuctusFundThirteenMember" id="boty_AuctusFundThirteenMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="AuctusFundForteenMember" id="boty_AuctusFundForteenMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="AuctusFundFifteenMember" id="boty_AuctusFundFifteenMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="AuctusFundSixteenMember" id="boty_AuctusFundSixteenMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="JanuaryOneThreeTwoZeroOneSevenMember" id="boty_JanuaryOneThreeTwoZeroOneSevenMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="JuneOneFourTwoZeroOneSevenMember" id="boty_JuneOneFourTwoZeroOneSevenMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="PowerLendingGroupMember" id="boty_PowerLendingGroupMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="MayTwentyTwoTwoThausandTwentyFourMember" id="boty_MayTwentyTwoTwoThausandTwentyFourMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="AuctusFundSeventeenMember" id="boty_AuctusFundSeventeenMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="AuctusFundsMember" id="boty_AuctusFundsMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="ConvertibleNotePaybleOneMember" id="boty_ConvertibleNotePaybleOneMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+</schema>

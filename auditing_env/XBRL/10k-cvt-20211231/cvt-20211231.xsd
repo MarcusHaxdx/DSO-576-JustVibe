@@ -1,0 +1,696 @@
+<?xml version="1.0" encoding="US-ASCII"?>
+<!-- DFIN New ActiveDisclosure (SM) XBRL Schema Document - http://www.dfinsolutions.com/ -->
+<!-- Creation Date :2022-03-07T13:27:13.2962+00:00 -->
+<!-- Copyright (c) 2022 Donnelly Financial Solutions, Inc. All Rights Reserved. -->
+<xsd:schema targetNamespace="http://www.cvent.com/20211231" attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:cvt="http://www.cvent.com/20211231" xmlns:dtr-types="http://www.xbrl.org/dtr/type/2020-01-21" xmlns:enum2="http://xbrl.org/2020/extensible-enumerations-2.0" xmlns:srt="http://fasb.org/srt/2021-01-31" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:us-gaap="http://fasb.org/us-gaap/2021-01-31" xmlns:dei="http://xbrl.sec.gov/dei/2021q4" xmlns:xbrldt="http://xbrl.org/2005/xbrldt" xmlns:xbrli="http://www.xbrl.org/2003/instance" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <xsd:import schemaLocation="http://www.xbrl.org/2003/xbrl-instance-2003-12-31.xsd" namespace="http://www.xbrl.org/2003/instance"/>
+  <xsd:import schemaLocation="http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd" namespace="http://www.xbrl.org/2003/linkbase"/>
+  <xsd:import schemaLocation="http://www.xbrl.org/2005/xbrldt-2005.xsd" namespace="http://xbrl.org/2005/xbrldt"/>
+  <xsd:import schemaLocation="https://xbrl.fasb.org/srt/2021/elts/srt-2021-01-31.xsd" namespace="http://fasb.org/srt/2021-01-31"/>
+  <xsd:import schemaLocation="https://xbrl.fasb.org/us-gaap/2021/elts/us-gaap-2021-01-31.xsd" namespace="http://fasb.org/us-gaap/2021-01-31"/>
+  <xsd:import schemaLocation="https://xbrl.sec.gov/dei/2021q4/dei-2021q4.xsd" namespace="http://xbrl.sec.gov/dei/2021q4"/>
+  <xsd:import schemaLocation="https://www.xbrl.org/dtr/type/2020-01-21/types.xsd" namespace="http://www.xbrl.org/dtr/type/2020-01-21"/>
+  <xsd:annotation>
+    <xsd:appinfo>
+      <link:linkbaseRef xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="cvt-20211231_lab.xml" xlink:role="http://www.xbrl.org/2003/role/labelLinkbaseRef" xlink:title="Labels link" xlink:type="simple"/>
+      <link:linkbaseRef xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="cvt-20211231_pre.xml" xlink:role="http://www.xbrl.org/2003/role/presentationLinkbaseRef" xlink:title="Presentation link" xlink:type="simple"/>
+      <link:linkbaseRef xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="cvt-20211231_def.xml" xlink:role="http://www.xbrl.org/2003/role/definitionLinkbaseRef" xlink:title="Definition link" xlink:type="simple"/>
+      <link:linkbaseRef xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="cvt-20211231_cal.xml" xlink:role="http://www.xbrl.org/2003/role/calculationLinkbaseRef" xlink:title="Calculation link" xlink:type="simple"/>
+      <link:roleType roleURI="http://www.cvent.com/20211231/taxonomy/role/Role_DocumentCoverPage" id="Role_DocumentCoverPage">
+        <link:definition>100000 - Document - Cover Page</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.cvent.com/20211231/taxonomy/role/Role_StatementCONSOLIDATEDBALANCESHEETS" id="Role_StatementCONSOLIDATEDBALANCESHEETS">
+        <link:definition>100010 - Statement - CONSOLIDATED BALANCE SHEETS</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.cvent.com/20211231/taxonomy/role/DisclosureLeasesSummaryOfFutureMinimumPaymentsDetail2" id="DisclosureLeasesSummaryOfFutureMinimumPaymentsDetail2">
+        <link:definition>100020 - Disclosure - Leases - Summary of Future Minimum Payments (Detail) 2</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.cvent.com/20211231/taxonomy/role/Role_StatementCONSOLIDATEDBALANCESHEETSParenthetical" id="Role_StatementCONSOLIDATEDBALANCESHEETSParenthetical">
+        <link:definition>100030 - Statement - CONSOLIDATED BALANCE SHEETS (Parenthetical)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.cvent.com/20211231/taxonomy/role/Role_StatementConsolidatedStatementsOfOperationsAndComprehensiveLoss" id="Role_StatementConsolidatedStatementsOfOperationsAndComprehensiveLoss">
+        <link:definition>100040 - Statement - Consolidated Statements of Operations and Comprehensive Loss</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.cvent.com/20211231/taxonomy/role/Role_StatementConsolidatedStatementsOfChangesInStockholdersEquity" id="Role_StatementConsolidatedStatementsOfChangesInStockholdersEquity">
+        <link:definition>100050 - Statement - Consolidated Statements of Changes in Stockholders' Equity</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.cvent.com/20211231/taxonomy/role/Role_StatementConsolidatedStatementsOfCashFlows" id="Role_StatementConsolidatedStatementsOfCashFlows">
+        <link:definition>100060 - Statement - Consolidated Statements of Cash Flows</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.cvent.com/20211231/taxonomy/role/Role_DisclosureDescriptionOfBusiness" id="Role_DisclosureDescriptionOfBusiness">
+        <link:definition>100070 - Disclosure - Description of Business</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.cvent.com/20211231/taxonomy/role/Role_DisclosureSummaryOfSignificantAccountingPolicies" id="Role_DisclosureSummaryOfSignificantAccountingPolicies">
+        <link:definition>100080 - Disclosure - Summary of Significant Accounting Policies</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.cvent.com/20211231/taxonomy/role/DisclosureReverseRecapitalizationTransaction" id="DisclosureReverseRecapitalizationTransaction">
+        <link:definition>100090 - Disclosure - Reverse Recapitalization Transaction</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.cvent.com/20211231/taxonomy/role/Role_DisclosureRevenue" id="Role_DisclosureRevenue">
+        <link:definition>100100 - Disclosure - Revenue</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.cvent.com/20211231/taxonomy/role/Role_DisclosureBusinessCombinations" id="Role_DisclosureBusinessCombinations">
+        <link:definition>100110 - Disclosure - Business Combinations</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.cvent.com/20211231/taxonomy/role/Role_DisclosurePropertyAndEquipment" id="Role_DisclosurePropertyAndEquipment">
+        <link:definition>100120 - Disclosure - Property and Equipment</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.cvent.com/20211231/taxonomy/role/Role_DisclosureCapitalizedSoftwareDevelopmentCosts" id="Role_DisclosureCapitalizedSoftwareDevelopmentCosts">
+        <link:definition>100130 - Disclosure - Capitalized Software Development Costs</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.cvent.com/20211231/taxonomy/role/Role_DisclosureGoodwillAndIntangibleAssets" id="Role_DisclosureGoodwillAndIntangibleAssets">
+        <link:definition>100140 - Disclosure - Goodwill and Intangible Assets</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.cvent.com/20211231/taxonomy/role/Role_DisclosureAccruedExpensesAndOtherCurrentLiabilities" id="Role_DisclosureAccruedExpensesAndOtherCurrentLiabilities">
+        <link:definition>100150 - Disclosure - Accrued Expenses and Other Current Liabilities</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.cvent.com/20211231/taxonomy/role/Role_DisclosureIncomeTaxes" id="Role_DisclosureIncomeTaxes">
+        <link:definition>100160 - Disclosure - Income Taxes</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.cvent.com/20211231/taxonomy/role/Role_DisclosureStockholdersEquity" id="Role_DisclosureStockholdersEquity">
+        <link:definition>100170 - Disclosure - Stockholders&#8217; Equity</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.cvent.com/20211231/taxonomy/role/Role_DisclosureRetirementPlans" id="Role_DisclosureRetirementPlans">
+        <link:definition>100180 - Disclosure - Retirement Plans</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.cvent.com/20211231/taxonomy/role/Role_DisclosureDebt" id="Role_DisclosureDebt">
+        <link:definition>100190 - Disclosure - Debt</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.cvent.com/20211231/taxonomy/role/Role_DisclosureLeases" id="Role_DisclosureLeases">
+        <link:definition>100200 - Disclosure - Leases</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.cvent.com/20211231/taxonomy/role/Role_DisclosureCommitmentsAndContingencies" id="Role_DisclosureCommitmentsAndContingencies">
+        <link:definition>100210 - Disclosure - Commitments and Contingencies</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.cvent.com/20211231/taxonomy/role/Role_DisclosureRelatedPartyTransactions" id="Role_DisclosureRelatedPartyTransactions">
+        <link:definition>100220 - Disclosure - Related-Party Transactions</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.cvent.com/20211231/taxonomy/role/Role_DisclosureCondensedFinancialInformationParentCompanyOnly" id="Role_DisclosureCondensedFinancialInformationParentCompanyOnly">
+        <link:definition>100230 - Disclosure - Condensed Financial Information (Parent Company Only)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.cvent.com/20211231/taxonomy/role/Role_DisclosureSubsequentEvents" id="Role_DisclosureSubsequentEvents">
+        <link:definition>100240 - Disclosure - Subsequent Events</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.cvent.com/20211231/taxonomy/role/Role_DisclosureSummaryOfSignificantAccountingPoliciesPolicies" id="Role_DisclosureSummaryOfSignificantAccountingPoliciesPolicies">
+        <link:definition>100250 - Disclosure - Summary of Significant Accounting Policies (Policies)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.cvent.com/20211231/taxonomy/role/Role_DisclosureSummaryOfSignificantAccountingPoliciesTables" id="Role_DisclosureSummaryOfSignificantAccountingPoliciesTables">
+        <link:definition>100260 - Disclosure - Summary of Significant Accounting Policies (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.cvent.com/20211231/taxonomy/role/DisclosureReverseRecapitalizationTransactionTables" id="DisclosureReverseRecapitalizationTransactionTables">
+        <link:definition>100270 - Disclosure - Reverse Recapitalization Transaction (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.cvent.com/20211231/taxonomy/role/Role_DisclosureRevenueTables" id="Role_DisclosureRevenueTables">
+        <link:definition>100280 - Disclosure - Revenue (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.cvent.com/20211231/taxonomy/role/Role_DisclosureBusinessCombinationsTables" id="Role_DisclosureBusinessCombinationsTables">
+        <link:definition>100290 - Disclosure - Business Combinations (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.cvent.com/20211231/taxonomy/role/Role_DisclosurePropertyAndEquipmentTables" id="Role_DisclosurePropertyAndEquipmentTables">
+        <link:definition>100300 - Disclosure - Property and Equipment (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.cvent.com/20211231/taxonomy/role/Role_DisclosureCapitalizedSoftwareDevelopmentCostsTables" id="Role_DisclosureCapitalizedSoftwareDevelopmentCostsTables">
+        <link:definition>100310 - Disclosure - Capitalized Software Development Costs (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.cvent.com/20211231/taxonomy/role/Role_DisclosureGoodwillAndIntangibleAssetsTables" id="Role_DisclosureGoodwillAndIntangibleAssetsTables">
+        <link:definition>100320 - Disclosure - Goodwill and Intangible Assets (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.cvent.com/20211231/taxonomy/role/Role_DisclosureAccruedExpensesAndOtherCurrentLiabilitiesTables" id="Role_DisclosureAccruedExpensesAndOtherCurrentLiabilitiesTables">
+        <link:definition>100330 - Disclosure - Accrued Expenses and Other Current Liabilities (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.cvent.com/20211231/taxonomy/role/Role_DisclosureIncomeTaxesTables" id="Role_DisclosureIncomeTaxesTables">
+        <link:definition>100340 - Disclosure - Income Taxes (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.cvent.com/20211231/taxonomy/role/Role_DisclosureStockholdersEquityTables" id="Role_DisclosureStockholdersEquityTables">
+        <link:definition>100350 - Disclosure - Stockholders&#8217; Equity (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.cvent.com/20211231/taxonomy/role/Role_DisclosureDebtTables" id="Role_DisclosureDebtTables">
+        <link:definition>100360 - Disclosure - Debt (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.cvent.com/20211231/taxonomy/role/Role_DisclosureLeasesTables" id="Role_DisclosureLeasesTables">
+        <link:definition>100370 - Disclosure - Leases (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.cvent.com/20211231/taxonomy/role/Role_DisclosureCondensedFinancialInformationParentCompanyOnlyTables" id="Role_DisclosureCondensedFinancialInformationParentCompanyOnlyTables">
+        <link:definition>100380 - Disclosure - Condensed Financial Information (Parent Company Only) (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.cvent.com/20211231/taxonomy/role/Role_DisclosureSummaryOfSignificantAccountingPoliciesAdditionalInformationDetail" id="Role_DisclosureSummaryOfSignificantAccountingPoliciesAdditionalInformationDetail">
+        <link:definition>100390 - Disclosure - Summary of Significant Accounting Policies - Additional Information (Detail)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.cvent.com/20211231/taxonomy/role/Role_DisclosureSummaryOfSignificantAccountingPoliciesSummaryOfCashCashEquivalentsAndRestrictedCashDetail" id="Role_DisclosureSummaryOfSignificantAccountingPoliciesSummaryOfCashCashEquivalentsAndRestrictedCashDetail">
+        <link:definition>100400 - Disclosure - Summary of Significant Accounting Policies - Summary of Cash, Cash Equivalents and Restricted Cash (Detail)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.cvent.com/20211231/taxonomy/role/Role_DisclosureSummaryOfSignificantAccountingPoliciesSummaryOfAllowanceForExpectedCreditLossesDetail" id="Role_DisclosureSummaryOfSignificantAccountingPoliciesSummaryOfAllowanceForExpectedCreditLossesDetail">
+        <link:definition>100410 - Disclosure - Summary of Significant Accounting Policies - Summary of Allowance for Expected Credit Losses (Detail)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.cvent.com/20211231/taxonomy/role/DisclosureSummaryOfSignificantAccountingPoliciesScheduleOfCompositionOfPropertyAndEquipmentBetweenNorthAmericaAndLocationsOutsideOfNorthA" id="DisclosureSummaryOfSignificantAccountingPoliciesScheduleOfCompositionOfPropertyAndEquipmentBetweenNorthAmericaAndLocationsOutsideOfNorthA">
+        <link:definition>100420 - Disclosure - Summary Of Significant Accounting Policies - Schedule of Composition of Property and Equipment between North America and Locations Outside of North America (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.cvent.com/20211231/taxonomy/role/DisclosureReverseRecapitalizationTransactionAdditionalInformationDetails" id="DisclosureReverseRecapitalizationTransactionAdditionalInformationDetails">
+        <link:definition>100430 - Disclosure - Reverse Recapitalization Transaction - Additional Information (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.cvent.com/20211231/taxonomy/role/DisclosureReverseRecapitalizationTransactionScheduleOfTransactionToTheConsolidatedStatementOfCashFlowsAndStockholdersEquityDetails" id="DisclosureReverseRecapitalizationTransactionScheduleOfTransactionToTheConsolidatedStatementOfCashFlowsAndStockholdersEquityDetails">
+        <link:definition>100440 - Disclosure - Reverse Recapitalization Transaction - Schedule of Transaction to the consolidated Statement of Cash Flows and Stockholders' Equity (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.cvent.com/20211231/taxonomy/role/DisclosureReverseRecapitalizationTransactionScheduleOfNumberOfSharesOfCommonStockIssuedImmediatelyFollowingTheConsummationOfTheReDetails" id="DisclosureReverseRecapitalizationTransactionScheduleOfNumberOfSharesOfCommonStockIssuedImmediatelyFollowingTheConsummationOfTheReDetails">
+        <link:definition>100450 - Disclosure - Reverse Recapitalization Transaction - Schedule of Number of shares of common stock issued immediately following the consummation of the Re (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.cvent.com/20211231/taxonomy/role/Role_DisclosureRevenueAdditionalInformationDetails" id="Role_DisclosureRevenueAdditionalInformationDetails">
+        <link:definition>100460 - Disclosure - Revenue - Additional Information (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.cvent.com/20211231/taxonomy/role/DisclosureRevenueScheduleOfDisaggregationOfRevenueByGeographicRegionDetails" id="DisclosureRevenueScheduleOfDisaggregationOfRevenueByGeographicRegionDetails">
+        <link:definition>100470 - Disclosure - Revenue - Schedule of Disaggregation of Revenue by Geographic Region (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.cvent.com/20211231/taxonomy/role/DisclosureRevenueScheduleOfDisaggregationOfRevenueByMajorBusinessActivitiesDetails" id="DisclosureRevenueScheduleOfDisaggregationOfRevenueByMajorBusinessActivitiesDetails">
+        <link:definition>100480 - Disclosure - Revenue - Schedule of Disaggregation of Revenue by Major Business Activities (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.cvent.com/20211231/taxonomy/role/DisclosureRevenueAdditionalInformationDetails1" id="DisclosureRevenueAdditionalInformationDetails1">
+        <link:definition>100490 - Disclosure - Revenue - Additional Information (Details) 1</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.cvent.com/20211231/taxonomy/role/Role_DisclosureBusinessCombinationsAdditionalInformationDetails" id="Role_DisclosureBusinessCombinationsAdditionalInformationDetails">
+        <link:definition>100500 - Disclosure - Business Combinations - Additional Information (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.cvent.com/20211231/taxonomy/role/Role_DisclosureBusinessCombinationsSummaryOfAllocationOfPurchasePriceBetweenNetAssetsAssumedAndIntangibleAssetDetails" id="Role_DisclosureBusinessCombinationsSummaryOfAllocationOfPurchasePriceBetweenNetAssetsAssumedAndIntangibleAssetDetails">
+        <link:definition>100510 - Disclosure - Business Combinations - Summary of Allocation of Purchase Price Between Net Assets Assumed and Intangible Asset (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.cvent.com/20211231/taxonomy/role/Role_DisclosureBusinessCombinationsSummaryOfIdentifiableIntangibleAssetsAcquiredAndTheirUsefulLivesDetails" id="Role_DisclosureBusinessCombinationsSummaryOfIdentifiableIntangibleAssetsAcquiredAndTheirUsefulLivesDetails">
+        <link:definition>100520 - Disclosure - Business Combinations - Summary of Identifiable Intangible Assets Acquired and Their Useful Lives (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.cvent.com/20211231/taxonomy/role/Role_DisclosureBusinessCombinationsSummaryOfLossRecordedOnDispositionDetails" id="Role_DisclosureBusinessCombinationsSummaryOfLossRecordedOnDispositionDetails">
+        <link:definition>100530 - Disclosure - Business Combinations - Summary of Loss Recorded on Disposition (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.cvent.com/20211231/taxonomy/role/Role_DisclosurePropertyAndEquipmentScheduleOfPropertyAndEquipmentDetails" id="Role_DisclosurePropertyAndEquipmentScheduleOfPropertyAndEquipmentDetails">
+        <link:definition>100540 - Disclosure - Property and Equipment - Schedule of Property and Equipment (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.cvent.com/20211231/taxonomy/role/Role_DisclosurePropertyAndEquipmentAdditionalInformationDetails" id="Role_DisclosurePropertyAndEquipmentAdditionalInformationDetails">
+        <link:definition>100550 - Disclosure - Property and Equipment - Additional Information (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.cvent.com/20211231/taxonomy/role/Role_DisclosureCapitalizedSoftwareDevelopmentCostsSummaryOfCapitalizedSoftwareDevelopmentCostsAndAcquiredSoftwareTechnologyDetails" id="Role_DisclosureCapitalizedSoftwareDevelopmentCostsSummaryOfCapitalizedSoftwareDevelopmentCostsAndAcquiredSoftwareTechnologyDetails">
+        <link:definition>100560 - Disclosure - Capitalized Software Development Costs - Summary of Capitalized Software Development Costs and Acquired Software Technology (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.cvent.com/20211231/taxonomy/role/Role_DisclosureCapitalizedSoftwareDevelopmentCostsAdditionalInformationDetails" id="Role_DisclosureCapitalizedSoftwareDevelopmentCostsAdditionalInformationDetails">
+        <link:definition>100570 - Disclosure - Capitalized Software Development Costs - Additional Information (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.cvent.com/20211231/taxonomy/role/Role_DisclosureGoodwillAndIntangibleAssetsSummaryOfChangeInCarryingAmountOfGoodwillDetails" id="Role_DisclosureGoodwillAndIntangibleAssetsSummaryOfChangeInCarryingAmountOfGoodwillDetails">
+        <link:definition>100580 - Disclosure - Goodwill and Intangible Assets - Summary of Change in Carrying Amount of Goodwill (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.cvent.com/20211231/taxonomy/role/Role_DisclosureGoodwillAndIntangibleAssetsSummaryOfIntangibleAssetsDetail" id="Role_DisclosureGoodwillAndIntangibleAssetsSummaryOfIntangibleAssetsDetail">
+        <link:definition>100590 - Disclosure - Goodwill and Intangible Assets - Summary of Intangible Assets (Detail)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.cvent.com/20211231/taxonomy/role/Role_DisclosureGoodwillAndIntangibleAssetsScheduleOfEstimatedFutureAmortizationExpenseDetail" id="Role_DisclosureGoodwillAndIntangibleAssetsScheduleOfEstimatedFutureAmortizationExpenseDetail">
+        <link:definition>100600 - Disclosure - Goodwill and Intangible Assets - Schedule of Estimated Future Amortization Expense (Detail)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.cvent.com/20211231/taxonomy/role/Role_DisclosureGoodwillAndIntangibleAssetsAdditionalInformationDetails" id="Role_DisclosureGoodwillAndIntangibleAssetsAdditionalInformationDetails">
+        <link:definition>100610 - Disclosure - Goodwill and Intangible Assets - Additional Information (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.cvent.com/20211231/taxonomy/role/DisclosureAccruedExpensesAndOtherCurrentLiabilitiesSummaryOfAccruedExpensesAndOtherCurrentLiabilitiesDetails" id="DisclosureAccruedExpensesAndOtherCurrentLiabilitiesSummaryOfAccruedExpensesAndOtherCurrentLiabilitiesDetails">
+        <link:definition>100620 - Disclosure - Accrued Expenses and Other Current Liabilities - Summary of Accrued Expenses and Other Current Liabilities (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.cvent.com/20211231/taxonomy/role/Role_DisclosureIncomeTaxesSummaryOfLossBeforeIncomeTaxesDetails" id="Role_DisclosureIncomeTaxesSummaryOfLossBeforeIncomeTaxesDetails">
+        <link:definition>100630 - Disclosure - Income Taxes - Summary of Loss Before Income Taxes (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.cvent.com/20211231/taxonomy/role/Role_DisclosureIncomeTaxesScheduleOfProvisionForBenefitFromIncomeTaxesDetails" id="Role_DisclosureIncomeTaxesScheduleOfProvisionForBenefitFromIncomeTaxesDetails">
+        <link:definition>100640 - Disclosure - Income Taxes - Schedule of Provision for/(Benefit from) Income Taxes (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.cvent.com/20211231/taxonomy/role/DisclosureIncomeTaxesSummaryOfReconciliationBetweenTheStatutoryTaxRateAndItsEffectiveTaxRateDetails" id="DisclosureIncomeTaxesSummaryOfReconciliationBetweenTheStatutoryTaxRateAndItsEffectiveTaxRateDetails">
+        <link:definition>100650 - Disclosure - Income Taxes - Summary of Reconciliation Between the Statutory Tax Rate and its Effective Tax Rate (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.cvent.com/20211231/taxonomy/role/Role_DisclosureIncomeTaxesAdditionalInformationDetails" id="Role_DisclosureIncomeTaxesAdditionalInformationDetails">
+        <link:definition>100660 - Disclosure - Income Taxes - Additional Information (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.cvent.com/20211231/taxonomy/role/Role_DisclosureIncomeTaxesSummaryOfSignificantComponentsOfDeferredTaxAssetsAndLiabilitiesDetails" id="Role_DisclosureIncomeTaxesSummaryOfSignificantComponentsOfDeferredTaxAssetsAndLiabilitiesDetails">
+        <link:definition>100670 - Disclosure - Income Taxes - Summary of Significant Components of Deferred Tax Assets and Liabilities (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.cvent.com/20211231/taxonomy/role/Role_DisclosureIncomeTaxesSummaryOfChangeInValuationAllowanceDetails" id="Role_DisclosureIncomeTaxesSummaryOfChangeInValuationAllowanceDetails">
+        <link:definition>100680 - Disclosure - Income Taxes - Summary of Change in Valuation Allowance (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.cvent.com/20211231/taxonomy/role/DisclosureIncomeTaxesSummaryOfEstimatedValuesOfGrossUncertainTaxPositionsDetails" id="DisclosureIncomeTaxesSummaryOfEstimatedValuesOfGrossUncertainTaxPositionsDetails">
+        <link:definition>100690 - Disclosure - Income Taxes - Summary of Estimated Values of Gross Uncertain Tax Positions (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.cvent.com/20211231/taxonomy/role/Role_DisclosureStockholdersEquityAdditionalInformationDetails" id="Role_DisclosureStockholdersEquityAdditionalInformationDetails">
+        <link:definition>100700 - Disclosure - Stockholders Equity - Additional Information (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.cvent.com/20211231/taxonomy/role/Role_DisclosureStockholdersEquitySummaryOfKeyDefinitionsAndFeaturesOf2017OtherEquityAwardsDetails" id="Role_DisclosureStockholdersEquitySummaryOfKeyDefinitionsAndFeaturesOf2017OtherEquityAwardsDetails">
+        <link:definition>100710 - Disclosure - Stockholders Equity - Summary of Key Definitions and Features of 2017 Other Equity Awards (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.cvent.com/20211231/taxonomy/role/Role_DisclosureStockholdersEquitySummaryOfWeightedAverageAssumptionsUsedInValuationOfStockOptionAwardsGrantedUnderBlackScholesModelDetails" id="Role_DisclosureStockholdersEquitySummaryOfWeightedAverageAssumptionsUsedInValuationOfStockOptionAwardsGrantedUnderBlackScholesModelDetails">
+        <link:definition>100720 - Disclosure - Stockholders Equity - Summary of Weighted Average Assumptions Used in Valuation of Stock Option Awards Granted under Black- Scholes Model (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.cvent.com/20211231/taxonomy/role/Role_DisclosureStockholdersEquitySummaryOfStockBasedCompensationActivityRollforwardDetails" id="Role_DisclosureStockholdersEquitySummaryOfStockBasedCompensationActivityRollforwardDetails">
+        <link:definition>100730 - Disclosure - Stockholders Equity - Summary of Stock-based Compensation Activity Rollforward (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.cvent.com/20211231/taxonomy/role/Role_DisclosureStockholdersEquitySummaryOfStockBasedCompensationExpenseIncludingExpenseWithLiabilityClassifiedAwardsDetails" id="Role_DisclosureStockholdersEquitySummaryOfStockBasedCompensationExpenseIncludingExpenseWithLiabilityClassifiedAwardsDetails">
+        <link:definition>100740 - Disclosure - Stockholders Equity - Summary of Stock-based Compensation Expense Including Expense with Liability Classified Awards (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.cvent.com/20211231/taxonomy/role/Role_DisclosureRetirementPlansAdditionalInformationDetails" id="Role_DisclosureRetirementPlansAdditionalInformationDetails">
+        <link:definition>100750 - Disclosure - Retirement Plans - Additional Information (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.cvent.com/20211231/taxonomy/role/Role_DisclosureDebtScheduleOfOutstandingPrincipalAmountAndUnamortizedDebtIssuanceCostsNetDetails" id="Role_DisclosureDebtScheduleOfOutstandingPrincipalAmountAndUnamortizedDebtIssuanceCostsNetDetails">
+        <link:definition>100760 - Disclosure - Debt - Schedule of Outstanding Principal Amount and Unamortized Debt Issuance Costs,Net (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.cvent.com/20211231/taxonomy/role/Role_DisclosureDebtAdditionalInformationDetails" id="Role_DisclosureDebtAdditionalInformationDetails">
+        <link:definition>100770 - Disclosure - Debt - Additional Information (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.cvent.com/20211231/taxonomy/role/Role_DisclosureDebtScheduleOfFutureMinimumPrincipalPaymentsUnderDebtAgreementDetails" id="Role_DisclosureDebtScheduleOfFutureMinimumPrincipalPaymentsUnderDebtAgreementDetails">
+        <link:definition>100780 - Disclosure - Debt - Schedule of Future Minimum Principal Payments under Debt Agreement (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.cvent.com/20211231/taxonomy/role/Role_DisclosureLeasesAdditionalInformationDetail" id="Role_DisclosureLeasesAdditionalInformationDetail">
+        <link:definition>100790 - Disclosure - Leases - Additional Information (Detail)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.cvent.com/20211231/taxonomy/role/Role_DisclosureLeasesSummaryOfLeaseAssetsAndLiabilitiesDetail" id="Role_DisclosureLeasesSummaryOfLeaseAssetsAndLiabilitiesDetail">
+        <link:definition>100800 - Disclosure - Leases - Summary of Lease Assets and Liabilities (Detail)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.cvent.com/20211231/taxonomy/role/Role_DisclosureLeasesComponentsOfLeaseExpenseDetail" id="Role_DisclosureLeasesComponentsOfLeaseExpenseDetail">
+        <link:definition>100810 - Disclosure - Leases - Components of Lease Expense (Detail)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.cvent.com/20211231/taxonomy/role/Role_DisclosureLeasesOtherInformationRelatedToLeasesDetails" id="Role_DisclosureLeasesOtherInformationRelatedToLeasesDetails">
+        <link:definition>100820 - Disclosure - Leases - Other Information Related to Leases (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.cvent.com/20211231/taxonomy/role/Role_DisclosureLeasesSummaryOfFutureMinimumPaymentsDetail" id="Role_DisclosureLeasesSummaryOfFutureMinimumPaymentsDetail">
+        <link:definition>100830 - Disclosure - Leases - Summary of Future Minimum Payments (Detail)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.cvent.com/20211231/taxonomy/role/Role_DisclosureCommitmentsAndContingenciesAdditionalInformationDetails" id="Role_DisclosureCommitmentsAndContingenciesAdditionalInformationDetails">
+        <link:definition>100840 - Disclosure - Commitments and Contingencies - Additional Information (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.cvent.com/20211231/taxonomy/role/Role_DisclosureRelatedPartyTransactionsAdditionalInformationDetails" id="Role_DisclosureRelatedPartyTransactionsAdditionalInformationDetails">
+        <link:definition>100850 - Disclosure - Related-Party Transactions - Additional Information (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.cvent.com/20211231/taxonomy/role/Role_DisclosureCondensedFinancialInformationParentCompanyOnlyCondensedBalanceSheetsDetails" id="Role_DisclosureCondensedFinancialInformationParentCompanyOnlyCondensedBalanceSheetsDetails">
+        <link:definition>100860 - Disclosure - Condensed Financial Information (Parent Company Only) - Condensed Balance Sheets (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.cvent.com/20211231/taxonomy/role/Role_DisclosureCondensedFinancialInformationParentCompanyOnlyCondensedBalanceSheetsParentheticalDetails" id="Role_DisclosureCondensedFinancialInformationParentCompanyOnlyCondensedBalanceSheetsParentheticalDetails">
+        <link:definition>100870 - Disclosure - Condensed Financial Information (Parent Company Only) - Condensed Balance Sheets (Parenthetical) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.cvent.com/20211231/taxonomy/role/Role_DisclosureCondensedFinancialInformationParentCompanyOnlyCondensedStatementsOfOperationsAndComprehensiveLossDetails" id="Role_DisclosureCondensedFinancialInformationParentCompanyOnlyCondensedStatementsOfOperationsAndComprehensiveLossDetails">
+        <link:definition>100880 - Disclosure - Condensed Financial Information (Parent Company Only) - Condensed Statements of Operations and Comprehensive Loss (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.cvent.com/20211231/taxonomy/role/Role_DisclosureCondensedFinancialInformationParentCompanyOnlyAdditionalInformationDetails" id="Role_DisclosureCondensedFinancialInformationParentCompanyOnlyAdditionalInformationDetails">
+        <link:definition>100890 - Disclosure - Condensed Financial Information (Parent Company Only) - Additional Information (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+    </xsd:appinfo>
+  </xsd:annotation>
+  <xsd:element id="cvt_ReverseRecapitalizationTransactionAbstract" name="ReverseRecapitalizationTransactionAbstract" type="xbrli:stringItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="cvt_AccruedTransactionCostsAndAdvisorFees" name="AccruedTransactionCostsAndAdvisorFees" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="instant" nillable="true" abstract="false" xbrli:balance="credit"/>
+  <xsd:element id="cvt_AreaOfLeasedSpaceOptionExercisedForEarlyTermination" name="AreaOfLeasedSpaceOptionExercisedForEarlyTermination" type="dtr-types:areaItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false"/>
+  <xsd:element id="cvt_AverageHistoricalCustomerLife" name="AverageHistoricalCustomerLife" type="xbrli:durationItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false"/>
+  <xsd:element id="cvt_BasisDifferenceInFixedAssets" name="BasisDifferenceInFixedAssets" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="instant" nillable="true" abstract="false" xbrli:balance="debit"/>
+  <xsd:element id="cvt_BusinessCombinationReverseRecapitalizationTransactionShares" name="BusinessCombinationReverseRecapitalizationTransactionShares" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false"/>
+  <xsd:element id="cvt_CarryingValueOfNetAssetsDivested" name="CarryingValueOfNetAssetsDivested" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false" xbrli:balance="debit"/>
+  <xsd:element id="cvt_CashExpectedToBeReceivedPostClosing" name="CashExpectedToBeReceivedPostClosing" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false" xbrli:balance="credit"/>
+  <xsd:element id="cvt_CashReceivedForDispositionAtClosing" name="CashReceivedForDispositionAtClosing" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false" xbrli:balance="credit"/>
+  <xsd:element id="cvt_CliffVestYear" name="CliffVestYear" type="xbrli:durationItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false"/>
+  <xsd:element id="cvt_ClosingNetWorkingCapital" name="ClosingNetWorkingCapital" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false" xbrli:balance="credit"/>
+  <xsd:element id="cvt_CommitmentAmountRequiredForLeverageRatio" name="CommitmentAmountRequiredForLeverageRatio" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="instant" nillable="true" abstract="false" xbrli:balance="debit"/>
+  <xsd:element id="cvt_CommonStockNetOfRedemption" name="CommonStockNetOfRedemption" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" xbrli:periodType="instant" nillable="true" abstract="false"/>
+  <xsd:element id="cvt_CommonStockSharesAuthorized1" name="CommonStockSharesAuthorized1" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" xbrli:periodType="instant" nillable="true" abstract="false"/>
+  <xsd:element id="cvt_CommonStockSharesReservedForFutureIssuancePeriod" name="CommonStockSharesReservedForFutureIssuancePeriod" type="xbrli:durationItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false"/>
+  <xsd:element id="cvt_ConsultingFees" name="ConsultingFees" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false" xbrli:balance="debit"/>
+  <xsd:element id="cvt_ConversionOfSharesDueToMergerRecapitalization" name="ConversionOfSharesDueToMergerRecapitalization" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" xbrli:periodType="instant" nillable="true" abstract="false"/>
+  <xsd:element id="cvt_ConversionOfSharesDueToMergerRecapitalizationAmount" name="ConversionOfSharesDueToMergerRecapitalizationAmount" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="instant" nillable="true" abstract="false" xbrli:balance="credit"/>
+  <xsd:element id="cvt_DeferredEmployerPortionTaxesForPayrollPaid" name="DeferredEmployerPortionTaxesForPayrollPaid" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false" xbrli:balance="debit"/>
+  <xsd:element id="cvt_DeferredTaxAssetsCapitalizedSoftware" name="DeferredTaxAssetsCapitalizedSoftware" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="instant" nillable="true" abstract="false" xbrli:balance="debit"/>
+  <xsd:element id="cvt_DeferredTaxAssetsOperatingLossCarryforwardsExpirationYear" name="DeferredTaxAssetsOperatingLossCarryforwardsExpirationYear" type="xbrli:gYearItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false"/>
+  <xsd:element id="cvt_DeferredTaxAssetsRightOfUseAsset" name="DeferredTaxAssetsRightOfUseAsset" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="instant" nillable="true" abstract="false" xbrli:balance="debit"/>
+  <xsd:element id="cvt_DeferredTaxAssetsTaxCreditCarryforwardsForeignAndOther" name="DeferredTaxAssetsTaxCreditCarryforwardsForeignAndOther" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="instant" nillable="true" abstract="false" xbrli:balance="debit"/>
+  <xsd:element id="cvt_DeferredTaxAssetsValuationAllowanceRelatedToNetOperatingLossCarryforwards" name="DeferredTaxAssetsValuationAllowanceRelatedToNetOperatingLossCarryforwards" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="instant" nillable="true" abstract="false" xbrli:balance="credit"/>
+  <xsd:element id="cvt_DeferredTaxLiabilitiesAccruedExpenses" name="DeferredTaxLiabilitiesAccruedExpenses" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="instant" nillable="true" abstract="false" xbrli:balance="credit"/>
+  <xsd:element id="cvt_DeferredTaxLiabilitiesFixedAssets" name="DeferredTaxLiabilitiesFixedAssets" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="instant" nillable="true" abstract="false" xbrli:balance="credit"/>
+  <xsd:element id="cvt_DueToSubsidiaries" name="DueToSubsidiaries" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="instant" nillable="true" abstract="false" xbrli:balance="credit"/>
+  <xsd:element id="cvt_EffectiveIncomeTaxRateReconciliationGlobalIntangibleLowTaxedIncomeGILTI" name="EffectiveIncomeTaxRateReconciliationGlobalIntangibleLowTaxedIncomeGILTI" type="dtr-types:percentItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false"/>
+  <xsd:element id="cvt_EmployeeCoveredAmountGivenByEmployer" name="EmployeeCoveredAmountGivenByEmployer" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false" xbrli:balance="debit"/>
+  <xsd:element id="cvt_EmployeeStockPurchasePlanDescription" name="EmployeeStockPurchasePlanDescription" type="xbrli:stringItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false"/>
+  <xsd:element id="cvt_ExcessCashFlowPayment" name="ExcessCashFlowPayment" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false" xbrli:balance="debit"/>
+  <xsd:element id="cvt_ExcessCashFlowRecognized" name="ExcessCashFlowRecognized" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false" xbrli:balance="credit"/>
+  <xsd:element id="cvt_ExcessOfPurchaseConsideration" name="ExcessOfPurchaseConsideration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="instant" nillable="true" abstract="false" xbrli:balance="debit"/>
+  <xsd:element id="cvt_ExercisableForSharesOfTheCommonStock" name="ExercisableForSharesOfTheCommonStock" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" xbrli:periodType="instant" nillable="true" abstract="false"/>
+  <xsd:element id="cvt_ExistingStockholdersPriorToTheFirstEffectiveTimeReceived" name="ExistingStockholdersPriorToTheFirstEffectiveTimeReceived" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" xbrli:periodType="instant" nillable="true" abstract="false"/>
+  <xsd:element id="cvt_FinancialInstrumentOriginalMaturityDescription" name="FinancialInstrumentOriginalMaturityDescription" type="xbrli:stringItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false"/>
+  <xsd:element id="cvt_FirstLienLeverageRatio" name="FirstLienLeverageRatio" type="xbrli:pureItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false"/>
+  <xsd:element id="cvt_FirstLienLoanBalance" name="FirstLienLoanBalance" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="instant" nillable="true" abstract="false" xbrli:balance="credit"/>
+  <xsd:element id="cvt_IncomeTaxExaminationDurationOfFederalStatuteOfLimitations" name="IncomeTaxExaminationDurationOfFederalStatuteOfLimitations" type="xbrli:durationItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false"/>
+  <xsd:element id="cvt_IncreaseDecreaseInAccountsPayableAccruedExpensesAndOtherLiabilities" name="IncreaseDecreaseInAccountsPayableAccruedExpensesAndOtherLiabilities" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false" xbrli:balance="debit"/>
+  <xsd:element id="cvt_IncreaseDecreaseInCapitalizedCommissionsNet" name="IncreaseDecreaseInCapitalizedCommissionsNet" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false" xbrli:balance="debit"/>
+  <xsd:element id="cvt_LesseeOperatingLeaseEarlyTerminationFee" name="LesseeOperatingLeaseEarlyTerminationFee" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false" xbrli:balance="debit"/>
+  <xsd:element id="cvt_MinimumPercentageOfSaleOrTransferOfEquityInterestUnderQualifyingEvent" name="MinimumPercentageOfSaleOrTransferOfEquityInterestUnderQualifyingEvent" type="dtr-types:percentItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false"/>
+  <xsd:element id="cvt_NetCashContributionsFromReverseRecapitalizationTransaction" name="NetCashContributionsFromReverseRecapitalizationTransaction" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="instant" nillable="true" abstract="false" xbrli:balance="credit"/>
+  <xsd:element id="cvt_NetProceedsFromReverseRecapitalization" name="NetProceedsFromReverseRecapitalization" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false" xbrli:balance="debit"/>
+  <xsd:element id="cvt_NetReverseRecapitalizationTransaction" name="NetReverseRecapitalizationTransaction" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="instant" nillable="true" abstract="false" xbrli:balance="credit"/>
+  <xsd:element id="cvt_NonCashNetAssetsAssumedFromDragoneer" name="NonCashNetAssetsAssumedFromDragoneer" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="instant" nillable="true" abstract="false" xbrli:balance="debit"/>
+  <xsd:element id="cvt_NonMonetaryTransactionExpense" name="NonMonetaryTransactionExpense" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false" xbrli:balance="debit"/>
+  <xsd:element id="cvt_NumberOfAuthorizedShares" name="NumberOfAuthorizedShares" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" xbrli:periodType="instant" nillable="true" abstract="false"/>
+  <xsd:element id="cvt_NumberOfRevenueSources" name="NumberOfRevenueSources" type="xbrli:integerItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false"/>
+  <xsd:element id="cvt_NumberOfStockOptionsExchangedDuringBusinessCombination" name="NumberOfStockOptionsExchangedDuringBusinessCombination" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false"/>
+  <xsd:element id="cvt_OptionsToPurchase" name="OptionsToPurchase" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" xbrli:periodType="instant" nillable="true" abstract="false"/>
+  <xsd:element id="cvt_OtherRelatedPartiesThatHavePositionInFirstLienLoan" name="OtherRelatedPartiesThatHavePositionInFirstLienLoan" type="xbrli:integerItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false"/>
+  <xsd:element id="cvt_PercentageOfPayrollTaxesToBeRemitted" name="PercentageOfPayrollTaxesToBeRemitted" type="dtr-types:percentItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false"/>
+  <xsd:element id="cvt_PercentageOfPayrollTaxesToPayOfDeferral" name="PercentageOfPayrollTaxesToPayOfDeferral" type="dtr-types:percentItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false"/>
+  <xsd:element id="cvt_PercentageOfRevenueRecognizedAtAPointInTime" name="PercentageOfRevenueRecognizedAtAPointInTime" type="dtr-types:percentItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false"/>
+  <xsd:element id="cvt_PercentageOfRevenueRecognizedOverTime" name="PercentageOfRevenueRecognizedOverTime" type="dtr-types:percentItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false"/>
+  <xsd:element id="cvt_PercentageOfRevolvingCreditFacilityComplianceMaximum" name="PercentageOfRevolvingCreditFacilityComplianceMaximum" type="dtr-types:percentItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false"/>
+  <xsd:element id="cvt_PercentageOfSharesOutstandingReservedForFutureIssuance" name="PercentageOfSharesOutstandingReservedForFutureIssuance" type="dtr-types:percentItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false"/>
+  <xsd:element id="cvt_ProceedsFromRecapitalization" name="ProceedsFromRecapitalization" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false" xbrli:balance="credit"/>
+  <xsd:element id="cvt_PropertyPlantAndEquipmentPercentage" name="PropertyPlantAndEquipmentPercentage" type="dtr-types:percentItemType" substitutionGroup="xbrli:item" xbrli:periodType="instant" nillable="true" abstract="false"/>
+  <xsd:element id="cvt_RetirementAge" name="RetirementAge" type="xbrli:durationItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false"/>
+  <xsd:element id="cvt_ReturnToProvision" name="ReturnToProvision" type="xbrli:pureItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false"/>
+  <xsd:element id="cvt_ReverseRecapitalizationTransactionShares" name="ReverseRecapitalizationTransactionShares" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" xbrli:periodType="instant" nillable="true" abstract="false"/>
+  <xsd:element id="cvt_RolloverExchangeRate" name="RolloverExchangeRate" type="xbrli:pureItemType" substitutionGroup="xbrli:item" xbrli:periodType="instant" nillable="true" abstract="false"/>
+  <xsd:element id="cvt_SalesAndOtherTaxLiabilitiesCurrent" name="SalesAndOtherTaxLiabilitiesCurrent" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="instant" nillable="true" abstract="false" xbrli:balance="credit"/>
+  <xsd:element id="cvt_ServicePeriodForAfterTerminationBenefits" name="ServicePeriodForAfterTerminationBenefits" type="xbrli:durationItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false"/>
+  <xsd:element id="cvt_ShareBasedCompensationArrangementByShareBasedPaymentAwardEquityInstrumentsOtherThanOptionsGrantDateFairValue" name="ShareBasedCompensationArrangementByShareBasedPaymentAwardEquityInstrumentsOtherThanOptionsGrantDateFairValue" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="instant" nillable="true" abstract="false" xbrli:balance="debit"/>
+  <xsd:element id="cvt_ShareBasedCompensationArrangementByShareBasedPaymentAwardOptionsGrantsInPeriodFairValue" name="ShareBasedCompensationArrangementByShareBasedPaymentAwardOptionsGrantsInPeriodFairValue" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false" xbrli:balance="credit"/>
+  <xsd:element id="cvt_ShareBasedPaymentAwardStockOptionsConverted" name="ShareBasedPaymentAwardStockOptionsConverted" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false"/>
+  <xsd:element id="cvt_SharesHeldByFirm" name="SharesHeldByFirm" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" xbrli:periodType="instant" nillable="true" abstract="false"/>
+  <xsd:element id="cvt_StockOptionsGrantingConditionDescription" name="StockOptionsGrantingConditionDescription" type="xbrli:stringItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false"/>
+  <xsd:element id="cvt_TotalNumberOfAuthorizedShares" name="TotalNumberOfAuthorizedShares" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" xbrli:periodType="instant" nillable="true" abstract="false"/>
+  <xsd:element id="cvt_TotalSharesOfCommonStockImmediatelyAfterReverseRecapitalizationTransaction" name="TotalSharesOfCommonStockImmediatelyAfterReverseRecapitalizationTransaction" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" xbrli:periodType="instant" nillable="true" abstract="false"/>
+  <xsd:element id="cvt_TransactionCostsAndAdvisoryFees" name="TransactionCostsAndAdvisoryFees" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="instant" nillable="true" abstract="false" xbrli:balance="debit"/>
+  <xsd:element id="cvt_ValuationAllowanceOnNetOperatingLossCarryforwardsAndOtherDeferredTaxAssets" name="ValuationAllowanceOnNetOperatingLossCarryforwardsAndOtherDeferredTaxAssets" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="instant" nillable="true" abstract="false" xbrli:balance="credit"/>
+  <xsd:element id="cvt_AccountingPoliciesLineItems" name="AccountingPoliciesLineItems" type="xbrli:stringItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="cvt_CapitalizedComputerSoftwareNetLineItems" name="CapitalizedComputerSoftwareNetLineItems" type="xbrli:stringItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="cvt_GoodwillAndIntangibleAssetsLineItems" name="GoodwillAndIntangibleAssetsLineItems" type="xbrli:stringItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="cvt_IncomeTaxesLineItems" name="IncomeTaxesLineItems" type="xbrli:stringItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="cvt_AffiliateOfTheSponsorMember" name="AffiliateOfTheSponsorMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="cvt_AmendedAndRestatedArticlesOfIncorporationMember" name="AmendedAndRestatedArticlesOfIncorporationMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="cvt_ClosingNetWorkingCapitalMember" name="ClosingNetWorkingCapitalMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="cvt_ComputerEquipmentAndPurchasedSoftwareMember" name="ComputerEquipmentAndPurchasedSoftwareMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="cvt_CostOfRevenueMember" name="CostOfRevenueMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="cvt_DoubleDutchIncMember" name="DoubleDutchIncMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="cvt_DragoneerFundingIiLlcMember" name="DragoneerFundingIiLlcMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="cvt_DragoneerMember" name="DragoneerMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="cvt_EmployeeStockPurchasePlanMember" name="EmployeeStockPurchasePlanMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="cvt_EventCloudSubscriptionBasedSolutionsMember" name="EventCloudSubscriptionBasedSolutionsMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="cvt_FederalInsuranceContributionsActMember" name="FederalInsuranceContributionsActMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="cvt_FiniteLivedMember" name="FiniteLivedMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="cvt_ForwardPurchaseAgreementMember" name="ForwardPurchaseAgreementMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="cvt_FourHundredAndOneKRetirementSavingsPlanMember" name="FourHundredAndOneKRetirementSavingsPlanMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="cvt_FutureCashConsiderationMember" name="FutureCashConsiderationMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="cvt_HospitalityCloudMarketingAndSubscriptionBasedSolutionsMember" name="HospitalityCloudMarketingAndSubscriptionBasedSolutionsMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="cvt_IndiaGratuityPlanMember" name="IndiaGratuityPlanMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="cvt_IntangibleAssetsSubjectToAmortizationMember" name="IntangibleAssetsSubjectToAmortizationMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="cvt_KapowEventsMember" name="KapowEventsMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="cvt_LegacyCventMember" name="LegacyCventMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="cvt_NonNorthAmericaMember" name="NonNorthAmericaMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="cvt_OmnibusIncentivePlanMember" name="OmnibusIncentivePlanMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="cvt_OnOrBeforeDecemberThirtyOneTwoThousandTwentyTwoMember" name="OnOrBeforeDecemberThirtyOneTwoThousandTwentyTwoMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="cvt_OutsideAmericaMember" name="OutsideAmericaMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="cvt_OutsideNorthAmericaMember" name="OutsideNorthAmericaMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="cvt_PipeFinancingMember" name="PipeFinancingMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="cvt_RentableOnsiteSolutionsEquipmentMember" name="RentableOnsiteSolutionsEquipmentMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="cvt_SeniorLoanMember" name="SeniorLoanMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="cvt_ShofloLLCMember" name="ShofloLLCMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="cvt_SubjectToAmortizationMember" name="SubjectToAmortizationMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="cvt_SubscriptionAgreementsMember" name="SubscriptionAgreementsMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="cvt_SummitSyncIncMember" name="SummitSyncIncMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="cvt_TwoThousandSeventeenLongTermIncentivePlanMember" name="TwoThousandSeventeenLongTermIncentivePlanMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="cvt_TwoThousandSeventeenOtherEquityAwardsMember" name="TwoThousandSeventeenOtherEquityAwardsMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="cvt_TwoThousandSeventeenStockOptionPlanMember" name="TwoThousandSeventeenStockOptionPlanMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="cvt_TwoThousandTwentyOneEquityIncentivePlanMember" name="TwoThousandTwentyOneEquityIncentivePlanMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="cvt_UpfrontCashConsiderationMember" name="UpfrontCashConsiderationMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="cvt_VistaCreditPartnersMember" name="VistaCreditPartnersMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="cvt_WeddingSpotLLCMember" name="WeddingSpotLLCMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="cvt_AccountingPoliciesTable" name="AccountingPoliciesTable" type="xbrli:stringItemType" substitutionGroup="xbrldt:hypercubeItem" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="cvt_CapitalizedComputerSoftwareNetTable" name="CapitalizedComputerSoftwareNetTable" type="xbrli:stringItemType" substitutionGroup="xbrldt:hypercubeItem" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="cvt_GoodwillAndIntangibleAssetsTable" name="GoodwillAndIntangibleAssetsTable" type="xbrli:stringItemType" substitutionGroup="xbrldt:hypercubeItem" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="cvt_IncomeTaxesTable" name="IncomeTaxesTable" type="xbrli:stringItemType" substitutionGroup="xbrldt:hypercubeItem" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="cvt_CapitalizedSoftwareDevelopmentCostsTableTextBlock" name="CapitalizedSoftwareDevelopmentCostsTableTextBlock" type="dtr-types:textBlockItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false"/>
+  <xsd:element id="cvt_DebtIssuanceCostsPolicyTextBlock" name="DebtIssuanceCostsPolicyTextBlock" type="dtr-types:textBlockItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false"/>
+  <xsd:element id="cvt_DeferredRevenuePolicyTextBlock" name="DeferredRevenuePolicyTextBlock" type="dtr-types:textBlockItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false"/>
+  <xsd:element id="cvt_DisaggregationOfRevenueByGeographicRegionTableTextBlock" name="DisaggregationOfRevenueByGeographicRegionTableTextBlock" type="dtr-types:textBlockItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false"/>
+  <xsd:element id="cvt_DisaggregationOfRevenueByMajorBusinessActivitiesTableTextBlock" name="DisaggregationOfRevenueByMajorBusinessActivitiesTableTextBlock" type="dtr-types:textBlockItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false"/>
+  <xsd:element id="cvt_NonMonetaryTransactionsPolicyTextBlock" name="NonMonetaryTransactionsPolicyTextBlock" type="dtr-types:textBlockItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false"/>
+  <xsd:element id="cvt_ReverseRecapitalizationTransactionDisclosureTextBlock" name="ReverseRecapitalizationTransactionDisclosureTextBlock" type="dtr-types:textBlockItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false"/>
+  <xsd:element id="cvt_ScheduleOfCashAndCashEquivalentsAndRestrictedCashTableTextBlock" name="ScheduleOfCashAndCashEquivalentsAndRestrictedCashTableTextBlock" type="dtr-types:textBlockItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false"/>
+  <xsd:element id="cvt_ScheduleOfLeaseAssetsAndLiabilitiesTableTextBlock" name="ScheduleOfLeaseAssetsAndLiabilitiesTableTextBlock" type="dtr-types:textBlockItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false"/>
+  <xsd:element id="cvt_ScheduleOfNumberOfSharesOfCommonStockIssuedAfterConsummationOfTheReverseRecapitalizationTransactionTableTextBlock" name="ScheduleOfNumberOfSharesOfCommonStockIssuedAfterConsummationOfTheReverseRecapitalizationTransactionTableTextBlock" type="dtr-types:textBlockItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false"/>
+  <xsd:element id="cvt_ScheduleOfOtherInformationRelatedToLeasesTableTextBlock" name="ScheduleOfOtherInformationRelatedToLeasesTableTextBlock" type="dtr-types:textBlockItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false"/>
+  <xsd:element id="cvt_ScheduleOfTransactionToTheConsolidatedStatementOfCashFlowsAndTheConsolidatedStatementOfChangesInStockholdersEquityTableTextBlock" name="ScheduleOfTransactionToTheConsolidatedStatementOfCashFlowsAndTheConsolidatedStatementOfChangesInStockholdersEquityTableTextBlock" type="dtr-types:textBlockItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false"/>
+</xsd:schema>

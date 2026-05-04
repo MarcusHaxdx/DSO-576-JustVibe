@@ -1,0 +1,523 @@
+<?xml version="1.0" encoding="us-ascii" standalone="yes"?>
+<!--XBRL Document Created with XBRLMaster-->
+<!--Version: 2.3.08-->
+<!--Based on XBRL 2.1-->
+<!--Date of creation: 03/08/2022-->
+<!--Software architectural design and coding: Dipendra K. Singh-->
+<!--Copyright (c) 2022 I-NET Business Solutions, Inc. All Rights Reserved.-->
+<schema xmlns:xl="http://www.xbrl.org/2003/XLink" xmlns:ref="http://www.xbrl.org/2006/ref" xmlns:currency="http://xbrl.sec.gov/currency/2021" xmlns:us-gaap-att="http://fasb.org/us-gaap/attributes" xmlns:sic="http://xbrl.sec.gov/sic/2021" xmlns:exch="http://xbrl.sec.gov/exch/2021" xmlns:invest="http://xbrl.sec.gov/invest/2013-01-31" xmlns:negated="http://www.xbrl.org/2009/role/negated" xmlns:naics="http://xbrl.sec.gov/naics/2021" xmlns:us-types="http://fasb.org/us-types/2021-01-31" xmlns:stpr="http://xbrl.sec.gov/stpr/2021" xmlns="http://www.w3.org/2001/XMLSchema" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:xbrli="http://www.xbrl.org/2003/instance" xmlns:xbrldt="http://xbrl.org/2005/xbrldt" xmlns:xbrldi="http://xbrl.org/2006/xbrldi" xmlns:country="http://xbrl.sec.gov/country/2021" xmlns:utr="http://www.xbrl.org/2009/utr" xmlns:srt-types="http://fasb.org/srt-types/2021-01-31" xmlns:dtr-types="http://www.xbrl.org/dtr/type/2020-01-21" xmlns:srt-roles="http://fasb.org/srt-roles/2021-01-31" xmlns:dei="http://xbrl.sec.gov/dei/2021q4" xmlns:num="http://www.xbrl.org/dtr/type/numeric" xmlns:nonnum="http://www.xbrl.org/dtr/type/non-numeric" xmlns:srt="http://fasb.org/srt/2021-01-31" xmlns:us-gaap="http://fasb.org/us-gaap/2021-01-31" xmlns:gmgi="http://gmgi.com/20220131" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://gmgi.com/20220131">
+  <annotation>
+    <appinfo>
+      <link:roleType roleURI="http://gmgi.com/role/Cover" id="Cover">
+        <link:definition>000001 - Document - Cover</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://gmgi.com/role/ConsolidatedBalanceSheets" id="ConsolidatedBalanceSheets">
+        <link:definition>000002 - Statement - Consolidated Balance Sheets</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://gmgi.com/role/ConsolidatedBalanceSheetsParenthetical" id="ConsolidatedBalanceSheetsParenthetical">
+        <link:definition>000003 - Statement - Consolidated Balance Sheets (Parenthetical)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://gmgi.com/role/ConsolidatedStatementsOfOperationsAndComprehensiveIncomeUnaudited" id="ConsolidatedStatementsOfOperationsAndComprehensiveIncomeUnaudited">
+        <link:definition>000004 - Statement - Consolidated Statements of Operations and Comprehensive Income (Unaudited)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://gmgi.com/role/ConsolidatedStatementOfShareholdersEquityUnaudited" id="ConsolidatedStatementOfShareholdersEquityUnaudited">
+        <link:definition>000005 - Statement - Consolidated Statement of Shareholders Equity (Unaudited)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://gmgi.com/role/ConsolidatedStatementsOfCashFlowUnaudited" id="ConsolidatedStatementsOfCashFlowUnaudited">
+        <link:definition>000006 - Statement - Consolidated Statements of Cash Flow (Unaudited)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://gmgi.com/role/BasisOfPresentationAndAccountingPolicies" id="BasisOfPresentationAndAccountingPolicies">
+        <link:definition>000007 - Disclosure - Basis of Presentation and Accounting Policies</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://gmgi.com/role/AccountsReceivableNet" id="AccountsReceivableNet">
+        <link:definition>000008 - Disclosure - Accounts Receivable, Net</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://gmgi.com/role/AccountsReceivableRelatedParty" id="AccountsReceivableRelatedParty">
+        <link:definition>000009 - Disclosure - Accounts Receivable - Related Party</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://gmgi.com/role/PrepaidExpenses" id="PrepaidExpenses">
+        <link:definition>000010 - Disclosure - Prepaid Expenses</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://gmgi.com/role/ShortTermDeposits" id="ShortTermDeposits">
+        <link:definition>000011 - Disclosure - Short-term Deposits</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://gmgi.com/role/Acquisition" id="Acquisition">
+        <link:definition>000012 - Disclosure - Acquisition</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://gmgi.com/role/IntangibleAssetsSoftwarePlatform" id="IntangibleAssetsSoftwarePlatform">
+        <link:definition>000013 - Disclosure - Intangible Assets - Software Platform</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://gmgi.com/role/AccountsPayableRelatedParties" id="AccountsPayableRelatedParties">
+        <link:definition>000014 - Disclosure - Accounts Payable - Related Parties</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://gmgi.com/role/DeferredRevenues" id="DeferredRevenues">
+        <link:definition>000015 - Disclosure - Deferred Revenues</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://gmgi.com/role/CustomerDeposits" id="CustomerDeposits">
+        <link:definition>000016 - Disclosure - Customer Deposits</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://gmgi.com/role/RelatedPartyTransactions" id="RelatedPartyTransactions">
+        <link:definition>000017 - Disclosure - Related Party Transactions</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://gmgi.com/role/Equity" id="Equity">
+        <link:definition>000018 - Disclosure - Equity</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://gmgi.com/role/SegmentReportingAndGeographicInformation" id="SegmentReportingAndGeographicInformation">
+        <link:definition>000019 - Disclosure - SEGMENT REPORTING AND GEOGRAPHIC INFORMATION</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://gmgi.com/role/SubsequentEvents" id="SubsequentEvents">
+        <link:definition>000020 - Disclosure - Subsequent Events</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://gmgi.com/role/SummaryOfAccountingPoliciesPolicies" id="SummaryOfAccountingPoliciesPolicies">
+        <link:definition>000021 - Disclosure - SUMMARY OF ACCOUNTING POLICIES (Policies)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://gmgi.com/role/SummaryOfAccountingPoliciesTables" id="SummaryOfAccountingPoliciesTables">
+        <link:definition>000022 - Disclosure - SUMMARY OF ACCOUNTING POLICIES (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://gmgi.com/role/AcquisitionTables" id="AcquisitionTables">
+        <link:definition>000023 - Disclosure - Acquisition (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://gmgi.com/role/EquityTables" id="EquityTables">
+        <link:definition>000024 - Disclosure - Equity (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://gmgi.com/role/SegmentReportingAndGeographicInformationTables" id="SegmentReportingAndGeographicInformationTables">
+        <link:definition>000025 - Disclosure - Segment Reporting And Geographic Information (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://gmgi.com/role/BasisOfPresentationAndAccountingPoliciesDetails" id="BasisOfPresentationAndAccountingPoliciesDetails">
+        <link:definition>000026 - Disclosure - BASIS OF PRESENTATION AND ACCOUNTING POLICIES (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://gmgi.com/role/BasisOfPresentationAndAccountingPoliciesDetailsNarrative" id="BasisOfPresentationAndAccountingPoliciesDetailsNarrative">
+        <link:definition>000027 - Disclosure - BASIS OF PRESENTATION AND ACCOUNTING POLICIES (Details Narrative)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://gmgi.com/role/AccountsReceivableNetDetailsNarrative" id="AccountsReceivableNetDetailsNarrative">
+        <link:definition>000028 - Disclosure - ACCOUNTS RECEIVABLE NET (Details Narrative)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://gmgi.com/role/AccountsReceivableRelatedPartyDetailsNarrative" id="AccountsReceivableRelatedPartyDetailsNarrative">
+        <link:definition>000029 - Disclosure - ACCOUNTS RECEIVABLE RELATED PARTY (Details Narrative)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://gmgi.com/role/PrepaidExpensesDetailsNarrative" id="PrepaidExpensesDetailsNarrative">
+        <link:definition>000030 - Disclosure - PREPAID EXPENSES (Details Narrative)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://gmgi.com/role/ShorttermDepositsDetailsNarrative" id="ShorttermDepositsDetailsNarrative">
+        <link:definition>000031 - Disclosure - SHORTTERM DEPOSITS (Details Narrative)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://gmgi.com/role/AcquisitionDetails" id="AcquisitionDetails">
+        <link:definition>000032 - Disclosure - ACQUISITION (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://gmgi.com/role/AcquisitionDetails1" id="AcquisitionDetails1">
+        <link:definition>000033 - Disclosure - ACQUISITION (Details 1)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://gmgi.com/role/AcquisitionDetails2" id="AcquisitionDetails2">
+        <link:definition>000034 - Disclosure - ACQUISITION (Details 2)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://gmgi.com/role/AcquisitionDetailsNarrative" id="AcquisitionDetailsNarrative">
+        <link:definition>000035 - Disclosure - ACQUISITION (Details Narrative)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://gmgi.com/role/IntangibleAssetsSoftwarePlatformWebsiteDevelopmentCostsTrademarksAndNonCompeteAgreementsDetailsNarrative" id="IntangibleAssetsSoftwarePlatformWebsiteDevelopmentCostsTrademarksAndNonCompeteAgreementsDetailsNarrative">
+        <link:definition>000036 - Disclosure - INTANGIBLE ASSETS SOFTWARE PLATFORM, WEBSITE DEVELOPMENT COSTS, TRADEMARKS AND NON-COMPETE AGREEMENTS (Details Narrative)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://gmgi.com/role/AccountsPayableRelatedPartiesDetailsNarrative" id="AccountsPayableRelatedPartiesDetailsNarrative">
+        <link:definition>000037 - Disclosure - ACCOUNTS PAYABLE - RELATED PARTIES (Details Narrative)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://gmgi.com/role/DeferredRevenuesDetailsNarrative" id="DeferredRevenuesDetailsNarrative">
+        <link:definition>000038 - Disclosure - DEFERRED REVENUES (Details Narrative)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://gmgi.com/role/CustomerDepositDetailsNarrative" id="CustomerDepositDetailsNarrative">
+        <link:definition>000039 - Disclosure - CUSTOMER DEPOSIT (Details Narrative)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://gmgi.com/role/RelatedPartyTransactionsDetailsNarrative" id="RelatedPartyTransactionsDetailsNarrative">
+        <link:definition>000040 - Disclosure - RELATED PARTY TRANSACTIONS (Details Narrative)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://gmgi.com/role/EquityDetails" id="EquityDetails">
+        <link:definition>000041 - Disclosure - EQUITY (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://gmgi.com/role/EquityDetailsNarrative" id="EquityDetailsNarrative">
+        <link:definition>000042 - Disclosure - EQUITY (Details Narrative)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://gmgi.com/role/SegmentReportingAndGeographicInformationDetails" id="SegmentReportingAndGeographicInformationDetails">
+        <link:definition>000043 - Disclosure - SEGMENT REPORTING AND GEOGRAPHIC INFORMATION (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://gmgi.com/role/SegmentReportingAndGeographicInformationDetails1" id="SegmentReportingAndGeographicInformationDetails1">
+        <link:definition>000044 - Disclosure - SEGMENT REPORTING AND GEOGRAPHIC INFORMATION (Details 1)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://gmgi.com/role/SegmentReportingAndGeographicInformationDetails2" id="SegmentReportingAndGeographicInformationDetails2">
+        <link:definition>000045 - Disclosure - SEGMENT REPORTING AND GEOGRAPHIC INFORMATION (Details 2)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://gmgi.com/role/SegmentReportingAndGeographicInformationDetails3" id="SegmentReportingAndGeographicInformationDetails3">
+        <link:definition>000046 - Disclosure - SEGMENT REPORTING AND GEOGRAPHIC INFORMATION (Details 3)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://gmgi.com/role/SegmentReportingAndGeographicInformationDetails4" id="SegmentReportingAndGeographicInformationDetails4">
+        <link:definition>000047 - Disclosure - SEGMENT REPORTING AND GEOGRAPHIC INFORMATION (Details 4)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://gmgi.com/role/SegmentReportingAndGeographicInformationDetailsNarrative" id="SegmentReportingAndGeographicInformationDetailsNarrative">
+        <link:definition>000048 - Disclosure - SEGMENT REPORTING AND GEOGRAPHIC INFORMATION (Details Narrative)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://gmgi.com/role/SubsequentEventsDetailsNarrative" id="SubsequentEventsDetailsNarrative">
+        <link:definition>000049 - Disclosure - Subsequent Events (Details Narrative)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:linkbaseRef xlink:type="simple" xlink:href="gmgi-20220131_pre.xml" xlink:role="http://www.xbrl.org/2003/role/presentationLinkbaseRef" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" />
+      <link:linkbaseRef xlink:type="simple" xlink:href="gmgi-20220131_lab.xml" xlink:role="http://www.xbrl.org/2003/role/labelLinkbaseRef" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" />
+      <link:linkbaseRef xlink:type="simple" xlink:href="gmgi-20220131_cal.xml" xlink:role="http://www.xbrl.org/2003/role/calculationLinkbaseRef" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" />
+      <link:linkbaseRef xlink:type="simple" xlink:href="gmgi-20220131_def.xml" xlink:role="http://www.xbrl.org/2003/role/definitionLinkbaseRef" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" />
+    </appinfo>
+  </annotation>
+  <import namespace="http://www.xbrl.org/2003/instance" schemaLocation="http://www.xbrl.org/2003/xbrl-instance-2003-12-31.xsd" />
+  <import namespace="http://www.xbrl.org/2003/linkbase" schemaLocation="http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd" />
+  <import namespace="http://xbrl.org/2005/xbrldt" schemaLocation="http://www.xbrl.org/2005/xbrldt-2005.xsd" />
+  <import namespace="http://xbrl.sec.gov/country/2021" schemaLocation="https://xbrl.sec.gov/country/2021/country-2021.xsd" />
+  <import namespace="http://xbrl.sec.gov/currency/2021" schemaLocation="https://xbrl.sec.gov/currency/2021/currency-2021.xsd" />
+  <import namespace="http://xbrl.sec.gov/dei/2021q4" schemaLocation="https://xbrl.sec.gov/dei/2021q4/dei-2021q4.xsd" />
+  <import namespace="http://www.xbrl.org/dtr/type/non-numeric" schemaLocation="http://www.xbrl.org/dtr/type/nonNumeric-2009-12-16.xsd" />
+  <import namespace="http://www.xbrl.org/dtr/type/numeric" schemaLocation="http://www.xbrl.org/dtr/type/numeric-2009-12-16.xsd" />
+  <import namespace="http://xbrl.sec.gov/exch/2021" schemaLocation="https://xbrl.sec.gov/exch/2021/exch-2021.xsd" />
+  <import namespace="http://www.xbrl.org/2009/arcrole/fact-explanatoryFact" schemaLocation="http://www.xbrl.org/lrr/arcrole/factExplanatory-2009-12-16.xsd" />
+  <import namespace="http://www.xbrl.org/2009/role/negated" schemaLocation="http://www.xbrl.org/lrr/role/negated-2009-12-16.xsd" />
+  <import namespace="http://www.xbrl.org/2009/role/net" schemaLocation="http://www.xbrl.org/lrr/role/net-2009-12-16.xsd" />
+  <import namespace="http://xbrl.sec.gov/naics/2021" schemaLocation="https://xbrl.sec.gov/naics/2021/naics-2021.xsd" />
+  <import namespace="http://xbrl.sec.gov/sic/2021" schemaLocation="https://xbrl.sec.gov/sic/2021/sic-2021.xsd" />
+  <import namespace="http://fasb.org/srt-roles/2021-01-31" schemaLocation="https://xbrl.fasb.org/srt/2021/elts/srt-roles-2021-01-31.xsd" />
+  <import namespace="http://fasb.org/srt-types/2021-01-31" schemaLocation="https://xbrl.fasb.org/srt/2021/elts/srt-types-2021-01-31.xsd" />
+  <import namespace="http://www.xbrl.org/dtr/type/2020-01-21" schemaLocation="https://www.xbrl.org/dtr/type/2020-01-21/types.xsd" />
+  <import namespace="http://xbrl.sec.gov/stpr/2021" schemaLocation="https://xbrl.sec.gov/stpr/2021/stpr-2021.xsd" />
+  <import namespace="http://fasb.org/us-roles/2021-01-31" schemaLocation="https://xbrl.fasb.org/us-gaap/2021/elts/us-roles-2021-01-31.xsd" />
+  <import namespace="http://fasb.org/us-types/2021-01-31" schemaLocation="https://xbrl.fasb.org/us-gaap/2021/elts/us-types-2021-01-31.xsd" />
+  <import namespace="http://fasb.org/srt/2021-01-31" schemaLocation="https://xbrl.fasb.org/srt/2021/elts/srt-2021-01-31.xsd" />
+  <import namespace="http://fasb.org/us-gaap/2021-01-31" schemaLocation="https://xbrl.fasb.org/us-gaap/2021/elts/us-gaap-2021-01-31.xsd" />
+  <element id="gmgi_ShortTermDeposit" name="ShortTermDeposit" nillable="true" xbrli:balance="debit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="gmgi_ConsiderationPayableRelatedParty" name="ConsiderationPayableRelatedParty" nillable="true" xbrli:balance="credit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="gmgi_PreferredStockSharesDesignated" name="PreferredStockSharesDesignated" nillable="true" xbrli:periodType="instant" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" />
+  <element id="gmgi_NetIncomeBeforeTax" name="NetIncomeBeforeTax" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="gmgi_NetIncomeAttributableToGmgi" name="NetIncomeAttributableToGmgi" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="gmgi_NetIncome" name="NetIncome" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="gmgi_ForeignCurrencyTransactionsGainBeforeTax" name="ForeignCurrencyTransactionsGainBeforeTax" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="gmgi_LessNetIncomeAttributableToNonControllingInterest" name="LessNetIncomeAttributableToNonControllingInterest" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="gmgi_ComprehensiveIncomeAttributableToGmgi" name="ComprehensiveIncomeAttributableToGmgi" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="gmgi_FairValueOfSharesIssuedForServices" name="FairValueOfSharesIssuedForServices" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="gmgi_SharesIssuedOnExerciseOfOptionsShares" name="SharesIssuedOnExerciseOfOptionsShares" nillable="true" xbrli:periodType="duration" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" />
+  <element id="gmgi_SharesIssuedOnExerciseOfOptionsAmount" name="SharesIssuedOnExerciseOfOptionsAmount" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="gmgi_SharesIssuedOnCashlessExerciseOfOptionsShares" name="SharesIssuedOnCashlessExerciseOfOptionsShares" nillable="true" xbrli:periodType="duration" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" />
+  <element id="gmgi_SharesIssuedOnCashlessExerciseOfOptionsAmount" name="SharesIssuedOnCashlessExerciseOfOptionsAmount" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="gmgi_SharesIssuedForPrivatePlacementShares" name="SharesIssuedForPrivatePlacementShares" nillable="true" xbrli:periodType="duration" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" />
+  <element id="gmgi_SharesIssuedForPrivatePlacementAmount" name="SharesIssuedForPrivatePlacementAmount" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="gmgi_FvOfOptionWarrantsIssuedForServices" name="FvOfOptionWarrantsIssuedForServices" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="gmgi_AcquisitionOfGtg" name="AcquisitionOfGtg" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="gmgi_CumulativeTranslationAdjustment" name="CumulativeTranslationAdjustment" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="gmgi_ImputedInterest" name="ImputedInterest" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="gmgi_SharesIssuedForServicesShares" name="SharesIssuedForServicesShares" nillable="true" xbrli:periodType="duration" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" />
+  <element id="gmgi_SharesIssuedForServicesAmount" name="SharesIssuedForServicesAmount" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="gmgi_SharesIssuedOnCashlessExerciseOfOptionsRelatedPartyShares" name="SharesIssuedOnCashlessExerciseOfOptionsRelatedPartyShares" nillable="true" xbrli:periodType="duration" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" />
+  <element id="gmgi_SharesIssuedOnCashlessExerciseOfOptionsRelatedPartyAmount" name="SharesIssuedOnCashlessExerciseOfOptionsRelatedPartyAmount" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="gmgi_FairValueOfNonControllingInterestInRkings" name="FairValueOfNonControllingInterestInRkings" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="gmgi_FairValueOfStockOptionIssuedForServices" name="FairValueOfStockOptionIssuedForServices" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="gmgi_DepreciationOfPropertyPlantAndEquipment" name="DepreciationOfPropertyPlantAndEquipment" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="gmgi_IncreaseDecreaseInAccountsReceivableRelatedParty" name="IncreaseDecreaseInAccountsReceivableRelatedParty" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="gmgi_CashPaidForPurchaseOfRkings" name="CashPaidForPurchaseOfRkings" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="gmgi_CashReceivedFromInvestmentInGlobalTechnologyGroupPtyLtdRelatedParty" name="CashReceivedFromInvestmentInGlobalTechnologyGroupPtyLtdRelatedParty" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="gmgi_CashPaidForPurchaseOfFixedAssets" name="CashPaidForPurchaseOfFixedAssets" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="gmgi_CashPaidForPurchaseOfIntangibleAssets" name="CashPaidForPurchaseOfIntangibleAssets" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="gmgi_RepaymentsOnShareholderLoansRelatedParty" name="RepaymentsOnShareholderLoansRelatedParty" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="gmgi_AdvanceFromShareholders" name="AdvanceFromShareholders" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="gmgi_CashlessExerciseOfOptions" name="CashlessExerciseOfOptions" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="gmgi_AccountsPayableSettledWithAccountsReceivableRelatedParty" name="AccountsPayableSettledWithAccountsReceivableRelatedParty" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="gmgi_IntangibleAssetWrittenDown" name="IntangibleAssetWrittenDown" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="gmgi_AccountsReceivableTextBlock" name="AccountsReceivableTextBlock" nillable="true" xbrli:periodType="duration" type="nonnum:textBlockItemType" substitutionGroup="xbrli:item" />
+  <element id="gmgi_Note4PrepaidExpenses" name="Note4PrepaidExpenses" nillable="true" xbrli:periodType="duration" type="nonnum:textBlockItemType" substitutionGroup="xbrli:item" />
+  <element id="gmgi_ShortTermDeposits" name="ShortTermDeposits" nillable="true" xbrli:periodType="duration" type="nonnum:textBlockItemType" substitutionGroup="xbrli:item" />
+  <element id="gmgi_AccountsRecevableRelatedPartyTextBlock" name="AccountsRecevableRelatedPartyTextBlock" nillable="true" xbrli:periodType="duration" type="nonnum:textBlockItemType" substitutionGroup="xbrli:item" />
+  <element id="gmgi_CustomerDepositsTextBlock" name="CustomerDepositsTextBlock" nillable="true" xbrli:periodType="duration" type="nonnum:textBlockItemType" substitutionGroup="xbrli:item" />
+  <element id="gmgi_InterimFinancialStatementsPolicyTextBlock" name="InterimFinancialStatementsPolicyTextBlock" nillable="true" xbrli:periodType="duration" type="nonnum:textBlockItemType" substitutionGroup="xbrli:item" />
+  <element id="gmgi_ResearchDevelopmentAndWebsiteDevelopmentCostsPolicytextblock" name="ResearchDevelopmentAndWebsiteDevelopmentCostsPolicytextblock" nillable="true" xbrli:periodType="duration" type="nonnum:textBlockItemType" substitutionGroup="xbrli:item" />
+  <element id="gmgi_ImpactOfCovid19PandemicOnConsolidatedFinancialStatementsPolicyTextBlock" name="ImpactOfCovid19PandemicOnConsolidatedFinancialStatementsPolicyTextBlock" nillable="true" xbrli:periodType="duration" type="nonnum:textBlockItemType" substitutionGroup="xbrli:item" />
+  <element id="gmgi_IntangibleAssetsPolicyTextBlock" name="IntangibleAssetsPolicyTextBlock" nillable="true" xbrli:periodType="duration" type="nonnum:textBlockItemType" substitutionGroup="xbrli:item" />
+  <element id="gmgi_WeightedAverageCommonSharesOutstanding" name="WeightedAverageCommonSharesOutstanding" nillable="true" xbrli:periodType="duration" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" />
+  <element id="gmgi_PreferredShares" name="PreferredShares" nillable="true" xbrli:periodType="duration" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" />
+  <element id="gmgi_WarrantsOptions" name="WarrantsOptions" nillable="true" xbrli:periodType="duration" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" />
+  <element id="gmgi_ConvertibleDebts" name="ConvertibleDebts" nillable="true" xbrli:periodType="duration" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" />
+  <element id="gmgi_AdditionalReplenishedByCitibank" name="AdditionalReplenishedByCitibank" nillable="true" xbrli:balance="credit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="gmgi_OptionToRenewPeriod" name="OptionToRenewPeriod" nillable="true" xbrli:periodType="duration" type="xbrli:stringItemType" substitutionGroup="xbrli:item" />
+  <element id="gmgi_LeaseAgreementTerm" name="LeaseAgreementTerm" nillable="true" xbrli:periodType="duration" type="xbrli:stringItemType" substitutionGroup="xbrli:item" />
+  <element id="gmgi_EffectOfExchangeRatesOnCash" name="EffectOfExchangeRatesOnCash" nillable="true" xbrli:balance="debit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="gmgi_Cashes" name="Cashes" nillable="true" xbrli:balance="debit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="gmgi_PrepaymentsGamingLicense" name="PrepaymentsGamingLicense" nillable="true" xbrli:balance="debit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="gmgi_Total" name="Total" nillable="true" xbrli:balance="debit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="gmgi_ReduceInAdditionalPaidInCapitalInGmgi" name="ReduceInAdditionalPaidInCapitalInGmgi" nillable="true" xbrli:balance="credit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="gmgi_ClosingCashConsideration" name="ClosingCashConsideration" nillable="true" xbrli:balance="debit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="gmgi_FairValueOfContingentCashConsideration" name="FairValueOfContingentCashConsideration" nillable="true" xbrli:balance="debit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="gmgi_TotalTangibleAsset" name="TotalTangibleAsset" nillable="true" xbrli:balance="debit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="gmgi_TotalAssetsAllocated" name="TotalAssetsAllocated" nillable="true" xbrli:balance="debit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="gmgi_ProFormaTotalRevenues" name="ProFormaTotalRevenues" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="gmgi_ProFormaNetIncomeAttributableToGmgi" name="ProFormaNetIncomeAttributableToGmgi" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="gmgi_CashPayment" name="CashPayment" nillable="true" xbrli:balance="credit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="gmgi_ConsiderationPayableForAcquisition" name="ConsiderationPayableForAcquisition" nillable="true" xbrli:balance="credit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="gmgi_EstimatedUsefulLives" name="EstimatedUsefulLives" nillable="true" xbrli:periodType="duration" type="xbrli:stringItemType" substitutionGroup="xbrli:item" />
+  <element id="gmgi_MonthlyFees" name="MonthlyFees" nillable="true" xbrli:balance="debit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="gmgi_OutstandingPayableIntangibleAssetWrittenDown" name="OutstandingPayableIntangibleAssetWrittenDown" nillable="true" xbrli:balance="credit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="gmgi_CompensationPayableInArears" name="CompensationPayableInArears" nillable="true" xbrli:balance="debit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="gmgi_AmountPayable" name="AmountPayable" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="gmgi_IssanceOfOptions" name="IssanceOfOptions" nillable="true" xbrli:periodType="instant" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" />
+  <element id="gmgi_IncreaseInCompensation" name="IncreaseInCompensation" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="gmgi_SuperannuationPercentage" name="SuperannuationPercentage" nillable="true" xbrli:periodType="duration" type="num:percentItemType" substitutionGroup="xbrli:item" />
+  <element id="gmgi_PercentageOfSuperannuationOnSalary" name="PercentageOfSuperannuationOnSalary" nillable="true" xbrli:periodType="duration" type="num:percentItemType" substitutionGroup="xbrli:item" />
+  <element id="gmgi_OutstandingLoan" name="OutstandingLoan" nillable="true" xbrli:balance="credit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="gmgi_StockOptionExerciseUponPurchaseOfShares" name="StockOptionExerciseUponPurchaseOfShares" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="gmgi_SurrenderedShares" name="SurrenderedShares" nillable="true" xbrli:periodType="duration" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" />
+  <element id="gmgi_AggregatePrices" name="AggregatePrices" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="gmgi_AggregatePrice" name="AggregatePrice" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="gmgi_CostOfSales" name="CostOfSales" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="gmgi_WarrantToPurchaseCommonStock" name="WarrantToPurchaseCommonStock" nillable="true" xbrli:periodType="instant" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" />
+  <element id="gmgi_OutstandingCommonStockHoldingPercentage" name="OutstandingCommonStockHoldingPercentage" nillable="true" xbrli:periodType="duration" type="xbrli:stringItemType" substitutionGroup="xbrli:item" />
+  <element id="gmgi_CommonStockShares" name="CommonStockShares" nillable="true" xbrli:periodType="instant" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" />
+  <element id="gmgi_AggreegateAmountReceivedFromExerciseOfWarrants" name="AggreegateAmountReceivedFromExerciseOfWarrants" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="gmgi_StockOptionsVested" name="StockOptionsVested" nillable="true" xbrli:periodType="instant" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" />
+  <element id="gmgi_NumberOfWarrantsToPurchase" name="NumberOfWarrantsToPurchase" nillable="true" xbrli:periodType="instant" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" />
+  <element id="gmgi_WarrantsAndSharesPerShareValue" name="WarrantsAndSharesPerShareValue" nillable="true" xbrli:periodType="instant" type="num:perShareItemType" substitutionGroup="xbrli:item" />
+  <element id="gmgi_ProceedsFromIssuanceOfSharesAndWarrants" name="ProceedsFromIssuanceOfSharesAndWarrants" nillable="true" xbrli:balance="debit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="gmgi_CashFeePaid" name="CashFeePaid" nillable="true" xbrli:balance="credit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="gmgi_MaximumReimbursementOfAgentExpense" name="MaximumReimbursementOfAgentExpense" nillable="true" xbrli:balance="debit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="gmgi_NonaccountableExpenseReimbursement" name="NonaccountableExpenseReimbursement" nillable="true" xbrli:balance="debit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="gmgi_DescriptionOfExercisedOption" name="DescriptionOfExercisedOption" nillable="true" xbrli:periodType="duration" type="xbrli:stringItemType" substitutionGroup="xbrli:item" />
+  <element id="gmgi_ExercisePrices" name="ExercisePrices" nillable="true" xbrli:periodType="instant" type="num:perShareItemType" substitutionGroup="xbrli:item" />
+  <element id="gmgi_MaturityPeriod" name="MaturityPeriod" nillable="true" xbrli:periodType="duration" type="xbrli:durationItemType" substitutionGroup="xbrli:item" />
+  <element id="gmgi_StockOptionsPlanVestingDescription" name="StockOptionsPlanVestingDescription" nillable="true" xbrli:periodType="duration" type="xbrli:stringItemType" substitutionGroup="xbrli:item" />
+  <element id="gmgi_StockOptionExercisePeriod" name="StockOptionExercisePeriod" nillable="true" xbrli:periodType="duration" type="xbrli:durationItemType" substitutionGroup="xbrli:item" />
+  <element id="gmgi_CommonStockOptionExercisedShares" name="CommonStockOptionExercisedShares" nillable="true" xbrli:periodType="instant" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" />
+  <element id="gmgi_Vesting" name="Vesting" nillable="true" xbrli:periodType="duration" type="num:percentItemType" substitutionGroup="xbrli:item" />
+  <element id="gmgi_StockOptionsNonVested" name="StockOptionsNonVested" nillable="true" xbrli:periodType="duration" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" />
+  <element id="gmgi_StockOptionsVestedNotExercisedShares" name="StockOptionsVestedNotExercisedShares" nillable="true" xbrli:periodType="duration" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" />
+  <element id="gmgi_OptionsExercisedByConsultantShares" name="OptionsExercisedByConsultantShares" nillable="true" xbrli:periodType="instant" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" />
+  <element id="gmgi_StockOptionVestedShares" name="StockOptionVestedShares" nillable="true" xbrli:periodType="duration" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" />
+  <element id="gmgi_MarketValueOfSharesIssued" name="MarketValueOfSharesIssued" nillable="true" xbrli:periodType="duration" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" />
+  <element id="gmgi_AmortizationExpensesOther" name="AmortizationExpensesOther" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="gmgi_ReductionInCommonStock" name="ReductionInCommonStock" nillable="true" xbrli:periodType="duration" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" />
+  <element id="gmgi_DescriptionOfCommonStockOutstanding" name="DescriptionOfCommonStockOutstanding" nillable="true" xbrli:periodType="duration" type="xbrli:stringItemType" substitutionGroup="xbrli:item" />
+  <element id="gmgi_FairValueOfShares" name="FairValueOfShares" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="gmgi_CommonStockSharesSoldShares" name="CommonStockSharesSoldShares" nillable="true" xbrli:periodType="duration" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" />
+  <element id="gmgi_CashRaisedUponSaleOfShares" name="CashRaisedUponSaleOfShares" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="gmgi_FairValueOfTheShares" name="FairValueOfTheShares" nillable="true" xbrli:periodType="duration" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" />
+  <element id="gmgi_SharesIssuedUponExericseOfOptions" name="SharesIssuedUponExericseOfOptions" nillable="true" xbrli:periodType="duration" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" />
+  <element id="gmgi_WarrantPurchasedAmount" name="WarrantPurchasedAmount" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="gmgi_VotingShares" name="VotingShares" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="gmgi_PercentageOfCommonSharesOutstanding" name="PercentageOfCommonSharesOutstanding" nillable="true" xbrli:periodType="duration" type="num:percentItemType" substitutionGroup="xbrli:item" />
+  <element id="gmgi_RevenuePercentageOfTotalRevenue" name="RevenuePercentageOfTotalRevenue" nillable="true" xbrli:periodType="duration" type="num:percentItemType" substitutionGroup="xbrli:item" />
+  <element id="gmgi_CostOfGoodsSoldPercentage" name="CostOfGoodsSoldPercentage" nillable="true" xbrli:periodType="duration" type="num:percentItemType" substitutionGroup="xbrli:item" />
+  <element name="PreferredSharesSerieBMember" id="gmgi_PreferredSharesSerieBMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="PreferredStockSeriesBMember" id="gmgi_PreferredStockSeriesBMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="PreferredSharesSeriesBMember" id="gmgi_PreferredSharesSeriesBMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="StockPayableMember" id="gmgi_StockPayableMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="StockPayableRelatedPartyMember" id="gmgi_StockPayableRelatedPartyMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="TotalEquityOfGMGIMember" id="gmgi_TotalEquityOfGMGIMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="GlobalTechnologyGroupPtyLtdMember" id="gmgi_GlobalTechnologyGroupPtyLtdMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="JuneOneTwentyTwentyOneMember" id="gmgi_JuneOneTwentyTwentyOneMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="GTGMember" id="gmgi_GTGMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="StGeorgeBankMember" id="gmgi_StGeorgeBankMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="SharePurchaseAgreementMember" id="gmgi_SharePurchaseAgreementMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="MrGoodmanMember" id="gmgi_MrGoodmanMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="RKingsMember" id="gmgi_RKingsMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="OtherSourceMember" id="gmgi_OtherSourceMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="ProgressiveJackpotGamesMember" id="gmgi_ProgressiveJackpotGamesMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="GBMember" id="gmgi_GBMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="B2BMember" id="gmgi_B2BMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="B2CMember" id="gmgi_B2CMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="AssetPurchaseAgreementMember" id="gmgi_AssetPurchaseAgreementMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="GamefishGlobalPtyLtdMember" id="gmgi_GamefishGlobalPtyLtdMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="NonCompeteAagreementsMember" id="gmgi_NonCompeteAagreementsMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="PurchaseAgreementMember" id="gmgi_PurchaseAgreementMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="LuxorCapitalLLCMember" id="gmgi_LuxorCapitalLLCMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="EmploymentAgreementMember" id="gmgi_EmploymentAgreementMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="MsWeitingFengMember" id="gmgi_MsWeitingFengMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="ConsultantsMember" id="gmgi_ConsultantsMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="FebruaryOneTwoThousandTwentyOneMember" id="gmgi_FebruaryOneTwoThousandTwentyOneMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="AprilOneTwoThousandTwentyOneMember" id="gmgi_AprilOneTwoThousandTwentyOneMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="JulyEighteenTwoThousandTwentyOneMember" id="gmgi_JulyEighteenTwoThousandTwentyOneMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="JuneTwentyEightTwoThousandTwentyOneMember" id="gmgi_JuneTwentyEightTwoThousandTwentyOneMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="JasonSilverMember" id="gmgi_JasonSilverMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="MsFengMember" id="gmgi_MsFengMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="OnSeptemberOneTwoThousandTwentyMember" id="gmgi_OnSeptemberOneTwoThousandTwentyMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="YukunQiuMember" id="gmgi_YukunQiuMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="ConsultingAgreementAprilNineTwoThousandNinteenOneMember" id="gmgi_ConsultingAgreementAprilNineTwoThousandNinteenOneMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="StockOptionPlanOneMember" id="gmgi_StockOptionPlanOneMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="ConsultingAgreementsMember" id="gmgi_ConsultingAgreementsMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="ConsultingAgreementAprilNineTwoThousandNinteenMember" id="gmgi_ConsultingAgreementAprilNineTwoThousandNinteenMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="StockOptionsMember" id="gmgi_StockOptionsMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="JiayiWuMember" id="gmgi_JiayiWuMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="StockOptionPlanOthersMember" id="gmgi_StockOptionPlanOthersMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="StockOptionPlanMember" id="gmgi_StockOptionPlanMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="OnThreeJanuaryTwoThousansEighteenMember" id="gmgi_OnThreeJanuaryTwoThousansEighteenMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="AaronJohnstonMember" id="gmgi_AaronJohnstonMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="JamesYoungMember" id="gmgi_JamesYoungMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="TwoexternalconsultantsMember" id="gmgi_TwoexternalconsultantsMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="OnAugustOneTwoThousandTwentyMember" id="gmgi_OnAugustOneTwoThousandTwentyMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="MurraySmithMember" id="gmgi_MurraySmithMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="JanuaryTwentyTwoZeroTwoZeroMember" id="gmgi_JanuaryTwentyTwoZeroTwoZeroMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="PlacementAgencyAgreementMember" id="gmgi_PlacementAgencyAgreementMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="OnAprilTwentySevenTwoThousandTwentyMember" id="gmgi_OnAprilTwentySevenTwoThousandTwentyMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="AugustFourteenTwoZeroTwoZeroToAugustTwentyTwoZeroTwoZeroMember" id="gmgi_AugustFourteenTwoZeroTwoZeroToAugustTwentyTwoZeroTwoZeroMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="JamesCaplanMember" id="gmgi_JamesCaplanMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="ThomasMcChesneyMember" id="gmgi_ThomasMcChesneyMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="fiveexternalconsultantsMember" id="gmgi_fiveexternalconsultantsMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="NineExternalConsultantsMember" id="gmgi_NineExternalConsultantsMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="MarchONeTwoThousandTwentyOneMember" id="gmgi_MarchONeTwoThousandTwentyOneMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="OntarioIncMember" id="gmgi_OntarioIncMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="NovemberTwentyThreeTwoZeroTwoZeroToDecemberSevenTwoZeroTwoZeroMember" id="gmgi_NovemberTwentyThreeTwoZeroTwoZeroToDecemberSevenTwoZeroTwoZeroMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="AprilTwentySixTwoZeroTwoOneToMaySevenTwoZeroTwoOneMember" id="gmgi_AprilTwentySixTwoZeroTwoOneToMaySevenTwoZeroTwoOneMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="DecemberNineTwoZeroTwoZeroToJanuarySevenTwoZeroTwoZeroMember" id="gmgi_DecemberNineTwoZeroTwoZeroToJanuarySevenTwoZeroTwoZeroMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="AnsAdvisoryMember" id="gmgi_AnsAdvisoryMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="SubsequentsEventsMember" id="gmgi_SubsequentsEventsMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="PreferredShareMember" id="gmgi_PreferredShareMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="StockPurchaseAgreementMember" id="gmgi_StockPurchaseAgreementMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="BrettGoodmanAndJasonSilverMember" id="gmgi_BrettGoodmanAndJasonSilverMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="MrMurrayMember" id="gmgi_MrMurrayMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="MrAaronRichardJohnstonMember" id="gmgi_MrAaronRichardJohnstonMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="MrOmarJimenezMember" id="gmgi_MrOmarJimenezMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="ArticulatePtyLtdMember" id="gmgi_ArticulatePtyLtdMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="SeptemberEighteenTwentyTwentyOneMember" id="gmgi_SeptemberEighteenTwentyTwentyOneMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="JanuaryTwentyEightTwentyTwentytwoMember" id="gmgi_JanuaryTwentyEightTwentyTwentytwoMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="SkywindServicesIOMLtdMember" id="gmgi_SkywindServicesIOMLtdMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+</schema>

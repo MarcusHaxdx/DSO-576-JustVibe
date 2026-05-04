@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="us-ascii" standalone="yes"?>
+<!--XBRL Document Created with XBRLMaster-->
+<!--Version: 2.3.08-->
+<!--Based on XBRL 2.1-->
+<!--Date of creation: 02/22/2022-->
+<!--Software architectural design and coding: Dipendra K. Singh-->
+<!--Copyright (c) 2022 I-NET Business Solutions, Inc. All Rights Reserved.-->
+<link:linkbase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:link="http://www.xbrl.org/2003/linkbase" xsi:schemaLocation="http://www.xbrl.org/2003/linkbase http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd">
+  <link:roleRef roleURI="http://thcc.com/role/Cover" xlink:href="thcc-20211231.xsd#Cover" xlink:type="simple" />
+  <link:roleRef roleURI="http://thcc.com/role/CondensedBalanceSheets" xlink:href="thcc-20211231.xsd#CondensedBalanceSheets" xlink:type="simple" />
+  <link:roleRef roleURI="http://thcc.com/role/CondensedBalanceSheetsParenthetical" xlink:href="thcc-20211231.xsd#CondensedBalanceSheetsParenthetical" xlink:type="simple" />
+  <link:roleRef roleURI="http://thcc.com/role/CondensedStatementsOfOperationsUnaudited" xlink:href="thcc-20211231.xsd#CondensedStatementsOfOperationsUnaudited" xlink:type="simple" />
+  <link:roleRef roleURI="http://thcc.com/role/CondensedStatementsOfStockholdersDeficitUnaudited" xlink:href="thcc-20211231.xsd#CondensedStatementsOfStockholdersDeficitUnaudited" xlink:type="simple" />
+  <link:roleRef roleURI="http://thcc.com/role/CondensedStatementsOfCashFlowsUnaudited" xlink:href="thcc-20211231.xsd#CondensedStatementsOfCashFlowsUnaudited" xlink:type="simple" />
+  <link:roleRef roleURI="http://thcc.com/role/DescriptionOfBusinessHistoryAndSummaryOfSignificantAccountingPolicies" xlink:href="thcc-20211231.xsd#DescriptionOfBusinessHistoryAndSummaryOfSignificantAccountingPolicies" xlink:type="simple" />
+  <link:roleRef roleURI="http://thcc.com/role/SummaryOfSignificantAccountingPolicies" xlink:href="thcc-20211231.xsd#SummaryOfSignificantAccountingPolicies" xlink:type="simple" />
+  <link:roleRef roleURI="http://thcc.com/role/GoingConcern" xlink:href="thcc-20211231.xsd#GoingConcern" xlink:type="simple" />
+  <link:roleRef roleURI="http://thcc.com/role/RelatedPartyTransactions" xlink:href="thcc-20211231.xsd#RelatedPartyTransactions" xlink:type="simple" />
+  <link:roleRef roleURI="http://thcc.com/role/CommitmentsAndContingencies" xlink:href="thcc-20211231.xsd#CommitmentsAndContingencies" xlink:type="simple" />
+  <link:roleRef roleURI="http://thcc.com/role/StockholdersDeficit" xlink:href="thcc-20211231.xsd#StockholdersDeficit" xlink:type="simple" />
+  <link:roleRef roleURI="http://thcc.com/role/OtherCommitments" xlink:href="thcc-20211231.xsd#OtherCommitments" xlink:type="simple" />
+  <link:roleRef roleURI="http://thcc.com/role/SubsequentEvents" xlink:href="thcc-20211231.xsd#SubsequentEvents" xlink:type="simple" />
+  <link:roleRef roleURI="http://thcc.com/role/SummaryOfSignificantAccountingPoliciesPolicies" xlink:href="thcc-20211231.xsd#SummaryOfSignificantAccountingPoliciesPolicies" xlink:type="simple" />
+  <link:roleRef roleURI="http://thcc.com/role/DescriptionOfBusinessHistoryAndSummaryOfSignificantAccountingPoliciesDetailsNarrative" xlink:href="thcc-20211231.xsd#DescriptionOfBusinessHistoryAndSummaryOfSignificantAccountingPoliciesDetailsNarrative" xlink:type="simple" />
+  <link:roleRef roleURI="http://thcc.com/role/GoingConcernDetailsNarrative" xlink:href="thcc-20211231.xsd#GoingConcernDetailsNarrative" xlink:type="simple" />
+  <link:roleRef roleURI="http://thcc.com/role/RelatedPartyTransactionsDetailsNarrative" xlink:href="thcc-20211231.xsd#RelatedPartyTransactionsDetailsNarrative" xlink:type="simple" />
+  <link:roleRef roleURI="http://thcc.com/role/StockholderDeficitDetailsNarrative" xlink:href="thcc-20211231.xsd#StockholderDeficitDetailsNarrative" xlink:type="simple" />
+  <link:roleRef roleURI="http://thcc.com/role/OtherCommitmentsDetailsNarrative" xlink:href="thcc-20211231.xsd#OtherCommitmentsDetailsNarrative" xlink:type="simple" />
+  <link:roleRef roleURI="http://thcc.com/role/SubsequentEventsDetailsNarrative" xlink:href="thcc-20211231.xsd#SubsequentEventsDetailsNarrative" xlink:type="simple" />
+  <link:calculationLink xlink:type="extended" xlink:role="http://thcc.com/role/Cover" xlink:title="00000001 - Document - Document and Entity Information" />
+  <link:calculationLink xlink:type="extended" xlink:role="http://thcc.com/role/CondensedBalanceSheets" xlink:title="000002 - Statement - Condensed Balance Sheets">
+    <link:loc xlink:type="locator" xlink:href="https://xbrl.fasb.org/us-gaap/2021/elts/us-gaap-2021-01-31.xsd#us-gaap_AssetsCurrent" xlink:label="loc_us-gaapAssetsCurrent" />
+    <link:loc xlink:type="locator" xlink:href="https://xbrl.fasb.org/us-gaap/2021/elts/us-gaap-2021-01-31.xsd#us-gaap_CashAndCashEquivalentsAtCarryingValue" xlink:label="loc_us-gaapCashAndCashEquivalentsAtCarryingValue" />
+    <link:calculationArc order="2" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="loc_us-gaapAssetsCurrent" xlink:to="loc_us-gaapCashAndCashEquivalentsAtCarryingValue" xlink:type="arc" weight="1" />
+    <link:loc xlink:type="locator" xlink:href="https://xbrl.fasb.org/us-gaap/2021/elts/us-gaap-2021-01-31.xsd#us-gaap_Assets" xlink:label="loc_us-gaapAssets" />
+    <link:calculationArc order="3" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="loc_us-gaapAssets" xlink:to="loc_us-gaapAssetsCurrent" xlink:type="arc" weight="1" />
+    <link:loc xlink:type="locator" xlink:href="https://xbrl.fasb.org/us-gaap/2021/elts/us-gaap-2021-01-31.xsd#us-gaap_LiabilitiesCurrent" xlink:label="loc_us-gaapLiabilitiesCurrent" />
+    <link:loc xlink:type="locator" xlink:href="https://xbrl.fasb.org/us-gaap/2021/elts/us-gaap-2021-01-31.xsd#us-gaap_CommonStockSharesSubscriptions" xlink:label="loc_us-gaapCommonStockSharesSubscriptions" />
+    <link:calculationArc order="4" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="loc_us-gaapLiabilitiesCurrent" xlink:to="loc_us-gaapCommonStockSharesSubscriptions" xlink:type="arc" weight="1" />
+    <link:loc xlink:type="locator" xlink:href="https://xbrl.fasb.org/us-gaap/2021/elts/us-gaap-2021-01-31.xsd#us-gaap_DueToRelatedPartiesCurrent" xlink:label="loc_us-gaapDueToRelatedPartiesCurrent" />
+    <link:calculationArc order="5" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="loc_us-gaapLiabilitiesCurrent" xlink:to="loc_us-gaapDueToRelatedPartiesCurrent" xlink:type="arc" weight="1" />
+    <link:loc xlink:type="locator" xlink:href="thcc-20211231.xsd#thcc_AccountsPayableAndAccruedExpensesRelatedPartiesCurrent" xlink:label="loc_thccAccountsPayableAndAccruedExpensesRelatedPartiesCurrent" />
+    <link:calculationArc order="6" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="loc_us-gaapLiabilitiesCurrent" xlink:to="loc_thccAccountsPayableAndAccruedExpensesRelatedPartiesCurrent" xlink:type="arc" weight="1" />
+    <link:loc xlink:type="locator" xlink:href="https://xbrl.fasb.org/us-gaap/2021/elts/us-gaap-2021-01-31.xsd#us-gaap_AccountsPayableAndAccruedLiabilitiesCurrent" xlink:label="loc_us-gaapAccountsPayableAndAccruedLiabilitiesCurrent" />
+    <link:calculationArc order="7" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="loc_us-gaapLiabilitiesCurrent" xlink:to="loc_us-gaapAccountsPayableAndAccruedLiabilitiesCurrent" xlink:type="arc" weight="1" />
+    <link:loc xlink:type="locator" xlink:href="https://xbrl.fasb.org/us-gaap/2021/elts/us-gaap-2021-01-31.xsd#us-gaap_Liabilities" xlink:label="loc_us-gaapLiabilities" />
+    <link:calculationArc order="8" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="loc_us-gaapLiabilities" xlink:to="loc_us-gaapLiabilitiesCurrent" xlink:type="arc" weight="1" />
+    <link:loc xlink:type="locator" xlink:href="https://xbrl.fasb.org/us-gaap/2021/elts/us-gaap-2021-01-31.xsd#us-gaap_StockholdersEquity" xlink:label="loc_us-gaapStockholdersEquity" />
+    <link:loc xlink:type="locator" xlink:href="https://xbrl.fasb.org/us-gaap/2021/elts/us-gaap-2021-01-31.xsd#us-gaap_RetainedEarningsAccumulatedDeficit" xlink:label="loc_us-gaapRetainedEarningsAccumulatedDeficit" />
+    <link:calculationArc order="9" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="loc_us-gaapStockholdersEquity" xlink:to="loc_us-gaapRetainedEarningsAccumulatedDeficit" xlink:type="arc" weight="1" />
+    <link:loc xlink:type="locator" xlink:href="https://xbrl.fasb.org/us-gaap/2021/elts/us-gaap-2021-01-31.xsd#us-gaap_AdditionalPaidInCapital" xlink:label="loc_us-gaapAdditionalPaidInCapital" />
+    <link:calculationArc order="10" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="loc_us-gaapStockholdersEquity" xlink:to="loc_us-gaapAdditionalPaidInCapital" xlink:type="arc" weight="1" />
+    <link:loc xlink:type="locator" xlink:href="https://xbrl.fasb.org/us-gaap/2021/elts/us-gaap-2021-01-31.xsd#us-gaap_CommonStockValue" xlink:label="loc_us-gaapCommonStockValue" />
+    <link:calculationArc order="11" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="loc_us-gaapStockholdersEquity" xlink:to="loc_us-gaapCommonStockValue" xlink:type="arc" weight="1" />
+    <link:loc xlink:type="locator" xlink:href="https://xbrl.fasb.org/us-gaap/2021/elts/us-gaap-2021-01-31.xsd#us-gaap_PreferredStockValue" xlink:label="loc_us-gaapPreferredStockValue" />
+    <link:calculationArc order="12" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="loc_us-gaapStockholdersEquity" xlink:to="loc_us-gaapPreferredStockValue" xlink:type="arc" weight="1" />
+    <link:loc xlink:type="locator" xlink:href="https://xbrl.fasb.org/us-gaap/2021/elts/us-gaap-2021-01-31.xsd#us-gaap_LiabilitiesAndStockholdersEquity" xlink:label="loc_us-gaapLiabilitiesAndStockholdersEquity" />
+    <link:calculationArc order="13" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="loc_us-gaapLiabilitiesAndStockholdersEquity" xlink:to="loc_us-gaapLiabilities" xlink:type="arc" weight="1" />
+    <link:calculationArc order="14" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="loc_us-gaapLiabilitiesAndStockholdersEquity" xlink:to="loc_us-gaapStockholdersEquity" xlink:type="arc" weight="1" />
+  </link:calculationLink>
+  <link:calculationLink xlink:type="extended" xlink:role="http://thcc.com/role/CondensedBalanceSheetsParenthetical" xlink:title="000003 - Statement - Condensed Balance Sheets (Parenthetical)" />
+  <link:calculationLink xlink:type="extended" xlink:role="http://thcc.com/role/CondensedStatementsOfOperationsUnaudited" xlink:title="000004 - Statement - Condensed Statements of Operations (Unaudited)">
+    <link:loc xlink:type="locator" xlink:href="https://xbrl.fasb.org/us-gaap/2021/elts/us-gaap-2021-01-31.xsd#us-gaap_OperatingExpenses" xlink:label="loc_us-gaapOperatingExpenses" />
+    <link:loc xlink:type="locator" xlink:href="https://xbrl.fasb.org/us-gaap/2021/elts/us-gaap-2021-01-31.xsd#us-gaap_ManagementFeeExpense" xlink:label="loc_us-gaapManagementFeeExpense" />
+    <link:calculationArc order="2" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="loc_us-gaapOperatingExpenses" xlink:to="loc_us-gaapManagementFeeExpense" xlink:type="arc" weight="1" />
+    <link:loc xlink:type="locator" xlink:href="https://xbrl.fasb.org/us-gaap/2021/elts/us-gaap-2021-01-31.xsd#us-gaap_ProfessionalFees" xlink:label="loc_us-gaapProfessionalFees" />
+    <link:calculationArc order="3" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="loc_us-gaapOperatingExpenses" xlink:to="loc_us-gaapProfessionalFees" xlink:type="arc" weight="1" />
+    <link:loc xlink:type="locator" xlink:href="https://xbrl.fasb.org/us-gaap/2021/elts/us-gaap-2021-01-31.xsd#us-gaap_GeneralAndAdministrativeExpense" xlink:label="loc_us-gaapGeneralAndAdministrativeExpense" />
+    <link:calculationArc order="4" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="loc_us-gaapOperatingExpenses" xlink:to="loc_us-gaapGeneralAndAdministrativeExpense" xlink:type="arc" weight="1" />
+    <link:loc xlink:type="locator" xlink:href="https://xbrl.fasb.org/us-gaap/2021/elts/us-gaap-2021-01-31.xsd#us-gaap_IncomeLossFromContinuingOperationsBeforeIncomeTaxesExtraordinaryItemsNoncontrollingInterest" xlink:label="loc_us-gaapIncomeLossFromContinuingOperationsBeforeIncomeTaxesExtraordinaryItemsNoncontrollingInterest" />
+    <link:calculationArc order="5" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="loc_us-gaapIncomeLossFromContinuingOperationsBeforeIncomeTaxesExtraordinaryItemsNoncontrollingInterest" xlink:to="loc_us-gaapOperatingExpenses" xlink:type="arc" weight="-1" />
+    <link:loc xlink:type="locator" xlink:href="https://xbrl.fasb.org/us-gaap/2021/elts/us-gaap-2021-01-31.xsd#us-gaap_Revenues" xlink:label="loc_us-gaapRevenues" />
+    <link:calculationArc order="6" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="loc_us-gaapIncomeLossFromContinuingOperationsBeforeIncomeTaxesExtraordinaryItemsNoncontrollingInterest" xlink:to="loc_us-gaapRevenues" xlink:type="arc" weight="1" />
+    <link:loc xlink:type="locator" xlink:href="https://xbrl.fasb.org/us-gaap/2021/elts/us-gaap-2021-01-31.xsd#us-gaap_NetIncomeLoss" xlink:label="loc_us-gaapNetIncomeLoss" />
+    <link:loc xlink:type="locator" xlink:href="https://xbrl.fasb.org/us-gaap/2021/elts/us-gaap-2021-01-31.xsd#us-gaap_IncomeTaxExpenseBenefit" xlink:label="loc_us-gaapIncomeTaxExpenseBenefit" />
+    <link:calculationArc order="7" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="loc_us-gaapNetIncomeLoss" xlink:to="loc_us-gaapIncomeTaxExpenseBenefit" xlink:type="arc" weight="-1" />
+    <link:calculationArc order="8" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="loc_us-gaapNetIncomeLoss" xlink:to="loc_us-gaapIncomeLossFromContinuingOperationsBeforeIncomeTaxesExtraordinaryItemsNoncontrollingInterest" xlink:type="arc" weight="1" />
+  </link:calculationLink>
+  <link:calculationLink xlink:type="extended" xlink:role="http://thcc.com/role/CondensedStatementsOfStockholdersDeficitUnaudited" xlink:title="000005 - Statement - Condensed Statements of Stockholders Deficit (Unaudited)" />
+  <link:calculationLink xlink:type="extended" xlink:role="http://thcc.com/role/CondensedStatementsOfCashFlowsUnaudited" xlink:title="000006 - Statement - Condensed Statements of Cash Flows (Unaudited)">
+    <link:loc xlink:type="locator" xlink:href="https://xbrl.fasb.org/us-gaap/2021/elts/us-gaap-2021-01-31.xsd#us-gaap_NetCashProvidedByUsedInOperatingActivities" xlink:label="loc_us-gaapNetCashProvidedByUsedInOperatingActivities" />
+    <link:loc xlink:type="locator" xlink:href="https://xbrl.fasb.org/us-gaap/2021/elts/us-gaap-2021-01-31.xsd#us-gaap_RepaymentsOfNotesPayable" xlink:label="loc_us-gaapRepaymentsOfNotesPayable" />
+    <link:calculationArc order="2" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="loc_us-gaapNetCashProvidedByUsedInOperatingActivities" xlink:to="loc_us-gaapRepaymentsOfNotesPayable" xlink:type="arc" weight="-1" />
+    <link:loc xlink:type="locator" xlink:href="thcc-20211231.xsd#thcc_IncreasedecreaseinaccountsPayableAndAccruedExpensesRelatedParty" xlink:label="loc_thccIncreasedecreaseinaccountsPayableAndAccruedExpensesRelatedParty" />
+    <link:calculationArc order="3" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="loc_us-gaapNetCashProvidedByUsedInOperatingActivities" xlink:to="loc_thccIncreasedecreaseinaccountsPayableAndAccruedExpensesRelatedParty" xlink:type="arc" weight="-1" />
+    <link:loc xlink:type="locator" xlink:href="https://xbrl.fasb.org/us-gaap/2021/elts/us-gaap-2021-01-31.xsd#us-gaap_IncreaseDecreaseInAccountsAndOtherReceivables" xlink:label="loc_us-gaapIncreaseDecreaseInAccountsAndOtherReceivables" />
+    <link:calculationArc order="4" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="loc_us-gaapNetCashProvidedByUsedInOperatingActivities" xlink:to="loc_us-gaapIncreaseDecreaseInAccountsAndOtherReceivables" xlink:type="arc" weight="-1" />
+    <link:loc xlink:type="locator" xlink:href="https://xbrl.fasb.org/us-gaap/2021/elts/us-gaap-2021-01-31.xsd#us-gaap_NetIncomeLoss" xlink:label="loc_us-gaapNetIncomeLoss" />
+    <link:calculationArc order="5" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="loc_us-gaapNetCashProvidedByUsedInOperatingActivities" xlink:to="loc_us-gaapNetIncomeLoss" xlink:type="arc" weight="-1" />
+    <link:loc xlink:type="locator" xlink:href="https://xbrl.fasb.org/us-gaap/2021/elts/us-gaap-2021-01-31.xsd#us-gaap_NetCashProvidedByUsedInFinancingActivities" xlink:label="loc_us-gaapNetCashProvidedByUsedInFinancingActivities" />
+    <link:loc xlink:type="locator" xlink:href="https://xbrl.fasb.org/us-gaap/2021/elts/us-gaap-2021-01-31.xsd#us-gaap_ProceedsFromRelatedPartyDebt" xlink:label="loc_us-gaapProceedsFromRelatedPartyDebt" />
+    <link:calculationArc order="6" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="loc_us-gaapNetCashProvidedByUsedInFinancingActivities" xlink:to="loc_us-gaapProceedsFromRelatedPartyDebt" xlink:type="arc" weight="1" />
+    <link:loc xlink:type="locator" xlink:href="https://xbrl.fasb.org/us-gaap/2021/elts/us-gaap-2021-01-31.xsd#us-gaap_ProceedsFromSaleOfPropertyPlantAndEquipment" xlink:label="loc_us-gaapProceedsFromSaleOfPropertyPlantAndEquipment" />
+    <link:calculationArc order="7" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="loc_us-gaapNetCashProvidedByUsedInFinancingActivities" xlink:to="loc_us-gaapProceedsFromSaleOfPropertyPlantAndEquipment" xlink:type="arc" weight="1" />
+    <link:loc xlink:type="locator" xlink:href="https://xbrl.fasb.org/us-gaap/2021/elts/us-gaap-2021-01-31.xsd#us-gaap_CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalentsPeriodIncreaseDecreaseIncludingExchangeRateEffect" xlink:label="loc_us-gaapCashCashEquivalentsRestrictedCashAndRestrictedCashEquivalentsPeriodIncreaseDecreaseIncludingExchangeRateEffect" />
+    <link:calculationArc order="8" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="loc_us-gaapCashCashEquivalentsRestrictedCashAndRestrictedCashEquivalentsPeriodIncreaseDecreaseIncludingExchangeRateEffect" xlink:to="loc_us-gaapNetCashProvidedByUsedInFinancingActivities" xlink:type="arc" weight="1" />
+    <link:calculationArc order="9" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="loc_us-gaapCashCashEquivalentsRestrictedCashAndRestrictedCashEquivalentsPeriodIncreaseDecreaseIncludingExchangeRateEffect" xlink:to="loc_us-gaapNetCashProvidedByUsedInOperatingActivities" xlink:type="arc" weight="1" />
+  </link:calculationLink>
+  <link:calculationLink xlink:type="extended" xlink:role="http://thcc.com/role/DescriptionOfBusinessHistoryAndSummaryOfSignificantAccountingPolicies" xlink:title="000007 - Disclosure - DESCRIPTION OF BUSINESS HISTORY AND SUMMARY OF SIGNIFICANT ACCOUNTING POLICIES" />
+  <link:calculationLink xlink:type="extended" xlink:role="http://thcc.com/role/SummaryOfSignificantAccountingPolicies" xlink:title="000008 - Disclosure - SUMMARY OF SIGNIFICANT ACCOUNTING POLICIES" />
+  <link:calculationLink xlink:type="extended" xlink:role="http://thcc.com/role/GoingConcern" xlink:title="000009 - Disclosure - GOING CONCERN" />
+  <link:calculationLink xlink:type="extended" xlink:role="http://thcc.com/role/RelatedPartyTransactions" xlink:title="000010 - Disclosure - RELATED PARTY TRANSACTIONS" />
+  <link:calculationLink xlink:type="extended" xlink:role="http://thcc.com/role/CommitmentsAndContingencies" xlink:title="000011 - Disclosure - COMMITMENTS AND CONTINGENCIES" />
+  <link:calculationLink xlink:type="extended" xlink:role="http://thcc.com/role/StockholdersDeficit" xlink:title="000012 - Disclosure - STOCKHOLDERS DEFICIT" />
+  <link:calculationLink xlink:type="extended" xlink:role="http://thcc.com/role/OtherCommitments" xlink:title="000013 - Disclosure - OTHER COMMITMENTS" />
+  <link:calculationLink xlink:type="extended" xlink:role="http://thcc.com/role/SubsequentEvents" xlink:title="000014 - Disclosure - SUBSEQUENT EVENTS" />
+  <link:calculationLink xlink:type="extended" xlink:role="http://thcc.com/role/SummaryOfSignificantAccountingPoliciesPolicies" xlink:title="000015 - Disclosure - SUMMARY OF SIGNIFICANT ACCOUNTING POLICIES (Policies)" />
+  <link:calculationLink xlink:type="extended" xlink:role="http://thcc.com/role/DescriptionOfBusinessHistoryAndSummaryOfSignificantAccountingPoliciesDetailsNarrative" xlink:title="000016 - Disclosure - DESCRIPTION OF BUSINESS HISTORY AND SUMMARY OF SIGNIFICANT ACCOUNTING POLICIES (Details Narrative)" />
+  <link:calculationLink xlink:type="extended" xlink:role="http://thcc.com/role/GoingConcernDetailsNarrative" xlink:title="000017 - Disclosure - GOING CONCERN (Details Narrative)" />
+  <link:calculationLink xlink:type="extended" xlink:role="http://thcc.com/role/RelatedPartyTransactionsDetailsNarrative" xlink:title="000018 - Disclosure - RELATED PARTY TRANSACTIONS (Details Narrative)" />
+  <link:calculationLink xlink:type="extended" xlink:role="http://thcc.com/role/StockholderDeficitDetailsNarrative" xlink:title="000019 - Disclosure - STOCKHOLDER DEFICIT (Details Narrative)" />
+  <link:calculationLink xlink:type="extended" xlink:role="http://thcc.com/role/OtherCommitmentsDetailsNarrative" xlink:title="000020 - Disclosure - OTHER COMMITMENTS (Details Narrative)" />
+  <link:calculationLink xlink:type="extended" xlink:role="http://thcc.com/role/SubsequentEventsDetailsNarrative" xlink:title="000021 - Disclosure - SUBSEQUENT EVENTS (Details Narrative)" />
+</link:linkbase>

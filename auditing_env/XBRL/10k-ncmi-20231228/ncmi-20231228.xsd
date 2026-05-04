@@ -1,0 +1,1026 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--XBRL Document Created with the Workiva Platform-->
+<!--Copyright 2024 Workiva-->
+<!--r:d913e395-64b7-4d7c-952e-cb8656309765,g:93d70a0b-bfdd-435d-a3a6-2ba7825aa431-->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:ncmi="http://ncm.com/20231228" xmlns:xbrli="http://www.xbrl.org/2003/instance" xmlns:dtr-types1="http://www.xbrl.org/dtr/type/2020-01-21" xmlns:xbrldt="http://xbrl.org/2005/xbrldt" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://ncm.com/20231228">
+  <xs:import namespace="http://fasb.org/srt/2023" schemaLocation="https://xbrl.fasb.org/srt/2023/elts/srt-2023.xsd"/>
+  <xs:import namespace="http://fasb.org/us-gaap/2023" schemaLocation="https://xbrl.fasb.org/us-gaap/2023/elts/us-gaap-2023.xsd"/>
+  <xs:import namespace="http://www.w3.org/1999/xlink" schemaLocation="http://www.xbrl.org/2003/xlink-2003-12-31.xsd"/>
+  <xs:import namespace="http://www.xbrl.org/2003/instance" schemaLocation="http://www.xbrl.org/2003/xbrl-instance-2003-12-31.xsd"/>
+  <xs:import namespace="http://www.xbrl.org/2003/linkbase" schemaLocation="http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd"/>
+  <xs:import namespace="http://www.xbrl.org/dtr/type/2020-01-21" schemaLocation="https://www.xbrl.org/dtr/type/2020-01-21/types.xsd"/>
+  <xs:import namespace="http://xbrl.org/2005/xbrldt" schemaLocation="http://www.xbrl.org/2005/xbrldt-2005.xsd"/>
+  <xs:import namespace="http://xbrl.sec.gov/dei/2023" schemaLocation="https://xbrl.sec.gov/dei/2023/dei-2023.xsd"/>
+  <xs:annotation>
+    <xs:appinfo>
+      <link:linkbaseRef xmlns:xlink="http://www.w3.org/1999/xlink" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="ncmi-20231228_pre.xml" xlink:role="http://www.xbrl.org/2003/role/presentationLinkbaseRef" xlink:type="simple"/>
+      <link:linkbaseRef xmlns:xlink="http://www.w3.org/1999/xlink" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="ncmi-20231228_def.xml" xlink:role="http://www.xbrl.org/2003/role/definitionLinkbaseRef" xlink:type="simple"/>
+      <link:linkbaseRef xmlns:xlink="http://www.w3.org/1999/xlink" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="ncmi-20231228_lab.xml" xlink:role="http://www.xbrl.org/2003/role/labelLinkbaseRef" xlink:type="simple"/>
+      <link:linkbaseRef xmlns:xlink="http://www.w3.org/1999/xlink" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="ncmi-20231228_cal.xml" xlink:role="http://www.xbrl.org/2003/role/calculationLinkbaseRef" xlink:type="simple"/>
+      <link:roleType id="DocumentAndEntityInformation" roleURI="http://ncm.com/role/DocumentAndEntityInformation">
+        <link:definition>0000001 - Document - Document And Entity Information</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="TemplateLink" roleURI="http://ncm.com/role/TemplateLink">
+        <link:definition>0000002 - Statement - Template Link</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CONSOLIDATEDBALANCESHEETS" roleURI="http://ncm.com/role/CONSOLIDATEDBALANCESHEETS">
+        <link:definition>0000003 - Statement - CONSOLIDATED BALANCE SHEETS</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CONSOLIDATEDBALANCESHEETSPARENTHETICAL" roleURI="http://ncm.com/role/CONSOLIDATEDBALANCESHEETSPARENTHETICAL">
+        <link:definition>0000004 - Statement - CONSOLIDATED BALANCE SHEETS (PARENTHETICAL)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CONSOLIDATEDSTATEMENTSOFINCOME" roleURI="http://ncm.com/role/CONSOLIDATEDSTATEMENTSOFINCOME">
+        <link:definition>0000005 - Statement - CONSOLIDATED STATEMENTS OF INCOME</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CONSOLIDATEDSTATEMENTSOFINCOMEPARENTHETICAL" roleURI="http://ncm.com/role/CONSOLIDATEDSTATEMENTSOFINCOMEPARENTHETICAL">
+        <link:definition>0000006 - Statement - CONSOLIDATED STATEMENTS OF INCOME (PARENTHETICAL)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CONSOLIDATEDSTATEMENTSOFCOMPREHENSIVEINCOME" roleURI="http://ncm.com/role/CONSOLIDATEDSTATEMENTSOFCOMPREHENSIVEINCOME">
+        <link:definition>0000007 - Statement - CONSOLIDATED STATEMENTS OF COMPREHENSIVE INCOME</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CONSOLIDATEDSTATEMENTSOFCOMPREHENSIVEINCOMEPARENTHETICAL" roleURI="http://ncm.com/role/CONSOLIDATEDSTATEMENTSOFCOMPREHENSIVEINCOMEPARENTHETICAL">
+        <link:definition>0000008 - Statement - CONSOLIDATED STATEMENTS OF COMPREHENSIVE INCOME (PARENTHETICAL)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CONSOLIDATEDSTATEMENTSOFEQUITYDEFICIT" roleURI="http://ncm.com/role/CONSOLIDATEDSTATEMENTSOFEQUITYDEFICIT">
+        <link:definition>0000009 - Statement - CONSOLIDATED STATEMENTS OF EQUITY/(DEFICIT)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CONSOLIDATEDSTATEMENTSOFEQUITYDEFICITPARENTHETICAL" roleURI="http://ncm.com/role/CONSOLIDATEDSTATEMENTSOFEQUITYDEFICITPARENTHETICAL">
+        <link:definition>0000010 - Statement - CONSOLIDATED STATEMENTS OF EQUITY/(DEFICIT) (PARENTHETICAL)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CONSOLIDATEDSTATEMENTSOFCASHFLOWS" roleURI="http://ncm.com/role/CONSOLIDATEDSTATEMENTSOFCASHFLOWS">
+        <link:definition>0000011 - Statement - CONSOLIDATED STATEMENTS OF CASH FLOWS</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CONSOLIDATEDSTATEMENTSOFCASHFLOWSCONSOLIDATEDSTATEMENTSOFCASHFLOWSPARENTHETICAL" roleURI="http://ncm.com/role/CONSOLIDATEDSTATEMENTSOFCASHFLOWSCONSOLIDATEDSTATEMENTSOFCASHFLOWSPARENTHETICAL">
+        <link:definition>0000012 - Statement - CONSOLIDATED STATEMENTS OF CASH FLOWS CONSOLIDATED STATEMENTS OF CASH FLOWS (PARENTHETICAL)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="BasisofPresentationandSummaryofSignificantAccountingPolicies" roleURI="http://ncm.com/role/BasisofPresentationandSummaryofSignificantAccountingPolicies">
+        <link:definition>0000013 - Disclosure - Basis of Presentation and Summary of Significant Accounting Policies</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RevenuefromContractswithCustomers" roleURI="http://ncm.com/role/RevenuefromContractswithCustomers">
+        <link:definition>0000014 - Disclosure - Revenue from Contracts with Customers</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="EarningsPerShare" roleURI="http://ncm.com/role/EarningsPerShare">
+        <link:definition>0000015 - Disclosure - Earnings Per Share</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="PropertyandEquipment" roleURI="http://ncm.com/role/PropertyandEquipment">
+        <link:definition>0000016 - Disclosure - Property and Equipment</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RECONSOLIDATIONOFNCMLLC" roleURI="http://ncm.com/role/RECONSOLIDATIONOFNCMLLC">
+        <link:definition>0000017 - Disclosure - RECONSOLIDATION OF NCM LLC</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IntangibleAssets" roleURI="http://ncm.com/role/IntangibleAssets">
+        <link:definition>0000018 - Disclosure - Intangible Assets</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="AccruedExpenses" roleURI="http://ncm.com/role/AccruedExpenses">
+        <link:definition>0000019 - Disclosure - Accrued Expenses</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IncomeTaxes" roleURI="http://ncm.com/role/IncomeTaxes">
+        <link:definition>0000020 - Disclosure - Income Taxes</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="Equity" roleURI="http://ncm.com/role/Equity">
+        <link:definition>0000021 - Disclosure - Equity</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RelatedPartyTransactions" roleURI="http://ncm.com/role/RelatedPartyTransactions">
+        <link:definition>0000022 - Disclosure - Related Party Transactions</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="Borrowings" roleURI="http://ncm.com/role/Borrowings">
+        <link:definition>0000023 - Disclosure - Borrowings</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ShareBasedCompensation" roleURI="http://ncm.com/role/ShareBasedCompensation">
+        <link:definition>0000024 - Disclosure - Share-Based Compensation</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="EmployeeBenefitPlans" roleURI="http://ncm.com/role/EmployeeBenefitPlans">
+        <link:definition>0000025 - Disclosure - Employee Benefit Plans</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CommitmentsandContingencies" roleURI="http://ncm.com/role/CommitmentsandContingencies">
+        <link:definition>0000026 - Disclosure - Commitments and Contingencies</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FairValueMeasurements" roleURI="http://ncm.com/role/FairValueMeasurements">
+        <link:definition>0000027 - Disclosure - Fair Value Measurements</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ValuationandQualifyingAccounts" roleURI="http://ncm.com/role/ValuationandQualifyingAccounts">
+        <link:definition>0000028 - Disclosure - Valuation and Qualifying Accounts</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="QuarterlyFinancialData" roleURI="http://ncm.com/role/QuarterlyFinancialData">
+        <link:definition>0000029 - Disclosure - Quarterly Financial Data</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SubsequentEvent" roleURI="http://ncm.com/role/SubsequentEvent">
+        <link:definition>0000030 - Disclosure - Subsequent Event</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RelatedPartyDisclosures" roleURI="http://ncm.com/role/RelatedPartyDisclosures">
+        <link:definition>0000031 - Disclosure - Related Party Disclosures</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RisksandUncertainties" roleURI="http://ncm.com/role/RisksandUncertainties">
+        <link:definition>0000032 - Disclosure - Risks and Uncertainties</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="BasisofPresentationandSummaryofSignificantAccountingPoliciesPolicies" roleURI="http://ncm.com/role/BasisofPresentationandSummaryofSignificantAccountingPoliciesPolicies">
+        <link:definition>9954471 - Disclosure - Basis of Presentation and Summary of Significant Accounting Policies (Policies)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="DebtPolicies" roleURI="http://ncm.com/role/DebtPolicies">
+        <link:definition>9954472 - Disclosure - Debt (Policies)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="BasisofPresentationandSummaryofSignificantAccountingPoliciesTables" roleURI="http://ncm.com/role/BasisofPresentationandSummaryofSignificantAccountingPoliciesTables">
+        <link:definition>9954473 - Disclosure - Basis of Presentation and Summary of Significant Accounting Policies (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RevenuefromContractswithCustomersTables" roleURI="http://ncm.com/role/RevenuefromContractswithCustomersTables">
+        <link:definition>9954474 - Disclosure - Revenue from Contracts with Customers (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="EarningsPerShareTables" roleURI="http://ncm.com/role/EarningsPerShareTables">
+        <link:definition>9954475 - Disclosure - Earnings Per Share (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="PropertyandEquipmentTables" roleURI="http://ncm.com/role/PropertyandEquipmentTables">
+        <link:definition>9954476 - Disclosure - Property and Equipment (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RECONSOLIDATIONOFNCMLLC_1" roleURI="http://ncm.com/role/RECONSOLIDATIONOFNCMLLC_1">
+        <link:definition>9954477 - Disclosure - RECONSOLIDATION OF NCM LLC</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IntangibleAssetsTables" roleURI="http://ncm.com/role/IntangibleAssetsTables">
+        <link:definition>9954478 - Disclosure - Intangible Assets (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="AccruedExpensesTables" roleURI="http://ncm.com/role/AccruedExpensesTables">
+        <link:definition>9954479 - Disclosure - Accrued Expenses (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IncomeTaxesTables" roleURI="http://ncm.com/role/IncomeTaxesTables">
+        <link:definition>9954480 - Disclosure - Income Taxes (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RelatedPartyTransactionsTables" roleURI="http://ncm.com/role/RelatedPartyTransactionsTables">
+        <link:definition>9954481 - Disclosure - Related Party Transactions (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="BorrowingsTables" roleURI="http://ncm.com/role/BorrowingsTables">
+        <link:definition>9954482 - Disclosure - Borrowings (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ShareBasedCompensationTables" roleURI="http://ncm.com/role/ShareBasedCompensationTables">
+        <link:definition>9954483 - Disclosure - Share-Based Compensation (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CommitmentsandContingenciesTables" roleURI="http://ncm.com/role/CommitmentsandContingenciesTables">
+        <link:definition>9954484 - Disclosure - Commitments and Contingencies (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FairValueMeasurementsTables" roleURI="http://ncm.com/role/FairValueMeasurementsTables">
+        <link:definition>9954485 - Disclosure - Fair Value Measurements (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ValuationandQualifyingAccountsTables" roleURI="http://ncm.com/role/ValuationandQualifyingAccountsTables">
+        <link:definition>9954486 - Disclosure - Valuation and Qualifying Accounts (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="QuarterlyFinancialDataTables" roleURI="http://ncm.com/role/QuarterlyFinancialDataTables">
+        <link:definition>9954487 - Disclosure - Quarterly Financial Data (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RelatedPartyDisclosuresTables" roleURI="http://ncm.com/role/RelatedPartyDisclosuresTables">
+        <link:definition>9954488 - Disclosure - Related Party Disclosures (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RisksandUncertaintiesTables" roleURI="http://ncm.com/role/RisksandUncertaintiesTables">
+        <link:definition>9954489 - Disclosure - Risks and Uncertainties (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="BasisofPresentationandSummaryofSignificantAccountingPoliciesNarrativeDetails" roleURI="http://ncm.com/role/BasisofPresentationandSummaryofSignificantAccountingPoliciesNarrativeDetails">
+        <link:definition>9954490 - Disclosure - Basis of Presentation and Summary of Significant Accounting Policies (Narrative) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="BasisofPresentationandSummaryofSignificantAccountingPoliciesScheduleofReceivablesDetails" roleURI="http://ncm.com/role/BasisofPresentationandSummaryofSignificantAccountingPoliciesScheduleofReceivablesDetails">
+        <link:definition>9954491 - Disclosure - Basis of Presentation and Summary of Significant Accounting Policies (Schedule of Receivables) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="BasisofPresentationandSummaryofSignificantAccountingPoliciesScheduleofUsefulLivesDetails" roleURI="http://ncm.com/role/BasisofPresentationandSummaryofSignificantAccountingPoliciesScheduleofUsefulLivesDetails">
+        <link:definition>9954492 - Disclosure - Basis of Presentation and Summary of Significant Accounting Policies (Schedule of Useful Lives) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="BasisofPresentationandSummaryofSignificantAccountingPoliciesChangesinDebtIssuanceCostsDetails" roleURI="http://ncm.com/role/BasisofPresentationandSummaryofSignificantAccountingPoliciesChangesinDebtIssuanceCostsDetails">
+        <link:definition>9954493 - Disclosure - Basis of Presentation and Summary of Significant Accounting Policies (Changes in Debt Issuance Costs) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="BasisofPresentationandSummaryofSignificantAccountingPoliciesChangesinEquityDetails" roleURI="http://ncm.com/role/BasisofPresentationandSummaryofSignificantAccountingPoliciesChangesinEquityDetails">
+        <link:definition>9954494 - Disclosure - Basis of Presentation and Summary of Significant Accounting Policies (Changes in Equity) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="BasisofPresentationandSummaryofSignificantAccountingPoliciesEffectofChangeonRetainedEarningsandAPICDetails" roleURI="http://ncm.com/role/BasisofPresentationandSummaryofSignificantAccountingPoliciesEffectofChangeonRetainedEarningsandAPICDetails">
+        <link:definition>9954495 - Disclosure - Basis of Presentation and Summary of Significant Accounting Policies (Effect of Change on Retained Earnings and APIC) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="BasisofPresentationandSummaryofSignificantAccountingPoliciesEffectofChangeonBalanceSheetDetails" roleURI="http://ncm.com/role/BasisofPresentationandSummaryofSignificantAccountingPoliciesEffectofChangeonBalanceSheetDetails">
+        <link:definition>9954496 - Disclosure - Basis of Presentation and Summary of Significant Accounting Policies (Effect of Change on Balance Sheet) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="BasisofPresentationandSummaryofSignificantAccountingPoliciesEffectofChangeonStatementofIncomeDetails" roleURI="http://ncm.com/role/BasisofPresentationandSummaryofSignificantAccountingPoliciesEffectofChangeonStatementofIncomeDetails">
+        <link:definition>9954497 - Disclosure - Basis of Presentation and Summary of Significant Accounting Policies (Effect of Change on Statement of Income) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="BasisofPresentationandSummaryofSignificantAccountingPoliciesEffectofChangeonStatementsofCashFlowsDetails" roleURI="http://ncm.com/role/BasisofPresentationandSummaryofSignificantAccountingPoliciesEffectofChangeonStatementsofCashFlowsDetails">
+        <link:definition>9954498 - Disclosure - Basis of Presentation and Summary of Significant Accounting Policies (Effect of Change on Statements of Cash Flows) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="BasisofPresentationandSummaryofSignificantAccountingPoliciesDetails" roleURI="http://ncm.com/role/BasisofPresentationandSummaryofSignificantAccountingPoliciesDetails">
+        <link:definition>9954499 - Disclosure - Basis of Presentation and Summary of Significant Accounting Policies (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RevenuefromContractswithCustomersNarrativeDetails" roleURI="http://ncm.com/role/RevenuefromContractswithCustomersNarrativeDetails">
+        <link:definition>9954500 - Disclosure - Revenue from Contracts with Customers (Narrative) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RevenuefromContractswithCustomersDisaggregationofRevenueDetails" roleURI="http://ncm.com/role/RevenuefromContractswithCustomersDisaggregationofRevenueDetails">
+        <link:definition>9954501 - Disclosure - Revenue from Contracts with Customers (Disaggregation of Revenue) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RevenuefromContractswithCustomersChangesinDeferredRevenueDetails" roleURI="http://ncm.com/role/RevenuefromContractswithCustomersChangesinDeferredRevenueDetails">
+        <link:definition>9954502 - Disclosure - Revenue from Contracts with Customers (Changes in Deferred Revenue) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RevenuefromContractswithCustomersDetails" roleURI="http://ncm.com/role/RevenuefromContractswithCustomersDetails">
+        <link:definition>9954503 - Disclosure - Revenue from Contracts with Customers (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="EarningsPerShareScheduleofEarningsPerShareBasicandDilutedDetails" roleURI="http://ncm.com/role/EarningsPerShareScheduleofEarningsPerShareBasicandDilutedDetails">
+        <link:definition>9954504 - Disclosure - Earnings Per Share (Schedule of Earnings Per Share, Basic and Diluted) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="EarningsPerShareScheduleofEarningsPerShareBasicandDilutedAdditionalInformationDetails" roleURI="http://ncm.com/role/EarningsPerShareScheduleofEarningsPerShareBasicandDilutedAdditionalInformationDetails">
+        <link:definition>9954505 - Disclosure - Earnings Per Share (Schedule of Earnings Per Share, Basic and Diluted) (Additional Information) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="EarningsPerShareNarrativeDetails" roleURI="http://ncm.com/role/EarningsPerShareNarrativeDetails">
+        <link:definition>9954506 - Disclosure - Earnings Per Share (Narrative) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="PropertyandEquipmentSummaryofPropertyandEquipmentDetails" roleURI="http://ncm.com/role/PropertyandEquipmentSummaryofPropertyandEquipmentDetails">
+        <link:definition>9954507 - Disclosure - Property and Equipment (Summary of Property and Equipment) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="PropertyandEquipmentNarrativeDetails" roleURI="http://ncm.com/role/PropertyandEquipmentNarrativeDetails">
+        <link:definition>9954508 - Disclosure - Property and Equipment (Narrative) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RECONSOLIDATIONOFNCMLLCScheduleofAssetsAcquiredDetails" roleURI="http://ncm.com/role/RECONSOLIDATIONOFNCMLLCScheduleofAssetsAcquiredDetails">
+        <link:definition>9954509 - Disclosure - RECONSOLIDATION OF NCM LLC - Schedule of Assets Acquired (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IntangibleAssetsNarrativeDetails" roleURI="http://ncm.com/role/IntangibleAssetsNarrativeDetails">
+        <link:definition>9954510 - Disclosure - Intangible Assets (Narrative) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IntangibleAssetsSummaryofIntangibleAssetsActivityDetails" roleURI="http://ncm.com/role/IntangibleAssetsSummaryofIntangibleAssetsActivityDetails">
+        <link:definition>9954511 - Disclosure - Intangible Assets (Summary of Intangible Asset's Activity) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IntangibleAssetsSummaryofIntangibleAssetsActivityAdditionalInformationDetails" roleURI="http://ncm.com/role/IntangibleAssetsSummaryofIntangibleAssetsActivityAdditionalInformationDetails">
+        <link:definition>9954512 - Disclosure - Intangible Assets (Summary of Intangible Asset's Activity) (Additional Information) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IntangibleAssetsSummaryofEstimatedAggregateAmortizationExpenseDetails" roleURI="http://ncm.com/role/IntangibleAssetsSummaryofEstimatedAggregateAmortizationExpenseDetails">
+        <link:definition>9954513 - Disclosure - Intangible Assets (Summary of Estimated Aggregate Amortization Expense) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="AccruedExpensesDetails" roleURI="http://ncm.com/role/AccruedExpensesDetails">
+        <link:definition>9954514 - Disclosure - Accrued Expenses (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IncomeTaxesNarrativeDetails" roleURI="http://ncm.com/role/IncomeTaxesNarrativeDetails">
+        <link:definition>9954515 - Disclosure - Income Taxes (Narrative) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IncomeTaxesScheduleofComponentsofIncomeTaxExpenseDetails" roleURI="http://ncm.com/role/IncomeTaxesScheduleofComponentsofIncomeTaxExpenseDetails">
+        <link:definition>9954516 - Disclosure - Income Taxes (Schedule of Components of Income Tax Expense) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IncomeTaxesScheduleofReconciliationofProvisionforIncomeTaxesDetails" roleURI="http://ncm.com/role/IncomeTaxesScheduleofReconciliationofProvisionforIncomeTaxesDetails">
+        <link:definition>9954517 - Disclosure - Income Taxes (Schedule of Reconciliation of Provision for Income Taxes) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IncomeTaxesScheduleofReconciliationofProvisionforIncomeTaxesAdditionalInformationDetails" roleURI="http://ncm.com/role/IncomeTaxesScheduleofReconciliationofProvisionforIncomeTaxesAdditionalInformationDetails">
+        <link:definition>9954518 - Disclosure - Income Taxes (Schedule of Reconciliation of Provision for Income Taxes) (Additional Information) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IncomeTaxesScheduleofComponentsofDeferredTaxAssetsDetails" roleURI="http://ncm.com/role/IncomeTaxesScheduleofComponentsofDeferredTaxAssetsDetails">
+        <link:definition>9954519 - Disclosure - Income Taxes (Schedule of Components of Deferred Tax Assets) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IncomeTaxesScheduleofComponentsofDeferredTaxAssetsAdditionalInformationDetails" roleURI="http://ncm.com/role/IncomeTaxesScheduleofComponentsofDeferredTaxAssetsAdditionalInformationDetails">
+        <link:definition>9954520 - Disclosure - Income Taxes (Schedule of Components of Deferred Tax Assets) (Additional Information) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IncomeTaxesScheduleofReconciliationofUnrecognizedTaxBenefitsExcludingInterestandPenaltiesDetails" roleURI="http://ncm.com/role/IncomeTaxesScheduleofReconciliationofUnrecognizedTaxBenefitsExcludingInterestandPenaltiesDetails">
+        <link:definition>9954521 - Disclosure - Income Taxes (Schedule of Reconciliation of Unrecognized Tax Benefits, Excluding Interest and Penalties) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="EquityNarrativeDetails" roleURI="http://ncm.com/role/EquityNarrativeDetails">
+        <link:definition>9954522 - Disclosure - Equity (Narrative) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RelatedPartyTransactionsNarrativeDetails" roleURI="http://ncm.com/role/RelatedPartyTransactionsNarrativeDetails">
+        <link:definition>9954523 - Disclosure - Related Party Transactions (Narrative) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RelatedPartyTransactionsSummaryofTransactionsBetweentheCompanyandtheFoundingMembersIncludedinStatementsofIncomeDetails" roleURI="http://ncm.com/role/RelatedPartyTransactionsSummaryofTransactionsBetweentheCompanyandtheFoundingMembersIncludedinStatementsofIncomeDetails">
+        <link:definition>9954524 - Disclosure - Related Party Transactions (Summary of Transactions Between the Company and the Founding Members Included in Statements of Income) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RelatedPartyTransactionsSummaryofTransactionsBetweentheCompanyandtheFoundingMembersIncludedinStatementsofIncomeAdditionalInformationDetails" roleURI="http://ncm.com/role/RelatedPartyTransactionsSummaryofTransactionsBetweentheCompanyandtheFoundingMembersIncludedinStatementsofIncomeAdditionalInformationDetails">
+        <link:definition>9954525 - Disclosure - Related Party Transactions (Summary of Transactions Between the Company and the Founding Members Included in Statements of Income) (Additional Information) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RelatedPartyTransactionsSummaryofTransactionsBetweentheCompanyandtheFoundingMembersIncludedinBalanceSheetsDetails" roleURI="http://ncm.com/role/RelatedPartyTransactionsSummaryofTransactionsBetweentheCompanyandtheFoundingMembersIncludedinBalanceSheetsDetails">
+        <link:definition>9954526 - Disclosure - Related Party Transactions (Summary of Transactions Between the Company and the Founding Members Included in Balance Sheets) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RelatedPartyTransactionsScheduleofMandatoryDistributionstoMembersDetails" roleURI="http://ncm.com/role/RelatedPartyTransactionsScheduleofMandatoryDistributionstoMembersDetails">
+        <link:definition>9954527 - Disclosure - Related Party Transactions (Schedule of Mandatory Distributions to Members) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RelatedPartyTransactionsScheduleofAmountsDuetoFoundingMembersDetails" roleURI="http://ncm.com/role/RelatedPartyTransactionsScheduleofAmountsDuetoFoundingMembersDetails">
+        <link:definition>9954528 - Disclosure - Related Party Transactions (Schedule of Amounts Due to Founding Members) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="BorrowingsScheduleofOutstandingDebtDetails" roleURI="http://ncm.com/role/BorrowingsScheduleofOutstandingDebtDetails">
+        <link:definition>9954529 - Disclosure - Borrowings (Schedule of Outstanding Debt) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="BorrowingsNarrativeDetails" roleURI="http://ncm.com/role/BorrowingsNarrativeDetails">
+        <link:definition>9954530 - Disclosure - Borrowings (Narrative) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="BorrowingsScheduleofAnnualMaturitiesonCreditFacilityandSeniorNotesDetails" roleURI="http://ncm.com/role/BorrowingsScheduleofAnnualMaturitiesonCreditFacilityandSeniorNotesDetails">
+        <link:definition>9954531 - Disclosure - Borrowings (Schedule of Annual Maturities on Credit Facility and Senior Notes) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ShareBasedCompensationNarrativeDetails" roleURI="http://ncm.com/role/ShareBasedCompensationNarrativeDetails">
+        <link:definition>9954532 - Disclosure - Share-Based Compensation (Narrative) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ShareBasedCompensationScheduleofShareBasedCompensationCostsDetails" roleURI="http://ncm.com/role/ShareBasedCompensationScheduleofShareBasedCompensationCostsDetails">
+        <link:definition>9954533 - Disclosure - Share-Based Compensation (Schedule of Share-Based Compensation Costs) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ShareBasedCompensationScheduleofShareBasedCompensationCostsAdditionalInformationDetails" roleURI="http://ncm.com/role/ShareBasedCompensationScheduleofShareBasedCompensationCostsAdditionalInformationDetails">
+        <link:definition>9954534 - Disclosure - Share-Based Compensation (Schedule of Share-Based Compensation Costs) (Additional Information) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ShareBasedCompensationSummaryofOptionAwardActivityDetails" roleURI="http://ncm.com/role/ShareBasedCompensationSummaryofOptionAwardActivityDetails">
+        <link:definition>9954535 - Disclosure - Share-Based Compensation (Summary of Option Award Activity) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ShareBasedCompensationSummaryofRestrictedStockAwardsandRestrictedStockUnitsDetails" roleURI="http://ncm.com/role/ShareBasedCompensationSummaryofRestrictedStockAwardsandRestrictedStockUnitsDetails">
+        <link:definition>9954536 - Disclosure - Share-Based Compensation (Summary of Restricted Stock Awards and Restricted Stock Units) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ShareBasedCompensationSummaryofRestrictedStockAwardsandRestrictedStockUnitsAdditionalInformationDetails" roleURI="http://ncm.com/role/ShareBasedCompensationSummaryofRestrictedStockAwardsandRestrictedStockUnitsAdditionalInformationDetails">
+        <link:definition>9954537 - Disclosure - Share-Based Compensation (Summary of Restricted Stock Awards and Restricted Stock Units) (Additional Information) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="EmployeeBenefitPlansNarrativeDetails" roleURI="http://ncm.com/role/EmployeeBenefitPlansNarrativeDetails">
+        <link:definition>9954538 - Disclosure - Employee Benefit Plans (Narrative) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CommitmentsandContingenciesNarrativeDetails" roleURI="http://ncm.com/role/CommitmentsandContingenciesNarrativeDetails">
+        <link:definition>9954539 - Disclosure - Commitments and Contingencies (Narrative) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CommitmentsandContingenciesScheduleofMinimumLeasePaymentsUnderNoncancelableOperatingLeasesDetails" roleURI="http://ncm.com/role/CommitmentsandContingenciesScheduleofMinimumLeasePaymentsUnderNoncancelableOperatingLeasesDetails">
+        <link:definition>9954540 - Disclosure - Commitments and Contingencies (Schedule of Minimum Lease Payments Under Noncancelable Operating Leases) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CommitmentsandContingenciesLeaseCostTableDetails" roleURI="http://ncm.com/role/CommitmentsandContingenciesLeaseCostTableDetails">
+        <link:definition>9954541 - Disclosure - Commitments and Contingencies Lease Cost Table (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FairValueMeasurementsScheduleofOtherInvestmentsDetails" roleURI="http://ncm.com/role/FairValueMeasurementsScheduleofOtherInvestmentsDetails">
+        <link:definition>9954542 - Disclosure - Fair Value Measurements (Schedule of Other Investments) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FairValueMeasurementsScheduleofOtherInvestmentsAdditionalInformationDetails" roleURI="http://ncm.com/role/FairValueMeasurementsScheduleofOtherInvestmentsAdditionalInformationDetails">
+        <link:definition>9954543 - Disclosure - Fair Value Measurements (Schedule of Other Investments) (Additional Information) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FairValueMeasurementsNarrativeDetails" roleURI="http://ncm.com/role/FairValueMeasurementsNarrativeDetails">
+        <link:definition>9954544 - Disclosure - Fair Value Measurements (Narrative) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FairValueMeasurementsEstimatedFairValuesofCompanysFinancialInstrumentsDetails" roleURI="http://ncm.com/role/FairValueMeasurementsEstimatedFairValuesofCompanysFinancialInstrumentsDetails">
+        <link:definition>9954545 - Disclosure - Fair Value Measurements (Estimated Fair Values of Company's Financial Instruments) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FairValueMeasurementsFairValuesoftheCompanysAssetsandLiabilitiesDetails" roleURI="http://ncm.com/role/FairValueMeasurementsFairValuesoftheCompanysAssetsandLiabilitiesDetails">
+        <link:definition>9954546 - Disclosure - Fair Value Measurements (Fair Values of the Company's Assets and Liabilities) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FairValueMeasurementsFairValuesoftheCompanysAssetsandLiabilitiesAdditionalInformationDetails" roleURI="http://ncm.com/role/FairValueMeasurementsFairValuesoftheCompanysAssetsandLiabilitiesAdditionalInformationDetails">
+        <link:definition>9954547 - Disclosure - Fair Value Measurements (Fair Values of the Company's Assets and Liabilities) (Additional Information) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FairValueMeasurementsScheduleofMarketableSecuritiesDetails" roleURI="http://ncm.com/role/FairValueMeasurementsScheduleofMarketableSecuritiesDetails">
+        <link:definition>9954548 - Disclosure - Fair Value Measurements (Schedule of Marketable Securities) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ValuationandQualifyingAccountsScheduleofValuationandQualifyingAccountsDetails" roleURI="http://ncm.com/role/ValuationandQualifyingAccountsScheduleofValuationandQualifyingAccountsDetails">
+        <link:definition>9954549 - Disclosure - Valuation and Qualifying Accounts (Schedule of Valuation and Qualifying Accounts) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="QuarterlyFinancialDataScheduleofQuarterlyFinancialDataDetails" roleURI="http://ncm.com/role/QuarterlyFinancialDataScheduleofQuarterlyFinancialDataDetails">
+        <link:definition>9954550 - Disclosure - Quarterly Financial Data (Schedule of Quarterly Financial Data) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SubsequentEventNarrativeDetails" roleURI="http://ncm.com/role/SubsequentEventNarrativeDetails">
+        <link:definition>9954551 - Disclosure - Subsequent Event (Narrative) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RelatedPartyDisclosuresDetails" roleURI="http://ncm.com/role/RelatedPartyDisclosuresDetails">
+        <link:definition>9954552 - Disclosure - Related Party Disclosures (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RisksandUncertaintiesDetails" roleURI="http://ncm.com/role/RisksandUncertaintiesDetails">
+        <link:definition>9954553 - Disclosure - Risks and Uncertainties (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element id="ncmi_LocalAdvertisingRevenueMember" abstract="true" name="LocalAdvertisingRevenueMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="ncmi_NetworkAffiliateTransactionsRelatedParty" abstract="false" name="NetworkAffiliateTransactionsRelatedParty" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="ncmi_WriteOffOfEquipment" abstract="false" name="WriteOffOfEquipment" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="ncmi_DisposalsOfIntangibleAssetsNet" abstract="false" name="DisposalsOfIntangibleAssetsNet" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="ncmi_ReductionInValuationAllowanceFromInvestmentInNCMLLCDeferredTaxAsset" abstract="false" name="ReductionInValuationAllowanceFromInvestmentInNCMLLCDeferredTaxAsset" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="ncmi_CommonMembershipUnitsSurrenderedCompensationForLostOperatingIncomeForDivestedTheatersTerm" abstract="false" name="CommonMembershipUnitsSurrenderedCompensationForLostOperatingIncomeForDivestedTheatersTerm" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:durationItemType"/>
+  <xs:element id="ncmi_LineOfCreditFacilityPercentageOfRevolvingCommitment" abstract="false" name="LineOfCreditFacilityPercentageOfRevolvingCommitment" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+  <xs:element id="ncmi_CinemarkHoldingsIncMember" abstract="true" name="CinemarkHoldingsIncMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="ncmi_DebtInstrumentRedemptionPeriodSixMember" abstract="true" name="DebtInstrumentRedemptionPeriodSixMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="ncmi_PercentageOfTheatersOpenInNetwork" abstract="false" name="PercentageOfTheatersOpenInNetwork" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+  <xs:element id="ncmi_PercentageOfIncreaseInPaymentPerTheaterPatronNationalCineMediaLLC" abstract="false" name="PercentageOfIncreaseInPaymentPerTheaterPatronNationalCineMediaLLC" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+  <xs:element id="ncmi_GainLossOnRemeasurement" abstract="false" name="GainLossOnRemeasurement" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="ncmi_TermLoanSecondTrancheNet" abstract="false" name="TermLoanSecondTrancheNet" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="ncmi_AdditionalPaidInCapitalAndAccumulatedDeficitCommonStock" abstract="false" name="AdditionalPaidInCapitalAndAccumulatedDeficitCommonStock" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="ncmi_RevenuePerformanceObligationPaymentTerms" abstract="false" name="RevenuePerformanceObligationPaymentTerms" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:durationItemType"/>
+  <xs:element id="ncmi_UnitsOfPartnershipAmountCinemark" abstract="false" name="UnitsOfPartnershipAmountCinemark" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="xbrli:sharesItemType"/>
+  <xs:element id="ncmi_TermLoanSecondTrancheLossOnDebtModification" abstract="false" name="TermLoanSecondTrancheLossOnDebtModification" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="ncmi_IntegrationPaymentsDueFromRelatedParties" abstract="false" name="IntegrationPaymentsDueFromRelatedParties" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="ncmi_ShortTermCertificatesOfDepositMember" abstract="true" name="ShortTermCertificatesOfDepositMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="ncmi_DeferredIncomeTaxExpenseBenefitGross" abstract="false" name="DeferredIncomeTaxExpenseBenefitGross" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="ncmi_DeferredTaxAssetsNetOfValuationAllowanceNoncurrent" abstract="false" name="DeferredTaxAssetsNetOfValuationAllowanceNoncurrent" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="ncmi_PercentageIncreaseDecreaseInTheaterAttendanceForCommonUnitAdjustmentToOccur" abstract="false" name="PercentageIncreaseDecreaseInTheaterAttendanceForCommonUnitAdjustmentToOccur" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+  <xs:element id="ncmi_AccountingPoliciesTable" abstract="true" name="AccountingPoliciesTable" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrldt:hypercubeItem" type="xbrli:stringItemType"/>
+  <xs:element id="ncmi_ReductionToPayableToFoundingMembers" abstract="false" name="ReductionToPayableToFoundingMembers" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="ncmi_AccruedIntegrationAndOtherEncumberedTheaterPaymentsDueFromFoundingMembers" abstract="false" name="AccruedIntegrationAndOtherEncumberedTheaterPaymentsDueFromFoundingMembers" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="ncmi_ConsolidatedNetSeniorSecuredLeverageRatio" abstract="false" name="ConsolidatedNetSeniorSecuredLeverageRatio" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="xbrli:pureItemType"/>
+  <xs:element id="ncmi_ShareBasedCompensationArrangementByShareBasedPaymentAwardAwardContractualTerm" abstract="false" name="ShareBasedCompensationArrangementByShareBasedPaymentAwardAwardContractualTerm" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:durationItemType"/>
+  <xs:element id="ncmi_ChangeInAccountingPrincipleNotRelatedToANewAccountingStandardsUpdateMember" abstract="true" name="ChangeInAccountingPrincipleNotRelatedToANewAccountingStandardsUpdateMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="ncmi_IntangibleAssetsESAMember" abstract="true" name="IntangibleAssetsESAMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="ncmi_DocumentAndEntityInformationAbstract" abstract="true" name="DocumentAndEntityInformationAbstract" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="ncmi_PayableToFoundingMembersUnderTaxSharingAgreementNoncurrent" abstract="false" name="PayableToFoundingMembersUnderTaxSharingAgreementNoncurrent" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="ncmi_DebtInstrumentBasisSpreadOnVariableRates" abstract="false" name="DebtInstrumentBasisSpreadOnVariableRates" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+  <xs:element id="ncmi_RetainedEarningsAdjustment201613Member" abstract="true" name="RetainedEarningsAdjustment201613Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="ncmi_IncreaseDecreaseInDividendsNotRequiringCash" abstract="false" name="IncreaseDecreaseInDividendsNotRequiringCash" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="ncmi_TermLoanMember" abstract="true" name="TermLoanMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="ncmi_EffectiveIncomeTaxRateReconciliationTaxAttributeReduction1" abstract="false" name="EffectiveIncomeTaxRateReconciliationTaxAttributeReduction1" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="ncmi_TaxCutsAndJobsActOf2017TerminatingExclusionOfPerformanceBasedCompensationPerEmployeePerYearLimitation" abstract="false" name="TaxCutsAndJobsActOf2017TerminatingExclusionOfPerformanceBasedCompensationPerEmployeePerYearLimitation" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="ncmi_EffectiveIncomeTaxRateReconciliationBlendedStateAndFederalIncomeTaxes" abstract="false" name="EffectiveIncomeTaxRateReconciliationBlendedStateAndFederalIncomeTaxes" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+  <xs:element id="ncmi_NonoperatingGainLossRelatedToDebtIssuanceCosts" abstract="false" name="NonoperatingGainLossRelatedToDebtIssuanceCosts" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="ncmi_AvailableCashRequirementCovenantDuringWaiverMinMember" abstract="true" name="AvailableCashRequirementCovenantDuringWaiverMinMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="ncmi_CostsAndOtherReimbursement" abstract="false" name="CostsAndOtherReimbursement" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="ncmi_CustomerPercentageOfAccountsReceivable" abstract="false" name="CustomerPercentageOfAccountsReceivable" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+  <xs:element id="ncmi_DebtInstrumentAmortizationRate" abstract="false" name="DebtInstrumentAmortizationRate" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+  <xs:element id="ncmi_CostMethodInvestmentOwnershipPercentage" abstract="false" name="CostMethodInvestmentOwnershipPercentage" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+  <xs:element id="ncmi_ProceedsFromRestrictedStock" abstract="false" name="ProceedsFromRestrictedStock" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="ncmi_UnitsOfPartnershipInterestAmountSurrendered" abstract="false" name="UnitsOfPartnershipInterestAmountSurrendered" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="xbrli:sharesItemType"/>
+  <xs:element id="ncmi_CashDistributionsFromNonConsolidatedEntities" abstract="false" name="CashDistributionsFromNonConsolidatedEntities" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="ncmi_IncreaseToReMeasurementOfPayableToFoundingMembersUnderTaxSharingAgreement" abstract="false" name="IncreaseToReMeasurementOfPayableToFoundingMembersUnderTaxSharingAgreement" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="ncmi_ImputedInterestFutureLeasePayments" abstract="false" name="ImputedInterestFutureLeasePayments" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="ncmi_BusinessCombinationRecognizedIdentifiableAssetsAcquiredAndLiabilitiesAssumedFairValueOfIntangibleAssetsNonCurrent" abstract="false" name="BusinessCombinationRecognizedIdentifiableAssetsAcquiredAndLiabilitiesAssumedFairValueOfIntangibleAssetsNonCurrent" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="ncmi_DistributionsPayable" abstract="false" name="DistributionsPayable" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="ncmi_CinemarkMember" abstract="true" name="CinemarkMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="ncmi_NumberOfCommonUnitsConvertedToCommonStock" abstract="false" name="NumberOfCommonUnitsConvertedToCommonStock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:sharesItemType"/>
+  <xs:element id="ncmi_ChangeOfControlMember" abstract="true" name="ChangeOfControlMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="ncmi_AvailableCashRequirementCovenantDuringWaiverMaxMember" abstract="true" name="AvailableCashRequirementCovenantDuringWaiverMaxMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="ncmi_ReductionInPayableToFoundingMembersUnderTheTaxReceivableAgreement" abstract="false" name="ReductionInPayableToFoundingMembersUnderTheTaxReceivableAgreement" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="ncmi_A2019ESAAmendmentYearExtension" abstract="false" name="A2019ESAAmendmentYearExtension" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:durationItemType"/>
+  <xs:element id="ncmi_RemovalOfCashAndCashEquivalentsOfUnconsolidatedAffiliates" abstract="false" name="RemovalOfCashAndCashEquivalentsOfUnconsolidatedAffiliates" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="ncmi_ShortTermUSAgencyBondsMember" abstract="true" name="ShortTermUSAgencyBondsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="ncmi_RevenueManagementFee" abstract="false" name="RevenueManagementFee" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="ncmi_BusinessCombinationRecognizedIdentifiableAssetsAcquiredAndLiabilitiesAssumedOtherInvestmentsNonCurrent" abstract="false" name="BusinessCombinationRecognizedIdentifiableAssetsAcquiredAndLiabilitiesAssumedOtherInvestmentsNonCurrent" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="ncmi_UsGaap_DebtInstrumentBasisSpreadOnVariableRate1" abstract="false" name="UsGaap_DebtInstrumentBasisSpreadOnVariableRate1" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="ncmi_ConsolidationLessthanWhollyOwnedSubsidiaryParentOwnershipInterestChangesIncomeTaxAndOtherImpactsOfSubsidiaryOwnershipChange" abstract="false" name="ConsolidationLessthanWhollyOwnedSubsidiaryParentOwnershipInterestChangesIncomeTaxAndOtherImpactsOfSubsidiaryOwnershipChange" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="ncmi_FoundingMemberAdvertisingRevenueFromBeverageConcessionaireAgreementsMember" abstract="true" name="FoundingMemberAdvertisingRevenueFromBeverageConcessionaireAgreementsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="ncmi_AccruedDividends" abstract="false" name="AccruedDividends" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="ncmi_IncrementalTermLoanRate" abstract="false" name="IncrementalTermLoanRate" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+  <xs:element id="ncmi_TaxCutsAndJobsActChangeInTaxRateReductionOfNetDeferredTaxAssets" abstract="false" name="TaxCutsAndJobsActChangeInTaxRateReductionOfNetDeferredTaxAssets" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="ncmi_DisposalsOfIntangibleAssetsGross" abstract="false" name="DisposalsOfIntangibleAssetsGross" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="ncmi_RedemptionAggregateNotes2028" abstract="false" name="RedemptionAggregateNotes2028" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+  <xs:element id="ncmi_LossOnTheModificationOfDebt" abstract="false" name="LossOnTheModificationOfDebt" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="ncmi_ConcentrationOfCreditRiskAndSignificantCustomersPolicyTextBlock" abstract="false" name="ConcentrationOfCreditRiskAndSignificantCustomersPolicyTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:textBlockItemType"/>
+  <xs:element id="ncmi_AmountIncreaseInPaymentPerTheaterPatron" abstract="false" name="AmountIncreaseInPaymentPerTheaterPatron" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="ncmi_OtherReceivableMember" abstract="true" name="OtherReceivableMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="ncmi_DeferredTaxAssetSaleOfMembershipUnits" abstract="false" name="DeferredTaxAssetSaleOfMembershipUnits" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="ncmi_FiniteLivedIntangibleAssetsIntegrationAndOtherEncumberedTheaterPaymentsDuringPeriod" abstract="false" name="FiniteLivedIntangibleAssetsIntegrationAndOtherEncumberedTheaterPaymentsDuringPeriod" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="ncmi_SeniorUnsecuredNotesDueTwoZeroTwoEightMember" abstract="true" name="SeniorUnsecuredNotesDueTwoZeroTwoEightMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="ncmi_RecentlyAdoptedAccountingPronouncementsPolicyTextBlock" abstract="false" name="RecentlyAdoptedAccountingPronouncementsPolicyTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:textBlockItemType"/>
+  <xs:element id="ncmi_ShareBasedCompensationArrangementByShareBasedPaymentAwardEstimatedAnnualForfeitureRate" abstract="false" name="ShareBasedCompensationArrangementByShareBasedPaymentAwardEstimatedAnnualForfeitureRate" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+  <xs:element id="ncmi_TermLoanSecondTrancheMember" abstract="true" name="TermLoanSecondTrancheMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="ncmi_GainLossOnReMeasurementOfPayableToFoundingMembersUnderTaxSharingAgreement" abstract="false" name="GainLossOnReMeasurementOfPayableToFoundingMembersUnderTaxSharingAgreement" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="ncmi_TermLoanSecondTrancheDiscountValue" abstract="false" name="TermLoanSecondTrancheDiscountValue" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="ncmi_SeniorSecuredFinancialCovenantRatioToMakeDistributions" abstract="false" name="SeniorSecuredFinancialCovenantRatioToMakeDistributions" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="xbrli:pureItemType"/>
+  <xs:element id="ncmi_IntangibleAssetsAffiliatesMember" abstract="true" name="IntangibleAssetsAffiliatesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="ncmi_ConsolidatedNetTotalLeverageRatio" abstract="false" name="ConsolidatedNetTotalLeverageRatio" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="xbrli:pureItemType"/>
+  <xs:element id="ncmi_DecreaseInDeferredTaxAssets" abstract="false" name="DecreaseInDeferredTaxAssets" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="ncmi_NonCashGainLossOnReMeasurementOfPayableToFoundingMembersUnderTaxSharingAgreement" abstract="false" name="NonCashGainLossOnReMeasurementOfPayableToFoundingMembersUnderTaxSharingAgreement" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="ncmi_CapitalizedImplementationCostsDepreciation" abstract="false" name="CapitalizedImplementationCostsDepreciation" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="ncmi_RevenueGuaranteePeriod" abstract="false" name="RevenueGuaranteePeriod" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:durationItemType"/>
+  <xs:element id="ncmi_PropertyPlantAndEquipmentNetBeforeConstructionInProgress" abstract="false" name="PropertyPlantAndEquipmentNetBeforeConstructionInProgress" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="ncmi_ScheduleOfUsefulLivesTableTextBlock" abstract="false" name="ScheduleOfUsefulLivesTableTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:textBlockItemType"/>
+  <xs:element id="ncmi_PercentageOfTheaterAccessFeePaid" abstract="false" name="PercentageOfTheaterAccessFeePaid" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+  <xs:element id="ncmi_A2020OmnibusIncentivePlanMember" abstract="true" name="A2020OmnibusIncentivePlanMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="ncmi_IncomeTaxReconciliationIssuanceOfAffiliateMembershipUnit" abstract="false" name="IncomeTaxReconciliationIssuanceOfAffiliateMembershipUnit" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="ncmi_CumulativePrincipalAmountPaidOnTermLoan" abstract="false" name="CumulativePrincipalAmountPaidOnTermLoan" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="ncmi_CreditAgreementThirdAmendmentMember" abstract="true" name="CreditAgreementThirdAmendmentMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="ncmi_DebtIssuanceCostsCapitalizedDuringDeconsolidation" abstract="false" name="DebtIssuanceCostsCapitalizedDuringDeconsolidation" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="ncmi_BusinessCombinationRecognizedIdentifiableAssetsAcquiredAndLiabilitiesAssumedCurrentLiabilitiesAccruedExpenses" abstract="false" name="BusinessCombinationRecognizedIdentifiableAssetsAcquiredAndLiabilitiesAssumedCurrentLiabilitiesAccruedExpenses" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="ncmi_A2018And2022RevolvingCreditFacilitiesFairValueMember" abstract="true" name="A2018And2022RevolvingCreditFacilitiesFairValueMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="ncmi_DebtIssuanceCostsCapitalizedDuringReconsolidation" abstract="false" name="DebtIssuanceCostsCapitalizedDuringReconsolidation" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="ncmi_RevolvingCreditFacility2023Member" abstract="true" name="RevolvingCreditFacility2023Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="ncmi_ProceedsFromOperatingLeases" abstract="false" name="ProceedsFromOperatingLeases" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="ncmi_NoncashDistributionsToFoundingMembers" abstract="false" name="NoncashDistributionsToFoundingMembers" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="ncmi_IncreaseInIncomeTaxExpenseDueToIncreaseInValuationAllowance" abstract="false" name="IncreaseInIncomeTaxExpenseDueToIncreaseInValuationAllowance" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="ncmi_EffectiveIncomeTaxRateReconciliationExecutiveCompensationAmount" abstract="false" name="EffectiveIncomeTaxRateReconciliationExecutiveCompensationAmount" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="ncmi_OtherCFfromInvestingActivities" abstract="false" name="OtherCFfromInvestingActivities" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="ncmi_SeniorSecuredNotesDueTwoZeroTwoEightMemberDomain" abstract="true" name="SeniorSecuredNotesDueTwoZeroTwoEightMemberDomain" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="ncmi_CommonMembershipUnitsIssued" abstract="false" name="CommonMembershipUnitsIssued" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:sharesItemType"/>
+  <xs:element id="ncmi_DeferredTaxAssetsValuationAllowanceNet" abstract="false" name="DeferredTaxAssetsValuationAllowanceNet" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="ncmi_TwoThousandSevenEquityIncentivePlanMember" abstract="true" name="TwoThousandSevenEquityIncentivePlanMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="ncmi_PlatinumSpotRevenuePercentage" abstract="false" name="PlatinumSpotRevenuePercentage" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+  <xs:element id="ncmi_LengthOfOnScreenAdvertisingTimeWhichFoundingMembersPurchased" abstract="false" name="LengthOfOnScreenAdvertisingTimeWhichFoundingMembersPurchased" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:durationItemType"/>
+  <xs:element id="ncmi_AdjustmentsToAdditionalPaidInCapitalParentInvestmentInSubsidiarynet" abstract="false" name="AdjustmentsToAdditionalPaidInCapitalParentInvestmentInSubsidiarynet" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="ncmi_TermLoanSecondTranche" abstract="false" name="TermLoanSecondTranche" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="ncmi_NumberOfVotesPerCommonShare" abstract="false" name="NumberOfVotesPerCommonShare" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:decimalItemType"/>
+  <xs:element id="ncmi_BadDebtExpense" abstract="false" name="BadDebtExpense" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="ncmi_AdjustmentToAdditionalPaidInCapitalDueToDeferredTaxAssetLiability" abstract="false" name="AdjustmentToAdditionalPaidInCapitalDueToDeferredTaxAssetLiability" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="ncmi_PercentageOfCustomersContributingToMoreThanTenPercentOfRevenue" abstract="false" name="PercentageOfCustomersContributingToMoreThanTenPercentOfRevenue" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+  <xs:element id="ncmi_RetainedEarningsRAAPAdjustment201613Member" abstract="true" name="RetainedEarningsRAAPAdjustment201613Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="ncmi_InitialCreditAgreementMember" abstract="true" name="InitialCreditAgreementMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="ncmi_EquityInterestAcquiredPercentage" abstract="false" name="EquityInterestAcquiredPercentage" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+  <xs:element id="ncmi_AmericanMultiCinemaIncAndCinemarkHoldingsIncMember" abstract="true" name="AmericanMultiCinemaIncAndCinemarkHoldingsIncMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="ncmi_CommonMembershipUnitAdjustmentReceived" abstract="false" name="CommonMembershipUnitAdjustmentReceived" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="ncmi_AmericanMultiCinemaAcquisitionOfCarmikeCinemasIncMember" abstract="true" name="AmericanMultiCinemaAcquisitionOfCarmikeCinemasIncMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="ncmi_ComputerHardwareAndSoftwareMember" abstract="true" name="ComputerHardwareAndSoftwareMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="ncmi_CreditAgreementEBITDALimit" abstract="false" name="CreditAgreementEBITDALimit" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="ncmi_RegalEntertainmentGroupMember" abstract="true" name="RegalEntertainmentGroupMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="ncmi_LongTermMarketableSecuritiesMember" abstract="true" name="LongTermMarketableSecuritiesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="ncmi_ACJVLLCMember" abstract="true" name="ACJVLLCMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="ncmi_AdjustmentsToAdditionalPaidInCapitalParentInvestmentInSubsidiary" abstract="false" name="AdjustmentsToAdditionalPaidInCapitalParentInvestmentInSubsidiary" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="ncmi_DebtIssuanceCostsCapitalizedDuringPeriod" abstract="false" name="DebtIssuanceCostsCapitalizedDuringPeriod" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="ncmi_OneFoundingMembersMember" abstract="true" name="OneFoundingMembersMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="ncmi_ShareBasedCompensationArrangementByShareBasedPaymentAwardAwardVestingRightsPercentagePerYear" abstract="false" name="ShareBasedCompensationArrangementByShareBasedPaymentAwardAwardVestingRightsPercentagePerYear" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+  <xs:element id="ncmi_OperatingCostsPolicyTextBlock" abstract="false" name="OperatingCostsPolicyTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:textBlockItemType"/>
+  <xs:element id="ncmi_CommonMembershipUnitsReturned" abstract="false" name="CommonMembershipUnitsReturned" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:sharesItemType"/>
+  <xs:element id="ncmi_NCMLLCMember" abstract="true" name="NCMLLCMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="ncmi_ValuationAllowancesAndReservesChargedAndReversedToOtherAccounts" abstract="false" name="ValuationAllowancesAndReservesChargedAndReversedToOtherAccounts" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="ncmi_SeniorSecuredNotesDue2026Axis" abstract="true" name="SeniorSecuredNotesDue2026Axis" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrldt:dimensionItem" type="xbrli:stringItemType"/>
+  <xs:element id="ncmi_AvailableForSaleSecuritiesMaturity" abstract="false" name="AvailableForSaleSecuritiesMaturity" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:durationItemType"/>
+  <xs:element id="ncmi_CreditAgreementAxis" abstract="true" name="CreditAgreementAxis" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrldt:dimensionItem" type="xbrli:stringItemType"/>
+  <xs:element id="ncmi_SeniorSecuredLeverageRatio" abstract="false" name="SeniorSecuredLeverageRatio" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+  <xs:element id="ncmi_SeniorNotesDueTwoZeroTwoTwoMember" abstract="true" name="SeniorNotesDueTwoZeroTwoTwoMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="ncmi_ShareBasedCompensationArrangementByShareBasedPaymentAwardOtherThanOptionsExpectedToVestAfterConsiderationOfExpectedForfeituresOutstandingNumber" abstract="false" name="ShareBasedCompensationArrangementByShareBasedPaymentAwardOtherThanOptionsExpectedToVestAfterConsiderationOfExpectedForfeituresOutstandingNumber" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:sharesItemType"/>
+  <xs:element id="ncmi_StockOptionsAndNonVestedRestrictedStockMember" abstract="true" name="StockOptionsAndNonVestedRestrictedStockMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="ncmi_BusinessCombinationRecognizedIdentifiableAssetsAcquiredAndLiabilitiesAssumedCurrentLiabilitiesAmountsDueToMembersNet" abstract="false" name="BusinessCombinationRecognizedIdentifiableAssetsAcquiredAndLiabilitiesAssumedCurrentLiabilitiesAmountsDueToMembersNet" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="ncmi_TermLoanFirstTrancheMember" abstract="true" name="TermLoanFirstTrancheMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="ncmi_AccAmortInangibleAssetAffiliatesDisposals" abstract="false" name="AccAmortInangibleAssetAffiliatesDisposals" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="ncmi_CommonMembershipUnitsSurrenderedDueToRequiredTheaterTransfer" abstract="false" name="CommonMembershipUnitsSurrenderedDueToRequiredTheaterTransfer" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:sharesItemType"/>
+  <xs:element id="ncmi_CovenantDuringWaiverMinMember" abstract="true" name="CovenantDuringWaiverMinMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="ncmi_NetworkCostsMember" abstract="true" name="NetworkCostsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="ncmi_NetworkCosts" abstract="false" name="NetworkCosts" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="ncmi_PercentageOfCashSavingsRelatedToTaxes" abstract="false" name="PercentageOfCashSavingsRelatedToTaxes" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+  <xs:element id="ncmi_RECONSOLIDATIONOFNCMLLCAbstract" abstract="true" name="RECONSOLIDATIONOFNCMLLCAbstract" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="ncmi_BarterTransactionRevenueMember" abstract="true" name="BarterTransactionRevenueMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="ncmi_DebtInstrumentBasisSpreadOnVariableRateIncrease" abstract="false" name="DebtInstrumentBasisSpreadOnVariableRateIncrease" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+  <xs:element id="ncmi_CumulativeEffectAdjustmentForAdoptionOfASU201409" abstract="false" name="CumulativeEffectAdjustmentForAdoptionOfASU201409" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="ncmi_PaymentToFoundingMembersUnderTheTaxReceivableAgreement" abstract="false" name="PaymentToFoundingMembersUnderTheTaxReceivableAgreement" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="ncmi_FoundingMembersMember" abstract="true" name="FoundingMembersMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="ncmi_IncrementalTermLoan" abstract="false" name="IncrementalTermLoan" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="ncmi_TaxCutsAndJobsActOf2017ChangeInTaxRateDeferredTaxAssetIncomeTaxExpenseBenefit" abstract="false" name="TaxCutsAndJobsActOf2017ChangeInTaxRateDeferredTaxAssetIncomeTaxExpenseBenefit" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="ncmi_RelatedPartyFoundingMembersMember" abstract="true" name="RelatedPartyFoundingMembersMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="ncmi_CreditAgreementSecondAmendmentMember" abstract="true" name="CreditAgreementSecondAmendmentMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="ncmi_PercentageOfIncreaseInPaymentPerTheaterPatron" abstract="false" name="PercentageOfIncreaseInPaymentPerTheaterPatron" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+  <xs:element id="ncmi_NetworkAffiliatesMember" abstract="true" name="NetworkAffiliatesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="ncmi_TaxCutsAndJobsActOf2017MeasurementMaximumExtensionPeriod" abstract="false" name="TaxCutsAndJobsActOf2017MeasurementMaximumExtensionPeriod" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:durationItemType"/>
+  <xs:element id="ncmi_TheaterAccessFees" abstract="false" name="TheaterAccessFees" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="ncmi_CapitalizedImplementationCosts" abstract="false" name="CapitalizedImplementationCosts" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="ncmi_SeniorSecuredNotesDueTwoThousandTwentyEightMember" abstract="true" name="SeniorSecuredNotesDueTwoThousandTwentyEightMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="ncmi_CovenantDuringWaiverMaxMember" abstract="true" name="CovenantDuringWaiverMaxMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="ncmi_BusinessCombinationRecognizedIdentifiableAssetsAcquiredAndLiabilitiesAssumedCurrentAssetsValuationAdjustment" abstract="false" name="BusinessCombinationRecognizedIdentifiableAssetsAcquiredAndLiabilitiesAssumedCurrentAssetsValuationAdjustment" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="ncmi_WeightedAverageTermESAandAffiliate" abstract="false" name="WeightedAverageTermESAandAffiliate" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:durationItemType"/>
+  <xs:element id="ncmi_DilutiveSecuritiesEffectonBasicEarningsPerShareOptionsandRestrictiveStockUnitsTax" abstract="false" name="DilutiveSecuritiesEffectonBasicEarningsPerShareOptionsandRestrictiveStockUnitsTax" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="ncmi_AgreementWithFoundingMembersRemainingTerm" abstract="false" name="AgreementWithFoundingMembersRemainingTerm" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:durationItemType"/>
+  <xs:element id="ncmi_IncomeTaxesTable" abstract="true" name="IncomeTaxesTable" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrldt:hypercubeItem" type="xbrli:stringItemType"/>
+  <xs:element id="ncmi_RestrictedStockAndRestrictedStockUnitsMember" abstract="true" name="RestrictedStockAndRestrictedStockUnitsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="ncmi_CumulativeEffectAdjustmentForAdoptionOfASU201613Net" abstract="false" name="CumulativeEffectAdjustmentForAdoptionOfASU201613Net" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="ncmi_PeriodOfIncreaseInPaymentOnTheaterPatron" abstract="false" name="PeriodOfIncreaseInPaymentOnTheaterPatron" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:durationItemType"/>
+  <xs:element id="ncmi_ChangeInDeferredTaxAssetMember" abstract="true" name="ChangeInDeferredTaxAssetMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="ncmi_RelatedPartyTRAPaymentRegal" abstract="false" name="RelatedPartyTRAPaymentRegal" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="ncmi_AccruedReserves" abstract="false" name="AccruedReserves" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="ncmi_ValueOfCommonMembershipUnitsSurrenderedForTransferredTheaters" abstract="false" name="ValueOfCommonMembershipUnitsSurrenderedForTransferredTheaters" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="ncmi_IncomeTaxReconciliationIncomeTaxExpenseExcludingMinorityInterest" abstract="false" name="IncomeTaxReconciliationIncomeTaxExpenseExcludingMinorityInterest" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="ncmi_CumulativeEffectAdjustmentForAdoptionOfASU201613" abstract="false" name="CumulativeEffectAdjustmentForAdoptionOfASU201613" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="ncmi_A2022RevolvingCreditFacilityMember" abstract="true" name="A2022RevolvingCreditFacilityMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="ncmi_SoftwareAndDevelopmentCostsMember" abstract="true" name="SoftwareAndDevelopmentCostsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="ncmi_SeniorSecuredCreditFacilityMember" abstract="true" name="SeniorSecuredCreditFacilityMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="ncmi_DebtInstrumentNetTotalLeverageRatio" abstract="false" name="DebtInstrumentNetTotalLeverageRatio" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="xbrli:decimalItemType"/>
+  <xs:element id="ncmi_DebtInstrumentTriggerAmountCovenant" abstract="false" name="DebtInstrumentTriggerAmountCovenant" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="ncmi_ValuationAllowanceReversedMember" abstract="true" name="ValuationAllowanceReversedMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="ncmi_RevolvingCreditFacilityMember2018Member" abstract="true" name="RevolvingCreditFacilityMember2018Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="ncmi_AggregateRemainingofPrincipalNotes2028" abstract="false" name="AggregateRemainingofPrincipalNotes2028" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+  <xs:element id="ncmi_SeniorSecuredNotesDue2026Domain" abstract="true" name="SeniorSecuredNotesDue2026Domain" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="ncmi_NationalCineMediaLLCMember" abstract="true" name="NationalCineMediaLLCMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="ncmi_CommonMembershipUnitsSurrenderedToCompensateForLostOperatingIncomeForTransferredTheaters" abstract="false" name="CommonMembershipUnitsSurrenderedToCompensateForLostOperatingIncomeForTransferredTheaters" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:sharesItemType"/>
+  <xs:element id="ncmi_RelatedPartyTRAPaymentCinemark" abstract="false" name="RelatedPartyTRAPaymentCinemark" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="ncmi_DebtInstrumentDividendRestrictionNetSeniorSecuredLeverageRatio" abstract="false" name="DebtInstrumentDividendRestrictionNetSeniorSecuredLeverageRatio" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="xbrli:pureItemType"/>
+  <xs:element id="ncmi_MemorandumOfUnderstandingToEffectuateAspectsOfFinalJudgmentMember" abstract="true" name="MemorandumOfUnderstandingToEffectuateAspectsOfFinalJudgmentMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="ncmi_OwnershipInACJVLLC" abstract="false" name="OwnershipInACJVLLC" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+  <xs:element id="ncmi_CustomerRelationsMember" abstract="true" name="CustomerRelationsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="ncmi_ConcentrationOfCreditRiskAsAPercentageOfAccountsReceivable" abstract="false" name="ConcentrationOfCreditRiskAsAPercentageOfAccountsReceivable" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+  <xs:element id="ncmi_DividendPaymentsDuringPeriodUponVestingOfStockUnits" abstract="false" name="DividendPaymentsDuringPeriodUponVestingOfStockUnits" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="ncmi_UnitsOfPartnershipInterestAmountRegal" abstract="false" name="UnitsOfPartnershipInterestAmountRegal" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="xbrli:sharesItemType"/>
+  <xs:element id="ncmi_ShareBasedCompensationMeasurementPeriod" abstract="false" name="ShareBasedCompensationMeasurementPeriod" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:durationItemType"/>
+  <xs:element id="ncmi_DebtInstrumentFixedCoverageCovenant" abstract="false" name="DebtInstrumentFixedCoverageCovenant" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="xbrli:decimalItemType"/>
+  <xs:element id="ncmi_ProceedsFromEquityMethodInvestmentInvestingActivities" abstract="false" name="ProceedsFromEquityMethodInvestmentInvestingActivities" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="ncmi_CustomerWithRevenueInExcessOfTenPercentOfTotalRevenue" abstract="false" name="CustomerWithRevenueInExcessOfTenPercentOfTotalRevenue" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+  <xs:element id="ncmi_SaleOfMembershipUnitsNumberOfSharesSold" abstract="false" name="SaleOfMembershipUnitsNumberOfSharesSold" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:sharesItemType"/>
+  <xs:element id="ncmi_A2018And2022RevolvingCreditFacilitiesCarryingValueMember" abstract="true" name="A2018And2022RevolvingCreditFacilitiesCarryingValueMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="ncmi_AdditionalTaxPayments" abstract="false" name="AdditionalTaxPayments" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="ncmi_OutstandingCreditFacilityWaiverLimit" abstract="false" name="OutstandingCreditFacilityWaiverLimit" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="ncmi_NotesReceivableStatedInterestRate" abstract="false" name="NotesReceivableStatedInterestRate" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+  <xs:element id="ncmi_SecuredCreditorsMember" abstract="true" name="SecuredCreditorsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="ncmi_UnrestrictedCashAndCashEquivalent" abstract="false" name="UnrestrictedCashAndCashEquivalent" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="ncmi_DebtInstrumentIssuedPercentageOfFaceValue" abstract="false" name="DebtInstrumentIssuedPercentageOfFaceValue" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+  <xs:element id="ncmi_LengthOfOnScreenAdvertisingTimeToSatisfyAgreementObligations" abstract="false" name="LengthOfOnScreenAdvertisingTimeToSatisfyAgreementObligations" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:durationItemType"/>
+  <xs:element id="ncmi_FoundingMemberIntegrationAndEncumberedPaymentsDueFromRelatedParties" abstract="false" name="FoundingMemberIntegrationAndEncumberedPaymentsDueFromRelatedParties" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="ncmi_TermLoanInterestRateIncreaseFollowingAmendment" abstract="false" name="TermLoanInterestRateIncreaseFollowingAmendment" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+  <xs:element id="ncmi_TwoFoundingMembersMember" abstract="true" name="TwoFoundingMembersMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="ncmi_IncreaseDecreaseInCostAndEquityMethodInvestments" abstract="false" name="IncreaseDecreaseInCostAndEquityMethodInvestments" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="ncmi_CommonMembershipUnitsIssuedAndCancelled" abstract="false" name="CommonMembershipUnitsIssuedAndCancelled" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:sharesItemType"/>
+  <xs:element id="ncmi_GainLossOnReMeasurementOfPayableToFoundingMembersUnderTRA" abstract="false" name="GainLossOnReMeasurementOfPayableToFoundingMembersUnderTRA" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="ncmi_ContentSegmentSeconds" abstract="false" name="ContentSegmentSeconds" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:durationItemType"/>
+  <xs:element id="ncmi_TermOfAdvertisingServices" abstract="false" name="TermOfAdvertisingServices" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:durationItemType"/>
+  <xs:element id="ncmi_NumberOfDaysUtilizedWithinMembershipUnitRedemptionPaymentCalculation" abstract="false" name="NumberOfDaysUtilizedWithinMembershipUnitRedemptionPaymentCalculation" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:durationItemType"/>
+  <xs:element id="ncmi_ImpairmentOnInvestment" abstract="false" name="ImpairmentOnInvestment" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="ncmi_ACJVCashDistributions" abstract="false" name="ACJVCashDistributions" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="ncmi_A2016EquityIncentivePlanMember" abstract="true" name="A2016EquityIncentivePlanMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="ncmi_ImpairmentOnInvestmentRemainingBalance" abstract="false" name="ImpairmentOnInvestmentRemainingBalance" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="ncmi_NationalAdvertisingRevenueMember" abstract="true" name="NationalAdvertisingRevenueMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="ncmi_CreditAgreementDomain" abstract="true" name="CreditAgreementDomain" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="ncmi_TrademarkMember" abstract="true" name="TrademarkMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="ncmi_StockIssuedDuingPeriodValueNewIssuesAPIC" abstract="false" name="StockIssuedDuingPeriodValueNewIssuesAPIC" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="ncmi_AchievementOfPercentageInPerformanceBasedRestrictedStock" abstract="false" name="AchievementOfPercentageInPerformanceBasedRestrictedStock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+  <xs:element id="ncmi_RecentlyIssuedAccountingPronouncementsPolicyTextBlock" abstract="false" name="RecentlyIssuedAccountingPronouncementsPolicyTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:textBlockItemType"/>
+  <xs:element id="ncmi_RevolvingCreditFacilityMember2022Member" abstract="true" name="RevolvingCreditFacilityMember2022Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="ncmi_UnvestedStockOptionsMember" abstract="true" name="UnvestedStockOptionsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="ncmi_LongTermCertificatesOfDepositMember" abstract="true" name="LongTermCertificatesOfDepositMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="ncmi_AmountsDueToFoundingMembersNet" abstract="false" name="AmountsDueToFoundingMembersNet" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="ncmi_CreditFacilityAvailabilityCompliance" abstract="false" name="CreditFacilityAvailabilityCompliance" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="ncmi_CustomerWithRevenueInExcessOfTenPercentOfAccountsReceivable" abstract="false" name="CustomerWithRevenueInExcessOfTenPercentOfAccountsReceivable" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+  <xs:element id="ncmi_EffectiveIncomeTaxRateReconciliationDeconsolidationEffects" abstract="false" name="EffectiveIncomeTaxRateReconciliationDeconsolidationEffects" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="ncmi_FiniteLivedIntangibleAssetsPeriodIncreaseDecreaseAffiliatePayments" abstract="false" name="FiniteLivedIntangibleAssetsPeriodIncreaseDecreaseAffiliatePayments" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="ncmi_NationalCineMediaIncMember" abstract="true" name="NationalCineMediaIncMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="ncmi_SeniorUnsecuredNotesDueTwoZeroTwoEightDomain" abstract="true" name="SeniorUnsecuredNotesDueTwoZeroTwoEightDomain" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="ncmi_TwoThousandSevenEquityIncentivePlanAndTwoThousandSixteenEquityIncentivePlanMember" abstract="true" name="TwoThousandSevenEquityIncentivePlanAndTwoThousandSixteenEquityIncentivePlanMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="ncmi_AmendmentsToCreditAgreementAxis" abstract="true" name="AmendmentsToCreditAgreementAxis" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrldt:dimensionItem" type="xbrli:stringItemType"/>
+  <xs:element id="ncmi_EffectiveIncomeTaxRateReconciliationCancellationOfDebt" abstract="false" name="EffectiveIncomeTaxRateReconciliationCancellationOfDebt" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="ncmi_CommonUnitsMember" abstract="true" name="CommonUnitsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="ncmi_LengthOfOnScreenAdvertisingTimeWhichFoundingMembersHaveRightToPurchase" abstract="false" name="LengthOfOnScreenAdvertisingTimeWhichFoundingMembersHaveRightToPurchase" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:durationItemType"/>
+  <xs:element id="ncmi_ScheduleOfFiscalYearEndsTableTextBlock" abstract="false" name="ScheduleOfFiscalYearEndsTableTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:textBlockItemType"/>
+  <xs:element id="ncmi_ShortTermMarketableSecuritiesMember" abstract="true" name="ShortTermMarketableSecuritiesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="ncmi_TotalLeaseLiability" abstract="false" name="TotalLeaseLiability" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="ncmi_DebtIntstrumentDebtCovenantAggregateRevolvingCommitmentTrigger" abstract="false" name="DebtIntstrumentDebtCovenantAggregateRevolvingCommitmentTrigger" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+  <xs:element id="ncmi_AggregatePrincipalAmountRevolvingLoans" abstract="false" name="AggregatePrincipalAmountRevolvingLoans" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="ncmi_PercentageOfIncreaseInPaymentPerDigitalScreenAndDigitalCinemaEquipment" abstract="false" name="PercentageOfIncreaseInPaymentPerDigitalScreenAndDigitalCinemaEquipment" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+  <xs:element id="ncmi_DebtInstrumentCovenantNetTotalLeverageRatio" abstract="false" name="DebtInstrumentCovenantNetTotalLeverageRatio" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="xbrli:pureItemType"/>
+  <xs:element id="ncmi_BusinessCombinationRecognizedIdentifiableAssetsAcquiredAndLiabilitiesAssumedDebtIssuanceCostNonCurrent" abstract="false" name="BusinessCombinationRecognizedIdentifiableAssetsAcquiredAndLiabilitiesAssumedDebtIssuanceCostNonCurrent" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="ncmi_ReversalOfUnrecognizedTaxBenefits" abstract="false" name="ReversalOfUnrecognizedTaxBenefits" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="ncmi_GuaranteeObligationsAmountPaid" abstract="false" name="GuaranteeObligationsAmountPaid" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="ncmi_ContractwithCustomerLiabilityNewContractLiabilities" abstract="false" name="ContractwithCustomerLiabilityNewContractLiabilities" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="ncmi_MembershipUnitsConversionRatio" abstract="false" name="MembershipUnitsConversionRatio" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+  <xs:element id="ncmi_GainLossOnReductionOfPayableToFoundingMembersUnderTaxReceivableAgreement" abstract="false" name="GainLossOnReductionOfPayableToFoundingMembersUnderTaxReceivableAgreement" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="ncmi_EquipmentComputerHardwareAndSoftwareMember" abstract="true" name="EquipmentComputerHardwareAndSoftwareMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="ncmi_DeconsolidationEquityEffectAmount" abstract="false" name="DeconsolidationEquityEffectAmount" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="ncmi_NumberOfAdditionalRestrictedStockIssuedUnderSatisfyingMaximumPerformanceCriteria" abstract="false" name="NumberOfAdditionalRestrictedStockIssuedUnderSatisfyingMaximumPerformanceCriteria" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:sharesItemType"/>
+  <xs:element id="ncmi_TaxCutsAndJobsActMeasurementPeriodAdjustmentIncomeTaxExpenseBenefit" abstract="false" name="TaxCutsAndJobsActMeasurementPeriodAdjustmentIncomeTaxExpenseBenefit" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="ncmi_NoncancelableContractTerms" abstract="false" name="NoncancelableContractTerms" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:durationItemType"/>
+  <xs:element id="ncmi_CommonMembershipUnitsSurrenderedDueToTransferredTheaters" abstract="false" name="CommonMembershipUnitsSurrenderedDueToTransferredTheaters" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:sharesItemType"/>
+  <xs:element id="ncmi_CashContributedInAcquisition" abstract="false" name="CashContributedInAcquisition" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="ncmi_SeniorSecuredNotesDueTwoZeroTwoSix" abstract="false" name="SeniorSecuredNotesDueTwoZeroTwoSix" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="ncmi_PayableToFoundingMembersUnderTaxSharingAgreementCurrent" abstract="false" name="PayableToFoundingMembersUnderTaxSharingAgreementCurrent" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="ncmi_EffectiveIncomeTaxRateReconciliationBankruptcyEffects" abstract="false" name="EffectiveIncomeTaxRateReconciliationBankruptcyEffects" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="ncmi_TermLoanSecondTrancheDebtIssuanceCosts" abstract="false" name="TermLoanSecondTrancheDebtIssuanceCosts" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="ncmi_GainLossOnReconsolidation" abstract="false" name="GainLossOnReconsolidation" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="ncmi_DomesticTaxAuthorityAndStateAndLocalJurisdictionMember" abstract="true" name="DomesticTaxAuthorityAndStateAndLocalJurisdictionMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="ncmi_TransfersRelatedToBankruptcySettlementMember" abstract="true" name="TransfersRelatedToBankruptcySettlementMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="ncmi_PaymentsToAffiliatesForTaxSharingAgreement" abstract="false" name="PaymentsToAffiliatesForTaxSharingAgreement" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="ncmi_ReversalOfAccruedInterestAndPenalties" abstract="false" name="ReversalOfAccruedInterestAndPenalties" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="ncmi_IncomeTaxesLineItems" abstract="true" name="IncomeTaxesLineItems" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="ncmi_RegionalAdvertisingRevenueMember" abstract="true" name="RegionalAdvertisingRevenueMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="ncmi_DebtInstrumentCurePayments" abstract="false" name="DebtInstrumentCurePayments" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="ncmi_UnitsOfPartnershipInterestAmountAMC" abstract="false" name="UnitsOfPartnershipInterestAmountAMC" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="xbrli:sharesItemType"/>
+  <xs:element id="ncmi_GainLossFromEquityTransactionDueToChangeInOwnershipInterest" abstract="false" name="GainLossFromEquityTransactionDueToChangeInOwnershipInterest" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="ncmi_ManagementFeeReimbursementMember" abstract="true" name="ManagementFeeReimbursementMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="ncmi_ConsolidationLessthanWhollyOwnedSubsidiaryParentOwnershipInterestChangesIssuanceOfEquityForPurchaseOfIntangibleAsset" abstract="false" name="ConsolidationLessthanWhollyOwnedSubsidiaryParentOwnershipInterestChangesIssuanceOfEquityForPurchaseOfIntangibleAsset" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="ncmi_CommonMembershipUnitsIssuedNetOfUnitsSurrendered" abstract="false" name="CommonMembershipUnitsIssuedNetOfUnitsSurrendered" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:sharesItemType"/>
+  <xs:element id="ncmi_RelatedPartyTRAPaymentAMC" abstract="false" name="RelatedPartyTRAPaymentAMC" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="ncmi_RevolvingCreditFacilityDebtDraw" abstract="false" name="RevolvingCreditFacilityDebtDraw" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="ncmi_AmericanMultiCinemaIncMember" abstract="true" name="AmericanMultiCinemaIncMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="ncmi_StockIssuedDuringPeriodValueNewIssuesConsolidated" abstract="false" name="StockIssuedDuringPeriodValueNewIssuesConsolidated" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="ncmi_AccountingPoliciesLineItems" abstract="true" name="AccountingPoliciesLineItems" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="ncmi_DebtCovenantPeriodDomain" abstract="true" name="DebtCovenantPeriodDomain" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="ncmi_AMCMember" abstract="true" name="AMCMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="ncmi_CinemarkAndRegalMember" abstract="true" name="CinemarkAndRegalMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="ncmi_SeniorUnsecuredNotesDueTwoZeroTwoSixMember" abstract="true" name="SeniorUnsecuredNotesDueTwoZeroTwoSixMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="ncmi_ScheduleOfValuationAndQualifyingAccountsTableTextBlock" abstract="false" name="ScheduleOfValuationAndQualifyingAccountsTableTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:textBlockItemType"/>
+  <xs:element id="ncmi_DebtCovenantPeriodAxis" abstract="true" name="DebtCovenantPeriodAxis" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrldt:dimensionItem" type="xbrli:stringItemType"/>
+  <xs:element id="ncmi_NegativeDistributionsMadeToLimitedLiabilityCompany" abstract="false" name="NegativeDistributionsMadeToLimitedLiabilityCompany" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="ncmi_AdvertisingOperatingCostsMember" abstract="true" name="AdvertisingOperatingCostsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="ncmi_BeverageConcessionaireMember" abstract="true" name="BeverageConcessionaireMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="ncmi_IncomeTaxReconciliationIncomeTaxBenefitOfAffiliate" abstract="false" name="IncomeTaxReconciliationIncomeTaxBenefitOfAffiliate" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="ncmi_PaymentToFoundingMembersUnderTaxSharingArrangement" abstract="false" name="PaymentToFoundingMembersUnderTaxSharingArrangement" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="ncmi_NumberOfCustomerOverTenPercentOfARBalance" abstract="false" name="NumberOfCustomerOverTenPercentOfARBalance" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="xbrli:integerItemType"/>
+  <xs:element id="ncmi_BusinessCombinationRecognizedIdentifiableAssetsAcquiredAndLiabilitiesAssumedCurrentLiabilitiesAccruedPayrollAndRelatedExpenses" abstract="false" name="BusinessCombinationRecognizedIdentifiableAssetsAcquiredAndLiabilitiesAssumedCurrentLiabilitiesAccruedPayrollAndRelatedExpenses" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="ncmi_A2018RevolvingCreditFacilityMember" abstract="true" name="A2018RevolvingCreditFacilityMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="ncmi_DeferredTaxAssetsNotesReceivable" abstract="false" name="DeferredTaxAssetsNotesReceivable" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="ncmi_TheaterAccessFeesNetOfBeverageRevenuesAndOtherEncumberedTheatersPayments" abstract="false" name="TheaterAccessFeesNetOfBeverageRevenuesAndOtherEncumberedTheatersPayments" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="ncmi_LocalAndRegionalAdvertisingRevenueMember" abstract="true" name="LocalAndRegionalAdvertisingRevenueMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="ncmi_AmountsDueToFromFoundingMembersPolicyTextBlock" abstract="false" name="AmountsDueToFromFoundingMembersPolicyTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:textBlockItemType"/>
+  <xs:element id="ncmi_UnitsOfPartnershipInterestCashSurrenderValue" abstract="false" name="UnitsOfPartnershipInterestCashSurrenderValue" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="ncmi_AdvertisingInventoryMember" abstract="true" name="AdvertisingInventoryMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="ncmi_ProceedsFromIntegrationAndOtherEncumberedTheaterPaymentsMadeByAffiliates" abstract="false" name="ProceedsFromIntegrationAndOtherEncumberedTheaterPaymentsMadeByAffiliates" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="ncmi_UnrecognizedTaxBenefitsIncludingIncomeTaxPenaltiesAndInterestAccrued" abstract="false" name="UnrecognizedTaxBenefitsIncludingIncomeTaxPenaltiesAndInterestAccrued" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="ncmi_NumberOfTheatersRequiredToTransferAdvertisingRights" abstract="false" name="NumberOfTheatersRequiredToTransferAdvertisingRights" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:integerItemType"/>
+</xs:schema>

@@ -1,0 +1,645 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--XBRL Document Created with Wdesk from Workiva-->
+<!--Copyright 2022 Workiva-->
+<!--r:e2160095-9783-4851-953d-577474f90bcf,g:d1531251-9909-43c7-913d-8e22989598b1-->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:crk="http://www.comstockresources.com/20211231" xmlns:xbrli="http://www.xbrl.org/2003/instance" xmlns:dtr-types="http://www.xbrl.org/dtr/type/2020-01-21" xmlns:srt-types="http://fasb.org/srt-types/2021-01-31" xmlns:xbrldt="http://xbrl.org/2005/xbrldt" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://www.comstockresources.com/20211231">
+  <xs:import namespace="http://fasb.org/srt-types/2021-01-31" schemaLocation="https://xbrl.fasb.org/srt/2021/elts/srt-types-2021-01-31.xsd"/>
+  <xs:import namespace="http://fasb.org/srt/2021-01-31" schemaLocation="https://xbrl.fasb.org/srt/2021/elts/srt-2021-01-31.xsd"/>
+  <xs:import namespace="http://fasb.org/us-gaap/2021-01-31" schemaLocation="https://xbrl.fasb.org/us-gaap/2021/elts/us-gaap-2021-01-31.xsd"/>
+  <xs:import namespace="http://www.w3.org/1999/xlink" schemaLocation="http://www.xbrl.org/2003/xlink-2003-12-31.xsd"/>
+  <xs:import namespace="http://www.xbrl.org/2003/instance" schemaLocation="http://www.xbrl.org/2003/xbrl-instance-2003-12-31.xsd"/>
+  <xs:import namespace="http://www.xbrl.org/2003/linkbase" schemaLocation="http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd"/>
+  <xs:import namespace="http://www.xbrl.org/dtr/type/2020-01-21" schemaLocation="https://www.xbrl.org/dtr/type/2020-01-21/types.xsd"/>
+  <xs:import namespace="http://xbrl.org/2005/xbrldt" schemaLocation="http://www.xbrl.org/2005/xbrldt-2005.xsd"/>
+  <xs:import namespace="http://xbrl.sec.gov/dei/2021q4" schemaLocation="https://xbrl.sec.gov/dei/2021q4/dei-2021q4.xsd"/>
+  <xs:annotation>
+    <xs:appinfo>
+      <link:linkbaseRef xmlns:xlink="http://www.w3.org/1999/xlink" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="crk-20211231_lab.xml" xlink:role="http://www.xbrl.org/2003/role/labelLinkbaseRef" xlink:type="simple"/>
+      <link:linkbaseRef xmlns:xlink="http://www.w3.org/1999/xlink" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="crk-20211231_pre.xml" xlink:role="http://www.xbrl.org/2003/role/presentationLinkbaseRef" xlink:type="simple"/>
+      <link:linkbaseRef xmlns:xlink="http://www.w3.org/1999/xlink" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="crk-20211231_cal.xml" xlink:role="http://www.xbrl.org/2003/role/calculationLinkbaseRef" xlink:type="simple"/>
+      <link:linkbaseRef xmlns:xlink="http://www.w3.org/1999/xlink" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="crk-20211231_def.xml" xlink:role="http://www.xbrl.org/2003/role/definitionLinkbaseRef" xlink:type="simple"/>
+      <link:roleType id="Cover" roleURI="http://www.comstockresources.com/role/Cover">
+        <link:definition>0001001 - Document - Cover</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="AuditInformation" roleURI="http://www.comstockresources.com/role/AuditInformation">
+        <link:definition>0002002 - Document - Audit Information</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CONSOLIDATEDBALANCESHEETS" roleURI="http://www.comstockresources.com/role/CONSOLIDATEDBALANCESHEETS">
+        <link:definition>1001003 - Statement - CONSOLIDATED BALANCE SHEETS</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CONSOLIDATEDBALANCESHEETSParenthetical" roleURI="http://www.comstockresources.com/role/CONSOLIDATEDBALANCESHEETSParenthetical">
+        <link:definition>1002004 - Statement - CONSOLIDATED BALANCE SHEETS (Parenthetical)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CONSOLIDATEDSTATEMENTSOFOPERATIONS" roleURI="http://www.comstockresources.com/role/CONSOLIDATEDSTATEMENTSOFOPERATIONS">
+        <link:definition>1003005 - Statement - CONSOLIDATED STATEMENTS OF OPERATIONS</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CONSOLIDATEDSTATEMENTSOFSTOCKHOLDERSEQUITY" roleURI="http://www.comstockresources.com/role/CONSOLIDATEDSTATEMENTSOFSTOCKHOLDERSEQUITY">
+        <link:definition>1004006 - Statement - CONSOLIDATED STATEMENTS OF STOCKHOLDERS' EQUITY</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CONSOLIDATEDSTATEMENTSOFCASHFLOWS" roleURI="http://www.comstockresources.com/role/CONSOLIDATEDSTATEMENTSOFCASHFLOWS">
+        <link:definition>1005007 - Statement - CONSOLIDATED STATEMENTS OF CASH FLOWS</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SummaryofSignificantAccountingPolicies" roleURI="http://www.comstockresources.com/role/SummaryofSignificantAccountingPolicies">
+        <link:definition>2101101 - Disclosure - Summary of Significant Accounting Policies</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SummaryofSignificantAccountingPoliciesPolicies" roleURI="http://www.comstockresources.com/role/SummaryofSignificantAccountingPoliciesPolicies">
+        <link:definition>2202201 - Disclosure - Summary of Significant Accounting Policies (Policies)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SummaryofSignificantAccountingPoliciesTables" roleURI="http://www.comstockresources.com/role/SummaryofSignificantAccountingPoliciesTables">
+        <link:definition>2303301 - Disclosure - Summary of Significant Accounting Policies (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SummaryofSignificantAccountingPoliciesNarrativeDetail" roleURI="http://www.comstockresources.com/role/SummaryofSignificantAccountingPoliciesNarrativeDetail">
+        <link:definition>2404401 - Disclosure - Summary of Significant Accounting Policies - Narrative (Detail)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SummaryofSignificantAccountingPoliciesSummaryofOtherCurrentAssetsDetail" roleURI="http://www.comstockresources.com/role/SummaryofSignificantAccountingPoliciesSummaryofOtherCurrentAssetsDetail">
+        <link:definition>2405402 - Disclosure - Summary of Significant Accounting Policies - Summary of Other Current Assets (Detail)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SummaryofSignificantAccountingPoliciesReconciliationofBeginningandEndingBalancesforDerivativeInstrumentsDetail" roleURI="http://www.comstockresources.com/role/SummaryofSignificantAccountingPoliciesReconciliationofBeginningandEndingBalancesforDerivativeInstrumentsDetail">
+        <link:definition>2406403 - Disclosure - Summary of Significant Accounting Policies - Reconciliation of Beginning and Ending Balances for Derivative Instruments (Detail)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SummaryofSignificantAccountingPoliciesSummaryofCarryingAmountsandFairValuesofFinancialInstrumentsDetail" roleURI="http://www.comstockresources.com/role/SummaryofSignificantAccountingPoliciesSummaryofCarryingAmountsandFairValuesofFinancialInstrumentsDetail">
+        <link:definition>2407404 - Disclosure - Summary of Significant Accounting Policies - Summary of Carrying Amounts and Fair Values of Financial Instruments (Detail)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SummaryofSignificantAccountingPoliciesSummaryofLeaseCostRecognizedDetail" roleURI="http://www.comstockresources.com/role/SummaryofSignificantAccountingPoliciesSummaryofLeaseCostRecognizedDetail">
+        <link:definition>2408405 - Disclosure - Summary of Significant Accounting Policies - Summary of Lease Cost Recognized (Detail)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SummaryofSignificantAccountingPoliciesSummaryofLiabilitiesUnderContractContainOperatingLeasesDetail" roleURI="http://www.comstockresources.com/role/SummaryofSignificantAccountingPoliciesSummaryofLiabilitiesUnderContractContainOperatingLeasesDetail">
+        <link:definition>2409406 - Disclosure - Summary of Significant Accounting Policies - Summary of Liabilities Under Contract Contain Operating Leases (Detail)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SummaryofSignificantAccountingPoliciesSummaryofLiabilitiesUnderContractContainOperatingLeasesDetail_1" roleURI="http://www.comstockresources.com/role/SummaryofSignificantAccountingPoliciesSummaryofLiabilitiesUnderContractContainOperatingLeasesDetail_1">
+        <link:definition>2409406 - Disclosure - Summary of Significant Accounting Policies - Summary of Liabilities Under Contract Contain Operating Leases (Detail)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SummaryofSignificantAccountingPoliciesSummaryofAccruedExpensesDetail" roleURI="http://www.comstockresources.com/role/SummaryofSignificantAccountingPoliciesSummaryofAccruedExpensesDetail">
+        <link:definition>2410407 - Disclosure - Summary of Significant Accounting Policies - Summary of Accrued Expenses (Detail)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SummaryofSignificantAccountingPoliciesSummaryofChangesinReserveforFutureAbandonmentCostsDetail" roleURI="http://www.comstockresources.com/role/SummaryofSignificantAccountingPoliciesSummaryofChangesinReserveforFutureAbandonmentCostsDetail">
+        <link:definition>2411408 - Disclosure - Summary of Significant Accounting Policies - Summary of Changes in Reserve for Future Abandonment Costs (Detail)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SummaryofSignificantAccountingPoliciesWeightedAverageSharesofUnvestedRestrictedStockDetail" roleURI="http://www.comstockresources.com/role/SummaryofSignificantAccountingPoliciesWeightedAverageSharesofUnvestedRestrictedStockDetail">
+        <link:definition>2412409 - Disclosure - Summary of Significant Accounting Policies - Weighted Average Shares of Unvested Restricted Stock (Detail)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SummaryofSignificantAccountingPoliciesCommonStockandConvertibleStockDilutiveinComputationofEarningPerShareDetail" roleURI="http://www.comstockresources.com/role/SummaryofSignificantAccountingPoliciesCommonStockandConvertibleStockDilutiveinComputationofEarningPerShareDetail">
+        <link:definition>2413410 - Disclosure - Summary of Significant Accounting Policies - Common Stock and Convertible Stock Dilutive in Computation of Earning Per Share (Detail)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SummaryofSignificantAccountingPoliciesBasicandDilutedIncomeLossPerShareDetail" roleURI="http://www.comstockresources.com/role/SummaryofSignificantAccountingPoliciesBasicandDilutedIncomeLossPerShareDetail">
+        <link:definition>2414411 - Disclosure - Summary of Significant Accounting Policies - Basic and Diluted Income (Loss) Per Share (Detail)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SummaryofSignificantAccountingPoliciesCashPaymentsMadeforInterestandIncomeTaxesDetail" roleURI="http://www.comstockresources.com/role/SummaryofSignificantAccountingPoliciesCashPaymentsMadeforInterestandIncomeTaxesDetail">
+        <link:definition>2415412 - Disclosure - Summary of Significant Accounting Policies - Cash Payments Made for Interest and Income Taxes (Detail)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="AcquisitionsandDispositionsofOilandGasProperties" roleURI="http://www.comstockresources.com/role/AcquisitionsandDispositionsofOilandGasProperties">
+        <link:definition>2116102 - Disclosure - Acquisitions and Dispositions of Oil and Gas Properties</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="AcquisitionsandDispositionsofOilandGasPropertiesAdditionalInformationDetail" roleURI="http://www.comstockresources.com/role/AcquisitionsandDispositionsofOilandGasPropertiesAdditionalInformationDetail">
+        <link:definition>2417413 - Disclosure - Acquisitions and Dispositions of Oil and Gas Properties - Additional Information (Detail)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="OilandGasProducingActivities" roleURI="http://www.comstockresources.com/role/OilandGasProducingActivities">
+        <link:definition>2118103 - Disclosure - Oil and Gas Producing Activities</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="OilandGasProducingActivitiesTables" roleURI="http://www.comstockresources.com/role/OilandGasProducingActivitiesTables">
+        <link:definition>2319302 - Disclosure - Oil and Gas Producing Activities (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="OilandGasProducingActivitiesCapitalizedCostsRelatedtoOilandNaturalGasPropertyAcquisitionExplorationandDevelopmentActivitiesDetail" roleURI="http://www.comstockresources.com/role/OilandGasProducingActivitiesCapitalizedCostsRelatedtoOilandNaturalGasPropertyAcquisitionExplorationandDevelopmentActivitiesDetail">
+        <link:definition>2420414 - Disclosure - Oil and Gas Producing Activities - Capitalized Costs Related to Oil and Natural Gas Property Acquisition Exploration and Development Activities (Detail)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="OilandGasProducingActivitiesCostsIncurredRelatedtoOilandNaturalGasPropertyAcquisitionExplorationandDevelopmentActivitiesDetail" roleURI="http://www.comstockresources.com/role/OilandGasProducingActivitiesCostsIncurredRelatedtoOilandNaturalGasPropertyAcquisitionExplorationandDevelopmentActivitiesDetail">
+        <link:definition>2421415 - Disclosure - Oil and Gas Producing Activities - Costs Incurred Related to Oil and Natural Gas Property Acquisition Exploration and Development Activities (Detail)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ExploratoryWellCosts" roleURI="http://www.comstockresources.com/role/ExploratoryWellCosts">
+        <link:definition>2122104 - Disclosure - Exploratory Well Costs</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ExploratoryWellCostsTables" roleURI="http://www.comstockresources.com/role/ExploratoryWellCostsTables">
+        <link:definition>2323303 - Disclosure - Exploratory Well Costs (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ExploratoryWellCostsDetails" roleURI="http://www.comstockresources.com/role/ExploratoryWellCostsDetails">
+        <link:definition>2424416 - Disclosure - Exploratory Well Costs (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LongtermDebt" roleURI="http://www.comstockresources.com/role/LongtermDebt">
+        <link:definition>2125105 - Disclosure - Long-term Debt</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LongtermDebtTables" roleURI="http://www.comstockresources.com/role/LongtermDebtTables">
+        <link:definition>2326304 - Disclosure - Long-term Debt (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LongtermDebtLongtermDebtDetail" roleURI="http://www.comstockresources.com/role/LongtermDebtLongtermDebtDetail">
+        <link:definition>2427417 - Disclosure - Long-term Debt - Long-term Debt (Detail)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LongtermDebtPrincipalAmountofDebtbyYearofMaturityDetail" roleURI="http://www.comstockresources.com/role/LongtermDebtPrincipalAmountofDebtbyYearofMaturityDetail">
+        <link:definition>2428418 - Disclosure - Long-term Debt - Principal Amount of Debt by Year of Maturity (Detail)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LongtermDebtNarrativeDetails" roleURI="http://www.comstockresources.com/role/LongtermDebtNarrativeDetails">
+        <link:definition>2429419 - Disclosure - Long-term Debt - Narrative (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CommitmentsandContingencies" roleURI="http://www.comstockresources.com/role/CommitmentsandContingencies">
+        <link:definition>2130106 - Disclosure - Commitments and Contingencies</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CommitmentsandContingenciesAdditionalInformationDetail" roleURI="http://www.comstockresources.com/role/CommitmentsandContingenciesAdditionalInformationDetail">
+        <link:definition>2431420 - Disclosure - Commitments and Contingencies - Additional Information (Detail)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ConvertiblePreferredStock" roleURI="http://www.comstockresources.com/role/ConvertiblePreferredStock">
+        <link:definition>2132107 - Disclosure - Convertible Preferred Stock</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ConvertiblePreferredStockAdditionalInformationDetail" roleURI="http://www.comstockresources.com/role/ConvertiblePreferredStockAdditionalInformationDetail">
+        <link:definition>2433421 - Disclosure - Convertible Preferred Stock - Additional Information (Detail)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="StockholdersEquity" roleURI="http://www.comstockresources.com/role/StockholdersEquity">
+        <link:definition>2134108 - Disclosure - Stockholders' Equity</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="StockholdersEquityAdditionalInformationDetail" roleURI="http://www.comstockresources.com/role/StockholdersEquityAdditionalInformationDetail">
+        <link:definition>2435422 - Disclosure - Stockholders' Equity - Additional Information (Detail)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="StockbasedCompensation" roleURI="http://www.comstockresources.com/role/StockbasedCompensation">
+        <link:definition>2136109 - Disclosure - Stock-based Compensation</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="StockbasedCompensationTables" roleURI="http://www.comstockresources.com/role/StockbasedCompensationTables">
+        <link:definition>2337305 - Disclosure - Stock-based Compensation (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="StockbasedCompensationAdditionalInformationDetail" roleURI="http://www.comstockresources.com/role/StockbasedCompensationAdditionalInformationDetail">
+        <link:definition>2438423 - Disclosure - Stock-based Compensation - Additional Information (Detail)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="StockbasedCompensationSummaryofRestrictedStockActivityDetail" roleURI="http://www.comstockresources.com/role/StockbasedCompensationSummaryofRestrictedStockActivityDetail">
+        <link:definition>2439424 - Disclosure - Stock-based Compensation - Summary of Restricted Stock Activity (Detail)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="StockbasedCompensationSummaryofSignificantAssumptionsUsedtoValuePSUsDetail" roleURI="http://www.comstockresources.com/role/StockbasedCompensationSummaryofSignificantAssumptionsUsedtoValuePSUsDetail">
+        <link:definition>2440425 - Disclosure - Stock-based Compensation - Summary of Significant Assumptions Used to Value PSUs (Detail)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="StockbasedCompensationSummaryofPSUActivityDetailPotentialPerformanceSharesPSU" roleURI="http://www.comstockresources.com/role/StockbasedCompensationSummaryofPSUActivityDetailPotentialPerformanceSharesPSU">
+        <link:definition>2441426 - Disclosure - Stock-based Compensation - Summary of PSU Activity (Detail) (Potential Performance Shares (PSU))</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RetirementPlan" roleURI="http://www.comstockresources.com/role/RetirementPlan">
+        <link:definition>2142110 - Disclosure - Retirement Plan</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RetirementPlanAdditionalInformationDetail" roleURI="http://www.comstockresources.com/role/RetirementPlanAdditionalInformationDetail">
+        <link:definition>2443427 - Disclosure - Retirement Plan - Additional Information (Detail)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IncomeTaxes" roleURI="http://www.comstockresources.com/role/IncomeTaxes">
+        <link:definition>2144111 - Disclosure - Income Taxes</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IncomeTaxesTables" roleURI="http://www.comstockresources.com/role/IncomeTaxesTables">
+        <link:definition>2345306 - Disclosure - Income Taxes (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IncomeTaxesConsolidatedIncomeTaxProvisionBenefitDetail" roleURI="http://www.comstockresources.com/role/IncomeTaxesConsolidatedIncomeTaxProvisionBenefitDetail">
+        <link:definition>2446428 - Disclosure - Income Taxes - Consolidated Income Tax Provision (Benefit) (Detail)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IncomeTaxesAdditionalInformationDetail" roleURI="http://www.comstockresources.com/role/IncomeTaxesAdditionalInformationDetail">
+        <link:definition>2447429 - Disclosure - Income Taxes - Additional Information (Detail)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IncomeTaxesTaxEffectsofSignificantTemporaryDifferencesRepresentingNetDeferredTaxAssetandLiabilityDetail" roleURI="http://www.comstockresources.com/role/IncomeTaxesTaxEffectsofSignificantTemporaryDifferencesRepresentingNetDeferredTaxAssetandLiabilityDetail">
+        <link:definition>2448430 - Disclosure - Income Taxes - Tax Effects of Significant Temporary Differences Representing Net Deferred Tax Asset and Liability (Detail)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IncomeTaxesIncomeTaxExpenseBenefitIncomeTaxReconciliationDetail" roleURI="http://www.comstockresources.com/role/IncomeTaxesIncomeTaxExpenseBenefitIncomeTaxReconciliationDetail">
+        <link:definition>2449431 - Disclosure - Income Taxes - Income Tax Expense Benefit Income Tax Reconciliation (Detail)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IncomeTaxesDifferenceBetweenCustomaryRateandEffectiveTaxRateonIncomeBeforeIncomeTaxesDueDetail" roleURI="http://www.comstockresources.com/role/IncomeTaxesDifferenceBetweenCustomaryRateandEffectiveTaxRateonIncomeBeforeIncomeTaxesDueDetail">
+        <link:definition>2450432 - Disclosure - Income Taxes - Difference Between Customary Rate and Effective Tax Rate on Income Before Income Taxes Due (Detail)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IncomeTaxesCarryforwardsAvailabletoReduceFutureIncomeTaxesDetail" roleURI="http://www.comstockresources.com/role/IncomeTaxesCarryforwardsAvailabletoReduceFutureIncomeTaxesDetail">
+        <link:definition>2451433 - Disclosure - Income Taxes - Carryforwards Available to Reduce Future Income Taxes (Detail)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="DerivativeFinancialInstrumentsandHedgingActivities" roleURI="http://www.comstockresources.com/role/DerivativeFinancialInstrumentsandHedgingActivities">
+        <link:definition>2152112 - Disclosure - Derivative Financial Instruments and Hedging Activities</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="DerivativeFinancialInstrumentsandHedgingActivitiesTables" roleURI="http://www.comstockresources.com/role/DerivativeFinancialInstrumentsandHedgingActivitiesTables">
+        <link:definition>2353307 - Disclosure - Derivative Financial Instruments and Hedging Activities (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="DerivativeFinancialInstrumentsandHedgingActivitiesScheduleofDerivativeContractsVolumeandPricesDetail" roleURI="http://www.comstockresources.com/role/DerivativeFinancialInstrumentsandHedgingActivitiesScheduleofDerivativeContractsVolumeandPricesDetail">
+        <link:definition>2454434 - Disclosure - Derivative Financial Instruments and Hedging Activities - Schedule of Derivative Contracts Volume and Prices (Detail)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="DerivativeFinancialInstrumentsandHedgingActivitiesAdditionalInformationDetail" roleURI="http://www.comstockresources.com/role/DerivativeFinancialInstrumentsandHedgingActivitiesAdditionalInformationDetail">
+        <link:definition>2455435 - Disclosure - Derivative Financial Instruments and Hedging Activities - Additional Information (Detail)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="DerivativeFinancialInstrumentsandHedgingActivitiesScheduleofDerivativeInstrumentsDetail" roleURI="http://www.comstockresources.com/role/DerivativeFinancialInstrumentsandHedgingActivitiesScheduleofDerivativeInstrumentsDetail">
+        <link:definition>2456436 - Disclosure - Derivative Financial Instruments and Hedging Activities - Schedule of Derivative Instruments (Detail)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="DerivativeFinancialInstrumentsandHedgingActivitiesScheduleofGainsandLossesfromDerivativeFinancialInstrumentsDetail" roleURI="http://www.comstockresources.com/role/DerivativeFinancialInstrumentsandHedgingActivitiesScheduleofGainsandLossesfromDerivativeFinancialInstrumentsDetail">
+        <link:definition>2457437 - Disclosure - Derivative Financial Instruments and Hedging Activities - Schedule of Gains and Losses from Derivative Financial Instruments (Detail)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RelatedPartyTransactions" roleURI="http://www.comstockresources.com/role/RelatedPartyTransactions">
+        <link:definition>2158113 - Disclosure - Related Party Transactions</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RelatedPartyTransactionsAdditionalInformationDetail" roleURI="http://www.comstockresources.com/role/RelatedPartyTransactionsAdditionalInformationDetail">
+        <link:definition>2459438 - Disclosure - Related Party Transactions - Additional Information (Detail)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="OilandGasReservesInformationUnaudited" roleURI="http://www.comstockresources.com/role/OilandGasReservesInformationUnaudited">
+        <link:definition>2160114 - Disclosure - Oil and Gas Reserves Information (Unaudited)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="OilandGasReservesInformationUnauditedTables" roleURI="http://www.comstockresources.com/role/OilandGasReservesInformationUnauditedTables">
+        <link:definition>2361308 - Disclosure - Oil and Gas Reserves Information (Unaudited) (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="OilandGasReservesInformationUnauditedSummaryofChangesinNetQuantitiesofCrudeOilandNaturalGasReservesDetail" roleURI="http://www.comstockresources.com/role/OilandGasReservesInformationUnauditedSummaryofChangesinNetQuantitiesofCrudeOilandNaturalGasReservesDetail">
+        <link:definition>2462439 - Disclosure - Oil and Gas Reserves Information (Unaudited) - Summary of Changes in Net Quantities of Crude Oil and Natural Gas Reserves (Detail)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="OilandGasReservesInformationUnauditedStandardizedMeasureofDiscountedFutureNetCashFlowsRelatingtoProvedReservesDetail" roleURI="http://www.comstockresources.com/role/OilandGasReservesInformationUnauditedStandardizedMeasureofDiscountedFutureNetCashFlowsRelatingtoProvedReservesDetail">
+        <link:definition>2463440 - Disclosure - Oil and Gas Reserves Information (Unaudited) - Standardized Measure of Discounted Future Net Cash Flows Relating to Proved Reserves (Detail)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="OilandGasReservesInformationUnauditedChangesinStandardizedMeasureofDiscountedFutureNetCashFlowsRelatingtoProvedReservesDetail" roleURI="http://www.comstockresources.com/role/OilandGasReservesInformationUnauditedChangesinStandardizedMeasureofDiscountedFutureNetCashFlowsRelatingtoProvedReservesDetail">
+        <link:definition>2464441 - Disclosure - Oil and Gas Reserves Information (Unaudited) - Changes in Standardized Measure of Discounted Future Net Cash Flows Relating to Proved Reserves (Detail)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="OilandGasReservesInformationUnauditedSummaryofPricesUsedinDeterminingOilandNaturalGasReservesQuantitiesandCashFlowsDetail" roleURI="http://www.comstockresources.com/role/OilandGasReservesInformationUnauditedSummaryofPricesUsedinDeterminingOilandNaturalGasReservesQuantitiesandCashFlowsDetail">
+        <link:definition>2465442 - Disclosure - Oil and Gas Reserves Information (Unaudited) - Summary of Prices Used in Determining Oil and Natural Gas Reserves Quantities and Cash Flows (Detail)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element id="crk_TemporaryEquityRedemptionOfShares" abstract="false" name="TemporaryEquityRedemptionOfShares" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:sharesItemType"/>
+  <xs:element id="crk_OffsettingAssetsAndLiabilitiesTableTextBlock" abstract="false" name="OffsettingAssetsAndLiabilitiesTableTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:textBlockItemType"/>
+  <xs:element id="crk_FairValueInputsLevel2AndLevel3Member" abstract="true" name="FairValueInputsLevel2AndLevel3Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="crk_IncrementalCommonSharesAttributableToPerformanceStockUnits" abstract="false" name="IncrementalCommonSharesAttributableToPerformanceStockUnits" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:sharesItemType"/>
+  <xs:element id="crk_ContractCancellableNoticeTerm" abstract="false" name="ContractCancellableNoticeTerm" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:durationItemType"/>
+  <xs:element id="crk_PipeInventoryMember" abstract="true" name="PipeInventoryMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="crk_DerivativeFinancialInstrumentCurrentMember" abstract="true" name="DerivativeFinancialInstrumentCurrentMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="crk_SeniorNotesNinePointSevenFivePercentDueTwoThousandTwentySixMember" abstract="true" name="SeniorNotesNinePointSevenFivePercentDueTwoThousandTwentySixMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="crk_AccruedLeaseOperatingExpenses" abstract="false" name="AccruedLeaseOperatingExpenses" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="crk_CarryforwardAvailableToReduceFutureIncomeTaxesLineItems" abstract="true" name="CarryforwardAvailableToReduceFutureIncomeTaxesLineItems" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="crk_RelatedPartyTransactionFeeRevenue" abstract="false" name="RelatedPartyTransactionFeeRevenue" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="srt-types:perUnitItemType"/>
+  <xs:element id="crk_IncomeTaxesTable" abstract="true" name="IncomeTaxesTable" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrldt:hypercubeItem" type="xbrli:stringItemType"/>
+  <xs:element id="crk_AccruedTransportationCosts" abstract="false" name="AccruedTransportationCosts" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="crk_WellsProducingOnPurchasedPropertyGross" abstract="false" name="WellsProducingOnPurchasedPropertyGross" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="xbrli:decimalItemType"/>
+  <xs:element id="crk_ChangesInTiming" abstract="false" name="ChangesInTiming" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="crk_SupplementalCashFlowInformationTable" abstract="true" name="SupplementalCashFlowInformationTable" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrldt:hypercubeItem" type="xbrli:stringItemType"/>
+  <xs:element id="crk_ManagementOilPriceOutlook" abstract="false" name="ManagementOilPriceOutlook" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="srt-types:perUnitItemType"/>
+  <xs:element id="crk_PerformanceUnitsAdjustmentForPerformanceMultiplierRangeMaximum" abstract="false" name="PerformanceUnitsAdjustmentForPerformanceMultiplierRangeMaximum" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:percentItemType"/>
+  <xs:element id="crk_NetIncomeLossAllocatedToUnvestedRestrictedShares" abstract="false" name="NetIncomeLossAllocatedToUnvestedRestrictedShares" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="crk_SeriesBTenPercentConvertiblePreferredStockMember" abstract="true" name="SeriesBTenPercentConvertiblePreferredStockMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="crk_CurrentRatio" abstract="false" name="CurrentRatio" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:percentItemType"/>
+  <xs:element id="crk_CashFlowNoncashInvestingActivitiesDisclosureAbstract" abstract="true" name="CashFlowNoncashInvestingActivitiesDisclosureAbstract" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="crk_OperatingLeaseNumberOfAcresLeased" abstract="false" name="OperatingLeaseNumberOfAcresLeased" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:areaItemType"/>
+  <xs:element id="crk_ArkomaDrillingIILPMember" abstract="true" name="ArkomaDrillingIILPMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="crk_OilPriceDerivativesMember" abstract="true" name="OilPriceDerivativesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="crk_MajorOilAndNaturalGasPurchaserThreeMember" abstract="true" name="MajorOilAndNaturalGasPurchaserThreeMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="crk_GeneralAndAdministrativeExpenseReimbursementsOfOverheadCosts" abstract="false" name="GeneralAndAdministrativeExpenseReimbursementsOfOverheadCosts" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="crk_EastTexasMember" abstract="true" name="EastTexasMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="crk_CommitmentsForContractedDrillingServices" abstract="false" name="CommitmentsForContractedDrillingServices" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="crk_SwapContractsForYearOneMember" abstract="true" name="SwapContractsForYearOneMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="crk_SeniorNotesSevenPointFivePercentDueTwoThousandTwentyFiveMember" abstract="true" name="SeniorNotesSevenPointFivePercentDueTwoThousandTwentyFiveMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="crk_IssuanceOfCommonStockInExchangeForDebt" abstract="false" name="IssuanceOfCommonStockInExchangeForDebt" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="crk_IncomeTaxReconciliationNondeductibleExpensesDeductibleExpensesAndOtherExpensesAbstract" abstract="true" name="IncomeTaxReconciliationNondeductibleExpensesDeductibleExpensesAndOtherExpensesAbstract" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="crk_ExplorationExpenseIncludingUnprovedImpairmentsAndExploratoryDryHoleCosts" abstract="false" name="ExplorationExpenseIncludingUnprovedImpairmentsAndExploratoryDryHoleCosts" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="crk_PeriodOfIncreaseInNetOperatingLossLimitation" abstract="false" name="PeriodOfIncreaseInNetOperatingLossLimitation" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:durationItemType"/>
+  <xs:element id="crk_NaturalGasContractMember" abstract="true" name="NaturalGasContractMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="crk_CostsIncurredDevelopmentDrillingCosts" abstract="false" name="CostsIncurredDevelopmentDrillingCosts" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="crk_DerivativeInstrumentsAndHedgingActivitiesLineItems" abstract="true" name="DerivativeInstrumentsAndHedgingActivitiesLineItems" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="crk_AssetAcquisitionWorkingInterestOwnership" abstract="false" name="AssetAcquisitionWorkingInterestOwnership" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="xbrli:pureItemType"/>
+  <xs:element id="crk_CostsIncurredOilAndGasExplorationAndDevelopmentActivitiesAbstract" abstract="true" name="CostsIncurredOilAndGasExplorationAndDevelopmentActivitiesAbstract" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="crk_PaymentForAcreageAcquisitionFromThirdParty" abstract="false" name="PaymentForAcreageAcquisitionFromThirdParty" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="crk_PartnershipCostsToDrillAndOperateWellsAndOverheadFeesMember" abstract="true" name="PartnershipCostsToDrillAndOperateWellsAndOverheadFeesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="crk_TemporaryEquityDividendsOnTemporaryEquityValue" abstract="false" name="TemporaryEquityDividendsOnTemporaryEquityValue" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="crk_IncomeTaxesLineItems" abstract="true" name="IncomeTaxesLineItems" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="crk_CollarContractOneForYearTwoMember" abstract="true" name="CollarContractOneForYearTwoMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="crk_ProductionTaxRefundsReceivableMember" abstract="true" name="ProductionTaxRefundsReceivableMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="crk_CommitmentsAndContingenciesLineItems" abstract="true" name="CommitmentsAndContingenciesLineItems" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="crk_TemporaryEquityAccruedAndUnpaidDividendsPaid" abstract="false" name="TemporaryEquityAccruedAndUnpaidDividendsPaid" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="crk_OilAndGasReservesInformationTextBlock" abstract="false" name="OilAndGasReservesInformationTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:textBlockItemType"/>
+  <xs:element id="crk_CostsIncurredExploratoryDrillingAndCompletionCosts" abstract="false" name="CostsIncurredExploratoryDrillingAndCompletionCosts" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="crk_CostsIncurredUnprovedPropertyAcquisitions" abstract="false" name="CostsIncurredUnprovedPropertyAcquisitions" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="crk_FutureCostsAbstract" abstract="true" name="FutureCostsAbstract" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="crk_ExploratoryWellCostAbstract" abstract="true" name="ExploratoryWellCostAbstract" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="crk_NumberOfMajorCustomerOfOilAndGasSales" abstract="false" name="NumberOfMajorCustomerOfOilAndGasSales" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:integerItemType"/>
+  <xs:element id="crk_ChangesInStandardizedMeasureOfDiscountedFutureNetCashFlowsRelatingToProvedReservesTableTextBlock" abstract="false" name="ChangesInStandardizedMeasureOfDiscountedFutureNetCashFlowsRelatingToProvedReservesTableTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:textBlockItemType"/>
+  <xs:element id="crk_CashPaymentsMadeForInterestAndIncomeTaxesTableTextBlock" abstract="false" name="CashPaymentsMadeForInterestAndIncomeTaxesTableTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:textBlockItemType"/>
+  <xs:element id="crk_NoncashOrPartNoncashAcquisitionStockIssuance" abstract="false" name="NoncashOrPartNoncashAcquisitionStockIssuance" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="crk_CashFlowCashPaymentsAbstract" abstract="true" name="CashFlowCashPaymentsAbstract" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="crk_GasGatheringAndTransportationCost" abstract="false" name="GasGatheringAndTransportationCost" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="crk_OperationsAndSummaryOfSignificantAccountingPoliciesLineItems" abstract="true" name="OperationsAndSummaryOfSignificantAccountingPoliciesLineItems" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="crk_ProductionAndSeveranceTaxesOperatingExpense" abstract="false" name="ProductionAndSeveranceTaxesOperatingExpense" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="crk_AdvancePaymentsForReceiptsFromDrillingCosts" abstract="false" name="AdvancePaymentsForReceiptsFromDrillingCosts" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="crk_PaymentsToAcquireBusinessNetForCashAcquiredFromAcquisition" abstract="false" name="PaymentsToAcquireBusinessNetForCashAcquiredFromAcquisition" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="crk_NumberOfPrimaryProducts" abstract="false" name="NumberOfPrimaryProducts" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:integerItemType"/>
+  <xs:element id="crk_AntidilutiveSecuritiesExcludedFromComputationOfEarningsPerUnitWeightedAverageConvertiblePreferredStock" abstract="false" name="AntidilutiveSecuritiesExcludedFromComputationOfEarningsPerUnitWeightedAverageConvertiblePreferredStock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:sharesItemType"/>
+  <xs:element id="crk_ShareBasedCompensationArrangementByShareBasedPaymentAwardEquityInstrumentsOtherThanOptionNonvestedWeightedAverageNumber" abstract="false" name="ShareBasedCompensationArrangementByShareBasedPaymentAwardEquityInstrumentsOtherThanOptionNonvestedWeightedAverageNumber" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:sharesItemType"/>
+  <xs:element id="crk_CommitmentsForContractedCompletionServicesYearOne" abstract="false" name="CommitmentsForContractedCompletionServicesYearOne" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="crk_NetIncomeLossAvailableToCommonStockholdersAfterUnvestedRestrictedShares" abstract="false" name="NetIncomeLossAvailableToCommonStockholdersAfterUnvestedRestrictedShares" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="crk_BasisOfPresentationAndPrinciplesOfConsolidationPolicyPolicyTextBlock" abstract="false" name="BasisOfPresentationAndPrinciplesOfConsolidationPolicyPolicyTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:textBlockItemType"/>
+  <xs:element id="crk_BakkenShaleMember" abstract="true" name="BakkenShaleMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="crk_DeferredTaxLiabilitiesAmortizationOfBondDiscount" abstract="false" name="DeferredTaxLiabilitiesAmortizationOfBondDiscount" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="crk_EffectiveIncomeTaxRateReconciliationNondeductibleExpenseTransactionCosts" abstract="false" name="EffectiveIncomeTaxRateReconciliationNondeductibleExpenseTransactionCosts" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:percentItemType"/>
+  <xs:element id="crk_PrepaidExpensesMember" abstract="true" name="PrepaidExpensesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="crk_DailyProductionProducingProperties" abstract="false" name="DailyProductionProducingProperties" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="dtr-types:energyItemType"/>
+  <xs:element id="crk_HaynesvilleShaleMember" abstract="true" name="HaynesvilleShaleMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="crk_AcquisitionOfProspectiveForGasNetAcres" abstract="false" name="AcquisitionOfProspectiveForGasNetAcres" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="dtr-types:areaItemType"/>
+  <xs:element id="crk_ContractCashSettlementMaxDays" abstract="false" name="ContractCashSettlementMaxDays" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:durationItemType"/>
+  <xs:element id="crk_CommitmentsForContractedCompletionServicesYearThree" abstract="false" name="CommitmentsForContractedCompletionServicesYearThree" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="crk_NaturalGasContractsThreeMember" abstract="true" name="NaturalGasContractsThreeMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="crk_FinalNumberOfPotentialPerformanceSharesIssuableMaximum" abstract="false" name="FinalNumberOfPotentialPerformanceSharesIssuableMaximum" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:sharesItemType"/>
+  <xs:element id="crk_YearsOfExpirationCarryforwardUnlimitedMember" abstract="true" name="YearsOfExpirationCarryforwardUnlimitedMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="crk_OperationsAndSummaryOfSignificantAccountingPoliciesTable" abstract="true" name="OperationsAndSummaryOfSignificantAccountingPoliciesTable" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrldt:hypercubeItem" type="xbrli:stringItemType"/>
+  <xs:element id="crk_BasisSwapContractsForYearTwoMember" abstract="true" name="BasisSwapContractsForYearTwoMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="crk_AntidilutiveSecuritiesPerformanceShareUnitsExcludedFromComputationOfEPSAmount" abstract="false" name="AntidilutiveSecuritiesPerformanceShareUnitsExcludedFromComputationOfEPSAmount" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:sharesItemType"/>
+  <xs:element id="crk_AuditInformationAbstract" abstract="true" name="AuditInformationAbstract" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="crk_AdvancePaymentsForDrillingCostsMember" abstract="true" name="AdvancePaymentsForDrillingCostsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="crk_AccruedTransactionCosts" abstract="false" name="AccruedTransactionCosts" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="crk_CoveyParkEnergyLLCMember" abstract="true" name="CoveyParkEnergyLLCMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="crk_ExploratoryWellCostsDisclosureTextBlock" abstract="false" name="ExploratoryWellCostsDisclosureTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:textBlockItemType"/>
+  <xs:element id="crk_MajorOilAndNaturalGasPurchaserOneMember" abstract="true" name="MajorOilAndNaturalGasPurchaserOneMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="crk_PerformanceUnitsAdjustmentForPerformanceMultiplierRangeMinimum" abstract="false" name="PerformanceUnitsAdjustmentForPerformanceMultiplierRangeMinimum" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:percentItemType"/>
+  <xs:element id="crk_NetOperatingLossLimitation" abstract="false" name="NetOperatingLossLimitation" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="crk_MajorPurchasersPolicyPolicyTextBlock" abstract="false" name="MajorPurchasersPolicyPolicyTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:textBlockItemType"/>
+  <xs:element id="crk_SeniorNotesFivePointEightSevenFivePercentDueTwoThousandThirtyMember" abstract="true" name="SeniorNotesFivePointEightSevenFivePercentDueTwoThousandThirtyMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="crk_TemporaryEquityStockIssuedDuringPeriodSharesNewIssues" abstract="false" name="TemporaryEquityStockIssuedDuringPeriodSharesNewIssues" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:sharesItemType"/>
+  <xs:element id="crk_ProvedUndevelopedReserves" abstract="false" name="ProvedUndevelopedReserves" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="dtr-types:volumeItemType"/>
+  <xs:element id="crk_FairValueOfTemporaryEquity" abstract="false" name="FairValueOfTemporaryEquity" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="crk_CarryforwardAvailableToReduceFutureIncomeTaxesTable" abstract="true" name="CarryforwardAvailableToReduceFutureIncomeTaxesTable" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrldt:hypercubeItem" type="xbrli:stringItemType"/>
+  <xs:element id="crk_ManagementGasPriceOutlook" abstract="false" name="ManagementGasPriceOutlook" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="srt-types:perUnitItemType"/>
+  <xs:element id="crk_NoncashOrPartNoncashAcquisitionWorkingCapital" abstract="false" name="NoncashOrPartNoncashAcquisitionWorkingCapital" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="crk_MinimumDiscountFactorToFutureNetCashFlowsPercentage" abstract="false" name="MinimumDiscountFactorToFutureNetCashFlowsPercentage" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:percentItemType"/>
+  <xs:element id="crk_CostsIncurredChangeToAssetRetirementObligations" abstract="false" name="CostsIncurredChangeToAssetRetirementObligations" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="crk_TemporaryEquityAggregateCommonStockConversionShares" abstract="false" name="TemporaryEquityAggregateCommonStockConversionShares" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:sharesItemType"/>
+  <xs:element id="crk_SevenPointFivePercentSeniorNotesMember" abstract="true" name="SevenPointFivePercentSeniorNotesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="crk_PropertySaleOfLeasesNetAcresDisposed" abstract="false" name="PropertySaleOfLeasesNetAcresDisposed" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="dtr-types:areaItemType"/>
+  <xs:element id="crk_MajorOilAndNaturalGasPurchaserTwoMember" abstract="true" name="MajorOilAndNaturalGasPurchaserTwoMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="crk_StockholdersEquityLineItems" abstract="true" name="StockholdersEquityLineItems" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="crk_WeightedAverageGrantPricePerformanceShareUnitsForfeitures" abstract="false" name="WeightedAverageGrantPricePerformanceShareUnitsForfeitures" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:perShareItemType"/>
+  <xs:element id="crk_RetirementOfDebtInExchangeForCommonStock" abstract="false" name="RetirementOfDebtInExchangeForCommonStock" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="crk_ProvedDevelopedReserves" abstract="false" name="ProvedDevelopedReserves" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="dtr-types:volumeItemType"/>
+  <xs:element id="crk_AntidilutiveSecuritiesExcludedFromComputationOfEarningsPerUnitWeightedAverageGrantDateFairValuePrice" abstract="false" name="AntidilutiveSecuritiesExcludedFromComputationOfEarningsPerUnitWeightedAverageGrantDateFairValuePrice" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:perShareItemType"/>
+  <xs:element id="crk_CaddoParishLouisianaMember" abstract="true" name="CaddoParishLouisianaMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="crk_ProceedsFromPaymentsForSaleOfOilAndGasProperties" abstract="false" name="ProceedsFromPaymentsForSaleOfOilAndGasProperties" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="crk_TemporaryEquityStockRedeemedDuringPeriodShares" abstract="false" name="TemporaryEquityStockRedeemedDuringPeriodShares" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:sharesItemType"/>
+  <xs:element id="crk_BasisSwapContractsForYearOneMember" abstract="true" name="BasisSwapContractsForYearOneMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="crk_CashFlowsRelatingToProvedReservesAbstract" abstract="true" name="CashFlowsRelatingToProvedReservesAbstract" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="crk_MajorOilAndNaturalGasPurchaserFourMember" abstract="true" name="MajorOilAndNaturalGasPurchaserFourMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="crk_CapitalizedCostsLeaseHoldCosts" abstract="false" name="CapitalizedCostsLeaseHoldCosts" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="crk_IncomeTaxReconciliationNondeductibleExpenseTransactionCosts" abstract="false" name="IncomeTaxReconciliationNondeductibleExpenseTransactionCosts" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="crk_MaximumDiscountFactorToFutureNetCashFlowsPercentage" abstract="false" name="MaximumDiscountFactorToFutureNetCashFlowsPercentage" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:percentItemType"/>
+  <xs:element id="crk_LongTermDebtPrincipalAmountRetired" abstract="false" name="LongTermDebtPrincipalAmountRetired" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="crk_OtherCurrentAssetTable" abstract="true" name="OtherCurrentAssetTable" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrldt:hypercubeItem" type="xbrli:stringItemType"/>
+  <xs:element id="crk_CostsIncurredDevelopmentLeaseholdCosts" abstract="false" name="CostsIncurredDevelopmentLeaseholdCosts" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="crk_AccruedDrillingCosts" abstract="false" name="AccruedDrillingCosts" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="crk_CommitmentsAndContingenciesTable" abstract="true" name="CommitmentsAndContingenciesTable" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrldt:hypercubeItem" type="xbrli:stringItemType"/>
+  <xs:element id="crk_PerformanceShareUnitsGrantDateFairValue" abstract="false" name="PerformanceShareUnitsGrantDateFairValue" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="crk_RepaymentsOfLinesOfCreditFromAcquisition" abstract="false" name="RepaymentsOfLinesOfCreditFromAcquisition" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="crk_SwapContractsForYearTwoMember" abstract="true" name="SwapContractsForYearTwoMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="crk_AssetRetirementObligationLiabilitiesForWellsAcquired" abstract="false" name="AssetRetirementObligationLiabilitiesForWellsAcquired" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="crk_NetOperatingLossExpirationPeriod" abstract="false" name="NetOperatingLossExpirationPeriod" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:durationItemType"/>
+  <xs:element id="crk_AffiliatesControlledByMajorityShareholderJerryJonesMember" abstract="true" name="AffiliatesControlledByMajorityShareholderJerryJonesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="crk_CostsIncurredOtherDevelopmentCosts" abstract="false" name="CostsIncurredOtherDevelopmentCosts" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="crk_TemporaryEquityStockConversionPrice" abstract="false" name="TemporaryEquityStockConversionPrice" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:perShareItemType"/>
+  <xs:element id="crk_ContractTermsRelatedToDrillingServices" abstract="false" name="ContractTermsRelatedToDrillingServices" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:durationItemType"/>
+  <xs:element id="crk_NumberOfPerformanceShareUnitsAwardsForfeitures" abstract="false" name="NumberOfPerformanceShareUnitsAwardsForfeitures" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:sharesItemType"/>
+  <xs:element id="crk_LeaseOperatingExpenseMember" abstract="true" name="LeaseOperatingExpenseMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="crk_DerivativeFinancialInstrumentNonCurrentMember" abstract="true" name="DerivativeFinancialInstrumentNonCurrentMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="crk_PerformanceShareUnitsOutstandingWeightedAverageGrantDateFairValue" abstract="false" name="PerformanceShareUnitsOutstandingWeightedAverageGrantDateFairValue" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="dtr-types:perShareItemType"/>
+  <xs:element id="crk_CashFlowNoncashInvestingActivitiesRelatedToAcquisitionAbstract" abstract="true" name="CashFlowNoncashInvestingActivitiesRelatedToAcquisitionAbstract" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="crk_DeferredTaxAssetsInterestExpenseLimitation" abstract="false" name="DeferredTaxAssetsInterestExpenseLimitation" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="crk_ProceedsFromSaleOfOilAndGasLeasesToRelatedParties" abstract="false" name="ProceedsFromSaleOfOilAndGasLeasesToRelatedParties" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="crk_CostsIncurredProvedPropertyAcquisitions" abstract="false" name="CostsIncurredProvedPropertyAcquisitions" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="crk_NoncashOrPartNoncashIncreaseDecreaseInAccruedCapitalExpenditure" abstract="false" name="NoncashOrPartNoncashIncreaseDecreaseInAccruedCapitalExpenditure" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="crk_NaturalGasContractTwoMember" abstract="true" name="NaturalGasContractTwoMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="crk_BusinessCombinationRecognizedIdentifiableAssetsAcquiredAndLiabilitiesAssumedAssetRetirementObligation" abstract="false" name="BusinessCombinationRecognizedIdentifiableAssetsAcquiredAndLiabilitiesAssumedAssetRetirementObligation" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="crk_ProvedUndevelopedReservesAbstract" abstract="true" name="ProvedUndevelopedReservesAbstract" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="crk_GrantDateFairValueOfPerformanceShareUnits" abstract="false" name="GrantDateFairValueOfPerformanceShareUnits" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:perShareItemType"/>
+  <xs:element id="crk_WellsProducingOnSoldPropertyNet" abstract="false" name="WellsProducingOnSoldPropertyNet" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="xbrli:decimalItemType"/>
+  <xs:element id="crk_ProvedReservesRollForward" abstract="true" name="ProvedReservesRollForward" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="crk_CommonStockAndPreferredStockSharesAuthorized" abstract="false" name="CommonStockAndPreferredStockSharesAuthorized" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="xbrli:sharesItemType"/>
+  <xs:element id="crk_StockIssuedValueContributionTransaction" abstract="false" name="StockIssuedValueContributionTransaction" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="crk_TemporaryEquityAggregateRedemptionPrice" abstract="false" name="TemporaryEquityAggregateRedemptionPrice" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="crk_ProvedDevelopedReservesAbstract" abstract="true" name="ProvedDevelopedReservesAbstract" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="crk_LeaseOperatingExpenses" abstract="false" name="LeaseOperatingExpenses" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="crk_ConcentrationOfCreditRiskAndAccountsReceivablePolicyTextBlock" abstract="false" name="ConcentrationOfCreditRiskAndAccountsReceivablePolicyTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:textBlockItemType"/>
+  <xs:element id="crk_ScheduleOfOtherCurrentAssetsLineItems" abstract="true" name="ScheduleOfOtherCurrentAssetsLineItems" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="crk_AssetRetirementObligationAssetsDisposed" abstract="false" name="AssetRetirementObligationAssetsDisposed" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="crk_OtherOtherCurrentAssetsMember" abstract="true" name="OtherOtherCurrentAssetsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="crk_SeriesAConvertiblePreferredStockMember" abstract="true" name="SeriesAConvertiblePreferredStockMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="crk_NumberOfPerformanceShareUnitsAwardsGranted" abstract="false" name="NumberOfPerformanceShareUnitsAwardsGranted" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:sharesItemType"/>
+  <xs:element id="crk_DerivativeCashPaidReceivedOnHedge" abstract="false" name="DerivativeCashPaidReceivedOnHedge" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="crk_PreferredStockDividendsAndAccretion" abstract="false" name="PreferredStockDividendsAndAccretion" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="crk_SupplementalCashFlowInformationLineItems" abstract="true" name="SupplementalCashFlowInformationLineItems" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="crk_CollarContractOneForYearOneMember" abstract="true" name="CollarContractOneForYearOneMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="crk_ConvertibleSeriesAPreferredStockMember" abstract="true" name="ConvertibleSeriesAPreferredStockMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="crk_StockholdersEquityTable" abstract="true" name="StockholdersEquityTable" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrldt:hypercubeItem" type="xbrli:stringItemType"/>
+  <xs:element id="crk_OilAndGasAverageSalePriceAndProductionCostPerUnitLineItems" abstract="true" name="OilAndGasAverageSalePriceAndProductionCostPerUnitLineItems" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="crk_OperatingLossCarryforwardsUnderSection382" abstract="false" name="OperatingLossCarryforwardsUnderSection382" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="crk_ShortTermDrillingRigCostsIncludedInProvedOilAndGasPropertiesMember" abstract="true" name="ShortTermDrillingRigCostsIncludedInProvedOilAndGasPropertiesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="crk_LeverageRatio" abstract="false" name="LeverageRatio" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:percentItemType"/>
+  <xs:element id="crk_FinalNumberOfPotentialPerformanceSharesIssuableMinimum" abstract="false" name="FinalNumberOfPotentialPerformanceSharesIssuableMinimum" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:sharesItemType"/>
+  <xs:element id="crk_IncomeLossAllocableToConvertiblePreferredStock" abstract="false" name="IncomeLossAllocableToConvertiblePreferredStock" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="crk_WellsProducingOnSoldPropertyGross" abstract="false" name="WellsProducingOnSoldPropertyGross" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="xbrli:integerItemType"/>
+  <xs:element id="crk_NumberOfPerformanceShareUnitsOutstanding" abstract="false" name="NumberOfPerformanceShareUnitsOutstanding" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="xbrli:sharesItemType"/>
+  <xs:element id="crk_SeniorNotesSixPointSevenFivePercentDueTwoThousandTwentyNineMember" abstract="true" name="SeniorNotesSixPointSevenFivePercentDueTwoThousandTwentyNineMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="crk_CommitmentsForContractedCompletionServicesYearTwo" abstract="false" name="CommitmentsForContractedCompletionServicesYearTwo" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="crk_TemporaryEquityDividendRatePercentage" abstract="false" name="TemporaryEquityDividendRatePercentage" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="dtr-types:percentItemType"/>
+  <xs:element id="crk_DeferredTaxAssetsTaxCreditCarryforwardsInterestExpense" abstract="false" name="DeferredTaxAssetsTaxCreditCarryforwardsInterestExpense" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="crk_EstimatedNetOperatingLossTaxCreditCarryforwardsToExpireUnusedAmount" abstract="false" name="EstimatedNetOperatingLossTaxCreditCarryforwardsToExpireUnusedAmount" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="crk_SupplementaryInformationWithRespectToConsolidatedStatementsOfCashFlowsPolicyPolicyTextBlock" abstract="false" name="SupplementaryInformationWithRespectToConsolidatedStatementsOfCashFlowsPolicyPolicyTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:textBlockItemType"/>
+  <xs:element id="crk_DerivativeInstrumentsAndHedgingActivitiesTable" abstract="true" name="DerivativeInstrumentsAndHedgingActivitiesTable" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrldt:hypercubeItem" type="xbrli:stringItemType"/>
+  <xs:element id="crk_ContractTermsRelatedToDrillingServicesCancellable" abstract="false" name="ContractTermsRelatedToDrillingServicesCancellable" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:durationItemType"/>
+  <xs:element id="crk_SeriesBConvertiblePreferredStockMember" abstract="true" name="SeriesBConvertiblePreferredStockMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+</xs:schema>

@@ -1,0 +1,441 @@
+<?xml version="1.0" encoding="us-ascii" standalone="yes"?>
+<!--XBRL Document Created with XBRLMaster-->
+<!--Version: 2.3.08-->
+<!--Based on XBRL 2.1-->
+<!--Date of creation: 05/15/2024-->
+<!--Software architectural design and coding: A'c Dharmapremananda Avt.-->
+<!--Copyright (c) 2024 I-NET Business Solutions, Inc. All Rights Reserved.-->
+<schema xmlns:xl="http://www.xbrl.org/2003/XLink" xmlns:ref="http://www.xbrl.org/2006/ref" xmlns:currency="http://xbrl.sec.gov/currency/2023" xmlns:us-gaap-att="http://fasb.org/us-gaap/attributes" xmlns:sic="http://xbrl.sec.gov/sic/2023" xmlns:exch="http://xbrl.sec.gov/exch/2023" xmlns:invest="http://xbrl.sec.gov/invest/2013-01-31" xmlns:negated="http://www.xbrl.org/2009/role/negated" xmlns:naics="http://xbrl.sec.gov/naics/2023" xmlns:us-types="http://fasb.org/us-types/2023" xmlns:stpr="http://xbrl.sec.gov/stpr/2023" xmlns="http://www.w3.org/2001/XMLSchema" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:xbrli="http://www.xbrl.org/2003/instance" xmlns:xbrldt="http://xbrl.org/2005/xbrldt" xmlns:xbrldi="http://xbrl.org/2006/xbrldi" xmlns:country="http://xbrl.sec.gov/country/2023" xmlns:utr="http://www.xbrl.org/2009/utr" xmlns:srt-types="http://fasb.org/srt-types/2023" xmlns:dtr-types="http://www.xbrl.org/dtr/type/2020-01-21" xmlns:srt-roles="http://fasb.org/srt-roles/2023" xmlns:dei="http://xbrl.sec.gov/dei/2023" xmlns:num="http://www.xbrl.org/dtr/type/numeric" xmlns:nonnum="http://www.xbrl.org/dtr/type/non-numeric" xmlns:srt="http://fasb.org/srt/2023" xmlns:us-gaap="http://fasb.org/us-gaap/2023" xmlns:gevi="http://gevi.com/20240331" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://gevi.com/20240331">
+  <annotation>
+    <appinfo>
+      <link:roleType roleURI="http://gevi.com/role/Cover" id="Cover">
+        <link:definition>000001 - Document - Cover</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://gevi.com/role/ConsolidatedBalanceSheets" id="ConsolidatedBalanceSheets">
+        <link:definition>000002 - Statement - Consolidated Balance Sheets</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://gevi.com/role/ConsolidatedBalanceSheetsParenthetical" id="ConsolidatedBalanceSheetsParenthetical">
+        <link:definition>000003 - Statement - Consolidated Balance Sheets (Parenthetical)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://gevi.com/role/ConsolidatedStatementsOfOperationsUnaudited" id="ConsolidatedStatementsOfOperationsUnaudited">
+        <link:definition>000004 - Statement - Consolidated Statements of Operations (Unaudited)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://gevi.com/role/ConsolidatedStatementsOfChangeInStockholdersDeficitUnaudited" id="ConsolidatedStatementsOfChangeInStockholdersDeficitUnaudited">
+        <link:definition>000005 - Statement - Consolidated Statements of Change in Stockholders' Deficit (Unaudited)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://gevi.com/role/ConsolidatedStatementsOfCashFlowsUnaudited" id="ConsolidatedStatementsOfCashFlowsUnaudited">
+        <link:definition>000006 - Statement - Consolidated Statements of Cash Flows (Unaudited)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://gevi.com/role/OrganizationBusinessAndGoingConcern" id="OrganizationBusinessAndGoingConcern">
+        <link:definition>000007 - Disclosure - Organization, Business and Going Concern</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://gevi.com/role/SummaryOfSignificantAccountingPolicies" id="SummaryOfSignificantAccountingPolicies">
+        <link:definition>000008 - Disclosure - Summary of Significant Accounting Policies</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://gevi.com/role/Equipment" id="Equipment">
+        <link:definition>000009 - Disclosure - Equipment</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://gevi.com/role/IntangibleAssets" id="IntangibleAssets">
+        <link:definition>000010 - Disclosure - Intangible assets</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://gevi.com/role/Lease" id="Lease">
+        <link:definition>000011 - Disclosure - Lease</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://gevi.com/role/ConvertibleNote" id="ConvertibleNote">
+        <link:definition>000012 - Disclosure - Convertible Note</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://gevi.com/role/PromissoryNote" id="PromissoryNote">
+        <link:definition>000013 - Disclosure - Promissory Note</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://gevi.com/role/RelatedPartyTransactions" id="RelatedPartyTransactions">
+        <link:definition>000014 - Disclosure - Related Party Transactions</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://gevi.com/role/StockholdersEquity" id="StockholdersEquity">
+        <link:definition>000015 - Disclosure - Stockholders Equity</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://gevi.com/role/CommitmentsAndContingencies" id="CommitmentsAndContingencies">
+        <link:definition>000016 - Disclosure - Commitments and Contingencies</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://gevi.com/role/Concentration" id="Concentration">
+        <link:definition>000017 - Disclosure - Concentration</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://gevi.com/role/SubsequentEvents" id="SubsequentEvents">
+        <link:definition>000018 - Disclosure - Subsequent Events</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://gevi.com/role/SummaryOfSignificantAccountingPoliciesPolicies" id="SummaryOfSignificantAccountingPoliciesPolicies">
+        <link:definition>000019 - Disclosure - Summary of Significant Accounting Policies (Policies)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://gevi.com/role/SummaryOfSignificantAccountingPoliciesTables" id="SummaryOfSignificantAccountingPoliciesTables">
+        <link:definition>000020 - Disclosure - Summary of Significant Accounting Policies (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://gevi.com/role/EquipmentNetTables" id="EquipmentNetTables">
+        <link:definition>000021 - Disclosure - Equipment net (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://gevi.com/role/IntangibleAssetsTables" id="IntangibleAssetsTables">
+        <link:definition>000022 - Disclosure - Intangible Assets (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://gevi.com/role/LeaseTables" id="LeaseTables">
+        <link:definition>000023 - Disclosure - Lease (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://gevi.com/role/ConvertibleNoteTables" id="ConvertibleNoteTables">
+        <link:definition>000024 - Disclosure - Convertible Note (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://gevi.com/role/StockholdersEquityTables" id="StockholdersEquityTables">
+        <link:definition>000025 - Disclosure - Stockholders Equity (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://gevi.com/role/ConcentrationTables" id="ConcentrationTables">
+        <link:definition>000026 - Disclosure - Concentration (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://gevi.com/role/OrganizationBusinessAndGoingConcernDetailsNarrative" id="OrganizationBusinessAndGoingConcernDetailsNarrative">
+        <link:definition>000027 - Disclosure - Organization Business and Going Concern (Details Narrative)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://gevi.com/role/SummaryOfSignificantAccountingPoliciesDetails" id="SummaryOfSignificantAccountingPoliciesDetails">
+        <link:definition>000028 - Disclosure - Summary of Significant Accounting Policies (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://gevi.com/role/SummaryOfSignificantAccountingPoliciesDetails1" id="SummaryOfSignificantAccountingPoliciesDetails1">
+        <link:definition>000029 - Disclosure - Summary of Significant Accounting Policies (Details 1)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://gevi.com/role/SummaryOfSignificantAccountingPoliciesDetailsNarrativess" id="SummaryOfSignificantAccountingPoliciesDetailsNarrativess">
+        <link:definition>000030 - Disclosure - Summary of Significant Accounting Policies (Details Narrativess)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://gevi.com/role/EquipmentNetDetails" id="EquipmentNetDetails">
+        <link:definition>000031 - Disclosure - Equipment net (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://gevi.com/role/EquipmentNetDetailsNarrative" id="EquipmentNetDetailsNarrative">
+        <link:definition>000032 - Disclosure - Equipment net (Details Narrative)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://gevi.com/role/IntangibleAssetsNetDetails" id="IntangibleAssetsNetDetails">
+        <link:definition>000033 - Disclosure - Intangible Assets net (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://gevi.com/role/IntangibleAssetsNetDetails1" id="IntangibleAssetsNetDetails1">
+        <link:definition>000034 - Disclosure - Intangible Assets net (Details 1)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://gevi.com/role/IntangibleAssetsNetDetailsNarrative" id="IntangibleAssetsNetDetailsNarrative">
+        <link:definition>000035 - Disclosure - Intangible Assets net (Details Narrative)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://gevi.com/role/LeaseDetails" id="LeaseDetails">
+        <link:definition>000036 - Disclosure - Lease (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://gevi.com/role/LeaseDetails1" id="LeaseDetails1">
+        <link:definition>000037 - Disclosure - Lease (Details 1)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://gevi.com/role/LeaseDetails2" id="LeaseDetails2">
+        <link:definition>000038 - Disclosure - Lease (Details 2)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://gevi.com/role/LeaseDetails3" id="LeaseDetails3">
+        <link:definition>000039 - Disclosure - Lease (Details 3)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://gevi.com/role/ConvertibleNoteDetails" id="ConvertibleNoteDetails">
+        <link:definition>000040 - Disclosure - Convertible Note (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://gevi.com/role/ConvertibleNoteDetailsNarrative" id="ConvertibleNoteDetailsNarrative">
+        <link:definition>000041 - Disclosure - Convertible Note (Details Narrative)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://gevi.com/role/PromissoryNoteDetailsNarrative" id="PromissoryNoteDetailsNarrative">
+        <link:definition>000042 - Disclosure - Promissory Note (Details Narrative)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://gevi.com/role/RelatedPartyTransactionsDetailsNarrative" id="RelatedPartyTransactionsDetailsNarrative">
+        <link:definition>000043 - Disclosure - Related Party Transactions (Details Narrative)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://gevi.com/role/StockholdersEquityDetails" id="StockholdersEquityDetails">
+        <link:definition>000044 - Disclosure - Stockholders Equity (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://gevi.com/role/StockholdersEquityDetailsNarrative" id="StockholdersEquityDetailsNarrative">
+        <link:definition>000045 - Disclosure - Stockholders Equity (Details Narrative)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://gevi.com/role/ConcentrationDetails" id="ConcentrationDetails">
+        <link:definition>000046 - Disclosure - Concentration (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://gevi.com/role/ConcentrationDetails1" id="ConcentrationDetails1">
+        <link:definition>000047 - Disclosure - Concentration (Details 1)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:linkbaseRef xlink:type="simple" xlink:href="gevi-20240331_pre.xml" xlink:role="http://www.xbrl.org/2003/role/presentationLinkbaseRef" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" />
+      <link:linkbaseRef xlink:type="simple" xlink:href="gevi-20240331_lab.xml" xlink:role="http://www.xbrl.org/2003/role/labelLinkbaseRef" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" />
+      <link:linkbaseRef xlink:type="simple" xlink:href="gevi-20240331_cal.xml" xlink:role="http://www.xbrl.org/2003/role/calculationLinkbaseRef" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" />
+      <link:linkbaseRef xlink:type="simple" xlink:href="gevi-20240331_def.xml" xlink:role="http://www.xbrl.org/2003/role/definitionLinkbaseRef" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" />
+    </appinfo>
+  </annotation>
+  <import namespace="http://www.xbrl.org/2003/instance" schemaLocation="http://www.xbrl.org/2003/xbrl-instance-2003-12-31.xsd" />
+  <import namespace="http://www.xbrl.org/2003/linkbase" schemaLocation="http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd" />
+  <import namespace="http://xbrl.org/2005/xbrldt" schemaLocation="http://www.xbrl.org/2005/xbrldt-2005.xsd" />
+  <import namespace="http://xbrl.sec.gov/country/2023" schemaLocation="https://xbrl.sec.gov/country/2023/country-2023.xsd" />
+  <import namespace="http://xbrl.sec.gov/currency/2023" schemaLocation="https://xbrl.sec.gov/currency/2023/currency-2023.xsd" />
+  <import namespace="http://xbrl.sec.gov/dei/2023" schemaLocation="https://xbrl.sec.gov/dei/2023/dei-2023.xsd" />
+  <import namespace="http://www.xbrl.org/dtr/type/non-numeric" schemaLocation="http://www.xbrl.org/dtr/type/nonNumeric-2009-12-16.xsd" />
+  <import namespace="http://www.xbrl.org/dtr/type/numeric" schemaLocation="http://www.xbrl.org/dtr/type/numeric-2009-12-16.xsd" />
+  <import namespace="http://xbrl.sec.gov/exch/2023" schemaLocation="https://xbrl.sec.gov/exch/2023/exch-2023.xsd" />
+  <import namespace="http://www.xbrl.org/2009/arcrole/fact-explanatoryFact" schemaLocation="http://www.xbrl.org/lrr/arcrole/factExplanatory-2009-12-16.xsd" />
+  <import namespace="http://www.xbrl.org/2009/role/negated" schemaLocation="http://www.xbrl.org/lrr/role/negated-2009-12-16.xsd" />
+  <import namespace="http://www.xbrl.org/2009/role/net" schemaLocation="http://www.xbrl.org/lrr/role/net-2009-12-16.xsd" />
+  <import namespace="http://xbrl.sec.gov/naics/2023" schemaLocation="https://xbrl.sec.gov/naics/2023/naics-2023.xsd" />
+  <import namespace="http://xbrl.sec.gov/sic/2023" schemaLocation="https://xbrl.sec.gov/sic/2023/sic-2023.xsd" />
+  <import namespace="http://fasb.org/srt-roles/2023" schemaLocation="https://xbrl.fasb.org/srt/2023/elts/srt-roles-2023.xsd" />
+  <import namespace="http://fasb.org/srt-types/2023" schemaLocation="https://xbrl.fasb.org/srt/2023/elts/srt-types-2023.xsd" />
+  <import namespace="http://www.xbrl.org/dtr/type/2020-01-21" schemaLocation="https://www.xbrl.org/dtr/type/2020-01-21/types.xsd" />
+  <import namespace="http://xbrl.sec.gov/stpr/2023" schemaLocation="https://xbrl.sec.gov/stpr/2023/stpr-2023.xsd" />
+  <import namespace="http://fasb.org/us-roles/2023" schemaLocation="https://xbrl.fasb.org/us-gaap/2023/elts/us-roles-2023.xsd" />
+  <import namespace="http://fasb.org/us-types/2023" schemaLocation="https://xbrl.fasb.org/us-gaap/2023/elts/us-types-2023.xsd" />
+  <import namespace="http://fasb.org/srt/2023" schemaLocation="https://xbrl.fasb.org/srt/2023/elts/srt-2023.xsd" />
+  <import namespace="http://fasb.org/us-gaap/2023" schemaLocation="https://xbrl.fasb.org/us-gaap/2023/elts/us-gaap-2023.xsd" />
+  <element id="gevi_CommonStockToBeIssued" name="CommonStockToBeIssued" nillable="true" xbrli:balance="credit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="gevi_StockToBeIssued" name="StockToBeIssued" nillable="true" xbrli:periodType="instant" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" />
+  <element id="gevi_PreferredStockSharesToBeIssued" name="PreferredStockSharesToBeIssued" nillable="true" xbrli:periodType="instant" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" />
+  <element id="gevi_BasicEarningsPerShare" name="BasicEarningsPerShare" nillable="true" xbrli:periodType="duration" type="num:perShareItemType" substitutionGroup="xbrli:item" />
+  <element id="gevi_BasicWeightedAverageNumberOfSharesOutstanding" name="BasicWeightedAverageNumberOfSharesOutstanding" nillable="true" xbrli:periodType="duration" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" />
+  <element id="gevi_SeriesCPreferredStockIssuedForCashShares" name="SeriesCPreferredStockIssuedForCashShares" nillable="true" xbrli:periodType="duration" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" />
+  <element id="gevi_SeriesCPreferredStockIssuedForCashAmount" name="SeriesCPreferredStockIssuedForCashAmount" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="gevi_SeriesCPreferredStockIssuedForServicesShares" name="SeriesCPreferredStockIssuedForServicesShares" nillable="true" xbrli:periodType="duration" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" />
+  <element id="gevi_SeriesCPreferredStockIssuedForServicesAmount" name="SeriesCPreferredStockIssuedForServicesAmount" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="gevi_CommonStockIssuedForStockToBeIssuedManagementShares" name="CommonStockIssuedForStockToBeIssuedManagementShares" nillable="true" xbrli:periodType="duration" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" />
+  <element id="gevi_CommonStockIssuedForStockToBeIssuedManagementAmount" name="CommonStockIssuedForStockToBeIssuedManagementAmount" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="gevi_CommonStockIssuedForConversionAndSettlementOfDebtShares" name="CommonStockIssuedForConversionAndSettlementOfDebtShares" nillable="true" xbrli:periodType="duration" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" />
+  <element id="gevi_CommonStockIssuedForConversionAndSettlementOfDebtAmount" name="CommonStockIssuedForConversionAndSettlementOfDebtAmount" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="gevi_CancellationOfCommentStockRelatedPartyShares" name="CancellationOfCommentStockRelatedPartyShares" nillable="true" xbrli:periodType="duration" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" />
+  <element id="gevi_CancellationOfCommentStockRelatedPartyAmount" name="CancellationOfCommentStockRelatedPartyAmount" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="gevi_IncreaseDecreaseInRelatedPartyAdvancesFundingOperatingExpense" name="IncreaseDecreaseInRelatedPartyAdvancesFundingOperatingExpense" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="gevi_CommonStockIssuedUponConversionOfPreferredCStock" name="CommonStockIssuedUponConversionOfPreferredCStock" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="gevi_StockIssuedDuringPeriodSharesAcquisition" name="StockIssuedDuringPeriodSharesAcquisition" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="gevi_IncreaseDecreaseInContributioninventoryrelatedparty" name="IncreaseDecreaseInContributioninventoryrelatedparty" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="gevi_BasisOfPresentationPolicyTextBlock" name="BasisOfPresentationPolicyTextBlock" nillable="true" xbrli:periodType="duration" type="nonnum:textBlockItemType" substitutionGroup="xbrli:item" />
+  <element id="gevi_ReclassificationPolicyTextBlock" name="ReclassificationPolicyTextBlock" nillable="true" xbrli:periodType="duration" type="nonnum:textBlockItemType" substitutionGroup="xbrli:item" />
+  <element id="gevi_ScheduleOfAntidilutiveSecuritiesTableTextBlock" name="ScheduleOfAntidilutiveSecuritiesTableTextBlock" nillable="true" xbrli:periodType="duration" type="nonnum:textBlockItemType" substitutionGroup="xbrli:item" />
+  <element id="gevi_ScheduleofrightOfUseAssetAndLeaseInformationTabletextblock" name="ScheduleofrightOfUseAssetAndLeaseInformationTabletextblock" nillable="true" xbrli:periodType="duration" type="nonnum:textBlockItemType" substitutionGroup="xbrli:item" />
+  <element id="gevi_ScheduleOfSupplementalBalanceSheetInformationTablTextBlock" name="ScheduleOfSupplementalBalanceSheetInformationTablTextBlock" nillable="true" xbrli:periodType="duration" type="nonnum:textBlockItemType" substitutionGroup="xbrli:item" />
+  <element id="gevi_SummaryOfFundsReceivedFromTheLenderTableTextBlock" name="SummaryOfFundsReceivedFromTheLenderTableTextBlock" nillable="true" xbrli:periodType="duration" type="nonnum:textBlockItemType" substitutionGroup="xbrli:item" />
+  <element id="gevi_ScheduleOfRevenueAndAccountsReceivableTableTextBlock" name="ScheduleOfRevenueAndAccountsReceivableTableTextBlock" nillable="true" xbrli:periodType="duration" type="nonnum:textBlockItemType" substitutionGroup="xbrli:item" />
+  <element id="gevi_ScheduleOfPurchaseAndAccountsPayableTableTextBlock" name="ScheduleOfPurchaseAndAccountsPayableTableTextBlock" nillable="true" xbrli:periodType="duration" type="nonnum:textBlockItemType" substitutionGroup="xbrli:item" />
+  <element id="gevi_WorkingCapital" name="WorkingCapital" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="gevi_NetLoss" name="NetLoss" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="gevi_RetainedEarningsAccumulatedDeficitOther" name="RetainedEarningsAccumulatedDeficitOther" nillable="true" xbrli:balance="credit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="gevi_NumeratorAbstract" name="NumeratorAbstract" nillable="true" abstract="true" xbrli:periodType="duration" type="xbrli:stringItemType" substitutionGroup="xbrli:item" />
+  <element id="gevi_AntiDilutiveImpactOnNetLossReconciliation" name="AntiDilutiveImpactOnNetLossReconciliation" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="gevi_AntiDilutiveImpactOnNetLossDiluted" name="AntiDilutiveImpactOnNetLossDiluted" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="gevi_DenominatorAbstract" name="DenominatorAbstract" nillable="true" abstract="true" xbrli:periodType="duration" type="xbrli:stringItemType" substitutionGroup="xbrli:item" />
+  <element id="gevi_AntidilutiveImpactConvertiblenotes" name="AntidilutiveImpactConvertiblenotes" nillable="true" xbrli:periodType="duration" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" />
+  <element id="gevi_AntidilutiveImpactPreferredStock" name="AntidilutiveImpactPreferredStock" nillable="true" xbrli:periodType="duration" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" />
+  <element id="gevi_AntiDilutiveImpactOnNetLossPerShareDiluted" name="AntiDilutiveImpactOnNetLossPerShareDiluted" nillable="true" xbrli:periodType="duration" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" />
+  <element id="gevi_PropertyPlantAndEquipmentUsefulLifes" name="PropertyPlantAndEquipmentUsefulLifes" nillable="true" xbrli:periodType="duration" type="xbrli:durationItemType" substitutionGroup="xbrli:item" />
+  <element id="gevi_FDICinsuranceAmount" name="FDICinsuranceAmount" nillable="true" xbrli:balance="credit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="gevi_FiniteLivedIntangibleAssetsAmortizationExpenseYearAfterFive" name="FiniteLivedIntangibleAssetsAmortizationExpenseYearAfterFive" nillable="true" xbrli:balance="debit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="gevi_EstimatedFutureAmortizationExpenseForFiniteLivedIntangibles" name="EstimatedFutureAmortizationExpenseForFiniteLivedIntangibles" nillable="true" xbrli:balance="debit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="gevi_IntellectualProperty" name="IntellectualProperty" nillable="true" xbrli:balance="debit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="gevi_SeriesCConvertiblePreferredStockShares" name="SeriesCConvertiblePreferredStockShares" nillable="true" xbrli:periodType="instant" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" />
+  <element id="gevi_FairValueOfSeriesCConvertiblePreferredStockCapitalilizedDuringPeriod" name="FairValueOfSeriesCConvertiblePreferredStockCapitalilizedDuringPeriod" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="gevi_SupplementalCashFlowInformationRelatedToLeasesWasAsFollowsAbstract" name="SupplementalCashFlowInformationRelatedToLeasesWasAsFollowsAbstract" nillable="true" abstract="true" xbrli:periodType="duration" type="xbrli:stringItemType" substitutionGroup="xbrli:item" />
+  <element id="gevi_OperatingLeaseWeightedAverageRemainingLeaseTerm" name="OperatingLeaseWeightedAverageRemainingLeaseTerm" nillable="true" xbrli:periodType="duration" type="xbrli:durationItemType" substitutionGroup="xbrli:item" />
+  <element id="gevi_CashPaidForOperatingCashFlowsFromOperatingLeases" name="CashPaidForOperatingCashFlowsFromOperatingLeases" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="gevi_OperatingLeasesOfFutureMinimumPaymentsDueThereafter" name="OperatingLeasesOfFutureMinimumPaymentsDueThereafter" nillable="true" xbrli:balance="credit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="gevi_OperatingLeasesOfFutureMinimumPaymentsDue" name="OperatingLeasesOfFutureMinimumPaymentsDue" nillable="true" xbrli:balance="credit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="gevi_LessImputedInterest" name="LessImputedInterest" nillable="true" xbrli:balance="debit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="gevi_LongTermDebtAndCapitalLeaseObligationsIncludingNonCurrentMaturities" name="LongTermDebtAndCapitalLeaseObligationsIncludingNonCurrentMaturities" nillable="true" xbrli:balance="credit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="gevi_PrincipalAmount" name="PrincipalAmount" nillable="true" xbrli:balance="debit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="gevi_InterestRate" name="InterestRate" nillable="true" xbrli:periodType="duration" type="num:percentItemType" substitutionGroup="xbrli:item" />
+  <element id="gevi_DebtInstrumentMaturityDescription" name="DebtInstrumentMaturityDescription" nillable="true" xbrli:periodType="duration" type="xbrli:stringItemType" substitutionGroup="xbrli:item" />
+  <element id="gevi_ConvertibleNoteInterestRate" name="ConvertibleNoteInterestRate" nillable="true" xbrli:periodType="duration" type="num:percentItemType" substitutionGroup="xbrli:item" />
+  <element id="gevi_ConversionPricePerShare" name="ConversionPricePerShare" nillable="true" xbrli:periodType="duration" type="num:perShareItemType" substitutionGroup="xbrli:item" />
+  <element id="gevi_AccruedInterest" name="AccruedInterest" nillable="true" xbrli:balance="credit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="gevi_ConversionOfStockToCommonStock" name="ConversionOfStockToCommonStock" nillable="true" xbrli:periodType="instant" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" />
+  <element id="gevi_PromissoryNotesInterestRate" name="PromissoryNotesInterestRate" nillable="true" xbrli:periodType="duration" type="num:percentItemType" substitutionGroup="xbrli:item" />
+  <element id="gevi_CommonStockIssued" name="CommonStockIssued" nillable="true" xbrli:periodType="instant" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" />
+  <element id="gevi_PromissoryNoteInterest" name="PromissoryNoteInterest" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="gevi_RepaymentsOfConsultingFee" name="RepaymentsOfConsultingFee" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="gevi_RelatedPartyTransactionToRelatedParty" name="RelatedPartyTransactionToRelatedParty" nillable="true" xbrli:balance="debit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="gevi_AdvanceFromRelatedParty" name="AdvanceFromRelatedParty" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="gevi_CommonStockAmount" name="CommonStockAmount" nillable="true" xbrli:balance="credit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="gevi_IssuanceOfConvertiblePreferredStock" name="IssuanceOfConvertiblePreferredStock" nillable="true" xbrli:periodType="duration" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" />
+  <element id="gevi_ShareBasedCompensationArrangementByShareBasedPaymentAwardOptionsCancelledInPeriod" name="ShareBasedCompensationArrangementByShareBasedPaymentAwardOptionsCancelledInPeriod" nillable="true" xbrli:periodType="duration" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" />
+  <element id="gevi_ShareBasedCompensationArrangementsByShareBasedPaymentAwardOptionsVestedInPeriodWeightedAverageExercisePrice" name="ShareBasedCompensationArrangementsByShareBasedPaymentAwardOptionsVestedInPeriodWeightedAverageExercisePrice" nillable="true" xbrli:periodType="duration" type="num:perShareItemType" substitutionGroup="xbrli:item" />
+  <element id="gevi_ShareBasedCompensationArrangementsByShareBasedPaymentAwardOptionsCancelleddInPeriodWeightedAverageExercisePrice" name="ShareBasedCompensationArrangementsByShareBasedPaymentAwardOptionsCancelleddInPeriodWeightedAverageExercisePrice" nillable="true" xbrli:periodType="duration" type="num:perShareItemType" substitutionGroup="xbrli:item" />
+  <element id="gevi_StockIssuedDuringPeriodValueIssuedForService" name="StockIssuedDuringPeriodValueIssuedForService" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="gevi_CommonStockCancelled" name="CommonStockCancelled" nillable="true" xbrli:periodType="instant" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" />
+  <element id="gevi_StockSubscriptionsReceived" name="StockSubscriptionsReceived" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="gevi_StockIssuedDuringPeriodValueStockSubscription" name="StockIssuedDuringPeriodValueStockSubscription" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="gevi_PreferredStockSharesNotYetIssued" name="PreferredStockSharesNotYetIssued" nillable="true" xbrli:periodType="instant" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" />
+  <element id="gevi_IssuanceOfConvertiblePreferredStockAmount" name="IssuanceOfConvertiblePreferredStockAmount" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="gevi_VotingRights" name="VotingRights" nillable="true" xbrli:periodType="duration" type="xbrli:integerItemType" substitutionGroup="xbrli:item" />
+  <element id="gevi_DescriptionRelatedTOShareDesignateToPreferredStock" name="DescriptionRelatedTOShareDesignateToPreferredStock" nillable="true" xbrli:periodType="duration" type="xbrli:stringItemType" substitutionGroup="xbrli:item" />
+  <element id="gevi_StockCancelled" name="StockCancelled" nillable="true" xbrli:periodType="duration" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" />
+  <element id="gevi_ConcentrationRiskPercentage2" name="ConcentrationRiskPercentage2" nillable="true" xbrli:periodType="duration" type="num:percentItemType" substitutionGroup="xbrli:item" />
+  <element id="gevi_OrganizationBusinessAndGoingConcernAbstract" name="OrganizationBusinessAndGoingConcernAbstract" nillable="true" abstract="true" xbrli:periodType="duration" type="xbrli:stringItemType" substitutionGroup="xbrli:item" />
+  <element id="gevi_IntangibleAssetsAbstract" name="IntangibleAssetsAbstract" nillable="true" abstract="true" xbrli:periodType="duration" type="xbrli:stringItemType" substitutionGroup="xbrli:item" />
+  <element id="gevi_ConvertibleNoteAbstract" name="ConvertibleNoteAbstract" nillable="true" abstract="true" xbrli:periodType="duration" type="xbrli:stringItemType" substitutionGroup="xbrli:item" />
+  <element id="gevi_PromissoryNoteAbstract" name="PromissoryNoteAbstract" nillable="true" abstract="true" xbrli:periodType="duration" type="xbrli:stringItemType" substitutionGroup="xbrli:item" />
+  <element id="gevi_ConcentrationAbstract" name="ConcentrationAbstract" nillable="true" abstract="true" xbrli:periodType="duration" type="xbrli:stringItemType" substitutionGroup="xbrli:item" />
+  <element id="gevi_NatureOfOperationsAndGoingConcernAbstract" name="NatureOfOperationsAndGoingConcernAbstract" nillable="true" abstract="true" xbrli:periodType="duration" type="xbrli:stringItemType" substitutionGroup="xbrli:item" />
+  <element name="ConvertiblesSeriesAPreferredStockMember" id="gevi_ConvertiblesSeriesAPreferredStockMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="ConvertiblesSeriesCPreferredSockMember" id="gevi_ConvertiblesSeriesCPreferredSockMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="ConvertiblesSeriesCPreferredStockMember" id="gevi_ConvertiblesSeriesCPreferredStockMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="ConvertibleSeriesAPreferredStockMember" id="gevi_ConvertibleSeriesAPreferredStockMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="ConvertibleSeriesCPreferredStockMember" id="gevi_ConvertibleSeriesCPreferredStockMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="PreferredStockToBeIssuedMember" id="gevi_PreferredStockToBeIssuedMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="CommonStockToBeIssuedMember" id="gevi_CommonStockToBeIssuedMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="ConvertiblePreferredStockSeriesCMember" id="gevi_ConvertiblePreferredStockSeriesCMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="ConvertiblePreferredStockSeriesAMember" id="gevi_ConvertiblePreferredStockSeriesAMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="PromissoryNoteAgreementMember" id="gevi_PromissoryNoteAgreementMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="WorkingCapitalPurposeMember" id="gevi_WorkingCapitalPurposeMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="OperationalPurposeMember" id="gevi_OperationalPurposeMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="ConsultingAgreementMember" id="gevi_ConsultingAgreementMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="ElevenAugustTwentyTwentyTwoMember" id="gevi_ElevenAugustTwentyTwentyTwoMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="TwoSeptemberTwentyTwentyTwoMember" id="gevi_TwoSeptemberTwentyTwentyTwoMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="OneAprilTwentyTwentyThreeMember" id="gevi_OneAprilTwentyTwentyThreeMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="ConvertibleNoteAgreementMember" id="gevi_ConvertibleNoteAgreementMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="RevenueCustomerAMember" id="gevi_RevenueCustomerAMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="RevenueCustomerBMember" id="gevi_RevenueCustomerBMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="RevenueCustomerCMember" id="gevi_RevenueCustomerCMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="RevenueCustomerDMember" id="gevi_RevenueCustomerDMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="AccountsReceivableCustomerAMember" id="gevi_AccountsReceivableCustomerAMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="AccountsReceivableCustomerBMember" id="gevi_AccountsReceivableCustomerBMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="AccountsReceivableCustomerCMember" id="gevi_AccountsReceivableCustomerCMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="AccountsReceivableCustomerDMember" id="gevi_AccountsReceivableCustomerDMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="SupplierCustomerAMember" id="gevi_SupplierCustomerAMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="PurchaseMember" id="gevi_PurchaseMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="SupplierCustomerBMember" id="gevi_SupplierCustomerBMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="SupplierCustomerCMember" id="gevi_SupplierCustomerCMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="SupplierCustomerDMember" id="gevi_SupplierCustomerDMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="SupplierCustomerEMember" id="gevi_SupplierCustomerEMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="AccountsPaybleMember" id="gevi_AccountsPaybleMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="PreferredSharesMember" id="gevi_PreferredSharesMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="SeriesAConvertiblePreferredStockMember" id="gevi_SeriesAConvertiblePreferredStockMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="SeriesAPreferredStockSharesMember" id="gevi_SeriesAPreferredStockSharesMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+</schema>

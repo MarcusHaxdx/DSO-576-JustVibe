@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--XBRL Document Created with Wdesk from Workiva-->
+<!--Copyright 2022 Workiva-->
+<!--r:915153f8-5dd7-44a4-84da-67d592863439,g:2581671a-d3ba-4d70-a3e7-003e900c7a5c-->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:advm="http://www.adverum.com/20220930" xmlns:xbrli="http://www.xbrl.org/2003/instance" xmlns:dtr-types="http://www.xbrl.org/dtr/type/2020-01-21" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://www.adverum.com/20220930">
+  <xs:import namespace="http://fasb.org/srt/2022" schemaLocation="https://xbrl.fasb.org/srt/2022/elts/srt-2022.xsd"/>
+  <xs:import namespace="http://fasb.org/us-gaap/2022" schemaLocation="https://xbrl.fasb.org/us-gaap/2022/elts/us-gaap-2022.xsd"/>
+  <xs:import namespace="http://www.w3.org/1999/xlink" schemaLocation="http://www.xbrl.org/2003/xlink-2003-12-31.xsd"/>
+  <xs:import namespace="http://www.xbrl.org/2003/instance" schemaLocation="http://www.xbrl.org/2003/xbrl-instance-2003-12-31.xsd"/>
+  <xs:import namespace="http://www.xbrl.org/2003/linkbase" schemaLocation="http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd"/>
+  <xs:import namespace="http://www.xbrl.org/dtr/type/2020-01-21" schemaLocation="https://www.xbrl.org/dtr/type/2020-01-21/types.xsd"/>
+  <xs:import namespace="http://xbrl.sec.gov/dei/2022" schemaLocation="https://xbrl.sec.gov/dei/2022/dei-2022.xsd"/>
+  <xs:annotation>
+    <xs:appinfo>
+      <link:linkbaseRef xmlns:xlink="http://www.w3.org/1999/xlink" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="advm-20220930_lab.xml" xlink:role="http://www.xbrl.org/2003/role/labelLinkbaseRef" xlink:type="simple"/>
+      <link:linkbaseRef xmlns:xlink="http://www.w3.org/1999/xlink" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="advm-20220930_pre.xml" xlink:role="http://www.xbrl.org/2003/role/presentationLinkbaseRef" xlink:type="simple"/>
+      <link:linkbaseRef xmlns:xlink="http://www.w3.org/1999/xlink" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="advm-20220930_cal.xml" xlink:role="http://www.xbrl.org/2003/role/calculationLinkbaseRef" xlink:type="simple"/>
+      <link:linkbaseRef xmlns:xlink="http://www.w3.org/1999/xlink" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="advm-20220930_def.xml" xlink:role="http://www.xbrl.org/2003/role/definitionLinkbaseRef" xlink:type="simple"/>
+      <link:roleType id="CoverPage" roleURI="http://www.adverum.com/role/CoverPage">
+        <link:definition>0000001 - Document - Cover Page</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CondensedConsolidatedBalanceSheets" roleURI="http://www.adverum.com/role/CondensedConsolidatedBalanceSheets">
+        <link:definition>0000002 - Statement - Condensed Consolidated Balance Sheets</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CondensedConsolidatedStatementsofOperationsandComprehensiveLoss" roleURI="http://www.adverum.com/role/CondensedConsolidatedStatementsofOperationsandComprehensiveLoss">
+        <link:definition>0000003 - Statement - Condensed Consolidated Statements of Operations and Comprehensive Loss</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CondensedConsolidatedStatementsofStockholdersEquity" roleURI="http://www.adverum.com/role/CondensedConsolidatedStatementsofStockholdersEquity">
+        <link:definition>0000004 - Statement - Condensed Consolidated Statements of Stockholders&#8217; Equity</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CondensedConsolidatedStatementsofStockholdersEquityParenthetical" roleURI="http://www.adverum.com/role/CondensedConsolidatedStatementsofStockholdersEquityParenthetical">
+        <link:definition>0000005 - Statement - Condensed Consolidated Statements of Stockholders Equity (Parenthetical)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CondensedConsolidatedStatementsofCashFlows" roleURI="http://www.adverum.com/role/CondensedConsolidatedStatementsofCashFlows">
+        <link:definition>0000006 - Statement - Condensed Consolidated Statements of Cash Flows</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="OrganizationandBasisofPresentation" roleURI="http://www.adverum.com/role/OrganizationandBasisofPresentation">
+        <link:definition>0000007 - Disclosure - Organization and Basis of Presentation</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SummaryofSignificantAccountingPolicies" roleURI="http://www.adverum.com/role/SummaryofSignificantAccountingPolicies">
+        <link:definition>0000008 - Disclosure - Summary of Significant Accounting Policies</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FairValueMeasurementsandFairValueofFinancialInstruments" roleURI="http://www.adverum.com/role/FairValueMeasurementsandFairValueofFinancialInstruments">
+        <link:definition>0000009 - Disclosure - Fair Value Measurements and Fair Value of Financial Instruments</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="BalanceSheetComponents" roleURI="http://www.adverum.com/role/BalanceSheetComponents">
+        <link:definition>0000010 - Disclosure - Balance Sheet Components</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="Leases" roleURI="http://www.adverum.com/role/Leases">
+        <link:definition>0000011 - Disclosure - Leases</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="EquityIncentiveAwards" roleURI="http://www.adverum.com/role/EquityIncentiveAwards">
+        <link:definition>0000012 - Disclosure - Equity Incentive Awards</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="NetLossperShare" roleURI="http://www.adverum.com/role/NetLossperShare">
+        <link:definition>0000013 - Disclosure - Net Loss per Share</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="Restructuring" roleURI="http://www.adverum.com/role/Restructuring">
+        <link:definition>0000014 - Disclosure - Restructuring</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SummaryofSignificantAccountingPoliciesPolicies" roleURI="http://www.adverum.com/role/SummaryofSignificantAccountingPoliciesPolicies">
+        <link:definition>0000015 - Disclosure - Summary of Significant Accounting Policies (Policies)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FairValueMeasurementsandFairValueofFinancialInstrumentsTables" roleURI="http://www.adverum.com/role/FairValueMeasurementsandFairValueofFinancialInstrumentsTables">
+        <link:definition>0000016 - Disclosure - Fair Value Measurements and Fair Value of Financial Instruments (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="BalanceSheetComponentsTables" roleURI="http://www.adverum.com/role/BalanceSheetComponentsTables">
+        <link:definition>0000017 - Disclosure - Balance Sheet Components (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="EquityIncentiveAwardsTables" roleURI="http://www.adverum.com/role/EquityIncentiveAwardsTables">
+        <link:definition>0000018 - Disclosure - Equity Incentive Awards (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="NetLossperShareTables" roleURI="http://www.adverum.com/role/NetLossperShareTables">
+        <link:definition>0000019 - Disclosure - Net Loss per Share (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RestructuringTables" roleURI="http://www.adverum.com/role/RestructuringTables">
+        <link:definition>0000020 - Disclosure - Restructuring (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="OrganizationandBasisofPresentationDetail" roleURI="http://www.adverum.com/role/OrganizationandBasisofPresentationDetail">
+        <link:definition>0000021 - Disclosure - Organization and Basis of Presentation (Detail)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FairValueMeasurementsandFairValueofFinancialInstrumentsSummaryofCashEquivalentsandShorttermInvestmentsDetails" roleURI="http://www.adverum.com/role/FairValueMeasurementsandFairValueofFinancialInstrumentsSummaryofCashEquivalentsandShorttermInvestmentsDetails">
+        <link:definition>0000022 - Disclosure - Fair Value Measurements and Fair Value of Financial Instruments - Summary of Cash Equivalents and Short-term Investments (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FairValueMeasurementsandFairValueofFinancialInstrumentsAdditionalInformationDetails" roleURI="http://www.adverum.com/role/FairValueMeasurementsandFairValueofFinancialInstrumentsAdditionalInformationDetails">
+        <link:definition>0000023 - Disclosure - Fair Value Measurements and Fair Value of Financial Instruments - Additional Information (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="BalanceSheetComponentsScheduleofPropertyandEquipmentNetDetails" roleURI="http://www.adverum.com/role/BalanceSheetComponentsScheduleofPropertyandEquipmentNetDetails">
+        <link:definition>0000024 - Disclosure - Balance Sheet Components - Schedule of Property and Equipment, Net (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="BalanceSheetComponentsScheduleofAccruedExpensesandOtherCurrentLiabilitiesDetails" roleURI="http://www.adverum.com/role/BalanceSheetComponentsScheduleofAccruedExpensesandOtherCurrentLiabilitiesDetails">
+        <link:definition>0000025 - Disclosure - Balance Sheet Components - Schedule of Accrued Expenses and Other Current Liabilities (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LeasesAdditionalInformationDetails" roleURI="http://www.adverum.com/role/LeasesAdditionalInformationDetails">
+        <link:definition>0000026 - Disclosure - Leases - Additional Information (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="EquityIncentiveAwardsSummaryofStockOptionsActivityDetails" roleURI="http://www.adverum.com/role/EquityIncentiveAwardsSummaryofStockOptionsActivityDetails">
+        <link:definition>0000027 - Disclosure - Equity Incentive Awards - Summary of Stock Options Activity (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="EquityIncentiveAwardsAdditionalInformationDetails" roleURI="http://www.adverum.com/role/EquityIncentiveAwardsAdditionalInformationDetails">
+        <link:definition>0000028 - Disclosure - Equity Incentive Awards - Additional Information (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="EquityIncentiveAwardsSummaryofRestrictedStockUnitsActivityDetails" roleURI="http://www.adverum.com/role/EquityIncentiveAwardsSummaryofRestrictedStockUnitsActivityDetails">
+        <link:definition>0000029 - Disclosure - Equity Incentive Awards - Summary of Restricted Stock Units Activity (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="EquityIncentiveAwardsSummaryofStockBasedCompensationExpenseDetails" roleURI="http://www.adverum.com/role/EquityIncentiveAwardsSummaryofStockBasedCompensationExpenseDetails">
+        <link:definition>0000030 - Disclosure - Equity Incentive Awards - Summary of Stock-Based Compensation Expense (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="NetLossperShareScheduleofCommonStockEquivalentsOutstandingDetails" roleURI="http://www.adverum.com/role/NetLossperShareScheduleofCommonStockEquivalentsOutstandingDetails">
+        <link:definition>0000031 - Disclosure - Net Loss per Share - Schedule of Common Stock Equivalents Outstanding (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RestructuringAdditionalInformationDetails" roleURI="http://www.adverum.com/role/RestructuringAdditionalInformationDetails">
+        <link:definition>0000032 - Disclosure - Restructuring - Additional Information (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RestructuringScheduleofRestructuringCostDetails" roleURI="http://www.adverum.com/role/RestructuringScheduleofRestructuringCostDetails">
+        <link:definition>0000033 - Disclosure - Restructuring - Schedule of Restructuring Cost (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element id="advm_IncreaseDecreaseInLeaseLiabilitiesAndLeaseIncentiveReceivable" abstract="false" name="IncreaseDecreaseInLeaseLiabilitiesAndLeaseIncentiveReceivable" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="advm_CashEquivalentsAndShortTermInvestmentsMember" abstract="true" name="CashEquivalentsAndShortTermInvestmentsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="advm_CashAndCashEquivalentGrossUnrealizedGain" abstract="false" name="CashAndCashEquivalentGrossUnrealizedGain" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="advm_DebtSecuritiesAvailableForSaleMaturityAllocatedAndSingleMaturityDateAfterOneThroughTwoYears" abstract="false" name="DebtSecuritiesAvailableForSaleMaturityAllocatedAndSingleMaturityDateAfterOneThroughTwoYears" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="advm_IncreaseDecreaseOperatingLeaseRightOfUseAsset" abstract="false" name="IncreaseDecreaseOperatingLeaseRightOfUseAsset" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="advm_OtherThanTemporaryImpairedInvestmentsAvailableForSaleSecurities" abstract="false" name="OtherThanTemporaryImpairedInvestmentsAvailableForSaleSecurities" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="advm_AccruedNonclinicalClinicalAndDevelopmentProcessCosts" abstract="false" name="AccruedNonclinicalClinicalAndDevelopmentProcessCosts" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="advm_AccruedExpensesAndOtherCurrentLiabilities" abstract="false" name="AccruedExpensesAndOtherCurrentLiabilities" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="advm_CashAndCashEquivalentAmortizedCost" abstract="false" name="CashAndCashEquivalentAmortizedCost" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="advm_RemeasurementOfOperatingLeaseRightOfUseAssets" abstract="false" name="RemeasurementOfOperatingLeaseRightOfUseAssets" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="advm_CashAndCashEquivalentGrossUnrealizedLoss" abstract="false" name="CashAndCashEquivalentGrossUnrealizedLoss" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+</xs:schema>

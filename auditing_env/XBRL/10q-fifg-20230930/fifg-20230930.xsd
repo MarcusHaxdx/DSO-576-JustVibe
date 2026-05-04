@@ -1,0 +1,454 @@
+<?xml version="1.0" encoding="us-ascii" standalone="yes"?>
+<!--XBRL Document Created with XBRLMaster-->
+<!--Version: 2.3.08-->
+<!--Based on XBRL 2.1-->
+<!--Date of creation: 11/20/2023-->
+<!--Software architectural design and coding: A'c Dharmapremananda Avt.-->
+<!--Copyright (c) 2023 I-NET Business Solutions, Inc. All Rights Reserved.-->
+<schema xmlns:xl="http://www.xbrl.org/2003/XLink" xmlns:ref="http://www.xbrl.org/2006/ref" xmlns:currency="http://xbrl.sec.gov/currency/2023" xmlns:us-gaap-att="http://fasb.org/us-gaap/attributes" xmlns:sic="http://xbrl.sec.gov/sic/2023" xmlns:exch="http://xbrl.sec.gov/exch/2023" xmlns:invest="http://xbrl.sec.gov/invest/2013-01-31" xmlns:negated="http://www.xbrl.org/2009/role/negated" xmlns:naics="http://xbrl.sec.gov/naics/2023" xmlns:us-types="http://fasb.org/us-types/2023" xmlns:stpr="http://xbrl.sec.gov/stpr/2023" xmlns="http://www.w3.org/2001/XMLSchema" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:xbrli="http://www.xbrl.org/2003/instance" xmlns:xbrldt="http://xbrl.org/2005/xbrldt" xmlns:xbrldi="http://xbrl.org/2006/xbrldi" xmlns:country="http://xbrl.sec.gov/country/2023" xmlns:utr="http://www.xbrl.org/2009/utr" xmlns:srt-types="http://fasb.org/srt-types/2023" xmlns:dtr-types="http://www.xbrl.org/dtr/type/2020-01-21" xmlns:srt-roles="http://fasb.org/srt-roles/2023" xmlns:dei="http://xbrl.sec.gov/dei/2023" xmlns:num="http://www.xbrl.org/dtr/type/numeric" xmlns:nonnum="http://www.xbrl.org/dtr/type/non-numeric" xmlns:srt="http://fasb.org/srt/2023" xmlns:us-gaap="http://fasb.org/us-gaap/2023" xmlns:fifg="http://firstfood.com/20230930" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://firstfood.com/20230930">
+  <annotation>
+    <appinfo>
+      <link:roleType roleURI="http://firstfood.com/role/Cover" id="Cover">
+        <link:definition>000001 - Document - Cover</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://firstfood.com/role/CondensedConsolidatedBalanceSheets" id="CondensedConsolidatedBalanceSheets">
+        <link:definition>000002 - Statement - Condensed Consolidated Balance Sheets</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://firstfood.com/role/CondensedConsolidatedBalanceSheetsParenthetical" id="CondensedConsolidatedBalanceSheetsParenthetical">
+        <link:definition>000003 - Statement - Condensed Consolidated Balance Sheets (Parenthetical)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://firstfood.com/role/CondensedConsolidatedStatementsOfOperationsUnaudited" id="CondensedConsolidatedStatementsOfOperationsUnaudited">
+        <link:definition>000004 - Statement - Condensed Consolidated Statements of Operations (Unaudited)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://firstfood.com/role/CondensedConsolidatedStatementsOfChangesInDeficitUnaudited" id="CondensedConsolidatedStatementsOfChangesInDeficitUnaudited">
+        <link:definition>000005 - Statement - Condensed Consolidated Statements of Changes in Deficit (Unaudited)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://firstfood.com/role/CondensedConsolidatedStatementsOfCashFlowsUnaudited" id="CondensedConsolidatedStatementsOfCashFlowsUnaudited">
+        <link:definition>000006 - Statement - Condensed Consolidated Statements of Cash Flows (Unaudited)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://firstfood.com/role/BusinessSummaryOfSignificantAccountingPrinciplesAndGoingConcern" id="BusinessSummaryOfSignificantAccountingPrinciplesAndGoingConcern">
+        <link:definition>000007 - Disclosure - BUSINESS SUMMARY OF SIGNIFICANT ACCOUNTING PRINCIPLES AND GOING CONCERN</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://firstfood.com/role/RelatedPartyTransactions" id="RelatedPartyTransactions">
+        <link:definition>000008 - Disclosure - RELATED PARTY TRANSACTIONS</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://firstfood.com/role/PropertyAndEquipment" id="PropertyAndEquipment">
+        <link:definition>000009 - Disclosure - PROPERTY AND EQUIPMENT</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://firstfood.com/role/AccountsPayableAndAccruedLiabilities" id="AccountsPayableAndAccruedLiabilities">
+        <link:definition>000010 - Disclosure - ACCOUNTS PAYABLE AND ACCRUED LIABILITIES</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://firstfood.com/role/LoansAndLongTermLoans" id="LoansAndLongTermLoans">
+        <link:definition>000011 - Disclosure - LOANS AND LONG TERM LOANS</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://firstfood.com/role/StockholdersDeficit" id="StockholdersDeficit">
+        <link:definition>000012 - Disclosure - STOCKHOLDERS DEFICIT</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://firstfood.com/role/LEASES" id="LEASES">
+        <link:definition>000013 - Disclosure - LEASES</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://firstfood.com/role/COMMITMENTS" id="COMMITMENTS">
+        <link:definition>000014 - Disclosure - COMMITMENTS</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://firstfood.com/role/ConcentrationRisks" id="ConcentrationRisks">
+        <link:definition>000015 - Disclosure - CONCENTRATION RISKS</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://firstfood.com/role/SubsequentEvents" id="SubsequentEvents">
+        <link:definition>000016 - Disclosure - SUBSEQUENT EVENTS</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://firstfood.com/role/BusinessSummaryOfSignificantAccountingPrinciplesAndGoingConcernPolicies" id="BusinessSummaryOfSignificantAccountingPrinciplesAndGoingConcernPolicies">
+        <link:definition>000017 - Disclosure - BUSINESS SUMMARY OF SIGNIFICANT ACCOUNTING PRINCIPLES AND GOING CONCERN (Policies)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://firstfood.com/role/BusinessSummaryOfSignificantAccountingPrinciplesAndGoingConcernTables" id="BusinessSummaryOfSignificantAccountingPrinciplesAndGoingConcernTables">
+        <link:definition>000018 - Disclosure - BUSINESS SUMMARY OF SIGNIFICANT ACCOUNTING PRINCIPLES AND GOING CONCERN (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://firstfood.com/role/RelatedPartyTransactionsTables" id="RelatedPartyTransactionsTables">
+        <link:definition>000019 - Disclosure - RELATED PARTY TRANSACTIONS (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://firstfood.com/role/PropertyAndEquipmentTables" id="PropertyAndEquipmentTables">
+        <link:definition>000020 - Disclosure - PROPERTY AND EQUIPMENT (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://firstfood.com/role/AccountsPayableAndAccruedLiabilitiesTables" id="AccountsPayableAndAccruedLiabilitiesTables">
+        <link:definition>000021 - Disclosure - ACCOUNTS PAYABLE AND ACCRUED LIABILITIES (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://firstfood.com/role/LoansAndLongTermLoansTables" id="LoansAndLongTermLoansTables">
+        <link:definition>000022 - Disclosure - LOANS AND LONG TERM LOANS (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://firstfood.com/role/StockholdersDeficitTables" id="StockholdersDeficitTables">
+        <link:definition>000023 - Disclosure - STOCKHOLDERS DEFICIT (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://firstfood.com/role/LeasesTables" id="LeasesTables">
+        <link:definition>000024 - Disclosure - LEASES (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://firstfood.com/role/BusinessSummaryOfSignificantAccountingPrinciplesAndGoingConcernDetails" id="BusinessSummaryOfSignificantAccountingPrinciplesAndGoingConcernDetails">
+        <link:definition>000025 - Disclosure - BUSINESS SUMMARY OF SIGNIFICANT ACCOUNTING PRINCIPLES AND GOING CONCERN (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://firstfood.com/role/BusinessSummaryOfSignificantAccountingPrinciplesAndGoingConcernDetails1" id="BusinessSummaryOfSignificantAccountingPrinciplesAndGoingConcernDetails1">
+        <link:definition>000026 - Disclosure - BUSINESS SUMMARY OF SIGNIFICANT ACCOUNTING PRINCIPLES AND GOING CONCERN (Details 1)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://firstfood.com/role/BusinessSummaryOfSignificantAccountingPrinciplesAndGoingConcernDetails2" id="BusinessSummaryOfSignificantAccountingPrinciplesAndGoingConcernDetails2">
+        <link:definition>000027 - Disclosure - BUSINESS SUMMARY OF SIGNIFICANT ACCOUNTING PRINCIPLES AND GOING CONCERN (Details 2)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://firstfood.com/role/BusinessSummaryOfSignificantAccountingPrinciplesAndGoingConcernDetails3" id="BusinessSummaryOfSignificantAccountingPrinciplesAndGoingConcernDetails3">
+        <link:definition>000028 - Disclosure - BUSINESS SUMMARY OF SIGNIFICANT ACCOUNTING PRINCIPLES AND GOING CONCERN (Details 3)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://firstfood.com/role/BusinessSummaryOfSignificantAccountingPrinciplesAndGoingConcernDetailsNarrative" id="BusinessSummaryOfSignificantAccountingPrinciplesAndGoingConcernDetailsNarrative">
+        <link:definition>000029 - Disclosure - BUSINESS SUMMARY OF SIGNIFICANT ACCOUNTING PRINCIPLES AND GOING CONCERN (Details Narrative)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://firstfood.com/role/RelatedPartyTransactionsDetails" id="RelatedPartyTransactionsDetails">
+        <link:definition>000030 - Disclosure - RELATED PARTY TRANSACTIONS (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://firstfood.com/role/RelatedPartyTransactionsDetailsNarrative" id="RelatedPartyTransactionsDetailsNarrative">
+        <link:definition>000031 - Disclosure - RELATED PARTY TRANSACTIONS (Details Narrative)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://firstfood.com/role/PropertyAndEquipmentDetails" id="PropertyAndEquipmentDetails">
+        <link:definition>000032 - Disclosure - PROPERTY AND EQUIPMENT (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://firstfood.com/role/AccountsPayableAndAccruedLiabilitiesDetails" id="AccountsPayableAndAccruedLiabilitiesDetails">
+        <link:definition>000033 - Disclosure - ACCOUNTS PAYABLE AND ACCRUED LIABILITIES (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://firstfood.com/role/LoansAndLongTermloansDetails" id="LoansAndLongTermloansDetails">
+        <link:definition>000034 - Disclosure - LOANS AND LONG TERMLOANS (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://firstfood.com/role/LoansAndLongTermloansDetailsNarrative" id="LoansAndLongTermloansDetailsNarrative">
+        <link:definition>000035 - Disclosure - LOANS AND LONG TERMLOANS (Details Narrative)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://firstfood.com/role/StockholdersDeficitDetails" id="StockholdersDeficitDetails">
+        <link:definition>000036 - Disclosure - STOCKHOLDERS DEFICIT (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://firstfood.com/role/StockholdersDeficitDetails1" id="StockholdersDeficitDetails1">
+        <link:definition>000037 - Disclosure - STOCKHOLDERS DEFICIT (Details 1)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://firstfood.com/role/StockholdersDeficitDetails2" id="StockholdersDeficitDetails2">
+        <link:definition>000038 - Disclosure - STOCKHOLDERS DEFICIT (Details 2)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://firstfood.com/role/StockholdersDeficitDetails3" id="StockholdersDeficitDetails3">
+        <link:definition>000039 - Disclosure - STOCKHOLDERS DEFICIT (Details 3)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://firstfood.com/role/StockholdersDeficitDetailsNarrative" id="StockholdersDeficitDetailsNarrative">
+        <link:definition>000040 - Disclosure - STOCKHOLDERS DEFICIT (Details Narrative)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://firstfood.com/role/LeasesDetails" id="LeasesDetails">
+        <link:definition>000041 - Disclosure - LEASES (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://firstfood.com/role/LeasesDetailsNarrative" id="LeasesDetailsNarrative">
+        <link:definition>000042 - Disclosure - LEASES (Details Narrative)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://firstfood.com/role/CommitmentsDetailsNarrative" id="CommitmentsDetailsNarrative">
+        <link:definition>000043 - Disclosure - COMMITMENTS (Details Narrative)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://firstfood.com/role/ConcentrationRisksDetailsNarrative" id="ConcentrationRisksDetailsNarrative">
+        <link:definition>000044 - Disclosure - CONCENTRATION RISKS (Details Narrative)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:linkbaseRef xlink:type="simple" xlink:href="fifg-20230930_pre.xml" xlink:role="http://www.xbrl.org/2003/role/presentationLinkbaseRef" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" />
+      <link:linkbaseRef xlink:type="simple" xlink:href="fifg-20230930_lab.xml" xlink:role="http://www.xbrl.org/2003/role/labelLinkbaseRef" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" />
+      <link:linkbaseRef xlink:type="simple" xlink:href="fifg-20230930_cal.xml" xlink:role="http://www.xbrl.org/2003/role/calculationLinkbaseRef" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" />
+      <link:linkbaseRef xlink:type="simple" xlink:href="fifg-20230930_def.xml" xlink:role="http://www.xbrl.org/2003/role/definitionLinkbaseRef" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" />
+    </appinfo>
+  </annotation>
+  <import namespace="http://www.xbrl.org/2003/instance" schemaLocation="http://www.xbrl.org/2003/xbrl-instance-2003-12-31.xsd" />
+  <import namespace="http://www.xbrl.org/2003/linkbase" schemaLocation="http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd" />
+  <import namespace="http://xbrl.org/2005/xbrldt" schemaLocation="http://www.xbrl.org/2005/xbrldt-2005.xsd" />
+  <import namespace="http://xbrl.sec.gov/country/2023" schemaLocation="https://xbrl.sec.gov/country/2023/country-2023.xsd" />
+  <import namespace="http://xbrl.sec.gov/currency/2023" schemaLocation="https://xbrl.sec.gov/currency/2023/currency-2023.xsd" />
+  <import namespace="http://xbrl.sec.gov/dei/2023" schemaLocation="https://xbrl.sec.gov/dei/2023/dei-2023.xsd" />
+  <import namespace="http://www.xbrl.org/dtr/type/non-numeric" schemaLocation="http://www.xbrl.org/dtr/type/nonNumeric-2009-12-16.xsd" />
+  <import namespace="http://www.xbrl.org/dtr/type/numeric" schemaLocation="http://www.xbrl.org/dtr/type/numeric-2009-12-16.xsd" />
+  <import namespace="http://xbrl.sec.gov/exch/2023" schemaLocation="https://xbrl.sec.gov/exch/2023/exch-2023.xsd" />
+  <import namespace="http://www.xbrl.org/2009/arcrole/fact-explanatoryFact" schemaLocation="http://www.xbrl.org/lrr/arcrole/factExplanatory-2009-12-16.xsd" />
+  <import namespace="http://www.xbrl.org/2009/role/negated" schemaLocation="http://www.xbrl.org/lrr/role/negated-2009-12-16.xsd" />
+  <import namespace="http://www.xbrl.org/2009/role/net" schemaLocation="http://www.xbrl.org/lrr/role/net-2009-12-16.xsd" />
+  <import namespace="http://xbrl.sec.gov/naics/2023" schemaLocation="https://xbrl.sec.gov/naics/2023/naics-2023.xsd" />
+  <import namespace="http://xbrl.sec.gov/sic/2023" schemaLocation="https://xbrl.sec.gov/sic/2023/sic-2023.xsd" />
+  <import namespace="http://fasb.org/srt-roles/2023" schemaLocation="https://xbrl.fasb.org/srt/2023/elts/srt-roles-2023.xsd" />
+  <import namespace="http://fasb.org/srt-types/2023" schemaLocation="https://xbrl.fasb.org/srt/2023/elts/srt-types-2023.xsd" />
+  <import namespace="http://www.xbrl.org/dtr/type/2020-01-21" schemaLocation="https://www.xbrl.org/dtr/type/2020-01-21/types.xsd" />
+  <import namespace="http://xbrl.sec.gov/stpr/2023" schemaLocation="https://xbrl.sec.gov/stpr/2023/stpr-2023.xsd" />
+  <import namespace="http://fasb.org/us-roles/2023" schemaLocation="https://xbrl.fasb.org/us-gaap/2023/elts/us-roles-2023.xsd" />
+  <import namespace="http://fasb.org/us-types/2023" schemaLocation="https://xbrl.fasb.org/us-gaap/2023/elts/us-types-2023.xsd" />
+  <import namespace="http://fasb.org/srt/2023" schemaLocation="https://xbrl.fasb.org/srt/2023/elts/srt-2023.xsd" />
+  <import namespace="http://fasb.org/us-gaap/2023" schemaLocation="https://xbrl.fasb.org/us-gaap/2023/elts/us-gaap-2023.xsd" />
+  <element id="fifg_MerchantCashAdvancesCurrent" name="MerchantCashAdvancesCurrent" nillable="true" xbrli:balance="debit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="fifg_PutLiability" name="PutLiability" nillable="true" xbrli:balance="credit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="fifg_RelatedPartyLoansCurrent" name="RelatedPartyLoansCurrent" nillable="true" xbrli:balance="credit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="fifg_FirstFoodsGroupIncStockholdersDeficitAbstract" name="FirstFoodsGroupIncStockholdersDeficitAbstract" nillable="true" abstract="true" xbrli:periodType="duration" type="xbrli:stringItemType" substitutionGroup="xbrli:item" />
+  <element id="fifg_PreferredStockSharesAuthorizedAbstract" name="PreferredStockSharesAuthorizedAbstract" nillable="true" abstract="true" xbrli:periodType="duration" type="xbrli:stringItemType" substitutionGroup="xbrli:item" />
+  <element id="fifg_AllowanceOnMerchantCashAdvances" name="AllowanceOnMerchantCashAdvances" nillable="true" xbrli:balance="credit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="fifg_ProductSalesNet" name="ProductSalesNet" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="fifg_MerchantCashAdvanceIncomeNet" name="MerchantCashAdvanceIncomeNet" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="fifg_CostOfProductSalesExpense" name="CostOfProductSalesExpense" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="fifg_EarningPerShareBasicAndDiluted" name="EarningPerShareBasicAndDiluted" nillable="true" xbrli:periodType="duration" type="num:perShareItemType" substitutionGroup="xbrli:item" />
+  <element id="fifg_WeightedAverageNumberOfSharesOutstandingBasicAndDiluted" name="WeightedAverageNumberOfSharesOutstandingBasicAndDiluted" nillable="true" xbrli:periodType="duration" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" />
+  <element id="fifg_CommonStockIssuedWithLoansPayableShares" name="CommonStockIssuedWithLoansPayableShares" nillable="true" xbrli:periodType="duration" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" />
+  <element id="fifg_CommonStockIssuedWithLoansPayableAmount" name="CommonStockIssuedWithLoansPayableAmount" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="fifg_WarrantsIssuedForDirectorServices" name="WarrantsIssuedForDirectorServices" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="fifg_WarrantsIssuedForLoanPayable" name="WarrantsIssuedForLoanPayable" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="fifg_AccumulativeCatchUpAdjustment" name="AccumulativeCatchUpAdjustment" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="fifg_ChangeInMerchantAllowance" name="ChangeInMerchantAllowance" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="fifg_InventoryReserveExpense" name="InventoryReserveExpense" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="fifg_IncreaseDecreaseInMerchantCashAdvances" name="IncreaseDecreaseInMerchantCashAdvances" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="fifg_CashAndRestrictedCashConsistOfTheFollowingAbstract" name="CashAndRestrictedCashConsistOfTheFollowingAbstract" nillable="true" abstract="true" xbrli:periodType="duration" type="xbrli:stringItemType" substitutionGroup="xbrli:item" />
+  <element id="fifg_CashExcludingRestrictedCash" name="CashExcludingRestrictedCash" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="fifg_RestrictedCashPortion" name="RestrictedCashPortion" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="fifg_CashAndRestrictedCash" name="CashAndRestrictedCash" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="fifg_CommonStockIssuedWithLoans" name="CommonStockIssuedWithLoans" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="fifg_WarrantsIssuedWithLoans" name="WarrantsIssuedWithLoans" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="fifg_NatureOfBusinessPolicyTextBlock" name="NatureOfBusinessPolicyTextBlock" nillable="true" xbrli:periodType="duration" type="nonnum:textBlockItemType" substitutionGroup="xbrli:item" />
+  <element id="fifg_QuarterlyReportingPolicyTextBlock" name="QuarterlyReportingPolicyTextBlock" nillable="true" xbrli:periodType="duration" type="nonnum:textBlockItemType" substitutionGroup="xbrli:item" />
+  <element id="fifg_LiquidityAndGoingConcernPolicyTextBlock" name="LiquidityAndGoingConcernPolicyTextBlock" nillable="true" xbrli:periodType="duration" type="nonnum:textBlockItemType" substitutionGroup="xbrli:item" />
+  <element id="fifg_MerchantCashAdvancesPolicyTextBlock" name="MerchantCashAdvancesPolicyTextBlock" nillable="true" xbrli:periodType="duration" type="nonnum:textBlockItemType" substitutionGroup="xbrli:item" />
+  <element id="fifg_DeferredFinancingCostsPolicyTextBlock" name="DeferredFinancingCostsPolicyTextBlock" nillable="true" xbrli:periodType="duration" type="nonnum:textBlockItemType" substitutionGroup="xbrli:item" />
+  <element id="fifg_NonControllingInterestsInCondensedConsolidatedFinancialStatementsPolicyTextBlock" name="NonControllingInterestsInCondensedConsolidatedFinancialStatementsPolicyTextBlock" nillable="true" xbrli:periodType="duration" type="nonnum:textBlockItemType" substitutionGroup="xbrli:item" />
+  <element id="fifg_ScheduleOfNetSalesByCategoryTablesTextBlock" name="ScheduleOfNetSalesByCategoryTablesTextBlock" nillable="true" xbrli:periodType="duration" type="nonnum:textBlockItemType" substitutionGroup="xbrli:item" />
+  <element id="fifg_ScheduleOfEstimatedUsefulLifeOfAssetsTableTextBlock" name="ScheduleOfEstimatedUsefulLifeOfAssetsTableTextBlock" nillable="true" xbrli:periodType="duration" type="nonnum:textBlockItemType" substitutionGroup="xbrli:item" />
+  <element id="fifg_ScheduleOfResultsOfOperationsTableTextBlock" name="ScheduleOfResultsOfOperationsTableTextBlock" nillable="true" xbrli:periodType="duration" type="nonnum:textBlockItemType" substitutionGroup="xbrli:item" />
+  <element id="fifg_SechduleOfCommonStockWarrantsTableTextBlock" name="SechduleOfCommonStockWarrantsTableTextBlock" nillable="true" xbrli:periodType="duration" type="nonnum:textBlockItemType" substitutionGroup="xbrli:item" />
+  <element id="fifg_SechduleOfEstimateFairValueTableTextBlock" name="SechduleOfEstimateFairValueTableTextBlock" nillable="true" xbrli:periodType="duration" type="nonnum:textBlockItemType" substitutionGroup="xbrli:item" />
+  <element id="fifg_ScheduleOfFutureMinimumRentalPaymentForOperatingLeasesTableTextBlock" name="ScheduleOfFutureMinimumRentalPaymentForOperatingLeasesTableTextBlock" nillable="true" xbrli:periodType="duration" type="nonnum:textBlockItemType" substitutionGroup="xbrli:item" />
+  <element id="fifg_PropertyPlantAndEquipmentsUsefulLife" name="PropertyPlantAndEquipmentsUsefulLife" nillable="true" xbrli:periodType="duration" type="xbrli:durationItemType" substitutionGroup="xbrli:item" />
+  <element id="fifg_DebtDiscount" name="DebtDiscount" nillable="true" xbrli:balance="credit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="fifg_AverageCommissionPaidByCompany" name="AverageCommissionPaidByCompany" nillable="true" xbrli:periodType="duration" type="num:percentItemType" substitutionGroup="xbrli:item" />
+  <element id="fifg_ReserveBalanceOutstanding" name="ReserveBalanceOutstanding" nillable="true" xbrli:balance="credit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="fifg_SeriesBPreferredSharesOutstanding" name="SeriesBPreferredSharesOutstanding" nillable="true" xbrli:periodType="instant" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" />
+  <element id="fifg_SeriesCPreferredSharesOutstanding" name="SeriesCPreferredSharesOutstanding" nillable="true" xbrli:periodType="instant" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" />
+  <element id="fifg_AverageCommissionForMerchantCashAdvancePrincipalRate" name="AverageCommissionForMerchantCashAdvancePrincipalRate" nillable="true" xbrli:periodType="duration" type="num:percentItemType" substitutionGroup="xbrli:item" />
+  <element id="fifg_EquityMethodInvestmentsOwnershipPercentage" name="EquityMethodInvestmentsOwnershipPercentage" nillable="true" xbrli:periodType="instant" type="num:percentItemType" substitutionGroup="xbrli:item" />
+  <element id="fifg_MaturityDate" name="MaturityDate" nillable="true" xbrli:periodType="duration" type="xbrli:stringItemType" substitutionGroup="xbrli:item" />
+  <element id="fifg_RelatedPartyPayable" name="RelatedPartyPayable" nillable="true" xbrli:balance="debit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="fifg_VestedofWarrants" name="VestedofWarrants" nillable="true" xbrli:periodType="duration" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" />
+  <element id="fifg_AmortizationOfDebtDiscountInterest" name="AmortizationOfDebtDiscountInterest" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="fifg_EmploymentAgreementAccrued" name="EmploymentAgreementAccrued" nillable="true" xbrli:balance="debit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="fifg_AdditionalSalary" name="AdditionalSalary" nillable="true" xbrli:balance="credit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="fifg_OutstandingBalanceOfRelatedParty" name="OutstandingBalanceOfRelatedParty" nillable="true" xbrli:balance="credit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="fifg_PayrollTaxLiability" name="PayrollTaxLiability" nillable="true" xbrli:balance="credit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="fifg_ImpairmentOfPropertyAndEquipment" name="ImpairmentOfPropertyAndEquipment" nillable="true" xbrli:balance="credit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="fifg_TotalPayables" name="TotalPayables" nillable="true" xbrli:balance="credit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="fifg_WarrantsIssued" name="WarrantsIssued" nillable="true" xbrli:periodType="duration" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" />
+  <element id="fifg_FairValueOfWarrantsIssued" name="FairValueOfWarrantsIssued" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="fifg_CommonSharesIssued" name="CommonSharesIssued" nillable="true" xbrli:periodType="duration" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" />
+  <element id="fifg_FairValueOfCommonSharesIssued" name="FairValueOfCommonSharesIssued" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="fifg_AmortizationOfDebtDiscount" name="AmortizationOfDebtDiscount" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="fifg_InterestExpenses" name="InterestExpenses" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="fifg_DescriptionOfOccuranceOfEvent" name="DescriptionOfOccuranceOfEvent" nillable="true" xbrli:periodType="duration" type="xbrli:stringItemType" substitutionGroup="xbrli:item" />
+  <element id="fifg_SharebasedCompensationArrangementBySharebasedPaymentAwardFairValueAssumptionExpectedTerm" name="SharebasedCompensationArrangementBySharebasedPaymentAwardFairValueAssumptionExpectedTerm" nillable="true" xbrli:periodType="duration" type="xbrli:durationItemType" substitutionGroup="xbrli:item" />
+  <element id="fifg_ExpectedDividendYield" name="ExpectedDividendYield" nillable="true" xbrli:periodType="duration" type="num:percentItemType" substitutionGroup="xbrli:item" />
+  <element id="fifg_DeterminedGrantDateFairValuePerOption" name="DeterminedGrantDateFairValuePerOption" nillable="true" xbrli:periodType="duration" type="num:perShareItemType" substitutionGroup="xbrli:item" />
+  <element id="fifg_WarrantOutstandingBeginning" name="WarrantOutstandingBeginning" nillable="true" xbrli:periodType="duration" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" />
+  <element id="fifg_WarrantGranted" name="WarrantGranted" nillable="true" xbrli:periodType="duration" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" />
+  <element id="fifg_WarrantExercised" name="WarrantExercised" nillable="true" xbrli:periodType="duration" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" />
+  <element id="fifg_WarrantForfeitedOrCancelled" name="WarrantForfeitedOrCancelled" nillable="true" xbrli:periodType="duration" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" />
+  <element id="fifg_WarrantOutstandingEnding" name="WarrantOutstandingEnding" nillable="true" xbrli:periodType="duration" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" />
+  <element id="fifg_WeightedAverageExercisePriceOutstandingBeginning" name="WeightedAverageExercisePriceOutstandingBeginning" nillable="true" xbrli:periodType="duration" type="num:perShareItemType" substitutionGroup="xbrli:item" />
+  <element id="fifg_WeightedAverageExercisePricesGranted" name="WeightedAverageExercisePricesGranted" nillable="true" xbrli:periodType="duration" type="num:perShareItemType" substitutionGroup="xbrli:item" />
+  <element id="fifg_WeightedAverageExercisePricesExercised" name="WeightedAverageExercisePricesExercised" nillable="true" xbrli:periodType="duration" type="num:perShareItemType" substitutionGroup="xbrli:item" />
+  <element id="fifg_WeightedAverageExercisePriceForfeitedOrCancelled" name="WeightedAverageExercisePriceForfeitedOrCancelled" nillable="true" xbrli:periodType="duration" type="num:perShareItemType" substitutionGroup="xbrli:item" />
+  <element id="fifg_WeightedAverageExercisePriceOutstandingEnding" name="WeightedAverageExercisePriceOutstandingEnding" nillable="true" xbrli:periodType="duration" type="num:perShareItemType" substitutionGroup="xbrli:item" />
+  <element id="fifg_WeightedAveragesExercisePricesGranted" name="WeightedAveragesExercisePricesGranted" nillable="true" xbrli:periodType="duration" type="num:perShareItemType" substitutionGroup="xbrli:item" />
+  <element id="fifg_WarrantsIssuedDuringPeriodValueWarrants" name="WarrantsIssuedDuringPeriodValueWarrants" nillable="true" xbrli:balance="credit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="fifg_IntrinsicValueOfWarrants2E" name="IntrinsicValueOfWarrants2E" nillable="true" xbrli:periodType="duration" type="xbrli:durationItemType" substitutionGroup="xbrli:item" />
+  <element id="fifg_FairValueOfWarrants1" name="FairValueOfWarrants1" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="fifg_SharesIssuableUponExerciseOfWarrants" name="SharesIssuableUponExerciseOfWarrants" nillable="true" xbrli:periodType="instant" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" />
+  <element id="fifg_WarrantTerm" name="WarrantTerm" nillable="true" xbrli:periodType="duration" type="xbrli:durationItemType" substitutionGroup="xbrli:item" />
+  <element id="fifg_WarrantIssued" name="WarrantIssued" nillable="true" xbrli:periodType="instant" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" />
+  <element id="fifg_CompensationExpenseRelatedToTheWarrants" name="CompensationExpenseRelatedToTheWarrants" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="fifg_PurchaseSharesOfCommonStock" name="PurchaseSharesOfCommonStock" nillable="true" xbrli:periodType="duration" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" />
+  <element id="fifg_TermOfAgreement" name="TermOfAgreement" nillable="true" xbrli:periodType="duration" type="xbrli:durationItemType" substitutionGroup="xbrli:item" />
+  <element id="fifg_ExchangeSharesOfCommonStock" name="ExchangeSharesOfCommonStock" nillable="true" xbrli:periodType="duration" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" />
+  <element id="fifg_CommonStockExercisable" name="CommonStockExercisable" nillable="true" xbrli:periodType="instant" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" />
+  <element id="fifg_WarrantIssuedUponSharesPurchased" name="WarrantIssuedUponSharesPurchased" nillable="true" xbrli:periodType="instant" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" />
+  <element id="fifg_ImputedInterest" name="ImputedInterest" nillable="true" xbrli:balance="debit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="fifg_ConditionalExtendedTerm" name="ConditionalExtendedTerm" nillable="true" xbrli:periodType="duration" type="xbrli:stringItemType" substitutionGroup="xbrli:item" />
+  <element id="fifg_OperatingLeaseWeightedAverageDiscountedRatePercent" name="OperatingLeaseWeightedAverageDiscountedRatePercent" nillable="true" xbrli:periodType="duration" type="num:percentItemType" substitutionGroup="xbrli:item" />
+  <element id="fifg_OperatingLeaseTermDuration" name="OperatingLeaseTermDuration" nillable="true" xbrli:periodType="duration" type="xbrli:durationItemType" substitutionGroup="xbrli:item" />
+  <element id="fifg_CashUsedInOperatingActivity" name="CashUsedInOperatingActivity" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="fifg_TermsOfServiceProviderDescription" name="TermsOfServiceProviderDescription" nillable="true" xbrli:periodType="duration" type="xbrli:stringItemType" substitutionGroup="xbrli:item" />
+  <element id="fifg_ConcentrationRiskPercentage" name="ConcentrationRiskPercentage" nillable="true" xbrli:periodType="duration" type="num:percentItemType" substitutionGroup="xbrli:item" />
+  <element name="ChocolateProductsMember" id="fifg_ChocolateProductsMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="MerchantCashAdvancesMember" id="fifg_MerchantCashAdvancesMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="PropertyLeaseholdImprovementsMember" id="fifg_PropertyLeaseholdImprovementsMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="EquipmentsMember" id="fifg_EquipmentsMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="OperatingLeasesMember" id="fifg_OperatingLeasesMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="TotalFirstFoodsGroupIncDeficitMember" id="fifg_TotalFirstFoodsGroupIncDeficitMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="HolyCacaoMember" id="fifg_HolyCacaoMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="WarrantsMember" id="fifg_WarrantsMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="NotesPayableOneMember" id="fifg_NotesPayableOneMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="NotesPayableTwoMember" id="fifg_NotesPayableTwoMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="NotesPayableThreeMember" id="fifg_NotesPayableThreeMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="NotesPayableFourMember" id="fifg_NotesPayableFourMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="NotesPayableFiveMember" id="fifg_NotesPayableFiveMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="NotesPayableSixMember" id="fifg_NotesPayableSixMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="DirectorsMember" id="fifg_DirectorsMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="EmploymentAgreementMember" id="fifg_EmploymentAgreementMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="DirectorOfTheBoardMember" id="fifg_DirectorOfTheBoardMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="BoardofDirectorsMember" id="fifg_BoardofDirectorsMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="ConsultingAgreementsMember" id="fifg_ConsultingAgreementsMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="MrKestenbaumMember" id="fifg_MrKestenbaumMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="DirectorAgreementsMember" id="fifg_DirectorAgreementsMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="TotalMember" id="fifg_TotalMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="ConvertibleNotePayableMember" id="fifg_ConvertibleNotePayableMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="PromissoryNoteOneMember" id="fifg_PromissoryNoteOneMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="PromissoryNoteTwoMember" id="fifg_PromissoryNoteTwoMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="PromissoryNoteThreeMember" id="fifg_PromissoryNoteThreeMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="PromissoryNoteFourMember" id="fifg_PromissoryNoteFourMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="PromissoryNoteFiveMember" id="fifg_PromissoryNoteFiveMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="PromissoryNoteSixMember" id="fifg_PromissoryNoteSixMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="PromissoryNoteSevenMember" id="fifg_PromissoryNoteSevenMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="PromissoryNoteEightMember" id="fifg_PromissoryNoteEightMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="PromissoryNoteNineMember" id="fifg_PromissoryNoteNineMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="PromissoryNoteTenMember" id="fifg_PromissoryNoteTenMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="PromissoryNoteElevenMember" id="fifg_PromissoryNoteElevenMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="PromissoryNoteTwelveMember" id="fifg_PromissoryNoteTwelveMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="PromissoryNoteThirteenMember" id="fifg_PromissoryNoteThirteenMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="PromissoryNoteFourteenMember" id="fifg_PromissoryNoteFourteenMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="EconomicInjuryDisasterMember" id="fifg_EconomicInjuryDisasterMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="MilestoneEventOneMember" id="fifg_MilestoneEventOneMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="MilestoneEventTwoMember" id="fifg_MilestoneEventTwoMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="MilestoneEventThreeMember" id="fifg_MilestoneEventThreeMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="MilestoneEventFourMember" id="fifg_MilestoneEventFourMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="MilestoneEventFiveMember" id="fifg_MilestoneEventFiveMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="MilestoneEventSixMember" id="fifg_MilestoneEventSixMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="WeightedAverageExercisePriceMember" id="fifg_WeightedAverageExercisePriceMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="MrKaplansMember" id="fifg_MrKaplansMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="ConsultingAgreementMember" id="fifg_ConsultingAgreementMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="BlackScholesModelMember" id="fifg_BlackScholesModelMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="CFOandDirectorMember" id="fifg_CFOandDirectorMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="MichaelKaplanMember" id="fifg_MichaelKaplanMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="ConsultantMember" id="fifg_ConsultantMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="AugustFourTwoThousandTwentyMember" id="fifg_AugustFourTwoThousandTwentyMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="AugustOneThousandTwentyTwoMember" id="fifg_AugustOneThousandTwentyTwoMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="CustomerOneMember" id="fifg_CustomerOneMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="CustomerTwoMember" id="fifg_CustomerTwoMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="CustomerThreeMember" id="fifg_CustomerThreeMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+</schema>

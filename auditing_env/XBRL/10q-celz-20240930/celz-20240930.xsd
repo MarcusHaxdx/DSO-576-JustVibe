@@ -1,0 +1,529 @@
+<?xml version="1.0" encoding="us-ascii" standalone="yes"?>
+<!--XBRL Document Created with XBRLMaster-->
+<!--Version: 2.3.08-->
+<!--Based on XBRL 2.1-->
+<!--Date of creation: 11/12/2024-->
+<!--Software architectural design and coding: A'c Dharmapremananda Avt.-->
+<!--Copyright (c) 2024 I-NET Business Solutions, Inc. All Rights Reserved.-->
+<schema xmlns:xl="http://www.xbrl.org/2003/XLink" xmlns:ref="http://www.xbrl.org/2006/ref" xmlns:currency="http://xbrl.sec.gov/currency/2024" xmlns:us-gaap-att="http://fasb.org/us-gaap/attributes" xmlns:sic="http://xbrl.sec.gov/sic/2024" xmlns:exch="http://xbrl.sec.gov/exch/2024" xmlns:invest="http://xbrl.sec.gov/invest/2013-01-31" xmlns:negated="http://www.xbrl.org/2009/role/negated" xmlns:naics="http://xbrl.sec.gov/naics/2024" xmlns:us-types="http://fasb.org/us-types/2024" xmlns:stpr="http://xbrl.sec.gov/stpr/2024" xmlns="http://www.w3.org/2001/XMLSchema" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:xbrli="http://www.xbrl.org/2003/instance" xmlns:xbrldt="http://xbrl.org/2005/xbrldt" xmlns:xbrldi="http://xbrl.org/2006/xbrldi" xmlns:country="http://xbrl.sec.gov/country/2024" xmlns:utr="http://www.xbrl.org/2009/utr" xmlns:srt-types="http://fasb.org/srt-types/2024" xmlns:dtr-types="http://www.xbrl.org/dtr/type/2020-01-21" xmlns:srt-roles="http://fasb.org/srt-roles/2024" xmlns:dei="http://xbrl.sec.gov/dei/2024" xmlns:num="http://www.xbrl.org/dtr/type/numeric" xmlns:nonnum="http://www.xbrl.org/dtr/type/non-numeric" xmlns:srt="http://fasb.org/srt/2024" xmlns:us-gaap="http://fasb.org/us-gaap/2024" xmlns:ecd="http://xbrl.sec.gov/ecd/2024" xmlns:celz="http://celz.com/20240930" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://celz.com/20240930">
+  <annotation>
+    <appinfo>
+      <link:roleType roleURI="http://celz.com/role/Cover" id="Cover">
+        <link:definition>000001 - Document - Cover</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://celz.com/role/CondensedConsolidatedBalanceSheets" id="CondensedConsolidatedBalanceSheets">
+        <link:definition>000002 - Statement - CONDENSED CONSOLIDATED BALANCE SHEETS</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://celz.com/role/CondensedConsolidatedBalanceSheetsParenthetical" id="CondensedConsolidatedBalanceSheetsParenthetical">
+        <link:definition>000003 - Statement - CONDENSED CONSOLIDATED BALANCE SHEETS (Parenthetical)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://celz.com/role/UnauditedCondensedConsolidatedStatementsOfOperations" id="UnauditedCondensedConsolidatedStatementsOfOperations">
+        <link:definition>000004 - Statement - UNAUDITED CONDENSED CONSOLIDATED STATEMENTS OF OPERATIONS</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://celz.com/role/UnauditedCondensedConsolidatedStatementsOfCashFlows" id="UnauditedCondensedConsolidatedStatementsOfCashFlows">
+        <link:definition>000005 - Statement - UNAUDITED CONDENSED CONSOLIDATED STATEMENTS OF CASH FLOWS</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://celz.com/role/UnauditedCondensedConsolidatedStatementsOfStockholdersEquityDeficit" id="UnauditedCondensedConsolidatedStatementsOfStockholdersEquityDeficit">
+        <link:definition>000006 - Statement - UNAUDITED CONDENSED CONSOLIDATED STATEMENTS OF STOCKHOLDERS' EQUITY (DEFICIT)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://celz.com/role/NatureOfOperationsAndSignificantAccountingPolicies" id="NatureOfOperationsAndSignificantAccountingPolicies">
+        <link:definition>000007 - Disclosure - NATURE OF OPERATIONS AND SIGNIFICANT ACCOUNTING POLICIES</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://celz.com/role/GoingConcernAndLiquidity" id="GoingConcernAndLiquidity">
+        <link:definition>000008 - Disclosure - GOING CONCERN AND LIQUIDITY</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://celz.com/role/INVENTORY" id="INVENTORY">
+        <link:definition>000009 - Disclosure - INVENTORY</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://celz.com/role/PropertyPlantAndEquipment" id="PropertyPlantAndEquipment">
+        <link:definition>000010 - Disclosure - PROPERTY, PLANT AND EQUIPMENT</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://celz.com/role/RightOfUseBuilding" id="RightOfUseBuilding">
+        <link:definition>000011 - Disclosure - RIGHT-OF-USE BUILDING</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://celz.com/role/INVESTMENTS" id="INVESTMENTS">
+        <link:definition>000012 - Disclosure - INVESTMENTS</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://celz.com/role/AccountsPayableAndAccruedLiabilities" id="AccountsPayableAndAccruedLiabilities">
+        <link:definition>000013 - Disclosure - ACCOUNTS PAYABLE AND ACCRUED LIABILITIES</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://celz.com/role/NotesPayable" id="NotesPayable">
+        <link:definition>000014 - Disclosure - NOTES PAYABLE</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://celz.com/role/ConvertibleNotesAndDerivativeConversionFeature" id="ConvertibleNotesAndDerivativeConversionFeature">
+        <link:definition>000015 - Disclosure - CONVERTIBLE NOTES AND DERIVATIVE CONVERSION FEATURE</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://celz.com/role/RelatedPartyTransactions" id="RelatedPartyTransactions">
+        <link:definition>000016 - Disclosure - RELATED PARTY TRANSACTIONS</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://celz.com/role/LiabilityForRightOfUseBuilding" id="LiabilityForRightOfUseBuilding">
+        <link:definition>000017 - Disclosure - LIABILITY FOR RIGHT-OF-USE BUILDING</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://celz.com/role/StockholdersDeficit" id="StockholdersDeficit">
+        <link:definition>000018 - Disclosure - STOCKHOLDERS DEFICIT</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://celz.com/role/IncomeTax" id="IncomeTax">
+        <link:definition>000019 - Disclosure - INCOME TAX</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://celz.com/role/GeneralAndAdministrative" id="GeneralAndAdministrative">
+        <link:definition>000020 - Disclosure - GENERAL AND ADMINISTRATIVE</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://celz.com/role/CommitmentsAndContingencies" id="CommitmentsAndContingencies">
+        <link:definition>000021 - Disclosure - COMMITMENTS AND CONTINGENCIES</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://celz.com/role/SubsequentEvents" id="SubsequentEvents">
+        <link:definition>000022 - Disclosure - SUBSEQUENT EVENTS</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://celz.com/role/NatureOfOperationsAndSignificantAccountingPoliciesPolicies" id="NatureOfOperationsAndSignificantAccountingPoliciesPolicies">
+        <link:definition>000023 - Disclosure - NATURE OF OPERATIONS AND SIGNIFICANT ACCOUNTING POLICIES (Policies)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://celz.com/role/InventoryTables" id="InventoryTables">
+        <link:definition>000024 - Disclosure - INVENTORY (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://celz.com/role/PropertyPlantAndEquipmentTables" id="PropertyPlantAndEquipmentTables">
+        <link:definition>000025 - Disclosure - PROPERTY, PLANT AND EQUIPMENT (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://celz.com/role/RightOfUseBuildingTables" id="RightOfUseBuildingTables">
+        <link:definition>000026 - Disclosure - RIGHT-OF-USE BUILDING (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://celz.com/role/AccountsPayableAndAccruedLiabilitiesTables" id="AccountsPayableAndAccruedLiabilitiesTables">
+        <link:definition>000027 - Disclosure - ACCOUNTS PAYABLE AND ACCRUED LIABILITIES (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://celz.com/role/NotesPayableTable" id="NotesPayableTable">
+        <link:definition>000028 - Disclosure - NOTES PAYABLE (Table)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://celz.com/role/ConvertibleNotesAndDerivativeConversionFeatureTable" id="ConvertibleNotesAndDerivativeConversionFeatureTable">
+        <link:definition>000029 - Disclosure - CONVERTIBLE NOTES AND DERIVATIVE CONVERSION FEATURE (Table)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://celz.com/role/RelatedPartyTransactionsTable" id="RelatedPartyTransactionsTable">
+        <link:definition>000030 - Disclosure - RELATED PARTY TRANSACTIONS (Table)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://celz.com/role/LiabilityForRightOfUseBuildingTable" id="LiabilityForRightOfUseBuildingTable">
+        <link:definition>000031 - Disclosure - LIABILITY FOR RIGHT-OF-USE BUILDING (Table)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://celz.com/role/StockholdersDeficitTable" id="StockholdersDeficitTable">
+        <link:definition>000032 - Disclosure - STOCKHOLDERS DEFICIT (Table)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://celz.com/role/GeneralAndAdministrativeTable" id="GeneralAndAdministrativeTable">
+        <link:definition>000033 - Disclosure - GENERAL AND ADMINISTRATIVE (Table)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://celz.com/role/NatureOfOperationsAndSignificantAccountingPoliciesDetailsNarrative" id="NatureOfOperationsAndSignificantAccountingPoliciesDetailsNarrative">
+        <link:definition>000034 - Disclosure - NATURE OF OPERATIONS AND SIGNIFICANT ACCOUNTING POLICIES (Details Narrative)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://celz.com/role/GoingConcernAndLiquidityDetailsNarrative" id="GoingConcernAndLiquidityDetailsNarrative">
+        <link:definition>000035 - Disclosure - GOING CONCERN AND LIQUIDITY (Details Narrative)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://celz.com/role/InventoryDetails" id="InventoryDetails">
+        <link:definition>000036 - Disclosure - INVENTORY (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://celz.com/role/InventoryDetailsNarrative" id="InventoryDetailsNarrative">
+        <link:definition>000037 - Disclosure - INVENTORY (Details Narrative)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://celz.com/role/PropertyPlantAndEquipmentDetails" id="PropertyPlantAndEquipmentDetails">
+        <link:definition>000038 - Disclosure - PROPERTY PLANT AND EQUIPMENT (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://celz.com/role/PropertyPlantAndEquipmentDetailsNarrative" id="PropertyPlantAndEquipmentDetailsNarrative">
+        <link:definition>000039 - Disclosure - PROPERTY PLANT AND EQUIPMENT (Details Narrative)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://celz.com/role/RightofuseBuildingDetails" id="RightofuseBuildingDetails">
+        <link:definition>000040 - Disclosure - RIGHTOFUSE BUILDING (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://celz.com/role/RightofuseBuildingDetailsNarrative" id="RightofuseBuildingDetailsNarrative">
+        <link:definition>000041 - Disclosure - RIGHTOFUSE BUILDING (Details Narrative)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://celz.com/role/InvestmentsDetailsNarrative" id="InvestmentsDetailsNarrative">
+        <link:definition>000042 - Disclosure - INVESTMENTS (Details Narrative)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://celz.com/role/AccountsPayableAndAccruedLiabilitiesDetails" id="AccountsPayableAndAccruedLiabilitiesDetails">
+        <link:definition>000043 - Disclosure - ACCOUNTS PAYABLE AND ACCRUED LIABILITIES (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://celz.com/role/AccountsPayableAndAccruedLiabilitiesDetailsNarrative" id="AccountsPayableAndAccruedLiabilitiesDetailsNarrative">
+        <link:definition>000044 - Disclosure - ACCOUNTS PAYABLE AND ACCRUED LIABILITIES (Details Narrative)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://celz.com/role/NotesPayableDetails" id="NotesPayableDetails">
+        <link:definition>000045 - Disclosure - NOTES PAYABLE (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://celz.com/role/NotesPayableDetailsNarrative" id="NotesPayableDetailsNarrative">
+        <link:definition>000046 - Disclosure - NOTES PAYABLE (Details Narrative)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://celz.com/role/ConvertibleNotesAndDerivativeConversionFeatureDetails" id="ConvertibleNotesAndDerivativeConversionFeatureDetails">
+        <link:definition>000047 - Disclosure - CONVERTIBLE NOTES AND DERIVATIVE CONVERSION FEATURE (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://celz.com/role/ConvertibleNotesAndDerivativeConversionFeatureDetails1" id="ConvertibleNotesAndDerivativeConversionFeatureDetails1">
+        <link:definition>000048 - Disclosure - CONVERTIBLE NOTES AND DERIVATIVE CONVERSION FEATURE (Details 1)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://celz.com/role/ConvertibleNotesAndDerivativeConversionFeatureDetails2" id="ConvertibleNotesAndDerivativeConversionFeatureDetails2">
+        <link:definition>000049 - Disclosure - CONVERTIBLE NOTES AND DERIVATIVE CONVERSION FEATURE (Details 2)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://celz.com/role/ConvertibleNotesAndDerivativeConversionFeatureDetails3" id="ConvertibleNotesAndDerivativeConversionFeatureDetails3">
+        <link:definition>000050 - Disclosure - CONVERTIBLE NOTES AND DERIVATIVE CONVERSION FEATURE (Details 3)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://celz.com/role/ConvertibleNotesAndDerivativeConversionFeatureDetailsNarrative" id="ConvertibleNotesAndDerivativeConversionFeatureDetailsNarrative">
+        <link:definition>000051 - Disclosure - CONVERTIBLE NOTES AND DERIVATIVE CONVERSION FEATURE (Details Narrative)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://celz.com/role/RelatedPartyTransactionsDetails" id="RelatedPartyTransactionsDetails">
+        <link:definition>000052 - Disclosure - RELATED PARTY TRANSACTIONS (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://celz.com/role/RelatedPartyTransactionsDetailsNarrative" id="RelatedPartyTransactionsDetailsNarrative">
+        <link:definition>000053 - Disclosure - RELATED PARTY TRANSACTIONS (Details Narrative)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://celz.com/role/LiabilityForRightofuseBuildingDetails" id="LiabilityForRightofuseBuildingDetails">
+        <link:definition>000054 - Disclosure - LIABILITY FOR RIGHTOFUSE BUILDING (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://celz.com/role/LiabilityForRightofuseBuildingDetails1" id="LiabilityForRightofuseBuildingDetails1">
+        <link:definition>000055 - Disclosure - LIABILITY FOR RIGHTOFUSE BUILDING (Details 1)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://celz.com/role/StockholdersDeficitDetails" id="StockholdersDeficitDetails">
+        <link:definition>000056 - Disclosure - STOCKHOLDERS DEFICIT (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://celz.com/role/StockholdersDeficitDetails1" id="StockholdersDeficitDetails1">
+        <link:definition>000057 - Disclosure - STOCKHOLDERS DEFICIT (Details 1)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://celz.com/role/StockholdersEquityDetailsNarrative" id="StockholdersEquityDetailsNarrative">
+        <link:definition>000058 - Disclosure - STOCKHOLDERS EQUITY (Details Narrative)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://celz.com/role/IncomeTaxDetailsNarrative" id="IncomeTaxDetailsNarrative">
+        <link:definition>000059 - Disclosure - INCOME TAX (Details Narrative)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://celz.com/role/GeneralAndAdministrativeDetails" id="GeneralAndAdministrativeDetails">
+        <link:definition>000060 - Disclosure - GENERAL AND ADMINISTRATIVE (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:linkbaseRef xlink:type="simple" xlink:href="celz-20240930_pre.xml" xlink:role="http://www.xbrl.org/2003/role/presentationLinkbaseRef" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" />
+      <link:linkbaseRef xlink:type="simple" xlink:href="celz-20240930_lab.xml" xlink:role="http://www.xbrl.org/2003/role/labelLinkbaseRef" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" />
+      <link:linkbaseRef xlink:type="simple" xlink:href="celz-20240930_cal.xml" xlink:role="http://www.xbrl.org/2003/role/calculationLinkbaseRef" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" />
+      <link:linkbaseRef xlink:type="simple" xlink:href="celz-20240930_def.xml" xlink:role="http://www.xbrl.org/2003/role/definitionLinkbaseRef" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" />
+    </appinfo>
+  </annotation>
+  <import namespace="http://www.xbrl.org/2003/instance" schemaLocation="http://www.xbrl.org/2003/xbrl-instance-2003-12-31.xsd" />
+  <import namespace="http://www.xbrl.org/2003/linkbase" schemaLocation="http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd" />
+  <import namespace="http://xbrl.org/2005/xbrldt" schemaLocation="http://www.xbrl.org/2005/xbrldt-2005.xsd" />
+  <import namespace="http://xbrl.sec.gov/country/2024" schemaLocation="https://xbrl.sec.gov/country/2024/country-2024.xsd" />
+  <import namespace="http://xbrl.sec.gov/currency/2024" schemaLocation="https://xbrl.sec.gov/currency/2024/currency-2024.xsd" />
+  <import namespace="http://xbrl.sec.gov/dei/2024" schemaLocation="https://xbrl.sec.gov/dei/2024/dei-2024.xsd" />
+  <import namespace="http://www.xbrl.org/dtr/type/non-numeric" schemaLocation="http://www.xbrl.org/dtr/type/nonNumeric-2009-12-16.xsd" />
+  <import namespace="http://www.xbrl.org/dtr/type/numeric" schemaLocation="http://www.xbrl.org/dtr/type/numeric-2009-12-16.xsd" />
+  <import namespace="http://xbrl.sec.gov/exch/2024" schemaLocation="https://xbrl.sec.gov/exch/2024/exch-2024.xsd" />
+  <import namespace="http://www.xbrl.org/2009/arcrole/fact-explanatoryFact" schemaLocation="http://www.xbrl.org/lrr/arcrole/factExplanatory-2009-12-16.xsd" />
+  <import namespace="http://www.xbrl.org/2009/role/negated" schemaLocation="http://www.xbrl.org/lrr/role/negated-2009-12-16.xsd" />
+  <import namespace="http://www.xbrl.org/2009/role/net" schemaLocation="http://www.xbrl.org/lrr/role/net-2009-12-16.xsd" />
+  <import namespace="http://xbrl.sec.gov/naics/2024" schemaLocation="https://xbrl.sec.gov/naics/2024/naics-2024.xsd" />
+  <import namespace="http://xbrl.sec.gov/sic/2024" schemaLocation="https://xbrl.sec.gov/sic/2024/sic-2024.xsd" />
+  <import namespace="http://fasb.org/srt-roles/2024" schemaLocation="https://xbrl.fasb.org/srt/2024/elts/srt-roles-2024.xsd" />
+  <import namespace="http://fasb.org/srt-types/2024" schemaLocation="https://xbrl.fasb.org/srt/2024/elts/srt-types-2024.xsd" />
+  <import namespace="http://www.xbrl.org/dtr/type/2020-01-21" schemaLocation="https://www.xbrl.org/dtr/type/2020-01-21/types.xsd" />
+  <import namespace="http://xbrl.sec.gov/stpr/2024" schemaLocation="https://xbrl.sec.gov/stpr/2024/stpr-2024.xsd" />
+  <import namespace="http://fasb.org/us-roles/2024" schemaLocation="https://xbrl.fasb.org/us-gaap/2024/elts/us-roles-2024.xsd" />
+  <import namespace="http://fasb.org/us-types/2024" schemaLocation="https://xbrl.fasb.org/us-gaap/2024/elts/us-types-2024.xsd" />
+  <import namespace="http://fasb.org/srt/2024" schemaLocation="https://xbrl.fasb.org/srt/2024/elts/srt-2024.xsd" />
+  <import namespace="http://fasb.org/us-gaap/2024" schemaLocation="https://xbrl.fasb.org/us-gaap/2024/elts/us-gaap-2024.xsd" />
+  <import namespace="http://xbrl.sec.gov/ecd/2024" schemaLocation="https://xbrl.sec.gov/ecd/2024/ecd-2024.xsd" />
+  <element id="celz_GoodsAndServicesTaxReceivable" name="GoodsAndServicesTaxReceivable" nillable="true" xbrli:balance="debit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="celz_AccruedInterest" name="AccruedInterest" nillable="true" xbrli:balance="credit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="celz_NotesPayableRelatedPartiesCurrent" name="NotesPayableRelatedPartiesCurrent" nillable="true" xbrli:balance="credit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="celz_LiabilityForRightofuseBuildingCurrentPortion" name="LiabilityForRightofuseBuildingCurrentPortion" nillable="true" xbrli:balance="credit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="celz_ObligationToIssueShares" name="ObligationToIssueShares" nillable="true" xbrli:balance="credit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="celz_LiabilityForRightOfUseBuilding" name="LiabilityForRightOfUseBuilding" nillable="true" xbrli:balance="credit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="celz_TreasureStockParOrStatedValuePerShare" name="TreasureStockParOrStatedValuePerShare" nillable="true" xbrli:periodType="instant" type="num:perShareItemType" substitutionGroup="xbrli:item" />
+  <element id="celz_PayrollAndConsultingFees" name="PayrollAndConsultingFees" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="celz_ChangeInFairValueOfObligationToIssueShares" name="ChangeInFairValueOfObligationToIssueShares" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="celz_ChangeInTheFairValueOfDerivativeConversionFeature" name="ChangeInTheFairValueOfDerivativeConversionFeature" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="celz_LossOnImpairmentOfInventoryIncludedInCostOfGoodsSold" name="LossOnImpairmentOfInventoryIncludedInCostOfGoodsSold" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="celz_IncreaseDecreaseInCashOverdraft" name="IncreaseDecreaseInCashOverdraft" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="celz_IncreaseDecreaseInGoodsAndServicesTaxReceivable" name="IncreaseDecreaseInGoodsAndServicesTaxReceivable" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="celz_CancellationOfSeriesBPreferredStock" name="CancellationOfSeriesBPreferredStock" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="celz_ConversionOfConvertibleLoansIntoCommonStock" name="ConversionOfConvertibleLoansIntoCommonStock" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="celz_ConversionOfPreferredStockSeriesIntoCommonStock" name="ConversionOfPreferredStockSeriesIntoCommonStock" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="celz_CommonStockIssuedToConvertConvertibleNotesAndAccruedInterestIntoEquity" name="CommonStockIssuedToConvertConvertibleNotesAndAccruedInterestIntoEquity" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="celz_ConversionOfPreferredStockSeriesBToCommonStockShares" name="ConversionOfPreferredStockSeriesBToCommonStockShares" nillable="true" xbrli:periodType="duration" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" />
+  <element id="celz_ConversionOfPreferredStockSeriesBToCommonStockAmount" name="ConversionOfPreferredStockSeriesBToCommonStockAmount" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="celz_ConversionOfConvertibleNotesToCommonStockShares" name="ConversionOfConvertibleNotesToCommonStockShares" nillable="true" xbrli:periodType="duration" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" />
+  <element id="celz_ConversionOfConvertibleNotesToCommonStockAmount" name="ConversionOfConvertibleNotesToCommonStockAmount" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="celz_StockBasedCompensationRelatedToWarrantIssuances" name="StockBasedCompensationRelatedToWarrantIssuances" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="celz_AccumulatedOtherComprehensiveIncomeLossForeignCurrencyTranslationAdjustmentNet" name="AccumulatedOtherComprehensiveIncomeLossForeignCurrencyTranslationAdjustmentNet" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="celz_CommonStockReturnedToTreasuryShares" name="CommonStockReturnedToTreasuryShares" nillable="true" xbrli:periodType="duration" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" />
+  <element id="celz_CommonStockReturnedToTreasuryAmount" name="CommonStockReturnedToTreasuryAmount" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="celz_ExerciseOfWarrantsOnCashlessBasisShares" name="ExerciseOfWarrantsOnCashlessBasisShares" nillable="true" xbrli:periodType="duration" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" />
+  <element id="celz_ExerciseOfWarrantsOnCashlessBasisAmount" name="ExerciseOfWarrantsOnCashlessBasisAmount" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="celz_ConversionOfPreferredStockSeriesAToCommonStockShares" name="ConversionOfPreferredStockSeriesAToCommonStockShares" nillable="true" xbrli:periodType="duration" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" />
+  <element id="celz_ConversionOfPreferredStockSeriesAToCommonStockAmount" name="ConversionOfPreferredStockSeriesAToCommonStockAmount" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="celz_CancellationOfPreferredStockSeriesBShares" name="CancellationOfPreferredStockSeriesBShares" nillable="true" xbrli:periodType="duration" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" />
+  <element id="celz_CancellationOfPreferredStockSeriesBAmount" name="CancellationOfPreferredStockSeriesBAmount" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="celz_IssuanceOfWarrantsInConvertibleNotes" name="IssuanceOfWarrantsInConvertibleNotes" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="celz_AdjustmentToIssuanceOfPreferredStockPreferenceStockAndWarrants" name="AdjustmentToIssuanceOfPreferredStockPreferenceStockAndWarrants" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="celz_NotesPayableTextBlock" name="NotesPayableTextBlock" nillable="true" xbrli:periodType="duration" type="nonnum:textBlockItemType" substitutionGroup="xbrli:item" />
+  <element id="celz_LiabilityForRightOfUseBuildingTextBlock" name="LiabilityForRightOfUseBuildingTextBlock" nillable="true" xbrli:periodType="duration" type="nonnum:textBlockItemType" substitutionGroup="xbrli:item" />
+  <element id="celz_GeneralAndAdministrativeTextBlock" name="GeneralAndAdministrativeTextBlock" nillable="true" xbrli:periodType="duration" type="nonnum:textBlockItemType" substitutionGroup="xbrli:item" />
+  <element id="celz_HarmonizedSalesTaxPolicyTextBlock" name="HarmonizedSalesTaxPolicyTextBlock" nillable="true" xbrli:periodType="duration" type="nonnum:textBlockItemType" substitutionGroup="xbrli:item" />
+  <element id="celz_ScheduleOfRightOfUseBuildingTableTextBlock" name="ScheduleOfRightOfUseBuildingTableTextBlock" nillable="true" xbrli:periodType="duration" type="nonnum:textBlockItemType" substitutionGroup="xbrli:item" />
+  <element id="celz_ScheduleOfAssumptionsUsedDerivativesTableTextBlock" name="ScheduleOfAssumptionsUsedDerivativesTableTextBlock" nillable="true" xbrli:periodType="duration" type="nonnum:textBlockItemType" substitutionGroup="xbrli:item" />
+  <element id="celz_ScheduleOfOperatingLeaseTableTextBlock" name="ScheduleOfOperatingLeaseTableTextBlock" nillable="true" xbrli:periodType="duration" type="nonnum:textBlockItemType" substitutionGroup="xbrli:item" />
+  <element id="celz_ScheduleOfStockPurchaseWarrantsTableTextblock" name="ScheduleOfStockPurchaseWarrantsTableTextblock" nillable="true" xbrli:periodType="duration" type="nonnum:textBlockItemType" substitutionGroup="xbrli:item" />
+  <element id="celz_GeneralAndAdministrativeTableTextBlock" name="GeneralAndAdministrativeTableTextBlock" nillable="true" xbrli:periodType="duration" type="nonnum:textBlockItemType" substitutionGroup="xbrli:item" />
+  <element id="celz_WorkingCapital" name="WorkingCapital" nillable="true" xbrli:balance="credit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="celz_RetainedEarningAccumulatedDeficit" name="RetainedEarningAccumulatedDeficit" nillable="true" xbrli:balance="credit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="celz_InvestmentOwnedBalanceShares1" name="InvestmentOwnedBalanceShares1" nillable="true" xbrli:periodType="instant" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" />
+  <element id="celz_WarrantsReceivedShares" name="WarrantsReceivedShares" nillable="true" xbrli:periodType="duration" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" />
+  <element id="celz_WarrantsReceivedValue" name="WarrantsReceivedValue" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="celz_ChangeInTheFairValueOfObligationToIssueShares" name="ChangeInTheFairValueOfObligationToIssueShares" nillable="true" xbrli:periodType="duration" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" />
+  <element id="celz_ObligationToIssueAdditionalShares" name="ObligationToIssueAdditionalShares" nillable="true" xbrli:periodType="instant" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" />
+  <element id="celz_ObligationToIssueSharesCurrent" name="ObligationToIssueSharesCurrent" nillable="true" xbrli:balance="credit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="celz_AccruedLegalSettlement" name="AccruedLegalSettlement" nillable="true" xbrli:balance="credit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="celz_PromissoryNotesLtbTransaction" name="PromissoryNotesLtbTransaction" nillable="true" xbrli:balance="credit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="celz_PromissoryNote" name="PromissoryNote" nillable="true" xbrli:balance="credit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="celz_PromissoryNoteRelatedParty" name="PromissoryNoteRelatedParty" nillable="true" xbrli:balance="credit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="celz_IncreaseDecreaseInDebtDiscount" name="IncreaseDecreaseInDebtDiscount" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="celz_RepyamentOfDebtDiscount" name="RepyamentOfDebtDiscount" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="celz_DebtInstrumentPrincipalAmountAtInception" name="DebtInstrumentPrincipalAmountAtInception" nillable="true" xbrli:balance="credit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="celz_ChangesInFairValueOfDerivativeConversionFeature" name="ChangesInFairValueOfDerivativeConversionFeature" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="celz_LossOnConversionOfConvertibleNotes" name="LossOnConversionOfConvertibleNotes" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="celz_ConvertibleNotesAccruedLiabilityForPenalties" name="ConvertibleNotesAccruedLiabilityForPenalties" nillable="true" xbrli:balance="credit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="celz_DecreaseInAccruedLiabilityPenaltiesOnConvertibleNotes" name="DecreaseInAccruedLiabilityPenaltiesOnConvertibleNotes" nillable="true" xbrli:balance="credit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="celz_LiabilityForRightofusesBuildingCurrentPortion" name="LiabilityForRightofusesBuildingCurrentPortion" nillable="true" xbrli:balance="credit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="celz_LiabilityForRightofuseBuilding" name="LiabilityForRightofuseBuilding" nillable="true" xbrli:balance="credit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="celz_TotalLoanPayableRelatedParties" name="TotalLoanPayableRelatedParties" nillable="true" xbrli:balance="credit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="celz_TotalPresentValueOfMinimumLeasePayments" name="TotalPresentValueOfMinimumLeasePayments" nillable="true" xbrli:balance="credit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="celz_LiabilityForRightsOfuseBuilding" name="LiabilityForRightsOfuseBuilding" nillable="true" xbrli:balance="credit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="celz_ClassOfWarrantOrRightStockPurchaseWarrantsIssued" name="ClassOfWarrantOrRightStockPurchaseWarrantsIssued" nillable="true" xbrli:periodType="duration" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" />
+  <element id="celz_ClassOfWarrantOrRightStockPurchaseWarrantsGranted" name="ClassOfWarrantOrRightStockPurchaseWarrantsGranted" nillable="true" xbrli:periodType="duration" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" />
+  <element id="celz_ClassOfWarrantOrRightStockPurchaseWarrantsRedeemed" name="ClassOfWarrantOrRightStockPurchaseWarrantsRedeemed" nillable="true" xbrli:periodType="duration" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" />
+  <element id="celz_ClassOfWarrantOrRightStockPurchaseWarrantsExpired" name="ClassOfWarrantOrRightStockPurchaseWarrantsExpired" nillable="true" xbrli:periodType="duration" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" />
+  <element id="celz_ClassOfWarrantOrRightExercisePriceOfWarrantsIssued" name="ClassOfWarrantOrRightExercisePriceOfWarrantsIssued" nillable="true" xbrli:periodType="duration" type="num:perShareItemType" substitutionGroup="xbrli:item" />
+  <element id="celz_ClassOfWarrantOrRightExercisePriceOfWarrantsGranted" name="ClassOfWarrantOrRightExercisePriceOfWarrantsGranted" nillable="true" xbrli:periodType="duration" type="num:perShareItemType" substitutionGroup="xbrli:item" />
+  <element id="celz_ClassOfWarrantOrRightExercisePriceOfWarrantsRedeemed" name="ClassOfWarrantOrRightExercisePriceOfWarrantsRedeemed" nillable="true" xbrli:periodType="duration" type="num:perShareItemType" substitutionGroup="xbrli:item" />
+  <element id="celz_ClassOfWarrantOrRightExercisePriceOfWarrantsExpired" name="ClassOfWarrantOrRightExercisePriceOfWarrantsExpired" nillable="true" xbrli:periodType="duration" type="num:perShareItemType" substitutionGroup="xbrli:item" />
+  <element id="celz_WarrantsAndRightsOutstandingRemainingTerm" name="WarrantsAndRightsOutstandingRemainingTerm" nillable="true" xbrli:periodType="duration" type="xbrli:durationItemType" substitutionGroup="xbrli:item" />
+  <element id="celz_PreferredStockTotalParValueAmount" name="PreferredStockTotalParValueAmount" nillable="true" xbrli:balance="credit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="celz_CommonStockWarrantsSubscribed" name="CommonStockWarrantsSubscribed" nillable="true" xbrli:balance="credit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="celz_CancelledSharesOfPreferredStock" name="CancelledSharesOfPreferredStock" nillable="true" xbrli:periodType="instant" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" />
+  <element id="celz_WarrantTerminationDate" name="WarrantTerminationDate" nillable="true" xbrli:periodType="duration" type="xbrli:dateItemType" substitutionGroup="xbrli:item" />
+  <element id="celz_CashlessExerciseOfWarrants" name="CashlessExerciseOfWarrants" nillable="true" xbrli:periodType="instant" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" />
+  <element id="celz_ConversionOfConvertibleNotes" name="ConversionOfConvertibleNotes" nillable="true" xbrli:periodType="duration" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" />
+  <element id="celz_WarrantsIssuedShares" name="WarrantsIssuedShares" nillable="true" xbrli:periodType="duration" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" />
+  <element id="celz_WarrantConversionSharePrice" name="WarrantConversionSharePrice" nillable="true" xbrli:periodType="duration" type="num:perShareItemType" substitutionGroup="xbrli:item" />
+  <element id="celz_DisclosureRightofuseBuildingAbstract" name="DisclosureRightofuseBuildingAbstract" nillable="true" abstract="true" xbrli:periodType="duration" type="xbrli:stringItemType" substitutionGroup="xbrli:item" />
+  <element id="celz_DisclosureNotesPayableAbstract" name="DisclosureNotesPayableAbstract" nillable="true" abstract="true" xbrli:periodType="duration" type="xbrli:stringItemType" substitutionGroup="xbrli:item" />
+  <element id="celz_DisclosureLiabilityForRightofuseBuildingAbstract" name="DisclosureLiabilityForRightofuseBuildingAbstract" nillable="true" abstract="true" xbrli:periodType="duration" type="xbrli:stringItemType" substitutionGroup="xbrli:item" />
+  <element id="celz_DisclosureGeneralAndAdministrativeAbstract" name="DisclosureGeneralAndAdministrativeAbstract" nillable="true" abstract="true" xbrli:periodType="duration" type="xbrli:stringItemType" substitutionGroup="xbrli:item" />
+  <element name="PreferredStocksSeriesBMember" id="celz_PreferredStocksSeriesBMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="LTBManagementMember" id="celz_LTBManagementMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="ClassCPreferredStockMember" id="celz_ClassCPreferredStockMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="KloneticsIncMember" id="celz_KloneticsIncMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="AnnualMember" id="celz_AnnualMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="ConvertibleDebenturesMember" id="celz_ConvertibleDebenturesMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="NoteAMember" id="celz_NoteAMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="NoteBMember" id="celz_NoteBMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="NoteCMember" id="celz_NoteCMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="LTBMember" id="celz_LTBMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="SecuredInvestorsMember" id="celz_SecuredInvestorsMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="CEBAMember" id="celz_CEBAMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="NoteDMember" id="celz_NoteDMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="NoteEMember" id="celz_NoteEMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="KozeInvestmentsLLCMember" id="celz_KozeInvestmentsLLCMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="SecondInvestorsMember" id="celz_SecondInvestorsMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="DerivativeLiabilitiesMember" id="celz_DerivativeLiabilitiesMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="FormerChiefExecutiveOfficerMember" id="celz_FormerChiefExecutiveOfficerMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="MrAmirTalMember" id="celz_MrAmirTalMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="InvictusAccountingGroupLLPMember" id="celz_InvictusAccountingGroupLLPMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="MrOrmanMember" id="celz_MrOrmanMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="DominicColvinMember" id="celz_DominicColvinMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="WarrantsMember" id="celz_WarrantsMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="May102026Member" id="celz_May102026Member" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="StockPurchaseWarrantsMember" id="celz_StockPurchaseWarrantsMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="February152028Member" id="celz_February152028Member" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="November222028Member" id="celz_November222028Member" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="CanadianNonCapitalLossesMember" id="celz_CanadianNonCapitalLossesMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="InsuranceMember" id="celz_InsuranceMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="PlantSuppliesMember" id="celz_PlantSuppliesMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="TaxesMember" id="celz_TaxesMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="ExchangeGainOrLossMember" id="celz_ExchangeGainOrLossMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="PreferredStocksMember" id="celz_PreferredStocksMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="SeriesBPreferredStockMemberAndWarrantsMember" id="celz_SeriesBPreferredStockMemberAndWarrantsMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="SeriesACommonStockMember" id="celz_SeriesACommonStockMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="LTBTransactionMember" id="celz_LTBTransactionMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="ConvertibleDebtThreeMember" id="celz_ConvertibleDebtThreeMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="ConvertibleDebtFourMember" id="celz_ConvertibleDebtFourMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="ConvertibleDebtTwoMember" id="celz_ConvertibleDebtTwoMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="ConvertibleDebtOneMember" id="celz_ConvertibleDebtOneMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="SeriesBPreferredStocksMember" id="celz_SeriesBPreferredStocksMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="SeriesCPreferredStocksMember" id="celz_SeriesCPreferredStocksMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+</schema>

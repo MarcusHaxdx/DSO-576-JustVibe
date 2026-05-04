@@ -1,0 +1,687 @@
+<?xml version="1.0" encoding="us-ascii" standalone="yes"?>
+<!--XBRL Document Created with XBRLMaster-->
+<!--Version: 2.3.08-->
+<!--Based on XBRL 2.1-->
+<!--Date of creation: 01/16/2024-->
+<!--Software architectural design and coding: A'c Dharmapremananda Avt.-->
+<!--Copyright (c) 2024 I-NET Business Solutions, Inc. All Rights Reserved.-->
+<schema xmlns:xl="http://www.xbrl.org/2003/XLink" xmlns:ref="http://www.xbrl.org/2006/ref" xmlns:currency="http://xbrl.sec.gov/currency/2023" xmlns:us-gaap-att="http://fasb.org/us-gaap/attributes" xmlns:sic="http://xbrl.sec.gov/sic/2023" xmlns:exch="http://xbrl.sec.gov/exch/2023" xmlns:invest="http://xbrl.sec.gov/invest/2013-01-31" xmlns:negated="http://www.xbrl.org/2009/role/negated" xmlns:naics="http://xbrl.sec.gov/naics/2023" xmlns:us-types="http://fasb.org/us-types/2023" xmlns:stpr="http://xbrl.sec.gov/stpr/2023" xmlns="http://www.w3.org/2001/XMLSchema" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:xbrli="http://www.xbrl.org/2003/instance" xmlns:xbrldt="http://xbrl.org/2005/xbrldt" xmlns:xbrldi="http://xbrl.org/2006/xbrldi" xmlns:country="http://xbrl.sec.gov/country/2023" xmlns:utr="http://www.xbrl.org/2009/utr" xmlns:srt-types="http://fasb.org/srt-types/2023" xmlns:dtr-types="http://www.xbrl.org/dtr/type/2020-01-21" xmlns:srt-roles="http://fasb.org/srt-roles/2023" xmlns:dei="http://xbrl.sec.gov/dei/2023" xmlns:num="http://www.xbrl.org/dtr/type/numeric" xmlns:nonnum="http://www.xbrl.org/dtr/type/non-numeric" xmlns:srt="http://fasb.org/srt/2023" xmlns:us-gaap="http://fasb.org/us-gaap/2023" xmlns:alid="http://alid.com/20231130" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://alid.com/20231130">
+  <annotation>
+    <appinfo>
+      <link:roleType roleURI="http://alid.com/role/Cover" id="Cover">
+        <link:definition>000001 - Document - Cover</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://alid.com/role/CondensedConsolidatedInterimBalanceSheets" id="CondensedConsolidatedInterimBalanceSheets">
+        <link:definition>000002 - Statement - Condensed Consolidated Interim Balance Sheets</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://alid.com/role/CondensedConsolidatedInterimBalanceSheetsParenthetical" id="CondensedConsolidatedInterimBalanceSheetsParenthetical">
+        <link:definition>000003 - Statement - Condensed Consolidated Interim Balance Sheets (Parenthetical)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://alid.com/role/CondensedConsolidatedInterimStatementsOfOperationsAndComprehensiveLossUnaudited" id="CondensedConsolidatedInterimStatementsOfOperationsAndComprehensiveLossUnaudited">
+        <link:definition>000004 - Statement - Condensed Consolidated Interim Statements of Operations and Comprehensive Loss (Unaudited)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://alid.com/role/CondensedConsolidatedInterimStatementsOfStockholdersDeficitUnaudited" id="CondensedConsolidatedInterimStatementsOfStockholdersDeficitUnaudited">
+        <link:definition>000005 - Statement - Condensed Consolidated Interim Statements of Stockholders Deficit (Unaudited)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://alid.com/role/CondensedConsolidatedInterimStatementsOfCashFlowsUnaudited" id="CondensedConsolidatedInterimStatementsOfCashFlowsUnaudited">
+        <link:definition>000006 - Statement - Condensed Consolidated Interim Statements of Cash Flows (Unaudited)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://alid.com/role/NatureOfOperationsReverseTakeoverTransactionAndGoingConcern" id="NatureOfOperationsReverseTakeoverTransactionAndGoingConcern">
+        <link:definition>000007 - Disclosure - Nature of operations reverse takeover transaction and going concern</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://alid.com/role/SignificantAccountingPolicies" id="SignificantAccountingPolicies">
+        <link:definition>000008 - Disclosure - Significant accounting policies</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://alid.com/role/Inventory" id="Inventory">
+        <link:definition>000009 - Disclosure - Inventory</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://alid.com/role/DepositsAndAdvances" id="DepositsAndAdvances">
+        <link:definition>000010 - Disclosure - Deposits and advances</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://alid.com/role/PropertyPlantAndEquipment" id="PropertyPlantAndEquipment">
+        <link:definition>000011 - Disclosure - Property plant and equipment</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://alid.com/role/IntangibleAssets" id="IntangibleAssets">
+        <link:definition>000012 - Disclosure - Intangible assets</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://alid.com/role/Leases" id="Leases">
+        <link:definition>000013 - Disclosure - Leases</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://alid.com/role/LoansPayable" id="LoansPayable">
+        <link:definition>000014 - Disclosure - Loans payable</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://alid.com/role/SecuredConvertibleNotesPayable" id="SecuredConvertibleNotesPayable">
+        <link:definition>000015 - Disclosure - Secured convertible notes payable</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://alid.com/role/Equity" id="Equity">
+        <link:definition>000016 - Disclosure - Equity</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://alid.com/role/RelatedPartyTransactionsAndBalances" id="RelatedPartyTransactionsAndBalances">
+        <link:definition>000017 - Disclosure - Related party transactions and balances</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://alid.com/role/FinancialRiskFactors" id="FinancialRiskFactors">
+        <link:definition>000018 - Disclosure - Financial risk factors</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://alid.com/role/CapitalManagement" id="CapitalManagement">
+        <link:definition>000019 - Disclosure - Capital management</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://alid.com/role/Commitments" id="Commitments">
+        <link:definition>000020 - Disclosure - Commitments</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://alid.com/role/SharePurchaseWarrants" id="SharePurchaseWarrants">
+        <link:definition>000021 - Disclosure - Share purchase warrants</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://alid.com/role/StockOptions" id="StockOptions">
+        <link:definition>000022 - Disclosure - Stock Options</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://alid.com/role/NonCashActivities" id="NonCashActivities">
+        <link:definition>000023 - Disclosure - Non cash activities</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://alid.com/role/SegmentDisclosure" id="SegmentDisclosure">
+        <link:definition>000024 - Disclosure - Segment disclosure</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://alid.com/role/SubsequentEvents" id="SubsequentEvents">
+        <link:definition>000025 - Disclosure - Subsequent events</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://alid.com/role/SignificantAccountingPoliciesPolicies" id="SignificantAccountingPoliciesPolicies">
+        <link:definition>000026 - Disclosure - Significant accounting policies (Policies)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://alid.com/role/SignificantAccountingPoliciesTables" id="SignificantAccountingPoliciesTables">
+        <link:definition>000027 - Disclosure - Significant accounting policies (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://alid.com/role/InventoryTables" id="InventoryTables">
+        <link:definition>000028 - Disclosure - Inventory (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://alid.com/role/DepositsAndAdvancesTables" id="DepositsAndAdvancesTables">
+        <link:definition>000029 - Disclosure - Deposits and advances (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://alid.com/role/PropertyPlantAndEquipmentTables" id="PropertyPlantAndEquipmentTables">
+        <link:definition>000030 - Disclosure - Property plant and equipment (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://alid.com/role/IntangibleAssetsTables" id="IntangibleAssetsTables">
+        <link:definition>000031 - Disclosure - Intangible assets (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://alid.com/role/LeasesTables" id="LeasesTables">
+        <link:definition>000032 - Disclosure - Leases (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://alid.com/role/RelatedPartyTransactionsAndBalancesTables" id="RelatedPartyTransactionsAndBalancesTables">
+        <link:definition>000033 - Disclosure - Related party transactions and balances (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://alid.com/role/FinancialRiskFactorsTables" id="FinancialRiskFactorsTables">
+        <link:definition>000034 - Disclosure - Financial risk factors (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://alid.com/role/SharePurchaseWarrantsTables" id="SharePurchaseWarrantsTables">
+        <link:definition>000035 - Disclosure - Share purchase warrants (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://alid.com/role/StockOptionsTables" id="StockOptionsTables">
+        <link:definition>000036 - Disclosure - Stock Options (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://alid.com/role/NonCashActivitiesTables" id="NonCashActivitiesTables">
+        <link:definition>000037 - Disclosure - Non cash activities (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://alid.com/role/SegmentDisclosureTables" id="SegmentDisclosureTables">
+        <link:definition>000038 - Disclosure - Segment disclosure (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://alid.com/role/SubsequentEventsTables" id="SubsequentEventsTables">
+        <link:definition>000039 - Disclosure - Subsequent events (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://alid.com/role/NatureOfOperationsReverseTakeoverTransactionAndGoingConcernDetailsNarrative" id="NatureOfOperationsReverseTakeoverTransactionAndGoingConcernDetailsNarrative">
+        <link:definition>000040 - Disclosure - Nature of operations reverse takeover transaction and going concern (Details Narrative)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://alid.com/role/SignificantAccountingPoliciesDetails" id="SignificantAccountingPoliciesDetails">
+        <link:definition>000041 - Disclosure - Significant accounting policies (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://alid.com/role/SignificantAccountingPoliciesDetailsNarrative" id="SignificantAccountingPoliciesDetailsNarrative">
+        <link:definition>000042 - Disclosure - Significant accounting policies (Details Narrative)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://alid.com/role/InventoryDetails" id="InventoryDetails">
+        <link:definition>000043 - Disclosure - Inventory (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://alid.com/role/InventoryDetailsNarrative" id="InventoryDetailsNarrative">
+        <link:definition>000044 - Disclosure - Inventory (Details Narrative)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://alid.com/role/DepositsAndAdvancesDetails" id="DepositsAndAdvancesDetails">
+        <link:definition>000045 - Disclosure - Deposits and advances (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://alid.com/role/DepositsAndAdvancesDetailsNarrative" id="DepositsAndAdvancesDetailsNarrative">
+        <link:definition>000046 - Disclosure - Deposits and advances (Details Narrative)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://alid.com/role/PropertyPlantAndEquipmentDetails" id="PropertyPlantAndEquipmentDetails">
+        <link:definition>000047 - Disclosure - Property plant and equipment (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://alid.com/role/IntangibleAssetsDetails" id="IntangibleAssetsDetails">
+        <link:definition>000048 - Disclosure - Intangible assets (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://alid.com/role/IntangibleAssetsDetailsNarrative" id="IntangibleAssetsDetailsNarrative">
+        <link:definition>000049 - Disclosure - Intangible assets (Details Narrative)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://alid.com/role/LeasesDetails" id="LeasesDetails">
+        <link:definition>000050 - Disclosure - Leases (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://alid.com/role/LeasesDetails1" id="LeasesDetails1">
+        <link:definition>000051 - Disclosure - Leases (Details 1)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://alid.com/role/LeasesDetails2" id="LeasesDetails2">
+        <link:definition>000052 - Disclosure - Leases (Details 2)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://alid.com/role/LeasesDetails3" id="LeasesDetails3">
+        <link:definition>000053 - Disclosure - Leases (Details 3)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://alid.com/role/LeasesDetailsNarrative" id="LeasesDetailsNarrative">
+        <link:definition>000054 - Disclosure - Leases (Details Narrative)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://alid.com/role/LoansPayableDetailsNarrative" id="LoansPayableDetailsNarrative">
+        <link:definition>000055 - Disclosure - Loans payable (Details Narrative)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://alid.com/role/SecuredConvertibleNotesPayableDetailsNarrative" id="SecuredConvertibleNotesPayableDetailsNarrative">
+        <link:definition>000056 - Disclosure - Secured convertible notes payable (Details Narrative)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://alid.com/role/EquityDetailNarrative" id="EquityDetailNarrative">
+        <link:definition>000057 - Disclosure - Equity (Detail Narrative)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://alid.com/role/RelatedPartyTransactionsAndBalancesDetails" id="RelatedPartyTransactionsAndBalancesDetails">
+        <link:definition>000058 - Disclosure - Related party transactions and balances (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://alid.com/role/RelatedPartyTransactionsAndBalancesDetails1" id="RelatedPartyTransactionsAndBalancesDetails1">
+        <link:definition>000059 - Disclosure - Related party transactions and balances (Details 1)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://alid.com/role/RelatedPartyTransactionsAndBalancesDetailsNarrative" id="RelatedPartyTransactionsAndBalancesDetailsNarrative">
+        <link:definition>000060 - Disclosure - Related party transactions and balances (Details Narrative)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://alid.com/role/FinancialRiskFactorsDetails" id="FinancialRiskFactorsDetails">
+        <link:definition>000061 - Disclosure - Financial risk factors (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://alid.com/role/FinancialRiskFactorsDetails1" id="FinancialRiskFactorsDetails1">
+        <link:definition>000062 - Disclosure - Financial risk factors (Details 1)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://alid.com/role/FinancialRiskFactorsDetailsNarrative" id="FinancialRiskFactorsDetailsNarrative">
+        <link:definition>000063 - Disclosure - Financial risk factors (Details Narrative)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://alid.com/role/CommitmentsDetailsNarrative" id="CommitmentsDetailsNarrative">
+        <link:definition>000064 - Disclosure - Commitments (Details Narrative)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://alid.com/role/SharePurchaseWarrantsDetails" id="SharePurchaseWarrantsDetails">
+        <link:definition>000065 - Disclosure - Share purchase warrants (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://alid.com/role/SharePurchaseWarrantsDetails1" id="SharePurchaseWarrantsDetails1">
+        <link:definition>000066 - Disclosure - Share purchase warrants (Details 1)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://alid.com/role/StockOptionsDetails" id="StockOptionsDetails">
+        <link:definition>000067 - Disclosure - Stock options (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://alid.com/role/StockOptionsDetails1" id="StockOptionsDetails1">
+        <link:definition>000068 - Disclosure - Stock options (Details 1)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://alid.com/role/StockOptionsDetailsNarrative" id="StockOptionsDetailsNarrative">
+        <link:definition>000069 - Disclosure - Stock options (Details Narrative)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://alid.com/role/NoncashActivitiesDetails" id="NoncashActivitiesDetails">
+        <link:definition>000070 - Disclosure - Noncash activities (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://alid.com/role/SegmentDisclosureDetails" id="SegmentDisclosureDetails">
+        <link:definition>000071 - Disclosure - Segment disclosure (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://alid.com/role/SegmentDisclosureDetails1" id="SegmentDisclosureDetails1">
+        <link:definition>000072 - Disclosure - Segment disclosure (Details 1)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://alid.com/role/SubsequentEventsDetails" id="SubsequentEventsDetails">
+        <link:definition>000073 - Disclosure - Subsequent events (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://alid.com/role/SubsequentEventsDetailsNarrative" id="SubsequentEventsDetailsNarrative">
+        <link:definition>000074 - Disclosure - Subsequent events (Details Narrative)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:linkbaseRef xlink:type="simple" xlink:href="alid-20231130_pre.xml" xlink:role="http://www.xbrl.org/2003/role/presentationLinkbaseRef" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" />
+      <link:linkbaseRef xlink:type="simple" xlink:href="alid-20231130_lab.xml" xlink:role="http://www.xbrl.org/2003/role/labelLinkbaseRef" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" />
+      <link:linkbaseRef xlink:type="simple" xlink:href="alid-20231130_cal.xml" xlink:role="http://www.xbrl.org/2003/role/calculationLinkbaseRef" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" />
+      <link:linkbaseRef xlink:type="simple" xlink:href="alid-20231130_def.xml" xlink:role="http://www.xbrl.org/2003/role/definitionLinkbaseRef" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" />
+    </appinfo>
+  </annotation>
+  <import namespace="http://www.xbrl.org/2003/instance" schemaLocation="http://www.xbrl.org/2003/xbrl-instance-2003-12-31.xsd" />
+  <import namespace="http://www.xbrl.org/2003/linkbase" schemaLocation="http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd" />
+  <import namespace="http://xbrl.org/2005/xbrldt" schemaLocation="http://www.xbrl.org/2005/xbrldt-2005.xsd" />
+  <import namespace="http://xbrl.sec.gov/country/2023" schemaLocation="https://xbrl.sec.gov/country/2023/country-2023.xsd" />
+  <import namespace="http://xbrl.sec.gov/currency/2023" schemaLocation="https://xbrl.sec.gov/currency/2023/currency-2023.xsd" />
+  <import namespace="http://xbrl.sec.gov/dei/2023" schemaLocation="https://xbrl.sec.gov/dei/2023/dei-2023.xsd" />
+  <import namespace="http://www.xbrl.org/dtr/type/non-numeric" schemaLocation="http://www.xbrl.org/dtr/type/nonNumeric-2009-12-16.xsd" />
+  <import namespace="http://www.xbrl.org/dtr/type/numeric" schemaLocation="http://www.xbrl.org/dtr/type/numeric-2009-12-16.xsd" />
+  <import namespace="http://xbrl.sec.gov/exch/2023" schemaLocation="https://xbrl.sec.gov/exch/2023/exch-2023.xsd" />
+  <import namespace="http://www.xbrl.org/2009/arcrole/fact-explanatoryFact" schemaLocation="http://www.xbrl.org/lrr/arcrole/factExplanatory-2009-12-16.xsd" />
+  <import namespace="http://www.xbrl.org/2009/role/negated" schemaLocation="http://www.xbrl.org/lrr/role/negated-2009-12-16.xsd" />
+  <import namespace="http://www.xbrl.org/2009/role/net" schemaLocation="http://www.xbrl.org/lrr/role/net-2009-12-16.xsd" />
+  <import namespace="http://xbrl.sec.gov/naics/2023" schemaLocation="https://xbrl.sec.gov/naics/2023/naics-2023.xsd" />
+  <import namespace="http://xbrl.sec.gov/sic/2023" schemaLocation="https://xbrl.sec.gov/sic/2023/sic-2023.xsd" />
+  <import namespace="http://fasb.org/srt-roles/2023" schemaLocation="https://xbrl.fasb.org/srt/2023/elts/srt-roles-2023.xsd" />
+  <import namespace="http://fasb.org/srt-types/2023" schemaLocation="https://xbrl.fasb.org/srt/2023/elts/srt-types-2023.xsd" />
+  <import namespace="http://www.xbrl.org/dtr/type/2020-01-21" schemaLocation="https://www.xbrl.org/dtr/type/2020-01-21/types.xsd" />
+  <import namespace="http://xbrl.sec.gov/stpr/2023" schemaLocation="https://xbrl.sec.gov/stpr/2023/stpr-2023.xsd" />
+  <import namespace="http://fasb.org/us-roles/2023" schemaLocation="https://xbrl.fasb.org/us-gaap/2023/elts/us-roles-2023.xsd" />
+  <import namespace="http://fasb.org/us-types/2023" schemaLocation="https://xbrl.fasb.org/us-gaap/2023/elts/us-types-2023.xsd" />
+  <import namespace="http://fasb.org/srt/2023" schemaLocation="https://xbrl.fasb.org/srt/2023/elts/srt-2023.xsd" />
+  <import namespace="http://fasb.org/us-gaap/2023" schemaLocation="https://xbrl.fasb.org/us-gaap/2023/elts/us-gaap-2023.xsd" />
+  <element id="alid_AmountsDueToRelatedPartiesCurrent" name="AmountsDueToRelatedPartiesCurrent" nillable="true" xbrli:balance="credit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="alid_CommonStockToBeIssued" name="CommonStockToBeIssued" nillable="true" xbrli:balance="credit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="alid_ForeignCurrencyTransactionBeforeTax" name="ForeignCurrencyTransactionBeforeTax" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="alid_EarningPerShareBasicAndDiluted" name="EarningPerShareBasicAndDiluted" nillable="true" xbrli:periodType="duration" type="num:perShareItemType" substitutionGroup="xbrli:item" />
+  <element id="alid_WeightedAverageNumberOfCommonSharesOutstandingBasicAndDiluted" name="WeightedAverageNumberOfCommonSharesOutstandingBasicAndDiluted" nillable="true" xbrli:periodType="duration" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" />
+  <element id="alid_ShareIssuanceCosts" name="ShareIssuanceCosts" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="alid_SharesIssuedToSettleDebtsShares" name="SharesIssuedToSettleDebtsShares" nillable="true" xbrli:periodType="duration" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" />
+  <element id="alid_SharesIssuedToSettleDebtsAmount" name="SharesIssuedToSettleDebtsAmount" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="alid_SharesSubscribed" name="SharesSubscribed" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="alid_AdjustmentForAccruedInterest" name="AdjustmentForAccruedInterest" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="alid_ProceedsFromSubscriptionsReceived" name="ProceedsFromSubscriptionsReceived" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="alid_DepositsAndAdvanceTextBlock" name="DepositsAndAdvanceTextBlock" nillable="true" xbrli:periodType="duration" type="nonnum:textBlockItemType" substitutionGroup="xbrli:item" />
+  <element id="alid_SecuredConvertibleNotesPayableDisclosureTextBlock" name="SecuredConvertibleNotesPayableDisclosureTextBlock" nillable="true" xbrli:periodType="duration" type="nonnum:textBlockItemType" substitutionGroup="xbrli:item" />
+  <element id="alid_FinancialRiskFactorsDisclosureTextBlock" name="FinancialRiskFactorsDisclosureTextBlock" nillable="true" xbrli:periodType="duration" type="nonnum:textBlockItemType" substitutionGroup="xbrli:item" />
+  <element id="alid_CapitalManagementDisclosureTextBlock" name="CapitalManagementDisclosureTextBlock" nillable="true" xbrli:periodType="duration" type="nonnum:textBlockItemType" substitutionGroup="xbrli:item" />
+  <element id="alid_SharePurchaseWarrantsTextBlock" name="SharePurchaseWarrantsTextBlock" nillable="true" xbrli:periodType="duration" type="nonnum:textBlockItemType" substitutionGroup="xbrli:item" />
+  <element id="alid_StockOptionsTextBlock" name="StockOptionsTextBlock" nillable="true" xbrli:periodType="duration" type="nonnum:textBlockItemType" substitutionGroup="xbrli:item" />
+  <element id="alid_NonCashActivitiesDislosureTextBlock" name="NonCashActivitiesDislosureTextBlock" nillable="true" xbrli:periodType="duration" type="nonnum:textBlockItemType" substitutionGroup="xbrli:item" />
+  <element id="alid_ShareIssuanceCostsPolicyTextBlock" name="ShareIssuanceCostsPolicyTextBlock" nillable="true" xbrli:periodType="duration" type="nonnum:textBlockItemType" substitutionGroup="xbrli:item" />
+  <element id="alid_RelatedPartyTransactionPolicyTextBlock" name="RelatedPartyTransactionPolicyTextBlock" nillable="true" xbrli:periodType="duration" type="nonnum:textBlockItemType" substitutionGroup="xbrli:item" />
+  <element id="alid_ScheduleOfComponentsOfLeaseExpensesTableTextBlock" name="ScheduleOfComponentsOfLeaseExpensesTableTextBlock" nillable="true" xbrli:periodType="duration" type="nonnum:textBlockItemType" substitutionGroup="xbrli:item" />
+  <element id="alid_ScheduleOfSupplementalCashFlowAndOtherInformationRelatedToLeasesTableTextBlock" name="ScheduleOfSupplementalCashFlowAndOtherInformationRelatedToLeasesTableTextBlock" nillable="true" xbrli:periodType="duration" type="nonnum:textBlockItemType" substitutionGroup="xbrli:item" />
+  <element id="alid_ScheduleOfSupplementalBalanceSheetInformationRelatedToLeasesTableTextBlock" name="ScheduleOfSupplementalBalanceSheetInformationRelatedToLeasesTableTextBlock" nillable="true" xbrli:periodType="duration" type="nonnum:textBlockItemType" substitutionGroup="xbrli:item" />
+  <element id="alid_ScheduleOfRelatedPartyCompensationCostsTableTextBlock" name="ScheduleOfRelatedPartyCompensationCostsTableTextBlock" nillable="true" xbrli:periodType="duration" type="nonnum:textBlockItemType" substitutionGroup="xbrli:item" />
+  <element id="alid_ScheduleOfSharePurchaseWarrantsTableTextBlock" name="ScheduleOfSharePurchaseWarrantsTableTextBlock" nillable="true" xbrli:periodType="duration" type="nonnum:textBlockItemType" substitutionGroup="xbrli:item" />
+  <element id="alid_ScheduleOfNonCashActivitiesTableTextBlock" name="ScheduleOfNonCashActivitiesTableTextBlock" nillable="true" xbrli:periodType="duration" type="nonnum:textBlockItemType" substitutionGroup="xbrli:item" />
+  <element id="alid_ScheduleOfGeographicalInformationTableTextBlock" name="ScheduleOfGeographicalInformationTableTextBlock" nillable="true" xbrli:periodType="duration" type="nonnum:textBlockItemType" substitutionGroup="xbrli:item" />
+  <element id="alid_WorkingCapitalDeficit" name="WorkingCapitalDeficit" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="alid_PropertyPlantAndEquipmentsUsefulLife" name="PropertyPlantAndEquipmentsUsefulLife" nillable="true" xbrli:periodType="duration" type="xbrli:durationItemType" substitutionGroup="xbrli:item" />
+  <element id="alid_IntangibleAssetUsefulLife" name="IntangibleAssetUsefulLife" nillable="true" xbrli:periodType="duration" type="xbrli:durationItemType" substitutionGroup="xbrli:item" />
+  <element id="alid_AdditionalInventoryWriteDown" name="AdditionalInventoryWriteDown" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="alid_OtherDepreciationAndAmortizationAdditional" name="OtherDepreciationAndAmortizationAdditional" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="alid_CostOfAssetBeginningBalance" name="CostOfAssetBeginningBalance" nillable="true" xbrli:balance="debit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="alid_CostOfAssetsForegionExchange" name="CostOfAssetsForegionExchange" nillable="true" xbrli:balance="debit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="alid_AccumulatedDepreciationBeginingBalance" name="AccumulatedDepreciationBeginingBalance" nillable="true" xbrli:balance="debit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="alid_AccumulatedDepreciationBeginningBalances" name="AccumulatedDepreciationBeginningBalances" nillable="true" xbrli:balance="debit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="alid_AccumulatedDepreciationAdditions" name="AccumulatedDepreciationAdditions" nillable="true" xbrli:balance="debit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="alid_AccumulatedDepreciationForeignExchange" name="AccumulatedDepreciationForeignExchange" nillable="true" xbrli:balance="debit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="alid_AccumulatedDepreciationEndingBalance" name="AccumulatedDepreciationEndingBalance" nillable="true" xbrli:balance="debit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="alid_NetBookValueBeginningBalance" name="NetBookValueBeginningBalance" nillable="true" xbrli:balance="debit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="alid_NetBookValueEndingBalance" name="NetBookValueEndingBalance" nillable="true" xbrli:balance="debit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="alid_CostOfIntangibleAssets" name="CostOfIntangibleAssets" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="alid_ImpairmentOfIntangibleAssets" name="ImpairmentOfIntangibleAssets" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="alid_AcquisitionOfLicenses" name="AcquisitionOfLicenses" nillable="true" xbrli:balance="debit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="alid_AmortizationIncludedInInventory" name="AmortizationIncludedInInventory" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="alid_InterestExpensesOnLeaseLiabilities" name="InterestExpensesOnLeaseLiabilities" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="alid_CostLease" name="CostLease" nillable="true" xbrli:balance="debit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="alid_GroundLeaseAccumulatedAmortization" name="GroundLeaseAccumulatedAmortization" nillable="true" xbrli:balance="credit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="alid_ForeignExchangeCurrent" name="ForeignExchangeCurrent" nillable="true" xbrli:balance="debit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="alid_NetCarryingValueOfLeaseCost" name="NetCarryingValueOfLeaseCost" nillable="true" xbrli:balance="debit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="alid_LesseeOperatingLeaseLiabilityPaymentsDueYearSix" name="LesseeOperatingLeaseLiabilityPaymentsDueYearSix" nillable="true" xbrli:balance="credit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="alid_LesseeOperatingLeaseLiabilityPaymentsDueYearSeven" name="LesseeOperatingLeaseLiabilityPaymentsDueYearSeven" nillable="true" xbrli:balance="credit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="alid_TotalCostMinimumLeasePayments" name="TotalCostMinimumLeasePayments" nillable="true" xbrli:balance="credit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="alid_LessAmountOfLeasePaymentsRepresentingEffectOfDiscounting" name="LessAmountOfLeasePaymentsRepresentingEffectOfDiscounting" nillable="true" xbrli:balance="credit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="alid_PaymentsPresentValueOfFutureMinimumLease" name="PaymentsPresentValueOfFutureMinimumLease" nillable="true" xbrli:balance="debit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="alid_LessCurrentObligationsUnderLeases" name="LessCurrentObligationsUnderLeases" nillable="true" xbrli:balance="credit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="alid_OperatingLeasesLiability" name="OperatingLeasesLiability" nillable="true" xbrli:balance="credit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="alid_FiniteLivedIntangibleAssetUsefulLifes" name="FiniteLivedIntangibleAssetUsefulLifes" nillable="true" xbrli:periodType="duration" type="xbrli:durationItemType" substitutionGroup="xbrli:item" />
+  <element id="alid_PaymentForBuilding" name="PaymentForBuilding" nillable="true" xbrli:balance="credit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="alid_MonthlyOtherInterestPayments" name="MonthlyOtherInterestPayments" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="alid_DebtRepaymentDescription" name="DebtRepaymentDescription" nillable="true" xbrli:periodType="duration" type="xbrli:stringItemType" substitutionGroup="xbrli:item" />
+  <element id="alid_CompensationCostFairValueBenifit" name="CompensationCostFairValueBenifit" nillable="true" xbrli:balance="credit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="alid_BalanceOwingAmount" name="BalanceOwingAmount" nillable="true" xbrli:balance="credit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="alid_InterestPaidOnLoansForPurchaseOfBuildings" name="InterestPaidOnLoansForPurchaseOfBuildings" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="alid_FinalPaymentOnPromissoryNotes" name="FinalPaymentOnPromissoryNotes" nillable="true" xbrli:balance="debit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="alid_InterestPayment" name="InterestPayment" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="alid_FairValueAdjustmentOfConvertibleNotes" name="FairValueAdjustmentOfConvertibleNotes" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="alid_AccountsPayableAndAccruedInterest" name="AccountsPayableAndAccruedInterest" nillable="true" xbrli:balance="credit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="alid_AccruedInterestIncludedInAccountsPayableAndAccruedLiabilities" name="AccruedInterestIncludedInAccountsPayableAndAccruedLiabilities" nillable="true" xbrli:balance="credit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="alid_AccruedInterest" name="AccruedInterest" nillable="true" xbrli:balance="credit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="alid_OutstandingPrincipalOwing" name="OutstandingPrincipalOwing" nillable="true" xbrli:balance="credit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="alid_PrincipalOwingOne" name="PrincipalOwingOne" nillable="true" xbrli:balance="credit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="alid_PrincipalOwingTwo" name="PrincipalOwingTwo" nillable="true" xbrli:balance="credit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="alid_PrincipalOwingThree" name="PrincipalOwingThree" nillable="true" xbrli:balance="credit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="alid_PrincipalOwingFour" name="PrincipalOwingFour" nillable="true" xbrli:balance="credit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="alid_PrincipalOwingFive" name="PrincipalOwingFive" nillable="true" xbrli:balance="credit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="alid_PrincipalOwingSix" name="PrincipalOwingSix" nillable="true" xbrli:balance="credit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="alid_PrincipalOwingSeven" name="PrincipalOwingSeven" nillable="true" xbrli:balance="credit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="alid_PrincipalOwingEight" name="PrincipalOwingEight" nillable="true" xbrli:balance="credit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="alid_PrincipalOwingNine" name="PrincipalOwingNine" nillable="true" xbrli:balance="credit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="alid_WarrantsToPurchase" name="WarrantsToPurchase" nillable="true" xbrli:periodType="instant" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" />
+  <element id="alid_FairValuesOfConvertibleNotesPayables" name="FairValuesOfConvertibleNotesPayables" nillable="true" xbrli:balance="credit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="alid_FairValuesOfWarrants" name="FairValuesOfWarrants" nillable="true" xbrli:balance="credit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="alid_RelativeFairValueOfWarrants" name="RelativeFairValueOfWarrants" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="alid_RelativeFairValueOfConvertibleNote" name="RelativeFairValueOfConvertibleNote" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="alid_FairValueAdjustment" name="FairValueAdjustment" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="alid_InterestsPayable" name="InterestsPayable" nillable="true" xbrli:balance="credit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="alid_AdditionalPaidIn" name="AdditionalPaidIn" nillable="true" xbrli:balance="credit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="alid_StockPricePerShare" name="StockPricePerShare" nillable="true" xbrli:periodType="instant" type="num:perShareItemType" substitutionGroup="xbrli:item" />
+  <element id="alid_ConvertibleDebts" name="ConvertibleDebts" nillable="true" xbrli:balance="credit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="alid_OriginalIssueDiscountOnBeneficialConversionFeature" name="OriginalIssueDiscountOnBeneficialConversionFeature" nillable="true" xbrli:balance="credit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="alid_WarrantsIssuedToPurchaseCommonShares" name="WarrantsIssuedToPurchaseCommonShares" nillable="true" xbrli:periodType="instant" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" />
+  <element id="alid_OutstandingPrincipalAmount" name="OutstandingPrincipalAmount" nillable="true" xbrli:balance="credit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="alid_OutstandingPrincipalAmountone" name="OutstandingPrincipalAmountone" nillable="true" xbrli:balance="credit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="alid_PurchaseAdditionalShares" name="PurchaseAdditionalShares" nillable="true" xbrli:periodType="duration" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" />
+  <element id="alid_RelativeFairValuesOfConvertibleWarrants" name="RelativeFairValuesOfConvertibleWarrants" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="alid_ConvertibleNotesPayables" name="ConvertibleNotesPayables" nillable="true" xbrli:balance="credit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="alid_CostOfShareIssue" name="CostOfShareIssue" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="alid_FinderFee" name="FinderFee" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="alid_FairValueOfIssuedCommonStock" name="FairValueOfIssuedCommonStock" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="alid_AccountsPayableRelatedPartyCurrent" name="AccountsPayableRelatedPartyCurrent" nillable="true" xbrli:balance="credit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="alid_LossOnSettlementOfAccount" name="LossOnSettlementOfAccount" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="alid_DebtSettlementAmount" name="DebtSettlementAmount" nillable="true" xbrli:balance="credit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="alid_CashReceivedFromShareSubscrptions" name="CashReceivedFromShareSubscrptions" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="alid_PerSharePriceShareSubscrptions" name="PerSharePriceShareSubscrptions" nillable="true" xbrli:periodType="duration" type="num:perShareItemType" substitutionGroup="xbrli:item" />
+  <element id="alid_ConsultingFeesAndBenefits" name="ConsultingFeesAndBenefits" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="alid_SigningBonus" name="SigningBonus" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="alid_DueFromOtherRelatedParty" name="DueFromOtherRelatedParty" nillable="true" xbrli:balance="debit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="alid_DueToRelatedPartyCurrent" name="DueToRelatedPartyCurrent" nillable="true" xbrli:balance="credit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="alid_RevenueFromRelatedParty" name="RevenueFromRelatedParty" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="alid_ExpensedPaidToRelatedParties" name="ExpensedPaidToRelatedParties" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="alid_NetExposure" name="NetExposure" nillable="true" xbrli:balance="debit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="alid_BalanceinUSdollars" name="BalanceinUSdollars" nillable="true" xbrli:balance="debit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="alid_NetExposures" name="NetExposures" nillable="true" xbrli:balance="debit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="alid_BalancesInUsDollars" name="BalancesInUsDollars" nillable="true" xbrli:balance="debit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="alid_NumberOfWarrantsBeginningBalance" name="NumberOfWarrantsBeginningBalance" nillable="true" xbrli:periodType="duration" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" />
+  <element id="alid_ShareBasedCompensationArrangementByShareBasedPaymentAwardOptionExpirationsInPeriod" name="ShareBasedCompensationArrangementByShareBasedPaymentAwardOptionExpirationsInPeriod" nillable="true" xbrli:periodType="duration" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" />
+  <element id="alid_EndingBalance" name="EndingBalance" nillable="true" xbrli:periodType="duration" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" />
+  <element id="alid_WeightedAverageExercisePriceBeginningBalance" name="WeightedAverageExercisePriceBeginningBalance" nillable="true" xbrli:periodType="duration" type="num:perShareItemType" substitutionGroup="xbrli:item" />
+  <element id="alid_WeightedAverageExercisePriceexpired" name="WeightedAverageExercisePriceexpired" nillable="true" xbrli:periodType="duration" type="num:perShareItemType" substitutionGroup="xbrli:item" />
+  <element id="alid_WeightedAverageExercisePriceEndingBalance" name="WeightedAverageExercisePriceEndingBalance" nillable="true" xbrli:periodType="duration" type="num:perShareItemType" substitutionGroup="xbrli:item" />
+  <element id="alid_WeightedAverageContractualTermBeginning" name="WeightedAverageContractualTermBeginning" nillable="true" xbrli:periodType="duration" type="xbrli:durationItemType" substitutionGroup="xbrli:item" />
+  <element id="alid_vcygfjfj" name="vcygfjfj" nillable="true" xbrli:periodType="duration" type="xbrli:durationItemType" substitutionGroup="xbrli:item" />
+  <element id="alid_WeightedAverageContractualTermOutstanding" name="WeightedAverageContractualTermOutstanding" nillable="true" xbrli:periodType="duration" type="xbrli:durationItemType" substitutionGroup="xbrli:item" />
+  <element id="alid_WeightedAverageContractualTermExercisable" name="WeightedAverageContractualTermExercisable" nillable="true" xbrli:periodType="duration" type="xbrli:durationItemType" substitutionGroup="xbrli:item" />
+  <element id="alid_AggregateIntrinsicValueBeginning" name="AggregateIntrinsicValueBeginning" nillable="true" xbrli:periodType="instant" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" />
+  <element id="alid_AggregateIntrinsicValueOutstandingBalance" name="AggregateIntrinsicValueOutstandingBalance" nillable="true" xbrli:periodType="instant" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" />
+  <element id="alid_AggregateIntrinsicValueExercisableBalance" name="AggregateIntrinsicValueExercisableBalance" nillable="true" xbrli:periodType="duration" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" />
+  <element id="alid_SharesIssuedToSettleDebt" name="SharesIssuedToSettleDebt" nillable="true" xbrli:periodType="duration" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" />
+  <element id="alid_MaturityDateBeforeModification" name="MaturityDateBeforeModification" nillable="true" xbrli:periodType="duration" type="xbrli:stringItemType" substitutionGroup="xbrli:item" />
+  <element id="alid_ModifiedExercisePrice" name="ModifiedExercisePrice" nillable="true" xbrli:periodType="duration" type="num:perShareItemType" substitutionGroup="xbrli:item" />
+  <element id="alid_ModifiedMaturityDate" name="ModifiedMaturityDate" nillable="true" xbrli:periodType="duration" type="xbrli:stringItemType" substitutionGroup="xbrli:item" />
+  <element id="alid_DebtConversionsConvertedInstrumentRate" name="DebtConversionsConvertedInstrumentRate" nillable="true" xbrli:periodType="duration" type="num:percentItemType" substitutionGroup="xbrli:item" />
+  <element id="alid_SubscriptionReceived" name="SubscriptionReceived" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="alid_NonCashActivitiesAbstract" name="NonCashActivitiesAbstract" nillable="true" abstract="true" xbrli:periodType="duration" type="xbrli:stringItemType" substitutionGroup="xbrli:item" />
+  <element id="alid_SegmentDisclosureAbstract" name="SegmentDisclosureAbstract" nillable="true" abstract="true" xbrli:periodType="duration" type="xbrli:stringItemType" substitutionGroup="xbrli:item" />
+  <element name="StockOptionsTwoMember" id="alid_StockOptionsTwoMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="StockOptionsThreeMember" id="alid_StockOptionsThreeMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="StockOptionsFourMember" id="alid_StockOptionsFourMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="StockOptionsFiveMember" id="alid_StockOptionsFiveMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="StockOptionsSixMember" id="alid_StockOptionsSixMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="StockIssuableMember" id="alid_StockIssuableMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="CEOandDirectorMember" id="alid_CEOandDirectorMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="COOandDirectorMember" id="alid_COOandDirectorMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="CFOMember" id="alid_CFOMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="AnEntityControlledByADirectorMember" id="alid_AnEntityControlledByADirectorMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="ChiefBusinessDevelopmentOfficerMember" id="alid_ChiefBusinessDevelopmentOfficerMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="AlliedMember" id="alid_AlliedMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="AlliedColombiaMember" id="alid_AlliedColombiaMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="ColombiaMember" id="alid_ColombiaMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="JuneTwoThousandNineteenMember" id="alid_JuneTwoThousandNineteenMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="WarrantsMember" id="alid_WarrantsMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="WarrantOneMember" id="alid_WarrantOneMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="WarrantTwoMember" id="alid_WarrantTwoMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="WarrantThreeMember" id="alid_WarrantThreeMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="WarrantFourMember" id="alid_WarrantFourMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="WarrantFiveMember" id="alid_WarrantFiveMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="WarrantSixMember" id="alid_WarrantSixMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="WarrantSevenMember" id="alid_WarrantSevenMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="WarrantEightMember" id="alid_WarrantEightMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="WarrantNineMember" id="alid_WarrantNineMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="WarrantTenMember" id="alid_WarrantTenMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="NonCashActivitiesMember" id="alid_NonCashActivitiesMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="FarmFacilityAndEquipmentMember" id="alid_FarmFacilityAndEquipmentMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="OfficeAndComputerEquipmentMember" id="alid_OfficeAndComputerEquipmentMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="LandequipmentMember" id="alid_LandequipmentMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="CommonStockShareIssuedMember" id="alid_CommonStockShareIssuedMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="SeptemberTwentyOneTwentyTwentyTwoMember" id="alid_SeptemberTwentyOneTwentyTwentyTwoMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="OctoberSevenTwentyTwentyTwoMember" id="alid_OctoberSevenTwentyTwentyTwoMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="OctoberSevenTwentyTwentyTwoOneMember" id="alid_OctoberSevenTwentyTwentyTwoOneMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="OctoberSevenTwentyTwentyTwoTwoMember" id="alid_OctoberSevenTwentyTwentyTwoTwoMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="SetemberFiveTwentyTwentyThreeMember" id="alid_SetemberFiveTwentyTwentyThreeMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="OctoberTwentyTwentyTwentyThreeMember" id="alid_OctoberTwentyTwentyTwentyThreeMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="CannabisLicensesMember" id="alid_CannabisLicensesMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="OtherIntangibleAssetsLicensesMember" id="alid_OtherIntangibleAssetsLicensesMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="ColombianPesoExchangeRateMember" id="alid_ColombianPesoExchangeRateMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="PrepaymentsForConstructionFacilityInColombiaMember" id="alid_PrepaymentsForConstructionFacilityInColombiaMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="JuneTwoThousandTwentyMember" id="alid_JuneTwoThousandTwentyMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="DecemberSeventeenTwoThousandTwentyOneMember" id="alid_DecemberSeventeenTwoThousandTwentyOneMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="ForeignCurrencyExchangeMember" id="alid_ForeignCurrencyExchangeMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="ForeignCurrencyExchangeRateMember" id="alid_ForeignCurrencyExchangeRateMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="OneConvertibleNoteMember" id="alid_OneConvertibleNoteMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="TwoConvertibleNotesMember" id="alid_TwoConvertibleNotesMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="ElevenConvertibleNotesMember" id="alid_ElevenConvertibleNotesMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="NineConvertibleNotesMember" id="alid_NineConvertibleNotesMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="DecemberTwentyThreeMember" id="alid_DecemberTwentyThreeMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="OnJulyOneTwoThousandTwentyMember" id="alid_OnJulyOneTwoThousandTwentyMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="OnMarchThirtyOneTwoThousandTwentyTwoMember" id="alid_OnMarchThirtyOneTwoThousandTwentyTwoMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="EightConvertibleNotesMember" id="alid_EightConvertibleNotesMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="OnMarchThirtyOneTwoThousandTwentyOneMember" id="alid_OnMarchThirtyOneTwoThousandTwentyOneMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="ThreeConvertibleNotesMember" id="alid_ThreeConvertibleNotesMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="OnOctoberOneTwoThousandTwentyOneMember" id="alid_OnOctoberOneTwoThousandTwentyOneMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="SevenConvertibleNotesMember" id="alid_SevenConvertibleNotesMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="OnJuneOneTwoThousandTwentyOneMember" id="alid_OnJuneOneTwoThousandTwentyOneMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="OnMarchThirtyOneTwoThousandTwentytwoMember" id="alid_OnMarchThirtyOneTwoThousandTwentytwoMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="OnNovemberOneTwoThousandTwentyOneMember" id="alid_OnNovemberOneTwoThousandTwentyOneMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="TenConvertibleNotesMember" id="alid_TenConvertibleNotesMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="SixConvertibleNotesMember" id="alid_SixConvertibleNotesMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="JulyTwentyFiveTwoThousandTwentyTwoMember" id="alid_JulyTwentyFiveTwoThousandTwentyTwoMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="EaightConvertibleNotesMember" id="alid_EaightConvertibleNotesMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="FourConvertibleNotesMember" id="alid_FourConvertibleNotesMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="FiveConvertibleNotesMember" id="alid_FiveConvertibleNotesMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="OnNovemberOneTwoThousandTwentyMember" id="alid_OnNovemberOneTwoThousandTwentyMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="StockOptionsOneMember" id="alid_StockOptionsOneMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+</schema>

@@ -1,0 +1,704 @@
+<?xml version="1.0" encoding="US-ASCII"?>
+<!-- DFIN New ActiveDisclosure (SM) XBRL Schema Document - http://www.dfinsolutions.com/ -->
+<!-- Creation Date :2022-02-22T16:54:23.8396+00:00 -->
+<!-- Copyright (c) 2022 Donnelly Financial Solutions, Inc. All Rights Reserved. -->
+<xsd:schema targetNamespace="http://www.cryo-cell.com/20211130" attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:dtr-types="http://www.xbrl.org/dtr/type/2020-01-21" xmlns:enum2="http://xbrl.org/2020/extensible-enumerations-2.0" xmlns:srt="http://fasb.org/srt/2021-01-31" xmlns:stpr="http://xbrl.sec.gov/stpr/2021" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:us-gaap="http://fasb.org/us-gaap/2021-01-31" xmlns:dei="http://xbrl.sec.gov/dei/2021q4" xmlns:ccel="http://www.cryo-cell.com/20211130" xmlns:xbrldt="http://xbrl.org/2005/xbrldt" xmlns:xbrli="http://www.xbrl.org/2003/instance" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <xsd:import schemaLocation="http://www.xbrl.org/2003/xbrl-instance-2003-12-31.xsd" namespace="http://www.xbrl.org/2003/instance"/>
+  <xsd:import schemaLocation="http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd" namespace="http://www.xbrl.org/2003/linkbase"/>
+  <xsd:import schemaLocation="http://www.xbrl.org/2005/xbrldt-2005.xsd" namespace="http://xbrl.org/2005/xbrldt"/>
+  <xsd:import schemaLocation="https://xbrl.fasb.org/srt/2021/elts/srt-2021-01-31.xsd" namespace="http://fasb.org/srt/2021-01-31"/>
+  <xsd:import schemaLocation="https://www.xbrl.org/2020/extensible-enumerations-2.0.xsd" namespace="http://xbrl.org/2020/extensible-enumerations-2.0"/>
+  <xsd:import schemaLocation="https://xbrl.fasb.org/us-gaap/2021/elts/us-gaap-2021-01-31.xsd" namespace="http://fasb.org/us-gaap/2021-01-31"/>
+  <xsd:import schemaLocation="https://xbrl.sec.gov/dei/2021q4/dei-2021q4.xsd" namespace="http://xbrl.sec.gov/dei/2021q4"/>
+  <xsd:import schemaLocation="https://xbrl.sec.gov/stpr/2021/stpr-2021.xsd" namespace="http://xbrl.sec.gov/stpr/2021"/>
+  <xsd:import schemaLocation="https://www.xbrl.org/dtr/type/2020-01-21/types.xsd" namespace="http://www.xbrl.org/dtr/type/2020-01-21"/>
+  <xsd:annotation>
+    <xsd:appinfo>
+      <link:linkbaseRef xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="ccel-20211130_lab.xml" xlink:role="http://www.xbrl.org/2003/role/labelLinkbaseRef" xlink:title="Labels link" xlink:type="simple"/>
+      <link:linkbaseRef xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="ccel-20211130_pre.xml" xlink:role="http://www.xbrl.org/2003/role/presentationLinkbaseRef" xlink:title="Presentation link" xlink:type="simple"/>
+      <link:linkbaseRef xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="ccel-20211130_def.xml" xlink:role="http://www.xbrl.org/2003/role/definitionLinkbaseRef" xlink:title="Definition link" xlink:type="simple"/>
+      <link:linkbaseRef xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="ccel-20211130_cal.xml" xlink:role="http://www.xbrl.org/2003/role/calculationLinkbaseRef" xlink:title="Calculation link" xlink:type="simple"/>
+      <link:roleType roleURI="http://www.cryo-cell.com/20211130/taxonomy/role/Role_DocumentCoverPage" id="Role_DocumentCoverPage">
+        <link:definition>100000 - Document - Cover Page</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.cryo-cell.com/20211130/taxonomy/role/Role_StatementConsolidatedBalanceSheets" id="Role_StatementConsolidatedBalanceSheets">
+        <link:definition>100010 - Statement - Consolidated Balance Sheets</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.cryo-cell.com/20211130/taxonomy/role/Role_StatementConsolidatedBalanceSheetsParenthetical" id="Role_StatementConsolidatedBalanceSheetsParenthetical">
+        <link:definition>100020 - Statement - Consolidated Balance Sheets (Parenthetical)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.cryo-cell.com/20211130/taxonomy/role/Role_StatementConsolidatedStatementsOfComprehensiveIncome" id="Role_StatementConsolidatedStatementsOfComprehensiveIncome">
+        <link:definition>100030 - Statement - Consolidated Statements of Comprehensive Income</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.cryo-cell.com/20211130/taxonomy/role/Role_StatementConsolidatedStatementsOfCashFlows" id="Role_StatementConsolidatedStatementsOfCashFlows">
+        <link:definition>100040 - Statement - Consolidated Statements of Cash Flows</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.cryo-cell.com/20211130/taxonomy/role/StatementConsolidatedStatementsOfStockholdersEquityDeficit" id="StatementConsolidatedStatementsOfStockholdersEquityDeficit">
+        <link:definition>100050 - Statement - Consolidated Statements of Stockholders' Equity (Deficit)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.cryo-cell.com/20211130/taxonomy/role/Role_DisclosureDescriptionOfBusinessBasisOfPresentationAndSignificantAccountingPolicies" id="Role_DisclosureDescriptionOfBusinessBasisOfPresentationAndSignificantAccountingPolicies">
+        <link:definition>100060 - Disclosure - Description of Business, Basis of Presentation and Significant Accounting Policies</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.cryo-cell.com/20211130/taxonomy/role/Role_DisclosureInventory" id="Role_DisclosureInventory">
+        <link:definition>100070 - Disclosure - Inventory</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.cryo-cell.com/20211130/taxonomy/role/Role_DisclosureIntangibleAssets" id="Role_DisclosureIntangibleAssets">
+        <link:definition>100080 - Disclosure - Intangible Assets</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.cryo-cell.com/20211130/taxonomy/role/Role_DisclosureNotePayable" id="Role_DisclosureNotePayable">
+        <link:definition>100090 - Disclosure - Note Payable</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.cryo-cell.com/20211130/taxonomy/role/Role_DisclosureSegmentReporting" id="Role_DisclosureSegmentReporting">
+        <link:definition>100100 - Disclosure - Segment Reporting</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.cryo-cell.com/20211130/taxonomy/role/Role_DisclosureAllowanceForDoubtfulAccounts" id="Role_DisclosureAllowanceForDoubtfulAccounts">
+        <link:definition>100110 - Disclosure - Allowance for Doubtful Accounts</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.cryo-cell.com/20211130/taxonomy/role/Role_DisclosurePropertyAndEquipment" id="Role_DisclosurePropertyAndEquipment">
+        <link:definition>100120 - Disclosure - Property and Equipment</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.cryo-cell.com/20211130/taxonomy/role/Role_DisclosureAccruedExpenses" id="Role_DisclosureAccruedExpenses">
+        <link:definition>100130 - Disclosure - Accrued Expenses</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.cryo-cell.com/20211130/taxonomy/role/Role_DisclosureIncomeTaxes" id="Role_DisclosureIncomeTaxes">
+        <link:definition>100140 - Disclosure - Income Taxes</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.cryo-cell.com/20211130/taxonomy/role/Role_DisclosureStockholdersEquity" id="Role_DisclosureStockholdersEquity">
+        <link:definition>100150 - Disclosure - Stockholders' Equity</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.cryo-cell.com/20211130/taxonomy/role/Role_DisclosureLicenseAgreements" id="Role_DisclosureLicenseAgreements">
+        <link:definition>100160 - Disclosure - License Agreements</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.cryo-cell.com/20211130/taxonomy/role/Role_DisclosureCommitmentsAndContingencies" id="Role_DisclosureCommitmentsAndContingencies">
+        <link:definition>100170 - Disclosure - Commitments and Contingencies</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.cryo-cell.com/20211130/taxonomy/role/Role_DisclosureRetirementPlan" id="Role_DisclosureRetirementPlan">
+        <link:definition>100180 - Disclosure - Retirement Plan</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.cryo-cell.com/20211130/taxonomy/role/Role_DisclosureRevenueSharingAgreementsRsas" id="Role_DisclosureRevenueSharingAgreementsRsas">
+        <link:definition>100190 - Disclosure - Revenue Sharing Agreements ("RSAs")</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.cryo-cell.com/20211130/taxonomy/role/Role_DisclosureShareRepurchasePlan" id="Role_DisclosureShareRepurchasePlan">
+        <link:definition>100200 - Disclosure - Share Repurchase Plan</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.cryo-cell.com/20211130/taxonomy/role/Role_DisclosureLeases" id="Role_DisclosureLeases">
+        <link:definition>100210 - Disclosure - Leases</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.cryo-cell.com/20211130/taxonomy/role/Role_DisclosureCOVID19" id="Role_DisclosureCOVID19">
+        <link:definition>100220 - Disclosure - COVID 19</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.cryo-cell.com/20211130/taxonomy/role/Role_DisclosureRelatedPartyTransactions" id="Role_DisclosureRelatedPartyTransactions">
+        <link:definition>100230 - Disclosure - Related Party Transactions</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.cryo-cell.com/20211130/taxonomy/role/DisclosurePatentOptionAgreement1" id="DisclosurePatentOptionAgreement1">
+        <link:definition>100240 - Disclosure - Patent Option Agreement</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.cryo-cell.com/20211130/taxonomy/role/Role_DisclosureDescriptionOfBusinessBasisOfPresentationAndSignificantAccountingPoliciesPolicies" id="Role_DisclosureDescriptionOfBusinessBasisOfPresentationAndSignificantAccountingPoliciesPolicies">
+        <link:definition>100250 - Disclosure - Description of Business, Basis of Presentation and Significant Accounting Policies (Policies)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.cryo-cell.com/20211130/taxonomy/role/Role_DisclosureDescriptionOfBusinessBasisOfPresentationAndSignificantAccountingPoliciesTables" id="Role_DisclosureDescriptionOfBusinessBasisOfPresentationAndSignificantAccountingPoliciesTables">
+        <link:definition>100260 - Disclosure - Description of Business, Basis of Presentation and Significant Accounting Policies (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.cryo-cell.com/20211130/taxonomy/role/Role_DisclosureInventoryTables" id="Role_DisclosureInventoryTables">
+        <link:definition>100270 - Disclosure - Inventory (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.cryo-cell.com/20211130/taxonomy/role/Role_DisclosureIntangibleAssetsTables" id="Role_DisclosureIntangibleAssetsTables">
+        <link:definition>100280 - Disclosure - Intangible Assets (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.cryo-cell.com/20211130/taxonomy/role/Role_DisclosureNotePayableTables" id="Role_DisclosureNotePayableTables">
+        <link:definition>100290 - Disclosure - Note Payable (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.cryo-cell.com/20211130/taxonomy/role/Role_DisclosureSegmentReportingTables" id="Role_DisclosureSegmentReportingTables">
+        <link:definition>100300 - Disclosure - Segment Reporting (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.cryo-cell.com/20211130/taxonomy/role/Role_DisclosureAllowanceForDoubtfulAccountsTables" id="Role_DisclosureAllowanceForDoubtfulAccountsTables">
+        <link:definition>100310 - Disclosure - Allowance for Doubtful Accounts (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.cryo-cell.com/20211130/taxonomy/role/Role_DisclosurePropertyAndEquipmentTables" id="Role_DisclosurePropertyAndEquipmentTables">
+        <link:definition>100320 - Disclosure - Property and Equipment (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.cryo-cell.com/20211130/taxonomy/role/Role_DisclosureAccruedExpensesTables" id="Role_DisclosureAccruedExpensesTables">
+        <link:definition>100330 - Disclosure - Accrued Expenses (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.cryo-cell.com/20211130/taxonomy/role/Role_DisclosureIncomeTaxesTables" id="Role_DisclosureIncomeTaxesTables">
+        <link:definition>100340 - Disclosure - Income Taxes (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.cryo-cell.com/20211130/taxonomy/role/Role_DisclosureStockholdersEquityTables" id="Role_DisclosureStockholdersEquityTables">
+        <link:definition>100350 - Disclosure - Stockholders' Equity (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.cryo-cell.com/20211130/taxonomy/role/Role_DisclosureCommitmentsAndContingenciesTables" id="Role_DisclosureCommitmentsAndContingenciesTables">
+        <link:definition>100360 - Disclosure - Commitments and Contingencies (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.cryo-cell.com/20211130/taxonomy/role/Role_DisclosureLeasesTables" id="Role_DisclosureLeasesTables">
+        <link:definition>100370 - Disclosure - Leases (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.cryo-cell.com/20211130/taxonomy/role/Role_DisclosureDescriptionOfBusinessAndSummaryOfSignificantAccountingPoliciesAdditionalInformationDetail" id="Role_DisclosureDescriptionOfBusinessAndSummaryOfSignificantAccountingPoliciesAdditionalInformationDetail">
+        <link:definition>100380 - Disclosure - Description of Business and Summary of Significant Accounting Policies - Additional Information (Detail)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.cryo-cell.com/20211130/taxonomy/role/Role_DisclosureDescriptionOfBusinessAndSummaryOfSignificantAccountingPoliciesAdditionalInformation1Detail" id="Role_DisclosureDescriptionOfBusinessAndSummaryOfSignificantAccountingPoliciesAdditionalInformation1Detail">
+        <link:definition>100390 - Disclosure - Description of Business and Summary of Significant Accounting Policies - Additional Information 1 (Detail)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.cryo-cell.com/20211130/taxonomy/role/Role_DisclosureDescriptionOfBusinessAndSummaryOfSignificantAccountingPoliciesScheduleOfAssetsAndLiabilitiesFromContractsWithCustomersDetail" id="Role_DisclosureDescriptionOfBusinessAndSummaryOfSignificantAccountingPoliciesScheduleOfAssetsAndLiabilitiesFromContractsWithCustomersDetail">
+        <link:definition>100400 - Disclosure - Description of Business and Summary of Significant Accounting Policies - Schedule of Assets and Liabilities From Contracts With Customers (Detail)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.cryo-cell.com/20211130/taxonomy/role/Role_DisclosureDescriptionOfBusinessAndSummaryOfSignificantAccountingPoliciesScheduleOfChangeInAssetsAndLiabilitiesFromContractsWithCustomersDetail" id="Role_DisclosureDescriptionOfBusinessAndSummaryOfSignificantAccountingPoliciesScheduleOfChangeInAssetsAndLiabilitiesFromContractsWithCustomersDetail">
+        <link:definition>100410 - Disclosure - Description of Business and Summary of Significant Accounting Policies - Schedule of Change in Assets and Liabilities From Contracts With Customers (Detail)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.cryo-cell.com/20211130/taxonomy/role/Role_DisclosureDescriptionOfBusinessAndSummaryOfSignificantAccountingPoliciesEstimatedUsefulLivesOfPropertyAndEquipmentDetail" id="Role_DisclosureDescriptionOfBusinessAndSummaryOfSignificantAccountingPoliciesEstimatedUsefulLivesOfPropertyAndEquipmentDetail">
+        <link:definition>100420 - Disclosure - Description of Business and Summary of Significant Accounting Policies - Estimated Useful Lives of Property and Equipment (Detail)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.cryo-cell.com/20211130/taxonomy/role/Role_DisclosureDescriptionOfBusinessAndSummaryOfSignificantAccountingPoliciesFinancialAssetsAndLiabilitiesMeasuredAtFairValueOnRecurringBasisDetail" id="Role_DisclosureDescriptionOfBusinessAndSummaryOfSignificantAccountingPoliciesFinancialAssetsAndLiabilitiesMeasuredAtFairValueOnRecurringBasisDetail">
+        <link:definition>100430 - Disclosure - Description of Business and Summary of Significant Accounting Policies - Financial Assets and Liabilities Measured at Fair Value on Recurring Basis (Detail)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.cryo-cell.com/20211130/taxonomy/role/Role_DisclosureDescriptionOfBusinessAndSummaryOfSignificantAccountingPoliciesCalculationOfBasicAndDilutedNetIncomePerCommonShareDetail" id="Role_DisclosureDescriptionOfBusinessAndSummaryOfSignificantAccountingPoliciesCalculationOfBasicAndDilutedNetIncomePerCommonShareDetail">
+        <link:definition>100440 - Disclosure - Description of Business and Summary of Significant Accounting Policies - Calculation of Basic and Diluted Net Income per Common Share (Detail)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.cryo-cell.com/20211130/taxonomy/role/Role_DisclosureInventoryAdditionalInformationDetail" id="Role_DisclosureInventoryAdditionalInformationDetail">
+        <link:definition>100450 - Disclosure - Inventory - Additional Information (Detail)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.cryo-cell.com/20211130/taxonomy/role/Role_DisclosureInventoryComponentsOfInventoryDetail" id="Role_DisclosureInventoryComponentsOfInventoryDetail">
+        <link:definition>100460 - Disclosure - Inventory - Components of Inventory (Detail)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.cryo-cell.com/20211130/taxonomy/role/Role_DisclosureIntangibleAssetsScheduleOfIntangibleAssetsDetail" id="Role_DisclosureIntangibleAssetsScheduleOfIntangibleAssetsDetail">
+        <link:definition>100470 - Disclosure - Intangible Assets - Schedule of Intangible Assets (Detail)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.cryo-cell.com/20211130/taxonomy/role/Role_DisclosureIntangibleAssetsScheduleOfExpectedAmortizationExpensesDetail" id="Role_DisclosureIntangibleAssetsScheduleOfExpectedAmortizationExpensesDetail">
+        <link:definition>100480 - Disclosure - Intangible Assets - Schedule of Expected Amortization Expenses (Detail)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.cryo-cell.com/20211130/taxonomy/role/Role_DisclosureIntangibleAssetsAdditionalInformationDetail" id="Role_DisclosureIntangibleAssetsAdditionalInformationDetail">
+        <link:definition>100490 - Disclosure - Intangible Assets - Additional Information (Detail)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.cryo-cell.com/20211130/taxonomy/role/Role_DisclosureNotePayableAdditionalInformationDetail" id="Role_DisclosureNotePayableAdditionalInformationDetail">
+        <link:definition>100500 - Disclosure - Note Payable - Additional Information (Detail)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.cryo-cell.com/20211130/taxonomy/role/Role_DisclosureNotePayableScheduleOfNotePayableObligationDetail" id="Role_DisclosureNotePayableScheduleOfNotePayableObligationDetail">
+        <link:definition>100510 - Disclosure - Note Payable - Schedule of Note Payable Obligation (Detail)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.cryo-cell.com/20211130/taxonomy/role/Role_DisclosureNotePayableSummaryOfInterestExpenseOnNotePayableDetail" id="Role_DisclosureNotePayableSummaryOfInterestExpenseOnNotePayableDetail">
+        <link:definition>100520 - Disclosure - Note Payable - Summary of Interest Expense on Note Payable (Detail)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.cryo-cell.com/20211130/taxonomy/role/Role_DisclosureSegmentReportingAdditionalInformationDetail" id="Role_DisclosureSegmentReportingAdditionalInformationDetail">
+        <link:definition>100530 - Disclosure - Segment Reporting - Additional Information (Detail)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.cryo-cell.com/20211130/taxonomy/role/Role_DisclosureSegmentReportingSummaryOfNetRevenueCostOfSalesDepreciationAndAmortizationOperatingProfitInterestExpenseAndAssetsBySegmentDetail" id="Role_DisclosureSegmentReportingSummaryOfNetRevenueCostOfSalesDepreciationAndAmortizationOperatingProfitInterestExpenseAndAssetsBySegmentDetail">
+        <link:definition>100540 - Disclosure - Segment Reporting - Summary of Net Revenue, Cost of Sales, Depreciation and Amortization, Operating Profit, Interest Expense and Assets by Segment (Detail)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.cryo-cell.com/20211130/taxonomy/role/Role_DisclosureAllowanceForDoubtfulAccountsAllowanceForDoubtfulAccountsDetail" id="Role_DisclosureAllowanceForDoubtfulAccountsAllowanceForDoubtfulAccountsDetail">
+        <link:definition>100550 - Disclosure - Allowance for Doubtful Accounts - Allowance for Doubtful Accounts (Detail)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.cryo-cell.com/20211130/taxonomy/role/Role_DisclosureNotePayableScheduleOfNotePayableObligationDetail2" id="Role_DisclosureNotePayableScheduleOfNotePayableObligationDetail2">
+        <link:definition>100560 - Disclosure - Note Payable - Schedule of Note Payable Obligation (Detail) 2</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.cryo-cell.com/20211130/taxonomy/role/Role_DisclosurePropertyAndEquipmentSummaryOfMajorClassesOfProperyAndEquipmentDetail" id="Role_DisclosurePropertyAndEquipmentSummaryOfMajorClassesOfProperyAndEquipmentDetail">
+        <link:definition>100570 - Disclosure - Property and Equipment - Summary of Major Classes of Propery and Equipment (Detail)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.cryo-cell.com/20211130/taxonomy/role/Role_DisclosurePropertyAndEquipmentAdditionalInformationDetail" id="Role_DisclosurePropertyAndEquipmentAdditionalInformationDetail">
+        <link:definition>100580 - Disclosure - Property and Equipment - Additional Information (Detail)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.cryo-cell.com/20211130/taxonomy/role/Role_DisclosureAccruedExpensesSummaryOfAccruedExpensesDetail" id="Role_DisclosureAccruedExpensesSummaryOfAccruedExpensesDetail">
+        <link:definition>100590 - Disclosure - Accrued Expenses - Summary of Accrued Expenses (Detail)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.cryo-cell.com/20211130/taxonomy/role/Role_DisclosureIncomeTaxesSummaryOfIncomeTaxProvisionBenefitDetail" id="Role_DisclosureIncomeTaxesSummaryOfIncomeTaxProvisionBenefitDetail">
+        <link:definition>100600 - Disclosure - Income Taxes - Summary of Income Tax Provision (Benefit) (Detail)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.cryo-cell.com/20211130/taxonomy/role/Role_DisclosureIncomeTaxesSummaryOfDeferredTaxAssetsAndLiabilitiesDetail" id="Role_DisclosureIncomeTaxesSummaryOfDeferredTaxAssetsAndLiabilitiesDetail">
+        <link:definition>100610 - Disclosure - Income Taxes - Summary of Deferred Tax Assets and Liabilities (Detail)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.cryo-cell.com/20211130/taxonomy/role/Role_DisclosureIncomeTaxesAdditionalInformationDetail" id="Role_DisclosureIncomeTaxesAdditionalInformationDetail">
+        <link:definition>100620 - Disclosure - Income Taxes - Additional Information (Detail)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.cryo-cell.com/20211130/taxonomy/role/Role_DisclosureIncomeTaxesSummaryOfFederalStatutoryRateToPretaxIncomeDetail" id="Role_DisclosureIncomeTaxesSummaryOfFederalStatutoryRateToPretaxIncomeDetail">
+        <link:definition>100630 - Disclosure - Income Taxes - Summary of Federal Statutory Rate to Pretax Income (Detail)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.cryo-cell.com/20211130/taxonomy/role/Role_DisclosureIncomeTaxesSummaryOfOpenTaxYearsAndOngoingTaxExaminationsInMajorJurisdictionsDetail" id="Role_DisclosureIncomeTaxesSummaryOfOpenTaxYearsAndOngoingTaxExaminationsInMajorJurisdictionsDetail">
+        <link:definition>100640 - Disclosure - Income Taxes - Summary of Open Tax Years and Ongoing Tax Examinations in Major Jurisdictions (Detail)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.cryo-cell.com/20211130/taxonomy/role/Role_DisclosureStockholdersEquityAdditionalInformationDetail" id="Role_DisclosureStockholdersEquityAdditionalInformationDetail">
+        <link:definition>100650 - Disclosure - Stockholders' Equity - Additional Information (Detail)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.cryo-cell.com/20211130/taxonomy/role/Role_DisclosureStockholdersEquityFairValueOfOptionsGrantedDetail" id="Role_DisclosureStockholdersEquityFairValueOfOptionsGrantedDetail">
+        <link:definition>100660 - Disclosure - Stockholders' Equity - Fair Value of Options Granted (Detail)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.cryo-cell.com/20211130/taxonomy/role/Role_DisclosureStockholdersEquityStockOptionActivityDetail" id="Role_DisclosureStockholdersEquityStockOptionActivityDetail">
+        <link:definition>100670 - Disclosure - Stockholders' Equity - Stock Option Activity (Detail)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.cryo-cell.com/20211130/taxonomy/role/Role_DisclosureStockholdersEquitySignificantOptionGroupsOutstandingAndExercisableOptionAndItsPriceAndContractualLifeDetail" id="Role_DisclosureStockholdersEquitySignificantOptionGroupsOutstandingAndExercisableOptionAndItsPriceAndContractualLifeDetail">
+        <link:definition>100680 - Disclosure - Stockholders' Equity - Significant Option Groups Outstanding and Exercisable Option and its Price and Contractual Life (Detail)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.cryo-cell.com/20211130/taxonomy/role/Role_DisclosureStockholdersEquitySummaryOfNonVestedOptionsDetail" id="Role_DisclosureStockholdersEquitySummaryOfNonVestedOptionsDetail">
+        <link:definition>100690 - Disclosure - Stockholders' Equity - Summary of Non-Vested Options (Detail)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.cryo-cell.com/20211130/taxonomy/role/Role_DisclosureLicenseAgreementsAdditionalInformationDetail" id="Role_DisclosureLicenseAgreementsAdditionalInformationDetail">
+        <link:definition>100700 - Disclosure - License Agreements - Additional Information (Detail)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.cryo-cell.com/20211130/taxonomy/role/Role_DisclosureCommitmentsAndContingenciesAdditionalInformationDetail" id="Role_DisclosureCommitmentsAndContingenciesAdditionalInformationDetail">
+        <link:definition>100710 - Disclosure - Commitments and Contingencies - Additional Information (Detail)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.cryo-cell.com/20211130/taxonomy/role/Role_DisclosureCommitmentsAndContingenciesSummaryOfFutureMinimumRentalPaymentsUnderCurrentOperatingLeasesDetail" id="Role_DisclosureCommitmentsAndContingenciesSummaryOfFutureMinimumRentalPaymentsUnderCurrentOperatingLeasesDetail">
+        <link:definition>100720 - Disclosure - Commitments and Contingencies - Summary of Future Minimum Rental Payments Under Current Operating Leases (Detail)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.cryo-cell.com/20211130/taxonomy/role/Role_DisclosureRetirementPlanAdditionalInformationDetail" id="Role_DisclosureRetirementPlanAdditionalInformationDetail">
+        <link:definition>100730 - Disclosure - Retirement Plan - Additional Information (Detail)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.cryo-cell.com/20211130/taxonomy/role/Role_DisclosureRevenueSharingAgreementsRsasAdditionalInformationDetail" id="Role_DisclosureRevenueSharingAgreementsRsasAdditionalInformationDetail">
+        <link:definition>100740 - Disclosure - Revenue Sharing Agreements ("RSAs") - Additional Information (Detail)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.cryo-cell.com/20211130/taxonomy/role/Role_DisclosureShareRepurchasePlanAdditionalInformationDetail" id="Role_DisclosureShareRepurchasePlanAdditionalInformationDetail">
+        <link:definition>100750 - Disclosure - Share Repurchase Plan - Additional Information (Detail)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.cryo-cell.com/20211130/taxonomy/role/Role_DisclosureLeasesSummaryOfLeaseAssetsAndLiabilitiesDetail" id="Role_DisclosureLeasesSummaryOfLeaseAssetsAndLiabilitiesDetail">
+        <link:definition>100760 - Disclosure - Leases - Summary of Lease Assets and Liabilities (Detail)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.cryo-cell.com/20211130/taxonomy/role/Role_DisclosureLeasesSummaryOfMaturityOfCompanySLeaseLiabilitiesDetail" id="Role_DisclosureLeasesSummaryOfMaturityOfCompanySLeaseLiabilitiesDetail">
+        <link:definition>100770 - Disclosure - Leases - Summary of Maturity of the Company's Lease Liabilities (Detail)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.cryo-cell.com/20211130/taxonomy/role/Role_DisclosureLeasesSummaryOfRemainingLeaseTermAndDiscountRatesDetail" id="Role_DisclosureLeasesSummaryOfRemainingLeaseTermAndDiscountRatesDetail">
+        <link:definition>100780 - Disclosure - Leases - Summary of Remaining Lease Term and Discount Rates (Detail)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.cryo-cell.com/20211130/taxonomy/role/Role_DisclosureLeasesSummaryOfSupplementalCashFlowInformationRelatedToLeasesDetail" id="Role_DisclosureLeasesSummaryOfSupplementalCashFlowInformationRelatedToLeasesDetail">
+        <link:definition>100790 - Disclosure - Leases - Summary of Supplemental Cash Flow Information Related to Leases (Detail)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.cryo-cell.com/20211130/taxonomy/role/DisclosurePatentOptionAgreementAdditionalInformationDetail" id="DisclosurePatentOptionAgreementAdditionalInformationDetail">
+        <link:definition>100800 - Disclosure - Patent Option Agreement - Additional Information (Detail)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+    </xsd:appinfo>
+  </xsd:annotation>
+  <xsd:element id="ccel_DisclosureOfLeaseAssetsAndLiabilitiesAbstract" name="DisclosureOfLeaseAssetsAndLiabilitiesAbstract" type="xbrli:stringItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="ccel_DisclosureOfRemainingLeaseTermAndDiscountRatesAbstract" name="DisclosureOfRemainingLeaseTermAndDiscountRatesAbstract" type="xbrli:stringItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="ccel_DisclosureOfSupplementalCashFlowInformationRelatedToLeasesAbstract" name="DisclosureOfSupplementalCashFlowInformationRelatedToLeasesAbstract" type="xbrli:stringItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="ccel_FairValueOfOptionsWeightedAverageValuesAbstract" name="FairValueOfOptionsWeightedAverageValuesAbstract" type="xbrli:stringItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="ccel_LesseeOperatingLeaseLiabilityMaturityAbstract" name="LesseeOperatingLeaseLiabilityMaturityAbstract" type="xbrli:stringItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="ccel_LicenseAgreementsAbstract" name="LicenseAgreementsAbstract" type="xbrli:stringItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="ccel_PatentOptionAgreementAbstract" name="PatentOptionAgreementAbstract" type="xbrli:stringItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="ccel_RevenueSharingAgreementsAbstract" name="RevenueSharingAgreementsAbstract" type="xbrli:stringItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="ccel_TaxAssetsAbstract" name="TaxAssetsAbstract" type="xbrli:stringItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="ccel_TaxLiabilitiesAbstract" name="TaxLiabilitiesAbstract" type="xbrli:stringItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="ccel_AccountsReceivableNetCurrentAdditions" name="AccountsReceivableNetCurrentAdditions" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false" xbrli:balance="debit"/>
+  <xsd:element id="ccel_AccountsReceivableNetCurrentDeductions" name="AccountsReceivableNetCurrentDeductions" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false" xbrli:balance="credit"/>
+  <xsd:element id="ccel_AccruedIncomeTaxesBenefitCurrent" name="AccruedIncomeTaxesBenefitCurrent" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="instant" nillable="true" abstract="false" xbrli:balance="credit"/>
+  <xsd:element id="ccel_AgreementExpirationDate" name="AgreementExpirationDate" type="xbrli:dateItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false"/>
+  <xsd:element id="ccel_AmortizationOfDebtIssuanceCosts" name="AmortizationOfDebtIssuanceCosts" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false" xbrli:balance="debit"/>
+  <xsd:element id="ccel_AmortizationOfOperatingLeaseRightOfUseAsset" name="AmortizationOfOperatingLeaseRightOfUseAsset" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false" xbrli:balance="debit"/>
+  <xsd:element id="ccel_AverageClosingMarketCapital" name="AverageClosingMarketCapital" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="instant" nillable="true" abstract="false" xbrli:balance="credit"/>
+  <xsd:element id="ccel_BillingAndCollectionExpensePercentage" name="BillingAndCollectionExpensePercentage" type="dtr-types:percentItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false"/>
+  <xsd:element id="ccel_CommonStockEqualFullDilutedEquityOwnershipOutstandingPercentage" name="CommonStockEqualFullDilutedEquityOwnershipOutstandingPercentage" type="dtr-types:percentItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false"/>
+  <xsd:element id="ccel_ContractWithCustomerAssetNetCurrentAdditions" name="ContractWithCustomerAssetNetCurrentAdditions" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false" xbrli:balance="debit"/>
+  <xsd:element id="ccel_ContractWithCustomerAssetNetCurrentDeductions" name="ContractWithCustomerAssetNetCurrentDeductions" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false" xbrli:balance="credit"/>
+  <xsd:element id="ccel_ContractWithCustomerLiabilityAdditions" name="ContractWithCustomerLiabilityAdditions" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false" xbrli:balance="credit"/>
+  <xsd:element id="ccel_ContractWithCustomerLiabilityDeductions" name="ContractWithCustomerLiabilityDeductions" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false" xbrli:balance="debit"/>
+  <xsd:element id="ccel_DeferredTaxAssetFromUnconsolidatedAffiliate" name="DeferredTaxAssetFromUnconsolidatedAffiliate" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="instant" nillable="true" abstract="false" xbrli:balance="debit"/>
+  <xsd:element id="ccel_DeferredTaxAssetsLeaseLiability" name="DeferredTaxAssetsLeaseLiability" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="instant" nillable="true" abstract="false" xbrli:balance="debit"/>
+  <xsd:element id="ccel_DeferredTaxAssetsLiabilitiesTaxCreditCarryforwardsAndNetOperatingLosses" name="DeferredTaxAssetsLiabilitiesTaxCreditCarryforwardsAndNetOperatingLosses" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="instant" nillable="true" abstract="false" xbrli:balance="debit"/>
+  <xsd:element id="ccel_DeferredTaxAssetsTaxDeferredExpenseDepreciationAndAmortization" name="DeferredTaxAssetsTaxDeferredExpenseDepreciationAndAmortization" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="instant" nillable="true" abstract="false" xbrli:balance="debit"/>
+  <xsd:element id="ccel_DeferredTaxAssetsTaxRevenueSharingAgreementsBuyOut" name="DeferredTaxAssetsTaxRevenueSharingAgreementsBuyOut" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="instant" nillable="true" abstract="false" xbrli:balance="debit"/>
+  <xsd:element id="ccel_DeferredTaxLiabilitiesRightOfUseAsset" name="DeferredTaxLiabilitiesRightOfUseAsset" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="instant" nillable="true" abstract="false" xbrli:balance="credit"/>
+  <xsd:element id="ccel_DefinedContributionPlanEmployerMatchingContributionAmount" name="DefinedContributionPlanEmployerMatchingContributionAmount" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false" xbrli:balance="debit"/>
+  <xsd:element id="ccel_DepositsAndOtherAssets" name="DepositsAndOtherAssets" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="instant" nillable="true" abstract="false" xbrli:balance="debit"/>
+  <xsd:element id="ccel_DukeLicenseAgreement" name="DukeLicenseAgreement" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="instant" nillable="true" abstract="false" xbrli:balance="debit"/>
+  <xsd:element id="ccel_DukeLicenseAgreementLiabilityCurrent" name="DukeLicenseAgreementLiabilityCurrent" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="instant" nillable="true" abstract="false" xbrli:balance="credit"/>
+  <xsd:element id="ccel_EffectiveIncomeTaxRateForeignTaxWithholding" name="EffectiveIncomeTaxRateForeignTaxWithholding" type="dtr-types:percentItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false"/>
+  <xsd:element id="ccel_EffectiveIncomeTaxRateReconciliationDeferredRepricing" name="EffectiveIncomeTaxRateReconciliationDeferredRepricing" type="dtr-types:percentItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false"/>
+  <xsd:element id="ccel_EffectiveIncomeTaxRateReconciliationPermanentDisallowances" name="EffectiveIncomeTaxRateReconciliationPermanentDisallowances" type="dtr-types:percentItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false"/>
+  <xsd:element id="ccel_EmploymentAgreementsPeriod" name="EmploymentAgreementsPeriod" type="xbrli:durationItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false"/>
+  <xsd:element id="ccel_ExaminationInProcess" name="ExaminationInProcess" type="xbrli:stringItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false"/>
+  <xsd:element id="ccel_ExtendedOperatingLeaseAreaOfFacility" name="ExtendedOperatingLeaseAreaOfFacility" type="dtr-types:areaItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false"/>
+  <xsd:element id="ccel_ImpairmentOfContractAssets" name="ImpairmentOfContractAssets" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false" xbrli:balance="debit"/>
+  <xsd:element id="ccel_IncomeTaxReconciliationDeferredRepricing" name="IncomeTaxReconciliationDeferredRepricing" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false" xbrli:balance="debit"/>
+  <xsd:element id="ccel_IncomeTaxReconciliationForeignTaxWithholding" name="IncomeTaxReconciliationForeignTaxWithholding" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false" xbrli:balance="debit"/>
+  <xsd:element id="ccel_IncomeTaxReconciliationPermanentDisallowances" name="IncomeTaxReconciliationPermanentDisallowances" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false" xbrli:balance="debit"/>
+  <xsd:element id="ccel_IncreaseDecreaseInCapitalizedContractCost" name="IncreaseDecreaseInCapitalizedContractCost" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false" xbrli:balance="credit"/>
+  <xsd:element id="ccel_IncreaseDecreaseInDepositsAndOtherAssets" name="IncreaseDecreaseInDepositsAndOtherAssets" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false" xbrli:balance="credit"/>
+  <xsd:element id="ccel_IncreasedPaymentWarranty" name="IncreasedPaymentWarranty" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false" xbrli:balance="debit"/>
+  <xsd:element id="ccel_IntangibleAssetImpairedAccumulatedImpairmentLoss" name="IntangibleAssetImpairedAccumulatedImpairmentLoss" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="instant" nillable="true" abstract="false" xbrli:balance="credit"/>
+  <xsd:element id="ccel_InventoryCollectionKits" name="InventoryCollectionKits" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="instant" nillable="true" abstract="false" xbrli:balance="debit"/>
+  <xsd:element id="ccel_InventoryCurrentAndNoncurrent" name="InventoryCurrentAndNoncurrent" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="instant" nillable="true" abstract="false" xbrli:balance="debit"/>
+  <xsd:element id="ccel_LeaseLiabilityArisingFromRightOfUseAsset" name="LeaseLiabilityArisingFromRightOfUseAsset" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false" xbrli:balance="credit"/>
+  <xsd:element id="ccel_LiabilitiesIncurredForThePurchaseOfPatentsAndLicenses" name="LiabilitiesIncurredForThePurchaseOfPatentsAndLicenses" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false" xbrli:balance="credit"/>
+  <xsd:element id="ccel_LicenseAgreementLiabilityNoncurrent" name="LicenseAgreementLiabilityNoncurrent" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="instant" nillable="true" abstract="false" xbrli:balance="credit"/>
+  <xsd:element id="ccel_LicenseFeePayable" name="LicenseFeePayable" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="instant" nillable="true" abstract="false" xbrli:balance="credit"/>
+  <xsd:element id="ccel_LicenseFeeTransferred" name="LicenseFeeTransferred" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="instant" nillable="true" abstract="false" xbrli:balance="credit"/>
+  <xsd:element id="ccel_MaximumNumberOfStorageAreaCoveredToDetermineRevenueToShareWithInvestors" name="MaximumNumberOfStorageAreaCoveredToDetermineRevenueToShareWithInvestors" type="xbrli:integerItemType" substitutionGroup="xbrli:item" xbrli:periodType="instant" nillable="true" abstract="false"/>
+  <xsd:element id="ccel_MilestonePayments" name="MilestonePayments" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false" xbrli:balance="debit"/>
+  <xsd:element id="ccel_MinimumAnnualRoyaltiesDueAfterYearFive" name="MinimumAnnualRoyaltiesDueAfterYearFive" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="instant" nillable="true" abstract="false" xbrli:balance="credit"/>
+  <xsd:element id="ccel_MinimumAnnualRoyaltiesDueAfterYearSix" name="MinimumAnnualRoyaltiesDueAfterYearSix" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="instant" nillable="true" abstract="false" xbrli:balance="credit"/>
+  <xsd:element id="ccel_MinimumAnnualRoyaltiesDueYearFive" name="MinimumAnnualRoyaltiesDueYearFive" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="instant" nillable="true" abstract="false" xbrli:balance="credit"/>
+  <xsd:element id="ccel_MinimumAnnualRoyaltiesDueYearFour" name="MinimumAnnualRoyaltiesDueYearFour" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="instant" nillable="true" abstract="false" xbrli:balance="credit"/>
+  <xsd:element id="ccel_MinimumAnnualRoyaltiesDueYearSix" name="MinimumAnnualRoyaltiesDueYearSix" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="instant" nillable="true" abstract="false" xbrli:balance="credit"/>
+  <xsd:element id="ccel_MinimumAnnualRoyaltiesDueYearThree" name="MinimumAnnualRoyaltiesDueYearThree" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="instant" nillable="true" abstract="false" xbrli:balance="credit"/>
+  <xsd:element id="ccel_MinimumAnnualRoyaltiesDueYearTwo" name="MinimumAnnualRoyaltiesDueYearTwo" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="instant" nillable="true" abstract="false" xbrli:balance="credit"/>
+  <xsd:element id="ccel_MinimumPercentageProbabilityOfRealizedTaxBenefitOnSettlement" name="MinimumPercentageProbabilityOfRealizedTaxBenefitOnSettlement" type="dtr-types:percentItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false"/>
+  <xsd:element id="ccel_NumberOfCommonStockSharesTransferred" name="NumberOfCommonStockSharesTransferred" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" xbrli:periodType="instant" nillable="true" abstract="false"/>
+  <xsd:element id="ccel_NumberOfCommonStockValueTransferred" name="NumberOfCommonStockValueTransferred" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="instant" nillable="true" abstract="false" xbrli:balance="debit"/>
+  <xsd:element id="ccel_NumberOfInventoryUnits" name="NumberOfInventoryUnits" type="xbrli:integerItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false"/>
+  <xsd:element id="ccel_NumberOfInventoryUnitsPerMonth" name="NumberOfInventoryUnitsPerMonth" type="xbrli:integerItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false"/>
+  <xsd:element id="ccel_OperatingLeaseAreaOfFacility" name="OperatingLeaseAreaOfFacility" type="dtr-types:areaItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false"/>
+  <xsd:element id="ccel_OperatingLeaseLiabilityAndRightOfUseAssetDueToAdoptionOfAsc842" name="OperatingLeaseLiabilityAndRightOfUseAssetDueToAdoptionOfAsc842" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false" xbrli:balance="credit"/>
+  <xsd:element id="ccel_OperatingLeasePeriod" name="OperatingLeasePeriod" type="xbrli:durationItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false"/>
+  <xsd:element id="ccel_OperatingLeasePropertyLeasedAreaCoveredUnderAmendedAgreement" name="OperatingLeasePropertyLeasedAreaCoveredUnderAmendedAgreement" type="dtr-types:areaItemType" substitutionGroup="xbrli:item" xbrli:periodType="instant" nillable="true" abstract="false"/>
+  <xsd:element id="ccel_OtherCurrentContractAssetsAmortizationPeriods" name="OtherCurrentContractAssetsAmortizationPeriods" type="xbrli:stringItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false"/>
+  <xsd:element id="ccel_PatentOptionAgreementCreditToPurchaseOfPatentsAndLicenses" name="PatentOptionAgreementCreditToPurchaseOfPatentsAndLicenses" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false" xbrli:balance="debit"/>
+  <xsd:element id="ccel_PaymentOfDukeLicenseAgreement" name="PaymentOfDukeLicenseAgreement" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false" xbrli:balance="credit"/>
+  <xsd:element id="ccel_PaymentOfEarnout" name="PaymentOfEarnout" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false" xbrli:balance="credit"/>
+  <xsd:element id="ccel_PaymentsForExtinguishmentOfRevenueSharingAgreements" name="PaymentsForExtinguishmentOfRevenueSharingAgreements" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false" xbrli:balance="credit"/>
+  <xsd:element id="ccel_PaymentsOfCashInSurrenderOfSharesInShareBasedCompensationActivities" name="PaymentsOfCashInSurrenderOfSharesInShareBasedCompensationActivities" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false" xbrli:balance="credit"/>
+  <xsd:element id="ccel_PaymentToParticipantsOfProfitSharingAgreement" name="PaymentToParticipantsOfProfitSharingAgreement" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false" xbrli:balance="credit"/>
+  <xsd:element id="ccel_PaymentWarranty" name="PaymentWarranty" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false" xbrli:balance="debit"/>
+  <xsd:element id="ccel_PercentageOfRevenueSharingAgreementRepurchased" name="PercentageOfRevenueSharingAgreementRepurchased" type="dtr-types:percentItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false"/>
+  <xsd:element id="ccel_PercentageOfShareInProfitOfInvestorAsPercentageOfUnderProfitSharingAgreement" name="PercentageOfShareInProfitOfInvestorAsPercentageOfUnderProfitSharingAgreement" type="dtr-types:percentItemType" substitutionGroup="xbrli:item" xbrli:periodType="instant" nillable="true" abstract="false"/>
+  <xsd:element id="ccel_PeriodForDoubtfulOfAccountsReceivableDueFromClient" name="PeriodForDoubtfulOfAccountsReceivableDueFromClient" type="xbrli:durationItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false"/>
+  <xsd:element id="ccel_PresentValueOfLicenseFee" name="PresentValueOfLicenseFee" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="instant" nillable="true" abstract="false" xbrli:balance="debit"/>
+  <xsd:element id="ccel_RevenueRemainingPerformanceObligationNextTwelveMonths" name="RevenueRemainingPerformanceObligationNextTwelveMonths" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="instant" nillable="true" abstract="false" xbrli:balance="credit"/>
+  <xsd:element id="ccel_RevenueSharingAgreementPercentageOfPaymentOfShareableRevenueCoveredUnderAgreement" name="RevenueSharingAgreementPercentageOfPaymentOfShareableRevenueCoveredUnderAgreement" type="dtr-types:percentItemType" substitutionGroup="xbrli:item" xbrli:periodType="instant" nillable="true" abstract="false"/>
+  <xsd:element id="ccel_RevenueSharingAgreementValueCoveredUnderAgreement" name="RevenueSharingAgreementValueCoveredUnderAgreement" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="instant" nillable="true" abstract="false" xbrli:balance="debit"/>
+  <xsd:element id="ccel_RoyaltiesPercentagePortionOfNetSales" name="RoyaltiesPercentagePortionOfNetSales" type="dtr-types:percentItemType" substitutionGroup="xbrli:item" xbrli:periodType="instant" nillable="true" abstract="false"/>
+  <xsd:element id="ccel_RoyaltiesReceivableAnnually" name="RoyaltiesReceivableAnnually" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="instant" nillable="true" abstract="false" xbrli:balance="debit"/>
+  <xsd:element id="ccel_RoyaltiesReceivables" name="RoyaltiesReceivables" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="instant" nillable="true" abstract="false" xbrli:balance="debit"/>
+  <xsd:element id="ccel_RoyaltiesReceivablesRemainingDue" name="RoyaltiesReceivablesRemainingDue" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="instant" nillable="true" abstract="false" xbrli:balance="debit"/>
+  <xsd:element id="ccel_RoyaltiesTerm" name="RoyaltiesTerm" type="xbrli:durationItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false"/>
+  <xsd:element id="ccel_RoyaltyCollectedSinceInceptionOfLicenseAndRoyaltyAgreement" name="RoyaltyCollectedSinceInceptionOfLicenseAndRoyaltyAgreement" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="instant" nillable="true" abstract="false" xbrli:balance="credit"/>
+  <xsd:element id="ccel_RoyaltyIncomeSinceInceptionOfLicenseAndRoyaltyAgreement" name="RoyaltyIncomeSinceInceptionOfLicenseAndRoyaltyAgreement" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="instant" nillable="true" abstract="false" xbrli:balance="credit"/>
+  <xsd:element id="ccel_ShareBasedCompensationArrangementByShareBasedPaymentAwardEquityInstrumentsOtherThanOptionsCashPayments" name="ShareBasedCompensationArrangementByShareBasedPaymentAwardEquityInstrumentsOtherThanOptionsCashPayments" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false" xbrli:balance="credit"/>
+  <xsd:element id="ccel_ShareBasedCompensationArrangementByShareBasedPaymentAwardEquityInstrumentsOtherThanOptionsEarnedInPeriod" name="ShareBasedCompensationArrangementByShareBasedPaymentAwardEquityInstrumentsOtherThanOptionsEarnedInPeriod" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false"/>
+  <xsd:element id="ccel_ShareBasedCompensationArrangementByShareBasedPaymentAwardEquityInstrumentsOtherThanOptionsSharesSettledForCashInPeriod" name="ShareBasedCompensationArrangementByShareBasedPaymentAwardEquityInstrumentsOtherThanOptionsSharesSettledForCashInPeriod" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false"/>
+  <xsd:element id="ccel_ShareBasedCompensationArrangementByShareBasedPaymentAwardNumberOfSharesIssuedButNotYetExercised" name="ShareBasedCompensationArrangementByShareBasedPaymentAwardNumberOfSharesIssuedButNotYetExercised" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" xbrli:periodType="instant" nillable="true" abstract="false"/>
+  <xsd:element id="ccel_SharebasedCompensationArrangementBySharebasedPaymentAwardNumberOfSharesSurrenderedPurviewOfViolation" name="SharebasedCompensationArrangementBySharebasedPaymentAwardNumberOfSharesSurrenderedPurviewOfViolation" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false"/>
+  <xsd:element id="ccel_ShareBasedCompensationArrangementByShareBasedPaymentAwardOptionsExercisableWeightedAverageNumber" name="ShareBasedCompensationArrangementByShareBasedPaymentAwardOptionsExercisableWeightedAverageNumber" type="dtr-types:perShareItemType" substitutionGroup="xbrli:item" xbrli:periodType="instant" nillable="true" abstract="false"/>
+  <xsd:element id="ccel_ShareBasedCompensationArrangementByShareBasedPaymentAwardOptionsGrantsInPeriodIntrinsicValue" name="ShareBasedCompensationArrangementByShareBasedPaymentAwardOptionsGrantsInPeriodIntrinsicValue" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false" xbrli:balance="debit"/>
+  <xsd:element id="ccel_ShareBasedCompensationArrangementByShareBasedPaymentAwardSharesExercisedValue" name="ShareBasedCompensationArrangementByShareBasedPaymentAwardSharesExercisedValue" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false" xbrli:balance="debit"/>
+  <xsd:element id="ccel_TaxesPayableUponNetExerciseOfStockOptions" name="TaxesPayableUponNetExerciseOfStockOptions" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false" xbrli:balance="credit"/>
+  <xsd:element id="ccel_BusinessBasisOfPresentationAndSignificantAccountingPoliciesLineItems" name="BusinessBasisOfPresentationAndSignificantAccountingPoliciesLineItems" type="xbrli:stringItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="ccel_CommitmentAndContingenciesLineItems" name="CommitmentAndContingenciesLineItems" type="xbrli:stringItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="ccel_LicenseAgreementsLineItems" name="LicenseAgreementsLineItems" type="xbrli:stringItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="ccel_PatentOptionAgreementLineItems" name="PatentOptionAgreementLineItems" type="xbrli:stringItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="ccel_RevenueSharingAgreementLineItems" name="RevenueSharingAgreementLineItems" type="xbrli:stringItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="ccel_AllOtherMember" name="AllOtherMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="ccel_AmendedAndRestatedPromissoryNotesMember" name="AmendedAndRestatedPromissoryNotesMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="ccel_AmendedSeniorCreditFacilityMember" name="AmendedSeniorCreditFacilityMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="ccel_BioTherapiesIncMember" name="BioTherapiesIncMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="ccel_BrandMember" name="BrandMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="ccel_ChiefInformationOfficerMember" name="ChiefInformationOfficerMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="ccel_CoCeoOneMember" name="CoCeoOneMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="ccel_CoCeoTwoMember" name="CoCeoTwoMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="ccel_ContingentConsiderationMember" name="ContingentConsiderationMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="ccel_CustomerRelationshipsOneMember" name="CustomerRelationshipsOneMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="ccel_DukeUniversityMember" name="DukeUniversityMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="ccel_ErieGroupMember" name="ErieGroupMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="ccel_FebruaryTwentySeventhTwoThousandTwentyGrantedOptionsMember" name="FebruaryTwentySeventhTwoThousandTwentyGrantedOptionsMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="ccel_FirstAnniversaryMember" name="FirstAnniversaryMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="ccel_FivePercentUponExecutionMember" name="FivePercentUponExecutionMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="ccel_FourteenDaysOfFebruaryDateTwoThreeYearTwoZeroTwoOneMember" name="FourteenDaysOfFebruaryDateTwoThreeYearTwoZeroTwoOneMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="ccel_FullyDilutedEquityOwnershipMember" name="FullyDilutedEquityOwnershipMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="ccel_IllinoisAndItsContiguousStatesMember" name="IllinoisAndItsContiguousStatesMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="ccel_LicensedProductAndLicensedProcessMember" name="LicensedProductAndLicensedProcessMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="ccel_LicenseeAndRoyaltyIncomeRecognitionMember" name="LicenseeAndRoyaltyIncomeRecognitionMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="ccel_LifecellLicenseAndAgreementMember" name="LifecellLicenseAndAgreementMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="ccel_MarketBasedStockOptionsMember" name="MarketBasedStockOptionsMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="ccel_MarketBasedVestingConditionOptionsMember" name="MarketBasedVestingConditionOptionsMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="ccel_MiamiMember" name="MiamiMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="ccel_NonQualifiedStockOptionsMember" name="NonQualifiedStockOptionsMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="ccel_OptioneeMember" name="OptioneeMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="ccel_OptionFourMember" name="OptionFourMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="ccel_OptionOneMember" name="OptionOneMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="ccel_OptionThreeMember" name="OptionThreeMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="ccel_OptionTwoMember" name="OptionTwoMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="ccel_PatentOptionAgreementMember" name="PatentOptionAgreementMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="ccel_PerformanceAndMarketBasedVestingConditionOptionsMember" name="PerformanceAndMarketBasedVestingConditionOptionsMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="ccel_PerformanceBasedStockOptionsMember" name="PerformanceBasedStockOptionsMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="ccel_PerformanceBasedVestingConditionOptionsMember" name="PerformanceBasedVestingConditionOptionsMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="ccel_PrepacytecbMember" name="PrepacytecbMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="ccel_ProcessingAndStorageFeesMember" name="ProcessingAndStorageFeesMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="ccel_ProcessingAndStorageRoyaltiesMember" name="ProcessingAndStorageRoyaltiesMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="ccel_PromissoryNotesMember" name="PromissoryNotesMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="ccel_PublicBankingMember" name="PublicBankingMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="ccel_PublicCordBloodBankingMember" name="PublicCordBloodBankingMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="ccel_RangeFiveMember" name="RangeFiveMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="ccel_RangeFourMember" name="RangeFourMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="ccel_RangeOneMember" name="RangeOneMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="ccel_RangeSevenMember" name="RangeSevenMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="ccel_RangeSixMember" name="RangeSixMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="ccel_RangeThreeMember" name="RangeThreeMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="ccel_RangeTwoMember" name="RangeTwoMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="ccel_RentalPaymentsMember" name="RentalPaymentsMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="ccel_RsaMember" name="RsaMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="ccel_SaneronMember" name="SaneronMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="ccel_SaneronTherapeuticsMember" name="SaneronTherapeuticsMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="ccel_SecondAmendedSeniorCreditFacilityMember" name="SecondAmendedSeniorCreditFacilityMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="ccel_SecondAmendmentAgreementMember" name="SecondAmendmentAgreementMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="ccel_SecondAnniversaryMember" name="SecondAnniversaryMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="ccel_SeniorCreditFacilityMember" name="SeniorCreditFacilityMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="ccel_SeptemberFourthTwoThousandNineteenGrantedOptionsMember" name="SeptemberFourthTwoThousandNineteenGrantedOptionsMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="ccel_ServiceBasedRestrictedSharesMember" name="ServiceBasedRestrictedSharesMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="ccel_ServiceBasedStockOptionsMember" name="ServiceBasedStockOptionsMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="ccel_ServiceBasedVestingConditionOptionsMember" name="ServiceBasedVestingConditionOptionsMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="ccel_StemCellPreservationTechnologiesincMember" name="StemCellPreservationTechnologiesincMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="ccel_TermLoanMember" name="TermLoanMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="ccel_TexasCapitalBankNationalAssociationMember" name="TexasCapitalBankNationalAssociationMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="ccel_ThirdAnniversaryMember" name="ThirdAnniversaryMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="ccel_TianheStemCellBiotechnologiesIncMember" name="TianheStemCellBiotechnologiesIncMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="ccel_TwoPointFivePercentOfMarketCapMember" name="TwoPointFivePercentOfMarketCapMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="ccel_TwoPointFivePercentOfMarketCapTriggerOccursEighteenMonthsMember" name="TwoPointFivePercentOfMarketCapTriggerOccursEighteenMonthsMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="ccel_TwoPointFivePercentOfMarketCapTriggerOccursTwentyFourMonthsMember" name="TwoPointFivePercentOfMarketCapTriggerOccursTwentyFourMonthsMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="ccel_TwoPointFivePercentUponCumulativeNetSalesMember" name="TwoPointFivePercentUponCumulativeNetSalesMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="ccel_TwoPointFivePercentUponCumulativeNetSalesOneMember" name="TwoPointFivePercentUponCumulativeNetSalesOneMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="ccel_TwoThousandSixPlanMember" name="TwoThousandSixPlanMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="ccel_TwoThousandTwelvePlanMember" name="TwoThousandTwelvePlanMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="ccel_UmbilicalCordBloodAndCordTissueStemCellServiceAndPrepacytecbMember" name="UmbilicalCordBloodAndCordTissueStemCellServiceAndPrepacytecbMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="ccel_UmbilicalCordBloodAndCordTissueStemCellServiceMember" name="UmbilicalCordBloodAndCordTissueStemCellServiceMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="ccel_BusinessBasisOfPresentationAndSignificantAccountingPoliciesTable" name="BusinessBasisOfPresentationAndSignificantAccountingPoliciesTable" type="xbrli:stringItemType" substitutionGroup="xbrldt:hypercubeItem" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="ccel_CommitmentAndContingenciesTable" name="CommitmentAndContingenciesTable" type="xbrli:stringItemType" substitutionGroup="xbrldt:hypercubeItem" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="ccel_LicenseAgreementsTable" name="LicenseAgreementsTable" type="xbrli:stringItemType" substitutionGroup="xbrldt:hypercubeItem" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="ccel_PatentOptionAgreementTable" name="PatentOptionAgreementTable" type="xbrli:stringItemType" substitutionGroup="xbrldt:hypercubeItem" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="ccel_RevenueSharingAgreementTable" name="RevenueSharingAgreementTable" type="xbrli:stringItemType" substitutionGroup="xbrldt:hypercubeItem" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="ccel_DescriptionOfBusinessPolicyTextBlock" name="DescriptionOfBusinessPolicyTextBlock" type="dtr-types:textBlockItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false"/>
+  <xsd:element id="ccel_DisclosureOfLeaseAssetsAndLiabilitiesTableTextBlock" name="DisclosureOfLeaseAssetsAndLiabilitiesTableTextBlock" type="dtr-types:textBlockItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false"/>
+  <xsd:element id="ccel_DisclosureOfRemainingLeaseTermAndDiscountRatesTableTextBlock" name="DisclosureOfRemainingLeaseTermAndDiscountRatesTableTextBlock" type="dtr-types:textBlockItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false"/>
+  <xsd:element id="ccel_DisclosureOfSupplementalCashFlowInformationRelatedToLeasesTableTextBlock" name="DisclosureOfSupplementalCashFlowInformationRelatedToLeasesTableTextBlock" type="dtr-types:textBlockItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false"/>
+  <xsd:element id="ccel_LicenseAgreementsTextBlock" name="LicenseAgreementsTextBlock" type="dtr-types:textBlockItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false"/>
+  <xsd:element id="ccel_PropertyPlantAndEquipmentEstimatedUsefulLivesTableTextBlock" name="PropertyPlantAndEquipmentEstimatedUsefulLivesTableTextBlock" type="dtr-types:textBlockItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false"/>
+  <xsd:element id="ccel_RentExpensePolicyTextBlock" name="RentExpensePolicyTextBlock" type="dtr-types:textBlockItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false"/>
+  <xsd:element id="ccel_RevenueSharingAgreementsPolicyTextBlock" name="RevenueSharingAgreementsPolicyTextBlock" type="dtr-types:textBlockItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false"/>
+  <xsd:element id="ccel_RevenueSharingAgreementsRsasTextBlock" name="RevenueSharingAgreementsRsasTextBlock" type="dtr-types:textBlockItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false"/>
+</xsd:schema>

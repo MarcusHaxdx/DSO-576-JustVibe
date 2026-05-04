@@ -1,0 +1,969 @@
+<?xml version="1.0" encoding="us-ascii" standalone="yes"?>
+<!--XBRL Document Created with XBRLMaster-->
+<!--Version: 2.3.08-->
+<!--Based on XBRL 2.1-->
+<!--Date of creation: 03/31/2024-->
+<!--Software architectural design and coding: A'c Dharmapremananda Avt.-->
+<!--Copyright (c) 2024 I-NET Business Solutions, Inc. All Rights Reserved.-->
+<schema xmlns:xl="http://www.xbrl.org/2003/XLink" xmlns:ref="http://www.xbrl.org/2006/ref" xmlns:currency="http://xbrl.sec.gov/currency/2023" xmlns:us-gaap-att="http://fasb.org/us-gaap/attributes" xmlns:sic="http://xbrl.sec.gov/sic/2023" xmlns:exch="http://xbrl.sec.gov/exch/2023" xmlns:invest="http://xbrl.sec.gov/invest/2013-01-31" xmlns:negated="http://www.xbrl.org/2009/role/negated" xmlns:naics="http://xbrl.sec.gov/naics/2023" xmlns:us-types="http://fasb.org/us-types/2023" xmlns:stpr="http://xbrl.sec.gov/stpr/2023" xmlns="http://www.w3.org/2001/XMLSchema" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:xbrli="http://www.xbrl.org/2003/instance" xmlns:xbrldt="http://xbrl.org/2005/xbrldt" xmlns:xbrldi="http://xbrl.org/2006/xbrldi" xmlns:country="http://xbrl.sec.gov/country/2023" xmlns:utr="http://www.xbrl.org/2009/utr" xmlns:srt-types="http://fasb.org/srt-types/2023" xmlns:dtr-types="http://www.xbrl.org/dtr/type/2020-01-21" xmlns:srt-roles="http://fasb.org/srt-roles/2023" xmlns:dei="http://xbrl.sec.gov/dei/2023" xmlns:num="http://www.xbrl.org/dtr/type/numeric" xmlns:nonnum="http://www.xbrl.org/dtr/type/non-numeric" xmlns:srt="http://fasb.org/srt/2023" xmlns:us-gaap="http://fasb.org/us-gaap/2023" xmlns:kins="http://kins.com/20231231" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://kins.com/20231231">
+  <annotation>
+    <appinfo>
+      <link:roleType roleURI="http://kins.com/role/Cover" id="Cover">
+        <link:definition>000001 - Document - Cover</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://kins.com/role/ConsolidatedBalanceSheets" id="ConsolidatedBalanceSheets">
+        <link:definition>000002 - Statement - Consolidated Balance Sheets</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://kins.com/role/ConsolidatedBalanceSheetsParenthetical" id="ConsolidatedBalanceSheetsParenthetical">
+        <link:definition>000003 - Statement - Consolidated Balance Sheets (Parenthetical)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://kins.com/role/ConsolidatedStatementsOfStockholdersEquity" id="ConsolidatedStatementsOfStockholdersEquity">
+        <link:definition>000004 - Statement - Consolidated Statements of Stockholders' Equity</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://kins.com/role/ConsolidatedStatementsOfOperationsAndComprehensiveLoss" id="ConsolidatedStatementsOfOperationsAndComprehensiveLoss">
+        <link:definition>000005 - Statement - Consolidated Statements of Operations and Comprehensive Loss</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://kins.com/role/ConsolidatedStatementsOfCashFlows" id="ConsolidatedStatementsOfCashFlows">
+        <link:definition>000006 - Statement - Consolidated Statements of Cash Flows</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://kins.com/role/NatureOfBusiness" id="NatureOfBusiness">
+        <link:definition>000007 - Disclosure - Nature of Business</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://kins.com/role/SummaryOfSignificantAccountingPolicies" id="SummaryOfSignificantAccountingPolicies">
+        <link:definition>000008 - Disclosure - Summary of Significant Accounting Policies</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://kins.com/role/Investments" id="Investments">
+        <link:definition>000009 - Disclosure - Investments</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://kins.com/role/FairValueMeasurements" id="FairValueMeasurements">
+        <link:definition>000010 - Disclosure - Fair Value Measurements</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://kins.com/role/FairValueOfFinancialInstrumentsAndRealEstate" id="FairValueOfFinancialInstrumentsAndRealEstate">
+        <link:definition>000011 - Disclosure - Fair Value of Financial Instruments and Real Estate</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://kins.com/role/IntangibleAssets" id="IntangibleAssets">
+        <link:definition>000012 - Disclosure - Intangible Assets</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://kins.com/role/Reinsurance" id="Reinsurance">
+        <link:definition>000013 - Disclosure - Reinsurance</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://kins.com/role/DeferredPolicyAcquisitionCostsAndDeferredCedingCommissionRevenue" id="DeferredPolicyAcquisitionCostsAndDeferredCedingCommissionRevenue">
+        <link:definition>000014 - Disclosure - Deferred Policy Acquisition Costs and Deferred Ceding Commission Revenue</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://kins.com/role/Debt" id="Debt">
+        <link:definition>000015 - Disclosure - Debt</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://kins.com/role/PropertyAndEquipment" id="PropertyAndEquipment">
+        <link:definition>000016 - Disclosure - Property and Equipment</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://kins.com/role/PropertyAndCasualtyInsuranceActivity" id="PropertyAndCasualtyInsuranceActivity">
+        <link:definition>000017 - Disclosure - Property and Casualty Insurance Activity</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://kins.com/role/StockholdersEquity" id="StockholdersEquity">
+        <link:definition>000018 - Disclosure - Stockholders Equity</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://kins.com/role/StatutoryFinancialInformationAndAccountingPolicies" id="StatutoryFinancialInformationAndAccountingPolicies">
+        <link:definition>000019 - Disclosure - Statutory Financial Information and Accounting Policies</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://kins.com/role/RiskBasedCapital" id="RiskBasedCapital">
+        <link:definition>000020 - Disclosure - Risk Based Capital</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://kins.com/role/IncomeTaxes" id="IncomeTaxes">
+        <link:definition>000021 - Disclosure - Income Taxes</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://kins.com/role/EmployeeBenefitPlans" id="EmployeeBenefitPlans">
+        <link:definition>000022 - Disclosure - Employee Benefit Plans</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://kins.com/role/CommitmentsAndContingencies" id="CommitmentsAndContingencies">
+        <link:definition>000023 - Disclosure - Commitments and Contingencies</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://kins.com/role/LossPerCommonShare" id="LossPerCommonShare">
+        <link:definition>000024 - Disclosure - Loss Per Common Share</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://kins.com/role/SubsequentEvents" id="SubsequentEvents">
+        <link:definition>000025 - Disclosure - Subsequent Events</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://kins.com/role/QuarterlyFinancialDataUnaudited" id="QuarterlyFinancialDataUnaudited">
+        <link:definition>000026 - Disclosure - Quarterly Financial Data (Unaudited)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://kins.com/role/SummaryOfSignificantAccountingPoliciesPolicies" id="SummaryOfSignificantAccountingPoliciesPolicies">
+        <link:definition>000027 - Disclosure - Summary of Significant Accounting Policies (Policies)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://kins.com/role/SummaryOfSignificantAccountingPoliciesTables" id="SummaryOfSignificantAccountingPoliciesTables">
+        <link:definition>000028 - Disclosure - Summary of Significant Accounting Policies (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://kins.com/role/InvestmentsTables" id="InvestmentsTables">
+        <link:definition>000029 - Disclosure - Investments (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://kins.com/role/FairValueMeasurementsTables" id="FairValueMeasurementsTables">
+        <link:definition>000030 - Disclosure - Fair Value Measurements (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://kins.com/role/FairValueOfFinancialInstrumentsAndRealEstateTables" id="FairValueOfFinancialInstrumentsAndRealEstateTables">
+        <link:definition>000031 - Disclosure - Fair Value of Financial Instruments and Real Estate (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://kins.com/role/IntangiblesAssetsTables" id="IntangiblesAssetsTables">
+        <link:definition>000032 - Disclosure - Intangibles Assets (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://kins.com/role/ReinsuranceTables" id="ReinsuranceTables">
+        <link:definition>000033 - Disclosure - Reinsurance (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://kins.com/role/DeferredPolicyAcquisitionCostsAndDeferredCedingCommissionRevenueTables" id="DeferredPolicyAcquisitionCostsAndDeferredCedingCommissionRevenueTables">
+        <link:definition>000034 - Disclosure - Deferred Policy Acquisition Costs and Deferred Ceding Commission Revenue (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://kins.com/role/DebtTables" id="DebtTables">
+        <link:definition>000035 - Disclosure - Debt (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://kins.com/role/PropertyAndEquipmentTables" id="PropertyAndEquipmentTables">
+        <link:definition>000036 - Disclosure - Property and Equipment (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://kins.com/role/PropertyAndCasualtyInsuranceActivityTables" id="PropertyAndCasualtyInsuranceActivityTables">
+        <link:definition>000037 - Disclosure - Property and Casualty Insurance Activity (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://kins.com/role/StockholdersEquityTables" id="StockholdersEquityTables">
+        <link:definition>000038 - Disclosure - Stockholders Equity (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://kins.com/role/IncomeTaxesTables" id="IncomeTaxesTables">
+        <link:definition>000039 - Disclosure - Income Taxes (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://kins.com/role/CommitmentsAndContingenciesTables" id="CommitmentsAndContingenciesTables">
+        <link:definition>000040 - Disclosure - Commitments and Contingencies (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://kins.com/role/LossPerCommonShareTables" id="LossPerCommonShareTables">
+        <link:definition>000041 - Disclosure - Loss Per Common Share (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://kins.com/role/QuarterlyFinancialDataUnauditedTables" id="QuarterlyFinancialDataUnauditedTables">
+        <link:definition>000042 - Disclosure - Quarterly Financial Data (Unaudited) (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://kins.com/role/NatureOfBusinessDetailsNarrative" id="NatureOfBusinessDetailsNarrative">
+        <link:definition>000043 - Disclosure - Nature of Business (Details Narrative)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://kins.com/role/SummaryOfSignificantAccountingPoliciesDetails" id="SummaryOfSignificantAccountingPoliciesDetails">
+        <link:definition>000044 - Disclosure - Summary of Significant Accounting Policies (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://kins.com/role/SummaryOfSignificantAccountingPoliciesDetails1" id="SummaryOfSignificantAccountingPoliciesDetails1">
+        <link:definition>000045 - Disclosure - Summary of Significant Accounting Policies (Details 1)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://kins.com/role/SummaryOfSignificantAccountingPoliciesDetailsNarrative" id="SummaryOfSignificantAccountingPoliciesDetailsNarrative">
+        <link:definition>000046 - Disclosure - Summary of Significant Accounting Policies (Details Narrative)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://kins.com/role/InvestmentsDetails" id="InvestmentsDetails">
+        <link:definition>000047 - Disclosure - Investments (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://kins.com/role/InvestmentsDetails1" id="InvestmentsDetails1">
+        <link:definition>000048 - Disclosure - Investments (Details 1)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://kins.com/role/InvestmentsDetails2" id="InvestmentsDetails2">
+        <link:definition>000049 - Disclosure - Investments (Details 2)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://kins.com/role/InvestmentsDetails3" id="InvestmentsDetails3">
+        <link:definition>000050 - Disclosure - Investments (Details 3)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://kins.com/role/InvestmentsDetails4" id="InvestmentsDetails4">
+        <link:definition>000051 - Disclosure - Investments (Details 4)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://kins.com/role/InvestmentsDetails5" id="InvestmentsDetails5">
+        <link:definition>000052 - Disclosure - Investments (Details 5)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://kins.com/role/InvestmentsDetails6" id="InvestmentsDetails6">
+        <link:definition>000053 - Disclosure - Investments (Details 6)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://kins.com/role/InvestmentsDetails7" id="InvestmentsDetails7">
+        <link:definition>000054 - Disclosure - Investments (Details 7)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://kins.com/role/InvestmentsDetailsNarrativee" id="InvestmentsDetailsNarrativee">
+        <link:definition>000055 - Disclosure - Investments (Details Narrativee)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://kins.com/role/FairValueMeasurementsDetails" id="FairValueMeasurementsDetails">
+        <link:definition>000056 - Disclosure - Fair Value Measurements (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://kins.com/role/FairValueMeasurementsDetails1" id="FairValueMeasurementsDetails1">
+        <link:definition>000057 - Disclosure - Fair Value Measurements (Details 1)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://kins.com/role/FairValueMeasurementsDetails2" id="FairValueMeasurementsDetails2">
+        <link:definition>000058 - Disclosure - Fair Value Measurements (Details 2)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://kins.com/role/FairValueOfFinancialInstrumentsAndRealEstateDetails" id="FairValueOfFinancialInstrumentsAndRealEstateDetails">
+        <link:definition>000059 - Disclosure - Fair Value of Financial Instruments and Real Estate (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://kins.com/role/IntangibleAssetsDetails" id="IntangibleAssetsDetails">
+        <link:definition>000060 - Disclosure - Intangible Assets (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://kins.com/role/IntangibleAssetsDetailsNarrative" id="IntangibleAssetsDetailsNarrative">
+        <link:definition>000061 - Disclosure - Intangible Assets (Details Narrative)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://kins.com/role/ReinsuranceDetails" id="ReinsuranceDetails">
+        <link:definition>000062 - Disclosure - Reinsurance (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://kins.com/role/ReinsuranceDetails1" id="ReinsuranceDetails1">
+        <link:definition>000063 - Disclosure - Reinsurance (Details 1)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://kins.com/role/ReinsuranceDetails2" id="ReinsuranceDetails2">
+        <link:definition>000064 - Disclosure - Reinsurance (Details 2)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://kins.com/role/ReinsuranceDetailsNarrative" id="ReinsuranceDetailsNarrative">
+        <link:definition>000065 - Disclosure - Reinsurance (Details Narrative)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://kins.com/role/DeferredPolicyAcquisitionCostsAndDeferredCedingCommissionRevenueDetails" id="DeferredPolicyAcquisitionCostsAndDeferredCedingCommissionRevenueDetails">
+        <link:definition>000066 - Disclosure - Deferred Policy Acquisition Costs and Deferred Ceding Commission Revenue (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://kins.com/role/DeferredPolicyAcquisitionCostsAndDeferredCedingCommissionRevenueDetails1" id="DeferredPolicyAcquisitionCostsAndDeferredCedingCommissionRevenueDetails1">
+        <link:definition>000067 - Disclosure - Deferred Policy Acquisition Costs and Deferred Ceding Commission Revenue (Details 1)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://kins.com/role/DebtDetails" id="DebtDetails">
+        <link:definition>000068 - Disclosure - Debt (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://kins.com/role/DebtDetails1" id="DebtDetails1">
+        <link:definition>000069 - Disclosure - Debt (Details 1)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://kins.com/role/DebtDetails3" id="DebtDetails3">
+        <link:definition>000070 - Disclosure - Debt (Details 3)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://kins.com/role/DebtDetails4" id="DebtDetails4">
+        <link:definition>000071 - Disclosure - Debt (Details 4)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://kins.com/role/DebtDetailsNarrative" id="DebtDetailsNarrative">
+        <link:definition>000072 - Disclosure - Debt (Details Narrative)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://kins.com/role/PropertyAndEquipmentDetails" id="PropertyAndEquipmentDetails">
+        <link:definition>000073 - Disclosure - Property and Equipment (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://kins.com/role/PropertyAndEquipmentDetailsNarrative" id="PropertyAndEquipmentDetailsNarrative">
+        <link:definition>000074 - Disclosure - Property and Equipment (Details Narrative)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://kins.com/role/PropertyAndCasualtyInsuranceActivityDetails" id="PropertyAndCasualtyInsuranceActivityDetails">
+        <link:definition>000075 - Disclosure - Property and Casualty Insurance Activity (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://kins.com/role/PropertyAndCasualtyInsuranceActivityDetails1" id="PropertyAndCasualtyInsuranceActivityDetails1">
+        <link:definition>000076 - Disclosure - Property and Casualty Insurance Activity (Details 1)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://kins.com/role/PropertyAndCasualtyInsuranceActivityDetails2" id="PropertyAndCasualtyInsuranceActivityDetails2">
+        <link:definition>000077 - Disclosure - Property and Casualty Insurance Activity (Details 2)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://kins.com/role/PropertyAndCasualtyInsuranceActivityDetails3" id="PropertyAndCasualtyInsuranceActivityDetails3">
+        <link:definition>000078 - Disclosure - Property and Casualty Insurance Activity (Details 3)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://kins.com/role/PropertyAndCasualtyInsuranceActivityDetails4" id="PropertyAndCasualtyInsuranceActivityDetails4">
+        <link:definition>000079 - Disclosure - Property and Casualty Insurance Activity (Details 4)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://kins.com/role/PropertyAndCasualtyInsuranceActivityDetails5" id="PropertyAndCasualtyInsuranceActivityDetails5">
+        <link:definition>000080 - Disclosure - Property and Casualty Insurance Activity (Details 5)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://kins.com/role/PropertyAndCasualtyInsuranceActivityDetails6" id="PropertyAndCasualtyInsuranceActivityDetails6">
+        <link:definition>000081 - Disclosure - Property and Casualty Insurance Activity (Details 6)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://kins.com/role/PropertyAndCasualtyInsuranceActivityDetailsNarrative" id="PropertyAndCasualtyInsuranceActivityDetailsNarrative">
+        <link:definition>000082 - Disclosure - Property and Casualty Insurance Activity (Details Narrative)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://kins.com/role/StockholdersEquityDetails" id="StockholdersEquityDetails">
+        <link:definition>000083 - Disclosure - Stockholders Equity (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://kins.com/role/StockholdersEquityDetails1" id="StockholdersEquityDetails1">
+        <link:definition>000084 - Disclosure - Stockholders Equity (Details 1)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://kins.com/role/StockholdersEquityDetails2" id="StockholdersEquityDetails2">
+        <link:definition>000085 - Disclosure - Stockholders Equity (Details 2)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://kins.com/role/StockholdersEquityDetailsNarrative" id="StockholdersEquityDetailsNarrative">
+        <link:definition>000086 - Disclosure - Stockholders Equity (Details Narrative)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://kins.com/role/StatutoryFinancialInformationAndAccountingPoliciesDetailsNarrative" id="StatutoryFinancialInformationAndAccountingPoliciesDetailsNarrative">
+        <link:definition>000087 - Disclosure - Statutory Financial Information and Accounting Policies (Details Narrative)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://kins.com/role/IncomeTaxesDetails" id="IncomeTaxesDetails">
+        <link:definition>000088 - Disclosure - Income Taxes (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://kins.com/role/IncomeTaxesDetails1" id="IncomeTaxesDetails1">
+        <link:definition>000089 - Disclosure - Income Taxes (Details 1)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://kins.com/role/IncomeTaxesDetails2" id="IncomeTaxesDetails2">
+        <link:definition>000090 - Disclosure - Income Taxes (Details 2)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://kins.com/role/IncomeTaxesDetails3" id="IncomeTaxesDetails3">
+        <link:definition>000091 - Disclosure - Income Taxes (Details 3)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://kins.com/role/IncomeTaxesDetails4" id="IncomeTaxesDetails4">
+        <link:definition>000092 - Disclosure - Income Taxes (Details 4)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://kins.com/role/IncomeTaxesDetailsNarrative" id="IncomeTaxesDetailsNarrative">
+        <link:definition>000093 - Disclosure - Income Taxes (Details Narrative)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://kins.com/role/EmployeeBenefitPlansDetailsNarrative" id="EmployeeBenefitPlansDetailsNarrative">
+        <link:definition>000094 - Disclosure - Employee Benefit Plans (Details Narrative)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://kins.com/role/CommitmentsAndContingenciesDetails" id="CommitmentsAndContingenciesDetails">
+        <link:definition>000095 - Disclosure - Commitments and Contingencies (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://kins.com/role/CommitmentsAndContingenciesDetails1" id="CommitmentsAndContingenciesDetails1">
+        <link:definition>000096 - Disclosure - Commitments and Contingencies (Details 1)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://kins.com/role/CommitmentsAndContingenciesDetailsNarrative" id="CommitmentsAndContingenciesDetailsNarrative">
+        <link:definition>000097 - Disclosure - Commitments and Contingencies (Details Narrative)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://kins.com/role/LossPerCommonShareDetails" id="LossPerCommonShareDetails">
+        <link:definition>000098 - Disclosure - Loss Per Common Share (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://kins.com/role/QuarterlyFinancialDataUnauditedDetails" id="QuarterlyFinancialDataUnauditedDetails">
+        <link:definition>000099 - Disclosure - Quarterly Financial Data (Unaudited) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:linkbaseRef xlink:type="simple" xlink:href="kins-20231231_pre.xml" xlink:role="http://www.xbrl.org/2003/role/presentationLinkbaseRef" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" />
+      <link:linkbaseRef xlink:type="simple" xlink:href="kins-20231231_lab.xml" xlink:role="http://www.xbrl.org/2003/role/labelLinkbaseRef" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" />
+      <link:linkbaseRef xlink:type="simple" xlink:href="kins-20231231_cal.xml" xlink:role="http://www.xbrl.org/2003/role/calculationLinkbaseRef" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" />
+      <link:linkbaseRef xlink:type="simple" xlink:href="kins-20231231_def.xml" xlink:role="http://www.xbrl.org/2003/role/definitionLinkbaseRef" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" />
+    </appinfo>
+  </annotation>
+  <import namespace="http://www.xbrl.org/2003/instance" schemaLocation="http://www.xbrl.org/2003/xbrl-instance-2003-12-31.xsd" />
+  <import namespace="http://www.xbrl.org/2003/linkbase" schemaLocation="http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd" />
+  <import namespace="http://xbrl.org/2005/xbrldt" schemaLocation="http://www.xbrl.org/2005/xbrldt-2005.xsd" />
+  <import namespace="http://xbrl.sec.gov/country/2023" schemaLocation="https://xbrl.sec.gov/country/2023/country-2023.xsd" />
+  <import namespace="http://xbrl.sec.gov/currency/2023" schemaLocation="https://xbrl.sec.gov/currency/2023/currency-2023.xsd" />
+  <import namespace="http://xbrl.sec.gov/dei/2023" schemaLocation="https://xbrl.sec.gov/dei/2023/dei-2023.xsd" />
+  <import namespace="http://www.xbrl.org/dtr/type/non-numeric" schemaLocation="http://www.xbrl.org/dtr/type/nonNumeric-2009-12-16.xsd" />
+  <import namespace="http://www.xbrl.org/dtr/type/numeric" schemaLocation="http://www.xbrl.org/dtr/type/numeric-2009-12-16.xsd" />
+  <import namespace="http://xbrl.sec.gov/exch/2023" schemaLocation="https://xbrl.sec.gov/exch/2023/exch-2023.xsd" />
+  <import namespace="http://www.xbrl.org/2009/arcrole/fact-explanatoryFact" schemaLocation="http://www.xbrl.org/lrr/arcrole/factExplanatory-2009-12-16.xsd" />
+  <import namespace="http://www.xbrl.org/2009/role/negated" schemaLocation="http://www.xbrl.org/lrr/role/negated-2009-12-16.xsd" />
+  <import namespace="http://www.xbrl.org/2009/role/net" schemaLocation="http://www.xbrl.org/lrr/role/net-2009-12-16.xsd" />
+  <import namespace="http://xbrl.sec.gov/naics/2023" schemaLocation="https://xbrl.sec.gov/naics/2023/naics-2023.xsd" />
+  <import namespace="http://xbrl.sec.gov/sic/2023" schemaLocation="https://xbrl.sec.gov/sic/2023/sic-2023.xsd" />
+  <import namespace="http://fasb.org/srt-roles/2023" schemaLocation="https://xbrl.fasb.org/srt/2023/elts/srt-roles-2023.xsd" />
+  <import namespace="http://fasb.org/srt-types/2023" schemaLocation="https://xbrl.fasb.org/srt/2023/elts/srt-types-2023.xsd" />
+  <import namespace="http://www.xbrl.org/dtr/type/2020-01-21" schemaLocation="https://www.xbrl.org/dtr/type/2020-01-21/types.xsd" />
+  <import namespace="http://xbrl.sec.gov/stpr/2023" schemaLocation="https://xbrl.sec.gov/stpr/2023/stpr-2023.xsd" />
+  <import namespace="http://fasb.org/us-roles/2023" schemaLocation="https://xbrl.fasb.org/us-gaap/2023/elts/us-roles-2023.xsd" />
+  <import namespace="http://fasb.org/us-types/2023" schemaLocation="https://xbrl.fasb.org/us-gaap/2023/elts/us-types-2023.xsd" />
+  <import namespace="http://fasb.org/srt/2023" schemaLocation="https://xbrl.fasb.org/srt/2023/elts/srt-2023.xsd" />
+  <import namespace="http://fasb.org/us-gaap/2023" schemaLocation="https://xbrl.fasb.org/us-gaap/2023/elts/us-gaap-2023.xsd" />
+  <element id="kins_AdvancePremiums" name="AdvancePremiums" nillable="true" xbrli:balance="credit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="kins_EquitySecuritiesAtFairValue" name="EquitySecuritiesAtFairValue" nillable="true" xbrli:balance="credit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="kins_VestingOfRestrictedStockAwardsShares" name="VestingOfRestrictedStockAwardsShares" nillable="true" xbrli:periodType="duration" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" />
+  <element id="kins_VestingOfRestrictedStockAwardsAmount" name="VestingOfRestrictedStockAwardsAmount" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="kins_IssuanceOfCommonStockEmployeeStockPurchasePlanShares" name="IssuanceOfCommonStockEmployeeStockPurchasePlanShares" nillable="true" xbrli:periodType="duration" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" />
+  <element id="kins_IssuanceOfCommonStockEmployeeStockPurchasePlanAmount" name="IssuanceOfCommonStockEmployeeStockPurchasePlanAmount" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="kins_SharesDeductedFromRestrictedStockAwardsForPaymentOfWithholdingTaxesShares" name="SharesDeductedFromRestrictedStockAwardsForPaymentOfWithholdingTaxesShares" nillable="true" xbrli:periodType="duration" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" />
+  <element id="kins_SharesDeductedFromRestrictedStockAwardsForPaymentOfWithholdingTaxesAmount" name="SharesDeductedFromRestrictedStockAwardsForPaymentOfWithholdingTaxesAmount" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="kins_WarrantsIssuedWithExchangeOfDebt" name="WarrantsIssuedWithExchangeOfDebt" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="kins_ChangeInUnrealizedLossesOnAvailableForSaleSecuritiesNetOfTax" name="ChangeInUnrealizedLossesOnAvailableForSaleSecuritiesNetOfTax" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="kins_ChangeInUnrealizedGainsOnAvailableForSaleSecuritiesNetOfTax" name="ChangeInUnrealizedGainsOnAvailableForSaleSecuritiesNetOfTax" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="kins_RevenueFromCedingCommission" name="RevenueFromCedingCommission" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="kins_LossAndLossAdjustmentExpenses" name="LossAndLossAdjustmentExpenses" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="kins_IncomeTaxBenefitRelatedToItemsOfOtherComprehensiveLoss" name="IncomeTaxBenefitRelatedToItemsOfOtherComprehensiveLoss" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="kins_LossPerCommonShareBasicAndDilutedAbstract" name="LossPerCommonShareBasicAndDilutedAbstract" nillable="true" abstract="true" xbrli:periodType="duration" type="xbrli:stringItemType" substitutionGroup="xbrli:item" />
+  <element id="kins_AdjustmentsToReconcileNetLossToNetCashFlowsAbstract" name="AdjustmentsToReconcileNetLossToNetCashFlowsAbstract" nillable="true" abstract="true" xbrli:periodType="duration" type="xbrli:stringItemType" substitutionGroup="xbrli:item" />
+  <element id="kins_NetUnrealizedGainsLossesOnEquityInvestments" name="NetUnrealizedGainsLossesOnEquityInvestments" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="kins_IncreseDecreseInAdvancePremiums" name="IncreseDecreseInAdvancePremiums" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="kins_PurchaseFixedMaturitySecuritiesHeldToMaturity" name="PurchaseFixedMaturitySecuritiesHeldToMaturity" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="kins_PurchaseFixedMaturitySecuritiesAvailableForSale" name="PurchaseFixedMaturitySecuritiesAvailableForSale" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="kins_RedemptionOtherInvestments" name="RedemptionOtherInvestments" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="kins_ProceedsFromEquipmentFinancing" name="ProceedsFromEquipmentFinancing" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="kins_PrincipalPaymentOn2017NotesRefinancing" name="PrincipalPaymentOn2017NotesRefinancing" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="kins_BondIssueCostsOn2022Notes" name="BondIssueCostsOn2022Notes" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="kins_WithholdingTaxesPaidOnVestedRetrictedStockAwards" name="WithholdingTaxesPaidOnVestedRetrictedStockAwards" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="kins_NetProceedsFromIssuanceOfCommonStockEmployeeStockPurchasePlan" name="NetProceedsFromIssuanceOfCommonStockEmployeeStockPurchasePlan" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="kins_WarrantsIssuedUnderTheExchangeAgreement" name="WarrantsIssuedUnderTheExchangeAgreement" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="kins_PropertyAndCasualtyInsuranceActivityDisclosureTextBlock" name="PropertyAndCasualtyInsuranceActivityDisclosureTextBlock" nillable="true" xbrli:periodType="duration" type="nonnum:textBlockItemType" substitutionGroup="xbrli:item" />
+  <element id="kins_StatutoryFinancialInformationAndAccountingPoliciesDisclosureTextBlock" name="StatutoryFinancialInformationAndAccountingPoliciesDisclosureTextBlock" nillable="true" xbrli:periodType="duration" type="nonnum:textBlockItemType" substitutionGroup="xbrli:item" />
+  <element id="kins_RiskBasedCapitalDisclosureTextBlock" name="RiskBasedCapitalDisclosureTextBlock" nillable="true" xbrli:periodType="duration" type="nonnum:textBlockItemType" substitutionGroup="xbrli:item" />
+  <element id="kins_BasisOfPresentationGoingConcernPolicyTextBlock" name="BasisOfPresentationGoingConcernPolicyTextBlock" nillable="true" xbrli:periodType="duration" type="nonnum:textBlockItemType" substitutionGroup="xbrli:item" />
+  <element id="kins_LossAndLossAdjustmentExpensesLAEReservesPolicyTextBlock" name="LossAndLossAdjustmentExpensesLAEReservesPolicyTextBlock" nillable="true" xbrli:periodType="duration" type="nonnum:textBlockItemType" substitutionGroup="xbrli:item" />
+  <element id="kins_CreditLossesPolicyTextBlock" name="CreditLossesPolicyTextBlock" nillable="true" xbrli:periodType="duration" type="nonnum:textBlockItemType" substitutionGroup="xbrli:item" />
+  <element id="kins_WarrantsPolicyTextBlock" name="WarrantsPolicyTextBlock" nillable="true" xbrli:periodType="duration" type="nonnum:textBlockItemType" substitutionGroup="xbrli:item" />
+  <element id="kins_AccountingChangePolicyTextBlock" name="AccountingChangePolicyTextBlock" nillable="true" xbrli:periodType="duration" type="nonnum:textBlockItemType" substitutionGroup="xbrli:item" />
+  <element id="kins_ScheduleOfAvailableForSaleFixedMaturitySecuritiesContractualMaturityTableTextBlock" name="ScheduleOfAvailableForSaleFixedMaturitySecuritiesContractualMaturityTableTextBlock" nillable="true" xbrli:periodType="duration" type="nonnum:textBlockItemType" substitutionGroup="xbrli:item" />
+  <element id="kins_ScheduleOfEquitySecurities" name="ScheduleOfEquitySecurities" nillable="true" xbrli:periodType="duration" type="nonnum:textBlockItemType" substitutionGroup="xbrli:item" />
+  <element id="kins_OtherInvestmentsTableTextBlock" name="OtherInvestmentsTableTextBlock" nillable="true" xbrli:periodType="duration" type="nonnum:textBlockItemType" substitutionGroup="xbrli:item" />
+  <element id="kins_ScheduleOfHeldToMaturitySecurities" name="ScheduleOfHeldToMaturitySecurities" nillable="true" xbrli:periodType="duration" type="nonnum:textBlockItemType" substitutionGroup="xbrli:item" />
+  <element id="kins_ScheduleOfHeldToMaturitySecuritiesByContractualMaturity" name="ScheduleOfHeldToMaturitySecuritiesByContractualMaturity" nillable="true" xbrli:periodType="duration" type="nonnum:textBlockItemType" substitutionGroup="xbrli:item" />
+  <element id="kins_ScheduleOfInvestmentIncome" name="ScheduleOfInvestmentIncome" nillable="true" xbrli:periodType="duration" type="nonnum:textBlockItemType" substitutionGroup="xbrli:item" />
+  <element id="kins_ScheduleOfSecuritiesWithRealizedGainsAndLossesOnInvestmentsTableTextBlock" name="ScheduleOfSecuritiesWithRealizedGainsAndLossesOnInvestmentsTableTextBlock" nillable="true" xbrli:periodType="duration" type="nonnum:textBlockItemType" substitutionGroup="xbrli:item" />
+  <element id="kins_HedgeFundInvestmentsTableTextBlock" name="HedgeFundInvestmentsTableTextBlock" nillable="true" xbrli:periodType="duration" type="nonnum:textBlockItemType" substitutionGroup="xbrli:item" />
+  <element id="kins_ScheduleOfFairValueHierarchyOfLongtermDebtTableTextBlock" name="ScheduleOfFairValueHierarchyOfLongtermDebtTableTextBlock" nillable="true" xbrli:periodType="duration" type="nonnum:textBlockItemType" substitutionGroup="xbrli:item" />
+  <element id="kins_LineOfBusiness" name="LineOfBusiness" nillable="true" xbrli:periodType="duration" type="nonnum:textBlockItemType" substitutionGroup="xbrli:item" />
+  <element id="kins_ScheduleOfApproximateReinsuranceRecoverablesTableTextBlock" name="ScheduleOfApproximateReinsuranceRecoverablesTableTextBlock" nillable="true" xbrli:periodType="duration" type="nonnum:textBlockItemType" substitutionGroup="xbrli:item" />
+  <element id="kins_ScheduleOfCedingCommissionsEarnedTableTextBlock" name="ScheduleOfCedingCommissionsEarnedTableTextBlock" nillable="true" xbrli:periodType="duration" type="nonnum:textBlockItemType" substitutionGroup="xbrli:item" />
+  <element id="kins_ScheduleOfAcquisitionCostsIncurredTableTextBlock" name="ScheduleOfAcquisitionCostsIncurredTableTextBlock" nillable="true" xbrli:periodType="duration" type="nonnum:textBlockItemType" substitutionGroup="xbrli:item" />
+  <element id="kins_ScheduleOfEndingBalancesForDeferredAcquisitionCostsAndDeferredCedingCommissionRevenueTableTextBlock" name="ScheduleOfEndingBalancesForDeferredAcquisitionCostsAndDeferredCedingCommissionRevenueTableTextBlock" nillable="true" xbrli:periodType="duration" type="nonnum:textBlockItemType" substitutionGroup="xbrli:item" />
+  <element id="kins_ScheduleOfPercentagesOfThePrincipalAmountTableTextBlock" name="ScheduleOfPercentagesOfThePrincipalAmountTableTextBlock" nillable="true" xbrli:periodType="duration" type="nonnum:textBlockItemType" substitutionGroup="xbrli:item" />
+  <element id="kins_ScheduleOfFutureContractualPaymentObligationsTableTextBlock" name="ScheduleOfFutureContractualPaymentObligationsTableTextBlock" nillable="true" xbrli:periodType="duration" type="nonnum:textBlockItemType" substitutionGroup="xbrli:item" />
+  <element id="kins_ScheduleOfEarnedPremiumsTextBlock" name="ScheduleOfEarnedPremiumsTextBlock" nillable="true" xbrli:periodType="duration" type="nonnum:textBlockItemType" substitutionGroup="xbrli:item" />
+  <element id="kins_ScheduleOfLiabilityForLossAndLaeExpensesTableTextBlock" name="ScheduleOfLiabilityForLossAndLaeExpensesTableTextBlock" nillable="true" xbrli:periodType="duration" type="nonnum:textBlockItemType" substitutionGroup="xbrli:item" />
+  <element id="kins_ScheduleOfUnpaidLossesAndLaeTableTextBlock" name="ScheduleOfUnpaidLossesAndLaeTableTextBlock" nillable="true" xbrli:periodType="duration" type="nonnum:textBlockItemType" substitutionGroup="xbrli:item" />
+  <element id="kins_IncurredClaimsAllocatedClaimAdjustmentTableTextBlock" name="IncurredClaimsAllocatedClaimAdjustmentTableTextBlock" nillable="true" xbrli:periodType="duration" type="nonnum:textBlockItemType" substitutionGroup="xbrli:item" />
+  <element id="kins_CumulativePaidClaimsAllocatedClaimAdjustmentExpensesTableTextBlock" name="CumulativePaidClaimsAllocatedClaimAdjustmentExpensesTableTextBlock" nillable="true" xbrli:periodType="duration" type="nonnum:textBlockItemType" substitutionGroup="xbrli:item" />
+  <element id="kins_ReconciliationOfNetIncurredAndPaidClaimsTableTextBlock" name="ReconciliationOfNetIncurredAndPaidClaimsTableTextBlock" nillable="true" xbrli:periodType="duration" type="nonnum:textBlockItemType" substitutionGroup="xbrli:item" />
+  <element id="kins_WeightedAverageAssumptions" name="WeightedAverageAssumptions" nillable="true" xbrli:periodType="duration" type="nonnum:textBlockItemType" substitutionGroup="xbrli:item" />
+  <element id="kins_ScheduleOfChangesInNetDeferredIncomeTaxLiabilityToDeferredIncomeTaxProvisionTableTextBlock" name="ScheduleOfChangesInNetDeferredIncomeTaxLiabilityToDeferredIncomeTaxProvisionTableTextBlock" nillable="true" xbrli:periodType="duration" type="nonnum:textBlockItemType" substitutionGroup="xbrli:item" />
+  <element id="kins_DirectWrittenPremiumsPercentage" name="DirectWrittenPremiumsPercentage" nillable="true" xbrli:periodType="duration" type="num:percentItemType" substitutionGroup="xbrli:item" />
+  <element id="kins_CollateralizedBankRepurchaseAgreement" name="CollateralizedBankRepurchaseAgreement" nillable="true" xbrli:balance="credit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="kins_TotalPremiumsEarnedPercentage1" name="TotalPremiumsEarnedPercentage1" nillable="true" xbrli:periodType="duration" type="num:percentItemType" substitutionGroup="xbrli:item" />
+  <element id="kins_TotalPremiumsEarnedSubjectToConcentrationPercentage1" name="TotalPremiumsEarnedSubjectToConcentrationPercentage1" nillable="true" xbrli:periodType="duration" type="num:percentItemType" substitutionGroup="xbrli:item" />
+  <element id="kins_InvestedAssetsAndCash" name="InvestedAssetsAndCash" nillable="true" xbrli:balance="debit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="kins_AccuredInvestmentIncome" name="AccuredInvestmentIncome" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="kins_EstimatesUsefulLifes" name="EstimatesUsefulLifes" nillable="true" xbrli:periodType="duration" type="xbrli:durationItemType" substitutionGroup="xbrli:item" />
+  <element id="kins_AvailableForSaleSecuritiesContinuousGrossUnrealizedLossPositionLessThan12MonthsLosses" name="AvailableForSaleSecuritiesContinuousGrossUnrealizedLossPositionLessThan12MonthsLosses" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="kins_AvailableForSaleSecuritiesContinuousGrossUnrealizedLossPosition12MonthsOrLongerLosses" name="AvailableForSaleSecuritiesContinuousGrossUnrealizedLossPosition12MonthsOrLongerLosses" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="kins_AvailableForSaleSecuritiesFairValueDisclosure1" name="AvailableForSaleSecuritiesFairValueDisclosure1" nillable="true" xbrli:balance="debit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="kins_NetUnrealizedGainsLosses" name="NetUnrealizedGainsLosses" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="kins_AmortizedCost" name="AmortizedCost" nillable="true" xbrli:balance="debit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="kins_FairValue" name="FairValue" nillable="true" xbrli:balance="debit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="kins_OtherInvestmentsAtCost" name="OtherInvestmentsAtCost" nillable="true" xbrli:balance="debit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="kins_GrossGains" name="GrossGains" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="kins_GrossLosses" name="GrossLosses" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="kins_NetUnrealizedGainslosses1" name="NetUnrealizedGainslosses1" nillable="true" xbrli:balance="debit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="kins_FairValue1" name="FairValue1" nillable="true" xbrli:balance="debit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="kins_GrossUnrealizedLossmoreThan12Months" name="GrossUnrealizedLossmoreThan12Months" nillable="true" xbrli:balance="debit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="kins_GrossUnrealizedLosseslessThan12Months" name="GrossUnrealizedLosseslessThan12Months" nillable="true" xbrli:balance="debit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="kins_GrossUnrealizedGains" name="GrossUnrealizedGains" nillable="true" xbrli:balance="debit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="kins_CostOrAmortizedCost" name="CostOrAmortizedCost" nillable="true" xbrli:balance="debit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="kins_AmortizedCostHeldToMaturitySecurities" name="AmortizedCostHeldToMaturitySecurities" nillable="true" xbrli:balance="debit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="kins_FairValueHeldToMaturitySecurities" name="FairValueHeldToMaturitySecurities" nillable="true" xbrli:balance="debit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="kins_FixedmaturitySecurities" name="FixedmaturitySecurities" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="kins_EquitySecurities1" name="EquitySecurities1" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="kins_CashAndCashEquivalents" name="CashAndCashEquivalents" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="kins_TotalInvestments" name="TotalInvestments" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="kins_GrossRealizedGains" name="GrossRealizedGains" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="kins_GrossRealizedLosses" name="GrossRealizedLosses" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="kins_TotalFixedMaturitySecurities" name="TotalFixedMaturitySecurities" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="kins_NetGainLossOnSaleOfSecurities" name="NetGainLossOnSaleOfSecurities" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="kins_AvailableForSaleSecuritiesGrossRealizedGainsOther" name="AvailableForSaleSecuritiesGrossRealizedGainsOther" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="kins_AvailableForSaleSecuritiesGrossRealizedGainsLossesOther" name="AvailableForSaleSecuritiesGrossRealizedGainsLossesOther" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="kins_AvailableForSaleSecuritiesGrossRealizedGainsOtherNet" name="AvailableForSaleSecuritiesGrossRealizedGainsOtherNet" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="kins_AvailableForSaleSecuritiesNetRealizedGainsLossesSaleProceeds" name="AvailableForSaleSecuritiesNetRealizedGainsLossesSaleProceeds" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="kins_AvailableForSaleEquitySecuritiesGrossUnrealizedLosses" name="AvailableForSaleEquitySecuritiesGrossUnrealizedLosses" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="kins_AvailableforsaleSecuritiesNetUnrealizedGainLoss" name="AvailableforsaleSecuritiesNetUnrealizedGainLoss" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="kins_GrossGainsOnOtherInvestments" name="GrossGainsOnOtherInvestments" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="kins_GrossLossesOnOtherInvestments" name="GrossLossesOnOtherInvestments" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="kins_GrossGainsLossesOnOtherInvestments" name="GrossGainsLossesOnOtherInvestments" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="kins_AvailableForSaleSecuritiesChangeInNetUnrealizedHoldingLoss" name="AvailableForSaleSecuritiesChangeInNetUnrealizedHoldingLoss" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="kins_NetGainsOnInvestments" name="NetGainsOnInvestments" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="kins_AvailableForSaleSecuritiesContinuousUnrealizedLossPositionLessThan12MonthsLosses" name="AvailableForSaleSecuritiesContinuousUnrealizedLossPositionLessThan12MonthsLosses" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="kins_HeldtomaturitySecuritiesContinuousUnrealizedLossPositionLessThan12MonthsLoss" name="HeldtomaturitySecuritiesContinuousUnrealizedLossPositionLessThan12MonthsLoss" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="kins_AvailableForSaleSecuritiesContinuousUnrealizedLossPosition12MonthsOrLongerLosses" name="AvailableForSaleSecuritiesContinuousUnrealizedLossPosition12MonthsOrLongerLosses" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="kins_HeldtomaturitySecuritiesContinuousUnrealizedLossPosition12MonthsOrLongerLoss" name="HeldtomaturitySecuritiesContinuousUnrealizedLossPosition12MonthsOrLongerLoss" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="kins_AvailableForSaleSecuritiesContinuousUnrealizedLossPositionLosses" name="AvailableForSaleSecuritiesContinuousUnrealizedLossPositionLosses" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="kins_ProceedsFromTheSaleOrMaturityOfFixedMaturitySecuritiesAvailableForSale" name="ProceedsFromTheSaleOrMaturityOfFixedMaturitySecuritiesAvailableForSale" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="kins_USTreasurySecuritiesAndObligationsOfUSGovernmentCorporationsAndAgencies" name="USTreasurySecuritiesAndObligationsOfUSGovernmentCorporationsAndAgencies" nillable="true" xbrli:balance="debit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="kins_PoliticalSubdivisionsOfStatesTerritoriesAndPossessions" name="PoliticalSubdivisionsOfStatesTerritoriesAndPossessions" nillable="true" xbrli:balance="debit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="kins_CorporateAndOtherBondsIndustrialAndMiscellaneous" name="CorporateAndOtherBondsIndustrialAndMiscellaneous" nillable="true" xbrli:balance="debit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="kins_ResidentialMortgageAndOtherAssetBackedSecurities" name="ResidentialMortgageAndOtherAssetBackedSecurities" nillable="true" xbrli:balance="debit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="kins_FixedMaturitiesNet" name="FixedMaturitiesNet" nillable="true" xbrli:balance="debit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="kins_EquityInvestments" name="EquityInvestments" nillable="true" xbrli:balance="debit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="kins_FixedmaturityInvestmentsHeldToMaturity" name="FixedmaturityInvestmentsHeldToMaturity" nillable="true" xbrli:balance="debit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="kins_UsefulLifeInYrs" name="UsefulLifeInYrs" nillable="true" xbrli:periodType="instant" type="xbrli:durationItemType" substitutionGroup="xbrli:item" />
+  <element id="kins_PercentCeded" name="PercentCeded" nillable="true" xbrli:periodType="duration" type="num:percentItemType" substitutionGroup="xbrli:item" />
+  <element id="kins_RiskRetained1" name="RiskRetained1" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="kins_LossesPerOccurrenceSubjectToQuotaShareReinsuranceCoverage" name="LossesPerOccurrenceSubjectToQuotaShareReinsuranceCoverage" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="kins_ExcessOfLossCoverageAndFacultativeFacilityCoverage" name="ExcessOfLossCoverageAndFacultativeFacilityCoverage" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="kins_InExcessOf" name="InExcessOf" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="kins_TotalReinsuranceCoveragePerOccurrence" name="TotalReinsuranceCoveragePerOccurrence" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="kins_LossesPerOccurrenceSubjectToReinsuranceCoverage" name="LossesPerOccurrenceSubjectToReinsuranceCoverage" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="kins_ExpirationDate" name="ExpirationDate" nillable="true" xbrli:periodType="duration" type="xbrli:dateItemType" substitutionGroup="xbrli:item" />
+  <element id="kins_ExpirationDatePersonalLines" name="ExpirationDatePersonalLines" nillable="true" xbrli:periodType="duration" type="xbrli:dateItemType" substitutionGroup="xbrli:item" />
+  <element id="kins_PercentCededFirstMillionDollarsOfCoverage" name="PercentCededFirstMillionDollarsOfCoverage" nillable="true" xbrli:periodType="duration" type="num:percentItemType" substitutionGroup="xbrli:item" />
+  <element id="kins_PercentCededExcessOfOneMillionOfCoverage" name="PercentCededExcessOfOneMillionOfCoverage" nillable="true" xbrli:periodType="duration" type="num:percentItemType" substitutionGroup="xbrli:item" />
+  <element id="kins_InitialLossSubjectToPersonalLinesQuotaShareTreaty" name="InitialLossSubjectToPersonalLinesQuotaShareTreaty" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="kins_RiskRetainedPerCatastropheOccurrence" name="RiskRetainedPerCatastropheOccurrence" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="kins_CatastropheLossCoverageInExcesOfQuotaSharesCoverageWinterStormCoverage" name="CatastropheLossCoverageInExcesOfQuotaSharesCoverageWinterStormCoverage" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="kins_ReinstatementPremiumProtection" name="ReinstatementPremiumProtection" nillable="true" xbrli:periodType="duration" type="xbrli:stringItemType" substitutionGroup="xbrli:item" />
+  <element id="kins_ReinsuranceReceivablesUnPaidLossesRecoverable" name="ReinsuranceReceivablesUnPaidLossesRecoverable" nillable="true" xbrli:balance="debit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="kins_PaidLosses" name="PaidLosses" nillable="true" xbrli:balance="debit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="kins_TotalReinsuranceRecoverables" name="TotalReinsuranceRecoverables" nillable="true" xbrli:balance="debit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="kins_ReinsuranceRecoverablesSecurity" name="ReinsuranceRecoverablesSecurity" nillable="true" xbrli:balance="credit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="kins_ContingentCedingCommissionsEarned" name="ContingentCedingCommissionsEarned" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="kins_CedingCommissionRevenue" name="CedingCommissionRevenue" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="kins_ReinsuranceReceivableCaseBasis" name="ReinsuranceReceivableCaseBasis" nillable="true" xbrli:balance="debit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="kins_DescriptionOfReinsuranceLosses" name="DescriptionOfReinsuranceLosses" nillable="true" xbrli:periodType="duration" type="xbrli:stringItemType" substitutionGroup="xbrli:item" />
+  <element id="kins_ReinsuranceDescription" name="ReinsuranceDescription" nillable="true" xbrli:periodType="duration" type="xbrli:stringItemType" substitutionGroup="xbrli:item" />
+  <element id="kins_CatastropheLossCoverageInExcessOfQuotaShareCoverageDescriptions" name="CatastropheLossCoverageInExcessOfQuotaShareCoverageDescriptions" nillable="true" xbrli:periodType="duration" type="xbrli:stringItemType" substitutionGroup="xbrli:item" />
+  <element id="kins_GuaranteedIrrevocableLetterOfCredit" name="GuaranteedIrrevocableLetterOfCredit" nillable="true" xbrli:balance="credit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="kins_IrrevocableLetterOfCredit" name="IrrevocableLetterOfCredit" nillable="true" xbrli:balance="credit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="kins_SingleRiskCoverage" name="SingleRiskCoverage" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="kins_DirectLoss" name="DirectLoss" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="kins_ReinstatementOfPremiumProtectionAmount" name="ReinstatementOfPremiumProtectionAmount" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="kins_ExcessOfCatastropheCoverage" name="ExcessOfCatastropheCoverage" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="kins_NetDeferredPolicyAcquisitionCostsNetOfCedingCommissionRevenueBeginningOfYear" name="NetDeferredPolicyAcquisitionCostsNetOfCedingCommissionRevenueBeginningOfYear" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="kins_CommissionAndBrokerage" name="CommissionAndBrokerage" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="kins_OtherUnderwritingAndPolicyAcquisitionCosts" name="OtherUnderwritingAndPolicyAcquisitionCosts" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="kins_CedingCommissions" name="CedingCommissions" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="kins_DeferredAcquisitionCostsNetOfAmortization" name="DeferredAcquisitionCostsNetOfAmortization" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="kins_NetDeferredPolicyAcquisitionCostsNetOfCedingCommissionRevenueEndingOfYear" name="NetDeferredPolicyAcquisitionCostsNetOfCedingCommissionRevenueEndingOfYear" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="kins_DeferredCedingCommissionRevenue" name="DeferredCedingCommissionRevenue" nillable="true" xbrli:balance="debit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="kins_DeferredPolicyAcquisitionCostsNetEnding" name="DeferredPolicyAcquisitionCostsNetEnding" nillable="true" xbrli:balance="debit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="kins_LongTermDebtMaturitiesRepaymentsOfPrincipalGross" name="LongTermDebtMaturitiesRepaymentsOfPrincipalGross" nillable="true" xbrli:balance="credit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="kins_PurchasePriceContractualPaymentObligations" name="PurchasePriceContractualPaymentObligations" nillable="true" xbrli:balance="credit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="kins_LongTermDebtMaturitiesRepaymentsOfPrincipal" name="LongTermDebtMaturitiesRepaymentsOfPrincipal" nillable="true" xbrli:balance="credit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="kins_AdvanceLimitsDescription" name="AdvanceLimitsDescription" nillable="true" xbrli:periodType="duration" type="xbrli:stringItemType" substitutionGroup="xbrli:item" />
+  <element id="kins_AdvancesLimitDescription" name="AdvancesLimitDescription" nillable="true" xbrli:periodType="duration" type="xbrli:stringItemType" substitutionGroup="xbrli:item" />
+  <element id="kins_MaximumAllowableAdvances" name="MaximumAllowableAdvances" nillable="true" xbrli:balance="debit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="kins_NotesIssueRate" name="NotesIssueRate" nillable="true" xbrli:periodType="duration" type="num:percentItemType" substitutionGroup="xbrli:item" />
+  <element id="kins_TransactionCost" name="TransactionCost" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="kins_DebtInstrumentYieldPercentage" name="DebtInstrumentYieldPercentage" nillable="true" xbrli:periodType="duration" type="num:percentItemType" substitutionGroup="xbrli:item" />
+  <element id="kins_TotalTreasuryBills" name="TotalTreasuryBills" nillable="true" xbrli:balance="debit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="kins_NoteholderExchangeDescription" name="NoteholderExchangeDescription" nillable="true" xbrli:periodType="duration" type="xbrli:stringItemType" substitutionGroup="xbrli:item" />
+  <element id="kins_TotalRentalRate" name="TotalRentalRate" nillable="true" xbrli:balance="credit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="kins_FairValueOfPledgedCollateral" name="FairValueOfPledgedCollateral" nillable="true" xbrli:balance="debit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="kins_InterestRate" name="InterestRate" nillable="true" xbrli:periodType="duration" type="num:percentItemType" substitutionGroup="xbrli:item" />
+  <element id="kins_FinanceAmount" name="FinanceAmount" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="kins_AssumedPropertyAndCasultyInsuranceActivity" name="AssumedPropertyAndCasultyInsuranceActivity" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="kins_CededPropertyAndCasultyInsuranceActivity" name="CededPropertyAndCasultyInsuranceActivity" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="kins_NetPropertyAndCasultyInsuranceActivity" name="NetPropertyAndCasultyInsuranceActivity" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="kins_DirectPropertyAndCasultyInsuranceActivity" name="DirectPropertyAndCasultyInsuranceActivity" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="kins_CasebasisReserves" name="CasebasisReserves" nillable="true" xbrli:balance="credit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="kins_IncurredButNotReportedReserves" name="IncurredButNotReportedReserves" nillable="true" xbrli:balance="credit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="kins_RecoverableOnPaidLosses" name="RecoverableOnPaidLosses" nillable="true" xbrli:balance="credit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="kins_TotalLossAndLossAdjustmentExpenses" name="TotalLossAndLossAdjustmentExpenses" nillable="true" xbrli:balance="debit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="kins_RecoverableOnUnpaidLosses" name="RecoverableOnUnpaidLosses" nillable="true" xbrli:balance="credit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="kins_UnearnedPremium" name="UnearnedPremium" nillable="true" xbrli:balance="credit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="kins_ReceivablesReinsuranceContracts" name="ReceivablesReinsuranceContracts" nillable="true" xbrli:balance="debit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="kins_TotalReinsuranceReceivables" name="TotalReinsuranceReceivables" nillable="true" xbrli:balance="debit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="kins_LessReinsuranceRecoverables" name="LessReinsuranceRecoverables" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="kins_NetBalanceBeginningOfPeriod" name="NetBalanceBeginningOfPeriod" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="kins_IncurredRelatedToAbstract" name="IncurredRelatedToAbstract" nillable="true" abstract="true" xbrli:periodType="duration" type="xbrli:stringItemType" substitutionGroup="xbrli:item" />
+  <element id="kins_CurrentYearPropertyAndCasultyInsuranceActivity" name="CurrentYearPropertyAndCasultyInsuranceActivity" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="kins_PriorYearsPropertyAndCasultyInsuranceActivity" name="PriorYearsPropertyAndCasultyInsuranceActivity" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="kins_TotalIncurredPropertyAndCasultyInsuranceActivity" name="TotalIncurredPropertyAndCasultyInsuranceActivity" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="kins_PaidRelatedToAbstract" name="PaidRelatedToAbstract" nillable="true" abstract="true" xbrli:periodType="duration" type="xbrli:stringItemType" substitutionGroup="xbrli:item" />
+  <element id="kins_PaidRelatedToCurrentYear" name="PaidRelatedToCurrentYear" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="kins_PaidRelatedToPriorYears" name="PaidRelatedToPriorYears" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="kins_PaidRelatedToTotalPaid" name="PaidRelatedToTotalPaid" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="kins_NetBalanceAtEndOfPeriod" name="NetBalanceAtEndOfPeriod" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="kins_AddReinsuranceRecoverables" name="AddReinsuranceRecoverables" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="kins_BalanceAtEndOfPeriod" name="BalanceAtEndOfPeriod" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="kins_IncurredClaimsPropertyCasualtyAndLiability2014" name="IncurredClaimsPropertyCasualtyAndLiability2014" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="kins_IncurredClaimsPropertyCasualtyAndLiability2015" name="IncurredClaimsPropertyCasualtyAndLiability2015" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="kins_IncurredClaimsPropertyCasualtyAndLiability2016" name="IncurredClaimsPropertyCasualtyAndLiability2016" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="kins_IncurredClaimsPropertyCasualtyAndLiability2017" name="IncurredClaimsPropertyCasualtyAndLiability2017" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="kins_IncurredClaimsPropertyCasualtyAndLiability2018" name="IncurredClaimsPropertyCasualtyAndLiability2018" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="kins_IncurredClaimsPropertyCasualtyAndLiability2019" name="IncurredClaimsPropertyCasualtyAndLiability2019" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="kins_IncurredClaimsPropertyCasualtyAndLiability2020" name="IncurredClaimsPropertyCasualtyAndLiability2020" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="kins_IncurredClaimsPropertyCasualtyAndLiability2021" name="IncurredClaimsPropertyCasualtyAndLiability2021" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="kins_IncurredClaimsPropertyCasualtyAndLiability2022" name="IncurredClaimsPropertyCasualtyAndLiability2022" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="kins_IncurredClaimsPropertyCasualtyAndLiability2023" name="IncurredClaimsPropertyCasualtyAndLiability2023" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="kins_AllOutstandingLiabilitiesBefore2014NetOfReinsurance" name="AllOutstandingLiabilitiesBefore2014NetOfReinsurance" nillable="true" xbrli:balance="credit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="kins_ShortdurationInsuranceContractsCumulativePaidClaimsAndAllocatedClaimAdjustmentExpense2014" name="ShortdurationInsuranceContractsCumulativePaidClaimsAndAllocatedClaimAdjustmentExpense2014" nillable="true" xbrli:balance="debit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="kins_ShortdurationInsuranceContractsCumulativePaidClaimsAndAllocatedClaimAdjustmentExpense2015" name="ShortdurationInsuranceContractsCumulativePaidClaimsAndAllocatedClaimAdjustmentExpense2015" nillable="true" xbrli:balance="debit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="kins_ShortdurationInsuranceContractsCumulativePaidClaimsAndAllocatedClaimAdjustmentExpense2016" name="ShortdurationInsuranceContractsCumulativePaidClaimsAndAllocatedClaimAdjustmentExpense2016" nillable="true" xbrli:balance="debit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="kins_ShortdurationInsuranceContractsCumulativePaidClaimsAndAllocatedClaimAdjustmentExpense2017" name="ShortdurationInsuranceContractsCumulativePaidClaimsAndAllocatedClaimAdjustmentExpense2017" nillable="true" xbrli:balance="debit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="kins_ShortdurationInsuranceContractsCumulativePaidClaimsAndAllocatedClaimAdjustmentExpense2018" name="ShortdurationInsuranceContractsCumulativePaidClaimsAndAllocatedClaimAdjustmentExpense2018" nillable="true" xbrli:balance="debit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="kins_ShortdurationInsuranceContractsCumulativePaidClaimsAndAllocatedClaimAdjustmentExpense2019" name="ShortdurationInsuranceContractsCumulativePaidClaimsAndAllocatedClaimAdjustmentExpense2019" nillable="true" xbrli:balance="debit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="kins_ShortdurationInsuranceContractsCumulativePaidClaimsAndAllocatedClaimAdjustmentExpenseFor2020" name="ShortdurationInsuranceContractsCumulativePaidClaimsAndAllocatedClaimAdjustmentExpenseFor2020" nillable="true" xbrli:balance="debit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="kins_ShortdurationInsuranceContractsCumulativePaidClaimsAndAllocatedClaimAdjustmentExpense2021" name="ShortdurationInsuranceContractsCumulativePaidClaimsAndAllocatedClaimAdjustmentExpense2021" nillable="true" xbrli:balance="debit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="kins_ShortdurationInsuranceContractsCumulativePaidClaimsAndAllocatedClaimAdjustmentExpenseFor2022" name="ShortdurationInsuranceContractsCumulativePaidClaimsAndAllocatedClaimAdjustmentExpenseFor2022" nillable="true" xbrli:balance="debit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="kins_ShortdurationInsuranceContractsCumulativePaidClaimsAndAllocatedClaimAdjustmentExpenseFor2023" name="ShortdurationInsuranceContractsCumulativePaidClaimsAndAllocatedClaimAdjustmentExpenseFor2023" nillable="true" xbrli:balance="debit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="kins_LiabilitiesForAllocatedLossAndLossAdjustmentExpensesNetOfReinsurance" name="LiabilitiesForAllocatedLossAndLossAdjustmentExpensesNetOfReinsurance" nillable="true" xbrli:balance="credit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="kins_TotalGrossLiabilityForLossAndLossAdjustmentExpenseReserves" name="TotalGrossLiabilityForLossAndLossAdjustmentExpenseReserves" nillable="true" xbrli:balance="debit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="kins_PriorYearLossDevelopment" name="PriorYearLossDevelopment" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="kins_NumberOfOptionsOutstandingVestedAndExercisable" name="NumberOfOptionsOutstandingVestedAndExercisable" nillable="true" xbrli:periodType="duration" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" />
+  <element id="kins_WeightedAverageRemainingContractualBeginningBalance" name="WeightedAverageRemainingContractualBeginningBalance" nillable="true" xbrli:periodType="duration" type="xbrli:durationItemType" substitutionGroup="xbrli:item" />
+  <element id="kins_WeightedAverageRemainingContractualTermEndingBalance" name="WeightedAverageRemainingContractualTermEndingBalance" nillable="true" xbrli:periodType="duration" type="xbrli:durationItemType" substitutionGroup="xbrli:item" />
+  <element id="kins_WeightedAverageExercisePriceBeginningBalance" name="WeightedAverageExercisePriceBeginningBalance" nillable="true" xbrli:periodType="duration" type="num:perShareItemType" substitutionGroup="xbrli:item" />
+  <element id="kins_WeightedAverageExercisePriceExercised" name="WeightedAverageExercisePriceExercised" nillable="true" xbrli:periodType="duration" type="num:perShareItemType" substitutionGroup="xbrli:item" />
+  <element id="kins_WeightedAverageExercisePriceEndingBalance" name="WeightedAverageExercisePriceEndingBalance" nillable="true" xbrli:periodType="duration" type="num:perShareItemType" substitutionGroup="xbrli:item" />
+  <element id="kins_WeightedAveragePricePerShareOutstandingVestedAndExercisable" name="WeightedAveragePricePerShareOutstandingVestedAndExercisable" nillable="true" xbrli:periodType="duration" type="num:perShareItemType" substitutionGroup="xbrli:item" />
+  <element id="kins_SharebasedCompensationArrangementBySharebasedPaymentAwardEquityInstrumentsOtherThanOptionsAggregateIntrinsicValueGranted" name="SharebasedCompensationArrangementBySharebasedPaymentAwardEquityInstrumentsOtherThanOptionsAggregateIntrinsicValueGranted" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="kins_SharebasedCompensationArrangementBySharebasedPaymentAwardOptionsForfeited" name="SharebasedCompensationArrangementBySharebasedPaymentAwardOptionsForfeited" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="kins_AggregateFairValueForfeited" name="AggregateFairValueForfeited" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="kins_StockBasedCompensationForStockOptions" name="StockBasedCompensationForStockOptions" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="kins_ShareBasedCompensationUnderOffering" name="ShareBasedCompensationUnderOffering" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="kins_StockBasedCompensationForGrants" name="StockBasedCompensationForGrants" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="kins_FairValueOfUnamortizedCompensationCost" name="FairValueOfUnamortizedCompensationCost" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="kins_MaximumSharePurchaseUnderEspp" name="MaximumSharePurchaseUnderEspp" nillable="true" xbrli:periodType="duration" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" />
+  <element id="kins_CommonStockShareAuthorized" name="CommonStockShareAuthorized" nillable="true" xbrli:periodType="instant" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" />
+  <element id="kins_UnassignedDeficitSurplus" name="UnassignedDeficitSurplus" nillable="true" xbrli:balance="credit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="kins_StatutoryBasisNetIncomeLoss" name="StatutoryBasisNetIncomeLoss" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="kins_StatutoryBasisSurplus" name="StatutoryBasisSurplus" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="kins_DividendDescription" name="DividendDescription" nillable="true" xbrli:periodType="duration" type="xbrli:stringItemType" substitutionGroup="xbrli:item" />
+  <element id="kins_StateValuationAllowance" name="StateValuationAllowance" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="kins_SaleLeasebackTransactionAmount" name="SaleLeasebackTransactionAmount" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="kins_OtherPermanentDifferences" name="OtherPermanentDifferences" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="kins_IncomeTaxReconciliationOther" name="IncomeTaxReconciliationOther" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="kins_StateValuationAllowancePercent" name="StateValuationAllowancePercent" nillable="true" xbrli:periodType="duration" type="num:percentItemType" substitutionGroup="xbrli:item" />
+  <element id="kins_EffectiveIncomeTaxRateReconciliationShareBasedCompensation" name="EffectiveIncomeTaxRateReconciliationShareBasedCompensation" nillable="true" xbrli:periodType="duration" type="num:percentItemType" substitutionGroup="xbrli:item" />
+  <element id="kins_SaleLeasebackTransaction" name="SaleLeasebackTransaction" nillable="true" xbrli:periodType="duration" type="num:percentItemType" substitutionGroup="xbrli:item" />
+  <element id="kins_ClaimsReserveDiscount" name="ClaimsReserveDiscount" nillable="true" xbrli:balance="debit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="kins_DeferredCedingCommissionRevenuedDeferredTax" name="DeferredCedingCommissionRevenuedDeferredTax" nillable="true" xbrli:balance="debit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="kins_NetDeferredIncomeTaxLiabilityAsset" name="NetDeferredIncomeTaxLiabilityAsset" nillable="true" xbrli:balance="debit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="kins_FederalNetOperatingLoss" name="FederalNetOperatingLoss" nillable="true" xbrli:balance="credit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="kins_StateNetOperatingLoss" name="StateNetOperatingLoss" nillable="true" xbrli:balance="credit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="kins_StateNetOperatingLossExpirationPeriod" name="StateNetOperatingLossExpirationPeriod" nillable="true" xbrli:periodType="duration" type="xbrli:stringItemType" substitutionGroup="xbrli:item" />
+  <element id="kins_StateOnlyNetOfValuationAllowance" name="StateOnlyNetOfValuationAllowance" nillable="true" xbrli:balance="credit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="kins_IncreaseInNetDeferredIncomeTaxAssets" name="IncreaseInNetDeferredIncomeTaxAssets" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="kins_DeferredTaxBenefitAllocatedToOtherComprehensiveIncome" name="DeferredTaxBenefitAllocatedToOtherComprehensiveIncome" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="kins_CashPaymentsIncludedInMeasurementOfLeaseLiabilityInOperatingCashFlows" name="CashPaymentsIncludedInMeasurementOfLeaseLiabilityInOperatingCashFlows" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="kins_RemainingLeaseTermInYearsKICO" name="RemainingLeaseTermInYearsKICO" nillable="true" xbrli:periodType="duration" type="xbrli:durationItemType" substitutionGroup="xbrli:item" />
+  <element id="kins_OperatingLeaseLiabilityLessPresentValueAdjustment" name="OperatingLeaseLiabilityLessPresentValueAdjustment" nillable="true" xbrli:balance="debit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="kins_LeaseCosts" name="LeaseCosts" nillable="true" xbrli:balance="debit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="kins_PercentOfAveragePerAnnum" name="PercentOfAveragePerAnnum" nillable="true" xbrli:periodType="duration" type="num:percentItemType" substitutionGroup="xbrli:item" />
+  <element id="kins_PercentOfAnnualBonus" name="PercentOfAnnualBonus" nillable="true" xbrli:periodType="duration" type="num:percentItemType" substitutionGroup="xbrli:item" />
+  <element id="kins_EffectOfDilutiveSecuritiesCommonShareEquivalentsWarrants" name="EffectOfDilutiveSecuritiesCommonShareEquivalentsWarrants" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="kins_CommissionExpenseAndOtherUnderwritingExpenses" name="CommissionExpenseAndOtherUnderwritingExpenses" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="kins_NatureOfBusinessAbstract" name="NatureOfBusinessAbstract" nillable="true" abstract="true" xbrli:periodType="duration" type="xbrli:stringItemType" substitutionGroup="xbrli:item" />
+  <element id="kins_PropertyAndCasualtyInsuranceActivityAbstract" name="PropertyAndCasualtyInsuranceActivityAbstract" nillable="true" abstract="true" xbrli:periodType="duration" type="xbrli:stringItemType" substitutionGroup="xbrli:item" />
+  <element id="kins_StatutoryFinancialInformationAndAccountingPoliciesAbstract" name="StatutoryFinancialInformationAndAccountingPoliciesAbstract" nillable="true" abstract="true" xbrli:periodType="duration" type="xbrli:stringItemType" substitutionGroup="xbrli:item" />
+  <element id="kins_RiskBasedCapitalAbstract" name="RiskBasedCapitalAbstract" nillable="true" abstract="true" xbrli:periodType="duration" type="xbrli:stringItemType" substitutionGroup="xbrli:item" />
+  <element id="kins_EmployeeBenefitPlansAbstract" name="EmployeeBenefitPlansAbstract" nillable="true" abstract="true" xbrli:periodType="duration" type="xbrli:stringItemType" substitutionGroup="xbrli:item" />
+  <element name="PersonalLinesMember" id="kins_PersonalLinesMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="USTreasuryAndGovernmentsMember" id="kins_USTreasuryAndGovernmentsMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="FixedMaturitySecuritiesPoliticalSubdivisionsOfStatesTerritoriesAndPossessionsMember" id="kins_FixedMaturitySecuritiesPoliticalSubdivisionsOfStatesTerritoriesAndPossessionsMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="FixedMaturitySecuritiesCorporateAndOtherBondsIndustrialAndMiscellaneousMember" id="kins_FixedMaturitySecuritiesCorporateAndOtherBondsIndustrialAndMiscellaneousMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="FixedMaturitySecuritiesMortgageBackedSecuritiesMember" id="kins_FixedMaturitySecuritiesMortgageBackedSecuritiesMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="FixedMaturitySecuritiesTotalFixedMaturitySecuritiesMember" id="kins_FixedMaturitySecuritiesTotalFixedMaturitySecuritiesMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="LessThanOneYearMember" id="kins_LessThanOneYearMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="OneToFiveYearsMember" id="kins_OneToFiveYearsMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="FiveToTenYearsMember" id="kins_FiveToTenYearsMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="MoreThan10YearsMember" id="kins_MoreThan10YearsMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="ResidentialMortgageAndOtherAssetBackedSecuritiesMember" id="kins_ResidentialMortgageAndOtherAssetBackedSecuritiesMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="PreferredStockEquitySecuritiesMember" id="kins_PreferredStockEquitySecuritiesMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="HedgeFundMember" id="kins_HedgeFundMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="HeldToMaturitySecuritiesUSTreasurySecuritiesMember" id="kins_HeldToMaturitySecuritiesUSTreasurySecuritiesMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="ExchangeTradedDebtMember" id="kins_ExchangeTradedDebtMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="CarryingValueMember" id="kins_CarryingValueMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="FairValueMember" id="kins_FairValueMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="OtherIdentifiableIntangiblesMember" id="kins_OtherIdentifiableIntangiblesMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="InsuranceLicenseMember" id="kins_InsuranceLicenseMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="PersonalUmbrellaMember" id="kins_PersonalUmbrellaMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="TenMayTwoThousandTwentyThreeMember" id="kins_TenMayTwoThousandTwentyThreeMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="SwissReinsuranceAmericaCorporationMember" id="kins_SwissReinsuranceAmericaCorporationMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="HanoverRueckSEMember" id="kins_HanoverRueckSEMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="OthersMember" id="kins_OthersMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="ScorReinsuraceCompanyMember" id="kins_ScorReinsuraceCompanyMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="AlliedWorldAssuranceCompanyMember" id="kins_AlliedWorldAssuranceCompanyMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="AcePropertyAndCasualtyInsuranceCompanyMember" id="kins_AcePropertyAndCasualtyInsuranceCompanyMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="LancashireInsuranceCompanyLimitedMember" id="kins_LancashireInsuranceCompanyLimitedMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="NotesTwoThousandTwentyTwoMember" id="kins_NotesTwoThousandTwentyTwoMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="TwothousandtwentytwoMember" id="kins_TwothousandtwentytwoMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="IssuanceCostsMember" id="kins_IssuanceCostsMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="TwothousandseventeenMember" id="kins_TwothousandseventeenMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="SeniorUnsecuredNotesMember" id="kins_SeniorUnsecuredNotesMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="TwoThousandTwentyTwoMember" id="kins_TwoThousandTwentyTwoMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="DecemberThirtyTwentyTwentyTwoToTwentyNineDecemberTwentyTwentyThreeMember" id="kins_DecemberThirtyTwentyTwentyTwoToTwentyNineDecemberTwentyTwentyThreeMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="DecemberThirtyTwentyTwentyThreeToTwentyNineSepTwentyTwentyFourMember" id="kins_DecemberThirtyTwentyTwentyThreeToTwentyNineSepTwentyTwentyFourMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="SepThirtyTwentyTwentyFourToTwentyNineDecTwentyTwentyFourMember" id="kins_SepThirtyTwentyTwentyFourToTwentyNineDecTwentyTwentyFourMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="NotesTwentyTwentyTwoMember" id="kins_NotesTwentyTwentyTwoMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="EquipmentFinancingMember" id="kins_EquipmentFinancingMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="PremiumswrittenMember" id="kins_PremiumswrittenMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="ChangeinunearnedpremiumsMember" id="kins_ChangeinunearnedpremiumsMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="PremiumsearnedMember" id="kins_PremiumsearnedMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="GrossLiabilityMember" id="kins_GrossLiabilityMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="ReinsuranceReceivablesMember" id="kins_ReinsuranceReceivablesMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="TwoThousandFourteenMember" id="kins_TwoThousandFourteenMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="TwoThousandFifteenMember" id="kins_TwoThousandFifteenMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="TwoThousandSixteenMember" id="kins_TwoThousandSixteenMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="TwoThousandEighteenMember" id="kins_TwoThousandEighteenMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="TwoThousandNineteenMember" id="kins_TwoThousandNineteenMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="TwoThousandTwentyMember" id="kins_TwoThousandTwentyMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="TwoThousandTwentyOneMember" id="kins_TwoThousandTwentyOneMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="TwoThousandTwentyThreeMember" id="kins_TwoThousandTwentyThreeMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="CosiLeaseMember" id="kins_CosiLeaseMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="AmendedEmploymentAgreementMember" id="kins_AmendedEmploymentAgreementMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="JanuaryTwoThousandTwentyMember" id="kins_JanuaryTwoThousandTwentyMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="MrGoldsteinMember" id="kins_MrGoldsteinMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="EmploymentAgreementMember" id="kins_EmploymentAgreementMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="GoldenEmloymentAgreementMember" id="kins_GoldenEmloymentAgreementMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="MeryGoldenChiefOperatingOfficerMember" id="kins_MeryGoldenChiefOperatingOfficerMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="JanuaryTwoThousandTwentyThreeMember" id="kins_JanuaryTwoThousandTwentyThreeMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="JanuaryTwoThousandTwentyFourMember" id="kins_JanuaryTwoThousandTwentyFourMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="PremiumsEarnedNotSubjectToConcentrationMember" id="kins_PremiumsEarnedNotSubjectToConcentrationMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="PremiumEarnedNotSubjectToConcentrationMember" id="kins_PremiumEarnedNotSubjectToConcentrationMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="CapitalInExcessOfParMember" id="kins_CapitalInExcessOfParMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="FixedIncomeExchangeTradedFundsMember" id="kins_FixedIncomeExchangeTradedFundsMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="MutualFundsMember" id="kins_MutualFundsMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="FHLBNYcommonstockMember" id="kins_FHLBNYcommonstockMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="OtherInvestmentFixedIncomeExchangeTradedFundsMember" id="kins_OtherInvestmentFixedIncomeExchangeTradedFundsMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+</schema>

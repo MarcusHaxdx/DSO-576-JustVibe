@@ -1,0 +1,648 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--XBRL Document Created with the Workiva Platform-->
+<!--Copyright 2024 Workiva-->
+<!--r:e3e275c2-1434-4c84-8e8f-8716ae7b46e9,g:aa71cea8-d7fe-495b-bc7c-b90cf4df3401-->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:lumn="http://www.lumen.com/20231231" xmlns:xbrli="http://www.xbrl.org/2003/instance" xmlns:dtr-types1="http://www.xbrl.org/dtr/type/2020-01-21" xmlns:dtr-types="http://www.xbrl.org/dtr/type/2022-03-31" xmlns:dei="http://xbrl.sec.gov/dei/2023" xmlns:xbrldt="http://xbrl.org/2005/xbrldt" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://www.lumen.com/20231231">
+  <xs:import namespace="http://fasb.org/srt/2023" schemaLocation="https://xbrl.fasb.org/srt/2023/elts/srt-2023.xsd"/>
+  <xs:import namespace="http://fasb.org/us-gaap/2023" schemaLocation="https://xbrl.fasb.org/us-gaap/2023/elts/us-gaap-2023.xsd"/>
+  <xs:import namespace="http://www.w3.org/1999/xlink" schemaLocation="http://www.xbrl.org/2003/xlink-2003-12-31.xsd"/>
+  <xs:import namespace="http://www.xbrl.org/2003/instance" schemaLocation="http://www.xbrl.org/2003/xbrl-instance-2003-12-31.xsd"/>
+  <xs:import namespace="http://www.xbrl.org/2003/linkbase" schemaLocation="http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd"/>
+  <xs:import namespace="http://www.xbrl.org/dtr/type/2020-01-21" schemaLocation="https://www.xbrl.org/dtr/type/2020-01-21/types.xsd"/>
+  <xs:import namespace="http://www.xbrl.org/dtr/type/2022-03-31" schemaLocation="https://www.xbrl.org/dtr/type/2022-03-31/types.xsd"/>
+  <xs:import namespace="http://xbrl.org/2005/xbrldt" schemaLocation="http://www.xbrl.org/2005/xbrldt-2005.xsd"/>
+  <xs:import namespace="http://xbrl.sec.gov/dei/2023" schemaLocation="https://xbrl.sec.gov/dei/2023/dei-2023.xsd"/>
+  <xs:annotation>
+    <xs:appinfo>
+      <link:linkbaseRef xmlns:xlink="http://www.w3.org/1999/xlink" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="lumn-20231231_pre.xml" xlink:role="http://www.xbrl.org/2003/role/presentationLinkbaseRef" xlink:type="simple"/>
+      <link:linkbaseRef xmlns:xlink="http://www.w3.org/1999/xlink" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="lumn-20231231_def.xml" xlink:role="http://www.xbrl.org/2003/role/definitionLinkbaseRef" xlink:type="simple"/>
+      <link:linkbaseRef xmlns:xlink="http://www.w3.org/1999/xlink" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="lumn-20231231_lab.xml" xlink:role="http://www.xbrl.org/2003/role/labelLinkbaseRef" xlink:type="simple"/>
+      <link:linkbaseRef xmlns:xlink="http://www.w3.org/1999/xlink" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="lumn-20231231_cal.xml" xlink:role="http://www.xbrl.org/2003/role/calculationLinkbaseRef" xlink:type="simple"/>
+      <link:roleType id="Cover" roleURI="http://www.lumen.com/role/Cover">
+        <link:definition>0000001 - Document - Cover</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="AuditInformation" roleURI="http://www.lumen.com/role/AuditInformation">
+        <link:definition>0000002 - Document - Audit Information</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CONSOLIDATEDSTATEMENTSOFOPERATIONS" roleURI="http://www.lumen.com/role/CONSOLIDATEDSTATEMENTSOFOPERATIONS">
+        <link:definition>0000003 - Statement - CONSOLIDATED STATEMENTS OF OPERATIONS</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CONSOLIDATEDBALANCESHEETS" roleURI="http://www.lumen.com/role/CONSOLIDATEDBALANCESHEETS">
+        <link:definition>0000004 - Statement - CONSOLIDATED BALANCE SHEETS</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CONSOLIDATEDBALANCESHEETSParenthetical" roleURI="http://www.lumen.com/role/CONSOLIDATEDBALANCESHEETSParenthetical">
+        <link:definition>0000005 - Statement - CONSOLIDATED BALANCE SHEETS (Parenthetical)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CONSOLIDATEDSTATEMENTSOFCASHFLOWS" roleURI="http://www.lumen.com/role/CONSOLIDATEDSTATEMENTSOFCASHFLOWS">
+        <link:definition>0000006 - Statement - CONSOLIDATED STATEMENTS OF CASH FLOWS</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CONSOLIDATEDSTATEMENTSOFCASHFLOWSParenthetical" roleURI="http://www.lumen.com/role/CONSOLIDATEDSTATEMENTSOFCASHFLOWSParenthetical">
+        <link:definition>0000007 - Statement - CONSOLIDATED STATEMENTS OF CASH FLOWS (Parenthetical)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CONSOLIDATEDSTATEMENTSOFSTOCKHOLDERSEQUITYDEFICIT" roleURI="http://www.lumen.com/role/CONSOLIDATEDSTATEMENTSOFSTOCKHOLDERSEQUITYDEFICIT">
+        <link:definition>0000008 - Statement - CONSOLIDATED STATEMENTS OF STOCKHOLDER'S EQUITY (DEFICIT)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CONSOLIDATEDSTATEMENTSOFSTOCKHOLDERSEQUITYParenthetical" roleURI="http://www.lumen.com/role/CONSOLIDATEDSTATEMENTSOFSTOCKHOLDERSEQUITYParenthetical">
+        <link:definition>0000009 - Statement - CONSOLIDATED STATEMENTS OF STOCKHOLDER'S EQUITY (Parenthetical)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="BackgroundandSummaryofSignificantAccountingPolicies" roleURI="http://www.lumen.com/role/BackgroundandSummaryofSignificantAccountingPolicies">
+        <link:definition>0000010 - Disclosure - Background and Summary of Significant Accounting Policies</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="GoodwillCustomerRelationshipsandOtherIntangibleAssets" roleURI="http://www.lumen.com/role/GoodwillCustomerRelationshipsandOtherIntangibleAssets">
+        <link:definition>0000011 - Disclosure - Goodwill, Customer Relationships and Other Intangible Assets</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RevenueRecognition" roleURI="http://www.lumen.com/role/RevenueRecognition">
+        <link:definition>0000012 - Disclosure - Revenue Recognition</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="Leases" roleURI="http://www.lumen.com/role/Leases">
+        <link:definition>0000013 - Disclosure - Leases</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CreditLossesonFinancialInstruments" roleURI="http://www.lumen.com/role/CreditLossesonFinancialInstruments">
+        <link:definition>0000014 - Disclosure - Credit Losses on Financial Instruments</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LongTermDebtandNotePayableAffiliate" roleURI="http://www.lumen.com/role/LongTermDebtandNotePayableAffiliate">
+        <link:definition>0000015 - Disclosure - Long-Term Debt and Note Payable - Affiliate</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="AccountsReceivable" roleURI="http://www.lumen.com/role/AccountsReceivable">
+        <link:definition>0000016 - Disclosure - Accounts Receivable</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="PropertyPlantandEquipment" roleURI="http://www.lumen.com/role/PropertyPlantandEquipment">
+        <link:definition>0000017 - Disclosure - Property, Plant and Equipment</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="EmployeeBenefits" roleURI="http://www.lumen.com/role/EmployeeBenefits">
+        <link:definition>0000018 - Disclosure - Employee Benefits</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SharebasedCompensation" roleURI="http://www.lumen.com/role/SharebasedCompensation">
+        <link:definition>0000019 - Disclosure - Share-based Compensation</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FairValueDisclosure" roleURI="http://www.lumen.com/role/FairValueDisclosure">
+        <link:definition>0000020 - Disclosure - Fair Value Disclosure</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IncomeTaxes" roleURI="http://www.lumen.com/role/IncomeTaxes">
+        <link:definition>0000021 - Disclosure - Income Taxes</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="AffiliateTransactions" roleURI="http://www.lumen.com/role/AffiliateTransactions">
+        <link:definition>0000022 - Disclosure - Affiliate Transactions</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CommitmentsContingenciesandOtherItems" roleURI="http://www.lumen.com/role/CommitmentsContingenciesandOtherItems">
+        <link:definition>0000023 - Disclosure - Commitments, Contingencies and Other Items</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="OtherFinancialInformation" roleURI="http://www.lumen.com/role/OtherFinancialInformation">
+        <link:definition>0000024 - Disclosure - Other Financial Information</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LaborUnionContracts" roleURI="http://www.lumen.com/role/LaborUnionContracts">
+        <link:definition>0000025 - Disclosure - Labor Union Contracts</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="StockholdersEquity" roleURI="http://www.lumen.com/role/StockholdersEquity">
+        <link:definition>0000026 - Disclosure - Stockholder's Equity</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SubsequentEvents" roleURI="http://www.lumen.com/role/SubsequentEvents">
+        <link:definition>0000027 - Disclosure - Subsequent Events</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="BackgroundandSummaryofSignificantAccountingPoliciesPolicies" roleURI="http://www.lumen.com/role/BackgroundandSummaryofSignificantAccountingPoliciesPolicies">
+        <link:definition>9954471 - Disclosure - Background and Summary of Significant Accounting Policies (Policies)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CreditLossesPolicies" roleURI="http://www.lumen.com/role/CreditLossesPolicies">
+        <link:definition>9954472 - Disclosure - Credit Losses (Policies)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="GoodwillCustomerRelationshipsandOtherIntangibleAssetsTables" roleURI="http://www.lumen.com/role/GoodwillCustomerRelationshipsandOtherIntangibleAssetsTables">
+        <link:definition>9954473 - Disclosure - Goodwill, Customer Relationships and Other Intangible Assets (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RevenueRecognitionTables" roleURI="http://www.lumen.com/role/RevenueRecognitionTables">
+        <link:definition>9954474 - Disclosure - Revenue Recognition (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LeasesTables" roleURI="http://www.lumen.com/role/LeasesTables">
+        <link:definition>9954475 - Disclosure - Leases (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CreditLossesonFinancialInstrumentsTables" roleURI="http://www.lumen.com/role/CreditLossesonFinancialInstrumentsTables">
+        <link:definition>9954476 - Disclosure - Credit Losses on Financial Instruments (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LongTermDebtandNotePayableAffiliateTables" roleURI="http://www.lumen.com/role/LongTermDebtandNotePayableAffiliateTables">
+        <link:definition>9954477 - Disclosure - Long-Term Debt and Note Payable - Affiliate (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="AccountsReceivableTables" roleURI="http://www.lumen.com/role/AccountsReceivableTables">
+        <link:definition>9954478 - Disclosure - Accounts Receivable (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="PropertyPlantandEquipmentTables" roleURI="http://www.lumen.com/role/PropertyPlantandEquipmentTables">
+        <link:definition>9954479 - Disclosure - Property, Plant and Equipment (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FairValueDisclosureTables" roleURI="http://www.lumen.com/role/FairValueDisclosureTables">
+        <link:definition>9954480 - Disclosure - Fair Value Disclosure (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IncomeTaxesTables" roleURI="http://www.lumen.com/role/IncomeTaxesTables">
+        <link:definition>9954481 - Disclosure - Income Taxes (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CommitmentsContingenciesandOtherItemsTables" roleURI="http://www.lumen.com/role/CommitmentsContingenciesandOtherItemsTables">
+        <link:definition>9954482 - Disclosure - Commitments, Contingencies and Other Items (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="OtherFinancialInformationTables" roleURI="http://www.lumen.com/role/OtherFinancialInformationTables">
+        <link:definition>9954483 - Disclosure - Other Financial Information (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="StockholdersEquityTables" roleURI="http://www.lumen.com/role/StockholdersEquityTables">
+        <link:definition>9954484 - Disclosure - Stockholder's Equity (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="BackgroundandSummaryofSignificantAccountingPoliciesGeneralDetails" roleURI="http://www.lumen.com/role/BackgroundandSummaryofSignificantAccountingPoliciesGeneralDetails">
+        <link:definition>9954485 - Disclosure - Background and Summary of Significant Accounting Policies - General (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="BackgroundandSummaryofSignificantAccountingPoliciesSegmentsDetails" roleURI="http://www.lumen.com/role/BackgroundandSummaryofSignificantAccountingPoliciesSegmentsDetails">
+        <link:definition>9954486 - Disclosure - Background and Summary of Significant Accounting Policies - Segments (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="BackgroundandSummaryofSignificantAccountingPoliciesSummaryofSignificantAccountingPoliciesDetails" roleURI="http://www.lumen.com/role/BackgroundandSummaryofSignificantAccountingPoliciesSummaryofSignificantAccountingPoliciesDetails">
+        <link:definition>9954487 - Disclosure - Background and Summary of Significant Accounting Policies - Summary of Significant Accounting Policies (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="BackgroundandSummaryofSignificantAccountingPoliciesCorrectionofImmaterialErrorsDetails" roleURI="http://www.lumen.com/role/BackgroundandSummaryofSignificantAccountingPoliciesCorrectionofImmaterialErrorsDetails">
+        <link:definition>9954488 - Disclosure - Background and Summary of Significant Accounting Policies - Correction of Immaterial Errors (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="GoodwillCustomerRelationshipsandOtherIntangibleAssetsScheduleofGoodwillDetails" roleURI="http://www.lumen.com/role/GoodwillCustomerRelationshipsandOtherIntangibleAssetsScheduleofGoodwillDetails">
+        <link:definition>9954489 - Disclosure - Goodwill, Customer Relationships and Other Intangible Assets - Schedule of Goodwill (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="GoodwillCustomerRelationshipsandOtherIntangibleAssetsAdditionalInformationDetails" roleURI="http://www.lumen.com/role/GoodwillCustomerRelationshipsandOtherIntangibleAssetsAdditionalInformationDetails">
+        <link:definition>9954490 - Disclosure - Goodwill, Customer Relationships and Other Intangible Assets - Additional Information (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="GoodwillCustomerRelationshipsandOtherIntangibleAssetsRollforwardGoodwillDetails" roleURI="http://www.lumen.com/role/GoodwillCustomerRelationshipsandOtherIntangibleAssetsRollforwardGoodwillDetails">
+        <link:definition>9954491 - Disclosure - Goodwill, Customer Relationships and Other Intangible Assets - Rollforward Goodwill (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="GoodwillCustomerRelationshipsandOtherIntangibleAssetsScheduleofFutureAmortizationExpenseDetails" roleURI="http://www.lumen.com/role/GoodwillCustomerRelationshipsandOtherIntangibleAssetsScheduleofFutureAmortizationExpenseDetails">
+        <link:definition>9954492 - Disclosure - Goodwill, Customer Relationships and Other Intangible Assets - Schedule of Future Amortization Expense (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RevenueRecognitionDisaggregationofRevenueDetails" roleURI="http://www.lumen.com/role/RevenueRecognitionDisaggregationofRevenueDetails">
+        <link:definition>9954493 - Disclosure - Revenue Recognition - Disaggregation of Revenue (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RevenueRecognitionCustomerReceivablesandContractBalancesDetails" roleURI="http://www.lumen.com/role/RevenueRecognitionCustomerReceivablesandContractBalancesDetails">
+        <link:definition>9954494 - Disclosure - Revenue Recognition - Customer Receivables and Contract Balances (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RevenueRecognitionAdditionalInformationDetails" roleURI="http://www.lumen.com/role/RevenueRecognitionAdditionalInformationDetails">
+        <link:definition>9954495 - Disclosure - Revenue Recognition - Additional Information (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RevenueRecognitionAdditionalInformationDetails_1" roleURI="http://www.lumen.com/role/RevenueRecognitionAdditionalInformationDetails_1">
+        <link:definition>9954495 - Disclosure - Revenue Recognition - Additional Information (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RevenueRecognitionPerformanceObligationsDetails" roleURI="http://www.lumen.com/role/RevenueRecognitionPerformanceObligationsDetails">
+        <link:definition>9954496 - Disclosure - Revenue Recognition - Performance Obligations (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RevenueRecognitionPerformanceObligationsDetails_1" roleURI="http://www.lumen.com/role/RevenueRecognitionPerformanceObligationsDetails_1">
+        <link:definition>9954496 - Disclosure - Revenue Recognition - Performance Obligations (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RevenueRecognitionContractCostsDetails" roleURI="http://www.lumen.com/role/RevenueRecognitionContractCostsDetails">
+        <link:definition>9954497 - Disclosure - Revenue Recognition - Contract Costs (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LeasesLeaseExpenseDetails" roleURI="http://www.lumen.com/role/LeasesLeaseExpenseDetails">
+        <link:definition>9954498 - Disclosure - Leases - Lease Expense (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LeasesAdditionalInformationDetails" roleURI="http://www.lumen.com/role/LeasesAdditionalInformationDetails">
+        <link:definition>9954499 - Disclosure - Leases - Additional Information (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LeasesSupplementalBalanceSheetDetails" roleURI="http://www.lumen.com/role/LeasesSupplementalBalanceSheetDetails">
+        <link:definition>9954500 - Disclosure - Leases - Supplemental Balance Sheet (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LeasesSupplementalCashFlowsDetails" roleURI="http://www.lumen.com/role/LeasesSupplementalCashFlowsDetails">
+        <link:definition>9954501 - Disclosure - Leases - Supplemental Cash Flows (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LeasesMaturitiesofLeaseLiabilitiesDetails" roleURI="http://www.lumen.com/role/LeasesMaturitiesofLeaseLiabilitiesDetails">
+        <link:definition>9954502 - Disclosure - Leases - Maturities of Lease Liabilities (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LeasesMaturitiesofLeaseLiabilitiesDetails_1" roleURI="http://www.lumen.com/role/LeasesMaturitiesofLeaseLiabilitiesDetails_1">
+        <link:definition>9954502 - Disclosure - Leases - Maturities of Lease Liabilities (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CreditLossesonFinancialInstrumentsFinanceReceivableAllowanceforCreditLossDetails" roleURI="http://www.lumen.com/role/CreditLossesonFinancialInstrumentsFinanceReceivableAllowanceforCreditLossDetails">
+        <link:definition>9954503 - Disclosure - Credit Losses on Financial Instruments - Finance Receivable, Allowance for Credit Loss (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CreditLossesonFinancialInstrumentsFinanceReceivableAllowanceforCreditLossFootnoteDetails" roleURI="http://www.lumen.com/role/CreditLossesonFinancialInstrumentsFinanceReceivableAllowanceforCreditLossFootnoteDetails">
+        <link:definition>9954504 - Disclosure - Credit Losses on Financial Instruments - Finance Receivable, Allowance for Credit Loss Footnote (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LongTermDebtandNotePayableAffiliateScheduleofLongTermDebtDetails" roleURI="http://www.lumen.com/role/LongTermDebtandNotePayableAffiliateScheduleofLongTermDebtDetails">
+        <link:definition>9954505 - Disclosure - Long-Term Debt and Note Payable - Affiliate - Schedule of Long-Term Debt (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LongTermDebtandNotePayableAffiliateScheduleofLongTermDebtDetails_1" roleURI="http://www.lumen.com/role/LongTermDebtandNotePayableAffiliateScheduleofLongTermDebtDetails_1">
+        <link:definition>9954505 - Disclosure - Long-Term Debt and Note Payable - Affiliate - Schedule of Long-Term Debt (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LongTermDebtandNotePayableAffiliateAdditionalInformationDetails" roleURI="http://www.lumen.com/role/LongTermDebtandNotePayableAffiliateAdditionalInformationDetails">
+        <link:definition>9954506 - Disclosure - Long-Term Debt and Note Payable - Affiliate - Additional Information (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LongTermDebtandNotePayableAffiliateScheduleofDebtMaturityDetails" roleURI="http://www.lumen.com/role/LongTermDebtandNotePayableAffiliateScheduleofDebtMaturityDetails">
+        <link:definition>9954507 - Disclosure - Long-Term Debt and Note Payable - Affiliate - Schedule of Debt Maturity (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LongTermDebtandNotePayableAffiliateInterestExpenseDetails" roleURI="http://www.lumen.com/role/LongTermDebtandNotePayableAffiliateInterestExpenseDetails">
+        <link:definition>9954508 - Disclosure - Long-Term Debt and Note Payable - Affiliate - Interest Expense (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="AccountsReceivableScheduleofAccountsReceivableDetails" roleURI="http://www.lumen.com/role/AccountsReceivableScheduleofAccountsReceivableDetails">
+        <link:definition>9954509 - Disclosure - Accounts Receivable - Schedule of Accounts Receivable (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="AccountsReceivableAllowanceforCreditLossesDetail" roleURI="http://www.lumen.com/role/AccountsReceivableAllowanceforCreditLossesDetail">
+        <link:definition>9954510 - Disclosure - Accounts Receivable - Allowance for Credit Losses (Detail)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="PropertyPlantandEquipmentDetails" roleURI="http://www.lumen.com/role/PropertyPlantandEquipmentDetails">
+        <link:definition>9954511 - Disclosure - Property, Plant and Equipment (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="EmployeeBenefitsPensionandPostRetirementBenefitsDetails" roleURI="http://www.lumen.com/role/EmployeeBenefitsPensionandPostRetirementBenefitsDetails">
+        <link:definition>9954512 - Disclosure - Employee Benefits - Pension and Post-Retirement Benefits (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="EmployeeBenefitsHealthCareandLifeInsuranceDetails" roleURI="http://www.lumen.com/role/EmployeeBenefitsHealthCareandLifeInsuranceDetails">
+        <link:definition>9954513 - Disclosure - Employee Benefits - Health Care and Life Insurance (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="EmployeeBenefits401kPlansDetails" roleURI="http://www.lumen.com/role/EmployeeBenefits401kPlansDetails">
+        <link:definition>9954514 - Disclosure - Employee Benefits - 401(k) Plans (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ShareBasedCompensationDetails" roleURI="http://www.lumen.com/role/ShareBasedCompensationDetails">
+        <link:definition>9954515 - Disclosure - Share-Based Compensation (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FairValueDisclosureDetails" roleURI="http://www.lumen.com/role/FairValueDisclosureDetails">
+        <link:definition>9954516 - Disclosure - Fair Value Disclosure (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IncomeTaxesIncomeTaxExpenseBenefitbyCurrentandDeferredDetails" roleURI="http://www.lumen.com/role/IncomeTaxesIncomeTaxExpenseBenefitbyCurrentandDeferredDetails">
+        <link:definition>9954517 - Disclosure - Income Taxes - Income Tax Expense (Benefit) by Current and Deferred (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IncomeTaxesReconciliationofEffectivetoStatutoryTaxRatesDetails" roleURI="http://www.lumen.com/role/IncomeTaxesReconciliationofEffectivetoStatutoryTaxRatesDetails">
+        <link:definition>9954518 - Disclosure - Income Taxes - Reconciliation of Effective to Statutory Tax Rates (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IncomeTaxesAdditionalInformationDetails" roleURI="http://www.lumen.com/role/IncomeTaxesAdditionalInformationDetails">
+        <link:definition>9954519 - Disclosure - Income Taxes - Additional Information (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IncomeTaxesDeferredTaxAssetsLiabilitiesDetails" roleURI="http://www.lumen.com/role/IncomeTaxesDeferredTaxAssetsLiabilitiesDetails">
+        <link:definition>9954520 - Disclosure - Income Taxes - Deferred Tax Assets (Liabilities) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IncomeTaxesIncomeTaxesUnrecognizedTaxBenefitsDetails" roleURI="http://www.lumen.com/role/IncomeTaxesIncomeTaxesUnrecognizedTaxBenefitsDetails">
+        <link:definition>9954521 - Disclosure - Income Taxes Income Taxes - Unrecognized Tax Benefits (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="AffiliateTransactionsDetails" roleURI="http://www.lumen.com/role/AffiliateTransactionsDetails">
+        <link:definition>9954522 - Disclosure - Affiliate Transactions (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CommitmentsContingenciesandOtherItemsAdditionalInformationDetails" roleURI="http://www.lumen.com/role/CommitmentsContingenciesandOtherItemsAdditionalInformationDetails">
+        <link:definition>9954523 - Disclosure - Commitments, Contingencies and Other Items - Additional Information (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CommitmentsContingenciesandOtherItemsRightofWayDetails" roleURI="http://www.lumen.com/role/CommitmentsContingenciesandOtherItemsRightofWayDetails">
+        <link:definition>9954524 - Disclosure - Commitments, Contingencies and Other Items - Right-of-Way (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="OtherFinancialInformationOtherCurrentAssetsDetails" roleURI="http://www.lumen.com/role/OtherFinancialInformationOtherCurrentAssetsDetails">
+        <link:definition>9954525 - Disclosure - Other Financial Information - Other Current Assets (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="OtherFinancialInformationOtherCurrentLiabilitiesDetails" roleURI="http://www.lumen.com/role/OtherFinancialInformationOtherCurrentLiabilitiesDetails">
+        <link:definition>9954526 - Disclosure - Other Financial Information - Other Current Liabilities (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="OtherFinancialInformationOtherNoncurrentLiabilitiesDetails" roleURI="http://www.lumen.com/role/OtherFinancialInformationOtherNoncurrentLiabilitiesDetails">
+        <link:definition>9954527 - Disclosure - Other Financial Information - Other Noncurrent Liabilities (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LaborUnionContractsAdditionalInformationDetails" roleURI="http://www.lumen.com/role/LaborUnionContractsAdditionalInformationDetails">
+        <link:definition>9954528 - Disclosure - Labor Union Contracts - Additional Information (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="StockholdersEquityAdditionalInformationDetails" roleURI="http://www.lumen.com/role/StockholdersEquityAdditionalInformationDetails">
+        <link:definition>9954529 - Disclosure - Stockholder's Equity - Additional Information (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SubsequentEventsDetails" roleURI="http://www.lumen.com/role/SubsequentEventsDetails">
+        <link:definition>9954530 - Disclosure - Subsequent Events (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element id="lumn_ContractFulfillmentCostsMember" abstract="true" name="ContractFulfillmentCostsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="lumn_GovernmentAssistanceInfrastructureRequirementsMetNumberOfStates" abstract="false" name="GovernmentAssistanceInfrastructureRequirementsMetNumberOfStates" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="xbrli:integerItemType"/>
+  <xs:element id="lumn_RevenueFromContractWithCustomerLengthOfCustomerLife" abstract="false" name="RevenueFromContractWithCustomerLengthOfCustomerLife" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:durationItemType"/>
+  <xs:element id="lumn_OperatingExpensesPolicyPolicyTextBlock" abstract="false" name="OperatingExpensesPolicyPolicyTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:textBlockItemType"/>
+  <xs:element id="lumn_CapitalizedContractCostsRollForward" abstract="true" name="CapitalizedContractCostsRollForward" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="lumn_HealthCareBenefitExpensesActiveEmployees" abstract="false" name="HealthCareBenefitExpensesActiveEmployees" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="lumn_NonAffiliateServicesMember" abstract="true" name="NonAffiliateServicesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="lumn_LineOfCreditFacilityRelatedPartyLengthOfTermExtensions" abstract="false" name="LineOfCreditFacilityRelatedPartyLengthOfTermExtensions" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:durationItemType"/>
+  <xs:element id="lumn_FinanceLeaseCost" abstract="false" name="FinanceLeaseCost" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="lumn_FinanceLeaseObligationMember" abstract="true" name="FinanceLeaseObligationMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="lumn_CashFlowLesseeAbstract" abstract="true" name="CashFlowLesseeAbstract" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="lumn_AllocatedRevenueMember" abstract="true" name="AllocatedRevenueMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="lumn_BusinessCustomerAverageContractLifeMember" abstract="true" name="BusinessCustomerAverageContractLifeMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="lumn_BusinessPortfolioMember" abstract="true" name="BusinessPortfolioMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="lumn_FiberBroadbandMember" abstract="true" name="FiberBroadbandMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="lumn_CapitalizedContractCostIncurred" abstract="false" name="CapitalizedContractCostIncurred" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="lumn_DividendToParentInExchangeForAdvancesToAffiliates" abstract="false" name="DividendToParentInExchangeForAdvancesToAffiliates" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="lumn_SupportAssetsMember" abstract="true" name="SupportAssetsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="lumn_GrowMember" abstract="true" name="GrowMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="lumn_VoiceAndOtherMember" abstract="true" name="VoiceAndOtherMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="lumn_OperatingLeaseLeaseIncomePercentofOperatingRevenue" abstract="false" name="OperatingLeaseLeaseIncomePercentofOperatingRevenue" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+  <xs:element id="lumn_AffiliateservicesMember" abstract="true" name="AffiliateservicesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="lumn_RepaymentsOfLongTermLinesOfCreditInterest" abstract="false" name="RepaymentsOfLongTermLinesOfCreditInterest" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="lumn_DefinedBenefitPlanPensionSettlementTerm" abstract="false" name="DefinedBenefitPlanPensionSettlementTerm" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:durationItemType"/>
+  <xs:element id="lumn_OtherBroadbandMember" abstract="true" name="OtherBroadbandMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="lumn_RDOFPhaseIProgramMember" abstract="true" name="RDOFPhaseIProgramMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="lumn_GovernmentAssistanceAllocatedSupportPayments" abstract="false" name="GovernmentAssistanceAllocatedSupportPayments" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="lumn_GovernmentAssistanceStatementOfIncomeOrComprehensiveIncomeExtensibleEnumerationNotDisclosedFlag" abstract="false" name="GovernmentAssistanceStatementOfIncomeOrComprehensiveIncomeExtensibleEnumerationNotDisclosedFlag" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dei:trueItemType"/>
+  <xs:element id="lumn_AuditInformationAbstract" abstract="true" name="AuditInformationAbstract" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="lumn_NatureOfBusinessLineItems" abstract="true" name="NatureOfBusinessLineItems" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="lumn_Level3FinancingInc.Member" abstract="true" name="Level3FinancingInc.Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="lumn_DirectRevenueFromRelatedPartyMember" abstract="true" name="DirectRevenueFromRelatedPartyMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="lumn_WeightedAverageRemainingLeaseTermAbstract" abstract="true" name="WeightedAverageRemainingLeaseTermAbstract" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="lumn_HealthCareAndLifeInsuranceAbstract" abstract="true" name="HealthCareAndLifeInsuranceAbstract" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="lumn_A6.75NotesDue2057Member" abstract="true" name="A6.75NotesDue2057Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="lumn_AffiliateTransactionsPolicyPolicyTextBlock" abstract="false" name="AffiliateTransactionsPolicyPolicyTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:textBlockItemType"/>
+  <xs:element id="lumn_TransactionSupportAgreementMember" abstract="true" name="TransactionSupportAgreementMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="lumn_NatureOfBusinessTable" abstract="true" name="NatureOfBusinessTable" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrldt:hypercubeItem" type="xbrli:stringItemType"/>
+  <xs:element id="lumn_PensionSupplementalAndOtherPostretirementBenefitPlansMember" abstract="true" name="PensionSupplementalAndOtherPostretirementBenefitPlansMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="lumn_StockholdersEquityLineItems" abstract="true" name="StockholdersEquityLineItems" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="lumn_QwestCorporationMember" abstract="true" name="QwestCorporationMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="lumn_TermLoanCovenantDebttoEBITDARatio" abstract="false" name="TermLoanCovenantDebttoEBITDARatio" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:pureItemType"/>
+  <xs:element id="lumn_IntangibleAssetsGrossIncludingGoodwill" abstract="false" name="IntangibleAssetsGrossIncludingGoodwill" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="lumn_FutureRentalCommitmentsRightOfWayAgreementsMember" abstract="true" name="FutureRentalCommitmentsRightOfWayAgreementsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="lumn_LossContingencyNumberOfPeopleKilled" abstract="false" name="LossContingencyNumberOfPeopleKilled" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:integerItemType"/>
+  <xs:element id="lumn_AdvancesFromAffiliatesCurrent" abstract="false" name="AdvancesFromAffiliatesCurrent" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="lumn_OtherLiabilitiesMiscellaneousCurrent" abstract="false" name="OtherLiabilitiesMiscellaneousCurrent" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="lumn_ScheduleOfStockholdersEquityTable" abstract="true" name="ScheduleOfStockholdersEquityTable" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrldt:hypercubeItem" type="xbrli:stringItemType"/>
+  <xs:element id="lumn_GoodwillImpairmentMeasurementInput" abstract="false" name="GoodwillImpairmentMeasurementInput" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="xbrli:decimalItemType"/>
+  <xs:element id="lumn_RevenueRecognitionCustomerRelationshipPeriod" abstract="false" name="RevenueRecognitionCustomerRelationshipPeriod" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:durationItemType"/>
+  <xs:element id="lumn_CorrectionOfErrorFromUnderstatementOfRevenuesAndNetworkExpensesPriorTo2021Member" abstract="true" name="CorrectionOfErrorFromUnderstatementOfRevenuesAndNetworkExpensesPriorTo2021Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="lumn_SaleOfPropertyPlantAndEquipmentInExchangeForReceivable" abstract="false" name="SaleOfPropertyPlantAndEquipmentInExchangeForReceivable" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="lumn_LineOfCreditFacilityRelatedPartyInterestPaymentPeriod" abstract="false" name="LineOfCreditFacilityRelatedPartyInterestPaymentPeriod" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:durationItemType"/>
+  <xs:element id="lumn_CenturyLinkInc.Member" abstract="true" name="CenturyLinkInc.Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="lumn_DefinedPensionandPostRetirementBenefitPlansAllocatedExpensesbyParentEntitiesPercentage" abstract="false" name="DefinedPensionandPostRetirementBenefitPlansAllocatedExpensesbyParentEntitiesPercentage" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+  <xs:element id="lumn_StateUniversalServiceFundSupportProgramsMember" abstract="true" name="StateUniversalServiceFundSupportProgramsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="lumn_MarshallFireLitigationMember" abstract="true" name="MarshallFireLitigationMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="lumn_LineOfCreditFacilityRelatedPartyTerminationNoticePeriod" abstract="false" name="LineOfCreditFacilityRelatedPartyTerminationNoticePeriod" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:durationItemType"/>
+  <xs:element id="lumn_AssetsAndLiabilitiesLesseeTableTextBlock" abstract="false" name="AssetsAndLiabilitiesLesseeTableTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:textBlockItemType"/>
+  <xs:element id="lumn_RepaymentsOfLongTermLinesOfCreditPrinciple" abstract="false" name="RepaymentsOfLongTermLinesOfCreditPrinciple" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="lumn_A6.5NotesDue2056Member" abstract="true" name="A6.5NotesDue2056Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="lumn_GovernmentAssistancePercentageAssociateWithSpecificSupportPrograms" abstract="false" name="GovernmentAssistancePercentageAssociateWithSpecificSupportPrograms" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+  <xs:element id="lumn_ContractAcquisitionCostsMember" abstract="true" name="ContractAcquisitionCostsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="lumn_CentralOfficeAndOtherNetworkElectronicsMember" abstract="true" name="CentralOfficeAndOtherNetworkElectronicsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="lumn_ScheduleOfInterestExpenseLongTermDebtTableTextBlock" abstract="false" name="ScheduleOfInterestExpenseLongTermDebtTableTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:textBlockItemType"/>
+  <xs:element id="lumn_HarvestMember" abstract="true" name="HarvestMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="lumn_SeniorSecuredFirstLienDebtMember" abstract="true" name="SeniorSecuredFirstLienDebtMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="lumn_FiberConduitAndOtherOutsidePlantMember" abstract="true" name="FiberConduitAndOtherOutsidePlantMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="lumn_ConsumerCustomersAverageContractLifeMember" abstract="true" name="ConsumerCustomersAverageContractLifeMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="lumn_RevenueFromContractWithCustomerContractTerm" abstract="false" name="RevenueFromContractWithCustomerContractTerm" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:durationItemType"/>
+  <xs:element id="lumn_CAFPhaseIIProgramMember" abstract="true" name="CAFPhaseIIProgramMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="lumn_NutureMember" abstract="true" name="NutureMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="lumn_LeaseRightofUseAsset" abstract="false" name="LeaseRightofUseAsset" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="lumn_MassMarketPortfolioMember" abstract="true" name="MassMarketPortfolioMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="lumn_LongTermDebtAndLeaseObligationsExcludingCurrentMaturities" abstract="false" name="LongTermDebtAndLeaseObligationsExcludingCurrentMaturities" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="lumn_LeaseLiability" abstract="false" name="LeaseLiability" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="lumn_IntangibleAssetsNetIncludingGoodwillAndOtherAssetsNoncurrent" abstract="false" name="IntangibleAssetsNetIncludingGoodwillAndOtherAssetsNoncurrent" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="lumn_LeasesWeightedAverageDiscountRateAbstract" abstract="true" name="LeasesWeightedAverageDiscountRateAbstract" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+</xs:schema>
