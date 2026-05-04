@@ -1,0 +1,768 @@
+{
+  "@context": {
+    "@language": "en",
+    "@vocab": "https://schema.org/",
+    "citeAs": "cr:citeAs",
+    "column": "cr:column",
+    "conformsTo": "dct:conformsTo",
+    "cr": "http://mlcommons.org/croissant/",
+    "rai": "http://mlcommons.org/croissant/RAI/",
+    "data": {
+      "@id": "cr:data",
+      "@type": "@json"
+    },
+    "dataType": {
+      "@id": "cr:dataType",
+      "@type": "@vocab"
+    },
+    "dct": "http://purl.org/dc/terms/",
+    "examples": {
+      "@id": "cr:examples",
+      "@type": "@json"
+    },
+    "extract": "cr:extract",
+    "field": "cr:field",
+    "fileProperty": "cr:fileProperty",
+    "fileObject": "cr:fileObject",
+    "fileSet": "cr:fileSet",
+    "format": "cr:format",
+    "includes": "cr:includes",
+    "isLiveDataset": "cr:isLiveDataset",
+    "jsonPath": "cr:jsonPath",
+    "key": "cr:key",
+    "md5": "cr:md5",
+    "parentField": "cr:parentField",
+    "path": "cr:path",
+    "recordSet": "cr:recordSet",
+    "references": "cr:references",
+    "regex": "cr:regex",
+    "repeated": "cr:repeated",
+    "replace": "cr:replace",
+    "sc": "https://schema.org/",
+    "separator": "cr:separator",
+    "source": "cr:source",
+    "subField": "cr:subField",
+    "transform": "cr:transform"
+  },
+  "@type": "sc:Dataset",
+  "name": "Herculean",
+  "description": "Herculean is an offline multi-skill evaluation benchmark for LLM agents performing financial-analysis tasks (trading, hedging, report generation, report evaluation, and XBRL filing auditing). Includes a DuckDB / Parquet bundle of daily prices, news highlights, and 10-K/10-Q text for 8 US mega-cap equities (Dec 2024 - Mar 2026), plus 158 SEC XBRL filings, the chunked US-GAAP Taxonomy (2021-2024), and 4,959 DQC mathematical-consistency assertions for auditing ground truth.",
+  "conformsTo": "http://mlcommons.org/croissant/1.0",
+  "url": "https://huggingface.co/datasets/TheFinAI/Herculean",
+  "license": "https://spdx.org/licenses/CC-BY-4.0",
+  "version": "1.0.0",
+  "datePublished": "2026-05-04",
+  "creator": {
+    "@type": "Person",
+    "name": "Xueqing Peng",
+    "email": "xueqing.peng@yale.edu",
+    "affiliation": {
+      "@type": "Organization",
+      "name": "Yale University"
+    }
+  },
+  "citeAs": "Peng, Xueqing. (2026). Herculean: An Offline Multi-Skill Evaluation Benchmark for LLM Agents in Finance. https://huggingface.co/datasets/TheFinAI/Herculean",
+  "keywords": [
+    "finance",
+    "LLM agents",
+    "benchmark",
+    "XBRL",
+    "SEC filings",
+    "trading",
+    "auditing",
+    "tool use"
+  ],
+  "isLiveDataset": false,
+  "rai:dataCollection": "Equity prices and news highlights were ingested from publicly available end-of-day market data and condensed daily news digests, then loaded into a single DuckDB file and re-exported to ZSTD-compressed Parquet sorted by (symbol, date). 10-K / 10-Q MD&A and risk-factor text excerpts were extracted from public SEC EDGAR HTML filings. The 158 XBRL filings under auditing_env/XBRL/ were downloaded byte-identical from SEC EDGAR. The US-GAAP Taxonomy chunks were generated from the official FASB US-GAAP Financial Reporting Taxonomy (2021-2024) by serializing each concept into a text chunk plus a relations file linking concepts via the XBRL presentation, calculation, definition, reference, and enumeration linkbases. The DQC mathematical_reasoning.csv assertions were obtained from the XBRL US Data Quality Committee rule set evaluated over EDGAR.",
+  "rai:dataAnnotationProtocol": "No human annotation was performed. The auditing ground truth (mathematical_reasoning.csv) consists of automated rule-engine assertions produced by the XBRL US DQC ruleset; each assertion includes the rule code, severity, source, the offending concept, the reported numeric value, and the value implied by the calculation linkbase.",
+  "rai:dataAnnotationPlatform": "XBRL US DQC rule engine; FASB-published US-GAAP Taxonomy serialized via in-house chunker.",
+  "rai:dataPreprocessingProtocol": [
+    "Equity tables: deduplicated, sorted by (symbol, date), exported to Parquet (ZSTD).",
+    "Filings text: HTML extracted to plain text for the MD&A (Item 2 / Item 7) and Risk Factors (Item 1A) sections only; the rest of each filing is omitted.",
+    "XBRL filings: stored byte-identical to EDGAR-published form, organized one folder per filing.",
+    "US-GAAP Taxonomy: each concept emitted as a single text chunk in chunks_core.jsonl with provenance pointers (sheet, row); relations emitted to chunks_relations.jsonl typed as pres/calc/def/ref/enum."
+  ],
+  "rai:dataUseCases": [
+    "Benchmarking LLM agent reasoning under realistic financial tool-use workflows.",
+    "Evaluating XBRL fact-auditing accuracy against calculation-linkbase ground truth.",
+    "Comparative evaluation of agent skills across model versions / providers under fixed offline inputs.",
+    "Studying multi-day decision consistency of LLM trading and hedging policies."
+  ],
+  "rai:dataLimitations": [
+    "Symbol universe is restricted to 8 US mega-cap tech equities (AAPL, ADBE, AMZN, GOOGL, META, MSFT, NVDA, TSLA); results will not generalize to small caps, non-US markets, or non-tech sectors.",
+    "Time window is approximately 16 months (2024-12-01 to 2026-03-31), capturing only one market regime.",
+    "The news.highlights field is an LLM-summarized condensation of publicly reported events; underlying events are real but phrasing is model-generated and may contain summarization errors.",
+    "Filing text is restricted to the MD&A and Risk Factors sections; financial statements, footnotes, and exhibits are not included in the text fields.",
+    "The 158-filing XBRL sample is biased toward filings flagged by DQC rules and is not a representative sample of the full EDGAR population.",
+    "All content is English-language, US-GAAP, US-issuer; non-US accounting standards (IFRS) are not covered."
+  ],
+  "rai:personalSensitiveInformation": "No personal or sensitive information about private individuals is included. Names of corporate officers appear inside SEC filings as part of the public record. Public market data, public news headlines, and public regulatory filings only.",
+  "rai:dataBiases": [
+    "Survivorship and large-cap bias: only 8 mega-cap technology issuers are present in the equity panel.",
+    "Sector concentration: the equity panel is entirely Information Technology / Communications / Consumer Discretionary mega-caps.",
+    "Single-jurisdiction bias: US-only listings, US-GAAP-only, English-only.",
+    "Auditing-sample selection bias: XBRL filings were chosen partly because DQC rules flagged at least one mathematical-consistency issue, over-representing filings with known errors."
+  ],
+  "rai:dataSocialImpact": "Designed to measure and improve agent reasoning under realistic financial-analysis tool use. Misuse risks include presenting model outputs as investment advice, or training a trading system on this data and deploying it without out-of-sample, out-of-distribution validation. Users publishing results are encouraged to report failure cases alongside aggregate scores.",
+  "rai:dataReleaseMaintenancePlan": "Versioned releases on Hugging Face. The corpus is static (offline by design) and is not intended to be a 'live' dataset; future versions will be issued as new dated snapshots rather than in-place updates. Issues and corrections via the dataset repo's discussion tab.",
+  "distribution": [
+    {
+      "@type": "cr:FileObject",
+      "@id": "env-duckdb",
+      "name": "env.duckdb",
+      "description": "Single-file DuckDB database containing the prices, news, and filings tables.",
+      "contentUrl": "https://huggingface.co/datasets/TheFinAI/Herculean/resolve/main/env.duckdb",
+      "encodingFormat": "application/octet-stream",
+      "sha256": "da5aa069afbb66efa2cce31d16b48bd9b7c263111305934cb3d368d584caf7e2"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "filings-parquet",
+      "name": "filings.parquet",
+      "description": "10-K / 10-Q MD&A and risk-factor excerpts (73 rows).",
+      "contentUrl": "https://huggingface.co/datasets/TheFinAI/Herculean/resolve/main/data/filings.parquet",
+      "encodingFormat": "application/x-parquet",
+      "sha256": "822a854865651e042c9d64288785efa0f2c0fecdec2a16016ff3c2e7a5601299"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "news-parquet",
+      "name": "news.parquet",
+      "description": "Daily news highlights for the 8-symbol panel (3,888 rows).",
+      "contentUrl": "https://huggingface.co/datasets/TheFinAI/Herculean/resolve/main/data/news.parquet",
+      "encodingFormat": "application/x-parquet",
+      "sha256": "1fd109796eada02af37a15178cc150ec252e7c02bc440c3f76641eb8fab6da25"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "prices-parquet",
+      "name": "prices.parquet",
+      "description": "Daily OHLC + adj_close + volume for the 8-symbol panel (2,656 rows).",
+      "contentUrl": "https://huggingface.co/datasets/TheFinAI/Herculean/resolve/main/data/prices.parquet",
+      "encodingFormat": "application/x-parquet",
+      "sha256": "736c124db22e976dbf4ec1dd65e5a983497e5890e7999f7925b343dee5c965d5"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "math-reasoning-csv",
+      "name": "mathematical_reasoning.csv",
+      "description": "4,959 XBRL US DQC mathematical-consistency assertions used as auditing ground truth.",
+      "contentUrl": "https://huggingface.co/datasets/TheFinAI/Herculean/resolve/main/auditing_env/XBRL/mathematical_reasoning.csv",
+      "encodingFormat": "text/csv",
+      "sha256": "fa52ccea5b80ea8ff1b27e5e38b5510caf74a82682858e1cc53641bbd1f7fdf2"
+    },
+    {
+      "@type": "cr:FileSet",
+      "@id": "xbrl-filings",
+      "name": "xbrl-filings",
+      "description": "158 SEC XBRL filing folders (10-K and 10-Q) with full instance documents and calc/def/lab/pre linkbases. Stored byte-identical to EDGAR.",
+      "encodingFormat": "application/xml",
+      "includes": "auditing_env/XBRL/10*/*.xml"
+    },
+    {
+      "@type": "cr:FileSet",
+      "@id": "gaap-chunks-core",
+      "name": "gaap-chunks-core",
+      "description": "Chunked US-GAAP Taxonomy concepts (2021-2024), one JSONL per year (~20k chunks each).",
+      "encodingFormat": "application/jsonlines",
+      "includes": "auditing_env/US_GAAP_Taxonomy/gaap_chunks_*/chunks_core.jsonl"
+    },
+    {
+      "@type": "cr:FileSet",
+      "@id": "gaap-chunks-relations",
+      "name": "gaap-chunks-relations",
+      "description": "Relations between US-GAAP concepts (presentation, calculation, definition, reference, enumeration), one JSONL per year (~50k edges each).",
+      "encodingFormat": "application/jsonlines",
+      "includes": "auditing_env/US_GAAP_Taxonomy/gaap_chunks_*/chunks_relations.jsonl"
+    }
+  ],
+  "recordSet": [
+    {
+      "@type": "cr:RecordSet",
+      "@id": "prices",
+      "name": "prices",
+      "description": "Daily OHLC + adjusted close + volume for the 8-symbol equity panel.",
+      "field": [
+        {
+          "@type": "cr:Field",
+          "@id": "prices/id",
+          "name": "id",
+          "dataType": "sc:Integer",
+          "source": {
+            "fileObject": {
+              "@id": "prices-parquet"
+            },
+            "extract": {
+              "column": "id"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "prices/symbol",
+          "name": "symbol",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "prices-parquet"
+            },
+            "extract": {
+              "column": "symbol"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "prices/date",
+          "name": "date",
+          "dataType": "sc:Date",
+          "source": {
+            "fileObject": {
+              "@id": "prices-parquet"
+            },
+            "extract": {
+              "column": "date"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "prices/open",
+          "name": "open",
+          "dataType": "sc:Float",
+          "source": {
+            "fileObject": {
+              "@id": "prices-parquet"
+            },
+            "extract": {
+              "column": "open"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "prices/high",
+          "name": "high",
+          "dataType": "sc:Float",
+          "source": {
+            "fileObject": {
+              "@id": "prices-parquet"
+            },
+            "extract": {
+              "column": "high"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "prices/low",
+          "name": "low",
+          "dataType": "sc:Float",
+          "source": {
+            "fileObject": {
+              "@id": "prices-parquet"
+            },
+            "extract": {
+              "column": "low"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "prices/close",
+          "name": "close",
+          "dataType": "sc:Float",
+          "source": {
+            "fileObject": {
+              "@id": "prices-parquet"
+            },
+            "extract": {
+              "column": "close"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "prices/adj_close",
+          "name": "adj_close",
+          "dataType": "sc:Float",
+          "source": {
+            "fileObject": {
+              "@id": "prices-parquet"
+            },
+            "extract": {
+              "column": "adj_close"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "prices/volume",
+          "name": "volume",
+          "dataType": "sc:Integer",
+          "source": {
+            "fileObject": {
+              "@id": "prices-parquet"
+            },
+            "extract": {
+              "column": "volume"
+            }
+          }
+        }
+      ],
+      "key": {
+        "@id": "prices/id"
+      }
+    },
+    {
+      "@type": "cr:RecordSet",
+      "@id": "news",
+      "name": "news",
+      "description": "Daily news highlights per (symbol, date).",
+      "field": [
+        {
+          "@type": "cr:Field",
+          "@id": "news/id",
+          "name": "id",
+          "dataType": "sc:Integer",
+          "source": {
+            "fileObject": {
+              "@id": "news-parquet"
+            },
+            "extract": {
+              "column": "id"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "news/symbol",
+          "name": "symbol",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "news-parquet"
+            },
+            "extract": {
+              "column": "symbol"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "news/date",
+          "name": "date",
+          "dataType": "sc:Date",
+          "source": {
+            "fileObject": {
+              "@id": "news-parquet"
+            },
+            "extract": {
+              "column": "date"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "news/highlights",
+          "name": "highlights",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "news-parquet"
+            },
+            "extract": {
+              "column": "highlights"
+            }
+          }
+        }
+      ],
+      "key": {
+        "@id": "news/id"
+      }
+    },
+    {
+      "@type": "cr:RecordSet",
+      "@id": "filings",
+      "name": "filings",
+      "description": "MD&A and Risk Factors text excerpts from 10-K and 10-Q filings.",
+      "field": [
+        {
+          "@type": "cr:Field",
+          "@id": "filings/id",
+          "name": "id",
+          "dataType": "sc:Integer",
+          "source": {
+            "fileObject": {
+              "@id": "filings-parquet"
+            },
+            "extract": {
+              "column": "id"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "filings/symbol",
+          "name": "symbol",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "filings-parquet"
+            },
+            "extract": {
+              "column": "symbol"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "filings/date",
+          "name": "date",
+          "dataType": "sc:Date",
+          "source": {
+            "fileObject": {
+              "@id": "filings-parquet"
+            },
+            "extract": {
+              "column": "date"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "filings/document_type",
+          "name": "document_type",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "filings-parquet"
+            },
+            "extract": {
+              "column": "document_type"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "filings/mda_content",
+          "name": "mda_content",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "filings-parquet"
+            },
+            "extract": {
+              "column": "mda_content"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "filings/risk_content",
+          "name": "risk_content",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "filings-parquet"
+            },
+            "extract": {
+              "column": "risk_content"
+            }
+          }
+        }
+      ],
+      "key": {
+        "@id": "filings/id"
+      }
+    },
+    {
+      "@type": "cr:RecordSet",
+      "@id": "math_reasoning_audit",
+      "name": "math_reasoning_audit",
+      "description": "XBRL US Data Quality Committee mathematical-consistency assertions over the EDGAR corpus, used as auditing-skill ground truth.",
+      "field": [
+        {
+          "@type": "cr:Field",
+          "@id": "audit/assertion.code",
+          "name": "assertion.code",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "math-reasoning-csv"
+            },
+            "extract": {
+              "column": "assertion.code"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "audit/assertion.detail",
+          "name": "assertion.detail",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "math-reasoning-csv"
+            },
+            "extract": {
+              "column": "assertion.detail"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "audit/assertion.run-date",
+          "name": "assertion.run-date",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "math-reasoning-csv"
+            },
+            "extract": {
+              "column": "assertion.run-date"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "audit/assertion.severity",
+          "name": "assertion.severity",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "math-reasoning-csv"
+            },
+            "extract": {
+              "column": "assertion.severity"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "audit/assertion.source",
+          "name": "assertion.source",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "math-reasoning-csv"
+            },
+            "extract": {
+              "column": "assertion.source"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "audit/assertion.type",
+          "name": "assertion.type",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "math-reasoning-csv"
+            },
+            "extract": {
+              "column": "assertion.type"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "audit/entity.cik",
+          "name": "entity.cik",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "math-reasoning-csv"
+            },
+            "extract": {
+              "column": "entity.cik"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "audit/entity.name",
+          "name": "entity.name",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "math-reasoning-csv"
+            },
+            "extract": {
+              "column": "entity.name"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "audit/report.accepted-timestamp",
+          "name": "report.accepted-timestamp",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "math-reasoning-csv"
+            },
+            "extract": {
+              "column": "report.accepted-timestamp"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "audit/report.accession",
+          "name": "report.accession",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "math-reasoning-csv"
+            },
+            "extract": {
+              "column": "report.accession"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "audit/report.base-taxonomy",
+          "name": "report.base-taxonomy",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "math-reasoning-csv"
+            },
+            "extract": {
+              "column": "report.base-taxonomy"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "audit/report.creation-software",
+          "name": "report.creation-software",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "math-reasoning-csv"
+            },
+            "extract": {
+              "column": "report.creation-software"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "audit/report.document-type",
+          "name": "report.document-type",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "math-reasoning-csv"
+            },
+            "extract": {
+              "column": "report.document-type"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "audit/report.entry-url",
+          "name": "report.entry-url",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "math-reasoning-csv"
+            },
+            "extract": {
+              "column": "report.entry-url"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "audit/report.filing-date",
+          "name": "report.filing-date",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "math-reasoning-csv"
+            },
+            "extract": {
+              "column": "report.filing-date"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "audit/report.filing-year",
+          "name": "report.filing-year",
+          "dataType": "sc:Integer",
+          "source": {
+            "fileObject": {
+              "@id": "math-reasoning-csv"
+            },
+            "extract": {
+              "column": "report.filing-year"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "audit/report.id",
+          "name": "report.id",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "math-reasoning-csv"
+            },
+            "extract": {
+              "column": "report.id"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "audit/report.sec-url",
+          "name": "report.sec-url",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "math-reasoning-csv"
+            },
+            "extract": {
+              "column": "report.sec-url"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "audit/report.sic-code",
+          "name": "report.sic-code",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "math-reasoning-csv"
+            },
+            "extract": {
+              "column": "report.sic-code"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "audit/folder_name",
+          "name": "folder_name",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "math-reasoning-csv"
+            },
+            "extract": {
+              "column": "folder_name"
+            }
+          }
+        }
+      ]
+    }
+  ]
+}
