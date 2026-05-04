@@ -1,0 +1,814 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--XBRL Document Created with Wdesk from Workiva-->
+<!--Copyright 2022 Workiva-->
+<!--r:48dafa96-fba7-4370-ba4e-4973fe4be0d1,g:f9077229-9d4a-44c2-84cd-c3221276e2f6-->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:sci="http://www.sci-corp.com/20211231" xmlns:xbrli="http://www.xbrl.org/2003/instance" xmlns:dtr-types="http://www.xbrl.org/dtr/type/2020-01-21" xmlns:xbrldt="http://xbrl.org/2005/xbrldt" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://www.sci-corp.com/20211231">
+  <xs:import namespace="http://fasb.org/srt/2021-01-31" schemaLocation="https://xbrl.fasb.org/srt/2021/elts/srt-2021-01-31.xsd"/>
+  <xs:import namespace="http://fasb.org/us-gaap/2021-01-31" schemaLocation="https://xbrl.fasb.org/us-gaap/2021/elts/us-gaap-2021-01-31.xsd"/>
+  <xs:import namespace="http://www.w3.org/1999/xlink" schemaLocation="http://www.xbrl.org/2003/xlink-2003-12-31.xsd"/>
+  <xs:import namespace="http://www.xbrl.org/2003/instance" schemaLocation="http://www.xbrl.org/2003/xbrl-instance-2003-12-31.xsd"/>
+  <xs:import namespace="http://www.xbrl.org/2003/linkbase" schemaLocation="http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd"/>
+  <xs:import namespace="http://www.xbrl.org/dtr/type/2020-01-21" schemaLocation="https://www.xbrl.org/dtr/type/2020-01-21/types.xsd"/>
+  <xs:import namespace="http://xbrl.org/2005/xbrldt" schemaLocation="http://www.xbrl.org/2005/xbrldt-2005.xsd"/>
+  <xs:import namespace="http://xbrl.sec.gov/country/2021" schemaLocation="https://xbrl.sec.gov/country/2021/country-2021.xsd"/>
+  <xs:import namespace="http://xbrl.sec.gov/dei/2021q4" schemaLocation="https://xbrl.sec.gov/dei/2021q4/dei-2021q4.xsd"/>
+  <xs:annotation>
+    <xs:appinfo>
+      <link:linkbaseRef xmlns:xlink="http://www.w3.org/1999/xlink" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="sci-20211231_lab.xml" xlink:role="http://www.xbrl.org/2003/role/labelLinkbaseRef" xlink:type="simple"/>
+      <link:linkbaseRef xmlns:xlink="http://www.w3.org/1999/xlink" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="sci-20211231_pre.xml" xlink:role="http://www.xbrl.org/2003/role/presentationLinkbaseRef" xlink:type="simple"/>
+      <link:linkbaseRef xmlns:xlink="http://www.w3.org/1999/xlink" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="sci-20211231_cal.xml" xlink:role="http://www.xbrl.org/2003/role/calculationLinkbaseRef" xlink:type="simple"/>
+      <link:linkbaseRef xmlns:xlink="http://www.w3.org/1999/xlink" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="sci-20211231_def.xml" xlink:role="http://www.xbrl.org/2003/role/definitionLinkbaseRef" xlink:type="simple"/>
+      <link:roleType id="AuditInformation" roleURI="http://www.sci-corp.com/role/AuditInformation">
+        <link:definition>0001001 - Document - Audit Information</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="DocumentandEntityInformationDocument" roleURI="http://www.sci-corp.com/role/DocumentandEntityInformationDocument">
+        <link:definition>1001002 - Statement - Document and Entity Information Document</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ConsolidatedStatementofOperations" roleURI="http://www.sci-corp.com/role/ConsolidatedStatementofOperations">
+        <link:definition>1002003 - Statement - Consolidated Statement of Operations</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ConsolidatedStatementofComprehensiveIncome" roleURI="http://www.sci-corp.com/role/ConsolidatedStatementofComprehensiveIncome">
+        <link:definition>1003004 - Statement - Consolidated Statement of Comprehensive Income</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ConsolidatedBalanceSheet" roleURI="http://www.sci-corp.com/role/ConsolidatedBalanceSheet">
+        <link:definition>1004005 - Statement - Consolidated Balance Sheet</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ConsolidatedBalanceSheetParentheticals" roleURI="http://www.sci-corp.com/role/ConsolidatedBalanceSheetParentheticals">
+        <link:definition>1005006 - Statement - Consolidated Balance Sheet (Parentheticals)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ConsolidatedStatementofCashFlows" roleURI="http://www.sci-corp.com/role/ConsolidatedStatementofCashFlows">
+        <link:definition>1006007 - Statement - Consolidated Statement of Cash Flows</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ConsolidatedStatementofEquity" roleURI="http://www.sci-corp.com/role/ConsolidatedStatementofEquity">
+        <link:definition>1007008 - Statement - Consolidated Statement of Equity</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ConsolidatedStatementofEquityParentheticals" roleURI="http://www.sci-corp.com/role/ConsolidatedStatementofEquityParentheticals">
+        <link:definition>1008009 - Statement - Consolidated Statement of Equity (Parentheticals)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CoverPageNotes" roleURI="http://www.sci-corp.com/role/CoverPageNotes">
+        <link:definition>0102101 - Document - Cover Page (Notes)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CoverPageTables" roleURI="http://www.sci-corp.com/role/CoverPageTables">
+        <link:definition>0303301 - Document - Cover Page (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CoverPageDetails" roleURI="http://www.sci-corp.com/role/CoverPageDetails">
+        <link:definition>0404401 - Document - Cover Page (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="NatureofOperationsLevel1Notes" roleURI="http://www.sci-corp.com/role/NatureofOperationsLevel1Notes">
+        <link:definition>2101102 - Disclosure - Nature of Operations Level 1 (Notes)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SummaryofSignificantAccountingPoliciesLevel1Notes" roleURI="http://www.sci-corp.com/role/SummaryofSignificantAccountingPoliciesLevel1Notes">
+        <link:definition>2102103 - Disclosure - Summary of Significant Accounting Policies Level 1 (Notes)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SummaryofSignificantAccountingPoliciesLevel2Policies" roleURI="http://www.sci-corp.com/role/SummaryofSignificantAccountingPoliciesLevel2Policies">
+        <link:definition>2203201 - Disclosure - Summary of Significant Accounting Policies Level 2 (Policies)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SummaryofSignificantAccountingPoliciesSummaryofSignificantAccountingPoliciesLevel3Tables" roleURI="http://www.sci-corp.com/role/SummaryofSignificantAccountingPoliciesSummaryofSignificantAccountingPoliciesLevel3Tables">
+        <link:definition>2304302 - Disclosure - Summary of Significant Accounting Policies Summary of Significant Accounting Policies Level 3 (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SummaryofSignificantAccountingPoliciesTextualsDetails" roleURI="http://www.sci-corp.com/role/SummaryofSignificantAccountingPoliciesTextualsDetails">
+        <link:definition>2405402 - Disclosure - Summary of Significant Accounting Policies, Textuals (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SummaryofSignificantAccountingPoliciesSummaryofSignificantAccountingPoliciesRevenueRecognitionDetails" roleURI="http://www.sci-corp.com/role/SummaryofSignificantAccountingPoliciesSummaryofSignificantAccountingPoliciesRevenueRecognitionDetails">
+        <link:definition>2406403 - Disclosure - Summary of Significant Accounting Policies Summary of Significant Accounting Policies, Revenue Recognition (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SummaryofSignificantAccountingPoliciesSummaryofSignificantAccountingPoliciesCashFlowDetails" roleURI="http://www.sci-corp.com/role/SummaryofSignificantAccountingPoliciesSummaryofSignificantAccountingPoliciesCashFlowDetails">
+        <link:definition>1409404 - Statement - Summary of Significant Accounting Policies Summary of Significant Accounting Policies, Cash Flow (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="PreneedActivitiesLevel1Notes" roleURI="http://www.sci-corp.com/role/PreneedActivitiesLevel1Notes">
+        <link:definition>2107104 - Disclosure - Preneed Activities Level 1 (Notes)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="PreneedActivitiesLevel3Tables" roleURI="http://www.sci-corp.com/role/PreneedActivitiesLevel3Tables">
+        <link:definition>2308303 - Disclosure - Preneed Activities Level 3 (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="PreneedActivitiesInvestmentRelatedActivitiesDetails" roleURI="http://www.sci-corp.com/role/PreneedActivitiesInvestmentRelatedActivitiesDetails">
+        <link:definition>2409405 - Disclosure - Preneed Activities Investment Related Activities (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="PreneedActivitiesPreneedActivitiesPreneedReceivablesandTrustInvestmentsDetails" roleURI="http://www.sci-corp.com/role/PreneedActivitiesPreneedActivitiesPreneedReceivablesandTrustInvestmentsDetails">
+        <link:definition>2410406 - Disclosure - Preneed Activities Preneed Activities Preneed Receivables and Trust Investments (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="PreneedActivitiesLongtermReceivableandInvestmentDetails" roleURI="http://www.sci-corp.com/role/PreneedActivitiesLongtermReceivableandInvestmentDetails">
+        <link:definition>2411407 - Disclosure - Preneed Activities Long-term Receivable and Investment (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="PreneedActivitiesPreneedActivitiesReceivablesNetandTrustInvesmentsDetails" roleURI="http://www.sci-corp.com/role/PreneedActivitiesPreneedActivitiesReceivablesNetandTrustInvesmentsDetails">
+        <link:definition>1410408 - Statement - Preneed Activities Preneed Activities Receivables Net and Trust Invesments (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="PreneedActivitiesScheduleofAvailableforsaleSecuritiesDetails" roleURI="http://www.sci-corp.com/role/PreneedActivitiesScheduleofAvailableforsaleSecuritiesDetails">
+        <link:definition>2412409 - Disclosure - Preneed Activities Schedule of Available-for-sale Securities (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="PreneedActivitiesLevel3ActivitiesDetails" roleURI="http://www.sci-corp.com/role/PreneedActivitiesLevel3ActivitiesDetails">
+        <link:definition>2413410 - Disclosure - Preneed Activities Level 3 Activities (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="PreneedActivitiesInvestmentsClassifiedbyContractualMaturityDateDetails" roleURI="http://www.sci-corp.com/role/PreneedActivitiesInvestmentsClassifiedbyContractualMaturityDateDetails">
+        <link:definition>2414411 - Disclosure - Preneed Activities Investments Classified by Contractual Maturity Date (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="PreneedActivitiesScheduleofUnrealizedLossonInvestmentsDetails" roleURI="http://www.sci-corp.com/role/PreneedActivitiesScheduleofUnrealizedLossonInvestmentsDetails">
+        <link:definition>2415412 - Disclosure - Preneed Activities Schedule of Unrealized Loss on Investments (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="PreneedActivitiesPreneedActivitiesDeferredRevenueNetDetails" roleURI="http://www.sci-corp.com/role/PreneedActivitiesPreneedActivitiesDeferredRevenueNetDetails">
+        <link:definition>2416413 - Disclosure - Preneed Activities Preneed Activities Deferred Revenue Net (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="PreneedActivitiesPreneedActivitiesDeferredPreneedRevenuesDetails" roleURI="http://www.sci-corp.com/role/PreneedActivitiesPreneedActivitiesDeferredPreneedRevenuesDetails">
+        <link:definition>1411414 - Statement - Preneed Activities Preneed Activities Deferred Preneed Revenues (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="PreneedActivitiesPreneedActivitiesTextualsDetails" roleURI="http://www.sci-corp.com/role/PreneedActivitiesPreneedActivitiesTextualsDetails">
+        <link:definition>2417415 - Disclosure - Preneed Activities Preneed Activities, Textuals (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="GoodwillandIntangibleAssets" roleURI="http://www.sci-corp.com/role/GoodwillandIntangibleAssets">
+        <link:definition>2118105 - Disclosure - Goodwill and Intangible Assets</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="GoodwillandIntangibleAssetsGoodwillandIntangibleAssetsLevel3Tables" roleURI="http://www.sci-corp.com/role/GoodwillandIntangibleAssetsGoodwillandIntangibleAssetsLevel3Tables">
+        <link:definition>2319304 - Disclosure - Goodwill and Intangible Assets Goodwill and Intangible Assets Level 3 (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="GoodwillandIntangibleAssetsGoodwillandIntangibleAssetsLevel4Details" roleURI="http://www.sci-corp.com/role/GoodwillandIntangibleAssetsGoodwillandIntangibleAssetsLevel4Details">
+        <link:definition>2420416 - Disclosure - Goodwill and Intangible Assets Goodwill and Intangible Assets Level 4 (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IncomeTaxesLevel1Notes" roleURI="http://www.sci-corp.com/role/IncomeTaxesLevel1Notes">
+        <link:definition>2121106 - Disclosure - Income Taxes Level 1 (Notes)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IncomeTaxesLevel3Tables" roleURI="http://www.sci-corp.com/role/IncomeTaxesLevel3Tables">
+        <link:definition>2322305 - Disclosure - Income Taxes Level 3 (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IncomeTaxesIncomeTaxesDetails1Details" roleURI="http://www.sci-corp.com/role/IncomeTaxesIncomeTaxesDetails1Details">
+        <link:definition>2423417 - Disclosure - Income Taxes Income Taxes Details 1 (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IncomeTaxesIncomeTaxesDetails2Details" roleURI="http://www.sci-corp.com/role/IncomeTaxesIncomeTaxesDetails2Details">
+        <link:definition>2424418 - Disclosure - Income Taxes Income Taxes Details 2 (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IncomeTaxesIncomeTaxesDetails3Details" roleURI="http://www.sci-corp.com/role/IncomeTaxesIncomeTaxesDetails3Details">
+        <link:definition>2425419 - Disclosure - Income Taxes Income Taxes Details 3 (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IncomeTaxesIncomeTaxesDetails4Details" roleURI="http://www.sci-corp.com/role/IncomeTaxesIncomeTaxesDetails4Details">
+        <link:definition>2426420 - Disclosure - Income Taxes Income Taxes Details 4 (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IncomeTaxesIncomeTaxesDetails5Details" roleURI="http://www.sci-corp.com/role/IncomeTaxesIncomeTaxesDetails5Details">
+        <link:definition>2427421 - Disclosure - Income Taxes Income Taxes Details 5 (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IncomeTaxesIncomeTaxesDetails6Details" roleURI="http://www.sci-corp.com/role/IncomeTaxesIncomeTaxesDetails6Details">
+        <link:definition>2428422 - Disclosure - Income Taxes Income Taxes Details 6 (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IncomeTaxesIncomeTaxesDetails7Details" roleURI="http://www.sci-corp.com/role/IncomeTaxesIncomeTaxesDetails7Details">
+        <link:definition>2429423 - Disclosure - Income Taxes Income Taxes Details 7 (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IncomeTaxesIncomeTaxesDetailsTaxReformDetails" roleURI="http://www.sci-corp.com/role/IncomeTaxesIncomeTaxesDetailsTaxReformDetails">
+        <link:definition>2430424 - Disclosure - Income Taxes Income Taxes Details (Tax Reform) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="DebtLevel1Notes" roleURI="http://www.sci-corp.com/role/DebtLevel1Notes">
+        <link:definition>2131107 - Disclosure - Debt Level 1 (Notes)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="DebtLevel3Tables" roleURI="http://www.sci-corp.com/role/DebtLevel3Tables">
+        <link:definition>2332306 - Disclosure - Debt Level 3 (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="DebtLevel4Details" roleURI="http://www.sci-corp.com/role/DebtLevel4Details">
+        <link:definition>2433425 - Disclosure - Debt Level 4 (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="DebtDebtTextualsDetails" roleURI="http://www.sci-corp.com/role/DebtDebtTextualsDetails">
+        <link:definition>2434426 - Disclosure - Debt Debt, Textuals (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CreditRiskandFairValueofFinancialInstrumentsLevel1Notes" roleURI="http://www.sci-corp.com/role/CreditRiskandFairValueofFinancialInstrumentsLevel1Notes">
+        <link:definition>2135108 - Disclosure - Credit Risk and Fair Value of Financial Instruments Level 1 (Notes)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CreditRiskandFairValueofFinancialInstrumentsLevel3Tables" roleURI="http://www.sci-corp.com/role/CreditRiskandFairValueofFinancialInstrumentsLevel3Tables">
+        <link:definition>2336307 - Disclosure - Credit Risk and Fair Value of Financial Instruments Level 3 (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CreditRiskandFairValueofFinancialInstrumentsLevel4Details" roleURI="http://www.sci-corp.com/role/CreditRiskandFairValueofFinancialInstrumentsLevel4Details">
+        <link:definition>2437427 - Disclosure - Credit Risk and Fair Value of Financial Instruments Level 4 (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LeasesNotes" roleURI="http://www.sci-corp.com/role/LeasesNotes">
+        <link:definition>2138109 - Disclosure - Leases (Notes)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LeasesTables" roleURI="http://www.sci-corp.com/role/LeasesTables">
+        <link:definition>2339308 - Disclosure - Leases (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LeasesDetails" roleURI="http://www.sci-corp.com/role/LeasesDetails">
+        <link:definition>2440428 - Disclosure - Leases (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CommitmentsandContingenciesLevel1Notes" roleURI="http://www.sci-corp.com/role/CommitmentsandContingenciesLevel1Notes">
+        <link:definition>2141110 - Disclosure - Commitments and Contingencies Level 1 (Notes)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CommitmentsandContingenciesLevel3Tables" roleURI="http://www.sci-corp.com/role/CommitmentsandContingenciesLevel3Tables">
+        <link:definition>2342309 - Disclosure - Commitments and Contingencies Level 3 (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CommitmentsandContingenciesLevel4Details" roleURI="http://www.sci-corp.com/role/CommitmentsandContingenciesLevel4Details">
+        <link:definition>2443429 - Disclosure - Commitments and Contingencies Level 4 (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="EquityLevel1Notes" roleURI="http://www.sci-corp.com/role/EquityLevel1Notes">
+        <link:definition>2144111 - Disclosure - Equity Level 1 (Notes)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="EquityTextualsDetails" roleURI="http://www.sci-corp.com/role/EquityTextualsDetails">
+        <link:definition>2445430 - Disclosure - Equity Textuals (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ShareBasedCompensationLevel1Notes" roleURI="http://www.sci-corp.com/role/ShareBasedCompensationLevel1Notes">
+        <link:definition>2146112 - Disclosure - Share-Based Compensation Level 1 (Notes)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ShareBasedCompensationLevel3Tables" roleURI="http://www.sci-corp.com/role/ShareBasedCompensationLevel3Tables">
+        <link:definition>2347310 - Disclosure - Share-Based Compensation Level 3 (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ShareBasedCompensationLevel4Details" roleURI="http://www.sci-corp.com/role/ShareBasedCompensationLevel4Details">
+        <link:definition>2448431 - Disclosure - Share-Based Compensation Level 4 (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ShareBasedCompensationShareBasedCompensationTextualsDetails" roleURI="http://www.sci-corp.com/role/ShareBasedCompensationShareBasedCompensationTextualsDetails">
+        <link:definition>2449432 - Disclosure - Share-Based Compensation Share-Based Compensation, Textuals (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RetirementPlans" roleURI="http://www.sci-corp.com/role/RetirementPlans">
+        <link:definition>2150113 - Disclosure - Retirement Plans</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RetirementPlansRetirementPlansLevel3Tables" roleURI="http://www.sci-corp.com/role/RetirementPlansRetirementPlansLevel3Tables">
+        <link:definition>2351311 - Disclosure - Retirement Plans Retirement Plans Level 3 (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RetirementPlansRetirementPlansLevel4Details" roleURI="http://www.sci-corp.com/role/RetirementPlansRetirementPlansLevel4Details">
+        <link:definition>2452433 - Disclosure - Retirement Plans Retirement Plans Level 4 (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CompensationRelatedCostsRetirementBenefitsPolicies" roleURI="http://www.sci-corp.com/role/CompensationRelatedCostsRetirementBenefitsPolicies">
+        <link:definition>2253202 - Disclosure - Compensation Related Costs, Retirement Benefits (Policies)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SegmentReportingLevel1Notes" roleURI="http://www.sci-corp.com/role/SegmentReportingLevel1Notes">
+        <link:definition>2154114 - Disclosure - Segment Reporting Level 1 (Notes)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SegmentReportingLevel3Tables" roleURI="http://www.sci-corp.com/role/SegmentReportingLevel3Tables">
+        <link:definition>2355312 - Disclosure - Segment Reporting Level 3 (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SegmentReportingLevel4Details" roleURI="http://www.sci-corp.com/role/SegmentReportingLevel4Details">
+        <link:definition>2456434 - Disclosure - Segment Reporting Level 4 (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SupplementaryInformationLevel1Notes" roleURI="http://www.sci-corp.com/role/SupplementaryInformationLevel1Notes">
+        <link:definition>1112115 - Statement - Supplementary Information Level 1 (Notes)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SupplementaryInformationLevel3Tables" roleURI="http://www.sci-corp.com/role/SupplementaryInformationLevel3Tables">
+        <link:definition>1313313 - Statement - Supplementary Information Level 3 (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SupplementaryInformationLevel4Details" roleURI="http://www.sci-corp.com/role/SupplementaryInformationLevel4Details">
+        <link:definition>1414435 - Statement - Supplementary Information Level 4 (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="EarningsPerShareLevel1Notes" roleURI="http://www.sci-corp.com/role/EarningsPerShareLevel1Notes">
+        <link:definition>2157116 - Disclosure - Earnings Per Share Level 1 (Notes)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="EarningsPerShareLevel3Tables" roleURI="http://www.sci-corp.com/role/EarningsPerShareLevel3Tables">
+        <link:definition>2358314 - Disclosure - Earnings Per Share Level 3 (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="EarningsPerShareLevel4Details" roleURI="http://www.sci-corp.com/role/EarningsPerShareLevel4Details">
+        <link:definition>2459436 - Disclosure - Earnings Per Share Level 4 (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="AcquisitionLevel1Notes" roleURI="http://www.sci-corp.com/role/AcquisitionLevel1Notes">
+        <link:definition>2160117 - Disclosure - Acquisition Level 1 (Notes)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="AcquisitionLevel3Tables" roleURI="http://www.sci-corp.com/role/AcquisitionLevel3Tables">
+        <link:definition>2361315 - Disclosure - Acquisition Level 3 (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="AcquisitionTextualsDetails" roleURI="http://www.sci-corp.com/role/AcquisitionTextualsDetails">
+        <link:definition>2462437 - Disclosure - Acquisition, Textuals (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="AcquisitionsProFormaRevenueandExpenseDetails" roleURI="http://www.sci-corp.com/role/AcquisitionsProFormaRevenueandExpenseDetails">
+        <link:definition>2463438 - Disclosure - Acquisitions Pro Forma Revenue and Expense (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="AcquisitionsAcquisitionsIntangibleAssetsDetails" roleURI="http://www.sci-corp.com/role/AcquisitionsAcquisitionsIntangibleAssetsDetails">
+        <link:definition>2464439 - Disclosure - Acquisitions Acquisitions Intangible Assets (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="QuarterlyFinancialData" roleURI="http://www.sci-corp.com/role/QuarterlyFinancialData">
+        <link:definition>2165118 - Disclosure - Quarterly Financial Data</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="QuarterlyFinancialDataQuarterlyFinancialDataLevel3Tables" roleURI="http://www.sci-corp.com/role/QuarterlyFinancialDataQuarterlyFinancialDataLevel3Tables">
+        <link:definition>2366316 - Disclosure - Quarterly Financial Data Quarterly Financial Data Level 3 (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="QuarterlyFinancialDataQuarterlyFinancialDataLevel4Details" roleURI="http://www.sci-corp.com/role/QuarterlyFinancialDataQuarterlyFinancialDataLevel4Details">
+        <link:definition>2467440 - Disclosure - Quarterly Financial Data Quarterly Financial Data Level 4 (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ScheduleIIValuationandQualifyingAccount" roleURI="http://www.sci-corp.com/role/ScheduleIIValuationandQualifyingAccount">
+        <link:definition>2168119 - Disclosure - Schedule II Valuation and Qualifying Account</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ScheduleIIValuationandQualifyingAccountScheduleIIValuationandQualifyingAccountLevel4Details" roleURI="http://www.sci-corp.com/role/ScheduleIIValuationandQualifyingAccountScheduleIIValuationandQualifyingAccountLevel4Details">
+        <link:definition>2469441 - Disclosure - Schedule II Valuation and Qualifying Account Schedule II Valuation and Qualifying Account Level 4 (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element id="sci_CreditRiskAndFairValueOfFinancialInstrumentsAbstract" abstract="true" name="CreditRiskAndFairValueOfFinancialInstrumentsAbstract" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="sci_FiniteLivedIntangibleAssetsAmortizationExpenseFutureTotal" abstract="false" name="FiniteLivedIntangibleAssetsAmortizationExpenseFutureTotal" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sci_GoodwillReportingUnitFairValueInputsExpensetoRevenueRatioLowendrange" abstract="false" name="GoodwillReportingUnitFairValueInputsExpensetoRevenueRatioLowendrange" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="dtr-types:percentItemType"/>
+  <xs:element id="sci_ChangeInDeferredRevenueForUnfulfilledPerformanceObligations" abstract="false" name="ChangeInDeferredRevenueForUnfulfilledPerformanceObligations" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sci_AcquisitionsAbstract" abstract="true" name="AcquisitionsAbstract" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="sci_IntangiblesFairValueInputsDiscountRate" abstract="false" name="IntangiblesFairValueInputsDiscountRate" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="dtr-types:percentItemType"/>
+  <xs:element id="sci_TotalNotesReceivablesNotPastDue" abstract="false" name="TotalNotesReceivablesNotPastDue" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sci_August2030Member" abstract="true" name="August2030Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="sci_IntangiblesFairValueInputsTerminalGrowthRate" abstract="false" name="IntangiblesFairValueInputsTerminalGrowthRate" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="dtr-types:percentItemType"/>
+  <xs:element id="sci_BusinessCombinationGoodwillCemetery" abstract="false" name="BusinessCombinationGoodwillCemetery" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sci_RevenueAllowanceForCancellationDeferredPreneedFuneralAndCemeteryMember" abstract="true" name="RevenueAllowanceForCancellationDeferredPreneedFuneralAndCemeteryMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="sci_Deferredtaxliabilitiessellingcost" abstract="false" name="Deferredtaxliabilitiessellingcost" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sci_GoodwillReportingUnitFairValueInputsGrowthRateHighEndOfRange" abstract="false" name="GoodwillReportingUnitFairValueInputsGrowthRateHighEndOfRange" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="dtr-types:percentItemType"/>
+  <xs:element id="sci_PreneedReceivablesandTrustInvestmentsAbstract" abstract="true" name="PreneedReceivablesandTrustInvestmentsAbstract" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="sci_StockOptionPlanExerciseRange4Member" abstract="true" name="StockOptionPlanExerciseRange4Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="sci_AgreementsFuturePaymentsDueInTwoYears" abstract="false" name="AgreementsFuturePaymentsDueInTwoYears" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sci_Changeintheestimatedfairvalueofacquireddeferredpreneedrevenuesanddeferredreceiptsheldintrust" abstract="false" name="Changeintheestimatedfairvalueofacquireddeferredpreneedrevenuesanddeferredreceiptsheldintrust" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sci_StockOptionPlanExerciseRange2Member" abstract="true" name="StockOptionPlanExerciseRange2Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="sci_IncreaseDecreaseInDeferredPreneedFuneralReceiptsHeldInTrust" abstract="false" name="IncreaseDecreaseInDeferredPreneedFuneralReceiptsHeldInTrust" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sci_GainsLossesOnDivestituresAndImpairmentChargesTableTextBlock" abstract="false" name="GainsLossesOnDivestituresAndImpairmentChargesTableTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:textBlockItemType"/>
+  <xs:element id="sci_DeferredTaxLiabilitiesInventoriesAndCemeteryProperty" abstract="false" name="DeferredTaxLiabilitiesInventoriesAndCemeteryProperty" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sci_RnewalsAndExtensionsFinanceLeases" abstract="false" name="RnewalsAndExtensionsFinanceLeases" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sci_AssetAllowanceForCancellationNotesReceivableMember" abstract="true" name="AssetAllowanceForCancellationNotesReceivableMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="sci_CemeteryPerpetualCareTrustInvestments" abstract="false" name="CemeteryPerpetualCareTrustInvestments" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sci_InvestmentEarningsNet" abstract="false" name="InvestmentEarningsNet" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sci_CurrentYearAcquisitionMember" abstract="true" name="CurrentYearAcquisitionMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="sci_LeaseLiabilityPaymentsDueYearFour" abstract="false" name="LeaseLiabilityPaymentsDueYearFour" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sci_MiscellaneousAccountsReceivableMember" abstract="true" name="MiscellaneousAccountsReceivableMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="sci_TransportationEquipmentLeaseLife" abstract="false" name="TransportationEquipmentLeaseLife" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:durationItemType"/>
+  <xs:element id="sci_DeferredPreneedRevenuesTableTextBlock" abstract="false" name="DeferredPreneedRevenuesTableTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:textBlockItemType"/>
+  <xs:element id="sci_CemeteryCoreRevenueMember" abstract="true" name="CemeteryCoreRevenueMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="sci_AcquisitionCostsForBusinessCombination" abstract="false" name="AcquisitionCostsForBusinessCombination" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sci_EmploymentAgreementMember" abstract="true" name="EmploymentAgreementMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="sci_FinancingReceivableAllowanceForCreditLossAcquisitionsDivestituresNet" abstract="false" name="FinancingReceivableAllowanceForCreditLossAcquisitionsDivestituresNet" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sci_WithdrawalsFromTrust" abstract="false" name="WithdrawalsFromTrust" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sci_RecognizedRevenueFromCurrentPeriod" abstract="false" name="RecognizedRevenueFromCurrentPeriod" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sci_BusinessAcquisitionPurchasePriceAllocationCemeteryproperty" abstract="false" name="BusinessAcquisitionPurchasePriceAllocationCemeteryproperty" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sci_January2022Member" abstract="true" name="January2022Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="sci_FinanceLeasePaymentsCashOutflow" abstract="false" name="FinanceLeasePaymentsCashOutflow" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sci_AmountsDueforUnfulfilledPerformanceObligations" abstract="false" name="AmountsDueforUnfulfilledPerformanceObligations" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sci_LessorMember" abstract="true" name="LessorMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="sci_LeaseLiability" abstract="false" name="LeaseLiability" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sci_CashReceiptsFromCustomersNetOfRefunds" abstract="false" name="CashReceiptsFromCustomersNetOfRefunds" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sci_Totaladjustmenttotheestimatedamountofgoodwillinabusinesscombination" abstract="false" name="Totaladjustmenttotheestimatedamountofgoodwillinabusinesscombination" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sci_ScheduleOfIntangibleAssetsTableTextBlock" abstract="false" name="ScheduleOfIntangibleAssetsTableTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:textBlockItemType"/>
+  <xs:element id="sci_FuneralOtherRevenueMember" abstract="true" name="FuneralOtherRevenueMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="sci_BusinessAcquisitionPurchasePriceAllocationPreneedFuneralAndCemeteryReceivablesAndTrustInvestments" abstract="false" name="BusinessAcquisitionPurchasePriceAllocationPreneedFuneralAndCemeteryReceivablesAndTrustInvestments" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sci_EstimatedTaxReformRepatriationLiability" abstract="false" name="EstimatedTaxReformRepatriationLiability" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sci_GainLossOnDivestituresAndImpairmentChargesNet" abstract="false" name="GainLossOnDivestituresAndImpairmentChargesNet" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sci_CemeteryAtneedRevenueMember" abstract="true" name="CemeteryAtneedRevenueMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="sci_DirectorFeePlanMember" abstract="true" name="DirectorFeePlanMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="sci_NatureOfOperationsAbstract" abstract="true" name="NatureOfOperationsAbstract" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="sci_LongTermMember" abstract="true" name="LongTermMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="sci_FuneralMaturedPreneedRevenueMember" abstract="true" name="FuneralMaturedPreneedRevenueMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="sci_LossCarryForwardsExpirationsInYearOne" abstract="false" name="LossCarryForwardsExpirationsInYearOne" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sci_NetPreneedDeferredSales" abstract="false" name="NetPreneedDeferredSales" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sci_ECFInvestmentEarningsNet" abstract="false" name="ECFInvestmentEarningsNet" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sci_LettersOfCreditMaximumBorrowingCapacity" abstract="false" name="LettersOfCreditMaximumBorrowingCapacity" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sci_FinancingReceivables90To180DaysPastDueMember" abstract="true" name="FinancingReceivables90To180DaysPastDueMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="sci_SECSchedule1209AllowanceNoncurrentNotesMember" abstract="true" name="SECSchedule1209AllowanceNoncurrentNotesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="sci_FinanceLeasesNew" abstract="false" name="FinanceLeasesNew" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sci_FuneralCoreRevenueMember" abstract="true" name="FuneralCoreRevenueMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="sci_ScheduleOfFutureCashInterestPaymentsTableTextBlock" abstract="false" name="ScheduleOfFutureCashInterestPaymentsTableTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:textBlockItemType"/>
+  <xs:element id="sci_ConsultingAgreementMember" abstract="true" name="ConsultingAgreementMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="sci_FuneralMember" abstract="true" name="FuneralMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="sci_PaymentsToAcquireBusinessesIncludiing1031ExchangeFunds" abstract="false" name="PaymentsToAcquireBusinessesIncludiing1031ExchangeFunds" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sci_EffectOfPreneedFuneralProductionAndMaturitiesAbstract" abstract="true" name="EffectOfPreneedFuneralProductionAndMaturitiesAbstract" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="sci_CareTrustsCorpus" abstract="false" name="CareTrustsCorpus" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sci_LeaseLIabilityPaymentsDueNextTwelveMonths" abstract="false" name="LeaseLIabilityPaymentsDueNextTwelveMonths" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sci_DeferredPreneedRevenuesRollForward" abstract="true" name="DeferredPreneedRevenuesRollForward" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="sci_FinanceLeaseliabilityrenewals" abstract="false" name="FinanceLeaseliabilityrenewals" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sci_RecognizedDeferredPreneedRevenues" abstract="false" name="RecognizedDeferredPreneedRevenues" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sci_ScheduleOfSignificantReportableItemsFromSegmentsToConsolidatedTableTextBlock" abstract="false" name="ScheduleOfSignificantReportableItemsFromSegmentsToConsolidatedTableTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:textBlockItemType"/>
+  <xs:element id="sci_A1031ExchangeFundsForBusinessCombinations" abstract="false" name="A1031ExchangeFundsForBusinessCombinations" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sci_Changeinamountsdueforunfulfilledperformanceobligations" abstract="false" name="Changeinamountsdueforunfulfilledperformanceobligations" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sci_DeferredrevenueGross" abstract="false" name="DeferredrevenueGross" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sci_CashInterestPaymentsExpectedPaymentsInYearSixAndThereafter" abstract="false" name="CashInterestPaymentsExpectedPaymentsInYearSixAndThereafter" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sci_IntangibleFairValueInputsRoyaltySavingsRateHigh" abstract="false" name="IntangibleFairValueInputsRoyaltySavingsRateHigh" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="xbrli:pureItemType"/>
+  <xs:element id="sci_CashInterestPaymentsExpectedPaymentsInYearFour" abstract="false" name="CashInterestPaymentsExpectedPaymentsInYearFour" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sci_CommingledfundsFixedincMember" abstract="true" name="CommingledfundsFixedincMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="sci_CemeteryPropertyAtCost" abstract="false" name="CemeteryPropertyAtCost" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sci_GoodwillReportingUnitFairValueInputsExpensetoRevenueRatioHighendrange" abstract="false" name="GoodwillReportingUnitFairValueInputsExpensetoRevenueRatioHighendrange" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="dtr-types:percentItemType"/>
+  <xs:element id="sci_TaxLiability" abstract="false" name="TaxLiability" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sci_CemeteryRecognizedPreneedPropertyRevenueMember" abstract="true" name="CemeteryRecognizedPreneedPropertyRevenueMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="sci_Changeinestimatedvalueofpropertyandequipment" abstract="false" name="Changeinestimatedvalueofpropertyandequipment" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sci_December2022Member" abstract="true" name="December2022Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="sci_DeferredRevenueAcquisitionsDispositionsOfBusinessesNet" abstract="false" name="DeferredRevenueAcquisitionsDispositionsOfBusinessesNet" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sci_CommingledfundsEquityMember" abstract="true" name="CommingledfundsEquityMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="sci_RenewalsAndExtensionsOperatingLeases" abstract="false" name="RenewalsAndExtensionsOperatingLeases" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sci_AgreementsFuturePaymentsDueInThreeYears" abstract="false" name="AgreementsFuturePaymentsDueInThreeYears" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sci_LeaseLiabilityPaymentsDueYearThree" abstract="false" name="LeaseLiabilityPaymentsDueYearThree" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sci_GoodwillReportingUnitFairValueInputsGrowthRateOtherLowendrange" abstract="false" name="GoodwillReportingUnitFairValueInputsGrowthRateOtherLowendrange" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="dtr-types:percentItemType"/>
+  <xs:element id="sci_LossCarryForwardsExpirationsInYearTwo" abstract="false" name="LossCarryForwardsExpirationsInYearTwo" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sci_UndistributedInvestmentEarningsNet" abstract="false" name="UndistributedInvestmentEarningsNet" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sci_FinancingReceivables30To90DaysPastDueMember" abstract="true" name="FinancingReceivables30To90DaysPastDueMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="sci_DeferredTaxLiabilitiesPayables" abstract="false" name="DeferredTaxLiabilitiesPayables" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sci_PreneedReceivablesNetAndTrustInvestmentsChangeInCancellationAllowance" abstract="false" name="PreneedReceivablesNetAndTrustInvestmentsChangeInCancellationAllowance" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sci_Changeinestimatedvalueofpreneedreceivablesnetandtrustinvestments" abstract="false" name="Changeinestimatedvalueofpreneedreceivablesnetandtrustinvestments" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sci_BusinessCombinationGoodwill" abstract="false" name="BusinessCombinationGoodwill" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sci_GoodwillReportingUnitFairValueInputsGrowthRateLowEndOfRange" abstract="false" name="GoodwillReportingUnitFairValueInputsGrowthRateLowEndOfRange" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="dtr-types:percentItemType"/>
+  <xs:element id="sci_IncreaseDecreaseInDeferredPreneedFuneralRevenue" abstract="false" name="IncreaseDecreaseInDeferredPreneedFuneralRevenue" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sci_Preneedreceivablesnetandtrustinvestmentsexcludingallowanceforcancellation" abstract="false" name="Preneedreceivablesnetandtrustinvestmentsexcludingallowanceforcancellation" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sci_Preneedtrustinvestments" abstract="false" name="Preneedtrustinvestments" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sci_BusinessCombinationsIntangibleAssetsAbstract" abstract="true" name="BusinessCombinationsIntangibleAssetsAbstract" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="sci_Deferredrevenueanddeferredreceiptsheldintrust" abstract="false" name="Deferredrevenueanddeferredreceiptsheldintrust" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sci_June2029Member" abstract="true" name="June2029Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="sci_CashInterestPaymentsExpectedPaymentsInYearFive" abstract="false" name="CashInterestPaymentsExpectedPaymentsInYearFive" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sci_GoodwillReportingUnitFairValueInputsGrowthRateOtherHighendrange" abstract="false" name="GoodwillReportingUnitFairValueInputsGrowthRateOtherHighendrange" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="dtr-types:percentItemType"/>
+  <xs:element id="sci_IncrementalSellingCosts" abstract="false" name="IncrementalSellingCosts" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sci_FuneralAndCemeteryCashFlowPolicyTextBlock" abstract="false" name="FuneralAndCemeteryCashFlowPolicyTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:textBlockItemType"/>
+  <xs:element id="sci_December2027Member" abstract="true" name="December2027Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="sci_FinancingReceivablesEqualToGreaterThan180DaysPastDueMember" abstract="true" name="FinancingReceivablesEqualToGreaterThan180DaysPastDueMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="sci_Changeinestimatedfairvalueofdeferredincometaxes" abstract="false" name="Changeinestimatedfairvalueofdeferredincometaxes" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sci_DepositsToTrust" abstract="false" name="DepositsToTrust" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sci_OtherInternationalCommonStockSecuritiesMember" abstract="true" name="OtherInternationalCommonStockSecuritiesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="sci_TaxSettlementPayment" abstract="false" name="TaxSettlementPayment" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sci_April2027Member" abstract="true" name="April2027Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="sci_IncreaseDecreaseInPreneedFuneralReceivablesNetAndTrustInvestments" abstract="false" name="IncreaseDecreaseInPreneedFuneralReceivablesNetAndTrustInvestments" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sci_EstimatedChangeInUnrecognizedTaxBenefitsWithTheNext12Months" abstract="false" name="EstimatedChangeInUnrecognizedTaxBenefitsWithTheNext12Months" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sci_LongTermReceivableAndInvestmentComponentsLineItems" abstract="true" name="LongTermReceivableAndInvestmentComponentsLineItems" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="sci_ProceedsFromDivestituresAndSalesOfPropertyAndEquipmentNet" abstract="false" name="ProceedsFromDivestituresAndSalesOfPropertyAndEquipmentNet" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sci_October2018Member" abstract="true" name="October2018Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="sci_LeasesTotalNonCurrentLiability" abstract="false" name="LeasesTotalNonCurrentLiability" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sci_MaturitiesAndDistributedEarnings" abstract="false" name="MaturitiesAndDistributedEarnings" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sci_IncomeTaxAbstract" abstract="true" name="IncomeTaxAbstract" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="sci_SharesRepurchasedForOptionsExercisedByAttestation" abstract="false" name="SharesRepurchasedForOptionsExercisedByAttestation" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sci_StockOptionPlanExerciseRange1Member" abstract="true" name="StockOptionPlanExerciseRange1Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="sci_Changeinestimatedvalueofotherliabilities" abstract="false" name="Changeinestimatedvalueofotherliabilities" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sci_BusinessCombinationGoodwillFuneral" abstract="false" name="BusinessCombinationGoodwillFuneral" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sci_LeaseInterestExpense" abstract="false" name="LeaseInterestExpense" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sci_LeaseLiabilityPaymentsDueYearFive" abstract="false" name="LeaseLiabilityPaymentsDueYearFive" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sci_RecognizedRevenueFromBacklog" abstract="false" name="RecognizedRevenueFromBacklog" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sci_EffectOfForeignCurrencyAndOtherOnPreneedReceivablesNetAndTrustInvestments" abstract="false" name="EffectOfForeignCurrencyAndOtherOnPreneedReceivablesNetAndTrustInvestments" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sci_LongTermIncentive2016PlanMember" abstract="true" name="LongTermIncentive2016PlanMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="sci_FuneralRecognizedPreneedRevenueMember" abstract="true" name="FuneralRecognizedPreneedRevenueMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="sci_PerformanceUnitsCashPaid" abstract="false" name="PerformanceUnitsCashPaid" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sci_May2031Member" abstract="true" name="May2031Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="sci_TotalLeasePayments" abstract="false" name="TotalLeasePayments" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sci_AgreementsFuturePaymentsDueInOneYear" abstract="false" name="AgreementsFuturePaymentsDueInOneYear" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sci_LeaseLiabilityPaymentsDue" abstract="false" name="LeaseLiabilityPaymentsDue" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sci_November2021Member" abstract="true" name="November2021Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="sci_StockOptionPlanExerciseRange5Member" abstract="true" name="StockOptionPlanExerciseRange5Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="sci_MiscellaneousReceivablesNotPastDue" abstract="false" name="MiscellaneousReceivablesNotPastDue" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sci_LossCarryForwardsExpirationsInYearFour" abstract="false" name="LossCarryForwardsExpirationsInYearFour" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sci_AvailableForSaleSecuritiesFairValue" abstract="false" name="AvailableForSaleSecuritiesFairValue" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sci_OptionsExercisedByAttestation" abstract="false" name="OptionsExercisedByAttestation" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sci_CreditRiskAndFairValueOfFinancialInstrumentsTextBlock" abstract="false" name="CreditRiskAndFairValueOfFinancialInstrumentsTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:textBlockItemType"/>
+  <xs:element id="sci_OtherInformationPertainingToStockOptionActivityTableTextBlock" abstract="false" name="OtherInformationPertainingToStockOptionActivityTableTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:textBlockItemType"/>
+  <xs:element id="sci_Changeinestimatedvaluedofacquiredfinitelivedintangibleassets" abstract="false" name="Changeinestimatedvaluedofacquiredfinitelivedintangibleassets" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sci_BusinessCombinationRecognizedIdentifiableAssetsAcquiredAndLiabilitiesAssumedCareTrustCorpus" abstract="false" name="BusinessCombinationRecognizedIdentifiableAssetsAcquiredAndLiabilitiesAssumedCareTrustCorpus" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sci_PaymentsToAcquireBusinessesIncluding1031ExchangeFunds" abstract="false" name="PaymentsToAcquireBusinessesIncluding1031ExchangeFunds" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sci_Deferredpreneedrevenue" abstract="false" name="Deferredpreneedrevenue" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sci_DeferredPreneedFuneralAndCemeteryReceiptsHeldInTrust" abstract="false" name="DeferredPreneedFuneralAndCemeteryReceiptsHeldInTrust" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sci_FuneralHomeLeaseLife" abstract="false" name="FuneralHomeLeaseLife" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:durationItemType"/>
+  <xs:element id="sci_TotalMiscellaneousReceivables" abstract="false" name="TotalMiscellaneousReceivables" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sci_FinanceLeaseCost" abstract="false" name="FinanceLeaseCost" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sci_NonCurrentDeferredTaxLiabilities" abstract="false" name="NonCurrentDeferredTaxLiabilities" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sci_LeaseLiabilityPaymentsDueAfterYearFive" abstract="false" name="LeaseLiabilityPaymentsDueAfterYearFive" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sci_NonfuneralHomeRevenueMember" abstract="true" name="NonfuneralHomeRevenueMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="sci_PreneedReceivablesNetandTrustInvestmentsTableTextBlock" abstract="false" name="PreneedReceivablesNetandTrustInvestmentsTableTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:textBlockItemType"/>
+  <xs:element id="sci_Changeinestimatedvalueofcurrentliabilities" abstract="false" name="Changeinestimatedvalueofcurrentliabilities" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sci_PreneedReceivableNotPastDue" abstract="false" name="PreneedReceivableNotPastDue" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sci_TotalPreneedReceivablesPastDue" abstract="false" name="TotalPreneedReceivablesPastDue" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sci_UsCommonStockSecuritiesMember" abstract="true" name="UsCommonStockSecuritiesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="sci_LeasesTotalLiability" abstract="false" name="LeasesTotalLiability" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sci_IntangiblesFairValueInputsTerminalGrowthRateWeightedAverage" abstract="false" name="IntangiblesFairValueInputsTerminalGrowthRateWeightedAverage" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="xbrli:pureItemType"/>
+  <xs:element id="sci_BusinessCombinationCemeteryPerpetualCareTrustInvestments" abstract="false" name="BusinessCombinationCemeteryPerpetualCareTrustInvestments" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sci_BusinessCombinationOtherLiabilities" abstract="false" name="BusinessCombinationOtherLiabilities" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sci_IntangibleFairValueInputsRoyaltySavingsRateWeightedAverage" abstract="false" name="IntangibleFairValueInputsRoyaltySavingsRateWeightedAverage" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="xbrli:pureItemType"/>
+  <xs:element id="sci_Longlivedassets" abstract="false" name="Longlivedassets" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sci_NetPreneedContractSales" abstract="false" name="NetPreneedContractSales" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sci_IncomeTaxesAbstract" abstract="true" name="IncomeTaxesAbstract" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="sci_DocumentAndEntityInformationAbstract" abstract="true" name="DocumentAndEntityInformationAbstract" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="sci_PreferredStockSecuritiesMember" abstract="true" name="PreferredStockSecuritiesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="sci_DepositsToTrustReceivableImpact" abstract="false" name="DepositsToTrustReceivableImpact" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sci_CashInterestPaymentsExpectedPaymentsInYearThree" abstract="false" name="CashInterestPaymentsExpectedPaymentsInYearThree" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sci_InvestmentRelatedActivitiesTableTextBlock" abstract="false" name="InvestmentRelatedActivitiesTableTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:textBlockItemType"/>
+  <xs:element id="sci_BusinessCombinationsTotalIntangibleAssetsFairValue" abstract="false" name="BusinessCombinationsTotalIntangibleAssetsFairValue" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sci_May2024Member" abstract="true" name="May2024Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="sci_LeasesRightofUseAsset" abstract="false" name="LeasesRightofUseAsset" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sci_CemeteryPropertyUndevelopedLand" abstract="false" name="CemeteryPropertyUndevelopedLand" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sci_EffectOfForeignCurrencyAndOtherOnDeferredRevenue" abstract="false" name="EffectOfForeignCurrencyAndOtherOnDeferredRevenue" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sci_IntangibleFairValueInputsRoyaltySavingsRateLow" abstract="false" name="IntangibleFairValueInputsRoyaltySavingsRateLow" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="xbrli:pureItemType"/>
+  <xs:element id="sci_PreneedReceivables" abstract="false" name="PreneedReceivables" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sci_CashInterestPaymentsExpectedPaymentsTotal" abstract="false" name="CashInterestPaymentsExpectedPaymentsTotal" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sci_LargeAcquisitionDebtAcquired" abstract="false" name="LargeAcquisitionDebtAcquired" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sci_ScheduleOfBalanceSheetSupplementalDisclosuresTableTextBlock" abstract="false" name="ScheduleOfBalanceSheetSupplementalDisclosuresTableTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:textBlockItemType"/>
+  <xs:element id="sci_AgreementsFuturePaymentsDueInSixYearsAndThereafter" abstract="false" name="AgreementsFuturePaymentsDueInSixYearsAndThereafter" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sci_LossCarryForwardsExpirationsInFiveYearsAndThereafter" abstract="false" name="LossCarryForwardsExpirationsInFiveYearsAndThereafter" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sci_IncreaseDecreaseInDeferredPreneedReceiptsHeldInTrust" abstract="false" name="IncreaseDecreaseInDeferredPreneedReceiptsHeldInTrust" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sci_PaymentsToAcquireRealEstateIncluding1031Exchange" abstract="false" name="PaymentsToAcquireRealEstateIncluding1031Exchange" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sci_PreneedActivitiesAbstract" abstract="true" name="PreneedActivitiesAbstract" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="sci_CashInterestPaymentsExpectedPaymentsInYearOne" abstract="false" name="CashInterestPaymentsExpectedPaymentsInYearOne" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sci_BusinessCombinationDeferredRevenueAndDeferredReceiptsHeldInTrust" abstract="false" name="BusinessCombinationDeferredRevenueAndDeferredReceiptsHeldInTrust" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sci_BusinessCombinationPreneedReceivablesNetAndTrustInvestments" abstract="false" name="BusinessCombinationPreneedReceivablesNetAndTrustInvestments" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sci_AssetAllowanceForCancellationPreneedFuneralAndPreneedCemeteryMember" abstract="true" name="AssetAllowanceForCancellationPreneedFuneralAndPreneedCemeteryMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="sci_AmortizationOfCemeteryProperty" abstract="false" name="AmortizationOfCemeteryProperty" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sci_Preneedreceivablesnetandtrustinvestments" abstract="false" name="Preneedreceivablesnetandtrustinvestments" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sci_OperatingLeaseNew" abstract="false" name="OperatingLeaseNew" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sci_LongTermReceivableAndInvestmentComponentsTableTextBlock" abstract="false" name="LongTermReceivableAndInvestmentComponentsTableTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:textBlockItemType"/>
+  <xs:element id="sci_PerformanceOptionsMember" abstract="true" name="PerformanceOptionsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="sci_AgreementsFuturePaymentsDue" abstract="false" name="AgreementsFuturePaymentsDue" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sci_PreneedActivitiesTextBlock" abstract="false" name="PreneedActivitiesTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:textBlockItemType"/>
+  <xs:element id="sci_DeferredTaxAssetsDeferredRevenueOnPreneedFuneralAndCemeteryContracts" abstract="false" name="DeferredTaxAssetsDeferredRevenueOnPreneedFuneralAndCemeteryContracts" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sci_CurrentMember" abstract="true" name="CurrentMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="sci_LeasesTotalCurrentLiability" abstract="false" name="LeasesTotalCurrentLiability" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sci_StockOptionPlanExerciseRange3Member" abstract="true" name="StockOptionPlanExerciseRange3Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="sci_DeferredInvestmentEarningsNet" abstract="false" name="DeferredInvestmentEarningsNet" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sci_Deferredincrementalsellingcosts" abstract="false" name="Deferredincrementalsellingcosts" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sci_CemeteryOtherRevenueMember" abstract="true" name="CemeteryOtherRevenueMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="sci_Uncollectedpreneedcontractreceivables" abstract="false" name="Uncollectedpreneedcontractreceivables" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sci_AgreementsFuturePaymentsDueInFourYears" abstract="false" name="AgreementsFuturePaymentsDueInFourYears" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sci_LeaseLiabilityPaymentsDueYearTwo" abstract="false" name="LeaseLiabilityPaymentsDueYearTwo" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sci_FuneralAtneedRevenueMember" abstract="true" name="FuneralAtneedRevenueMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="sci_BusinessCombinationRecognizedIdentifiableAssetsAcquiredAndLiabilitiesAssumedCemeteryPerpetualCareTrusts" abstract="false" name="BusinessCombinationRecognizedIdentifiableAssetsAcquiredAndLiabilitiesAssumedCemeteryPerpetualCareTrusts" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sci_CemeteryRecognizedPreneedMerchandiseAndServiceRevenueMember" abstract="true" name="CemeteryRecognizedPreneedMerchandiseAndServiceRevenueMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="sci_DeferredRevenueChangeInCancellationAllowance" abstract="false" name="DeferredRevenueChangeInCancellationAllowance" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sci_CemeteryPropertyDeveloped" abstract="false" name="CemeteryPropertyDeveloped" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sci_LongTermIncentive1996PlanMember" abstract="true" name="LongTermIncentive1996PlanMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="sci_DeferredTaxAssetsLossAndTaxCreditCarryforwards" abstract="false" name="DeferredTaxAssetsLossAndTaxCreditCarryforwards" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sci_LossCarryForwardsExpirationsInYearThree" abstract="false" name="LossCarryForwardsExpirationsInYearThree" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sci_PayableToEcf" abstract="false" name="PayableToEcf" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sci_LongTermReceivableAndInvestmentComponentsTable" abstract="true" name="LongTermReceivableAndInvestmentComponentsTable" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrldt:hypercubeItem" type="xbrli:stringItemType"/>
+  <xs:element id="sci_CanadaCommonStockSecuritiesMember" abstract="true" name="CanadaCommonStockSecuritiesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="sci_PreneedContractsReceivablesFairValuenet" abstract="false" name="PreneedContractsReceivablesFairValuenet" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sci_November2020Member" abstract="true" name="November2020Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="sci_TermLoanDecember2022Member" abstract="true" name="TermLoanDecember2022Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="sci_FinancingReceivables91To180DaysPastDueMember" abstract="true" name="FinancingReceivables91To180DaysPastDueMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="sci_GoodwillReportingUnitFairValueInputsTerminalGrowthRate" abstract="false" name="GoodwillReportingUnitFairValueInputsTerminalGrowthRate" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="dtr-types:percentItemType"/>
+  <xs:element id="sci_VestingRate" abstract="false" name="VestingRate" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="dtr-types:percentItemType"/>
+  <xs:element id="sci_AcquisitionsDispositionsOfBusinessesNet" abstract="false" name="AcquisitionsDispositionsOfBusinessesNet" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sci_ReportedAtNetAssetValueMember" abstract="true" name="ReportedAtNetAssetValueMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="sci_BankCreditFacilitydueMarch2022Member" abstract="true" name="BankCreditFacilitydueMarch2022Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="sci_ImpactFromChangeinDepreciableLives" abstract="false" name="ImpactFromChangeinDepreciableLives" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sci_AcquisitionRelatedInvestmentsFairvalueofLevel3" abstract="false" name="AcquisitionRelatedInvestmentsFairvalueofLevel3" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sci_TotalNotesReceivablePastDue" abstract="false" name="TotalNotesReceivablePastDue" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sci_QuarterlyFinancialDataUnauditedAbstract" abstract="true" name="QuarterlyFinancialDataUnauditedAbstract" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="sci_AvailableForSaleSecuritiesEstimatedMaturityDateMinimum" abstract="false" name="AvailableForSaleSecuritiesEstimatedMaturityDateMinimum" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:gYearItemType"/>
+  <xs:element id="sci_BusinessAcquisitionPurchasePriceAllocationDeferredPreneedFuneralAndCemeteryRevenuesAndDeferredReceiptsHeldInTrusts" abstract="false" name="BusinessAcquisitionPurchasePriceAllocationDeferredPreneedFuneralAndCemeteryRevenuesAndDeferredReceiptsHeldInTrusts" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sci_Changeinestimatedvalueofacquiredcurrentassets" abstract="false" name="Changeinestimatedvalueofacquiredcurrentassets" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sci_PreneedAccountsReceivableGross" abstract="false" name="PreneedAccountsReceivableGross" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sci_AgreementsFuturePaymentsDueInFiveYears" abstract="false" name="AgreementsFuturePaymentsDueInFiveYears" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sci_CemeteryMember" abstract="true" name="CemeteryMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="sci_LifeInsuranceGeneralAgencyCommissions" abstract="false" name="LifeInsuranceGeneralAgencyCommissions" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sci_BankCreditAgreement" abstract="false" name="BankCreditAgreement" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sci_NonCurrentDeferredTaxAssets" abstract="false" name="NonCurrentDeferredTaxAssets" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sci_Changeinestimatedvaluedofacquiredcemeteryproperty" abstract="false" name="Changeinestimatedvaluedofacquiredcemeteryproperty" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sci_ChangeInCapitalExpendituresIncurredButNotYetPaid" abstract="false" name="ChangeInCapitalExpendituresIncurredButNotYetPaid" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sci_Insurancebackedfixedincomesecuritiesandother" abstract="false" name="Insurancebackedfixedincomesecuritiesandother" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sci_BusinessCombinationCareTrustsCorpus" abstract="false" name="BusinessCombinationCareTrustsCorpus" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sci_ScheduleOfUnrealizedLossOnInvestmentsLineItems" abstract="true" name="ScheduleOfUnrealizedLossOnInvestmentsLineItems" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="sci_AvailableForSaleSecuritiesEstimatedMaturityDateMaximum" abstract="false" name="AvailableForSaleSecuritiesEstimatedMaturityDateMaximum" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:gYearItemType"/>
+  <xs:element id="sci_BusinessCombinationsPreneedCustomerRelationshipsToInsuranceClaimsFairValue" abstract="false" name="BusinessCombinationsPreneedCustomerRelationshipsToInsuranceClaimsFairValue" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sci_Leaseremeasurement" abstract="false" name="Leaseremeasurement" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sci_CashSurrenderValueOfLifeInsuranceRetirementPlans" abstract="false" name="CashSurrenderValueOfLifeInsuranceRetirementPlans" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sci_BusinessCombinationsTradenamesFairValue" abstract="false" name="BusinessCombinationsTradenamesFairValue" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sci_GoodwillReportingUnitFairValueInputsDiscountRate" abstract="false" name="GoodwillReportingUnitFairValueInputsDiscountRate" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="dtr-types:percentItemType"/>
+  <xs:element id="sci_DefinedBenefitPlanExpectedBenefitPayments" abstract="false" name="DefinedBenefitPlanExpectedBenefitPayments" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sci_AssetAllowanceForCancellationPreneedFuneralAndCemeteryMember" abstract="true" name="AssetAllowanceForCancellationPreneedFuneralAndCemeteryMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="sci_ScheduleOfDeferredTaxesClassificationTableTextBlock" abstract="false" name="ScheduleOfDeferredTaxesClassificationTableTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:textBlockItemType"/>
+  <xs:element id="sci_CashInterestPaymentsExpectedPaymentsInYearTwo" abstract="false" name="CashInterestPaymentsExpectedPaymentsInYearTwo" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sci_SupplementaryInformationAbstract" abstract="true" name="SupplementaryInformationAbstract" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="sci_CoverPageAbstract" abstract="true" name="CoverPageAbstract" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="sci_SupplementalInformationrelatedtoLeasesTableTextBlock" abstract="false" name="SupplementalInformationrelatedtoLeasesTableTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:textBlockItemType"/>
+  <xs:element id="sci_DeferredPreneedFuneralRevenues" abstract="false" name="DeferredPreneedFuneralRevenues" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sci_BusinessCombinationDeferredChargesAndOtherAssets" abstract="false" name="BusinessCombinationDeferredChargesAndOtherAssets" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sci_IntangibleAssetsAcquired" abstract="false" name="IntangibleAssetsAcquired" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sci_PreneedContractsReceivablesFairValue" abstract="false" name="PreneedContractsReceivablesFairValue" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+</xs:schema>

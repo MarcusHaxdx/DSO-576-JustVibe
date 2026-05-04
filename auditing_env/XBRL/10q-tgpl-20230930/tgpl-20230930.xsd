@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--XBRL Document Created with the Workiva Platform-->
+<!--Copyright 2023 Workiva-->
+<!--r:ad4ad684-a981-464e-9617-dca9bad84246,g:38e41283-0aed-476f-ad98-a848f0d76b75-->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:tgpl="http://co.williams.com/20230930" xmlns:xbrli="http://www.xbrl.org/2003/instance" xmlns:dtr-types1="http://www.xbrl.org/dtr/type/2020-01-21" xmlns:xbrldt="http://xbrl.org/2005/xbrldt" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://co.williams.com/20230930">
+  <xs:import namespace="http://fasb.org/srt/2023" schemaLocation="https://xbrl.fasb.org/srt/2023/elts/srt-2023.xsd"/>
+  <xs:import namespace="http://fasb.org/us-gaap/2023" schemaLocation="https://xbrl.fasb.org/us-gaap/2023/elts/us-gaap-2023.xsd"/>
+  <xs:import namespace="http://www.w3.org/1999/xlink" schemaLocation="http://www.xbrl.org/2003/xlink-2003-12-31.xsd"/>
+  <xs:import namespace="http://www.xbrl.org/2003/instance" schemaLocation="http://www.xbrl.org/2003/xbrl-instance-2003-12-31.xsd"/>
+  <xs:import namespace="http://www.xbrl.org/2003/linkbase" schemaLocation="http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd"/>
+  <xs:import namespace="http://www.xbrl.org/dtr/type/2020-01-21" schemaLocation="https://www.xbrl.org/dtr/type/2020-01-21/types.xsd"/>
+  <xs:import namespace="http://xbrl.org/2005/xbrldt" schemaLocation="http://www.xbrl.org/2005/xbrldt-2005.xsd"/>
+  <xs:import namespace="http://xbrl.sec.gov/dei/2023" schemaLocation="https://xbrl.sec.gov/dei/2023/dei-2023.xsd"/>
+  <xs:annotation>
+    <xs:appinfo>
+      <link:linkbaseRef xmlns:xlink="http://www.w3.org/1999/xlink" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="tgpl-20230930_lab.xml" xlink:role="http://www.xbrl.org/2003/role/labelLinkbaseRef" xlink:type="simple"/>
+      <link:linkbaseRef xmlns:xlink="http://www.w3.org/1999/xlink" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="tgpl-20230930_pre.xml" xlink:role="http://www.xbrl.org/2003/role/presentationLinkbaseRef" xlink:type="simple"/>
+      <link:linkbaseRef xmlns:xlink="http://www.w3.org/1999/xlink" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="tgpl-20230930_cal.xml" xlink:role="http://www.xbrl.org/2003/role/calculationLinkbaseRef" xlink:type="simple"/>
+      <link:linkbaseRef xmlns:xlink="http://www.w3.org/1999/xlink" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="tgpl-20230930_def.xml" xlink:role="http://www.xbrl.org/2003/role/definitionLinkbaseRef" xlink:type="simple"/>
+      <link:roleType id="DocumentandEntityInformation" roleURI="http://co.williams.com/role/DocumentandEntityInformation">
+        <link:definition>0000001 - Document - Document and Entity Information</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="StatementofNetIncomeUnaudited" roleURI="http://co.williams.com/role/StatementofNetIncomeUnaudited">
+        <link:definition>0000002 - Statement - Statement of Net Income (Unaudited)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="BalanceSheetUnaudited" roleURI="http://co.williams.com/role/BalanceSheetUnaudited">
+        <link:definition>0000003 - Statement - Balance Sheet (Unaudited)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="StatementofChangesinMembersEquityUnaudited" roleURI="http://co.williams.com/role/StatementofChangesinMembersEquityUnaudited">
+        <link:definition>0000004 - Statement - Statement of Changes in Member's Equity (Unaudited)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="StatementofCashFlowsUnaudited" roleURI="http://co.williams.com/role/StatementofCashFlowsUnaudited">
+        <link:definition>0000005 - Statement - Statement of Cash Flows (Unaudited)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="BasisofPresentationNotes" roleURI="http://co.williams.com/role/BasisofPresentationNotes">
+        <link:definition>0000006 - Disclosure - Basis of Presentation (Notes)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RevenueRecognitionNotes" roleURI="http://co.williams.com/role/RevenueRecognitionNotes">
+        <link:definition>0000007 - Disclosure - Revenue Recognition (Notes)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ContingentLiabilitiesandCommitmentsNotes" roleURI="http://co.williams.com/role/ContingentLiabilitiesandCommitmentsNotes">
+        <link:definition>0000008 - Disclosure - Contingent Liabilities and Commitments (Notes)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="DebtandFinancingArrangementsNotes" roleURI="http://co.williams.com/role/DebtandFinancingArrangementsNotes">
+        <link:definition>0000009 - Disclosure - Debt and Financing Arrangements (Notes)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="AROTrustNotes" roleURI="http://co.williams.com/role/AROTrustNotes">
+        <link:definition>0000010 - Disclosure - ARO Trust (Notes)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FairValueMeasurementsNotes" roleURI="http://co.williams.com/role/FairValueMeasurementsNotes">
+        <link:definition>0000011 - Disclosure - Fair Value Measurements (Notes)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="TransactionswithAffiliatesNotes" roleURI="http://co.williams.com/role/TransactionswithAffiliatesNotes">
+        <link:definition>0000012 - Disclosure - Transactions with Affiliates (Notes)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RevenueRecognitionTables" roleURI="http://co.williams.com/role/RevenueRecognitionTables">
+        <link:definition>9954471 - Disclosure - Revenue Recognition (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="AROTrustTables" roleURI="http://co.williams.com/role/AROTrustTables">
+        <link:definition>9954472 - Disclosure - ARO Trust (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FairValueMeasurementsTables" roleURI="http://co.williams.com/role/FairValueMeasurementsTables">
+        <link:definition>9954473 - Disclosure - Fair Value Measurements (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RevenueRecogntionContractLiabilitiesDetails" roleURI="http://co.williams.com/role/RevenueRecogntionContractLiabilitiesDetails">
+        <link:definition>9954474 - Disclosure - Revenue Recogntion Contract Liabilities (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RevenueRecognitionContractLiabilitiesPerformanceObligationDetails" roleURI="http://co.williams.com/role/RevenueRecognitionContractLiabilitiesPerformanceObligationDetails">
+        <link:definition>9954475 - Disclosure - Revenue Recognition Contract Liabilities Performance Obligation (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RevenueRecognitionContractLiabilitiesPerformanceObligationDetails_1" roleURI="http://co.williams.com/role/RevenueRecognitionContractLiabilitiesPerformanceObligationDetails_1">
+        <link:definition>9954475 - Disclosure - Revenue Recognition Contract Liabilities Performance Obligation (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RevenueRecognitionRemainingPerformanceObligationDetails" roleURI="http://co.williams.com/role/RevenueRecognitionRemainingPerformanceObligationDetails">
+        <link:definition>9954476 - Disclosure - Revenue Recognition Remaining Performance Obligation (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RevenueRecognitionRemainingPerformanceObligationDetails_1" roleURI="http://co.williams.com/role/RevenueRecognitionRemainingPerformanceObligationDetails_1">
+        <link:definition>9954476 - Disclosure - Revenue Recognition Remaining Performance Obligation (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ContingentLiabilitiesandCommitmentsDetails" roleURI="http://co.williams.com/role/ContingentLiabilitiesandCommitmentsDetails">
+        <link:definition>9954477 - Disclosure - Contingent Liabilities and Commitments (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="DebtandFinancingArrangementsCreditFacilityandCommercialPaperDetails" roleURI="http://co.williams.com/role/DebtandFinancingArrangementsCreditFacilityandCommercialPaperDetails">
+        <link:definition>9954478 - Disclosure - Debt and Financing Arrangements - Credit Facility and Commercial Paper (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="DebtandFinancingArrangementsOtherFinancingObligationsDetails" roleURI="http://co.williams.com/role/DebtandFinancingArrangementsOtherFinancingObligationsDetails">
+        <link:definition>9954479 - Disclosure - Debt and Financing Arrangements - Other Financing Obligations (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="AROTrustDetails" roleURI="http://co.williams.com/role/AROTrustDetails">
+        <link:definition>9954480 - Disclosure - ARO Trust (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FairValueMeasurementsDetails" roleURI="http://co.williams.com/role/FairValueMeasurementsDetails">
+        <link:definition>9954481 - Disclosure - Fair Value Measurements (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="TransactionswithAffiliatesRelatedPartyTransationsDetails" roleURI="http://co.williams.com/role/TransactionswithAffiliatesRelatedPartyTransationsDetails">
+        <link:definition>9954482 - Disclosure - Transactions with Affiliates Related Party Transations (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element id="tgpl_GasImbalanceReceivableCurrent" abstract="false" name="GasImbalanceReceivableCurrent" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="tgpl_IncreaseDecreaseInGasBalancingPayable" abstract="false" name="IncreaseDecreaseInGasBalancingPayable" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="tgpl_GasAvailableForCustomerNominationAtAverageCost" abstract="false" name="GasAvailableForCustomerNominationAtAverageCost" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="tgpl_IncreaseDecreaseInGasBalancingReceivable" abstract="false" name="IncreaseDecreaseInGasBalancingReceivable" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="tgpl_InternationalEquityFundsMember" abstract="true" name="InternationalEquityFundsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="tgpl_PerformanceObligationsRelatedToContractLiabilitiesMember" abstract="true" name="PerformanceObligationsRelatedToContractLiabilitiesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="tgpl_RemainingPerformanceObligationsMember" abstract="true" name="RemainingPerformanceObligationsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="tgpl_UsEquityFundsMember" abstract="true" name="UsEquityFundsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="tgpl_CustomerAdvancesForConstructionCurrent" abstract="false" name="CustomerAdvancesForConstructionCurrent" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="tgpl_PotentiallyResponsiblePartyAtVariousSuperfundAndStateWasteDisposalSitesMember" abstract="true" name="PotentiallyResponsiblePartyAtVariousSuperfundAndStateWasteDisposalSitesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="tgpl_LeidySouthProjectMember" abstract="true" name="LeidySouthProjectMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="tgpl_RegulatoryCreditChargeResultingFromTaxRateChanges" abstract="false" name="RegulatoryCreditChargeResultingFromTaxRateChanges" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="tgpl_ContractWithCustomerLiabilityTable" abstract="true" name="ContractWithCustomerLiabilityTable" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrldt:hypercubeItem" type="xbrli:stringItemType"/>
+  <xs:element id="tgpl_IncreaseDecreaseInAdvancesToAffiliates" abstract="false" name="IncreaseDecreaseInAdvancesToAffiliates" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="tgpl_CashOverdrafts" abstract="false" name="CashOverdrafts" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="tgpl_AssetsNoncurrentExcludingPPE" abstract="false" name="AssetsNoncurrentExcludingPPE" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="tgpl_WilliamsCompaniesIncMember" abstract="true" name="WilliamsCompaniesIncMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="tgpl_PerformanceObligationSourceAxis" abstract="true" name="PerformanceObligationSourceAxis" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrldt:dimensionItem" type="xbrli:stringItemType"/>
+  <xs:element id="tgpl_ExternaltrustMember" abstract="true" name="ExternaltrustMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="tgpl_ContractWithCustomerLiabilityLineItems" abstract="true" name="ContractWithCustomerLiabilityLineItems" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="tgpl_DaltonExpansionProjectMember" abstract="true" name="DaltonExpansionProjectMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="tgpl_GasImbalancesPayableCurrent" abstract="false" name="GasImbalancesPayableCurrent" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="tgpl_AdditionalAmountByWhichCreditFacilityCanBeIncreased" abstract="false" name="AdditionalAmountByWhichCreditFacilityCanBeIncreased" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="tgpl_Credittoexpensesfromaffiliates" abstract="false" name="Credittoexpensesfromaffiliates" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="tgpl_DocumentAndEntityInformationAbstract" abstract="true" name="DocumentAndEntityInformationAbstract" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="tgpl_ContractwithcustomerAxis" abstract="true" name="ContractwithcustomerAxis" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrldt:dimensionItem" type="xbrli:stringItemType"/>
+  <xs:element id="tgpl_CustomerDeposits" abstract="false" name="CustomerDeposits" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="tgpl_AtlanticSunriseProjectMember" abstract="true" name="AtlanticSunriseProjectMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="tgpl_ContractwithcustomerDomain" abstract="true" name="ContractwithcustomerDomain" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="tgpl_IncreaseDecreaseInAccountsPayableAndAccruedLiabilitiesRelatedToCapitalExpenditures" abstract="false" name="IncreaseDecreaseInAccountsPayableAndAccruedLiabilitiesRelatedToCapitalExpenditures" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="tgpl_Costofnaturalgassales" abstract="false" name="Costofnaturalgassales" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="tgpl_PerformanceObligationSourceDomain" abstract="true" name="PerformanceObligationSourceDomain" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+</xs:schema>

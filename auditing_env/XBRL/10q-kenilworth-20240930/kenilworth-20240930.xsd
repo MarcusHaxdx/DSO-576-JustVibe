@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="us-ascii" standalone="yes"?>
+<!--XBRL Document Created with XBRLMaster-->
+<!--Version: 2.3.08-->
+<!--Based on XBRL 2.1-->
+<!--Date of creation: 11/14/2024-->
+<!--Software architectural design and coding: A'c Dharmapremananda Avt.-->
+<!--Copyright (c) 2024 I-NET Business Solutions, Inc. All Rights Reserved.-->
+<schema xmlns:xl="http://www.xbrl.org/2003/XLink" xmlns:ref="http://www.xbrl.org/2006/ref" xmlns:currency="http://xbrl.sec.gov/currency/2024" xmlns:us-gaap-att="http://fasb.org/us-gaap/attributes" xmlns:sic="http://xbrl.sec.gov/sic/2024" xmlns:exch="http://xbrl.sec.gov/exch/2024" xmlns:invest="http://xbrl.sec.gov/invest/2013-01-31" xmlns:negated="http://www.xbrl.org/2009/role/negated" xmlns:naics="http://xbrl.sec.gov/naics/2024" xmlns:us-types="http://fasb.org/us-types/2024" xmlns:stpr="http://xbrl.sec.gov/stpr/2024" xmlns="http://www.w3.org/2001/XMLSchema" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:xbrli="http://www.xbrl.org/2003/instance" xmlns:xbrldt="http://xbrl.org/2005/xbrldt" xmlns:xbrldi="http://xbrl.org/2006/xbrldi" xmlns:country="http://xbrl.sec.gov/country/2024" xmlns:utr="http://www.xbrl.org/2009/utr" xmlns:srt-types="http://fasb.org/srt-types/2024" xmlns:dtr-types="http://www.xbrl.org/dtr/type/2020-01-21" xmlns:srt-roles="http://fasb.org/srt-roles/2024" xmlns:dei="http://xbrl.sec.gov/dei/2024" xmlns:num="http://www.xbrl.org/dtr/type/numeric" xmlns:nonnum="http://www.xbrl.org/dtr/type/non-numeric" xmlns:srt="http://fasb.org/srt/2024" xmlns:us-gaap="http://fasb.org/us-gaap/2024" xmlns:ecd="http://xbrl.sec.gov/ecd/2024" xmlns:kenilworth="http://kenilworth.com/20240930" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://kenilworth.com/20240930">
+  <annotation>
+    <appinfo>
+      <link:roleType roleURI="http://kenilworth.com/role/Cover" id="Cover">
+        <link:definition>000001 - Document - Cover</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://kenilworth.com/role/ConsolidatedBalanceSheets" id="ConsolidatedBalanceSheets">
+        <link:definition>000002 - Statement - CONSOLIDATED BALANCE SHEETS</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://kenilworth.com/role/ConsolidatedBalanceSheetsParenthetical" id="ConsolidatedBalanceSheetsParenthetical">
+        <link:definition>000003 - Statement - CONSOLIDATED BALANCE SHEETS (Parenthetical)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://kenilworth.com/role/ConsolidatedStatementsOfOperationsUnaudited" id="ConsolidatedStatementsOfOperationsUnaudited">
+        <link:definition>000004 - Statement - CONSOLIDATED STATEMENTS OF OPERATIONS (Unaudited)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://kenilworth.com/role/ConsolidatedChangesInStockholdersEquityUnaudited" id="ConsolidatedChangesInStockholdersEquityUnaudited">
+        <link:definition>000005 - Statement - CONSOLIDATED CHANGES IN STOCKHOLDERS EQUITY (Unaudited)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://kenilworth.com/role/ConsolidatedStatementOfCashFlowsUnaudited" id="ConsolidatedStatementOfCashFlowsUnaudited">
+        <link:definition>000006 - Statement - CONSOLIDATED STATEMENT OF CASH FLOWS (Unaudited)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://kenilworth.com/role/TheCompanyAndNatureOfBusiness" id="TheCompanyAndNatureOfBusiness">
+        <link:definition>000007 - Disclosure - THE COMPANY AND NATURE OF BUSINESS</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://kenilworth.com/role/SummaryOfSignificantAccountingPolicies" id="SummaryOfSignificantAccountingPolicies">
+        <link:definition>000008 - Disclosure - SUMMARY OF SIGNIFICANT ACCOUNTING POLICIES</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://kenilworth.com/role/GoingConcernUncertainty" id="GoingConcernUncertainty">
+        <link:definition>000009 - Disclosure - GOING CONCERN UNCERTAINTY</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://kenilworth.com/role/PayrollTaxesPayable" id="PayrollTaxesPayable">
+        <link:definition>000010 - Disclosure - PAYROLL TAXES PAYABLE</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://kenilworth.com/role/SubsequentEvents" id="SubsequentEvents">
+        <link:definition>000011 - Disclosure - SUBSEQUENT EVENTS</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://kenilworth.com/role/SummaryOfSignificantAccountingPoliciesPolicies" id="SummaryOfSignificantAccountingPoliciesPolicies">
+        <link:definition>000012 - Disclosure - SUMMARY OF SIGNIFICANT ACCOUNTING POLICIES (Policies)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://kenilworth.com/role/SummaryOfSignificantAccountingPoliciesDetailsNarrative" id="SummaryOfSignificantAccountingPoliciesDetailsNarrative">
+        <link:definition>000013 - Disclosure - SUMMARY OF SIGNIFICANT ACCOUNTING POLICIES (Details Narrative)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://kenilworth.com/role/GoingConcernUncertaintyDetailsNarrative" id="GoingConcernUncertaintyDetailsNarrative">
+        <link:definition>000014 - Disclosure - GOING CONCERN UNCERTAINTY (Details Narrative)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:linkbaseRef xlink:type="simple" xlink:href="kenilworth-20240930_pre.xml" xlink:role="http://www.xbrl.org/2003/role/presentationLinkbaseRef" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" />
+      <link:linkbaseRef xlink:type="simple" xlink:href="kenilworth-20240930_lab.xml" xlink:role="http://www.xbrl.org/2003/role/labelLinkbaseRef" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" />
+      <link:linkbaseRef xlink:type="simple" xlink:href="kenilworth-20240930_cal.xml" xlink:role="http://www.xbrl.org/2003/role/calculationLinkbaseRef" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" />
+      <link:linkbaseRef xlink:type="simple" xlink:href="kenilworth-20240930_def.xml" xlink:role="http://www.xbrl.org/2003/role/definitionLinkbaseRef" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" />
+    </appinfo>
+  </annotation>
+  <import namespace="http://www.xbrl.org/2003/instance" schemaLocation="http://www.xbrl.org/2003/xbrl-instance-2003-12-31.xsd" />
+  <import namespace="http://www.xbrl.org/2003/linkbase" schemaLocation="http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd" />
+  <import namespace="http://xbrl.org/2005/xbrldt" schemaLocation="http://www.xbrl.org/2005/xbrldt-2005.xsd" />
+  <import namespace="http://xbrl.sec.gov/country/2024" schemaLocation="https://xbrl.sec.gov/country/2024/country-2024.xsd" />
+  <import namespace="http://xbrl.sec.gov/currency/2024" schemaLocation="https://xbrl.sec.gov/currency/2024/currency-2024.xsd" />
+  <import namespace="http://xbrl.sec.gov/dei/2024" schemaLocation="https://xbrl.sec.gov/dei/2024/dei-2024.xsd" />
+  <import namespace="http://www.xbrl.org/dtr/type/non-numeric" schemaLocation="http://www.xbrl.org/dtr/type/nonNumeric-2009-12-16.xsd" />
+  <import namespace="http://www.xbrl.org/dtr/type/numeric" schemaLocation="http://www.xbrl.org/dtr/type/numeric-2009-12-16.xsd" />
+  <import namespace="http://xbrl.sec.gov/exch/2024" schemaLocation="https://xbrl.sec.gov/exch/2024/exch-2024.xsd" />
+  <import namespace="http://www.xbrl.org/2009/arcrole/fact-explanatoryFact" schemaLocation="http://www.xbrl.org/lrr/arcrole/factExplanatory-2009-12-16.xsd" />
+  <import namespace="http://www.xbrl.org/2009/role/negated" schemaLocation="http://www.xbrl.org/lrr/role/negated-2009-12-16.xsd" />
+  <import namespace="http://www.xbrl.org/2009/role/net" schemaLocation="http://www.xbrl.org/lrr/role/net-2009-12-16.xsd" />
+  <import namespace="http://xbrl.sec.gov/naics/2024" schemaLocation="https://xbrl.sec.gov/naics/2024/naics-2024.xsd" />
+  <import namespace="http://xbrl.sec.gov/sic/2024" schemaLocation="https://xbrl.sec.gov/sic/2024/sic-2024.xsd" />
+  <import namespace="http://fasb.org/srt-roles/2024" schemaLocation="https://xbrl.fasb.org/srt/2024/elts/srt-roles-2024.xsd" />
+  <import namespace="http://fasb.org/srt-types/2024" schemaLocation="https://xbrl.fasb.org/srt/2024/elts/srt-types-2024.xsd" />
+  <import namespace="http://www.xbrl.org/dtr/type/2020-01-21" schemaLocation="https://www.xbrl.org/dtr/type/2020-01-21/types.xsd" />
+  <import namespace="http://xbrl.sec.gov/stpr/2024" schemaLocation="https://xbrl.sec.gov/stpr/2024/stpr-2024.xsd" />
+  <import namespace="http://fasb.org/us-roles/2024" schemaLocation="https://xbrl.fasb.org/us-gaap/2024/elts/us-roles-2024.xsd" />
+  <import namespace="http://fasb.org/us-types/2024" schemaLocation="https://xbrl.fasb.org/us-gaap/2024/elts/us-types-2024.xsd" />
+  <import namespace="http://fasb.org/srt/2024" schemaLocation="https://xbrl.fasb.org/srt/2024/elts/srt-2024.xsd" />
+  <import namespace="http://fasb.org/us-gaap/2024" schemaLocation="https://xbrl.fasb.org/us-gaap/2024/elts/us-gaap-2024.xsd" />
+  <import namespace="http://xbrl.sec.gov/ecd/2024" schemaLocation="https://xbrl.sec.gov/ecd/2024/ecd-2024.xsd" />
+  <element id="kenilworth_RelatedPartyTransactionAmountsDueFromRelatedParty" name="RelatedPartyTransactionAmountsDueFromRelatedParty" nillable="true" xbrli:balance="debit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="kenilworth_DueToRelatedPartyCurrent" name="DueToRelatedPartyCurrent" nillable="true" xbrli:balance="credit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="kenilworth_NonControllingInterest" name="NonControllingInterest" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="kenilworth_CommonStockIssuedShares" name="CommonStockIssuedShares" nillable="true" xbrli:periodType="duration" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" />
+  <element id="kenilworth_CommonStockIssuedAmount" name="CommonStockIssuedAmount" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="kenilworth_CccpreferredStockAShares" name="CccpreferredStockAShares" nillable="true" xbrli:periodType="duration" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" />
+  <element id="kenilworth_PreferredStockAAmount" name="PreferredStockAAmount" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="kenilworth_PreferredStockB" name="PreferredStockB" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="kenilworth_PreferredStockC" name="PreferredStockC" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="kenilworth_AdjustmentsToNonControllingInterest" name="AdjustmentsToNonControllingInterest" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="kenilworth_PaymentToAcquireLicenseAgreements" name="PaymentToAcquireLicenseAgreements" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="kenilworth_ProceedsFromIntellectualPropertyProprietaryDatabasesAndTechnology" name="ProceedsFromIntellectualPropertyProprietaryDatabasesAndTechnology" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="kenilworth_ProceedsFromTrademarksAndTradenames" name="ProceedsFromTrademarksAndTradenames" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="kenilworth_ProceedandPaymentFromAdditionalInCapital" name="ProceedandPaymentFromAdditionalInCapital" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="kenilworth_CompanyAndNatureOfBusinessAbstract" name="CompanyAndNatureOfBusinessAbstract" nillable="true" abstract="true" xbrli:periodType="duration" type="xbrli:stringItemType" substitutionGroup="xbrli:item" />
+  <element name="NonControllingInterestMember" id="kenilworth_NonControllingInterestMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="SeriesAPreferredStocksMember" id="kenilworth_SeriesAPreferredStocksMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+</schema>

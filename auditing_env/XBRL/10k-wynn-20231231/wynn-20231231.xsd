@@ -1,0 +1,900 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--XBRL Document Created with the Workiva Platform-->
+<!--Copyright 2024 Workiva-->
+<!--r:5cd78ee1-b5f2-40af-9748-7f6eb7d0f6f6,g:cc32efb7-aa6b-4fa9-99c1-0d00c052094c-->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:wynn="http://www.wynnresorts.com/20231231" xmlns:xbrli="http://www.xbrl.org/2003/instance" xmlns:dtr-types1="http://www.xbrl.org/dtr/type/2020-01-21" xmlns:dtr-types="http://www.xbrl.org/dtr/type/2022-03-31" xmlns:xbrldt="http://xbrl.org/2005/xbrldt" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://www.wynnresorts.com/20231231">
+  <xs:import namespace="http://fasb.org/srt/2023" schemaLocation="https://xbrl.fasb.org/srt/2023/elts/srt-2023.xsd"/>
+  <xs:import namespace="http://fasb.org/us-gaap/2023" schemaLocation="https://xbrl.fasb.org/us-gaap/2023/elts/us-gaap-2023.xsd"/>
+  <xs:import namespace="http://www.w3.org/1999/xlink" schemaLocation="http://www.xbrl.org/2003/xlink-2003-12-31.xsd"/>
+  <xs:import namespace="http://www.xbrl.org/2003/instance" schemaLocation="http://www.xbrl.org/2003/xbrl-instance-2003-12-31.xsd"/>
+  <xs:import namespace="http://www.xbrl.org/2003/linkbase" schemaLocation="http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd"/>
+  <xs:import namespace="http://www.xbrl.org/dtr/type/2020-01-21" schemaLocation="https://www.xbrl.org/dtr/type/2020-01-21/types.xsd"/>
+  <xs:import namespace="http://www.xbrl.org/dtr/type/2022-03-31" schemaLocation="https://www.xbrl.org/dtr/type/2022-03-31/types.xsd"/>
+  <xs:import namespace="http://xbrl.org/2005/xbrldt" schemaLocation="http://www.xbrl.org/2005/xbrldt-2005.xsd"/>
+  <xs:import namespace="http://xbrl.sec.gov/country/2023" schemaLocation="https://xbrl.sec.gov/country/2023/country-2023.xsd"/>
+  <xs:import namespace="http://xbrl.sec.gov/dei/2023" schemaLocation="https://xbrl.sec.gov/dei/2023/dei-2023.xsd"/>
+  <xs:import namespace="http://xbrl.sec.gov/ecd/2023" schemaLocation="https://xbrl.sec.gov/ecd/2023/ecd-2023.xsd"/>
+  <xs:import namespace="http://xbrl.sec.gov/stpr/2023" schemaLocation="https://xbrl.sec.gov/stpr/2023/stpr-2023.xsd"/>
+  <xs:annotation>
+    <xs:appinfo>
+      <link:linkbaseRef xmlns:xlink="http://www.w3.org/1999/xlink" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="wynn-20231231_pre.xml" xlink:role="http://www.xbrl.org/2003/role/presentationLinkbaseRef" xlink:type="simple"/>
+      <link:linkbaseRef xmlns:xlink="http://www.w3.org/1999/xlink" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="wynn-20231231_def.xml" xlink:role="http://www.xbrl.org/2003/role/definitionLinkbaseRef" xlink:type="simple"/>
+      <link:linkbaseRef xmlns:xlink="http://www.w3.org/1999/xlink" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="wynn-20231231_lab.xml" xlink:role="http://www.xbrl.org/2003/role/labelLinkbaseRef" xlink:type="simple"/>
+      <link:linkbaseRef xmlns:xlink="http://www.w3.org/1999/xlink" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="wynn-20231231_cal.xml" xlink:role="http://www.xbrl.org/2003/role/calculationLinkbaseRef" xlink:type="simple"/>
+      <link:roleType id="Cover" roleURI="http://www.wynnresorts.com/role/Cover">
+        <link:definition>0000001 - Document - Cover</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="AuditInformation" roleURI="http://www.wynnresorts.com/role/AuditInformation">
+        <link:definition>0000002 - Document - Audit Information</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ConsolidatedBalanceSheets" roleURI="http://www.wynnresorts.com/role/ConsolidatedBalanceSheets">
+        <link:definition>0000003 - Statement - Consolidated Balance Sheets</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ConsolidatedBalanceSheetsParenthetical" roleURI="http://www.wynnresorts.com/role/ConsolidatedBalanceSheetsParenthetical">
+        <link:definition>0000004 - Statement - Consolidated Balance Sheets (Parenthetical)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ConsolidatedStatementsofIncome" roleURI="http://www.wynnresorts.com/role/ConsolidatedStatementsofIncome">
+        <link:definition>0000005 - Statement - Consolidated Statements of Income</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ConsolidatedStatementsofComprehensiveIncome" roleURI="http://www.wynnresorts.com/role/ConsolidatedStatementsofComprehensiveIncome">
+        <link:definition>0000006 - Statement - Consolidated Statements of Comprehensive Income</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ConsolidatedStatementsofStockholdersEquityDeficit" roleURI="http://www.wynnresorts.com/role/ConsolidatedStatementsofStockholdersEquityDeficit">
+        <link:definition>0000007 - Statement - Consolidated Statements of Stockholders' Equity (Deficit)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ConsolidatedStatementsofStockholdersEquityDeficitParenthetical" roleURI="http://www.wynnresorts.com/role/ConsolidatedStatementsofStockholdersEquityDeficitParenthetical">
+        <link:definition>0000008 - Statement - Consolidated Statements of Stockholders' Equity (Deficit) (Parenthetical)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ConsolidatedStatementsofCashFlows" roleURI="http://www.wynnresorts.com/role/ConsolidatedStatementsofCashFlows">
+        <link:definition>0000009 - Statement - Consolidated Statements of Cash Flows</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="OrganizationandBusiness" roleURI="http://www.wynnresorts.com/role/OrganizationandBusiness">
+        <link:definition>0000010 - Disclosure - Organization and Business</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="BasisofPresentationandSignificantAccountingPolicies" roleURI="http://www.wynnresorts.com/role/BasisofPresentationandSignificantAccountingPolicies">
+        <link:definition>0000011 - Disclosure - Basis of Presentation and Significant Accounting Policies</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CashCashEquivalentsandRestrictedCash" roleURI="http://www.wynnresorts.com/role/CashCashEquivalentsandRestrictedCash">
+        <link:definition>0000012 - Disclosure - Cash, Cash Equivalents and Restricted Cash</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="Receivablesnet" roleURI="http://www.wynnresorts.com/role/Receivablesnet">
+        <link:definition>0000013 - Disclosure - Receivables, net</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="PropertyandEquipmentnet" roleURI="http://www.wynnresorts.com/role/PropertyandEquipmentnet">
+        <link:definition>0000014 - Disclosure - Property and Equipment, net</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="GoodwillandIntangibleAssetsnet" roleURI="http://www.wynnresorts.com/role/GoodwillandIntangibleAssetsnet">
+        <link:definition>0000015 - Disclosure - Goodwill and Intangible Assets, net</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LongTermDebt" roleURI="http://www.wynnresorts.com/role/LongTermDebt">
+        <link:definition>0000016 - Disclosure - Long-Term Debt</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="WMLConvertibleBondConversionOptionDerivative" roleURI="http://www.wynnresorts.com/role/WMLConvertibleBondConversionOptionDerivative">
+        <link:definition>0000017 - Disclosure - WML Convertible Bond Conversion Option Derivative</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="StockholdersDeficit" roleURI="http://www.wynnresorts.com/role/StockholdersDeficit">
+        <link:definition>0000018 - Disclosure - Stockholders' Deficit</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FairValueMeasurements" roleURI="http://www.wynnresorts.com/role/FairValueMeasurements">
+        <link:definition>0000019 - Disclosure - Fair Value Measurements</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="BenefitPlans" roleURI="http://www.wynnresorts.com/role/BenefitPlans">
+        <link:definition>0000020 - Disclosure - Benefit Plans</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CustomerContractLiabilities" roleURI="http://www.wynnresorts.com/role/CustomerContractLiabilities">
+        <link:definition>0000021 - Disclosure - Customer Contract Liabilities</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="StockBasedCompensation" roleURI="http://www.wynnresorts.com/role/StockBasedCompensation">
+        <link:definition>0000022 - Disclosure - Stock-Based Compensation</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IncomeTaxes" roleURI="http://www.wynnresorts.com/role/IncomeTaxes">
+        <link:definition>0000023 - Disclosure - Income Taxes</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="EarningsPerShare" roleURI="http://www.wynnresorts.com/role/EarningsPerShare">
+        <link:definition>0000024 - Disclosure - Earnings Per Share</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="Leases" roleURI="http://www.wynnresorts.com/role/Leases">
+        <link:definition>0000025 - Disclosure - Leases</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RelatedPartyTransactions" roleURI="http://www.wynnresorts.com/role/RelatedPartyTransactions">
+        <link:definition>0000026 - Disclosure - Related Party Transactions</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CommitmentsandContingencies" roleURI="http://www.wynnresorts.com/role/CommitmentsandContingencies">
+        <link:definition>0000027 - Disclosure - Commitments and Contingencies</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RetailJointVenture" roleURI="http://www.wynnresorts.com/role/RetailJointVenture">
+        <link:definition>0000028 - Disclosure - Retail Joint Venture</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SegmentInformation" roleURI="http://www.wynnresorts.com/role/SegmentInformation">
+        <link:definition>0000029 - Disclosure - Segment Information</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ScheduleIIValuationandQualifyingAccounts" roleURI="http://www.wynnresorts.com/role/ScheduleIIValuationandQualifyingAccounts">
+        <link:definition>0000030 - Disclosure - Schedule II- Valuation and Qualifying Accounts</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="BasisofPresentationandSignificantAccountingPoliciesPolicies" roleURI="http://www.wynnresorts.com/role/BasisofPresentationandSignificantAccountingPoliciesPolicies">
+        <link:definition>9954471 - Disclosure - Basis of Presentation and Significant Accounting Policies (Policies)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="BasisofPresentationandSignificantAccountingPoliciesTables" roleURI="http://www.wynnresorts.com/role/BasisofPresentationandSignificantAccountingPoliciesTables">
+        <link:definition>9954472 - Disclosure - Basis of Presentation and Significant Accounting Policies (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CashCashEquivalentsandRestrictedCashTables" roleURI="http://www.wynnresorts.com/role/CashCashEquivalentsandRestrictedCashTables">
+        <link:definition>9954473 - Disclosure - Cash, Cash Equivalents and Restricted Cash (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ReceivablesnetTables" roleURI="http://www.wynnresorts.com/role/ReceivablesnetTables">
+        <link:definition>9954474 - Disclosure - Receivables, net (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="PropertyandEquipmentnetTables" roleURI="http://www.wynnresorts.com/role/PropertyandEquipmentnetTables">
+        <link:definition>9954475 - Disclosure - Property and Equipment, net (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="GoodwillandIntangibleAssetsnetTables" roleURI="http://www.wynnresorts.com/role/GoodwillandIntangibleAssetsnetTables">
+        <link:definition>9954476 - Disclosure - Goodwill and Intangible Assets, net (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LongTermDebtTables" roleURI="http://www.wynnresorts.com/role/LongTermDebtTables">
+        <link:definition>9954477 - Disclosure - Long-Term Debt (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="WMLConvertibleBondConversionOptionDerivativeTables" roleURI="http://www.wynnresorts.com/role/WMLConvertibleBondConversionOptionDerivativeTables">
+        <link:definition>9954478 - Disclosure - WML Convertible Bond Conversion Option Derivative (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FairValueMeasurementsTables" roleURI="http://www.wynnresorts.com/role/FairValueMeasurementsTables">
+        <link:definition>9954479 - Disclosure - Fair Value Measurements (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CustomerContractLiabilitiesTables" roleURI="http://www.wynnresorts.com/role/CustomerContractLiabilitiesTables">
+        <link:definition>9954480 - Disclosure - Customer Contract Liabilities (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="StockBasedCompensationTables" roleURI="http://www.wynnresorts.com/role/StockBasedCompensationTables">
+        <link:definition>9954481 - Disclosure - Stock-Based Compensation (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IncomeTaxesTables" roleURI="http://www.wynnresorts.com/role/IncomeTaxesTables">
+        <link:definition>9954482 - Disclosure - Income Taxes (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="EarningsPerShareTables" roleURI="http://www.wynnresorts.com/role/EarningsPerShareTables">
+        <link:definition>9954483 - Disclosure - Earnings Per Share (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LeasesTables" roleURI="http://www.wynnresorts.com/role/LeasesTables">
+        <link:definition>9954484 - Disclosure - Leases (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CommitmentsandContingenciesTables" roleURI="http://www.wynnresorts.com/role/CommitmentsandContingenciesTables">
+        <link:definition>9954485 - Disclosure - Commitments and Contingencies (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SegmentInformationTables" roleURI="http://www.wynnresorts.com/role/SegmentInformationTables">
+        <link:definition>9954486 - Disclosure - Segment Information (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="OrganizationandBusinessDetails" roleURI="http://www.wynnresorts.com/role/OrganizationandBusinessDetails">
+        <link:definition>9954487 - Disclosure - Organization and Business (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="BasisofPresentationandSignificantAccountingPoliciesAdditionalInformationDetails" roleURI="http://www.wynnresorts.com/role/BasisofPresentationandSignificantAccountingPoliciesAdditionalInformationDetails">
+        <link:definition>9954488 - Disclosure - Basis of Presentation and Significant Accounting Policies - Additional Information (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="BasisofPresentationandSignificantAccountingPoliciesEstimatedUsefulLivesofAssetsDetails" roleURI="http://www.wynnresorts.com/role/BasisofPresentationandSignificantAccountingPoliciesEstimatedUsefulLivesofAssetsDetails">
+        <link:definition>9954489 - Disclosure - Basis of Presentation and Significant Accounting Policies - Estimated Useful Lives of Assets (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CashCashEquivalentsandRestrictedCashScheduleofCashCashEquivalentsandRestrictedCashDetails" roleURI="http://www.wynnresorts.com/role/CashCashEquivalentsandRestrictedCashScheduleofCashCashEquivalentsandRestrictedCashDetails">
+        <link:definition>9954490 - Disclosure - Cash, Cash Equivalents and Restricted Cash - Schedule of Cash, Cash Equivalents and Restricted Cash (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CashCashEquivalentsandRestrictedCashScheduleofCashFlowSupplementalDisclosuresDetails" roleURI="http://www.wynnresorts.com/role/CashCashEquivalentsandRestrictedCashScheduleofCashFlowSupplementalDisclosuresDetails">
+        <link:definition>9954491 - Disclosure - Cash, Cash Equivalents and Restricted Cash - Schedule of Cash Flow, Supplemental Disclosures (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ReceivablesnetAdditionalInformationDetails" roleURI="http://www.wynnresorts.com/role/ReceivablesnetAdditionalInformationDetails">
+        <link:definition>9954492 - Disclosure - Receivables, net - Additional Information (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ReceivablesnetScheduleofMovementinAllowanceforCreditLossesRecognizedforReceivablesDetails" roleURI="http://www.wynnresorts.com/role/ReceivablesnetScheduleofMovementinAllowanceforCreditLossesRecognizedforReceivablesDetails">
+        <link:definition>9954493 - Disclosure - Receivables, net - Schedule of Movement in Allowance for Credit Losses Recognized for Receivables (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="PropertyandEquipmentnetScheduleofPropertyandEquipmentNetDetails" roleURI="http://www.wynnresorts.com/role/PropertyandEquipmentnetScheduleofPropertyandEquipmentNetDetails">
+        <link:definition>9954494 - Disclosure - Property and Equipment, net - Schedule of Property and Equipment, Net (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="PropertyandEquipmentnetPropertyandEquipmentnetNarrativeDetails" roleURI="http://www.wynnresorts.com/role/PropertyandEquipmentnetPropertyandEquipmentnetNarrativeDetails">
+        <link:definition>9954495 - Disclosure - Property and Equipment, net Property and Equipment, net - Narrative (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="GoodwillandIntangibleAssetsnetScheduleofIntangibleAssetsNetDetails" roleURI="http://www.wynnresorts.com/role/GoodwillandIntangibleAssetsnetScheduleofIntangibleAssetsNetDetails">
+        <link:definition>9954496 - Disclosure - Goodwill and Intangible Assets, net - Schedule of Intangible Assets, Net (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="GoodwillandIntangibleAssetsnetAdditionalInformationDetails" roleURI="http://www.wynnresorts.com/role/GoodwillandIntangibleAssetsnetAdditionalInformationDetails">
+        <link:definition>9954497 - Disclosure - Goodwill and Intangible Assets, net - Additional Information (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LongTermDebtSummaryofLongTermDebtDetails" roleURI="http://www.wynnresorts.com/role/LongTermDebtSummaryofLongTermDebtDetails">
+        <link:definition>9954498 - Disclosure - Long-Term Debt - Summary of Long-Term Debt (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LongTermDebtSummaryofLongTermDebtAdditionalInformationDetails" roleURI="http://www.wynnresorts.com/role/LongTermDebtSummaryofLongTermDebtAdditionalInformationDetails">
+        <link:definition>9954499 - Disclosure - Long-Term Debt - Summary of Long-Term Debt - Additional Information (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LongTermDebtWMCaymanIIRevolverDetails" roleURI="http://www.wynnresorts.com/role/LongTermDebtWMCaymanIIRevolverDetails">
+        <link:definition>9954500 - Disclosure - Long-Term Debt - WM Cayman II Revolver (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LongTermDebtWMLConvertibleBondsDetails" roleURI="http://www.wynnresorts.com/role/LongTermDebtWMLConvertibleBondsDetails">
+        <link:definition>9954501 - Disclosure - Long-Term Debt - WML Convertible Bonds (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LongTermDebtWMLSeniorNotesDetails" roleURI="http://www.wynnresorts.com/role/LongTermDebtWMLSeniorNotesDetails">
+        <link:definition>9954502 - Disclosure - Long-Term Debt - WML Senior Notes (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LongTermDebtWRFCreditFacilitiesDetails" roleURI="http://www.wynnresorts.com/role/LongTermDebtWRFCreditFacilitiesDetails">
+        <link:definition>9954503 - Disclosure - Long-Term Debt - WRF Credit Facilities (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LongTermDebtWRFSeniorNotesDetails" roleURI="http://www.wynnresorts.com/role/LongTermDebtWRFSeniorNotesDetails">
+        <link:definition>9954504 - Disclosure - Long-Term Debt - WRF Senior Notes (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LongTermDebtWLVSeniorNotesDetails" roleURI="http://www.wynnresorts.com/role/LongTermDebtWLVSeniorNotesDetails">
+        <link:definition>9954505 - Disclosure - Long-Term Debt - WLV Senior Notes (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LongTermDebtRetailTermLoanDetails" roleURI="http://www.wynnresorts.com/role/LongTermDebtRetailTermLoanDetails">
+        <link:definition>9954506 - Disclosure - Long-Term Debt - Retail Term Loan (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LongTermDebtScheduledMaturitiesofLongTermDebtDetails" roleURI="http://www.wynnresorts.com/role/LongTermDebtScheduledMaturitiesofLongTermDebtDetails">
+        <link:definition>9954507 - Disclosure - Long-Term Debt - Scheduled Maturities of Long-Term Debt (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LongTermDebtFairValueofLongTermDebtDetails" roleURI="http://www.wynnresorts.com/role/LongTermDebtFairValueofLongTermDebtDetails">
+        <link:definition>9954508 - Disclosure - Long-Term Debt - Fair Value of Long-Term Debt (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="WMLConvertibleBondConversionOptionDerivativeValuationTechniquesforEmbeddedDerivativeDetails" roleURI="http://www.wynnresorts.com/role/WMLConvertibleBondConversionOptionDerivativeValuationTechniquesforEmbeddedDerivativeDetails">
+        <link:definition>9954509 - Disclosure - WML Convertible Bond Conversion Option Derivative - Valuation Techniques for Embedded Derivative (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="WMLConvertibleBondConversionOptionDerivativeNarrativeDetails" roleURI="http://www.wynnresorts.com/role/WMLConvertibleBondConversionOptionDerivativeNarrativeDetails">
+        <link:definition>9954510 - Disclosure - WML Convertible Bond Conversion Option Derivative - Narrative (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="StockholdersDeficitDetails" roleURI="http://www.wynnresorts.com/role/StockholdersDeficitDetails">
+        <link:definition>9954511 - Disclosure - Stockholders' Deficit (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FairValueMeasurementsDetails" roleURI="http://www.wynnresorts.com/role/FairValueMeasurementsDetails">
+        <link:definition>9954512 - Disclosure - Fair Value Measurements (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="BenefitPlansDefinedContributionPlanDetails" roleURI="http://www.wynnresorts.com/role/BenefitPlansDefinedContributionPlanDetails">
+        <link:definition>9954513 - Disclosure - Benefit Plans - Defined Contribution Plan (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="BenefitPlansPensionPlanDetails" roleURI="http://www.wynnresorts.com/role/BenefitPlansPensionPlanDetails">
+        <link:definition>9954514 - Disclosure - Benefit Plans - Pension Plan (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CustomerContractLiabilitiesDetails" roleURI="http://www.wynnresorts.com/role/CustomerContractLiabilitiesDetails">
+        <link:definition>9954515 - Disclosure - Customer Contract Liabilities (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="StockBasedCompensationAdditionalInformationDetails" roleURI="http://www.wynnresorts.com/role/StockBasedCompensationAdditionalInformationDetails">
+        <link:definition>9954516 - Disclosure - Stock-Based Compensation - Additional Information (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="StockBasedCompensationScheduleofOptionActivityDetails" roleURI="http://www.wynnresorts.com/role/StockBasedCompensationScheduleofOptionActivityDetails">
+        <link:definition>9954517 - Disclosure - Stock-Based Compensation - Schedule of Option Activity (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="StockBasedCompensationScheduleofValuationAssumptionsDetails" roleURI="http://www.wynnresorts.com/role/StockBasedCompensationScheduleofValuationAssumptionsDetails">
+        <link:definition>9954518 - Disclosure - Stock-Based Compensation - Schedule of Valuation Assumptions (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="StockBasedCompensationScheduleofNonvestedActivityDetails" roleURI="http://www.wynnresorts.com/role/StockBasedCompensationScheduleofNonvestedActivityDetails">
+        <link:definition>9954519 - Disclosure - Stock-Based Compensation - Schedule of Nonvested Activity (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="StockBasedCompensationScheduleofAllocatedCostsDetails" roleURI="http://www.wynnresorts.com/role/StockBasedCompensationScheduleofAllocatedCostsDetails">
+        <link:definition>9954520 - Disclosure - Stock-Based Compensation - Schedule of Allocated Costs (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IncomeTaxesSummaryofConsolidatedIncomeLossBeforeTaxesForUSandForeignOperationsDetails" roleURI="http://www.wynnresorts.com/role/IncomeTaxesSummaryofConsolidatedIncomeLossBeforeTaxesForUSandForeignOperationsDetails">
+        <link:definition>9954521 - Disclosure - Income Taxes - Summary of Consolidated Income (Loss) Before Taxes For U.S. and Foreign Operations (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IncomeTaxesSummaryofBenefitProvisionforIncomeTaxesDetails" roleURI="http://www.wynnresorts.com/role/IncomeTaxesSummaryofBenefitProvisionforIncomeTaxesDetails">
+        <link:definition>9954522 - Disclosure - Income Taxes - Summary of (Benefit) Provision for Income Taxes (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IncomeTaxesSummaryofIncomeTaxesFederalStatutoryCorporateTaxRateDetails" roleURI="http://www.wynnresorts.com/role/IncomeTaxesSummaryofIncomeTaxesFederalStatutoryCorporateTaxRateDetails">
+        <link:definition>9954523 - Disclosure - Income Taxes - Summary of Income Taxes (Federal Statutory Corporate Tax Rate) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IncomeTaxesAdditionalInformationDetails" roleURI="http://www.wynnresorts.com/role/IncomeTaxesAdditionalInformationDetails">
+        <link:definition>9954524 - Disclosure - Income Taxes - Additional Information (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IncomeTaxesSummaryofNetDeferredTaxAssetsandLiabilitiesDetails" roleURI="http://www.wynnresorts.com/role/IncomeTaxesSummaryofNetDeferredTaxAssetsandLiabilitiesDetails">
+        <link:definition>9954525 - Disclosure - Income Taxes - Summary of Net Deferred Tax Assets and Liabilities (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IncomeTaxesSummaryofValuationAllowanceDetails" roleURI="http://www.wynnresorts.com/role/IncomeTaxesSummaryofValuationAllowanceDetails">
+        <link:definition>9954526 - Disclosure - Income Taxes - Summary of Valuation Allowance (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IncomeTaxesReconciliationofUnrecognizedTaxBenefitsDetails" roleURI="http://www.wynnresorts.com/role/IncomeTaxesReconciliationofUnrecognizedTaxBenefitsDetails">
+        <link:definition>9954527 - Disclosure - Income Taxes - Reconciliation of Unrecognized Tax Benefits (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="EarningsPerShareDetails" roleURI="http://www.wynnresorts.com/role/EarningsPerShareDetails">
+        <link:definition>9954528 - Disclosure - Earnings Per Share (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LeasesSummaryofLeaseAssetsandLiabilitiesDetails" roleURI="http://www.wynnresorts.com/role/LeasesSummaryofLeaseAssetsandLiabilitiesDetails">
+        <link:definition>9954529 - Disclosure - Leases - Summary of Lease Assets and Liabilities (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LeasesScheduleofLeaseCostandOtherInformationDetails" roleURI="http://www.wynnresorts.com/role/LeasesScheduleofLeaseCostandOtherInformationDetails">
+        <link:definition>9954530 - Disclosure - Leases - Schedule of Lease Cost and Other Information (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LeasesMaturityAnalysisDetails" roleURI="http://www.wynnresorts.com/role/LeasesMaturityAnalysisDetails">
+        <link:definition>9954531 - Disclosure - Leases - Maturity Analysis (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LeasesMaturityAnalysisDetails_1" roleURI="http://www.wynnresorts.com/role/LeasesMaturityAnalysisDetails_1">
+        <link:definition>9954531 - Disclosure - Leases - Maturity Analysis (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LeasesNarrativeDetails" roleURI="http://www.wynnresorts.com/role/LeasesNarrativeDetails">
+        <link:definition>9954532 - Disclosure - Leases - Narrative (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LeasesMinimumandContingentOperatingLeaseIncomeDetails" roleURI="http://www.wynnresorts.com/role/LeasesMinimumandContingentOperatingLeaseIncomeDetails">
+        <link:definition>9954533 - Disclosure - Leases - Minimum and Contingent Operating Lease Income (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LeasesFutureMinimumPaymentstobeReceivedDetails" roleURI="http://www.wynnresorts.com/role/LeasesFutureMinimumPaymentstobeReceivedDetails">
+        <link:definition>9954534 - Disclosure - Leases - Future Minimum Payments to be Received (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RelatedPartyTransactionsDetails" roleURI="http://www.wynnresorts.com/role/RelatedPartyTransactionsDetails">
+        <link:definition>9954535 - Disclosure - Related Party Transactions (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CommitmentsandContingenciesAdditionalInformationDetails" roleURI="http://www.wynnresorts.com/role/CommitmentsandContingenciesAdditionalInformationDetails">
+        <link:definition>9954536 - Disclosure - Commitments and Contingencies - Additional Information (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CommitmentsandContingenciesOtherCommitmentsDetails" roleURI="http://www.wynnresorts.com/role/CommitmentsandContingenciesOtherCommitmentsDetails">
+        <link:definition>9954537 - Disclosure - Commitments and Contingencies - Other Commitments (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RetailJointVentureDetails" roleURI="http://www.wynnresorts.com/role/RetailJointVentureDetails">
+        <link:definition>9954538 - Disclosure - Retail Joint Venture (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SegmentInformationSummaryofResultsofOperationsbySegmentDetails" roleURI="http://www.wynnresorts.com/role/SegmentInformationSummaryofResultsofOperationsbySegmentDetails">
+        <link:definition>9954539 - Disclosure - Segment Information - Summary of Results of Operations by Segment (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SegmentInformationScheduleofCapitalExpendituresDetails" roleURI="http://www.wynnresorts.com/role/SegmentInformationScheduleofCapitalExpendituresDetails">
+        <link:definition>9954540 - Disclosure - Segment Information - Schedule of Capital Expenditures (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SegmentInformationSummaryofAssetsbySegmentDetails" roleURI="http://www.wynnresorts.com/role/SegmentInformationSummaryofAssetsbySegmentDetails">
+        <link:definition>9954541 - Disclosure - Segment Information - Summary of Assets by Segment (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ScheduleIIValuationandQualifyingAccountsDetails" roleURI="http://www.wynnresorts.com/role/ScheduleIIValuationandQualifyingAccountsDetails">
+        <link:definition>9954542 - Disclosure - Schedule II- Valuation and Qualifying Accounts (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element id="wynn_WMCaymanIIRevolverDue2025Tranche2Member" abstract="true" name="WMCaymanIIRevolverDue2025Tranche2Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="wynn_WMCaymanIIRevolverDue2025Member" abstract="true" name="WMCaymanIIRevolverDue2025Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="wynn_WynnPalaceandWynnMacauMember" abstract="true" name="WynnPalaceandWynnMacauMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="wynn_Casinooutstandingchipsandfrontmoneydeposits" abstract="false" name="Casinooutstandingchipsandfrontmoneydeposits" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="wynn_TotalDeferredIncomeTaxExpenseBenefitFederalAndForeign" abstract="false" name="TotalDeferredIncomeTaxExpenseBenefitFederalAndForeign" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="wynn_LesseeOperatingLeaseLiabilityToBePaidYearTwoThroughFive" abstract="false" name="LesseeOperatingLeaseLiabilityToBePaidYearTwoThroughFive" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="wynn_OperatingLeaseTripleNetCost" abstract="false" name="OperatingLeaseTripleNetCost" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="wynn_MassachusettsGamingLicenseMember" abstract="true" name="MassachusettsGamingLicenseMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="wynn_ForeignLossCarryforwardsMember" abstract="true" name="ForeignLossCarryforwardsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="wynn_WaterRightsAndOtherMember" abstract="true" name="WaterRightsAndOtherMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="wynn_SummaryOfSignificantAccountingPoliciesLineItems" abstract="true" name="SummaryOfSignificantAccountingPoliciesLineItems" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="wynn_WMCaymanIIRevolverDue2025TrancheOneMember" abstract="true" name="WMCaymanIIRevolverDue2025TrancheOneMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="wynn_WRFCreditFacilityAgreementMember" abstract="true" name="WRFCreditFacilityAgreementMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="wynn_FunctionalAreaSquareFootage" abstract="false" name="FunctionalAreaSquareFootage" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="dtr-types1:areaItemType"/>
+  <xs:element id="wynn_ForeignTaxCreditsMember" abstract="true" name="ForeignTaxCreditsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="wynn_PaymentDefaultClassificationPeriodForInterestPayment" abstract="false" name="PaymentDefaultClassificationPeriodForInterestPayment" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:durationItemType"/>
+  <xs:element id="wynn_SecuritiesLendingAgreementMember" abstract="true" name="SecuritiesLendingAgreementMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="wynn_AmountOfComplementaryTaxExemption" abstract="false" name="AmountOfComplementaryTaxExemption" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="wynn_EntertainmentRetailAndOtherMember" abstract="true" name="EntertainmentRetailAndOtherMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="wynn_AdjustmentsToAdditionalPaidInCapitalAcquisition" abstract="false" name="AdjustmentsToAdditionalPaidInCapitalAcquisition" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="wynn_NumberOfFacilities" abstract="false" name="NumberOfFacilities" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:integerItemType"/>
+  <xs:element id="wynn_DeferredTaxAssetLeaseLiability" abstract="false" name="DeferredTaxAssetLeaseLiability" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="wynn_AuditInformationAbstract" abstract="true" name="AuditInformationAbstract" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="wynn_FiveAndOneOverEightPercentageWynnMacauLimitedSeniorNotesDueTwoThousandTwentyNineMember" abstract="true" name="FiveAndOneOverEightPercentageWynnMacauLimitedSeniorNotesDueTwoThousandTwentyNineMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="wynn_April2016EquityRepurchaseProgramMember" abstract="true" name="April2016EquityRepurchaseProgramMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="wynn_ShareBasedCompensationArrangementByShareBasedPaymentAwardAwardMeasurementPeriod" abstract="false" name="ShareBasedCompensationArrangementByShareBasedPaymentAwardAwardMeasurementPeriod" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:durationItemType"/>
+  <xs:element id="wynn_DeferredTaxAssetsAndLiabilitiesLineItems" abstract="true" name="DeferredTaxAssetsAndLiabilitiesLineItems" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="wynn_DeferredTaxAssetsConstructioninProgress" abstract="false" name="DeferredTaxAssetsConstructioninProgress" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="wynn_WMLConvertibleBondsMember" abstract="true" name="WMLConvertibleBondsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="wynn_OtherCommitmentToBePaidYearsFourThroughTen" abstract="false" name="OtherCommitmentToBePaidYearsFourThroughTen" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="wynn_BetbullTransactionMember" abstract="true" name="BetbullTransactionMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="wynn_AssumedConversionOfWMLConvertibleBonds" abstract="false" name="AssumedConversionOfWMLConvertibleBonds" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:sharesItemType"/>
+  <xs:element id="wynn_LesseeOperatingLeaseNumberOfRenewals" abstract="false" name="LesseeOperatingLeaseNumberOfRenewals" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="xbrli:integerItemType"/>
+  <xs:element id="wynn_ScheduleofCustomerContractLiabilitiesTableTextBlock" abstract="false" name="ScheduleofCustomerContractLiabilitiesTableTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:textBlockItemType"/>
+  <xs:element id="wynn_AmountOfComplementaryTaxExemptionPerShare" abstract="false" name="AmountOfComplementaryTaxExemptionPerShare" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:perShareItemType"/>
+  <xs:element id="wynn_InitialTermOfEmploymentAgreement" abstract="false" name="InitialTermOfEmploymentAgreement" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:durationItemType"/>
+  <xs:element id="wynn_EarningsPerShareBasicAndDilutedEPSAbstract" abstract="true" name="EarningsPerShareBasicAndDilutedEPSAbstract" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="wynn_FiveAndOneOverTwoPercentageWynnMacauLimitedSeniorNotesDueTwoThousandTwentySixMember" abstract="true" name="FiveAndOneOverTwoPercentageWynnMacauLimitedSeniorNotesDueTwoThousandTwentySixMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="wynn_DebtInstrumentCovenantTermsMinimumLiquidityRequirement" abstract="false" name="DebtInstrumentCovenantTermsMinimumLiquidityRequirement" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="wynn_DebtInstrumentCovenantPercentageofTotalAssets" abstract="false" name="DebtInstrumentCovenantPercentageofTotalAssets" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+  <xs:element id="wynn_AnnualAmortizationCurrentYearThrough2028Member" abstract="true" name="AnnualAmortizationCurrentYearThrough2028Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="wynn_OtherCommitmentScenarioOneMember" abstract="true" name="OtherCommitmentScenarioOneMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="wynn_SeniorRevolvingCreditFacilityDue2024Member" abstract="true" name="SeniorRevolvingCreditFacilityDue2024Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="wynn_OtherCommitmentVariablePortion" abstract="false" name="OtherCommitmentVariablePortion" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="wynn_WynnResortsFinanceLLCMember" abstract="true" name="WynnResortsFinanceLLCMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="wynn_NumberOfHotelTowers" abstract="false" name="NumberOfHotelTowers" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:integerItemType"/>
+  <xs:element id="wynn_OtherCommitmentScenarioAxis" abstract="true" name="OtherCommitmentScenarioAxis" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrldt:dimensionItem" type="xbrli:stringItemType"/>
+  <xs:element id="wynn_ShareBasedCompensationArrangementByShareBasedPaymentAwardOptionsOutstandingAggregateIntrinsicValueAbstract" abstract="true" name="ShareBasedCompensationArrangementByShareBasedPaymentAwardOptionsOutstandingAggregateIntrinsicValueAbstract" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="wynn_WMCaymanIIRevolverDue2025Tranche1Member" abstract="true" name="WMCaymanIIRevolverDue2025Tranche1Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="wynn_WynnMacauSAMember" abstract="true" name="WynnMacauSAMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="wynn_RecognizedTaxBenefitAxis" abstract="true" name="RecognizedTaxBenefitAxis" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrldt:dimensionItem" type="xbrli:stringItemType"/>
+  <xs:element id="wynn_OtherCommitmentSpecialGamingTaxPercentageOfGrossRevenue" abstract="false" name="OtherCommitmentSpecialGamingTaxPercentageOfGrossRevenue" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+  <xs:element id="wynn_WeightedAverageNumberOfSharesOutstandingBasicAndDilutedAbstract" abstract="true" name="WeightedAverageNumberOfSharesOutstandingBasicAndDilutedAbstract" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="wynn_SevenAndThreeOverFourPercentageWRFSeniorNotesDue2025Member" abstract="true" name="SevenAndThreeOverFourPercentageWRFSeniorNotesDue2025Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="wynn_FTCCarryforwardExpirationsDuringYearMember" abstract="true" name="FTCCarryforwardExpirationsDuringYearMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="wynn_LineOfCreditFacilityMaximumBorrowingCapacityLimitDecrease" abstract="false" name="LineOfCreditFacilityMaximumBorrowingCapacityLimitDecrease" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="wynn_OtherAccruedLiabilitiesCurrentAmountRelatedToDividendsPayableOnUnvestedRestrictedStock" abstract="false" name="OtherAccruedLiabilitiesCurrentAmountRelatedToDividendsPayableOnUnvestedRestrictedStock" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="wynn_OperatingLeaseBaseRentIncreaseTermDomain" abstract="true" name="OperatingLeaseBaseRentIncreaseTermDomain" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="wynn_IntangibleAssetsOtherLiabilitiesIncurred" abstract="false" name="IntangibleAssetsOtherLiabilitiesIncurred" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="wynn_SevenAndOneOverEightPercentageSeniorNotesDue2031Member" abstract="true" name="SevenAndOneOverEightPercentageSeniorNotesDue2031Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="wynn_FourAndOneOverTwoPercentageWynnMacauLimitedConvertibleBondsDueTwoThousandTwentyNineMember" abstract="true" name="FourAndOneOverTwoPercentageWynnMacauLimitedConvertibleBondsDueTwoThousandTwentyNineMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="wynn_LeaseAssetsLesseAbstract" abstract="true" name="LeaseAssetsLesseAbstract" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="wynn_DebtInstrumentFairValueExcludingTheRedemptionNote" abstract="false" name="DebtInstrumentFairValueExcludingTheRedemptionNote" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="wynn_BuildingsAndImprovementsMember" abstract="true" name="BuildingsAndImprovementsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="wynn_WRFSeniorSecuredCreditFacilitiesMember" abstract="true" name="WRFSeniorSecuredCreditFacilitiesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="wynn_DebtInstrumentCovenantTermsMaximumConsolidatedSeniorSecuredNetLeverageRatio" abstract="false" name="DebtInstrumentCovenantTermsMaximumConsolidatedSeniorSecuredNetLeverageRatio" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:pureItemType"/>
+  <xs:element id="wynn_DefinedContributionPlanMinimumAnnualContributionsPerEmployeePercent" abstract="false" name="DefinedContributionPlanMinimumAnnualContributionsPerEmployeePercent" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+  <xs:element id="wynn_WMCaymanHoldingsLimitedIIMember" abstract="true" name="WMCaymanHoldingsLimitedIIMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="wynn_OtherCommitmentPercentageOfCommitmentIncrease" abstract="false" name="OtherCommitmentPercentageOfCommitmentIncrease" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="dtr-types:percentItemType"/>
+  <xs:element id="wynn_Loyaltyprograms" abstract="false" name="Loyaltyprograms" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="wynn_OperatingLeaseBaseRentIncreaseFirstTenYearsMember" abstract="true" name="OperatingLeaseBaseRentIncreaseFirstTenYearsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="wynn_TaxCreditCarryforwardExpires2024Member" abstract="true" name="TaxCreditCarryforwardExpires2024Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="wynn_WMLShareAwardPlanMember" abstract="true" name="WMLShareAwardPlanMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="wynn_RestrictedCashBankGuarantee" abstract="false" name="RestrictedCashBankGuarantee" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="wynn_FiveAndOneOverEightPercentageSeniorNotesDue2029Member" abstract="true" name="FiveAndOneOverEightPercentageSeniorNotesDue2029Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="wynn_WynnPalaceMember" abstract="true" name="WynnPalaceMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="wynn_IntangibleAssetsMember" abstract="true" name="IntangibleAssetsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="wynn_ScheduleOfFiniteAndIndefiniteLivedIntangibleAssetsTable" abstract="true" name="ScheduleOfFiniteAndIndefiniteLivedIntangibleAssetsTable" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrldt:hypercubeItem" type="xbrli:stringItemType"/>
+  <xs:element id="wynn_LeaseholdInterestInLandMember" abstract="true" name="LeaseholdInterestInLandMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="wynn_WynnRetailMember" abstract="true" name="WynnRetailMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="wynn_OwnershipPercentage" abstract="false" name="OwnershipPercentage" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+  <xs:element id="wynn_EffectiveIncomeTaxRateReconciliationTaxCreditNetOfValuationAllowanceForeignPercent" abstract="false" name="EffectiveIncomeTaxRateReconciliationTaxCreditNetOfValuationAllowanceForeignPercent" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+  <xs:element id="wynn_FinancialLiabilityRelatedToGamingConcession" abstract="false" name="FinancialLiabilityRelatedToGamingConcession" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="wynn_LeaseAmortizationDomain" abstract="true" name="LeaseAmortizationDomain" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="wynn_OtherCommitmentSpecialLeviesPercentageOfGrossRevenue" abstract="false" name="OtherCommitmentSpecialLeviesPercentageOfGrossRevenue" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+  <xs:element id="wynn_DomesticLossCarryforwardsMember" abstract="true" name="DomesticLossCarryforwardsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="wynn_NumberOfShowrooms" abstract="false" name="NumberOfShowrooms" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="xbrli:integerItemType"/>
+  <xs:element id="wynn_OperatingLeaseBaseRentIncreaseRemainderOfLeaseTermMember" abstract="true" name="OperatingLeaseBaseRentIncreaseRemainderOfLeaseTermMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="wynn_PropertyChargesandOther" abstract="false" name="PropertyChargesandOther" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="wynn_DeferredTaxAssetReceivableInventoriesAccruedLiabilitiesAndOther" abstract="false" name="DeferredTaxAssetReceivableInventoriesAccruedLiabilitiesAndOther" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="wynn_VariableInterestEntitiesAbstract" abstract="true" name="VariableInterestEntitiesAbstract" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="wynn_WMCaymanIIRevolverDue2025TrancheTwoMember" abstract="true" name="WMCaymanIIRevolverDue2025TrancheTwoMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="wynn_RevenueRecognitionTextBlock" abstract="false" name="RevenueRecognitionTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:textBlockItemType"/>
+  <xs:element id="wynn_FunctionalAreaSquareFootageUnderConstruction" abstract="false" name="FunctionalAreaSquareFootageUnderConstruction" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="dtr-types1:areaItemType"/>
+  <xs:element id="wynn_DebtInstrumentEarlyTenderPremium" abstract="false" name="DebtInstrumentEarlyTenderPremium" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="wynn_MacauGamingAndNonGamingInvestmentsMember" abstract="true" name="MacauGamingAndNonGamingInvestmentsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="wynn_IncomeTaxesLineItems" abstract="true" name="IncomeTaxesLineItems" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="wynn_HongKongInterbankOfferedRateMember" abstract="true" name="HongKongInterbankOfferedRateMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="wynn_AmortizationOfDeferredFinancingCostsandOther" abstract="false" name="AmortizationOfDeferredFinancingCostsandOther" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="wynn_WynnResortsLimited2014OmnibusIncentivePlanMember" abstract="true" name="WynnResortsLimited2014OmnibusIncentivePlanMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="wynn_LeaseAmortizationAxis" abstract="true" name="LeaseAmortizationAxis" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrldt:dimensionItem" type="xbrli:stringItemType"/>
+  <xs:element id="wynn_DeferredTaxAssetDisallowedInterestExpenseCarryforwardsNotSubjecttoExpiration" abstract="false" name="DeferredTaxAssetDisallowedInterestExpenseCarryforwardsNotSubjecttoExpiration" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="wynn_Changeintotalcustomercontractliabilities" abstract="false" name="Changeintotalcustomercontractliabilities" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="wynn_DeferredTaxAssetsAndLiabilitiesTable" abstract="true" name="DeferredTaxAssetsAndLiabilitiesTable" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrldt:hypercubeItem" type="xbrli:stringItemType"/>
+  <xs:element id="wynn_AirplanesMember" abstract="true" name="AirplanesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="wynn_WynnCAPlazaPropertyOwnerLLCAndWynnCAPropertyOwnerLLCMember" abstract="true" name="WynnCAPlazaPropertyOwnerLLCAndWynnCAPropertyOwnerLLCMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="wynn_OtherCommitmentToBePaidYearsOneThroughThree" abstract="false" name="OtherCommitmentToBePaidYearsOneThroughThree" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="wynn_FTCCarryforwardMember" abstract="true" name="FTCCarryforwardMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="wynn_FiveandOneHalfPercentSeniorNotesDueMarchOneTwentyTwentyFiveMember" abstract="true" name="FiveandOneHalfPercentSeniorNotesDueMarchOneTwentyTwentyFiveMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="wynn_ShareBasedCompensationArrangementByShareBasedPaymentAwardTermOfPlan" abstract="false" name="ShareBasedCompensationArrangementByShareBasedPaymentAwardTermOfPlan" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:durationItemType"/>
+  <xs:element id="wynn_MacauNonGamingCapitalProjectsMember" abstract="true" name="MacauNonGamingCapitalProjectsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="wynn_WesternConferenceOfTeamstersPensionTrustFundMember" abstract="true" name="WesternConferenceOfTeamstersPensionTrustFundMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="wynn_ScheduleOfEstimatedUsefulLivesOfAssetsTableTableTextBlock" abstract="false" name="ScheduleOfEstimatedUsefulLivesOfAssetsTableTableTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:textBlockItemType"/>
+  <xs:element id="wynn_RoomsMember" abstract="true" name="RoomsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="wynn_SeniorTermLoanFacilityDue2027Member" abstract="true" name="SeniorTermLoanFacilityDue2027Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="wynn_AnnualAmortization2097Member" abstract="true" name="AnnualAmortization2097Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="wynn_IncomeTaxesTable" abstract="true" name="IncomeTaxesTable" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrldt:hypercubeItem" type="xbrli:stringItemType"/>
+  <xs:element id="wynn_FourthFiscalQuarterAndThereafterOfTheFinancialCovenantIncreasePeriodMember" abstract="true" name="FourthFiscalQuarterAndThereafterOfTheFinancialCovenantIncreasePeriodMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="wynn_Advancedroomdepositsandticketsales" abstract="false" name="Advancedroomdepositsandticketsales" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="wynn_MeetingAndConventionMember" abstract="true" name="MeetingAndConventionMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="wynn_InterestRateCollarMember" abstract="true" name="InterestRateCollarMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="wynn_DerivativeAssetStatementOfFinancialPositionExtensibleEnumerationNotDisclosedFlag" abstract="false" name="DerivativeAssetStatementOfFinancialPositionExtensibleEnumerationNotDisclosedFlag" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="xbrli:booleanItemType"/>
+  <xs:element id="wynn_NoncontrollingInterestTransactionsWithSubsidiaryMinorityShareholdersValue" abstract="false" name="NoncontrollingInterestTransactionsWithSubsidiaryMinorityShareholdersValue" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="wynn_TaxCreditCarryforwardExpires2027Member" abstract="true" name="TaxCreditCarryforwardExpires2027Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="wynn_IntangibleAssetsLineItems" abstract="true" name="IntangibleAssetsLineItems" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="wynn_AccountsReceivableAllowanceForCreditLossPercentOfGrossCasinoReceivables" abstract="false" name="AccountsReceivableAllowanceForCreditLossPercentOfGrossCasinoReceivables" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+  <xs:element id="wynn_LongTermDebtExcludingRedemptionNote" abstract="false" name="LongTermDebtExcludingRedemptionNote" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="wynn_OtherCommitmentFixedPortion" abstract="false" name="OtherCommitmentFixedPortion" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="wynn_WynnResortsLtdMember" abstract="true" name="WynnResortsLtdMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="wynn_AccountsPayableCurrentAmountRelatedToPropertyPlantAndEquipment" abstract="false" name="AccountsPayableCurrentAmountRelatedToPropertyPlantAndEquipment" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="wynn_NoncontrollingInterestIncreaseDecreaseToAdditionalPaidInCapital" abstract="false" name="NoncontrollingInterestIncreaseDecreaseToAdditionalPaidInCapital" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="wynn_OtherCommitmentGamingPremiumNumberOfGamingMachinesMinimum" abstract="false" name="OtherCommitmentGamingPremiumNumberOfGamingMachinesMinimum" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="xbrli:integerItemType"/>
+  <xs:element id="wynn_ProceedsFromNoteReceivableFromSaleOfOwnershipInterestInSubsidiary" abstract="false" name="ProceedsFromNoteReceivableFromSaleOfOwnershipInterestInSubsidiary" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="wynn_ScheduleOfProvisionForIncomeTaxTableTableTextBlock" abstract="false" name="ScheduleOfProvisionForIncomeTaxTableTableTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:textBlockItemType"/>
+  <xs:element id="wynn_SecuredOvernightFinancingRateSOFRMember" abstract="true" name="SecuredOvernightFinancingRateSOFRMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="wynn_OtherCommitmentGamingPremiumAverageGrossTableGamingRevenueMinimum" abstract="false" name="OtherCommitmentGamingPremiumAverageGrossTableGamingRevenueMinimum" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="wynn_SouthernNevadaCulinaryandBartendersPensionPlanMember" abstract="true" name="SouthernNevadaCulinaryandBartendersPensionPlanMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="wynn_CrownAcquisitionsIncMember" abstract="true" name="CrownAcquisitionsIncMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="wynn_GamingTaxExpenses" abstract="false" name="GamingTaxExpenses" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="wynn_LasVegasOperationsMember" abstract="true" name="LasVegasOperationsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="wynn_OtherOperatingCostsAndExpensesAbstract" abstract="true" name="OtherOperatingCostsAndExpensesAbstract" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="wynn_OtherCommitmentScenarioThreeMember" abstract="true" name="OtherCommitmentScenarioThreeMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="wynn_FiniteLivedIntangibleAssetsAmortizationExpenseFinalYear" abstract="false" name="FiniteLivedIntangibleAssetsAmortizationExpenseFinalYear" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="wynn_ProjectAbandonmentCostsContractTerminationLiabilities" abstract="false" name="ProjectAbandonmentCostsContractTerminationLiabilities" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="wynn_FiveAndOneOverFourPercentageSeniorNotesDueMay152027Member" abstract="true" name="FiveAndOneOverFourPercentageSeniorNotesDueMay152027Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="wynn_WynnInteractiveLtdMember" abstract="true" name="WynnInteractiveLtdMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="wynn_LeaseOtherInformationLesseeAbstract" abstract="true" name="LeaseOtherInformationLesseeAbstract" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="wynn_Changeinadvancedroomdepositsandticketsales" abstract="false" name="Changeinadvancedroomdepositsandticketsales" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="wynn_OrganizationConsolidationAndPresentationOfFinancialStatementsDisclosureTable" abstract="true" name="OrganizationConsolidationAndPresentationOfFinancialStatementsDisclosureTable" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrldt:hypercubeItem" type="xbrli:stringItemType"/>
+  <xs:element id="wynn_WMLShareOptionPlanMember" abstract="true" name="WMLShareOptionPlanMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="wynn_AdditionalPaidInCapitalSubsidiaryStockIssuedDuringPeriodValueNewIssues" abstract="false" name="AdditionalPaidInCapitalSubsidiaryStockIssuedDuringPeriodValueNewIssues" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="wynn_DisallowedInterestExpenseCarryforwardsMember" abstract="true" name="DisallowedInterestExpenseCarryforwardsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="wynn_DebtInstrumentFloorRate" abstract="false" name="DebtInstrumentFloorRate" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:percentItemType"/>
+  <xs:element id="wynn_GamingTaxesPayableCurrent" abstract="false" name="GamingTaxesPayableCurrent" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="wynn_FiveAndFiveOverEightPercentageWynnMacauLimitedSeniorNotesDueTwoThousandTwentyEightMember" abstract="true" name="FiveAndFiveOverEightPercentageWynnMacauLimitedSeniorNotesDueTwoThousandTwentyEightMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="wynn_DeferredTaxAssetIntangiblesAndRelatedOther" abstract="false" name="DeferredTaxAssetIntangiblesAndRelatedOther" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="wynn_CommitmentsAndContingenciesTable" abstract="true" name="CommitmentsAndContingenciesTable" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrldt:hypercubeItem" type="xbrli:stringItemType"/>
+  <xs:element id="wynn_ScheduleofCapitalExpendituresTableTextBlock" abstract="false" name="ScheduleofCapitalExpendituresTableTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:textBlockItemType"/>
+  <xs:element id="wynn_OtherMacauMember" abstract="true" name="OtherMacauMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="wynn_ComplementaryTaxRate" abstract="false" name="ComplementaryTaxRate" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+  <xs:element id="wynn_MacauGamingConcessionMember" abstract="true" name="MacauGamingConcessionMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="wynn_FTCCarryforwardCurrentYearUtilizationMember" abstract="true" name="FTCCarryforwardCurrentYearUtilizationMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="wynn_TaxCreditCarryforwardExpires2025Member" abstract="true" name="TaxCreditCarryforwardExpires2025Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="wynn_DebtInstrumentCovenantPeriodInEffectAxis" abstract="true" name="DebtInstrumentCovenantPeriodInEffectAxis" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrldt:dimensionItem" type="xbrli:stringItemType"/>
+  <xs:element id="wynn_Changeinloyaltyprogramliabilities" abstract="false" name="Changeinloyaltyprogramliabilities" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="wynn_OtherForeignDeferredTaxAssetsMember" abstract="true" name="OtherForeignDeferredTaxAssetsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="wynn_TaxBenefitsFromExerciseOfNonqualifiedStockOptionsVestedRestrictedStockAndAccruedDividends" abstract="false" name="TaxBenefitsFromExerciseOfNonqualifiedStockOptionsVestedRestrictedStockAndAccruedDividends" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="wynn_TotalCustomerContractLiabilities" abstract="false" name="TotalCustomerContractLiabilities" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="wynn_CommitmentsAndContingenciesLineItems" abstract="true" name="CommitmentsAndContingenciesLineItems" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="wynn_FiniteLivedIntangibleAssetExpectedAmortizationYearsOneThroughNine" abstract="false" name="FiniteLivedIntangibleAssetExpectedAmortizationYearsOneThroughNine" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="wynn_OtherDomesticDeferredTaxAssetsMember" abstract="true" name="OtherDomesticDeferredTaxAssetsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="wynn_ShareBasedCompensationArrangementByShareBasedPaymentAwardEquityInstrumentsOtherThanOptionsNumberOfSharesSubjectToServiceAndMarketConditions" abstract="false" name="ShareBasedCompensationArrangementByShareBasedPaymentAwardEquityInstrumentsOtherThanOptionsNumberOfSharesSubjectToServiceAndMarketConditions" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:sharesItemType"/>
+  <xs:element id="wynn_Island3AMIFZLLCMember" abstract="true" name="Island3AMIFZLLCMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="wynn_ProceedsFromSaleLeasebackTransaction" abstract="false" name="ProceedsFromSaleLeasebackTransaction" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="wynn_Changeinothergamingrelatedliabilities" abstract="false" name="Changeinothergamingrelatedliabilities" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="wynn_CommonStockSharesReturned" abstract="false" name="CommonStockSharesReturned" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="xbrli:sharesItemType"/>
+  <xs:element id="wynn_WynnMacauMember" abstract="true" name="WynnMacauMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="wynn_DebtInstrumentCovenantTermsMaximumConsolidatedFirstLienNetLeverageRatio" abstract="false" name="DebtInstrumentCovenantTermsMaximumConsolidatedFirstLienNetLeverageRatio" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="xbrli:pureItemType"/>
+  <xs:element id="wynn_HIBOROrSOFRMember" abstract="true" name="HIBOROrSOFRMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="wynn_FiveAndOneOverTwoPercentageWynnMacauLimitedSeniorNotesDueOctoberOneTwoThousandTwentySevenMember" abstract="true" name="FiveAndOneOverTwoPercentageWynnMacauLimitedSeniorNotesDueOctoberOneTwoThousandTwentySevenMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="wynn_ScheduleOfIntangibleAssetsTable" abstract="true" name="ScheduleOfIntangibleAssetsTable" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrldt:hypercubeItem" type="xbrli:stringItemType"/>
+  <xs:element id="wynn_WynnResortsMacauMember" abstract="true" name="WynnResortsMacauMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="wynn_LineOfCreditFacilityCommitmentNotExtended" abstract="false" name="LineOfCreditFacilityCommitmentNotExtended" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="wynn_DeferredTaxAssetDisallowedInterestExpenseCarryforwards" abstract="false" name="DeferredTaxAssetDisallowedInterestExpenseCarryforwards" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="wynn_HIBORMember" abstract="true" name="HIBORMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="wynn_FTCCarryforwardMoreThanLikelyNotRealizedMember" abstract="true" name="FTCCarryforwardMoreThanLikelyNotRealizedMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="wynn_DefinedContributionPlanEmployerMatchingContributionVestingPeriod" abstract="false" name="DefinedContributionPlanEmployerMatchingContributionVestingPeriod" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:durationItemType"/>
+  <xs:element id="wynn_ShareBasedCompensationArrangementByShareBasedPaymentAwardOptionsWeightedAverageRemainingContractualTermAbstract" abstract="true" name="ShareBasedCompensationArrangementByShareBasedPaymentAwardOptionsWeightedAverageRemainingContractualTermAbstract" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="wynn_SeniorTermLoanFacilityDue2024Member" abstract="true" name="SeniorTermLoanFacilityDue2024Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="wynn_FourandSevenOverEightPercentageWynnMacauLimitedSeniorNotesDueOctoberOneTwoThousandTwentyFourMember" abstract="true" name="FourandSevenOverEightPercentageWynnMacauLimitedSeniorNotesDueOctoberOneTwoThousandTwentyFourMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="wynn_OtherCommitmentScenarioDomain" abstract="true" name="OtherCommitmentScenarioDomain" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="wynn_LineOfCreditAdditionalBorrowingCapacity" abstract="false" name="LineOfCreditAdditionalBorrowingCapacity" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="wynn_GamingTaxesPolicyPolicyTextBlock" abstract="false" name="GamingTaxesPolicyPolicyTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:textBlockItemType"/>
+  <xs:element id="wynn_WynnLasVegasLLCandWynnLasVegasCapitalCorpMember" abstract="true" name="WynnLasVegasLLCandWynnLasVegasCapitalCorpMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="wynn_TwoThousandAndTwentySixAndTwoThousandAndTwentyEightWMLNotesMember" abstract="true" name="TwoThousandAndTwentySixAndTwoThousandAndTwentyEightWMLNotesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="wynn_AccountsReceivableAllowanceForCreditLossEffectOfExchangeRate" abstract="false" name="AccountsReceivableAllowanceForCreditLossEffectOfExchangeRate" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="wynn_CentralProvidentFundSystemMember" abstract="true" name="CentralProvidentFundSystemMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="wynn_AdjustedPropertyEbitdar" abstract="false" name="AdjustedPropertyEbitdar" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="wynn_WynnLasVegasMember" abstract="true" name="WynnLasVegasMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="wynn_FourAndOneOverFourPercentageWynnLasVegasSeniorNotesDueMayThirtyTwoThousandTwentyThreeMember" abstract="true" name="FourAndOneOverFourPercentageWynnLasVegasSeniorNotesDueMayThirtyTwoThousandTwentyThreeMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="wynn_LesseeOperatingLeaseNumberofAcresofUndevelopedLand" abstract="false" name="LesseeOperatingLeaseNumberofAcresofUndevelopedLand" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:areaItemType"/>
+  <xs:element id="wynn_LeaseSupplementalCashFlowInformationAbstract" abstract="true" name="LeaseSupplementalCashFlowInformationAbstract" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="wynn_WMCaymanIMember" abstract="true" name="WMCaymanIMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="wynn_CashFlowLesseeAbstract" abstract="true" name="CashFlowLesseeAbstract" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="wynn_RetailTermLoanAgreementMember" abstract="true" name="RetailTermLoanAgreementMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="wynn_A5.5SeniorNotesDue2025And5.25SeniorNotesDue2027Member" abstract="true" name="A5.5SeniorNotesDue2025And5.25SeniorNotesDue2027Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="wynn_AnnualAmortizationCurrentYearThrough2096Member" abstract="true" name="AnnualAmortizationCurrentYearThrough2096Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="wynn_NetIncomeLossAvailableCommonStockholdersBasicAndDilutedAbstract" abstract="true" name="NetIncomeLossAvailableCommonStockholdersBasicAndDilutedAbstract" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="wynn_DebtInstrumentCovenantPeriodInEffectDomain" abstract="true" name="DebtInstrumentCovenantPeriodInEffectDomain" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="wynn_FiniteLivedIntangibleAssetsAnnualAmortizationExpenseExcludingFinalYear" abstract="false" name="FiniteLivedIntangibleAssetsAnnualAmortizationExpenseExcludingFinalYear" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="wynn_WynnInteractiveLtd2020OmnibusIncentivePlanMember" abstract="true" name="WynnInteractiveLtd2020OmnibusIncentivePlanMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="wynn_UsAndForeignUncertainTaxPositionsThatIncreaseNolAndForeignTaxCreditCarryforwardDeferredTaxAssets" abstract="false" name="UsAndForeignUncertainTaxPositionsThatIncreaseNolAndForeignTaxCreditCarryforwardDeferredTaxAssets" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="wynn_AnnualAmortization2029Through2037Member" abstract="true" name="AnnualAmortization2029Through2037Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="wynn_CorporateExpensesAndOther" abstract="false" name="CorporateExpensesAndOther" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="wynn_NumberOfRoomsInHotel" abstract="false" name="NumberOfRoomsInHotel" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:integerItemType"/>
+  <xs:element id="wynn_ScheduleOfFiniteAndIndefiniteLivedIntangibleAssetsLineItems" abstract="true" name="ScheduleOfFiniteAndIndefiniteLivedIntangibleAssetsLineItems" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="wynn_DuringFinancialCovenantReliefPeriodMember" abstract="true" name="DuringFinancialCovenantReliefPeriodMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="wynn_LossesOnExtinguishmentOfDebt" abstract="false" name="LossesOnExtinguishmentOfDebt" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="wynn_IncreaseDecreaseInInventoriesPrepaidExpensesAndOtherCurrentAssets" abstract="false" name="IncreaseDecreaseInInventoriesPrepaidExpensesAndOtherCurrentAssets" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="wynn_DebtInstrumentCovenantRequiredRedemptionMinimumConsecutivePeriod" abstract="false" name="DebtInstrumentCovenantRequiredRedemptionMinimumConsecutivePeriod" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:durationItemType"/>
+  <xs:element id="wynn_OtherCommitmentGamingPremiumVariableMinimum" abstract="false" name="OtherCommitmentGamingPremiumVariableMinimum" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="wynn_RetailJointVentureMember" abstract="true" name="RetailJointVentureMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="wynn_WynnMacauLimitedMember" abstract="true" name="WynnMacauLimitedMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="wynn_EncoreBostonHarborMember" abstract="true" name="EncoreBostonHarborMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="wynn_WynnMacauPlanMember" abstract="true" name="WynnMacauPlanMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="wynn_OtherCommitmentTerm" abstract="false" name="OtherCommitmentTerm" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:durationItemType"/>
+  <xs:element id="wynn_PaymentsForIntangibleAssetsAndOtherAssets" abstract="false" name="PaymentsForIntangibleAssetsAndOtherAssets" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="wynn_WILOmnibusPlanMember" abstract="true" name="WILOmnibusPlanMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="wynn_Othergamingrelatedliabilities" abstract="false" name="Othergamingrelatedliabilities" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="wynn_PaymentsForAnnualComplementaryTaxObligation" abstract="false" name="PaymentsForAnnualComplementaryTaxObligation" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="wynn_IncreaseDecreaseinoutstandingchipsandfrontmoneydeposits" abstract="false" name="IncreaseDecreaseinoutstandingchipsandfrontmoneydeposits" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="wynn_WynnInteractiveMember" abstract="true" name="WynnInteractiveMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="wynn_TotalContributionThresholdPercentage" abstract="false" name="TotalContributionThresholdPercentage" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+  <xs:element id="wynn_MacauOperationsMember" abstract="true" name="MacauOperationsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="wynn_IntangibleAssetsOtherLiabilitiesIncurredGamingPremium" abstract="false" name="IntangibleAssetsOtherLiabilitiesIncurredGamingPremium" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="wynn_FurnitureFixturesAndEquipmentMember" abstract="true" name="FurnitureFixturesAndEquipmentMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="wynn_LineOfCreditFacilityCommitmentExtended" abstract="false" name="LineOfCreditFacilityCommitmentExtended" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="wynn_RecognizedTaxBenefitDomain" abstract="true" name="RecognizedTaxBenefitDomain" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="wynn_OtherCommitmentGamingPremiumNumberOfGamingTablesMinimum" abstract="false" name="OtherCommitmentGamingPremiumNumberOfGamingTablesMinimum" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="xbrli:integerItemType"/>
+  <xs:element id="wynn_AssetsandLiabilitiesLesseeTableTextBlock" abstract="false" name="AssetsandLiabilitiesLesseeTableTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:textBlockItemType"/>
+  <xs:element id="wynn_OtherCommitmentGamingPremiumAverageGrossMachineGamingRevenueMinimum" abstract="false" name="OtherCommitmentGamingPremiumAverageGrossMachineGamingRevenueMinimum" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="wynn_RetailLeasesAndOtherMember" abstract="true" name="RetailLeasesAndOtherMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="wynn_SummaryOfSignificantAccountingPoliciesTable" abstract="true" name="SummaryOfSignificantAccountingPoliciesTable" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrldt:hypercubeItem" type="xbrli:stringItemType"/>
+  <xs:element id="wynn_NoncontrollingInterestTransactionsWithSubsidiaryMinorityShareholdersShares" abstract="false" name="NoncontrollingInterestTransactionsWithSubsidiaryMinorityShareholdersShares" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:sharesItemType"/>
+  <xs:element id="wynn_LeaseLiabilitiesCurrentLesseeAbstract" abstract="true" name="LeaseLiabilitiesCurrentLesseeAbstract" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="wynn_OtherCommitmentScenarioTwoMember" abstract="true" name="OtherCommitmentScenarioTwoMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="wynn_OperatingLeaseExpenseFixedAnnualIncreasePercentage" abstract="false" name="OperatingLeaseExpenseFixedAnnualIncreasePercentage" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+  <xs:element id="wynn_IncomeLossFromContinuingOperationsBeforeIncomeTaxesAndMinorityInterest" abstract="false" name="IncomeLossFromContinuingOperationsBeforeIncomeTaxesAndMinorityInterest" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="wynn_GoldmanSachsInternationalMember" abstract="true" name="GoldmanSachsInternationalMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="wynn_OperatingLeaseBaseRentIncreaseTermAxis" abstract="true" name="OperatingLeaseBaseRentIncreaseTermAxis" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrldt:dimensionItem" type="xbrli:stringItemType"/>
+  <xs:element id="wynn_ProjectAbandonmentCosts" abstract="false" name="ProjectAbandonmentCosts" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="wynn_OrganizationConsolidationAndPresentationOfFinancialStatementsDisclosureLineItems" abstract="true" name="OrganizationConsolidationAndPresentationOfFinancialStatementsDisclosureLineItems" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="wynn_LessorOperatingLeaseSquareFootageOfSpaceLeased" abstract="false" name="LessorOperatingLeaseSquareFootageOfSpaceLeased" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:areaItemType"/>
+  <xs:element id="wynn_DebtInstrumentAdjustmentRate" abstract="false" name="DebtInstrumentAdjustmentRate" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:percentItemType"/>
+  <xs:element id="wynn_LeaseLiabilitiesNoncurrentLesseeAbstract" abstract="true" name="LeaseLiabilitiesNoncurrentLesseeAbstract" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+</xs:schema>

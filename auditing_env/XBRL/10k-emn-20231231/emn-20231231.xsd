@@ -1,0 +1,666 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--XBRL Document Created with the Workiva Platform-->
+<!--Copyright 2024 Workiva-->
+<!--r:d3653181-3136-4d02-889a-bee2c7d96f4f,g:bf8da282-3fd3-4968-9ae5-86617dcc3af4-->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:emn="http://www.eastman.com/20231231" xmlns:xbrli="http://www.xbrl.org/2003/instance" xmlns:dtr-types1="http://www.xbrl.org/dtr/type/2020-01-21" xmlns:dtr-types="http://www.xbrl.org/dtr/type/2022-03-31" xmlns:xbrldt="http://xbrl.org/2005/xbrldt" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://www.eastman.com/20231231">
+  <xs:import namespace="http://fasb.org/srt/2023" schemaLocation="https://xbrl.fasb.org/srt/2023/elts/srt-2023.xsd"/>
+  <xs:import namespace="http://fasb.org/us-gaap/2023" schemaLocation="https://xbrl.fasb.org/us-gaap/2023/elts/us-gaap-2023.xsd"/>
+  <xs:import namespace="http://www.w3.org/1999/xlink" schemaLocation="http://www.xbrl.org/2003/xlink-2003-12-31.xsd"/>
+  <xs:import namespace="http://www.xbrl.org/2003/instance" schemaLocation="http://www.xbrl.org/2003/xbrl-instance-2003-12-31.xsd"/>
+  <xs:import namespace="http://www.xbrl.org/2003/linkbase" schemaLocation="http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd"/>
+  <xs:import namespace="http://www.xbrl.org/dtr/type/2020-01-21" schemaLocation="https://www.xbrl.org/dtr/type/2020-01-21/types.xsd"/>
+  <xs:import namespace="http://www.xbrl.org/dtr/type/2022-03-31" schemaLocation="https://www.xbrl.org/dtr/type/2022-03-31/types.xsd"/>
+  <xs:import namespace="http://xbrl.org/2005/xbrldt" schemaLocation="http://www.xbrl.org/2005/xbrldt-2005.xsd"/>
+  <xs:import namespace="http://xbrl.sec.gov/country/2023" schemaLocation="https://xbrl.sec.gov/country/2023/country-2023.xsd"/>
+  <xs:import namespace="http://xbrl.sec.gov/currency/2023" schemaLocation="https://xbrl.sec.gov/currency/2023/currency-2023.xsd"/>
+  <xs:import namespace="http://xbrl.sec.gov/dei/2023" schemaLocation="https://xbrl.sec.gov/dei/2023/dei-2023.xsd"/>
+  <xs:annotation>
+    <xs:appinfo>
+      <link:linkbaseRef xmlns:xlink="http://www.w3.org/1999/xlink" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="emn-20231231_pre.xml" xlink:role="http://www.xbrl.org/2003/role/presentationLinkbaseRef" xlink:type="simple"/>
+      <link:linkbaseRef xmlns:xlink="http://www.w3.org/1999/xlink" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="emn-20231231_def.xml" xlink:role="http://www.xbrl.org/2003/role/definitionLinkbaseRef" xlink:type="simple"/>
+      <link:linkbaseRef xmlns:xlink="http://www.w3.org/1999/xlink" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="emn-20231231_lab.xml" xlink:role="http://www.xbrl.org/2003/role/labelLinkbaseRef" xlink:type="simple"/>
+      <link:linkbaseRef xmlns:xlink="http://www.w3.org/1999/xlink" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="emn-20231231_cal.xml" xlink:role="http://www.xbrl.org/2003/role/calculationLinkbaseRef" xlink:type="simple"/>
+      <link:roleType id="DocumentandEntityInformation" roleURI="http://www.eastman.com/role/DocumentandEntityInformation">
+        <link:definition>0000001 - Document - Document and Entity Information</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CONSOLIDATEDSTATEMENTSOFEARNINGSCOMPREHENSIVEINCOMEANDRETAINEDEARNINGS" roleURI="http://www.eastman.com/role/CONSOLIDATEDSTATEMENTSOFEARNINGSCOMPREHENSIVEINCOMEANDRETAINEDEARNINGS">
+        <link:definition>0000002 - Statement - CONSOLIDATED STATEMENTS OF EARNINGS, COMPREHENSIVE INCOME AND RETAINED EARNINGS</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CONSOLIDATEDSTATEMENTSOFFINANCIALPOSITION" roleURI="http://www.eastman.com/role/CONSOLIDATEDSTATEMENTSOFFINANCIALPOSITION">
+        <link:definition>0000003 - Statement - CONSOLIDATED STATEMENTS OF FINANCIAL POSITION</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CONSOLIDATEDSTATEMENTSOFFINANCIALPOSITIONParenthetical" roleURI="http://www.eastman.com/role/CONSOLIDATEDSTATEMENTSOFFINANCIALPOSITIONParenthetical">
+        <link:definition>0000004 - Statement - CONSOLIDATED STATEMENTS OF FINANCIAL POSITION (Parenthetical)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CONSOLIDATEDSTATEMENTSOFCASHFLOWS" roleURI="http://www.eastman.com/role/CONSOLIDATEDSTATEMENTSOFCASHFLOWS">
+        <link:definition>0000005 - Statement - CONSOLIDATED STATEMENTS OF CASH FLOWS</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SIGNIFICANTACCOUNTINGPOLICIES" roleURI="http://www.eastman.com/role/SIGNIFICANTACCOUNTINGPOLICIES">
+        <link:definition>0000006 - Disclosure - SIGNIFICANT ACCOUNTING POLICIES</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="DIVESTITURES" roleURI="http://www.eastman.com/role/DIVESTITURES">
+        <link:definition>0000007 - Disclosure - DIVESTITURES</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="INVENTORIES" roleURI="http://www.eastman.com/role/INVENTORIES">
+        <link:definition>0000008 - Disclosure - INVENTORIES</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="PROPERTIESANDACCUMULATEDDEPRECIATION" roleURI="http://www.eastman.com/role/PROPERTIESANDACCUMULATEDDEPRECIATION">
+        <link:definition>0000009 - Disclosure - PROPERTIES AND ACCUMULATED DEPRECIATION</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="GOODWILLANDOTHERINTANGIBLEASSETS" roleURI="http://www.eastman.com/role/GOODWILLANDOTHERINTANGIBLEASSETS">
+        <link:definition>0000010 - Disclosure - GOODWILL AND OTHER INTANGIBLE ASSETS</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="EQUITYINVESTMENTS" roleURI="http://www.eastman.com/role/EQUITYINVESTMENTS">
+        <link:definition>0000011 - Disclosure - EQUITY INVESTMENTS</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="PAYABLESANDOTHERCURRENTLIABILITIES" roleURI="http://www.eastman.com/role/PAYABLESANDOTHERCURRENTLIABILITIES">
+        <link:definition>0000012 - Disclosure - PAYABLES AND OTHER CURRENT LIABILITIES</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="INCOMETAXES" roleURI="http://www.eastman.com/role/INCOMETAXES">
+        <link:definition>0000013 - Disclosure - INCOME TAXES</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="BORROWINGS" roleURI="http://www.eastman.com/role/BORROWINGS">
+        <link:definition>0000014 - Disclosure - BORROWINGS</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="DERIVATIVEANDNONDERIVATIVEFINANCIALINSTRUMENTS" roleURI="http://www.eastman.com/role/DERIVATIVEANDNONDERIVATIVEFINANCIALINSTRUMENTS">
+        <link:definition>0000015 - Disclosure - DERIVATIVE AND NON-DERIVATIVE FINANCIAL INSTRUMENTS</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RETIREMENTPLANS" roleURI="http://www.eastman.com/role/RETIREMENTPLANS">
+        <link:definition>0000016 - Disclosure - RETIREMENT PLANS</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LEASESANDOTHERCOMMITMENTSLEASESANDOTHERCOMMITMENTS" roleURI="http://www.eastman.com/role/LEASESANDOTHERCOMMITMENTSLEASESANDOTHERCOMMITMENTS">
+        <link:definition>0000017 - Disclosure - LEASES AND OTHER COMMITMENTS LEASES AND OTHER COMMITMENTS</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ENVIRONMENTALMATTERS" roleURI="http://www.eastman.com/role/ENVIRONMENTALMATTERS">
+        <link:definition>0000018 - Disclosure - ENVIRONMENTAL MATTERS</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LEGALMATTERS" roleURI="http://www.eastman.com/role/LEGALMATTERS">
+        <link:definition>0000019 - Disclosure - LEGAL MATTERS</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="STOCKHOLDERSEQUITY" roleURI="http://www.eastman.com/role/STOCKHOLDERSEQUITY">
+        <link:definition>0000020 - Disclosure - STOCKHOLDERS' EQUITY</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ASSETIMPAIRMENTSANDRESTRUCTURING" roleURI="http://www.eastman.com/role/ASSETIMPAIRMENTSANDRESTRUCTURING">
+        <link:definition>0000021 - Disclosure - ASSET IMPAIRMENTS AND RESTRUCTURING</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="OTHERCHARGESINCOMENET" roleURI="http://www.eastman.com/role/OTHERCHARGESINCOMENET">
+        <link:definition>0000022 - Disclosure - OTHER CHARGES (INCOME), NET</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SHAREBASEDCOMPENSATIONPLANSANDAWARDS" roleURI="http://www.eastman.com/role/SHAREBASEDCOMPENSATIONPLANSANDAWARDS">
+        <link:definition>0000023 - Disclosure - SHARE-BASED COMPENSATION PLANS AND AWARDS</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SUPPLEMENTALCASHFLOWINFORMATION" roleURI="http://www.eastman.com/role/SUPPLEMENTALCASHFLOWINFORMATION">
+        <link:definition>0000024 - Disclosure - SUPPLEMENTAL CASH FLOW INFORMATION</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SEGMENTINFORMATION" roleURI="http://www.eastman.com/role/SEGMENTINFORMATION">
+        <link:definition>0000025 - Disclosure - SEGMENT INFORMATION</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RESERVEROLLFORWARDS" roleURI="http://www.eastman.com/role/RESERVEROLLFORWARDS">
+        <link:definition>0000026 - Disclosure - RESERVE ROLLFORWARDS</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SIGNIFICANTACCOUNTINGPOLICIESPolicies" roleURI="http://www.eastman.com/role/SIGNIFICANTACCOUNTINGPOLICIESPolicies">
+        <link:definition>9954471 - Disclosure - SIGNIFICANT ACCOUNTING POLICIES (Policies)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="DIVESTITURESTables" roleURI="http://www.eastman.com/role/DIVESTITURESTables">
+        <link:definition>9954472 - Disclosure - DIVESTITURES (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="INVENTORIESTables" roleURI="http://www.eastman.com/role/INVENTORIESTables">
+        <link:definition>9954473 - Disclosure - INVENTORIES (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="PROPERTIESANDACCUMULATEDDEPRECIATIONTables" roleURI="http://www.eastman.com/role/PROPERTIESANDACCUMULATEDDEPRECIATIONTables">
+        <link:definition>9954474 - Disclosure - PROPERTIES AND ACCUMULATED DEPRECIATION (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="GOODWILLANDOTHERINTANGIBLEASSETSTables" roleURI="http://www.eastman.com/role/GOODWILLANDOTHERINTANGIBLEASSETSTables">
+        <link:definition>9954475 - Disclosure - GOODWILL AND OTHER INTANGIBLE ASSETS (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="PAYABLESANDOTHERCURRENTLIABILITIESTables" roleURI="http://www.eastman.com/role/PAYABLESANDOTHERCURRENTLIABILITIESTables">
+        <link:definition>9954476 - Disclosure - PAYABLES AND OTHER CURRENT LIABILITIES (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="INCOMETAXESTables" roleURI="http://www.eastman.com/role/INCOMETAXESTables">
+        <link:definition>9954477 - Disclosure - INCOME TAXES (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="BORROWINGSTables" roleURI="http://www.eastman.com/role/BORROWINGSTables">
+        <link:definition>9954478 - Disclosure - BORROWINGS (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="DERIVATIVEANDNONDERIVATIVEFINANCIALINSTRUMENTSTables" roleURI="http://www.eastman.com/role/DERIVATIVEANDNONDERIVATIVEFINANCIALINSTRUMENTSTables">
+        <link:definition>9954479 - Disclosure - DERIVATIVE AND NON-DERIVATIVE FINANCIAL INSTRUMENTS (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RETIREMENTPLANSTables" roleURI="http://www.eastman.com/role/RETIREMENTPLANSTables">
+        <link:definition>9954480 - Disclosure - RETIREMENT PLANS (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LEASESANDOTHERCOMMITMENTSLEASESANDOTHERCOMMITMENTSTables" roleURI="http://www.eastman.com/role/LEASESANDOTHERCOMMITMENTSLEASESANDOTHERCOMMITMENTSTables">
+        <link:definition>9954481 - Disclosure - LEASES AND OTHER COMMITMENTS LEASES AND OTHER COMMITMENTS (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ENVIRONMENTALMATTERSTables" roleURI="http://www.eastman.com/role/ENVIRONMENTALMATTERSTables">
+        <link:definition>9954482 - Disclosure - ENVIRONMENTAL MATTERS (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="STOCKHOLDERSEQUITYTables" roleURI="http://www.eastman.com/role/STOCKHOLDERSEQUITYTables">
+        <link:definition>9954483 - Disclosure - STOCKHOLDERS' EQUITY (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ASSETIMPAIRMENTSANDRESTRUCTURINGTables" roleURI="http://www.eastman.com/role/ASSETIMPAIRMENTSANDRESTRUCTURINGTables">
+        <link:definition>9954484 - Disclosure - ASSET IMPAIRMENTS AND RESTRUCTURING (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="OTHERCHARGESINCOMENETTables" roleURI="http://www.eastman.com/role/OTHERCHARGESINCOMENETTables">
+        <link:definition>9954485 - Disclosure - OTHER CHARGES (INCOME), NET (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SHAREBASEDCOMPENSATIONPLANSANDAWARDSTables" roleURI="http://www.eastman.com/role/SHAREBASEDCOMPENSATIONPLANSANDAWARDSTables">
+        <link:definition>9954486 - Disclosure - SHARE-BASED COMPENSATION PLANS AND AWARDS (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SUPPLEMENTALCASHFLOWINFORMATIONTables" roleURI="http://www.eastman.com/role/SUPPLEMENTALCASHFLOWINFORMATIONTables">
+        <link:definition>9954487 - Disclosure - SUPPLEMENTAL CASH FLOW INFORMATION (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SEGMENTINFORMATIONTables" roleURI="http://www.eastman.com/role/SEGMENTINFORMATIONTables">
+        <link:definition>9954488 - Disclosure - SEGMENT INFORMATION (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RESERVEROLLFORWARDSTables" roleURI="http://www.eastman.com/role/RESERVEROLLFORWARDSTables">
+        <link:definition>9954489 - Disclosure - RESERVE ROLLFORWARDS (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SIGNIFICANTACCOUNTINGPOLICIESDetails" roleURI="http://www.eastman.com/role/SIGNIFICANTACCOUNTINGPOLICIESDetails">
+        <link:definition>9954490 - Disclosure - SIGNIFICANT ACCOUNTING POLICIES (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="DIVESTITURESDetails" roleURI="http://www.eastman.com/role/DIVESTITURESDetails">
+        <link:definition>9954491 - Disclosure - DIVESTITURES (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="INVENTORIESDetails" roleURI="http://www.eastman.com/role/INVENTORIESDetails">
+        <link:definition>9954492 - Disclosure - INVENTORIES (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="PROPERTIESANDACCUMULATEDDEPRECIATIONDetails" roleURI="http://www.eastman.com/role/PROPERTIESANDACCUMULATEDDEPRECIATIONDetails">
+        <link:definition>9954493 - Disclosure - PROPERTIES AND ACCUMULATED DEPRECIATION (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="GOODWILLANDOTHERINTANGIBLEASSETSPart1Details" roleURI="http://www.eastman.com/role/GOODWILLANDOTHERINTANGIBLEASSETSPart1Details">
+        <link:definition>9954494 - Disclosure - GOODWILL AND OTHER INTANGIBLE ASSETS Part 1 (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="GOODWILLANDOTHERINTANGIBLEASSETSPart2Details" roleURI="http://www.eastman.com/role/GOODWILLANDOTHERINTANGIBLEASSETSPart2Details">
+        <link:definition>9954495 - Disclosure - GOODWILL AND OTHER INTANGIBLE ASSETS Part 2 (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="EQUITYINVESTMENTSDetails" roleURI="http://www.eastman.com/role/EQUITYINVESTMENTSDetails">
+        <link:definition>9954496 - Disclosure - EQUITY INVESTMENTS (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="PAYABLESANDOTHERCURRENTLIABILITIESDetails" roleURI="http://www.eastman.com/role/PAYABLESANDOTHERCURRENTLIABILITIESDetails">
+        <link:definition>9954497 - Disclosure - PAYABLES AND OTHER CURRENT LIABILITIES (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="INCOMETAXESPart1Details" roleURI="http://www.eastman.com/role/INCOMETAXESPart1Details">
+        <link:definition>9954498 - Disclosure - INCOME TAXES Part 1 (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="INCOMETAXESPart1Details_1" roleURI="http://www.eastman.com/role/INCOMETAXESPart1Details_1">
+        <link:definition>9954498 - Disclosure - INCOME TAXES Part 1 (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="INCOMETAXESPart2Details" roleURI="http://www.eastman.com/role/INCOMETAXESPart2Details">
+        <link:definition>9954499 - Disclosure - INCOME TAXES Part 2 (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="BORROWINGSPart1Details" roleURI="http://www.eastman.com/role/BORROWINGSPart1Details">
+        <link:definition>9954500 - Disclosure - BORROWINGS Part 1 (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="BORROWINGSPart2Details" roleURI="http://www.eastman.com/role/BORROWINGSPart2Details">
+        <link:definition>9954501 - Disclosure - BORROWINGS Part 2 (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="BORROWINGSBORROWINGSPart3DetailsFairValue" roleURI="http://www.eastman.com/role/BORROWINGSBORROWINGSPart3DetailsFairValue">
+        <link:definition>9954502 - Disclosure - BORROWINGS BORROWINGS Part 3 (Details) Fair Value</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="DERIVATIVEANDNONDERIVATIVEFINANCIALINSTRUMENTSPart1Details" roleURI="http://www.eastman.com/role/DERIVATIVEANDNONDERIVATIVEFINANCIALINSTRUMENTSPart1Details">
+        <link:definition>9954503 - Disclosure - DERIVATIVE AND NON-DERIVATIVE FINANCIAL INSTRUMENTS Part 1 (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="DERIVATIVEANDNONDERIVATIVEFINANCIALINSTRUMENTSPart2Details" roleURI="http://www.eastman.com/role/DERIVATIVEANDNONDERIVATIVEFINANCIALINSTRUMENTSPart2Details">
+        <link:definition>9954504 - Disclosure - DERIVATIVE AND NON-DERIVATIVE FINANCIAL INSTRUMENTS Part 2 (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="DERIVATIVEANDNONDERIVATIVEFINANCIALINSTRUMENTSPart3Details" roleURI="http://www.eastman.com/role/DERIVATIVEANDNONDERIVATIVEFINANCIALINSTRUMENTSPart3Details">
+        <link:definition>9954505 - Disclosure - DERIVATIVE AND NON-DERIVATIVE FINANCIAL INSTRUMENTS Part 3 (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="DERIVATIVEANDNONDERIVATIVEFINANCIALINSTRUMENTSPart4Details" roleURI="http://www.eastman.com/role/DERIVATIVEANDNONDERIVATIVEFINANCIALINSTRUMENTSPart4Details">
+        <link:definition>9954506 - Disclosure - DERIVATIVE AND NON-DERIVATIVE FINANCIAL INSTRUMENTS Part 4 (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RETIREMENTPLANSDetails" roleURI="http://www.eastman.com/role/RETIREMENTPLANSDetails">
+        <link:definition>9954507 - Disclosure - RETIREMENT PLANS (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LEASESANDOTHERCOMMITMENTSLeasesDetails" roleURI="http://www.eastman.com/role/LEASESANDOTHERCOMMITMENTSLeasesDetails">
+        <link:definition>9954508 - Disclosure - LEASES AND OTHER COMMITMENTS Leases (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LEASESANDOTHERCOMMITMENTSCommitmentsDetails" roleURI="http://www.eastman.com/role/LEASESANDOTHERCOMMITMENTSCommitmentsDetails">
+        <link:definition>9954509 - Disclosure - LEASES AND OTHER COMMITMENTS Commitments (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ENVIRONMENTALMATTERSDetails" roleURI="http://www.eastman.com/role/ENVIRONMENTALMATTERSDetails">
+        <link:definition>9954510 - Disclosure - ENVIRONMENTAL MATTERS (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="STOCKHOLDERSEQUITYDetails" roleURI="http://www.eastman.com/role/STOCKHOLDERSEQUITYDetails">
+        <link:definition>9954511 - Disclosure - STOCKHOLDERS' EQUITY (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ASSETIMPAIRMENTSANDRESTRUCTURINGDetails" roleURI="http://www.eastman.com/role/ASSETIMPAIRMENTSANDRESTRUCTURINGDetails">
+        <link:definition>9954512 - Disclosure - ASSET IMPAIRMENTS AND RESTRUCTURING (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="OTHERCHARGESINCOMENETDetails" roleURI="http://www.eastman.com/role/OTHERCHARGESINCOMENETDetails">
+        <link:definition>9954513 - Disclosure - OTHER CHARGES (INCOME), NET (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SHAREBASEDCOMPENSATIONPLANSANDAWARDSPart1Details" roleURI="http://www.eastman.com/role/SHAREBASEDCOMPENSATIONPLANSANDAWARDSPart1Details">
+        <link:definition>9954514 - Disclosure - SHARE-BASED COMPENSATION PLANS AND AWARDS Part 1 (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SHAREBASEDCOMPENSATIONPLANSANDAWARDSPart2Details" roleURI="http://www.eastman.com/role/SHAREBASEDCOMPENSATIONPLANSANDAWARDSPart2Details">
+        <link:definition>9954515 - Disclosure - SHARE-BASED COMPENSATION PLANS AND AWARDS Part 2 (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SUPPLEMENTALCASHFLOWINFORMATIONDetails" roleURI="http://www.eastman.com/role/SUPPLEMENTALCASHFLOWINFORMATIONDetails">
+        <link:definition>9954516 - Disclosure - SUPPLEMENTAL CASH FLOW INFORMATION (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SEGMENTINFORMATIONDetailsPart1" roleURI="http://www.eastman.com/role/SEGMENTINFORMATIONDetailsPart1">
+        <link:definition>9954517 - Disclosure - SEGMENT INFORMATION (Details) Part 1</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SEGMENTINFORMATIONDetailsPart2" roleURI="http://www.eastman.com/role/SEGMENTINFORMATIONDetailsPart2">
+        <link:definition>9954518 - Disclosure - SEGMENT INFORMATION (Details) Part 2</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RESERVEROLLFORWARDSDetails" roleURI="http://www.eastman.com/role/RESERVEROLLFORWARDSDetails">
+        <link:definition>9954519 - Disclosure - RESERVE ROLLFORWARDS (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element id="emn_SolutiaMember" abstract="true" name="SolutiaMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="emn_DerivativeNotionalAmountEnteredInPeriod" abstract="false" name="DerivativeNotionalAmountEnteredInPeriod" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="emn_SpecialtyFluidsProductLineMember" abstract="true" name="SpecialtyFluidsProductLineMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="emn_OmnibusLongTermPlanMember" abstract="true" name="OmnibusLongTermPlanMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="emn_PolyesterBasedFibersMember" abstract="true" name="PolyesterBasedFibersMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="emn_ReserveForThirdPartyContributions" abstract="false" name="ReserveForThirdPartyContributions" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="emn_NetPropertyPlantAndEquipment" abstract="false" name="NetPropertyPlantAndEquipment" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="emn_NotesDueMarch2025Member" abstract="true" name="NotesDueMarch2025Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="emn_SiteClosureAnimalNutritionAsiaPacificMember" abstract="true" name="SiteClosureAnimalNutritionAsiaPacificMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="emn_AnimalNutritionMember" abstract="true" name="AnimalNutritionMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="emn_A575NotesDueMarch2033Member" abstract="true" name="A575NotesDueMarch2033Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="emn_TrancheDomain" abstract="true" name="TrancheDomain" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="emn_NonCashChargesMember" abstract="true" name="NonCashChargesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="emn_RemainingContractualTermAndWeightedAverageExercisePricesOfStockOptionsAbstract" abstract="true" name="RemainingContractualTermAndWeightedAverageExercisePricesOfStockOptionsAbstract" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="emn_OperatingleasesMember" abstract="true" name="OperatingleasesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="emn_AllOperatingSegmentsMember" abstract="true" name="AllOperatingSegmentsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="emn_OtherSegmentsDomain" abstract="true" name="OtherSegmentsDomain" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="emn_FunctionalAminesProductLineMember" abstract="true" name="FunctionalAminesProductLineMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="emn_OtherAlternativeInvestmentsMember" abstract="true" name="OtherAlternativeInvestmentsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="emn_TexasCityOperationsMember" abstract="true" name="TexasCityOperationsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="emn_DerivativesAndHedgingAbstract" abstract="true" name="DerivativesAndHedgingAbstract" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="emn_OperatingLeaseRightOfUsePrepaidAmount" abstract="false" name="OperatingLeaseRightOfUsePrepaidAmount" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="emn_DomesticFixedIncomeSecuritiesMember" abstract="true" name="DomesticFixedIncomeSecuritiesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="emn_ScheduleofEnvironmentalLiabilitiesBalanceSheetLineItemsTableTextBlock" abstract="false" name="ScheduleofEnvironmentalLiabilitiesBalanceSheetLineItemsTableTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:textBlockItemType"/>
+  <xs:element id="emn_VoluntaryemployeesbeneficiaryassociationVEBAtrustMember" abstract="true" name="VoluntaryemployeesbeneficiaryassociationVEBAtrustMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="emn_MtmAdjustmentForPensionAndOpebPlansActuarialNetGainsLossesTotal" abstract="false" name="MtmAdjustmentForPensionAndOpebPlansActuarialNetGainsLossesTotal" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="emn_VariableCashCompensationInExcessOfLessThanExpenses" abstract="false" name="VariableCashCompensationInExcessOfLessThanExpenses" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="emn_A2027TermLoanMember" abstract="true" name="A2027TermLoanMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="emn_CashExpendituresRelatedToEnvironmentalProtectionAndImprovement" abstract="false" name="CashExpendituresRelatedToEnvironmentalProtectionAndImprovement" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="emn_AdhesivesResinsDisposalGroupMember" abstract="true" name="AdhesivesResinsDisposalGroupMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="emn_ShareBasedCompensationExpenseRetirementEligibilityPrecedingRequisiteVestingPeriod" abstract="false" name="ShareBasedCompensationExpenseRetirementEligibilityPrecedingRequisiteVestingPeriod" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="emn_SiteClosureAcetateYarn2022Member" abstract="true" name="SiteClosureAcetateYarn2022Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="emn_EmployeestockownershipplanwhichisacomponentofEastmanInvestmentPlanEIPESOPMember" abstract="true" name="EmployeestockownershipplanwhichisacomponentofEastmanInvestmentPlanEIPESOPMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="emn_SharesOfCommonStockIssuedTableTextBlock" abstract="false" name="SharesOfCommonStockIssuedTableTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:textBlockItemType"/>
+  <xs:element id="emn_DisposalGroupIncludingDiscontinuedOperationAssetsCurrentNetOfValuationLossForFairValueAdjustment" abstract="false" name="DisposalGroupIncludingDiscontinuedOperationAssetsCurrentNetOfValuationLossForFairValueAdjustment" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="emn_LegalMattersAbstract" abstract="true" name="LegalMattersAbstract" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="emn_ASRDateQ22022Member" abstract="true" name="ASRDateQ22022Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="emn_AssetRetirementObligationTypeAxis" abstract="true" name="AssetRetirementObligationTypeAxis" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrldt:dimensionItem" type="xbrli:stringItemType"/>
+  <xs:element id="emn_InvestmentsEquityMethodAndJointVenturesScheduleOfEquityMethodInvestmentsTable" abstract="true" name="InvestmentsEquityMethodAndJointVenturesScheduleOfEquityMethodInvestmentsTable" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrldt:hypercubeItem" type="xbrli:stringItemType"/>
+  <xs:element id="emn_AdvancedMaterialsMember" abstract="true" name="AdvancedMaterialsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="emn_AllClassesOfEquitySharesAuthorizedForIssue" abstract="false" name="AllClassesOfEquitySharesAuthorizedForIssue" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="xbrli:sharesItemType"/>
+  <xs:element id="emn_Definedbenefitplanunrealizedgains" abstract="false" name="Definedbenefitplanunrealizedgains" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="emn_AmortizationOfAbstract1" abstract="true" name="AmortizationOfAbstract1" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="emn_OperatingLossCarryforwardsWithExpirationDates" abstract="false" name="OperatingLossCarryforwardsWithExpirationDates" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="emn_NotesDue2021Member" abstract="true" name="NotesDue2021Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="emn_CareChemicalsProductLIneMember" abstract="true" name="CareChemicalsProductLIneMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="emn_ShareBasedCompensationArrangementsByShareBasedPaymentAwardsOptionsVestedAndExpectedToVestExercisableNumber" abstract="false" name="ShareBasedCompensationArrangementsByShareBasedPaymentAwardsOptionsVestedAndExpectedToVestExercisableNumber" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:sharesItemType"/>
+  <xs:element id="emn_DeferredTaxChargeBenefitComponentOfAccumulatedOtherComprehensiveLossTableTextBlock" abstract="false" name="DeferredTaxChargeBenefitComponentOfAccumulatedOtherComprehensiveLossTableTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:textBlockItemType"/>
+  <xs:element id="emn_PeriodicBenefitCostUltimateHealthCareCostTrendRate" abstract="false" name="PeriodicBenefitCostUltimateHealthCareCostTrendRate" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+  <xs:element id="emn_ChemicalIntermediatesMember" abstract="true" name="ChemicalIntermediatesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="emn_SteamLineIncidentMember" abstract="true" name="SteamLineIncidentMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="emn_OtherJointVenturesMember" abstract="true" name="OtherJointVenturesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="emn_OCIDerivativeQualifyingasHedgeExcludedComponent" abstract="false" name="OCIDerivativeQualifyingasHedgeExcludedComponent" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="emn_ExercisePricesOf91105Member" abstract="true" name="ExercisePricesOf91105Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="emn_A2024TermLoanMember" abstract="true" name="A2024TermLoanMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="emn_DomesticPublicEquitySecuritiesMember" abstract="true" name="DomesticPublicEquitySecuritiesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="emn_SiteClosureTireAdditivesMember" abstract="true" name="SiteClosureTireAdditivesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="emn_Maximumfundingrequiredforenvironmentalsharedsites" abstract="false" name="Maximumfundingrequiredforenvironmentalsharedsites" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="emn_AcetateTowProductLineMember" abstract="true" name="AcetateTowProductLineMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="emn_A2021RepurchaseProgramMember" abstract="true" name="A2021RepurchaseProgramMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="emn_ShareBasedCompensationGrantDateExercisePriceMinimum" abstract="false" name="ShareBasedCompensationGrantDateExercisePriceMinimum" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="emn_EffectiveIncomeTaxRateReconciliationChangesInStateValuationAllowance" abstract="false" name="EffectiveIncomeTaxRateReconciliationChangesInStateValuationAllowance" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="emn_ScheduleOfAllocationOfPlanAssetsFairValueTableTextBlock" abstract="false" name="ScheduleOfAllocationOfPlanAssetsFairValueTableTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:textBlockItemType"/>
+  <xs:element id="emn_ExpectedPaymentPeriodOfEnvironmentalContingencies" abstract="false" name="ExpectedPaymentPeriodOfEnvironmentalContingencies" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:durationItemType"/>
+  <xs:element id="emn_SiteClosureSingapore2019Member" abstract="true" name="SiteClosureSingapore2019Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="emn_AmortizationOfAbstract" abstract="true" name="AmortizationOfAbstract" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="emn_ScheduleOfPropertyPlantAndEquipmentWithEstimatedUsefulLifeLineItems" abstract="true" name="ScheduleOfPropertyPlantAndEquipmentWithEstimatedUsefulLifeLineItems" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="emn_ScheduleOfFiniteLivedAndIndefiniteLivedIntangibleAssetsByMajorClassTableTextBlock" abstract="false" name="ScheduleOfFiniteLivedAndIndefiniteLivedIntangibleAssetsByMajorClassTableTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:textBlockItemType"/>
+  <xs:element id="emn_Discountrateforinterestcosts" abstract="false" name="Discountrateforinterestcosts" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+  <xs:element id="emn_CrossCurrencySwapsMember" abstract="true" name="CrossCurrencySwapsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="emn_ValuationAndQualifyingAccountsTableTextBlock" abstract="false" name="ValuationAndQualifyingAccountsTableTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:textBlockItemType"/>
+  <xs:element id="emn_SiteClosureAdvancedInterlayersNorthAmerica2020Member" abstract="true" name="SiteClosureAdvancedInterlayersNorthAmerica2020Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="emn_ScheduleOfPropertyPlantAndEquipmentWithEstimatedUsefulLifeTable" abstract="true" name="ScheduleOfPropertyPlantAndEquipmentWithEstimatedUsefulLifeTable" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrldt:hypercubeItem" type="xbrli:stringItemType"/>
+  <xs:element id="emn_DebtInstrumentMaturityDateText" abstract="false" name="DebtInstrumentMaturityDateText" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="emn_ProjectedBenefitObligationUltimateHealthCareCostTrendRate" abstract="false" name="ProjectedBenefitObligationUltimateHealthCareCostTrendRate" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+  <xs:element id="emn_AssetRetirementObligationTypeDomain" abstract="true" name="AssetRetirementObligationTypeDomain" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="emn_NonvestedOptionsMember" abstract="true" name="NonvestedOptionsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="emn_DueToAndFromTaxAuthoritiesAbstract" abstract="true" name="DueToAndFromTaxAuthoritiesAbstract" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="emn_CorporateCostActionsMember" abstract="true" name="CorporateCostActionsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="emn_EnvironmentalAROMember" abstract="true" name="EnvironmentalAROMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="emn_Discountrateforservicecosts" abstract="false" name="Discountrateforservicecosts" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+  <xs:element id="emn_HealthCareCostTrendAbstract" abstract="true" name="HealthCareCostTrendAbstract" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="emn_AssetRetirementObligationsAndEnvironmentalCostsAbstract" abstract="true" name="AssetRetirementObligationsAndEnvironmentalCostsAbstract" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="emn_A1.50NotesDue2023and1.875NotesDue2026Member" abstract="true" name="A1.50NotesDue2023and1.875NotesDue2026Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="emn_AccumulatedOtherComprehensiveIncomeLossUnrealizedGainLossFromHedgesBeforeTax" abstract="false" name="AccumulatedOtherComprehensiveIncomeLossUnrealizedGainLossFromHedgesBeforeTax" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="emn_TrancheTwoMember" abstract="true" name="TrancheTwoMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="emn_ScheduleOfTotalIncomeTaxExpenseBenefitTableTextBlock" abstract="false" name="ScheduleOfTotalIncomeTaxExpenseBenefitTableTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:textBlockItemType"/>
+  <xs:element id="emn_ScheduleOfCashFlowSupplementalDisclosuresOtherItemsTableTextBlock" abstract="false" name="ScheduleOfCashFlowSupplementalDisclosuresOtherItemsTableTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:textBlockItemType"/>
+  <xs:element id="emn_CashandcashequivalentspublicequityandotherinvestmentsMember" abstract="true" name="CashandcashequivalentspublicequityandotherinvestmentsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="emn_CumulativeConstructionPeriodInterest" abstract="false" name="CumulativeConstructionPeriodInterest" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="emn_PensionAndOpebCostsNotAllocatedToOperatingSegmentsMember" abstract="true" name="PensionAndOpebCostsNotAllocatedToOperatingSegmentsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="emn_ASRDateDec2021Member" abstract="true" name="ASRDateDec2021Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="emn_InvestmentsmeasuredatnetassetvalueMember" abstract="true" name="InvestmentsmeasuredatnetassetvalueMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="emn_EffectiveIncomeTaxRateReconciliationChangesInPreviouslyUnrecognizedTaxPositions" abstract="false" name="EffectiveIncomeTaxRateReconciliationChangesInPreviouslyUnrecognizedTaxPositions" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="emn_OperatingLeaseRightofUseAssetReclassified" abstract="false" name="OperatingLeaseRightofUseAssetReclassified" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="emn_NonDerivativesCarryingValueLineItemsLineItems" abstract="true" name="NonDerivativesCarryingValueLineItemsLineItems" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="emn_SiteClosureAcetateYarnEuropeMember" abstract="true" name="SiteClosureAcetateYarnEuropeMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="emn_ForeignFixedIncomeSecuritiesMember" abstract="true" name="ForeignFixedIncomeSecuritiesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="emn_ReceivableSoldUnderFactoringArrangement" abstract="false" name="ReceivableSoldUnderFactoringArrangement" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="emn_LongTermPerformanceShareAwardMember" abstract="true" name="LongTermPerformanceShareAwardMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="emn_OtherShareBasedCompensationAwardsMember" abstract="true" name="OtherShareBasedCompensationAwardsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="emn_EnvironmentalMattersAbstract" abstract="true" name="EnvironmentalMattersAbstract" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="emn_SpecialtyPlasticsProductLineMember" abstract="true" name="SpecialtyPlasticsProductLineMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="emn_FibersMember" abstract="true" name="FibersMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="emn_TrancheAxis" abstract="true" name="TrancheAxis" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrldt:dimensionItem" type="xbrli:stringItemType"/>
+  <xs:element id="emn_PercentageOfEmployeesRemunerationThatIsMatchedByEmployer" abstract="false" name="PercentageOfEmployeesRemunerationThatIsMatchedByEmployer" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+  <xs:element id="emn_AccumulatedDepreciation" abstract="false" name="AccumulatedDepreciation" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="emn_ShareBasedCompensationExpectedDividendYieldCalculationBasis" abstract="false" name="ShareBasedCompensationExpectedDividendYieldCalculationBasis" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="emn_NotesDue2042Member" abstract="true" name="NotesDue2042Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="emn_FairValueOfBorrowingsTableTextBlock" abstract="false" name="FairValueOfBorrowingsTableTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:textBlockItemType"/>
+  <xs:element id="emn_ScheduleOfNetBenefitCostsAndAmountsRecognizedInOciTableTextBlock" abstract="false" name="ScheduleOfNetBenefitCostsAndAmountsRecognizedInOciTableTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:textBlockItemType"/>
+  <xs:element id="emn_PercentageOfCompanyMatchOfEmployeesEligibleCompensationContributedToPlan" abstract="false" name="PercentageOfCompanyMatchOfEmployeesEligibleCompensationContributedToPlan" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+  <xs:element id="emn_OperatingLossCarryforwardsExpiringPeriodMinimum" abstract="false" name="OperatingLossCarryforwardsExpiringPeriodMinimum" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:durationItemType"/>
+  <xs:element id="emn_SharedSitesMember" abstract="true" name="SharedSitesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="emn_ShareBasedCompensationTermLifeOfOptions" abstract="false" name="ShareBasedCompensationTermLifeOfOptions" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="emn_EffectiveIncomeTaxRateReconciliationIncomeTaxExpenseBenefitResultingfromTaxReform" abstract="false" name="EffectiveIncomeTaxRateReconciliationIncomeTaxExpenseBenefitResultingfromTaxReform" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="emn_TreasuryStockHeldByCompanysCharitableFoundationInShares" abstract="false" name="TreasuryStockHeldByCompanysCharitableFoundationInShares" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="xbrli:sharesItemType"/>
+  <xs:element id="emn_NotesDueJanuary2024Member" abstract="true" name="NotesDueJanuary2024Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="emn_InvestmentsEquityMethodAndJointVenturesScheduleOfEquityMethodInvestmentsLineItems" abstract="true" name="InvestmentsEquityMethodAndJointVenturesScheduleOfEquityMethodInvestmentsLineItems" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="emn_ExercisePricesOf7690Member" abstract="true" name="ExercisePricesOf7690Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="emn_DefinedBenefitPensionAndOtherPostretirementBenefitPlansAbstract" abstract="true" name="DefinedBenefitPensionAndOtherPostretirementBenefitPlansAbstract" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="emn_ShenzhenJointVentureMember" abstract="true" name="ShenzhenJointVentureMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="emn_ExpectedLongTermRateOfReturnOnPlanAssets" abstract="false" name="ExpectedLongTermRateOfReturnOnPlanAssets" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+  <xs:element id="emn_AdditivesAndFunctionalProductsMember" abstract="true" name="AdditivesAndFunctionalProductsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="emn_A4.65notesdue2044Member" abstract="true" name="A4.65notesdue2044Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="emn_ExercisePricesOf106121Member" abstract="true" name="ExercisePricesOf106121Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="emn_TireAdditivesDisposalGroupMember" abstract="true" name="TireAdditivesDisposalGroupMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="emn_A1.875notesdueNovember2026Member" abstract="true" name="A1.875notesdueNovember2026Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="emn_PerformanceFilmsProductLineMember" abstract="true" name="PerformanceFilmsProductLineMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="emn_SiteClosureTireAdditivesAsiaPacificMember" abstract="true" name="SiteClosureTireAdditivesAsiaPacificMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="emn_DefinedContributionPlanAnticipatedPercentageContributionOfDomesticEmployeeSalary" abstract="false" name="DefinedContributionPlanAnticipatedPercentageContributionOfDomesticEmployeeSalary" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+  <xs:element id="emn_DivestituresAbstract" abstract="true" name="DivestituresAbstract" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="emn_DivestedBusinessesMember" abstract="true" name="DivestedBusinessesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="emn_NonwovensMember" abstract="true" name="NonwovensMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="emn_PensionAndOtherPostretirementBenefitsContributionsInExcessOfLessThanExpenses" abstract="false" name="PensionAndOtherPostretirementBenefitsContributionsInExcessOfLessThanExpenses" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="emn_RollForwardOfEnvironmentalRemediationLiabilitiesTableTextBlock" abstract="false" name="RollForwardOfEnvironmentalRemediationLiabilitiesTableTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:textBlockItemType"/>
+  <xs:element id="emn_CumulativebasisadjustmentsforfairvaluehedgesonbalancesheetTableTextBlock" abstract="false" name="CumulativebasisadjustmentsforfairvaluehedgesonbalancesheetTableTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:textBlockItemType"/>
+  <xs:element id="emn_OperatingLossCarryforwardsWithNoExpirationDates" abstract="false" name="OperatingLossCarryforwardsWithNoExpirationDates" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="emn_NonEnvironmentalAROMember" abstract="true" name="NonEnvironmentalAROMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="emn_CoatingsIndustryProductLineMember" abstract="true" name="CoatingsIndustryProductLineMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="emn_AmountspaidforEnvironmentalRemediationtoDateforSharedSites" abstract="false" name="AmountspaidforEnvironmentalRemediationtoDateforSharedSites" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="emn_ScheduleOfTaxReceivablesAndPayablesTableTextBlock" abstract="false" name="ScheduleOfTaxReceivablesAndPayablesTableTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:textBlockItemType"/>
+  <xs:element id="emn_NotesDueFebruary2027Member" abstract="true" name="NotesDueFebruary2027Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="emn_DerivativeNotionalAmountSettledInPeriod" abstract="false" name="DerivativeNotionalAmountSettledInPeriod" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="emn_CorporateAssetsMember" abstract="true" name="CorporateAssetsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="emn_WorkingCapitalManagementandOffBalanceSheetArrangementsAbstract" abstract="true" name="WorkingCapitalManagementandOffBalanceSheetArrangementsAbstract" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="emn_DirectorCompensationPlanMember" abstract="true" name="DirectorCompensationPlanMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="emn_DisposalGroupIncludingDiscontinuedOperationAssetsNet" abstract="false" name="DisposalGroupIncludingDiscontinuedOperationAssetsNet" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="emn_AllForeignCountriesMember" abstract="true" name="AllForeignCountriesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="emn_ProjectedYearthatreachesultimatetrendrate" abstract="false" name="ProjectedYearthatreachesultimatetrendrate" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:gYearItemType"/>
+  <xs:element id="emn_ProjectedBenefitObligationHealthCareCostTrendRateAssumedForNextFiscalYear" abstract="false" name="ProjectedBenefitObligationHealthCareCostTrendRateAssumedForNextFiscalYear" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+  <xs:element id="emn_CommercialpaperandshorttermborrowingsMember" abstract="true" name="CommercialpaperandshorttermborrowingsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="emn_SiteClosurePerformanceFilmsNorthAmerica2020Member" abstract="true" name="SiteClosurePerformanceFilmsNorthAmerica2020Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="emn_DeferredTaxAssetsLiabilitiesConsolidatedStatementsOfFinancialPositionAbstract" abstract="true" name="DeferredTaxAssetsLiabilitiesConsolidatedStatementsOfFinancialPositionAbstract" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="emn_IntermediatesproductlineMember" abstract="true" name="IntermediatesproductlineMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="emn_AcetateYarnandAcetylChemicalsMember" abstract="true" name="AcetateYarnandAcetylChemicalsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="emn_UnrecognizedTaxBenefitsInterestIncomeFromExpirationofStatuteofLimitations" abstract="false" name="UnrecognizedTaxBenefitsInterestIncomeFromExpirationofStatuteofLimitations" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="emn_SharesCoveredbyFullAwardValuePerShare" abstract="false" name="SharesCoveredbyFullAwardValuePerShare" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:perShareItemType"/>
+  <xs:element id="emn_AcetylChemicalProductsMember" abstract="true" name="AcetylChemicalProductsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="emn_ComponentsOfEarningsLossFromContinuingOperationsAndProvisionsForIncomeTaxesTableTextBlock" abstract="false" name="ComponentsOfEarningsLossFromContinuingOperationsAndProvisionsForIncomeTaxesTableTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:textBlockItemType"/>
+  <xs:element id="emn_DisposalGroupIncludingDiscontinuedOperationsTransactionCosts" abstract="false" name="DisposalGroupIncludingDiscontinuedOperationsTransactionCosts" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="emn_PlasticizersProductLineMember" abstract="true" name="PlasticizersProductLineMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="emn_NotesDueAugust2022Member" abstract="true" name="NotesDueAugust2022Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="emn_A758NotesDueJune2024Member" abstract="true" name="A758NotesDueJune2024Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="emn_AcetateTowJointVentureMember" abstract="true" name="AcetateTowJointVentureMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="emn_TrancheThreeMember" abstract="true" name="TrancheThreeMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="emn_OperatingLossCarryforwardsExpiringPeriodMaximum" abstract="false" name="OperatingLossCarryforwardsExpiringPeriodMaximum" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:durationItemType"/>
+  <xs:element id="emn_SharesOfCommonStockIssuedAbstract" abstract="true" name="SharesOfCommonStockIssuedAbstract" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="emn_GrowthInitiativesMember" abstract="true" name="GrowthInitiativesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="emn_NotesDue2023Member" abstract="true" name="NotesDue2023Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="emn_AccoyaJointVentureMember" abstract="true" name="AccoyaJointVentureMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="emn_ShareBasedCompensationPolicyForIssuingSharesToNonemployeeDirectorsUponExercise" abstract="false" name="ShareBasedCompensationPolicyForIssuingSharesToNonemployeeDirectorsUponExercise" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="emn_TransactionCostsAndGainLossOnBusinessMember" abstract="true" name="TransactionCostsAndGainLossOnBusinessMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="emn_OtherSegmentsAxis" abstract="true" name="OtherSegmentsAxis" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrldt:dimensionItem" type="xbrli:stringItemType"/>
+  <xs:element id="emn_PeriodicBenefitCostHealthCareCostTrendRateAssumedForNextFiscalYear" abstract="false" name="PeriodicBenefitCostHealthCareCostTrendRateAssumedForNextFiscalYear" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+  <xs:element id="emn_A4.5NotesDueDec2028Member" abstract="true" name="A4.5NotesDueDec2028Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="emn_PropertyPlantAndEquipmentAdditionalDisclosuresAbstract" abstract="true" name="PropertyPlantAndEquipmentAdditionalDisclosuresAbstract" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="emn_ReconciliationofbeginningandendingamountsofaccruedinterestrelatedtounrecognizedtaxbenefitsRollForward" abstract="true" name="ReconciliationofbeginningandendingamountsofaccruedinterestrelatedtounrecognizedtaxbenefitsRollForward" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="emn_ExercisePricesOf6175Domain" abstract="true" name="ExercisePricesOf6175Domain" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="emn_InterestpayableMember" abstract="true" name="InterestpayableMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="emn_AssetImpairmentsAndRestructuringChargesNetMember" abstract="true" name="AssetImpairmentsAndRestructuringChargesNetMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="emn_InterlayersProductLineMember" abstract="true" name="InterlayersProductLineMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="emn_TrancheOneMember" abstract="true" name="TrancheOneMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="emn_Environmentalcapitalexpenditures" abstract="false" name="Environmentalcapitalexpenditures" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+</xs:schema>

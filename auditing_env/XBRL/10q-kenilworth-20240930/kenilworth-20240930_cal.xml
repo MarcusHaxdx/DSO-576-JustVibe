@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="us-ascii" standalone="yes"?>
+<!--XBRL Document Created with XBRLMaster-->
+<!--Version: 2.3.08-->
+<!--Based on XBRL 2.1-->
+<!--Date of creation: 11/14/2024-->
+<!--Software architectural design and coding: A'c Dharmapremananda Avt.-->
+<!--Copyright (c) 2024 I-NET Business Solutions, Inc. All Rights Reserved.-->
+<link:linkbase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:link="http://www.xbrl.org/2003/linkbase" xsi:schemaLocation="http://www.xbrl.org/2003/linkbase http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd">
+  <link:roleRef roleURI="http://kenilworth.com/role/Cover" xlink:href="kenilworth-20240930.xsd#Cover" xlink:type="simple" />
+  <link:roleRef roleURI="http://kenilworth.com/role/ConsolidatedBalanceSheets" xlink:href="kenilworth-20240930.xsd#ConsolidatedBalanceSheets" xlink:type="simple" />
+  <link:roleRef roleURI="http://kenilworth.com/role/ConsolidatedBalanceSheetsParenthetical" xlink:href="kenilworth-20240930.xsd#ConsolidatedBalanceSheetsParenthetical" xlink:type="simple" />
+  <link:roleRef roleURI="http://kenilworth.com/role/ConsolidatedStatementsOfOperationsUnaudited" xlink:href="kenilworth-20240930.xsd#ConsolidatedStatementsOfOperationsUnaudited" xlink:type="simple" />
+  <link:roleRef roleURI="http://kenilworth.com/role/ConsolidatedChangesInStockholdersEquityUnaudited" xlink:href="kenilworth-20240930.xsd#ConsolidatedChangesInStockholdersEquityUnaudited" xlink:type="simple" />
+  <link:roleRef roleURI="http://kenilworth.com/role/ConsolidatedStatementOfCashFlowsUnaudited" xlink:href="kenilworth-20240930.xsd#ConsolidatedStatementOfCashFlowsUnaudited" xlink:type="simple" />
+  <link:roleRef roleURI="http://kenilworth.com/role/TheCompanyAndNatureOfBusiness" xlink:href="kenilworth-20240930.xsd#TheCompanyAndNatureOfBusiness" xlink:type="simple" />
+  <link:roleRef roleURI="http://kenilworth.com/role/SummaryOfSignificantAccountingPolicies" xlink:href="kenilworth-20240930.xsd#SummaryOfSignificantAccountingPolicies" xlink:type="simple" />
+  <link:roleRef roleURI="http://kenilworth.com/role/GoingConcernUncertainty" xlink:href="kenilworth-20240930.xsd#GoingConcernUncertainty" xlink:type="simple" />
+  <link:roleRef roleURI="http://kenilworth.com/role/PayrollTaxesPayable" xlink:href="kenilworth-20240930.xsd#PayrollTaxesPayable" xlink:type="simple" />
+  <link:roleRef roleURI="http://kenilworth.com/role/SubsequentEvents" xlink:href="kenilworth-20240930.xsd#SubsequentEvents" xlink:type="simple" />
+  <link:roleRef roleURI="http://kenilworth.com/role/SummaryOfSignificantAccountingPoliciesPolicies" xlink:href="kenilworth-20240930.xsd#SummaryOfSignificantAccountingPoliciesPolicies" xlink:type="simple" />
+  <link:roleRef roleURI="http://kenilworth.com/role/SummaryOfSignificantAccountingPoliciesDetailsNarrative" xlink:href="kenilworth-20240930.xsd#SummaryOfSignificantAccountingPoliciesDetailsNarrative" xlink:type="simple" />
+  <link:roleRef roleURI="http://kenilworth.com/role/GoingConcernUncertaintyDetailsNarrative" xlink:href="kenilworth-20240930.xsd#GoingConcernUncertaintyDetailsNarrative" xlink:type="simple" />
+  <link:calculationLink xlink:type="extended" xlink:role="http://kenilworth.com/role/Cover" xlink:title="00000001 - Document - Document and Entity Information" />
+  <link:calculationLink xlink:type="extended" xlink:role="http://kenilworth.com/role/ConsolidatedBalanceSheets" xlink:title="000002 - Statement - CONSOLIDATED BALANCE SHEETS">
+    <link:loc xlink:type="locator" xlink:href="https://xbrl.fasb.org/us-gaap/2024/elts/us-gaap-2024.xsd#us-gaap_AssetsCurrent" xlink:label="loc_us-gaapAssetsCurrent" />
+    <link:loc xlink:type="locator" xlink:href="https://xbrl.fasb.org/us-gaap/2024/elts/us-gaap-2024.xsd#us-gaap_Cash" xlink:label="loc_us-gaapCash" />
+    <link:calculationArc order="2" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="loc_us-gaapAssetsCurrent" xlink:to="loc_us-gaapCash" xlink:type="arc" weight="1" />
+    <link:loc xlink:type="locator" xlink:href="kenilworth-20240930.xsd#kenilworth_RelatedPartyTransactionAmountsDueFromRelatedParty" xlink:label="loc_kenilworthRelatedPartyTransactionAmountsDueFromRelatedParty" />
+    <link:calculationArc order="3" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="loc_us-gaapAssetsCurrent" xlink:to="loc_kenilworthRelatedPartyTransactionAmountsDueFromRelatedParty" xlink:type="arc" weight="1" />
+    <link:loc xlink:type="locator" xlink:href="https://xbrl.fasb.org/us-gaap/2024/elts/us-gaap-2024.xsd#us-gaap_StockholdersEquityNoteSubscriptionsReceivable" xlink:label="loc_us-gaapStockholdersEquityNoteSubscriptionsReceivable" />
+    <link:calculationArc order="4" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="loc_us-gaapAssetsCurrent" xlink:to="loc_us-gaapStockholdersEquityNoteSubscriptionsReceivable" xlink:type="arc" weight="1" />
+    <link:loc xlink:type="locator" xlink:href="https://xbrl.fasb.org/us-gaap/2024/elts/us-gaap-2024.xsd#us-gaap_PrepaidExpenseCurrent" xlink:label="loc_us-gaapPrepaidExpenseCurrent" />
+    <link:calculationArc order="5" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="loc_us-gaapAssetsCurrent" xlink:to="loc_us-gaapPrepaidExpenseCurrent" xlink:type="arc" weight="1" />
+    <link:loc xlink:type="locator" xlink:href="https://xbrl.fasb.org/us-gaap/2024/elts/us-gaap-2024.xsd#us-gaap_Assets" xlink:label="loc_us-gaapAssets" />
+    <link:calculationArc order="6" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="loc_us-gaapAssets" xlink:to="loc_us-gaapAssetsCurrent" xlink:type="arc" weight="1" />
+    <link:loc xlink:type="locator" xlink:href="https://xbrl.fasb.org/us-gaap/2024/elts/us-gaap-2024.xsd#us-gaap_IndefiniteLivedLicenseAgreements" xlink:label="loc_us-gaapIndefiniteLivedLicenseAgreements" />
+    <link:calculationArc order="7" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="loc_us-gaapAssets" xlink:to="loc_us-gaapIndefiniteLivedLicenseAgreements" xlink:type="arc" weight="1" />
+    <link:loc xlink:type="locator" xlink:href="https://xbrl.fasb.org/us-gaap/2024/elts/us-gaap-2024.xsd#us-gaap_Deposits" xlink:label="loc_us-gaapDeposits" />
+    <link:calculationArc order="8" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="loc_us-gaapAssets" xlink:to="loc_us-gaapDeposits" xlink:type="arc" weight="-1" />
+    <link:loc xlink:type="locator" xlink:href="https://xbrl.fasb.org/us-gaap/2024/elts/us-gaap-2024.xsd#us-gaap_OtherFiniteLivedIntangibleAssetsGross" xlink:label="loc_us-gaapOtherFiniteLivedIntangibleAssetsGross" />
+    <link:calculationArc order="9" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="loc_us-gaapAssets" xlink:to="loc_us-gaapOtherFiniteLivedIntangibleAssetsGross" xlink:type="arc" weight="1" />
+    <link:loc xlink:type="locator" xlink:href="https://xbrl.fasb.org/us-gaap/2024/elts/us-gaap-2024.xsd#us-gaap_FiniteLivedTrademarksGross" xlink:label="loc_us-gaapFiniteLivedTrademarksGross" />
+    <link:calculationArc order="10" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="loc_us-gaapAssets" xlink:to="loc_us-gaapFiniteLivedTrademarksGross" xlink:type="arc" weight="1" />
+    <link:loc xlink:type="locator" xlink:href="https://xbrl.fasb.org/us-gaap/2024/elts/us-gaap-2024.xsd#us-gaap_LiabilitiesCurrent" xlink:label="loc_us-gaapLiabilitiesCurrent" />
+    <link:loc xlink:type="locator" xlink:href="https://xbrl.fasb.org/us-gaap/2024/elts/us-gaap-2024.xsd#us-gaap_AccountsPayableAndAccruedLiabilitiesCurrent" xlink:label="loc_us-gaapAccountsPayableAndAccruedLiabilitiesCurrent" />
+    <link:calculationArc order="11" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="loc_us-gaapLiabilitiesCurrent" xlink:to="loc_us-gaapAccountsPayableAndAccruedLiabilitiesCurrent" xlink:type="arc" weight="1" />
+    <link:loc xlink:type="locator" xlink:href="kenilworth-20240930.xsd#kenilworth_DueToRelatedPartyCurrent" xlink:label="loc_kenilworthDueToRelatedPartyCurrent" />
+    <link:calculationArc order="12" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="loc_us-gaapLiabilitiesCurrent" xlink:to="loc_kenilworthDueToRelatedPartyCurrent" xlink:type="arc" weight="1" />
+    <link:loc xlink:type="locator" xlink:href="https://xbrl.fasb.org/us-gaap/2024/elts/us-gaap-2024.xsd#us-gaap_NotesPayableCurrent" xlink:label="loc_us-gaapNotesPayableCurrent" />
+    <link:calculationArc order="13" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="loc_us-gaapLiabilitiesCurrent" xlink:to="loc_us-gaapNotesPayableCurrent" xlink:type="arc" weight="1" />
+    <link:loc xlink:type="locator" xlink:href="https://xbrl.fasb.org/us-gaap/2024/elts/us-gaap-2024.xsd#us-gaap_DeferredIncome" xlink:label="loc_us-gaapDeferredIncome" />
+    <link:calculationArc order="14" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="loc_us-gaapLiabilitiesCurrent" xlink:to="loc_us-gaapDeferredIncome" xlink:type="arc" weight="1" />
+    <link:loc xlink:type="locator" xlink:href="https://xbrl.fasb.org/us-gaap/2024/elts/us-gaap-2024.xsd#us-gaap_Liabilities" xlink:label="loc_us-gaapLiabilities" />
+    <link:calculationArc order="15" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="loc_us-gaapLiabilities" xlink:to="loc_us-gaapLiabilitiesCurrent" xlink:type="arc" weight="1" />
+    <link:loc xlink:type="locator" xlink:href="https://xbrl.fasb.org/us-gaap/2024/elts/us-gaap-2024.xsd#us-gaap_LiabilitiesOtherThanLongtermDebtNoncurrent" xlink:label="loc_us-gaapLiabilitiesOtherThanLongtermDebtNoncurrent" />
+    <link:calculationArc order="16" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="loc_us-gaapLiabilities" xlink:to="loc_us-gaapLiabilitiesOtherThanLongtermDebtNoncurrent" xlink:type="arc" weight="1" />
+    <link:loc xlink:type="locator" xlink:href="https://xbrl.fasb.org/us-gaap/2024/elts/us-gaap-2024.xsd#us-gaap_StockholdersEquity" xlink:label="loc_us-gaapStockholdersEquity" />
+    <link:loc xlink:type="locator" xlink:href="https://xbrl.fasb.org/us-gaap/2024/elts/us-gaap-2024.xsd#us-gaap_CommonStockValue" xlink:label="loc_us-gaapCommonStockValue" />
+    <link:calculationArc order="17" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="loc_us-gaapStockholdersEquity" xlink:to="loc_us-gaapCommonStockValue" xlink:type="arc" weight="1" />
+    <link:loc xlink:type="locator" xlink:href="https://xbrl.fasb.org/us-gaap/2024/elts/us-gaap-2024.xsd#us-gaap_AdditionalPaidInCapital" xlink:label="loc_us-gaapAdditionalPaidInCapital" />
+    <link:calculationArc order="18" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="loc_us-gaapStockholdersEquity" xlink:to="loc_us-gaapAdditionalPaidInCapital" xlink:type="arc" weight="1" />
+    <link:loc xlink:type="locator" xlink:href="https://xbrl.fasb.org/us-gaap/2024/elts/us-gaap-2024.xsd#us-gaap_RetainedEarningsAccumulatedDeficit" xlink:label="loc_us-gaapRetainedEarningsAccumulatedDeficit" />
+    <link:calculationArc order="19" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="loc_us-gaapStockholdersEquity" xlink:to="loc_us-gaapRetainedEarningsAccumulatedDeficit" xlink:type="arc" weight="1" />
+    <link:loc xlink:type="locator" xlink:href="https://xbrl.fasb.org/us-gaap/2024/elts/us-gaap-2024.xsd#us-gaap_MinorityInterestInJointVentures" xlink:label="loc_us-gaapMinorityInterestInJointVentures" />
+    <link:calculationArc order="20" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="loc_us-gaapStockholdersEquity" xlink:to="loc_us-gaapMinorityInterestInJointVentures" xlink:type="arc" weight="1" />
+    <link:loc xlink:type="locator" xlink:href="https://xbrl.fasb.org/us-gaap/2024/elts/us-gaap-2024.xsd#us-gaap_PreferredStockValue" xlink:label="loc_us-gaapPreferredStockValue" />
+    <link:calculationArc order="21" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="loc_us-gaapStockholdersEquity" xlink:to="loc_us-gaapPreferredStockValue" xlink:type="arc" weight="1" />
+    <link:loc xlink:type="locator" xlink:href="https://xbrl.fasb.org/us-gaap/2024/elts/us-gaap-2024.xsd#us-gaap_LiabilitiesAndStockholdersEquity" xlink:label="loc_us-gaapLiabilitiesAndStockholdersEquity" />
+    <link:calculationArc order="22" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="loc_us-gaapLiabilitiesAndStockholdersEquity" xlink:to="loc_us-gaapLiabilities" xlink:type="arc" weight="1" />
+    <link:calculationArc order="23" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="loc_us-gaapLiabilitiesAndStockholdersEquity" xlink:to="loc_us-gaapStockholdersEquity" xlink:type="arc" weight="1" />
+  </link:calculationLink>
+  <link:calculationLink xlink:type="extended" xlink:role="http://kenilworth.com/role/ConsolidatedBalanceSheetsParenthetical" xlink:title="000003 - Statement - CONSOLIDATED BALANCE SHEETS (Parenthetical)" />
+  <link:calculationLink xlink:type="extended" xlink:role="http://kenilworth.com/role/ConsolidatedStatementsOfOperationsUnaudited" xlink:title="000004 - Statement - CONSOLIDATED STATEMENTS OF OPERATIONS (Unaudited)">
+    <link:loc xlink:type="locator" xlink:href="https://xbrl.fasb.org/us-gaap/2024/elts/us-gaap-2024.xsd#us-gaap_GrossProfit" xlink:label="loc_us-gaapGrossProfit" />
+    <link:loc xlink:type="locator" xlink:href="https://xbrl.fasb.org/us-gaap/2024/elts/us-gaap-2024.xsd#us-gaap_Revenues" xlink:label="loc_us-gaapRevenues" />
+    <link:calculationArc order="2" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="loc_us-gaapGrossProfit" xlink:to="loc_us-gaapRevenues" xlink:type="arc" weight="1" />
+    <link:loc xlink:type="locator" xlink:href="https://xbrl.fasb.org/us-gaap/2024/elts/us-gaap-2024.xsd#us-gaap_CostOfRevenue" xlink:label="loc_us-gaapCostOfRevenue" />
+    <link:calculationArc order="3" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="loc_us-gaapGrossProfit" xlink:to="loc_us-gaapCostOfRevenue" xlink:type="arc" weight="-1" />
+    <link:loc xlink:type="locator" xlink:href="https://xbrl.fasb.org/us-gaap/2024/elts/us-gaap-2024.xsd#us-gaap_OperatingExpenses" xlink:label="loc_us-gaapOperatingExpenses" />
+    <link:loc xlink:type="locator" xlink:href="https://xbrl.fasb.org/us-gaap/2024/elts/us-gaap-2024.xsd#us-gaap_ExchangeFees" xlink:label="loc_us-gaapExchangeFees" />
+    <link:calculationArc order="4" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="loc_us-gaapOperatingExpenses" xlink:to="loc_us-gaapExchangeFees" xlink:type="arc" weight="1" />
+    <link:loc xlink:type="locator" xlink:href="https://xbrl.fasb.org/us-gaap/2024/elts/us-gaap-2024.xsd#us-gaap_ProfessionalFees" xlink:label="loc_us-gaapProfessionalFees" />
+    <link:calculationArc order="5" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="loc_us-gaapOperatingExpenses" xlink:to="loc_us-gaapProfessionalFees" xlink:type="arc" weight="1" />
+    <link:loc xlink:type="locator" xlink:href="https://xbrl.fasb.org/us-gaap/2024/elts/us-gaap-2024.xsd#us-gaap_GeneralAndAdministrativeExpense" xlink:label="loc_us-gaapGeneralAndAdministrativeExpense" />
+    <link:calculationArc order="6" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="loc_us-gaapOperatingExpenses" xlink:to="loc_us-gaapGeneralAndAdministrativeExpense" xlink:type="arc" weight="1" />
+    <link:loc xlink:type="locator" xlink:href="https://xbrl.fasb.org/us-gaap/2024/elts/us-gaap-2024.xsd#us-gaap_OperatingIncomeLoss" xlink:label="loc_us-gaapOperatingIncomeLoss" />
+    <link:calculationArc order="7" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="loc_us-gaapOperatingIncomeLoss" xlink:to="loc_us-gaapGrossProfit" xlink:type="arc" weight="1" />
+    <link:calculationArc order="8" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="loc_us-gaapOperatingIncomeLoss" xlink:to="loc_us-gaapOperatingExpenses" xlink:type="arc" weight="-1" />
+    <link:loc xlink:type="locator" xlink:href="https://xbrl.fasb.org/us-gaap/2024/elts/us-gaap-2024.xsd#us-gaap_OtherNoncashIncomeExpense" xlink:label="loc_us-gaapOtherNoncashIncomeExpense" />
+    <link:loc xlink:type="locator" xlink:href="https://xbrl.fasb.org/us-gaap/2024/elts/us-gaap-2024.xsd#us-gaap_OtherExpenses" xlink:label="loc_us-gaapOtherExpenses" />
+    <link:calculationArc order="9" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="loc_us-gaapOtherNoncashIncomeExpense" xlink:to="loc_us-gaapOtherExpenses" xlink:type="arc" weight="-1" />
+    <link:loc xlink:type="locator" xlink:href="https://xbrl.fasb.org/us-gaap/2024/elts/us-gaap-2024.xsd#us-gaap_NetIncomeLoss" xlink:label="loc_us-gaapNetIncomeLoss" />
+    <link:calculationArc order="10" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="loc_us-gaapNetIncomeLoss" xlink:to="loc_us-gaapOperatingIncomeLoss" xlink:type="arc" weight="1" />
+    <link:loc xlink:type="locator" xlink:href="kenilworth-20240930.xsd#kenilworth_NonControllingInterest" xlink:label="loc_kenilworthNonControllingInterest" />
+    <link:calculationArc order="11" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="loc_us-gaapNetIncomeLoss" xlink:to="loc_kenilworthNonControllingInterest" xlink:type="arc" weight="1" />
+    <link:calculationArc order="12" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="loc_us-gaapNetIncomeLoss" xlink:to="loc_us-gaapOtherNoncashIncomeExpense" xlink:type="arc" weight="1" />
+  </link:calculationLink>
+  <link:calculationLink xlink:type="extended" xlink:role="http://kenilworth.com/role/ConsolidatedChangesInStockholdersEquityUnaudited" xlink:title="000005 - Statement - CONSOLIDATED CHANGES IN STOCKHOLDERS EQUITY (Unaudited)" />
+  <link:calculationLink xlink:type="extended" xlink:role="http://kenilworth.com/role/ConsolidatedStatementOfCashFlowsUnaudited" xlink:title="000006 - Statement - CONSOLIDATED STATEMENT OF CASH FLOWS (Unaudited)">
+    <link:loc xlink:type="locator" xlink:href="https://xbrl.fasb.org/us-gaap/2024/elts/us-gaap-2024.xsd#us-gaap_NetCashProvidedByUsedInOperatingActivities" xlink:label="loc_us-gaapNetCashProvidedByUsedInOperatingActivities" />
+    <link:loc xlink:type="locator" xlink:href="https://xbrl.fasb.org/us-gaap/2024/elts/us-gaap-2024.xsd#us-gaap_IncreaseDecreaseInDueToRelatedParties" xlink:label="loc_us-gaapIncreaseDecreaseInDueToRelatedParties" />
+    <link:calculationArc order="2" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="loc_us-gaapNetCashProvidedByUsedInOperatingActivities" xlink:to="loc_us-gaapIncreaseDecreaseInDueToRelatedParties" xlink:type="arc" weight="1" />
+    <link:loc xlink:type="locator" xlink:href="https://xbrl.fasb.org/us-gaap/2024/elts/us-gaap-2024.xsd#us-gaap_IncreaseDecreaseInExploitationLiabilities" xlink:label="loc_us-gaapIncreaseDecreaseInExploitationLiabilities" />
+    <link:calculationArc order="3" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="loc_us-gaapNetCashProvidedByUsedInOperatingActivities" xlink:to="loc_us-gaapIncreaseDecreaseInExploitationLiabilities" xlink:type="arc" weight="1" />
+    <link:loc xlink:type="locator" xlink:href="https://xbrl.fasb.org/us-gaap/2024/elts/us-gaap-2024.xsd#us-gaap_IncreaseDecreaseInPrepaidExpensesOther" xlink:label="loc_us-gaapIncreaseDecreaseInPrepaidExpensesOther" />
+    <link:calculationArc order="4" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="loc_us-gaapNetCashProvidedByUsedInOperatingActivities" xlink:to="loc_us-gaapIncreaseDecreaseInPrepaidExpensesOther" xlink:type="arc" weight="-1" />
+    <link:loc xlink:type="locator" xlink:href="https://xbrl.fasb.org/us-gaap/2024/elts/us-gaap-2024.xsd#us-gaap_ProfitLoss" xlink:label="loc_us-gaapProfitLoss" />
+    <link:calculationArc order="5" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="loc_us-gaapNetCashProvidedByUsedInOperatingActivities" xlink:to="loc_us-gaapProfitLoss" xlink:type="arc" weight="-1" />
+    <link:loc xlink:type="locator" xlink:href="https://xbrl.fasb.org/us-gaap/2024/elts/us-gaap-2024.xsd#us-gaap_AdjustmentsToAdditionalPaidInCapitalMarkToMarket" xlink:label="loc_us-gaapAdjustmentsToAdditionalPaidInCapitalMarkToMarket" />
+    <link:calculationArc order="6" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="loc_us-gaapNetCashProvidedByUsedInOperatingActivities" xlink:to="loc_us-gaapAdjustmentsToAdditionalPaidInCapitalMarkToMarket" xlink:type="arc" weight="-1" />
+    <link:loc xlink:type="locator" xlink:href="https://xbrl.fasb.org/us-gaap/2024/elts/us-gaap-2024.xsd#us-gaap_NetCashProvidedByUsedInInvestingActivities" xlink:label="loc_us-gaapNetCashProvidedByUsedInInvestingActivities" />
+    <link:loc xlink:type="locator" xlink:href="kenilworth-20240930.xsd#kenilworth_PaymentToAcquireLicenseAgreements" xlink:label="loc_kenilworthPaymentToAcquireLicenseAgreements" />
+    <link:calculationArc order="7" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="loc_us-gaapNetCashProvidedByUsedInInvestingActivities" xlink:to="loc_kenilworthPaymentToAcquireLicenseAgreements" xlink:type="arc" weight="-1" />
+    <link:loc xlink:type="locator" xlink:href="https://xbrl.fasb.org/us-gaap/2024/elts/us-gaap-2024.xsd#us-gaap_PaymentsToAcquireIntangibleAssets" xlink:label="loc_us-gaapPaymentsToAcquireIntangibleAssets" />
+    <link:calculationArc order="8" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="loc_us-gaapNetCashProvidedByUsedInInvestingActivities" xlink:to="loc_us-gaapPaymentsToAcquireIntangibleAssets" xlink:type="arc" weight="-1" />
+    <link:loc xlink:type="locator" xlink:href="kenilworth-20240930.xsd#kenilworth_ProceedsFromIntellectualPropertyProprietaryDatabasesAndTechnology" xlink:label="loc_kenilworthProceedsFromIntellectualPropertyProprietaryDatabasesAndTechnology" />
+    <link:calculationArc order="9" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="loc_us-gaapNetCashProvidedByUsedInInvestingActivities" xlink:to="loc_kenilworthProceedsFromIntellectualPropertyProprietaryDatabasesAndTechnology" xlink:type="arc" weight="1" />
+    <link:loc xlink:type="locator" xlink:href="kenilworth-20240930.xsd#kenilworth_ProceedsFromTrademarksAndTradenames" xlink:label="loc_kenilworthProceedsFromTrademarksAndTradenames" />
+    <link:calculationArc order="10" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="loc_us-gaapNetCashProvidedByUsedInInvestingActivities" xlink:to="loc_kenilworthProceedsFromTrademarksAndTradenames" xlink:type="arc" weight="-1" />
+    <link:loc xlink:type="locator" xlink:href="https://xbrl.fasb.org/us-gaap/2024/elts/us-gaap-2024.xsd#us-gaap_NetCashProvidedByUsedInFinancingActivities" xlink:label="loc_us-gaapNetCashProvidedByUsedInFinancingActivities" />
+    <link:loc xlink:type="locator" xlink:href="https://xbrl.fasb.org/us-gaap/2024/elts/us-gaap-2024.xsd#us-gaap_ProceedsFromIssuanceOfCommonStock" xlink:label="loc_us-gaapProceedsFromIssuanceOfCommonStock" />
+    <link:calculationArc order="11" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="loc_us-gaapNetCashProvidedByUsedInFinancingActivities" xlink:to="loc_us-gaapProceedsFromIssuanceOfCommonStock" xlink:type="arc" weight="1" />
+    <link:loc xlink:type="locator" xlink:href="kenilworth-20240930.xsd#kenilworth_ProceedandPaymentFromAdditionalInCapital" xlink:label="loc_kenilworthProceedandPaymentFromAdditionalInCapital" />
+    <link:calculationArc order="12" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="loc_us-gaapNetCashProvidedByUsedInFinancingActivities" xlink:to="loc_kenilworthProceedandPaymentFromAdditionalInCapital" xlink:type="arc" weight="-1" />
+    <link:loc xlink:type="locator" xlink:href="https://xbrl.fasb.org/us-gaap/2024/elts/us-gaap-2024.xsd#us-gaap_ProceedsFromIssuanceOfMediumTermNotes" xlink:label="loc_us-gaapProceedsFromIssuanceOfMediumTermNotes" />
+    <link:calculationArc order="13" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="loc_us-gaapNetCashProvidedByUsedInFinancingActivities" xlink:to="loc_us-gaapProceedsFromIssuanceOfMediumTermNotes" xlink:type="arc" weight="1" />
+    <link:loc xlink:type="locator" xlink:href="https://xbrl.fasb.org/us-gaap/2024/elts/us-gaap-2024.xsd#us-gaap_CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalentsPeriodIncreaseDecreaseExcludingExchangeRateEffect" xlink:label="loc_us-gaapCashCashEquivalentsRestrictedCashAndRestrictedCashEquivalentsPeriodIncreaseDecreaseExcludingExchangeRateEffect" />
+    <link:calculationArc order="14" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="loc_us-gaapCashCashEquivalentsRestrictedCashAndRestrictedCashEquivalentsPeriodIncreaseDecreaseExcludingExchangeRateEffect" xlink:to="loc_us-gaapNetCashProvidedByUsedInOperatingActivities" xlink:type="arc" weight="1" />
+    <link:calculationArc order="15" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="loc_us-gaapCashCashEquivalentsRestrictedCashAndRestrictedCashEquivalentsPeriodIncreaseDecreaseExcludingExchangeRateEffect" xlink:to="loc_us-gaapNetCashProvidedByUsedInInvestingActivities" xlink:type="arc" weight="1" />
+    <link:calculationArc order="16" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="loc_us-gaapCashCashEquivalentsRestrictedCashAndRestrictedCashEquivalentsPeriodIncreaseDecreaseExcludingExchangeRateEffect" xlink:to="loc_us-gaapNetCashProvidedByUsedInFinancingActivities" xlink:type="arc" weight="1" />
+  </link:calculationLink>
+  <link:calculationLink xlink:type="extended" xlink:role="http://kenilworth.com/role/TheCompanyAndNatureOfBusiness" xlink:title="000007 - Disclosure - THE COMPANY AND NATURE OF BUSINESS" />
+  <link:calculationLink xlink:type="extended" xlink:role="http://kenilworth.com/role/SummaryOfSignificantAccountingPolicies" xlink:title="000008 - Disclosure - SUMMARY OF SIGNIFICANT ACCOUNTING POLICIES" />
+  <link:calculationLink xlink:type="extended" xlink:role="http://kenilworth.com/role/GoingConcernUncertainty" xlink:title="000009 - Disclosure - GOING CONCERN UNCERTAINTY" />
+  <link:calculationLink xlink:type="extended" xlink:role="http://kenilworth.com/role/PayrollTaxesPayable" xlink:title="000010 - Disclosure - PAYROLL TAXES PAYABLE" />
+  <link:calculationLink xlink:type="extended" xlink:role="http://kenilworth.com/role/SubsequentEvents" xlink:title="000011 - Disclosure - SUBSEQUENT EVENTS" />
+  <link:calculationLink xlink:type="extended" xlink:role="http://kenilworth.com/role/SummaryOfSignificantAccountingPoliciesPolicies" xlink:title="000012 - Disclosure - SUMMARY OF SIGNIFICANT ACCOUNTING POLICIES (Policies)" />
+  <link:calculationLink xlink:type="extended" xlink:role="http://kenilworth.com/role/SummaryOfSignificantAccountingPoliciesDetailsNarrative" xlink:title="000013 - Disclosure - SUMMARY OF SIGNIFICANT ACCOUNTING POLICIES (Details Narrative)" />
+  <link:calculationLink xlink:type="extended" xlink:role="http://kenilworth.com/role/GoingConcernUncertaintyDetailsNarrative" xlink:title="000014 - Disclosure - GOING CONCERN UNCERTAINTY (Details Narrative)" />
+</link:linkbase>

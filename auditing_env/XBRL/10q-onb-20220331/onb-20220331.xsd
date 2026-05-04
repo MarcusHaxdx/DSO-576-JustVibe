@@ -1,0 +1,879 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--XBRL Document Created with Wdesk from Workiva-->
+<!--Copyright 2022 Workiva-->
+<!--r:692f678b-9911-48ee-844b-7e8c78e00248,g:1102da1e-7dab-4dbd-adc1-b113ee5d4183-->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:onb="http://www.oldnational.com/20220331" xmlns:xbrli="http://www.xbrl.org/2003/instance" xmlns:dtr-types="http://www.xbrl.org/dtr/type/2020-01-21" xmlns:xbrldt="http://xbrl.org/2005/xbrldt" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://www.oldnational.com/20220331">
+  <xs:import namespace="http://fasb.org/srt/2021-01-31" schemaLocation="https://xbrl.fasb.org/srt/2021/elts/srt-2021-01-31.xsd"/>
+  <xs:import namespace="http://fasb.org/us-gaap/2021-01-31" schemaLocation="https://xbrl.fasb.org/us-gaap/2021/elts/us-gaap-2021-01-31.xsd"/>
+  <xs:import namespace="http://www.w3.org/1999/xlink" schemaLocation="http://www.xbrl.org/2003/xlink-2003-12-31.xsd"/>
+  <xs:import namespace="http://www.xbrl.org/2003/instance" schemaLocation="http://www.xbrl.org/2003/xbrl-instance-2003-12-31.xsd"/>
+  <xs:import namespace="http://www.xbrl.org/2003/linkbase" schemaLocation="http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd"/>
+  <xs:import namespace="http://www.xbrl.org/dtr/type/2020-01-21" schemaLocation="https://www.xbrl.org/dtr/type/2020-01-21/types.xsd"/>
+  <xs:import namespace="http://xbrl.org/2005/xbrldt" schemaLocation="http://www.xbrl.org/2005/xbrldt-2005.xsd"/>
+  <xs:import namespace="http://xbrl.sec.gov/dei/2021q4" schemaLocation="https://xbrl.sec.gov/dei/2021q4/dei-2021q4.xsd"/>
+  <xs:annotation>
+    <xs:appinfo>
+      <link:linkbaseRef xmlns:xlink="http://www.w3.org/1999/xlink" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="onb-20220331_lab.xml" xlink:role="http://www.xbrl.org/2003/role/labelLinkbaseRef" xlink:type="simple"/>
+      <link:linkbaseRef xmlns:xlink="http://www.w3.org/1999/xlink" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="onb-20220331_pre.xml" xlink:role="http://www.xbrl.org/2003/role/presentationLinkbaseRef" xlink:type="simple"/>
+      <link:linkbaseRef xmlns:xlink="http://www.w3.org/1999/xlink" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="onb-20220331_cal.xml" xlink:role="http://www.xbrl.org/2003/role/calculationLinkbaseRef" xlink:type="simple"/>
+      <link:linkbaseRef xmlns:xlink="http://www.w3.org/1999/xlink" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="onb-20220331_def.xml" xlink:role="http://www.xbrl.org/2003/role/definitionLinkbaseRef" xlink:type="simple"/>
+      <link:roleType id="Cover" roleURI="http://www.oldnational.com/role/Cover">
+        <link:definition>000010001 - Document - Cover</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ConsolidatedBalanceSheets" roleURI="http://www.oldnational.com/role/ConsolidatedBalanceSheets">
+        <link:definition>100010002 - Statement - Consolidated Balance Sheets</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ConsolidatedBalanceSheetsParenthetical" roleURI="http://www.oldnational.com/role/ConsolidatedBalanceSheetsParenthetical">
+        <link:definition>100020003 - Statement - Consolidated Balance Sheets (Parenthetical)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ConsolidatedStatementsofIncomeLossunaudited" roleURI="http://www.oldnational.com/role/ConsolidatedStatementsofIncomeLossunaudited">
+        <link:definition>100030004 - Statement - Consolidated Statements of Income (Loss) (unaudited)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ConsolidatedStatementsofComprehensiveIncomeLossunaudited" roleURI="http://www.oldnational.com/role/ConsolidatedStatementsofComprehensiveIncomeLossunaudited">
+        <link:definition>100040005 - Statement - Consolidated Statements of Comprehensive Income (Loss) (unaudited)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ConsolidatedStatementsofChangesinShareholdersEquityunaudited" roleURI="http://www.oldnational.com/role/ConsolidatedStatementsofChangesinShareholdersEquityunaudited">
+        <link:definition>100050006 - Statement - Consolidated Statements of Changes in Shareholders' Equity (unaudited)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ConsolidatedStatementsofChangesinShareholdersEquityunauditedParenthetical" roleURI="http://www.oldnational.com/role/ConsolidatedStatementsofChangesinShareholdersEquityunauditedParenthetical">
+        <link:definition>100060007 - Statement - Consolidated Statements of Changes in Shareholders' Equity (unaudited) (Parenthetical)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ConsolidatedStatementsofCashFlowsunaudited" roleURI="http://www.oldnational.com/role/ConsolidatedStatementsofCashFlowsunaudited">
+        <link:definition>100070008 - Statement - Consolidated Statements of Cash Flows (unaudited)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="BasisofPresentation" roleURI="http://www.oldnational.com/role/BasisofPresentation">
+        <link:definition>210011001 - Disclosure - Basis of Presentation</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="BasisofPresentationPolicies" roleURI="http://www.oldnational.com/role/BasisofPresentationPolicies">
+        <link:definition>220022001 - Disclosure - Basis of Presentation (Policies)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RecentAccountingPronouncements" roleURI="http://www.oldnational.com/role/RecentAccountingPronouncements">
+        <link:definition>210031002 - Disclosure - Recent Accounting Pronouncements</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="AcquisitionActivity" roleURI="http://www.oldnational.com/role/AcquisitionActivity">
+        <link:definition>210041003 - Disclosure - Acquisition Activity</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="AccountingPoliciesTables" roleURI="http://www.oldnational.com/role/AccountingPoliciesTables">
+        <link:definition>230053001 - Disclosure - Accounting Policies (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="AcquisitionActivityAdditionalInformationDetails" roleURI="http://www.oldnational.com/role/AcquisitionActivityAdditionalInformationDetails">
+        <link:definition>240064001 - Disclosure - Acquisition Activity - Additional Information (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="AcquisitionActivityTotalConsiderationDetails" roleURI="http://www.oldnational.com/role/AcquisitionActivityTotalConsiderationDetails">
+        <link:definition>240074002 - Disclosure - Acquisition Activity - Total Consideration (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="AcquisitionActivityProFormaDetails" roleURI="http://www.oldnational.com/role/AcquisitionActivityProFormaDetails">
+        <link:definition>240084003 - Disclosure - Acquisition Activity - Pro Forma (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="NetIncomeLossPerShare" roleURI="http://www.oldnational.com/role/NetIncomeLossPerShare">
+        <link:definition>210091004 - Disclosure - Net Income (Loss) Per Share</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="NetIncomeLossPerShareTables" roleURI="http://www.oldnational.com/role/NetIncomeLossPerShareTables">
+        <link:definition>230103002 - Disclosure - Net Income (Loss) Per Share (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="NetIncomeLossPerShareDetails" roleURI="http://www.oldnational.com/role/NetIncomeLossPerShareDetails">
+        <link:definition>240114004 - Disclosure - Net Income (Loss) Per Share (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="InvestmentSecurities" roleURI="http://www.oldnational.com/role/InvestmentSecurities">
+        <link:definition>210121005 - Disclosure - Investment Securities</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="InvestmentSecuritiesTables" roleURI="http://www.oldnational.com/role/InvestmentSecuritiesTables">
+        <link:definition>230133003 - Disclosure - Investment Securities (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="InvestmentSecuritiesAdditionalInformationDetails" roleURI="http://www.oldnational.com/role/InvestmentSecuritiesAdditionalInformationDetails">
+        <link:definition>240144005 - Disclosure - Investment Securities - Additional Information (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="InvestmentSecuritiesAmortizedCostandFairValueofAvailableforSaleInvestmentSecuritiesPortfolioDetails" roleURI="http://www.oldnational.com/role/InvestmentSecuritiesAmortizedCostandFairValueofAvailableforSaleInvestmentSecuritiesPortfolioDetails">
+        <link:definition>240154006 - Disclosure - Investment Securities - Amortized Cost and Fair Value of Available-for-Sale Investment Securities Portfolio (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="InvestmentSecuritiesScheduleofProceedsfromSalesorCallsandRealizedGainandLossesofAvailableforsaleInvestmentSecuritiesandOtherSecuritiesDetails" roleURI="http://www.oldnational.com/role/InvestmentSecuritiesScheduleofProceedsfromSalesorCallsandRealizedGainandLossesofAvailableforsaleInvestmentSecuritiesandOtherSecuritiesDetails">
+        <link:definition>240164007 - Disclosure - Investment Securities - Schedule of Proceeds from Sales or Calls and Realized Gain and Losses of Available-for-sale Investment Securities and Other Securities (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="InvestmentSecuritiesExpectedMaturitiesofInvestmentSecuritiesPortfolioDetails" roleURI="http://www.oldnational.com/role/InvestmentSecuritiesExpectedMaturitiesofInvestmentSecuritiesPortfolioDetails">
+        <link:definition>240174008 - Disclosure - Investment Securities - Expected Maturities of Investment Securities Portfolio (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="InvestmentSecuritiesAvailableforSaleInvestmentSecuritieswithUnrealizedLossesbyAggregatedMajorSecurityTypeandLengthofTimeinContinuousUnrealizedLossPositionDetails" roleURI="http://www.oldnational.com/role/InvestmentSecuritiesAvailableforSaleInvestmentSecuritieswithUnrealizedLossesbyAggregatedMajorSecurityTypeandLengthofTimeinContinuousUnrealizedLossPositionDetails">
+        <link:definition>240184009 - Disclosure - Investment Securities - Available-for-Sale Investment Securities with Unrealized Losses by Aggregated Major Security Type and Length of Time in Continuous Unrealized Loss Position (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="InvestmentSecuritiesHeldtoMaturitywithUnrecognizedLossesDetails" roleURI="http://www.oldnational.com/role/InvestmentSecuritiesHeldtoMaturitywithUnrecognizedLossesDetails">
+        <link:definition>240194010 - Disclosure - Investment Securities - Held-to-Maturity with Unrecognized Losses (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LoansandAllowanceforCreditLosses" roleURI="http://www.oldnational.com/role/LoansandAllowanceforCreditLosses">
+        <link:definition>210201006 - Disclosure - Loans and Allowance for Credit Losses</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LoansandAllowanceforCreditLossesTables" roleURI="http://www.oldnational.com/role/LoansandAllowanceforCreditLossesTables">
+        <link:definition>230213004 - Disclosure - Loans and Allowance for Credit Losses (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LoansandAllowanceforCreditLossesAdditionalInformationDetails" roleURI="http://www.oldnational.com/role/LoansandAllowanceforCreditLossesAdditionalInformationDetails">
+        <link:definition>240224011 - Disclosure - Loans and Allowance for Credit Losses - Additional Information (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LoansandAllowanceforCreditLossesScheduleofCompositionofLoansandImpactofAdoptionDetails" roleURI="http://www.oldnational.com/role/LoansandAllowanceforCreditLossesScheduleofCompositionofLoansandImpactofAdoptionDetails">
+        <link:definition>240234012 - Disclosure - Loans and Allowance for Credit Losses - Schedule of Composition of Loans and Impact of Adoption (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LoansandAllowanceforCreditLossesScheduleofActivityinAllowanceforLoanLossesDetails" roleURI="http://www.oldnational.com/role/LoansandAllowanceforCreditLossesScheduleofActivityinAllowanceforLoanLossesDetails">
+        <link:definition>240244013 - Disclosure - Loans and Allowance for Credit Losses - Schedule of Activity in Allowance for Loan Losses (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LoansandAllowanceforCreditLossesScheduleofAllowanceforCreditLossesonUnfundedLoanCommitmentsDetails" roleURI="http://www.oldnational.com/role/LoansandAllowanceforCreditLossesScheduleofAllowanceforCreditLossesonUnfundedLoanCommitmentsDetails">
+        <link:definition>240254014 - Disclosure - Loans and Allowance for Credit Losses - Schedule of Allowance for Credit Losses on Unfunded Loan Commitments (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LoansandAllowanceforCreditLossesScheduleofRiskRatingandPaymentPerformanceDetails" roleURI="http://www.oldnational.com/role/LoansandAllowanceforCreditLossesScheduleofRiskRatingandPaymentPerformanceDetails">
+        <link:definition>240264015 - Disclosure - Loans and Allowance for Credit Losses - Schedule of Risk Rating and Payment Performance (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LoansandAllowanceforCreditLossesScheduleofPastDueLoansDetails" roleURI="http://www.oldnational.com/role/LoansandAllowanceforCreditLossesScheduleofPastDueLoansDetails">
+        <link:definition>240274016 - Disclosure - Loans and Allowance for Credit Losses - Schedule of Past Due Loans (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LoansandAllowanceforCreditLossesScheduleofNonaccrualLoansDetails" roleURI="http://www.oldnational.com/role/LoansandAllowanceforCreditLossesScheduleofNonaccrualLoansDetails">
+        <link:definition>240284017 - Disclosure - Loans and Allowance for Credit Losses - Schedule of Nonaccrual Loans (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LoansandAllowanceforCreditLossesScheduleofTypesofCollateralDetails" roleURI="http://www.oldnational.com/role/LoansandAllowanceforCreditLossesScheduleofTypesofCollateralDetails">
+        <link:definition>240294018 - Disclosure - Loans and Allowance for Credit Losses - Schedule of Types of Collateral (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LoansandAllowanceforCreditLossesScheduleofActivityinTroubledDebtRestructuringsDetails" roleURI="http://www.oldnational.com/role/LoansandAllowanceforCreditLossesScheduleofActivityinTroubledDebtRestructuringsDetails">
+        <link:definition>240304019 - Disclosure - Loans and Allowance for Credit Losses - Schedule of Activity in Troubled Debt Restructurings (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LoansandAllowanceforCreditLossesPurchasedCreditDeterioratedLoansDetails" roleURI="http://www.oldnational.com/role/LoansandAllowanceforCreditLossesPurchasedCreditDeterioratedLoansDetails">
+        <link:definition>240314020 - Disclosure - Loans and Allowance for Credit Losses - Purchased Credit Deteriorated Loans (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="PremisesandEquipment" roleURI="http://www.oldnational.com/role/PremisesandEquipment">
+        <link:definition>210321007 - Disclosure - Premises and Equipment</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="PremisesandEquipmentTables" roleURI="http://www.oldnational.com/role/PremisesandEquipmentTables">
+        <link:definition>230333005 - Disclosure - Premises and Equipment (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="PremisesandEquipmentSummaryofPremisesandEquipmentDetails" roleURI="http://www.oldnational.com/role/PremisesandEquipmentSummaryofPremisesandEquipmentDetails">
+        <link:definition>240344021 - Disclosure - Premises and Equipment - Summary of Premises and Equipment (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="PremisesandEquipmentAdditionalInformationDetails" roleURI="http://www.oldnational.com/role/PremisesandEquipmentAdditionalInformationDetails">
+        <link:definition>240354022 - Disclosure - Premises and Equipment - Additional Information (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="Leases" roleURI="http://www.oldnational.com/role/Leases">
+        <link:definition>210361008 - Disclosure - Leases</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LeasesTables" roleURI="http://www.oldnational.com/role/LeasesTables">
+        <link:definition>230373006 - Disclosure - Leases (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LeasesAdditionalInformationDetails" roleURI="http://www.oldnational.com/role/LeasesAdditionalInformationDetails">
+        <link:definition>240384023 - Disclosure - Leases - Additional Information (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LeasesScheduleofComponentsofLeaseExpenseDetails" roleURI="http://www.oldnational.com/role/LeasesScheduleofComponentsofLeaseExpenseDetails">
+        <link:definition>240394024 - Disclosure - Leases - Schedule of Components of Lease Expense (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LeasesScheduleofSupplementalBalanceSheetInformationRelatedtoLeasesDetails" roleURI="http://www.oldnational.com/role/LeasesScheduleofSupplementalBalanceSheetInformationRelatedtoLeasesDetails">
+        <link:definition>240404025 - Disclosure - Leases - Schedule of Supplemental Balance Sheet Information Related to Leases (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LeasesScheduleofSupplementalCashFlowInformationRelatedtoLeasesDetails" roleURI="http://www.oldnational.com/role/LeasesScheduleofSupplementalCashFlowInformationRelatedtoLeasesDetails">
+        <link:definition>240414026 - Disclosure - Leases - Schedule of Supplemental Cash Flow Information Related to Leases (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LeasesScheduleofMaturityAnalysisofLeaseLiabilitybyLeaseClassificationDetails" roleURI="http://www.oldnational.com/role/LeasesScheduleofMaturityAnalysisofLeaseLiabilitybyLeaseClassificationDetails">
+        <link:definition>240424027 - Disclosure - Leases - Schedule of Maturity Analysis of Lease Liability by Lease Classification (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LeasesScheduleofMaturityAnalysisofLeaseLiabilitybyLeaseClassificationDetails_1" roleURI="http://www.oldnational.com/role/LeasesScheduleofMaturityAnalysisofLeaseLiabilitybyLeaseClassificationDetails_1">
+        <link:definition>240424027 - Disclosure - Leases - Schedule of Maturity Analysis of Lease Liability by Lease Classification (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="GoodwillandOtherIntangibleAssets" roleURI="http://www.oldnational.com/role/GoodwillandOtherIntangibleAssets">
+        <link:definition>210431009 - Disclosure - Goodwill and Other Intangible Assets</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="GoodwillandOtherIntangibleAssetsTables" roleURI="http://www.oldnational.com/role/GoodwillandOtherIntangibleAssetsTables">
+        <link:definition>230443007 - Disclosure - Goodwill and Other Intangible Assets (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="GoodwillandOtherIntangibleAssetsScheduleofChangesinCarryingAmountofGoodwillDetails" roleURI="http://www.oldnational.com/role/GoodwillandOtherIntangibleAssetsScheduleofChangesinCarryingAmountofGoodwillDetails">
+        <link:definition>240454028 - Disclosure - Goodwill and Other Intangible Assets - Schedule of Changes in Carrying Amount of Goodwill (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="GoodwillandOtherIntangibleAssetsAdditionalInformationDetails" roleURI="http://www.oldnational.com/role/GoodwillandOtherIntangibleAssetsAdditionalInformationDetails">
+        <link:definition>240464029 - Disclosure - Goodwill and Other Intangible Assets - Additional Information (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="GoodwillandOtherIntangibleAssetsScheduleofGrossCarryingAmountsandAccumulatedAmortizationofOtherIntangibleAssetsDetails" roleURI="http://www.oldnational.com/role/GoodwillandOtherIntangibleAssetsScheduleofGrossCarryingAmountsandAccumulatedAmortizationofOtherIntangibleAssetsDetails">
+        <link:definition>240474030 - Disclosure - Goodwill and Other Intangible Assets - Schedule of Gross Carrying Amounts and Accumulated Amortization of Other Intangible Assets (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="GoodwillandOtherIntangibleAssetsScheduleofEstimatedAmortizationExpenseforFutureYearsDetails" roleURI="http://www.oldnational.com/role/GoodwillandOtherIntangibleAssetsScheduleofEstimatedAmortizationExpenseforFutureYearsDetails">
+        <link:definition>240484031 - Disclosure - Goodwill and Other Intangible Assets - Schedule of Estimated Amortization Expense for Future Years (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LoanServicingRights" roleURI="http://www.oldnational.com/role/LoanServicingRights">
+        <link:definition>210491010 - Disclosure - Loan Servicing Rights</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LoanServicingRightsTables" roleURI="http://www.oldnational.com/role/LoanServicingRightsTables">
+        <link:definition>230503008 - Disclosure - Loan Servicing Rights (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LoanServicingRightsAdditionalInformationDetails" roleURI="http://www.oldnational.com/role/LoanServicingRightsAdditionalInformationDetails">
+        <link:definition>240514032 - Disclosure - Loan Servicing Rights - Additional Information (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LoanServicingRightsComponentsofLoanServicingRightsandValuationAllowanceDetails" roleURI="http://www.oldnational.com/role/LoanServicingRightsComponentsofLoanServicingRightsandValuationAllowanceDetails">
+        <link:definition>240524033 - Disclosure - Loan Servicing Rights - Components of Loan Servicing Rights and Valuation Allowance (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="QualifiedAffordableHousingProjectsandOtherTaxCreditInvestments" roleURI="http://www.oldnational.com/role/QualifiedAffordableHousingProjectsandOtherTaxCreditInvestments">
+        <link:definition>210531011 - Disclosure - Qualified Affordable Housing Projects and Other Tax Credit Investments</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="QualifiedAffordableHousingProjectsandOtherTaxCreditInvestmentsTables" roleURI="http://www.oldnational.com/role/QualifiedAffordableHousingProjectsandOtherTaxCreditInvestmentsTables">
+        <link:definition>230543009 - Disclosure - Qualified Affordable Housing Projects and Other Tax Credit Investments (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="QualifiedAffordableHousingProjectsandOtherTaxCreditInvestmentsDetails" roleURI="http://www.oldnational.com/role/QualifiedAffordableHousingProjectsandOtherTaxCreditInvestmentsDetails">
+        <link:definition>240554034 - Disclosure - Qualified Affordable Housing Projects and Other Tax Credit Investments (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SecuritiesSoldUnderAgreementstoRepurchase" roleURI="http://www.oldnational.com/role/SecuritiesSoldUnderAgreementstoRepurchase">
+        <link:definition>210561012 - Disclosure - Securities Sold Under Agreements to Repurchase</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SecuritiesSoldUnderAgreementstoRepurchaseTables" roleURI="http://www.oldnational.com/role/SecuritiesSoldUnderAgreementstoRepurchaseTables">
+        <link:definition>230573010 - Disclosure - Securities Sold Under Agreements to Repurchase (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SecuritiesSoldUnderAgreementstoRepurchaseScheduleofSecuritiesSoldunderAgreementstoRepurchaseandRelatedWeightedAverageInterestRatesDetails" roleURI="http://www.oldnational.com/role/SecuritiesSoldUnderAgreementstoRepurchaseScheduleofSecuritiesSoldunderAgreementstoRepurchaseandRelatedWeightedAverageInterestRatesDetails">
+        <link:definition>240584035 - Disclosure - Securities Sold Under Agreements to Repurchase - Schedule of Securities Sold under Agreements to Repurchase and Related Weighted-Average Interest Rates (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SecuritiesSoldUnderAgreementstoRepurchaseScheduleofRemainingContractualMaturityofSecuredBorrowingsandClassofCollateralPledgedUnderRepurchaseAgreementsDetails" roleURI="http://www.oldnational.com/role/SecuritiesSoldUnderAgreementstoRepurchaseScheduleofRemainingContractualMaturityofSecuredBorrowingsandClassofCollateralPledgedUnderRepurchaseAgreementsDetails">
+        <link:definition>240594036 - Disclosure - Securities Sold Under Agreements to Repurchase - Schedule of Remaining Contractual Maturity of Secured Borrowings and Class of Collateral Pledged Under Repurchase Agreements (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SecuritiesSoldUnderAgreementstoRepurchaseAdditionalInformationDetails" roleURI="http://www.oldnational.com/role/SecuritiesSoldUnderAgreementstoRepurchaseAdditionalInformationDetails">
+        <link:definition>240604037 - Disclosure - Securities Sold Under Agreements to Repurchase - Additional Information (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FederalHomeLoanBankAdvances" roleURI="http://www.oldnational.com/role/FederalHomeLoanBankAdvances">
+        <link:definition>210611013 - Disclosure - Federal Home Loan Bank Advances</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FederalHomeLoanBankAdvancesTables" roleURI="http://www.oldnational.com/role/FederalHomeLoanBankAdvancesTables">
+        <link:definition>230623011 - Disclosure - Federal Home Loan Bank Advances (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FederalHomeLoanBankAdvancesSummaryofFHLBAdvancesDetails" roleURI="http://www.oldnational.com/role/FederalHomeLoanBankAdvancesSummaryofFHLBAdvancesDetails">
+        <link:definition>240634038 - Disclosure - Federal Home Loan Bank Advances - Summary of FHLB Advances (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FederalHomeLoanBankAdvancesAdditionalInformationDetails" roleURI="http://www.oldnational.com/role/FederalHomeLoanBankAdvancesAdditionalInformationDetails">
+        <link:definition>240644039 - Disclosure - Federal Home Loan Bank Advances - Additional Information (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FederalHomeLoanBankAdvancesSummaryofContractualMaturitiesofFHLBAdvancesDetails" roleURI="http://www.oldnational.com/role/FederalHomeLoanBankAdvancesSummaryofContractualMaturitiesofFHLBAdvancesDetails">
+        <link:definition>240654040 - Disclosure - Federal Home Loan Bank Advances - Summary of Contractual Maturities of FHLB Advances (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="OtherBorrowings" roleURI="http://www.oldnational.com/role/OtherBorrowings">
+        <link:definition>210661014 - Disclosure - Other Borrowings</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="OtherBorrowingsTables" roleURI="http://www.oldnational.com/role/OtherBorrowingsTables">
+        <link:definition>230673012 - Disclosure - Other Borrowings (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="OtherBorrowingsSummaryofOtherBorrowingsDetails" roleURI="http://www.oldnational.com/role/OtherBorrowingsSummaryofOtherBorrowingsDetails">
+        <link:definition>240684041 - Disclosure - Other Borrowings - Summary of Other Borrowings (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="OtherBorrowingsContractualMaturitiesofOtherBorrowingsDetails" roleURI="http://www.oldnational.com/role/OtherBorrowingsContractualMaturitiesofOtherBorrowingsDetails">
+        <link:definition>240694042 - Disclosure - Other Borrowings - Contractual Maturities of Other Borrowings (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="OtherBorrowingsAdditionalInformationDetails" roleURI="http://www.oldnational.com/role/OtherBorrowingsAdditionalInformationDetails">
+        <link:definition>240704043 - Disclosure - Other Borrowings - Additional Information (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="OtherBorrowingsSummaryofTermsofOutstandingJuniorSubordinatedDebenturesDetails" roleURI="http://www.oldnational.com/role/OtherBorrowingsSummaryofTermsofOutstandingJuniorSubordinatedDebenturesDetails">
+        <link:definition>240714044 - Disclosure - Other Borrowings - Summary of Terms of Outstanding Junior Subordinated Debentures (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="AccumulatedOtherComprehensiveIncomeLoss" roleURI="http://www.oldnational.com/role/AccumulatedOtherComprehensiveIncomeLoss">
+        <link:definition>210721015 - Disclosure - Accumulated Other Comprehensive Income (Loss)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="AccumulatedOtherComprehensiveIncomeLossTables" roleURI="http://www.oldnational.com/role/AccumulatedOtherComprehensiveIncomeLossTables">
+        <link:definition>230733013 - Disclosure - Accumulated Other Comprehensive Income (Loss) (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="AccumulatedOtherComprehensiveIncomeLossScheduleofAOCIDetails" roleURI="http://www.oldnational.com/role/AccumulatedOtherComprehensiveIncomeLossScheduleofAOCIDetails">
+        <link:definition>240744045 - Disclosure - Accumulated Other Comprehensive Income (Loss) - Schedule of AOCI (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="AccumulatedOtherComprehensiveIncomeLossReclassificationsoutofAOCIDetails" roleURI="http://www.oldnational.com/role/AccumulatedOtherComprehensiveIncomeLossReclassificationsoutofAOCIDetails">
+        <link:definition>240754046 - Disclosure - Accumulated Other Comprehensive Income (Loss) - Reclassifications out of AOCI (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ShareBasedCompensation" roleURI="http://www.oldnational.com/role/ShareBasedCompensation">
+        <link:definition>210761016 - Disclosure - Share-Based Compensation</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ShareBasedCompensationDetails" roleURI="http://www.oldnational.com/role/ShareBasedCompensationDetails">
+        <link:definition>240774047 - Disclosure - Share-Based Compensation (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IncomeTaxes" roleURI="http://www.oldnational.com/role/IncomeTaxes">
+        <link:definition>210781017 - Disclosure - Income Taxes</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IncomeTaxesTables" roleURI="http://www.oldnational.com/role/IncomeTaxesTables">
+        <link:definition>230793014 - Disclosure - Income Taxes (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IncomeTaxesSummaryofDifferencesinTaxesfromContinuingOperationsComputedatStatutoryRateDetails" roleURI="http://www.oldnational.com/role/IncomeTaxesSummaryofDifferencesinTaxesfromContinuingOperationsComputedatStatutoryRateDetails">
+        <link:definition>240804048 - Disclosure - Income Taxes - Summary of Differences in Taxes from Continuing Operations Computed at Statutory Rate (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IncomeTaxesScheduleofSignificantComponentsofNetDeferredTaxAssetsLiabilitiesDetails" roleURI="http://www.oldnational.com/role/IncomeTaxesScheduleofSignificantComponentsofNetDeferredTaxAssetsLiabilitiesDetails">
+        <link:definition>240814049 - Disclosure - Income Taxes - Schedule of Significant Components of Net Deferred Tax Assets (Liabilities) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IncomeTaxesAdditionalInformationDetails" roleURI="http://www.oldnational.com/role/IncomeTaxesAdditionalInformationDetails">
+        <link:definition>240824050 - Disclosure - Income Taxes - Additional Information (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="DerivativeFinancialInstruments" roleURI="http://www.oldnational.com/role/DerivativeFinancialInstruments">
+        <link:definition>210831018 - Disclosure - Derivative Financial Instruments</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="DerivativeFinancialInstrumentsTables" roleURI="http://www.oldnational.com/role/DerivativeFinancialInstrumentsTables">
+        <link:definition>230843015 - Disclosure - Derivative Financial Instruments (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="DerivativeFinancialInstrumentsAdditionalInformationDetails" roleURI="http://www.oldnational.com/role/DerivativeFinancialInstrumentsAdditionalInformationDetails">
+        <link:definition>240854051 - Disclosure - Derivative Financial Instruments - Additional Information (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="DerivativeFinancialInstrumentsSummaryofFairValueofDerivativeFinancialInstrumentsDetails" roleURI="http://www.oldnational.com/role/DerivativeFinancialInstrumentsSummaryofFairValueofDerivativeFinancialInstrumentsDetails">
+        <link:definition>240864052 - Disclosure - Derivative Financial Instruments - Summary of Fair Value of Derivative Financial Instruments (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="DerivativeFinancialInstrumentsScheduleofEffectofDerivativeInstrumentsontheConsolidatedStatementsofIncomeDetails" roleURI="http://www.oldnational.com/role/DerivativeFinancialInstrumentsScheduleofEffectofDerivativeInstrumentsontheConsolidatedStatementsofIncomeDetails">
+        <link:definition>240874053 - Disclosure - Derivative Financial Instruments - Schedule of Effect of Derivative Instruments on the Consolidated Statements of Income (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CommitmentsandContingencies" roleURI="http://www.oldnational.com/role/CommitmentsandContingencies">
+        <link:definition>210881019 - Disclosure - Commitments and Contingencies</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CommitmentsandContingenciesDetails" roleURI="http://www.oldnational.com/role/CommitmentsandContingenciesDetails">
+        <link:definition>240894054 - Disclosure - Commitments and Contingencies (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FinancialGuarantees" roleURI="http://www.oldnational.com/role/FinancialGuarantees">
+        <link:definition>210901020 - Disclosure - Financial Guarantees</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FinancialGuaranteesDetails" roleURI="http://www.oldnational.com/role/FinancialGuaranteesDetails">
+        <link:definition>240914055 - Disclosure - Financial Guarantees (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FairValue" roleURI="http://www.oldnational.com/role/FairValue">
+        <link:definition>210921021 - Disclosure - Fair Value</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FairValueTables" roleURI="http://www.oldnational.com/role/FairValueTables">
+        <link:definition>230933016 - Disclosure - Fair Value (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FairValueScheduleofFairValueAssetsandLiabilitiesMeasuredonRecurringBasisDetails" roleURI="http://www.oldnational.com/role/FairValueScheduleofFairValueAssetsandLiabilitiesMeasuredonRecurringBasisDetails">
+        <link:definition>240944056 - Disclosure - Fair Value - Schedule of Fair Value Assets and Liabilities Measured on Recurring Basis (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FairValueReconciliationofAllAssetsMeasuredatFairValueonaRecurringBasisUsingSignificantUnobservableInputsLevel3Details" roleURI="http://www.oldnational.com/role/FairValueReconciliationofAllAssetsMeasuredatFairValueonaRecurringBasisUsingSignificantUnobservableInputsLevel3Details">
+        <link:definition>240954057 - Disclosure - Fair Value - Reconciliation of All Assets Measured at Fair Value on a Recurring Basis Using Significant Unobservable Inputs (Level 3) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FairValueQuantitativeInformationaboutSignificantUnobservableInputsUsedinFairValueMeasurementsDetails" roleURI="http://www.oldnational.com/role/FairValueQuantitativeInformationaboutSignificantUnobservableInputsUsedinFairValueMeasurementsDetails">
+        <link:definition>240964058 - Disclosure - Fair Value - Quantitative Information about Significant Unobservable Inputs Used in Fair Value Measurements (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FairValueAssetsMeasuredatFairValueonaNonRecurringBasisDetails" roleURI="http://www.oldnational.com/role/FairValueAssetsMeasuredatFairValueonaNonRecurringBasisDetails">
+        <link:definition>240974059 - Disclosure - Fair Value - Assets Measured at Fair Value on a Non-Recurring Basis (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FairValueAdditionalInformationDetails" roleURI="http://www.oldnational.com/role/FairValueAdditionalInformationDetails">
+        <link:definition>240984060 - Disclosure - Fair Value - Additional Information (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FairValueScheduleofDifferencebetweentheAggregateFairValueandtheAggregateRemainingPrincipalBalanceDetails" roleURI="http://www.oldnational.com/role/FairValueScheduleofDifferencebetweentheAggregateFairValueandtheAggregateRemainingPrincipalBalanceDetails">
+        <link:definition>240994061 - Disclosure - Fair Value - Schedule of Difference between the Aggregate Fair Value and the Aggregate Remaining Principal Balance (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FairValueChangesinFairValueforItemsMeasuredatFairValuePursuanttoElectionoftheFairValueDetails" roleURI="http://www.oldnational.com/role/FairValueChangesinFairValueforItemsMeasuredatFairValuePursuanttoElectionoftheFairValueDetails">
+        <link:definition>241004062 - Disclosure - Fair Value - Changes in Fair Value for Items Measured at Fair Value Pursuant to Election of the Fair Value (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FairValueCarryingAmountsandEstimatedFairValuesofFinancialInstrumentsNotCarriedatFairValueDetails" roleURI="http://www.oldnational.com/role/FairValueCarryingAmountsandEstimatedFairValuesofFinancialInstrumentsNotCarriedatFairValueDetails">
+        <link:definition>241014063 - Disclosure - Fair Value - Carrying Amounts and Estimated Fair Values of Financial Instruments, Not Carried at Fair Value (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element id="onb_AdvancesFromFederalHomeLoanBanksModificationsUnamortizedPrepaymentFees" abstract="false" name="AdvancesFromFederalHomeLoanBanksModificationsUnamortizedPrepaymentFees" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="onb_VariableInterestRateSwapBorrowingsMember" abstract="true" name="VariableInterestRateSwapBorrowingsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="onb_CommercialRealEstateLoansAsPercentageOfRiskBasedCapital" abstract="false" name="CommercialRealEstateLoansAsPercentageOfRiskBasedCapital" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="dtr-types:percentItemType"/>
+  <xs:element id="onb_FinancingReceivableNumberOfLoanSegments" abstract="false" name="FinancingReceivableNumberOfLoanSegments" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="xbrli:integerItemType"/>
+  <xs:element id="onb_NetReductionInOperatingLeaseRightOfUseAssetModifications" abstract="false" name="NetReductionInOperatingLeaseRightOfUseAssetModifications" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="onb_EquityMethodInvestmentQualifiedAffordableHousingProjectInvestments" abstract="false" name="EquityMethodInvestmentQualifiedAffordableHousingProjectInvestments" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="onb_AvailableForSaleSecuritiesDebtMaturitiesWeightedAverageYield" abstract="false" name="AvailableForSaleSecuritiesDebtMaturitiesWeightedAverageYield" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="dtr-types:percentItemType"/>
+  <xs:element id="onb_FinancingReceivableNumberOfLoanPortfolios" abstract="false" name="FinancingReceivableNumberOfLoanPortfolios" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="xbrli:integerItemType"/>
+  <xs:element id="onb_FinancingReceivableTroubledDebtRestructuringAdditionsRemovalsNet" abstract="false" name="FinancingReceivableTroubledDebtRestructuringAdditionsRemovalsNet" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="onb_AnchorCapitalTrustIIIMember" abstract="true" name="AnchorCapitalTrustIIIMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="onb_ImpairedCommercialAndCommercialRealEstateLoansMember" abstract="true" name="ImpairedCommercialAndCommercialRealEstateLoansMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="onb_FinancingReceivableTroubledDebtRestructuringWriteOffsRecoveriesNet" abstract="false" name="FinancingReceivableTroubledDebtRestructuringWriteOffsRecoveriesNet" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="onb_FederalHistoricTaxCreditsMember" abstract="true" name="FederalHistoricTaxCreditsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="onb_FinancingReceivableTroubledDebtRestructuringRollForward" abstract="true" name="FinancingReceivableTroubledDebtRestructuringRollForward" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="onb_FinancingReceivableCreditLossExpenseReversalExcludingHeldToMaturitySecurities" abstract="false" name="FinancingReceivableCreditLossExpenseReversalExcludingHeldToMaturitySecurities" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="onb_IndirectPortfolioSegmentMember" abstract="true" name="IndirectPortfolioSegmentMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="onb_InvestmentSecuritiesAndCashCollateralMember" abstract="true" name="InvestmentSecuritiesAndCashCollateralMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="onb_LesseeWeightedAverageDiscountRateAbstract" abstract="true" name="LesseeWeightedAverageDiscountRateAbstract" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="onb_BusinessCombinationRecognizedIdentifiableAssetsAcquiredAndLiabilitiesAssumedLoansHeldForSale" abstract="false" name="BusinessCombinationRecognizedIdentifiableAssetsAcquiredAndLiabilitiesAssumedLoansHeldForSale" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="onb_ForwardCommitmentsMember" abstract="true" name="ForwardCommitmentsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="onb_SubordinatedDebenturesMember" abstract="true" name="SubordinatedDebenturesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="onb_FiniteLivedIntangibleAssetExpectedAmortizationAfterYearFour" abstract="false" name="FiniteLivedIntangibleAssetExpectedAmortizationAfterYearFour" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="onb_ResidentialLoansHeldForSaleMember" abstract="true" name="ResidentialLoansHeldForSaleMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="onb_BusinessCombinationRecognizedIdentifiableAssetsAcquiredAndLiabilitiesAssumedNoncurrentLiabilitiesDeposits" abstract="false" name="BusinessCombinationRecognizedIdentifiableAssetsAcquiredAndLiabilitiesAssumedNoncurrentLiabilitiesDeposits" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="onb_TermOfStandbyLettersOfCredit" abstract="false" name="TermOfStandbyLettersOfCredit" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:durationItemType"/>
+  <xs:element id="onb_LoanToBeConsideredAsPaymentDefaultInPeriod" abstract="false" name="LoanToBeConsideredAsPaymentDefaultInPeriod" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:durationItemType"/>
+  <xs:element id="onb_GreatLakesStatutoryTrustIIMember" abstract="true" name="GreatLakesStatutoryTrustIIMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="onb_SegmentPortfolioReclassificationMember" abstract="true" name="SegmentPortfolioReclassificationMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="onb_OtherBasisAdjustments" abstract="false" name="OtherBasisAdjustments" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="onb_RealizedLossOnCallsOfAvailableForSaleSecurities" abstract="false" name="RealizedLossOnCallsOfAvailableForSaleSecurities" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="onb_BusinessCombinationRecognizedIdentifiableAssetsAcquiredAndLiabilitiesAssumedFHLBFederalReserveBankStock" abstract="false" name="BusinessCombinationRecognizedIdentifiableAssetsAcquiredAndLiabilitiesAssumedFHLBFederalReserveBankStock" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="onb_CashPaidForAmountsIncludedInMeasurementOfLeaseLiabilitiesLesseeAbstract" abstract="true" name="CashPaidForAmountsIncludedInMeasurementOfLeaseLiabilitiesLesseeAbstract" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="onb_CarryingValueOfLetterOfCredit" abstract="false" name="CarryingValueOfLetterOfCredit" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="onb_BridgeviewCapitalTrustIMember" abstract="true" name="BridgeviewCapitalTrustIMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="onb_LowIncomeHousingTaxCreditsMember" abstract="true" name="LowIncomeHousingTaxCreditsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="onb_AdvancesFromFederalHomeLoanBanksModificationsNumberOfContracts" abstract="false" name="AdvancesFromFederalHomeLoanBanksModificationsNumberOfContracts" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:integerItemType"/>
+  <xs:element id="onb_OccupancyExpenseMember" abstract="true" name="OccupancyExpenseMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="onb_HeldToMaturitySecuritiesDebtMaturitiesWeightedAverageYield" abstract="false" name="HeldToMaturitySecuritiesDebtMaturitiesWeightedAverageYield" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="dtr-types:percentItemType"/>
+  <xs:element id="onb_TroubledDebtRestructuringsDuringPeriodMember" abstract="true" name="TroubledDebtRestructuringsDuringPeriodMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="onb_AmortizationMethodQualifiedAffordableHousingProjectInvestmentsCommitment" abstract="false" name="AmortizationMethodQualifiedAffordableHousingProjectInvestmentsCommitment" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="onb_FederalHomeLoanBankAdvanceMaturityAfterYearFour" abstract="false" name="FederalHomeLoanBankAdvanceMaturityAfterYearFour" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="onb_FinancingReceivableTroubledDebtRestructuringIncreaseInAllowanceForLoanLosses" abstract="false" name="FinancingReceivableTroubledDebtRestructuringIncreaseInAllowanceForLoanLosses" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="onb_DeferredTaxAssetsUnrealizedLossesHeldToMaturity" abstract="false" name="DeferredTaxAssetsUnrealizedLossesHeldToMaturity" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="onb_PaymentsOfFHLBankBorrowingsModificationsFinancingActivities" abstract="false" name="PaymentsOfFHLBankBorrowingsModificationsFinancingActivities" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="onb_FairValueMeasurementWithUnobservableInputsReconciliationRecurringBasisAssetIncreaseDecreaseInFairValueOfSecurities" abstract="false" name="FairValueMeasurementWithUnobservableInputsReconciliationRecurringBasisAssetIncreaseDecreaseInFairValueOfSecurities" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="onb_BusinessCombinationRecognizedIdentifiableAssetsAcquiredAndLiabilitiesAssumedOperatingLeaseRightOfUseAssets" abstract="false" name="BusinessCombinationRecognizedIdentifiableAssetsAcquiredAndLiabilitiesAssumedOperatingLeaseRightOfUseAssets" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="onb_PaycheckProtectionProgramLoansMember" abstract="true" name="PaycheckProtectionProgramLoansMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="onb_CreditExtensionsWithCollateral" abstract="false" name="CreditExtensionsWithCollateral" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="onb_LoanChargeOffToBeRecordedMaximumPeriod" abstract="false" name="LoanChargeOffToBeRecordedMaximumPeriod" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:durationItemType"/>
+  <xs:element id="onb_NotionalAmountOfStandbyLettersOfCredit" abstract="false" name="NotionalAmountOfStandbyLettersOfCredit" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="onb_BusinessCombinationRecognizedIdentifiableAssetsAcquiredAndLiabilitiesAssumedNoncurrentLiabilitiesSecuritiesSoldUnderAgreementsToRepurchase" abstract="false" name="BusinessCombinationRecognizedIdentifiableAssetsAcquiredAndLiabilitiesAssumedNoncurrentLiabilitiesSecuritiesSoldUnderAgreementsToRepurchase" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="onb_DebitCardAndAtmFees" abstract="false" name="DebitCardAndAtmFees" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="onb_LesseeFinanceLeasesAbstract" abstract="true" name="LesseeFinanceLeasesAbstract" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="onb_HomeEquityPortfolioSegmentMember" abstract="true" name="HomeEquityPortfolioSegmentMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="onb_FurnitureFixturesAndEquipmentMember" abstract="true" name="FurnitureFixturesAndEquipmentMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="onb_NewMarketsTaxCreditMember" abstract="true" name="NewMarketsTaxCreditMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="onb_MortgageContractMember" abstract="true" name="MortgageContractMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="onb_CommercialRealEstateLoansAsPercentageOfRiskBasedCapitalRegulatoryGuideLineLimit" abstract="false" name="CommercialRealEstateLoansAsPercentageOfRiskBasedCapitalRegulatoryGuideLineLimit" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="dtr-types:percentItemType"/>
+  <xs:element id="onb_FinanceLeaseCostsAbstract" abstract="true" name="FinanceLeaseCostsAbstract" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="onb_AllowanceForUnfundedLoanCommitments" abstract="false" name="AllowanceForUnfundedLoanCommitments" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="onb_FinancialGuaranteesTable" abstract="true" name="FinancialGuaranteesTable" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrldt:hypercubeItem" type="xbrli:stringItemType"/>
+  <xs:element id="onb_LoanServicingRightsMember" abstract="true" name="LoanServicingRightsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="onb_ScheduleOfCompositionOfLoansTableTextBlock" abstract="false" name="ScheduleOfCompositionOfLoansTableTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:textBlockItemType"/>
+  <xs:element id="onb_FinancingReceivableTroubledDebtRestructuringsIncludedWithNonAccrualLoan" abstract="false" name="FinancingReceivableTroubledDebtRestructuringsIncludedWithNonAccrualLoan" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="onb_InterestIncomeExpenseMember" abstract="true" name="InterestIncomeExpenseMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="onb_CollateralDependentImpairedLoansMember" abstract="true" name="CollateralDependentImpairedLoansMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="onb_DeferredTaxLiabilitiesPurchaseAccounting" abstract="false" name="DeferredTaxLiabilitiesPurchaseAccounting" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="onb_TransfersFromAvailableForSaleToHeldToMaturity" abstract="false" name="TransfersFromAvailableForSaleToHeldToMaturity" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="onb_FinancialGuaranteesLineItems" abstract="true" name="FinancialGuaranteesLineItems" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="onb_BusinessAcquisitionEquityInterestIssuedOrIssuableExchangeRatio" abstract="false" name="BusinessAcquisitionEquityInterestIssuedOrIssuableExchangeRatio" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="xbrli:pureItemType"/>
+  <xs:element id="onb_LoanCommitmentsFloatingInterestRateMaximum" abstract="false" name="LoanCommitmentsFloatingInterestRateMaximum" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:percentItemType"/>
+  <xs:element id="onb_ClassBRestrictedSharesMember" abstract="true" name="ClassBRestrictedSharesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="onb_FeesAndCommissionFiduciaryAndTrustActivities" abstract="false" name="FeesAndCommissionFiduciaryAndTrustActivities" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="onb_CustomerDerivativeInstrumentMember" abstract="true" name="CustomerDerivativeInstrumentMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="onb_CoreDepositsAndOtherIntangibleAssetsMember" abstract="true" name="CoreDepositsAndOtherIntangibleAssetsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="onb_ResidentialForeclosedAssetsMember" abstract="true" name="ResidentialForeclosedAssetsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="onb_BusinessCombinationRecognizedIdentifiableAssetsAcquiredAndLiabilitiesAssumedNoncurrentLiabilitiesAccruedExpensesAndOtherLiabilities" abstract="false" name="BusinessCombinationRecognizedIdentifiableAssetsAcquiredAndLiabilitiesAssumedNoncurrentLiabilitiesAccruedExpensesAndOtherLiabilities" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="onb_OccupancyOrEquipmentExpenseMember" abstract="true" name="OccupancyOrEquipmentExpenseMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="onb_TrustPreferredSecuritiesMember" abstract="true" name="TrustPreferredSecuritiesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="onb_FirstMidwestCapitalTrustIMember" abstract="true" name="FirstMidwestCapitalTrustIMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="onb_FairValueInputsWeightedAveragePrepaymentSpeed" abstract="false" name="FairValueInputsWeightedAveragePrepaymentSpeed" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="dtr-types:percentItemType"/>
+  <xs:element id="onb_TroubledDebtRestructuringModifiedTerm" abstract="false" name="TroubledDebtRestructuringModifiedTerm" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:durationItemType"/>
+  <xs:element id="onb_InvestmentSecuritiesPurchasedButNotSettled" abstract="false" name="InvestmentSecuritiesPurchasedButNotSettled" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="onb_MonroeBancorpStatutoryTrustIiMember" abstract="true" name="MonroeBancorpStatutoryTrustIiMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="onb_CustomerForeignExchangeForwardMember" abstract="true" name="CustomerForeignExchangeForwardMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="onb_BridgeviewCapitalTrustIIMember" abstract="true" name="BridgeviewCapitalTrustIIMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="onb_FinancingReceivableTroubledDebtRestructuringsSpecificReserves" abstract="false" name="FinancingReceivableTroubledDebtRestructuringsSpecificReserves" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="onb_InterestAndFeeIncomeNontaxable" abstract="false" name="InterestAndFeeIncomeNontaxable" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="onb_DebtSecuritiesAvailableForSaleAccumulatedBasisAdjustmentsBeforeTax" abstract="false" name="DebtSecuritiesAvailableForSaleAccumulatedBasisAdjustmentsBeforeTax" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="onb_OldNationalBankMember" abstract="true" name="OldNationalBankMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="onb_CreditExtended" abstract="false" name="CreditExtended" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="onb_DebtSecuritiesHeldToMaturityAccumulatedBasisAdjustmentsBeforeTax" abstract="false" name="DebtSecuritiesHeldToMaturityAccumulatedBasisAdjustmentsBeforeTax" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="onb_CommercialForeclosedAssetsMember" abstract="true" name="CommercialForeclosedAssetsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="onb_ValuationAllowanceForImpairmentOfRecognizedServicingAssetsNetOfImpairmentRecordedDuringPeriod" abstract="false" name="ValuationAllowanceForImpairmentOfRecognizedServicingAssetsNetOfImpairmentRecordedDuringPeriod" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="onb_FirstMidwestBancorpIncMember" abstract="true" name="FirstMidwestBancorpIncMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="onb_AnchorBankMnMember" abstract="true" name="AnchorBankMnMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="onb_IncomeTaxesLineItems" abstract="true" name="IncomeTaxesLineItems" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="onb_EffectiveIncomeTaxRateReconciliationTaxExemptIncomeLifeInsuranceAmount" abstract="false" name="EffectiveIncomeTaxRateReconciliationTaxExemptIncomeLifeInsuranceAmount" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="onb_OtherComprehensiveIncomeReclassificationAdjustmentForSecuritiesTransferredFromAvailableForSaleToHeldToMaturityBeforeTax" abstract="false" name="OtherComprehensiveIncomeReclassificationAdjustmentForSecuritiesTransferredFromAvailableForSaleToHeldToMaturityBeforeTax" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="onb_OtherIncomeExpenseMember" abstract="true" name="OtherIncomeExpenseMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="onb_ScheduleOfDerivativeInstrumentsEffectOnConsolidatedStatementOfIncomeTableTextBlock" abstract="false" name="ScheduleOfDerivativeInstrumentsEffectOnConsolidatedStatementOfIncomeTableTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:textBlockItemType"/>
+  <xs:element id="onb_FinancingReceivableTroubledDebtRestructuringPaymentsDisbursements" abstract="false" name="FinancingReceivableTroubledDebtRestructuringPaymentsDisbursements" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="onb_DeferredTaxAssetsUnrealizedLossesHedges" abstract="false" name="DeferredTaxAssetsUnrealizedLossesHedges" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="onb_ScheduleOfMaturitiesOfOperatingAndFinanceLeasesLiabilitiesTableTextBlock" abstract="false" name="ScheduleOfMaturitiesOfOperatingAndFinanceLeasesLiabilitiesTableTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:textBlockItemType"/>
+  <xs:element id="onb_QualifiedAffordableHousingProjectsAndOtherTaxCreditInvestmentsTextBlock" abstract="false" name="QualifiedAffordableHousingProjectsAndOtherTaxCreditInvestmentsTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:textBlockItemType"/>
+  <xs:element id="onb_LesseeOperatingLeaseLiabilityToBePaidAfterYearFour" abstract="false" name="LesseeOperatingLeaseLiabilityToBePaidAfterYearFour" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="onb_PercentagePledgedSecuritiesOfRepurchaseAgreementsOutstandingBalance" abstract="false" name="PercentagePledgedSecuritiesOfRepurchaseAgreementsOutstandingBalance" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:percentItemType"/>
+  <xs:element id="onb_AdvancesFromFederalHomeLoanBanksFairValueHedgeBasisAdjustmentsAndUnamortizedPrepaymentFees" abstract="false" name="AdvancesFromFederalHomeLoanBanksFairValueHedgeBasisAdjustmentsAndUnamortizedPrepaymentFees" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="onb_ScheduleOfSupplementalCashFlowInformationRelatedToLeasesTableTextBlock" abstract="false" name="ScheduleOfSupplementalCashFlowInformationRelatedToLeasesTableTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:textBlockItemType"/>
+  <xs:element id="onb_IncomeTaxReconciliationNonDeductibleExpenseInterestDisallowance" abstract="false" name="IncomeTaxReconciliationNonDeductibleExpenseInterestDisallowance" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="onb_FairValueOfSecuritiesTransferredToHeldForMaturity" abstract="false" name="FairValueOfSecuritiesTransferredToHeldForMaturity" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="onb_GreatLakesStatutoryTrustIIIMember" abstract="true" name="GreatLakesStatutoryTrustIIIMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="onb_InitiativesInLowToModerateIncomeNeighborhoodsMember" abstract="true" name="InitiativesInLowToModerateIncomeNeighborhoodsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="onb_MonroeBancorpCapitalTrustIMember" abstract="true" name="MonroeBancorpCapitalTrustIMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="onb_DeferredTaxLiabilitiesDeferredLoanOriginationFees" abstract="false" name="DeferredTaxLiabilitiesDeferredLoanOriginationFees" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="onb_CounterpartyForeignExchangeForwardMember" abstract="true" name="CounterpartyForeignExchangeForwardMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="onb_FinanceLeaseLiabilityToBePaidAfterYearFour" abstract="false" name="FinanceLeaseLiabilityToBePaidAfterYearFour" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="onb_DeferredTaxAssetsOperatingLeaseLiabilities" abstract="false" name="DeferredTaxAssetsOperatingLeaseLiabilities" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="onb_DepositarySharesEachRepresentingA140thInterestInAShareOfNonCumulativePerpetualPreferredStockSeriesCMember" abstract="true" name="DepositarySharesEachRepresentingA140thInterestInAShareOfNonCumulativePerpetualPreferredStockSeriesCMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="onb_RestrictedStockConversionRatio" abstract="false" name="RestrictedStockConversionRatio" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="xbrli:pureItemType"/>
+  <xs:element id="onb_DeferredTaxLiabilitiesOperatingLeaseRightOfUseAssets" abstract="false" name="DeferredTaxLiabilitiesOperatingLeaseRightOfUseAssets" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="onb_AdvancesFromFederalHomeLoanBanksModificationsAmount" abstract="false" name="AdvancesFromFederalHomeLoanBanksModificationsAmount" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="onb_PrincipalBalanceOfLoansServicedForOthers" abstract="false" name="PrincipalBalanceOfLoansServicedForOthers" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="onb_PastDuePeriodOfMortgageLoansHeldForSale" abstract="false" name="PastDuePeriodOfMortgageLoansHeldForSale" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:durationItemType"/>
+  <xs:element id="onb_DeferredTaxAssetsDeferredGainOnSecurities" abstract="false" name="DeferredTaxAssetsDeferredGainOnSecurities" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="onb_DeferredTaxAssetsAcquiredLoan" abstract="false" name="DeferredTaxAssetsAcquiredLoan" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="onb_BusinessCombinationRecognizedIdentifiableAssetsAcquiredAndLiabilitiesAssumedAccruedInterestReceivable" abstract="false" name="BusinessCombinationRecognizedIdentifiableAssetsAcquiredAndLiabilitiesAssumedAccruedInterestReceivable" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="onb_LoanParticipations" abstract="false" name="LoanParticipations" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="onb_NorthernStatesStatutoryTrustIMember" abstract="true" name="NorthernStatesStatutoryTrustIMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="onb_VariableInterestRateCollarsAndFloorsMember" abstract="true" name="VariableInterestRateCollarsAndFloorsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="onb_SecuritiesTransferredFromAvailableForSaleToHeldToMaturity" abstract="false" name="SecuritiesTransferredFromAvailableForSaleToHeldToMaturity" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="onb_LongTermDebtMaturityAfterYearFour" abstract="false" name="LongTermDebtMaturityAfterYearFour" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="onb_LoanCommitmentsFloatingInterestRateMinimum" abstract="false" name="LoanCommitmentsFloatingInterestRateMinimum" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:percentItemType"/>
+  <xs:element id="onb_VariableInterestRateSwapAvailableForSaleInvestmentSecuritiesMember" abstract="true" name="VariableInterestRateSwapAvailableForSaleInvestmentSecuritiesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="onb_DirectPortfolioSegmentMember" abstract="true" name="DirectPortfolioSegmentMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="onb_BusinessCombinationRecognizedIdentifiableAssetsAcquiredAndLiabilitiesAssumedLoand" abstract="false" name="BusinessCombinationRecognizedIdentifiableAssetsAcquiredAndLiabilitiesAssumedLoand" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="onb_BusinessCombinationRecognizedIdentifiableAssetsAcquiredAndLiabilitiesAssumedNoncurrentLiabilitiesOtherBorrowings" abstract="false" name="BusinessCombinationRecognizedIdentifiableAssetsAcquiredAndLiabilitiesAssumedNoncurrentLiabilitiesOtherBorrowings" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="onb_BusinessCombinationAcquisitionRelatedCostsExpensed" abstract="false" name="BusinessCombinationAcquisitionRelatedCostsExpensed" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="onb_OtherCollateralMember" abstract="true" name="OtherCollateralMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="onb_TowerCapitalTrustThreeMember" abstract="true" name="TowerCapitalTrustThreeMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="onb_IncomeTaxesTable" abstract="true" name="IncomeTaxesTable" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrldt:hypercubeItem" type="xbrli:stringItemType"/>
+  <xs:element id="onb_OtherDebtSecuritiesIncludingPooledTrustPreferredSecuritiesMember" abstract="true" name="OtherDebtSecuritiesIncludingPooledTrustPreferredSecuritiesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="onb_ScheduleOfSupplementalBalanceSheetInformationRelatedToLeasesTableTextBlock" abstract="false" name="ScheduleOfSupplementalBalanceSheetInformationRelatedToLeasesTableTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:textBlockItemType"/>
+  <xs:element id="onb_PooledTrustPreferredSecuritiesMember" abstract="true" name="PooledTrustPreferredSecuritiesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="onb_SubordinatedFixedToFloatingNotesMember" abstract="true" name="SubordinatedFixedToFloatingNotesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="onb_LoanChargeOffToBeRecordedMinimumPeriod" abstract="false" name="LoanChargeOffToBeRecordedMinimumPeriod" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:durationItemType"/>
+  <xs:element id="onb_NonAccrualMember" abstract="true" name="NonAccrualMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="onb_FinancingReceivableTroubledDebtRestructuringNumberOfLoansQualifiedForRemoval" abstract="false" name="FinancingReceivableTroubledDebtRestructuringNumberOfLoansQualifiedForRemoval" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:integerItemType"/>
+  <xs:element id="onb_DepositarySharesEachRepresentingA140thInterestInAShareOfNonCumulativePerpetualPreferredStockSeriesAMember" abstract="true" name="DepositarySharesEachRepresentingA140thInterestInAShareOfNonCumulativePerpetualPreferredStockSeriesAMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="onb_HomeFederalStatutoryTrustIMember" abstract="true" name="HomeFederalStatutoryTrustIMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="onb_PercentageOfBorrowingsCollateralizedByInvestmentSecuritiesAndResidentialRealEstateLoans" abstract="false" name="PercentageOfBorrowingsCollateralizedByInvestmentSecuritiesAndResidentialRealEstateLoans" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="dtr-types:percentItemType"/>
+  <xs:element id="onb_RealizedGainsOnCallsOfAvailableForSaleSecurities" abstract="false" name="RealizedGainsOnCallsOfAvailableForSaleSecurities" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="onb_ForeclosedAssetsMember" abstract="true" name="ForeclosedAssetsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="onb_LoanCommitments" abstract="false" name="LoanCommitments" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="onb_EquityMethodQualifiedAffordableHousingProjectInvestmentsCommitment" abstract="false" name="EquityMethodQualifiedAffordableHousingProjectInvestmentsCommitment" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="onb_DebtInstrumentUnamortizedDiscountPremiumAndDebtIssuanceCostsNetAndOtherBasisAdjustments" abstract="false" name="DebtInstrumentUnamortizedDiscountPremiumAndDebtIssuanceCostsNetAndOtherBasisAdjustments" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="onb_LoanParticipationsRetained" abstract="false" name="LoanParticipationsRetained" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="onb_BusinessCombinationRecognizedIdentifiableAssetsAcquiredAndLiabilitiesAssumedCompanyOwnedLifeInsurance" abstract="false" name="BusinessCombinationRecognizedIdentifiableAssetsAcquiredAndLiabilitiesAssumedCompanyOwnedLifeInsurance" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="onb_PercentageOfDefaultProbabilityAssignedToPoolOfAssets" abstract="false" name="PercentageOfDefaultProbabilityAssignedToPoolOfAssets" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:percentItemType"/>
+  <xs:element id="onb_PercentageOfRecoveryProbabilityAssignedToEachDefaultedPoolAsset" abstract="false" name="PercentageOfRecoveryProbabilityAssignedToEachDefaultedPoolAsset" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:percentItemType"/>
+  <xs:element id="onb_LoanParticipationsSold" abstract="false" name="LoanParticipationsSold" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="onb_OtherRealEstateOwnedPropertyWriteDown" abstract="false" name="OtherRealEstateOwnedPropertyWriteDown" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="onb_MeasurementInputExpectedAssetRecoveriesMember" abstract="true" name="MeasurementInputExpectedAssetRecoveriesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="onb_InvestmentsInQualifiedAffordableHousingProjects" abstract="false" name="InvestmentsInQualifiedAffordableHousingProjects" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="onb_StockIssuedDuringPeriodValueAcquisitions1" abstract="false" name="StockIssuedDuringPeriodValueAcquisitions1" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="onb_ScheduleOfRemainingContractualMaturityOfSecuredBorrowingsAndClassOfCollateralPledgedUnderRepurchaseAgreementsTableTextBlock" abstract="false" name="ScheduleOfRemainingContractualMaturityOfSecuredBorrowingsAndClassOfCollateralPledgedUnderRepurchaseAgreementsTableTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:textBlockItemType"/>
+  <xs:element id="onb_BusinessBankingCreditCenterPortfolioSegmentMember" abstract="true" name="BusinessBankingCreditCenterPortfolioSegmentMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="onb_DeferredTaxAssetsPurchaseAccounting" abstract="false" name="DeferredTaxAssetsPurchaseAccounting" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="onb_OtherComprehensiveIncomeReclassificationAdjustmentForSecuritiesTransferredFromHeldToMaturityToAvailableForSaleBeforeTax" abstract="false" name="OtherComprehensiveIncomeReclassificationAdjustmentForSecuritiesTransferredFromHeldToMaturityToAvailableForSaleBeforeTax" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="onb_CapitalMarketsIncome" abstract="false" name="CapitalMarketsIncome" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="onb_VisaIncMember" abstract="true" name="VisaIncMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="onb_IncreaseDecreaseInDepositsAndDebtAbstract" abstract="true" name="IncreaseDecreaseInDepositsAndDebtAbstract" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="onb_NumberOfSecuritiesInSecurityPortfolio" abstract="false" name="NumberOfSecuritiesInSecurityPortfolio" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="xbrli:integerItemType"/>
+  <xs:element id="onb_BlanketLienCollateralMember" abstract="true" name="BlanketLienCollateralMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="onb_AccumulatedUnrealizedGainsLossesOnHeldToMaturitySecuritiesParentMember" abstract="true" name="AccumulatedUnrealizedGainsLossesOnHeldToMaturitySecuritiesParentMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="onb_DeferredTaxAssetsInvestmentsAndOtherPartnerships" abstract="false" name="DeferredTaxAssetsInvestmentsAndOtherPartnerships" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="onb_CheckingNowSavingsAndMoneyMarketInterestbearingDeposits" abstract="false" name="CheckingNowSavingsAndMoneyMarketInterestbearingDeposits" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="onb_LesseeOperatingLeasesAbstract" abstract="true" name="LesseeOperatingLeasesAbstract" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="onb_OffBalanceSheetCreditLossLiabilityAcquiredLoans" abstract="false" name="OffBalanceSheetCreditLossLiabilityAcquiredLoans" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="onb_IncomeTaxReconciliationTaxExemptInterest" abstract="false" name="IncomeTaxReconciliationTaxExemptInterest" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="onb_LoansAndLeasesReceivableCommitmentsFixedRatesPercent" abstract="false" name="LoansAndLeasesReceivableCommitmentsFixedRatesPercent" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:percentItemType"/>
+  <xs:element id="onb_FeesAndCommissionsDepositorAccount" abstract="false" name="FeesAndCommissionsDepositorAccount" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="onb_PrincipalAmountOfCommercialAndCommercialRealEstateLoans" abstract="false" name="PrincipalAmountOfCommercialAndCommercialRealEstateLoans" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="onb_StJosephCapitalTrustIiMember" abstract="true" name="StJosephCapitalTrustIiMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="onb_CliffVestMember" abstract="true" name="CliffVestMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="onb_LesseeWeightedAverageRemainingLeaseTermAbstract" abstract="true" name="LesseeWeightedAverageRemainingLeaseTermAbstract" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="onb_LoanServicingDisclosureTextBlock" abstract="false" name="LoanServicingDisclosureTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:textBlockItemType"/>
+  <xs:element id="onb_SegmentPortfolioReclassificationAdjustedBalanceMember" abstract="true" name="SegmentPortfolioReclassificationAdjustedBalanceMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="onb_FinanceReceivablePastDuePeriodForNonaccrualStatus" abstract="false" name="FinanceReceivablePastDuePeriodForNonaccrualStatus" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:durationItemType"/>
+  <xs:element id="onb_FairValueInputsDiscountRate1" abstract="false" name="FairValueInputsDiscountRate1" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:percentItemType"/>
+  <xs:element id="onb_ScheduleOfCreditDeterioratedLoansTableTextBlock" abstract="false" name="ScheduleOfCreditDeterioratedLoansTableTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:textBlockItemType"/>
+  <xs:element id="onb_NetAccretionOfPremiumsAndDiscountsFromAcquiredLoans" abstract="false" name="NetAccretionOfPremiumsAndDiscountsFromAcquiredLoans" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="onb_BusinessCombinationRecognizedIdentifiableAssetsAcquiredAndLiabilitiesAssumedNoncurrentLiabilitiesFederalHomeLoanBankAdvances" abstract="false" name="BusinessCombinationRecognizedIdentifiableAssetsAcquiredAndLiabilitiesAssumedNoncurrentLiabilitiesFederalHomeLoanBankAdvances" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="onb_PercentageOfPeriodicChangesInFairValueQualifiesForHedgeAccounting" abstract="false" name="PercentageOfPeriodicChangesInFairValueQualifiesForHedgeAccounting" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="dtr-types:percentItemType"/>
+  <xs:element id="onb_OffsettingCounterPartyDerivativeInstrumentMember" abstract="true" name="OffsettingCounterPartyDerivativeInstrumentMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="onb_ScheduleOfFederalHomeLoanBankAdvancesMaturitiesTableTextBlock" abstract="false" name="ScheduleOfFederalHomeLoanBankAdvancesMaturitiesTableTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:textBlockItemType"/>
+</xs:schema>

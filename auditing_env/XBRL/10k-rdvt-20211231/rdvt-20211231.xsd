@@ -1,0 +1,533 @@
+<?xml version="1.0" encoding="US-ASCII"?>
+<!-- DFIN New ActiveDisclosure (SM) XBRL Schema Document - http://www.dfinsolutions.com/ -->
+<!-- Creation Date :2022-03-09T08:20:43.8536+00:00 -->
+<!-- Copyright (c) 2022 Donnelly Financial Solutions, Inc. All Rights Reserved. -->
+<xsd:schema targetNamespace="http://www.redviolet.com/20211231" attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:country="http://xbrl.sec.gov/country/2021" xmlns:dtr-types="http://www.xbrl.org/dtr/type/2020-01-21" xmlns:enum2="http://xbrl.org/2020/extensible-enumerations-2.0" xmlns:srt="http://fasb.org/srt/2021-01-31" xmlns:rdvt="http://www.redviolet.com/20211231" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:us-gaap="http://fasb.org/us-gaap/2021-01-31" xmlns:dei="http://xbrl.sec.gov/dei/2021q4" xmlns:xbrldt="http://xbrl.org/2005/xbrldt" xmlns:xbrli="http://www.xbrl.org/2003/instance" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <xsd:import schemaLocation="http://www.xbrl.org/2003/xbrl-instance-2003-12-31.xsd" namespace="http://www.xbrl.org/2003/instance"/>
+  <xsd:import schemaLocation="http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd" namespace="http://www.xbrl.org/2003/linkbase"/>
+  <xsd:import schemaLocation="http://www.xbrl.org/2005/xbrldt-2005.xsd" namespace="http://xbrl.org/2005/xbrldt"/>
+  <xsd:import schemaLocation="https://xbrl.sec.gov/country/2021/country-2021.xsd" namespace="http://xbrl.sec.gov/country/2021"/>
+  <xsd:import schemaLocation="https://xbrl.fasb.org/srt/2021/elts/srt-2021-01-31.xsd" namespace="http://fasb.org/srt/2021-01-31"/>
+  <xsd:import schemaLocation="https://xbrl.fasb.org/us-gaap/2021/elts/us-gaap-2021-01-31.xsd" namespace="http://fasb.org/us-gaap/2021-01-31"/>
+  <xsd:import schemaLocation="https://xbrl.sec.gov/dei/2021q4/dei-2021q4.xsd" namespace="http://xbrl.sec.gov/dei/2021q4"/>
+  <xsd:import schemaLocation="https://www.xbrl.org/dtr/type/2020-01-21/types.xsd" namespace="http://www.xbrl.org/dtr/type/2020-01-21"/>
+  <xsd:annotation>
+    <xsd:appinfo>
+      <link:linkbaseRef xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="rdvt-20211231_lab.xml" xlink:role="http://www.xbrl.org/2003/role/labelLinkbaseRef" xlink:title="Labels link" xlink:type="simple"/>
+      <link:linkbaseRef xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="rdvt-20211231_pre.xml" xlink:role="http://www.xbrl.org/2003/role/presentationLinkbaseRef" xlink:title="Presentation link" xlink:type="simple"/>
+      <link:linkbaseRef xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="rdvt-20211231_def.xml" xlink:role="http://www.xbrl.org/2003/role/definitionLinkbaseRef" xlink:title="Definition link" xlink:type="simple"/>
+      <link:linkbaseRef xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="rdvt-20211231_cal.xml" xlink:role="http://www.xbrl.org/2003/role/calculationLinkbaseRef" xlink:title="Calculation link" xlink:type="simple"/>
+      <link:roleType roleURI="http://www.redviolet.com/20211231/taxonomy/role/Role_DocumentDocumentAndEntityInformation" id="Role_DocumentDocumentAndEntityInformation">
+        <link:definition>100000 - Document - Document and Entity Information</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.redviolet.com/20211231/taxonomy/role/Role_StatementCONSOLIDATEDBALANCESHEETS" id="Role_StatementCONSOLIDATEDBALANCESHEETS">
+        <link:definition>100010 - Statement - CONSOLIDATED BALANCE SHEETS</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.redviolet.com/20211231/taxonomy/role/DisclosureIncomeTaxesEffectiveIncomeTaxBenefitDifferedFromStatutoryFederalIncomeTaxRateDetails2" id="DisclosureIncomeTaxesEffectiveIncomeTaxBenefitDifferedFromStatutoryFederalIncomeTaxRateDetails2">
+        <link:definition>100020 - Disclosure - Income Taxes - Effective Income Tax Benefit Differed from Statutory Federal Income Tax Rate (Details) 2</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.redviolet.com/20211231/taxonomy/role/DisclosureIntangibleAssetsNetScheduleOfEstimatedAmortizationExpensesDetails2" id="DisclosureIntangibleAssetsNetScheduleOfEstimatedAmortizationExpensesDetails2">
+        <link:definition>100030 - Disclosure - Intangible Assets, Net - Schedule of Estimated Amortization Expenses (Details) 2</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.redviolet.com/20211231/taxonomy/role/DisclosureLeasesScheduledFutureMaturitiesAndPresentValueOfOperatingLeaseLiabilitiesDetails2" id="DisclosureLeasesScheduledFutureMaturitiesAndPresentValueOfOperatingLeaseLiabilitiesDetails2">
+        <link:definition>100040 - Disclosure - Leases - Scheduled Future Maturities and Present Value of Operating Lease Liabilities (Details) 2</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.redviolet.com/20211231/taxonomy/role/Role_StatementCONSOLIDATEDBALANCESHEETSParenthetical" id="Role_StatementCONSOLIDATEDBALANCESHEETSParenthetical">
+        <link:definition>100050 - Statement - CONSOLIDATED BALANCE SHEETS (Parenthetical)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.redviolet.com/20211231/taxonomy/role/Role_StatementCONSOLIDATEDSTATEMENTSOFOPERATIONS" id="Role_StatementCONSOLIDATEDSTATEMENTSOFOPERATIONS">
+        <link:definition>100060 - Statement - CONSOLIDATED STATEMENTS OF OPERATIONS</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.redviolet.com/20211231/taxonomy/role/Role_StatementCONSOLIDATEDSTATEMENTSOFCHANGESINSHAREHOLDERSEQUITY" id="Role_StatementCONSOLIDATEDSTATEMENTSOFCHANGESINSHAREHOLDERSEQUITY">
+        <link:definition>100070 - Statement - CONSOLIDATED STATEMENTS OF CHANGES IN SHAREHOLDERS' EQUITY</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.redviolet.com/20211231/taxonomy/role/Role_StatementCONSOLIDATEDSTATEMENTSOFCHANGESINSHAREHOLDERSEQUITYParenthetical" id="Role_StatementCONSOLIDATEDSTATEMENTSOFCHANGESINSHAREHOLDERSEQUITYParenthetical">
+        <link:definition>100080 - Statement - CONSOLIDATED STATEMENTS OF CHANGES IN SHAREHOLDERS' EQUITY (Parenthetical)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.redviolet.com/20211231/taxonomy/role/StatementConsolidatedStatementsOfCashFlows" id="StatementConsolidatedStatementsOfCashFlows">
+        <link:definition>100090 - Statement - CONSOLIDATED STATEMENTS OF CASH FLOWS</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.redviolet.com/20211231/taxonomy/role/Role_DisclosurePrincipalActivities" id="Role_DisclosurePrincipalActivities">
+        <link:definition>100100 - Disclosure - Principal Activities</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.redviolet.com/20211231/taxonomy/role/Role_DisclosureSummaryOfSignificantAccountingPolicies" id="Role_DisclosureSummaryOfSignificantAccountingPolicies">
+        <link:definition>100110 - Disclosure - Summary of Significant Accounting Policies</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.redviolet.com/20211231/taxonomy/role/DisclosureEarningsLossPerShare" id="DisclosureEarningsLossPerShare">
+        <link:definition>100120 - Disclosure - Earnings (Loss) Per Share</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.redviolet.com/20211231/taxonomy/role/Role_DisclosureAccountsReceivableNet" id="Role_DisclosureAccountsReceivableNet">
+        <link:definition>100130 - Disclosure - Accounts Receivable, Net</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.redviolet.com/20211231/taxonomy/role/Role_DisclosurePropertyAndEquipmentNet" id="Role_DisclosurePropertyAndEquipmentNet">
+        <link:definition>100140 - Disclosure - Property and Equipment, Net</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.redviolet.com/20211231/taxonomy/role/Role_DisclosureIntangibleAssetsNet" id="Role_DisclosureIntangibleAssetsNet">
+        <link:definition>100150 - Disclosure - Intangible Assets, Net</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.redviolet.com/20211231/taxonomy/role/Role_DisclosureAccruedExpensesAndOtherCurrentLiabilities" id="Role_DisclosureAccruedExpensesAndOtherCurrentLiabilities">
+        <link:definition>100160 - Disclosure - Accrued Expenses and Other Current Liabilities</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.redviolet.com/20211231/taxonomy/role/Role_DisclosureIncomeTaxes" id="Role_DisclosureIncomeTaxes">
+        <link:definition>100170 - Disclosure - Income Taxes</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.redviolet.com/20211231/taxonomy/role/Role_DisclosureCommonStockAndPreferredStock" id="Role_DisclosureCommonStockAndPreferredStock">
+        <link:definition>100180 - Disclosure - Common Stock and Preferred Stock</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.redviolet.com/20211231/taxonomy/role/Role_DisclosureShareBasedCompensation" id="Role_DisclosureShareBasedCompensation">
+        <link:definition>100190 - Disclosure - Share-based Compensation</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.redviolet.com/20211231/taxonomy/role/Role_DisclosureRelatedPartyTransactions" id="Role_DisclosureRelatedPartyTransactions">
+        <link:definition>100200 - Disclosure - Related Party Transactions</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.redviolet.com/20211231/taxonomy/role/Role_DisclosureLongTermLoan" id="Role_DisclosureLongTermLoan">
+        <link:definition>100210 - Disclosure - Long-term loan</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.redviolet.com/20211231/taxonomy/role/Role_DisclosureLeases" id="Role_DisclosureLeases">
+        <link:definition>100220 - Disclosure - Leases</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.redviolet.com/20211231/taxonomy/role/Role_DisclosureCommitmentsAndContingencies" id="Role_DisclosureCommitmentsAndContingencies">
+        <link:definition>100230 - Disclosure - Commitments and Contingencies</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.redviolet.com/20211231/taxonomy/role/Role_DisclosureSummaryOfSignificantAccountingPoliciesPolicies" id="Role_DisclosureSummaryOfSignificantAccountingPoliciesPolicies">
+        <link:definition>100240 - Disclosure - Summary of Significant Accounting Policies (Policies)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.redviolet.com/20211231/taxonomy/role/Role_DisclosureSummaryOfSignificantAccountingPoliciesTables" id="Role_DisclosureSummaryOfSignificantAccountingPoliciesTables">
+        <link:definition>100250 - Disclosure - Summary of Significant Accounting Policies (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.redviolet.com/20211231/taxonomy/role/DisclosureEarningsLossPerShareTables" id="DisclosureEarningsLossPerShareTables">
+        <link:definition>100260 - Disclosure - Earnings (Loss) Per Share (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.redviolet.com/20211231/taxonomy/role/Role_DisclosureAccountsReceivableNetTables" id="Role_DisclosureAccountsReceivableNetTables">
+        <link:definition>100270 - Disclosure - Accounts Receivable, Net (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.redviolet.com/20211231/taxonomy/role/Role_DisclosurePropertyAndEquipmentNetTables" id="Role_DisclosurePropertyAndEquipmentNetTables">
+        <link:definition>100280 - Disclosure - Property and Equipment, Net (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.redviolet.com/20211231/taxonomy/role/Role_DisclosureIntangibleAssetsNetTables" id="Role_DisclosureIntangibleAssetsNetTables">
+        <link:definition>100290 - Disclosure - Intangible Assets, Net (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.redviolet.com/20211231/taxonomy/role/Role_DisclosureAccruedExpensesAndOtherCurrentLiabilitiesTables" id="Role_DisclosureAccruedExpensesAndOtherCurrentLiabilitiesTables">
+        <link:definition>100300 - Disclosure - Accrued Expenses and Other Current Liabilities (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.redviolet.com/20211231/taxonomy/role/Role_DisclosureIncomeTaxesTables" id="Role_DisclosureIncomeTaxesTables">
+        <link:definition>100310 - Disclosure - Income Taxes (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.redviolet.com/20211231/taxonomy/role/Role_DisclosureShareBasedCompensationTables" id="Role_DisclosureShareBasedCompensationTables">
+        <link:definition>100320 - Disclosure - Share-based Compensation (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.redviolet.com/20211231/taxonomy/role/Role_DisclosureLongTermLoanTables" id="Role_DisclosureLongTermLoanTables">
+        <link:definition>100330 - Disclosure - Long-term loan (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.redviolet.com/20211231/taxonomy/role/Role_DisclosureLeasesTables" id="Role_DisclosureLeasesTables">
+        <link:definition>100340 - Disclosure - Leases (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.redviolet.com/20211231/taxonomy/role/Role_DisclosureCommitmentsAndContingenciesTables" id="Role_DisclosureCommitmentsAndContingenciesTables">
+        <link:definition>100350 - Disclosure - Commitments and Contingencies (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.redviolet.com/20211231/taxonomy/role/Role_DisclosurePrincipalActivitiesAdditionalInformationDetails" id="Role_DisclosurePrincipalActivitiesAdditionalInformationDetails">
+        <link:definition>100360 - Disclosure - Principal Activities - Additional Information (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.redviolet.com/20211231/taxonomy/role/Role_DisclosureSummaryOfSignificantAccountingPoliciesAdditionalInformationDetails" id="Role_DisclosureSummaryOfSignificantAccountingPoliciesAdditionalInformationDetails">
+        <link:definition>100370 - Disclosure - Summary of Significant Accounting Policies - Additional Information (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.redviolet.com/20211231/taxonomy/role/Role_DisclosureSummaryOfSignificantAccountingPoliciesEstimatedUsefulLivesOfPropertyAndEquipmentDetails" id="Role_DisclosureSummaryOfSignificantAccountingPoliciesEstimatedUsefulLivesOfPropertyAndEquipmentDetails">
+        <link:definition>100380 - Disclosure - Summary of Significant Accounting Policies - Estimated Useful Lives of Property and Equipment (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.redviolet.com/20211231/taxonomy/role/DisclosureSummaryOfSignificantAccountingPoliciesAdditionalInformationDetails1" id="DisclosureSummaryOfSignificantAccountingPoliciesAdditionalInformationDetails1">
+        <link:definition>100390 - Disclosure - Summary of Significant Accounting Policies - Additional Information (Details 1)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.redviolet.com/20211231/taxonomy/role/DisclosureEarningsLossPerShareScheduleOfBasicAndDilutedEarningsLossPerShareDetails" id="DisclosureEarningsLossPerShareScheduleOfBasicAndDilutedEarningsLossPerShareDetails">
+        <link:definition>100400 - Disclosure - Earnings (Loss) Per Share - Schedule of Basic and Diluted Earnings (Loss) Per Share (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.redviolet.com/20211231/taxonomy/role/DisclosureEarningsLossPerShareAdditionalInformationDetails" id="DisclosureEarningsLossPerShareAdditionalInformationDetails">
+        <link:definition>100410 - Disclosure - Earnings (Loss) Per Share - Additional Information (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.redviolet.com/20211231/taxonomy/role/Role_DisclosureAccountsReceivableNetSummaryOfAccountsReceivableNetDetails" id="Role_DisclosureAccountsReceivableNetSummaryOfAccountsReceivableNetDetails">
+        <link:definition>100420 - Disclosure - Accounts Receivable, Net - Summary of Accounts Receivable, Net (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.redviolet.com/20211231/taxonomy/role/Role_DisclosureAccountsReceivableNetSummaryOfMovementOfAllowanceForDoubtfulAccountsDetails" id="Role_DisclosureAccountsReceivableNetSummaryOfMovementOfAllowanceForDoubtfulAccountsDetails">
+        <link:definition>100430 - Disclosure - Accounts Receivable, Net - Summary of Movement of Allowance for Doubtful Accounts (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.redviolet.com/20211231/taxonomy/role/Role_DisclosurePropertyAndEquipmentNetPropertyAndEquipmentNetDetails" id="Role_DisclosurePropertyAndEquipmentNetPropertyAndEquipmentNetDetails">
+        <link:definition>100440 - Disclosure - Property and Equipment, Net - Property and Equipment, Net (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.redviolet.com/20211231/taxonomy/role/Role_DisclosurePropertyAndEquipmentNetAdditionalInformationDetails" id="Role_DisclosurePropertyAndEquipmentNetAdditionalInformationDetails">
+        <link:definition>100450 - Disclosure - Property and Equipment, Net - Additional Information (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.redviolet.com/20211231/taxonomy/role/Role_DisclosureIntangibleAssetsNetIntangibleAssetsOtherThanGoodwillDetails" id="Role_DisclosureIntangibleAssetsNetIntangibleAssetsOtherThanGoodwillDetails">
+        <link:definition>100460 - Disclosure - Intangible Assets, Net - Intangible Assets Other than Goodwill (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.redviolet.com/20211231/taxonomy/role/Role_DisclosureIntangibleAssetsNetAdditionalInformationDetails" id="Role_DisclosureIntangibleAssetsNetAdditionalInformationDetails">
+        <link:definition>100470 - Disclosure - Intangible Assets, Net - Additional Information (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.redviolet.com/20211231/taxonomy/role/Role_DisclosureIntangibleAssetsNetScheduleOfEstimatedAmortizationExpensesDetails" id="Role_DisclosureIntangibleAssetsNetScheduleOfEstimatedAmortizationExpensesDetails">
+        <link:definition>100480 - Disclosure - Intangible Assets, Net - Schedule of Estimated Amortization Expenses (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.redviolet.com/20211231/taxonomy/role/Role_DisclosureAccruedExpensesAndOtherCurrentLiabilitiesScheduleOfAccountsPayableAndAccruedExpensesDetails" id="Role_DisclosureAccruedExpensesAndOtherCurrentLiabilitiesScheduleOfAccountsPayableAndAccruedExpensesDetails">
+        <link:definition>100490 - Disclosure - Accrued Expenses and Other Current Liabilities - Schedule of Accounts Payable and Accrued Expenses (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.redviolet.com/20211231/taxonomy/role/Role_DisclosureIncomeTaxesScheduleOfBenefitForIncomeTaxesDetails" id="Role_DisclosureIncomeTaxesScheduleOfBenefitForIncomeTaxesDetails">
+        <link:definition>100500 - Disclosure - Income Taxes - Schedule of Benefit for Income Taxes (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.redviolet.com/20211231/taxonomy/role/Role_DisclosureIncomeTaxesEffectiveIncomeTaxBenefitDifferedFromStatutoryFederalIncomeTaxRateDetails" id="Role_DisclosureIncomeTaxesEffectiveIncomeTaxBenefitDifferedFromStatutoryFederalIncomeTaxRateDetails">
+        <link:definition>100510 - Disclosure - Income Taxes - Effective Income Tax Benefit Differed from Statutory Federal Income Tax Rate (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.redviolet.com/20211231/taxonomy/role/Role_DisclosureIncomeTaxesScheduleOfComponentsOfDeferredTaxAssetsAndLiabilitiesDetails" id="Role_DisclosureIncomeTaxesScheduleOfComponentsOfDeferredTaxAssetsAndLiabilitiesDetails">
+        <link:definition>100520 - Disclosure - Income Taxes - Schedule of Components of Deferred Tax Assets and Liabilities (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.redviolet.com/20211231/taxonomy/role/Role_DisclosureIncomeTaxesAdditionalInformationDetails" id="Role_DisclosureIncomeTaxesAdditionalInformationDetails">
+        <link:definition>100530 - Disclosure - Income Taxes - Additional Information (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.redviolet.com/20211231/taxonomy/role/Role_DisclosureCommonStockAndPreferredStockAdditionalInformationDetails" id="Role_DisclosureCommonStockAndPreferredStockAdditionalInformationDetails">
+        <link:definition>100540 - Disclosure - Common Stock and Preferred Stock - Additional Information (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.redviolet.com/20211231/taxonomy/role/Role_DisclosureShareBasedCompensationAdditionalInformationDetails" id="Role_DisclosureShareBasedCompensationAdditionalInformationDetails">
+        <link:definition>100550 - Disclosure - Share-based Compensation - Additional Information (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.redviolet.com/20211231/taxonomy/role/Role_DisclosureShareBasedCompensationScheduleOfUnvestedRSUActivityDetails" id="Role_DisclosureShareBasedCompensationScheduleOfUnvestedRSUActivityDetails">
+        <link:definition>100560 - Disclosure - Share-based Compensation - Schedule of Unvested RSU Activity (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.redviolet.com/20211231/taxonomy/role/DisclosureSharebasedCompensationScheduleOfGrantsOfRsusWithBothTimeAndPerformancebasedConditionsDetails" id="DisclosureSharebasedCompensationScheduleOfGrantsOfRsusWithBothTimeAndPerformancebasedConditionsDetails">
+        <link:definition>100570 - Disclosure - Share-based Compensation - Schedule of Grants of RSUs with both Time- and Performance-based Conditions (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.redviolet.com/20211231/taxonomy/role/DisclosureSharebasedCompensationScheduleOfGrantsOfRsusWithBothTimeAndPerformancebasedConditionsParentheticalDetails" id="DisclosureSharebasedCompensationScheduleOfGrantsOfRsusWithBothTimeAndPerformancebasedConditionsParentheticalDetails">
+        <link:definition>100580 - Disclosure - Share-based Compensation - Schedule of Grants of RSUs with both Time- and Performance-based Conditions (Parenthetical) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.redviolet.com/20211231/taxonomy/role/Role_DisclosureShareBasedCompensationSummaryOfAllocatedShareBasedCompensationDetails" id="Role_DisclosureShareBasedCompensationSummaryOfAllocatedShareBasedCompensationDetails">
+        <link:definition>100590 - Disclosure - Share-based Compensation - Summary of Allocated Share-based Compensation (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.redviolet.com/20211231/taxonomy/role/Role_DisclosureRelatedPartyTransactionsAdditionalInformationDetails" id="Role_DisclosureRelatedPartyTransactionsAdditionalInformationDetails">
+        <link:definition>100600 - Disclosure - Related Party Transactions - Additional Information (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.redviolet.com/20211231/taxonomy/role/Role_DisclosureLongTermLoanAdditionalInformationDetails" id="Role_DisclosureLongTermLoanAdditionalInformationDetails">
+        <link:definition>100610 - Disclosure - Long-term loan - Additional Information (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.redviolet.com/20211231/taxonomy/role/Role_DisclosureLongTermLoanScheduleOfLongTermLoanDetails" id="Role_DisclosureLongTermLoanScheduleOfLongTermLoanDetails">
+        <link:definition>100620 - Disclosure - Long-term loan - Schedule of Long-term loan (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.redviolet.com/20211231/taxonomy/role/Role_DisclosureLeasesAdditionalInformationDetails" id="Role_DisclosureLeasesAdditionalInformationDetails">
+        <link:definition>100630 - Disclosure - Leases - Additional Information (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.redviolet.com/20211231/taxonomy/role/Role_DisclosureLeasesSummaryOfCompanySLeaseInformationDetails" id="Role_DisclosureLeasesSummaryOfCompanySLeaseInformationDetails">
+        <link:definition>100640 - Disclosure - Leases - Summary of Company's Lease Information (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.redviolet.com/20211231/taxonomy/role/Role_DisclosureLeasesSummaryOfCompanySLeaseInformationParantheticalDetails" id="Role_DisclosureLeasesSummaryOfCompanySLeaseInformationParantheticalDetails">
+        <link:definition>100650 - Disclosure - Leases - Summary of Company's Lease Information (Paranthetical) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.redviolet.com/20211231/taxonomy/role/Role_DisclosureLeasesScheduledFutureMaturitiesAndPresentValueOfOperatingLeaseLiabilitiesDetails" id="Role_DisclosureLeasesScheduledFutureMaturitiesAndPresentValueOfOperatingLeaseLiabilitiesDetails">
+        <link:definition>100660 - Disclosure - Leases - Scheduled Future Maturities and Present Value of Operating Lease Liabilities (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.redviolet.com/20211231/taxonomy/role/Role_DisclosureCommitmentsAndContingenciesAdditionalInformationDetails" id="Role_DisclosureCommitmentsAndContingenciesAdditionalInformationDetails">
+        <link:definition>100670 - Disclosure - Commitments and Contingencies - Additional Information (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.redviolet.com/20211231/taxonomy/role/Role_DisclosureCommitmentsAndContingenciesFutureMinimumCapitalPaymentsUnderCertainDataLicensingAgreementsDetails" id="Role_DisclosureCommitmentsAndContingenciesFutureMinimumCapitalPaymentsUnderCertainDataLicensingAgreementsDetails">
+        <link:definition>100680 - Disclosure - Commitments and Contingencies - Future Minimum Capital Payments under Certain Data Licensing Agreements (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+    </xsd:appinfo>
+  </xsd:annotation>
+  <xsd:element id="rdvt_IntangibleLiabilityDisclosureAbstract" name="IntangibleLiabilityDisclosureAbstract" type="xbrli:stringItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="rdvt_OtherLeaseInformationAbstract" name="OtherLeaseInformationAbstract" type="xbrli:stringItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="rdvt_PresentValueIncludedInCondensedConsolidatedBalanceSheetAbstract" name="PresentValueIncludedInCondensedConsolidatedBalanceSheetAbstract" type="xbrli:stringItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="rdvt_PropertyPlantAndEquipmentUsefulLifeAndValuesAbstract" name="PropertyPlantAndEquipmentUsefulLifeAndValuesAbstract" type="xbrli:stringItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="rdvt_RegulatoryAssetsAbstract" name="RegulatoryAssetsAbstract" type="xbrli:stringItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="rdvt_ShareBasedCompensationArrangementByShareBasedPaymentAwardOptionsOutstandingWeightedAverageExercisePriceAndAdditionalDisclosuresAbstract" name="ShareBasedCompensationArrangementByShareBasedPaymentAwardOptionsOutstandingWeightedAverageExercisePriceAndAdditionalDisclosuresAbstract" type="xbrli:stringItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="rdvt_AccruedDataAcquisitionCostsCurrent" name="AccruedDataAcquisitionCostsCurrent" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="instant" nillable="true" abstract="false" xbrli:balance="credit"/>
+  <xsd:element id="rdvt_AmortizationOfShareBasedCompensationOfRsusWithBothTimeAndPerformanceBasedConditions" name="AmortizationOfShareBasedCompensationOfRsusWithBothTimeAndPerformanceBasedConditions" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false" xbrli:balance="debit"/>
+  <xsd:element id="rdvt_CashAndCashEquivalentsMaturityDescription" name="CashAndCashEquivalentsMaturityDescription" type="xbrli:stringItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false"/>
+  <xsd:element id="rdvt_ConcentrationRiskPercentage2" name="ConcentrationRiskPercentage2" type="dtr-types:percentItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false"/>
+  <xsd:element id="rdvt_ConsultingServiceFeeMonthlyPayment" name="ConsultingServiceFeeMonthlyPayment" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false" xbrli:balance="debit"/>
+  <xsd:element id="rdvt_ConsultingServiceFeeRecognizedAmount" name="ConsultingServiceFeeRecognizedAmount" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false" xbrli:balance="debit"/>
+  <xsd:element id="rdvt_ContractWithCustomerLiabilityAdditionalRenewalOfContractPeriod" name="ContractWithCustomerLiabilityAdditionalRenewalOfContractPeriod" type="xbrli:durationItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false"/>
+  <xsd:element id="rdvt_ContractWithCustomerLiabilityRevenueRecognitionPeriod" name="ContractWithCustomerLiabilityRevenueRecognitionPeriod" type="xbrli:durationItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false"/>
+  <xsd:element id="rdvt_ContractWithCustomerLiabilityRevenueRecognizedPeriod" name="ContractWithCustomerLiabilityRevenueRecognizedPeriod" type="xbrli:durationItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false"/>
+  <xsd:element id="rdvt_CostOfNonCancellableDataLicensingAgreements" name="CostOfNonCancellableDataLicensingAgreements" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false" xbrli:balance="credit"/>
+  <xsd:element id="rdvt_DeferredAmountPercentage" name="DeferredAmountPercentage" type="dtr-types:percentItemType" substitutionGroup="xbrli:item" xbrli:periodType="instant" nillable="true" abstract="false"/>
+  <xsd:element id="rdvt_DeferredTaxAssetsAccountsReceivable" name="DeferredTaxAssetsAccountsReceivable" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="instant" nillable="true" abstract="false" xbrli:balance="debit"/>
+  <xsd:element id="rdvt_DeferredTaxAssetsAccruedExpenseAndOtherCurrentLiabilities" name="DeferredTaxAssetsAccruedExpenseAndOtherCurrentLiabilities" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="instant" nillable="true" abstract="false" xbrli:balance="debit"/>
+  <xsd:element id="rdvt_DeferredTaxExpenseBenefitValuationAllowance" name="DeferredTaxExpenseBenefitValuationAllowance" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false" xbrli:balance="debit"/>
+  <xsd:element id="rdvt_DescriptionOfWrittenNoticeOfIntentForRenewalOfContractTerm" name="DescriptionOfWrittenNoticeOfIntentForRenewalOfContractTerm" type="xbrli:stringItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false"/>
+  <xsd:element id="rdvt_EffectiveIncomeTaxRateReconciliationForgivenessOfTheCaresActLoan" name="EffectiveIncomeTaxRateReconciliationForgivenessOfTheCaresActLoan" type="xbrli:pureItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false"/>
+  <xsd:element id="rdvt_EffectiveIncomeTaxRateReconciliationForgivenessOfTheCaresActLoans" name="EffectiveIncomeTaxRateReconciliationForgivenessOfTheCaresActLoans" type="dtr-types:percentItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false"/>
+  <xsd:element id="rdvt_EffectiveIncomeTaxRateReconciliationNondeductibleExpenseExecutiveCompensationPercent" name="EffectiveIncomeTaxRateReconciliationNondeductibleExpenseExecutiveCompensationPercent" type="dtr-types:percentItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false"/>
+  <xsd:element id="rdvt_EffectiveIncomeTaxRateReconciliationValuationAllowance" name="EffectiveIncomeTaxRateReconciliationValuationAllowance" type="dtr-types:percentItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false"/>
+  <xsd:element id="rdvt_IncomeTaxReconciliationForgivenessOfTheCaresActLoan" name="IncomeTaxReconciliationForgivenessOfTheCaresActLoan" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false" xbrli:balance="debit"/>
+  <xsd:element id="rdvt_IncomeTaxReconciliationNondeductibleExecutiveCompensation" name="IncomeTaxReconciliationNondeductibleExecutiveCompensation" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false" xbrli:balance="debit"/>
+  <xsd:element id="rdvt_IncreaseDecreaseForCollectionCustomersActivities" name="IncreaseDecreaseForCollectionCustomersActivities" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false" xbrli:balance="credit"/>
+  <xsd:element id="rdvt_IncreaseDecreaseInOperatingLeaseLiabilities" name="IncreaseDecreaseInOperatingLeaseLiabilities" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false" xbrli:balance="debit"/>
+  <xsd:element id="rdvt_IntangibleAssetsGrossNotYetAmortizedExcludingGoodwill" name="IntangibleAssetsGrossNotYetAmortizedExcludingGoodwill" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="instant" nillable="true" abstract="false" xbrli:balance="debit"/>
+  <xsd:element id="rdvt_LongTermPurchaseCommitmentOfSupplierAgreementExpirationDate" name="LongTermPurchaseCommitmentOfSupplierAgreementExpirationDate" type="xbrli:dateItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false"/>
+  <xsd:element id="rdvt_LossContingencyAccrualProductLiabilitiesDiscount" name="LossContingencyAccrualProductLiabilitiesDiscount" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false" xbrli:balance="debit"/>
+  <xsd:element id="rdvt_Minimumdaysofadvancewrittennoticeofterminationbyeachpartypriortoendofamendedandrenewedtermoflongtermdatalicensingagreement" name="Minimumdaysofadvancewrittennoticeofterminationbyeachpartypriortoendofamendedandrenewedtermoflongtermdatalicensingagreement" type="xbrli:durationItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false"/>
+  <xsd:element id="rdvt_MinimumDaysOfAdvanceWrittenNoticeOfTerminationBySupplierDuringInitialTerm" name="MinimumDaysOfAdvanceWrittenNoticeOfTerminationBySupplierDuringInitialTerm" type="xbrli:durationItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false"/>
+  <xsd:element id="rdvt_MinimumMonthsOfAdvanceWrittenNoticeOfTerminationByCompanyDuringInitialTerm" name="MinimumMonthsOfAdvanceWrittenNoticeOfTerminationByCompanyDuringInitialTerm" type="xbrli:durationItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false"/>
+  <xsd:element id="rdvt_NoncashLeaseExpenses" name="NoncashLeaseExpenses" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false" xbrli:balance="debit"/>
+  <xsd:element id="rdvt_NumberOfMajorCustomers" name="NumberOfMajorCustomers" type="xbrli:integerItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false"/>
+  <xsd:element id="rdvt_NumberOfMajorSuppliers" name="NumberOfMajorSuppliers" type="xbrli:integerItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false"/>
+  <xsd:element id="rdvt_NumberOfTotalCustomers" name="NumberOfTotalCustomers" type="xbrli:integerItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false"/>
+  <xsd:element id="rdvt_OperatingLossCarryforwardsExpirationYear" name="OperatingLossCarryforwardsExpirationYear" type="xbrli:gYearItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false"/>
+  <xsd:element id="rdvt_PaymentForTaxWithholdingRelatedToNetShareSettlementOfVestingOfRestrictedStockUnits" name="PaymentForTaxWithholdingRelatedToNetShareSettlementOfVestingOfRestrictedStockUnits" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false" xbrli:balance="credit"/>
+  <xsd:element id="rdvt_PercentageOfCommonStock" name="PercentageOfCommonStock" type="dtr-types:percentItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false"/>
+  <xsd:element id="rdvt_PercentageOfRevenue" name="PercentageOfRevenue" type="dtr-types:percentItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false"/>
+  <xsd:element id="rdvt_PercentageOfSecuritiesEntitledToVote" name="PercentageOfSecuritiesEntitledToVote" type="dtr-types:percentItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false"/>
+  <xsd:element id="rdvt_RenewalTermOfAgreementRelatedParty" name="RenewalTermOfAgreementRelatedParty" type="xbrli:durationItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false"/>
+  <xsd:element id="rdvt_RetirementOfTreasuryStock" name="RetirementOfTreasuryStock" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false" xbrli:balance="debit"/>
+  <xsd:element id="rdvt_RetirementOfTreasuryStockShare" name="RetirementOfTreasuryStockShare" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false"/>
+  <xsd:element id="rdvt_ServiceAgreementExpirationDate" name="ServiceAgreementExpirationDate" type="xbrli:dateItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false"/>
+  <xsd:element id="rdvt_ShareBasedCompensationArrangementByShareBasedPaymentAwardEquityInstrumentsOtherThanOptionsExpectedToVestOutstandingNumber" name="ShareBasedCompensationArrangementByShareBasedPaymentAwardEquityInstrumentsOtherThanOptionsExpectedToVestOutstandingNumber" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" xbrli:periodType="instant" nillable="true" abstract="false"/>
+  <xsd:element id="rdvt_ShareBasedCompensationArrangementByShareBasedPaymentAwardEquityInstrumentsOtherThanOptionsVestedAndDelivered" name="ShareBasedCompensationArrangementByShareBasedPaymentAwardEquityInstrumentsOtherThanOptionsVestedAndDelivered" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false"/>
+  <xsd:element id="rdvt_ShareBasedCompensationArrangementByShareBasedPaymentAwardEquityInstrumentsOtherThanOptionsVestedAndDeliveredInPeriodWeightedAverageGrantDateFairValue" name="ShareBasedCompensationArrangementByShareBasedPaymentAwardEquityInstrumentsOtherThanOptionsVestedAndDeliveredInPeriodWeightedAverageGrantDateFairValue" type="dtr-types:perShareItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false"/>
+  <xsd:element id="rdvt_ShareBasedCompensationArrangementByShareBasedPaymentAwardEquityInstrumentsOtherThanOptionsVestedNotDelivered" name="ShareBasedCompensationArrangementByShareBasedPaymentAwardEquityInstrumentsOtherThanOptionsVestedNotDelivered" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false"/>
+  <xsd:element id="rdvt_ShareBasedCompensationArrangementByShareBasedPaymentAwardEquityInstrumentsOtherThanOptionsVestedNotDeliveredInPeriodWeightedAverageGrantDateFairValue" name="ShareBasedCompensationArrangementByShareBasedPaymentAwardEquityInstrumentsOtherThanOptionsVestedNotDeliveredInPeriodWeightedAverageGrantDateFairValue" type="dtr-types:perShareItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false"/>
+  <xsd:element id="rdvt_ShareBasedCompensationArrangementByShareBasedPaymentAwardEquityInstrumentsWithheldAsTreasuryStock" name="ShareBasedCompensationArrangementByShareBasedPaymentAwardEquityInstrumentsWithheldAsTreasuryStock" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false"/>
+  <xsd:element id="rdvt_ShareBasedCompensationArrangementByShareBasedPaymentAwardEquityInstrumentsWithheldAsTreasuryStockWeightedAverageGrantDateFairValue" name="ShareBasedCompensationArrangementByShareBasedPaymentAwardEquityInstrumentsWithheldAsTreasuryStockWeightedAverageGrantDateFairValue" type="dtr-types:perShareItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false"/>
+  <xsd:element id="rdvt_ShareBasedCompensationArrangementByShareBasedPaymentAwardGrantDateRange" name="ShareBasedCompensationArrangementByShareBasedPaymentAwardGrantDateRange" type="xbrli:stringItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false"/>
+  <xsd:element id="rdvt_ShareBasedCompensationAwardGrantsUnvestMinimumThresholdLimitOfGrossRevenueForVestingOfGrants" name="ShareBasedCompensationAwardGrantsUnvestMinimumThresholdLimitOfGrossRevenueForVestingOfGrants" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false" xbrli:balance="credit"/>
+  <xsd:element id="rdvt_ShareBasedCompensationAwardGrantsUnvestMinimumThresholdLimitOfPositiveAdjustedEBITDAForVestingOfGrants" name="ShareBasedCompensationAwardGrantsUnvestMinimumThresholdLimitOfPositiveAdjustedEBITDAForVestingOfGrants" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false" xbrli:balance="credit"/>
+  <xsd:element id="rdvt_StockIssuedDuringPeriodSharesRestrictedStockUnitsVested" name="StockIssuedDuringPeriodSharesRestrictedStockUnitsVested" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false"/>
+  <xsd:element id="rdvt_StockIssuedDuringPeriodValueRestrictedStockUnitsVested" name="StockIssuedDuringPeriodValueRestrictedStockUnitsVested" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false" xbrli:balance="credit"/>
+  <xsd:element id="rdvt_StocksGrantedDuringPeriodValueSharebasedCompensation" name="StocksGrantedDuringPeriodValueSharebasedCompensation" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false" xbrli:balance="credit"/>
+  <xsd:element id="rdvt_TermOfAgreementRelatedParty" name="TermOfAgreementRelatedParty" type="xbrli:durationItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false"/>
+  <xsd:element id="rdvt_TreasuryStockIssuedShares" name="TreasuryStockIssuedShares" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" xbrli:periodType="instant" nillable="true" abstract="false"/>
+  <xsd:element id="rdvt_VestingPercentage" name="VestingPercentage" type="dtr-types:percentItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false"/>
+  <xsd:element id="rdvt_EarningsPerShareLineItems" name="EarningsPerShareLineItems" type="xbrli:stringItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="rdvt_EquityLineItems" name="EquityLineItems" type="xbrli:stringItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="rdvt_IncomeTaxesLineItems" name="IncomeTaxesLineItems" type="xbrli:stringItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="rdvt_SummaryOfSignificantAccountingPoliciesLineItems" name="SummaryOfSignificantAccountingPoliciesLineItems" type="xbrli:stringItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="rdvt_CaresActMember" name="CaresActMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="rdvt_CustomersWithPricingContractsMember" name="CustomersWithPricingContractsMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="rdvt_DataSupplierOneMember" name="DataSupplierOneMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="rdvt_EmployeesAndDirectorsMember" name="EmployeesAndDirectorsMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="rdvt_GreaterThan10PercentStockholderMember" name="GreaterThan10PercentStockholderMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="rdvt_InteractiveDataLimitedLiabilityCompanyMember" name="InteractiveDataLimitedLiabilityCompanyMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="rdvt_LargestDataSupplierMember" name="LargestDataSupplierMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="rdvt_LegacyBankOfFloridaMember" name="LegacyBankOfFloridaMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="rdvt_ModificationOfRestrictedStockUnitsRsuMember" name="ModificationOfRestrictedStockUnitsRsuMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="rdvt_NoCustomerMember" name="NoCustomerMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="rdvt_NonExecutiveEmployeeMember" name="NonExecutiveEmployeeMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="rdvt_PerformanceBasedRestrictedStockUnitsMember" name="PerformanceBasedRestrictedStockUnitsMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="rdvt_PromissoryNoteMember" name="PromissoryNoteMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="rdvt_PromissoryNoteSharesMember" name="PromissoryNoteSharesMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="rdvt_SeparationAgreementMember" name="SeparationAgreementMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="rdvt_ServicesAgreementMember" name="ServicesAgreementMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="rdvt_ShareBasedCompensationAwardTrancheFourMember" name="ShareBasedCompensationAwardTrancheFourMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="rdvt_TradeAccountsPayablesMember" name="TradeAccountsPayablesMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="rdvt_TransactionalCustomersMember" name="TransactionalCustomersMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="rdvt_TwoThousandEighteenStockIncentivePlanMember" name="TwoThousandEighteenStockIncentivePlanMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="rdvt_CostOfRevenueFromContractWithCustomerPolicyTextBlock" name="CostOfRevenueFromContractWithCustomerPolicyTextBlock" type="dtr-types:textBlockItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false"/>
+  <xsd:element id="rdvt_EquityTable" name="EquityTable" type="xbrli:stringItemType" substitutionGroup="xbrldt:hypercubeItem" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="rdvt_IncomeTaxesTable" name="IncomeTaxesTable" type="xbrli:stringItemType" substitutionGroup="xbrldt:hypercubeItem" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="rdvt_ScheduleOfEarningsPerShareCommonClassTable" name="ScheduleOfEarningsPerShareCommonClassTable" type="xbrli:stringItemType" substitutionGroup="xbrldt:hypercubeItem" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="rdvt_SummaryOfSignificantAccountingPoliciesTable" name="SummaryOfSignificantAccountingPoliciesTable" type="xbrli:stringItemType" substitutionGroup="xbrldt:hypercubeItem" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="rdvt_EstimatedUsefulLivesOfPropertyAndEquipmentTableTextBlock" name="EstimatedUsefulLivesOfPropertyAndEquipmentTableTextBlock" type="dtr-types:textBlockItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false"/>
+  <xsd:element id="rdvt_ScheduleOfFutureMinimumPaymentsForCapitalCommitmentTableTextBlock" name="ScheduleOfFutureMinimumPaymentsForCapitalCommitmentTableTextBlock" type="dtr-types:textBlockItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false"/>
+  <xsd:element id="rdvt_ScheduleOfRestrictedStockUnitsAwardsGrantedTableTextBlock" name="ScheduleOfRestrictedStockUnitsAwardsGrantedTableTextBlock" type="dtr-types:textBlockItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false"/>
+  <xsd:element id="rdvt_LeasesDisclosureTextBlock" name="LeasesDisclosureTextBlock" type="dtr-types:textBlockItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false"/>
+</xsd:schema>
