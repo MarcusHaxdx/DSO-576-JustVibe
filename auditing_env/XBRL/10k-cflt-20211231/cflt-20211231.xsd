@@ -1,0 +1,580 @@
+<?xml version="1.0" encoding="US-ASCII"?>
+<!-- DFIN New ActiveDisclosure (SM) XBRL Schema Document - http://www.dfinsolutions.com/ -->
+<!-- Creation Date :2022-02-24T16:54:28.1900+00:00 -->
+<!-- Copyright (c) 2022 Donnelly Financial Solutions, Inc. All Rights Reserved. -->
+<xsd:schema targetNamespace="http://www.confluent.io/20211231" attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:country="http://xbrl.sec.gov/country/2021" xmlns:dtr-types="http://www.xbrl.org/dtr/type/2020-01-21" xmlns:cflt="http://www.confluent.io/20211231" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:dei="http://xbrl.sec.gov/dei/2021q4" xmlns:xbrldt="http://xbrl.org/2005/xbrldt" xmlns:xbrli="http://www.xbrl.org/2003/instance" xmlns:enum2="http://xbrl.org/2020/extensible-enumerations-2.0" xmlns:srt="http://fasb.org/srt/2021-01-31" xmlns:stpr="http://xbrl.sec.gov/stpr/2021" xmlns:us-gaap="http://fasb.org/us-gaap/2021-01-31" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <xsd:import schemaLocation="http://www.xbrl.org/2003/xbrl-instance-2003-12-31.xsd" namespace="http://www.xbrl.org/2003/instance"/>
+  <xsd:import schemaLocation="http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd" namespace="http://www.xbrl.org/2003/linkbase"/>
+  <xsd:import schemaLocation="http://www.xbrl.org/2005/xbrldt-2005.xsd" namespace="http://xbrl.org/2005/xbrldt"/>
+  <xsd:import schemaLocation="https://xbrl.sec.gov/country/2021/country-2021.xsd" namespace="http://xbrl.sec.gov/country/2021"/>
+  <xsd:import schemaLocation="https://xbrl.fasb.org/srt/2021/elts/srt-2021-01-31.xsd" namespace="http://fasb.org/srt/2021-01-31"/>
+  <xsd:import schemaLocation="https://xbrl.fasb.org/us-gaap/2021/elts/us-gaap-2021-01-31.xsd" namespace="http://fasb.org/us-gaap/2021-01-31"/>
+  <xsd:import schemaLocation="https://xbrl.sec.gov/dei/2021q4/dei-2021q4.xsd" namespace="http://xbrl.sec.gov/dei/2021q4"/>
+  <xsd:import schemaLocation="https://xbrl.sec.gov/stpr/2021/stpr-2021.xsd" namespace="http://xbrl.sec.gov/stpr/2021"/>
+  <xsd:import schemaLocation="https://www.xbrl.org/dtr/type/2020-01-21/types.xsd" namespace="http://www.xbrl.org/dtr/type/2020-01-21"/>
+  <xsd:annotation>
+    <xsd:appinfo>
+      <link:linkbaseRef xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="cflt-20211231_lab.xml" xlink:role="http://www.xbrl.org/2003/role/labelLinkbaseRef" xlink:title="Labels link" xlink:type="simple"/>
+      <link:linkbaseRef xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="cflt-20211231_pre.xml" xlink:role="http://www.xbrl.org/2003/role/presentationLinkbaseRef" xlink:title="Presentation link" xlink:type="simple"/>
+      <link:linkbaseRef xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="cflt-20211231_def.xml" xlink:role="http://www.xbrl.org/2003/role/definitionLinkbaseRef" xlink:title="Definition link" xlink:type="simple"/>
+      <link:linkbaseRef xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="cflt-20211231_cal.xml" xlink:role="http://www.xbrl.org/2003/role/calculationLinkbaseRef" xlink:title="Calculation link" xlink:type="simple"/>
+      <link:roleType roleURI="http://www.confluent.io/20211231/taxonomy/role/Role_DocumentDocumentAndEntityInformation" id="Role_DocumentDocumentAndEntityInformation">
+        <link:definition>100000 - Document - Document and Entity Information</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.confluent.io/20211231/taxonomy/role/StatementConsolidatedBalanceSheets" id="StatementConsolidatedBalanceSheets">
+        <link:definition>100010 - Statement - Consolidated Balance Sheets</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.confluent.io/20211231/taxonomy/role/StatementConsolidatedBalanceSheetsParenthetical" id="StatementConsolidatedBalanceSheetsParenthetical">
+        <link:definition>100020 - Statement - Consolidated Balance Sheets (Parenthetical)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.confluent.io/20211231/taxonomy/role/DisclosureCommitmentsAndContingenciesScheduleOfFutureMinimumLeasePaymentsUnderNoncancelableOperatingLeasesDetails3" id="DisclosureCommitmentsAndContingenciesScheduleOfFutureMinimumLeasePaymentsUnderNoncancelableOperatingLeasesDetails3">
+        <link:definition>100030 - Disclosure - Commitments and Contingencies - Schedule of Future Minimum Lease Payments under Non-Cancelable Operating Leases (Details) 3</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.confluent.io/20211231/taxonomy/role/StatementConsolidatedStatementsOfOperations" id="StatementConsolidatedStatementsOfOperations">
+        <link:definition>100040 - Statement - Consolidated Statements of Operations</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.confluent.io/20211231/taxonomy/role/StatementConsolidatedStatementsOfComprehensiveLoss" id="StatementConsolidatedStatementsOfComprehensiveLoss">
+        <link:definition>100050 - Statement - Consolidated Statements of Comprehensive Loss</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.confluent.io/20211231/taxonomy/role/StatementCondensedConsolidatedStatementsOfRedeemableConvertiblePreferredStockAndStockholdersEquityDeficitUnaudited" id="StatementCondensedConsolidatedStatementsOfRedeemableConvertiblePreferredStockAndStockholdersEquityDeficitUnaudited">
+        <link:definition>100060 - Statement - Condensed Consolidated Statements of Redeemable Convertible Preferred Stock and Stockholders' Equity (Deficit) (Unaudited)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.confluent.io/20211231/taxonomy/role/StatementConsolidatedStatementsOfCashFlows" id="StatementConsolidatedStatementsOfCashFlows">
+        <link:definition>100070 - Statement - Consolidated Statements of Cash Flows</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.confluent.io/20211231/taxonomy/role/Role_DisclosureOrganizationAndDescriptionOfBusiness" id="Role_DisclosureOrganizationAndDescriptionOfBusiness">
+        <link:definition>100080 - Disclosure - Organization and Description of Business</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.confluent.io/20211231/taxonomy/role/Role_DisclosureBasisOfPresentationAndSummaryOfSignificantAccountingPolicies" id="Role_DisclosureBasisOfPresentationAndSummaryOfSignificantAccountingPolicies">
+        <link:definition>100090 - Disclosure - Basis of Presentation and Summary of Significant Accounting Policies</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.confluent.io/20211231/taxonomy/role/Role_DisclosureMarketableSecurities" id="Role_DisclosureMarketableSecurities">
+        <link:definition>100100 - Disclosure - Marketable Securities</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.confluent.io/20211231/taxonomy/role/Role_DisclosureFairValueOfFinancialInstruments" id="Role_DisclosureFairValueOfFinancialInstruments">
+        <link:definition>100110 - Disclosure - Fair Value of Financial Instruments</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.confluent.io/20211231/taxonomy/role/Role_DisclosureBalanceSheetComponents" id="Role_DisclosureBalanceSheetComponents">
+        <link:definition>100120 - Disclosure - Balance Sheet Components</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.confluent.io/20211231/taxonomy/role/Role_DisclosureLeases" id="Role_DisclosureLeases">
+        <link:definition>100130 - Disclosure - Leases</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.confluent.io/20211231/taxonomy/role/DisclosureConvertibleSeniorNotes1" id="DisclosureConvertibleSeniorNotes1">
+        <link:definition>100140 - Disclosure - Convertible Senior Notes</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.confluent.io/20211231/taxonomy/role/Role_DisclosureCommitmentsAndContingencies" id="Role_DisclosureCommitmentsAndContingencies">
+        <link:definition>100150 - Disclosure - Commitments and Contingencies</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.confluent.io/20211231/taxonomy/role/Role_DisclosureRevenue" id="Role_DisclosureRevenue">
+        <link:definition>100160 - Disclosure - Revenue</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.confluent.io/20211231/taxonomy/role/DisclosureRedeemableConvertiblePreferredStock1" id="DisclosureRedeemableConvertiblePreferredStock1">
+        <link:definition>100170 - Disclosure - Redeemable Convertible Preferred Stock</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.confluent.io/20211231/taxonomy/role/DisclosureStockholdersEquityDeficit" id="DisclosureStockholdersEquityDeficit">
+        <link:definition>100180 - Disclosure - Stockholders' Equity (Deficit)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.confluent.io/20211231/taxonomy/role/Role_DisclosureIncomeTaxes" id="Role_DisclosureIncomeTaxes">
+        <link:definition>100190 - Disclosure - Income Taxes</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.confluent.io/20211231/taxonomy/role/DisclosureNetLossPerShare1" id="DisclosureNetLossPerShare1">
+        <link:definition>100200 - Disclosure - Net Loss Per Share</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.confluent.io/20211231/taxonomy/role/DisclosureRelatedParties" id="DisclosureRelatedParties">
+        <link:definition>100210 - Disclosure - Related Parties</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.confluent.io/20211231/taxonomy/role/Role_DisclosureSubsequentEvents" id="Role_DisclosureSubsequentEvents">
+        <link:definition>100220 - Disclosure - Subsequent Events</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.confluent.io/20211231/taxonomy/role/Role_DisclosureBasisOfPresentationAndSummaryOfSignificantAccountingPoliciesPolicies" id="Role_DisclosureBasisOfPresentationAndSummaryOfSignificantAccountingPoliciesPolicies">
+        <link:definition>100230 - Disclosure - Basis of Presentation and Summary of Significant Accounting Policies (Policies)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.confluent.io/20211231/taxonomy/role/DisclosureBasisOfPresentationAndSummaryOfSignificantAccountingPoliciesTables" id="DisclosureBasisOfPresentationAndSummaryOfSignificantAccountingPoliciesTables">
+        <link:definition>100240 - Disclosure - Basis of Presentation and Summary of Significant Accounting Policies (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.confluent.io/20211231/taxonomy/role/Role_DisclosureMarketableSecuritiesTables" id="Role_DisclosureMarketableSecuritiesTables">
+        <link:definition>100250 - Disclosure - Marketable Securities (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.confluent.io/20211231/taxonomy/role/Role_DisclosureFairValueOfFinancialInstrumentsTables" id="Role_DisclosureFairValueOfFinancialInstrumentsTables">
+        <link:definition>100260 - Disclosure - Fair Value of Financial Instruments (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.confluent.io/20211231/taxonomy/role/Role_DisclosureBalanceSheetComponentsTables" id="Role_DisclosureBalanceSheetComponentsTables">
+        <link:definition>100270 - Disclosure - Balance Sheet Components (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.confluent.io/20211231/taxonomy/role/DisclosureConvertibleSeniorNotesTables" id="DisclosureConvertibleSeniorNotesTables">
+        <link:definition>100280 - Disclosure - Convertible Senior Notes (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.confluent.io/20211231/taxonomy/role/DisclosureCommitmentsAndContingenciesTables" id="DisclosureCommitmentsAndContingenciesTables">
+        <link:definition>100290 - Disclosure - Commitments and Contingencies (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.confluent.io/20211231/taxonomy/role/DisclosureStockholdersEquityDeficitTables" id="DisclosureStockholdersEquityDeficitTables">
+        <link:definition>100300 - Disclosure - Stockholders' Equity (Deficit) (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.confluent.io/20211231/taxonomy/role/DisclosureIncomeTaxesTables" id="DisclosureIncomeTaxesTables">
+        <link:definition>100310 - Disclosure - Income Taxes (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.confluent.io/20211231/taxonomy/role/Role_DisclosureRevenueTables" id="Role_DisclosureRevenueTables">
+        <link:definition>100320 - Disclosure - Revenue (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.confluent.io/20211231/taxonomy/role/DisclosureRedeemableConvertiblePreferredStockTables" id="DisclosureRedeemableConvertiblePreferredStockTables">
+        <link:definition>100330 - Disclosure - Redeemable Convertible Preferred Stock (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.confluent.io/20211231/taxonomy/role/DisclosureNetLossPerShareTables" id="DisclosureNetLossPerShareTables">
+        <link:definition>100340 - Disclosure - Net Loss Per Share (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.confluent.io/20211231/taxonomy/role/Role_DisclosureOrganizationAndDescriptionOfBusinessAdditionalInformationDetails" id="Role_DisclosureOrganizationAndDescriptionOfBusinessAdditionalInformationDetails">
+        <link:definition>100350 - Disclosure - Organization and Description of Business - Additional Information (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.confluent.io/20211231/taxonomy/role/DisclosureBasisOfPresentationAndSummaryOfSignificantAccountingPoliciesAdditionalInformationDetails" id="DisclosureBasisOfPresentationAndSummaryOfSignificantAccountingPoliciesAdditionalInformationDetails">
+        <link:definition>100360 - Disclosure - Basis of Presentation and Summary of Significant Accounting Policies (Additional Information) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.confluent.io/20211231/taxonomy/role/DisclosureBasisOfPresentationAndSummaryOfSignificantAccountingPoliciesSummaryOfUsefulLifeOfPropertyAndEquipmentNetDetails" id="DisclosureBasisOfPresentationAndSummaryOfSignificantAccountingPoliciesSummaryOfUsefulLifeOfPropertyAndEquipmentNetDetails">
+        <link:definition>100370 - Disclosure - Basis of Presentation and Summary of Significant Accounting Policies - Summary of Useful Life of Property and Equipment, Net (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.confluent.io/20211231/taxonomy/role/DisclosureMarketableSecuritiesScheduleOfFairValueAndAmortizedCostOfMarketableSecuritiesDetails" id="DisclosureMarketableSecuritiesScheduleOfFairValueAndAmortizedCostOfMarketableSecuritiesDetails">
+        <link:definition>100380 - Disclosure - Marketable Securities - Schedule of Fair Value and Amortized Cost of Marketable Securities (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.confluent.io/20211231/taxonomy/role/Role_DisclosureMarketableSecuritiesAdditionalInformationDetails" id="Role_DisclosureMarketableSecuritiesAdditionalInformationDetails">
+        <link:definition>100390 - Disclosure - Marketable Securities - Additional Information (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.confluent.io/20211231/taxonomy/role/DisclosureMarketableSecuritiesScheduleOfFairValueOfContractualMaturitiesDetails" id="DisclosureMarketableSecuritiesScheduleOfFairValueOfContractualMaturitiesDetails">
+        <link:definition>100400 - Disclosure - Marketable Securities - Schedule of Fair Value of Contractual Maturities (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.confluent.io/20211231/taxonomy/role/Role_DisclosureFairValueOfFinancialInstrumentsFinancialAssetsMeasuredAtFairValueOnRecurringBasisDetails" id="Role_DisclosureFairValueOfFinancialInstrumentsFinancialAssetsMeasuredAtFairValueOnRecurringBasisDetails">
+        <link:definition>100410 - Disclosure - Fair Value of Financial Instruments - Financial Assets Measured at Fair Value on Recurring Basis (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.confluent.io/20211231/taxonomy/role/Role_DisclosureFairValueOfFinancialInstrumentsAdditionalInformationDetails" id="Role_DisclosureFairValueOfFinancialInstrumentsAdditionalInformationDetails">
+        <link:definition>100420 - Disclosure - Fair Value of Financial Instruments - Additional Information (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.confluent.io/20211231/taxonomy/role/DisclosureBalanceSheetComponentsSummaryOfPropertyAndEquipmentNetDetails" id="DisclosureBalanceSheetComponentsSummaryOfPropertyAndEquipmentNetDetails">
+        <link:definition>100430 - Disclosure - Balance Sheet Components - Summary of Property and Equipment, Net (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.confluent.io/20211231/taxonomy/role/DisclosureBalanceSheetComponentsAdditionalInformationDetails" id="DisclosureBalanceSheetComponentsAdditionalInformationDetails">
+        <link:definition>100440 - Disclosure - Balance Sheet Components - Additional Information (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.confluent.io/20211231/taxonomy/role/DisclosureBalanceSheetComponentsSummaryOfAccruedExpenseAndOtherLiabilitiesDetails" id="DisclosureBalanceSheetComponentsSummaryOfAccruedExpenseAndOtherLiabilitiesDetails">
+        <link:definition>100450 - Disclosure - Balance Sheet Components - Summary of Accrued Expense and Other Liabilities (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.confluent.io/20211231/taxonomy/role/DisclosureConvertibleSeniorNotesAdditionalInformationDetails" id="DisclosureConvertibleSeniorNotesAdditionalInformationDetails">
+        <link:definition>100460 - Disclosure - Convertible Senior Notes - Additional information (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.confluent.io/20211231/taxonomy/role/DisclosureConvertibleSeniorNotesScheduleOfNetCarryingAmountOfNotesDetails" id="DisclosureConvertibleSeniorNotesScheduleOfNetCarryingAmountOfNotesDetails">
+        <link:definition>100470 - Disclosure - Convertible Senior Notes - Schedule of net carrying amount of notes (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.confluent.io/20211231/taxonomy/role/DisclosureConvertibleSeniorNotesScheduleOfInterestExpenseRelatedToNotesDetails" id="DisclosureConvertibleSeniorNotesScheduleOfInterestExpenseRelatedToNotesDetails">
+        <link:definition>100480 - Disclosure - Convertible Senior Notes - Schedule of interest expense related to notes (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.confluent.io/20211231/taxonomy/role/DisclosureCommitmentsAndContingenciesAdditionalInformationDetails" id="DisclosureCommitmentsAndContingenciesAdditionalInformationDetails">
+        <link:definition>100490 - Disclosure - Commitments and Contingencies - Additional Information (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.confluent.io/20211231/taxonomy/role/DisclosureCommitmentsAndContingenciesScheduleOfFutureMinimumLeasePaymentsUnderNoncancelableOperatingLeasesDetails" id="DisclosureCommitmentsAndContingenciesScheduleOfFutureMinimumLeasePaymentsUnderNoncancelableOperatingLeasesDetails">
+        <link:definition>100500 - Disclosure - Commitments and Contingencies - Schedule of Future Minimum Lease Payments under Non-Cancelable Operating Leases (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.confluent.io/20211231/taxonomy/role/DisclosureCommitmentsAndContingenciesScheduleOfFuturePaymentsUnderNoncancelablePurchaseObligationsDetails" id="DisclosureCommitmentsAndContingenciesScheduleOfFuturePaymentsUnderNoncancelablePurchaseObligationsDetails">
+        <link:definition>100510 - Disclosure - Commitments and Contingencies - Schedule of Future Payments under Non-Cancelable Purchase Obligations (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.confluent.io/20211231/taxonomy/role/DisclosureRevenueSummaryOfRevenueDisaggregatedByGeographicMarketsDetails" id="DisclosureRevenueSummaryOfRevenueDisaggregatedByGeographicMarketsDetails">
+        <link:definition>100520 - Disclosure - Revenue - Summary of Revenue Disaggregated by Geographic Markets (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.confluent.io/20211231/taxonomy/role/DisclosureRevenueAdditionalInformationDetails" id="DisclosureRevenueAdditionalInformationDetails">
+        <link:definition>100530 - Disclosure - Revenue - Additional Information (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.confluent.io/20211231/taxonomy/role/DisclosureRevenueScheduleOfActivityOfDeferredContractAcquisitionCostsDetails" id="DisclosureRevenueScheduleOfActivityOfDeferredContractAcquisitionCostsDetails">
+        <link:definition>100540 - Disclosure - Revenue - Schedule of Activity of Deferred Contract Acquisition Costs (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.confluent.io/20211231/taxonomy/role/DisclosureRedeemableConvertiblePreferredStockAdditionalInformationDetails" id="DisclosureRedeemableConvertiblePreferredStockAdditionalInformationDetails">
+        <link:definition>100550 - Disclosure - Redeemable Convertible Preferred Stock - Additional Information (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.confluent.io/20211231/taxonomy/role/DisclosureRedeemableConvertiblePreferredStockSummaryOfRedeemableConvertiblePreferredStockOutstandingDetails" id="DisclosureRedeemableConvertiblePreferredStockSummaryOfRedeemableConvertiblePreferredStockOutstandingDetails">
+        <link:definition>100560 - Disclosure - Redeemable Convertible Preferred Stock - Summary of Redeemable convertible preferred stock outstanding (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.confluent.io/20211231/taxonomy/role/DisclosureStockholdersEquityDeficitAdditionalInformationDetails" id="DisclosureStockholdersEquityDeficitAdditionalInformationDetails">
+        <link:definition>100570 - Disclosure - Stockholders' Equity (Deficit) - Additional Information (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.confluent.io/20211231/taxonomy/role/DisclosureStockholdersEquityDeficitCommonStockReservedForFutureIssuanceDetails" id="DisclosureStockholdersEquityDeficitCommonStockReservedForFutureIssuanceDetails">
+        <link:definition>100580 - Disclosure - Stockholders' Equity (Deficit) - Common Stock Reserved for Future Issuance (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.confluent.io/20211231/taxonomy/role/DisclosureStockholdersEquityDeficitSummaryOfStockEquityAwardActivityDetails" id="DisclosureStockholdersEquityDeficitSummaryOfStockEquityAwardActivityDetails">
+        <link:definition>100590 - Disclosure - Stockholders' Equity (Deficit) - Summary of Stock Equity Award Activity (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.confluent.io/20211231/taxonomy/role/DisclosureStockholdersEquityDeficitScheduleOfRestrictedStockUnitActivityDetails" id="DisclosureStockholdersEquityDeficitScheduleOfRestrictedStockUnitActivityDetails">
+        <link:definition>100600 - Disclosure - Stockholders' Equity (Deficit) - Schedule of Restricted Stock Unit Activity (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.confluent.io/20211231/taxonomy/role/DisclosureStockholdersEquityDeficitScheduleOfWeightedaverageAssumptionsToEstimateFairValueOfStockOptionsDetails" id="DisclosureStockholdersEquityDeficitScheduleOfWeightedaverageAssumptionsToEstimateFairValueOfStockOptionsDetails">
+        <link:definition>100610 - Disclosure - Stockholders' Equity (Deficit) - Schedule of Weighted-Average Assumptions to Estimate Fair Value of Stock Options (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.confluent.io/20211231/taxonomy/role/DisclosureStockholdersEquityDeficitScheduleOfWeightedaverageAssumptionsToEstimateFairValueOfEmployeeStockPurchaseRightsDetails" id="DisclosureStockholdersEquityDeficitScheduleOfWeightedaverageAssumptionsToEstimateFairValueOfEmployeeStockPurchaseRightsDetails">
+        <link:definition>100620 - Disclosure - Stockholders' Equity (Deficit) - Schedule of Weighted-Average Assumptions to Estimate Fair Value of Employee Stock Purchase Rights (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.confluent.io/20211231/taxonomy/role/DisclosureStockholdersEquityDeficitSummaryOfStockbasedCompensationExpenseDetails" id="DisclosureStockholdersEquityDeficitSummaryOfStockbasedCompensationExpenseDetails">
+        <link:definition>100630 - Disclosure - Stockholders' Equity (Deficit) - Summary of stock-based compensation expense (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.confluent.io/20211231/taxonomy/role/DisclosureIncomeTaxesScheduleOfComponentsOfLossBeforeIncomeTaxesDetails" id="DisclosureIncomeTaxesScheduleOfComponentsOfLossBeforeIncomeTaxesDetails">
+        <link:definition>100640 - Disclosure - Income Taxes - Schedule of Components of Loss Before Income Taxes (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.confluent.io/20211231/taxonomy/role/DisclosureIncomeTaxesScheduleOfComponentsOfIncomeTaxExpenseBenefitDetails" id="DisclosureIncomeTaxesScheduleOfComponentsOfIncomeTaxExpenseBenefitDetails">
+        <link:definition>100650 - Disclosure - Income Taxes - Schedule of Components of Income Tax Expense (Benefit) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.confluent.io/20211231/taxonomy/role/DisclosureIncomeTaxesScheduleOfReconciliationOfIncomeTaxBenefitDetails" id="DisclosureIncomeTaxesScheduleOfReconciliationOfIncomeTaxBenefitDetails">
+        <link:definition>100660 - Disclosure - Income Taxes - Schedule of reconciliation of income tax benefit (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.confluent.io/20211231/taxonomy/role/DisclosureIncomeTaxesScheduleOfComponentsOfDeferredTaxAssetsAndLiabilitiesDetails" id="DisclosureIncomeTaxesScheduleOfComponentsOfDeferredTaxAssetsAndLiabilitiesDetails">
+        <link:definition>100670 - Disclosure - Income Taxes - Schedule of components of deferred tax assets and liabilities (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.confluent.io/20211231/taxonomy/role/DisclosureIncomeTaxesScheduleOfComponentsOfDeferredTaxAssetsAndLiabilitiesParentheticalDetails" id="DisclosureIncomeTaxesScheduleOfComponentsOfDeferredTaxAssetsAndLiabilitiesParentheticalDetails">
+        <link:definition>100680 - Disclosure - Income Taxes - Schedule of components of deferred tax assets and liabilities (Parenthetical) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.confluent.io/20211231/taxonomy/role/DisclosureIncomeTaxesScheduleOfReconciliationOfIncomeTaxBenefitActivityDetails" id="DisclosureIncomeTaxesScheduleOfReconciliationOfIncomeTaxBenefitActivityDetails">
+        <link:definition>100690 - Disclosure - Income Taxes - Schedule of Reconciliation of Income Tax Benefit Activity (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.confluent.io/20211231/taxonomy/role/DisclosureIncomeTaxesAdditionalInformationDetails" id="DisclosureIncomeTaxesAdditionalInformationDetails">
+        <link:definition>100700 - Disclosure - Income Taxes - Additional Information (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.confluent.io/20211231/taxonomy/role/DisclosureNetLossPerShareScheduleOfCalculationOfBasicAndDilutedNetLossPerShareDetails" id="DisclosureNetLossPerShareScheduleOfCalculationOfBasicAndDilutedNetLossPerShareDetails">
+        <link:definition>100710 - Disclosure - Net Loss Per Share - Schedule of Calculation of Basic and Diluted Net Loss Per Share (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.confluent.io/20211231/taxonomy/role/DisclosureNetLossPerShareScheduleOfAntidilutiveSecuritiesExcludedFromComputationOfDilutiedNetLossPerShareDetails" id="DisclosureNetLossPerShareScheduleOfAntidilutiveSecuritiesExcludedFromComputationOfDilutiedNetLossPerShareDetails">
+        <link:definition>100720 - Disclosure - Net Loss Per Share - Schedule of Antidilutive Securities Excluded From Computation of Dilutied Net Loss Per Share (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://www.confluent.io/20211231/taxonomy/role/Role_DisclosureSubsequentEventsAdditionalInformationDetails" id="Role_DisclosureSubsequentEventsAdditionalInformationDetails">
+        <link:definition>100730 - Disclosure - Subsequent Events - Additional Information (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+    </xsd:appinfo>
+  </xsd:annotation>
+  <xsd:element id="cflt_CashEquivalentsAndMarketableSecuritiesAbstract" name="CashEquivalentsAndMarketableSecuritiesAbstract" type="xbrli:stringItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="cflt_AccruedEmployeeStockPurchasePlanCurrent" name="AccruedEmployeeStockPurchasePlanCurrent" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="instant" nillable="true" abstract="false" xbrli:balance="credit"/>
+  <xsd:element id="cflt_AdjustmentsToAdditionalPaidInCapitalPurchaseOfCappedCalls" name="AdjustmentsToAdditionalPaidInCapitalPurchaseOfCappedCalls" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false" xbrli:balance="credit"/>
+  <xsd:element id="cflt_AggregatePurchasePriceOfStockIssuedInTransaction" name="AggregatePurchasePriceOfStockIssuedInTransaction" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false" xbrli:balance="debit"/>
+  <xsd:element id="cflt_CapitalizationOfContractAcquisitionCosts" name="CapitalizationOfContractAcquisitionCosts" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false" xbrli:balance="debit"/>
+  <xsd:element id="cflt_CapitalizedSoftwareCostsTextBlock" name="CapitalizedSoftwareCostsTextBlock" type="xbrli:stringItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false"/>
+  <xsd:element id="cflt_CommonStockDonatedToCharitableFoundation" name="CommonStockDonatedToCharitableFoundation" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" xbrli:periodType="instant" nillable="true" abstract="false"/>
+  <xsd:element id="cflt_CommonStockSharesIssuedToFounders" name="CommonStockSharesIssuedToFounders" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" xbrli:periodType="instant" nillable="true" abstract="false"/>
+  <xsd:element id="cflt_CommonStockSubjectToRepurchaseLiability" name="CommonStockSubjectToRepurchaseLiability" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="instant" nillable="true" abstract="false" xbrli:balance="credit"/>
+  <xsd:element id="cflt_CommonStockSubjectToRepurchaseLiabilityCurrent" name="CommonStockSubjectToRepurchaseLiabilityCurrent" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="instant" nillable="true" abstract="false" xbrli:balance="credit"/>
+  <xsd:element id="cflt_CommonStockSubjectToRepurchaseShares" name="CommonStockSubjectToRepurchaseShares" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false"/>
+  <xsd:element id="cflt_CommonStockVotingRightsVotesPerShare" name="CommonStockVotingRightsVotesPerShare" type="xbrli:integerItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false"/>
+  <xsd:element id="cflt_ConversionPercentThresholdOutstanding" name="ConversionPercentThresholdOutstanding" type="dtr-types:percentItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false"/>
+  <xsd:element id="cflt_ConversionSeniorNoteIssuanceCostInAccruedExpensesAndOtherLiabilities" name="ConversionSeniorNoteIssuanceCostInAccruedExpensesAndOtherLiabilities" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false" xbrli:balance="credit"/>
+  <xsd:element id="cflt_ConvertibleFounderStockParOrStatedValuePerShare" name="ConvertibleFounderStockParOrStatedValuePerShare" type="dtr-types:perShareItemType" substitutionGroup="xbrli:item" xbrli:periodType="instant" nillable="true" abstract="false"/>
+  <xsd:element id="cflt_ConvertibleFounderStockSharesAuthorized" name="ConvertibleFounderStockSharesAuthorized" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" xbrli:periodType="instant" nillable="true" abstract="false"/>
+  <xsd:element id="cflt_ConvertibleFounderStockSharesIssued" name="ConvertibleFounderStockSharesIssued" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" xbrli:periodType="instant" nillable="true" abstract="false"/>
+  <xsd:element id="cflt_ConvertibleFounderStockSharesIssuedUponConversion" name="ConvertibleFounderStockSharesIssuedUponConversion" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" xbrli:periodType="instant" nillable="true" abstract="false"/>
+  <xsd:element id="cflt_ConvertibleFounderStockSharesIssuedUponConversionFromIpo" name="ConvertibleFounderStockSharesIssuedUponConversionFromIpo" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" xbrli:periodType="instant" nillable="true" abstract="false"/>
+  <xsd:element id="cflt_ConvertibleFounderStockSharesOutstanding" name="ConvertibleFounderStockSharesOutstanding" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" xbrli:periodType="instant" nillable="true" abstract="false"/>
+  <xsd:element id="cflt_ConvertibleFounderStockSharesReservedForFutureIssuance" name="ConvertibleFounderStockSharesReservedForFutureIssuance" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" xbrli:periodType="instant" nillable="true" abstract="false"/>
+  <xsd:element id="cflt_ConvertibleFounderStockValue" name="ConvertibleFounderStockValue" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="instant" nillable="true" abstract="false" xbrli:balance="credit"/>
+  <xsd:element id="cflt_ConvertibleTemporaryEquitySharesIssuedUponConversion" name="ConvertibleTemporaryEquitySharesIssuedUponConversion" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false"/>
+  <xsd:element id="cflt_DebtInstrumentConvertibleConversionRatioDenominator" name="DebtInstrumentConvertibleConversionRatioDenominator" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="instant" nillable="true" abstract="false" xbrli:balance="credit"/>
+  <xsd:element id="cflt_DebtInstrumentConvertibleTradingPriceAsAPercentageOfStockPriceAndDebtConversionRate" name="DebtInstrumentConvertibleTradingPriceAsAPercentageOfStockPriceAndDebtConversionRate" type="dtr-types:percentItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false"/>
+  <xsd:element id="cflt_DebtInstrumentInitialConversionRate" name="DebtInstrumentInitialConversionRate" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false"/>
+  <xsd:element id="cflt_DebtInstrumentNetProceedAfterDiscountsAndCost" name="DebtInstrumentNetProceedAfterDiscountsAndCost" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="instant" nillable="true" abstract="false" xbrli:balance="debit"/>
+  <xsd:element id="cflt_DeferredTaxAssetsTaxDeferredExpenseOperatingLeaseLiabilities" name="DeferredTaxAssetsTaxDeferredExpenseOperatingLeaseLiabilities" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="instant" nillable="true" abstract="false" xbrli:balance="debit"/>
+  <xsd:element id="cflt_DeferredTaxLiabilitiesOperatingLeaseRightOfUseAssets" name="DeferredTaxLiabilitiesOperatingLeaseRightOfUseAssets" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="instant" nillable="true" abstract="false" xbrli:balance="credit"/>
+  <xsd:element id="cflt_DonationStockIssuedDuringPeriodSharesNewIssues" name="DonationStockIssuedDuringPeriodSharesNewIssues" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false"/>
+  <xsd:element id="cflt_EmployeeContributionsUnderEmployeeStockPurchasePlan" name="EmployeeContributionsUnderEmployeeStockPurchasePlan" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="instant" nillable="true" abstract="false" xbrli:balance="credit"/>
+  <xsd:element id="cflt_IncreaseDecreaseInAuthorizedShares" name="IncreaseDecreaseInAuthorizedShares" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false"/>
+  <xsd:element id="cflt_IncreaseDecreaseInCapitalizedContractCost" name="IncreaseDecreaseInCapitalizedContractCost" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false" xbrli:balance="credit"/>
+  <xsd:element id="cflt_IncreaseDecreaseInOperatingLeaseLiabilities" name="IncreaseDecreaseInOperatingLeaseLiabilities" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false" xbrli:balance="debit"/>
+  <xsd:element id="cflt_IncreaseInDeferredTaxAssetsOperatingLossCarryforwards" name="IncreaseInDeferredTaxAssetsOperatingLossCarryforwards" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="instant" nillable="true" abstract="false" xbrli:balance="credit"/>
+  <xsd:element id="cflt_IncreaseInDeferredTaxAssetsTaxDeferredExpenseReservesAndAccrualsOther" name="IncreaseInDeferredTaxAssetsTaxDeferredExpenseReservesAndAccrualsOther" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="instant" nillable="true" abstract="false" xbrli:balance="debit"/>
+  <xsd:element id="cflt_IncreaseInDeferredTaxLiabilitiesDeferredExpenseDeferredPolicyAcquisitionCost" name="IncreaseInDeferredTaxLiabilitiesDeferredExpenseDeferredPolicyAcquisitionCost" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="instant" nillable="true" abstract="false" xbrli:balance="credit"/>
+  <xsd:element id="cflt_IssuanceOfCommonStockUponEarlyExerciseOfUnvestedOptionsNetOfRepurchases" name="IssuanceOfCommonStockUponEarlyExerciseOfUnvestedOptionsNetOfRepurchases" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false"/>
+  <xsd:element id="cflt_IssuanceOfCommonStockUponExerciseOfVestedOptionsIncludedInPrepaidExpensesAndOtherCurrentAssets" name="IssuanceOfCommonStockUponExerciseOfVestedOptionsIncludedInPrepaidExpensesAndOtherCurrentAssets" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false" xbrli:balance="credit"/>
+  <xsd:element id="cflt_OptionIndexedToIssuersEquityCapPrice" name="OptionIndexedToIssuersEquityCapPrice" type="dtr-types:perShareItemType" substitutionGroup="xbrli:item" xbrli:periodType="instant" nillable="true" abstract="false"/>
+  <xsd:element id="cflt_PaymentsForPurchaseOfCappedCalls" name="PaymentsForPurchaseOfCappedCalls" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false" xbrli:balance="credit"/>
+  <xsd:element id="cflt_PercentageOfFutureTaxableIncomeOffsetByOperatingLossCarryforwards" name="PercentageOfFutureTaxableIncomeOffsetByOperatingLossCarryforwards" type="dtr-types:percentItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false"/>
+  <xsd:element id="cflt_PercentageOfIndividualCountryRepresentedMaximumRevenue" name="PercentageOfIndividualCountryRepresentedMaximumRevenue" type="dtr-types:percentItemType" substitutionGroup="xbrli:item" xbrli:periodType="instant" nillable="true" abstract="false"/>
+  <xsd:element id="cflt_PerformanceOptionsShareBasedCompensationExpenseThroughIpo" name="PerformanceOptionsShareBasedCompensationExpenseThroughIpo" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false" xbrli:balance="debit"/>
+  <xsd:element id="cflt_PerformanceOptionsShares" name="PerformanceOptionsShares" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false"/>
+  <xsd:element id="cflt_ProceedsFromIssuanceOfCommonStockUponEarlyExerciseOfUnvestedOptionsNetOfRepurchases" name="ProceedsFromIssuanceOfCommonStockUponEarlyExerciseOfUnvestedOptionsNetOfRepurchases" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false" xbrli:balance="debit"/>
+  <xsd:element id="cflt_RepurchasesOfUnvestedCommonStock" name="RepurchasesOfUnvestedCommonStock" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false"/>
+  <xsd:element id="cflt_ResearchAndDevelopmentTaxCreditCarryForwardExpire" name="ResearchAndDevelopmentTaxCreditCarryForwardExpire" type="xbrli:gYearItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false"/>
+  <xsd:element id="cflt_ShareBasedCompensationArrangementByShareBasedPaymentAwardBaseNumberOfAwardsIssuable" name="ShareBasedCompensationArrangementByShareBasedPaymentAwardBaseNumberOfAwardsIssuable" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false"/>
+  <xsd:element id="cflt_ShareBasedCompensationArrangementByShareBasedPaymentAwardOptionsVestedOutstandingAggregateIntrinsicValue" name="ShareBasedCompensationArrangementByShareBasedPaymentAwardOptionsVestedOutstandingAggregateIntrinsicValue" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="instant" nillable="true" abstract="false" xbrli:balance="debit"/>
+  <xsd:element id="cflt_ShareBasedCompensationArrangementByShareBasedPaymentAwardOptionsVestedOutstandingNumberOfShares" name="ShareBasedCompensationArrangementByShareBasedPaymentAwardOptionsVestedOutstandingNumberOfShares" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false"/>
+  <xsd:element id="cflt_ShareBasedCompensationArrangementByShareBasedPaymentAwardOptionsVestedOutstandingWeightedAverageExercisePrice" name="ShareBasedCompensationArrangementByShareBasedPaymentAwardOptionsVestedOutstandingWeightedAverageExercisePrice" type="dtr-types:perShareItemType" substitutionGroup="xbrli:item" xbrli:periodType="instant" nillable="true" abstract="false"/>
+  <xsd:element id="cflt_SharebasedCompensationArrangementBySharebasedPaymentAwardOptionsVestedOutstandingWeightedAverageRemainingContractualTerm" name="SharebasedCompensationArrangementBySharebasedPaymentAwardOptionsVestedOutstandingWeightedAverageRemainingContractualTerm" type="xbrli:durationItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false"/>
+  <xsd:element id="cflt_ShareBasedCompensationArrangementByShareBasedPaymentAwardSharesAvailableForGrantEquityInstrumentsOtherThanOptionsForfeitedGross" name="ShareBasedCompensationArrangementByShareBasedPaymentAwardSharesAvailableForGrantEquityInstrumentsOtherThanOptionsForfeitedGross" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false"/>
+  <xsd:element id="cflt_ShareBasedCompensationArrangementByShareBasedPaymentAwardSharesAvailableForGrantEquityInstrumentsOtherThanOptionsForfeitedOrCancelledGross" name="ShareBasedCompensationArrangementByShareBasedPaymentAwardSharesAvailableForGrantEquityInstrumentsOtherThanOptionsForfeitedOrCancelledGross" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" xbrli:periodType="instant" nillable="true" abstract="false"/>
+  <xsd:element id="cflt_ShareBasedCompensationArrangementByShareBasedPaymentAwardSharesAvailableForGrantEquityInstrumentsOtherThanOptionsGrantedGross" name="ShareBasedCompensationArrangementByShareBasedPaymentAwardSharesAvailableForGrantEquityInstrumentsOtherThanOptionsGrantedGross" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false"/>
+  <xsd:element id="cflt_StateNetOperatingLossCarryforwardExpireDate" name="StateNetOperatingLossCarryforwardExpireDate" type="xbrli:gYearItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false"/>
+  <xsd:element id="cflt_StockConversionFounderStockConversionRatio" name="StockConversionFounderStockConversionRatio" type="xbrli:stringItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false"/>
+  <xsd:element id="cflt_StockConversionPreferredStockConversionRatio" name="StockConversionPreferredStockConversionRatio" type="xbrli:stringItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false"/>
+  <xsd:element id="cflt_StockConvertedBetweenCommonStockClassesDuringPeriodShares" name="StockConvertedBetweenCommonStockClassesDuringPeriodShares" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false"/>
+  <xsd:element id="cflt_StockConvertedBetweenCommonStockClassesDuringPeriodValue" name="StockConvertedBetweenCommonStockClassesDuringPeriodValue" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false" xbrli:balance="credit"/>
+  <xsd:element id="cflt_StockConvertedBetweenFounderStockToPreferredStockDuringPeriodShares" name="StockConvertedBetweenFounderStockToPreferredStockDuringPeriodShares" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false"/>
+  <xsd:element id="cflt_StockConvertedBetweenFounderStockToPreferredStockDuringPeriodValue" name="StockConvertedBetweenFounderStockToPreferredStockDuringPeriodValue" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false" xbrli:balance="credit"/>
+  <xsd:element id="cflt_StockIssuanceCostsIncurredButNotYetPaid" name="StockIssuanceCostsIncurredButNotYetPaid" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false" xbrli:balance="credit"/>
+  <xsd:element id="cflt_StockReclassifiedFromCommonToClassBShares" name="StockReclassifiedFromCommonToClassBShares" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false"/>
+  <xsd:element id="cflt_StockReclassifiedFromCommonToClassBValue" name="StockReclassifiedFromCommonToClassBValue" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false" xbrli:balance="credit"/>
+  <xsd:element id="cflt_TemporaryEquityCarryingValue" name="TemporaryEquityCarryingValue" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false" xbrli:balance="credit"/>
+  <xsd:element id="cflt_TemporaryEquityStockIssuedDuringPeriodSharesConversionOfConvertibleSecurities" name="TemporaryEquityStockIssuedDuringPeriodSharesConversionOfConvertibleSecurities" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false"/>
+  <xsd:element id="cflt_TemporaryEquityStockIssuedDuringPeriodSharesNewIssues" name="TemporaryEquityStockIssuedDuringPeriodSharesNewIssues" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false"/>
+  <xsd:element id="cflt_TemporaryEquityStockIssuedDuringPeriodValueConversionOfConvertibleSecurities" name="TemporaryEquityStockIssuedDuringPeriodValueConversionOfConvertibleSecurities" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false" xbrli:balance="credit"/>
+  <xsd:element id="cflt_VestingOfEarlyExercisedStockOptions" name="VestingOfEarlyExercisedStockOptions" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false" xbrli:balance="credit"/>
+  <xsd:element id="cflt_IncomeTaxesLineItems" name="IncomeTaxesLineItems" type="xbrli:stringItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="cflt_CapitalizedSoftwareCostsMember" name="CapitalizedSoftwareCostsMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="cflt_CappedCallsMember" name="CappedCallsMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="cflt_CommonStockClassAAndClassBMember" name="CommonStockClassAAndClassBMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="cflt_ConfluentCloudMember" name="ConfluentCloudMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="cflt_ConfluentPlatformMember" name="ConfluentPlatformMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="cflt_ConvertibleFounderStockMember" name="ConvertibleFounderStockMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="cflt_ConvertibleSeniorNotesDueTwoThousandTwentySevenMember" name="ConvertibleSeniorNotesDueTwoThousandTwentySevenMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="cflt_CorporateNotesAndBondsMember" name="CorporateNotesAndBondsMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="cflt_CostOfRevenueMember" name="CostOfRevenueMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="cflt_DirectorAndEmployeeMember" name="DirectorAndEmployeeMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="cflt_EquityIncentivesPlan2014Member" name="EquityIncentivesPlan2014Member" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="cflt_EquityIncentivesPlan2021Member" name="EquityIncentivesPlan2021Member" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="cflt_EsppMember" name="EsppMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="cflt_EsppPlan2021Member" name="EsppPlan2021Member" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="cflt_ExpireInTwoThousandAndThirtyFourMember" name="ExpireInTwoThousandAndThirtyFourMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="cflt_ExpireInTwoThousandAndTwentySevenMember" name="ExpireInTwoThousandAndTwentySevenMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="cflt_InternalUseSoftwareMember" name="InternalUseSoftwareMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="cflt_MajorCustomersMember" name="MajorCustomersMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="cflt_Plan2014Member" name="Plan2014Member" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="cflt_Plan2021Member" name="Plan2021Member" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="cflt_PostContractCustomerSupportMember" name="PostContractCustomerSupportMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="cflt_ResearchAndDevelopmentTaxCreditCarryForwardExpireMember" name="ResearchAndDevelopmentTaxCreditCarryForwardExpireMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="cflt_RSUsMember" name="RSUsMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="cflt_SecondarySalesMember" name="SecondarySalesMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="cflt_SeriesARedeemableConvertiblePreferredStockMember" name="SeriesARedeemableConvertiblePreferredStockMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="cflt_SeriesBRedeemableConvertiblePreferredStockMember" name="SeriesBRedeemableConvertiblePreferredStockMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="cflt_SeriesCRedeemableConvertiblePreferredStockMember" name="SeriesCRedeemableConvertiblePreferredStockMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="cflt_SeriesDRedeemableConvertiblePreferredStockMember" name="SeriesDRedeemableConvertiblePreferredStockMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="cflt_SeriesERedeemableConvertiblePreferredStockMember" name="SeriesERedeemableConvertiblePreferredStockMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="cflt_ServiceBasedVestingConditionMember" name="ServiceBasedVestingConditionMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="cflt_SharesIssuableUponConversionOfThe2027NotesMember" name="SharesIssuableUponConversionOfThe2027NotesMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="cflt_SubscriptionAndServiceConcentrationRiskMember" name="SubscriptionAndServiceConcentrationRiskMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="cflt_SubscriptionMember" name="SubscriptionMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="cflt_TenderOfferMember" name="TenderOfferMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="cflt_UnvestedEarlyExercisedStockOptionsMember" name="UnvestedEarlyExercisedStockOptionsMember" type="dtr-types:domainItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="true"/>
+  <xsd:element id="cflt_DeferredRevenuePolicyTextBlock" name="DeferredRevenuePolicyTextBlock" type="dtr-types:textBlockItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false"/>
+  <xsd:element id="cflt_FunctionalCurrencyPolicyTextBlock" name="FunctionalCurrencyPolicyTextBlock" type="dtr-types:textBlockItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false"/>
+  <xsd:element id="cflt_LesseeOperatingLeasePurchaseMaturityTabletextblock" name="LesseeOperatingLeasePurchaseMaturityTabletextblock" type="dtr-types:textBlockItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false"/>
+  <xsd:element id="cflt_RedeemableConvertiblePreferredStockTextBlock" name="RedeemableConvertiblePreferredStockTextBlock" type="dtr-types:textBlockItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false"/>
+  <xsd:element id="cflt_ScheduleOfSharesReservedForFutureIssuanceTableTextBlock" name="ScheduleOfSharesReservedForFutureIssuanceTableTextBlock" type="dtr-types:textBlockItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false"/>
+  <xsd:element id="cflt_SummaryOfUsefulLifeOfPropertyAndEquipment" name="SummaryOfUsefulLifeOfPropertyAndEquipment" type="dtr-types:textBlockItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" nillable="true" abstract="false"/>
+</xsd:schema>

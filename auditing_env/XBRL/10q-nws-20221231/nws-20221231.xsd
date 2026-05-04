@@ -1,0 +1,478 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--XBRL Document Created with Wdesk from Workiva-->
+<!--Copyright 2023 Workiva-->
+<!--r:b0d5fe34-cc51-49a7-a151-e79bde319cee,g:c074fe51-e268-4b59-9818-faf9b04e11bd-->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:nws="http://newscorp.com/20221231" xmlns:xbrli="http://www.xbrl.org/2003/instance" xmlns:dtr-types="http://www.xbrl.org/dtr/type/2020-01-21" xmlns:xbrldt="http://xbrl.org/2005/xbrldt" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://newscorp.com/20221231">
+  <xs:import namespace="http://fasb.org/srt/2022" schemaLocation="https://xbrl.fasb.org/srt/2022/elts/srt-2022.xsd"/>
+  <xs:import namespace="http://fasb.org/us-gaap/2022" schemaLocation="https://xbrl.fasb.org/us-gaap/2022/elts/us-gaap-2022.xsd"/>
+  <xs:import namespace="http://www.w3.org/1999/xlink" schemaLocation="http://www.xbrl.org/2003/xlink-2003-12-31.xsd"/>
+  <xs:import namespace="http://www.xbrl.org/2003/instance" schemaLocation="http://www.xbrl.org/2003/xbrl-instance-2003-12-31.xsd"/>
+  <xs:import namespace="http://www.xbrl.org/2003/linkbase" schemaLocation="http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd"/>
+  <xs:import namespace="http://www.xbrl.org/dtr/type/2020-01-21" schemaLocation="https://www.xbrl.org/dtr/type/2020-01-21/types.xsd"/>
+  <xs:import namespace="http://xbrl.org/2005/xbrldt" schemaLocation="http://www.xbrl.org/2005/xbrldt-2005.xsd"/>
+  <xs:import namespace="http://xbrl.sec.gov/dei/2022" schemaLocation="https://xbrl.sec.gov/dei/2022/dei-2022.xsd"/>
+  <xs:annotation>
+    <xs:appinfo>
+      <link:linkbaseRef xmlns:xlink="http://www.w3.org/1999/xlink" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="nws-20221231_lab.xml" xlink:role="http://www.xbrl.org/2003/role/labelLinkbaseRef" xlink:type="simple"/>
+      <link:linkbaseRef xmlns:xlink="http://www.w3.org/1999/xlink" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="nws-20221231_pre.xml" xlink:role="http://www.xbrl.org/2003/role/presentationLinkbaseRef" xlink:type="simple"/>
+      <link:linkbaseRef xmlns:xlink="http://www.w3.org/1999/xlink" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="nws-20221231_cal.xml" xlink:role="http://www.xbrl.org/2003/role/calculationLinkbaseRef" xlink:type="simple"/>
+      <link:linkbaseRef xmlns:xlink="http://www.w3.org/1999/xlink" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="nws-20221231_def.xml" xlink:role="http://www.xbrl.org/2003/role/definitionLinkbaseRef" xlink:type="simple"/>
+      <link:roleType id="CoverPage" roleURI="http://newscorp.com/role/CoverPage">
+        <link:definition>0000001 - Document - Cover Page</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ConsolidatedStatementsofOperations" roleURI="http://newscorp.com/role/ConsolidatedStatementsofOperations">
+        <link:definition>0000002 - Statement - Consolidated Statements of Operations</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ConsolidatedStatementsofComprehensiveIncome" roleURI="http://newscorp.com/role/ConsolidatedStatementsofComprehensiveIncome">
+        <link:definition>0000003 - Statement - Consolidated Statements of Comprehensive Income</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ConsolidatedStatementsofComprehensiveLossIncomeParenthetical" roleURI="http://newscorp.com/role/ConsolidatedStatementsofComprehensiveLossIncomeParenthetical">
+        <link:definition>0000004 - Statement - Consolidated Statements of Comprehensive (Loss) Income (Parenthetical)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ConsolidatedBalanceSheets" roleURI="http://newscorp.com/role/ConsolidatedBalanceSheets">
+        <link:definition>0000005 - Statement - Consolidated Balance Sheets</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ConsolidatedBalanceSheetsParenthetical" roleURI="http://newscorp.com/role/ConsolidatedBalanceSheetsParenthetical">
+        <link:definition>0000006 - Statement - Consolidated Balance Sheets (Parenthetical)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ConsolidatedStatementsofCashFlows" roleURI="http://newscorp.com/role/ConsolidatedStatementsofCashFlows">
+        <link:definition>0000007 - Statement - Consolidated Statements of Cash Flows</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="DescriptionofBusinessandBasisofPresentation" roleURI="http://newscorp.com/role/DescriptionofBusinessandBasisofPresentation">
+        <link:definition>0000008 - Disclosure - Description of Business and Basis of Presentation</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="Revenues" roleURI="http://newscorp.com/role/Revenues">
+        <link:definition>0000009 - Disclosure - Revenues</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="Acquisitions" roleURI="http://newscorp.com/role/Acquisitions">
+        <link:definition>0000010 - Disclosure - Acquisitions</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RestructuringPrograms" roleURI="http://newscorp.com/role/RestructuringPrograms">
+        <link:definition>0000011 - Disclosure - Restructuring Programs</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="Investments" roleURI="http://newscorp.com/role/Investments">
+        <link:definition>0000012 - Disclosure - Investments</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="Borrowings" roleURI="http://newscorp.com/role/Borrowings">
+        <link:definition>0000013 - Disclosure - Borrowings</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="Equity" roleURI="http://newscorp.com/role/Equity">
+        <link:definition>0000014 - Disclosure - Equity</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FinancialInstrumentsandFairValueMeasurements" roleURI="http://newscorp.com/role/FinancialInstrumentsandFairValueMeasurements">
+        <link:definition>0000015 - Disclosure - Financial Instruments and Fair Value Measurements</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="EarningsLossPerShare" roleURI="http://newscorp.com/role/EarningsLossPerShare">
+        <link:definition>0000016 - Disclosure - Earnings (Loss) Per Share</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CommitmentsandContingencies" roleURI="http://newscorp.com/role/CommitmentsandContingencies">
+        <link:definition>0000017 - Disclosure - Commitments and Contingencies</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IncomeTaxes" roleURI="http://newscorp.com/role/IncomeTaxes">
+        <link:definition>0000018 - Disclosure - Income Taxes</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SegmentInformation" roleURI="http://newscorp.com/role/SegmentInformation">
+        <link:definition>0000019 - Disclosure - Segment Information</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="AdditionalFinancialInformation" roleURI="http://newscorp.com/role/AdditionalFinancialInformation">
+        <link:definition>0000020 - Disclosure - Additional Financial Information</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SubsequentEvents" roleURI="http://newscorp.com/role/SubsequentEvents">
+        <link:definition>0000021 - Disclosure - Subsequent Events</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="DescriptionofBusinessandBasisofPresentationPolicies" roleURI="http://newscorp.com/role/DescriptionofBusinessandBasisofPresentationPolicies">
+        <link:definition>0000022 - Disclosure - Description of Business and Basis of Presentation (Policies)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RevenuesTables" roleURI="http://newscorp.com/role/RevenuesTables">
+        <link:definition>0000023 - Disclosure - Revenues (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RestructuringProgramsTables" roleURI="http://newscorp.com/role/RestructuringProgramsTables">
+        <link:definition>0000024 - Disclosure - Restructuring Programs (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="InvestmentsTables" roleURI="http://newscorp.com/role/InvestmentsTables">
+        <link:definition>0000025 - Disclosure - Investments (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="BorrowingsTables" roleURI="http://newscorp.com/role/BorrowingsTables">
+        <link:definition>0000026 - Disclosure - Borrowings (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="EquityTables" roleURI="http://newscorp.com/role/EquityTables">
+        <link:definition>0000027 - Disclosure - Equity (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FinancialInstrumentsandFairValueMeasurementsTables" roleURI="http://newscorp.com/role/FinancialInstrumentsandFairValueMeasurementsTables">
+        <link:definition>0000028 - Disclosure - Financial Instruments and Fair Value Measurements (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="EarningsLossPerShareTables" roleURI="http://newscorp.com/role/EarningsLossPerShareTables">
+        <link:definition>0000029 - Disclosure - Earnings (Loss) Per Share (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CommitmentandContingenciesTables" roleURI="http://newscorp.com/role/CommitmentandContingenciesTables">
+        <link:definition>0000030 - Disclosure - Commitment and Contingencies (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SegmentInformationTables" roleURI="http://newscorp.com/role/SegmentInformationTables">
+        <link:definition>0000031 - Disclosure - Segment Information (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="AdditionalFinancialInformationTables" roleURI="http://newscorp.com/role/AdditionalFinancialInformationTables">
+        <link:definition>0000032 - Disclosure - Additional Financial Information (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RevenuesSummaryofDisaggregatedRevenuebyTypeandbySegmentDetail" roleURI="http://newscorp.com/role/RevenuesSummaryofDisaggregatedRevenuebyTypeandbySegmentDetail">
+        <link:definition>0000033 - Disclosure - Revenues - Summary of Disaggregated Revenue by Type and by Segment (Detail)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RevenuesSummaryofDeferredRevenuefromContractwithCustomersDetail" roleURI="http://newscorp.com/role/RevenuesSummaryofDeferredRevenuefromContractwithCustomersDetail">
+        <link:definition>0000034 - Disclosure - Revenues - Summary of Deferred Revenue from Contract with Customers (Detail)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RevenuesRevenueRemainingPerformanceObligationDetails" roleURI="http://newscorp.com/role/RevenuesRevenueRemainingPerformanceObligationDetails">
+        <link:definition>0000035 - Disclosure - Revenues - Revenue Remaining Performance Obligation (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RevenuesRevenueRemainingPerformanceObligationDetails_1" roleURI="http://newscorp.com/role/RevenuesRevenueRemainingPerformanceObligationDetails_1">
+        <link:definition>0000035 - Disclosure - Revenues - Revenue Remaining Performance Obligation (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="AcquisitionsAdditionalInformationDetail" roleURI="http://newscorp.com/role/AcquisitionsAdditionalInformationDetail">
+        <link:definition>0000036 - Disclosure - Acquisitions - Additional Information (Detail)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RestructuringProgramsAdditionalInformationDetail" roleURI="http://newscorp.com/role/RestructuringProgramsAdditionalInformationDetail">
+        <link:definition>0000037 - Disclosure - Restructuring Programs - Additional Information (Detail)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RestructuringProgramsScheduleofChangesinRestructuringProgramLiabilitiesDetail" roleURI="http://newscorp.com/role/RestructuringProgramsScheduleofChangesinRestructuringProgramLiabilitiesDetail">
+        <link:definition>0000038 - Disclosure - Restructuring Programs - Schedule of Changes in Restructuring Program Liabilities (Detail)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="InvestmentsScheduleofInvestmentsDetail" roleURI="http://newscorp.com/role/InvestmentsScheduleofInvestmentsDetail">
+        <link:definition>0000039 - Disclosure - Investments - Schedule of Investments (Detail)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="InvestmentsScheduleofTotalGainsandLossesonEquitySecuritiesDetail" roleURI="http://newscorp.com/role/InvestmentsScheduleofTotalGainsandLossesonEquitySecuritiesDetail">
+        <link:definition>0000040 - Disclosure - Investments - Schedule of Total Gains and Losses on Equity Securities (Detail)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="InvestmentsAdditionalInformationDetail" roleURI="http://newscorp.com/role/InvestmentsAdditionalInformationDetail">
+        <link:definition>0000041 - Disclosure - Investments - Additional Information (Detail)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="BorrowingsScheduleofBorrowingsDetails" roleURI="http://newscorp.com/role/BorrowingsScheduleofBorrowingsDetails">
+        <link:definition>0000042 - Disclosure - Borrowings - Schedule of Borrowings (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="EquitySummaryofChangesinEquityDetail" roleURI="http://newscorp.com/role/EquitySummaryofChangesinEquityDetail">
+        <link:definition>0000043 - Disclosure - Equity - Summary of Changes in Equity (Detail)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="EquityAdditionalInformationDetail" roleURI="http://newscorp.com/role/EquityAdditionalInformationDetail">
+        <link:definition>0000044 - Disclosure - Equity - Additional Information (Detail)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FinancialInstrumentsandFairValueMeasurementsSummaryofAssetsandLiabilitiesMeasuredAtFairValueonRecurringBasisDetail" roleURI="http://newscorp.com/role/FinancialInstrumentsandFairValueMeasurementsSummaryofAssetsandLiabilitiesMeasuredAtFairValueonRecurringBasisDetail">
+        <link:definition>0000045 - Disclosure - Financial Instruments and Fair Value Measurements - Summary of Assets and Liabilities Measured At Fair Value on Recurring Basis (Detail)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FinancialInstrumentsandFairValueMeasurementsSummaryofEquitySecuritiesClassifiedasLevel3Detail" roleURI="http://newscorp.com/role/FinancialInstrumentsandFairValueMeasurementsSummaryofEquitySecuritiesClassifiedasLevel3Detail">
+        <link:definition>0000046 - Disclosure - Financial Instruments and Fair Value Measurements - Summary of Equity Securities Classified as Level 3 (Detail)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FinancialInstrumentsandFairValueMeasurementsSummaryofHedgesClassifiedasCurrentorNonCurrentinBalanceSheetsBasedonMaturityDatesDetail" roleURI="http://newscorp.com/role/FinancialInstrumentsandFairValueMeasurementsSummaryofHedgesClassifiedasCurrentorNonCurrentinBalanceSheetsBasedonMaturityDatesDetail">
+        <link:definition>0000047 - Disclosure - Financial Instruments and Fair Value Measurements - Summary of Hedges Classified as Current or Non-Current in Balance Sheets Based on Maturity Dates (Detail)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FinancialInstrumentsandFairValueMeasurementsAdditionalInformationDetail" roleURI="http://newscorp.com/role/FinancialInstrumentsandFairValueMeasurementsAdditionalInformationDetail">
+        <link:definition>0000048 - Disclosure - Financial Instruments and Fair Value Measurements - Additional Information (Detail)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FinancialInstrumentsandFairValueMeasurementsSummaryofDerivativeInstrumentsDesignatedasCashFlowHedgesDetail" roleURI="http://newscorp.com/role/FinancialInstrumentsandFairValueMeasurementsSummaryofDerivativeInstrumentsDesignatedasCashFlowHedgesDetail">
+        <link:definition>0000049 - Disclosure - Financial Instruments and Fair Value Measurements - Summary of Derivative Instruments Designated as Cash Flow Hedges (Detail)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FinancialInstrumentsandFairValueMeasurementsScheduleofFairValueHedgingRelationshipByBalanceSheetDetail" roleURI="http://newscorp.com/role/FinancialInstrumentsandFairValueMeasurementsScheduleofFairValueHedgingRelationshipByBalanceSheetDetail">
+        <link:definition>0000050 - Disclosure - Financial Instruments and Fair Value Measurements - Schedule of Fair Value Hedging Relationship By Balance Sheet (Detail)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="EarningsLossPerShareComputationofBasicAndDilutedEarningsLossPerShareDetail" roleURI="http://newscorp.com/role/EarningsLossPerShareComputationofBasicAndDilutedEarningsLossPerShareDetail">
+        <link:definition>0000051 - Disclosure - Earnings (Loss) Per Share - Computation of Basic And Diluted Earnings (Loss) Per Share (Detail)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CommitmentsandContingenciesScheduleofCommitmentsbyFiscalYearMaturityDetail" roleURI="http://newscorp.com/role/CommitmentsandContingenciesScheduleofCommitmentsbyFiscalYearMaturityDetail">
+        <link:definition>0000052 - Disclosure - Commitments and Contingencies - Schedule of Commitments by Fiscal Year Maturity (Detail)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CommitmentsandContingenciesAdditionalInformationDetail" roleURI="http://newscorp.com/role/CommitmentsandContingenciesAdditionalInformationDetail">
+        <link:definition>0000053 - Disclosure - Commitments and Contingencies - Additional Information (Detail)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IncomeTaxesAdditionalInformationDetail" roleURI="http://newscorp.com/role/IncomeTaxesAdditionalInformationDetail">
+        <link:definition>0000054 - Disclosure - Income Taxes - Additional Information (Detail)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SegmentInformationAdditionalInformationDetail" roleURI="http://newscorp.com/role/SegmentInformationAdditionalInformationDetail">
+        <link:definition>0000055 - Disclosure - Segment Information - Additional Information (Detail)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SegmentInformationReconciliationofRevenueandSegmentEBITDAfromSegmentstoConsolidatedDetail" roleURI="http://newscorp.com/role/SegmentInformationReconciliationofRevenueandSegmentEBITDAfromSegmentstoConsolidatedDetail">
+        <link:definition>0000056 - Disclosure - Segment Information - Reconciliation of Revenue and Segment EBITDA from Segments to Consolidated (Detail)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SegmentInformationReconciliationofAssetsfromSegmentstoConsolidatedDetail" roleURI="http://newscorp.com/role/SegmentInformationReconciliationofAssetsfromSegmentstoConsolidatedDetail">
+        <link:definition>0000057 - Disclosure - Segment Information - Reconciliation of Assets from Segments to Consolidated (Detail)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SegmentInformationReconciliationofGoodwillandIntangibleAssetsfromSegmentstoConsolidatedDetail" roleURI="http://newscorp.com/role/SegmentInformationReconciliationofGoodwillandIntangibleAssetsfromSegmentstoConsolidatedDetail">
+        <link:definition>0000058 - Disclosure - Segment Information - Reconciliation of Goodwill and Intangible Assets from Segments to Consolidated (Detail)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="AdditionalFinancialInformationComponentsofReceivablesNetDetail" roleURI="http://newscorp.com/role/AdditionalFinancialInformationComponentsofReceivablesNetDetail">
+        <link:definition>0000059 - Disclosure - Additional Financial Information - Components of Receivables, Net (Detail)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="AdditionalFinancialInformationComponentsofOtherNonCurrentAssetsDetail" roleURI="http://newscorp.com/role/AdditionalFinancialInformationComponentsofOtherNonCurrentAssetsDetail">
+        <link:definition>0000060 - Disclosure - Additional Financial Information - Components of Other Non-Current Assets (Detail)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="AdditionalFinancialInformationComponentsofOtherCurrentLiabilitiesDetail" roleURI="http://newscorp.com/role/AdditionalFinancialInformationComponentsofOtherCurrentLiabilitiesDetail">
+        <link:definition>0000061 - Disclosure - Additional Financial Information - Components of Other Current Liabilities (Detail)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="AdditionalFinancialInformationComponentsofOtherNetIncludedinStatementofOperationsDetail" roleURI="http://newscorp.com/role/AdditionalFinancialInformationComponentsofOtherNetIncludedinStatementofOperationsDetail">
+        <link:definition>0000062 - Disclosure - Additional Financial Information - Components of Other, Net Included in Statement of Operations (Detail)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="AdditionalFinancialInformationSummaryofSupplementalCashFlowInformationDetail" roleURI="http://newscorp.com/role/AdditionalFinancialInformationSummaryofSupplementalCashFlowInformationDetail">
+        <link:definition>0000063 - Disclosure - Additional Financial Information - Summary of Supplemental Cash Flow Information (Detail)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SubsequentEventsAdditionalInformationDetail" roleURI="http://newscorp.com/role/SubsequentEventsAdditionalInformationDetail">
+        <link:definition>0000064 - Disclosure - Subsequent Events- Additional Information (Detail)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element id="nws_CreditFacility2022Member" abstract="true" name="CreditFacility2022Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="nws_TelstraMember" abstract="true" name="TelstraMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="nws_ReconciliationOfRevenueAndSegmentEbitdaFromSegmentsToConsolidatedTableTextBlock" abstract="false" name="ReconciliationOfRevenueAndSegmentEbitdaFromSegmentsToConsolidatedTableTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:textBlockItemType"/>
+  <xs:element id="nws_TermLoanFacilityTwoThousandAndNineteenMember" abstract="true" name="TermLoanFacilityTwoThousandAndNineteenMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="nws_DowJonesSegmentMember" abstract="true" name="DowJonesSegmentMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="nws_FairValueMeasurementWithUnobservableInputsReconciliationRecurringBasisAssetForeignCurrencyTranslationAndOtherAdjustments" abstract="false" name="FairValueMeasurementWithUnobservableInputsReconciliationRecurringBasisAssetForeignCurrencyTranslationAndOtherAdjustments" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="nws_ScheduleOfEffectsOfFairValueHedgingRelationshipsInFinancialPositionTableTextBlock" abstract="false" name="ScheduleOfEffectsOfFairValueHedgingRelationshipsInFinancialPositionTableTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:textBlockItemType"/>
+  <xs:element id="nws_CommonStockSharesIssuedNetOfTreasuryStock" abstract="false" name="CommonStockSharesIssuedNetOfTreasuryStock" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="xbrli:sharesItemType"/>
+  <xs:element id="nws_CreditFacility2022Tranche1Member" abstract="true" name="CreditFacility2022Tranche1Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="nws_USPrivatePlacementTwoThousandTwelveUSDPortionTrancheThreeMember" abstract="true" name="USPrivatePlacementTwoThousandTwelveUSDPortionTrancheThreeMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="nws_ProgrammingRights" abstract="false" name="ProgrammingRights" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="nws_ScheduleOfBusinessAcquisitionsAndDivestituresTable" abstract="true" name="ScheduleOfBusinessAcquisitionsAndDivestituresTable" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrldt:hypercubeItem" type="xbrli:stringItemType"/>
+  <xs:element id="nws_SeniorNotes2022Member" abstract="true" name="SeniorNotes2022Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="nws_OilPriceInformationServicesMember" abstract="true" name="OilPriceInformationServicesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="nws_EquitySecuritiesRealizedGainLoss" abstract="false" name="EquitySecuritiesRealizedGainLoss" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="nws_ConsumerMember" abstract="true" name="ConsumerMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="nws_ProgrammingRightsDueAfterFiveYears" abstract="false" name="ProgrammingRightsDueAfterFiveYears" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="nws_AccruedCommissionAndRoyaltiesCurrent" abstract="false" name="AccruedCommissionAndRoyaltiesCurrent" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="nws_SeniorNotes2021Member" abstract="true" name="SeniorNotes2021Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="nws_NewFoxtelMember" abstract="true" name="NewFoxtelMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="nws_PropertyGuruPteLtdMember" abstract="true" name="PropertyGuruPteLtdMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="nws_ReaGroupIncMember" abstract="true" name="ReaGroupIncMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="nws_DebtAndFinancialInstrumentsLineItems" abstract="true" name="DebtAndFinancialInstrumentsLineItems" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="nws_TwentyFirstCenturyFoxMember" abstract="true" name="TwentyFirstCenturyFoxMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="nws_SportsProgrammingRightsMember" abstract="true" name="SportsProgrammingRightsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="nws_RoyaltyAdvancesToAuthors" abstract="false" name="RoyaltyAdvancesToAuthors" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="nws_ProgrammingRightsDueInYearsFourAndFive" abstract="false" name="ProgrammingRightsDueInYearsFourAndFive" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="nws_CustomerRelationshipAndTechnologyPlatformsMember" abstract="true" name="CustomerRelationshipAndTechnologyPlatformsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="nws_CirculationAndSubscriptionMember" abstract="true" name="CirculationAndSubscriptionMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="nws_OtherServicesMember" abstract="true" name="OtherServicesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="nws_SellingGeneralAndAdministrativeExpenseBenefit" abstract="false" name="SellingGeneralAndAdministrativeExpenseBenefit" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="nws_TermLoanA2022Member" abstract="true" name="TermLoanA2022Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="nws_ProgrammingRightsDueInOneYearOrLess" abstract="false" name="ProgrammingRightsDueInOneYearOrLess" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="nws_ProgrammingRightsDueInYearsTwoAndThree" abstract="false" name="ProgrammingRightsDueInYearsTwoAndThree" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="nws_ContractWithCustomerLiabilityIncludingNewContractsRevenueRecognized" abstract="false" name="ContractWithCustomerLiabilityIncludingNewContractsRevenueRecognized" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="nws_OtherIncomeAndExpensesTable" abstract="true" name="OtherIncomeAndExpensesTable" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrldt:hypercubeItem" type="xbrli:stringItemType"/>
+  <xs:element id="nws_FairvalueMeasurementwithUnobservableinputsReconciliationrecurringbasisassetMeasurementAdjustments" abstract="false" name="FairvalueMeasurementwithUnobservableinputsReconciliationrecurringbasisassetMeasurementAdjustments" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="nws_OtherIncomeAndExpensesLineItems" abstract="true" name="OtherIncomeAndExpensesLineItems" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="nws_UnitedKingdomNewspaperMattersIndemnificationMember" abstract="true" name="UnitedKingdomNewspaperMattersIndemnificationMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="nws_NumberOfBrandedPublishingImprints" abstract="false" name="NumberOfBrandedPublishingImprints" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="xbrli:integerItemType"/>
+  <xs:element id="nws_BusinessCombinationContinentConsiderationLiabilityPerformanceObjectivePeriod" abstract="false" name="BusinessCombinationContinentConsiderationLiabilityPerformanceObjectivePeriod" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:durationItemType"/>
+  <xs:element id="nws_IncomeLossBeforeInterestTaxesDepreciationAndAmortization" abstract="false" name="IncomeLossBeforeInterestTaxesDepreciationAndAmortization" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="nws_ContractWithCustomerLiabilityOther" abstract="false" name="ContractWithCustomerLiabilityOther" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="nws_BusinessCombinationConsiderationTransferredRestrictedCash" abstract="false" name="BusinessCombinationConsiderationTransferredRestrictedCash" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="nws_USPrivatePlacementTwoThousandTwelveUSDPortionTrancheTwoMember" abstract="true" name="USPrivatePlacementTwoThousandTwelveUSDPortionTrancheTwoMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="nws_DeferredRevenueMember" abstract="true" name="DeferredRevenueMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="nws_BaseChemicalsBusinessMember" abstract="true" name="BaseChemicalsBusinessMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="nws_OtherProductOrServiceMember" abstract="true" name="OtherProductOrServiceMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="nws_SubscriptionVideoServicesMember" abstract="true" name="SubscriptionVideoServicesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="nws_UnitedKingdomNewspaperMattersMember" abstract="true" name="UnitedKingdomNewspaperMattersMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="nws_MoveIncMember" abstract="true" name="MoveIncMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="nws_NumberOfChannels" abstract="false" name="NumberOfChannels" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="xbrli:integerItemType"/>
+  <xs:element id="nws_NewsAndInformationServicesSegmentMember" abstract="true" name="NewsAndInformationServicesSegmentMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="nws_DigitalRealEstateServicesSegmentMember" abstract="true" name="DigitalRealEstateServicesSegmentMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="nws_WorkingCapitalFacilityTwoThousandSeventeenMember" abstract="true" name="WorkingCapitalFacilityTwoThousandSeventeenMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="nws_ContractWithCustomerLiabilityRollForward" abstract="true" name="ContractWithCustomerLiabilityRollForward" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="nws_CreditFacilityFiscalTwoThousandAndNineteenMember" abstract="true" name="CreditFacilityFiscalTwoThousandAndNineteenMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="nws_BookPublishingSegmentMember" abstract="true" name="BookPublishingSegmentMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="nws_ScheduleOfBusinessAcquisitionsAndDivestituresLineItems" abstract="true" name="ScheduleOfBusinessAcquisitionsAndDivestituresLineItems" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="nws_CreditFacility2022Tranche2Member" abstract="true" name="CreditFacility2022Tranche2Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="nws_FoxtelMember" abstract="true" name="FoxtelMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="nws_UpNestIncMember" abstract="true" name="UpNestIncMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="nws_TelstraFacilityMember" abstract="true" name="TelstraFacilityMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="nws_USPrivatePlacementTwoThousandTwelveAUDPortionMember" abstract="true" name="USPrivatePlacementTwoThousandTwelveAUDPortionMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="nws_AverageAnnualRent" abstract="false" name="AverageAnnualRent" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+</xs:schema>

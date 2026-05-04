@@ -1,0 +1,697 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--XBRL Document Created with Wdesk from Workiva-->
+<!--Copyright 2023 Workiva-->
+<!--r:e49369cd-d473-4c24-a286-7d1f82a17be3,g:b8f41d95-68e3-40bb-aae5-5535e090b7e6-->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:ngl="http://www.nglenergypartners.com/20221231" xmlns:xbrli="http://www.xbrl.org/2003/instance" xmlns:dtr-types="http://www.xbrl.org/dtr/type/2020-01-21" xmlns:xbrldt="http://xbrl.org/2005/xbrldt" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://www.nglenergypartners.com/20221231">
+  <xs:import namespace="http://fasb.org/srt/2021-01-31" schemaLocation="https://xbrl.fasb.org/srt/2021/elts/srt-2021-01-31.xsd"/>
+  <xs:import namespace="http://fasb.org/us-gaap/2021-01-31" schemaLocation="https://xbrl.fasb.org/us-gaap/2021/elts/us-gaap-2021-01-31.xsd"/>
+  <xs:import namespace="http://www.w3.org/1999/xlink" schemaLocation="http://www.xbrl.org/2003/xlink-2003-12-31.xsd"/>
+  <xs:import namespace="http://www.xbrl.org/2003/instance" schemaLocation="http://www.xbrl.org/2003/xbrl-instance-2003-12-31.xsd"/>
+  <xs:import namespace="http://www.xbrl.org/2003/linkbase" schemaLocation="http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd"/>
+  <xs:import namespace="http://www.xbrl.org/dtr/type/2020-01-21" schemaLocation="https://www.xbrl.org/dtr/type/2020-01-21/types.xsd"/>
+  <xs:import namespace="http://xbrl.org/2005/xbrldt" schemaLocation="http://www.xbrl.org/2005/xbrldt-2005.xsd"/>
+  <xs:import namespace="http://xbrl.sec.gov/dei/2021q4" schemaLocation="https://xbrl.sec.gov/dei/2021q4/dei-2021q4.xsd"/>
+  <xs:import namespace="http://xbrl.sec.gov/exch/2021" schemaLocation="https://xbrl.sec.gov/exch/2021/exch-2021.xsd"/>
+  <xs:annotation>
+    <xs:appinfo>
+      <link:linkbaseRef xmlns:xlink="http://www.w3.org/1999/xlink" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="ngl-20221231_lab.xml" xlink:role="http://www.xbrl.org/2003/role/labelLinkbaseRef" xlink:type="simple"/>
+      <link:linkbaseRef xmlns:xlink="http://www.w3.org/1999/xlink" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="ngl-20221231_pre.xml" xlink:role="http://www.xbrl.org/2003/role/presentationLinkbaseRef" xlink:type="simple"/>
+      <link:linkbaseRef xmlns:xlink="http://www.w3.org/1999/xlink" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="ngl-20221231_cal.xml" xlink:role="http://www.xbrl.org/2003/role/calculationLinkbaseRef" xlink:type="simple"/>
+      <link:linkbaseRef xmlns:xlink="http://www.w3.org/1999/xlink" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="ngl-20221231_def.xml" xlink:role="http://www.xbrl.org/2003/role/definitionLinkbaseRef" xlink:type="simple"/>
+      <link:roleType id="DocumentandEntityInformation" roleURI="http://www.nglenergypartners.com/role/DocumentandEntityInformation">
+        <link:definition>0000001 - Document - Document and Entity Information</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="UnauditedCondensedConsolidatedBalanceSheets" roleURI="http://www.nglenergypartners.com/role/UnauditedCondensedConsolidatedBalanceSheets">
+        <link:definition>0000002 - Statement - Unaudited Condensed Consolidated Balance Sheets</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="UnauditedCondensedConsolidatedStatementsofOperations" roleURI="http://www.nglenergypartners.com/role/UnauditedCondensedConsolidatedStatementsofOperations">
+        <link:definition>0000003 - Statement - Unaudited Condensed Consolidated Statements of Operations</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="UnauditedCondensedConsolidatedStatementsofComprehensiveIncomeLoss" roleURI="http://www.nglenergypartners.com/role/UnauditedCondensedConsolidatedStatementsofComprehensiveIncomeLoss">
+        <link:definition>0000004 - Statement - Unaudited Condensed Consolidated Statements of Comprehensive Income (Loss)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="UnauditedCondensedConsolidatedStatementsofChangesinEquity" roleURI="http://www.nglenergypartners.com/role/UnauditedCondensedConsolidatedStatementsofChangesinEquity">
+        <link:definition>0000005 - Statement - Unaudited Condensed Consolidated Statements of Changes in Equity</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="UnauditedCondensedConsolidatedStatementsofCashFlows" roleURI="http://www.nglenergypartners.com/role/UnauditedCondensedConsolidatedStatementsofCashFlows">
+        <link:definition>0000006 - Statement - Unaudited Condensed Consolidated Statements of Cash Flows</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="OrganizationandOperations" roleURI="http://www.nglenergypartners.com/role/OrganizationandOperations">
+        <link:definition>0000007 - Disclosure - Organization and Operations</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SignificantAccountingPolicies" roleURI="http://www.nglenergypartners.com/role/SignificantAccountingPolicies">
+        <link:definition>0000008 - Disclosure - Significant Accounting Policies</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IncomeLossPerCommonUnit" roleURI="http://www.nglenergypartners.com/role/IncomeLossPerCommonUnit">
+        <link:definition>0000009 - Disclosure - Income (Loss) Per Common Unit</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="PropertyPlantandEquipment" roleURI="http://www.nglenergypartners.com/role/PropertyPlantandEquipment">
+        <link:definition>0000010 - Disclosure - Property, Plant and Equipment</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IntangibleAssets" roleURI="http://www.nglenergypartners.com/role/IntangibleAssets">
+        <link:definition>0000011 - Disclosure - Intangible Assets</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LongTermDebt" roleURI="http://www.nglenergypartners.com/role/LongTermDebt">
+        <link:definition>0000012 - Disclosure - Long-Term Debt</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CommitmentsandContingencies" roleURI="http://www.nglenergypartners.com/role/CommitmentsandContingencies">
+        <link:definition>0000013 - Disclosure - Commitments and Contingencies</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="Equity" roleURI="http://www.nglenergypartners.com/role/Equity">
+        <link:definition>0000014 - Disclosure - Equity</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FairValueofFinancialInstruments" roleURI="http://www.nglenergypartners.com/role/FairValueofFinancialInstruments">
+        <link:definition>0000015 - Disclosure - Fair Value of Financial Instruments</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="Segments" roleURI="http://www.nglenergypartners.com/role/Segments">
+        <link:definition>0000016 - Disclosure - Segments</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="TransactionswithAffiliates" roleURI="http://www.nglenergypartners.com/role/TransactionswithAffiliates">
+        <link:definition>0000017 - Disclosure - Transactions with Affiliates</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RevenuefromContractswithCustomers" roleURI="http://www.nglenergypartners.com/role/RevenuefromContractswithCustomers">
+        <link:definition>0000018 - Disclosure - Revenue from Contracts with Customers</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="Leases" roleURI="http://www.nglenergypartners.com/role/Leases">
+        <link:definition>0000019 - Disclosure - Leases</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="AllowanceforCurrentExpectedCreditLoss" roleURI="http://www.nglenergypartners.com/role/AllowanceforCurrentExpectedCreditLoss">
+        <link:definition>0000020 - Disclosure - Allowance for Current Expected Credit Loss</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="OtherMatters" roleURI="http://www.nglenergypartners.com/role/OtherMatters">
+        <link:definition>0000021 - Disclosure - Other Matters</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SubsequentEvents" roleURI="http://www.nglenergypartners.com/role/SubsequentEvents">
+        <link:definition>0000022 - Disclosure - Subsequent Events</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SignificantAccountingPoliciesPolicies" roleURI="http://www.nglenergypartners.com/role/SignificantAccountingPoliciesPolicies">
+        <link:definition>0000023 - Disclosure - Significant Accounting Policies (Policies)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CommitmentandContingenciesPolicies" roleURI="http://www.nglenergypartners.com/role/CommitmentandContingenciesPolicies">
+        <link:definition>0000024 - Disclosure - Commitment and Contingencies (Policies)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="EquityPolicies" roleURI="http://www.nglenergypartners.com/role/EquityPolicies">
+        <link:definition>0000025 - Disclosure - Equity (Policies)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RevenuefromContractswithCustomersPolicies" roleURI="http://www.nglenergypartners.com/role/RevenuefromContractswithCustomersPolicies">
+        <link:definition>0000026 - Disclosure - Revenue from Contracts with Customers (Policies)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="AllowanceforCurrentExpectedCreditLossPolicies" roleURI="http://www.nglenergypartners.com/role/AllowanceforCurrentExpectedCreditLossPolicies">
+        <link:definition>0000027 - Disclosure - Allowance for Current Expected Credit Loss (Policies)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SignificantAccountingPoliciesTables" roleURI="http://www.nglenergypartners.com/role/SignificantAccountingPoliciesTables">
+        <link:definition>0000028 - Disclosure - Significant Accounting Policies (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IncomeLossPerCommonUnitTables" roleURI="http://www.nglenergypartners.com/role/IncomeLossPerCommonUnitTables">
+        <link:definition>0000029 - Disclosure - Income (Loss) Per Common Unit (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="PropertyPlantandEquipmentTables" roleURI="http://www.nglenergypartners.com/role/PropertyPlantandEquipmentTables">
+        <link:definition>0000030 - Disclosure - Property, Plant and Equipment (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IntangibleAssetsTables" roleURI="http://www.nglenergypartners.com/role/IntangibleAssetsTables">
+        <link:definition>0000031 - Disclosure - Intangible Assets (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LongTermDebtTables" roleURI="http://www.nglenergypartners.com/role/LongTermDebtTables">
+        <link:definition>0000032 - Disclosure - Long-Term Debt (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CommitmentsandContingenciesTables" roleURI="http://www.nglenergypartners.com/role/CommitmentsandContingenciesTables">
+        <link:definition>0000033 - Disclosure - Commitments and Contingencies (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="EquityTables" roleURI="http://www.nglenergypartners.com/role/EquityTables">
+        <link:definition>0000034 - Disclosure - Equity (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FairValueofFinancialInstrumentsTables" roleURI="http://www.nglenergypartners.com/role/FairValueofFinancialInstrumentsTables">
+        <link:definition>0000035 - Disclosure - Fair Value of Financial Instruments (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SegmentsTables" roleURI="http://www.nglenergypartners.com/role/SegmentsTables">
+        <link:definition>0000036 - Disclosure - Segments (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="TransactionswithAffiliatesTables" roleURI="http://www.nglenergypartners.com/role/TransactionswithAffiliatesTables">
+        <link:definition>0000037 - Disclosure - Transactions with Affiliates (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RevenuefromContractswithCustomersTables" roleURI="http://www.nglenergypartners.com/role/RevenuefromContractswithCustomersTables">
+        <link:definition>0000038 - Disclosure - Revenue from Contracts with Customers (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LeasesTables" roleURI="http://www.nglenergypartners.com/role/LeasesTables">
+        <link:definition>0000039 - Disclosure - Leases (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="AllowanceforCurrentExpectedCreditLossTables" roleURI="http://www.nglenergypartners.com/role/AllowanceforCurrentExpectedCreditLossTables">
+        <link:definition>0000040 - Disclosure - Allowance for Current Expected Credit Loss (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="OrganizationandOperationsDetails" roleURI="http://www.nglenergypartners.com/role/OrganizationandOperationsDetails">
+        <link:definition>0000041 - Disclosure - Organization and Operations (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SignificantAccountingPoliciesIncomeTaxesDetails" roleURI="http://www.nglenergypartners.com/role/SignificantAccountingPoliciesIncomeTaxesDetails">
+        <link:definition>0000042 - Disclosure - Significant Accounting Policies - Income Taxes (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SignificantAccountingPoliciesInventoriesDetails" roleURI="http://www.nglenergypartners.com/role/SignificantAccountingPoliciesInventoriesDetails">
+        <link:definition>0000043 - Disclosure - Significant Accounting Policies - Inventories (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SignificantAccountingPoliciesInvestmentsinUnconsolidatedEntitiesDetails" roleURI="http://www.nglenergypartners.com/role/SignificantAccountingPoliciesInvestmentsinUnconsolidatedEntitiesDetails">
+        <link:definition>0000044 - Disclosure - Significant Accounting Policies - Investments in Unconsolidated Entities (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SignificantAccountingPoliciesOtherNoncurrentAssetsDetails" roleURI="http://www.nglenergypartners.com/role/SignificantAccountingPoliciesOtherNoncurrentAssetsDetails">
+        <link:definition>0000045 - Disclosure - Significant Accounting Policies - Other Noncurrent Assets (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SignificantAccountingPoliciesAccruedExpensesandOtherPayablesDetails" roleURI="http://www.nglenergypartners.com/role/SignificantAccountingPoliciesAccruedExpensesandOtherPayablesDetails">
+        <link:definition>0000046 - Disclosure - Significant Accounting Policies - Accrued Expenses and Other Payables (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IncomeLossPerCommonUnitDetails" roleURI="http://www.nglenergypartners.com/role/IncomeLossPerCommonUnitDetails">
+        <link:definition>0000047 - Disclosure - Income (Loss) Per Common Unit (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="PropertyPlantandEquipmentDetails" roleURI="http://www.nglenergypartners.com/role/PropertyPlantandEquipmentDetails">
+        <link:definition>0000048 - Disclosure - Property, Plant and Equipment (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IntangibleAssetsDetails" roleURI="http://www.nglenergypartners.com/role/IntangibleAssetsDetails">
+        <link:definition>0000049 - Disclosure - Intangible Assets (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IntangibleAssetsAmortizationDetails" roleURI="http://www.nglenergypartners.com/role/IntangibleAssetsAmortizationDetails">
+        <link:definition>0000050 - Disclosure - Intangible Assets - Amortization (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LongTermDebtDetails" roleURI="http://www.nglenergypartners.com/role/LongTermDebtDetails">
+        <link:definition>0000051 - Disclosure - Long-Term Debt (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LongTermDebt2026SeniorSecuredNotesDetails" roleURI="http://www.nglenergypartners.com/role/LongTermDebt2026SeniorSecuredNotesDetails">
+        <link:definition>0000052 - Disclosure - Long-Term Debt - 2026 Senior Secured Notes (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LongTermDebtAssetBasedCreditFacilityDetails" roleURI="http://www.nglenergypartners.com/role/LongTermDebtAssetBasedCreditFacilityDetails">
+        <link:definition>0000053 - Disclosure - Long-Term Debt - Asset-Based Credit Facility (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LongTermDebtSeniorUnsecuredNotesDetails" roleURI="http://www.nglenergypartners.com/role/LongTermDebtSeniorUnsecuredNotesDetails">
+        <link:definition>0000054 - Disclosure - Long-Term Debt - Senior Unsecured Notes (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LongTermDebtOtherLongTermDebtDetails" roleURI="http://www.nglenergypartners.com/role/LongTermDebtOtherLongTermDebtDetails">
+        <link:definition>0000055 - Disclosure - Long-Term Debt - Other Long-Term Debt (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LongTermDebtDebtMaturityScheduleDetails" roleURI="http://www.nglenergypartners.com/role/LongTermDebtDebtMaturityScheduleDetails">
+        <link:definition>0000056 - Disclosure - Long-Term Debt - Debt Maturity Schedule (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LongTermDebtAmortizationofDebtIssuanceCostsDetails" roleURI="http://www.nglenergypartners.com/role/LongTermDebtAmortizationofDebtIssuanceCostsDetails">
+        <link:definition>0000057 - Disclosure - Long-Term Debt - Amortization of Debt Issuance Costs (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CommitmentsandContingenciesLegalContingenciesDetails" roleURI="http://www.nglenergypartners.com/role/CommitmentsandContingenciesLegalContingenciesDetails">
+        <link:definition>0000058 - Disclosure - Commitments and Contingencies - Legal Contingencies (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CommitmentsandContingenciesEnvironmentalMattersDetails" roleURI="http://www.nglenergypartners.com/role/CommitmentsandContingenciesEnvironmentalMattersDetails">
+        <link:definition>0000059 - Disclosure - Commitments and Contingencies - Environmental Matters (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CommitmentsandContingenciesAssetRetirementObligationsDetails" roleURI="http://www.nglenergypartners.com/role/CommitmentsandContingenciesAssetRetirementObligationsDetails">
+        <link:definition>0000060 - Disclosure - Commitments and Contingencies - Asset Retirement Obligations (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CommitmentsandContingenciesPipelineCapacityAgreementsDetails" roleURI="http://www.nglenergypartners.com/role/CommitmentsandContingenciesPipelineCapacityAgreementsDetails">
+        <link:definition>0000061 - Disclosure - Commitments and Contingencies - Pipeline Capacity Agreements (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CommitmentsandContingenciesPurchaseCommitmentsDetails" roleURI="http://www.nglenergypartners.com/role/CommitmentsandContingenciesPurchaseCommitmentsDetails">
+        <link:definition>0000062 - Disclosure - Commitments and Contingencies - Purchase Commitments (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CommitmentsandContingenciesSaleCommitmentsDetails" roleURI="http://www.nglenergypartners.com/role/CommitmentsandContingenciesSaleCommitmentsDetails">
+        <link:definition>0000063 - Disclosure - Commitments and Contingencies - Sale Commitments (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CommitmentsandContingenciesOtherCommitmentsDetails" roleURI="http://www.nglenergypartners.com/role/CommitmentsandContingenciesOtherCommitmentsDetails">
+        <link:definition>0000064 - Disclosure - Commitments and Contingencies - Other Commitments (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="EquityPartnershipEquityandGeneralPartnerContributionsDetails" roleURI="http://www.nglenergypartners.com/role/EquityPartnershipEquityandGeneralPartnerContributionsDetails">
+        <link:definition>0000065 - Disclosure - Equity - Partnership Equity and General Partner Contributions (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="EquityClassBPreferredUnitsDetails" roleURI="http://www.nglenergypartners.com/role/EquityClassBPreferredUnitsDetails">
+        <link:definition>0000066 - Disclosure - Equity - Class B Preferred Units (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="EquityClassCPreferredUnitsDetails" roleURI="http://www.nglenergypartners.com/role/EquityClassCPreferredUnitsDetails">
+        <link:definition>0000067 - Disclosure - Equity - Class C Preferred Units (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="EquityClassDPreferredUnitsDetails" roleURI="http://www.nglenergypartners.com/role/EquityClassDPreferredUnitsDetails">
+        <link:definition>0000068 - Disclosure - Equity - Class D Preferred Units (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="EquityEquityBasedIncentiveCompensationDetails" roleURI="http://www.nglenergypartners.com/role/EquityEquityBasedIncentiveCompensationDetails">
+        <link:definition>0000069 - Disclosure - Equity - Equity-Based Incentive Compensation (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FairValueofFinancialInstrumentsFairValueofCommodityDerivativeAssetsandLiabilitiesDetails" roleURI="http://www.nglenergypartners.com/role/FairValueofFinancialInstrumentsFairValueofCommodityDerivativeAssetsandLiabilitiesDetails">
+        <link:definition>0000070 - Disclosure - Fair Value of Financial Instruments - Fair Value of Commodity Derivative Assets and Liabilities (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FairValueofFinancialInstrumentsDerivativeContractPositionsDetails" roleURI="http://www.nglenergypartners.com/role/FairValueofFinancialInstrumentsDerivativeContractPositionsDetails">
+        <link:definition>0000071 - Disclosure - Fair Value of Financial Instruments - Derivative Contract Positions (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FairValueofFinancialInstrumentsLossesfromCommodityDerivativesDetails" roleURI="http://www.nglenergypartners.com/role/FairValueofFinancialInstrumentsLossesfromCommodityDerivativesDetails">
+        <link:definition>0000072 - Disclosure - Fair Value of Financial Instruments - Losses from Commodity Derivatives (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FairValueofFinancialInstrumentsInterestRateRiskDetails" roleURI="http://www.nglenergypartners.com/role/FairValueofFinancialInstrumentsInterestRateRiskDetails">
+        <link:definition>0000073 - Disclosure - Fair Value of Financial Instruments - Interest Rate Risk (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FairValueofFinancialInstrumentsFairValueofFixedRateNotesDetails" roleURI="http://www.nglenergypartners.com/role/FairValueofFinancialInstrumentsFairValueofFixedRateNotesDetails">
+        <link:definition>0000074 - Disclosure - Fair Value of Financial Instruments - Fair Value of Fixed-Rate Notes (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SegmentsDetails" roleURI="http://www.nglenergypartners.com/role/SegmentsDetails">
+        <link:definition>0000075 - Disclosure - Segments (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="TransactionswithAffiliatesRelatedPartyTransactionsDetails" roleURI="http://www.nglenergypartners.com/role/TransactionswithAffiliatesRelatedPartyTransactionsDetails">
+        <link:definition>0000076 - Disclosure - Transactions with Affiliates - Related Party Transactions (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="TransactionswithAffiliatesOtherRelatedPartyTransactionsDetails" roleURI="http://www.nglenergypartners.com/role/TransactionswithAffiliatesOtherRelatedPartyTransactionsDetails">
+        <link:definition>0000077 - Disclosure - Transactions with Affiliates - Other Related Party Transactions (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RevenuefromContractswithCustomersRevenueAgreementsDetails" roleURI="http://www.nglenergypartners.com/role/RevenuefromContractswithCustomersRevenueAgreementsDetails">
+        <link:definition>0000078 - Disclosure - Revenue from Contracts with Customers - Revenue Agreements (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RevenuefromContractswithCustomersPerformanceObligationsDetails" roleURI="http://www.nglenergypartners.com/role/RevenuefromContractswithCustomersPerformanceObligationsDetails">
+        <link:definition>0000079 - Disclosure - Revenue from Contracts with Customers - Performance Obligations (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RevenuefromContractswithCustomersPerformanceObligationsDetails_1" roleURI="http://www.nglenergypartners.com/role/RevenuefromContractswithCustomersPerformanceObligationsDetails_1">
+        <link:definition>0000079 - Disclosure - Revenue from Contracts with Customers - Performance Obligations (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RevenuefromContractswithCustomersContractAssetsandLiabilitiesDetails" roleURI="http://www.nglenergypartners.com/role/RevenuefromContractswithCustomersContractAssetsandLiabilitiesDetails">
+        <link:definition>0000080 - Disclosure - Revenue from Contracts with Customers - Contract Assets and Liabilities (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LeasesLeaseCostDetails" roleURI="http://www.nglenergypartners.com/role/LeasesLeaseCostDetails">
+        <link:definition>0000081 - Disclosure - Leases - Lease Cost (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LeasesLesseeMaturitiesofLeaseObligationsDetails" roleURI="http://www.nglenergypartners.com/role/LeasesLesseeMaturitiesofLeaseObligationsDetails">
+        <link:definition>0000082 - Disclosure - Leases - Lessee Maturities of Lease Obligations (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LeasesLesseeSupplementalCashFlowInformationDetails" roleURI="http://www.nglenergypartners.com/role/LeasesLesseeSupplementalCashFlowInformationDetails">
+        <link:definition>0000083 - Disclosure - Leases - Lessee Supplemental Cash Flow Information (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LeasesLessorFutureMinimumLeasePaymentsReceivableDetails" roleURI="http://www.nglenergypartners.com/role/LeasesLessorFutureMinimumLeasePaymentsReceivableDetails">
+        <link:definition>0000084 - Disclosure - Leases - Lessor Future Minimum Lease Payments Receivable (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="AllowanceforCurrentExpectedCreditLossDetails" roleURI="http://www.nglenergypartners.com/role/AllowanceforCurrentExpectedCreditLossDetails">
+        <link:definition>0000085 - Disclosure - Allowance for Current Expected Credit Loss (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="OtherMattersDisputeSettlementDetails" roleURI="http://www.nglenergypartners.com/role/OtherMattersDisputeSettlementDetails">
+        <link:definition>0000086 - Disclosure - Other Matters - Dispute Settlement (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="OtherMattersThirdpartyLoanReceivableDetails" roleURI="http://www.nglenergypartners.com/role/OtherMattersThirdpartyLoanReceivableDetails">
+        <link:definition>0000087 - Disclosure - Other Matters - Third-party Loan Receivable (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SubsequentEventsDetails" roleURI="http://www.nglenergypartners.com/role/SubsequentEventsDetails">
+        <link:definition>0000088 - Disclosure - Subsequent Events (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element id="ngl_CrudeOilTransportationAndOtherMember" abstract="true" name="CrudeOilTransportationAndOtherMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="ngl_SeniorNotes6.125PercentDue2025memberDomain" abstract="true" name="SeniorNotes6.125PercentDue2025memberDomain" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="ngl_SupplementalCashFlowAndNonCashInformationForLeasesTableTextBlock" abstract="false" name="SupplementalCashFlowAndNonCashInformationForLeasesTableTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:textBlockItemType"/>
+  <xs:element id="ngl_LongtermDebtandCapitalLeaseObligationsFaceAmount" abstract="false" name="LongtermDebtandCapitalLeaseObligationsFaceAmount" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="ngl_FutureAmortizationOfDebtIssuanceCostsRemainderOfFiscalYear" abstract="false" name="FutureAmortizationOfDebtIssuanceCostsRemainderOfFiscalYear" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="ngl_SalesCommitmentsVolumeYearThree" abstract="false" name="SalesCommitmentsVolumeYearThree" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="dtr-types:volumeItemType"/>
+  <xs:element id="ngl_PreferredClassDMember" abstract="true" name="PreferredClassDMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="ngl_SalesCommitmentsYearFour" abstract="false" name="SalesCommitmentsYearFour" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="ngl_DocumentAndEntityInformationAbstract" abstract="true" name="DocumentAndEntityInformationAbstract" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="ngl_DieselInventoryMember" abstract="true" name="DieselInventoryMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="ngl_EquipmentLoanSecuredByCertainBargesAndTowboatsMember" abstract="true" name="EquipmentLoanSecuredByCertainBargesAndTowboatsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="ngl_SeniorNotes75PercentDue2026MemberDomain" abstract="true" name="SeniorNotes75PercentDue2026MemberDomain" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="ngl_ExpenseToBeRecognizedInTheFiscalYearEndedMarch312024Member" abstract="true" name="ExpenseToBeRecognizedInTheFiscalYearEndedMarch312024Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="ngl_ProductExchangeLiabilitiesCurrent" abstract="false" name="ProductExchangeLiabilitiesCurrent" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="ngl_WaterSolutionsMember" abstract="true" name="WaterSolutionsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="ngl_OtherRevenuesMember" abstract="true" name="OtherRevenuesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="ngl_OtherNaturalGasLiquidsMember" abstract="true" name="OtherNaturalGasLiquidsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="ngl_NGLEnergyHoldingsLLCMember" abstract="true" name="NGLEnergyHoldingsLLCMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="ngl_ServiceFeesMember" abstract="true" name="ServiceFeesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="ngl_DepreciationAndAmortizationMember" abstract="true" name="DepreciationAndAmortizationMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="ngl_ValueofCommonUnitsCanceledDuringPeriod" abstract="false" name="ValueofCommonUnitsCanceledDuringPeriod" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="ngl_PreferredClassBandClassCPreferredUnitsMember" abstract="true" name="PreferredClassBandClassCPreferredUnitsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="ngl_FutureAmortizationofDebtIssuanceCostsYearFive" abstract="false" name="FutureAmortizationofDebtIssuanceCostsYearFive" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="ngl_NaturalGasLiquidsTerminalAssetsMember" abstract="true" name="NaturalGasLiquidsTerminalAssetsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="ngl_OwnershipPercentageInGeneralPartner" abstract="false" name="OwnershipPercentageInGeneralPartner" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="dtr-types:percentItemType"/>
+  <xs:element id="ngl_FiniteLivedAndIndefiniteLivedIntangibleAssetsByMajorClassLineItems" abstract="true" name="FiniteLivedAndIndefiniteLivedIntangibleAssetsByMajorClassLineItems" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="ngl_DerivativeCollateralObligationToReturnRightToReclaimCash" abstract="false" name="DerivativeCollateralObligationToReturnRightToReclaimCash" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="ngl_OtherAssetsLinefillNoncurrent" abstract="false" name="OtherAssetsLinefillNoncurrent" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="ngl_CorporateAndOtherSegmentMember" abstract="true" name="CorporateAndOtherSegmentMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="ngl_TotalLeverageRatio" abstract="false" name="TotalLeverageRatio" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:pureItemType"/>
+  <xs:element id="ngl_ShareBasedCompensationArrangementByShareBasedPaymentAwardEquityInstrumentsOtherThanOptions" abstract="false" name="ShareBasedCompensationArrangementByShareBasedPaymentAwardEquityInstrumentsOtherThanOptions" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:sharesItemType"/>
+  <xs:element id="ngl_GainLossOnEarlyExtinguishmentOfLiabilitiesOrRevaluationOfLiabilities" abstract="false" name="GainLossOnEarlyExtinguishmentOfLiabilitiesOrRevaluationOfLiabilities" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="ngl_WaterServicesAndLandCompanyNo.3Domain" abstract="true" name="WaterServicesAndLandCompanyNo.3Domain" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="ngl_CrudeOilLogisticsSegmentMember" abstract="true" name="CrudeOilLogisticsSegmentMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="ngl_OtherMattersAbstract" abstract="true" name="OtherMattersAbstract" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="ngl_SalesCommitmentsVolume" abstract="false" name="SalesCommitmentsVolume" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="dtr-types:volumeItemType"/>
+  <xs:element id="ngl_OtherAssetsLinefillVolume" abstract="false" name="OtherAssetsLinefillVolume" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="dtr-types:volumeItemType"/>
+  <xs:element id="ngl_CategoryOfItemSoldAxis" abstract="true" name="CategoryOfItemSoldAxis" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrldt:dimensionItem" type="xbrli:stringItemType"/>
+  <xs:element id="ngl_NoncontrollingInterestDecreaseFromDispositionOfAnAsset" abstract="false" name="NoncontrollingInterestDecreaseFromDispositionOfAnAsset" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="ngl_DebtInstrumentVariableRateBasis" abstract="false" name="DebtInstrumentVariableRateBasis" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:percentItemType"/>
+  <xs:element id="ngl_FutureAmortizationofDebtIssuanceCostsYearTwo" abstract="false" name="FutureAmortizationofDebtIssuanceCostsYearTwo" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="ngl_FutureAmortizationofDebtIssuanceCosts" abstract="false" name="FutureAmortizationofDebtIssuanceCosts" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="ngl_FutureAmortizationOfDebtIssuanceCostsYearOne" abstract="false" name="FutureAmortizationOfDebtIssuanceCostsYearOne" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="ngl_NumberOfSaltwaterDisposalWellsSold" abstract="false" name="NumberOfSaltwaterDisposalWellsSold" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:integerItemType"/>
+  <xs:element id="ngl_RevenueAgreementsAbstract" abstract="true" name="RevenueAgreementsAbstract" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="ngl_EthanolInventoryMember" abstract="true" name="EthanolInventoryMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="ngl_ButaneInventoryMember" abstract="true" name="ButaneInventoryMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="ngl_ContractualObligationTable" abstract="true" name="ContractualObligationTable" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrldt:hypercubeItem" type="xbrli:stringItemType"/>
+  <xs:element id="ngl_AllowanceforCreditLossAxis" abstract="true" name="AllowanceforCreditLossAxis" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrldt:dimensionItem" type="xbrli:stringItemType"/>
+  <xs:element id="ngl_SeniorUnsecuredNotesAbstract" abstract="true" name="SeniorUnsecuredNotesAbstract" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="ngl_ScheduleOfLongLivedAssetsAndTotalAssetsBySegmentTableTextBlock" abstract="false" name="ScheduleOfLongLivedAssetsAndTotalAssetsBySegmentTableTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:textBlockItemType"/>
+  <xs:element id="ngl_PipelineandRelatedFacilitiesMember" abstract="true" name="PipelineandRelatedFacilitiesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="ngl_NumberOfMonthsAfterMaturity" abstract="false" name="NumberOfMonthsAfterMaturity" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:durationItemType"/>
+  <xs:element id="ngl_PipelineCapacityAgreementsMember" abstract="true" name="PipelineCapacityAgreementsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="ngl_OtherNoncurrentAssetsLineItems" abstract="true" name="OtherNoncurrentAssetsLineItems" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="ngl_ScheduleOfLossGainOnSaleOrDisposalOfPropertyPlantAndEquipmentTableTextBlock" abstract="false" name="ScheduleOfLossGainOnSaleOrDisposalOfPropertyPlantAndEquipmentTableTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:textBlockItemType"/>
+  <xs:element id="ngl_AccruedExpensesAndOtherPayablesMember" abstract="true" name="AccruedExpensesAndOtherPayablesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="ngl_PurchaseObligationVolumeYearThree" abstract="false" name="PurchaseObligationVolumeYearThree" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="dtr-types:volumeItemType"/>
+  <xs:element id="ngl_NGLEnergyPartnersLPMember" abstract="true" name="NGLEnergyPartnersLPMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="ngl_FutureExpenseAxis" abstract="true" name="FutureExpenseAxis" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrldt:dimensionItem" type="xbrli:stringItemType"/>
+  <xs:element id="ngl_SubsidyPayment" abstract="false" name="SubsidyPayment" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="ngl_ContractualObligationLineItems" abstract="true" name="ContractualObligationLineItems" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="ngl_ExecutoryContractsAndOtherAgreementsMember" abstract="true" name="ExecutoryContractsAndOtherAgreementsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="ngl_FormerRelatedPartyMember" abstract="true" name="FormerRelatedPartyMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="ngl_OtherMattersTextBlock" abstract="false" name="OtherMattersTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:textBlockItemType"/>
+  <xs:element id="ngl_IndexPriceMember" abstract="true" name="IndexPriceMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="ngl_FiniteLivedAndIndefiniteLivedIntangibleAssetsByMajorClassTable" abstract="true" name="FiniteLivedAndIndefiniteLivedIntangibleAssetsByMajorClassTable" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrldt:hypercubeItem" type="xbrli:stringItemType"/>
+  <xs:element id="ngl_SalesCommitmentsYearTwo" abstract="false" name="SalesCommitmentsYearTwo" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="ngl_PurchaseObligationVolumeYearOne" abstract="false" name="PurchaseObligationVolumeYearOne" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="dtr-types:volumeItemType"/>
+  <xs:element id="ngl_FutureAmortizationofDebtIssuanceCostsYearFour" abstract="false" name="FutureAmortizationofDebtIssuanceCostsYearFour" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="ngl_WaterServicesAndLandCompanyNo.2Domain" abstract="true" name="WaterServicesAndLandCompanyNo.2Domain" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="ngl_PreferredClassCMember" abstract="true" name="PreferredClassCMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="ngl_CrudeOilTanksAndRelatedEquipmentMember" abstract="true" name="CrudeOilTanksAndRelatedEquipmentMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="ngl_LineOfCreditTemporaryMaximumBorrowingCapacity" abstract="false" name="LineOfCreditTemporaryMaximumBorrowingCapacity" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="ngl_PurchaseObligationVolumeYearTwo" abstract="false" name="PurchaseObligationVolumeYearTwo" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="dtr-types:volumeItemType"/>
+  <xs:element id="ngl_SecuredDebtExpirationDescription" abstract="false" name="SecuredDebtExpirationDescription" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="ngl_ScheduleofFutureAmortizationExpenseofDebtIssuanceCostsTableTextBlock" abstract="false" name="ScheduleofFutureAmortizationExpenseofDebtIssuanceCostsTableTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:textBlockItemType"/>
+  <xs:element id="ngl_DebtFaceAmount" abstract="false" name="DebtFaceAmount" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="ngl_NaturalGasLiquidsTerminalCompanyDomain" abstract="true" name="NaturalGasLiquidsTerminalCompanyDomain" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="ngl_WaterSolutionsSegmentMember" abstract="true" name="WaterSolutionsSegmentMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="ngl_OtherProductsOrServicesMember" abstract="true" name="OtherProductsOrServicesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="ngl_FraudulentMisrepresentationMember" abstract="true" name="FraudulentMisrepresentationMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="ngl_FixedPriceMember" abstract="true" name="FixedPriceMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="ngl_PurchasecommitmentDomain" abstract="true" name="PurchasecommitmentDomain" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="ngl_HillstoneSubsidyPaymentMember" abstract="true" name="HillstoneSubsidyPaymentMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="ngl_WaterServicesCompanyMember" abstract="true" name="WaterServicesCompanyMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="ngl_PurchaseObligationVolumeYearFour" abstract="false" name="PurchaseObligationVolumeYearFour" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="dtr-types:volumeItemType"/>
+  <xs:element id="ngl_OtherNoncurrentAssetsTable" abstract="true" name="OtherNoncurrentAssetsTable" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrldt:hypercubeItem" type="xbrli:stringItemType"/>
+  <xs:element id="ngl_OtherLongTermDebtMember" abstract="true" name="OtherLongTermDebtMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="ngl_ButaneMember" abstract="true" name="ButaneMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="ngl_RevenuefromContractswithCustomersPerformanceObligationsAbstract" abstract="true" name="RevenuefromContractswithCustomersPerformanceObligationsAbstract" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="ngl_VestingInFiscalYear2023Member" abstract="true" name="VestingInFiscalYear2023Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="ngl_LiquidsLogisticsSegmentMember" abstract="true" name="LiquidsLogisticsSegmentMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="ngl_CategoryOfItemSoldDomain" abstract="true" name="CategoryOfItemSoldDomain" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="ngl_RefinedProductsMember" abstract="true" name="RefinedProductsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="ngl_SalesCommitmentsYearThree" abstract="false" name="SalesCommitmentsYearThree" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="ngl_SalesCommitmentsVolumeYearTwo" abstract="false" name="SalesCommitmentsVolumeYearTwo" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="dtr-types:volumeItemType"/>
+  <xs:element id="ngl_BuildingsAndLeaseholdImprovementsMember" abstract="true" name="BuildingsAndLeaseholdImprovementsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="ngl_ShareBasedCompensationArrangementByShareBasedPaymentAwardDistributionDuringAwardVestingPeriod" abstract="false" name="ShareBasedCompensationArrangementByShareBasedPaymentAwardDistributionDuringAwardVestingPeriod" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="ngl_PurchaseCommitmentAxis" abstract="true" name="PurchaseCommitmentAxis" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrldt:dimensionItem" type="xbrli:stringItemType"/>
+  <xs:element id="ngl_SalesCommitmentByCategoryOfItemSoldDomain" abstract="true" name="SalesCommitmentByCategoryOfItemSoldDomain" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="ngl_SeniorSecuredNotes75PercentDue2026MemberDomain" abstract="true" name="SeniorSecuredNotes75PercentDue2026MemberDomain" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="ngl_FutureExpenseDomain" abstract="true" name="FutureExpenseDomain" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="ngl_LongTermDebtCurrentMaturitiesBeforeDebtIssuanceCosts" abstract="false" name="LongTermDebtCurrentMaturitiesBeforeDebtIssuanceCosts" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="ngl_NGLLimitedPartnersMember" abstract="true" name="NGLLimitedPartnersMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="ngl_SalesCommitmentsVolumeRemainderFiscalYear" abstract="false" name="SalesCommitmentsVolumeRemainderFiscalYear" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="dtr-types:volumeItemType"/>
+  <xs:element id="ngl_TankbottomsandlinefillDomain" abstract="true" name="TankbottomsandlinefillDomain" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="ngl_FutureAmortizationofDebtIssuanceCostsYearThree" abstract="false" name="FutureAmortizationofDebtIssuanceCostsYearThree" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="ngl_LimitedPartnersCapitalAccountCommonUnitsMember" abstract="true" name="LimitedPartnersCapitalAccountCommonUnitsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="ngl_NumberOfCommonCarrierPipelines" abstract="false" name="NumberOfCommonCarrierPipelines" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="xbrli:integerItemType"/>
+  <xs:element id="ngl_SalesCommitmentsVolumeYearFour" abstract="false" name="SalesCommitmentsVolumeYearFour" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="dtr-types:volumeItemType"/>
+  <xs:element id="ngl_SalesCommitmentsRemainderOfFiscalYear" abstract="false" name="SalesCommitmentsRemainderOfFiscalYear" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="ngl_SalesCommitmentsYearOne" abstract="false" name="SalesCommitmentsYearOne" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="ngl_WaterRevenuesMember" abstract="true" name="WaterRevenuesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="ngl_SeniorUnsecuredNotesMember" abstract="true" name="SeniorUnsecuredNotesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="ngl_NumberOfOwnedTerminals" abstract="false" name="NumberOfOwnedTerminals" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="xbrli:integerItemType"/>
+  <xs:element id="ngl_WaterTreatmentFacilitiesAndEquipmentMember" abstract="true" name="WaterTreatmentFacilitiesAndEquipmentMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="ngl_BiodieselInventoryMember" abstract="true" name="BiodieselInventoryMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="ngl_SalesCommitmentByCategoryOfItemSoldAxis" abstract="true" name="SalesCommitmentByCategoryOfItemSoldAxis" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrldt:dimensionItem" type="xbrli:stringItemType"/>
+  <xs:element id="ngl_SalesCommitmentsVolumeYearOne" abstract="false" name="SalesCommitmentsVolumeYearOne" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="dtr-types:volumeItemType"/>
+  <xs:element id="ngl_SalesCommitments" abstract="false" name="SalesCommitments" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="ngl_RenewableEnergyRelatedInventory" abstract="false" name="RenewableEnergyRelatedInventory" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="ngl_PurchaseObligationVolumeRemainderFiscalYear" abstract="false" name="PurchaseObligationVolumeRemainderFiscalYear" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="dtr-types:volumeItemType"/>
+  <xs:element id="ngl_UnrecordedUnconditionalSaleObligationsDisclosureTableTextBlock" abstract="false" name="UnrecordedUnconditionalSaleObligationsDisclosureTableTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:textBlockItemType"/>
+  <xs:element id="ngl_SeniorNotes75PercentDue2023MemberDomain" abstract="true" name="SeniorNotes75PercentDue2023MemberDomain" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="ngl_CommonUnitsCanceledDuringPeriod" abstract="false" name="CommonUnitsCanceledDuringPeriod" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:sharesItemType"/>
+  <xs:element id="ngl_VestingInFiscalYear2024Member" abstract="true" name="VestingInFiscalYear2024Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="ngl_DebtIssuanceCostsMember" abstract="true" name="DebtIssuanceCostsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="ngl_AircraftcompanyDomain" abstract="true" name="AircraftcompanyDomain" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="ngl_ServicesRenderedMember" abstract="true" name="ServicesRenderedMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="ngl_AdditionsToPropertyPlantAndEquipmentAndIntangibleAssetsAndPaymentsToAcquirePropertyPlantandEquipmentAndIntangibleAssets" abstract="false" name="AdditionsToPropertyPlantAndEquipmentAndIntangibleAssetsAndPaymentsToAcquirePropertyPlantandEquipmentAndIntangibleAssets" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="ngl_ExpectedFutureAmortizationofDebtIssuanceCostsAbstract" abstract="true" name="ExpectedFutureAmortizationofDebtIssuanceCostsAbstract" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="ngl_AllowanceForCreditLossDomain" abstract="true" name="AllowanceForCreditLossDomain" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="ngl_ExpenseToBeRecognizedDuringTheRemainderOfTheFiscalYearEndedMarch312023Member" abstract="true" name="ExpenseToBeRecognizedDuringTheRemainderOfTheFiscalYearEndedMarch312023Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="ngl_ScheduleOfDepreciationExpenseandCapitalizedInterestExpenseTableTextBlock" abstract="false" name="ScheduleOfDepreciationExpenseandCapitalizedInterestExpenseTableTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:textBlockItemType"/>
+  <xs:element id="ngl_WaterServicesAndLandCompanyNo.1Member" abstract="true" name="WaterServicesAndLandCompanyNo.1Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="ngl_FairValueofFixedRateNotesAbstract" abstract="true" name="FairValueofFixedRateNotesAbstract" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="ngl_ScheduleOfAdditionsToPropertyPlantAndEquipmentAndIntangibleAssetsBySegmentTableTextBlock" abstract="false" name="ScheduleOfAdditionsToPropertyPlantAndEquipmentAndIntangibleAssetsBySegmentTableTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:textBlockItemType"/>
+  <xs:element id="ngl_PurchaseObligationVolume" abstract="false" name="PurchaseObligationVolume" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="dtr-types:volumeItemType"/>
+</xs:schema>

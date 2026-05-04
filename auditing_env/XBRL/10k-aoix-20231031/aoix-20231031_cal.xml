@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="us-ascii" standalone="yes"?>
+<!--XBRL Document Created with XBRLMaster-->
+<!--Version: 2.3.08-->
+<!--Based on XBRL 2.1-->
+<!--Date of creation: 01/31/2024-->
+<!--Software architectural design and coding: A'c Dharmapremananda Avt.-->
+<!--Copyright (c) 2024 I-NET Business Solutions, Inc. All Rights Reserved.-->
+<link:linkbase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:link="http://www.xbrl.org/2003/linkbase" xsi:schemaLocation="http://www.xbrl.org/2003/linkbase http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd">
+  <link:roleRef roleURI="http://aoix.com/role/Cover" xlink:href="aoix-20231031.xsd#Cover" xlink:type="simple" />
+  <link:roleRef roleURI="http://aoix.com/role/BalanceSheets" xlink:href="aoix-20231031.xsd#BalanceSheets" xlink:type="simple" />
+  <link:roleRef roleURI="http://aoix.com/role/BalanceSheetsParenthetical" xlink:href="aoix-20231031.xsd#BalanceSheetsParenthetical" xlink:type="simple" />
+  <link:roleRef roleURI="http://aoix.com/role/StatementsOfOperations" xlink:href="aoix-20231031.xsd#StatementsOfOperations" xlink:type="simple" />
+  <link:roleRef roleURI="http://aoix.com/role/StatementsOfChangesInStockholdersDeficit" xlink:href="aoix-20231031.xsd#StatementsOfChangesInStockholdersDeficit" xlink:type="simple" />
+  <link:roleRef roleURI="http://aoix.com/role/StatementsOfCashFlows" xlink:href="aoix-20231031.xsd#StatementsOfCashFlows" xlink:type="simple" />
+  <link:roleRef roleURI="http://aoix.com/role/OrganizationAndDescriptionOfBusiness" xlink:href="aoix-20231031.xsd#OrganizationAndDescriptionOfBusiness" xlink:type="simple" />
+  <link:roleRef roleURI="http://aoix.com/role/GoingConcern" xlink:href="aoix-20231031.xsd#GoingConcern" xlink:type="simple" />
+  <link:roleRef roleURI="http://aoix.com/role/SummaryOfSignificantAccountingPolicies" xlink:href="aoix-20231031.xsd#SummaryOfSignificantAccountingPolicies" xlink:type="simple" />
+  <link:roleRef roleURI="http://aoix.com/role/RecentAccountingPronoucements" xlink:href="aoix-20231031.xsd#RecentAccountingPronoucements" xlink:type="simple" />
+  <link:roleRef roleURI="http://aoix.com/role/RelatedPartyTransactions" xlink:href="aoix-20231031.xsd#RelatedPartyTransactions" xlink:type="simple" />
+  <link:roleRef roleURI="http://aoix.com/role/StockholdersDeficit" xlink:href="aoix-20231031.xsd#StockholdersDeficit" xlink:type="simple" />
+  <link:roleRef roleURI="http://aoix.com/role/IncomeTaxesAndNetOperatingLosses" xlink:href="aoix-20231031.xsd#IncomeTaxesAndNetOperatingLosses" xlink:type="simple" />
+  <link:roleRef roleURI="http://aoix.com/role/SubsequentEvents" xlink:href="aoix-20231031.xsd#SubsequentEvents" xlink:type="simple" />
+  <link:roleRef roleURI="http://aoix.com/role/SummaryOfSignificantAccountingPoliciesPolicies" xlink:href="aoix-20231031.xsd#SummaryOfSignificantAccountingPoliciesPolicies" xlink:type="simple" />
+  <link:roleRef roleURI="http://aoix.com/role/IncomeTaxesTables" xlink:href="aoix-20231031.xsd#IncomeTaxesTables" xlink:type="simple" />
+  <link:roleRef roleURI="http://aoix.com/role/GoingConcernDetailsNarrative" xlink:href="aoix-20231031.xsd#GoingConcernDetailsNarrative" xlink:type="simple" />
+  <link:roleRef roleURI="http://aoix.com/role/RelatedPartyTransactionsDetailsNarrative" xlink:href="aoix-20231031.xsd#RelatedPartyTransactionsDetailsNarrative" xlink:type="simple" />
+  <link:roleRef roleURI="http://aoix.com/role/StockholdersEquityDetailsNarrative" xlink:href="aoix-20231031.xsd#StockholdersEquityDetailsNarrative" xlink:type="simple" />
+  <link:roleRef roleURI="http://aoix.com/role/IncomeTaxesDetails" xlink:href="aoix-20231031.xsd#IncomeTaxesDetails" xlink:type="simple" />
+  <link:roleRef roleURI="http://aoix.com/role/IncomeTaxesDetailsNarrative" xlink:href="aoix-20231031.xsd#IncomeTaxesDetailsNarrative" xlink:type="simple" />
+  <link:calculationLink xlink:type="extended" xlink:role="http://aoix.com/role/Cover" xlink:title="00000001 - Document - Document and Entity Information" />
+  <link:calculationLink xlink:type="extended" xlink:role="http://aoix.com/role/BalanceSheets" xlink:title="000002 - Statement - Balance Sheets">
+    <link:loc xlink:type="locator" xlink:href="https://xbrl.fasb.org/us-gaap/2023/elts/us-gaap-2023.xsd#us-gaap_AssetsCurrent" xlink:label="loc_us-gaapAssetsCurrent" />
+    <link:loc xlink:type="locator" xlink:href="https://xbrl.fasb.org/us-gaap/2023/elts/us-gaap-2023.xsd#us-gaap_CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalents" xlink:label="loc_us-gaapCashCashEquivalentsRestrictedCashAndRestrictedCashEquivalents" />
+    <link:calculationArc order="2" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="loc_us-gaapAssetsCurrent" xlink:to="loc_us-gaapCashCashEquivalentsRestrictedCashAndRestrictedCashEquivalents" xlink:type="arc" weight="1" />
+    <link:loc xlink:type="locator" xlink:href="https://xbrl.fasb.org/us-gaap/2023/elts/us-gaap-2023.xsd#us-gaap_Assets" xlink:label="loc_us-gaapAssets" />
+    <link:calculationArc order="3" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="loc_us-gaapAssets" xlink:to="loc_us-gaapAssetsCurrent" xlink:type="arc" weight="1" />
+    <link:loc xlink:type="locator" xlink:href="https://xbrl.fasb.org/us-gaap/2023/elts/us-gaap-2023.xsd#us-gaap_LiabilitiesCurrent" xlink:label="loc_us-gaapLiabilitiesCurrent" />
+    <link:loc xlink:type="locator" xlink:href="https://xbrl.fasb.org/us-gaap/2023/elts/us-gaap-2023.xsd#us-gaap_AccountsPayableCurrent" xlink:label="loc_us-gaapAccountsPayableCurrent" />
+    <link:calculationArc order="4" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="loc_us-gaapLiabilitiesCurrent" xlink:to="loc_us-gaapAccountsPayableCurrent" xlink:type="arc" weight="1" />
+    <link:loc xlink:type="locator" xlink:href="https://xbrl.fasb.org/us-gaap/2023/elts/us-gaap-2023.xsd#us-gaap_LoansPayable" xlink:label="loc_us-gaapLoansPayable" />
+    <link:calculationArc order="5" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="loc_us-gaapLiabilitiesCurrent" xlink:to="loc_us-gaapLoansPayable" xlink:type="arc" weight="1" />
+    <link:loc xlink:type="locator" xlink:href="aoix-20231031.xsd#aoix_DueToRelatedPartyCurrent" xlink:label="loc_aoixDueToRelatedPartyCurrent" />
+    <link:calculationArc order="6" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="loc_us-gaapLiabilitiesCurrent" xlink:to="loc_aoixDueToRelatedPartyCurrent" xlink:type="arc" weight="1" />
+    <link:loc xlink:type="locator" xlink:href="https://xbrl.fasb.org/us-gaap/2023/elts/us-gaap-2023.xsd#us-gaap_StockholdersEquity" xlink:label="loc_us-gaapStockholdersEquity" />
+    <link:loc xlink:type="locator" xlink:href="https://xbrl.fasb.org/us-gaap/2023/elts/us-gaap-2023.xsd#us-gaap_CommonStockValue" xlink:label="loc_us-gaapCommonStockValue" />
+    <link:calculationArc order="7" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="loc_us-gaapStockholdersEquity" xlink:to="loc_us-gaapCommonStockValue" xlink:type="arc" weight="1" />
+    <link:loc xlink:type="locator" xlink:href="https://xbrl.fasb.org/us-gaap/2023/elts/us-gaap-2023.xsd#us-gaap_AdditionalPaidInCapital" xlink:label="loc_us-gaapAdditionalPaidInCapital" />
+    <link:calculationArc order="8" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="loc_us-gaapStockholdersEquity" xlink:to="loc_us-gaapAdditionalPaidInCapital" xlink:type="arc" weight="1" />
+    <link:loc xlink:type="locator" xlink:href="https://xbrl.fasb.org/us-gaap/2023/elts/us-gaap-2023.xsd#us-gaap_RetainedEarningsAccumulatedDeficit" xlink:label="loc_us-gaapRetainedEarningsAccumulatedDeficit" />
+    <link:calculationArc order="9" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="loc_us-gaapStockholdersEquity" xlink:to="loc_us-gaapRetainedEarningsAccumulatedDeficit" xlink:type="arc" weight="1" />
+    <link:loc xlink:type="locator" xlink:href="https://xbrl.fasb.org/us-gaap/2023/elts/us-gaap-2023.xsd#us-gaap_LiabilitiesAndStockholdersEquity" xlink:label="loc_us-gaapLiabilitiesAndStockholdersEquity" />
+    <link:calculationArc order="10" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="loc_us-gaapLiabilitiesAndStockholdersEquity" xlink:to="loc_us-gaapLiabilitiesCurrent" xlink:type="arc" weight="1" />
+    <link:calculationArc order="11" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="loc_us-gaapLiabilitiesAndStockholdersEquity" xlink:to="loc_us-gaapStockholdersEquity" xlink:type="arc" weight="1" />
+  </link:calculationLink>
+  <link:calculationLink xlink:type="extended" xlink:role="http://aoix.com/role/BalanceSheetsParenthetical" xlink:title="000003 - Statement - Balance Sheets (Parenthetical)" />
+  <link:calculationLink xlink:type="extended" xlink:role="http://aoix.com/role/StatementsOfOperations" xlink:title="000004 - Statement - Statements of Operations">
+    <link:loc xlink:type="locator" xlink:href="https://xbrl.fasb.org/us-gaap/2023/elts/us-gaap-2023.xsd#us-gaap_OperatingExpenses" xlink:label="loc_us-gaapOperatingExpenses" />
+    <link:loc xlink:type="locator" xlink:href="https://xbrl.fasb.org/us-gaap/2023/elts/us-gaap-2023.xsd#us-gaap_ProfessionalFees" xlink:label="loc_us-gaapProfessionalFees" />
+    <link:calculationArc order="2" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="loc_us-gaapOperatingExpenses" xlink:to="loc_us-gaapProfessionalFees" xlink:type="arc" weight="1" />
+    <link:loc xlink:type="locator" xlink:href="https://xbrl.fasb.org/us-gaap/2023/elts/us-gaap-2023.xsd#us-gaap_OperatingIncomeLoss" xlink:label="loc_us-gaapOperatingIncomeLoss" />
+    <link:loc xlink:type="locator" xlink:href="https://xbrl.fasb.org/us-gaap/2023/elts/us-gaap-2023.xsd#us-gaap_Revenues" xlink:label="loc_us-gaapRevenues" />
+    <link:calculationArc order="3" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="loc_us-gaapOperatingIncomeLoss" xlink:to="loc_us-gaapRevenues" xlink:type="arc" weight="1" />
+    <link:calculationArc order="4" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="loc_us-gaapOperatingIncomeLoss" xlink:to="loc_us-gaapOperatingExpenses" xlink:type="arc" weight="-1" />
+    <link:loc xlink:type="locator" xlink:href="https://xbrl.fasb.org/us-gaap/2023/elts/us-gaap-2023.xsd#us-gaap_NetIncomeLoss" xlink:label="loc_us-gaapNetIncomeLoss" />
+    <link:calculationArc order="5" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="loc_us-gaapNetIncomeLoss" xlink:to="loc_us-gaapOperatingIncomeLoss" xlink:type="arc" weight="1" />
+  </link:calculationLink>
+  <link:calculationLink xlink:type="extended" xlink:role="http://aoix.com/role/StatementsOfChangesInStockholdersDeficit" xlink:title="000005 - Statement - Statements of Changes in Stockholders' Deficit" />
+  <link:calculationLink xlink:type="extended" xlink:role="http://aoix.com/role/StatementsOfCashFlows" xlink:title="000006 - Statement - Statements of Cash Flows">
+    <link:loc xlink:type="locator" xlink:href="https://xbrl.fasb.org/us-gaap/2023/elts/us-gaap-2023.xsd#us-gaap_NetCashProvidedByUsedInOperatingActivities" xlink:label="loc_us-gaapNetCashProvidedByUsedInOperatingActivities" />
+    <link:loc xlink:type="locator" xlink:href="https://xbrl.fasb.org/us-gaap/2023/elts/us-gaap-2023.xsd#us-gaap_NetIncomeLoss" xlink:label="loc_us-gaapNetIncomeLoss" />
+    <link:calculationArc order="2" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="loc_us-gaapNetCashProvidedByUsedInOperatingActivities" xlink:to="loc_us-gaapNetIncomeLoss" xlink:type="arc" weight="-1" />
+    <link:loc xlink:type="locator" xlink:href="https://xbrl.fasb.org/us-gaap/2023/elts/us-gaap-2023.xsd#us-gaap_IncreaseDecreaseInAccountsPayable" xlink:label="loc_us-gaapIncreaseDecreaseInAccountsPayable" />
+    <link:calculationArc order="3" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="loc_us-gaapNetCashProvidedByUsedInOperatingActivities" xlink:to="loc_us-gaapIncreaseDecreaseInAccountsPayable" xlink:type="arc" weight="1" />
+    <link:loc xlink:type="locator" xlink:href="https://xbrl.fasb.org/us-gaap/2023/elts/us-gaap-2023.xsd#us-gaap_NetCashProvidedByUsedInFinancingActivities" xlink:label="loc_us-gaapNetCashProvidedByUsedInFinancingActivities" />
+    <link:loc xlink:type="locator" xlink:href="aoix-20231031.xsd#aoix_ProceedsFromLoanPayableShareholders" xlink:label="loc_aoixProceedsFromLoanPayableShareholders" />
+    <link:calculationArc order="4" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="loc_us-gaapNetCashProvidedByUsedInFinancingActivities" xlink:to="loc_aoixProceedsFromLoanPayableShareholders" xlink:type="arc" weight="1" />
+    <link:loc xlink:type="locator" xlink:href="https://xbrl.fasb.org/us-gaap/2023/elts/us-gaap-2023.xsd#us-gaap_ProceedsFromRelatedPartyDebt" xlink:label="loc_us-gaapProceedsFromRelatedPartyDebt" />
+    <link:calculationArc order="5" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="loc_us-gaapNetCashProvidedByUsedInFinancingActivities" xlink:to="loc_us-gaapProceedsFromRelatedPartyDebt" xlink:type="arc" weight="1" />
+    <link:loc xlink:type="locator" xlink:href="https://xbrl.fasb.org/us-gaap/2023/elts/us-gaap-2023.xsd#us-gaap_CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalentsPeriodIncreaseDecreaseExcludingExchangeRateEffect" xlink:label="loc_us-gaapCashCashEquivalentsRestrictedCashAndRestrictedCashEquivalentsPeriodIncreaseDecreaseExcludingExchangeRateEffect" />
+    <link:calculationArc order="6" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="loc_us-gaapCashCashEquivalentsRestrictedCashAndRestrictedCashEquivalentsPeriodIncreaseDecreaseExcludingExchangeRateEffect" xlink:to="loc_us-gaapNetCashProvidedByUsedInOperatingActivities" xlink:type="arc" weight="1" />
+    <link:calculationArc order="7" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="loc_us-gaapCashCashEquivalentsRestrictedCashAndRestrictedCashEquivalentsPeriodIncreaseDecreaseExcludingExchangeRateEffect" xlink:to="loc_us-gaapNetCashProvidedByUsedInFinancingActivities" xlink:type="arc" weight="1" />
+  </link:calculationLink>
+  <link:calculationLink xlink:type="extended" xlink:role="http://aoix.com/role/OrganizationAndDescriptionOfBusiness" xlink:title="000007 - Disclosure - ORGANIZATION AND DESCRIPTION OF BUSINESS" />
+  <link:calculationLink xlink:type="extended" xlink:role="http://aoix.com/role/GoingConcern" xlink:title="000008 - Disclosure - GOING CONCERN" />
+  <link:calculationLink xlink:type="extended" xlink:role="http://aoix.com/role/SummaryOfSignificantAccountingPolicies" xlink:title="000009 - Disclosure - SUMMARY OF SIGNIFICANT ACCOUNTING POLICIES" />
+  <link:calculationLink xlink:type="extended" xlink:role="http://aoix.com/role/RecentAccountingPronoucements" xlink:title="000010 - Disclosure - RECENT ACCOUNTING PRONOUCEMENTS" />
+  <link:calculationLink xlink:type="extended" xlink:role="http://aoix.com/role/RelatedPartyTransactions" xlink:title="000011 - Disclosure - RELATED PARTY TRANSACTIONS" />
+  <link:calculationLink xlink:type="extended" xlink:role="http://aoix.com/role/StockholdersDeficit" xlink:title="000012 - Disclosure - STOCKHOLDERS DEFICIT" />
+  <link:calculationLink xlink:type="extended" xlink:role="http://aoix.com/role/IncomeTaxesAndNetOperatingLosses" xlink:title="000013 - Disclosure - INCOME TAXES AND NET OPERATING LOSSES" />
+  <link:calculationLink xlink:type="extended" xlink:role="http://aoix.com/role/SubsequentEvents" xlink:title="000014 - Disclosure - SUBSEQUENT EVENTS" />
+  <link:calculationLink xlink:type="extended" xlink:role="http://aoix.com/role/SummaryOfSignificantAccountingPoliciesPolicies" xlink:title="000015 - Disclosure - SUMMARY OF SIGNIFICANT ACCOUNTING POLICIES (Policies)" />
+  <link:calculationLink xlink:type="extended" xlink:role="http://aoix.com/role/IncomeTaxesTables" xlink:title="000016 - Disclosure - INCOME TAXES (Tables)" />
+  <link:calculationLink xlink:type="extended" xlink:role="http://aoix.com/role/GoingConcernDetailsNarrative" xlink:title="000017 - Disclosure - GOING CONCERN (Details Narrative)" />
+  <link:calculationLink xlink:type="extended" xlink:role="http://aoix.com/role/RelatedPartyTransactionsDetailsNarrative" xlink:title="000018 - Disclosure - RELATED PARTY TRANSACTIONS (Details Narrative)" />
+  <link:calculationLink xlink:type="extended" xlink:role="http://aoix.com/role/StockholdersEquityDetailsNarrative" xlink:title="000019 - Disclosure - STOCKHOLDERS EQUITY (Details Narrative)" />
+  <link:calculationLink xlink:type="extended" xlink:role="http://aoix.com/role/IncomeTaxesDetails" xlink:title="000020 - Disclosure - INCOME TAXES (Details)" />
+  <link:calculationLink xlink:type="extended" xlink:role="http://aoix.com/role/IncomeTaxesDetailsNarrative" xlink:title="000021 - Disclosure - INCOME TAXES (Details Narrative)" />
+</link:linkbase>

@@ -1,0 +1,955 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--XBRL Document Created with the Workiva Platform-->
+<!--Copyright 2024 Workiva-->
+<!--r:5182a3cd-e4bf-47a9-9894-b45e8a496af4,g:992fbefe-055b-4238-a5d5-9c1f33f9487d-->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:htz="http://www.hertz.com/20231231" xmlns:xbrli="http://www.xbrl.org/2003/instance" xmlns:dtr-types1="http://www.xbrl.org/dtr/type/2020-01-21" xmlns:dtr-types="http://www.xbrl.org/dtr/type/2022-03-31" xmlns:xbrldt="http://xbrl.org/2005/xbrldt" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://www.hertz.com/20231231">
+  <xs:import namespace="http://fasb.org/srt/2023" schemaLocation="https://xbrl.fasb.org/srt/2023/elts/srt-2023.xsd"/>
+  <xs:import namespace="http://fasb.org/us-gaap/2023" schemaLocation="https://xbrl.fasb.org/us-gaap/2023/elts/us-gaap-2023.xsd"/>
+  <xs:import namespace="http://www.w3.org/1999/xlink" schemaLocation="http://www.xbrl.org/2003/xlink-2003-12-31.xsd"/>
+  <xs:import namespace="http://www.xbrl.org/2003/instance" schemaLocation="http://www.xbrl.org/2003/xbrl-instance-2003-12-31.xsd"/>
+  <xs:import namespace="http://www.xbrl.org/2003/linkbase" schemaLocation="http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd"/>
+  <xs:import namespace="http://www.xbrl.org/dtr/type/2020-01-21" schemaLocation="https://www.xbrl.org/dtr/type/2020-01-21/types.xsd"/>
+  <xs:import namespace="http://www.xbrl.org/dtr/type/2022-03-31" schemaLocation="https://www.xbrl.org/dtr/type/2022-03-31/types.xsd"/>
+  <xs:import namespace="http://xbrl.org/2005/xbrldt" schemaLocation="http://www.xbrl.org/2005/xbrldt-2005.xsd"/>
+  <xs:import namespace="http://xbrl.sec.gov/country/2023" schemaLocation="https://xbrl.sec.gov/country/2023/country-2023.xsd"/>
+  <xs:import namespace="http://xbrl.sec.gov/dei/2023" schemaLocation="https://xbrl.sec.gov/dei/2023/dei-2023.xsd"/>
+  <xs:import namespace="http://xbrl.sec.gov/ecd/2023" schemaLocation="https://xbrl.sec.gov/ecd/2023/ecd-2023.xsd"/>
+  <xs:annotation>
+    <xs:appinfo>
+      <link:linkbaseRef xmlns:xlink="http://www.w3.org/1999/xlink" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="htz-20231231_pre.xml" xlink:role="http://www.xbrl.org/2003/role/presentationLinkbaseRef" xlink:type="simple"/>
+      <link:linkbaseRef xmlns:xlink="http://www.w3.org/1999/xlink" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="htz-20231231_def.xml" xlink:role="http://www.xbrl.org/2003/role/definitionLinkbaseRef" xlink:type="simple"/>
+      <link:linkbaseRef xmlns:xlink="http://www.w3.org/1999/xlink" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="htz-20231231_lab.xml" xlink:role="http://www.xbrl.org/2003/role/labelLinkbaseRef" xlink:type="simple"/>
+      <link:linkbaseRef xmlns:xlink="http://www.w3.org/1999/xlink" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="htz-20231231_cal.xml" xlink:role="http://www.xbrl.org/2003/role/calculationLinkbaseRef" xlink:type="simple"/>
+      <link:roleType id="Coverpage" roleURI="http://www.hertz.com/role/Coverpage">
+        <link:definition>0000001 - Document - Cover page</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="AuditInformation" roleURI="http://www.hertz.com/role/AuditInformation">
+        <link:definition>0000002 - Document - Audit Information</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="HGHCONSOLIDATEDBALANCESHEETS" roleURI="http://www.hertz.com/role/HGHCONSOLIDATEDBALANCESHEETS">
+        <link:definition>0000003 - Statement - HGH - CONSOLIDATED BALANCE SHEETS</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="HGHCONSOLIDATEDBALANCESHEETSParenthetical" roleURI="http://www.hertz.com/role/HGHCONSOLIDATEDBALANCESHEETSParenthetical">
+        <link:definition>0000004 - Statement - HGH - CONSOLIDATED BALANCE SHEETS (Parenthetical)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="THCCONSOLIDATEDBALANCESHEETS" roleURI="http://www.hertz.com/role/THCCONSOLIDATEDBALANCESHEETS">
+        <link:definition>0000005 - Statement - THC - CONSOLIDATED BALANCE SHEETS</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="THCCONSOLIDATEDBALANCESHEETSParenthetical" roleURI="http://www.hertz.com/role/THCCONSOLIDATEDBALANCESHEETSParenthetical">
+        <link:definition>0000006 - Statement - THC - CONSOLIDATED BALANCE SHEETS (Parenthetical)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="HGHCONSOLIDATEDSTATEMENTSOFOPERATIONS" roleURI="http://www.hertz.com/role/HGHCONSOLIDATEDSTATEMENTSOFOPERATIONS">
+        <link:definition>0000007 - Statement - HGH - CONSOLIDATED STATEMENTS OF OPERATIONS</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="THCCONSOLIDATEDSTATEMENTSOFOPERATIONS" roleURI="http://www.hertz.com/role/THCCONSOLIDATEDSTATEMENTSOFOPERATIONS">
+        <link:definition>0000008 - Statement - THC - CONSOLIDATED STATEMENTS OF OPERATIONS</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="HGHCONSOLIDATEDSTATEMENTSOFCOMPREHENSIVEINCOMELOSS" roleURI="http://www.hertz.com/role/HGHCONSOLIDATEDSTATEMENTSOFCOMPREHENSIVEINCOMELOSS">
+        <link:definition>0000009 - Statement - HGH - CONSOLIDATED STATEMENTS OF COMPREHENSIVE INCOME (LOSS)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="THCCONSOLIDATEDSTATEMENTSOFCOMPREHENSIVEINCOMELOSS" roleURI="http://www.hertz.com/role/THCCONSOLIDATEDSTATEMENTSOFCOMPREHENSIVEINCOMELOSS">
+        <link:definition>0000010 - Statement - THC - CONSOLIDATED STATEMENTS OF COMPREHENSIVE INCOME (LOSS)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="HGHCONSOLIDATEDSTATEMENTSOFCHANGESINMEZZANINEEQUITYANDSTOCKHOLDERSEQUITY" roleURI="http://www.hertz.com/role/HGHCONSOLIDATEDSTATEMENTSOFCHANGESINMEZZANINEEQUITYANDSTOCKHOLDERSEQUITY">
+        <link:definition>0000011 - Statement - HGH - CONSOLIDATED STATEMENTS OF CHANGES IN MEZZANINE EQUITY AND STOCKHOLDERS' EQUITY</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="THCCONSOLIDATEDSTATEMENTSOFCHANGESINMEZZANINEEQUITYANDSTOCKHOLDERSEQUITY" roleURI="http://www.hertz.com/role/THCCONSOLIDATEDSTATEMENTSOFCHANGESINMEZZANINEEQUITYANDSTOCKHOLDERSEQUITY">
+        <link:definition>0000012 - Statement - THC - CONSOLIDATED STATEMENTS OF CHANGES IN MEZZANINE EQUITY AND STOCKHOLDERS' EQUITY</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="HGHCONSOLIDATEDSTATEMENTSOFCASHFLOWS" roleURI="http://www.hertz.com/role/HGHCONSOLIDATEDSTATEMENTSOFCASHFLOWS">
+        <link:definition>0000013 - Statement - HGH - CONSOLIDATED STATEMENTS OF CASH FLOWS</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="THCCONSOLIDATEDSTATEMENTSOFCASHFLOWS" roleURI="http://www.hertz.com/role/THCCONSOLIDATEDSTATEMENTSOFCASHFLOWS">
+        <link:definition>0000014 - Statement - THC - CONSOLIDATED STATEMENTS OF CASH FLOWS</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="Background" roleURI="http://www.hertz.com/role/Background">
+        <link:definition>0000015 - Disclosure - Background</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SignificantAccountingPolicies" roleURI="http://www.hertz.com/role/SignificantAccountingPolicies">
+        <link:definition>0000016 - Disclosure - Significant Accounting Policies</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="Divestitures" roleURI="http://www.hertz.com/role/Divestitures">
+        <link:definition>0000017 - Disclosure - Divestitures</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RevenueEarningVehicles" roleURI="http://www.hertz.com/role/RevenueEarningVehicles">
+        <link:definition>0000018 - Disclosure - Revenue Earning Vehicles</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="GoodwillandIntangibleAssetsNet" roleURI="http://www.hertz.com/role/GoodwillandIntangibleAssetsNet">
+        <link:definition>0000019 - Disclosure - Goodwill and Intangible Assets, Net</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="Debt" roleURI="http://www.hertz.com/role/Debt">
+        <link:definition>0000020 - Disclosure - Debt</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="EmployeeRetirementBenefits" roleURI="http://www.hertz.com/role/EmployeeRetirementBenefits">
+        <link:definition>0000021 - Disclosure - Employee Retirement Benefits</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="StockBasedCompensation" roleURI="http://www.hertz.com/role/StockBasedCompensation">
+        <link:definition>0000022 - Disclosure - Stock-Based Compensation</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="Leases" roleURI="http://www.hertz.com/role/Leases">
+        <link:definition>0000023 - Disclosure - Leases</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IncomeTaxProvisionBenefit" roleURI="http://www.hertz.com/role/IncomeTaxProvisionBenefit">
+        <link:definition>0000024 - Disclosure - Income Tax (Provision) Benefit</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FinancialInstruments" roleURI="http://www.hertz.com/role/FinancialInstruments">
+        <link:definition>0000025 - Disclosure - Financial Instruments</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FairValueMeasurements" roleURI="http://www.hertz.com/role/FairValueMeasurements">
+        <link:definition>0000026 - Disclosure - Fair Value Measurements</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="AccumulatedOtherComprehensiveIncomeLoss" roleURI="http://www.hertz.com/role/AccumulatedOtherComprehensiveIncomeLoss">
+        <link:definition>0000027 - Disclosure - Accumulated Other Comprehensive Income (Loss)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ContingenciesandOffBalanceSheetCommitments" roleURI="http://www.hertz.com/role/ContingenciesandOffBalanceSheetCommitments">
+        <link:definition>0000028 - Disclosure - Contingencies and Off-Balance Sheet Commitments</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RelatedPartyTransactions" roleURI="http://www.hertz.com/role/RelatedPartyTransactions">
+        <link:definition>0000029 - Disclosure - Related Party Transactions</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="EquityHertzGlobal" roleURI="http://www.hertz.com/role/EquityHertzGlobal">
+        <link:definition>0000030 - Disclosure - Equity &#8211; Hertz Global</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="EarningsLossPerCommonShareHertzGlobal" roleURI="http://www.hertz.com/role/EarningsLossPerCommonShareHertzGlobal">
+        <link:definition>0000031 - Disclosure - Earnings (Loss) Per Common Share &#8211; Hertz Global</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="PublicWarrantsHertzGlobal" roleURI="http://www.hertz.com/role/PublicWarrantsHertzGlobal">
+        <link:definition>0000032 - Disclosure - Public Warrants &#8211; Hertz Global</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SegmentInformation" roleURI="http://www.hertz.com/role/SegmentInformation">
+        <link:definition>0000033 - Disclosure - Segment Information</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ReorganizationItemsNet" roleURI="http://www.hertz.com/role/ReorganizationItemsNet">
+        <link:definition>0000034 - Disclosure - Reorganization Items, Net</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SubsequentEvents" roleURI="http://www.hertz.com/role/SubsequentEvents">
+        <link:definition>0000035 - Disclosure - Subsequent Events</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SCHEDULEICONDENSEDFINANCIALINFORMATIONOFREGISTRANT" roleURI="http://www.hertz.com/role/SCHEDULEICONDENSEDFINANCIALINFORMATIONOFREGISTRANT">
+        <link:definition>0000036 - Disclosure - SCHEDULE I CONDENSED FINANCIAL INFORMATION OF REGISTRANT</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SCHEDULEIIVALUATIONANDQUALIFYINGACCOUNTS" roleURI="http://www.hertz.com/role/SCHEDULEIIVALUATIONANDQUALIFYINGACCOUNTS">
+        <link:definition>0000037 - Disclosure - SCHEDULE II VALUATION AND QUALIFYING ACCOUNTS</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SignificantAccountingPoliciesPolicies" roleURI="http://www.hertz.com/role/SignificantAccountingPoliciesPolicies">
+        <link:definition>9954471 - Disclosure - Significant Accounting Policies (Policies)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SignificantAccountingPoliciesTables" roleURI="http://www.hertz.com/role/SignificantAccountingPoliciesTables">
+        <link:definition>9954472 - Disclosure - Significant Accounting Policies (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RevenueEarningVehiclesTables" roleURI="http://www.hertz.com/role/RevenueEarningVehiclesTables">
+        <link:definition>9954473 - Disclosure - Revenue Earning Vehicles (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="GoodwillandIntangibleAssetsNetTables" roleURI="http://www.hertz.com/role/GoodwillandIntangibleAssetsNetTables">
+        <link:definition>9954474 - Disclosure - Goodwill and Intangible Assets, Net (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="DebtTables" roleURI="http://www.hertz.com/role/DebtTables">
+        <link:definition>9954475 - Disclosure - Debt (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="EmployeeRetirementBenefitsTables" roleURI="http://www.hertz.com/role/EmployeeRetirementBenefitsTables">
+        <link:definition>9954476 - Disclosure - Employee Retirement Benefits (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="StockBasedCompensationTables" roleURI="http://www.hertz.com/role/StockBasedCompensationTables">
+        <link:definition>9954477 - Disclosure - Stock-Based Compensation (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LeasesTables" roleURI="http://www.hertz.com/role/LeasesTables">
+        <link:definition>9954478 - Disclosure - Leases (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IncomeTaxProvisionBenefitTables" roleURI="http://www.hertz.com/role/IncomeTaxProvisionBenefitTables">
+        <link:definition>9954479 - Disclosure - Income Tax (Provision) Benefit (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FinancialInstrumentsTables" roleURI="http://www.hertz.com/role/FinancialInstrumentsTables">
+        <link:definition>9954480 - Disclosure - Financial Instruments (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FairValueMeasurementsTables" roleURI="http://www.hertz.com/role/FairValueMeasurementsTables">
+        <link:definition>9954481 - Disclosure - Fair Value Measurements (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="AccumulatedOtherComprehensiveIncomeLossTables" roleURI="http://www.hertz.com/role/AccumulatedOtherComprehensiveIncomeLossTables">
+        <link:definition>9954482 - Disclosure - Accumulated Other Comprehensive Income (Loss) (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="EarningsLossPerCommonShareHertzGlobalTables" roleURI="http://www.hertz.com/role/EarningsLossPerCommonShareHertzGlobalTables">
+        <link:definition>9954483 - Disclosure - Earnings (Loss) Per Common Share &#8211; Hertz Global (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SegmentInformationTables" roleURI="http://www.hertz.com/role/SegmentInformationTables">
+        <link:definition>9954484 - Disclosure - Segment Information (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ReorganizationItemsNetTables" roleURI="http://www.hertz.com/role/ReorganizationItemsNetTables">
+        <link:definition>9954485 - Disclosure - Reorganization Items, Net (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SignificantAccountingPoliciesNarrativeDetails" roleURI="http://www.hertz.com/role/SignificantAccountingPoliciesNarrativeDetails">
+        <link:definition>9954486 - Disclosure - Significant Accounting Policies (Narrative) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SignificantAccountingPoliciesPropertyandEquipmentIncludingUsefulLivesDetails" roleURI="http://www.hertz.com/role/SignificantAccountingPoliciesPropertyandEquipmentIncludingUsefulLivesDetails">
+        <link:definition>9954487 - Disclosure - Significant Accounting Policies (Property and Equipment, Including Useful Lives) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="DivestituresDetails" roleURI="http://www.hertz.com/role/DivestituresDetails">
+        <link:definition>9954488 - Disclosure - Divestitures (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RevenueEarningVehiclesComponentsofRevenueEarningVehiclesDetails" roleURI="http://www.hertz.com/role/RevenueEarningVehiclesComponentsofRevenueEarningVehiclesDetails">
+        <link:definition>9954489 - Disclosure - Revenue Earning Vehicles - Components of Revenue Earning Vehicles (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RevenueEarningVehiclesScheduleofDepreciationofRevenueEarningVehiclesandLeaseChargesDetails" roleURI="http://www.hertz.com/role/RevenueEarningVehiclesScheduleofDepreciationofRevenueEarningVehiclesandLeaseChargesDetails">
+        <link:definition>9954490 - Disclosure - Revenue Earning Vehicles - Schedule of Depreciation of Revenue Earning Vehicles and Lease Charges (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RevenueEarningVehiclesNarrativeDetails" roleURI="http://www.hertz.com/role/RevenueEarningVehiclesNarrativeDetails">
+        <link:definition>9954491 - Disclosure - Revenue Earning Vehicles - Narrative (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="GoodwillandIntangibleAssetsNetNarrativeDetails" roleURI="http://www.hertz.com/role/GoodwillandIntangibleAssetsNetNarrativeDetails">
+        <link:definition>9954492 - Disclosure - Goodwill and Intangible Assets, Net (Narrative) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="GoodwillandIntangibleAssetsNetSummaryofChangesinGoodwillbySegmentDetails" roleURI="http://www.hertz.com/role/GoodwillandIntangibleAssetsNetSummaryofChangesinGoodwillbySegmentDetails">
+        <link:definition>9954493 - Disclosure - Goodwill and Intangible Assets, Net (Summary of Changes in Goodwill, by Segment) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="GoodwillandIntangibleAssetsNetScheduleofComponentsofOtherIntangibleAssetsbyMajorClassesDetails" roleURI="http://www.hertz.com/role/GoodwillandIntangibleAssetsNetScheduleofComponentsofOtherIntangibleAssetsbyMajorClassesDetails">
+        <link:definition>9954494 - Disclosure - Goodwill and Intangible Assets, Net (Schedule of Components of Other Intangible Assets by Major Classes) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="GoodwillandIntangibleAssetsNetScheduleofComponentsofOtherIntangibleAssetsbyMajorClassesDetails_1" roleURI="http://www.hertz.com/role/GoodwillandIntangibleAssetsNetScheduleofComponentsofOtherIntangibleAssetsbyMajorClassesDetails_1">
+        <link:definition>9954494 - Disclosure - Goodwill and Intangible Assets, Net (Schedule of Components of Other Intangible Assets by Major Classes) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="GoodwillandIntangibleAssetsNetAmortizationofIntangibleAssetsDetails" roleURI="http://www.hertz.com/role/GoodwillandIntangibleAssetsNetAmortizationofIntangibleAssetsDetails">
+        <link:definition>9954495 - Disclosure - Goodwill and Intangible Assets, Net (Amortization of Intangible Assets) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="GoodwillandIntangibleAssetsNetScheduleofFutureAmortizationExpenseDetails" roleURI="http://www.hertz.com/role/GoodwillandIntangibleAssetsNetScheduleofFutureAmortizationExpenseDetails">
+        <link:definition>9954496 - Disclosure - Goodwill and Intangible Assets, Net (Schedule of Future Amortization Expense) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="DebtScheduleofDebtDetails" roleURI="http://www.hertz.com/role/DebtScheduleofDebtDetails">
+        <link:definition>9954497 - Disclosure - Debt (Schedule of Debt) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="DebtNarrativeDetails" roleURI="http://www.hertz.com/role/DebtNarrativeDetails">
+        <link:definition>9954498 - Disclosure - Debt (Narrative) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="DebtScheduleofDebtSoldtoThirdPartiesDetails" roleURI="http://www.hertz.com/role/DebtScheduleofDebtSoldtoThirdPartiesDetails">
+        <link:definition>9954499 - Disclosure - Debt (Schedule of Debt Sold to Third Parties) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="DebtExtinguishmentofDebtDetails" roleURI="http://www.hertz.com/role/DebtExtinguishmentofDebtDetails">
+        <link:definition>9954500 - Disclosure - Debt (Extinguishment of Debt) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="DebtDebtMaturitiesDetails" roleURI="http://www.hertz.com/role/DebtDebtMaturitiesDetails">
+        <link:definition>9954501 - Disclosure - Debt (Debt Maturities) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="DebtBorrowingCapacityDetails" roleURI="http://www.hertz.com/role/DebtBorrowingCapacityDetails">
+        <link:definition>9954502 - Disclosure - Debt (Borrowing Capacity) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="EmployeeRetirementBenefitsChangeinBenefitObligationDetails" roleURI="http://www.hertz.com/role/EmployeeRetirementBenefitsChangeinBenefitObligationDetails">
+        <link:definition>9954503 - Disclosure - Employee Retirement Benefits (Change in Benefit Obligation) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="EmployeeRetirementBenefitsAmountsRecognizedinBalanceSheetDetails" roleURI="http://www.hertz.com/role/EmployeeRetirementBenefitsAmountsRecognizedinBalanceSheetDetails">
+        <link:definition>9954504 - Disclosure - Employee Retirement Benefits (Amounts Recognized in Balance Sheet) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="EmployeeRetirementBenefitsScheduleofNetBenefitCostsDetails" roleURI="http://www.hertz.com/role/EmployeeRetirementBenefitsScheduleofNetBenefitCostsDetails">
+        <link:definition>9954505 - Disclosure - Employee Retirement Benefits (Schedule of Net Benefit Costs) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="EmployeeRetirementBenefitsNarrativeDetails" roleURI="http://www.hertz.com/role/EmployeeRetirementBenefitsNarrativeDetails">
+        <link:definition>9954506 - Disclosure - Employee Retirement Benefits (Narrative) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="EmployeeRetirementBenefitsFairValueofPlanAssetsDetails" roleURI="http://www.hertz.com/role/EmployeeRetirementBenefitsFairValueofPlanAssetsDetails">
+        <link:definition>9954507 - Disclosure - Employee Retirement Benefits (Fair Value of Plan Assets) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="EmployeeRetirementBenefitsEstimatedFutureBenefitPaymentsOtherPlansDetails" roleURI="http://www.hertz.com/role/EmployeeRetirementBenefitsEstimatedFutureBenefitPaymentsOtherPlansDetails">
+        <link:definition>9954508 - Disclosure - Employee Retirement Benefits (Estimated Future Benefit Payments &amp; Other Plans) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="StockBasedCompensationNarrativeDetails" roleURI="http://www.hertz.com/role/StockBasedCompensationNarrativeDetails">
+        <link:definition>9954509 - Disclosure - Stock-Based Compensation (Narrative) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="StockBasedCompensationSummaryoftheTotalCompensationExpenseandAssociatedRecognizedIncomeTaxBenefitsDetails" roleURI="http://www.hertz.com/role/StockBasedCompensationSummaryoftheTotalCompensationExpenseandAssociatedRecognizedIncomeTaxBenefitsDetails">
+        <link:definition>9954510 - Disclosure - Stock-Based Compensation (Summary of the Total Compensation Expense and Associated Recognized Income Tax Benefits) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="StockBasedCompensationScheduleofValuationAssumptionsStockOptionsDetails" roleURI="http://www.hertz.com/role/StockBasedCompensationScheduleofValuationAssumptionsStockOptionsDetails">
+        <link:definition>9954511 - Disclosure - Stock-Based Compensation (Schedule of Valuation Assumptions Stock Options) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="StockBasedCompensationSummaryofStockOptionActivityDetails" roleURI="http://www.hertz.com/role/StockBasedCompensationSummaryofStockOptionActivityDetails">
+        <link:definition>9954512 - Disclosure - Stock-Based Compensation (Summary of Stock Option Activity) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="StockBasedCompensationSummaryofPSUandRSUActivityDetails" roleURI="http://www.hertz.com/role/StockBasedCompensationSummaryofPSUandRSUActivityDetails">
+        <link:definition>9954513 - Disclosure - Stock-Based Compensation (Summary of PSU and RSU Activity) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="StockBasedCompensationScheduleofValuationAssumptionsPSUDetails" roleURI="http://www.hertz.com/role/StockBasedCompensationScheduleofValuationAssumptionsPSUDetails">
+        <link:definition>9954514 - Disclosure - Stock-Based Compensation (Schedule of Valuation Assumptions PSU) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="StockBasedCompensationScheduleofAdditionalRSUActivityDetails" roleURI="http://www.hertz.com/role/StockBasedCompensationScheduleofAdditionalRSUActivityDetails">
+        <link:definition>9954515 - Disclosure - Stock-Based Compensation (Schedule of Additional RSU Activity) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LeasesNarrativeDetails" roleURI="http://www.hertz.com/role/LeasesNarrativeDetails">
+        <link:definition>9954516 - Disclosure - Leases (Narrative) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LeasesOperatingLeaseLeaseIncomeDetails" roleURI="http://www.hertz.com/role/LeasesOperatingLeaseLeaseIncomeDetails">
+        <link:definition>9954517 - Disclosure - Leases (Operating Lease, Lease Income) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LeasesOperatingLeaseCostsDetails" roleURI="http://www.hertz.com/role/LeasesOperatingLeaseCostsDetails">
+        <link:definition>9954518 - Disclosure - Leases (Operating Lease Costs) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LeasesWeightedaverageRemainingLeaseTermandWeightedaverageDiscountRateDetails" roleURI="http://www.hertz.com/role/LeasesWeightedaverageRemainingLeaseTermandWeightedaverageDiscountRateDetails">
+        <link:definition>9954519 - Disclosure - Leases (Weighted-average Remaining Lease Term and Weighted-average Discount Rate) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LeasesLesseeOperatingLeaseLiabilityMaturityDetails" roleURI="http://www.hertz.com/role/LeasesLesseeOperatingLeaseLiabilityMaturityDetails">
+        <link:definition>9954520 - Disclosure - Leases (Lessee, Operating Lease, Liability, Maturity) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LeasesLesseeOperatingLeaseLiabilityMaturityDetails_1" roleURI="http://www.hertz.com/role/LeasesLesseeOperatingLeaseLiabilityMaturityDetails_1">
+        <link:definition>9954520 - Disclosure - Leases (Lessee, Operating Lease, Liability, Maturity) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IncomeTaxProvisionBenefitScheduleofComponentsofIncomeBeforeIncomeTaxesDetails" roleURI="http://www.hertz.com/role/IncomeTaxProvisionBenefitScheduleofComponentsofIncomeBeforeIncomeTaxesDetails">
+        <link:definition>9954521 - Disclosure - Income Tax (Provision) Benefit (Schedule of Components of Income Before Income Taxes) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IncomeTaxProvisionBenefitScheduleofTotalProvisionforTaxesonIncomeDetails" roleURI="http://www.hertz.com/role/IncomeTaxProvisionBenefitScheduleofTotalProvisionforTaxesonIncomeDetails">
+        <link:definition>9954522 - Disclosure - Income Tax (Provision) Benefit (Schedule of Total Provision for Taxes on Income) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IncomeTaxProvisionBenefitScheduleofPrincipalItemsoftheUSandForeignNetDeferredTaxAssetsandLiabilitiesDetails" roleURI="http://www.hertz.com/role/IncomeTaxProvisionBenefitScheduleofPrincipalItemsoftheUSandForeignNetDeferredTaxAssetsandLiabilitiesDetails">
+        <link:definition>9954523 - Disclosure - Income Tax (Provision) Benefit (Schedule of Principal Items of the U.S. and Foreign Net Deferred Tax Assets and Liabilities) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IncomeTaxProvisionBenefitNarrativeDetails" roleURI="http://www.hertz.com/role/IncomeTaxProvisionBenefitNarrativeDetails">
+        <link:definition>9954524 - Disclosure - Income Tax (Provision) Benefit (Narrative) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IncomeTaxProvisionBenefitScheduleofSignificantItemsintheReconciliationoftheStatutoryandEffectiveIncomeTaxRatesDetails" roleURI="http://www.hertz.com/role/IncomeTaxProvisionBenefitScheduleofSignificantItemsintheReconciliationoftheStatutoryandEffectiveIncomeTaxRatesDetails">
+        <link:definition>9954525 - Disclosure - Income Tax (Provision) Benefit (Schedule of Significant Items in the Reconciliation of the Statutory and Effective Income Tax Rates) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IncomeTaxProvisionBenefitReconciliationoftheBeginningandEndingAmountsofUnrecognizedTaxBenefitsDetails" roleURI="http://www.hertz.com/role/IncomeTaxProvisionBenefitReconciliationoftheBeginningandEndingAmountsofUnrecognizedTaxBenefitsDetails">
+        <link:definition>9954526 - Disclosure - Income Tax (Provision) Benefit (Reconciliation of the Beginning and Ending Amounts of Unrecognized Tax Benefits) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FinancialInstrumentsAdditionalInformationDetails" roleURI="http://www.hertz.com/role/FinancialInstrumentsAdditionalInformationDetails">
+        <link:definition>9954527 - Disclosure - Financial Instruments (Additional Information) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FinancialInstrumentsScheduleofEstimatedFairValueofFinancialInstrumentsDetails" roleURI="http://www.hertz.com/role/FinancialInstrumentsScheduleofEstimatedFairValueofFinancialInstrumentsDetails">
+        <link:definition>9954528 - Disclosure - Financial Instruments (Schedule of Estimated Fair Value of Financial Instruments) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FinancialInstrumentsGainLossRecognizedonDerivativesDetails" roleURI="http://www.hertz.com/role/FinancialInstrumentsGainLossRecognizedonDerivativesDetails">
+        <link:definition>9954529 - Disclosure - Financial Instruments (Gain (Loss) Recognized on Derivatives) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FairValueMeasurementsFinancialInstrumentsDetails" roleURI="http://www.hertz.com/role/FairValueMeasurementsFinancialInstrumentsDetails">
+        <link:definition>9954530 - Disclosure - Fair Value Measurements (Financial Instruments) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FairValueMeasurementsCashEquivalentsandInvestmentsDetails" roleURI="http://www.hertz.com/role/FairValueMeasurementsCashEquivalentsandInvestmentsDetails">
+        <link:definition>9954531 - Disclosure - Fair Value Measurements (Cash Equivalents and Investments) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FairValueMeasurementsNarrativeDetails" roleURI="http://www.hertz.com/role/FairValueMeasurementsNarrativeDetails">
+        <link:definition>9954532 - Disclosure - Fair Value Measurements (Narrative) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="AccumulatedOtherComprehensiveIncomeLossDetails" roleURI="http://www.hertz.com/role/AccumulatedOtherComprehensiveIncomeLossDetails">
+        <link:definition>9954533 - Disclosure - Accumulated Other Comprehensive Income (Loss) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ContingenciesandOffBalanceSheetCommitmentsDetails" roleURI="http://www.hertz.com/role/ContingenciesandOffBalanceSheetCommitmentsDetails">
+        <link:definition>9954534 - Disclosure - Contingencies and Off-Balance Sheet Commitments (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="EquityHertzGlobalNarrativeDetails" roleURI="http://www.hertz.com/role/EquityHertzGlobalNarrativeDetails">
+        <link:definition>9954535 - Disclosure - Equity &#8211; Hertz Global (Narrative) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="EarningsLossPerCommonShareHertzGlobalDetails" roleURI="http://www.hertz.com/role/EarningsLossPerCommonShareHertzGlobalDetails">
+        <link:definition>9954536 - Disclosure - Earnings (Loss) Per Common Share &#8211; Hertz Global (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="PublicWarrantsHertzGlobalNarrativeDetails" roleURI="http://www.hertz.com/role/PublicWarrantsHertzGlobalNarrativeDetails">
+        <link:definition>9954537 - Disclosure - Public Warrants &#8211; Hertz Global - Narrative (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SegmentInformationReportableSegmentstoConsolidatedDetails" roleURI="http://www.hertz.com/role/SegmentInformationReportableSegmentstoConsolidatedDetails">
+        <link:definition>9954538 - Disclosure - Segment Information (Reportable Segments to Consolidated) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SegmentInformationPretaxIncomeDetails" roleURI="http://www.hertz.com/role/SegmentInformationPretaxIncomeDetails">
+        <link:definition>9954539 - Disclosure - Segment Information (Pre-tax Income) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ReorganizationItemsNetScheduleofReorganizationItemsNetDetails" roleURI="http://www.hertz.com/role/ReorganizationItemsNetScheduleofReorganizationItemsNetDetails">
+        <link:definition>9954540 - Disclosure - Reorganization Items, Net - Schedule of Reorganization Items, Net (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ReorganizationItemsNetNarrativeDetails" roleURI="http://www.hertz.com/role/ReorganizationItemsNetNarrativeDetails">
+        <link:definition>9954541 - Disclosure - Reorganization Items, Net - Narrative (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SCHEDULEICONDENSEDFINANCIALINFORMATIONOFREGISTRANTBalanceSheetDetails" roleURI="http://www.hertz.com/role/SCHEDULEICONDENSEDFINANCIALINFORMATIONOFREGISTRANTBalanceSheetDetails">
+        <link:definition>9954542 - Disclosure - SCHEDULE I CONDENSED FINANCIAL INFORMATION OF REGISTRANT (Balance Sheet) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SCHEDULEICONDENSEDFINANCIALINFORMATIONOFREGISTRANTBalanceSheetParentheticalsDetails" roleURI="http://www.hertz.com/role/SCHEDULEICONDENSEDFINANCIALINFORMATIONOFREGISTRANTBalanceSheetParentheticalsDetails">
+        <link:definition>9954543 - Disclosure - SCHEDULE I CONDENSED FINANCIAL INFORMATION OF REGISTRANT (Balance Sheet) (Parentheticals) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SCHEDULEICONDENSEDFINANCIALINFORMATIONOFREGISTRANTStatementsofOperationsDetails" roleURI="http://www.hertz.com/role/SCHEDULEICONDENSEDFINANCIALINFORMATIONOFREGISTRANTStatementsofOperationsDetails">
+        <link:definition>9954544 - Disclosure - SCHEDULE I CONDENSED FINANCIAL INFORMATION OF REGISTRANT (Statements of Operations) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SCHEDULEICONDENSEDFINANCIALINFORMATIONOFREGISTRANTStatementsofComprehensiveIncomeLossDetails" roleURI="http://www.hertz.com/role/SCHEDULEICONDENSEDFINANCIALINFORMATIONOFREGISTRANTStatementsofComprehensiveIncomeLossDetails">
+        <link:definition>9954545 - Disclosure - SCHEDULE I CONDENSED FINANCIAL INFORMATION OF REGISTRANT (Statements of Comprehensive Income (Loss)) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SCHEDULEICONDENSEDFINANCIALINFORMATIONOFREGISTRANTStatementsofCashFlowsDetails" roleURI="http://www.hertz.com/role/SCHEDULEICONDENSEDFINANCIALINFORMATIONOFREGISTRANTStatementsofCashFlowsDetails">
+        <link:definition>9954546 - Disclosure - SCHEDULE I CONDENSED FINANCIAL INFORMATION OF REGISTRANT (Statements of Cash Flows) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SCHEDULEICONDENSEDFINANCIALINFORMATIONOFREGISTRANTDividendsDetails" roleURI="http://www.hertz.com/role/SCHEDULEICONDENSEDFINANCIALINFORMATIONOFREGISTRANTDividendsDetails">
+        <link:definition>9954547 - Disclosure - SCHEDULE I CONDENSED FINANCIAL INFORMATION OF REGISTRANT (Dividends) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SCHEDULEICONDENSEDFINANCIALINFORMATIONOFREGISTRANTShareRepurchaseDetails" roleURI="http://www.hertz.com/role/SCHEDULEICONDENSEDFINANCIALINFORMATIONOFREGISTRANTShareRepurchaseDetails">
+        <link:definition>9954548 - Disclosure - SCHEDULE I CONDENSED FINANCIAL INFORMATION OF REGISTRANT (Share Repurchase) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SCHEDULEIIVALUATIONANDQUALIFYINGACCOUNTSDetails" roleURI="http://www.hertz.com/role/SCHEDULEIIVALUATIONANDQUALIFYINGACCOUNTSDetails">
+        <link:definition>9954549 - Disclosure - SCHEDULE II VALUATION AND QUALIFYING ACCOUNTS (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element id="htz_VehicleRentalsOperatingLeaseMember" abstract="true" name="VehicleRentalsOperatingLeaseMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="htz_ScheduleOfShareBasedCompensationRestrictedStockUnitsAndPerformanceBasedUnitsAdditionalInformationTableTextBlock" abstract="false" name="ScheduleOfShareBasedCompensationRestrictedStockUnitsAndPerformanceBasedUnitsAdditionalInformationTableTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:textBlockItemType"/>
+  <xs:element id="htz_DeferredIncomeTaxNoncashExpenseBenefit" abstract="false" name="DeferredIncomeTaxNoncashExpenseBenefit" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="htz_EuropeanABSMember" abstract="true" name="EuropeanABSMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="htz_PropertySubjectToAvailableForOperatingLeaseExcludingAssetsHeldForSale" abstract="false" name="PropertySubjectToAvailableForOperatingLeaseExcludingAssetsHeldForSale" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="htz_InternationalSmallCapMember" abstract="true" name="InternationalSmallCapMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="htz_SeniorRevolvingCreditFacilityMember" abstract="true" name="SeniorRevolvingCreditFacilityMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="htz_CorporateAndReconcilingItemsMember" abstract="true" name="CorporateAndReconcilingItemsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="htz_ScheduleOfComponentsOfRevenueEarningVehiclesNetTableTextBlock" abstract="false" name="ScheduleOfComponentsOfRevenueEarningVehiclesNetTableTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:textBlockItemType"/>
+  <xs:element id="htz_SeniorNotesDue2026Member" abstract="true" name="SeniorNotesDue2026Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="htz_DefinedBenefitPlanNumberOfPlans" abstract="false" name="DefinedBenefitPlanNumberOfPlans" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="xbrli:integerItemType"/>
+  <xs:element id="htz_EffectiveIncomeTaxRateReconciliationNondeductibleExpenseFederalAndForeignPermanentDifferencesPercent" abstract="false" name="EffectiveIncomeTaxRateReconciliationNondeductibleExpenseFederalAndForeignPermanentDifferencesPercent" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+  <xs:element id="htz_VariableOperatingLeaseMember" abstract="true" name="VariableOperatingLeaseMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="htz_SeniorSecondPrioritySecuredNotesMember" abstract="true" name="SeniorSecondPrioritySecuredNotesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="htz_HVFIIISeries2021AMember" abstract="true" name="HVFIIISeries2021AMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="htz_ActivelyManagedMultiAssetFundsMember" abstract="true" name="ActivelyManagedMultiAssetFundsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="htz_LiabilityDrivenInvestmentsMember" abstract="true" name="LiabilityDrivenInvestmentsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="htz_UkLeveragedFinancingMember" abstract="true" name="UkLeveragedFinancingMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="htz_HVFIIIUSVehicleMediumTermNotesMember" abstract="true" name="HVFIIIUSVehicleMediumTermNotesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="htz_PromissoryNotesMember" abstract="true" name="PromissoryNotesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="htz_IncrementalTermBLoanMember" abstract="true" name="IncrementalTermBLoanMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="htz_LiquidityFundMember" abstract="true" name="LiquidityFundMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="htz_AdjustmentsToAdditionalPaidInCapitalWarrantsExercisedValue" abstract="false" name="AdjustmentsToAdditionalPaidInCapitalWarrantsExercisedValue" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="htz_AuditInformationAbstract" abstract="true" name="AuditInformationAbstract" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="htz_SecuredOvernightFinancingRateSOFRMember" abstract="true" name="SecuredOvernightFinancingRateSOFRMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="htz_PaymentOfCertainRedemptionPremiumsAndPostPetitionInterestMember" abstract="true" name="PaymentOfCertainRedemptionPremiumsAndPostPetitionInterestMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="htz_UnrecognizedTaxBenefitsThatWouldImpactEffectiveTaxRateNet" abstract="false" name="UnrecognizedTaxBenefitsThatWouldImpactEffectiveTaxRateNet" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="htz_SaleLeasebackTransactionGrossAmount" abstract="false" name="SaleLeasebackTransactionGrossAmount" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="htz_ScheduleOfEstimatedUsefulLivesOfDepreciableAssetsTableTextBlock" abstract="false" name="ScheduleOfEstimatedUsefulLivesOfDepreciableAssetsTableTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:textBlockItemType"/>
+  <xs:element id="htz_PurchasesOfRevenueEarningEquipmentIncurredButNotYetPaid" abstract="false" name="PurchasesOfRevenueEarningEquipmentIncurredButNotYetPaid" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="htz_CostOfServicesDepreciationAsAdjustedForGainLossUponDisposal" abstract="false" name="CostOfServicesDepreciationAsAdjustedForGainLossUponDisposal" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="htz_BasicandDilutedEarningsLossPerShareAbstract" abstract="true" name="BasicandDilutedEarningsLossPerShareAbstract" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="htz_EarlyRedemptionPremiumsAndWriteOffOfDeferredFinancingCostsAssociatedWithRedemptionsTerminationsAndWaiverAgreementsMember" abstract="true" name="EarlyRedemptionPremiumsAndWriteOffOfDeferredFinancingCostsAssociatedWithRedemptionsTerminationsAndWaiverAgreementsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="htz_OtherVehicleDebtMember" abstract="true" name="OtherVehicleDebtMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="htz_NonCashCapitalContributionsFromParent" abstract="false" name="NonCashCapitalContributionsFromParent" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="htz_LosAngelesCaliforniaAirportMember" abstract="true" name="LosAngelesCaliforniaAirportMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="htz_UnsecuredClaimSettlementFees" abstract="false" name="UnsecuredClaimSettlementFees" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="htz_NonVehicleRelatedDebtMember" abstract="true" name="NonVehicleRelatedDebtMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="htz_UKPlanMember" abstract="true" name="UKPlanMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="htz_EffectiveIncomeTaxRateReconciliationWithholdingTaxesPercent" abstract="false" name="EffectiveIncomeTaxRateReconciliationWithholdingTaxesPercent" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+  <xs:element id="htz_DisclosureOfDepreciationOnRevenueEarningEquipmentAndLeaseChargesTextBlockTextBlock" abstract="false" name="DisclosureOfDepreciationOnRevenueEarningEquipmentAndLeaseChargesTextBlockTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:textBlockItemType"/>
+  <xs:element id="htz_HILCreditAgreementAndSecondHILCreditAgreementMember" abstract="true" name="HILCreditAgreementAndSecondHILCreditAgreementMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="htz_UKFinancingFacilityMember" abstract="true" name="UKFinancingFacilityMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="htz_IndefiniteLivedIntangibleAssetsPercentageOfFairValueInExcessOfCarryingAmount" abstract="false" name="IndefiniteLivedIntangibleAssetsPercentageOfFairValueInExcessOfCarryingAmount" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+  <xs:element id="htz_CostAndExpensesIncludingInterestExpense" abstract="false" name="CostAndExpensesIncludingInterestExpense" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="htz_AustralianSecuritizationMember" abstract="true" name="AustralianSecuritizationMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="htz_DefinedBenefitPlanExpectedReturnOnPlanAssetsPercent" abstract="false" name="DefinedBenefitPlanExpectedReturnOnPlanAssetsPercent" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+  <xs:element id="htz_HVFIIISeries2021AClassAMember" abstract="true" name="HVFIIISeries2021AClassAMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="htz_SeniorNotes6250PercentDue2022Member" abstract="true" name="SeniorNotes6250PercentDue2022Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="htz_AdjustmentsToAdditionalPaidInCapitalContributionsFromAffiliates" abstract="false" name="AdjustmentsToAdditionalPaidInCapitalContributionsFromAffiliates" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="htz_ProceedsFromSaleOfRevenueEarningEquipmentAndProductiveAssets" abstract="false" name="ProceedsFromSaleOfRevenueEarningEquipmentAndProductiveAssets" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="htz_HVFIIISeries20224Member" abstract="true" name="HVFIIISeries20224Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="htz_TermBLoanMember" abstract="true" name="TermBLoanMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="htz_AccruedReorganizationCharges" abstract="false" name="AccruedReorganizationCharges" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="htz_LeaseFixedCost" abstract="false" name="LeaseFixedCost" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="htz_HVIFSeries20201Member" abstract="true" name="HVIFSeries20201Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="htz_InternationalLargeCapMember" abstract="true" name="InternationalLargeCapMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="htz_OtherIncomeExpenseMember" abstract="true" name="OtherIncomeExpenseMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="htz_GainLossOnFinancialInstruments" abstract="false" name="GainLossOnFinancialInstruments" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="htz_DefinedBenefitPlanAssumptionsUsedCalculatingNetPeriodicBenefitCostDiscountRateBeginningOfPeriod" abstract="false" name="DefinedBenefitPlanAssumptionsUsedCalculatingNetPeriodicBenefitCostDiscountRateBeginningOfPeriod" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+  <xs:element id="htz_AssetHeldForSaleNotPartOfDisposalGroupAndDisposalGroupIncludingDiscontinuedOperationPropertyPlantAndEquipment" abstract="false" name="AssetHeldForSaleNotPartOfDisposalGroupAndDisposalGroupIncludingDiscontinuedOperationPropertyPlantAndEquipment" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="htz_IntangibleAssetsAssumptionsUsedToEstimateFairValueDiscountRate" abstract="false" name="IntangibleAssetsAssumptionsUsedToEstimateFairValueDiscountRate" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+  <xs:element id="htz_PaymentsToAcquireRevenueEarningEquipmentAndProductiveAssets" abstract="false" name="PaymentsToAcquireRevenueEarningEquipmentAndProductiveAssets" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="htz_PropertyPlantandEquipmentHoldingPeriod" abstract="false" name="PropertyPlantandEquipmentHoldingPeriod" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:durationItemType"/>
+  <xs:element id="htz_CapitalExpendituresAcquiredViaCapitalLeases" abstract="false" name="CapitalExpendituresAcquiredViaCapitalLeases" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="htz_GoodwillAssumptionsUsedToEstimateFairValueDiscountRate" abstract="false" name="GoodwillAssumptionsUsedToEstimateFairValueDiscountRate" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+  <xs:element id="htz_RentsPaidForVehiclesLeased" abstract="false" name="RentsPaidForVehiclesLeased" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="htz_HILCreditAgreementMember" abstract="true" name="HILCreditAgreementMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="htz_OmnibusIncentivePlan2021Member" abstract="true" name="OmnibusIncentivePlan2021Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="htz_HVFIIIUSVehicleVariableFundingNotesMember" abstract="true" name="HVFIIIUSVehicleVariableFundingNotesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="htz_HVFIIISeries20211Member" abstract="true" name="HVFIIISeries20211Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="htz_OperatingLossCarryforwardsNet" abstract="false" name="OperatingLossCarryforwardsNet" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="htz_LetterOfCreditFacilityMember" abstract="true" name="LetterOfCreditFacilityMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="htz_HVFIIISeries20225Member" abstract="true" name="HVFIIISeries20225Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="htz_TermLoansMember" abstract="true" name="TermLoansMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="htz_MutliAssetCreditMember" abstract="true" name="MutliAssetCreditMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="htz_SharesIssuedDuringPeriodValueCancellationOfCommonAndTreasurySharesInExchangeForNewCommonShares" abstract="false" name="SharesIssuedDuringPeriodValueCancellationOfCommonAndTreasurySharesInExchangeForNewCommonShares" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="htz_ShareRepurchaseProgram2021Member" abstract="true" name="ShareRepurchaseProgram2021Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="htz_StockIssuedDuringPeriodValueRightsOfferingNet" abstract="false" name="StockIssuedDuringPeriodValueRightsOfferingNet" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="htz_OtherCorporateDebtMember" abstract="true" name="OtherCorporateDebtMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="htz_EffectiveIncomeTaxRateReconciliationEuropeanTaxReorganizationPercent" abstract="false" name="EffectiveIncomeTaxRateReconciliationEuropeanTaxReorganizationPercent" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+  <xs:element id="htz_HertzCanadianSecuritizationMember" abstract="true" name="HertzCanadianSecuritizationMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="htz_EuropeanAssetBackedSecuritiesMember" abstract="true" name="EuropeanAssetBackedSecuritiesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="htz_StockIssuedDuringPeriodValueContributionFromPlanSponsors" abstract="false" name="StockIssuedDuringPeriodValueContributionFromPlanSponsors" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="htz_HVFIIISeries2021AClassBMember" abstract="true" name="HVFIIISeries2021AClassBMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="htz_PaymentOfPostPetitionInterestMember" abstract="true" name="PaymentOfPostPetitionInterestMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="htz_SeniorNotes6000PercentDueJanuary2028Member" abstract="true" name="SeniorNotes6000PercentDueJanuary2028Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="htz_HVFIIISeries20232Member" abstract="true" name="HVFIIISeries20232Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="htz_AdjustmentsToAdditionalPaidInCapitalWarrantsExercisedShares" abstract="false" name="AdjustmentsToAdditionalPaidInCapitalWarrantsExercisedShares" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:sharesItemType"/>
+  <xs:element id="htz_HVFIIISeries20221And20222Member" abstract="true" name="HVFIIISeries20221And20222Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="htz_SeniorNotes7125PercentDue2026Member" abstract="true" name="SeniorNotes7125PercentDue2026Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="htz_ClassOfWarrantOrRightExercised" abstract="false" name="ClassOfWarrantOrRightExercised" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="xbrli:sharesItemType"/>
+  <xs:element id="htz_DebtorReorganizationItemsNetGainLossOnSettlementOfLiabilitiesSubjectToCompromise" abstract="false" name="DebtorReorganizationItemsNetGainLossOnSettlementOfLiabilitiesSubjectToCompromise" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="htz_ForeignOverseasEquitySecuritiesMember" abstract="true" name="ForeignOverseasEquitySecuritiesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="htz_InternationalEmergingMarketsMember" abstract="true" name="InternationalEmergingMarketsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="htz_CostOfServicesDepreciationAndLeaseCharges" abstract="false" name="CostOfServicesDepreciationAndLeaseCharges" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="htz_DebtorReorganizationItemsContractSettlements" abstract="false" name="DebtorReorganizationItemsContractSettlements" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="htz_CashFlowCashPaidDuringPeriodAbstract" abstract="true" name="CashFlowCashPaidDuringPeriodAbstract" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="htz_UnitedStatesNonQualifiedPensionPlanofUSEntityMember" abstract="true" name="UnitedStatesNonQualifiedPensionPlanofUSEntityMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="htz_VehicleDebtOtherMember" abstract="true" name="VehicleDebtOtherMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="htz_ScheduleOfFiniteLivedAndIndefiniteLivedIntangibleAssetsByMajorClassTableTextBlock" abstract="false" name="ScheduleOfFiniteLivedAndIndefiniteLivedIntangibleAssetsByMajorClassTableTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:textBlockItemType"/>
+  <xs:element id="htz_DonlenMember" abstract="true" name="DonlenMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="htz_HVFIIISeries20221NotesAndSeries20222NotesMember" abstract="true" name="HVFIIISeries20221NotesAndSeries20222NotesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="htz_CapitalGainLossOnRestructuring" abstract="false" name="CapitalGainLossOnRestructuring" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="htz_GainLossOnDisposalOfRevenueEarningVehicles" abstract="false" name="GainLossOnDisposalOfRevenueEarningVehicles" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="htz_PreReorganizationChargesAndNonDebtorFinancingCharges" abstract="false" name="PreReorganizationChargesAndNonDebtorFinancingCharges" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="htz_RepurchaseFacilityMember" abstract="true" name="RepurchaseFacilityMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="htz_ProceedsFromSaleOfRevenueEarningEquipment" abstract="false" name="ProceedsFromSaleOfRevenueEarningEquipment" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="htz_PerformanceUnitsMember" abstract="true" name="PerformanceUnitsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="htz_EuropeanSecuritizationMember" abstract="true" name="EuropeanSecuritizationMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="htz_EarningsPerShareBasicAndDilutedEPSAbstract" abstract="true" name="EarningsPerShareBasicAndDilutedEPSAbstract" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="htz_NonInterestGradeFixedIncomeMember" abstract="true" name="NonInterestGradeFixedIncomeMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="htz_DeferredIncomeTaxAssetLiabilitiesNet" abstract="false" name="DeferredIncomeTaxAssetLiabilitiesNet" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="htz_SaleAndLeasebackTransactionSellingCosts" abstract="false" name="SaleAndLeasebackTransactionSellingCosts" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="htz_StockIssuedDuringPeriodSharesRightsOfferingNet" abstract="false" name="StockIssuedDuringPeriodSharesRightsOfferingNet" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:sharesItemType"/>
+  <xs:element id="htz_SeniorTermLoanFacilityMember" abstract="true" name="SeniorTermLoanFacilityMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="htz_LeaseTermRemainingEconomicLifeofUnderlyingAssetThreshold" abstract="false" name="LeaseTermRemainingEconomicLifeofUnderlyingAssetThreshold" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+  <xs:element id="htz_DefinedBenefitPlanNetPeriodicBenefitCostIncludingPortionRecognizedInOtherComprehensiveIncome" abstract="false" name="DefinedBenefitPlanNetPeriodicBenefitCostIncludingPortionRecognizedInOtherComprehensiveIncome" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="htz_SalesOfRevenueEarningEquipmentEarnedButNotReceived" abstract="false" name="SalesOfRevenueEarningEquipmentEarnedButNotReceived" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="htz_VehicleRelatedDebtMember" abstract="true" name="VehicleRelatedDebtMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="htz_AccumulatedDepreciationCars" abstract="false" name="AccumulatedDepreciationCars" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="htz_EffectiveIncomeTaxRateReconciliationNondeductibleExpenseBankruptcyPercent" abstract="false" name="EffectiveIncomeTaxRateReconciliationNondeductibleExpenseBankruptcyPercent" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+  <xs:element id="htz_OtherIncomeExpense" abstract="false" name="OtherIncomeExpense" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="htz_HVFIIISeries20233Member" abstract="true" name="HVFIIISeries20233Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="htz_RestrictedNetAssetsOfSubsidiariesAsPercentageOfTotalConsolidatedNetAssetsGreaterThan" abstract="false" name="RestrictedNetAssetsOfSubsidiariesAsPercentageOfTotalConsolidatedNetAssetsGreaterThan" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+  <xs:element id="htz_SECSchedule1209ValuationAllowancesAndReservesIncreaseDecreaseCurrencyTranslationAdjustment" abstract="false" name="SECSchedule1209ValuationAllowancesAndReservesIncreaseDecreaseCurrencyTranslationAdjustment" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="htz_VehiclesHeldForSaleMember" abstract="true" name="VehiclesHeldForSaleMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="htz_ServiceCarsAndServiceEquipmentMember" abstract="true" name="ServiceCarsAndServiceEquipmentMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="htz_InternationalCarRentalMember" abstract="true" name="InternationalCarRentalMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="htz_EVDisposalGroupMember" abstract="true" name="EVDisposalGroupMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="htz_NewZealandRevolvingCreditFacilityMember" abstract="true" name="NewZealandRevolvingCreditFacilityMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="htz_IncomeLossfromContinuingOperationsIncludingAdjustmentstoPreTaxIncome" abstract="false" name="IncomeLossfromContinuingOperationsIncludingAdjustmentstoPreTaxIncome" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="htz_HVFIIUSVehicleVariableFundingNotesMember" abstract="true" name="HVFIIUSVehicleVariableFundingNotesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="htz_AssetsIncludingAssetsHeldForSaleMember" abstract="true" name="AssetsIncludingAssetsHeldForSaleMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="htz_ProceedsFromRightsOfferingNet" abstract="false" name="ProceedsFromRightsOfferingNet" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="htz_SharesIssuedDuringPeriodSharesCancellationOfCommonAndTreasurySharesInExchangeForNewCommonShares" abstract="false" name="SharesIssuedDuringPeriodSharesCancellationOfCommonAndTreasurySharesInExchangeForNewCommonShares" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:sharesItemType"/>
+  <xs:element id="htz_EffectiveIncomeTaxRateReconciliationNondeductibleExpenseOfficerCompensationPercent" abstract="false" name="EffectiveIncomeTaxRateReconciliationNondeductibleExpenseOfficerCompensationPercent" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:percentItemType"/>
+  <xs:element id="htz_FiniteLivedAndIndefiniteLivedIntangibleAssetsByMajorClassTable" abstract="true" name="FiniteLivedAndIndefiniteLivedIntangibleAssetsByMajorClassTable" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrldt:hypercubeItem" type="xbrli:stringItemType"/>
+  <xs:element id="htz_ProceedsFromContributionsFromPlanSponsors" abstract="false" name="ProceedsFromContributionsFromPlanSponsors" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="htz_HVFIIISeries20221Member" abstract="true" name="HVFIIISeries20221Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="htz_ScheduleOfDepreciationOfRevenueEarningVehiclesAndLeaseChargesTableTextBlock" abstract="false" name="ScheduleOfDepreciationOfRevenueEarningVehiclesAndLeaseChargesTableTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:textBlockItemType"/>
+  <xs:element id="htz_PropertySubjecttoorAvailableforOperatingLeaseCarsNet" abstract="false" name="PropertySubjecttoorAvailableforOperatingLeaseCarsNet" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="htz_HVFIIISeries20223Member" abstract="true" name="HVFIIISeries20223Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="htz_ClassOfWarrantOrRightExercisedCash" abstract="false" name="ClassOfWarrantOrRightExercisedCash" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="xbrli:sharesItemType"/>
+  <xs:element id="htz_ShareBasedCompensationArrangementByShareBasedPaymentAwardTargetAwardPercent" abstract="false" name="ShareBasedCompensationArrangementByShareBasedPaymentAwardTargetAwardPercent" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:percentItemType"/>
+  <xs:element id="htz_DefinedBenefitPlanUnfundedAccruedBenefit" abstract="false" name="DefinedBenefitPlanUnfundedAccruedBenefit" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="htz_AccrualForPurchasesOfTreasuryShares" abstract="false" name="AccrualForPurchasesOfTreasuryShares" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="htz_AdjustedEBITDAAbstract" abstract="true" name="AdjustedEBITDAAbstract" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="htz_TemporaryEquityStockIssuedDuringPeriodSharesNewIssues" abstract="false" name="TemporaryEquityStockIssuedDuringPeriodSharesNewIssues" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:sharesItemType"/>
+  <xs:element id="htz_PassiveEquityFundsMember" abstract="true" name="PassiveEquityFundsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="htz_FirstLienRevolvingCreditFacilityMember" abstract="true" name="FirstLienRevolvingCreditFacilityMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="htz_PresentValueThresholdofAggregateLeasePaymentsFairValueofUnderlyingAsset" abstract="false" name="PresentValueThresholdofAggregateLeasePaymentsFairValueofUnderlyingAsset" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+  <xs:element id="htz_BackstopEquityIssued" abstract="false" name="BackstopEquityIssued" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="htz_IncreaseDecreaseInSelfInsuredLiabilities" abstract="false" name="IncreaseDecreaseInSelfInsuredLiabilities" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="htz_AlternativeLetterofCreditFacilityMember" abstract="true" name="AlternativeLetterofCreditFacilityMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="htz_DeferredStockUnitsMember" abstract="true" name="DeferredStockUnitsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="htz_WarrantsIssued" abstract="false" name="WarrantsIssued" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="htz_UkEquitySecuritiesMember" abstract="true" name="UkEquitySecuritiesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="htz_AllowanceForReceivablesMember" abstract="true" name="AllowanceForReceivablesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="htz_CashlessExerciseOfWarrants" abstract="false" name="CashlessExerciseOfWarrants" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="htz_DefinedBenefitPlanAssumptionsUsedCalculatingBenefitObligationExpectedLongTermReturnOnAssets" abstract="false" name="DefinedBenefitPlanAssumptionsUsedCalculatingBenefitObligationExpectedLongTermReturnOnAssets" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+  <xs:element id="htz_DenominatorAbstract" abstract="true" name="DenominatorAbstract" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="htz_RevenueEarningVehiclesAbstract" abstract="true" name="RevenueEarningVehiclesAbstract" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="htz_ProceedsFromCollateralReturnedInExchangeForLettersOfCredit" abstract="false" name="ProceedsFromCollateralReturnedInExchangeForLettersOfCredit" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="htz_PaymentsToAcquireRevenueEarningEquipment" abstract="false" name="PaymentsToAcquireRevenueEarningEquipment" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="htz_LeaseTermRemainingEconomicLifeofUnderlyingAssetMinimumThreshold" abstract="false" name="LeaseTermRemainingEconomicLifeofUnderlyingAssetMinimumThreshold" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+  <xs:element id="htz_FleetLeasingOperatingLeaseMember" abstract="true" name="FleetLeasingOperatingLeaseMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="htz_TemporaryEquityRepurchaseOfStockDuringPeriodShares" abstract="false" name="TemporaryEquityRepurchaseOfStockDuringPeriodShares" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:sharesItemType"/>
+  <xs:element id="htz_DividendsNoncash" abstract="false" name="DividendsNoncash" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="htz_TemporaryEquityRepurchaseOfStockDuringPeriodValue" abstract="false" name="TemporaryEquityRepurchaseOfStockDuringPeriodValue" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="htz_PlanOfReorganizationMember" abstract="true" name="PlanOfReorganizationMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="htz_ServiceVehiclesEquipmentAndFurnitureAndFixturesMember" abstract="true" name="ServiceVehiclesEquipmentAndFurnitureAndFixturesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="htz_EffectiveIncomeTaxRateReconciliationChangeInFairValueOfPublicWarrantsPercent" abstract="false" name="EffectiveIncomeTaxRateReconciliationChangeInFairValueOfPublicWarrantsPercent" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+  <xs:element id="htz_NonCashDistributionToParent" abstract="false" name="NonCashDistributionToParent" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="htz_DebtorReorganizationItemsGainLossOnExtinguishmentOfDebt" abstract="false" name="DebtorReorganizationItemsGainLossOnExtinguishmentOfDebt" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="htz_CanadianSecuritizationMember" abstract="true" name="CanadianSecuritizationMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="htz_TheHertzCorporationMember" abstract="true" name="TheHertzCorporationMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="htz_ClassOfWarrantOrRightExercisedCashless" abstract="false" name="ClassOfWarrantOrRightExercisedCashless" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="xbrli:sharesItemType"/>
+  <xs:element id="htz_ForeignOverseasCorporateBondSecuritiesMember" abstract="true" name="ForeignOverseasCorporateBondSecuritiesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="htz_PerformanceStockAwardsMember" abstract="true" name="PerformanceStockAwardsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="htz_HVFIIISeries20212Member" abstract="true" name="HVFIIISeries20212Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="htz_DeferredTaxAssetRightofUseLiability" abstract="false" name="DeferredTaxAssetRightofUseLiability" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="htz_A767AutoLeasingLLCMember" abstract="true" name="A767AutoLeasingLLCMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="htz_AccumulatedOtherComprehensiveIncomeAbstract" abstract="true" name="AccumulatedOtherComprehensiveIncomeAbstract" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="htz_HVFIIISeries20231Member" abstract="true" name="HVFIIISeries20231Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="htz_HVFIIISeries20234Member" abstract="true" name="HVFIIISeries20234Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="htz_SecondHILCreditAgreementMember" abstract="true" name="SecondHILCreditAgreementMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="htz_PassiveBondFundsMember" abstract="true" name="PassiveBondFundsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="htz_ReorganizationItemsNet" abstract="false" name="ReorganizationItemsNet" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="htz_PropertySubjecttoorAvailableforOperatingLeaseCars" abstract="false" name="PropertySubjecttoorAvailableforOperatingLeaseCars" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="htz_WellsFargoBankNationalAssociationVTheHertzCorporationMember" abstract="true" name="WellsFargoBankNationalAssociationVTheHertzCorporationMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="htz_SeniorNotesDue2029Member" abstract="true" name="SeniorNotesDue2029Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="htz_ShareRepurchaseProgram2022Member" abstract="true" name="ShareRepurchaseProgram2022Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="htz_NumeratorAbstract" abstract="true" name="NumeratorAbstract" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="htz_AdjustmentsToAdditionalPaidInCapitalDecreaseFromWarrantIssuance" abstract="false" name="AdjustmentsToAdditionalPaidInCapitalDecreaseFromWarrantIssuance" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="htz_IncreaseDecreaseinOperatingLeaseRightOfUseAssets" abstract="false" name="IncreaseDecreaseinOperatingLeaseRightOfUseAssets" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="htz_OtherFleetDebtMember" abstract="true" name="OtherFleetDebtMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="htz_VehiclesIncludingHeldForSaleMember" abstract="true" name="VehiclesIncludingHeldForSaleMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="htz_DebtorReorganizationItemsTerminationFee" abstract="false" name="DebtorReorganizationItemsTerminationFee" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="htz_StockholdersEquityIncludingPortionAttributabletoNoncontrollingInterestBeforeTreasuryStock" abstract="false" name="StockholdersEquityIncludingPortionAttributabletoNoncontrollingInterestBeforeTreasuryStock" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="htz_EffectiveIncomeTaxRateReconciliationChangeInForeignStatutoryRatePercent" abstract="false" name="EffectiveIncomeTaxRateReconciliationChangeInForeignStatutoryRatePercent" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+  <xs:element id="htz_DebtorReorganizationItemsBackstopFee" abstract="false" name="DebtorReorganizationItemsBackstopFee" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="htz_NonvehicleCapitalAssetsMember" abstract="true" name="NonvehicleCapitalAssetsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="htz_DeferredTaxAssetInterestExpense" abstract="false" name="DeferredTaxAssetInterestExpense" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="htz_FiniteLivedAndIndefiniteLivedIntangibleAssetsLineItems" abstract="true" name="FiniteLivedAndIndefiniteLivedIntangibleAssetsLineItems" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="htz_EuropeanVehicleNotesMember" abstract="true" name="EuropeanVehicleNotesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="htz_InternationalRACMember" abstract="true" name="InternationalRACMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="htz_HVFIIUSVehicleMediumTermNotesMember" abstract="true" name="HVFIIUSVehicleMediumTermNotesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="htz_SeniorNotes5500PercentDue2024Member" abstract="true" name="SeniorNotes5500PercentDue2024Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="htz_PaymentsForReorganizationItems" abstract="false" name="PaymentsForReorganizationItems" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="htz_DiversifiedGrowthFundsMember" abstract="true" name="DiversifiedGrowthFundsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="htz_HVFIIISeries20222Member" abstract="true" name="HVFIIISeries20222Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="htz_HertzHoldingsMember" abstract="true" name="HertzHoldingsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="htz_DepreciationOfRevenueEarningVehicles" abstract="false" name="DepreciationOfRevenueEarningVehicles" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="htz_AmericasRentalCarMember" abstract="true" name="AmericasRentalCarMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="htz_DefinedBenefitPlanExpectedFutureBenefitPayments" abstract="false" name="DefinedBenefitPlanExpectedFutureBenefitPayments" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="htz_AdjustmentsToAdditionalPaidInCapitalWarrantsExercised" abstract="false" name="AdjustmentsToAdditionalPaidInCapitalWarrantsExercised" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="htz_InvestmentsInSubsidiariesNetAsset" abstract="false" name="InvestmentsInSubsidiariesNetAsset" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="htz_TermCLoanMember" abstract="true" name="TermCLoanMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="htz_PaymentsOnCollateral" abstract="false" name="PaymentsOnCollateral" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="htz_StockIssuedDuringPeriodSharesContributionFromPlanSponsors" abstract="false" name="StockIssuedDuringPeriodSharesContributionFromPlanSponsors" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:sharesItemType"/>
+</xs:schema>

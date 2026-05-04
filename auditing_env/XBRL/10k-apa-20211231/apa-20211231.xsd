@@ -1,0 +1,1047 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--XBRL Document Created with Wdesk from Workiva-->
+<!--Copyright 2022 Workiva-->
+<!--r:a12303d8-7077-4fb1-8380-12117a390035,g:593356fd-6fe9-4d06-bb4f-cd88e636ab02-->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:apa="http://www.apachecorp.com/20211231" xmlns:xbrli="http://www.xbrl.org/2003/instance" xmlns:dtr-types="http://www.xbrl.org/dtr/type/2020-01-21" xmlns:xbrldt="http://xbrl.org/2005/xbrldt" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://www.apachecorp.com/20211231">
+  <xs:import namespace="http://fasb.org/srt/2021-01-31" schemaLocation="https://xbrl.fasb.org/srt/2021/elts/srt-2021-01-31.xsd"/>
+  <xs:import namespace="http://fasb.org/us-gaap/2021-01-31" schemaLocation="https://xbrl.fasb.org/us-gaap/2021/elts/us-gaap-2021-01-31.xsd"/>
+  <xs:import namespace="http://www.w3.org/1999/xlink" schemaLocation="http://www.xbrl.org/2003/xlink-2003-12-31.xsd"/>
+  <xs:import namespace="http://www.xbrl.org/2003/instance" schemaLocation="http://www.xbrl.org/2003/xbrl-instance-2003-12-31.xsd"/>
+  <xs:import namespace="http://www.xbrl.org/2003/linkbase" schemaLocation="http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd"/>
+  <xs:import namespace="http://www.xbrl.org/dtr/type/2020-01-21" schemaLocation="https://www.xbrl.org/dtr/type/2020-01-21/types.xsd"/>
+  <xs:import namespace="http://xbrl.org/2005/xbrldt" schemaLocation="http://www.xbrl.org/2005/xbrldt-2005.xsd"/>
+  <xs:import namespace="http://xbrl.sec.gov/country/2021" schemaLocation="https://xbrl.sec.gov/country/2021/country-2021.xsd"/>
+  <xs:import namespace="http://xbrl.sec.gov/dei/2021q4" schemaLocation="https://xbrl.sec.gov/dei/2021q4/dei-2021q4.xsd"/>
+  <xs:import namespace="http://xbrl.sec.gov/stpr/2021" schemaLocation="https://xbrl.sec.gov/stpr/2021/stpr-2021.xsd"/>
+  <xs:annotation>
+    <xs:appinfo>
+      <link:linkbaseRef xmlns:xlink="http://www.w3.org/1999/xlink" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="apa-20211231_lab.xml" xlink:role="http://www.xbrl.org/2003/role/labelLinkbaseRef" xlink:type="simple"/>
+      <link:linkbaseRef xmlns:xlink="http://www.w3.org/1999/xlink" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="apa-20211231_pre.xml" xlink:role="http://www.xbrl.org/2003/role/presentationLinkbaseRef" xlink:type="simple"/>
+      <link:linkbaseRef xmlns:xlink="http://www.w3.org/1999/xlink" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="apa-20211231_cal.xml" xlink:role="http://www.xbrl.org/2003/role/calculationLinkbaseRef" xlink:type="simple"/>
+      <link:linkbaseRef xmlns:xlink="http://www.w3.org/1999/xlink" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="apa-20211231_def.xml" xlink:role="http://www.xbrl.org/2003/role/definitionLinkbaseRef" xlink:type="simple"/>
+      <link:roleType id="Cover" roleURI="http://www.apachecorp.com/role/Cover">
+        <link:definition>000010001 - Document - Cover</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="AuditInformation" roleURI="http://www.apachecorp.com/role/AuditInformation">
+        <link:definition>000020002 - Document - Audit Information</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="STATEMENTOFCONSOLIDATEDOPERATIONS" roleURI="http://www.apachecorp.com/role/STATEMENTOFCONSOLIDATEDOPERATIONS">
+        <link:definition>100010003 - Statement - STATEMENT OF CONSOLIDATED OPERATIONS</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="STATEMENTOFCONSOLIDATEDCOMPREHENSIVEINCOMELOSS" roleURI="http://www.apachecorp.com/role/STATEMENTOFCONSOLIDATEDCOMPREHENSIVEINCOMELOSS">
+        <link:definition>100020004 - Statement - STATEMENT OF CONSOLIDATED COMPREHENSIVE INCOME (LOSS)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="STATEMENTOFCONSOLIDATEDCASHFLOWS" roleURI="http://www.apachecorp.com/role/STATEMENTOFCONSOLIDATEDCASHFLOWS">
+        <link:definition>100030005 - Statement - STATEMENT OF CONSOLIDATED CASH FLOWS</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CONSOLIDATEDBALANCESHEET" roleURI="http://www.apachecorp.com/role/CONSOLIDATEDBALANCESHEET">
+        <link:definition>100040006 - Statement - CONSOLIDATED BALANCE SHEET</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CONSOLIDATEDBALANCESHEETParenthetical" roleURI="http://www.apachecorp.com/role/CONSOLIDATEDBALANCESHEETParenthetical">
+        <link:definition>100050007 - Statement - CONSOLIDATED BALANCE SHEET (Parenthetical)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="STATEMENTOFCONSOLIDATEDCHANGESINEQUITYDEFICITANDNONCONTROLLINGINTEREST" roleURI="http://www.apachecorp.com/role/STATEMENTOFCONSOLIDATEDCHANGESINEQUITYDEFICITANDNONCONTROLLINGINTEREST">
+        <link:definition>100060008 - Statement - STATEMENT OF CONSOLIDATED CHANGES IN EQUITY (DEFICIT) AND NONCONTROLLING INTEREST</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="STATEMENTOFCONSOLIDATEDCHANGESINEQUITYDEFICITANDNONCONTROLLINGINTERESTParenthetical" roleURI="http://www.apachecorp.com/role/STATEMENTOFCONSOLIDATEDCHANGESINEQUITYDEFICITANDNONCONTROLLINGINTERESTParenthetical">
+        <link:definition>100070009 - Statement - STATEMENT OF CONSOLIDATED CHANGES IN EQUITY (DEFICIT) AND NONCONTROLLING INTEREST (Parenthetical)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="NATUREOFOPERATIONS" roleURI="http://www.apachecorp.com/role/NATUREOFOPERATIONS">
+        <link:definition>210011001 - Disclosure - NATURE OF OPERATIONS</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="NATUREOFOPERATIONSDetails" roleURI="http://www.apachecorp.com/role/NATUREOFOPERATIONSDetails">
+        <link:definition>240024001 - Disclosure - NATURE OF OPERATIONS (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SUMMARYOFSIGNIFICANTACCOUNTINGPOLICIES" roleURI="http://www.apachecorp.com/role/SUMMARYOFSIGNIFICANTACCOUNTINGPOLICIES">
+        <link:definition>210031002 - Disclosure - SUMMARY OF SIGNIFICANT ACCOUNTING POLICIES</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SUMMARYOFSIGNIFICANTACCOUNTINGPOLICIESPolicies" roleURI="http://www.apachecorp.com/role/SUMMARYOFSIGNIFICANTACCOUNTINGPOLICIESPolicies">
+        <link:definition>220042001 - Disclosure - SUMMARY OF SIGNIFICANT ACCOUNTING POLICIES (Policies)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SUMMARYOFSIGNIFICANTACCOUNTINGPOLICIESTables" roleURI="http://www.apachecorp.com/role/SUMMARYOFSIGNIFICANTACCOUNTINGPOLICIESTables">
+        <link:definition>230053001 - Disclosure - SUMMARY OF SIGNIFICANT ACCOUNTING POLICIES (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SUMMARYOFSIGNIFICANTACCOUNTINGPOLICIESAdditionalInformationDetails" roleURI="http://www.apachecorp.com/role/SUMMARYOFSIGNIFICANTACCOUNTINGPOLICIESAdditionalInformationDetails">
+        <link:definition>240064002 - Disclosure - SUMMARY OF SIGNIFICANT ACCOUNTING POLICIES - Additional Information (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SUMMARYOFSIGNIFICANTACCOUNTINGPOLICIESAssetImpairmentsRecordedinConnectionwithFairValueAssessmentsDetails" roleURI="http://www.apachecorp.com/role/SUMMARYOFSIGNIFICANTACCOUNTINGPOLICIESAssetImpairmentsRecordedinConnectionwithFairValueAssessmentsDetails">
+        <link:definition>240074003 - Disclosure - SUMMARY OF SIGNIFICANT ACCOUNTING POLICIES - Asset Impairments Recorded in Connection with Fair Value Assessments (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SUMMARYOFSIGNIFICANTACCOUNTINGPOLICIESAllowanceforCreditLossRollforwardDetails" roleURI="http://www.apachecorp.com/role/SUMMARYOFSIGNIFICANTACCOUNTINGPOLICIESAllowanceforCreditLossRollforwardDetails">
+        <link:definition>240084004 - Disclosure - SUMMARY OF SIGNIFICANT ACCOUNTING POLICIES - Allowance for Credit Loss Roll-forward (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SUMMARYOFSIGNIFICANTACCOUNTINGPOLICIESNonCashImpairmentsofProvedandUnprovedPropertyandEquipmentDetails" roleURI="http://www.apachecorp.com/role/SUMMARYOFSIGNIFICANTACCOUNTINGPOLICIESNonCashImpairmentsofProvedandUnprovedPropertyandEquipmentDetails">
+        <link:definition>240094005 - Disclosure - SUMMARY OF SIGNIFICANT ACCOUNTING POLICIES - Non-Cash Impairments of Proved and Unproved Property and Equipment (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SUMMARYOFSIGNIFICANTACCOUNTINGPOLICIESChangestoGoodwillDetails" roleURI="http://www.apachecorp.com/role/SUMMARYOFSIGNIFICANTACCOUNTINGPOLICIESChangestoGoodwillDetails">
+        <link:definition>240104006 - Disclosure - SUMMARY OF SIGNIFICANT ACCOUNTING POLICIES - Changes to Goodwill (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="TRANSACTIONSWITHPARENTAFFILIATE" roleURI="http://www.apachecorp.com/role/TRANSACTIONSWITHPARENTAFFILIATE">
+        <link:definition>210111003 - Disclosure - TRANSACTIONS WITH PARENT AFFILIATE</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="TRANSACTIONSWITHPARENTAFFILIATEDetails" roleURI="http://www.apachecorp.com/role/TRANSACTIONSWITHPARENTAFFILIATEDetails">
+        <link:definition>240124007 - Disclosure - TRANSACTIONS WITH PARENT AFFILIATE (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ACQUISITIONSANDDIVESTITURES" roleURI="http://www.apachecorp.com/role/ACQUISITIONSANDDIVESTITURES">
+        <link:definition>210131004 - Disclosure - ACQUISITIONS AND DIVESTITURES</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ACQUISITIONSANDDIVESTITURES2022ActivityDetails" roleURI="http://www.apachecorp.com/role/ACQUISITIONSANDDIVESTITURES2022ActivityDetails">
+        <link:definition>240144008 - Disclosure - ACQUISITIONS AND DIVESTITURES - 2022 Activity (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ACQUISITIONSANDDIVESTITURES2021ActivityDetails" roleURI="http://www.apachecorp.com/role/ACQUISITIONSANDDIVESTITURES2021ActivityDetails">
+        <link:definition>240154009 - Disclosure - ACQUISITIONS AND DIVESTITURES - 2021 Activity (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ACQUISITIONSANDDIVESTITURES2020ActivityDetails" roleURI="http://www.apachecorp.com/role/ACQUISITIONSANDDIVESTITURES2020ActivityDetails">
+        <link:definition>240164010 - Disclosure - ACQUISITIONS AND DIVESTITURES - 2020 Activity (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ACQUISITIONSANDDIVESTITURES2019ActivityDetails" roleURI="http://www.apachecorp.com/role/ACQUISITIONSANDDIVESTITURES2019ActivityDetails">
+        <link:definition>240174011 - Disclosure - ACQUISITIONS AND DIVESTITURES - 2019 Activity (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CAPITALIZEDEXPLORATORYWELLCOSTS" roleURI="http://www.apachecorp.com/role/CAPITALIZEDEXPLORATORYWELLCOSTS">
+        <link:definition>210181005 - Disclosure - CAPITALIZED EXPLORATORY WELL COSTS</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CAPITALIZEDEXPLORATORYWELLCOSTSTables" roleURI="http://www.apachecorp.com/role/CAPITALIZEDEXPLORATORYWELLCOSTSTables">
+        <link:definition>230193002 - Disclosure - CAPITALIZED EXPLORATORY WELL COSTS (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CAPITALIZEDEXPLORATORYWELLCOSTSCapitalizedExploratoryWellCostsRollforwardDetails" roleURI="http://www.apachecorp.com/role/CAPITALIZEDEXPLORATORYWELLCOSTSCapitalizedExploratoryWellCostsRollforwardDetails">
+        <link:definition>240204012 - Disclosure - CAPITALIZED EXPLORATORY WELL COSTS - Capitalized Exploratory Well Costs Rollforward (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CAPITALIZEDEXPLORATORYWELLCOSTSAgingofSuspendedWellBalancesDetails" roleURI="http://www.apachecorp.com/role/CAPITALIZEDEXPLORATORYWELLCOSTSAgingofSuspendedWellBalancesDetails">
+        <link:definition>240214013 - Disclosure - CAPITALIZED EXPLORATORY WELL COSTS - Aging of Suspended Well Balances (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CAPITALIZEDEXPLORATORYWELLCOSTSAdditionalInformationDetails" roleURI="http://www.apachecorp.com/role/CAPITALIZEDEXPLORATORYWELLCOSTSAdditionalInformationDetails">
+        <link:definition>240224014 - Disclosure - CAPITALIZED EXPLORATORY WELL COSTS - Additional Information (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CAPITALIZEDEXPLORATORYWELLCOSTSAgingbyGeographicAreaofExploratoryWellCostsCapitalizedGreaterthanOneYearDetails" roleURI="http://www.apachecorp.com/role/CAPITALIZEDEXPLORATORYWELLCOSTSAgingbyGeographicAreaofExploratoryWellCostsCapitalizedGreaterthanOneYearDetails">
+        <link:definition>240234015 - Disclosure - CAPITALIZED EXPLORATORY WELL COSTS - Aging by Geographic Area of Exploratory Well Costs Capitalized Greater than One Year (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="DERIVATIVEINSTRUMENTSANDHEDGINGACTIVITIES" roleURI="http://www.apachecorp.com/role/DERIVATIVEINSTRUMENTSANDHEDGINGACTIVITIES">
+        <link:definition>210241006 - Disclosure - DERIVATIVE INSTRUMENTS AND HEDGING ACTIVITIES</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="DERIVATIVEINSTRUMENTSANDHEDGINGACTIVITIESTables" roleURI="http://www.apachecorp.com/role/DERIVATIVEINSTRUMENTSANDHEDGINGACTIVITIESTables">
+        <link:definition>230253003 - Disclosure - DERIVATIVE INSTRUMENTS AND HEDGING ACTIVITIES (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="DERIVATIVEINSTRUMENTSANDHEDGINGACTIVITIESAdditionalInformationDetails" roleURI="http://www.apachecorp.com/role/DERIVATIVEINSTRUMENTSANDHEDGINGACTIVITIESAdditionalInformationDetails">
+        <link:definition>240264016 - Disclosure - DERIVATIVE INSTRUMENTS AND HEDGING ACTIVITIES - Additional Information (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="DERIVATIVEINSTRUMENTSANDHEDGINGACTIVITIESDerivativeInstrumentsDetails" roleURI="http://www.apachecorp.com/role/DERIVATIVEINSTRUMENTSANDHEDGINGACTIVITIESDerivativeInstrumentsDetails">
+        <link:definition>240274017 - Disclosure - DERIVATIVE INSTRUMENTS AND HEDGING ACTIVITIES - Derivative Instruments (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="DERIVATIVEINSTRUMENTSANDHEDGINGACTIVITIESDerivativeAssetsandLiabilitiesMeasuredatFairValueDetails" roleURI="http://www.apachecorp.com/role/DERIVATIVEINSTRUMENTSANDHEDGINGACTIVITIESDerivativeAssetsandLiabilitiesMeasuredatFairValueDetails">
+        <link:definition>240284018 - Disclosure - DERIVATIVE INSTRUMENTS AND HEDGING ACTIVITIES - Derivative Assets and Liabilities Measured at Fair Value (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="DERIVATIVEINSTRUMENTSANDHEDGINGACTIVITIESFairValueMeasurementInputsDetails" roleURI="http://www.apachecorp.com/role/DERIVATIVEINSTRUMENTSANDHEDGINGACTIVITIESFairValueMeasurementInputsDetails">
+        <link:definition>240294019 - Disclosure - DERIVATIVE INSTRUMENTS AND HEDGING ACTIVITIES - Fair Value Measurement Inputs (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="DERIVATIVEINSTRUMENTSANDHEDGINGACTIVITIESDerivativeAssetsandLiabilitiesandLocationsonConsolidatedBalanceSheetDetails" roleURI="http://www.apachecorp.com/role/DERIVATIVEINSTRUMENTSANDHEDGINGACTIVITIESDerivativeAssetsandLiabilitiesandLocationsonConsolidatedBalanceSheetDetails">
+        <link:definition>240304020 - Disclosure - DERIVATIVE INSTRUMENTS AND HEDGING ACTIVITIES - Derivative Assets and Liabilities and Locations on Consolidated Balance Sheet (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="DERIVATIVEINSTRUMENTSANDHEDGINGACTIVITIESDerivativeActivitiesRecordedintheStatementofConsolidatedOperationsDetails" roleURI="http://www.apachecorp.com/role/DERIVATIVEINSTRUMENTSANDHEDGINGACTIVITIESDerivativeActivitiesRecordedintheStatementofConsolidatedOperationsDetails">
+        <link:definition>240314021 - Disclosure - DERIVATIVE INSTRUMENTS AND HEDGING ACTIVITIES - Derivative Activities Recorded in the Statement of Consolidated Operations (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="OTHERCURRENTASSETS" roleURI="http://www.apachecorp.com/role/OTHERCURRENTASSETS">
+        <link:definition>210321007 - Disclosure - OTHER CURRENT ASSETS</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="OTHERCURRENTASSETSTables" roleURI="http://www.apachecorp.com/role/OTHERCURRENTASSETSTables">
+        <link:definition>230333004 - Disclosure - OTHER CURRENT ASSETS (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="OTHERCURRENTASSETSDetails" roleURI="http://www.apachecorp.com/role/OTHERCURRENTASSETSDetails">
+        <link:definition>240344022 - Disclosure - OTHER CURRENT ASSETS (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="EQUITYMETHODINTERESTS" roleURI="http://www.apachecorp.com/role/EQUITYMETHODINTERESTS">
+        <link:definition>210351008 - Disclosure - EQUITY METHOD INTERESTS</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="EQUITYMETHODINTERESTSTables" roleURI="http://www.apachecorp.com/role/EQUITYMETHODINTERESTSTables">
+        <link:definition>230363005 - Disclosure - EQUITY METHOD INTERESTS (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="EQUITYMETHODINTERESTSAdditionalInformationDetails" roleURI="http://www.apachecorp.com/role/EQUITYMETHODINTERESTSAdditionalInformationDetails">
+        <link:definition>240374023 - Disclosure - EQUITY METHOD INTERESTS - Additional Information (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="EQUITYMETHODINTERESTSSummaryofInvestmentsDetails" roleURI="http://www.apachecorp.com/role/EQUITYMETHODINTERESTSSummaryofInvestmentsDetails">
+        <link:definition>240384024 - Disclosure - EQUITY METHOD INTERESTS - Summary of Investments (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="EQUITYMETHODINTERESTSRollforwardActivityDetails" roleURI="http://www.apachecorp.com/role/EQUITYMETHODINTERESTSRollforwardActivityDetails">
+        <link:definition>240394025 - Disclosure - EQUITY METHOD INTERESTS - Rollforward Activity (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="EQUITYMETHODINTERESTSSummaryofCombinedStatementofOperationsEquityMethodInterestsDetails" roleURI="http://www.apachecorp.com/role/EQUITYMETHODINTERESTSSummaryofCombinedStatementofOperationsEquityMethodInterestsDetails">
+        <link:definition>240404026 - Disclosure - EQUITY METHOD INTERESTS - Summary of Combined Statement of Operations Equity Method Interests (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="EQUITYMETHODINTERESTSSummaryofCombinedStatementofBalanceSheetEquityMethodInterestsDetails" roleURI="http://www.apachecorp.com/role/EQUITYMETHODINTERESTSSummaryofCombinedStatementofBalanceSheetEquityMethodInterestsDetails">
+        <link:definition>240414027 - Disclosure - EQUITY METHOD INTERESTS - Summary of Combined Statement of Balance Sheet Equity Method Interests (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="OTHERCURRENTLIABILITIES" roleURI="http://www.apachecorp.com/role/OTHERCURRENTLIABILITIES">
+        <link:definition>210421009 - Disclosure - OTHER CURRENT LIABILITIES</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="OTHERCURRENTLIABILITIESTables" roleURI="http://www.apachecorp.com/role/OTHERCURRENTLIABILITIESTables">
+        <link:definition>230433006 - Disclosure - OTHER CURRENT LIABILITIES (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="OTHERCURRENTLIABILITIESDetails" roleURI="http://www.apachecorp.com/role/OTHERCURRENTLIABILITIESDetails">
+        <link:definition>240444028 - Disclosure - OTHER CURRENT LIABILITIES (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ASSETRETIREMENTOBLIGATION" roleURI="http://www.apachecorp.com/role/ASSETRETIREMENTOBLIGATION">
+        <link:definition>210451010 - Disclosure - ASSET RETIREMENT OBLIGATION</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ASSETRETIREMENTOBLIGATIONTables" roleURI="http://www.apachecorp.com/role/ASSETRETIREMENTOBLIGATIONTables">
+        <link:definition>230463007 - Disclosure - ASSET RETIREMENT OBLIGATION (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ASSETRETIREMENTOBLIGATIONScheduleofchangestoAssetRetirementObligationDetails" roleURI="http://www.apachecorp.com/role/ASSETRETIREMENTOBLIGATIONScheduleofchangestoAssetRetirementObligationDetails">
+        <link:definition>240474029 - Disclosure - ASSET RETIREMENT OBLIGATION - Schedule of changes to Asset Retirement Obligation (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ASSETRETIREMENTOBLIGATIONAdditionalInformationDetails" roleURI="http://www.apachecorp.com/role/ASSETRETIREMENTOBLIGATIONAdditionalInformationDetails">
+        <link:definition>240484030 - Disclosure - ASSET RETIREMENT OBLIGATION - Additional Information (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="DEBTANDFINANCINGCOSTS" roleURI="http://www.apachecorp.com/role/DEBTANDFINANCINGCOSTS">
+        <link:definition>210491011 - Disclosure - DEBT AND FINANCING COSTS</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="DEBTANDFINANCINGCOSTSTables" roleURI="http://www.apachecorp.com/role/DEBTANDFINANCINGCOSTSTables">
+        <link:definition>230503008 - Disclosure - DEBT AND FINANCING COSTS (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="DEBTANDFINANCINGCOSTSAdditionalInformationDetails" roleURI="http://www.apachecorp.com/role/DEBTANDFINANCINGCOSTSAdditionalInformationDetails">
+        <link:definition>240514031 - Disclosure - DEBT AND FINANCING COSTS - Additional Information (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="DEBTANDFINANCINGCOSTSScheduleofDebtDetails" roleURI="http://www.apachecorp.com/role/DEBTANDFINANCINGCOSTSScheduleofDebtDetails">
+        <link:definition>240524032 - Disclosure - DEBT AND FINANCING COSTS - Schedule of Debt (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="DEBTANDFINANCINGCOSTSScheduleofDebtDetails_1" roleURI="http://www.apachecorp.com/role/DEBTANDFINANCINGCOSTSScheduleofDebtDetails_1">
+        <link:definition>240524032 - Disclosure - DEBT AND FINANCING COSTS - Schedule of Debt (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="DEBTANDFINANCINGCOSTSScheduleofLongTermDebtbyMaturityDetails" roleURI="http://www.apachecorp.com/role/DEBTANDFINANCINGCOSTSScheduleofLongTermDebtbyMaturityDetails">
+        <link:definition>240534033 - Disclosure - DEBT AND FINANCING COSTS - Schedule of Long Term Debt by Maturity (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="DEBTANDFINANCINGCOSTSComponentsofFinancingCostsNetDetails" roleURI="http://www.apachecorp.com/role/DEBTANDFINANCINGCOSTSComponentsofFinancingCostsNetDetails">
+        <link:definition>240544034 - Disclosure - DEBT AND FINANCING COSTS - Components of Financing Costs, Net (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="INCOMETAXES" roleURI="http://www.apachecorp.com/role/INCOMETAXES">
+        <link:definition>210551012 - Disclosure - INCOME TAXES</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="INCOMETAXESTables" roleURI="http://www.apachecorp.com/role/INCOMETAXESTables">
+        <link:definition>230563009 - Disclosure - INCOME TAXES (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="INCOMETAXESIncomeLossBeforeIncomeTaxesDetails" roleURI="http://www.apachecorp.com/role/INCOMETAXESIncomeLossBeforeIncomeTaxesDetails">
+        <link:definition>240574035 - Disclosure - INCOME TAXES - Income (Loss) Before Income Taxes (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="INCOMETAXESTotalProvisionforIncomeTaxesDetails" roleURI="http://www.apachecorp.com/role/INCOMETAXESTotalProvisionforIncomeTaxesDetails">
+        <link:definition>240584036 - Disclosure - INCOME TAXES - Total Provision for Income Taxes (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="INCOMETAXESReconciliationofTaxofIncomeBeforeIncomeTaxesandTotalTaxExpenseDetails" roleURI="http://www.apachecorp.com/role/INCOMETAXESReconciliationofTaxofIncomeBeforeIncomeTaxesandTotalTaxExpenseDetails">
+        <link:definition>240594037 - Disclosure - INCOME TAXES - Reconciliation of Tax of Income Before Income Taxes and Total Tax Expense (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="INCOMETAXESNetDeferredTaxLiabilityDetails" roleURI="http://www.apachecorp.com/role/INCOMETAXESNetDeferredTaxLiabilityDetails">
+        <link:definition>240604038 - Disclosure - INCOME TAXES - Net Deferred Tax Liability (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="INCOMETAXESNetDeferredTaxAssetsandLiabilitiesDetails" roleURI="http://www.apachecorp.com/role/INCOMETAXESNetDeferredTaxAssetsandLiabilitiesDetails">
+        <link:definition>240614039 - Disclosure - INCOME TAXES - Net Deferred Tax Assets and Liabilities (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="INCOMETAXESAdditionalInformationDetails" roleURI="http://www.apachecorp.com/role/INCOMETAXESAdditionalInformationDetails">
+        <link:definition>240624040 - Disclosure - INCOME TAXES - Additional Information (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="INCOMETAXESSummaryofValuationAllowanceAgainstCertainForeignNetDeferredTaxAssetsandStateNetOperatingLossesDetails" roleURI="http://www.apachecorp.com/role/INCOMETAXESSummaryofValuationAllowanceAgainstCertainForeignNetDeferredTaxAssetsandStateNetOperatingLossesDetails">
+        <link:definition>240634041 - Disclosure - INCOME TAXES - Summary of Valuation Allowance Against Certain Foreign Net Deferred Tax Assets and State Net Operating Losses (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="INCOMETAXESNetOperatingLossesDetails" roleURI="http://www.apachecorp.com/role/INCOMETAXESNetOperatingLossesDetails">
+        <link:definition>240644042 - Disclosure - INCOME TAXES - Net Operating Losses (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="INCOMETAXESScheduleofForeignTaxCreditCarryforwardDetails" roleURI="http://www.apachecorp.com/role/INCOMETAXESScheduleofForeignTaxCreditCarryforwardDetails">
+        <link:definition>240654043 - Disclosure - INCOME TAXES - Schedule of Foreign Tax Credit Carryforward (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="INCOMETAXESReconciliationofBeginningandEndingAmountofUnrecognizedTaxBenefitsDetails" roleURI="http://www.apachecorp.com/role/INCOMETAXESReconciliationofBeginningandEndingAmountofUnrecognizedTaxBenefitsDetails">
+        <link:definition>240664044 - Disclosure - INCOME TAXES - Reconciliation of Beginning and Ending Amount of Unrecognized Tax Benefits (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="COMMITMENTSANDCONTINGENCIES" roleURI="http://www.apachecorp.com/role/COMMITMENTSANDCONTINGENCIES">
+        <link:definition>210671013 - Disclosure - COMMITMENTS AND CONTINGENCIES</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="COMMITMENTSANDCONTINGENCIESTables" roleURI="http://www.apachecorp.com/role/COMMITMENTSANDCONTINGENCIESTables">
+        <link:definition>230683010 - Disclosure - COMMITMENTS AND CONTINGENCIES (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="COMMITMENTSANDCONTINGENCIESAdditionalInformationDetails" roleURI="http://www.apachecorp.com/role/COMMITMENTSANDCONTINGENCIESAdditionalInformationDetails">
+        <link:definition>240694045 - Disclosure - COMMITMENTS AND CONTINGENCIES - Additional Information (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="COMMITMENTSANDCONTINGENCIESCompanysWeightedAverageLeaseTermandDiscountRaterelatedtoLeasesDetails" roleURI="http://www.apachecorp.com/role/COMMITMENTSANDCONTINGENCIESCompanysWeightedAverageLeaseTermandDiscountRaterelatedtoLeasesDetails">
+        <link:definition>240704046 - Disclosure - COMMITMENTS AND CONTINGENCIES - Company's Weighted Average Lease Term and Discount Rate related to Leases (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="COMMITMENTSANDCONTINGENCIESScheduleofFutureMinimumLeasePaymentsDetails" roleURI="http://www.apachecorp.com/role/COMMITMENTSANDCONTINGENCIESScheduleofFutureMinimumLeasePaymentsDetails">
+        <link:definition>240714047 - Disclosure - COMMITMENTS AND CONTINGENCIES - Schedule of Future Minimum Lease Payments (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RETIREMENTANDDEFERREDCOMPENSATIONPLANS" roleURI="http://www.apachecorp.com/role/RETIREMENTANDDEFERREDCOMPENSATIONPLANS">
+        <link:definition>210721014 - Disclosure - RETIREMENT AND DEFERRED COMPENSATION PLANS</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RETIREMENTANDDEFERREDCOMPENSATIONPLANSTables" roleURI="http://www.apachecorp.com/role/RETIREMENTANDDEFERREDCOMPENSATIONPLANSTables">
+        <link:definition>230733011 - Disclosure - RETIREMENT AND DEFERRED COMPENSATION PLANS (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RETIREMENTANDDEFERREDCOMPENSATIONPLANSAdditionalInformationDetails" roleURI="http://www.apachecorp.com/role/RETIREMENTANDDEFERREDCOMPENSATIONPLANSAdditionalInformationDetails">
+        <link:definition>240744048 - Disclosure - RETIREMENT AND DEFERRED COMPENSATION PLANS - Additional Information (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RETIREMENTANDDEFERREDCOMPENSATIONPLANSChangesinBenefitObligationFairValueofPlanAssetsandFundedStatusofPensionandPostretirementBenefitPlansDetails" roleURI="http://www.apachecorp.com/role/RETIREMENTANDDEFERREDCOMPENSATIONPLANSChangesinBenefitObligationFairValueofPlanAssetsandFundedStatusofPensionandPostretirementBenefitPlansDetails">
+        <link:definition>240754049 - Disclosure - RETIREMENT AND DEFERRED COMPENSATION PLANS - Changes in Benefit Obligation, Fair Value of Plan Assets and Funded Status of Pension and Postretirement Benefit Plans (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RETIREMENTANDDEFERREDCOMPENSATIONPLANSAllocationsforPlanAssetHoldingandTargetAllocationforCompanysPlanAssetDetails" roleURI="http://www.apachecorp.com/role/RETIREMENTANDDEFERREDCOMPENSATIONPLANSAllocationsforPlanAssetHoldingandTargetAllocationforCompanysPlanAssetDetails">
+        <link:definition>240764050 - Disclosure - RETIREMENT AND DEFERRED COMPENSATION PLANS - Allocations for Plan Asset Holding and Target Allocation for Company's Plan Asset (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RETIREMENTANDDEFERREDCOMPENSATIONPLANSFairValuesofPlanAssetsforEachMajorAssetCategoryBasedonNatureandSignificantConcentrationofRisksinPlanAssetsDetails" roleURI="http://www.apachecorp.com/role/RETIREMENTANDDEFERREDCOMPENSATIONPLANSFairValuesofPlanAssetsforEachMajorAssetCategoryBasedonNatureandSignificantConcentrationofRisksinPlanAssetsDetails">
+        <link:definition>240774051 - Disclosure - RETIREMENT AND DEFERRED COMPENSATION PLANS - Fair Values of Plan Assets for Each Major Asset Category Based on Nature and Significant Concentration of Risks in Plan Assets (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RETIREMENTANDDEFERREDCOMPENSATIONPLANSComponentsofNetPeriodicCostandUnderlyingWeightedAverageActuarialAssumptionsUsedforPensionandPostretirementBenefitPlansDetails" roleURI="http://www.apachecorp.com/role/RETIREMENTANDDEFERREDCOMPENSATIONPLANSComponentsofNetPeriodicCostandUnderlyingWeightedAverageActuarialAssumptionsUsedforPensionandPostretirementBenefitPlansDetails">
+        <link:definition>240784052 - Disclosure - RETIREMENT AND DEFERRED COMPENSATION PLANS - Components of Net Periodic Cost and Underlying Weighted Average Actuarial Assumptions Used for Pension and Postretirement Benefit Plans (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RETIREMENTANDDEFERREDCOMPENSATIONPLANSExpectedFutureBenefitPaymentDetails" roleURI="http://www.apachecorp.com/role/RETIREMENTANDDEFERREDCOMPENSATIONPLANSExpectedFutureBenefitPaymentDetails">
+        <link:definition>240794053 - Disclosure - RETIREMENT AND DEFERRED COMPENSATION PLANS - Expected Future Benefit Payment (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="REDEMABLENONCONTROLLINGINTERESTALTUS" roleURI="http://www.apachecorp.com/role/REDEMABLENONCONTROLLINGINTERESTALTUS">
+        <link:definition>210801015 - Disclosure - REDEMABLE NONCONTROLLING INTEREST - ALTUS</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="REDEMABLENONCONTROLLINGINTERESTALTUSTables" roleURI="http://www.apachecorp.com/role/REDEMABLENONCONTROLLINGINTERESTALTUSTables">
+        <link:definition>230813012 - Disclosure - REDEMABLE NONCONTROLLING INTEREST - ALTUS (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="REDEMABLENONCONTROLLINGINTERESTALTUSAdditionalInformationDetails" roleURI="http://www.apachecorp.com/role/REDEMABLENONCONTROLLINGINTERESTALTUSAdditionalInformationDetails">
+        <link:definition>240824054 - Disclosure - REDEMABLE NONCONTROLLING INTEREST - ALTUS - Additional Information (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="REDEMABLENONCONTROLLINGINTERESTALTUSScheduleofPreferredUnitsDetails" roleURI="http://www.apachecorp.com/role/REDEMABLENONCONTROLLINGINTERESTALTUSScheduleofPreferredUnitsDetails">
+        <link:definition>240834055 - Disclosure - REDEMABLE NONCONTROLLING INTEREST - ALTUS - Schedule of Preferred Units (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="REDEMABLENONCONTROLLINGINTERESTALTUSActivityRelatedtoPreferredUnitsDetails" roleURI="http://www.apachecorp.com/role/REDEMABLENONCONTROLLINGINTERESTALTUSActivityRelatedtoPreferredUnitsDetails">
+        <link:definition>240844056 - Disclosure - REDEMABLE NONCONTROLLING INTEREST - ALTUS - Activity Related to Preferred Units (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CAPITALSTOCKANDEQUITY" roleURI="http://www.apachecorp.com/role/CAPITALSTOCKANDEQUITY">
+        <link:definition>210851016 - Disclosure - CAPITAL STOCK AND EQUITY</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CAPITALSTOCKANDEQUITYTables" roleURI="http://www.apachecorp.com/role/CAPITALSTOCKANDEQUITYTables">
+        <link:definition>230863013 - Disclosure - CAPITAL STOCK AND EQUITY (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CAPITALSTOCKANDEQUITYAdditionalInformationDetails" roleURI="http://www.apachecorp.com/role/CAPITALSTOCKANDEQUITYAdditionalInformationDetails">
+        <link:definition>240874057 - Disclosure - CAPITAL STOCK AND EQUITY - Additional Information (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CAPITALSTOCKANDEQUITYDescriptionofStockBasedCompensationPlansandRelatedCostsDetails" roleURI="http://www.apachecorp.com/role/CAPITALSTOCKANDEQUITYDescriptionofStockBasedCompensationPlansandRelatedCostsDetails">
+        <link:definition>240884058 - Disclosure - CAPITAL STOCK AND EQUITY - Description of Stock Based Compensation Plans and Related Costs (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CAPITALSTOCKANDEQUITYSummaryofStockOptionsActivitiesDetails" roleURI="http://www.apachecorp.com/role/CAPITALSTOCKANDEQUITYSummaryofStockOptionsActivitiesDetails">
+        <link:definition>240894059 - Disclosure - CAPITAL STOCK AND EQUITY - Summary of Stock Options Activities (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CAPITALSTOCKANDEQUITYScheduleofRestrictedStockActivitiesDetails" roleURI="http://www.apachecorp.com/role/CAPITALSTOCKANDEQUITYScheduleofRestrictedStockActivitiesDetails">
+        <link:definition>240904060 - Disclosure - CAPITAL STOCK AND EQUITY - Schedule of Restricted Stock Activities (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CAPITALSTOCKANDEQUITYPerformanceProgramNarrativeDetails" roleURI="http://www.apachecorp.com/role/CAPITALSTOCKANDEQUITYPerformanceProgramNarrativeDetails">
+        <link:definition>240914061 - Disclosure - CAPITAL STOCK AND EQUITY - Performance Program Narrative (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CAPITALSTOCKANDEQUITYScheduleofPerformanceProgramActivitiesDetails" roleURI="http://www.apachecorp.com/role/CAPITALSTOCKANDEQUITYScheduleofPerformanceProgramActivitiesDetails">
+        <link:definition>240924062 - Disclosure - CAPITAL STOCK AND EQUITY - Schedule of Performance Program Activities (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ACCUMULATEDOTHERCOMPREHENSIVEINCOMELOSS" roleURI="http://www.apachecorp.com/role/ACCUMULATEDOTHERCOMPREHENSIVEINCOMELOSS">
+        <link:definition>210931017 - Disclosure - ACCUMULATED OTHER COMPREHENSIVE INCOME (LOSS)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ACCUMULATEDOTHERCOMPREHENSIVEINCOMELOSSTables" roleURI="http://www.apachecorp.com/role/ACCUMULATEDOTHERCOMPREHENSIVEINCOMELOSSTables">
+        <link:definition>230943014 - Disclosure - ACCUMULATED OTHER COMPREHENSIVE INCOME (LOSS) (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ACCUMULATEDOTHERCOMPREHENSIVEINCOMELOSSDetails" roleURI="http://www.apachecorp.com/role/ACCUMULATEDOTHERCOMPREHENSIVEINCOMELOSSDetails">
+        <link:definition>240954063 - Disclosure - ACCUMULATED OTHER COMPREHENSIVE INCOME (LOSS) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="MAJORCUSTOMERS" roleURI="http://www.apachecorp.com/role/MAJORCUSTOMERS">
+        <link:definition>210961018 - Disclosure - MAJOR CUSTOMERS</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="MAJORCUSTOMERSDetails" roleURI="http://www.apachecorp.com/role/MAJORCUSTOMERSDetails">
+        <link:definition>240974064 - Disclosure - MAJOR CUSTOMERS (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="BUSINESSSEGMENTINFORMATION" roleURI="http://www.apachecorp.com/role/BUSINESSSEGMENTINFORMATION">
+        <link:definition>210981019 - Disclosure - BUSINESS SEGMENT INFORMATION</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="BUSINESSSEGMENTINFORMATIONTables" roleURI="http://www.apachecorp.com/role/BUSINESSSEGMENTINFORMATIONTables">
+        <link:definition>230993015 - Disclosure - BUSINESS SEGMENT INFORMATION (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="BUSINESSSEGMENTINFORMATIONAdditionalInformationDetails" roleURI="http://www.apachecorp.com/role/BUSINESSSEGMENTINFORMATIONAdditionalInformationDetails">
+        <link:definition>241004065 - Disclosure - BUSINESS SEGMENT INFORMATION - Additional Information (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="BUSINESSSEGMENTINFORMATIONFinancialSegmentInformationDetails" roleURI="http://www.apachecorp.com/role/BUSINESSSEGMENTINFORMATIONFinancialSegmentInformationDetails">
+        <link:definition>241014066 - Disclosure - BUSINESS SEGMENT INFORMATION - Financial Segment Information (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SUPPLEMENTALOILANDGASDISCLOSURESUnaudited" roleURI="http://www.apachecorp.com/role/SUPPLEMENTALOILANDGASDISCLOSURESUnaudited">
+        <link:definition>211021020 - Disclosure - SUPPLEMENTAL OIL AND GAS DISCLOSURES (Unaudited)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SUPPLEMENTALOILANDGASDISCLOSURESUnauditedTables" roleURI="http://www.apachecorp.com/role/SUPPLEMENTALOILANDGASDISCLOSURESUnauditedTables">
+        <link:definition>231033016 - Disclosure - SUPPLEMENTAL OIL AND GAS DISCLOSURES (Unaudited) (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SUPPLEMENTALOILANDGASDISCLOSURESUnauditedRevenueandDirectCostInformationRelatingtoCompanysOilandGasExplorationandProductionActivitiesDetails" roleURI="http://www.apachecorp.com/role/SUPPLEMENTALOILANDGASDISCLOSURESUnauditedRevenueandDirectCostInformationRelatingtoCompanysOilandGasExplorationandProductionActivitiesDetails">
+        <link:definition>241044067 - Disclosure - SUPPLEMENTAL OIL AND GAS DISCLOSURES (Unaudited) - Revenue and Direct Cost Information Relating to Company's Oil and Gas Exploration and Production Activities (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SUPPLEMENTALOILANDGASDISCLOSURESUnauditedCostsIncurredinOilandGasPropertyAcquisitionsExplorationandDevelopmentActivitiesDetails" roleURI="http://www.apachecorp.com/role/SUPPLEMENTALOILANDGASDISCLOSURESUnauditedCostsIncurredinOilandGasPropertyAcquisitionsExplorationandDevelopmentActivitiesDetails">
+        <link:definition>241054068 - Disclosure - SUPPLEMENTAL OIL AND GAS DISCLOSURES (Unaudited) - Costs Incurred in Oil and Gas Property Acquisitions, Exploration and Development Activities (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SUPPLEMENTALOILANDGASDISCLOSURESUnauditedCapitalizedCostsDetails" roleURI="http://www.apachecorp.com/role/SUPPLEMENTALOILANDGASDISCLOSURESUnauditedCapitalizedCostsDetails">
+        <link:definition>241064069 - Disclosure - SUPPLEMENTAL OIL AND GAS DISCLOSURES (Unaudited) - Capitalized Costs (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SUPPLEMENTALOILANDGASDISCLOSURESUnauditedOilandGasReserveInformationDetails" roleURI="http://www.apachecorp.com/role/SUPPLEMENTALOILANDGASDISCLOSURESUnauditedOilandGasReserveInformationDetails">
+        <link:definition>241074070 - Disclosure - SUPPLEMENTAL OIL AND GAS DISCLOSURES (Unaudited) - Oil and Gas Reserve Information (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SUPPLEMENTALOILANDGASDISCLOSURESUnauditedAdditionalInformationDetails" roleURI="http://www.apachecorp.com/role/SUPPLEMENTALOILANDGASDISCLOSURESUnauditedAdditionalInformationDetails">
+        <link:definition>241084071 - Disclosure - SUPPLEMENTAL OIL AND GAS DISCLOSURES (Unaudited) - Additional Information (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SUPPLEMENTALOILANDGASDISCLOSURESUnauditedFutureNetCashFlowsDetails" roleURI="http://www.apachecorp.com/role/SUPPLEMENTALOILANDGASDISCLOSURESUnauditedFutureNetCashFlowsDetails">
+        <link:definition>241094072 - Disclosure - SUPPLEMENTAL OIL AND GAS DISCLOSURES (Unaudited) - Future Net Cash Flows (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SUPPLEMENTALOILANDGASDISCLOSURESUnauditedPrincipalSourcesofChangeInDiscountedFutureNetCashFlowsDetails" roleURI="http://www.apachecorp.com/role/SUPPLEMENTALOILANDGASDISCLOSURESUnauditedPrincipalSourcesofChangeInDiscountedFutureNetCashFlowsDetails">
+        <link:definition>241104073 - Disclosure - SUPPLEMENTAL OIL AND GAS DISCLOSURES (Unaudited) - Principal Sources of Change In Discounted Future Net Cash Flows (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element id="apa_OklahomaClassActionsMember" abstract="true" name="OklahomaClassActionsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="apa_NoteReceivableAccruedInterestConvertedToPrincipalTerm" abstract="false" name="NoteReceivableAccruedInterestConvertedToPrincipalTerm" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:durationItemType"/>
+  <xs:element id="apa_A4875SeniorNotesDueIn2027Member" abstract="true" name="A4875SeniorNotesDueIn2027Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="apa_DelawareLitigationMember" abstract="true" name="DelawareLitigationMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="apa_PermianBasinMember" abstract="true" name="PermianBasinMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="apa_DisposalGroupTrustAccountNumberOfNetProfitsInterests" abstract="false" name="DisposalGroupTrustAccountNumberOfNetProfitsInterests" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="xbrli:integerItemType"/>
+  <xs:element id="apa_MaximumPercentageOfCompensationContributedByEmployer" abstract="false" name="MaximumPercentageOfCompensationContributedByEmployer" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:percentItemType"/>
+  <xs:element id="apa_Block58OffshoreSurinameMember" abstract="true" name="Block58OffshoreSurinameMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="apa_CaliforniaLitigationMember" abstract="true" name="CaliforniaLitigationMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="apa_HoldingCompanyReorganizationMember" abstract="true" name="HoldingCompanyReorganizationMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="apa_ThreeApacheSubsidiariesMember" abstract="true" name="ThreeApacheSubsidiariesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="apa_MaximumCostConsideredToBeRecognizedForAdditionalReserve" abstract="false" name="MaximumCostConsideredToBeRecognizedForAdditionalReserve" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="apa_LossOnPreviouslySoldProperties" abstract="false" name="LossOnPreviouslySoldProperties" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="apa_FourPointThreeSevenFivePercentageNotesDue2028Member" abstract="true" name="FourPointThreeSevenFivePercentageNotesDue2028Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="apa_MovementInPreferredUnitsRollForward" abstract="true" name="MovementInPreferredUnitsRollForward" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="apa_ProductionSharingContractsCostRecoveryLimit" abstract="false" name="ProductionSharingContractsCostRecoveryLimit" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="dtr-types:percentItemType"/>
+  <xs:element id="apa_ConsultingAndSeparationActivitiesMember" abstract="true" name="ConsultingAndSeparationActivitiesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="apa_RedeemableNoncontrollingInterestEquityPreferredDividendRatePercentage" abstract="false" name="RedeemableNoncontrollingInterestEquityPreferredDividendRatePercentage" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:percentItemType"/>
+  <xs:element id="apa_RepaymentsOfFixedRateDebt" abstract="false" name="RepaymentsOfFixedRateDebt" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="apa_RevenuesAndOther" abstract="false" name="RevenuesAndOther" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="apa_ProductionSharingContractsModernizationImpactProvedAndUnproved" abstract="false" name="ProductionSharingContractsModernizationImpactProvedAndUnproved" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="apa_EasternShelfAndMagnetWithersPickettRidgeMember" abstract="true" name="EasternShelfAndMagnetWithersPickettRidgeMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="apa_TotalCostsUnderTakeorPayandThroughoutObligation" abstract="false" name="TotalCostsUnderTakeorPayandThroughoutObligation" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="apa_SwinglineLoanSubfacilityMember" abstract="true" name="SwinglineLoanSubfacilityMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="apa_CommonStockQuarterlyDividendsPerShare" abstract="false" name="CommonStockQuarterlyDividendsPerShare" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:perShareItemType"/>
+  <xs:element id="apa_LineOfCreditFacilityCommittedAmount" abstract="false" name="LineOfCreditFacilityCommittedAmount" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="apa_NotesAndDebenturesMember" abstract="true" name="NotesAndDebenturesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="apa_A5.350NotesDueJuly12049Member" abstract="true" name="A5.350NotesDueJuly12049Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="apa_DecommissioningContingencyForSoldProperties" abstract="false" name="DecommissioningContingencyForSoldProperties" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="apa_A4.250NotesDueJanuary152030Member" abstract="true" name="A4.250NotesDueJanuary152030Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="apa_TemporaryEquityDistributionOfInKindAdditionalPreferredUnitsShares" abstract="false" name="TemporaryEquityDistributionOfInKindAdditionalPreferredUnitsShares" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:sharesItemType"/>
+  <xs:element id="apa_JanuaryDecember2022Member" abstract="true" name="JanuaryDecember2022Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="apa_SevenPointNineFivePercentageNotesDueTwentyTwentySixMember" abstract="true" name="SevenPointNineFivePercentageNotesDueTwentyTwentySixMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="apa_CommitmentAndContingenciesTable" abstract="true" name="CommitmentAndContingenciesTable" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrldt:hypercubeItem" type="xbrli:stringItemType"/>
+  <xs:element id="apa_MeasurementInputInterestRateVolatilityMember" abstract="true" name="MeasurementInputInterestRateVolatilityMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="apa_CommitmentAndContingenciesLineItems" abstract="true" name="CommitmentAndContingenciesLineItems" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="apa_RedeemableNoncontrollingInterestEquityCashDistributionsToPreferredUnitLimitedPartners" abstract="false" name="RedeemableNoncontrollingInterestEquityCashDistributionsToPreferredUnitLimitedPartners" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="apa_NumberOfSidetracks" abstract="false" name="NumberOfSidetracks" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="xbrli:integerItemType"/>
+  <xs:element id="apa_StandbyLoanAgreedToProvideRelatedToAssetRetirementObligations" abstract="false" name="StandbyLoanAgreedToProvideRelatedToAssetRetirementObligations" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="apa_DefinedBenefitPlanAssumptionsUsedCalculatingBenefitObligationExpectedReturnOnAssets" abstract="false" name="DefinedBenefitPlanAssumptionsUsedCalculatingBenefitObligationExpectedReturnOnAssets" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:percentItemType"/>
+  <xs:element id="apa_SegmentUnitedStatesMember" abstract="true" name="SegmentUnitedStatesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="apa_ChinaPetroleumChemicalCorporationMember" abstract="true" name="ChinaPetroleumChemicalCorporationMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="apa_BasisSwapPurchasedMember" abstract="true" name="BasisSwapPurchasedMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="apa_ShinOakPipelineBrevilobaLLCMember" abstract="true" name="ShinOakPipelineBrevilobaLLCMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="apa_SharebasedCompensationArrangementbySharebasedPaymentAwardSharesPaidoutasPercentageofTarget" abstract="false" name="SharebasedCompensationArrangementbySharebasedPaymentAwardSharesPaidoutasPercentageofTarget" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="dtr-types:percentItemType"/>
+  <xs:element id="apa_ProceedsFromIssuanceOfFixedRateDebt" abstract="false" name="ProceedsFromIssuanceOfFixedRateDebt" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="apa_SevenPointThreeSevenFivePercentageDebenturesDueTwentyFortySevenMember" abstract="true" name="SevenPointThreeSevenFivePercentageDebenturesDueTwentyFortySevenMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="apa_RedeemableNoncontrollingInterestEquityPreferredTransactionPriceNet" abstract="false" name="RedeemableNoncontrollingInterestEquityPreferredTransactionPriceNet" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="apa_PreferredUnitsExchangeableNumberOfPrecedingTradingDays" abstract="false" name="PreferredUnitsExchangeableNumberOfPrecedingTradingDays" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:durationItemType"/>
+  <xs:element id="apa_AssetRetirementObligationEstimatedLiability" abstract="false" name="AssetRetirementObligationEstimatedLiability" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="apa_PerformanceProgram2019Member" abstract="true" name="PerformanceProgram2019Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="apa_MovementInEquityMethodInterestsRollForward" abstract="true" name="MovementInEquityMethodInterestsRollForward" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="apa_DisposalGroupIncludingDiscontinuedOperationConsiderationAssetRetirementObligationAssumed" abstract="false" name="DisposalGroupIncludingDiscontinuedOperationConsiderationAssetRetirementObligationAssumed" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="apa_GatheringProcessingAndTransmissionFacilitiesPolicyTextBlock" abstract="false" name="GatheringProcessingAndTransmissionFacilitiesPolicyTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:textBlockItemType"/>
+  <xs:element id="apa_SinopecMember" abstract="true" name="SinopecMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="apa_DeferredCostsandNoncurrentAssetsMember" abstract="true" name="DeferredCostsandNoncurrentAssetsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="apa_OtherWorkingCapitalMember" abstract="true" name="OtherWorkingCapitalMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="apa_OilAndGasExcludingPurchasedMember" abstract="true" name="OilAndGasExcludingPurchasedMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="apa_ShareBasedCompensationArrangementByShareBasedPaymentAwardEquityInstrumentsOtherThanOptionsAdjustmentForReverseStockSplit" abstract="false" name="ShareBasedCompensationArrangementByShareBasedPaymentAwardEquityInstrumentsOtherThanOptionsAdjustmentForReverseStockSplit" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:sharesItemType"/>
+  <xs:element id="apa_AustralianOperationsDivestitureDisputeMember" abstract="true" name="AustralianOperationsDivestitureDisputeMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="apa_OtherRevisionsMember" abstract="true" name="OtherRevisionsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="apa_AccumulatedDepreciationDepletionAndAmortizationPropertyAndEquipmentIncludingFinanceLeaseOilAndGasProperties" abstract="false" name="AccumulatedDepreciationDepletionAndAmortizationPropertyAndEquipmentIncludingFinanceLeaseOilAndGasProperties" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="apa_TemporaryEquityDistributionOfInKindAdditionalPreferredUnitsValue" abstract="false" name="TemporaryEquityDistributionOfInKindAdditionalPreferredUnitsValue" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="apa_KeyJurisdictionsOfCompanysEarliestOpenTaxYearsTableTableTextBlock" abstract="false" name="KeyJurisdictionsOfCompanysEarliestOpenTaxYearsTableTableTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:textBlockItemType"/>
+  <xs:element id="apa_PerformanceProgram2022Member" abstract="true" name="PerformanceProgram2022Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="apa_SharebasedCompensationArrangementBySharebasedPaymentAwardAllocationPercentage" abstract="false" name="SharebasedCompensationArrangementBySharebasedPaymentAwardAllocationPercentage" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:percentItemType"/>
+  <xs:element id="apa_DecommissioningSecurityForSoldPropertiesCurrentAndNoncurrent" abstract="false" name="DecommissioningSecurityForSoldPropertiesCurrentAndNoncurrent" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="apa_RedeemableNoncontrollingInterestDistributionInKindNumberOfQuartersAfterIssuance" abstract="false" name="RedeemableNoncontrollingInterestDistributionInKindNumberOfQuartersAfterIssuance" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:integerItemType"/>
+  <xs:element id="apa_IncreasedRedeemableNoncontrollingInterestEquityPreferredDividendRatePercentageUponSpecifiedEvents" abstract="false" name="IncreasedRedeemableNoncontrollingInterestEquityPreferredDividendRatePercentageUponSpecifiedEvents" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:percentItemType"/>
+  <xs:element id="apa_VitolMember" abstract="true" name="VitolMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="apa_NoncontrollingInterestAltusMember" abstract="true" name="NoncontrollingInterestAltusMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="apa_ReservesAccountedOnEngineeringAndPerformanceMember" abstract="true" name="ReservesAccountedOnEngineeringAndPerformanceMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="apa_DiscountedFutureNetCashFlowsRelatingToProvedOilAndGasReserves" abstract="false" name="DiscountedFutureNetCashFlowsRelatingToProvedOilAndGasReserves" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:percentItemType"/>
+  <xs:element id="apa_EmployeeTerminationandOfficeClosuresMember" abstract="true" name="EmployeeTerminationandOfficeClosuresMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="apa_InternationalRegionsMember" abstract="true" name="InternationalRegionsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="apa_NumberOfBondHeld" abstract="false" name="NumberOfBondHeld" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="xbrli:integerItemType"/>
+  <xs:element id="apa_CrudeOilAndCondensateMember" abstract="true" name="CrudeOilAndCondensateMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="apa_PrincipalSourcesOfChangeInStandardizedMeasureOfDiscountedFutureNetCashFlowRelatingToProvedOilAndGasReservesTableTableTextBlock" abstract="false" name="PrincipalSourcesOfChangeInStandardizedMeasureOfDiscountedFutureNetCashFlowRelatingToProvedOilAndGasReservesTableTableTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:textBlockItemType"/>
+  <xs:element id="apa_IncreaseDecreaseOfDeferredChargesDeferredCreditsAndNoncurrentLiabilities" abstract="false" name="IncreaseDecreaseOfDeferredChargesDeferredCreditsAndNoncurrentLiabilities" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="apa_ScheduleOfNoncashImpairmentsOfProvedAndUnprovedPropertyAndEquipmentTableTextBlock" abstract="false" name="ScheduleOfNoncashImpairmentsOfProvedAndUnprovedPropertyAndEquipmentTableTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:textBlockItemType"/>
+  <xs:element id="apa_DebtInstrumentCovenantDistributionsLimits" abstract="false" name="DebtInstrumentCovenantDistributionsLimits" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="apa_GatheringProcessingAndTransmissionFacilitiesNoncurrent" abstract="false" name="GatheringProcessingAndTransmissionFacilitiesNoncurrent" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="apa_SegmentEgyptMember" abstract="true" name="SegmentEgyptMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="apa_EquityMethodInvestmentDistributions" abstract="false" name="EquityMethodInvestmentDistributions" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="apa_OtherNonCoreAssetsAndLeaseholdMember" abstract="true" name="OtherNonCoreAssetsAndLeaseholdMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="apa_PremianBasinMember" abstract="true" name="PremianBasinMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="apa_FourPointSixTwoFivePercentageNotesDueTwentyTwentyFiveMember" abstract="true" name="FourPointSixTwoFivePercentageNotesDueTwentyTwentyFiveMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="apa_MoneyPurchaseRetirementPlanAndNonQualifiedRetirementSavingsPlanVestedPerYearTwo" abstract="false" name="MoneyPurchaseRetirementPlanAndNonQualifiedRetirementSavingsPlanVestedPerYearTwo" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:percentItemType"/>
+  <xs:element id="apa_PerformanceProgram2021Member" abstract="true" name="PerformanceProgram2021Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="apa_DecommissioningSecurityForSoldPropertiesCurrent" abstract="false" name="DecommissioningSecurityForSoldPropertiesCurrent" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="apa_LineOfCreditFacilityNumberOfExtensionOptions" abstract="false" name="LineOfCreditFacilityNumberOfExtensionOptions" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:integerItemType"/>
+  <xs:element id="apa_EgyptianGeneralPetroleumCompanyMember" abstract="true" name="EgyptianGeneralPetroleumCompanyMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="apa_DecommissioningContingencyForSoldPropertiesCurrentAndNoncurrent" abstract="false" name="DecommissioningContingencyForSoldPropertiesCurrentAndNoncurrent" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="apa_CommonStockConversionRatio" abstract="false" name="CommonStockConversionRatio" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="xbrli:pureItemType"/>
+  <xs:element id="apa_ProductionSharingContractsModernizationImpactUndevelopedReservesMember" abstract="true" name="ProductionSharingContractsModernizationImpactUndevelopedReservesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="apa_PortionOfEmployeesSalaryEmployeeContributionsUnderNonQualifiedRetirementSavingsPlan" abstract="false" name="PortionOfEmployeesSalaryEmployeeContributionsUnderNonQualifiedRetirementSavingsPlan" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:percentItemType"/>
+  <xs:element id="apa_InorAfter2016Member" abstract="true" name="InorAfter2016Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="apa_ScheduleOfLongTermDebtByMaturityTableTableTextBlock" abstract="false" name="ScheduleOfLongTermDebtByMaturityTableTableTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:textBlockItemType"/>
+  <xs:element id="apa_FourPointEightSevenFivePercentageNotesDueTwentyTwentySevenMember" abstract="true" name="FourPointEightSevenFivePercentageNotesDueTwentyTwentySevenMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="apa_OpenMarketRepurchaseMember" abstract="true" name="OpenMarketRepurchaseMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="apa_DepreciationDepletionandAmortizationRelatedtoOilandGasOperations" abstract="false" name="DepreciationDepletionandAmortizationRelatedtoOilandGasOperations" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="apa_AccruedOperatingExpenses" abstract="false" name="AccruedOperatingExpenses" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="apa_BPPLCMember" abstract="true" name="BPPLCMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="apa_DeferredCreditsandOtherNoncurrentLiabilitiesOtherMember" abstract="true" name="DeferredCreditsandOtherNoncurrentLiabilitiesOtherMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="apa_OilAndGasPropertyImpairedFairValueDisclosure" abstract="false" name="OilAndGasPropertyImpairedFairValueDisclosure" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="apa_IncomeTaxReconciliationTaxAttributableToPreferredUnitLimitedPartners" abstract="false" name="IncomeTaxReconciliationTaxAttributableToPreferredUnitLimitedPartners" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="apa_A4625SeniorNotesDueIn2025Member" abstract="true" name="A4625SeniorNotesDueIn2025Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="apa_EmbeddedDerivativeExpectedTimingUntilExerciseOfExchangeOption" abstract="false" name="EmbeddedDerivativeExpectedTimingUntilExerciseOfExchangeOption" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:durationItemType"/>
+  <xs:element id="apa_AssetImpairmentChargesRelatedtoOilandGasProperties" abstract="false" name="AssetImpairmentChargesRelatedtoOilandGasProperties" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="apa_ReservesAccountedOnInterestRevisionsMember" abstract="true" name="ReservesAccountedOnInterestRevisionsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="apa_AnadarkoBasinMember" abstract="true" name="AnadarkoBasinMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="apa_OtherSalesRevenueLossesNet" abstract="false" name="OtherSalesRevenueLossesNet" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="apa_DebtInstrumentNumber" abstract="false" name="DebtInstrumentNumber" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="xbrli:integerItemType"/>
+  <xs:element id="apa_DelawareBasinMember" abstract="true" name="DelawareBasinMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="apa_ProductionSharingContractsModernizationImpactDevelopedReservesMember" abstract="true" name="ProductionSharingContractsModernizationImpactDevelopedReservesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="apa_ExtendedFinancingAgreementTerm" abstract="false" name="ExtendedFinancingAgreementTerm" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:durationItemType"/>
+  <xs:element id="apa_ConditionalRestrictedStockUnitCashSettledMember" abstract="true" name="ConditionalRestrictedStockUnitCashSettledMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="apa_CapitalizedExploratoryWellCostsDivestituresandOther" abstract="false" name="CapitalizedExploratoryWellCostsDivestituresandOther" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="apa_LineofCreditFacilityMaximumBorrowingCapacityIfAddingNewLenders" abstract="false" name="LineofCreditFacilityMaximumBorrowingCapacityIfAddingNewLenders" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="apa_DeferredTaxLiabilitiesDecommissioningSecurityForSoldProperties" abstract="false" name="DeferredTaxLiabilitiesDecommissioningSecurityForSoldProperties" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="apa_OilAndGasPropertiesProvedMember" abstract="true" name="OilAndGasPropertiesProvedMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="apa_ProductionSharingContractsFixedProfitSharingRate" abstract="false" name="ProductionSharingContractsFixedProfitSharingRate" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="dtr-types:percentItemType"/>
+  <xs:element id="apa_LossOnPreviouslySoldGulfOfMexicoProperties" abstract="false" name="LossOnPreviouslySoldGulfOfMexicoProperties" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="apa_ProductionSharingContractsIncreaseInUnprovedProperties" abstract="false" name="ProductionSharingContractsIncreaseInUnprovedProperties" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="apa_AdjustmentsToAdditionalPaidInCapitalDistributionsToParent" abstract="false" name="AdjustmentsToAdditionalPaidInCapitalDistributionsToParent" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="apa_ProductionPeriodDomain" abstract="true" name="ProductionPeriodDomain" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="apa_RevenuesFromCustomersAndNonCustomers" abstract="false" name="RevenuesFromCustomersAndNonCustomers" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="apa_PropertyAndEquipmentNetIncludingFinanceLeaseRightOfUseAssetsOilAndGasProperties" abstract="false" name="PropertyAndEquipmentNetIncludingFinanceLeaseRightOfUseAssetsOilAndGasProperties" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="apa_RedeemableNoncontrollingInterestEquityPreferredMaximumAmountOfDistributionsToCommonUnitHolders" abstract="false" name="RedeemableNoncontrollingInterestEquityPreferredMaximumAmountOfDistributionsToCommonUnitHolders" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="apa_ScheduleOfSignificantAccountingPoliciesTable" abstract="true" name="ScheduleOfSignificantAccountingPoliciesTable" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrldt:hypercubeItem" type="xbrli:stringItemType"/>
+  <xs:element id="apa_AccumulatedOtherComprehensiveIncomeLossShareOfEquityMethodInterestsNetOfTax" abstract="false" name="AccumulatedOtherComprehensiveIncomeLossShareOfEquityMethodInterestsNetOfTax" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="apa_ApolloExplorationLawsuitMember" abstract="true" name="ApolloExplorationLawsuitMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="apa_MovementinValuationAllowanceofDeferredTaxAssetsRollForward" abstract="true" name="MovementinValuationAllowanceofDeferredTaxAssetsRollForward" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="apa_EPICCrudePipelineMember" abstract="true" name="EPICCrudePipelineMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="apa_RedeemableNoncontrollingInterestEquityPreferredRedemptionTermsInternalRateOfReturnAfterFifthAnniversaryOfClosing" abstract="false" name="RedeemableNoncontrollingInterestEquityPreferredRedemptionTermsInternalRateOfReturnAfterFifthAnniversaryOfClosing" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="dtr-types:percentItemType"/>
+  <xs:element id="apa_ProductionSharingContractsModernizationImpactProvedAndUnprovedIncrementalValue" abstract="false" name="ProductionSharingContractsModernizationImpactProvedAndUnprovedIncrementalValue" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="apa_OtherInternationalMember" abstract="true" name="OtherInternationalMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="apa_TwoPointSixTwoFivePercentageNotesDueTwentyTwentyThreeMember" abstract="true" name="TwoPointSixTwoFivePercentageNotesDueTwentyTwentyThreeMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="apa_ChangeInPetroleumReservesByTypeDomain" abstract="true" name="ChangeInPetroleumReservesByTypeDomain" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="apa_DebtInstrumentCovenantLeverageRatio" abstract="false" name="DebtInstrumentCovenantLeverageRatio" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="xbrli:decimalItemType"/>
+  <xs:element id="apa_NoncontrollingInterestEgyptMember" abstract="true" name="NoncontrollingInterestEgyptMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="apa_ImpairmentOfDivestedUnprovedPropertiesAndLeasehold" abstract="false" name="ImpairmentOfDivestedUnprovedPropertiesAndLeasehold" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="apa_DeferredTaxAssetsValuationAllowanceForeignCurrencyTranslationAdjustments" abstract="false" name="DeferredTaxAssetsValuationAllowanceForeignCurrencyTranslationAdjustments" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="apa_DeferredTaxAssetLeaseLiability" abstract="false" name="DeferredTaxAssetLeaseLiability" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="apa_SevenPointSevenFivePercentSeniorNotesDueIn2029Member" abstract="true" name="SevenPointSevenFivePercentSeniorNotesDueIn2029Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="apa_ProductionSharingContractsModernizationImpactPercentageOfReservesConsolidated" abstract="false" name="ProductionSharingContractsModernizationImpactPercentageOfReservesConsolidated" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:percentItemType"/>
+  <xs:element id="apa_FourPointTwoFivePercentageNotesDueTwentyThirtyMember" abstract="true" name="FourPointTwoFivePercentageNotesDueTwentyThirtyMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="apa_ProductionSharingContractsModernizationImpactProvedAndUnprovedSignatureBonus" abstract="false" name="ProductionSharingContractsModernizationImpactProvedAndUnprovedSignatureBonus" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="apa_ThreePointTwoFivePercentageNotesDueTwentyTwentyTwoMember" abstract="true" name="ThreePointTwoFivePercentageNotesDueTwentyTwentyTwoMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="apa_JanuaryToDecember2023Member" abstract="true" name="JanuaryToDecember2023Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="apa_CastexLawsuitMember" abstract="true" name="CastexLawsuitMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="apa_ScheduleOfIncomeTaxesTable" abstract="true" name="ScheduleOfIncomeTaxesTable" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrldt:hypercubeItem" type="xbrli:stringItemType"/>
+  <xs:element id="apa_AuditInformationAbstract" abstract="true" name="AuditInformationAbstract" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="apa_SharebasedCompensationArrangementBySharebasedPaymentAwardGrantedPercentage" abstract="false" name="SharebasedCompensationArrangementBySharebasedPaymentAwardGrantedPercentage" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:percentItemType"/>
+  <xs:element id="apa_DerivativeNumberOfCounterparties" abstract="false" name="DerivativeNumberOfCounterparties" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:integerItemType"/>
+  <xs:element id="apa_AltusMidstreamLPMember" abstract="true" name="AltusMidstreamLPMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="apa_SixPointZeroPercentageNotesDueTwentyThirtySevenMember" abstract="true" name="SixPointZeroPercentageNotesDueTwentyThirtySevenMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="apa_TargetedOngoingFundingLevelOfPensionPlanPolicyPercent" abstract="false" name="TargetedOngoingFundingLevelOfPensionPlanPolicyPercent" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:percentItemType"/>
+  <xs:element id="apa_IncomeTaxLineItems" abstract="true" name="IncomeTaxLineItems" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="apa_ApacheAustraliaOperationMember" abstract="true" name="ApacheAustraliaOperationMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="apa_ThreePointSixTwoFivePercentageNotesDueTwentyTwentyOneMember" abstract="true" name="ThreePointSixTwoFivePercentageNotesDueTwentyTwentyOneMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="apa_BusinessPerformanceProgramMember" abstract="true" name="BusinessPerformanceProgramMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="apa_BasisSwapSoldMember" abstract="true" name="BasisSwapSoldMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="apa_DrillingAdvances" abstract="false" name="DrillingAdvances" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="apa_DerivativeWeightedAveragePriceDifferential" abstract="false" name="DerivativeWeightedAveragePriceDifferential" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="xbrli:decimalItemType"/>
+  <xs:element id="apa_ProductionSharingContractsReductionInProvedProperties" abstract="false" name="ProductionSharingContractsReductionInProvedProperties" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="apa_FutureNetCashFlowsRelatingToProvedOilAndGasReservesIncomeTaxExpenseBenefit" abstract="false" name="FutureNetCashFlowsRelatingToProvedOilAndGasReservesIncomeTaxExpenseBenefit" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="apa_RedeemableNoncontrollingInterestEquityPreferredRedemptionTermsInternalRateOfReturn" abstract="false" name="RedeemableNoncontrollingInterestEquityPreferredRedemptionTermsInternalRateOfReturn" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="dtr-types:percentItemType"/>
+  <xs:element id="apa_ObligationsForCapacityRights" abstract="false" name="ObligationsForCapacityRights" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="apa_PerformanceProgram2020Member" abstract="true" name="PerformanceProgram2020Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="apa_MidContinentRegionMember" abstract="true" name="MidContinentRegionMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="apa_ConditionalRestrictedStockMember" abstract="true" name="ConditionalRestrictedStockMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="apa_GatheringProcessingAndTransmissionFacilitiesAccumulatedDepreciation" abstract="false" name="GatheringProcessingAndTransmissionFacilitiesAccumulatedDepreciation" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="apa_DeferredTaxAssetsOperatingLossCarryforwardsFederalAndState" abstract="false" name="DeferredTaxAssetsOperatingLossCarryforwardsFederalAndState" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="apa_EquityMethodInvestmentNumberOfLongHaulPipelineEntities" abstract="false" name="EquityMethodInvestmentNumberOfLongHaulPipelineEntities" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="xbrli:integerItemType"/>
+  <xs:element id="apa_RoyaltyObligationNonCurrent" abstract="false" name="RoyaltyObligationNonCurrent" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="apa_RedeemableNoncontrollingInterestEquityPreferredRedemptionTermsMultipleOfInvestedCapital" abstract="false" name="RedeemableNoncontrollingInterestEquityPreferredRedemptionTermsMultipleOfInvestedCapital" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="xbrli:pureItemType"/>
+  <xs:element id="apa_GulfCoastExpressPipelineLLCMember" abstract="true" name="GulfCoastExpressPipelineLLCMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="apa_FivePointOnePercentageNotesDueTwentyFortyMember" abstract="true" name="FivePointOnePercentageNotesDueTwentyFortyMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="apa_ScheduleOfFinancingCostsNetTableTextBlock" abstract="false" name="ScheduleOfFinancingCostsNetTableTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:textBlockItemType"/>
+  <xs:element id="apa_TexasGulfCoastMember" abstract="true" name="TexasGulfCoastMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="apa_NoncontrollingInterestALTMMember" abstract="true" name="NoncontrollingInterestALTMMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="apa_NoteReceivableStatedInterestRate" abstract="false" name="NoteReceivableStatedInterestRate" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="dtr-types:percentItemType"/>
+  <xs:element id="apa_ProductionSharingContractsPercentageOfGrossProductionConsolidated" abstract="false" name="ProductionSharingContractsPercentageOfGrossProductionConsolidated" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="dtr-types:percentItemType"/>
+  <xs:element id="apa_DeferredTaxLiabilitiesRightofUseAsset" abstract="false" name="DeferredTaxLiabilitiesRightofUseAsset" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="apa_FourPointSevenFivePercentageNotesDueTwentyFortyThreeMember" abstract="true" name="FourPointSevenFivePercentageNotesDueTwentyFortyThreeMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="apa_StockExchangedDuringPeriodValue" abstract="false" name="StockExchangedDuringPeriodValue" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="apa_WeightedAverageRemainingLifeOfUnvestedRestrictedStockUnits" abstract="false" name="WeightedAverageRemainingLifeOfUnvestedRestrictedStockUnits" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:durationItemType"/>
+  <xs:element id="apa_NumberOfPreferredUnitsExpectedToBeRedeemedBeforeExerciseOfExchangeOption" abstract="false" name="NumberOfPreferredUnitsExpectedToBeRedeemedBeforeExerciseOfExchangeOption" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="xbrli:sharesItemType"/>
+  <xs:element id="apa_DescriptionOfStockBasedCompensationPlansAndRelatedCostsTableTableTextBlock" abstract="false" name="DescriptionOfStockBasedCompensationPlansAndRelatedCostsTableTableTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:textBlockItemType"/>
+  <xs:element id="apa_FivePointThreeFivePercentageNotesDueTwentyFortyNineMember" abstract="true" name="FivePointThreeFivePercentageNotesDueTwentyFortyNineMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="apa_ProductionSharingContractsModernizationImpactProvedAndUnprovedOtherPostClosingAdjustments" abstract="false" name="ProductionSharingContractsModernizationImpactProvedAndUnprovedOtherPostClosingAdjustments" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="apa_ScheduleOfIncomeTaxLineItems" abstract="true" name="ScheduleOfIncomeTaxLineItems" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="apa_CapitalLossCarryforwardCarryoverPeriod" abstract="false" name="CapitalLossCarryforwardCarryoverPeriod" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:durationItemType"/>
+  <xs:element id="apa_DebtInstrumentCovenantTermAdjustmentOfConsolidatedNetIncomeLimitForThreeConsecutiveCalendarMonthsOnAnnualizedBasis" abstract="false" name="DebtInstrumentCovenantTermAdjustmentOfConsolidatedNetIncomeLimitForThreeConsecutiveCalendarMonthsOnAnnualizedBasis" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="apa_JointVentureAgreementPercentageOfCostsIncurredForReimbursement" abstract="false" name="JointVentureAgreementPercentageOfCostsIncurredForReimbursement" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:percentItemType"/>
+  <xs:element id="apa_SouthernMidlandBasinMember" abstract="true" name="SouthernMidlandBasinMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="apa_NorthSeaMember" abstract="true" name="NorthSeaMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="apa_ReservesAccountedOnProductPricesMember" abstract="true" name="ReservesAccountedOnProductPricesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="apa_PermianHighwayPipelineMember" abstract="true" name="PermianHighwayPipelineMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="apa_DeferredTaxAssetsNetInterestExpenseExpense" abstract="false" name="DeferredTaxAssetsNetInterestExpenseExpense" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="apa_AdditionsToGasGatheringProcessingAndTransmissionFacilities" abstract="false" name="AdditionsToGasGatheringProcessingAndTransmissionFacilities" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="apa_DeferredTaxAssetsValuationAllowanceStateNetOperatingLossCarryover" abstract="false" name="DeferredTaxAssetsValuationAllowanceStateNetOperatingLossCarryover" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="apa_ProductionSharingContractsModernizationImpactDiscountedFutureNetCashFlows" abstract="false" name="ProductionSharingContractsModernizationImpactDiscountedFutureNetCashFlows" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="apa_NetIncreaseDecreaseInProductionRatesAndOther" abstract="false" name="NetIncreaseDecreaseInProductionRatesAndOther" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="apa_FixedOperatingLeaseExpense" abstract="false" name="FixedOperatingLeaseExpense" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="apa_CreditFacilityAltusMember" abstract="true" name="CreditFacilityAltusMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="apa_PreferredUnitsRedemptionPrice" abstract="false" name="PreferredUnitsRedemptionPrice" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="apa_RedeemableNoncontrollingInterestIncludingEmbeddedDerivativeLiability" abstract="false" name="RedeemableNoncontrollingInterestIncludingEmbeddedDerivativeLiability" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="apa_AlpineHighPlayMember" abstract="true" name="AlpineHighPlayMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="apa_AccountsReceivableAllowanceForCreditLossWriteOffsNetOfRecoveries" abstract="false" name="AccountsReceivableAllowanceForCreditLossWriteOffsNetOfRecoveries" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="apa_CFEInternationalMember" abstract="true" name="CFEInternationalMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="apa_PercentageOfAdditionalContributionToMoneyPurchaseRetirementPlan" abstract="false" name="PercentageOfAdditionalContributionToMoneyPurchaseRetirementPlan" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:percentItemType"/>
+  <xs:element id="apa_FourPointTwoFivePercentageNotesDueTwentyFortyFourMember" abstract="true" name="FourPointTwoFivePercentageNotesDueTwentyFortyFourMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="apa_NymexHenryHubWahaMember" abstract="true" name="NymexHenryHubWahaMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="apa_ChangeInPetroleumReservesByTypeAxis" abstract="true" name="ChangeInPetroleumReservesByTypeAxis" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrldt:dimensionItem" type="xbrli:stringItemType"/>
+  <xs:element id="apa_PerformanceProgram2017Member" abstract="true" name="PerformanceProgram2017Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="apa_BCPMember" abstract="true" name="BCPMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="apa_PreferredUnitsExchangeableDiscountPercentage" abstract="false" name="PreferredUnitsExchangeableDiscountPercentage" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="dtr-types:percentItemType"/>
+  <xs:element id="apa_PortionOfEmployeesAnnualBonusEmployeeContributionsUnderNonqualifiedRetirementSavingsPlanVested" abstract="false" name="PortionOfEmployeesAnnualBonusEmployeeContributionsUnderNonqualifiedRetirementSavingsPlanVested" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:percentItemType"/>
+  <xs:element id="apa_DisposalGroupIncludingDiscontinuedOperationNetAssets" abstract="false" name="DisposalGroupIncludingDiscontinuedOperationNetAssets" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="apa_MaximumPotentialLienOnAssetsLocatedInSpecifiedRegions" abstract="false" name="MaximumPotentialLienOnAssetsLocatedInSpecifiedRegions" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="apa_DebtInstrumentLeverageRatio" abstract="false" name="DebtInstrumentLeverageRatio" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="xbrli:decimalItemType"/>
+  <xs:element id="apa_PaymentForDistributionToLimitedPartner" abstract="false" name="PaymentForDistributionToLimitedPartner" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="apa_DerivativeSettlementIndexAxis" abstract="true" name="DerivativeSettlementIndexAxis" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrldt:dimensionItem" type="xbrli:stringItemType"/>
+  <xs:element id="apa_ApacheEgyptMember" abstract="true" name="ApacheEgyptMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="apa_AltusMidstreamCompanyMember" abstract="true" name="AltusMidstreamCompanyMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="apa_GulfOfMexicoShelfOperationsAndPropertiesMember" abstract="true" name="GulfOfMexicoShelfOperationsAndPropertiesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="apa_FinancingCostsNet" abstract="false" name="FinancingCostsNet" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="apa_StockholdersEquityHoldingCompanyReorganization" abstract="false" name="StockholdersEquityHoldingCompanyReorganization" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="apa_NumberofGeographicalAreas" abstract="false" name="NumberofGeographicalAreas" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:integerItemType"/>
+  <xs:element id="apa_ProductionSharingContractsExplorationLeaseTerm" abstract="false" name="ProductionSharingContractsExplorationLeaseTerm" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:durationItemType"/>
+  <xs:element id="apa_InventoryAndOtherImpairments" abstract="false" name="InventoryAndOtherImpairments" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="apa_SevenPointSixTwoFivePercentageDebenturesDueTwentyNinetySixMember" abstract="true" name="SevenPointSixTwoFivePercentageDebenturesDueTwentyNinetySixMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="apa_OilAndGasProductionRevenuesMember" abstract="true" name="OilAndGasProductionRevenuesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="apa_DeferredTaxAssetsDecommissioningContingencyForSoldProperties" abstract="false" name="DeferredTaxAssetsDecommissioningContingencyForSoldProperties" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="apa_OperatingLossCarryforwardsSubjecttoAnnualLimitation" abstract="false" name="OperatingLossCarryforwardsSubjecttoAnnualLimitation" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="apa_DebtRepurchaseProgramAxis" abstract="true" name="DebtRepurchaseProgramAxis" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrldt:dimensionItem" type="xbrli:stringItemType"/>
+  <xs:element id="apa_InterestIncomeFromAffiliate" abstract="false" name="InterestIncomeFromAffiliate" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="apa_HealthCareCostTrendAbstract" abstract="true" name="HealthCareCostTrendAbstract" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="apa_PercentageOfLiensOfCompaniesConsolidatedAsset" abstract="false" name="PercentageOfLiensOfCompaniesConsolidatedAsset" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="dtr-types:percentItemType"/>
+  <xs:element id="apa_ComprehensiveIncomeLossNetOfTaxAttributableToNonredeemableNoncontrollingInterest" abstract="false" name="ComprehensiveIncomeLossNetOfTaxAttributableToNonredeemableNoncontrollingInterest" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="apa_NoncontrollingInterestAccretedValueAdjustment" abstract="false" name="NoncontrollingInterestAccretedValueAdjustment" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="apa_NoncontrollingInterestDistributionsPayableToNoncontrollingInterestHolders" abstract="false" name="NoncontrollingInterestDistributionsPayableToNoncontrollingInterestHolders" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="apa_CanadianOperationsDivestitureDisputeMember" abstract="true" name="CanadianOperationsDivestitureDisputeMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="apa_ProceedsReceivedFromJointVentureForReimbursementOfCostIncurred" abstract="false" name="ProceedsReceivedFromJointVentureForReimbursementOfCostIncurred" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="apa_NoteReceivableTerm" abstract="false" name="NoteReceivableTerm" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:durationItemType"/>
+  <xs:element id="apa_AssetRetirementObligationLiabilitiesDivested" abstract="false" name="AssetRetirementObligationLiabilitiesDivested" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="apa_GainLossOnInvestmentInJointVenture" abstract="false" name="GainLossOnInvestmentInJointVenture" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="apa_ProductionSharingContractsDevelopmentLeaseTerm" abstract="false" name="ProductionSharingContractsDevelopmentLeaseTerm" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:durationItemType"/>
+  <xs:element id="apa_AccruedExplorationAndDevelopment" abstract="false" name="AccruedExplorationAndDevelopment" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="apa_OilAndGasPropertiesUnprovedMember" abstract="true" name="OilAndGasPropertiesUnprovedMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="apa_DerivativeSettlementIndexDomain" abstract="true" name="DerivativeSettlementIndexDomain" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="apa_DeferredTaxAssetsValuationAllowanceDomesticTransactions" abstract="false" name="DeferredTaxAssetsValuationAllowanceDomesticTransactions" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="apa_OklahomaAndTexasMember" abstract="true" name="OklahomaAndTexasMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="apa_RedeemableNoncontrollingInterestEquityPreferredIssueDiscount" abstract="false" name="RedeemableNoncontrollingInterestEquityPreferredIssueDiscount" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="apa_GPTFacilitiesMember" abstract="true" name="GPTFacilitiesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="apa_CreditFacilityApacheMember" abstract="true" name="CreditFacilityApacheMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="apa_NumberOfSubsidiaries" abstract="false" name="NumberOfSubsidiaries" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="xbrli:integerItemType"/>
+  <xs:element id="apa_PerformanceProgram2018Member" abstract="true" name="PerformanceProgram2018Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="apa_DecommissioningSecurityForSoldProperties" abstract="false" name="DecommissioningSecurityForSoldProperties" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="apa_CurrentDecommissioningSecurityForSoldGulfOfMexicoAssets" abstract="false" name="CurrentDecommissioningSecurityForSoldGulfOfMexicoAssets" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="apa_DisposalGroupIncludingDiscontinuedOperationOilAndGasPropertiesAndWorkingCapitalItems" abstract="false" name="DisposalGroupIncludingDiscontinuedOperationOilAndGasPropertiesAndWorkingCapitalItems" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="apa_DecommissioningContingencyForSoldPropertiesCurrent" abstract="false" name="DecommissioningContingencyForSoldPropertiesCurrent" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="apa_DefinedBenefitPlanHealthCareCostTrendRateAssumedforNextFiscalYearHistoricalActual" abstract="false" name="DefinedBenefitPlanHealthCareCostTrendRateAssumedforNextFiscalYearHistoricalActual" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:percentItemType"/>
+  <xs:element id="apa_NetInterestExpenseCarryforward" abstract="false" name="NetInterestExpenseCarryforward" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="apa_PromissoryNoteMember" abstract="true" name="PromissoryNoteMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="apa_EquityMethodInvestmentAccumulatedOtherComprehensiveIncomeLoss" abstract="false" name="EquityMethodInvestmentAccumulatedOtherComprehensiveIncomeLoss" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="apa_DiscountedFutureNetCashFlowsRelatingToProvedOilAndGasReservesFutureCashInflowsBeforeTax" abstract="false" name="DiscountedFutureNetCashFlowsRelatingToProvedOilAndGasReservesFutureCashInflowsBeforeTax" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="apa_NymexHenryHubHSCMember" abstract="true" name="NymexHenryHubHSCMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="apa_DebtRepurchaseProgramDomain" abstract="true" name="DebtRepurchaseProgramDomain" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="apa_ProductionSharingContractsModernizationImpactMember" abstract="true" name="ProductionSharingContractsModernizationImpactMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="apa_UncommittedLinesOfCreditMember" abstract="true" name="UncommittedLinesOfCreditMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="apa_ExplorationExpenseRelatedtoOilandGasOperations" abstract="false" name="ExplorationExpenseRelatedtoOilandGasOperations" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="apa_SevenPointSevenPercentageNotesDueTwentyTwentySixMember" abstract="true" name="SevenPointSevenPercentageNotesDueTwentyTwentySixMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="apa_PhantomUnitsIssuedBasedOnPerShareMarketPriceOfALTMCommonStockMember" abstract="true" name="PhantomUnitsIssuedBasedOnPerShareMarketPriceOfALTMCommonStockMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="apa_ThirdPartyInvestorsMember" abstract="true" name="ThirdPartyInvestorsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="apa_ScheduleOfIncomeTaxTable" abstract="true" name="ScheduleOfIncomeTaxTable" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrldt:hypercubeItem" type="xbrli:stringItemType"/>
+  <xs:element id="apa_ProductionPeriodAxis" abstract="true" name="ProductionPeriodAxis" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrldt:dimensionItem" type="xbrli:stringItemType"/>
+  <xs:element id="apa_ReimbursableCostsWithAffiliate" abstract="false" name="ReimbursableCostsWithAffiliate" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="apa_PhantomUnitsIssuedBasedOnPerShareMarketPriceOfApacheCommonStockMember" abstract="true" name="PhantomUnitsIssuedBasedOnPerShareMarketPriceOfApacheCommonStockMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="apa_AltusMidstreamMember" abstract="true" name="AltusMidstreamMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="apa_AssetRetirementCosts" abstract="false" name="AssetRetirementCosts" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="apa_ScheduleOfSignificantAccountingPoliciesLineItems" abstract="true" name="ScheduleOfSignificantAccountingPoliciesLineItems" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="apa_PercentageOfEstimatedProvedDevelopedReservesClassifiedAsProvedNotProducing" abstract="false" name="PercentageOfEstimatedProvedDevelopedReservesClassifiedAsProvedNotProducing" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:percentItemType"/>
+  <xs:element id="apa_ReserveForUncertainCurrentPeriodTaxPositions" abstract="false" name="ReserveForUncertainCurrentPeriodTaxPositions" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="apa_DebtRepurchaseCashTenderOffersMember" abstract="true" name="DebtRepurchaseCashTenderOffersMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="apa_AltusMidstreamSegmentMember" abstract="true" name="AltusMidstreamSegmentMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="apa_ProductionSharingContractsPercentageOfGrossAcreageConsolidated" abstract="false" name="ProductionSharingContractsPercentageOfGrossAcreageConsolidated" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="dtr-types:percentItemType"/>
+  <xs:element id="apa_EquityMethodInvestmentContribution" abstract="false" name="EquityMethodInvestmentContribution" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="apa_OutPerformanceRelativeToGiltsForEquities" abstract="false" name="OutPerformanceRelativeToGiltsForEquities" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:percentItemType"/>
+  <xs:element id="apa_OilAndGasPropertiesMeasurementInputs" abstract="false" name="OilAndGasPropertiesMeasurementInputs" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="dtr-types:percentItemType"/>
+  <xs:element id="apa_ProceedsReceivedFromJointVenture" abstract="false" name="ProceedsReceivedFromJointVenture" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="apa_IncreaseDecreaseInDrillingAdvancesAndOtherCurrentAssets" abstract="false" name="IncreaseDecreaseInDrillingAdvancesAndOtherCurrentAssets" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="apa_ComprehensiveIncomeLossNetOfTaxAttributableToRedeemableNoncontrollingInterest" abstract="false" name="ComprehensiveIncomeLossNetOfTaxAttributableToRedeemableNoncontrollingInterest" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="apa_PipelineCapacityEmbeddedDerivativeMember" abstract="true" name="PipelineCapacityEmbeddedDerivativeMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="apa_FivePointTwoFivePercentageNotesDueTwentyFortyTwoMember" abstract="true" name="FivePointTwoFivePercentageNotesDueTwentyFortyTwoMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="apa_ConsultingAndLegalFeesMember" abstract="true" name="ConsultingAndLegalFeesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="apa_PermianRegionMember" abstract="true" name="PermianRegionMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="apa_DebtInstrumentRepurchaseEarlyTenderPremium" abstract="false" name="DebtInstrumentRepurchaseEarlyTenderPremium" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="apa_AdditionsOrDeductionsToNetPropertyAndEquipment" abstract="false" name="AdditionsOrDeductionsToNetPropertyAndEquipment" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="apa_RevenueFromNonCustomer" abstract="false" name="RevenueFromNonCustomer" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+</xs:schema>

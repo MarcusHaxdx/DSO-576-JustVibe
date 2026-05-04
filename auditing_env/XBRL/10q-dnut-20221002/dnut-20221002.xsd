@@ -1,0 +1,461 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--XBRL Document Created with Wdesk from Workiva-->
+<!--Copyright 2022 Workiva-->
+<!--r:0b722dcc-0395-4760-aa20-66b0a71039bf,g:bc9fd1d4-bd01-4ecf-b45a-07c6ead307dd-->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:dnut="http://www.krispykreme.com/20221002" xmlns:xbrli="http://www.xbrl.org/2003/instance" xmlns:dtr-types="http://www.xbrl.org/dtr/type/2020-01-21" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://www.krispykreme.com/20221002">
+  <xs:import namespace="http://fasb.org/srt/2022" schemaLocation="https://xbrl.fasb.org/srt/2022/elts/srt-2022.xsd"/>
+  <xs:import namespace="http://fasb.org/us-gaap/2022" schemaLocation="https://xbrl.fasb.org/us-gaap/2022/elts/us-gaap-2022.xsd"/>
+  <xs:import namespace="http://www.w3.org/1999/xlink" schemaLocation="http://www.xbrl.org/2003/xlink-2003-12-31.xsd"/>
+  <xs:import namespace="http://www.xbrl.org/2003/instance" schemaLocation="http://www.xbrl.org/2003/xbrl-instance-2003-12-31.xsd"/>
+  <xs:import namespace="http://www.xbrl.org/2003/linkbase" schemaLocation="http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd"/>
+  <xs:import namespace="http://www.xbrl.org/dtr/type/2020-01-21" schemaLocation="https://www.xbrl.org/dtr/type/2020-01-21/types.xsd"/>
+  <xs:import namespace="http://xbrl.sec.gov/dei/2022" schemaLocation="https://xbrl.sec.gov/dei/2022/dei-2022.xsd"/>
+  <xs:annotation>
+    <xs:appinfo>
+      <link:linkbaseRef xmlns:xlink="http://www.w3.org/1999/xlink" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="dnut-20221002_lab.xml" xlink:role="http://www.xbrl.org/2003/role/labelLinkbaseRef" xlink:type="simple"/>
+      <link:linkbaseRef xmlns:xlink="http://www.w3.org/1999/xlink" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="dnut-20221002_pre.xml" xlink:role="http://www.xbrl.org/2003/role/presentationLinkbaseRef" xlink:type="simple"/>
+      <link:linkbaseRef xmlns:xlink="http://www.w3.org/1999/xlink" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="dnut-20221002_cal.xml" xlink:role="http://www.xbrl.org/2003/role/calculationLinkbaseRef" xlink:type="simple"/>
+      <link:linkbaseRef xmlns:xlink="http://www.w3.org/1999/xlink" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="dnut-20221002_def.xml" xlink:role="http://www.xbrl.org/2003/role/definitionLinkbaseRef" xlink:type="simple"/>
+      <link:roleType id="CoverPage" roleURI="http://www.krispykreme.com/role/CoverPage">
+        <link:definition>0000001 - Document - Cover Page</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CondensedConsolidatedStatementsofOperationsUnaudited" roleURI="http://www.krispykreme.com/role/CondensedConsolidatedStatementsofOperationsUnaudited">
+        <link:definition>0000002 - Statement - Condensed Consolidated Statements of Operations (Unaudited)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CondensedConsolidatedStatementsofComprehensiveIncomeLossUnaudited" roleURI="http://www.krispykreme.com/role/CondensedConsolidatedStatementsofComprehensiveIncomeLossUnaudited">
+        <link:definition>0000003 - Statement - Condensed Consolidated Statements of Comprehensive Income/(Loss) (Unaudited)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CondensedConsolidatedStatementsofComprehensiveIncomeLossUnauditedParenthetical" roleURI="http://www.krispykreme.com/role/CondensedConsolidatedStatementsofComprehensiveIncomeLossUnauditedParenthetical">
+        <link:definition>0000004 - Statement - Condensed Consolidated Statements of Comprehensive Income/(Loss) (Unaudited) (Parenthetical)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CondensedConsolidatedBalanceSheets" roleURI="http://www.krispykreme.com/role/CondensedConsolidatedBalanceSheets">
+        <link:definition>0000005 - Statement - Condensed Consolidated Balance Sheets</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CondensedConsolidatedBalanceSheetsParenthetical" roleURI="http://www.krispykreme.com/role/CondensedConsolidatedBalanceSheetsParenthetical">
+        <link:definition>0000006 - Statement - Condensed Consolidated Balance Sheets (Parenthetical)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CondensedConsolidatedStatementsofChangesinShareholdersEquityUnaudited" roleURI="http://www.krispykreme.com/role/CondensedConsolidatedStatementsofChangesinShareholdersEquityUnaudited">
+        <link:definition>0000007 - Statement - Condensed Consolidated Statements of Changes in Shareholders&#8217; Equity (Unaudited)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CondensedConsolidatedStatementsofChangesinShareholdersEquityParentheticalUnaudited" roleURI="http://www.krispykreme.com/role/CondensedConsolidatedStatementsofChangesinShareholdersEquityParentheticalUnaudited">
+        <link:definition>0000008 - Statement - Condensed Consolidated Statements of Changes in Shareholders&#8217; Equity (Parenthetical) (Unaudited)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CondensedConsolidatedStatementsofCashFlowsUnaudited" roleURI="http://www.krispykreme.com/role/CondensedConsolidatedStatementsofCashFlowsUnaudited">
+        <link:definition>0000009 - Statement - Condensed Consolidated Statements of Cash Flows (Unaudited)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="DescriptionofBusinessandSummaryofSignificantAccountingPolicies" roleURI="http://www.krispykreme.com/role/DescriptionofBusinessandSummaryofSignificantAccountingPolicies">
+        <link:definition>0000010 - Disclosure - Description of Business and Summary of Significant Accounting Policies</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="Acquisitions" roleURI="http://www.krispykreme.com/role/Acquisitions">
+        <link:definition>0000011 - Disclosure - Acquisitions</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="Inventories" roleURI="http://www.krispykreme.com/role/Inventories">
+        <link:definition>0000012 - Disclosure - Inventories</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="GoodwillandOtherIntangibleAssetsnet" roleURI="http://www.krispykreme.com/role/GoodwillandOtherIntangibleAssetsnet">
+        <link:definition>0000013 - Disclosure - Goodwill and Other Intangible Assets, net</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="Leases" roleURI="http://www.krispykreme.com/role/Leases">
+        <link:definition>0000014 - Disclosure - Leases</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FairValueMeasurements" roleURI="http://www.krispykreme.com/role/FairValueMeasurements">
+        <link:definition>0000015 - Disclosure - Fair Value Measurements</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="DerivativeInstruments" roleURI="http://www.krispykreme.com/role/DerivativeInstruments">
+        <link:definition>0000016 - Disclosure - Derivative Instruments</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SharebasedCompensation" roleURI="http://www.krispykreme.com/role/SharebasedCompensation">
+        <link:definition>0000017 - Disclosure - Share-based Compensation</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IncomeTaxes" roleURI="http://www.krispykreme.com/role/IncomeTaxes">
+        <link:definition>0000018 - Disclosure - Income Taxes</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CommitmentsandContingencies" roleURI="http://www.krispykreme.com/role/CommitmentsandContingencies">
+        <link:definition>0000019 - Disclosure - Commitments and Contingencies</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RelatedPartyTransactions" roleURI="http://www.krispykreme.com/role/RelatedPartyTransactions">
+        <link:definition>0000020 - Disclosure - Related Party Transactions</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RevenueRecognition" roleURI="http://www.krispykreme.com/role/RevenueRecognition">
+        <link:definition>0000021 - Disclosure - Revenue Recognition</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="NetLossperShare" roleURI="http://www.krispykreme.com/role/NetLossperShare">
+        <link:definition>0000022 - Disclosure - Net Loss per Share</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SegmentReporting" roleURI="http://www.krispykreme.com/role/SegmentReporting">
+        <link:definition>0000023 - Disclosure - Segment Reporting</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SubsequentEvents" roleURI="http://www.krispykreme.com/role/SubsequentEvents">
+        <link:definition>0000024 - Disclosure - Subsequent Events</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="DescriptionofBusinessandSummaryofSignificantAccountingPoliciesPolicies" roleURI="http://www.krispykreme.com/role/DescriptionofBusinessandSummaryofSignificantAccountingPoliciesPolicies">
+        <link:definition>0000025 - Disclosure - Description of Business and Summary of Significant Accounting Policies (Policies)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="BusinessCombinationsandAssetAcquisitionsTables" roleURI="http://www.krispykreme.com/role/BusinessCombinationsandAssetAcquisitionsTables">
+        <link:definition>0000026 - Disclosure - Business Combinations and Asset Acquisitions (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="InventoriesTables" roleURI="http://www.krispykreme.com/role/InventoriesTables">
+        <link:definition>0000027 - Disclosure - Inventories (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="GoodwillandOtherIntangibleAssetsnetTables" roleURI="http://www.krispykreme.com/role/GoodwillandOtherIntangibleAssetsnetTables">
+        <link:definition>0000028 - Disclosure - Goodwill and Other Intangible Assets, net (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LeasesTables" roleURI="http://www.krispykreme.com/role/LeasesTables">
+        <link:definition>0000029 - Disclosure - Leases (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FairValueMeasurementsTables" roleURI="http://www.krispykreme.com/role/FairValueMeasurementsTables">
+        <link:definition>0000030 - Disclosure - Fair Value Measurements (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="DerivativeInstrumentsTables" roleURI="http://www.krispykreme.com/role/DerivativeInstrumentsTables">
+        <link:definition>0000031 - Disclosure - Derivative Instruments (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SharebasedCompensationTables" roleURI="http://www.krispykreme.com/role/SharebasedCompensationTables">
+        <link:definition>0000032 - Disclosure - Share-based Compensation (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RevenueRecognitionTables" roleURI="http://www.krispykreme.com/role/RevenueRecognitionTables">
+        <link:definition>0000033 - Disclosure - Revenue Recognition (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="NetLossperShareTables" roleURI="http://www.krispykreme.com/role/NetLossperShareTables">
+        <link:definition>0000034 - Disclosure - Net Loss per Share (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SegmentReportingTables" roleURI="http://www.krispykreme.com/role/SegmentReportingTables">
+        <link:definition>0000035 - Disclosure - Segment Reporting (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="DescriptionofBusinessandSummaryofSignificantAccountingPoliciesDetails" roleURI="http://www.krispykreme.com/role/DescriptionofBusinessandSummaryofSignificantAccountingPoliciesDetails">
+        <link:definition>0000036 - Disclosure - Description of Business and Summary of Significant Accounting Policies (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="AcquisitionsNarrativeDetails" roleURI="http://www.krispykreme.com/role/AcquisitionsNarrativeDetails">
+        <link:definition>0000037 - Disclosure - Acquisitions - Narrative (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="AcquisitionsDetails" roleURI="http://www.krispykreme.com/role/AcquisitionsDetails">
+        <link:definition>0000038 - Disclosure - Acquisitions (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="InventoriesDetails" roleURI="http://www.krispykreme.com/role/InventoriesDetails">
+        <link:definition>0000039 - Disclosure - Inventories (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="GoodwillandOtherIntangibleAssetsnetScheduleofGoodwillDetails" roleURI="http://www.krispykreme.com/role/GoodwillandOtherIntangibleAssetsnetScheduleofGoodwillDetails">
+        <link:definition>0000040 - Disclosure - Goodwill and Other Intangible Assets, net - Schedule of Goodwill (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="GoodwillandOtherIntangibleAssetsnetScheduleofOtherIntangibleAssetsDetails" roleURI="http://www.krispykreme.com/role/GoodwillandOtherIntangibleAssetsnetScheduleofOtherIntangibleAssetsDetails">
+        <link:definition>0000041 - Disclosure - Goodwill and Other Intangible Assets, net - Schedule of Other Intangible Assets (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LeasesScheduleofSupplementalBalanceSheetInformationRelatedtoLeasesDetails" roleURI="http://www.krispykreme.com/role/LeasesScheduleofSupplementalBalanceSheetInformationRelatedtoLeasesDetails">
+        <link:definition>0000042 - Disclosure - Leases - Schedule of Supplemental Balance Sheet Information Related to Leases (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LeasesScheduleofLeaseCostsDetails" roleURI="http://www.krispykreme.com/role/LeasesScheduleofLeaseCostsDetails">
+        <link:definition>0000043 - Disclosure - Leases - Schedule of Lease Costs (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LeasesScheduleofSupplementalCashFlowInformationRelatedtoLeasesDetails" roleURI="http://www.krispykreme.com/role/LeasesScheduleofSupplementalCashFlowInformationRelatedtoLeasesDetails">
+        <link:definition>0000044 - Disclosure - Leases - Schedule of Supplemental Cash Flow Information Related to Leases (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LeasesAdditionalInformationDetails" roleURI="http://www.krispykreme.com/role/LeasesAdditionalInformationDetails">
+        <link:definition>0000045 - Disclosure - Leases - Additional Information (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FairValueMeasurementsDetails" roleURI="http://www.krispykreme.com/role/FairValueMeasurementsDetails">
+        <link:definition>0000046 - Disclosure - Fair Value Measurements (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="DerivativeInstrumentsAdditionalInformationDetails" roleURI="http://www.krispykreme.com/role/DerivativeInstrumentsAdditionalInformationDetails">
+        <link:definition>0000047 - Disclosure - Derivative Instruments - Additional Information (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="DerivativeInstrumentsScheduleofDerivativeInstrumentsinCondensedConsolidatedBalanceSheetsFairValueDetails" roleURI="http://www.krispykreme.com/role/DerivativeInstrumentsScheduleofDerivativeInstrumentsinCondensedConsolidatedBalanceSheetsFairValueDetails">
+        <link:definition>0000048 - Disclosure - Derivative Instruments - Schedule of Derivative Instruments in Condensed Consolidated Balance Sheets, Fair Value (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="DerivativeInstrumentsScheduleofDerivativeInstrumentsinCondensedConsolidatedStatementsofOperationsGainLossDetails" roleURI="http://www.krispykreme.com/role/DerivativeInstrumentsScheduleofDerivativeInstrumentsinCondensedConsolidatedStatementsofOperationsGainLossDetails">
+        <link:definition>0000049 - Disclosure - Derivative Instruments - Schedule of Derivative Instruments in Condensed Consolidated Statements of Operations, Gain (Loss) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SharebasedCompensationNarrativeDetails" roleURI="http://www.krispykreme.com/role/SharebasedCompensationNarrativeDetails">
+        <link:definition>0000050 - Disclosure - Share-based Compensation - Narrative (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SharebasedCompensationScheduleofRSUActivityDetails" roleURI="http://www.krispykreme.com/role/SharebasedCompensationScheduleofRSUActivityDetails">
+        <link:definition>0000051 - Disclosure - Share-based Compensation - Schedule of RSU Activity (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SharebasedCompensationScheduleofRSUUnrecognizedCompensationExpenseDetails" roleURI="http://www.krispykreme.com/role/SharebasedCompensationScheduleofRSUUnrecognizedCompensationExpenseDetails">
+        <link:definition>0000052 - Disclosure - Share-based Compensation - Schedule of RSU Unrecognized Compensation Expense (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SharebasedCompensationScheduleofStockOptionActivityDetails" roleURI="http://www.krispykreme.com/role/SharebasedCompensationScheduleofStockOptionActivityDetails">
+        <link:definition>0000053 - Disclosure - Share-based Compensation - Schedule of Stock Option Activity (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SharebasedCompensationScheduleofStockOptionUnrecognizedCompensationExpenseDetails" roleURI="http://www.krispykreme.com/role/SharebasedCompensationScheduleofStockOptionUnrecognizedCompensationExpenseDetails">
+        <link:definition>0000054 - Disclosure - Share-based Compensation - Schedule of Stock Option Unrecognized Compensation Expense (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IncomeTaxesDetails" roleURI="http://www.krispykreme.com/role/IncomeTaxesDetails">
+        <link:definition>0000055 - Disclosure - Income Taxes (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CommitmentsandContingenciesDetails" roleURI="http://www.krispykreme.com/role/CommitmentsandContingenciesDetails">
+        <link:definition>0000056 - Disclosure - Commitments and Contingencies (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RelatedPartyTransactionsDetails" roleURI="http://www.krispykreme.com/role/RelatedPartyTransactionsDetails">
+        <link:definition>0000057 - Disclosure - Related Party Transactions (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RevenueRecognitionSummaryofDisaggregationofRevenuesDetails" roleURI="http://www.krispykreme.com/role/RevenueRecognitionSummaryofDisaggregationofRevenuesDetails">
+        <link:definition>0000058 - Disclosure - Revenue Recognition - Summary of Disaggregation of Revenues (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RevenueRecognitionSummaryofContractBalanceswithCustomersDetails" roleURI="http://www.krispykreme.com/role/RevenueRecognitionSummaryofContractBalanceswithCustomersDetails">
+        <link:definition>0000059 - Disclosure - Revenue Recognition - Summary of Contract Balances with Customers (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="NetLossperShareScheduleofNetLossPerShareBasicandDilutedDetails" roleURI="http://www.krispykreme.com/role/NetLossperShareScheduleofNetLossPerShareBasicandDilutedDetails">
+        <link:definition>0000060 - Disclosure - Net Loss per Share - Schedule of Net Loss Per Share, Basic and Diluted (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="NetLossperShareScheduleofAntidilutiveUnvestedRSUsExcludedfromComputationofNetLossperShareDetails" roleURI="http://www.krispykreme.com/role/NetLossperShareScheduleofAntidilutiveUnvestedRSUsExcludedfromComputationofNetLossperShareDetails">
+        <link:definition>0000061 - Disclosure - Net Loss per Share - Schedule of Antidilutive Unvested RSUs Excluded from Computation of Net Loss per Share (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="NetLossperShareAdditionalInformationDetails" roleURI="http://www.krispykreme.com/role/NetLossperShareAdditionalInformationDetails">
+        <link:definition>0000062 - Disclosure - Net Loss per Share - Additional Information (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SegmentReportingDetails" roleURI="http://www.krispykreme.com/role/SegmentReportingDetails">
+        <link:definition>0000063 - Disclosure - Segment Reporting (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element id="dnut_BusinessCombinationDisposalOfAcquireeIntangibleAssetsCumulativeNetBookValue" abstract="false" name="BusinessCombinationDisposalOfAcquireeIntangibleAssetsCumulativeNetBookValue" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="dnut_NumberOfStoresUnderConstruction" abstract="false" name="NumberOfStoresUnderConstruction" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="xbrli:integerItemType"/>
+  <xs:element id="dnut_SeniorUnsecuredNoteTheAdditionalAgreementMember" abstract="true" name="SeniorUnsecuredNoteTheAdditionalAgreementMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="dnut_ReacquiredFranchiseRightsMember" abstract="true" name="ReacquiredFranchiseRightsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="dnut_BusinessCombinationConsiderationPayablePaymentPeriod" abstract="false" name="BusinessCombinationConsiderationPayablePaymentPeriod" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:durationItemType"/>
+  <xs:element id="dnut_KrispyKremeFranceMember" abstract="true" name="KrispyKremeFranceMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="dnut_EmployerPayrollTaxesRelatedToShareBasedCompensation" abstract="false" name="EmployerPayrollTaxesRelatedToShareBasedCompensation" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="dnut_ShareBasedCompensationArrangementByShareBasedPaymentAwardOptionsForfeitedOrExpiredInPeriodWeightedAverageGrantDateFairValue" abstract="false" name="ShareBasedCompensationArrangementByShareBasedPaymentAwardOptionsForfeitedOrExpiredInPeriodWeightedAverageGrantDateFairValue" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:perShareItemType"/>
+  <xs:element id="dnut_DistributionsDeclaredButNotYetPaidNoncontrollingInterest" abstract="false" name="DistributionsDeclaredButNotYetPaidNoncontrollingInterest" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="dnut_DeferredCreditsAndOtherLiabilitiesNoncurrentMember" abstract="true" name="DeferredCreditsAndOtherLiabilitiesNoncurrentMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="dnut_SeniorUnsecuredNoteTheOriginalAgreementMember" abstract="true" name="SeniorUnsecuredNoteTheOriginalAgreementMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="dnut_MarketDevelopmentSegmentMember" abstract="true" name="MarketDevelopmentSegmentMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="dnut_RightOfUseAssetObtainedInExchangeForLeaseLiabilityAbstract" abstract="true" name="RightOfUseAssetObtainedInExchangeForLeaseLiabilityAbstract" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="dnut_StructuredPayablesCurrent" abstract="false" name="StructuredPayablesCurrent" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="dnut_AssetsAndLiabilitiesLesseeTableTextBlock" abstract="false" name="AssetsAndLiabilitiesLesseeTableTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:textBlockItemType"/>
+  <xs:element id="dnut_StockIssuedShareholderNote" abstract="false" name="StockIssuedShareholderNote" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="dnut_DefinedContributionPlanPlanAssetsFairValue" abstract="false" name="DefinedContributionPlanPlanAssetsFairValue" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="dnut_KrispyKremeUnitedStatesShops2021Member" abstract="true" name="KrispyKremeUnitedStatesShops2021Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="dnut_KremeWorksCanadaLPMember" abstract="true" name="KremeWorksCanadaLPMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="dnut_KrispyKremeHoldingsPtyLtdKKAustraliaMember" abstract="true" name="KrispyKremeHoldingsPtyLtdKKAustraliaMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="dnut_ShopClosureExpenses" abstract="false" name="ShopClosureExpenses" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="dnut_SaleLeasebackTransactionNumberOfRealEstateProperties" abstract="false" name="SaleLeasebackTransactionNumberOfRealEstateProperties" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="xbrli:integerItemType"/>
+  <xs:element id="dnut_KrispyKremeGPKKGPMember" abstract="true" name="KrispyKremeGPKKGPMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="dnut_ProceedsFromStructuredPayables" abstract="false" name="ProceedsFromStructuredPayables" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="dnut_InterestIncomeExpenseMember" abstract="true" name="InterestIncomeExpenseMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="dnut_AccruedLiabilitiesCurrentMember" abstract="true" name="AccruedLiabilitiesCurrentMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="dnut_DistributionDeclaredButNotYetPaidShareholders" abstract="false" name="DistributionDeclaredButNotYetPaidShareholders" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="dnut_ShareBasedCompensationArrangementByShareBasedPaymentAwardOptionsOutstandingWeightedAverageGrantDateFairValue" abstract="false" name="ShareBasedCompensationArrangementByShareBasedPaymentAwardOptionsOutstandingWeightedAverageGrantDateFairValue" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="dtr-types:perShareItemType"/>
+  <xs:element id="dnut_MixAndEquipmentRevenueFromFranchiseesMember" abstract="true" name="MixAndEquipmentRevenueFromFranchiseesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="dnut_USAndCanadaSegmentMember" abstract="true" name="USAndCanadaSegmentMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="dnut_InitialPublicOfferingRelatedExpenses" abstract="false" name="InitialPublicOfferingRelatedExpenses" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="dnut_ReceivablesFromStockholderNotesReceivableMember" abstract="true" name="ReceivablesFromStockholderNotesReceivableMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="dnut_CompanyShopsDFDAndBrandedSweetTreatLineMember" abstract="true" name="CompanyShopsDFDAndBrandedSweetTreatLineMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="dnut_InterestIncomeExpenseNetExcludingRelatedParty" abstract="false" name="InterestIncomeExpenseNetExcludingRelatedParty" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="dnut_LeasesTerminationCosts" abstract="false" name="LeasesTerminationCosts" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="dnut_AdjustedEarningsBeforeInterestTaxesDepreciationAmortizationAndOtherNonOperatingItems" abstract="false" name="AdjustedEarningsBeforeInterestTaxesDepreciationAmortizationAndOtherNonOperatingItems" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="dnut_KrispyKremeMexicoSDeRLDeCVKKMexicoMember" abstract="true" name="KrispyKremeMexicoSDeRLDeCVKKMexicoMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="dnut_LeaseRightOfUseAsset" abstract="false" name="LeaseRightOfUseAsset" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="dnut_BusinessCombinationRecognizedIdentifiableAssetsAcquiredAndLiabilitiesAssumedAccruedLiabilities" abstract="false" name="BusinessCombinationRecognizedIdentifiableAssetsAcquiredAndLiabilitiesAssumedAccruedLiabilities" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="dnut_LeaseImpairmentLossAndTerminationCharges" abstract="false" name="LeaseImpairmentLossAndTerminationCharges" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="dnut_ShareBasedCompensationArrangementByShareBasedPaymentAwardOptionsExercisedInPeriodWeightedAverageGrantDateFairValue" abstract="false" name="ShareBasedCompensationArrangementByShareBasedPaymentAwardOptionsExercisedInPeriodWeightedAverageGrantDateFairValue" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:perShareItemType"/>
+  <xs:element id="dnut_KremeWorksUSALLCMember" abstract="true" name="KremeWorksUSALLCMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="dnut_CashFlowLesseeAbstract" abstract="true" name="CashFlowLesseeAbstract" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="dnut_BusinessCombinationRecognizedIdentifiableAssetsAcquiredAndLiabilitiesAssumedNoncurrentOperatingLeaseLiabilities" abstract="false" name="BusinessCombinationRecognizedIdentifiableAssetsAcquiredAndLiabilitiesAssumedNoncurrentOperatingLeaseLiabilities" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="dnut_StockIssuedDuringPeriodValueCapitalContributionFromShareholders" abstract="false" name="StockIssuedDuringPeriodValueCapitalContributionFromShareholders" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="dnut_InternationalSegmentMember" abstract="true" name="InternationalSegmentMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="dnut_LeaseLiability" abstract="false" name="LeaseLiability" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="dnut_ShareBasedCompensationArrangementByShareBasedPaymentAwardOptionsWeightedAverageGrantDateFairValueRollForward" abstract="true" name="ShareBasedCompensationArrangementByShareBasedPaymentAwardOptionsWeightedAverageGrantDateFairValueRollForward" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="dnut_BusinessCombinationConsiderationTransferredAccountsAndFinancingReceivableNetOfDeferredRevenueWriteOff" abstract="false" name="BusinessCombinationConsiderationTransferredAccountsAndFinancingReceivableNetOfDeferredRevenueWriteOff" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="dnut_AccrualForRepurchaseAndRetirementOfCommonStock" abstract="false" name="AccrualForRepurchaseAndRetirementOfCommonStock" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="dnut_ReceivablesFromStockholderSubscriptionsMember" abstract="true" name="ReceivablesFromStockholderSubscriptionsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="dnut_NumberOfEquityMethodInvestments" abstract="false" name="NumberOfEquityMethodInvestments" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="xbrli:integerItemType"/>
+  <xs:element id="dnut_KrispyKremeHoldingUKLtdKKUKMember" abstract="true" name="KrispyKremeHoldingUKLtdKKUKMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="dnut_InsomniaCookiesHoldingsLLCInsomniaCookiesMember" abstract="true" name="InsomniaCookiesHoldingsLLCInsomniaCookiesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="dnut_KrispyKremeUSShops2022Member" abstract="true" name="KrispyKremeUSShops2022Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="dnut_BusinessCombinationRecognizedIdentifiableAssetsAcquiredAndLiabilitiesAssumedCurrentOperatingLeaseLiabilities" abstract="false" name="BusinessCombinationRecognizedIdentifiableAssetsAcquiredAndLiabilitiesAssumedCurrentOperatingLeaseLiabilities" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="dnut_BusinessCombinationRecognizedIdentifiableAssetsAcquiredAndLiabilitiesAssumedOperatingLeaseRightOfUseAsset" abstract="false" name="BusinessCombinationRecognizedIdentifiableAssetsAcquiredAndLiabilitiesAssumedOperatingLeaseRightOfUseAsset" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="dnut_PaymentsForStructuredPayables" abstract="false" name="PaymentsForStructuredPayables" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="dnut_KrispyKremeCanadaShops2021Member" abstract="true" name="KrispyKremeCanadaShops2021Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="dnut_StockIssuedDuringPeriodSharesCapitalContributionFromShareholders" abstract="false" name="StockIssuedDuringPeriodSharesCapitalContributionFromShareholders" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:sharesItemType"/>
+  <xs:element id="dnut_KrispyKremeIncKKIMember" abstract="true" name="KrispyKremeIncKKIMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+</xs:schema>

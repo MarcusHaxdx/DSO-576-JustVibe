@@ -1,0 +1,592 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--XBRL Document Created with the Workiva Platform-->
+<!--Copyright 2024 Workiva-->
+<!--r:85e725df-7009-406a-944d-8f2460dea5b9,g:3a707160-9554-4760-bbfd-ef62556faa22-->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:rrr="http://www.redrockresorts.com/20231231" xmlns:xbrli="http://www.xbrl.org/2003/instance" xmlns:dtr-types1="http://www.xbrl.org/dtr/type/2020-01-21" xmlns:dtr-types="http://www.xbrl.org/dtr/type/2022-03-31" xmlns:xbrldt="http://xbrl.org/2005/xbrldt" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://www.redrockresorts.com/20231231">
+  <xs:import namespace="http://fasb.org/srt/2023" schemaLocation="https://xbrl.fasb.org/srt/2023/elts/srt-2023.xsd"/>
+  <xs:import namespace="http://fasb.org/us-gaap/2023" schemaLocation="https://xbrl.fasb.org/us-gaap/2023/elts/us-gaap-2023.xsd"/>
+  <xs:import namespace="http://www.w3.org/1999/xlink" schemaLocation="http://www.xbrl.org/2003/xlink-2003-12-31.xsd"/>
+  <xs:import namespace="http://www.xbrl.org/2003/instance" schemaLocation="http://www.xbrl.org/2003/xbrl-instance-2003-12-31.xsd"/>
+  <xs:import namespace="http://www.xbrl.org/2003/linkbase" schemaLocation="http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd"/>
+  <xs:import namespace="http://www.xbrl.org/dtr/type/2020-01-21" schemaLocation="https://www.xbrl.org/dtr/type/2020-01-21/types.xsd"/>
+  <xs:import namespace="http://www.xbrl.org/dtr/type/2022-03-31" schemaLocation="https://www.xbrl.org/dtr/type/2022-03-31/types.xsd"/>
+  <xs:import namespace="http://xbrl.org/2005/xbrldt" schemaLocation="http://www.xbrl.org/2005/xbrldt-2005.xsd"/>
+  <xs:import namespace="http://xbrl.sec.gov/dei/2023" schemaLocation="https://xbrl.sec.gov/dei/2023/dei-2023.xsd"/>
+  <xs:annotation>
+    <xs:appinfo>
+      <link:linkbaseRef xmlns:xlink="http://www.w3.org/1999/xlink" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="rrr-20231231_pre.xml" xlink:role="http://www.xbrl.org/2003/role/presentationLinkbaseRef" xlink:type="simple"/>
+      <link:linkbaseRef xmlns:xlink="http://www.w3.org/1999/xlink" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="rrr-20231231_def.xml" xlink:role="http://www.xbrl.org/2003/role/definitionLinkbaseRef" xlink:type="simple"/>
+      <link:linkbaseRef xmlns:xlink="http://www.w3.org/1999/xlink" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="rrr-20231231_lab.xml" xlink:role="http://www.xbrl.org/2003/role/labelLinkbaseRef" xlink:type="simple"/>
+      <link:linkbaseRef xmlns:xlink="http://www.w3.org/1999/xlink" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="rrr-20231231_cal.xml" xlink:role="http://www.xbrl.org/2003/role/calculationLinkbaseRef" xlink:type="simple"/>
+      <link:roleType id="DocumentandEntityInformation" roleURI="http://www.redrockresorts.com/role/DocumentandEntityInformation">
+        <link:definition>0000001 - Document - Document and Entity Information</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CONSOLIDATEDBALANCESHEETS" roleURI="http://www.redrockresorts.com/role/CONSOLIDATEDBALANCESHEETS">
+        <link:definition>0000002 - Statement - CONSOLIDATED BALANCE SHEETS</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CONSOLIDATEDBALANCESHEETSParenthetical" roleURI="http://www.redrockresorts.com/role/CONSOLIDATEDBALANCESHEETSParenthetical">
+        <link:definition>0000003 - Statement - CONSOLIDATED BALANCE SHEETS (Parenthetical)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CONSOLIDATEDSTATEMENTSOFOPERATIONS" roleURI="http://www.redrockresorts.com/role/CONSOLIDATEDSTATEMENTSOFOPERATIONS">
+        <link:definition>0000004 - Statement - CONSOLIDATED STATEMENTS OF OPERATIONS</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CONSOLIDATEDSTATEMENTSOFCOMPREHENSIVEINCOMELOSS" roleURI="http://www.redrockresorts.com/role/CONSOLIDATEDSTATEMENTSOFCOMPREHENSIVEINCOMELOSS">
+        <link:definition>0000005 - Statement - CONSOLIDATED STATEMENTS OF COMPREHENSIVE INCOME (LOSS)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CONSOLIDATEDSTATEMENTSOFSTOCKHOLDERSEQUITY" roleURI="http://www.redrockresorts.com/role/CONSOLIDATEDSTATEMENTSOFSTOCKHOLDERSEQUITY">
+        <link:definition>0000006 - Statement - CONSOLIDATED STATEMENTS OF STOCKHOLDERS' EQUITY</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CONSOLIDATEDSTATEMENTSOFCASHFLOWS" roleURI="http://www.redrockresorts.com/role/CONSOLIDATEDSTATEMENTSOFCASHFLOWS">
+        <link:definition>0000007 - Statement - CONSOLIDATED STATEMENTS OF CASH FLOWS</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CONSOLIDATEDSTATEMENTSOFCASHFLOWSParenthetical" roleURI="http://www.redrockresorts.com/role/CONSOLIDATEDSTATEMENTSOFCASHFLOWSParenthetical">
+        <link:definition>0000008 - Statement - CONSOLIDATED STATEMENTS OF CASH FLOWS (Parenthetical)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="OrganizationandBackground" roleURI="http://www.redrockresorts.com/role/OrganizationandBackground">
+        <link:definition>0000009 - Disclosure - Organization and Background</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="BasisofPresentationandSummaryofSignificantAccountingPolicies" roleURI="http://www.redrockresorts.com/role/BasisofPresentationandSummaryofSignificantAccountingPolicies">
+        <link:definition>0000010 - Disclosure - Basis of Presentation and Summary of Significant Accounting Policies</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="PropertyandEquipment" roleURI="http://www.redrockresorts.com/role/PropertyandEquipment">
+        <link:definition>0000011 - Disclosure - Property and Equipment</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="GoodwillandOtherIntangibles" roleURI="http://www.redrockresorts.com/role/GoodwillandOtherIntangibles">
+        <link:definition>0000012 - Disclosure - Goodwill and Other Intangibles</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="NativeAmericanDevelopment" roleURI="http://www.redrockresorts.com/role/NativeAmericanDevelopment">
+        <link:definition>0000013 - Disclosure - Native American Development</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="OtherAccruedLiabilities" roleURI="http://www.redrockresorts.com/role/OtherAccruedLiabilities">
+        <link:definition>0000014 - Disclosure - Other Accrued Liabilities</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LongtermDebt" roleURI="http://www.redrockresorts.com/role/LongtermDebt">
+        <link:definition>0000015 - Disclosure - Long-term Debt</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FairValueMeasurements" roleURI="http://www.redrockresorts.com/role/FairValueMeasurements">
+        <link:definition>0000016 - Disclosure - Fair Value Measurements</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="StockholdersEquity" roleURI="http://www.redrockresorts.com/role/StockholdersEquity">
+        <link:definition>0000017 - Disclosure - Stockholders' Equity</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SharebasedCompensation" roleURI="http://www.redrockresorts.com/role/SharebasedCompensation">
+        <link:definition>0000018 - Disclosure - Share-based Compensation</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="WritedownsandOtherNet" roleURI="http://www.redrockresorts.com/role/WritedownsandOtherNet">
+        <link:definition>0000019 - Disclosure - Write-downs and Other, Net</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IncomeTaxes" roleURI="http://www.redrockresorts.com/role/IncomeTaxes">
+        <link:definition>0000020 - Disclosure - Income Taxes</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RetirementPlans" roleURI="http://www.redrockresorts.com/role/RetirementPlans">
+        <link:definition>0000021 - Disclosure - Retirement Plans</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="EarningsPerShare" roleURI="http://www.redrockresorts.com/role/EarningsPerShare">
+        <link:definition>0000022 - Disclosure - Earnings Per Share</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="Leases" roleURI="http://www.redrockresorts.com/role/Leases">
+        <link:definition>0000023 - Disclosure - Leases</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CommitmentsandContingencies" roleURI="http://www.redrockresorts.com/role/CommitmentsandContingencies">
+        <link:definition>0000024 - Disclosure - Commitments and Contingencies</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="Segments" roleURI="http://www.redrockresorts.com/role/Segments">
+        <link:definition>0000025 - Disclosure - Segments</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ScheduleIIValuationandQualifyingAccounts" roleURI="http://www.redrockresorts.com/role/ScheduleIIValuationandQualifyingAccounts">
+        <link:definition>0000026 - Disclosure - Schedule II - Valuation and Qualifying Accounts</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="BasisofPresentationandSummaryofSignificantAccountingPoliciesPolicies" roleURI="http://www.redrockresorts.com/role/BasisofPresentationandSummaryofSignificantAccountingPoliciesPolicies">
+        <link:definition>9954471 - Disclosure - Basis of Presentation and Summary of Significant Accounting Policies (Policies)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="WritedownsandOtherNetPolicies" roleURI="http://www.redrockresorts.com/role/WritedownsandOtherNetPolicies">
+        <link:definition>9954472 - Disclosure - Write-downs and Other, Net (Policies)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="BasisofPresentationandSummaryofSignificantAccountingPoliciesTables" roleURI="http://www.redrockresorts.com/role/BasisofPresentationandSummaryofSignificantAccountingPoliciesTables">
+        <link:definition>9954473 - Disclosure - Basis of Presentation and Summary of Significant Accounting Policies (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="PropertyandEquipmentTables" roleURI="http://www.redrockresorts.com/role/PropertyandEquipmentTables">
+        <link:definition>9954474 - Disclosure - Property and Equipment (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="GoodwillandOtherIntangiblesTables" roleURI="http://www.redrockresorts.com/role/GoodwillandOtherIntangiblesTables">
+        <link:definition>9954475 - Disclosure - Goodwill and Other Intangibles (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="NativeAmericanDevelopmentTables" roleURI="http://www.redrockresorts.com/role/NativeAmericanDevelopmentTables">
+        <link:definition>9954476 - Disclosure - Native American Development (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="OtherAccruedLiabilitiesTables" roleURI="http://www.redrockresorts.com/role/OtherAccruedLiabilitiesTables">
+        <link:definition>9954477 - Disclosure - Other Accrued Liabilities (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LongtermDebtTables" roleURI="http://www.redrockresorts.com/role/LongtermDebtTables">
+        <link:definition>9954478 - Disclosure - Long-term Debt (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FairValueMeasurementsTables" roleURI="http://www.redrockresorts.com/role/FairValueMeasurementsTables">
+        <link:definition>9954479 - Disclosure - Fair Value Measurements (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="StockholdersEquityTables" roleURI="http://www.redrockresorts.com/role/StockholdersEquityTables">
+        <link:definition>9954480 - Disclosure - Stockholders' Equity (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SharebasedCompensationTables" roleURI="http://www.redrockresorts.com/role/SharebasedCompensationTables">
+        <link:definition>9954481 - Disclosure - Share-based Compensation (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IncomeTaxesTables" roleURI="http://www.redrockresorts.com/role/IncomeTaxesTables">
+        <link:definition>9954482 - Disclosure - Income Taxes (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RetirementPlansTables" roleURI="http://www.redrockresorts.com/role/RetirementPlansTables">
+        <link:definition>9954483 - Disclosure - Retirement Plans (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="EarningsPerShareTables" roleURI="http://www.redrockresorts.com/role/EarningsPerShareTables">
+        <link:definition>9954484 - Disclosure - Earnings Per Share (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LeasesTables" roleURI="http://www.redrockresorts.com/role/LeasesTables">
+        <link:definition>9954485 - Disclosure - Leases (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SegmentsTables" roleURI="http://www.redrockresorts.com/role/SegmentsTables">
+        <link:definition>9954486 - Disclosure - Segments (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ScheduleIIValuationandQualifyingAccountsTables" roleURI="http://www.redrockresorts.com/role/ScheduleIIValuationandQualifyingAccountsTables">
+        <link:definition>9954487 - Disclosure - Schedule II - Valuation and Qualifying Accounts (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="OrganizationandBackgroundDetails" roleURI="http://www.redrockresorts.com/role/OrganizationandBackgroundDetails">
+        <link:definition>9954488 - Disclosure - Organization and Background (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="BasisofPresentationandSummaryofSignificantAccountingPoliciesDetails" roleURI="http://www.redrockresorts.com/role/BasisofPresentationandSummaryofSignificantAccountingPoliciesDetails">
+        <link:definition>9954489 - Disclosure - Basis of Presentation and Summary of Significant Accounting Policies (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="PropertyandEquipmentDetails" roleURI="http://www.redrockresorts.com/role/PropertyandEquipmentDetails">
+        <link:definition>9954490 - Disclosure - Property and Equipment (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="GoodwillandOtherIntangiblesIndefiniteLivedandFiniteLivedIntangibleAssetsDetails" roleURI="http://www.redrockresorts.com/role/GoodwillandOtherIntangiblesIndefiniteLivedandFiniteLivedIntangibleAssetsDetails">
+        <link:definition>9954491 - Disclosure - Goodwill and Other Intangibles - Indefinite-Lived and Finite-Lived Intangible Assets (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="GoodwillandOtherIntangiblesAmortizationExpenseDetails" roleURI="http://www.redrockresorts.com/role/GoodwillandOtherIntangiblesAmortizationExpenseDetails">
+        <link:definition>9954492 - Disclosure - Goodwill and Other Intangibles - Amortization Expense (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="NativeAmericanDevelopmentNorthForkDetails" roleURI="http://www.redrockresorts.com/role/NativeAmericanDevelopmentNorthForkDetails">
+        <link:definition>9954493 - Disclosure - Native American Development - North Fork (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="OtherAccruedLiabilitiesDetails" roleURI="http://www.redrockresorts.com/role/OtherAccruedLiabilitiesDetails">
+        <link:definition>9954494 - Disclosure - Other Accrued Liabilities (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LongtermDebtScheduleofLongtermInstrumentsDetails" roleURI="http://www.redrockresorts.com/role/LongtermDebtScheduleofLongtermInstrumentsDetails">
+        <link:definition>9954495 - Disclosure - Long-term Debt - Schedule of Long-term Instruments (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LongtermDebtCreditFacilityDetails" roleURI="http://www.redrockresorts.com/role/LongtermDebtCreditFacilityDetails">
+        <link:definition>9954496 - Disclosure - Long-term Debt - Credit Facility (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LongtermDebtSeniorNotesDetails" roleURI="http://www.redrockresorts.com/role/LongtermDebtSeniorNotesDetails">
+        <link:definition>9954497 - Disclosure - Long-term Debt - Senior Notes (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LongtermDebtPrincipalMaturitiesDetails" roleURI="http://www.redrockresorts.com/role/LongtermDebtPrincipalMaturitiesDetails">
+        <link:definition>9954498 - Disclosure - Long-term Debt - Principal Maturities (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FairValueMeasurementsDetails" roleURI="http://www.redrockresorts.com/role/FairValueMeasurementsDetails">
+        <link:definition>9954499 - Disclosure - Fair Value Measurements (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="StockholdersEquityDetails" roleURI="http://www.redrockresorts.com/role/StockholdersEquityDetails">
+        <link:definition>9954500 - Disclosure - Stockholders' Equity (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="StockholdersEquityAccumulatedOtherComprehensiveIncomeDetails" roleURI="http://www.redrockresorts.com/role/StockholdersEquityAccumulatedOtherComprehensiveIncomeDetails">
+        <link:definition>9954501 - Disclosure - Stockholders' Equity - Accumulated Other Comprehensive Income (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="StockholdersEquityChangesinOwnershipofStationHoldcoLLCDetails" roleURI="http://www.redrockresorts.com/role/StockholdersEquityChangesinOwnershipofStationHoldcoLLCDetails">
+        <link:definition>9954502 - Disclosure - Stockholders' Equity - Changes in Ownership of Station Holdco LLC (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SharebasedCompensationTextDetails" roleURI="http://www.redrockresorts.com/role/SharebasedCompensationTextDetails">
+        <link:definition>9954503 - Disclosure - Share-based Compensation Text (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SharebasedCompensationAwardsActivityDetails" roleURI="http://www.redrockresorts.com/role/SharebasedCompensationAwardsActivityDetails">
+        <link:definition>9954504 - Disclosure - Share-based Compensation Awards Activity (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SharebasedCompensationWeightedAverageAssumptionsDetails" roleURI="http://www.redrockresorts.com/role/SharebasedCompensationWeightedAverageAssumptionsDetails">
+        <link:definition>9954505 - Disclosure - Share-based Compensation Weighted Average Assumptions (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SharebasedCompensationAllocationofRecognizedCostsDetails" roleURI="http://www.redrockresorts.com/role/SharebasedCompensationAllocationofRecognizedCostsDetails">
+        <link:definition>9954506 - Disclosure - Share-based Compensation Allocation of Recognized Costs (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="WritedownsandOtherNetDetails" roleURI="http://www.redrockresorts.com/role/WritedownsandOtherNetDetails">
+        <link:definition>9954507 - Disclosure - Write-downs and Other, Net (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IncomeTaxesDetails" roleURI="http://www.redrockresorts.com/role/IncomeTaxesDetails">
+        <link:definition>9954508 - Disclosure - Income Taxes (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RetirementPlansDetails" roleURI="http://www.redrockresorts.com/role/RetirementPlansDetails">
+        <link:definition>9954509 - Disclosure - Retirement Plans (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="EarningsPerShareDetails" roleURI="http://www.redrockresorts.com/role/EarningsPerShareDetails">
+        <link:definition>9954510 - Disclosure - Earnings Per Share (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LeasesLesseeDisclosuresDetails" roleURI="http://www.redrockresorts.com/role/LeasesLesseeDisclosuresDetails">
+        <link:definition>9954511 - Disclosure - Leases Lessee Disclosures (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LeasesLessorDisclosuresDetails" roleURI="http://www.redrockresorts.com/role/LeasesLessorDisclosuresDetails">
+        <link:definition>9954512 - Disclosure - Leases Lessor Disclosures (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SegmentsDetails" roleURI="http://www.redrockresorts.com/role/SegmentsDetails">
+        <link:definition>9954513 - Disclosure - Segments (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ScheduleIIValuationandQualifyingAccountsDetails" roleURI="http://www.redrockresorts.com/role/ScheduleIIValuationandQualifyingAccountsDetails">
+        <link:definition>9954514 - Disclosure - Schedule II - Valuation and Qualifying Accounts (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element id="rrr_A4625SeniorNotesDueDecember12031Member" abstract="true" name="A4625SeniorNotesDueDecember12031Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="rrr_DevelopmentAndManagementAgreementsNativeAmericanLineItems" abstract="true" name="DevelopmentAndManagementAgreementsNativeAmericanLineItems" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="rrr_Rebalancingofownershippercentagebetweenentityandnoncontrollinginterestinsubsidiary" abstract="false" name="Rebalancingofownershippercentagebetweenentityandnoncontrollinginterestinsubsidiary" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="rrr_NoncontrollingInterestTotalOwnershipPercentage" abstract="false" name="NoncontrollingInterestTotalOwnershipPercentage" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+  <xs:element id="rrr_AmortizationExpenseForFiniteLivedIntangibleAssetsLineItems" abstract="true" name="AmortizationExpenseForFiniteLivedIntangibleAssetsLineItems" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="rrr_CurrentPortionOfPayablePursuantToTaxReceivableAgreement" abstract="false" name="CurrentPortionOfPayablePursuantToTaxReceivableAgreement" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="rrr_ManagementContractsMember" abstract="true" name="ManagementContractsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="rrr_ProfitUnitsClassifiedasLiabilityAwardsMember" abstract="true" name="ProfitUnitsClassifiedasLiabilityAwardsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="rrr_InterestCoverageRatio" abstract="false" name="InterestCoverageRatio" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="xbrli:pureItemType"/>
+  <xs:element id="rrr_TaxReceivableAgreementBasisSpreadonVariableRateLatePayments" abstract="false" name="TaxReceivableAgreementBasisSpreadonVariableRateLatePayments" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+  <xs:element id="rrr_StockIssuedDuringPeriodRatioConversionOfUnits" abstract="false" name="StockIssuedDuringPeriodRatioConversionOfUnits" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="xbrli:decimalItemType"/>
+  <xs:element id="rrr_WritedownsandOtherChargesnetPolicyTextBlock" abstract="false" name="WritedownsandOtherChargesnetPolicyTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:textBlockItemType"/>
+  <xs:element id="rrr_AccruedGamingLiabilitiesCurrent" abstract="false" name="AccruedGamingLiabilitiesCurrent" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="rrr_OtherLiabilitiesPolicyPolicyTextBlock" abstract="false" name="OtherLiabilitiesPolicyPolicyTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:textBlockItemType"/>
+  <xs:element id="rrr_LondonInterbankOfferedRateMember" abstract="true" name="LondonInterbankOfferedRateMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="rrr_TaxReceivableAgreementLiabilityAmountPaid" abstract="false" name="TaxReceivableAgreementLiabilityAmountPaid" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="rrr_NativeAmericanDevelopmentCostsPolicyTextBlock" abstract="false" name="NativeAmericanDevelopmentCostsPolicyTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:textBlockItemType"/>
+  <xs:element id="rrr_ScheduleofDefinedPensionPlanStatementsofFinancialPerformanceandFinancialPositionLocationTableTextBlock" abstract="false" name="ScheduleofDefinedPensionPlanStatementsofFinancialPerformanceandFinancialPositionLocationTableTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:textBlockItemType"/>
+  <xs:element id="rrr_BeneficialLeasesMember" abstract="true" name="BeneficialLeasesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="rrr_NonVotingUnitsMember" abstract="true" name="NonVotingUnitsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="rrr_NoncontrollingInterestUnitsOutstanding" abstract="false" name="NoncontrollingInterestUnitsOutstanding" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="xbrli:sharesItemType"/>
+  <xs:element id="rrr_GamingTaxExpense" abstract="false" name="GamingTaxExpense" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="rrr_NativeAmericanDevelopmentCostsNoncurrent" abstract="false" name="NativeAmericanDevelopmentCostsNoncurrent" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="rrr_TaxReceivableAgreementwithRelatedPartiesPolicyTextBlock" abstract="false" name="TaxReceivableAgreementwithRelatedPartiesPolicyTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:textBlockItemType"/>
+  <xs:element id="rrr_IncomelossattributiontononcontrollinginterestPolicyTextBlock" abstract="false" name="IncomelossattributiontononcontrollinginterestPolicyTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:textBlockItemType"/>
+  <xs:element id="rrr_FurnitureFixturesAndEquipmentMember" abstract="true" name="FurnitureFixturesAndEquipmentMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="rrr_DocumentAndEntityInformationAbstract" abstract="true" name="DocumentAndEntityInformationAbstract" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="rrr_FrankJ.FertittaIIIandLorenzoJFertittaMember" abstract="true" name="FrankJ.FertittaIIIandLorenzoJFertittaMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="rrr_EquityRepurchaseProgramMember" abstract="true" name="EquityRepurchaseProgramMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="rrr_IncreaseDecreaseInInventoriesAndPrepaidExpenses" abstract="false" name="IncreaseDecreaseInInventoriesAndPrepaidExpenses" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="rrr_WriteDownAndOtherChargesNetInCashFlowImpact" abstract="false" name="WriteDownAndOtherChargesNetInCashFlowImpact" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="rrr_EconomicInterestPercentage" abstract="false" name="EconomicInterestPercentage" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+  <xs:element id="rrr_StockRepurchasedAndRetiredDuringPeriodWeightedAveragePricePerShare" abstract="false" name="StockRepurchasedAndRetiredDuringPeriodWeightedAveragePricePerShare" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:perShareItemType"/>
+  <xs:element id="rrr_BrandsMember" abstract="true" name="BrandsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="rrr_ScheduleOfDepreciationExpenseTableTextBlock" abstract="false" name="ScheduleOfDepreciationExpenseTableTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:textBlockItemType"/>
+  <xs:element id="rrr_UnpaidWagersOutstandingChipsAndOtherCustomerRelatedLiabilities" abstract="false" name="UnpaidWagersOutstandingChipsAndOtherCustomerRelatedLiabilities" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="rrr_GoodwillPropertyPercentage" abstract="false" name="GoodwillPropertyPercentage" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="dtr-types:percentItemType"/>
+  <xs:element id="rrr_ManagementAgreementTerm" abstract="false" name="ManagementAgreementTerm" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:durationItemType"/>
+  <xs:element id="rrr_NativeAmericanDevelopmentProjectDisclosureTextBlock" abstract="false" name="NativeAmericanDevelopmentProjectDisclosureTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:textBlockItemType"/>
+  <xs:element id="rrr_FiStationInvestorMember" abstract="true" name="FiStationInvestorMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="rrr_RevolvingCreditFacilityDueFebruary72025Member" abstract="true" name="RevolvingCreditFacilityDueFebruary72025Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="rrr_OperatingIncomeAndLossesFromJointVentures" abstract="false" name="OperatingIncomeAndLossesFromJointVentures" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="rrr_TaxReceivableAgreementLiabilityAssignedDomain" abstract="true" name="TaxReceivableAgreementLiabilityAssignedDomain" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="rrr_CommonStockVotingRightsNumberofVotes" abstract="false" name="CommonStockVotingRightsNumberofVotes" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:integerItemType"/>
+  <xs:element id="rrr_RecognitionOfDeferredTaxAssetsResultingFromExchangesOfNoncontrollingInterests" abstract="false" name="RecognitionOfDeferredTaxAssetsResultingFromExchangesOfNoncontrollingInterests" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="rrr_ProfitUnitsMember" abstract="true" name="ProfitUnitsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="rrr_DevelopmentDisclosureAbstract" abstract="true" name="DevelopmentDisclosureAbstract" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="rrr_SpecialDividendMember" abstract="true" name="SpecialDividendMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="rrr_NotSubjecttoExpirationMember" abstract="true" name="NotSubjecttoExpirationMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="rrr_ComplimentaryGoodsandServicesMember" abstract="true" name="ComplimentaryGoodsandServicesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="rrr_SmallerCasinoPropertiesMember" abstract="true" name="SmallerCasinoPropertiesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="rrr_TermLoanAFacilityGrossDueFebruary72025Member" abstract="true" name="TermLoanAFacilityGrossDueFebruary72025Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="rrr_ReportableSegmentsMember" abstract="true" name="ReportableSegmentsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="rrr_IntangibleAssetsandBelowMarketLeasesGross" abstract="false" name="IntangibleAssetsandBelowMarketLeasesGross" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="rrr_OtherAdjustmentsToNetIncomeLoss" abstract="false" name="OtherAdjustmentsToNetIncomeLoss" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="rrr_DeferredTaxAssetTaxReceivableAgreement" abstract="false" name="DeferredTaxAssetTaxReceivableAgreement" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="rrr_VotingUnitsMember" abstract="true" name="VotingUnitsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="rrr_WildWildWestMember" abstract="true" name="WildWildWestMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="rrr_ExpirationDomain" abstract="true" name="ExpirationDomain" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="rrr_TaxReceivableAgreementLiabilityAssignedMember" abstract="true" name="TaxReceivableAgreementLiabilityAssignedMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="rrr_SCSonomaManagementLLCMember" abstract="true" name="SCSonomaManagementLLCMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="rrr_UnrealizedGainLossOnDerivaitveInstrumentsMember" abstract="true" name="UnrealizedGainLossOnDerivaitveInstrumentsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="rrr_TexasStationMember" abstract="true" name="TexasStationMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="rrr_PropertyDevelopmentFeePercentFee" abstract="false" name="PropertyDevelopmentFeePercentFee" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+  <xs:element id="rrr_EquityTenderMember" abstract="true" name="EquityTenderMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="rrr_NoncontrollingInterestTableTextBlock" abstract="false" name="NoncontrollingInterestTableTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:textBlockItemType"/>
+  <xs:element id="rrr_ScheduleofNetBenefitCostsandAmountsRecognizedinOtherComprehensiveIncomeLossTableTextBlock" abstract="false" name="ScheduleofNetBenefitCostsandAmountsRecognizedinOtherComprehensiveIncomeLossTableTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:textBlockItemType"/>
+  <xs:element id="rrr_ScheduleOfAmortizationExpenseForFiniteLivedIntangibleAssetsTable" abstract="true" name="ScheduleOfAmortizationExpenseForFiniteLivedIntangibleAssetsTable" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrldt:hypercubeItem" type="xbrli:stringItemType"/>
+  <xs:element id="rrr_UnrecognizedPensionLiabilityMember" abstract="true" name="UnrecognizedPensionLiabilityMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="rrr_LLCUnitHoldersMember" abstract="true" name="LLCUnitHoldersMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="rrr_TaxReceivableAgreementRealizedTaxBenefitsPayabletoSubsidiaryPercent" abstract="false" name="TaxReceivableAgreementRealizedTaxBenefitsPayabletoSubsidiaryPercent" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+  <xs:element id="rrr_TaxReceivableAgreementEstimatedTaxLiabilityNoncurrent" abstract="false" name="TaxReceivableAgreementEstimatedTaxLiabilityNoncurrent" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="rrr_FertittaEntertainmentMember" abstract="true" name="FertittaEntertainmentMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="rrr_EstimatedPeriodAfterConstructionBeginsFacilityIsCompletedAndOpenForBusiness" abstract="false" name="EstimatedPeriodAfterConstructionBeginsFacilityIsCompletedAndOpenForBusiness" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:durationItemType"/>
+  <xs:element id="rrr_IntangibleAssetsandBelowMarketLeasesNet" abstract="false" name="IntangibleAssetsandBelowMarketLeasesNet" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="rrr_TaxReceivableAgreementEstimatedTaxLiability" abstract="false" name="TaxReceivableAgreementEstimatedTaxLiability" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="rrr_RevolvingCreditFacilityAndTermLoanAFacilityDueFebruary72025Member" abstract="true" name="RevolvingCreditFacilityAndTermLoanAFacilityDueFebruary72025Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="rrr_A5.00SeniorNotesDueOctober12025Member" abstract="true" name="A5.00SeniorNotesDueOctober12025Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="rrr_SharebasedCompensationArrangementbySharebasedPaymentAwardOtherShareIncreaseDecreaseweightedaveragegrantdatefairvalue" abstract="false" name="SharebasedCompensationArrangementbySharebasedPaymentAwardOtherShareIncreaseDecreaseweightedaveragegrantdatefairvalue" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:perShareItemType"/>
+  <xs:element id="rrr_TaxReceivableAgreementLiabilityAssignedAxis" abstract="true" name="TaxReceivableAgreementLiabilityAssignedAxis" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrldt:dimensionItem" type="xbrli:stringItemType"/>
+  <xs:element id="rrr_ScheduleOfIndefiniteLivedAndFiniteLivedIntangibleAssetsTableTextBlock" abstract="false" name="ScheduleOfIndefiniteLivedAndFiniteLivedIntangibleAssetsTableTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:textBlockItemType"/>
+  <xs:element id="rrr_LLCMemberUnitsMember" abstract="true" name="LLCMemberUnitsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="rrr_NetDeferredTaxAssetsResultingFromEquityTransactions" abstract="false" name="NetDeferredTaxAssetsResultingFromEquityTransactions" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="rrr_SuccessfulProjectCompletionPercentage" abstract="false" name="SuccessfulProjectCompletionPercentage" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+  <xs:element id="rrr_TermLoanBFacilityDueFebruary72027Member" abstract="true" name="TermLoanBFacilityDueFebruary72027Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="rrr_Estimatedbeginningofconstructioninmonths" abstract="false" name="Estimatedbeginningofconstructioninmonths" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:durationItemType"/>
+  <xs:element id="rrr_SubjecttoExpirationMember" abstract="true" name="SubjecttoExpirationMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="rrr_DevelopmentAgreementTerm" abstract="false" name="DevelopmentAgreementTerm" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:durationItemType"/>
+  <xs:element id="rrr_FederatedIndiansOfGratonRancheriaMember" abstract="true" name="FederatedIndiansOfGratonRancheriaMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="rrr_ScheduleOfGamingTaxExpenseTableTextBlock" abstract="false" name="ScheduleOfGamingTaxExpenseTableTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:textBlockItemType"/>
+  <xs:element id="rrr_ScheduleOfAdvertisingExpenseTableTextBlock" abstract="false" name="ScheduleOfAdvertisingExpenseTableTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:textBlockItemType"/>
+  <xs:element id="rrr_StationHoldcoMember" abstract="true" name="StationHoldcoMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="rrr_PrincipalMaturitiesAbstract" abstract="true" name="PrincipalMaturitiesAbstract" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="rrr_NativeAmericanManagementMember" abstract="true" name="NativeAmericanManagementMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="rrr_ScheduleOfIndefiniteLivedAndFiniteLivedIntangibleAssetsTable" abstract="true" name="ScheduleOfIndefiniteLivedAndFiniteLivedIntangibleAssetsTable" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrldt:hypercubeItem" type="xbrli:stringItemType"/>
+  <xs:element id="rrr_RoomMember" abstract="true" name="RoomMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="rrr_NumberOfProjectSites" abstract="false" name="NumberOfProjectSites" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="xbrli:integerItemType"/>
+  <xs:element id="rrr_AdjustedEBITDA" abstract="false" name="AdjustedEBITDA" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="rrr_A4.50SeniorNotesDueFebruary152028Member" abstract="true" name="A4.50SeniorNotesDueFebruary152028Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="rrr_ScheduleofIndefiniteLivedandFiniteLivedIntangibleAssetsAbstract" abstract="true" name="ScheduleofIndefiniteLivedandFiniteLivedIntangibleAssetsAbstract" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="rrr_TermLoanAFacilityDueFebruary72025Member" abstract="true" name="TermLoanAFacilityDueFebruary72025Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="rrr_BelowMarketLeaseMember" abstract="true" name="BelowMarketLeaseMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="rrr_LasVegasOperationsMember" abstract="true" name="LasVegasOperationsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="rrr_LineofCreditandRevolvingCreditFacilityMember" abstract="true" name="LineofCreditandRevolvingCreditFacilityMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="rrr_TaxesOtherThanIncomeTaxesPolicyTextBlock" abstract="false" name="TaxesOtherThanIncomeTaxesPolicyTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:textBlockItemType"/>
+  <xs:element id="rrr_NorthForkRancheriaOfMonoIndiansMember" abstract="true" name="NorthForkRancheriaOfMonoIndiansMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="rrr_BoulderStationMember" abstract="true" name="BoulderStationMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="rrr_NumberOfSlotMachines" abstract="false" name="NumberOfSlotMachines" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="xbrli:integerItemType"/>
+  <xs:element id="rrr_ScheduleOfPropertyAndEquipmentUsefulLivesTableTextBlock" abstract="false" name="ScheduleOfPropertyAndEquipmentUsefulLivesTableTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:textBlockItemType"/>
+  <xs:element id="rrr_LandHeldForDevelopmentMember" abstract="true" name="LandHeldForDevelopmentMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="rrr_NetIncomeAttributabletoRedRockResortsInc.andTransferstofromNoncontrollingInterestsAbstract" abstract="true" name="NetIncomeAttributabletoRedRockResortsInc.andTransferstofromNoncontrollingInterestsAbstract" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="rrr_WriteDownsAndOtherNet" abstract="false" name="WriteDownsAndOtherNet" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="rrr_WritedownsandOtherChargesNetTextBlock" abstract="false" name="WritedownsandOtherChargesNetTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:textBlockItemType"/>
+  <xs:element id="rrr_StationCasinosLlcMember" abstract="true" name="StationCasinosLlcMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="rrr_IndefiniteLivedAndFiniteLivedIntangibleAssetsLineItems" abstract="true" name="IndefiniteLivedAndFiniteLivedIntangibleAssetsLineItems" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="rrr_ScheduleOfDevelopmentAndManagementAgreementsTableTextBlock" abstract="false" name="ScheduleOfDevelopmentAndManagementAgreementsTableTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:textBlockItemType"/>
+  <xs:element id="rrr_FertittaInteractiveMember" abstract="true" name="FertittaInteractiveMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="rrr_NumberofClassesofStockAuthorized" abstract="false" name="NumberofClassesofStockAuthorized" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="xbrli:integerItemType"/>
+  <xs:element id="rrr_InterestLimitationTaxCreditMember" abstract="true" name="InterestLimitationTaxCreditMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="rrr_FiestaHendersonMember" abstract="true" name="FiestaHendersonMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="rrr_DisposalGroupNoLongerHeldForSaleNotDiscontinuedOperationsMember" abstract="true" name="DisposalGroupNoLongerHeldForSaleNotDiscontinuedOperationsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="rrr_DurangoResortMember" abstract="true" name="DurangoResortMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="rrr_AssetsHeldForSalePolicyTextBlock" abstract="false" name="AssetsHeldForSalePolicyTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:textBlockItemType"/>
+  <xs:element id="rrr_PaymentsForNativeAmericanDevelopmentCosts" abstract="false" name="PaymentsForNativeAmericanDevelopmentCosts" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="rrr_PretaxAttributesMember" abstract="true" name="PretaxAttributesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="rrr_DemolitionCostsMember" abstract="true" name="DemolitionCostsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="rrr_DebtInstrumentUnamortizedDiscountandDebtIssueCosts" abstract="false" name="DebtInstrumentUnamortizedDiscountandDebtIssueCosts" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="rrr_FertittaFamilyEntitiesMember" abstract="true" name="FertittaFamilyEntitiesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="rrr_EstimatedcostsforNativeAmericandevelopmentprojects" abstract="false" name="EstimatedcostsforNativeAmericandevelopmentprojects" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="rrr_Recognitionoftaxreceivableagreementliabilityresultingfromexchangesofnoncontrollinginterests" abstract="false" name="Recognitionoftaxreceivableagreementliabilityresultingfromexchangesofnoncontrollinginterests" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="rrr_ShareBasedCompensationPlansPriorToIPO" abstract="false" name="ShareBasedCompensationPlansPriorToIPO" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:integerItemType"/>
+  <xs:element id="rrr_MajorHotelCasinoPropertiesMember" abstract="true" name="MajorHotelCasinoPropertiesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="rrr_NumberOfTableGames" abstract="false" name="NumberOfTableGames" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="xbrli:integerItemType"/>
+  <xs:element id="rrr_LicenseRightsMember" abstract="true" name="LicenseRightsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="rrr_RedRockResortsMember" abstract="true" name="RedRockResortsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="rrr_IntangibleAssetsandBelowMarketLeasesAccumulatedAmortization" abstract="false" name="IntangibleAssetsandBelowMarketLeasesAccumulatedAmortization" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="rrr_StockOptionsWithheldForExercisePrice" abstract="false" name="StockOptionsWithheldForExercisePrice" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:sharesItemType"/>
+  <xs:element id="rrr_Taxreceivableagreementliabilityadjustment" abstract="false" name="Taxreceivableagreementliabilityadjustment" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="rrr_DevelopmentAndManagementAgreementsNativeAmericanTable" abstract="true" name="DevelopmentAndManagementAgreementsNativeAmericanTable" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrldt:hypercubeItem" type="xbrli:stringItemType"/>
+  <xs:element id="rrr_ReimbursableadvancesforNativeAmericanDevelopment" abstract="false" name="ReimbursableadvancesforNativeAmericanDevelopment" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="rrr_DebtInstrumentRedemptionDuetoCertainAssetSalesMember" abstract="true" name="DebtInstrumentRedemptionDuetoCertainAssetSalesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="rrr_ControllingMembersEquityMember" abstract="true" name="ControllingMembersEquityMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="rrr_ExpirationAxis" abstract="true" name="ExpirationAxis" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrldt:dimensionItem" type="xbrli:stringItemType"/>
+  <xs:element id="rrr_DebtInstrumentRedemptionDuetoChangeinControlMember" abstract="true" name="DebtInstrumentRedemptionDuetoChangeinControlMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="rrr_PalmsCasinoResortMember" abstract="true" name="PalmsCasinoResortMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="rrr_RevolvingCreditFacilityandTermLoanAFacilityDueFebruary72025Domain" abstract="true" name="RevolvingCreditFacilityandTermLoanAFacilityDueFebruary72025Domain" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="rrr_ShareBasedCompensationArrangementByShareBasedPaymentAwardSharesUnvested" abstract="false" name="ShareBasedCompensationArrangementByShareBasedPaymentAwardSharesUnvested" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:sharesItemType"/>
+  <xs:element id="rrr_ArtistTerminationCostsMember" abstract="true" name="ArtistTerminationCostsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+</xs:schema>
