@@ -1,0 +1,774 @@
+<?xml version="1.0" encoding="us-ascii" standalone="yes"?>
+<!--XBRL Document Created with XBRLMaster-->
+<!--Version: 2.3.08-->
+<!--Based on XBRL 2.1-->
+<!--Date of creation: 11/20/2023-->
+<!--Software architectural design and coding: A'c Dharmapremananda Avt.-->
+<!--Copyright (c) 2023 I-NET Business Solutions, Inc. All Rights Reserved.-->
+<schema xmlns:xl="http://www.xbrl.org/2003/XLink" xmlns:ref="http://www.xbrl.org/2006/ref" xmlns:currency="http://xbrl.sec.gov/currency/2023" xmlns:us-gaap-att="http://fasb.org/us-gaap/attributes" xmlns:sic="http://xbrl.sec.gov/sic/2023" xmlns:exch="http://xbrl.sec.gov/exch/2023" xmlns:invest="http://xbrl.sec.gov/invest/2013-01-31" xmlns:negated="http://www.xbrl.org/2009/role/negated" xmlns:naics="http://xbrl.sec.gov/naics/2023" xmlns:us-types="http://fasb.org/us-types/2023" xmlns:stpr="http://xbrl.sec.gov/stpr/2023" xmlns="http://www.w3.org/2001/XMLSchema" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:xbrli="http://www.xbrl.org/2003/instance" xmlns:xbrldt="http://xbrl.org/2005/xbrldt" xmlns:xbrldi="http://xbrl.org/2006/xbrldi" xmlns:country="http://xbrl.sec.gov/country/2023" xmlns:utr="http://www.xbrl.org/2009/utr" xmlns:srt-types="http://fasb.org/srt-types/2023" xmlns:dtr-types="http://www.xbrl.org/dtr/type/2020-01-21" xmlns:srt-roles="http://fasb.org/srt-roles/2023" xmlns:dei="http://xbrl.sec.gov/dei/2023" xmlns:num="http://www.xbrl.org/dtr/type/numeric" xmlns:nonnum="http://www.xbrl.org/dtr/type/non-numeric" xmlns:srt="http://fasb.org/srt/2023" xmlns:us-gaap="http://fasb.org/us-gaap/2023" xmlns:cosm="http://cosm.com/20230930" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://cosm.com/20230930">
+  <annotation>
+    <appinfo>
+      <link:roleType roleURI="http://cosm.com/role/Cover" id="Cover">
+        <link:definition>000001 - Document - Cover</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://cosm.com/role/CondensedConsolidatedBalanceSheets" id="CondensedConsolidatedBalanceSheets">
+        <link:definition>000002 - Statement - CONDENSED CONSOLIDATED BALANCE SHEETS</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://cosm.com/role/CondensedConsolidatedBalanceSheetsParenthetical" id="CondensedConsolidatedBalanceSheetsParenthetical">
+        <link:definition>000003 - Statement - CONDENSED CONSOLIDATED BALANCE SHEETS (Parenthetical)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://cosm.com/role/CondensedConsolidatedStatementsOfOperationsAndComprehensiveIncomeLossUnaudited" id="CondensedConsolidatedStatementsOfOperationsAndComprehensiveIncomeLossUnaudited">
+        <link:definition>000004 - Statement - CONDENSED CONSOLIDATED STATEMENTS OF OPERATIONS AND COMPREHENSIVE INCOME (LOSS) (Unaudited)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://cosm.com/role/CondensedConsolidatedStatementsOfChangesInStockholdersEquityDeficitAndMezzanineEquityUnaudited" id="CondensedConsolidatedStatementsOfChangesInStockholdersEquityDeficitAndMezzanineEquityUnaudited">
+        <link:definition>000005 - Statement - CONDENSED CONSOLIDATED STATEMENTS OF CHANGES IN STOCKHOLDERS' EQUITY (DEFICIT) AND MEZZANINE EQUITY (Unaudited)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://cosm.com/role/CondensedConsolidatedStatementsOfCashFlowsUnaudited" id="CondensedConsolidatedStatementsOfCashFlowsUnaudited">
+        <link:definition>000006 - Statement - CONDENSED CONSOLIDATED STATEMENTS OF CASH FLOWS (Unaudited)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://cosm.com/role/BasisOfPresentation" id="BasisOfPresentation">
+        <link:definition>000007 - Disclosure - BASIS OF PRESENTATION</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://cosm.com/role/OrganizationAndNatureOfTheBusiness" id="OrganizationAndNatureOfTheBusiness">
+        <link:definition>000008 - Disclosure - ORGANIZATION AND NATURE OF THE BUSINESS</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://cosm.com/role/EquityMethodInvestments" id="EquityMethodInvestments">
+        <link:definition>000009 - Disclosure - EQUITY METHOD INVESTMENTS</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://cosm.com/role/PropertyPlantAndEquipmentNet" id="PropertyPlantAndEquipmentNet">
+        <link:definition>000010 - Disclosure - PROPERTY, PLANT AND EQUIPMENT, NET</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://cosm.com/role/GoodwillAndIntangibleAssetsNet" id="GoodwillAndIntangibleAssetsNet">
+        <link:definition>000011 - Disclosure - GOODWILL AND INTANGIBLE ASSETS, NET</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://cosm.com/role/LoanReceivable" id="LoanReceivable">
+        <link:definition>000012 - Disclosure - LOAN RECEIVABLE</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://cosm.com/role/IncomeTaxes" id="IncomeTaxes">
+        <link:definition>000013 - Disclosure - INCOME TAXES</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://cosm.com/role/CapitalStructure" id="CapitalStructure">
+        <link:definition>000014 - Disclosure - CAPITAL STRUCTURE</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://cosm.com/role/RelatedPartyTransactions" id="RelatedPartyTransactions">
+        <link:definition>000015 - Disclosure - RELATED PARTY TRANSACTIONS</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://cosm.com/role/LinesOfCredit" id="LinesOfCredit">
+        <link:definition>000016 - Disclosure - LINES OF CREDIT</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://cosm.com/role/ConvertibleDebt" id="ConvertibleDebt">
+        <link:definition>000017 - Disclosure - CONVERTIBLE DEBT</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://cosm.com/role/DEBT" id="DEBT">
+        <link:definition>000018 - Disclosure - DEBT</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://cosm.com/role/LEASES" id="LEASES">
+        <link:definition>000019 - Disclosure - LEASES</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://cosm.com/role/CommitmentsAndContingencies" id="CommitmentsAndContingencies">
+        <link:definition>000020 - Disclosure - COMMITMENTS AND CONTINGENCIES</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://cosm.com/role/WARRANTS" id="WARRANTS">
+        <link:definition>000021 - Disclosure - WARRANTS</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://cosm.com/role/DisaggregationOfRevenue" id="DisaggregationOfRevenue">
+        <link:definition>000022 - Disclosure - DISAGGREGATION OF REVENUE</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://cosm.com/role/SegmentReporting" id="SegmentReporting">
+        <link:definition>000023 - Disclosure - SEGMENT REPORTING</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://cosm.com/role/SubsequentEvents" id="SubsequentEvents">
+        <link:definition>000024 - Disclosure - SUBSEQUENT EVENTS</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://cosm.com/role/OrganizationNatureOfBusinessAndGoingConcernPolicies" id="OrganizationNatureOfBusinessAndGoingConcernPolicies">
+        <link:definition>000025 - Disclosure - ORGANIZATION NATURE OF BUSINESS AND GOING CONCERN (Policies)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://cosm.com/role/OrganizationNatureOfBusinessAndGoingConcernTables" id="OrganizationNatureOfBusinessAndGoingConcernTables">
+        <link:definition>000026 - Disclosure - ORGANIZATION NATURE OF BUSINESS AND GOING CONCERN (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://cosm.com/role/PropertyPlantAndEquipmentNetTables" id="PropertyPlantAndEquipmentNetTables">
+        <link:definition>000027 - Disclosure - PROPERTY, PLANT AND EQUIPMENT, NET (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://cosm.com/role/GoodwillAndIntangibleAssetsNetTables" id="GoodwillAndIntangibleAssetsNetTables">
+        <link:definition>000028 - Disclosure - GOODWILL AND INTANGIBLE ASSETS, NET (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://cosm.com/role/RelatedPartyTransactionsTables" id="RelatedPartyTransactionsTables">
+        <link:definition>000029 - Disclosure - RELATED PARTY TRANSACTIONS (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://cosm.com/role/LinesOfCreditTables" id="LinesOfCreditTables">
+        <link:definition>000030 - Disclosure - LINES OF CREDIT (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://cosm.com/role/ConvertibleDebtTables" id="ConvertibleDebtTables">
+        <link:definition>000031 - Disclosure - CONVERTIBLE DEBT (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://cosm.com/role/DebtTables" id="DebtTables">
+        <link:definition>000032 - Disclosure - DEBT (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://cosm.com/role/LeasesTables" id="LeasesTables">
+        <link:definition>000033 - Disclosure - LEASES (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://cosm.com/role/WarrantsTables" id="WarrantsTables">
+        <link:definition>000034 - Disclosure - WARRANTS (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://cosm.com/role/DisaggregationOfRevenueTables" id="DisaggregationOfRevenueTables">
+        <link:definition>000035 - Disclosure - DISAGGREGATION OF REVENUE (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://cosm.com/role/SegmentReportingTables" id="SegmentReportingTables">
+        <link:definition>000036 - Disclosure - SEGMENT REPORTING (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://cosm.com/role/BasisOfPresentationDetailsNarrative" id="BasisOfPresentationDetailsNarrative">
+        <link:definition>000037 - Disclosure - BASIS OF PRESENTATION (Details Narrative)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://cosm.com/role/OrganizationAndNatureOfTheBusinessDetails" id="OrganizationAndNatureOfTheBusinessDetails">
+        <link:definition>000038 - Disclosure - ORGANIZATION AND NATURE OF THE BUSINESS (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://cosm.com/role/OrganizationAndNatureOfTheBusinessDetails1" id="OrganizationAndNatureOfTheBusinessDetails1">
+        <link:definition>000039 - Disclosure - ORGANIZATION AND NATURE OF THE BUSINESS (Details 1)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://cosm.com/role/OrganizationAndNatureOfTheBusinessDetails2" id="OrganizationAndNatureOfTheBusinessDetails2">
+        <link:definition>000040 - Disclosure - ORGANIZATION AND NATURE OF THE BUSINESS (Details 2)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://cosm.com/role/OrganizationAndNatureOfTheBusinessDetails3" id="OrganizationAndNatureOfTheBusinessDetails3">
+        <link:definition>000041 - Disclosure - ORGANIZATION AND NATURE OF THE BUSINESS (Details 3)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://cosm.com/role/OrganizationAndNatureOfTheBusinessDetailsNarrative" id="OrganizationAndNatureOfTheBusinessDetailsNarrative">
+        <link:definition>000042 - Disclosure - ORGANIZATION AND NATURE OF THE BUSINESS (Details Narrative)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://cosm.com/role/EquityMethodInvestmentsDetailsNarrative" id="EquityMethodInvestmentsDetailsNarrative">
+        <link:definition>000043 - Disclosure - EQUITY METHOD INVESTMENTS (Details Narrative)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://cosm.com/role/PropertyPlantAndEquipmentNetDetails" id="PropertyPlantAndEquipmentNetDetails">
+        <link:definition>000044 - Disclosure - PROPERTY, PLANT AND EQUIPMENT, NET (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://cosm.com/role/GoodwillAndIntangibleAssetsNetDetails" id="GoodwillAndIntangibleAssetsNetDetails">
+        <link:definition>000045 - Disclosure - GOODWILL AND INTANGIBLE ASSETS, NET (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://cosm.com/role/GoodwillAndIntangibleAssetsNetDetails1" id="GoodwillAndIntangibleAssetsNetDetails1">
+        <link:definition>000046 - Disclosure - GOODWILL AND INTANGIBLE ASSETS, NET (Details 1)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://cosm.com/role/LoanReceivableDetailsNarrative" id="LoanReceivableDetailsNarrative">
+        <link:definition>000047 - Disclosure - LOAN RECEIVABLE (Details Narrative)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://cosm.com/role/IncomeTaxesDetailsNarrative" id="IncomeTaxesDetailsNarrative">
+        <link:definition>000048 - Disclosure - INCOME TAXES (Details Narrative)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://cosm.com/role/CapitalStructureDetailsNarrative" id="CapitalStructureDetailsNarrative">
+        <link:definition>000049 - Disclosure - CAPITAL STRUCTURE (Details Narrative)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://cosm.com/role/RelatedPartyTransactionsDetails" id="RelatedPartyTransactionsDetails">
+        <link:definition>000050 - Disclosure - RELATED PARTY TRANSACTIONS (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://cosm.com/role/RelatedPartyTransactionsDetails1" id="RelatedPartyTransactionsDetails1">
+        <link:definition>000051 - Disclosure - RELATED PARTY TRANSACTIONS (Details 1)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://cosm.com/role/RelatedPartyTransactionsDetailsNarrative" id="RelatedPartyTransactionsDetailsNarrative">
+        <link:definition>000052 - Disclosure - RELATED PARTY TRANSACTIONS (Details Narrative)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://cosm.com/role/LinesOfCreditDetails" id="LinesOfCreditDetails">
+        <link:definition>000053 - Disclosure - LINES OF CREDIT (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://cosm.com/role/LinesOfCreditDetailsNarrative" id="LinesOfCreditDetailsNarrative">
+        <link:definition>000054 - Disclosure - LINES OF CREDIT (Details Narrative)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://cosm.com/role/ConvertibleDebtDetails" id="ConvertibleDebtDetails">
+        <link:definition>000055 - Disclosure - CONVERTIBLE DEBT (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://cosm.com/role/ConvertibleDebtDetails1" id="ConvertibleDebtDetails1">
+        <link:definition>000056 - Disclosure - CONVERTIBLE DEBT (Details 1)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://cosm.com/role/ConvertibleDebtDetails2" id="ConvertibleDebtDetails2">
+        <link:definition>000057 - Disclosure - CONVERTIBLE DEBT (Details 2)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://cosm.com/role/ConvertibleDebtDetailsNarrative" id="ConvertibleDebtDetailsNarrative">
+        <link:definition>000058 - Disclosure - CONVERTIBLE DEBT (Details Narrative)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://cosm.com/role/DebtDetails" id="DebtDetails">
+        <link:definition>000059 - Disclosure - DEBT (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://cosm.com/role/DebtDetails1" id="DebtDetails1">
+        <link:definition>000060 - Disclosure - DEBT (Details 1)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://cosm.com/role/DebtDetailsNarrative" id="DebtDetailsNarrative">
+        <link:definition>000061 - Disclosure - DEBT (Details Narrative)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://cosm.com/role/LeasesDetails" id="LeasesDetails">
+        <link:definition>000062 - Disclosure - LEASES (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://cosm.com/role/LeasesDetails1" id="LeasesDetails1">
+        <link:definition>000063 - Disclosure - LEASES (Details 1)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://cosm.com/role/LeasesDetailsNarrative" id="LeasesDetailsNarrative">
+        <link:definition>000064 - Disclosure - LEASES (Details Narrative)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://cosm.com/role/CommitmentsAndContingenciesDetailsNarrative" id="CommitmentsAndContingenciesDetailsNarrative">
+        <link:definition>000065 - Disclosure - COMMITMENTS AND CONTINGENCIES (Details Narrative)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://cosm.com/role/WarrantsDetails" id="WarrantsDetails">
+        <link:definition>000066 - Disclosure - WARRANTS (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://cosm.com/role/WarrantsDetailsNarrative" id="WarrantsDetailsNarrative">
+        <link:definition>000067 - Disclosure - WARRANTS (Details Narrative)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://cosm.com/role/DisaggregationOfRevenueDetails" id="DisaggregationOfRevenueDetails">
+        <link:definition>000068 - Disclosure - DISAGGREGATION OF REVENUE (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://cosm.com/role/SegmentReportingDetails" id="SegmentReportingDetails">
+        <link:definition>000069 - Disclosure - SEGMENT REPORTING (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://cosm.com/role/SubsequentEventsDetailsNarrative" id="SubsequentEventsDetailsNarrative">
+        <link:definition>000070 - Disclosure - SUBSEQUENT EVENTS (Details Narrative)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:linkbaseRef xlink:type="simple" xlink:href="cosm-20230930_pre.xml" xlink:role="http://www.xbrl.org/2003/role/presentationLinkbaseRef" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" />
+      <link:linkbaseRef xlink:type="simple" xlink:href="cosm-20230930_lab.xml" xlink:role="http://www.xbrl.org/2003/role/labelLinkbaseRef" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" />
+      <link:linkbaseRef xlink:type="simple" xlink:href="cosm-20230930_cal.xml" xlink:role="http://www.xbrl.org/2003/role/calculationLinkbaseRef" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" />
+      <link:linkbaseRef xlink:type="simple" xlink:href="cosm-20230930_def.xml" xlink:role="http://www.xbrl.org/2003/role/definitionLinkbaseRef" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" />
+    </appinfo>
+  </annotation>
+  <import namespace="http://www.xbrl.org/2003/instance" schemaLocation="http://www.xbrl.org/2003/xbrl-instance-2003-12-31.xsd" />
+  <import namespace="http://www.xbrl.org/2003/linkbase" schemaLocation="http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd" />
+  <import namespace="http://xbrl.org/2005/xbrldt" schemaLocation="http://www.xbrl.org/2005/xbrldt-2005.xsd" />
+  <import namespace="http://xbrl.sec.gov/country/2023" schemaLocation="https://xbrl.sec.gov/country/2023/country-2023.xsd" />
+  <import namespace="http://xbrl.sec.gov/currency/2023" schemaLocation="https://xbrl.sec.gov/currency/2023/currency-2023.xsd" />
+  <import namespace="http://xbrl.sec.gov/dei/2023" schemaLocation="https://xbrl.sec.gov/dei/2023/dei-2023.xsd" />
+  <import namespace="http://www.xbrl.org/dtr/type/non-numeric" schemaLocation="http://www.xbrl.org/dtr/type/nonNumeric-2009-12-16.xsd" />
+  <import namespace="http://www.xbrl.org/dtr/type/numeric" schemaLocation="http://www.xbrl.org/dtr/type/numeric-2009-12-16.xsd" />
+  <import namespace="http://xbrl.sec.gov/exch/2023" schemaLocation="https://xbrl.sec.gov/exch/2023/exch-2023.xsd" />
+  <import namespace="http://www.xbrl.org/2009/arcrole/fact-explanatoryFact" schemaLocation="http://www.xbrl.org/lrr/arcrole/factExplanatory-2009-12-16.xsd" />
+  <import namespace="http://www.xbrl.org/2009/role/negated" schemaLocation="http://www.xbrl.org/lrr/role/negated-2009-12-16.xsd" />
+  <import namespace="http://www.xbrl.org/2009/role/net" schemaLocation="http://www.xbrl.org/lrr/role/net-2009-12-16.xsd" />
+  <import namespace="http://xbrl.sec.gov/naics/2023" schemaLocation="https://xbrl.sec.gov/naics/2023/naics-2023.xsd" />
+  <import namespace="http://xbrl.sec.gov/sic/2023" schemaLocation="https://xbrl.sec.gov/sic/2023/sic-2023.xsd" />
+  <import namespace="http://fasb.org/srt-roles/2023" schemaLocation="https://xbrl.fasb.org/srt/2023/elts/srt-roles-2023.xsd" />
+  <import namespace="http://fasb.org/srt-types/2023" schemaLocation="https://xbrl.fasb.org/srt/2023/elts/srt-types-2023.xsd" />
+  <import namespace="http://www.xbrl.org/dtr/type/2020-01-21" schemaLocation="https://www.xbrl.org/dtr/type/2020-01-21/types.xsd" />
+  <import namespace="http://xbrl.sec.gov/stpr/2023" schemaLocation="https://xbrl.sec.gov/stpr/2023/stpr-2023.xsd" />
+  <import namespace="http://fasb.org/us-roles/2023" schemaLocation="https://xbrl.fasb.org/us-gaap/2023/elts/us-roles-2023.xsd" />
+  <import namespace="http://fasb.org/us-types/2023" schemaLocation="https://xbrl.fasb.org/us-gaap/2023/elts/us-types-2023.xsd" />
+  <import namespace="http://fasb.org/srt/2023" schemaLocation="https://xbrl.fasb.org/srt/2023/elts/srt-2023.xsd" />
+  <import namespace="http://fasb.org/us-gaap/2023" schemaLocation="https://xbrl.fasb.org/us-gaap/2023/elts/us-gaap-2023.xsd" />
+  <element id="cosm_AmountAccountsReceivableRelatedPartiesCurrent" name="AmountAccountsReceivableRelatedPartiesCurrent" nillable="true" xbrli:balance="debit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="cosm_LoansReceivableCurrent" name="LoansReceivableCurrent" nillable="true" xbrli:balance="debit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="cosm_LoansReceivableNoncurrent" name="LoansReceivableNoncurrent" nillable="true" xbrli:balance="debit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="cosm_LoansReceivableRelatedPartyLongTerm" name="LoansReceivableRelatedPartyLongTerm" nillable="true" xbrli:balance="debit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="cosm_AdvancesForBuildingsAcquisition" name="AdvancesForBuildingsAcquisition" nillable="true" xbrli:balance="debit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="cosm_AccountPayableRelatedPartiesCurrent" name="AccountPayableRelatedPartiesCurrent" nillable="true" xbrli:balance="credit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="cosm_ConvertibleNotesPayableUnamortizedDiscount" name="ConvertibleNotesPayableUnamortizedDiscount" nillable="true" xbrli:balance="credit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="cosm_NotesPayableRelatedPartiesCurrent" name="NotesPayableRelatedPartiesCurrent" nillable="true" xbrli:balance="credit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="cosm_LoansPayableRelatedParty" name="LoansPayableRelatedParty" nillable="true" xbrli:balance="credit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="cosm_ShareSettledDebtObligation" name="ShareSettledDebtObligation" nillable="true" xbrli:balance="credit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="cosm_PreferredStock0001ParValue100000000SharesAuthorizedAbstract" name="PreferredStock0001ParValue100000000SharesAuthorizedAbstract" nillable="true" abstract="true" xbrli:periodType="duration" type="xbrli:stringItemType" substitutionGroup="xbrli:item" />
+  <element id="cosm_ConvertibleNotesPayableNetOfUnamortizedDiscount" name="ConvertibleNotesPayableNetOfUnamortizedDiscount" nillable="true" xbrli:balance="credit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="cosm_GainLossOnSalesOfEquityInvestments" name="GainLossOnSalesOfEquityInvestments" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="cosm_GainOnExtinguishmentOfDebt" name="GainOnExtinguishmentOfDebt" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="cosm_ChangeInFairValueOfDerivativeLiability" name="ChangeInFairValueOfDerivativeLiability" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="cosm_BargainPurchaseGain" name="BargainPurchaseGain" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="cosm_DeemedDividendOnIssuanceOfWarrants" name="DeemedDividendOnIssuanceOfWarrants" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="cosm_DeemedDividendOnDownroundOfWarrants" name="DeemedDividendOnDownroundOfWarrants" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="cosm_DeemedDividendOnDownroundOfPreferredStock" name="DeemedDividendOnDownroundOfPreferredStock" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="cosm_DeemedDividendOnPreferredStock" name="DeemedDividendOnPreferredStock" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="cosm_NetLossAttributableToCommonStockholders" name="NetLossAttributableToCommonStockholders" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="cosm_ForeignCurrencyTranslationAdjustmentNet" name="ForeignCurrencyTranslationAdjustmentNet" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="cosm_AdoptionOfAsus" name="AdoptionOfAsus" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="cosm_IssuanceOfSeriesAPreferredStockShares" name="IssuanceOfSeriesAPreferredStockShares" nillable="true" xbrli:periodType="duration" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" />
+  <element id="cosm_IssuanceOfSeriesAPreferredStockAmount" name="IssuanceOfSeriesAPreferredStockAmount" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="cosm_ConversionOfNotesPayableIntoSharesOfCommonStockShares" name="ConversionOfNotesPayableIntoSharesOfCommonStockShares" nillable="true" xbrli:periodType="duration" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" />
+  <element id="cosm_ConversionOfNotesPayableIntoSharesOfCommonStockAmount" name="ConversionOfNotesPayableIntoSharesOfCommonStockAmount" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="cosm_CashlessExerciseOfWarrantsShares" name="CashlessExerciseOfWarrantsShares" nillable="true" xbrli:periodType="duration" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" />
+  <element id="cosm_CashlessExerciseOfWarrantsAmount" name="CashlessExerciseOfWarrantsAmount" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="cosm_ConversionOfSeriesAPreferredStockShares" name="ConversionOfSeriesAPreferredStockShares" nillable="true" xbrli:periodType="duration" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" />
+  <element id="cosm_ConversionOfSeriesAPreferredStockAmount" name="ConversionOfSeriesAPreferredStockAmount" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="cosm_ConversionOfConvertibleDebtShares" name="ConversionOfConvertibleDebtShares" nillable="true" xbrli:periodType="duration" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" />
+  <element id="cosm_ConversionOfConvertibleDebtAmount" name="ConversionOfConvertibleDebtAmount" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="cosm_RestrictedStockIssuedToAConsultant" name="RestrictedStockIssuedToAConsultant" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="cosm_DeemedDividendUponDownroundOfPreferredStockAnd" name="DeemedDividendUponDownroundOfPreferredStockAnd" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="cosm_PaymentOfDeemedDividendOnPreferredStock" name="PaymentOfDeemedDividendOnPreferredStock" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="cosm_StockBasedCompensation" name="StockBasedCompensation" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="cosm_StockBasedCompensationShares" name="StockBasedCompensationShares" nillable="true" xbrli:periodType="duration" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" />
+  <element id="cosm_StockBasedCompensationAmount" name="StockBasedCompensationAmount" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="cosm_ProceedsFromSaleOfCommonStock" name="ProceedsFromSaleOfCommonStock" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="cosm_SharesIssuedInLieuOfCashShares" name="SharesIssuedInLieuOfCashShares" nillable="true" xbrli:periodType="duration" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" />
+  <element id="cosm_SharesIssuedInLieuOfCashAmount" name="SharesIssuedInLieuOfCashAmount" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="cosm_SharesIssuedForPurchaseOfCustomerBaseShares" name="SharesIssuedForPurchaseOfCustomerBaseShares" nillable="true" xbrli:periodType="duration" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" />
+  <element id="cosm_SharesIssuedForPurchaseOfCustomerBaseAmount" name="SharesIssuedForPurchaseOfCustomerBaseAmount" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="cosm_SharesIssuedForPurchaseOfCanaShares" name="SharesIssuedForPurchaseOfCanaShares" nillable="true" xbrli:periodType="duration" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" />
+  <element id="cosm_SharesIssuedForPurchaseOfCanaAmount" name="SharesIssuedForPurchaseOfCanaAmount" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="cosm_ProceedsFromSaleOfCommonStockNetOfFinancingFeesOf442870Shares" name="ProceedsFromSaleOfCommonStockNetOfFinancingFeesOf442870Shares" nillable="true" xbrli:periodType="duration" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" />
+  <element id="cosm_ProceedsFromSaleOfCommonStockNetOfFinancingFeesOf442870Amount" name="ProceedsFromSaleOfCommonStockNetOfFinancingFeesOf442870Amount" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="cosm_RepurchaseOfTreasuryStockShares" name="RepurchaseOfTreasuryStockShares" nillable="true" xbrli:periodType="duration" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" />
+  <element id="cosm_RepurchaseOfTreasuryStockAmount" name="RepurchaseOfTreasuryStockAmount" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="cosm_ProvisionsForExtraordinaryTaxCharges" name="ProvisionsForExtraordinaryTaxCharges" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="cosm_SharesIssuedInLieuOfCash" name="SharesIssuedInLieuOfCash" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="cosm_GainLossOnBargainPurchase" name="GainLossOnBargainPurchase" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="cosm_ChangeInFairValueOfTheDerivativeLiability" name="ChangeInFairValueOfTheDerivativeLiability" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="cosm_IncreaseDecreaseInPrepaidExpensesAndOtherCurrentAssetsRelatedParty" name="IncreaseDecreaseInPrepaidExpensesAndOtherCurrentAssetsRelatedParty" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="cosm_IncreaseDecreaseInAccruedInterest" name="IncreaseDecreaseInAccruedInterest" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="cosm_IncreaseDecreaseInOtherLiabilities" name="IncreaseDecreaseInOtherLiabilities" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="cosm_CashPaidForTheAcquisitionOfCana" name="CashPaidForTheAcquisitionOfCana" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="cosm_ProceedsFromLoanReceivableRelatedParty" name="ProceedsFromLoanReceivableRelatedParty" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="cosm_SaleOfFixedAssets" name="SaleOfFixedAssets" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="cosm_AdvancesForBuildingsAcquisitions" name="AdvancesForBuildingsAcquisitions" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="cosm_ProceedsFromIssuanceOfSeriesAPreferredStock" name="ProceedsFromIssuanceOfSeriesAPreferredStock" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="cosm_FinancingFeesFromTheSaleOfCommonStock" name="FinancingFeesFromTheSaleOfCommonStock" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="cosm_CashPaidDuringTheYearNewAbstract" name="CashPaidDuringTheYearNewAbstract" nillable="true" abstract="true" xbrli:periodType="duration" type="xbrli:stringItemType" substitutionGroup="xbrli:item" />
+  <element id="cosm_CommonSharesIssuedForAcquisitionOfCustomerBase" name="CommonSharesIssuedForAcquisitionOfCustomerBase" nillable="true" xbrli:periodType="duration" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" />
+  <element id="cosm_CommonSharesIssuedForAcquisitionOfCana" name="CommonSharesIssuedForAcquisitionOfCana" nillable="true" xbrli:periodType="duration" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" />
+  <element id="cosm_ConversionOfNotesPayableToCommonStock" name="ConversionOfNotesPayableToCommonStock" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="cosm_DeemedDividendOnWarrantsUponConversionOfConvertibleDebt" name="DeemedDividendOnWarrantsUponConversionOfConvertibleDebt" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="cosm_DeemedDividendOnPreferredStockAndWarrantsUponTriggerOfDownroundFeature" name="DeemedDividendOnPreferredStockAndWarrantsUponTriggerOfDownroundFeature" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="cosm_ConversionOfConvertibleDebt" name="ConversionOfConvertibleDebt" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="cosm_CapitalStructureTextBlock" name="CapitalStructureTextBlock" nillable="true" xbrli:periodType="duration" type="nonnum:textBlockItemType" substitutionGroup="xbrli:item" />
+  <element id="cosm_LineOfCreditFacilitiesDisclosureTextBlock" name="LineOfCreditFacilitiesDisclosureTextBlock" nillable="true" xbrli:periodType="duration" type="nonnum:textBlockItemType" substitutionGroup="xbrli:item" />
+  <element id="cosm_ConvertibleDebtDisclosureTextBlock" name="ConvertibleDebtDisclosureTextBlock" nillable="true" xbrli:periodType="duration" type="nonnum:textBlockItemType" substitutionGroup="xbrli:item" />
+  <element id="cosm_WarrantsDisclosureTextBlock" name="WarrantsDisclosureTextBlock" nillable="true" xbrli:periodType="duration" type="nonnum:textBlockItemType" substitutionGroup="xbrli:item" />
+  <element id="cosm_DisaggregationOfRevenueDisclosureTextBlock" name="DisaggregationOfRevenueDisclosureTextBlock" nillable="true" xbrli:periodType="duration" type="nonnum:textBlockItemType" substitutionGroup="xbrli:item" />
+  <element id="cosm_AcquisitionAccountingPolicyTextBlock" name="AcquisitionAccountingPolicyTextBlock" nillable="true" xbrli:periodType="duration" type="nonnum:textBlockItemType" substitutionGroup="xbrli:item" />
+  <element id="cosm_TransactionsInAndTranslationsOfForeignCurrencyPolicyTextBlock" name="TransactionsInAndTranslationsOfForeignCurrencyPolicyTextBlock" nillable="true" xbrli:periodType="duration" type="nonnum:textBlockItemType" substitutionGroup="xbrli:item" />
+  <element id="cosm_EffectsOfWarInTheUkrainePolicyTextBlock" name="EffectsOfWarInTheUkrainePolicyTextBlock" nillable="true" xbrli:periodType="duration" type="nonnum:textBlockItemType" substitutionGroup="xbrli:item" />
+  <element id="cosm_CreditLossesPolicyTextBlock" name="CreditLossesPolicyTextBlock" nillable="true" xbrli:periodType="duration" type="nonnum:textBlockItemType" substitutionGroup="xbrli:item" />
+  <element id="cosm_TaxReceivablesPolicyTextBlock" name="TaxReceivablesPolicyTextBlock" nillable="true" xbrli:periodType="duration" type="nonnum:textBlockItemType" substitutionGroup="xbrli:item" />
+  <element id="cosm_CustomerAdvancesPolicyTextBlock" name="CustomerAdvancesPolicyTextBlock" nillable="true" xbrli:periodType="duration" type="nonnum:textBlockItemType" substitutionGroup="xbrli:item" />
+  <element id="cosm_ReclassificationsToPriorPeriodFinancialStatementsAndAdjustmentstextblock" name="ReclassificationsToPriorPeriodFinancialStatementsAndAdjustmentstextblock" nillable="true" xbrli:periodType="duration" type="nonnum:textBlockItemType" substitutionGroup="xbrli:item" />
+  <element id="cosm_ScheduleOfPropertyAndEquipmentEstimatedUsefulLifeTableTextBlock" name="ScheduleOfPropertyAndEquipmentEstimatedUsefulLifeTableTextBlock" nillable="true" xbrli:periodType="duration" type="nonnum:textBlockItemType" substitutionGroup="xbrli:item" />
+  <element id="cosm_ScheduleOfRelatedPartyLoansPayableTableTextBlock" name="ScheduleOfRelatedPartyLoansPayableTableTextBlock" nillable="true" xbrli:periodType="duration" type="nonnum:textBlockItemType" substitutionGroup="xbrli:item" />
+  <element id="cosm_ScheduleOfOutstandingDebtTableTextBlock" name="ScheduleOfOutstandingDebtTableTextBlock" nillable="true" xbrli:periodType="duration" type="nonnum:textBlockItemType" substitutionGroup="xbrli:item" />
+  <element id="cosm_ScheduleOfWarrantActivityTableTextBlock" name="ScheduleOfWarrantActivityTableTextBlock" nillable="true" xbrli:periodType="duration" type="nonnum:textBlockItemType" substitutionGroup="xbrli:item" />
+  <element id="cosm_WorkingCapital" name="WorkingCapital" nillable="true" xbrli:balance="credit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="cosm_PropertyPlantEquipmentUsefulLife" name="PropertyPlantEquipmentUsefulLife" nillable="true" xbrli:periodType="duration" type="xbrli:durationItemType" substitutionGroup="xbrli:item" />
+  <element id="cosm_PropertyPlantAndEquipmentEstimatedUsefulLive" name="PropertyPlantAndEquipmentEstimatedUsefulLive" nillable="true" xbrli:periodType="duration" type="xbrli:stringItemType" substitutionGroup="xbrli:item" />
+  <element id="cosm_PotentialCommonShares" name="PotentialCommonShares" nillable="true" xbrli:periodType="duration" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" />
+  <element id="cosm_PaymentInFees" name="PaymentInFees" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="cosm_IntermediateLifePlantUsefulLife" name="IntermediateLifePlantUsefulLife" nillable="true" xbrli:periodType="duration" type="xbrli:durationItemType" substitutionGroup="xbrli:item" />
+  <element id="cosm_EffectiveIncomeTaxRateContinuingOperation" name="EffectiveIncomeTaxRateContinuingOperation" nillable="true" xbrli:periodType="duration" type="num:percentItemType" substitutionGroup="xbrli:item" />
+  <element id="cosm_BusinessCombinationConsiderationTransferredEquityInterestsIssuedAndIssuableShares" name="BusinessCombinationConsiderationTransferredEquityInterestsIssuedAndIssuableShares" nillable="true" xbrli:periodType="duration" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" />
+  <element id="cosm_ClosingPrice" name="ClosingPrice" nillable="true" xbrli:periodType="duration" type="num:perShareItemType" substitutionGroup="xbrli:item" />
+  <element id="cosm_UpfrontCashReceived" name="UpfrontCashReceived" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="cosm_SettlementAmountDebtObligation" name="SettlementAmountDebtObligation" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="cosm_InitialShareCapital" name="InitialShareCapital" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="cosm_InitialShareCapitalIncreased" name="InitialShareCapitalIncreased" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="cosm_PharmacyLicenseValue" name="PharmacyLicenseValue" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="cosm_MaturityPeriodOfLicense" name="MaturityPeriodOfLicense" nillable="true" xbrli:periodType="duration" type="xbrli:durationItemType" substitutionGroup="xbrli:item" />
+  <element id="cosm_EquityMethodInvestmentsOwnershipPercentage" name="EquityMethodInvestmentsOwnershipPercentage" nillable="true" xbrli:periodType="instant" type="num:percentItemType" substitutionGroup="xbrli:item" />
+  <element id="cosm_CashContributedToLimitedPartner" name="CashContributedToLimitedPartner" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="cosm_EquityMethodInvestmentOwnershipRemainingPercentage" name="EquityMethodInvestmentOwnershipRemainingPercentage" nillable="true" xbrli:periodType="instant" type="num:percentItemType" substitutionGroup="xbrli:item" />
+  <element id="cosm_AgreementTerm" name="AgreementTerm" nillable="true" xbrli:periodType="duration" type="xbrli:durationItemType" substitutionGroup="xbrli:item" />
+  <element id="cosm_CashReceivedUponGrossSales" name="CashReceivedUponGrossSales" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="cosm_GrossSales" name="GrossSales" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="cosm_ThresholdPeriodPastDueForWriteoffsOfFinancingReceivable" name="ThresholdPeriodPastDueForWriteoffsOfFinancingReceivable" nillable="true" xbrli:periodType="duration" type="xbrli:durationItemType" substitutionGroup="xbrli:item" />
+  <element id="cosm_DecriptionOfLoanPayment" name="DecriptionOfLoanPayment" nillable="true" xbrli:periodType="duration" type="xbrli:stringItemType" substitutionGroup="xbrli:item" />
+  <element id="cosm_CorporateTaxRate" name="CorporateTaxRate" nillable="true" xbrli:periodType="duration" type="num:percentItemType" substitutionGroup="xbrli:item" />
+  <element id="cosm_PreFundedWarrants" name="PreFundedWarrants" nillable="true" xbrli:periodType="duration" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" />
+  <element id="cosm_WarrantsToPurchase" name="WarrantsToPurchase" nillable="true" xbrli:periodType="duration" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" />
+  <element id="cosm_CommonStockExercisePrice" name="CommonStockExercisePrice" nillable="true" xbrli:periodType="instant" type="num:perShareItemType" substitutionGroup="xbrli:item" />
+  <element id="cosm_ExpiryDescription" name="ExpiryDescription" nillable="true" xbrli:periodType="duration" type="xbrli:stringItemType" substitutionGroup="xbrli:item" />
+  <element id="cosm_UnitPrice" name="UnitPrice" nillable="true" xbrli:periodType="instant" type="num:perShareItemType" substitutionGroup="xbrli:item" />
+  <element id="cosm_GrossProceed" name="GrossProceed" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="cosm_FinancingFee" name="FinancingFee" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="cosm_AssumptionOfBlackScholesOptionPricingModelDescription" name="AssumptionOfBlackScholesOptionPricingModelDescription" nillable="true" xbrli:periodType="duration" type="xbrli:stringItemType" substitutionGroup="xbrli:item" />
+  <element id="cosm_PreviouslyIssuedWarrantsToPurchase" name="PreviouslyIssuedWarrantsToPurchase" nillable="true" xbrli:periodType="duration" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" />
+  <element id="cosm_DescriptionOfPreferredStockConvertibleIntoCommonStock" name="DescriptionOfPreferredStockConvertibleIntoCommonStock" nillable="true" xbrli:periodType="duration" type="xbrli:stringItemType" substitutionGroup="xbrli:item" />
+  <element id="cosm_SalesPriceOfShares" name="SalesPriceOfShares" nillable="true" xbrli:periodType="duration" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" />
+  <element id="cosm_SharesPricePerShare" name="SharesPricePerShare" nillable="true" xbrli:periodType="duration" type="num:perShareItemType" substitutionGroup="xbrli:item" />
+  <element id="cosm_WarrantsToPurchaseSharesOfCommonStock" name="WarrantsToPurchaseSharesOfCommonStock" nillable="true" xbrli:periodType="duration" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" />
+  <element id="cosm_AggregateGrossProceedsWarrants" name="AggregateGrossProceedsWarrants" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="cosm_DescriptionOfWarrantsExercisable" name="DescriptionOfWarrantsExercisable" nillable="true" xbrli:periodType="duration" type="xbrli:stringItemType" substitutionGroup="xbrli:item" />
+  <element id="cosm_NumberOfWarrantAdditionalDistributedToStockholder" name="NumberOfWarrantAdditionalDistributedToStockholder" nillable="true" xbrli:periodType="duration" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" />
+  <element id="cosm_DescriptionOfWarrantsBlackScholesOptionPricingModelExercisable" name="DescriptionOfWarrantsBlackScholesOptionPricingModelExercisable" nillable="true" xbrli:periodType="duration" type="xbrli:stringItemType" substitutionGroup="xbrli:item" />
+  <element id="cosm_NumberOfCommonShareHeld" name="NumberOfCommonShareHeld" nillable="true" xbrli:periodType="instant" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" />
+  <element id="cosm_ValueOfHeldShareInTreasuryStock" name="ValueOfHeldShareInTreasuryStock" nillable="true" xbrli:balance="credit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="cosm_PreferredEquityInstrumentAmount" name="PreferredEquityInstrumentAmount" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="cosm_ConvertibleStock" name="ConvertibleStock" nillable="true" xbrli:periodType="instant" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" />
+  <element id="cosm_VestingDescription" name="VestingDescription" nillable="true" xbrli:periodType="duration" type="xbrli:stringItemType" substitutionGroup="xbrli:item" />
+  <element id="cosm_UnamortizedStockBasedCompensation" name="UnamortizedStockBasedCompensation" nillable="true" xbrli:balance="credit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="cosm_EquityAmountIncrease" name="EquityAmountIncrease" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="cosm_ExtinguishmentDebtFairValue" name="ExtinguishmentDebtFairValue" nillable="true" xbrli:periodType="instant" type="num:perShareItemType" substitutionGroup="xbrli:item" />
+  <element id="cosm_IssuedSharesOfCommonStock" name="IssuedSharesOfCommonStock" nillable="true" xbrli:periodType="duration" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" />
+  <element id="cosm_CashlessExerciseWarrants" name="CashlessExerciseWarrants" nillable="true" xbrli:periodType="duration" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" />
+  <element id="cosm_NotesPayableRelatedParty" name="NotesPayableRelatedParty" nillable="true" xbrli:balance="credit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="cosm_DescriptionInterestOfSecuredPromissoryNote" name="DescriptionInterestOfSecuredPromissoryNote" nillable="true" xbrli:periodType="duration" type="xbrli:stringItemType" substitutionGroup="xbrli:item" />
+  <element id="cosm_MaturityDateOfSecuredPromissoryNote" name="MaturityDateOfSecuredPromissoryNote" nillable="true" xbrli:periodType="duration" type="xbrli:durationItemType" substitutionGroup="xbrli:item" />
+  <element id="cosm_InterestRepayments" name="InterestRepayments" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="cosm_SharesOwnedAdditionalPaymentUnderStockPurchaseAgreement" name="SharesOwnedAdditionalPaymentUnderStockPurchaseAgreement" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="cosm_AccountsPayableRelatedPartyCurrent" name="AccountsPayableRelatedPartyCurrent" nillable="true" xbrli:balance="credit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="cosm_AmountAccountsReceivableRelatedParties" name="AmountAccountsReceivableRelatedParties" nillable="true" xbrli:balance="debit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="cosm_NetSales" name="NetSales" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="cosm_AgreementTerminate" name="AgreementTerminate" nillable="true" xbrli:periodType="duration" type="xbrli:dateItemType" substitutionGroup="xbrli:item" />
+  <element id="cosm_PiecesPerProduct" name="PiecesPerProduct" nillable="true" xbrli:periodType="duration" type="xbrli:stringItemType" substitutionGroup="xbrli:item" />
+  <element id="cosm_LoanCurrentPortion" name="LoanCurrentPortion" nillable="true" xbrli:balance="credit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="cosm_LoanNonCurrentPortion" name="LoanNonCurrentPortion" nillable="true" xbrli:balance="credit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="cosm_PurchaseOfInventory" name="PurchaseOfInventory" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="cosm_PurchaseOfPharmaceuticalsMedicine" name="PurchaseOfPharmaceuticalsMedicine" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="cosm_PaymentReceivedFromInstallment" name="PaymentReceivedFromInstallment" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="cosm_PaymentsToConvertibleDebt" name="PaymentsToConvertibleDebt" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="cosm_ReductionOfDerivativeRelatedToConversions" name="ReductionOfDerivativeRelatedToConversions" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="cosm_GainLossOnChangeInFairValueOfDerivativeLiability" name="GainLossOnChangeInFairValueOfDerivativeLiability" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="cosm_AccruedInterest" name="AccruedInterest" nillable="true" xbrli:balance="credit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="cosm_DebtOriginalIssueDiscount" name="DebtOriginalIssueDiscount" nillable="true" xbrli:balance="debit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="cosm_FinancingCost" name="FinancingCost" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="cosm_PurchasePricePrincipalAmount" name="PurchasePricePrincipalAmount" nillable="true" xbrli:balance="credit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="cosm_CashProceedsFromConversion" name="CashProceedsFromConversion" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="cosm_ConversionDiscountToPrice" name="ConversionDiscountToPrice" nillable="true" xbrli:periodType="duration" type="num:percentItemType" substitutionGroup="xbrli:item" />
+  <element id="cosm_NoteIssuedUponExchangeForCash" name="NoteIssuedUponExchangeForCash" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="cosm_CommonStockConvertibleConversionPrice" name="CommonStockConvertibleConversionPrice" nillable="true" xbrli:periodType="duration" type="num:perShareItemType" substitutionGroup="xbrli:item" />
+  <element id="cosm_TransactionExpenses" name="TransactionExpenses" nillable="true" xbrli:balance="debit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="cosm_GainLossOnTheChangeInFairValueOfTheDerivative" name="GainLossOnTheChangeInFairValueOfTheDerivative" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="cosm_PaymentsOfDebt" name="PaymentsOfDebt" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="cosm_ForeignCurrencyTransactionGainLossesRealized" name="ForeignCurrencyTransactionGainLossesRealized" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="cosm_NotePayable" name="NotePayable" nillable="true" xbrli:balance="credit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="cosm_PaymentOfLoanUnderAgreement" name="PaymentOfLoanUnderAgreement" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="cosm_DebtFairValue" name="DebtFairValue" nillable="true" xbrli:balance="credit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="cosm_TradeFinanceFacilityAgreementInterestRateDescription" name="TradeFinanceFacilityAgreementInterestRateDescription" nillable="true" xbrli:periodType="duration" type="xbrli:stringItemType" substitutionGroup="xbrli:item" />
+  <element id="cosm_NonCashInterestExpenses" name="NonCashInterestExpenses" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="cosm_RepaymentOfInstallment" name="RepaymentOfInstallment" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="cosm_TotalRepaymentsOfDebt" name="TotalRepaymentsOfDebt" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="cosm_RepaymentsOfDebtsExchange" name="RepaymentsOfDebtsExchange" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="cosm_RepaymentsOfDebtsTwo" name="RepaymentsOfDebtsTwo" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="cosm_AgreementDescription" name="AgreementDescription" nillable="true" xbrli:periodType="duration" type="xbrli:stringItemType" substitutionGroup="xbrli:item" />
+  <element id="cosm_CapitalizedFees" name="CapitalizedFees" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="cosm_LoanAmountPrincipal" name="LoanAmountPrincipal" nillable="true" xbrli:balance="credit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="cosm_LoanReceivedFromRelatedParty" name="LoanReceivedFromRelatedParty" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="cosm_DebtAmountReceivedFromRelatedParty" name="DebtAmountReceivedFromRelatedParty" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="cosm_DebtPrincipalBalance" name="DebtPrincipalBalance" nillable="true" xbrli:balance="credit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="cosm_InterestRate" name="InterestRate" nillable="true" xbrli:periodType="duration" type="num:percentItemType" substitutionGroup="xbrli:item" />
+  <element id="cosm_PrincipalAmountLoan" name="PrincipalAmountLoan" nillable="true" xbrli:balance="credit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="cosm_DebtInterestrate" name="DebtInterestrate" nillable="true" xbrli:periodType="instant" type="num:percentItemType" substitutionGroup="xbrli:item" />
+  <element id="cosm_GainOnShares" name="GainOnShares" nillable="true" xbrli:balance="debit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="cosm_CommonStockSharesIssuableUponListingOnNasdaq" name="CommonStockSharesIssuableUponListingOnNasdaq" nillable="true" xbrli:periodType="instant" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" />
+  <element id="cosm_SettlementOfDebtSharesIssuableUponListingOnNasdaq" name="SettlementOfDebtSharesIssuableUponListingOnNasdaq" nillable="true" xbrli:balance="credit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="cosm_SettlementOfDebt" name="SettlementOfDebt" nillable="true" xbrli:balance="credit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="cosm_GainFromExtinguishmentOfDebt" name="GainFromExtinguishmentOfDebt" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="cosm_PrincipalAmountOfExistingLoan" name="PrincipalAmountOfExistingLoan" nillable="true" xbrli:balance="credit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="cosm_UponIssuanceOfCommonStock" name="UponIssuanceOfCommonStock" nillable="true" xbrli:periodType="duration" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" />
+  <element id="cosm_FinalRepaymentShares" name="FinalRepaymentShares" nillable="true" xbrli:periodType="duration" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" />
+  <element id="cosm_NoteInterestRate" name="NoteInterestRate" nillable="true" xbrli:periodType="duration" type="num:percentItemType" substitutionGroup="xbrli:item" />
+  <element id="cosm_MaturityDates" name="MaturityDates" nillable="true" xbrli:periodType="duration" type="xbrli:durationItemType" substitutionGroup="xbrli:item" />
+  <element id="cosm_DebtInstrumentAccrueInterestRate" name="DebtInstrumentAccrueInterestRate" nillable="true" xbrli:periodType="instant" type="num:percentItemType" substitutionGroup="xbrli:item" />
+  <element id="cosm_DebtIntrumentSplitPrincipalBalance" name="DebtIntrumentSplitPrincipalBalance" nillable="true" xbrli:balance="credit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="cosm_DebtSplitBalance" name="DebtSplitBalance" nillable="true" xbrli:balance="credit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="cosm_LesseeOperatingLeaseLiabilityPaymentsDueAfterYearFour" name="LesseeOperatingLeaseLiabilityPaymentsDueAfterYearFour" nillable="true" xbrli:balance="credit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="cosm_LessImputedInterest" name="LessImputedInterest" nillable="true" xbrli:balance="debit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="cosm_PresentValueOfFinanceLeaseLiabilities" name="PresentValueOfFinanceLeaseLiabilities" nillable="true" xbrli:balance="credit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="cosm_FinanceLeaseLiabilityPaymentsDueAfterYearFour" name="FinanceLeaseLiabilityPaymentsDueAfterYearFour" nillable="true" xbrli:balance="credit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="cosm_ImputedInterest" name="ImputedInterest" nillable="true" xbrli:balance="debit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="cosm_CapitalLeasePresentValueOfFinanceLeaseLiabilities" name="CapitalLeasePresentValueOfFinanceLeaseLiabilities" nillable="true" xbrli:balance="credit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="cosm_OperatingLeaseTermOfAgreements" name="OperatingLeaseTermOfAgreements" nillable="true" xbrli:periodType="duration" type="xbrli:stringItemType" substitutionGroup="xbrli:item" />
+  <element id="cosm_OperatingLeaseWeightedAverageRemainingLeaseTerms" name="OperatingLeaseWeightedAverageRemainingLeaseTerms" nillable="true" xbrli:periodType="duration" type="xbrli:durationItemType" substitutionGroup="xbrli:item" />
+  <element id="cosm_OperatingLeaseWeightedAverageDiscountRate" name="OperatingLeaseWeightedAverageDiscountRate" nillable="true" xbrli:periodType="duration" type="num:percentItemType" substitutionGroup="xbrli:item" />
+  <element id="cosm_FinanceLeaseWeightedAverageRemainingLeaseTerms" name="FinanceLeaseWeightedAverageRemainingLeaseTerms" nillable="true" xbrli:periodType="duration" type="xbrli:durationItemType" substitutionGroup="xbrli:item" />
+  <element id="cosm_FinanceLeaseWeightedAverageDiscountRate" name="FinanceLeaseWeightedAverageDiscountRate" nillable="true" xbrli:periodType="duration" type="num:percentItemType" substitutionGroup="xbrli:item" />
+  <element id="cosm_ResearchAndDevelopmentAgreementExpenses" name="ResearchAndDevelopmentAgreementExpenses" nillable="true" xbrli:periodType="duration" type="xbrli:stringItemType" substitutionGroup="xbrli:item" />
+  <element id="cosm_AdvisoryDescription" name="AdvisoryDescription" nillable="true" xbrli:periodType="duration" type="xbrli:stringItemType" substitutionGroup="xbrli:item" />
+  <element id="cosm_ImposedFine" name="ImposedFine" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="cosm_PaymentTax" name="PaymentTax" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="cosm_CompensationForNonPecuniaryDamageAmounting" name="CompensationForNonPecuniaryDamageAmounting" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="cosm_WeightedAverageRemainingContractualTermOutstandingBeginning" name="WeightedAverageRemainingContractualTermOutstandingBeginning" nillable="true" xbrli:periodType="duration" type="xbrli:durationItemType" substitutionGroup="xbrli:item" />
+  <element id="cosm_WeightedAverageRemainingContractualTermOutstandingEnding" name="WeightedAverageRemainingContractualTermOutstandingEnding" nillable="true" xbrli:periodType="duration" type="xbrli:durationItemType" substitutionGroup="xbrli:item" />
+  <element id="cosm_WeightedAverageRemainingContractualTermExercisable" name="WeightedAverageRemainingContractualTermExercisable" nillable="true" xbrli:periodType="duration" type="xbrli:durationItemType" substitutionGroup="xbrli:item" />
+  <element id="cosm_DiscriptionOfIncentiveStockAwards" name="DiscriptionOfIncentiveStockAwards" nillable="true" xbrli:periodType="duration" type="xbrli:stringItemType" substitutionGroup="xbrli:item" />
+  <element id="cosm_AwardedShares" name="AwardedShares" nillable="true" xbrli:periodType="duration" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" />
+  <element id="cosm_ExpiredDescription" name="ExpiredDescription" nillable="true" xbrli:periodType="duration" type="xbrli:stringItemType" substitutionGroup="xbrli:item" />
+  <element id="cosm_ShareBasedCompensationArrangementByShareBasedPaymentAwardOptionExercisableNumber" name="ShareBasedCompensationArrangementByShareBasedPaymentAwardOptionExercisableNumber" nillable="true" xbrli:periodType="instant" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" />
+  <element id="cosm_SegmentReportingProfitLoss" name="SegmentReportingProfitLoss" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="cosm_BASISOFPRESENTATIONAbstract" name="BASISOFPRESENTATIONAbstract" nillable="true" abstract="true" xbrli:periodType="duration" type="xbrli:stringItemType" substitutionGroup="xbrli:item" />
+  <element id="cosm_LoanReceivableabstract" name="LoanReceivableabstract" nillable="true" abstract="true" xbrli:periodType="duration" type="xbrli:stringItemType" substitutionGroup="xbrli:item" />
+  <element id="cosm_SEGMENTREPORTINGAbstract" name="SEGMENTREPORTINGAbstract" nillable="true" abstract="true" xbrli:periodType="duration" type="xbrli:stringItemType" substitutionGroup="xbrli:item" />
+  <element id="cosm_OrganizationNatureOfBusinessAndGoingConcernPoliciesAbstract" name="OrganizationNatureOfBusinessAndGoingConcernPoliciesAbstract" nillable="true" abstract="true" xbrli:periodType="duration" type="xbrli:stringItemType" substitutionGroup="xbrli:item" />
+  <element name="CANAPharmaceuticalLaboratoriesSACanaMember" id="cosm_CANAPharmaceuticalLaboratoriesSACanaMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="MachineryMember" id="cosm_MachineryMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="LeaseholdImprovementsAndTechnicalWorksMember" id="cosm_LeaseholdImprovementsAndTechnicalWorksMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="MarketableSecuritiesPancretanBankMember" id="cosm_MarketableSecuritiesPancretanBankMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="WarrantOneMember" id="cosm_WarrantOneMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="MarketableSecuritiesNationalBankOfGreeceMember" id="cosm_MarketableSecuritiesNationalBankOfGreeceMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="ConvertibleNotesMember" id="cosm_ConvertibleNotesMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="ZipDoctorIncMember" id="cosm_ZipDoctorIncMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="GreeceMember" id="cosm_GreeceMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="LicenseAndServiceEstimatedUsefulLifeMember" id="cosm_LicenseAndServiceEstimatedUsefulLifeMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="ICCInternationalCannabisCorpMember" id="cosm_ICCInternationalCannabisCorpMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="NationalBankOfGreeceMember" id="cosm_NationalBankOfGreeceMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="PancretaBankMember" id="cosm_PancretaBankMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="UnitedKingdomsOfEnglandMember" id="cosm_UnitedKingdomsOfEnglandMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="BuildingAcquisionMember" id="cosm_BuildingAcquisionMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="ShareExchangeAgreementMember" id="cosm_ShareExchangeAgreementMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="IccMember" id="cosm_IccMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="DistributionAndEquityAcquisitionAgreementMember" id="cosm_DistributionAndEquityAcquisitionAgreementMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="MarathonGlobalIncMember" id="cosm_MarathonGlobalIncMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="CosmoFarmacyLPMember" id="cosm_CosmoFarmacyLPMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="SalesOneMember" id="cosm_SalesOneMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="DistributionAndEquityAcquisitionAgreementsMember" id="cosm_DistributionAndEquityAcquisitionAgreementsMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="TradeNameMarkMember" id="cosm_TradeNameMarkMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="UnitedKingdomMember" id="cosm_UnitedKingdomMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="PreferredStockShareMember" id="cosm_PreferredStockShareMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="SeriesAConvertiblePreferredStockMember" id="cosm_SeriesAConvertiblePreferredStockMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="TreasuryShareMember" id="cosm_TreasuryShareMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="IssuanceofcommonstockMember" id="cosm_IssuanceofcommonstockMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="EquityIncentivePlanMember" id="cosm_EquityIncentivePlanMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="DebtConversionMember" id="cosm_DebtConversionMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="ExerciseofWarrantsMember" id="cosm_ExerciseofWarrantsMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="SecuritiesPurchaseAgreementMember" id="cosm_SecuritiesPurchaseAgreementMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="CommonStockShareMember" id="cosm_CommonStockShareMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="TreasuryStocksMember" id="cosm_TreasuryStocksMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="WarrantsMember" id="cosm_WarrantsMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="SubscriptionReceivableMember" id="cosm_SubscriptionReceivableMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="NotesPayableRelatedPartyMember" id="cosm_NotesPayableRelatedPartyMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="LoansPayableRelatedPartyMember" id="cosm_LoansPayableRelatedPartyMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="GrigoriosSiokasMember" id="cosm_GrigoriosSiokasMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="CanaHoldingsLaboratoriesHoldingLimitedMember" id="cosm_CanaHoldingsLaboratoriesHoldingLimitedMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="DocPharmaSaMember" id="cosm_DocPharmaSaMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="DimitriosGoulielmosMember" id="cosm_DimitriosGoulielmosMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="PanagiotisKozarisMember" id="cosm_PanagiotisKozarisMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="MariaKozariMember" id="cosm_MariaKozariMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="InventoriesRelatedAgreementMember" id="cosm_InventoriesRelatedAgreementMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="GeorgeTerzisMember" id="cosm_GeorgeTerzisMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="KanarogloySiaEpeMember" id="cosm_KanarogloySiaEpeMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="NationalMember" id="cosm_NationalMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="AlphaMember" id="cosm_AlphaMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="PancretaMember" id="cosm_PancretaMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="EGFMember" id="cosm_EGFMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="NationalBankOfGreeceOneMember" id="cosm_NationalBankOfGreeceOneMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="NationalBankOfGreeceTwoMember" id="cosm_NationalBankOfGreeceTwoMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="AlphaBankOfGreeceMember" id="cosm_AlphaBankOfGreeceMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="PancretaOfGreeceMember" id="cosm_PancretaOfGreeceMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="EFGMember" id="cosm_EFGMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="CosmeOneMember" id="cosm_CosmeOneMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="CosmeMember" id="cosm_CosmeMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="ConvertiblePromissoryNoteMember" id="cosm_ConvertiblePromissoryNoteMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="InstitutionalInvestorsMember" id="cosm_InstitutionalInvestorsMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="SeniorConvertibleNoteOneMember" id="cosm_SeniorConvertibleNoteOneMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="TradeFacilityAgreementsMember" id="cosm_TradeFacilityAgreementsMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="ThirdPartyMember" id="cosm_ThirdPartyMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="COVIDLoansMember" id="cosm_COVIDLoansMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="OperatingLeaseMember" id="cosm_OperatingLeaseMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="FinanceLeaseMember" id="cosm_FinanceLeaseMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="NationalMedicinesAgencyMember" id="cosm_NationalMedicinesAgencyMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="FullAndFinalSettlementAgreementMember" id="cosm_FullAndFinalSettlementAgreementMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="SeniorPromissoryNotesMember" id="cosm_SeniorPromissoryNotesMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="DebtExchangeAgreementMember" id="cosm_DebtExchangeAgreementMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="DebtAgreementJuneMember" id="cosm_DebtAgreementJuneMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="CovidNinteenMember" id="cosm_CovidNinteenMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="JuneTwentyThreeTwoThousandTwentyMember" id="cosm_JuneTwentyThreeTwoThousandTwentyMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="NationalBankOfGreeceSAMember" id="cosm_NationalBankOfGreeceSAMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="DebtAgreementJuneOneMember" id="cosm_DebtAgreementJuneOneMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="TFFMember" id="cosm_TFFMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="SynthesisFacilityAgreementMember" id="cosm_SynthesisFacilityAgreementMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="LoanAgreementMember" id="cosm_LoanAgreementMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="PanagiotisDrakopoulosMember" id="cosm_PanagiotisDrakopoulosMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="UnitedKingdomGovernmentMember" id="cosm_UnitedKingdomGovernmentMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="AugustTwentyNineTwentyTwentyTwoMember" id="cosm_AugustTwentyNineTwentyTwentyTwoMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="PromissoryNotesMember" id="cosm_PromissoryNotesMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="PrincipalBalanceOneMember" id="cosm_PrincipalBalanceOneMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="PrincipalBalanceTwoMember" id="cosm_PrincipalBalanceTwoMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="JulyFourteenTwoThousandTwentyThreeMember" id="cosm_JulyFourteenTwoThousandTwentyThreeMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="PharmamanufacturingMember" id="cosm_PharmamanufacturingMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="OtherMember" id="cosm_OtherMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="WholesaleMember" id="cosm_WholesaleMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="NutraceuticalsAndPharmaceuticalsMember" id="cosm_NutraceuticalsAndPharmaceuticalsMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+</schema>

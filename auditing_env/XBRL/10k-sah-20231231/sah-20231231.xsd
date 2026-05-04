@@ -1,0 +1,1031 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--XBRL Document Created with the Workiva Platform-->
+<!--Copyright 2024 Workiva-->
+<!--r:b9b98d6c-25ac-4c68-b1b9-6cd0585423a7,g:13ede4c0-0832-426e-9398-78c4573231f7-->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:sah="http://www.sonicautomotive.com/20231231" xmlns:xbrli="http://www.xbrl.org/2003/instance" xmlns:dtr-types1="http://www.xbrl.org/dtr/type/2020-01-21" xmlns:dtr-types="http://www.xbrl.org/dtr/type/2022-03-31" xmlns:xbrldt="http://xbrl.org/2005/xbrldt" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://www.sonicautomotive.com/20231231">
+  <xs:import namespace="http://fasb.org/srt/2023" schemaLocation="https://xbrl.fasb.org/srt/2023/elts/srt-2023.xsd"/>
+  <xs:import namespace="http://fasb.org/us-gaap/2023" schemaLocation="https://xbrl.fasb.org/us-gaap/2023/elts/us-gaap-2023.xsd"/>
+  <xs:import namespace="http://www.w3.org/1999/xlink" schemaLocation="http://www.xbrl.org/2003/xlink-2003-12-31.xsd"/>
+  <xs:import namespace="http://www.xbrl.org/2003/instance" schemaLocation="http://www.xbrl.org/2003/xbrl-instance-2003-12-31.xsd"/>
+  <xs:import namespace="http://www.xbrl.org/2003/linkbase" schemaLocation="http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd"/>
+  <xs:import namespace="http://www.xbrl.org/dtr/type/2020-01-21" schemaLocation="https://www.xbrl.org/dtr/type/2020-01-21/types.xsd"/>
+  <xs:import namespace="http://www.xbrl.org/dtr/type/2022-03-31" schemaLocation="https://www.xbrl.org/dtr/type/2022-03-31/types.xsd"/>
+  <xs:import namespace="http://xbrl.org/2005/xbrldt" schemaLocation="http://www.xbrl.org/2005/xbrldt-2005.xsd"/>
+  <xs:import namespace="http://xbrl.sec.gov/dei/2023" schemaLocation="https://xbrl.sec.gov/dei/2023/dei-2023.xsd"/>
+  <xs:annotation>
+    <xs:appinfo>
+      <link:linkbaseRef xmlns:xlink="http://www.w3.org/1999/xlink" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="sah-20231231_pre.xml" xlink:role="http://www.xbrl.org/2003/role/presentationLinkbaseRef" xlink:type="simple"/>
+      <link:linkbaseRef xmlns:xlink="http://www.w3.org/1999/xlink" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="sah-20231231_def.xml" xlink:role="http://www.xbrl.org/2003/role/definitionLinkbaseRef" xlink:type="simple"/>
+      <link:linkbaseRef xmlns:xlink="http://www.w3.org/1999/xlink" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="sah-20231231_lab.xml" xlink:role="http://www.xbrl.org/2003/role/labelLinkbaseRef" xlink:type="simple"/>
+      <link:linkbaseRef xmlns:xlink="http://www.w3.org/1999/xlink" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="sah-20231231_cal.xml" xlink:role="http://www.xbrl.org/2003/role/calculationLinkbaseRef" xlink:type="simple"/>
+      <link:roleType id="Cover" roleURI="http://www.sonicautomotive.com/role/Cover">
+        <link:definition>0000001 - Document - Cover</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="AuditInformation" roleURI="http://www.sonicautomotive.com/role/AuditInformation">
+        <link:definition>0000002 - Document - Audit Information</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CONSOLIDATEDBALANCESHEETS" roleURI="http://www.sonicautomotive.com/role/CONSOLIDATEDBALANCESHEETS">
+        <link:definition>0000003 - Statement - CONSOLIDATED BALANCE SHEETS</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CONSOLIDATEDBALANCESHEETSParenthetical" roleURI="http://www.sonicautomotive.com/role/CONSOLIDATEDBALANCESHEETSParenthetical">
+        <link:definition>0000004 - Statement - CONSOLIDATED BALANCE SHEETS (Parenthetical)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CONSOLIDATEDSTATEMENTSOFINCOME" roleURI="http://www.sonicautomotive.com/role/CONSOLIDATEDSTATEMENTSOFINCOME">
+        <link:definition>0000005 - Statement - CONSOLIDATED STATEMENTS OF INCOME</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CONSOLIDATEDSTATEMENTSOFCOMPREHENSIVEINCOME" roleURI="http://www.sonicautomotive.com/role/CONSOLIDATEDSTATEMENTSOFCOMPREHENSIVEINCOME">
+        <link:definition>0000006 - Statement - CONSOLIDATED STATEMENTS OF COMPREHENSIVE INCOME</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CONSOLIDATEDSTATEMENTSOFSTOCKHOLDERSEQUITY" roleURI="http://www.sonicautomotive.com/role/CONSOLIDATEDSTATEMENTSOFSTOCKHOLDERSEQUITY">
+        <link:definition>0000007 - Statement - CONSOLIDATED STATEMENTS OF STOCKHOLDERS' EQUITY</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CONSOLIDATEDSTATEMENTSOFSTOCKHOLDERSEQUITYParenthetical" roleURI="http://www.sonicautomotive.com/role/CONSOLIDATEDSTATEMENTSOFSTOCKHOLDERSEQUITYParenthetical">
+        <link:definition>0000008 - Statement - CONSOLIDATED STATEMENTS OF STOCKHOLDERS' EQUITY (Parenthetical)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CONSOLIDATEDSTATEMENTSOFCASHFLOWS" roleURI="http://www.sonicautomotive.com/role/CONSOLIDATEDSTATEMENTSOFCASHFLOWS">
+        <link:definition>0000009 - Statement - CONSOLIDATED STATEMENTS OF CASH FLOWS</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CONSOLIDATEDSTATEMENTSOFCASHFLOWSParenthetical" roleURI="http://www.sonicautomotive.com/role/CONSOLIDATEDSTATEMENTSOFCASHFLOWSParenthetical">
+        <link:definition>0000010 - Statement - CONSOLIDATED STATEMENTS OF CASH FLOWS (Parenthetical)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="StatementofIncomeStatement" roleURI="http://www.sonicautomotive.com/role/StatementofIncomeStatement">
+        <link:definition>0000011 - Statement - Statement of Income (Statement)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="DescriptionofBusinessandSummaryofSignificantAccountingPolicies" roleURI="http://www.sonicautomotive.com/role/DescriptionofBusinessandSummaryofSignificantAccountingPolicies">
+        <link:definition>0000012 - Disclosure - Description of Business and Summary of Significant Accounting Policies</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="BusinessAcquisitionsandDispositions" roleURI="http://www.sonicautomotive.com/role/BusinessAcquisitionsandDispositions">
+        <link:definition>0000013 - Disclosure - Business Acquisitions and Dispositions</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="InventoriesandRelatedNotesPayableFloorPlan" roleURI="http://www.sonicautomotive.com/role/InventoriesandRelatedNotesPayableFloorPlan">
+        <link:definition>0000014 - Disclosure - Inventories and Related Notes Payable - Floor Plan</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="PropertyandEquipment" roleURI="http://www.sonicautomotive.com/role/PropertyandEquipment">
+        <link:definition>0000015 - Disclosure - Property and Equipment</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IntangibleAssetsandGoodwill" roleURI="http://www.sonicautomotive.com/role/IntangibleAssetsandGoodwill">
+        <link:definition>0000016 - Disclosure - Intangible Assets and Goodwill</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LongTermDebt" roleURI="http://www.sonicautomotive.com/role/LongTermDebt">
+        <link:definition>0000017 - Disclosure - Long-Term Debt</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IncomeTaxes" roleURI="http://www.sonicautomotive.com/role/IncomeTaxes">
+        <link:definition>0000018 - Disclosure - Income Taxes</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RelatedParties" roleURI="http://www.sonicautomotive.com/role/RelatedParties">
+        <link:definition>0000019 - Disclosure - Related Parties</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CapitalStructureandPerShareData" roleURI="http://www.sonicautomotive.com/role/CapitalStructureandPerShareData">
+        <link:definition>0000020 - Disclosure - Capital Structure and Per Share Data</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="EmployeeBenefitPlans" roleURI="http://www.sonicautomotive.com/role/EmployeeBenefitPlans">
+        <link:definition>0000021 - Disclosure - Employee Benefit Plans</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FairValueMeasurements" roleURI="http://www.sonicautomotive.com/role/FairValueMeasurements">
+        <link:definition>0000022 - Disclosure - Fair Value Measurements</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CommitmentsandContingencies" roleURI="http://www.sonicautomotive.com/role/CommitmentsandContingencies">
+        <link:definition>0000023 - Disclosure - Commitments and Contingencies</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="AccumulatedOtherComprehensiveIncomeLoss" roleURI="http://www.sonicautomotive.com/role/AccumulatedOtherComprehensiveIncomeLoss">
+        <link:definition>0000024 - Disclosure - Accumulated Other Comprehensive Income (Loss)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SegmentInformation" roleURI="http://www.sonicautomotive.com/role/SegmentInformation">
+        <link:definition>0000025 - Disclosure - Segment Information</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SummaryofQuarterlyFinancialDataUnaudited" roleURI="http://www.sonicautomotive.com/role/SummaryofQuarterlyFinancialDataUnaudited">
+        <link:definition>0000026 - Disclosure - Summary of Quarterly Financial Data (Unaudited)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LeasesCodificationTopic842" roleURI="http://www.sonicautomotive.com/role/LeasesCodificationTopic842">
+        <link:definition>0000027 - Disclosure - Leases, Codification Topic 842</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SubsequentEvents" roleURI="http://www.sonicautomotive.com/role/SubsequentEvents">
+        <link:definition>0000028 - Disclosure - Subsequent Events</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="DescriptionofBusinessandSummaryofSignificantAccountingPoliciesPolicies" roleURI="http://www.sonicautomotive.com/role/DescriptionofBusinessandSummaryofSignificantAccountingPoliciesPolicies">
+        <link:definition>9954471 - Disclosure - Description of Business and Summary of Significant Accounting Policies (Policies)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LeasesCodificationTopic842Policies" roleURI="http://www.sonicautomotive.com/role/LeasesCodificationTopic842Policies">
+        <link:definition>9954472 - Disclosure - Leases, Codification Topic 842 (Policies)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="DescriptionofBusinessandSummaryofSignificantAccountingPoliciesTables" roleURI="http://www.sonicautomotive.com/role/DescriptionofBusinessandSummaryofSignificantAccountingPoliciesTables">
+        <link:definition>9954473 - Disclosure - Description of Business and Summary of Significant Accounting Policies (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="BusinessAcquisitionsandDispositionsTables" roleURI="http://www.sonicautomotive.com/role/BusinessAcquisitionsandDispositionsTables">
+        <link:definition>9954474 - Disclosure - Business Acquisitions and Dispositions (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="InventoriesandRelatedNotesPayableFloorPlanTables" roleURI="http://www.sonicautomotive.com/role/InventoriesandRelatedNotesPayableFloorPlanTables">
+        <link:definition>9954475 - Disclosure - Inventories and Related Notes Payable - Floor Plan (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="PropertyandEquipmentTables" roleURI="http://www.sonicautomotive.com/role/PropertyandEquipmentTables">
+        <link:definition>9954476 - Disclosure - Property and Equipment (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IntangibleAssetsandGoodwillTables" roleURI="http://www.sonicautomotive.com/role/IntangibleAssetsandGoodwillTables">
+        <link:definition>9954477 - Disclosure - Intangible Assets and Goodwill (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LongTermDebtTables" roleURI="http://www.sonicautomotive.com/role/LongTermDebtTables">
+        <link:definition>9954478 - Disclosure - Long-Term Debt (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IncomeTaxesTables" roleURI="http://www.sonicautomotive.com/role/IncomeTaxesTables">
+        <link:definition>9954479 - Disclosure - Income Taxes (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CapitalStructureandPerShareDataTables" roleURI="http://www.sonicautomotive.com/role/CapitalStructureandPerShareDataTables">
+        <link:definition>9954480 - Disclosure - Capital Structure and Per Share Data (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="EmployeeBenefitPlansTables" roleURI="http://www.sonicautomotive.com/role/EmployeeBenefitPlansTables">
+        <link:definition>9954481 - Disclosure - Employee Benefit Plans (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FairValueMeasurementsTables" roleURI="http://www.sonicautomotive.com/role/FairValueMeasurementsTables">
+        <link:definition>9954482 - Disclosure - Fair Value Measurements (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CommitmentsandContingenciesTables" roleURI="http://www.sonicautomotive.com/role/CommitmentsandContingenciesTables">
+        <link:definition>9954483 - Disclosure - Commitments and Contingencies (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="AccumulatedOtherComprehensiveIncomeLossTables" roleURI="http://www.sonicautomotive.com/role/AccumulatedOtherComprehensiveIncomeLossTables">
+        <link:definition>9954484 - Disclosure - Accumulated Other Comprehensive Income (Loss) (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SegmentInformationTables" roleURI="http://www.sonicautomotive.com/role/SegmentInformationTables">
+        <link:definition>9954485 - Disclosure - Segment Information (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SummaryofQuarterlyFinancialDataUnauditedTables" roleURI="http://www.sonicautomotive.com/role/SummaryofQuarterlyFinancialDataUnauditedTables">
+        <link:definition>9954486 - Disclosure - Summary of Quarterly Financial Data (Unaudited) (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LeasesCodificationTopic842Tables" roleURI="http://www.sonicautomotive.com/role/LeasesCodificationTopic842Tables">
+        <link:definition>9954487 - Disclosure - Leases, Codification Topic 842 (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="DescriptionofBusinessandSummaryofSignificantAccountingPoliciesAdditionalInformationDetails" roleURI="http://www.sonicautomotive.com/role/DescriptionofBusinessandSummaryofSignificantAccountingPoliciesAdditionalInformationDetails">
+        <link:definition>9954488 - Disclosure - Description of Business and Summary of Significant Accounting Policies - Additional Information (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="DescriptionofBusinessandSummaryofSignificantAccountingPoliciesCumulativeEffectofAdjustmentsforAdoptionofASC606Details" roleURI="http://www.sonicautomotive.com/role/DescriptionofBusinessandSummaryofSignificantAccountingPoliciesCumulativeEffectofAdjustmentsforAdoptionofASC606Details">
+        <link:definition>9954489 - Disclosure - Description of Business and Summary of Significant Accounting Policies - Cumulative Effect of Adjustments for Adoption of ASC 606 (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="DescriptionofBusinessandSummaryofSignificantAccountingPoliciesRangeofEstimatedUsefulLivesDetails" roleURI="http://www.sonicautomotive.com/role/DescriptionofBusinessandSummaryofSignificantAccountingPoliciesRangeofEstimatedUsefulLivesDetails">
+        <link:definition>9954490 - Disclosure - Description of Business and Summary of Significant Accounting Policies - Range of Estimated Useful Lives (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="BusinessAcquisitionsandDispositionsAdditionalInformationDetails" roleURI="http://www.sonicautomotive.com/role/BusinessAcquisitionsandDispositionsAdditionalInformationDetails">
+        <link:definition>9954491 - Disclosure - Business Acquisitions and Dispositions - Additional Information (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="BusinessAcquisitionsandDispositionsRevenuesandOtherActivitiesAssociatedwithDisposedDealershipsClassifiedasDiscontinuedOperationsDetails" roleURI="http://www.sonicautomotive.com/role/BusinessAcquisitionsandDispositionsRevenuesandOtherActivitiesAssociatedwithDisposedDealershipsClassifiedasDiscontinuedOperationsDetails">
+        <link:definition>9954492 - Disclosure - Business Acquisitions and Dispositions - Revenues and Other Activities Associated with Disposed Dealerships Classified as Discontinued Operations (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="BusinessAcquisitionsandDispositionsRevenuesandOtherActivitiesAssociatedwithDisposedDealershipsThatRemaininContinuingOperationsDetails" roleURI="http://www.sonicautomotive.com/role/BusinessAcquisitionsandDispositionsRevenuesandOtherActivitiesAssociatedwithDisposedDealershipsThatRemaininContinuingOperationsDetails">
+        <link:definition>9954493 - Disclosure - Business Acquisitions and Dispositions - Revenues and Other Activities Associated with Disposed Dealerships That Remain in Continuing Operations (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="InventoriesandRelatedNotesPayableFloorPlanComponentsofInventoriesDetails" roleURI="http://www.sonicautomotive.com/role/InventoriesandRelatedNotesPayableFloorPlanComponentsofInventoriesDetails">
+        <link:definition>9954494 - Disclosure - Inventories and Related Notes Payable - Floor Plan - Components of Inventories (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="InventoriesandRelatedNotesPayableFloorPlanAdditionalInformationDetails" roleURI="http://www.sonicautomotive.com/role/InventoriesandRelatedNotesPayableFloorPlanAdditionalInformationDetails">
+        <link:definition>9954495 - Disclosure - Inventories and Related Notes Payable - Floor Plan - Additional Information (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="PropertyandEquipmentComponentsofPropertyandEquipmentNetDetails" roleURI="http://www.sonicautomotive.com/role/PropertyandEquipmentComponentsofPropertyandEquipmentNetDetails">
+        <link:definition>9954496 - Disclosure - Property and Equipment - Components of Property and Equipment, Net (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="PropertyandEquipmentAdditionalInformationDetails" roleURI="http://www.sonicautomotive.com/role/PropertyandEquipmentAdditionalInformationDetails">
+        <link:definition>9954497 - Disclosure - Property and Equipment - Additional Information (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="PropertyandEquipmentImpairmentChargesDetails" roleURI="http://www.sonicautomotive.com/role/PropertyandEquipmentImpairmentChargesDetails">
+        <link:definition>9954498 - Disclosure - Property and Equipment - Impairment Charges (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IntangibleAssetsandGoodwillChangesinCarryingAmountofFranchiseAssetsandGoodwillDetails" roleURI="http://www.sonicautomotive.com/role/IntangibleAssetsandGoodwillChangesinCarryingAmountofFranchiseAssetsandGoodwillDetails">
+        <link:definition>9954499 - Disclosure - Intangible Assets and Goodwill - Changes in Carrying Amount of Franchise Assets and Goodwill (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IntangibleAssetsandGoodwillAdditionalInformationDetails" roleURI="http://www.sonicautomotive.com/role/IntangibleAssetsandGoodwillAdditionalInformationDetails">
+        <link:definition>9954500 - Disclosure - Intangible Assets and Goodwill - Additional Information (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IntangibleAssetsandGoodwillDefiniteLifeIntangibleAssetsDetails" roleURI="http://www.sonicautomotive.com/role/IntangibleAssetsandGoodwillDefiniteLifeIntangibleAssetsDetails">
+        <link:definition>9954501 - Disclosure - Intangible Assets and Goodwill - Definite Life Intangible Assets (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IntangibleAssetsandGoodwillFutureAmortizationExpenseDetails" roleURI="http://www.sonicautomotive.com/role/IntangibleAssetsandGoodwillFutureAmortizationExpenseDetails">
+        <link:definition>9954502 - Disclosure - Intangible Assets and Goodwill - Future Amortization Expense (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LongTermDebtScheduleofLongTermDebtDetails" roleURI="http://www.sonicautomotive.com/role/LongTermDebtScheduleofLongTermDebtDetails">
+        <link:definition>9954503 - Disclosure - Long-Term Debt - Schedule of Long-Term Debt (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LongTermDebtScheduleofLongTermDebtDetails_1" roleURI="http://www.sonicautomotive.com/role/LongTermDebtScheduleofLongTermDebtDetails_1">
+        <link:definition>9954503 - Disclosure - Long-Term Debt - Schedule of Long-Term Debt (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LongTermDebtFutureMaturitiesofLongTermDebtDetails" roleURI="http://www.sonicautomotive.com/role/LongTermDebtFutureMaturitiesofLongTermDebtDetails">
+        <link:definition>9954504 - Disclosure - Long-Term Debt - Future Maturities of Long-Term Debt (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LongTermDebtLongTermDebt2021CreditFacilitiesDetails" roleURI="http://www.sonicautomotive.com/role/LongTermDebtLongTermDebt2021CreditFacilitiesDetails">
+        <link:definition>9954505 - Disclosure - Long-Term Debt Long-Term Debt - 2021 Credit Facilities (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LongTermDebtNotesNarrativeDetails" roleURI="http://www.sonicautomotive.com/role/LongTermDebtNotesNarrativeDetails">
+        <link:definition>9954506 - Disclosure - Long-Term Debt - Notes Narrative (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LongTermDebtRedemptionPricePercentageDetails" roleURI="http://www.sonicautomotive.com/role/LongTermDebtRedemptionPricePercentageDetails">
+        <link:definition>9954507 - Disclosure - Long-Term Debt - Redemption Price, Percentage (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LongTermDebtFinancialCovenantsIncludeRequiredSpecifiedRatiosDetails" roleURI="http://www.sonicautomotive.com/role/LongTermDebtFinancialCovenantsIncludeRequiredSpecifiedRatiosDetails">
+        <link:definition>9954508 - Disclosure - Long-Term Debt - Financial Covenants Include Required Specified Ratios (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LongTermDebtLongTermDebtCovenantsDetails" roleURI="http://www.sonicautomotive.com/role/LongTermDebtLongTermDebtCovenantsDetails">
+        <link:definition>9954509 - Disclosure - Long-Term Debt Long-Term Debt - Covenants (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LongTermDebtDerivativeInstrumentsandHedgingActivitiesNarrativeDetails" roleURI="http://www.sonicautomotive.com/role/LongTermDebtDerivativeInstrumentsandHedgingActivitiesNarrativeDetails">
+        <link:definition>9954510 - Disclosure - Long-Term Debt - Derivative Instruments and Hedging Activities Narrative (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LongTermDebtSummaryofInterestReceivedandPaidunderTermofCashFlowSwapDetails" roleURI="http://www.sonicautomotive.com/role/LongTermDebtSummaryofInterestReceivedandPaidunderTermofCashFlowSwapDetails">
+        <link:definition>9954511 - Disclosure - Long-Term Debt - Summary of Interest Received and Paid under Term of Cash Flow Swap (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LongTermDebt2019MortgageFacilityDetails" roleURI="http://www.sonicautomotive.com/role/LongTermDebt2019MortgageFacilityDetails">
+        <link:definition>9954512 - Disclosure - Long-Term Debt - 2019 Mortgage Facility (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IncomeTaxesProvisionforIncomeTaxesforContinuingOperationsBenefitExpenseDetails" roleURI="http://www.sonicautomotive.com/role/IncomeTaxesProvisionforIncomeTaxesforContinuingOperationsBenefitExpenseDetails">
+        <link:definition>9954513 - Disclosure - Income Taxes - Provision for Income Taxes for Continuing Operations - Benefit (Expense) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IncomeTaxesAdditionalInformationDetails" roleURI="http://www.sonicautomotive.com/role/IncomeTaxesAdditionalInformationDetails">
+        <link:definition>9954514 - Disclosure - Income Taxes - Additional Information (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IncomeTaxesReconciliationoftheStatutoryFederalIncomeTaxRatewithFederalandStateOverallEffectiveIncomeTaxRatefromContinuingOperationsDetails" roleURI="http://www.sonicautomotive.com/role/IncomeTaxesReconciliationoftheStatutoryFederalIncomeTaxRatewithFederalandStateOverallEffectiveIncomeTaxRatefromContinuingOperationsDetails">
+        <link:definition>9954515 - Disclosure - Income Taxes - Reconciliation of the Statutory Federal Income Tax Rate with Federal and State Overall Effective Income Tax Rate from Continuing Operations (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IncomeTaxesComponentsofDeferredTaxAssetsandLiabilitiesDetails" roleURI="http://www.sonicautomotive.com/role/IncomeTaxesComponentsofDeferredTaxAssetsandLiabilitiesDetails">
+        <link:definition>9954516 - Disclosure - Income Taxes - Components of Deferred Tax Assets and Liabilities (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IncomeTaxesSummaryofChangesinLiabilityRelatedtoUnrecognizedTaxBenefitsDetails" roleURI="http://www.sonicautomotive.com/role/IncomeTaxesSummaryofChangesinLiabilityRelatedtoUnrecognizedTaxBenefitsDetails">
+        <link:definition>9954517 - Disclosure - Income Taxes - Summary of Changes in Liability Related to Unrecognized Tax Benefits (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RelatedPartiesAdditionalInformationDetails" roleURI="http://www.sonicautomotive.com/role/RelatedPartiesAdditionalInformationDetails">
+        <link:definition>9954518 - Disclosure - Related Parties - Additional Information (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CapitalStructureandPerShareDataAdditionalInformationDetails" roleURI="http://www.sonicautomotive.com/role/CapitalStructureandPerShareDataAdditionalInformationDetails">
+        <link:definition>9954519 - Disclosure - Capital Structure and Per Share Data - Additional Information (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CapitalStructureandPerShareDataDilutiveEffectonEarningsPerShareDetails" roleURI="http://www.sonicautomotive.com/role/CapitalStructureandPerShareDataDilutiveEffectonEarningsPerShareDetails">
+        <link:definition>9954520 - Disclosure - Capital Structure and Per Share Data - Dilutive Effect on Earnings Per Share (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="EmployeeBenefitPlansAdditionalInformationDetails" roleURI="http://www.sonicautomotive.com/role/EmployeeBenefitPlansAdditionalInformationDetails">
+        <link:definition>9954521 - Disclosure - Employee Benefit Plans - Additional Information (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="EmployeeBenefitPlansStatusofStockOptionsRelatedtoStockPlansDetails" roleURI="http://www.sonicautomotive.com/role/EmployeeBenefitPlansStatusofStockOptionsRelatedtoStockPlansDetails">
+        <link:definition>9954522 - Disclosure - Employee Benefit Plans - Status of Stock Options Related to Stock Plans (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="EmployeeBenefitPlansStatusofNonVestedRestrictedStockandRestrictedStockUnitGrantsRelatedtoStockPlansDetails" roleURI="http://www.sonicautomotive.com/role/EmployeeBenefitPlansStatusofNonVestedRestrictedStockandRestrictedStockUnitGrantsRelatedtoStockPlansDetails">
+        <link:definition>9954523 - Disclosure - Employee Benefit Plans - Status of Non-Vested Restricted Stock and Restricted Stock Unit Grants Related to Stock Plans (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="EmployeeBenefitPlansStatusofSupplementalExecutiveRetirementPlanDetails" roleURI="http://www.sonicautomotive.com/role/EmployeeBenefitPlansStatusofSupplementalExecutiveRetirementPlanDetails">
+        <link:definition>9954524 - Disclosure - Employee Benefit Plans - Status of Supplemental Executive Retirement Plan (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="EmployeeBenefitPlansCostComponentsofSupplementalExecutiveRetirementPlanDetails" roleURI="http://www.sonicautomotive.com/role/EmployeeBenefitPlansCostComponentsofSupplementalExecutiveRetirementPlanDetails">
+        <link:definition>9954525 - Disclosure - Employee Benefit Plans - Cost Components of Supplemental Executive Retirement Plan (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="EmployeeBenefitPlansWeightedAverageAssumptionsUsedtoDetermineBenefitObligationandNetPeriodicBenefitCostsDetails" roleURI="http://www.sonicautomotive.com/role/EmployeeBenefitPlansWeightedAverageAssumptionsUsedtoDetermineBenefitObligationandNetPeriodicBenefitCostsDetails">
+        <link:definition>9954526 - Disclosure - Employee Benefit Plans - Weighted Average Assumptions Used to Determine Benefit Obligation and Net Periodic Benefit Costs (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="EmployeeBenefitPlansEstimatedFutureBenefitPaymentsDetails" roleURI="http://www.sonicautomotive.com/role/EmployeeBenefitPlansEstimatedFutureBenefitPaymentsDetails">
+        <link:definition>9954527 - Disclosure - Employee Benefit Plans - Estimated Future Benefit Payments (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="EmployeeBenefitPlansScheduleofMultiEmployerPensionPlansAffectingPeriodtoPeriodComparabilityofContributionsDetails" roleURI="http://www.sonicautomotive.com/role/EmployeeBenefitPlansScheduleofMultiEmployerPensionPlansAffectingPeriodtoPeriodComparabilityofContributionsDetails">
+        <link:definition>9954528 - Disclosure - Employee Benefit Plans - Schedule of Multi-Employer Pension Plans Affecting Period-to-Period Comparability of Contributions (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FairValueMeasurementsAssetsandLiabilitiesRecordedatFairValueDetails" roleURI="http://www.sonicautomotive.com/role/FairValueMeasurementsAssetsandLiabilitiesRecordedatFairValueDetails">
+        <link:definition>9954529 - Disclosure - Fair Value Measurements - Assets and Liabilities Recorded at Fair Value (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FairValueMeasurementsAssetsandLiabilitiesMeasuredatFairValueonaNonRecurringBasisDetails" roleURI="http://www.sonicautomotive.com/role/FairValueMeasurementsAssetsandLiabilitiesMeasuredatFairValueonaNonRecurringBasisDetails">
+        <link:definition>9954530 - Disclosure - Fair Value Measurements - Assets and Liabilities Measured at Fair Value on a Non-Recurring Basis (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FairValueMeasurementsFairValueandCarryingValueofFixedRateLongTermDebtDetails" roleURI="http://www.sonicautomotive.com/role/FairValueMeasurementsFairValueandCarryingValueofFixedRateLongTermDebtDetails">
+        <link:definition>9954531 - Disclosure - Fair Value Measurements - Fair Value and Carrying Value of Fixed Rate Long-Term Debt (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CommitmentsandContingenciesAdditionalInformationDetails" roleURI="http://www.sonicautomotive.com/role/CommitmentsandContingenciesAdditionalInformationDetails">
+        <link:definition>9954532 - Disclosure - Commitments and Contingencies - Additional Information (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CommitmentsandContingenciesSummaryofLeaseExitAccrualsDetails" roleURI="http://www.sonicautomotive.com/role/CommitmentsandContingenciesSummaryofLeaseExitAccrualsDetails">
+        <link:definition>9954533 - Disclosure - Commitments and Contingencies - Summary of Lease Exit Accruals (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CommitmentsandContingenciesFutureMinimumLeasePaymentsforbothContinuingandDiscontinuedOperationsDetails" roleURI="http://www.sonicautomotive.com/role/CommitmentsandContingenciesFutureMinimumLeasePaymentsforbothContinuingandDiscontinuedOperationsDetails">
+        <link:definition>9954534 - Disclosure - Commitments and Contingencies - Future Minimum Lease Payments for both Continuing and Discontinued Operations (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CommitmentsandContingenciesFinancialCovenantsRelatedtoAmendedSubordinationandGuarantyAgreementDetails" roleURI="http://www.sonicautomotive.com/role/CommitmentsandContingenciesFinancialCovenantsRelatedtoAmendedSubordinationandGuarantyAgreementDetails">
+        <link:definition>9954535 - Disclosure - Commitments and Contingencies - Financial Covenants Related to Amended Subordination and Guaranty Agreement (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="AccumulatedOtherComprehensiveIncomeLossSummaryofChangesinAccumulatedOtherComprehensiveIncomeLossDetails" roleURI="http://www.sonicautomotive.com/role/AccumulatedOtherComprehensiveIncomeLossSummaryofChangesinAccumulatedOtherComprehensiveIncomeLossDetails">
+        <link:definition>9954536 - Disclosure - Accumulated Other Comprehensive Income (Loss) - Summary of Changes in Accumulated Other Comprehensive Income (Loss) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SegmentInformationAdditionalInformationDetails" roleURI="http://www.sonicautomotive.com/role/SegmentInformationAdditionalInformationDetails">
+        <link:definition>9954537 - Disclosure - Segment Information - Additional Information (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SegmentInformationSummaryofReportableOperatingSegmentDetails" roleURI="http://www.sonicautomotive.com/role/SegmentInformationSummaryofReportableOperatingSegmentDetails">
+        <link:definition>9954538 - Disclosure - Segment Information - Summary of Reportable Operating Segment (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SummaryofQuarterlyFinancialDataUnauditedConsolidatedStatementsofIncomebyQuarterDetails" roleURI="http://www.sonicautomotive.com/role/SummaryofQuarterlyFinancialDataUnauditedConsolidatedStatementsofIncomebyQuarterDetails">
+        <link:definition>9954539 - Disclosure - Summary of Quarterly Financial Data (Unaudited) - Consolidated Statements of Income by Quarter (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SummaryofQuarterlyFinancialDataUnauditedAdditionalInformationDetails" roleURI="http://www.sonicautomotive.com/role/SummaryofQuarterlyFinancialDataUnauditedAdditionalInformationDetails">
+        <link:definition>9954540 - Disclosure - Summary of Quarterly Financial Data (Unaudited) - Additional Information (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LeasesCodificationTopic842Details" roleURI="http://www.sonicautomotive.com/role/LeasesCodificationTopic842Details">
+        <link:definition>9954541 - Disclosure - Leases, Codification Topic 842 (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SubsequentEventsDetails" roleURI="http://www.sonicautomotive.com/role/SubsequentEventsDetails">
+        <link:definition>9954542 - Disclosure - Subsequent Events (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element id="sah_InventoryServiceLoaners" abstract="false" name="InventoryServiceLoaners" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sah_LeaseExpenseForContinuingOperation" abstract="false" name="LeaseExpenseForContinuingOperation" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sah_TermForFundingOfFinanceContracts" abstract="false" name="TermForFundingOfFinanceContracts" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:durationItemType"/>
+  <xs:element id="sah_InventoryUsedVehicles" abstract="false" name="InventoryUsedVehicles" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sah_PowersportsDepreciationAndAmortization" abstract="false" name="PowersportsDepreciationAndAmortization" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sah_DefinedBenefitPlanBenefitObligationIncreaseDecreaseForPlanAmendmentSettlementAndCurtailments" abstract="false" name="DefinedBenefitPlanBenefitObligationIncreaseDecreaseForPlanAmendmentSettlementAndCurtailments" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sah_FivePercentSeniorSubordinateNoteDueTwoThousandTwentyThreeMember" abstract="true" name="FivePercentSeniorSubordinateNoteDueTwoThousandTwentyThreeMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="sah_A2019MortgageFacilityMember" abstract="true" name="A2019MortgageFacilityMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="sah_PYAcqGoodwillAllocationsPowersports" abstract="false" name="PYAcqGoodwillAllocationsPowersports" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sah_EchoParkPPEImpair" abstract="false" name="EchoParkPPEImpair" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sah_StormDamageAndLegalExpenses" abstract="false" name="StormDamageAndLegalExpenses" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sah_MercedesDomain" abstract="true" name="MercedesDomain" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="sah_AIPensionPlanProjectedPensionLiability" abstract="false" name="AIPensionPlanProjectedPensionLiability" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sah_BMWBrandDomain" abstract="true" name="BMWBrandDomain" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="sah_TwoThousandFourPlanAndTwoThousandTwelveFormulaPlanMember" abstract="true" name="TwoThousandFourPlanAndTwoThousandTwelveFormulaPlanMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="sah_MembersOfSeniorManagement" abstract="false" name="MembersOfSeniorManagement" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="xbrli:integerItemType"/>
+  <xs:element id="sah_DeferredCompensationPlanLiabilityFairValueDisclosure" abstract="false" name="DeferredCompensationPlanLiabilityFairValueDisclosure" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sah_NumberOfStoresTerminated" abstract="false" name="NumberOfStoresTerminated" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:integerItemType"/>
+  <xs:element id="sah_PowersportsDealershipsMember" abstract="true" name="PowersportsDealershipsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="sah_FranchiseAssetsFranchised" abstract="false" name="FranchiseAssetsFranchised" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sah_DiscontinuedOperationLeaseExitAccrualAdjustmentsAndCharges" abstract="false" name="DiscontinuedOperationLeaseExitAccrualAdjustmentsAndCharges" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sah_OtherComprehensiveIncomeLossAmortizationOfDerivativeAgreementsBeforeTax" abstract="false" name="OtherComprehensiveIncomeLossAmortizationOfDerivativeAgreementsBeforeTax" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sah_IntangibleAssetsReductionsFromDispositionsPowersports" abstract="false" name="IntangibleAssetsReductionsFromDispositionsPowersports" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sah_EchoParkFIRevenue" abstract="false" name="EchoParkFIRevenue" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sah_CommonStockNumberOfVotesPerShare" abstract="false" name="CommonStockNumberOfVotesPerShare" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:integerItemType"/>
+  <xs:element id="sah_GoodwillAndIntangibleAssetsAcquired" abstract="false" name="GoodwillAndIntangibleAssetsAcquired" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sah_GoodwillAdjustmentDomain" abstract="true" name="GoodwillAdjustmentDomain" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="sah_LeasesContingentRentBenefitDiscontinuingOperation" abstract="false" name="LeasesContingentRentBenefitDiscontinuingOperation" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sah_LeaseExitPaymentSellingGeneralAndAdministrative" abstract="false" name="LeaseExitPaymentSellingGeneralAndAdministrative" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sah_DebtInstrumentMaximumAllowedDividendsPerShare" abstract="false" name="DebtInstrumentMaximumAllowedDividendsPerShare" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:perShareItemType"/>
+  <xs:element id="sah_IncomeLossFromContinuingOperationsBasicAfterEffectOfParticipatingSecurities" abstract="false" name="IncomeLossFromContinuingOperationsBasicAfterEffectOfParticipatingSecurities" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sah_MinimumConsolidatedFixedChargeCoverageRatio" abstract="false" name="MinimumConsolidatedFixedChargeCoverageRatio" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+  <xs:element id="sah_DebtInstrumentCovenantTableTextBlock" abstract="false" name="DebtInstrumentCovenantTableTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:textBlockItemType"/>
+  <xs:element id="sah_NotesIssuedAtPriceOfPrincipalAmount" abstract="false" name="NotesIssuedAtPriceOfPrincipalAmount" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+  <xs:element id="sah_OutstandingBalanceDelayedDrawCreditFacility" abstract="false" name="OutstandingBalanceDelayedDrawCreditFacility" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sah_ConcentrationCreditRiskAmount" abstract="false" name="ConcentrationCreditRiskAmount" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sah_OtherDebtMember" abstract="true" name="OtherDebtMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="sah_ReductionOfFinanceLeaseLiabilities" abstract="false" name="ReductionOfFinanceLeaseLiabilities" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sah_DebtInstrumentPercentageOfOutstandingPrincipalAmountRedeemableUponEventOfEarlyRedemption" abstract="false" name="DebtInstrumentPercentageOfOutstandingPrincipalAmountRedeemableUponEventOfEarlyRedemption" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+  <xs:element id="sah_NumberOfClassesOfCommonStock" abstract="false" name="NumberOfClassesOfCommonStock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:integerItemType"/>
+  <xs:element id="sah_GWAssetImpairmentPowersports" abstract="false" name="GWAssetImpairmentPowersports" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sah_NetLongTermDeferredTaxLiability" abstract="false" name="NetLongTermDeferredTaxLiability" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sah_DepreciationAndAmortizationOfPropertyPlantAndEquipment" abstract="false" name="DepreciationAndAmortizationOfPropertyPlantAndEquipment" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sah_BrandAxis" abstract="true" name="BrandAxis" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrldt:dimensionItem" type="xbrli:stringItemType"/>
+  <xs:element id="sah_NumberOfStoresContributingToPensionPlan" abstract="false" name="NumberOfStoresContributingToPensionPlan" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:integerItemType"/>
+  <xs:element id="sah_CommitmentsForFacilityConstructionProjects" abstract="false" name="CommitmentsForFacilityConstructionProjects" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sah_SegmentRetailUnits" abstract="false" name="SegmentRetailUnits" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:integerItemType"/>
+  <xs:element id="sah_PriorTermLoanPrincipalAmount" abstract="false" name="PriorTermLoanPrincipalAmount" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sah_EchoParkNewVehicleRevenue" abstract="false" name="EchoParkNewVehicleRevenue" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sah_DocumentAndEntityInformationTable" abstract="true" name="DocumentAndEntityInformationTable" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrldt:hypercubeItem" type="xbrli:stringItemType"/>
+  <xs:element id="sah_IncomeTaxesTable" abstract="true" name="IncomeTaxesTable" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrldt:hypercubeItem" type="xbrli:stringItemType"/>
+  <xs:element id="sah_DebtInstrumentNetOfUnamortizedDiscountOrPremiumYearFive" abstract="false" name="DebtInstrumentNetOfUnamortizedDiscountOrPremiumYearFive" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sah_MinimumConsolidatedLiquidityRatio" abstract="false" name="MinimumConsolidatedLiquidityRatio" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+  <xs:element id="sah_FranchisedDealershipsDepreciationAndAmortization" abstract="false" name="FranchisedDealershipsDepreciationAndAmortization" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sah_SpeedwayMotorsportsIncMember" abstract="true" name="SpeedwayMotorsportsIncMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="sah_UnrecognizedTaxBenefitsRecordedLiability" abstract="false" name="UnrecognizedTaxBenefitsRecordedLiability" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sah_FranchisedDealershipsSegmentRevenue" abstract="false" name="FranchisedDealershipsSegmentRevenue" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sah_ClassConvertiblePreferredStockSharesAuthorized" abstract="false" name="ClassConvertiblePreferredStockSharesAuthorized" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="xbrli:sharesItemType"/>
+  <xs:element id="sah_DocumentAndEntityInformationLineItems" abstract="true" name="DocumentAndEntityInformationLineItems" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="sah_CashFlowSwapFourMember" abstract="true" name="CashFlowSwapFourMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="sah_OperatingLeaseTermForDealershipFacilitiesMaximum" abstract="false" name="OperatingLeaseTermForDealershipFacilitiesMaximum" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:durationItemType"/>
+  <xs:element id="sah_VehicleFloorPlanPayableTrade" abstract="false" name="VehicleFloorPlanPayableTrade" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sah_OpenedLuxuryFranchisedDealershipMember" abstract="true" name="OpenedLuxuryFranchisedDealershipMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="sah_RevenueIncrease" abstract="false" name="RevenueIncrease" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+  <xs:element id="sah_FranchisedDealershipsStormDamageCharges" abstract="false" name="FranchisedDealershipsStormDamageCharges" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sah_PYAcqGWAllocationsFdealer" abstract="false" name="PYAcqGWAllocationsFdealer" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sah_ScheduleOfUnrecognizedTaxBenefitsTable" abstract="true" name="ScheduleOfUnrecognizedTaxBenefitsTable" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrldt:hypercubeItem" type="xbrli:stringItemType"/>
+  <xs:element id="sah_IncomeTaxesLineItems" abstract="true" name="IncomeTaxesLineItems" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="sah_FranchisedImpairmentMember" abstract="true" name="FranchisedImpairmentMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="sah_LineofCreditFacilityMaximumCommitmentAllocationPercentage" abstract="false" name="LineofCreditFacilityMaximumCommitmentAllocationPercentage" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sah_PreOwnedStoreMemberMember" abstract="true" name="PreOwnedStoreMemberMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="sah_GoodwillAndIntangibleAssetsAcquiredPreowned" abstract="false" name="GoodwillAndIntangibleAssetsAcquiredPreowned" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sah_ChiefExecutiveOfficerAndPresidentMember" abstract="true" name="ChiefExecutiveOfficerAndPresidentMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="sah_LegalMattersAmountReservedForPendingProceedings" abstract="false" name="LegalMattersAmountReservedForPendingProceedings" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sah_NumberOfEchoParkOpened" abstract="false" name="NumberOfEchoParkOpened" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:integerItemType"/>
+  <xs:element id="sah_FloorPlanDepositBalance" abstract="false" name="FloorPlanDepositBalance" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sah_StormDamageRelatedExpense" abstract="false" name="StormDamageRelatedExpense" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sah_StandAlonePreOwnedVehicleStoreAndRelatedRealEstateMember" abstract="true" name="StandAlonePreOwnedVehicleStoreAndRelatedRealEstateMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="sah_MaximumAllocableBorrowingCapacityIncreasePercentage" abstract="false" name="MaximumAllocableBorrowingCapacityIncreasePercentage" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+  <xs:element id="sah_EchoParkDeliveryBuyCentersMember" abstract="true" name="EchoParkDeliveryBuyCentersMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="sah_EchoParkStormDamageCharges" abstract="false" name="EchoParkStormDamageCharges" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sah_GainLossPreTaxLossOnLongTermCompensationExpense" abstract="false" name="GainLossPreTaxLossOnLongTermCompensationExpense" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sah_ShareBasedCompensationSharesAuthorizedUnderStockOptionPlansExercisedExercisePriceRangeLowerRangeLimit" abstract="false" name="ShareBasedCompensationSharesAuthorizedUnderStockOptionPlansExercisedExercisePriceRangeLowerRangeLimit" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:perShareItemType"/>
+  <xs:element id="sah_SegmentImpairmentDomain" abstract="true" name="SegmentImpairmentDomain" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="sah_LeaseExitExpense" abstract="false" name="LeaseExitExpense" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sah_DebtInstrumentNetOfUnamortizedDiscountOrPremiumYearFour" abstract="false" name="DebtInstrumentNetOfUnamortizedDiscountOrPremiumYearFour" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sah_ScheduleOfCondensedUnauditedQuarterlyFinancialDataTable" abstract="true" name="ScheduleOfCondensedUnauditedQuarterlyFinancialDataTable" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrldt:hypercubeItem" type="xbrli:stringItemType"/>
+  <xs:element id="sah_LeaseExitPaymentDiscontinuedOperations" abstract="false" name="LeaseExitPaymentDiscontinuedOperations" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sah_CapitalStructureAndPerShareDataTable" abstract="true" name="CapitalStructureAndPerShareDataTable" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrldt:hypercubeItem" type="xbrli:stringItemType"/>
+  <xs:element id="sah_DebtRedemptionPeriodEightMember" abstract="true" name="DebtRedemptionPeriodEightMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="sah_NumberOfBrandsOfCarsAndLightTrucks" abstract="false" name="NumberOfBrandsOfCarsAndLightTrucks" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="xbrli:integerItemType"/>
+  <xs:element id="sah_LeaseExitIncomeExpenseDiscontinuedOperations" abstract="false" name="LeaseExitIncomeExpenseDiscontinuedOperations" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sah_DoubleCarryInterest" abstract="false" name="DoubleCarryInterest" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sah_EchoParkMember" abstract="true" name="EchoParkMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="sah_GainOnEchoParkDisposal" abstract="false" name="GainOnEchoParkDisposal" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sah_LeaseExitExpenseSellingGeneralAndAdministrative" abstract="false" name="LeaseExitExpenseSellingGeneralAndAdministrative" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sah_ConcentrationsOfCreditAndBusinessRiskPolicyTextBlock" abstract="false" name="ConcentrationsOfCreditAndBusinessRiskPolicyTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:textBlockItemType"/>
+  <xs:element id="sah_TwoThousandTwelvePlanMember" abstract="true" name="TwoThousandTwelvePlanMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="sah_LeaseholdAndLandImprovementsMember" abstract="true" name="LeaseholdAndLandImprovementsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="sah_NumberOfEmployerToMakeContributionUnderMultiEmployerPlan" abstract="false" name="NumberOfEmployerToMakeContributionUnderMultiEmployerPlan" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:integerItemType"/>
+  <xs:element id="sah_GoodwillPreownedSegment" abstract="false" name="GoodwillPreownedSegment" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sah_PYAcqGWAllocations" abstract="false" name="PYAcqGWAllocations" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sah_UnrecognizedTaxBenefitsIncreaseDecreaseResultingFromOtherAdjustments" abstract="false" name="UnrecognizedTaxBenefitsIncreaseDecreaseResultingFromOtherAdjustments" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sah_DisposalGroupNotDiscontinuedOperationOperatingIncomeLoss" abstract="false" name="DisposalGroupNotDiscontinuedOperationOperatingIncomeLoss" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sah_NotesRedemptionPricePercentageOfParValueDueToChangeOfControl" abstract="false" name="NotesRedemptionPricePercentageOfParValueDueToChangeOfControl" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+  <xs:element id="sah_DebtInstrumentNetOfUnamortizedDiscountOrPremiumYearTwo" abstract="false" name="DebtInstrumentNetOfUnamortizedDiscountOrPremiumYearTwo" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sah_PowersportsFIRevenue" abstract="false" name="PowersportsFIRevenue" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sah_CashFlowSwapThreeMember" abstract="true" name="CashFlowSwapThreeMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="sah_GainLossOnDisposalOfFranchisesAndPropertyAndEquipment" abstract="false" name="GainLossOnDisposalOfFranchisesAndPropertyAndEquipment" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sah_PYAcqGWAllocationsPreowned" abstract="false" name="PYAcqGWAllocationsPreowned" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sah_TotalNewVehicleMember" abstract="true" name="TotalNewVehicleMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="sah_LongTermDebtNetOfUnamortizedDiscountOrPremiumIncludingDebtIssuanceCosts" abstract="false" name="LongTermDebtNetOfUnamortizedDiscountOrPremiumIncludingDebtIssuanceCosts" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sah_FranchisePPEImpair" abstract="false" name="FranchisePPEImpair" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sah_PowrsportsMember" abstract="true" name="PowrsportsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="sah_DebtExtinguishmentCosts" abstract="false" name="DebtExtinguishmentCosts" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sah_AcquiredRFJGoodwillAllocatedToEchoPark" abstract="false" name="AcquiredRFJGoodwillAllocatedToEchoPark" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sah_InterestExpenseNetCashFlowSwaps" abstract="false" name="InterestExpenseNetCashFlowSwaps" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sah_SoftwareAndComputerEquipmentMember" abstract="true" name="SoftwareAndComputerEquipmentMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="sah_WeightedAverageInterestRateNewVehicleFloorPlan" abstract="false" name="WeightedAverageInterestRateNewVehicleFloorPlan" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+  <xs:element id="sah_SubordinationAgreementAndAdditionalFinancialCovenantLineItems" abstract="true" name="SubordinationAgreementAndAdditionalFinancialCovenantLineItems" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="sah_DividendRestrictionMaximumAmountPerShare" abstract="false" name="DividendRestrictionMaximumAmountPerShare" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="dtr-types1:perShareItemType"/>
+  <xs:element id="sah_EchoParkSegmentAssets" abstract="false" name="EchoParkSegmentAssets" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sah_CashFlowSwapTwoMember" abstract="true" name="CashFlowSwapTwoMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="sah_FranchisedDealershipsSegmentImpairment" abstract="false" name="FranchisedDealershipsSegmentImpairment" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sah_OperatingLeaseTermForDealershipFacilitiesMinimum" abstract="false" name="OperatingLeaseTermForDealershipFacilitiesMinimum" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:durationItemType"/>
+  <xs:element id="sah_IncomeLossFromDiscontinuedOperationsNetOfTaxBasicAfterEffectOfParticipatingSecurities" abstract="false" name="IncomeLossFromDiscontinuedOperationsNetOfTaxBasicAfterEffectOfParticipatingSecurities" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sah_DerivativeInstrumentUnamortizedPremium" abstract="false" name="DerivativeInstrumentUnamortizedPremium" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sah_NumberOfOperatingLeaseRenewalOptionsMinimum" abstract="false" name="NumberOfOperatingLeaseRenewalOptionsMinimum" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:integerItemType"/>
+  <xs:element id="sah_NumberOfFranchiseDealershipsAcquired" abstract="false" name="NumberOfFranchiseDealershipsAcquired" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:integerItemType"/>
+  <xs:element id="sah_DebtInstrumentRedemptionPeriod6Member" abstract="true" name="DebtInstrumentRedemptionPeriod6Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="sah_BeneficialOwnershipInterestPercentage" abstract="false" name="BeneficialOwnershipInterestPercentage" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+  <xs:element id="sah_InsuranceReservesPolicyTextBlock" abstract="false" name="InsuranceReservesPolicyTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:textBlockItemType"/>
+  <xs:element id="sah_GWAssetImpairmentFdealer" abstract="false" name="GWAssetImpairmentFdealer" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sah_ShareBasedCompensationSharesAuthorizedUnderStockOptionPlansForfeitedExercisePriceRangeLowerRangeLimit" abstract="false" name="ShareBasedCompensationSharesAuthorizedUnderStockOptionPlansForfeitedExercisePriceRangeLowerRangeLimit" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:perShareItemType"/>
+  <xs:element id="sah_CashPaidReceivedDuringYearForAbstract" abstract="true" name="CashPaidReceivedDuringYearForAbstract" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="sah_EchoParkFixedOperationsMember" abstract="true" name="EchoParkFixedOperationsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="sah_DeferredTaxAssetsBasisDifferenceRelatedToROUAssets" abstract="false" name="DeferredTaxAssetsBasisDifferenceRelatedToROUAssets" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sah_EchoParkFixedOpsRevenue" abstract="false" name="EchoParkFixedOpsRevenue" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sah_DebtRedemptionPeriodFourAndThereafterMember" abstract="true" name="DebtRedemptionPeriodFourAndThereafterMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="sah_ScheduleOfSubordinationAgreementAndAdditionalFinancialCovenantTable" abstract="true" name="ScheduleOfSubordinationAgreementAndAdditionalFinancialCovenantTable" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrldt:hypercubeItem" type="xbrli:stringItemType"/>
+  <xs:element id="sah_LeaseUndiscountedCashFlowsAbstract" abstract="true" name="LeaseUndiscountedCashFlowsAbstract" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="sah_OutstandingBalance2020LOC" abstract="false" name="OutstandingBalance2020LOC" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sah_LeaseExitAccrualsAmount" abstract="false" name="LeaseExitAccrualsAmount" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sah_GoodwillAndIntangibleAssetsAcquiredPowersports" abstract="false" name="GoodwillAndIntangibleAssetsAcquiredPowersports" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sah_PowersportsWholesaleVehicleRevenue" abstract="false" name="PowersportsWholesaleVehicleRevenue" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sah_SubsequentClassACommonStockRepurchase" abstract="false" name="SubsequentClassACommonStockRepurchase" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="xbrli:sharesItemType"/>
+  <xs:element id="sah_ExecutiveTransitionCosts" abstract="false" name="ExecutiveTransitionCosts" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sah_LeaseExitBuyoutOther" abstract="false" name="LeaseExitBuyoutOther" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sah_ProceedsFromDispositionsOfFranchises" abstract="false" name="ProceedsFromDispositionsOfFranchises" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sah_PropertyPlantAndEquipmentBeforeReclassificationOfAssetsHeldToSale" abstract="false" name="PropertyPlantAndEquipmentBeforeReclassificationOfAssetsHeldToSale" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sah_DebtInstrumentNetOfUnamortizedDiscountOrPremiumNextTwelveMonths" abstract="false" name="DebtInstrumentNetOfUnamortizedDiscountOrPremiumNextTwelveMonths" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sah_MaximumAggregateEarnOutPayment" abstract="false" name="MaximumAggregateEarnOutPayment" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sah_EmployeeServiceShareBasedCompensationTaxExpenseBenefitFromCompensationExpense" abstract="false" name="EmployeeServiceShareBasedCompensationTaxExpenseBenefitFromCompensationExpense" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sah_LeaseExitExpenseInterest" abstract="false" name="LeaseExitExpenseInterest" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sah_EchoParkTotalImpairmentMember" abstract="true" name="EchoParkTotalImpairmentMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="sah_NorthwestMotorsportMember" abstract="true" name="NorthwestMotorsportMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="sah_EchoParkSegmentIncome" abstract="false" name="EchoParkSegmentIncome" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sah_RequiredRatioMember" abstract="true" name="RequiredRatioMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="sah_EchoParkCapitalExpenditures" abstract="false" name="EchoParkCapitalExpenditures" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sah_SegmentRetailUnitsSold" abstract="true" name="SegmentRetailUnitsSold" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:integerItemType"/>
+  <xs:element id="sah_GainLossOnExitOfLeasedDealerships" abstract="false" name="GainLossOnExitOfLeasedDealerships" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sah_RemainingAvailability2020LOC" abstract="false" name="RemainingAvailability2020LOC" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sah_PaymentOfInterestRate" abstract="false" name="PaymentOfInterestRate" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sah_PowersportsFixedOpsRevenue" abstract="false" name="PowersportsFixedOpsRevenue" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sah_DeferredTaxLiabilityBasisDifferenceInROUAssets" abstract="false" name="DeferredTaxLiabilityBasisDifferenceInROUAssets" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sah_SevenPercentSeniorSubordinateNoteDueTwoThousandTwentyTwoMember" abstract="true" name="SevenPercentSeniorSubordinateNoteDueTwoThousandTwentyTwoMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="sah_GoodwillAndIntangibleAssetsAcquiredFdealer" abstract="false" name="GoodwillAndIntangibleAssetsAcquiredFdealer" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sah_TermLoanPrincipalAmount" abstract="false" name="TermLoanPrincipalAmount" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sah_ShareBasedCompensationNumberOfStockCompensationPlans" abstract="false" name="ShareBasedCompensationNumberOfStockCompensationPlans" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:integerItemType"/>
+  <xs:element id="sah_NumberOfFranchisesDisposedMidLine" abstract="false" name="NumberOfFranchisesDisposedMidLine" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:integerItemType"/>
+  <xs:element id="sah_LegalCosts" abstract="false" name="LegalCosts" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sah_FranchisedDealershipsUsedVehicleRevenue" abstract="false" name="FranchisedDealershipsUsedVehicleRevenue" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sah_LossOnPropertyDamage" abstract="false" name="LossOnPropertyDamage" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sah_NumberOfEchoParkClosed" abstract="false" name="NumberOfEchoParkClosed" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:integerItemType"/>
+  <xs:element id="sah_ShareBasedCompensationSharesAuthorizedUnderStockOptionPlansExercisableExercisePrice" abstract="false" name="ShareBasedCompensationSharesAuthorizedUnderStockOptionPlansExercisableExercisePrice" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="dtr-types1:perShareItemType"/>
+  <xs:element id="sah_RestrictedStockUnitsRSUsAndRestrictedStockAwardsMember" abstract="true" name="RestrictedStockUnitsRSUsAndRestrictedStockAwardsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="sah_TotalStormDamageCharges" abstract="false" name="TotalStormDamageCharges" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sah_DelayedDrawTermLoanAggregatePrincipal" abstract="false" name="DelayedDrawTermLoanAggregatePrincipal" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sah_OperatingLeaseNumberOfRenewalOptionsMaximum" abstract="false" name="OperatingLeaseNumberOfRenewalOptionsMaximum" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:integerItemType"/>
+  <xs:element id="sah_FranchisedDealershipsUnits" abstract="true" name="FranchisedDealershipsUnits" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:integerItemType"/>
+  <xs:element id="sah_GeneralIndemnificationsExpirationPeriod" abstract="false" name="GeneralIndemnificationsExpirationPeriod" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:durationItemType"/>
+  <xs:element id="sah_A2019MortgageFacilityOutstanding" abstract="false" name="A2019MortgageFacilityOutstanding" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sah_PowersportsNewVehicleRevenue" abstract="false" name="PowersportsNewVehicleRevenue" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sah_ManufacturerReceivablesIncludedInReceivablesNet" abstract="false" name="ManufacturerReceivablesIncludedInReceivablesNet" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sah_NonrecurringCompensationExpense" abstract="false" name="NonrecurringCompensationExpense" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sah_LeaseOtherInformationAbstract" abstract="true" name="LeaseOtherInformationAbstract" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="sah_FranchisedDealershipsMember" abstract="true" name="FranchisedDealershipsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="sah_DisposalGroupNotDiscontinuedOperationIncomeLossBeforeIncomeTax" abstract="false" name="DisposalGroupNotDiscontinuedOperationIncomeLossBeforeIncomeTax" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sah_EchoParkRetailUnitsSold" abstract="true" name="EchoParkRetailUnitsSold" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:integerItemType"/>
+  <xs:element id="sah_RestrictedStockAmortizationNetOfForfeitures" abstract="false" name="RestrictedStockAmortizationNetOfForfeitures" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sah_NumberOfPreownedStoresClosed" abstract="false" name="NumberOfPreownedStoresClosed" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:integerItemType"/>
+  <xs:element id="sah_FranchisedDealershipsCapitalExpenditures" abstract="false" name="FranchisedDealershipsCapitalExpenditures" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sah_GainOnFranchiseDisposal" abstract="false" name="GainOnFranchiseDisposal" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sah_LeaseExitBenefitExpense" abstract="false" name="LeaseExitBenefitExpense" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sah_DebtInstrumentOtherOutstandingIndebtednessInExcess" abstract="false" name="DebtInstrumentOtherOutstandingIndebtednessInExcess" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sah_A4625PercentNoteMember" abstract="true" name="A4625PercentNoteMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="sah_ExecutiveOfficerAndOtherKeyAssociatesMember" abstract="true" name="ExecutiveOfficerAndOtherKeyAssociatesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="sah_EchoParkWholesaleRevenue" abstract="false" name="EchoParkWholesaleRevenue" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sah_SubsequentClassACommonStockRepurchaseAmount" abstract="false" name="SubsequentClassACommonStockRepurchaseAmount" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sah_EchoParkUsedVehiclesMember" abstract="true" name="EchoParkUsedVehiclesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="sah_NumberOfNewVehicleDealershipsOperatedByEntity" abstract="false" name="NumberOfNewVehicleDealershipsOperatedByEntity" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="xbrli:integerItemType"/>
+  <xs:element id="sah_RevenueDecline" abstract="false" name="RevenueDecline" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+  <xs:element id="sah_ContingenciesAndCommitmentsTable" abstract="true" name="ContingenciesAndCommitmentsTable" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrldt:hypercubeItem" type="xbrli:stringItemType"/>
+  <xs:element id="sah_IntangibleAssetsReductionsFromImpairmentPowersports" abstract="false" name="IntangibleAssetsReductionsFromImpairmentPowersports" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sah_FleetNewVehiclesMember" abstract="true" name="FleetNewVehiclesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="sah_LeaseExitAccrualsPolicyTextBlock" abstract="false" name="LeaseExitAccrualsPolicyTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:textBlockItemType"/>
+  <xs:element id="sah_ScheduleOfFinancialCovenantsRelatedToAmendedSubordinationAndGuarantyAgreementTableTextBlock" abstract="false" name="ScheduleOfFinancialCovenantsRelatedToAmendedSubordinationAndGuarantyAgreementTableTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:textBlockItemType"/>
+  <xs:element id="sah_NetIncomeLossBasicAfterEffectOfParticipatingSecurities" abstract="false" name="NetIncomeLossBasicAfterEffectOfParticipatingSecurities" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sah_DeferredTaxAssetsInterestAndStateTaxes" abstract="false" name="DeferredTaxAssetsInterestAndStateTaxes" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sah_OperatingLeasePeriodOfRenewalOptionsMaximum" abstract="false" name="OperatingLeasePeriodOfRenewalOptionsMaximum" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:durationItemType"/>
+  <xs:element id="sah_PercentageLeaseFacilityBasedOnCapitalizationRates" abstract="false" name="PercentageLeaseFacilityBasedOnCapitalizationRates" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+  <xs:element id="sah_ContingentLiabilityReserveBalance" abstract="false" name="ContingentLiabilityReserveBalance" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sah_NumberOfPowersportsStoresAcquired" abstract="false" name="NumberOfPowersportsStoresAcquired" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:integerItemType"/>
+  <xs:element id="sah_TotalPPEImpairmentMember" abstract="true" name="TotalPPEImpairmentMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="sah_DomesticFranchiseMember" abstract="true" name="DomesticFranchiseMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="sah_PercentOfCollateralizedRealEstate" abstract="false" name="PercentOfCollateralizedRealEstate" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+  <xs:element id="sah_FranchisedDealershipImpairmentMember" abstract="true" name="FranchisedDealershipImpairmentMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="sah_EchoParkInterestExpenseOtherNet" abstract="false" name="EchoParkInterestExpenseOtherNet" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sah_NumberOfFranchisesResultedInAssetImpairmentCharges" abstract="false" name="NumberOfFranchisesResultedInAssetImpairmentCharges" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:integerItemType"/>
+  <xs:element id="sah_LossGainOnDisposalOfFranchisesAndPropertyAndEquipment" abstract="false" name="LossGainOnDisposalOfFranchisesAndPropertyAndEquipment" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sah_EchoParkUsedVehicleRevenue" abstract="false" name="EchoParkUsedVehicleRevenue" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sah_OrganizationAndDescriptionOfBusinessPolicyTextBlock" abstract="false" name="OrganizationAndDescriptionOfBusinessPolicyTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:textBlockItemType"/>
+  <xs:element id="sah_CapitalStructureAndPerShareDataLineItems" abstract="true" name="CapitalStructureAndPerShareDataLineItems" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="sah_FinancialInstrumentsAndMarketRisksPolicyTextBlock" abstract="false" name="FinancialInstrumentsAndMarketRisksPolicyTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:textBlockItemType"/>
+  <xs:element id="sah_PYAcqGWAllocationsPowersports" abstract="false" name="PYAcqGWAllocationsPowersports" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sah_SixPointOneTwoFivePercentSeniorSubordinateNoteDueTwoThousandTwentySevenMember" abstract="true" name="SixPointOneTwoFivePercentSeniorSubordinateNoteDueTwoThousandTwentySevenMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="sah_FranchiseAssetsAssetsAcquiredFranchised" abstract="false" name="FranchiseAssetsAssetsAcquiredFranchised" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sah_FranchisedDealershipsSegmentIncome" abstract="false" name="FranchisedDealershipsSegmentIncome" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sah_ScheduleOfDisposalGroupsNotIncludingDiscontinuedOperationsIncomeStatementBalanceSheetAndAdditionalDisclosuresTableTextBlock" abstract="false" name="ScheduleOfDisposalGroupsNotIncludingDiscontinuedOperationsIncomeStatementBalanceSheetAndAdditionalDisclosuresTableTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:textBlockItemType"/>
+  <xs:element id="sah_OpenedEchoParkStoreMember" abstract="true" name="OpenedEchoParkStoreMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="sah_FairValueOfAssetsAndLiabilitiesMeasuredOnNonRecurringBasisLineItems" abstract="true" name="FairValueOfAssetsAndLiabilitiesMeasuredOnNonRecurringBasisLineItems" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="sah_LeasesContingentRentBenefitContinuingOperation" abstract="false" name="LeasesContingentRentBenefitContinuingOperation" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sah_FinanceInsuranceAndOtherNetMember" abstract="true" name="FinanceInsuranceAndOtherNetMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="sah_BMWDomain" abstract="true" name="BMWDomain" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="sah_ContractsInTransitPolicyTextBlock" abstract="false" name="ContractsInTransitPolicyTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:textBlockItemType"/>
+  <xs:element id="sah_InterestRateSwapAndInterestRateCapMember" abstract="true" name="InterestRateSwapAndInterestRateCapMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="sah_NinePercentSeniorSubordinatedNotesDueTwoThousandEighteenMember" abstract="true" name="NinePercentSeniorSubordinatedNotesDueTwoThousandEighteenMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="sah_ExcessTaxBenefitExpenseFromShareBasedCompensationFinancingActivities" abstract="false" name="ExcessTaxBenefitExpenseFromShareBasedCompensationFinancingActivities" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sah_ScheduleOfUnrecognizedTaxBenefitsLineItems" abstract="true" name="ScheduleOfUnrecognizedTaxBenefitsLineItems" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="sah_ROUAssetMember" abstract="true" name="ROUAssetMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="sah_ClassConvertiblePreferredStockMember" abstract="true" name="ClassConvertiblePreferredStockMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="sah_ContractsInTransitIncludedInNetReceivables" abstract="false" name="ContractsInTransitIncludedInNetReceivables" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sah_DealershipMember" abstract="true" name="DealershipMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="sah_A2021FloorPlanFacilitiesMember" abstract="true" name="A2021FloorPlanFacilitiesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="sah_DebtInstrumentRedemptionPeriodFourAndThereafterMember" abstract="true" name="DebtInstrumentRedemptionPeriodFourAndThereafterMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="sah_AcquiredRFJGoodwillAllocatedToFranchise" abstract="false" name="AcquiredRFJGoodwillAllocatedToFranchise" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sah_MortgageLoanAtFixInterestRateMember" abstract="true" name="MortgageLoanAtFixInterestRateMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="sah_Total_VehiclesMember" abstract="true" name="Total_VehiclesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="sah_NumberOfCollisionRepairCenters" abstract="false" name="NumberOfCollisionRepairCenters" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="xbrli:integerItemType"/>
+  <xs:element id="sah_DebtRedemptionPeriodThreeMember" abstract="true" name="DebtRedemptionPeriodThreeMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="sah_EarlyRedemptionPrice" abstract="false" name="EarlyRedemptionPrice" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+  <xs:element id="sah_DescriptionOfBusinessAndSummaryOfSignificantAccountingPoliciesLineItems" abstract="true" name="DescriptionOfBusinessAndSummaryOfSignificantAccountingPoliciesLineItems" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="sah_NumberOfFranchisesDisposed" abstract="false" name="NumberOfFranchisesDisposed" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:integerItemType"/>
+  <xs:element id="sah_PowersportsSegmentRevenues" abstract="false" name="PowersportsSegmentRevenues" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sah_BrandDomain" abstract="true" name="BrandDomain" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="sah_IntangibleAssetsPreowned" abstract="false" name="IntangibleAssetsPreowned" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sah_PowersportTotalImpairmentMember" abstract="true" name="PowersportTotalImpairmentMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="sah_NumberOfRFJFranchiseStoreAcquired" abstract="false" name="NumberOfRFJFranchiseStoreAcquired" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:integerItemType"/>
+  <xs:element id="sah_MaximumConsolidatedAggregateLeaseAdjustedLeverageRatio" abstract="false" name="MaximumConsolidatedAggregateLeaseAdjustedLeverageRatio" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+  <xs:element id="sah_EchoParkRetailUnits" abstract="false" name="EchoParkRetailUnits" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:integerItemType"/>
+  <xs:element id="sah_SummaryOfLeaseExitAccrualsTableTextBlock" abstract="false" name="SummaryOfLeaseExitAccrualsTableTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:textBlockItemType"/>
+  <xs:element id="sah_NewVehicleMember" abstract="true" name="NewVehicleMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="sah_DebtInstrumentNetOfUnamortizedDiscountOrPremiumAfterYearFive" abstract="false" name="DebtInstrumentNetOfUnamortizedDiscountOrPremiumAfterYearFive" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sah_HeldForSaleDealershipsNumber" abstract="false" name="HeldForSaleDealershipsNumber" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="xbrli:integerItemType"/>
+  <xs:element id="sah_DerivativeCashPremiumPaid" abstract="false" name="DerivativeCashPremiumPaid" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sah_ReductionInInterestExpenseFloorPlan" abstract="false" name="ReductionInInterestExpenseFloorPlan" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sah_TwoThousandSixteenCreditFacilityMember" abstract="true" name="TwoThousandSixteenCreditFacilityMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="sah_COVID19DescriptionTextBlock" abstract="false" name="COVID19DescriptionTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:textBlockItemType"/>
+  <xs:element id="sah_TwoThousandSixteenUsedVehicleFloorPlanFacilityMember" abstract="true" name="TwoThousandSixteenUsedVehicleFloorPlanFacilityMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="sah_RealEstateFairValue" abstract="false" name="RealEstateFairValue" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sah_CashFlowSwapMember" abstract="true" name="CashFlowSwapMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="sah_EchoParkLeaseExitExpense" abstract="false" name="EchoParkLeaseExitExpense" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sah_UnrecognizedTaxBenefitsPriorPeriodPositionAbstract" abstract="true" name="UnrecognizedTaxBenefitsPriorPeriodPositionAbstract" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="sah_FranchiseAssetsReductionsFromImpairmentFdealer" abstract="false" name="FranchiseAssetsReductionsFromImpairmentFdealer" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sah_EchoParkWholesaleVehiclesMember" abstract="true" name="EchoParkWholesaleVehiclesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="sah_PropertyPlantAndEquipmentEstimatedUsefulLivesTableTextBlock" abstract="false" name="PropertyPlantAndEquipmentEstimatedUsefulLivesTableTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:textBlockItemType"/>
+  <xs:element id="sah_OperatingLeasePeriodOfRenewalOptionsMinimum" abstract="false" name="OperatingLeasePeriodOfRenewalOptionsMinimum" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:durationItemType"/>
+  <xs:element id="sah_PowersportInterestExpenseOtherNet" abstract="false" name="PowersportInterestExpenseOtherNet" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sah_FranchisedDomain" abstract="true" name="FranchisedDomain" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="sah_TwoThousandTwentyRevolvingCreditFacilityMember" abstract="true" name="TwoThousandTwentyRevolvingCreditFacilityMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="sah_CashFlowSwapFiveMember" abstract="true" name="CashFlowSwapFiveMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="sah_LeaseExitPayment" abstract="false" name="LeaseExitPayment" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sah_NumberOfOperatingLocations" abstract="false" name="NumberOfOperatingLocations" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="xbrli:integerItemType"/>
+  <xs:element id="sah_AIPensionPlanSpecialFinancialAssistance" abstract="false" name="AIPensionPlanSpecialFinancialAssistance" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sah_NumberOfStoresWithFranchiseRights" abstract="false" name="NumberOfStoresWithFranchiseRights" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="xbrli:integerItemType"/>
+  <xs:element id="sah_NonDeductibleGoodwill" abstract="false" name="NonDeductibleGoodwill" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sah_TwoThousandTwelveFormulaPlanMember" abstract="true" name="TwoThousandTwelveFormulaPlanMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="sah_IntangibleAssetsAssetsAcquiredPowersports" abstract="false" name="IntangibleAssetsAssetsAcquiredPowersports" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sah_ProvisionRecoveryForDoubtfulAccounts" abstract="false" name="ProvisionRecoveryForDoubtfulAccounts" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sah_IncreaseDecreaseInVehicleFloorPlanPayableNonTradeNet" abstract="false" name="IncreaseDecreaseInVehicleFloorPlanPayableNonTradeNet" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sah_BusinessInterruptionInsuranceProceedsMember" abstract="true" name="BusinessInterruptionInsuranceProceedsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="sah_EchoParkDepreciationAndAmortization" abstract="false" name="EchoParkDepreciationAndAmortization" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sah_BMWBrandAxis" abstract="true" name="BMWBrandAxis" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrldt:dimensionItem" type="xbrli:stringItemType"/>
+  <xs:element id="sah_VehicleFloorPlanPayableNonTrade" abstract="false" name="VehicleFloorPlanPayableNonTrade" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sah_ShareBasedCompensationSharesAuthorizedUnderStockOptionPlansOutstandingExercisePriceRange" abstract="false" name="ShareBasedCompensationSharesAuthorizedUnderStockOptionPlansOutstandingExercisePriceRange" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="dtr-types1:perShareItemType"/>
+  <xs:element id="sah_MultiemployerPlansContributionPercentIncreaseDecrease" abstract="false" name="MultiemployerPlansContributionPercentIncreaseDecrease" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+  <xs:element id="sah_SonicFinancialCorporationMember" abstract="true" name="SonicFinancialCorporationMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="sah_OilChemResearchCompanyMember" abstract="true" name="OilChemResearchCompanyMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="sah_LossOnDebtRedemption5PercentNotes" abstract="false" name="LossOnDebtRedemption5PercentNotes" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sah_IncreaseDecreaseInVehicleFloorPlanPayableTradeNet" abstract="false" name="IncreaseDecreaseInVehicleFloorPlanPayableTradeNet" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sah_IntangibleAssetsPowersports" abstract="false" name="IntangibleAssetsPowersports" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sah_DeferredIncomeTaxExpenseBenefitContinuingOperations" abstract="false" name="DeferredIncomeTaxExpenseBenefitContinuingOperations" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sah_FranchisedDealershipMemberMember" abstract="true" name="FranchisedDealershipMemberMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="sah_FairValueOfAssetsAndLiabilitiesMeasuredOnNonRecurringBasisTable" abstract="true" name="FairValueOfAssetsAndLiabilitiesMeasuredOnNonRecurringBasisTable" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrldt:hypercubeItem" type="xbrli:stringItemType"/>
+  <xs:element id="sah_TwoThousandSixteenVehicleFloorPlanFacilityMember" abstract="true" name="TwoThousandSixteenVehicleFloorPlanFacilityMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="sah_NumberOfFranchisesTerminated" abstract="false" name="NumberOfFranchisesTerminated" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="xbrli:integerItemType"/>
+  <xs:element id="sah_PowersportsSegmentSegmentIncome" abstract="false" name="PowersportsSegmentSegmentIncome" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sah_MidLineImportFranchiseMember" abstract="true" name="MidLineImportFranchiseMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="sah_ContingenciesAndCommitmentsLineItems" abstract="true" name="ContingenciesAndCommitmentsLineItems" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="sah_PowerSportSegmentAssets" abstract="false" name="PowerSportSegmentAssets" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sah_EchoParkFloorplanExp" abstract="false" name="EchoParkFloorplanExp" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sah_DebtRedemptionPeriodSevenMember" abstract="true" name="DebtRedemptionPeriodSevenMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="sah_FranchisedDealershipsRetailUnits" abstract="false" name="FranchisedDealershipsRetailUnits" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:integerItemType"/>
+  <xs:element id="sah_InventoryNewVehicles" abstract="false" name="InventoryNewVehicles" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sah_MinimumEBTDARToRentRatio" abstract="false" name="MinimumEBTDARToRentRatio" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+  <xs:element id="sah_OtherAccruedLiabilitiesMember" abstract="true" name="OtherAccruedLiabilitiesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="sah_GoodwillFranchiseSegment" abstract="false" name="GoodwillFranchiseSegment" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sah_IncomeTaxBenefitGoodwillImpairment" abstract="false" name="IncomeTaxBenefitGoodwillImpairment" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sah_FranchisedDealershipsNewVehicleRevenue" abstract="false" name="FranchisedDealershipsNewVehicleRevenue" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sah_FranchisedSegmentInterestExpenseOtherNet" abstract="false" name="FranchisedSegmentInterestExpenseOtherNet" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sah_ServiceLoanerInventoryDirectlyLeasedFromManufacturer" abstract="false" name="ServiceLoanerInventoryDirectlyLeasedFromManufacturer" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sah_GoodwillPowersportsSegment" abstract="false" name="GoodwillPowersportsSegment" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sah_SegmentIncome" abstract="false" name="SegmentIncome" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sah_UsedVehiclesMemberMember" abstract="true" name="UsedVehiclesMemberMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="sah_IntangibleAssetsReductionsFromImpairmentPreowned" abstract="false" name="IntangibleAssetsReductionsFromImpairmentPreowned" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sah_CommonClassAAndBMember" abstract="true" name="CommonClassAAndBMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="sah_FranchisedDealershipsWholesaleRevenue" abstract="false" name="FranchisedDealershipsWholesaleRevenue" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sah_DebtRedemptionPeriodOneMember" abstract="true" name="DebtRedemptionPeriodOneMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="sah_NonVestedRestrictedStockAndRestrictedStockUnitsRSUMember" abstract="true" name="NonVestedRestrictedStockAndRestrictedStockUnitsRSUMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="sah_IntangibleAssetsReductionFromDispositionsPreowned" abstract="false" name="IntangibleAssetsReductionFromDispositionsPreowned" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sah_EchoParkFIMember" abstract="true" name="EchoParkFIMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="sah_FranchisedDealershipsSegmentAssets" abstract="false" name="FranchisedDealershipsSegmentAssets" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sah_NonVestedRestrictedStockUnitsRSUsAndRestrictedStockAwardsMember" abstract="true" name="NonVestedRestrictedStockUnitsRSUsAndRestrictedStockAwardsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="sah_EarlyRedemptionPremium" abstract="true" name="EarlyRedemptionPremium" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+  <xs:element id="sah_IntangibleAssetsAssetsAcquiredPreowned" abstract="false" name="IntangibleAssetsAssetsAcquiredPreowned" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sah_WholesaleVehiclesMember" abstract="true" name="WholesaleVehiclesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="sah_LongTermDebtPrepayment" abstract="false" name="LongTermDebtPrepayment" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sah_NumberOfStoresOpened" abstract="false" name="NumberOfStoresOpened" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:integerItemType"/>
+  <xs:element id="sah_DescriptionOfBusinessAndSummaryOfSignificantAccountingPoliciesTable" abstract="true" name="DescriptionOfBusinessAndSummaryOfSignificantAccountingPoliciesTable" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrldt:hypercubeItem" type="xbrli:stringItemType"/>
+  <xs:element id="sah_AggregateCommitments2019MortgageFacility" abstract="false" name="AggregateCommitments2019MortgageFacility" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sah_DisposalGroupIncludingDiscontinuedOperationAssetsImpairmentChargesRecoveries" abstract="false" name="DisposalGroupIncludingDiscontinuedOperationAssetsImpairmentChargesRecoveries" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sah_FinanceLeaseROUAssetAmortization" abstract="false" name="FinanceLeaseROUAssetAmortization" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sah_LincolnHarrisLLCMember" abstract="true" name="LincolnHarrisLLCMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="sah_SevenPercentSeniorSubordinatedNotesExpiredMember" abstract="true" name="SevenPercentSeniorSubordinatedNotesExpiredMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="sah_EmployeeBenefitPlansMember" abstract="true" name="EmployeeBenefitPlansMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="sah_ConcentrationCreditRiskReceivables" abstract="false" name="ConcentrationCreditRiskReceivables" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sah_FranchisedDealershipsFixedOpsRevenue" abstract="false" name="FranchisedDealershipsFixedOpsRevenue" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sah_RetailNewVehiclesMember" abstract="true" name="RetailNewVehiclesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="sah_PercentageOfMortgageDealershipProperties" abstract="false" name="PercentageOfMortgageDealershipProperties" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+  <xs:element id="sah_RFJMember" abstract="true" name="RFJMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="sah_EchoParkStoresMember" abstract="true" name="EchoParkStoresMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="sah_CashFlowSwapOneMember" abstract="true" name="CashFlowSwapOneMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="sah_IncomeLossFromDiscontinuedOperationsNetOfTaxAttributableToReportingEntityDiluted" abstract="false" name="IncomeLossFromDiscontinuedOperationsNetOfTaxAttributableToReportingEntityDiluted" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sah_GoodwillAdjustmentAxis" abstract="true" name="GoodwillAdjustmentAxis" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrldt:dimensionItem" type="xbrli:stringItemType"/>
+  <xs:element id="sah_RevolvingLoanAggregatePrincipal" abstract="false" name="RevolvingLoanAggregatePrincipal" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sah_OtherReceivablesIncludedInReceivablesNet" abstract="false" name="OtherReceivablesIncludedInReceivablesNet" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sah_DebtInstrumentBasisSpreadLIBOR" abstract="false" name="DebtInstrumentBasisSpreadLIBOR" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+  <xs:element id="sah_LeaseCashAbstract" abstract="true" name="LeaseCashAbstract" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="sah_FranchiseAssetsReductionsFromDispFdealer" abstract="false" name="FranchiseAssetsReductionsFromDispFdealer" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sah_FloorPlanAssistancePolicyTextBlock" abstract="false" name="FloorPlanAssistancePolicyTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:textBlockItemType"/>
+  <xs:element id="sah_A4875PercentNoteMember" abstract="true" name="A4875PercentNoteMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="sah_MaximumBorrowing2019MortgageFacility" abstract="false" name="MaximumBorrowing2019MortgageFacility" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sah_PowersportsCapitalExpenditures" abstract="false" name="PowersportsCapitalExpenditures" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sah_FloorPlanAssistanceRecognized" abstract="false" name="FloorPlanAssistanceRecognized" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sah_RepurchaseOfDebtSecurities" abstract="false" name="RepurchaseOfDebtSecurities" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sah_TotalSegmentImpairmentAxis" abstract="true" name="TotalSegmentImpairmentAxis" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrldt:dimensionItem" type="xbrli:stringItemType"/>
+  <xs:element id="sah_RevolvingBorrowingBase" abstract="false" name="RevolvingBorrowingBase" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sah_FranchisedDealershipsFloorplanExp" abstract="false" name="FranchisedDealershipsFloorplanExp" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sah_EchoParkSegmentRevenue" abstract="false" name="EchoParkSegmentRevenue" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sah_CondensedUnauditedQuarterlyFinancialDataLineItems" abstract="true" name="CondensedUnauditedQuarterlyFinancialDataLineItems" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="sah_DebtInstrumentNetOfUnamortizedDiscountOrPremiumYearThree" abstract="false" name="DebtInstrumentNetOfUnamortizedDiscountOrPremiumYearThree" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sah_PowersportsFloorplanExp" abstract="false" name="PowersportsFloorplanExp" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sah_StandAlonePreOwnedVehicleStoreMember" abstract="true" name="StandAlonePreOwnedVehicleStoreMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="sah_FurnitureFixturesAndEquipmentMember" abstract="true" name="FurnitureFixturesAndEquipmentMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="sah_PYAcqGoodwillAllocationsFdealer" abstract="false" name="PYAcqGoodwillAllocationsFdealer" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sah_PowersportsUsedVehicleRevenue" abstract="false" name="PowersportsUsedVehicleRevenue" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sah_LeaseExpenseFromDiscontinuingOperationNetOfLeaseExitAccrualAdjustments" abstract="false" name="LeaseExpenseFromDiscontinuingOperationNetOfLeaseExitAccrualAdjustments" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sah_FloorPlanInterestExpense" abstract="false" name="FloorPlanInterestExpense" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sah_DebtInstrumentCovenantComplianceUnrestrictedNetIncomeLossAndRetainedEarnings" abstract="false" name="DebtInstrumentCovenantComplianceUnrestrictedNetIncomeLossAndRetainedEarnings" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sah_GWAssetImpairmentPreowned" abstract="false" name="GWAssetImpairmentPreowned" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sah_DebtRedemptionPeriodTwoMember" abstract="true" name="DebtRedemptionPeriodTwoMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="sah_DebtInstrumentPercentageOfOutstandingPrincipalAmountRedeemableUponEventOfDefault" abstract="false" name="DebtInstrumentPercentageOfOutstandingPrincipalAmountRedeemableUponEventOfDefault" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+  <xs:element id="sah_NumberOfOperatingLocationsRelatedToMortgageFinancing" abstract="false" name="NumberOfOperatingLocationsRelatedToMortgageFinancing" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:integerItemType"/>
+  <xs:element id="sah_CashFlowSwapSixMember" abstract="true" name="CashFlowSwapSixMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="sah_TotalVehiclesMember" abstract="true" name="TotalVehiclesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="sah_DisposalGroupNotDiscontinuedOperationRevenue" abstract="false" name="DisposalGroupNotDiscontinuedOperationRevenue" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sah_MortgageNotesPayableMember" abstract="true" name="MortgageNotesPayableMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="sah_SubsequentClassACommonStockRepurchaseAvePrice" abstract="false" name="SubsequentClassACommonStockRepurchaseAvePrice" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="dtr-types1:perShareItemType"/>
+  <xs:element id="sah_PartsServiceandCollisionRepairMember" abstract="true" name="PartsServiceandCollisionRepairMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="sah_FranchisedDealershipsFIRevenue" abstract="false" name="FranchisedDealershipsFIRevenue" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sah_DisposalGroupNotDiscontinuedOperationCosts" abstract="false" name="DisposalGroupNotDiscontinuedOperationCosts" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sah_ObligationsUnderSubleasesAmount" abstract="false" name="ObligationsUnderSubleasesAmount" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sah_MaximumBorrowing2020LineOfCreditFacility" abstract="false" name="MaximumBorrowing2020LineOfCreditFacility" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sah_IncomeLossFromContinuingOperationsDiluted" abstract="false" name="IncomeLossFromContinuingOperationsDiluted" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sah_TwoThousandSixteenRevolvingCreditFacilityMember" abstract="true" name="TwoThousandSixteenRevolvingCreditFacilityMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="sah_UnrecognizedTaxBenefitsIncreasesResultingFromNewPositions" abstract="false" name="UnrecognizedTaxBenefitsIncreasesResultingFromNewPositions" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sah_WeightedAverageInterestRateUsedVehicleFloorPlan" abstract="false" name="WeightedAverageInterestRateUsedVehicleFloorPlan" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+  <xs:element id="sah_LuxuryFranchiseMember" abstract="true" name="LuxuryFranchiseMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="sah_LeaseExitAccruals" abstract="false" name="LeaseExitAccruals" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="sah_SMISCHoldingsIncMember" abstract="true" name="SMISCHoldingsIncMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="sah_LegalAndOtherCharges" abstract="false" name="LegalAndOtherCharges" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+</xs:schema>

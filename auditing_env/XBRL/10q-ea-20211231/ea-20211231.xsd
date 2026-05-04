@@ -1,0 +1,717 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--XBRL Document Created with Wdesk from Workiva-->
+<!--Copyright 2022 Workiva-->
+<!--r:003c6219-ee65-4e49-a684-77a4b2f24f63,g:8bd1f185-cf2c-46bd-9a2f-7390faaed37a-->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:ea="http://www.ea.com/20211231" xmlns:xbrli="http://www.xbrl.org/2003/instance" xmlns:dtr-types="http://www.xbrl.org/dtr/type/2020-01-21" xmlns:xbrldt="http://xbrl.org/2005/xbrldt" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://www.ea.com/20211231">
+  <xs:import namespace="http://fasb.org/srt/2021-01-31" schemaLocation="https://xbrl.fasb.org/srt/2021/elts/srt-2021-01-31.xsd"/>
+  <xs:import namespace="http://fasb.org/us-gaap/2021-01-31" schemaLocation="https://xbrl.fasb.org/us-gaap/2021/elts/us-gaap-2021-01-31.xsd"/>
+  <xs:import namespace="http://www.w3.org/1999/xlink" schemaLocation="http://www.xbrl.org/2003/xlink-2003-12-31.xsd"/>
+  <xs:import namespace="http://www.xbrl.org/2003/instance" schemaLocation="http://www.xbrl.org/2003/xbrl-instance-2003-12-31.xsd"/>
+  <xs:import namespace="http://www.xbrl.org/2003/linkbase" schemaLocation="http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd"/>
+  <xs:import namespace="http://www.xbrl.org/dtr/type/2020-01-21" schemaLocation="https://www.xbrl.org/dtr/type/2020-01-21/types.xsd"/>
+  <xs:import namespace="http://xbrl.org/2005/xbrldt" schemaLocation="http://www.xbrl.org/2005/xbrldt-2005.xsd"/>
+  <xs:import namespace="http://xbrl.sec.gov/dei/2021" schemaLocation="https://xbrl.sec.gov/dei/2021/dei-2021.xsd"/>
+  <xs:annotation>
+    <xs:appinfo>
+      <link:linkbaseRef xmlns:xlink="http://www.w3.org/1999/xlink" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="ea-20211231_lab.xml" xlink:role="http://www.xbrl.org/2003/role/labelLinkbaseRef" xlink:type="simple"/>
+      <link:linkbaseRef xmlns:xlink="http://www.w3.org/1999/xlink" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="ea-20211231_pre.xml" xlink:role="http://www.xbrl.org/2003/role/presentationLinkbaseRef" xlink:type="simple"/>
+      <link:linkbaseRef xmlns:xlink="http://www.w3.org/1999/xlink" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="ea-20211231_cal.xml" xlink:role="http://www.xbrl.org/2003/role/calculationLinkbaseRef" xlink:type="simple"/>
+      <link:linkbaseRef xmlns:xlink="http://www.w3.org/1999/xlink" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="ea-20211231_def.xml" xlink:role="http://www.xbrl.org/2003/role/definitionLinkbaseRef" xlink:type="simple"/>
+      <link:roleType id="Cover" roleURI="http://www.ea.com/role/Cover">
+        <link:definition>0001001 - Document - Cover</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CondensedConsolidatedBalanceSheets" roleURI="http://www.ea.com/role/CondensedConsolidatedBalanceSheets">
+        <link:definition>1001002 - Statement - Condensed Consolidated Balance Sheets</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CondensedConsolidatedBalanceSheetsParenthetical" roleURI="http://www.ea.com/role/CondensedConsolidatedBalanceSheetsParenthetical">
+        <link:definition>1002003 - Statement - Condensed Consolidated Balance Sheets (Parenthetical)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CondensedConsolidatedStatementsOfOperations" roleURI="http://www.ea.com/role/CondensedConsolidatedStatementsOfOperations">
+        <link:definition>1003004 - Statement - Condensed Consolidated Statements Of Operations</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CondensedConsolidatedStatementsofComprehensiveIncomeLoss" roleURI="http://www.ea.com/role/CondensedConsolidatedStatementsofComprehensiveIncomeLoss">
+        <link:definition>1004005 - Statement - Condensed Consolidated Statements of Comprehensive Income (Loss)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CondensedConsolidatedStatementsOfCashFlows" roleURI="http://www.ea.com/role/CondensedConsolidatedStatementsOfCashFlows">
+        <link:definition>1005006 - Statement - Condensed Consolidated Statements Of Cash Flows</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CondensedConsolidatedStatementsofStockholdersEquityStatement" roleURI="http://www.ea.com/role/CondensedConsolidatedStatementsofStockholdersEquityStatement">
+        <link:definition>1006007 - Statement - Condensed Consolidated Statements of Stockholders' Equity Statement</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="DescriptionOfBusinessAndBasisOfPresentation" roleURI="http://www.ea.com/role/DescriptionOfBusinessAndBasisOfPresentation">
+        <link:definition>2101101 - Disclosure - Description Of Business And Basis Of Presentation</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="DescriptionOfBusinessAndBasisOfPresentationPolicies" roleURI="http://www.ea.com/role/DescriptionOfBusinessAndBasisOfPresentationPolicies">
+        <link:definition>2202201 - Disclosure - Description Of Business And Basis Of Presentation (Policies)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="DescriptionOfBusinessAndBasisOfPresentationTables" roleURI="http://www.ea.com/role/DescriptionOfBusinessAndBasisOfPresentationTables">
+        <link:definition>2303301 - Disclosure - Description Of Business And Basis Of Presentation (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="DescriptionOfBusinessAndBasisOfPresentationFiscalPeriodDetails" roleURI="http://www.ea.com/role/DescriptionOfBusinessAndBasisOfPresentationFiscalPeriodDetails">
+        <link:definition>2404401 - Disclosure - Description Of Business And Basis Of Presentation Fiscal Period (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="DescriptionOfBusinessAndBasisOfPresentationNarrativeDetails" roleURI="http://www.ea.com/role/DescriptionOfBusinessAndBasisOfPresentationNarrativeDetails">
+        <link:definition>2405402 - Disclosure - Description Of Business And Basis Of Presentation Narrative (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FairValueMeasurements" roleURI="http://www.ea.com/role/FairValueMeasurements">
+        <link:definition>2106102 - Disclosure - Fair Value Measurements</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FairValueMeasurementsTables" roleURI="http://www.ea.com/role/FairValueMeasurementsTables">
+        <link:definition>2307302 - Disclosure - Fair Value Measurements (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FairValueOfAssetsAndLiabilitiesMeasuredAtFairValueOnARecurringBasisDetails" roleURI="http://www.ea.com/role/FairValueOfAssetsAndLiabilitiesMeasuredAtFairValueOnARecurringBasisDetails">
+        <link:definition>2408403 - Disclosure - (Fair Value Of Assets And Liabilities Measured At Fair Value On A Recurring Basis) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FairValueMeasurementsFairValueMeasurementsNarrativeDetails" roleURI="http://www.ea.com/role/FairValueMeasurementsFairValueMeasurementsNarrativeDetails">
+        <link:definition>1407404 - Statement - Fair Value Measurements Fair Value Measurements (Narrative) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FinancialInstruments" roleURI="http://www.ea.com/role/FinancialInstruments">
+        <link:definition>2109103 - Disclosure - Financial Instruments</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FinancialInstrumentsTables" roleURI="http://www.ea.com/role/FinancialInstrumentsTables">
+        <link:definition>2310303 - Disclosure - Financial Instruments (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FinancialInstrumentsNarrativeDetails" roleURI="http://www.ea.com/role/FinancialInstrumentsNarrativeDetails">
+        <link:definition>2411405 - Disclosure - Financial Instruments (Narrative) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FinancialInstrumentsFairValueOfShortTermInvestmentsDetails" roleURI="http://www.ea.com/role/FinancialInstrumentsFairValueOfShortTermInvestmentsDetails">
+        <link:definition>2412406 - Disclosure - Financial Instruments (Fair Value Of Short-Term Investments) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FinancialInstrumentsFairValueOfShortTermInvestmentsByStatedMaturityDateScheduleDetails" roleURI="http://www.ea.com/role/FinancialInstrumentsFairValueOfShortTermInvestmentsByStatedMaturityDateScheduleDetails">
+        <link:definition>2413407 - Disclosure - Financial Instruments (Fair Value Of Short-Term Investments By Stated Maturity Date Schedule) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="DerivativeFinancialInstruments" roleURI="http://www.ea.com/role/DerivativeFinancialInstruments">
+        <link:definition>2114104 - Disclosure - Derivative Financial Instruments</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="DerivativeFinancialInstrumentsTables" roleURI="http://www.ea.com/role/DerivativeFinancialInstrumentsTables">
+        <link:definition>2315304 - Disclosure - Derivative Financial Instruments (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="DerivativeFinancialInstrumentsNarrativeDetails" roleURI="http://www.ea.com/role/DerivativeFinancialInstrumentsNarrativeDetails">
+        <link:definition>2416408 - Disclosure - Derivative Financial Instruments (Narrative) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="DerivativeFinancialInstrumentsGrossNotionalAmountsandFairValuesforCurrencyDerivativesDetails" roleURI="http://www.ea.com/role/DerivativeFinancialInstrumentsGrossNotionalAmountsandFairValuesforCurrencyDerivativesDetails">
+        <link:definition>2417409 - Disclosure - Derivative Financial Instruments Gross Notional Amounts and Fair Values for Currency Derivatives (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LocationofIncomeExpenseRecognizedinIncomeonDerivativeNonDesignatedHedgingInstrumentsDetails" roleURI="http://www.ea.com/role/LocationofIncomeExpenseRecognizedinIncomeonDerivativeNonDesignatedHedgingInstrumentsDetails">
+        <link:definition>2418410 - Disclosure - Location of Income (Expense) Recognized in Income on Derivative, Non-Designated Hedging Instruments (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="AccumulatedOtherComprehensiveIncomeLoss" roleURI="http://www.ea.com/role/AccumulatedOtherComprehensiveIncomeLoss">
+        <link:definition>2119105 - Disclosure - Accumulated Other Comprehensive Income (Loss)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="AccumulatedOtherComprehensiveIncomeLossTables" roleURI="http://www.ea.com/role/AccumulatedOtherComprehensiveIncomeLossTables">
+        <link:definition>2320305 - Disclosure - Accumulated Other Comprehensive Income (Loss) (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ChangesinAccumulatedOtherComprehensiveIncomebyComponentDetails" roleURI="http://www.ea.com/role/ChangesinAccumulatedOtherComprehensiveIncomebyComponentDetails">
+        <link:definition>2421411 - Disclosure - Changes in Accumulated Other Comprehensive Income by Component (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="EffectsonnetincomeofamountsreclassifiedfromaccumulatedothercomprehensiveincomelossDetails" roleURI="http://www.ea.com/role/EffectsonnetincomeofamountsreclassifiedfromaccumulatedothercomprehensiveincomelossDetails">
+        <link:definition>2422412 - Disclosure - Effects on net income of amounts reclassified from accumulated other comprehensive income (loss) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="AccumulatedOtherComprehensiveIncomeLossAccumulatedOtherComprehensiveIncomeNarrativeDetails" roleURI="http://www.ea.com/role/AccumulatedOtherComprehensiveIncomeLossAccumulatedOtherComprehensiveIncomeNarrativeDetails">
+        <link:definition>2423413 - Disclosure - Accumulated Other Comprehensive Income (Loss) Accumulated Other Comprehensive Income (Narrative) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="BusinessCombinations" roleURI="http://www.ea.com/role/BusinessCombinations">
+        <link:definition>2124106 - Disclosure - Business Combinations</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="BusinessCombinationsandAssetAcquisitionsTables" roleURI="http://www.ea.com/role/BusinessCombinationsandAssetAcquisitionsTables">
+        <link:definition>2325306 - Disclosure - Business Combinations and Asset Acquisitions (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="BusinessCombinationsDetails" roleURI="http://www.ea.com/role/BusinessCombinationsDetails">
+        <link:definition>2426414 - Disclosure - Business Combinations (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="GoodwillAndAcquisitionRelatedIntangiblesNet" roleURI="http://www.ea.com/role/GoodwillAndAcquisitionRelatedIntangiblesNet">
+        <link:definition>2127107 - Disclosure - Goodwill And Acquisition-Related Intangibles, Net</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="GoodwillAndAcquisitionRelatedIntangiblesNetTables" roleURI="http://www.ea.com/role/GoodwillAndAcquisitionRelatedIntangiblesNetTables">
+        <link:definition>2328307 - Disclosure - Goodwill And Acquisition-Related Intangibles, Net (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="GoodwillAndAcquisitionRelatedIntangiblesNetNarrativeDetails" roleURI="http://www.ea.com/role/GoodwillAndAcquisitionRelatedIntangiblesNetNarrativeDetails">
+        <link:definition>2429415 - Disclosure - Goodwill And Acquisition-Related Intangibles, Net (Narrative) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="GoodwillAndAcquisitionRelatedIntangiblesNetScheduleOfChangesInTheCarryingAmountOfGoodwillDetails" roleURI="http://www.ea.com/role/GoodwillAndAcquisitionRelatedIntangiblesNetScheduleOfChangesInTheCarryingAmountOfGoodwillDetails">
+        <link:definition>2430416 - Disclosure - Goodwill And Acquisition-Related Intangibles, Net (Schedule Of Changes In The Carrying Amount Of Goodwill) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="GoodwillAndAcquisitionRelatedIntangiblesNetScheduleOfAcquisitionRelatedIntangiblesDetails" roleURI="http://www.ea.com/role/GoodwillAndAcquisitionRelatedIntangiblesNetScheduleOfAcquisitionRelatedIntangiblesDetails">
+        <link:definition>2431417 - Disclosure - Goodwill And Acquisition-Related Intangibles, Net (Schedule Of Acquisition-Related Intangibles) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="GoodwillAndAcquisitionRelatedIntangiblesNetScheduleOfAmortizationOfIntangibleAssetsDetails" roleURI="http://www.ea.com/role/GoodwillAndAcquisitionRelatedIntangiblesNetScheduleOfAmortizationOfIntangibleAssetsDetails">
+        <link:definition>2432418 - Disclosure - Goodwill And Acquisition-Related Intangibles, Net (Schedule Of Amortization Of Intangible Assets) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="GoodwillAndAcquisitionRelatedIntangiblesNetScheduleOfFutureAmortizationOfAcquisitionRelatedIntangiblesDetails" roleURI="http://www.ea.com/role/GoodwillAndAcquisitionRelatedIntangiblesNetScheduleOfFutureAmortizationOfAcquisitionRelatedIntangiblesDetails">
+        <link:definition>2433419 - Disclosure - Goodwill And Acquisition-Related Intangibles, Net (Schedule Of Future Amortization Of Acquisition-Related Intangibles) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RoyaltiesAndLicenses" roleURI="http://www.ea.com/role/RoyaltiesAndLicenses">
+        <link:definition>2134108 - Disclosure - Royalties And Licenses</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RoyaltiesAndLicensesTables" roleURI="http://www.ea.com/role/RoyaltiesAndLicensesTables">
+        <link:definition>2335308 - Disclosure - Royalties And Licenses (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RoyaltiesAndLicensesScheduleOfRoyaltyRelatedAssetsDetails" roleURI="http://www.ea.com/role/RoyaltiesAndLicensesScheduleOfRoyaltyRelatedAssetsDetails">
+        <link:definition>2436420 - Disclosure - Royalties And Licenses (Schedule Of Royalty-Related Assets) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RoyaltiesAndLicensesScheduleOfRoyaltyRelatedLiabilitiesDetails" roleURI="http://www.ea.com/role/RoyaltiesAndLicensesScheduleOfRoyaltyRelatedLiabilitiesDetails">
+        <link:definition>2437421 - Disclosure - Royalties And Licenses (Schedule Of Royalty-Related Liabilities) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RoyaltiesAndLicensesNarrativeDetails" roleURI="http://www.ea.com/role/RoyaltiesAndLicensesNarrativeDetails">
+        <link:definition>2438422 - Disclosure - Royalties And Licenses (Narrative) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="BalanceSheetDetails" roleURI="http://www.ea.com/role/BalanceSheetDetails">
+        <link:definition>2139109 - Disclosure - Balance Sheet Details</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="BalanceSheetDetailsTables" roleURI="http://www.ea.com/role/BalanceSheetDetailsTables">
+        <link:definition>2340309 - Disclosure - Balance Sheet Details (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="BalanceSheetDetailsNarrativeDetails" roleURI="http://www.ea.com/role/BalanceSheetDetailsNarrativeDetails">
+        <link:definition>2441423 - Disclosure - Balance Sheet Details (Narrative) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="BalanceSheetDetailsInventoriesScheduleDetails" roleURI="http://www.ea.com/role/BalanceSheetDetailsInventoriesScheduleDetails">
+        <link:definition>2442424 - Disclosure - Balance Sheet Details (Inventories Schedule) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="BalanceSheetDetailsPropertyAndEquipmentNetScheduleDetails" roleURI="http://www.ea.com/role/BalanceSheetDetailsPropertyAndEquipmentNetScheduleDetails">
+        <link:definition>2443425 - Disclosure - Balance Sheet Details (Property And Equipment, Net Schedule) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="BalanceSheetDetailsAccruedAndOtherCurrentLiabilitiesScheduleDetails" roleURI="http://www.ea.com/role/BalanceSheetDetailsAccruedAndOtherCurrentLiabilitiesScheduleDetails">
+        <link:definition>2444426 - Disclosure - Balance Sheet Details (Accrued And Other Current Liabilities Schedule) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="BalanceSheetDetailsDeferredNetRevenueDetails" roleURI="http://www.ea.com/role/BalanceSheetDetailsDeferredNetRevenueDetails">
+        <link:definition>2445427 - Disclosure - Balance Sheet Details (Deferred Net Revenue) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="BalanceSheetDetailsRemainingPerformanceObligationsDetails" roleURI="http://www.ea.com/role/BalanceSheetDetailsRemainingPerformanceObligationsDetails">
+        <link:definition>2446428 - Disclosure - Balance Sheet Details (Remaining Performance Obligations) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="BalanceSheetDetailsRemainingPerformanceObligationsDetails_1" roleURI="http://www.ea.com/role/BalanceSheetDetailsRemainingPerformanceObligationsDetails_1">
+        <link:definition>2446428 - Disclosure - Balance Sheet Details (Remaining Performance Obligations) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IncomeTaxes" roleURI="http://www.ea.com/role/IncomeTaxes">
+        <link:definition>2147110 - Disclosure - Income Taxes</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IncomeTaxesTables" roleURI="http://www.ea.com/role/IncomeTaxesTables">
+        <link:definition>2348310 - Disclosure - Income Taxes (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IncomeTaxesNarrativeDetails" roleURI="http://www.ea.com/role/IncomeTaxesNarrativeDetails">
+        <link:definition>2449429 - Disclosure - Income Taxes (Narrative) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FinancingArrangement" roleURI="http://www.ea.com/role/FinancingArrangement">
+        <link:definition>2150111 - Disclosure - Financing Arrangement</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FinancingArrangementTables" roleURI="http://www.ea.com/role/FinancingArrangementTables">
+        <link:definition>2351311 - Disclosure - Financing Arrangement (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FinancingArrangementSeniorNotesDetails" roleURI="http://www.ea.com/role/FinancingArrangementSeniorNotesDetails">
+        <link:definition>2452430 - Disclosure - Financing Arrangement (Senior Notes) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FinancingArrangementLineofCreditFacilityDetails" roleURI="http://www.ea.com/role/FinancingArrangementLineofCreditFacilityDetails">
+        <link:definition>2453431 - Disclosure - Financing Arrangement (Line of Credit Facility) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FinancingArrangementScheduleOfInterestExpenseRelatedToNotesDetails" roleURI="http://www.ea.com/role/FinancingArrangementScheduleOfInterestExpenseRelatedToNotesDetails">
+        <link:definition>2454432 - Disclosure - Financing Arrangement (Schedule Of Interest Expense Related To Notes) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CommitmentsAndContingencies" roleURI="http://www.ea.com/role/CommitmentsAndContingencies">
+        <link:definition>2155112 - Disclosure - Commitments And Contingencies</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CommitmentsAndContingenciesTables" roleURI="http://www.ea.com/role/CommitmentsAndContingenciesTables">
+        <link:definition>2356312 - Disclosure - Commitments And Contingencies (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CommitmentsAndContingenciesNarrativeDetails" roleURI="http://www.ea.com/role/CommitmentsAndContingenciesNarrativeDetails">
+        <link:definition>2457433 - Disclosure - Commitments And Contingencies (Narrative) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CommitmentsAndContingenciesMinimumContractualObligationsDetails" roleURI="http://www.ea.com/role/CommitmentsAndContingenciesMinimumContractualObligationsDetails">
+        <link:definition>2458434 - Disclosure - Commitments And Contingencies (Minimum Contractual Obligations) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CommitmentsAndContingenciesSubsequentEventsDetails" roleURI="http://www.ea.com/role/CommitmentsAndContingenciesSubsequentEventsDetails">
+        <link:definition>2459435 - Disclosure - Commitments And Contingencies Subsequent Events (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="StockBasedCompensation" roleURI="http://www.ea.com/role/StockBasedCompensation">
+        <link:definition>2160113 - Disclosure - Stock-Based Compensation</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="StockBasedCompensationTables" roleURI="http://www.ea.com/role/StockBasedCompensationTables">
+        <link:definition>2361313 - Disclosure - Stock-Based Compensation (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="StockBasedCompensationNarrativeDetails" roleURI="http://www.ea.com/role/StockBasedCompensationNarrativeDetails">
+        <link:definition>2462436 - Disclosure - Stock-Based Compensation (Narrative) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="StockBasedCompensationScheduleOfAssumptionsUsedInBlackScholesModelDetails" roleURI="http://www.ea.com/role/StockBasedCompensationScheduleOfAssumptionsUsedInBlackScholesModelDetails">
+        <link:definition>2463437 - Disclosure - Stock-Based Compensation (Schedule Of Assumptions Used In Black-Scholes Model) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="StockBasedCompensationScheduleOfStockOptionActivityDetails" roleURI="http://www.ea.com/role/StockBasedCompensationScheduleOfStockOptionActivityDetails">
+        <link:definition>2464438 - Disclosure - Stock-Based Compensation (Schedule Of Stock Option Activity) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="StockBasedCompensationScheduleOfRestrictedStockRightsActivityExcludingPerformanceBasedActivityDetails" roleURI="http://www.ea.com/role/StockBasedCompensationScheduleOfRestrictedStockRightsActivityExcludingPerformanceBasedActivityDetails">
+        <link:definition>2465439 - Disclosure - Stock-Based Compensation (Schedule Of Restricted Stock Rights Activity, Excluding Performance-Based Activity) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="StockBasedCompensationScheduleOfPerformanceBasedRestrictedStockUnitActivityDetails" roleURI="http://www.ea.com/role/StockBasedCompensationScheduleOfPerformanceBasedRestrictedStockUnitActivityDetails">
+        <link:definition>2466440 - Disclosure - Stock-Based Compensation (Schedule Of Performance-Based Restricted Stock Unit Activity) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="StockBasedCompensationScheduleOfMarketBasedRestrictedStockUnitActivityDetails" roleURI="http://www.ea.com/role/StockBasedCompensationScheduleOfMarketBasedRestrictedStockUnitActivityDetails">
+        <link:definition>2467441 - Disclosure - Stock-Based Compensation (Schedule Of Market-Based Restricted Stock Unit Activity) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="StockBasedCompensationScheduleOfStockBasedCompensationExpenseByStatementOfOperationsDetails" roleURI="http://www.ea.com/role/StockBasedCompensationScheduleOfStockBasedCompensationExpenseByStatementOfOperationsDetails">
+        <link:definition>2468442 - Disclosure - Stock-Based Compensation (Schedule Of Stock-Based Compensation Expense By Statement Of Operations) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="StockBasedCompensationScheduleofShareRepurchasesDetails" roleURI="http://www.ea.com/role/StockBasedCompensationScheduleofShareRepurchasesDetails">
+        <link:definition>2469443 - Disclosure - Stock-Based Compensation Schedule of Share Repurchases (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="EarningsPerShare" roleURI="http://www.ea.com/role/EarningsPerShare">
+        <link:definition>2170114 - Disclosure - Earnings Per Share</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="EarningsPerShareTables" roleURI="http://www.ea.com/role/EarningsPerShareTables">
+        <link:definition>2371314 - Disclosure - Earnings Per Share (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="EarningsPerShareComputationOfBasicEarningsAndDilutedEarningsPerShareDetails" roleURI="http://www.ea.com/role/EarningsPerShareComputationOfBasicEarningsAndDilutedEarningsPerShareDetails">
+        <link:definition>2472444 - Disclosure - Earnings Per Share (Computation Of Basic Earnings And Diluted Earnings Per Share) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="EarningsPerShareNarrativeDetails" roleURI="http://www.ea.com/role/EarningsPerShareNarrativeDetails">
+        <link:definition>2473445 - Disclosure - Earnings Per Share (Narrative) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SegmentandRevenueInformation" roleURI="http://www.ea.com/role/SegmentandRevenueInformation">
+        <link:definition>2174115 - Disclosure - Segment and Revenue Information</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SegmentandRevenueTables" roleURI="http://www.ea.com/role/SegmentandRevenueTables">
+        <link:definition>2375315 - Disclosure - Segment and Revenue (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SegmentInformationNarrativeDetails" roleURI="http://www.ea.com/role/SegmentInformationNarrativeDetails">
+        <link:definition>2476446 - Disclosure - Segment Information (Narrative) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SegmentInformationNetRevenueByTimingRecognitionDetails" roleURI="http://www.ea.com/role/SegmentInformationNetRevenueByTimingRecognitionDetails">
+        <link:definition>2477447 - Disclosure - Segment Information (Net Revenue By Timing Recognition) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SegmentInformationNetRevenueByRevenueCompositionDetails" roleURI="http://www.ea.com/role/SegmentInformationNetRevenueByRevenueCompositionDetails">
+        <link:definition>2478448 - Disclosure - Segment Information (Net Revenue By Revenue Composition ) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SegmentInformationNetRevenueByPlatformDetails" roleURI="http://www.ea.com/role/SegmentInformationNetRevenueByPlatformDetails">
+        <link:definition>2479449 - Disclosure - Segment Information (Net Revenue By Platform) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SegmentInformationNetRevenueByGeographicAreaDetails" roleURI="http://www.ea.com/role/SegmentInformationNetRevenueByGeographicAreaDetails">
+        <link:definition>2480450 - Disclosure - Segment Information (Net Revenue By Geographic Area) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SegmentInformationLongLivedAssetsByGeographicAreaDetails" roleURI="http://www.ea.com/role/SegmentInformationLongLivedAssetsByGeographicAreaDetails">
+        <link:definition>2481451 - Disclosure - Segment Information (Long-Lived Assets By Geographic Area) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element id="ea_FiscalYear" abstract="false" name="FiscalYear" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:integerItemType"/>
+  <xs:element id="ea_DecreaseInDilutedEarningsPerShareDueToChangeInEstimatedOfferingPeriod" abstract="false" name="DecreaseInDilutedEarningsPerShareDueToChangeInEstimatedOfferingPeriod" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="ea_BusinessCombinationProvisionalInformationInitialAccountingIncompleteAdjustmentCurrentAssets" abstract="false" name="BusinessCombinationProvisionalInformationInitialAccountingIncompleteAdjustmentCurrentAssets" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="ea_FreecashflowMember" abstract="true" name="FreecashflowMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="ea_FairValueOfTheReplacementAwards" abstract="false" name="FairValueOfTheReplacementAwards" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="ea_PortionOfReplacementAwardsRelatedToServicesRenderedAfterGluAcquisition" abstract="false" name="PortionOfReplacementAwardsRelatedToServicesRenderedAfterGluAcquisition" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="ea_MarketingMember" abstract="true" name="MarketingMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="ea_CodemastersIntraEntitySaleOfIntellectualPropertyRightsMember" abstract="true" name="CodemastersIntraEntitySaleOfIntellectualPropertyRightsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="ea_RoyaltyAssetsAndLiabilitiesDisclosureTextBlock" abstract="false" name="RoyaltyAssetsAndLiabilitiesDisclosureTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:textBlockItemType"/>
+  <xs:element id="ea_ShareBasedCompensationArrangementPerformancebasedMilestonePercentage" abstract="false" name="ShareBasedCompensationArrangementPerformancebasedMilestonePercentage" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="dtr-types:percentItemType"/>
+  <xs:element id="ea_UnsatisfiedPerformanceObligationsAxis" abstract="true" name="UnsatisfiedPerformanceObligationsAxis" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrldt:dimensionItem" type="xbrli:stringItemType"/>
+  <xs:element id="ea_DeveloperCommitmentsMember" abstract="true" name="DeveloperCommitmentsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="ea_TotalUnconditionalPurchaseObligationBalanceSheetAmountFiveYearsAfterFiscalYearEnd" abstract="false" name="TotalUnconditionalPurchaseObligationBalanceSheetAmountFiveYearsAfterFiscalYearEnd" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="ea_IncomeTaxFootnoteDisclosureLineItems" abstract="true" name="IncomeTaxFootnoteDisclosureLineItems" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="ea_PaymentsofAcquisitionContingentConsideration" abstract="false" name="PaymentsofAcquisitionContingentConsideration" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="ea_May2017RepurchaseProgramMember" abstract="true" name="May2017RepurchaseProgramMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="ea_FY21ChangeInEstimatedOfferingPeriodMember" abstract="true" name="FY21ChangeInEstimatedOfferingPeriodMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="ea_UnsatisfiedPerformanceObligationsMember" abstract="true" name="UnsatisfiedPerformanceObligationsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="ea_TotalUnconditionalPurchaseobligationbalancesheetamountoneyearafterfiscalyearend" abstract="false" name="TotalUnconditionalPurchaseobligationbalancesheetamountoneyearafterfiscalyearend" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="ea_CodemastersGroupHoldingsPlcMember" abstract="true" name="CodemastersGroupHoldingsPlcMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="ea_Entitywidedisclosureongeographicareasrevenuefromexternalcustomersattributedtoforeigncountriespercentage" abstract="false" name="Entitywidedisclosureongeographicareasrevenuefromexternalcustomersattributedtoforeigncountriespercentage" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:percentItemType"/>
+  <xs:element id="ea_ScheduleofNetRevenuebyPlatformTable" abstract="true" name="ScheduleofNetRevenuebyPlatformTable" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrldt:hypercubeItem" type="xbrli:stringItemType"/>
+  <xs:element id="ea_FiniteLivedIntangibleAssetsAmortizationExpenseRemainderofFiscalYearthroughafterYearFiveDomain" abstract="true" name="FiniteLivedIntangibleAssetsAmortizationExpenseRemainderofFiscalYearthroughafterYearFiveDomain" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="ea_FY22ChangeInEstimatedOfferingPeriodMember" abstract="true" name="FY22ChangeInEstimatedOfferingPeriodMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="ea_AmountOfForeignEarningsThatIsNotPermanentlyReinvestedAvailableForRepatriationWithoutAMaterialCost" abstract="false" name="AmountOfForeignEarningsThatIsNotPermanentlyReinvestedAvailableForRepatriationWithoutAMaterialCost" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="ea_ScheduleofCarryingValuesOfLiabilityandEquityComponentsofSeniorNotesTableTextBlock" abstract="false" name="ScheduleofCarryingValuesOfLiabilityandEquityComponentsofSeniorNotesTableTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:textBlockItemType"/>
+  <xs:element id="ea_UnrecordedUnconditionalPurchaseObligationPayableinCommonStockAxis" abstract="true" name="UnrecordedUnconditionalPurchaseObligationPayableinCommonStockAxis" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrldt:dimensionItem" type="xbrli:stringItemType"/>
+  <xs:element id="ea_ScheduleOfRevenueCompositionTableTextBlock" abstract="false" name="ScheduleOfRevenueCompositionTableTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:textBlockItemType"/>
+  <xs:element id="ea_MobilenetrevenueDomain" abstract="true" name="MobilenetrevenueDomain" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="ea_RoyaltyRelatedAssetsCurrentAndNoncurrent" abstract="false" name="RoyaltyRelatedAssetsCurrentAndNoncurrent" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="ea_FiniteLivedIntangibleAssetsAmortizationExpenseRemainderofFiscalYearthroughafterYearFiveMember" abstract="true" name="FiniteLivedIntangibleAssetsAmortizationExpenseRemainderofFiscalYearthroughafterYearFiveMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="ea_DateOfShareholdersVotingToApproveTheAcquisition" abstract="false" name="DateOfShareholdersVotingToApproveTheAcquisition" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:dateItemType"/>
+  <xs:element id="ea_LiveServicesAndOtherNetRevenueMember" abstract="true" name="LiveServicesAndOtherNetRevenueMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="ea_UnrecordedUnconditionalPurchaseObligationPayableinCommonStockDomain" abstract="true" name="UnrecordedUnconditionalPurchaseObligationPayableinCommonStockDomain" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="ea_May2018RepurchaseProgramMember" abstract="true" name="May2018RepurchaseProgramMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="ea_IncreaseDecreaseInDeferredNetRevenuePackagedGoodsAndDigitalContent" abstract="false" name="IncreaseDecreaseInDeferredNetRevenuePackagedGoodsAndDigitalContent" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="ea_CurrentandPriorYearsFiscalQuarterPeriod" abstract="false" name="CurrentandPriorYearsFiscalQuarterPeriod" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:integerItemType"/>
+  <xs:element id="ea_AmortizedCostAndFairValueOfShortTermInvestmentsByStatedMaturityDateTableTextBlock" abstract="false" name="AmortizedCostAndFairValueOfShortTermInvestmentsByStatedMaturityDateTableTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:textBlockItemType"/>
+  <xs:element id="ea_November2020RepurchaseProgramMember" abstract="true" name="November2020RepurchaseProgramMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="ea_Totalunconditionalpurchaseobligationbalancesheetamountremainingforcurrentfiscalyear" abstract="false" name="Totalunconditionalpurchaseobligationbalancesheetamountremainingforcurrentfiscalyear" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="ea_OnlineenabledgamesMember" abstract="true" name="OnlineenabledgamesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="ea_RoyaltyRelatedAssetsLineItems" abstract="true" name="RoyaltyRelatedAssetsLineItems" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="ea_FiscalPeriodLineItems" abstract="true" name="FiscalPeriodLineItems" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="ea_IncreaseInNetIncomeDueToChangeInEstimatedOfferingPeriod" abstract="false" name="IncreaseInNetIncomeDueToChangeInEstimatedOfferingPeriod" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="ea_OtherMember" abstract="true" name="OtherMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="ea_RestrictedStockRightsMember" abstract="true" name="RestrictedStockRightsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="ea_PerformanceBasedRestrictedStockUnitsMember" abstract="true" name="PerformanceBasedRestrictedStockUnitsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="ea_UnrecognizedTaxBenefitsChangesResultingFromForeignCurrencyTranslation" abstract="false" name="UnrecognizedTaxBenefitsChangesResultingFromForeignCurrencyTranslation" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="ea_A2051NotesMember" abstract="true" name="A2051NotesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="ea_TotalUnconditionalPurchaseObligationBalanceSheetAmountTwoYearsAfterFiscalYearEnd" abstract="false" name="TotalUnconditionalPurchaseObligationBalanceSheetAmountTwoYearsAfterFiscalYearEnd" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="ea_FiscalPeriodTable" abstract="true" name="FiscalPeriodTable" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrldt:hypercubeItem" type="xbrli:stringItemType"/>
+  <xs:element id="ea_EntityWideRevenueByMajorCustomerPercentOfRevenue" abstract="false" name="EntityWideRevenueByMajorCustomerPercentOfRevenue" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:percentItemType"/>
+  <xs:element id="ea_FullgamedownloadsnetrevenueMember" abstract="true" name="FullgamedownloadsnetrevenueMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="ea_DeferredCompensationPlanAssetsMember" abstract="true" name="DeferredCompensationPlanAssetsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="ea_RepurchaseProgramTotalMember" abstract="true" name="RepurchaseProgramTotalMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="ea_PercentageRangeOfSharesReceivedAtVestingBasedOnTotalStockReturnMeasurement" abstract="false" name="PercentageRangeOfSharesReceivedAtVestingBasedOnTotalStockReturnMeasurement" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="dtr-types:percentItemType"/>
+  <xs:element id="ea_AttributedNetRevenueByLegalEntityAxis" abstract="true" name="AttributedNetRevenueByLegalEntityAxis" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrldt:dimensionItem" type="xbrli:stringItemType"/>
+  <xs:element id="ea_UnitedStatesMember" abstract="true" name="UnitedStatesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="ea_AppleDomain" abstract="true" name="AppleDomain" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="ea_EntityWideRevenueByMajorCustomerPercentOfRevenueDidNotExceedTenPercent" abstract="false" name="EntityWideRevenueByMajorCustomerPercentOfRevenueDidNotExceedTenPercent" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:percentItemType"/>
+  <xs:element id="ea_TotaldeferredrevenueMember" abstract="true" name="TotaldeferredrevenueMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="ea_BalanceSheetHedgingMember" abstract="true" name="BalanceSheetHedgingMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="ea_ChangeofcontrolrepurchaseeventMember" abstract="true" name="ChangeofcontrolrepurchaseeventMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="ea_UnrecordedUnconditionalPurchaseObligationsPayableinCommonStockPerYearMember" abstract="true" name="UnrecordedUnconditionalPurchaseObligationsPayableinCommonStockPerYearMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="ea_GamestopCorpMember" abstract="true" name="GamestopCorpMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="ea_GameFlyInc.Member" abstract="true" name="GameFlyInc.Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="ea_RoyaltiesAndLicensesAbstract" abstract="true" name="RoyaltiesAndLicensesAbstract" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="ea_DateOfAnnouncementToEnterIntoADefinitiveMergerAgreement" abstract="false" name="DateOfAnnouncementToEnterIntoADefinitiveMergerAgreement" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:dateItemType"/>
+  <xs:element id="ea_IncreaseInDilutedEarningsPerShareDueToChangeInEstimatedOfferingPeriod" abstract="false" name="IncreaseInDilutedEarningsPerShareDueToChangeInEstimatedOfferingPeriod" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="ea_DeveloperAndLicensorRoyaltyBearingMember" abstract="true" name="DeveloperAndLicensorRoyaltyBearingMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="ea_PCAndOtherNetRevenueDomain" abstract="true" name="PCAndOtherNetRevenueDomain" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="ea_ForeignexchangeforwardcontractstopurchaseMember" abstract="true" name="ForeignexchangeforwardcontractstopurchaseMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="ea_DeferredCompensationPlanLiabilitiesMember" abstract="true" name="DeferredCompensationPlanLiabilitiesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="ea_TotalconsolesnetrevenueDomain" abstract="true" name="TotalconsolesnetrevenueDomain" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="ea_ScheduleofNetRevenuebyPlatformTableTextBlock" abstract="false" name="ScheduleofNetRevenuebyPlatformTableTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:textBlockItemType"/>
+  <xs:element id="ea_ExchangeRatioUsedToConvertGluAwardsToEANumberOfShares" abstract="false" name="ExchangeRatioUsedToConvertGluAwardsToEANumberOfShares" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="xbrli:decimalItemType"/>
+  <xs:element id="ea_A2026NotesMember" abstract="true" name="A2026NotesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="ea_PackagedGoodsNetRevenueMember" abstract="true" name="PackagedGoodsNetRevenueMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="ea_StockbasedcompensationexpenseMember" abstract="true" name="StockbasedcompensationexpenseMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="ea_ContingentConsiderationMember" abstract="true" name="ContingentConsiderationMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="ea_FinancialInstrumentsLineItems" abstract="true" name="FinancialInstrumentsLineItems" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="ea_SeniorNotesPrincipalAndInterestMember" abstract="true" name="SeniorNotesPrincipalAndInterestMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="ea_PerformanceMilestoneDomain" abstract="true" name="PerformanceMilestoneDomain" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="ea_FinancialInstrumentsAbstract" abstract="true" name="FinancialInstrumentsAbstract" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="ea_AccruedAndOtherCurrentLiabilitiesMember" abstract="true" name="AccruedAndOtherCurrentLiabilitiesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="ea_MarketBasedRestrictedStockUnitsMember" abstract="true" name="MarketBasedRestrictedStockUnitsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="ea_RoyaltiesAndLicensesLineItems" abstract="true" name="RoyaltiesAndLicensesLineItems" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="ea_SwitzerlandMember" abstract="true" name="SwitzerlandMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="ea_DateOfAnnouncementPursuantToRule27OfTheUnitedKingdomCityCodeOnTakeoversAndMergers" abstract="false" name="DateOfAnnouncementPursuantToRule27OfTheUnitedKingdomCityCodeOnTakeoversAndMergers" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:dateItemType"/>
+  <xs:element id="ea_DecreaseInNetIncomeDueToChangeInEstimatedOfferingPeriod" abstract="false" name="DecreaseInNetIncomeDueToChangeInEstimatedOfferingPeriod" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="ea_OperatingLeaseImputedInterestMemberMember" abstract="true" name="OperatingLeaseImputedInterestMemberMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="ea_EffectsonnetincomeofamountsreclassifiedfromaccumulatedothercomprehensiveincomelossAbstract" abstract="true" name="EffectsonnetincomeofamountsreclassifiedfromaccumulatedothercomprehensiveincomelossAbstract" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="ea_CurrentandPriorYearsFiscalPeriod" abstract="false" name="CurrentandPriorYearsFiscalPeriod" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:integerItemType"/>
+  <xs:element id="ea_OtherUnrecordedPurchaseObligationsMember" abstract="true" name="OtherUnrecordedPurchaseObligationsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="ea_ShortTermInvestmentsAndCashEquivalentsMember" abstract="true" name="ShortTermInvestmentsAndCashEquivalentsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="ea_PerformanceMilestoneAxis" abstract="true" name="PerformanceMilestoneAxis" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrldt:dimensionItem" type="xbrli:stringItemType"/>
+  <xs:element id="ea_Totalunconditionalpurchaseobligationbalancesheetamountthreeyearsafterfiscalyearend" abstract="false" name="Totalunconditionalpurchaseobligationbalancesheetamountthreeyearsafterfiscalyearend" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="ea_AccruedRoyaltiesMember" abstract="true" name="AccruedRoyaltiesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="ea_DetailsOfCertainBalanceSheetAccountsDisclosureTextBlock" abstract="false" name="DetailsOfCertainBalanceSheetAccountsDisclosureTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:textBlockItemType"/>
+  <xs:element id="ea_UnitedStatesDollarMember" abstract="true" name="UnitedStatesDollarMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="ea_ASU201802Member" abstract="true" name="ASU201802Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="ea_IncreaseInNetRevenueDueToChangeInEstimatedOfferingPeriod" abstract="false" name="IncreaseInNetRevenueDueToChangeInEstimatedOfferingPeriod" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="ea_BusinessCombinationProvisionalInformationInitialAccountingIncompleteAdjustmentOtherAssets" abstract="false" name="BusinessCombinationProvisionalInformationInitialAccountingIncompleteAdjustmentOtherAssets" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="ea_OperatingLossCarryforwardTerm" abstract="false" name="OperatingLossCarryforwardTerm" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:durationItemType"/>
+  <xs:element id="ea_ComputerequipmentandsoftwareMember" abstract="true" name="ComputerequipmentandsoftwareMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="ea_Lineofcreditfacilityterm1" abstract="false" name="Lineofcreditfacilityterm1" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:durationItemType"/>
+  <xs:element id="ea_FiniteLivedIntangibleAssetsAmortizationExpenseRemainderofFiscalYearthroughafterYearFiveAxis" abstract="true" name="FiniteLivedIntangibleAssetsAmortizationExpenseRemainderofFiscalYearthroughafterYearFiveAxis" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrldt:dimensionItem" type="xbrli:stringItemType"/>
+  <xs:element id="ea_RevenueRemainingPerformanceObligationDomain" abstract="true" name="RevenueRemainingPerformanceObligationDomain" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="ea_ScheduleOfRoyaltyRelatedAssetsTableTextBlock" abstract="false" name="ScheduleOfRoyaltyRelatedAssetsTableTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:textBlockItemType"/>
+  <xs:element id="ea_PortionOfReplacementAwardsRelatedToServicesRenderedPriorToGluAcquisition" abstract="false" name="PortionOfReplacementAwardsRelatedToServicesRenderedPriorToGluAcquisition" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="ea_Totalunconditionalpurchaseobligationbalancesheetamount" abstract="false" name="Totalunconditionalpurchaseobligationbalancesheetamount" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="ea_RevenueRemainingPerformanceObligationAxis" abstract="true" name="RevenueRemainingPerformanceObligationAxis" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrldt:dimensionItem" type="xbrli:stringItemType"/>
+  <xs:element id="ea_TotalMember" abstract="true" name="TotalMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="ea_ScheduleOfInterestExpenseTableTextBlock" abstract="false" name="ScheduleOfInterestExpenseTableTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:textBlockItemType"/>
+  <xs:element id="ea_Totalunconditionalpurchaseobligationbalancesheetamountthereafter" abstract="false" name="Totalunconditionalpurchaseobligationbalancesheetamountthereafter" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="ea_InternationalMember" abstract="true" name="InternationalMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="ea_DeveloperAndLicensorRoyaltyandNonRoyaltyBearingMember" abstract="true" name="DeveloperAndLicensorRoyaltyandNonRoyaltyBearingMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="ea_LicenseobligationsMember" abstract="true" name="LicenseobligationsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="ea_ForeignexchangeforwardcontractstosellMember" abstract="true" name="ForeignexchangeforwardcontractstosellMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="ea_RoyaltiesAndLicensesTable" abstract="true" name="RoyaltiesAndLicensesTable" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrldt:hypercubeItem" type="xbrli:stringItemType"/>
+  <xs:element id="ea_ScheduleOfRoyaltyRelatedLiabilitiesTableTextBlock" abstract="false" name="ScheduleOfRoyaltyRelatedLiabilitiesTableTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:textBlockItemType"/>
+  <xs:element id="ea_NoncurrentMember" abstract="true" name="NoncurrentMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="ea_SeniorNotesInterestMember" abstract="true" name="SeniorNotesInterestMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="ea_UnsatisfiedPerformanceObligationsDomain" abstract="true" name="UnsatisfiedPerformanceObligationsDomain" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="ea_ScheduleofNetRevenuebyPlatformLineItems" abstract="true" name="ScheduleofNetRevenuebyPlatformLineItems" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="ea_RespawnEntertainmentLLCMember" abstract="true" name="RespawnEntertainmentLLCMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="ea_RoyaltyRelatedLiabilitiesLineItems" abstract="true" name="RoyaltyRelatedLiabilitiesLineItems" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="ea_FullGameNetRevenueMember" abstract="true" name="FullGameNetRevenueMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="ea_InterestAndOtherIncomeExpenseNetMember" abstract="true" name="InterestAndOtherIncomeExpenseNetMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="ea_AccruedandOtherCurrentLiabilitiesandOtherLiabilitiesDomain" abstract="true" name="AccruedandOtherCurrentLiabilitiesandOtherLiabilitiesDomain" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="ea_A2021NotesMember" abstract="true" name="A2021NotesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="ea_ScheduleOfAmoritizationOfIntangiblesTableTextBlock" abstract="false" name="ScheduleOfAmoritizationOfIntangiblesTableTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:textBlockItemType"/>
+  <xs:element id="ea_LiabilityforUncertaintyinIncomeTaxesNoncurrentandorU.STaxCutsandJobsActTransitionTax" abstract="false" name="LiabilityforUncertaintyinIncomeTaxesNoncurrentandorU.STaxCutsandJobsActTransitionTax" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="ea_EntityWideDisclosureOnGeographicAreasRevenueFromExternalCustomersPercentageOfNorthAmerica" abstract="false" name="EntityWideDisclosureOnGeographicAreasRevenueFromExternalCustomersPercentageOfNorthAmerica" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:percentItemType"/>
+  <xs:element id="ea_DebtInstrumentConvertibleCouponInterestExpense" abstract="false" name="DebtInstrumentConvertibleCouponInterestExpense" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="ea_DeferredTaxAssetPeriodOfReversal" abstract="false" name="DeferredTaxAssetPeriodOfReversal" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:durationItemType"/>
+  <xs:element id="ea_RemainingPerformanceObligationsLineItems" abstract="true" name="RemainingPerformanceObligationsLineItems" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="ea_RegisteredUserBaseAndOtherIntangiblesMember" abstract="true" name="RegisteredUserBaseAndOtherIntangiblesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="ea_GluMobileIncMember" abstract="true" name="GluMobileIncMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="ea_TotalAmortizationIncludedInCostOfRevenueAndOperatingExpenseMember" abstract="true" name="TotalAmortizationIncludedInCostOfRevenueAndOperatingExpenseMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="ea_TransitionAndOtherTaxesMember" abstract="true" name="TransitionAndOtherTaxesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="ea_OptionToRequestAdditionalCommitmentsOnCreditFacility" abstract="false" name="OptionToRequestAdditionalCommitmentsOnCreditFacility" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="ea_DecreaseInNetRevenueDueToChangeInEstimatedOfferingPeriod" abstract="false" name="DecreaseInNetRevenueDueToChangeInEstimatedOfferingPeriod" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="ea_OperatingLeaseMember" abstract="true" name="OperatingLeaseMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="ea_OtherCurrentAssetsandOtherAssetsDomain" abstract="true" name="OtherCurrentAssetsandOtherAssetsDomain" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="ea_AttributedNetRevenueByLegalEntityDomain" abstract="true" name="AttributedNetRevenueByLegalEntityDomain" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="ea_IncomeTaxFootnoteDisclosureTable" abstract="true" name="IncomeTaxFootnoteDisclosureTable" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrldt:hypercubeItem" type="xbrli:stringItemType"/>
+  <xs:element id="ea_AccumulatedOtherComprehensiveIncomeLossRollForward" abstract="true" name="AccumulatedOtherComprehensiveIncomeLossRollForward" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="ea_Deferrednetrevenueother" abstract="false" name="Deferrednetrevenueother" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="ea_MicrosoftDomain" abstract="true" name="MicrosoftDomain" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="ea_BusinessCombinationProvisionalInformationInitialAccountingIncompleteAdjustmentCurrentLiabilities" abstract="false" name="BusinessCombinationProvisionalInformationInitialAccountingIncompleteAdjustmentCurrentLiabilities" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="ea_Totalunconditionalpurchaseobligationbalancesheetamountfouryearsafterfiscalyearend" abstract="false" name="Totalunconditionalpurchaseobligationbalancesheetamountfouryearsafterfiscalyearend" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="ea_PlaydemicLimitedMember" abstract="true" name="PlaydemicLimitedMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="ea_A2031NotesMember" abstract="true" name="A2031NotesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+</xs:schema>
