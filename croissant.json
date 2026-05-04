@@ -42,7 +42,8 @@
     "separator": "cr:separator",
     "source": "cr:source",
     "subField": "cr:subField",
-    "transform": "cr:transform"
+    "transform": "cr:transform",
+    "prov": "http://www.w3.org/ns/prov#"
   },
   "@type": "sc:Dataset",
   "name": "Herculean",
@@ -761,6 +762,114 @@
               "column": "folder_name"
             }
           }
+        }
+      ]
+    }
+  ],
+  "rai:hasSyntheticData": true,
+  "prov:wasDerivedFrom": [
+    {
+      "@id": "https://www.sec.gov/edgar",
+      "prov:label": "SEC EDGAR",
+      "sc:license": "https://www.sec.gov/about/website-policies",
+      "prov:wasAttributedTo": {
+        "@id": "https://www.sec.gov",
+        "prov:label": "U.S. Securities and Exchange Commission"
+      }
+    },
+    {
+      "@id": "https://www.fasb.org/page/PageContent?PageId=/xbrl/2024gaap.html",
+      "prov:label": "FASB US-GAAP Financial Reporting Taxonomy (2021-2024)",
+      "sc:license": "https://www.fasb.org/page/PageContent?PageId=/xbrl/license.html",
+      "prov:wasAttributedTo": {
+        "@id": "https://www.fasb.org",
+        "prov:label": "Financial Accounting Standards Board"
+      }
+    },
+    {
+      "@id": "https://xbrl.us/data-quality/rules-guidance/",
+      "prov:label": "XBRL US Data Quality Committee Rule Set",
+      "sc:license": "https://xbrl.us/home/use/legal/",
+      "prov:wasAttributedTo": {
+        "@id": "https://xbrl.us",
+        "prov:label": "XBRL US"
+      }
+    }
+  ],
+  "prov:wasGeneratedBy": [
+    {
+      "@type": "prov:Activity",
+      "prov:type": {
+        "@id": "https://www.wikidata.org/wiki/Q4929239"
+      },
+      "prov:label": "EDGAR XBRL and filing acquisition",
+      "sc:description": "Downloaded 158 SEC 10-K and 10-Q XBRL filing folders (instance documents and full calc/def/lab/pre linkbases) byte-identical from SEC EDGAR for the 2021-2023 fiscal years, and pulled MD&A and Risk Factors sections for the 8-symbol equity panel from EDGAR HTML filings.",
+      "prov:wasAttributedTo": [
+        {
+          "@type": "prov:Organization",
+          "@id": "yale_fpf_research",
+          "prov:label": "Yale FinNLP Research"
+        }
+      ]
+    },
+    {
+      "@type": "prov:Activity",
+      "prov:type": {
+        "@id": "https://www.wikidata.org/wiki/Q5227332"
+      },
+      "prov:label": "Equity-panel ingestion and Parquet export",
+      "sc:description": "End-of-day OHLCV and daily news for AAPL, ADBE, AMZN, GOOGL, META, MSFT, NVDA, TSLA were ingested into a single DuckDB file, deduplicated, sorted by (symbol, date), and re-exported to ZSTD-compressed Parquet under data/.",
+      "prov:wasAttributedTo": [
+        {
+          "@type": "prov:Organization",
+          "@id": "yale_fpf_research",
+          "prov:label": "Yale FinNLP Research"
+        }
+      ]
+    },
+    {
+      "@type": "prov:Activity",
+      "prov:type": {
+        "@id": "https://www.wikidata.org/wiki/Q1172378"
+      },
+      "prov:label": "MD&A and Risk Factors section extraction",
+      "sc:description": "From each 10-K/10-Q HTML filing, extracted only the MD&A (Item 2 / Item 7) and Risk Factors (Item 1A) sections; financial statements, footnotes, and exhibits are not included in the text fields.",
+      "prov:wasAttributedTo": [
+        {
+          "@type": "prov:Organization",
+          "@id": "yale_fpf_research",
+          "prov:label": "Yale FinNLP Research"
+        }
+      ]
+    },
+    {
+      "@type": "prov:Activity",
+      "prov:type": {
+        "@id": "https://www.wikidata.org/wiki/Q109719325"
+      },
+      "prov:label": "LLM-generated daily news highlights",
+      "sc:description": "The news.highlights field is an LLM-summarized condensation of publicly reported events for each (symbol, date) pair. Underlying events are real (sourced from public news outlets), but the summary phrasing is model-generated and may contain summarization errors.",
+      "prov:wasAttributedTo": [
+        {
+          "@type": "prov:SoftwareAgent",
+          "@id": "llm_summarizer",
+          "prov:label": "Large language model summarizer",
+          "sc:description": "GPT-class LLM used to condense daily public news coverage into a single highlights string per (symbol, date)."
+        }
+      ]
+    },
+    {
+      "@type": "prov:Activity",
+      "prov:type": {
+        "@id": "https://www.wikidata.org/wiki/Q3306762"
+      },
+      "prov:label": "DQC mathematical-consistency rule evaluation",
+      "sc:description": "The 4,959 assertions in mathematical_reasoning.csv were produced by running the XBRL US Data Quality Committee rule set over the EDGAR XBRL corpus; each assertion provides a rule code, severity, source, the offending concept, the reported value, and the value implied by the calculation linkbase.",
+      "prov:wasAttributedTo": [
+        {
+          "@type": "prov:SoftwareAgent",
+          "@id": "xbrl_us_dqc_engine",
+          "prov:label": "XBRL US DQC Rule Engine"
         }
       ]
     }
