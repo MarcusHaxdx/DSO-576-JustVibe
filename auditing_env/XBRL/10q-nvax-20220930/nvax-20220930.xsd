@@ -1,0 +1,407 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--XBRL Document Created with Wdesk from Workiva-->
+<!--Copyright 2022 Workiva-->
+<!--r:318652db-47de-483e-8d6e-14cd89d81e49,g:f31f47aa-f3d4-47a1-9461-ec28f4fffb2f-->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:nvax="http://www.novavax.com/20220930" xmlns:xbrli="http://www.xbrl.org/2003/instance" xmlns:dtr-types="http://www.xbrl.org/dtr/type/2020-01-21" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://www.novavax.com/20220930">
+  <xs:import namespace="http://fasb.org/srt/2022" schemaLocation="https://xbrl.fasb.org/srt/2022/elts/srt-2022.xsd"/>
+  <xs:import namespace="http://fasb.org/us-gaap/2022" schemaLocation="https://xbrl.fasb.org/us-gaap/2022/elts/us-gaap-2022.xsd"/>
+  <xs:import namespace="http://www.w3.org/1999/xlink" schemaLocation="http://www.xbrl.org/2003/xlink-2003-12-31.xsd"/>
+  <xs:import namespace="http://www.xbrl.org/2003/instance" schemaLocation="http://www.xbrl.org/2003/xbrl-instance-2003-12-31.xsd"/>
+  <xs:import namespace="http://www.xbrl.org/2003/linkbase" schemaLocation="http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd"/>
+  <xs:import namespace="http://www.xbrl.org/dtr/type/2020-01-21" schemaLocation="https://www.xbrl.org/dtr/type/2020-01-21/types.xsd"/>
+  <xs:import namespace="http://xbrl.sec.gov/dei/2022" schemaLocation="https://xbrl.sec.gov/dei/2022/dei-2022.xsd"/>
+  <xs:annotation>
+    <xs:appinfo>
+      <link:linkbaseRef xmlns:xlink="http://www.w3.org/1999/xlink" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="nvax-20220930_lab.xml" xlink:role="http://www.xbrl.org/2003/role/labelLinkbaseRef" xlink:type="simple"/>
+      <link:linkbaseRef xmlns:xlink="http://www.w3.org/1999/xlink" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="nvax-20220930_pre.xml" xlink:role="http://www.xbrl.org/2003/role/presentationLinkbaseRef" xlink:type="simple"/>
+      <link:linkbaseRef xmlns:xlink="http://www.w3.org/1999/xlink" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="nvax-20220930_cal.xml" xlink:role="http://www.xbrl.org/2003/role/calculationLinkbaseRef" xlink:type="simple"/>
+      <link:linkbaseRef xmlns:xlink="http://www.w3.org/1999/xlink" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="nvax-20220930_def.xml" xlink:role="http://www.xbrl.org/2003/role/definitionLinkbaseRef" xlink:type="simple"/>
+      <link:roleType id="CoverPage" roleURI="http://www.novavax.com/role/CoverPage">
+        <link:definition>0000001 - Document - Cover Page</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CONSOLIDATEDSTATEMENTSOFOPERATIONS" roleURI="http://www.novavax.com/role/CONSOLIDATEDSTATEMENTSOFOPERATIONS">
+        <link:definition>0000002 - Statement - CONSOLIDATED STATEMENTS OF OPERATIONS</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CONSOLIDATEDSTATEMENTSOFCOMPREHENSIVELOSS" roleURI="http://www.novavax.com/role/CONSOLIDATEDSTATEMENTSOFCOMPREHENSIVELOSS">
+        <link:definition>0000003 - Statement - CONSOLIDATED STATEMENTS OF COMPREHENSIVE LOSS</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CONSOLIDATEDBALANCESHEETS" roleURI="http://www.novavax.com/role/CONSOLIDATEDBALANCESHEETS">
+        <link:definition>0000004 - Statement - CONSOLIDATED BALANCE SHEETS</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CONSOLIDATEDBALANCESHEETSParenthetical" roleURI="http://www.novavax.com/role/CONSOLIDATEDBALANCESHEETSParenthetical">
+        <link:definition>0000005 - Statement - CONSOLIDATED BALANCE SHEETS (Parenthetical)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CONSOLIDATEDSTATEMENTSOFCHANGESINSTOCKHOLDERSEQUITYDEFICIT" roleURI="http://www.novavax.com/role/CONSOLIDATEDSTATEMENTSOFCHANGESINSTOCKHOLDERSEQUITYDEFICIT">
+        <link:definition>0000006 - Statement - CONSOLIDATED STATEMENTS OF CHANGES IN STOCKHOLDERS' EQUITY (DEFICIT)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CONSOLIDATEDSTATEMENTSOFCHANGESINSTOCKHOLDERSEQUITYDEFICITParenthetical" roleURI="http://www.novavax.com/role/CONSOLIDATEDSTATEMENTSOFCHANGESINSTOCKHOLDERSEQUITYDEFICITParenthetical">
+        <link:definition>0000007 - Statement - CONSOLIDATED STATEMENTS OF CHANGES IN STOCKHOLDERS' EQUITY (DEFICIT) (Parenthetical)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CONSOLIDATEDSTATEMENTSOFCASHFLOWS" roleURI="http://www.novavax.com/role/CONSOLIDATEDSTATEMENTSOFCASHFLOWS">
+        <link:definition>0000008 - Statement - CONSOLIDATED STATEMENTS OF CASH FLOWS</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="OrganizationandBusiness" roleURI="http://www.novavax.com/role/OrganizationandBusiness">
+        <link:definition>0000009 - Disclosure - Organization and Business</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SummaryofSignificantAccountingPolicies" roleURI="http://www.novavax.com/role/SummaryofSignificantAccountingPolicies">
+        <link:definition>0000010 - Disclosure - Summary of Significant Accounting Policies</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="Revenue" roleURI="http://www.novavax.com/role/Revenue">
+        <link:definition>0000011 - Disclosure - Revenue</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CollaborationLicenseandSupplyAgreements" roleURI="http://www.novavax.com/role/CollaborationLicenseandSupplyAgreements">
+        <link:definition>0000012 - Disclosure - Collaboration, License, and Supply Agreements</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CashCashEquivalentsandRestrictedCash" roleURI="http://www.novavax.com/role/CashCashEquivalentsandRestrictedCash">
+        <link:definition>0000013 - Disclosure - Cash, Cash Equivalents, and Restricted Cash</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FairValueMeasurements" roleURI="http://www.novavax.com/role/FairValueMeasurements">
+        <link:definition>0000014 - Disclosure - Fair Value Measurements</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="Inventory" roleURI="http://www.novavax.com/role/Inventory">
+        <link:definition>0000015 - Disclosure - Inventory</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IntangibleAssetsandGoodwill" roleURI="http://www.novavax.com/role/IntangibleAssetsandGoodwill">
+        <link:definition>0000016 - Disclosure - Intangible Assets and Goodwill</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="Leases" roleURI="http://www.novavax.com/role/Leases">
+        <link:definition>0000017 - Disclosure - Leases</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="Debt" roleURI="http://www.novavax.com/role/Debt">
+        <link:definition>0000018 - Disclosure - Debt</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="StockholdersEquityDeficit" roleURI="http://www.novavax.com/role/StockholdersEquityDeficit">
+        <link:definition>0000019 - Disclosure - Stockholders' Equity (Deficit)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="StockBasedCompensation" roleURI="http://www.novavax.com/role/StockBasedCompensation">
+        <link:definition>0000020 - Disclosure - Stock-Based Compensation</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IncomeTaxes" roleURI="http://www.novavax.com/role/IncomeTaxes">
+        <link:definition>0000021 - Disclosure - Income Taxes</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CommitmentsandContingencies" roleURI="http://www.novavax.com/role/CommitmentsandContingencies">
+        <link:definition>0000022 - Disclosure - Commitments and Contingencies</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SubsequentEvents" roleURI="http://www.novavax.com/role/SubsequentEvents">
+        <link:definition>0000023 - Disclosure - Subsequent Events</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SummaryofSignificantAccountingPoliciesPolicies" roleURI="http://www.novavax.com/role/SummaryofSignificantAccountingPoliciesPolicies">
+        <link:definition>0000024 - Disclosure - Summary of Significant Accounting Policies (Policies)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RevenueTables" roleURI="http://www.novavax.com/role/RevenueTables">
+        <link:definition>0000025 - Disclosure - Revenue (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CashCashEquivalentsandRestrictedCashTables" roleURI="http://www.novavax.com/role/CashCashEquivalentsandRestrictedCashTables">
+        <link:definition>0000026 - Disclosure - Cash, Cash Equivalents, and Restricted Cash (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FairValueMeasurementsTables" roleURI="http://www.novavax.com/role/FairValueMeasurementsTables">
+        <link:definition>0000027 - Disclosure - Fair Value Measurements (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="InventoryTables" roleURI="http://www.novavax.com/role/InventoryTables">
+        <link:definition>0000028 - Disclosure - Inventory (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IntangibleAssetsandGoodwillTables" roleURI="http://www.novavax.com/role/IntangibleAssetsandGoodwillTables">
+        <link:definition>0000029 - Disclosure - Intangible Assets and Goodwill (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="DebtTables" roleURI="http://www.novavax.com/role/DebtTables">
+        <link:definition>0000030 - Disclosure - Debt (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="StockBasedCompensationTables" roleURI="http://www.novavax.com/role/StockBasedCompensationTables">
+        <link:definition>0000031 - Disclosure - Stock-Based Compensation (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SummaryofSignificantAccountingPoliciesBasisofPresentationDetails" roleURI="http://www.novavax.com/role/SummaryofSignificantAccountingPoliciesBasisofPresentationDetails">
+        <link:definition>0000032 - Disclosure - Summary of Significant Accounting Policies - Basis of Presentation (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RevenueAdditionalInformationDetails" roleURI="http://www.novavax.com/role/RevenueAdditionalInformationDetails">
+        <link:definition>0000033 - Disclosure - Revenue - Additional Information (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RevenueAdditionalInformationDetails_1" roleURI="http://www.novavax.com/role/RevenueAdditionalInformationDetails_1">
+        <link:definition>0000033 - Disclosure - Revenue - Additional Information (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RevenueAccountsReceivableUnbilledServicesandDeferredRevenueDetails" roleURI="http://www.novavax.com/role/RevenueAccountsReceivableUnbilledServicesandDeferredRevenueDetails">
+        <link:definition>0000034 - Disclosure - Revenue - Accounts Receivable, Unbilled Services, and Deferred Revenue (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RevenueScheduleofRevenueDetails" roleURI="http://www.novavax.com/role/RevenueScheduleofRevenueDetails">
+        <link:definition>0000035 - Disclosure - Revenue - Schedule of Revenue (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CollaborationLicenseandSupplyAgreementsDetails" roleURI="http://www.novavax.com/role/CollaborationLicenseandSupplyAgreementsDetails">
+        <link:definition>0000036 - Disclosure - Collaboration, License, and Supply Agreements (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CashCashEquivalentsandRestrictedCashDetails" roleURI="http://www.novavax.com/role/CashCashEquivalentsandRestrictedCashDetails">
+        <link:definition>0000037 - Disclosure - Cash, Cash Equivalents, and Restricted Cash (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FairValueMeasurementsDetails" roleURI="http://www.novavax.com/role/FairValueMeasurementsDetails">
+        <link:definition>0000038 - Disclosure - Fair Value Measurements (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="InventoryDetails" roleURI="http://www.novavax.com/role/InventoryDetails">
+        <link:definition>0000039 - Disclosure - Inventory (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IntangibleAssetsandGoodwillIdentifiableIntangibleAssetsDetails" roleURI="http://www.novavax.com/role/IntangibleAssetsandGoodwillIdentifiableIntangibleAssetsDetails">
+        <link:definition>0000040 - Disclosure - Intangible Assets and Goodwill - Identifiable Intangible Assets (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IntangibleAssetsandGoodwillIdentifiableIntangibleAssetsestimatedamortizationDetails" roleURI="http://www.novavax.com/role/IntangibleAssetsandGoodwillIdentifiableIntangibleAssetsestimatedamortizationDetails">
+        <link:definition>0000041 - Disclosure - Intangible Assets and Goodwill - Identifiable Intangible Assets, estimated amortization (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IntangibleAssetsandGoodwillGoodwillDetails" roleURI="http://www.novavax.com/role/IntangibleAssetsandGoodwillGoodwillDetails">
+        <link:definition>0000042 - Disclosure - Intangible Assets and Goodwill - Goodwill (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LeasesDetails" roleURI="http://www.novavax.com/role/LeasesDetails">
+        <link:definition>0000043 - Disclosure - Leases (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="DebtNarrativeDetails" roleURI="http://www.novavax.com/role/DebtNarrativeDetails">
+        <link:definition>0000044 - Disclosure - Debt - Narrative (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="DebtNotesPayableDetails" roleURI="http://www.novavax.com/role/DebtNotesPayableDetails">
+        <link:definition>0000045 - Disclosure - Debt - Notes Payable (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="DebtInterestExpenseDetails" roleURI="http://www.novavax.com/role/DebtInterestExpenseDetails">
+        <link:definition>0000046 - Disclosure - Debt - Interest Expense (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="StockholdersEquityDeficitDetails" roleURI="http://www.novavax.com/role/StockholdersEquityDeficitDetails">
+        <link:definition>0000047 - Disclosure - Stockholders' Equity (Deficit) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="StockBasedCompensationAdditionalInformationDetails" roleURI="http://www.novavax.com/role/StockBasedCompensationAdditionalInformationDetails">
+        <link:definition>0000048 - Disclosure - Stock-Based Compensation - Additional Information (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="StockBasedCompensationCompensationExpenseDetails" roleURI="http://www.novavax.com/role/StockBasedCompensationCompensationExpenseDetails">
+        <link:definition>0000049 - Disclosure - Stock-Based Compensation - Compensation Expense (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="StockBasedCompensationStockOptionsandAppreciationRightsDetails" roleURI="http://www.novavax.com/role/StockBasedCompensationStockOptionsandAppreciationRightsDetails">
+        <link:definition>0000050 - Disclosure - Stock-Based Compensation - Stock Options and Appreciation Rights (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="StockBasedCompensationStockOptionsandAppreciationRightsAssumptionsDetails" roleURI="http://www.novavax.com/role/StockBasedCompensationStockOptionsandAppreciationRightsAssumptionsDetails">
+        <link:definition>0000051 - Disclosure - Stock-Based Compensation - Stock Options and Appreciation Rights, Assumptions (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="StockBasedCompensationRestrictedStockUnitsDetails" roleURI="http://www.novavax.com/role/StockBasedCompensationRestrictedStockUnitsDetails">
+        <link:definition>0000052 - Disclosure - Stock-Based Compensation - Restricted Stock Units (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="StockBasedCompensationEmployeeStockPurchasePlanDetails" roleURI="http://www.novavax.com/role/StockBasedCompensationEmployeeStockPurchasePlanDetails">
+        <link:definition>0000053 - Disclosure - Stock-Based Compensation - Employee Stock Purchase Plan (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IncomeTaxesDetails" roleURI="http://www.novavax.com/role/IncomeTaxesDetails">
+        <link:definition>0000054 - Disclosure - Income Taxes (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element id="nvax_ShelfRegistrationStatementRemainingUnissuedCapital" abstract="false" name="ShelfRegistrationStatementRemainingUnissuedCapital" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="nvax_NumberOfQuarterlyInstallmentPayments" abstract="false" name="NumberOfQuarterlyInstallmentPayments" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="xbrli:integerItemType"/>
+  <xs:element id="nvax_PurchaseAgreementNumberOfDosesRemaining" abstract="false" name="PurchaseAgreementNumberOfDosesRemaining" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="xbrli:integerItemType"/>
+  <xs:element id="nvax_ReceivablesCurrentNetDeductions" abstract="false" name="ReceivablesCurrentNetDeductions" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="nvax_GaviAdvancePurchaseAgreementCOVAXFacilityMember" abstract="true" name="GaviAdvancePurchaseAgreementCOVAXFacilityMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="nvax_ShareBasedCompensationArrangementByShareBasedPaymentAwardPercentageOfAnnualIncrease" abstract="false" name="ShareBasedCompensationArrangementByShareBasedPaymentAwardPercentageOfAnnualIncrease" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="dtr-types:percentItemType"/>
+  <xs:element id="nvax_TwoThousandFiveStockIncentivePlanMember" abstract="true" name="TwoThousandFiveStockIncentivePlanMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="nvax_CoalitionForEpidemicPreparednessInnovationsAwardMember" abstract="true" name="CoalitionForEpidemicPreparednessInnovationsAwardMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="nvax_FacilityNumberOfSquareFeet" abstract="false" name="FacilityNumberOfSquareFeet" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:areaItemType"/>
+  <xs:element id="nvax_AmendedAndRestatedUKSupplyAgreementMember" abstract="true" name="AmendedAndRestatedUKSupplyAgreementMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="nvax_GrantsUSGovernmentContractAndJointVentureAbstract" abstract="true" name="GrantsUSGovernmentContractAndJointVentureAbstract" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="nvax_EuropeanCommissionsECMember" abstract="true" name="EuropeanCommissionsECMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="nvax_CollaborationAgreementUpfrontPaymentAmount" abstract="false" name="CollaborationAgreementUpfrontPaymentAmount" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="nvax_CompensationStockIssuedUnderIncentiveProgram" abstract="false" name="CompensationStockIssuedUnderIncentiveProgram" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="nvax_ScheduleOfIncreaseDecreaseInAccountsReceivableUnbilledServicesAndDeferredRevenueTableTextBlock" abstract="false" name="ScheduleOfIncreaseDecreaseInAccountsReceivableUnbilledServicesAndDeferredRevenueTableTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:textBlockItemType"/>
+  <xs:element id="nvax_SharebasedCompensationStockIssuedUnderIncentiveProgram" abstract="false" name="SharebasedCompensationStockIssuedUnderIncentiveProgram" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:sharesItemType"/>
+  <xs:element id="nvax_PurchaseAgreementNumberOfVaccineDoses" abstract="false" name="PurchaseAgreementNumberOfVaccineDoses" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="xbrli:integerItemType"/>
+  <xs:element id="nvax_JointCommitteeOnVaccinationAndImmunizationJCVIMember" abstract="true" name="JointCommitteeOnVaccinationAndImmunizationJCVIMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="nvax_DeferredRevenueCurrentAndNonCurrent" abstract="false" name="DeferredRevenueCurrentAndNonCurrent" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="nvax_NonCashRelatedTransactionsForFinanceLeaseRightOfUseAsset" abstract="false" name="NonCashRelatedTransactionsForFinanceLeaseRightOfUseAsset" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="nvax_OperatingAndFinanceLeaseWriteOff" abstract="false" name="OperatingAndFinanceLeaseWriteOff" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="nvax_SettlementAgreementMember" abstract="true" name="SettlementAgreementMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="nvax_GaviAdvancePurchaseAgreementSIIPLMember" abstract="true" name="GaviAdvancePurchaseAgreementSIIPLMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="nvax_CollaborativeArrangementFundAgreedByProvider" abstract="false" name="CollaborativeArrangementFundAgreedByProvider" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="nvax_ScheduleOfShareBasedCompensationRestrictedStockAwardsActivityTableTextBlock" abstract="false" name="ScheduleOfShareBasedCompensationRestrictedStockAwardsActivityTableTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:textBlockItemType"/>
+  <xs:element id="nvax_RoyaltiesAndOtherMember" abstract="true" name="RoyaltiesAndOtherMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="nvax_CollaborativeArrangementForgivableNoInterestTermLoanAmount" abstract="false" name="CollaborativeArrangementForgivableNoInterestTermLoanAmount" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="nvax_DeferredRevenueIncreaseDecreaseAbstract" abstract="true" name="DeferredRevenueIncreaseDecreaseAbstract" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="nvax_A700QuinceOrchardRoadAgreementMember" abstract="true" name="A700QuinceOrchardRoadAgreementMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="nvax_PurchaseAgreementNumberOfDosesToBeDistributed" abstract="false" name="PurchaseAgreementNumberOfDosesToBeDistributed" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="xbrli:integerItemType"/>
+  <xs:element id="nvax_ReceivablesNetCurrentAdditions" abstract="false" name="ReceivablesNetCurrentAdditions" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="nvax_InternalUseSoftwareMember" abstract="true" name="InternalUseSoftwareMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="nvax_PurchaseAgreementNumberOfDosesOfVaccineCandidateAdditionalPurchaseOption" abstract="false" name="PurchaseAgreementNumberOfDosesOfVaccineCandidateAdditionalPurchaseOption" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="xbrli:integerItemType"/>
+  <xs:element id="nvax_DeferredRevenueCurrentDeductions" abstract="false" name="DeferredRevenueCurrentDeductions" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="nvax_AssetsUnderDevelopment" abstract="false" name="AssetsUnderDevelopment" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="nvax_CollaborativeArrangementAbstract" abstract="true" name="CollaborativeArrangementAbstract" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="nvax_PurchaseAgreementNumberOfDosesCancelled" abstract="false" name="PurchaseAgreementNumberOfDosesCancelled" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="xbrli:integerItemType"/>
+  <xs:element id="nvax_LongTermSupplyAgreementIncrementalBorrowingRate" abstract="false" name="LongTermSupplyAgreementIncrementalBorrowingRate" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="dtr-types:percentItemType"/>
+  <xs:element id="nvax_InterestExpenseRelatedToConvertibleNotesTableTextBlock" abstract="false" name="InterestExpenseRelatedToConvertibleNotesTableTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:textBlockItemType"/>
+  <xs:element id="nvax_GovernmentBackedSecuritiesMember" abstract="true" name="GovernmentBackedSecuritiesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="nvax_USDepartmentOfDefenseDoDContractMember" abstract="true" name="USDepartmentOfDefenseDoDContractMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="nvax_SettlementAgreementInitialReservationFee" abstract="false" name="SettlementAgreementInitialReservationFee" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="nvax_USGovernmentPartnershipMember" abstract="true" name="USGovernmentPartnershipMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="nvax_AccountsReceivableUnbilledServicesAndDeferredRevenueRollForward" abstract="true" name="AccountsReceivableUnbilledServicesAndDeferredRevenueRollForward" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="nvax_TwoThousandFifteenStockIncentivePlanMember" abstract="true" name="TwoThousandFifteenStockIncentivePlanMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="nvax_SalesBasedRoyaltiesMember" abstract="true" name="SalesBasedRoyaltiesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="nvax_PurchaseAgreementNumberOfDosesInitialOrder" abstract="false" name="PurchaseAgreementNumberOfDosesInitialOrder" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="xbrli:integerItemType"/>
+  <xs:element id="nvax_ProprietaryAdjuvantTechnologyMember" abstract="true" name="ProprietaryAdjuvantTechnologyMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="nvax_BillMelindaGatesFoundationMember" abstract="true" name="BillMelindaGatesFoundationMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="nvax_ShareBasedCompensationArrangementByShareBasedPaymentAwardOptionsGrantDateExercisePriceMinimumPercent" abstract="false" name="ShareBasedCompensationArrangementByShareBasedPaymentAwardOptionsGrantDateExercisePriceMinimumPercent" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="dtr-types:percentItemType"/>
+  <xs:element id="nvax_DeferredRevenueCurrentAdditions" abstract="false" name="DeferredRevenueCurrentAdditions" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="nvax_CollaborativeArrangementGrantedFunding" abstract="false" name="CollaborativeArrangementGrantedFunding" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="nvax_SettlementPayment" abstract="false" name="SettlementPayment" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="nvax_ProvisionForExcessAndObsoleteInventory" abstract="false" name="ProvisionForExcessAndObsoleteInventory" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="nvax_SettlementAgreementQuarterlyInstallmentAmount" abstract="false" name="SettlementAgreementQuarterlyInstallmentAmount" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+</xs:schema>

@@ -1,0 +1,1138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--XBRL Document Created with Wdesk from Workiva-->
+<!--Copyright 2022 Workiva-->
+<!--r:f74c7fe7-c02a-47cf-a05d-caa09587bb0b,g:038c9b19-0ee3-42c9-8ad7-a1f0933a5d8d-->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:prk="http://www.parknationalbank.com/20211231" xmlns:xbrli="http://www.xbrl.org/2003/instance" xmlns:dtr-types="http://www.xbrl.org/dtr/type/2020-01-21" xmlns:xbrldt="http://xbrl.org/2005/xbrldt" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://www.parknationalbank.com/20211231">
+  <xs:import namespace="http://fasb.org/srt/2021-01-31" schemaLocation="https://xbrl.fasb.org/srt/2021/elts/srt-2021-01-31.xsd"/>
+  <xs:import namespace="http://fasb.org/us-gaap/2021-01-31" schemaLocation="https://xbrl.fasb.org/us-gaap/2021/elts/us-gaap-2021-01-31.xsd"/>
+  <xs:import namespace="http://www.w3.org/1999/xlink" schemaLocation="http://www.xbrl.org/2003/xlink-2003-12-31.xsd"/>
+  <xs:import namespace="http://www.xbrl.org/2003/instance" schemaLocation="http://www.xbrl.org/2003/xbrl-instance-2003-12-31.xsd"/>
+  <xs:import namespace="http://www.xbrl.org/2003/linkbase" schemaLocation="http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd"/>
+  <xs:import namespace="http://www.xbrl.org/dtr/type/2020-01-21" schemaLocation="https://www.xbrl.org/dtr/type/2020-01-21/types.xsd"/>
+  <xs:import namespace="http://xbrl.org/2005/xbrldt" schemaLocation="http://www.xbrl.org/2005/xbrldt-2005.xsd"/>
+  <xs:import namespace="http://xbrl.sec.gov/dei/2021q4" schemaLocation="https://xbrl.sec.gov/dei/2021q4/dei-2021q4.xsd"/>
+  <xs:import namespace="http://xbrl.sec.gov/naics/2021" schemaLocation="https://xbrl.sec.gov/naics/2021/naics-2021.xsd"/>
+  <xs:import namespace="http://xbrl.sec.gov/sic/2021" schemaLocation="https://xbrl.sec.gov/sic/2021/sic-2021.xsd"/>
+  <xs:annotation>
+    <xs:appinfo>
+      <link:linkbaseRef xmlns:xlink="http://www.w3.org/1999/xlink" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="prk-20211231_lab.xml" xlink:role="http://www.xbrl.org/2003/role/labelLinkbaseRef" xlink:type="simple"/>
+      <link:linkbaseRef xmlns:xlink="http://www.w3.org/1999/xlink" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="prk-20211231_pre.xml" xlink:role="http://www.xbrl.org/2003/role/presentationLinkbaseRef" xlink:type="simple"/>
+      <link:linkbaseRef xmlns:xlink="http://www.w3.org/1999/xlink" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="prk-20211231_cal.xml" xlink:role="http://www.xbrl.org/2003/role/calculationLinkbaseRef" xlink:type="simple"/>
+      <link:linkbaseRef xmlns:xlink="http://www.w3.org/1999/xlink" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="prk-20211231_def.xml" xlink:role="http://www.xbrl.org/2003/role/definitionLinkbaseRef" xlink:type="simple"/>
+      <link:roleType id="DocumentandEntityInformation" roleURI="http://www.parknationalbank.com/role/DocumentandEntityInformation">
+        <link:definition>000010001 - Document - Document and Entity Information</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ConsolidatedBalanceSheets" roleURI="http://www.parknationalbank.com/role/ConsolidatedBalanceSheets">
+        <link:definition>100010002 - Statement - Consolidated Balance Sheets</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ConsolidatedBalanceSheetsParenthetical" roleURI="http://www.parknationalbank.com/role/ConsolidatedBalanceSheetsParenthetical">
+        <link:definition>140024001 - Statement - Consolidated Balance Sheets (Parenthetical)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ConsolidatedStatementsofIncome" roleURI="http://www.parknationalbank.com/role/ConsolidatedStatementsofIncome">
+        <link:definition>100030003 - Statement - Consolidated Statements of Income</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="StatementofComprehensiveIncomeStatement" roleURI="http://www.parknationalbank.com/role/StatementofComprehensiveIncomeStatement">
+        <link:definition>100040004 - Statement - Statement of Comprehensive Income (Statement)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="StatementofComprehensiveIncomeParenthetical" roleURI="http://www.parknationalbank.com/role/StatementofComprehensiveIncomeParenthetical">
+        <link:definition>140054002 - Statement - Statement of Comprehensive Income (Parenthetical)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ConsolidatedStatementsofShareholdersEquity" roleURI="http://www.parknationalbank.com/role/ConsolidatedStatementsofShareholdersEquity">
+        <link:definition>100060005 - Statement - Consolidated Statements of Shareholders' Equity</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ConsolidatedStatementofCashFlowsStatement" roleURI="http://www.parknationalbank.com/role/ConsolidatedStatementofCashFlowsStatement">
+        <link:definition>100070006 - Statement - Consolidated Statement of Cash Flows (Statement)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SummaryofSignificantAccountingPolicies" roleURI="http://www.parknationalbank.com/role/SummaryofSignificantAccountingPolicies">
+        <link:definition>210011001 - Disclosure - Summary of Significant Accounting Policies</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SummaryofSignificantAccountingPoliciesPolicies" roleURI="http://www.parknationalbank.com/role/SummaryofSignificantAccountingPoliciesPolicies">
+        <link:definition>220022001 - Disclosure - Summary of Significant Accounting Policies (Policies)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SummaryofSignificantAccountingPoliciesTables" roleURI="http://www.parknationalbank.com/role/SummaryofSignificantAccountingPoliciesTables">
+        <link:definition>230033001 - Disclosure - Summary of Significant Accounting Policies (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SummaryofSignificantAccountingPoliciesDetails" roleURI="http://www.parknationalbank.com/role/SummaryofSignificantAccountingPoliciesDetails">
+        <link:definition>240044003 - Disclosure - Summary of Significant Accounting Policies (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SummaryofSignificantAccountingPoliciesDepreciableLivesofPremisesandEquipmentDetails" roleURI="http://www.parknationalbank.com/role/SummaryofSignificantAccountingPoliciesDepreciableLivesofPremisesandEquipmentDetails">
+        <link:definition>240054004 - Disclosure - Summary of Significant Accounting Policies - Depreciable Lives of Premises and Equipment (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="AdoptionofNewAccountingPronouncementsandIssuedNotYetEffectiveAccountingStandards" roleURI="http://www.parknationalbank.com/role/AdoptionofNewAccountingPronouncementsandIssuedNotYetEffectiveAccountingStandards">
+        <link:definition>210061002 - Disclosure - Adoption of New Accounting Pronouncements and Issued Not Yet Effective Accounting Standards</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="AdoptionofNewAccountingPronouncementsandIssuedNotYetEffectiveAccountingStandardsDetails" roleURI="http://www.parknationalbank.com/role/AdoptionofNewAccountingPronouncementsandIssuedNotYetEffectiveAccountingStandardsDetails">
+        <link:definition>240074005 - Disclosure - Adoption of New Accounting Pronouncements and Issued Not Yet Effective Accounting Standards (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ComprehensiveTextBlockListTables" roleURI="http://www.parknationalbank.com/role/ComprehensiveTextBlockListTables">
+        <link:definition>230083002 - Disclosure - Comprehensive Text Block List (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="Organization" roleURI="http://www.parknationalbank.com/role/Organization">
+        <link:definition>210091003 - Disclosure - Organization</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="InvestmentSecurities" roleURI="http://www.parknationalbank.com/role/InvestmentSecurities">
+        <link:definition>210101004 - Disclosure - Investment Securities</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="InvestmentSecuritiesTables" roleURI="http://www.parknationalbank.com/role/InvestmentSecuritiesTables">
+        <link:definition>230113003 - Disclosure - Investment Securities (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="InvestmentSecuritiesDetails" roleURI="http://www.parknationalbank.com/role/InvestmentSecuritiesDetails">
+        <link:definition>240124006 - Disclosure - Investment Securities (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="InvestmentSecuritiesScheduleofMarketableSecuritiesDetails" roleURI="http://www.parknationalbank.com/role/InvestmentSecuritiesScheduleofMarketableSecuritiesDetails">
+        <link:definition>240134007 - Disclosure - Investment Securities - Schedule of Marketable Securities (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="InvestmentSecuritiesScheduleofunrealizedlossoninvestmentsDetails" roleURI="http://www.parknationalbank.com/role/InvestmentSecuritiesScheduleofunrealizedlossoninvestmentsDetails">
+        <link:definition>240144008 - Disclosure - Investment Securities - Schedule of unrealized loss on investments (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="InvestmentSecuritiesScheduleofcontractualmaturityofdebtsecuritiesDetails" roleURI="http://www.parknationalbank.com/role/InvestmentSecuritiesScheduleofcontractualmaturityofdebtsecuritiesDetails">
+        <link:definition>240154009 - Disclosure - Investment Securities - Schedule of contractual maturity of debt securities (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="InvestmentSecuritiesCostandEquityMethodInvestmentsDetails" roleURI="http://www.parknationalbank.com/role/InvestmentSecuritiesCostandEquityMethodInvestmentsDetails">
+        <link:definition>240164010 - Disclosure - Investment Securities - Cost and Equity Method Investments (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="Loans" roleURI="http://www.parknationalbank.com/role/Loans">
+        <link:definition>210171005 - Disclosure - Loans</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LoansTables" roleURI="http://www.parknationalbank.com/role/LoansTables">
+        <link:definition>230183004 - Disclosure - Loans (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LoansDetails" roleURI="http://www.parknationalbank.com/role/LoansDetails">
+        <link:definition>240194011 - Disclosure - Loans (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LoansScheduleofcompositionofloanportfolioDetails" roleURI="http://www.parknationalbank.com/role/LoansScheduleofcompositionofloanportfolioDetails">
+        <link:definition>240204012 - Disclosure - Loans - Schedule of composition of loan portfolio (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LoansScheduleofrecordedinvestmentinnonaccrualrestructuredandloans90dayspastdueandaccruingDetails" roleURI="http://www.parknationalbank.com/role/LoansScheduleofrecordedinvestmentinnonaccrualrestructuredandloans90dayspastdueandaccruingDetails">
+        <link:definition>240214013 - Disclosure - Loans - Schedule of recorded investment in nonaccrual restructured and loans 90 days past due and accruing (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LoansAdditionalDetailNonaccrualloansandACLDetails" roleURI="http://www.parknationalbank.com/role/LoansAdditionalDetailNonaccrualloansandACLDetails">
+        <link:definition>240224014 - Disclosure - Loans Additional Detail Nonaccrual loans and ACL (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LoansScheduleofloansindividuallyevaluatedforimpairmentbyclassofloanDetails" roleURI="http://www.parknationalbank.com/role/LoansScheduleofloansindividuallyevaluatedforimpairmentbyclassofloanDetails">
+        <link:definition>240234015 - Disclosure - Loans Schedule of loans individually evaluated for impairment by class of loan (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LoansScheduleofaveragerecordedinvestmentandinterestincomerecognizedonloansindividuallyevaluatedforimpairmentDetails" roleURI="http://www.parknationalbank.com/role/LoansScheduleofaveragerecordedinvestmentandinterestincomerecognizedonloansindividuallyevaluatedforimpairmentDetails">
+        <link:definition>240244016 - Disclosure - Loans Schedule of average recorded investment and interest income recognized on loans individually evaluated for impairment (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LoansAgingofrecordedinvestmentinpastdueloansDetails" roleURI="http://www.parknationalbank.com/role/LoansAgingofrecordedinvestmentinpastdueloansDetails">
+        <link:definition>240254017 - Disclosure - Loans Aging of recorded investment in past due loans (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LoansRecordedinvestmentbyloangradeDetails" roleURI="http://www.parknationalbank.com/role/LoansRecordedinvestmentbyloangradeDetails">
+        <link:definition>240264018 - Disclosure - Loans Recorded investment by loan grade (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LoansScheduleoftroubleddebtrestructuringsonfinancingreceivablesDetails" roleURI="http://www.parknationalbank.com/role/LoansScheduleoftroubleddebtrestructuringsonfinancingreceivablesDetails">
+        <link:definition>240274019 - Disclosure - Loans Schedule of troubled debt restructurings on financing receivables (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LoansTroubledDebtRestructuringwithsubsequentdefaultDetails" roleURI="http://www.parknationalbank.com/role/LoansTroubledDebtRestructuringwithsubsequentdefaultDetails">
+        <link:definition>240284020 - Disclosure - Loans, Troubled Debt Restructuring with subsequent default (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="AllowanceforLoanLosses" roleURI="http://www.parknationalbank.com/role/AllowanceforLoanLosses">
+        <link:definition>210291006 - Disclosure - Allowance for Loan Losses</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="AllowanceforLoanLossesTables" roleURI="http://www.parknationalbank.com/role/AllowanceforLoanLossesTables">
+        <link:definition>230303005 - Disclosure - Allowance for Loan Losses (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="AllowanceforLoanLossesDetails" roleURI="http://www.parknationalbank.com/role/AllowanceforLoanLossesDetails">
+        <link:definition>240314021 - Disclosure - Allowance for Loan Losses (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="AllowanceforCreditLossesAdditionalReservesDetails" roleURI="http://www.parknationalbank.com/role/AllowanceforCreditLossesAdditionalReservesDetails">
+        <link:definition>240324022 - Disclosure - Allowance for Credit Losses Additional Reserves (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="AllowanceforLoanLossesActivityintheallowanceforloanlossesDetails" roleURI="http://www.parknationalbank.com/role/AllowanceforLoanLossesActivityintheallowanceforloanlossesDetails">
+        <link:definition>240334023 - Disclosure - Allowance for Loan Losses Activity in the allowance for loan losses (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="AllowanceforLoanLossesCompositionDetails" roleURI="http://www.parknationalbank.com/role/AllowanceforLoanLossesCompositionDetails">
+        <link:definition>240344024 - Disclosure - Allowance for Loan Losses Composition (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="GoodwillandOtherIntangibleAssets" roleURI="http://www.parknationalbank.com/role/GoodwillandOtherIntangibleAssets">
+        <link:definition>210351007 - Disclosure - Goodwill and Other Intangible Assets</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="GoodwillandOtherIntangibleAssetsTables" roleURI="http://www.parknationalbank.com/role/GoodwillandOtherIntangibleAssetsTables">
+        <link:definition>230363006 - Disclosure - Goodwill and Other Intangible Assets (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="GoodwillandOtherIntangibleAssetsScheduleofGoodwillandIntangiblesDetails" roleURI="http://www.parknationalbank.com/role/GoodwillandOtherIntangibleAssetsScheduleofGoodwillandIntangiblesDetails">
+        <link:definition>240374025 - Disclosure - Goodwill and Other Intangible Assets Schedule of Goodwill and Intangibles (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="GoodwillandOtherIntangibleAssetsAcquiredIntangibleAssetsDetails" roleURI="http://www.parknationalbank.com/role/GoodwillandOtherIntangibleAssetsAcquiredIntangibleAssetsDetails">
+        <link:definition>240384026 - Disclosure - Goodwill and Other Intangible Assets Acquired Intangible Assets (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="GoodwillandOtherIntangibleAssetsFutureamortizationexpenseDetails" roleURI="http://www.parknationalbank.com/role/GoodwillandOtherIntangibleAssetsFutureamortizationexpenseDetails">
+        <link:definition>240394027 - Disclosure - Goodwill and Other Intangible Assets Future amortization expense (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="MortgageLoansHeldforSale" roleURI="http://www.parknationalbank.com/role/MortgageLoansHeldforSale">
+        <link:definition>210401008 - Disclosure - Mortgage Loans Held for Sale</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="MortgageLoansHeldforSaleDetails" roleURI="http://www.parknationalbank.com/role/MortgageLoansHeldforSaleDetails">
+        <link:definition>240414028 - Disclosure - Mortgage Loans Held for Sale (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ForeclosedandRepossessedAssets" roleURI="http://www.parknationalbank.com/role/ForeclosedandRepossessedAssets">
+        <link:definition>210421009 - Disclosure - Foreclosed and Repossessed Assets</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ForeclosedandRepossessedAssetsTables" roleURI="http://www.parknationalbank.com/role/ForeclosedandRepossessedAssetsTables">
+        <link:definition>230433007 - Disclosure - Foreclosed and Repossessed Assets (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ForeclosedandRepossessedAssetsDetails" roleURI="http://www.parknationalbank.com/role/ForeclosedandRepossessedAssetsDetails">
+        <link:definition>240444029 - Disclosure - Foreclosed and Repossessed Assets (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="PremisesandEquipment" roleURI="http://www.parknationalbank.com/role/PremisesandEquipment">
+        <link:definition>210451010 - Disclosure - Premises and Equipment</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="PremisesandEquipmentTables" roleURI="http://www.parknationalbank.com/role/PremisesandEquipmentTables">
+        <link:definition>230463008 - Disclosure - Premises and Equipment (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="PremisesandEquipmentDetails" roleURI="http://www.parknationalbank.com/role/PremisesandEquipmentDetails">
+        <link:definition>240474030 - Disclosure - Premises and Equipment (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="InvestmentsinQualifiedAffordableHousing" roleURI="http://www.parknationalbank.com/role/InvestmentsinQualifiedAffordableHousing">
+        <link:definition>210481011 - Disclosure - Investments in Qualified Affordable Housing</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="InvestmentsinQualifiedAffordableHousingTables" roleURI="http://www.parknationalbank.com/role/InvestmentsinQualifiedAffordableHousingTables">
+        <link:definition>230493009 - Disclosure - Investments in Qualified Affordable Housing (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="InvestmentsinQualifiedAffordableHousingDetails" roleURI="http://www.parknationalbank.com/role/InvestmentsinQualifiedAffordableHousingDetails">
+        <link:definition>240504031 - Disclosure - Investments in Qualified Affordable Housing (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="Deposits" roleURI="http://www.parknationalbank.com/role/Deposits">
+        <link:definition>210511012 - Disclosure - Deposits</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="DepositsTables" roleURI="http://www.parknationalbank.com/role/DepositsTables">
+        <link:definition>230523010 - Disclosure - Deposits (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="DepositsSummaryofDepositsDetails" roleURI="http://www.parknationalbank.com/role/DepositsSummaryofDepositsDetails">
+        <link:definition>240534032 - Disclosure - Deposits Summary of Deposits (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="DepositsMaturityoftimedepositsDetails" roleURI="http://www.parknationalbank.com/role/DepositsMaturityoftimedepositsDetails">
+        <link:definition>240544033 - Disclosure - Deposits Maturity of time deposits (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="DepositsDetails" roleURI="http://www.parknationalbank.com/role/DepositsDetails">
+        <link:definition>240554034 - Disclosure - Deposits (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RepurchaseAgreementBorrowings" roleURI="http://www.parknationalbank.com/role/RepurchaseAgreementBorrowings">
+        <link:definition>210561013 - Disclosure - Repurchase Agreement Borrowings</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RepurchaseAgreementBorrowingsTables" roleURI="http://www.parknationalbank.com/role/RepurchaseAgreementBorrowingsTables">
+        <link:definition>230573011 - Disclosure - Repurchase Agreement Borrowings (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RepurchaseAgreementBorrowingsDetails" roleURI="http://www.parknationalbank.com/role/RepurchaseAgreementBorrowingsDetails">
+        <link:definition>240584035 - Disclosure - Repurchase Agreement Borrowings (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ShortTermBorrowings" roleURI="http://www.parknationalbank.com/role/ShortTermBorrowings">
+        <link:definition>210591014 - Disclosure - Short Term Borrowings</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ShortTermBorrowingsTables" roleURI="http://www.parknationalbank.com/role/ShortTermBorrowingsTables">
+        <link:definition>230603012 - Disclosure - Short Term Borrowings (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ShortTermBorrowingsDetails" roleURI="http://www.parknationalbank.com/role/ShortTermBorrowingsDetails">
+        <link:definition>240614036 - Disclosure - Short Term Borrowings (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LongTermDebt" roleURI="http://www.parknationalbank.com/role/LongTermDebt">
+        <link:definition>210621015 - Disclosure - Long-Term Debt</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LongTermDebtTables" roleURI="http://www.parknationalbank.com/role/LongTermDebtTables">
+        <link:definition>230633013 - Disclosure - Long-Term Debt (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LongTermDebtScheduleofmaturitiesDetails" roleURI="http://www.parknationalbank.com/role/LongTermDebtScheduleofmaturitiesDetails">
+        <link:definition>240644037 - Disclosure - Long-Term Debt Schedule of maturities (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LongTermDebtDetails" roleURI="http://www.parknationalbank.com/role/LongTermDebtDetails">
+        <link:definition>240654038 - Disclosure - Long-Term Debt (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SubordinatedNotes" roleURI="http://www.parknationalbank.com/role/SubordinatedNotes">
+        <link:definition>210661016 - Disclosure - Subordinated Notes</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SubordinatedNotesDetails" roleURI="http://www.parknationalbank.com/role/SubordinatedNotesDetails">
+        <link:definition>240674039 - Disclosure - Subordinated Notes (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="Derivatives" roleURI="http://www.parknationalbank.com/role/Derivatives">
+        <link:definition>210681017 - Disclosure - Derivatives</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="DerivativesTables" roleURI="http://www.parknationalbank.com/role/DerivativesTables">
+        <link:definition>230693014 - Disclosure - Derivatives (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="DerivativesScheduleofderivativesDetails" roleURI="http://www.parknationalbank.com/role/DerivativesScheduleofderivativesDetails">
+        <link:definition>240704040 - Disclosure - Derivatives Schedule of derivatives (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="DerivativesincludedinAOCIDetails" roleURI="http://www.parknationalbank.com/role/DerivativesincludedinAOCIDetails">
+        <link:definition>240714041 - Disclosure - Derivatives included in AOCI (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="DerivativesStatementsoffinancialperformanceandfinancialpositionDetails" roleURI="http://www.parknationalbank.com/role/DerivativesStatementsoffinancialperformanceandfinancialpositionDetails">
+        <link:definition>240724042 - Disclosure - Derivatives Statements of financial performance and financial position (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="DerivativesDetails" roleURI="http://www.parknationalbank.com/role/DerivativesDetails">
+        <link:definition>240734043 - Disclosure - Derivatives (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ShareBasedCompensation" roleURI="http://www.parknationalbank.com/role/ShareBasedCompensation">
+        <link:definition>210741018 - Disclosure - Share Based Compensation</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ShareBasedCompensationTables" roleURI="http://www.parknationalbank.com/role/ShareBasedCompensationTables">
+        <link:definition>230753015 - Disclosure - Share Based Compensation (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ShareBasedCompensationActivityDetails" roleURI="http://www.parknationalbank.com/role/ShareBasedCompensationActivityDetails">
+        <link:definition>240764044 - Disclosure - Share Based Compensation Activity (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ShareBasedCompensationNonvestedawardcostDetails" roleURI="http://www.parknationalbank.com/role/ShareBasedCompensationNonvestedawardcostDetails">
+        <link:definition>240774045 - Disclosure - Share Based Compensation Nonvested award cost (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ShareBasedCompensationDetails" roleURI="http://www.parknationalbank.com/role/ShareBasedCompensationDetails">
+        <link:definition>240784046 - Disclosure - Share Based Compensation (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="BenefitPlan" roleURI="http://www.parknationalbank.com/role/BenefitPlan">
+        <link:definition>210791019 - Disclosure - Benefit Plan</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="BenefitPlanTables" roleURI="http://www.parknationalbank.com/role/BenefitPlanTables">
+        <link:definition>230803016 - Disclosure - Benefit Plan (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="BenefitPlanDetails" roleURI="http://www.parknationalbank.com/role/BenefitPlanDetails">
+        <link:definition>240814047 - Disclosure - Benefit Plan (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="BenefitPlanScheduleofplanassetsandbenefitobligationactivityDetails" roleURI="http://www.parknationalbank.com/role/BenefitPlanScheduleofplanassetsandbenefitobligationactivityDetails">
+        <link:definition>240824048 - Disclosure - Benefit Plan Schedule of plan assets and benefit obligation activity (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="BenefitPlanScheduleofallocationofplanassetsDetails" roleURI="http://www.parknationalbank.com/role/BenefitPlanScheduleofallocationofplanassetsDetails">
+        <link:definition>240834049 - Disclosure - Benefit Plan Schedule of allocation of plan assets (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="BenefitPlanScheduleofassumptionsusedtodeterminebenefitobligationsDetails" roleURI="http://www.parknationalbank.com/role/BenefitPlanScheduleofassumptionsusedtodeterminebenefitobligationsDetails">
+        <link:definition>240844050 - Disclosure - Benefit Plan Schedule of assumptions used to determine benefit obligations (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="BenefitPlanScheduleofestimatedfuturepensionbenefitpaymentsDetails" roleURI="http://www.parknationalbank.com/role/BenefitPlanScheduleofestimatedfuturepensionbenefitpaymentsDetails">
+        <link:definition>240854051 - Disclosure - Benefit Plan Schedule of estimated future pension benefit payments (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="BenefitPlanScheduleofbalancesofAOCIDetails" roleURI="http://www.parknationalbank.com/role/BenefitPlanScheduleofbalancesofAOCIDetails">
+        <link:definition>240864052 - Disclosure - Benefit Plan Schedule of balances of AOCI (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="BenefitPlanScheduleofcomponentsofnetperiodicbenefitcostandotheramountsrecognizedinOCIDetails" roleURI="http://www.parknationalbank.com/role/BenefitPlanScheduleofcomponentsofnetperiodicbenefitcostandotheramountsrecognizedinOCIDetails">
+        <link:definition>240874053 - Disclosure - Benefit Plan Schedule of components of net periodic benefit cost and other amounts recognized in OCI (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="BenefitPlanScheduleofassumptionsusedtodeterminecostsDetails" roleURI="http://www.parknationalbank.com/role/BenefitPlanScheduleofassumptionsusedtodeterminecostsDetails">
+        <link:definition>240884054 - Disclosure - Benefit Plan Schedule of assumptions used to determine costs (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="BenefitPlanScheduleofPlanAssetsDetails" roleURI="http://www.parknationalbank.com/role/BenefitPlanScheduleofPlanAssetsDetails">
+        <link:definition>240894055 - Disclosure - Benefit Plan Schedule of Plan Assets (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IncomeTaxes" roleURI="http://www.parknationalbank.com/role/IncomeTaxes">
+        <link:definition>210901020 - Disclosure - Income Taxes</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IncomeTaxesTables" roleURI="http://www.parknationalbank.com/role/IncomeTaxesTables">
+        <link:definition>230913017 - Disclosure - Income Taxes (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IncomeTaxesDetails" roleURI="http://www.parknationalbank.com/role/IncomeTaxesDetails">
+        <link:definition>240924056 - Disclosure - Income Taxes (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IncomeTaxesScheduleofdeferredincometaxassetandliabilitiesDetails" roleURI="http://www.parknationalbank.com/role/IncomeTaxesScheduleofdeferredincometaxassetandliabilitiesDetails">
+        <link:definition>240934057 - Disclosure - Income Taxes Schedule of deferred income tax asset and liabilities (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IncomeTaxesFederalandStateincometaxesDetails" roleURI="http://www.parknationalbank.com/role/IncomeTaxesFederalandStateincometaxesDetails">
+        <link:definition>240944058 - Disclosure - Income Taxes Federal and State income taxes (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IncomeTaxesScheduleofincometaxratereconciliationDetails" roleURI="http://www.parknationalbank.com/role/IncomeTaxesScheduleofincometaxratereconciliationDetails">
+        <link:definition>240954059 - Disclosure - Income Taxes Schedule of income tax rate reconciliation (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IncomeTaxesReconciliationofunrecognizedtaxbenefitsDetails" roleURI="http://www.parknationalbank.com/role/IncomeTaxesReconciliationofunrecognizedtaxbenefitsDetails">
+        <link:definition>240964060 - Disclosure - Income Taxes Reconciliation of unrecognized tax benefits (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="OtherComprehensiveIncome" roleURI="http://www.parknationalbank.com/role/OtherComprehensiveIncome">
+        <link:definition>210971021 - Disclosure - Other Comprehensive Income</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="OtherComprehensiveIncomeTables" roleURI="http://www.parknationalbank.com/role/OtherComprehensiveIncomeTables">
+        <link:definition>230983018 - Disclosure - Other Comprehensive Income (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="OtherComprehensiveIncomeDetails" roleURI="http://www.parknationalbank.com/role/OtherComprehensiveIncomeDetails">
+        <link:definition>240994061 - Disclosure - Other Comprehensive Income (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="EarningsPerShare" roleURI="http://www.parknationalbank.com/role/EarningsPerShare">
+        <link:definition>211001022 - Disclosure - Earnings Per Share</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="EarningsPerShareTables" roleURI="http://www.parknationalbank.com/role/EarningsPerShareTables">
+        <link:definition>231013019 - Disclosure - Earnings Per Share (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="EarningsPerShareSummaryofComputationofBasicandDilutedEarningsperShareDetails" roleURI="http://www.parknationalbank.com/role/EarningsPerShareSummaryofComputationofBasicandDilutedEarningsperShareDetails">
+        <link:definition>241024062 - Disclosure - Earnings Per Share Summary of Computation of Basic and Diluted Earnings per Share (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="EarningsPerShareDetails" roleURI="http://www.parknationalbank.com/role/EarningsPerShareDetails">
+        <link:definition>241034063 - Disclosure - Earnings Per Share (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="DividendRestrictions" roleURI="http://www.parknationalbank.com/role/DividendRestrictions">
+        <link:definition>211041023 - Disclosure - Dividend Restrictions</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="DividendRestrictionsDetails" roleURI="http://www.parknationalbank.com/role/DividendRestrictionsDetails">
+        <link:definition>241054064 - Disclosure - Dividend Restrictions (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FinancialInstrumentsWithOffBalanceSheetRiskandFinancialInstrumentsWithConcentrationsofCreditRisk" roleURI="http://www.parknationalbank.com/role/FinancialInstrumentsWithOffBalanceSheetRiskandFinancialInstrumentsWithConcentrationsofCreditRisk">
+        <link:definition>211061024 - Disclosure - Financial Instruments With Off-Balance Sheet Risk and Financial Instruments With Concentrations of Credit Risk</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FinancialInstrumentsWithOffBalanceSheetRiskandFinancialInstrumentsWithConcentrationsofCreditRiskTables" roleURI="http://www.parknationalbank.com/role/FinancialInstrumentsWithOffBalanceSheetRiskandFinancialInstrumentsWithConcentrationsofCreditRiskTables">
+        <link:definition>231073020 - Disclosure - Financial Instruments With Off-Balance Sheet Risk and Financial Instruments With Concentrations of Credit Risk (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FinancialInstrumentsWithOffBalanceSheetRiskandFinancialInstrumentsWithConcentrationsofCreditRiskDetails" roleURI="http://www.parknationalbank.com/role/FinancialInstrumentsWithOffBalanceSheetRiskandFinancialInstrumentsWithConcentrationsofCreditRiskDetails">
+        <link:definition>241084065 - Disclosure - Financial Instruments With Off-Balance Sheet Risk and Financial Instruments With Concentrations of Credit Risk (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LoanServicing" roleURI="http://www.parknationalbank.com/role/LoanServicing">
+        <link:definition>211091025 - Disclosure - Loan Servicing</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LoanServicingTables" roleURI="http://www.parknationalbank.com/role/LoanServicingTables">
+        <link:definition>231103021 - Disclosure - Loan Servicing (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LoanServicingDetails" roleURI="http://www.parknationalbank.com/role/LoanServicingDetails">
+        <link:definition>241114066 - Disclosure - Loan Servicing (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LoanServicingActivityofMSRsandtherelatedvaluationallowanceDetails" roleURI="http://www.parknationalbank.com/role/LoanServicingActivityofMSRsandtherelatedvaluationallowanceDetails">
+        <link:definition>241124067 - Disclosure - Loan Servicing Activity of MSRs and the related valuation allowance (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="Leases" roleURI="http://www.parknationalbank.com/role/Leases">
+        <link:definition>211131026 - Disclosure - Leases</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LeasesTables" roleURI="http://www.parknationalbank.com/role/LeasesTables">
+        <link:definition>231143022 - Disclosure - Leases (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LeasesDetails" roleURI="http://www.parknationalbank.com/role/LeasesDetails">
+        <link:definition>241154068 - Disclosure - Leases (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LeasesLeaseCostDetails" roleURI="http://www.parknationalbank.com/role/LeasesLeaseCostDetails">
+        <link:definition>241164069 - Disclosure - Leases, Lease Cost (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LeasesOperatingleaseliabilitiespaymentsdueDetails" roleURI="http://www.parknationalbank.com/role/LeasesOperatingleaseliabilitiespaymentsdueDetails">
+        <link:definition>241174070 - Disclosure - Leases, Operating lease liabilities payments due (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FairValue" roleURI="http://www.parknationalbank.com/role/FairValue">
+        <link:definition>211181027 - Disclosure - Fair Value</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FairValueTables" roleURI="http://www.parknationalbank.com/role/FairValueTables">
+        <link:definition>231193023 - Disclosure - Fair Value (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FairValueDetails" roleURI="http://www.parknationalbank.com/role/FairValueDetails">
+        <link:definition>241204071 - Disclosure - Fair Value (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FairValueScheduleofFinancialAssetsandLiabilitiesmeasuredonrecurringbasisDetails" roleURI="http://www.parknationalbank.com/role/FairValueScheduleofFinancialAssetsandLiabilitiesmeasuredonrecurringbasisDetails">
+        <link:definition>241214072 - Disclosure - Fair Value Schedule of Financial Assets and Liabilities measured on recurring basis (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FairValueReconciliationofLevel3InputforFinancialInstrumentsmeasuredonrecurringbasisDetails" roleURI="http://www.parknationalbank.com/role/FairValueReconciliationofLevel3InputforFinancialInstrumentsmeasuredonrecurringbasisDetails">
+        <link:definition>241224073 - Disclosure - Fair Value Reconciliation of Level 3 Input for Financial Instruments measured on recurring basis (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FairValueAssetsandLiabilitiesmeasuredonnonrecurringbasisDetails" roleURI="http://www.parknationalbank.com/role/FairValueAssetsandLiabilitiesmeasuredonnonrecurringbasisDetails">
+        <link:definition>241234074 - Disclosure - Fair Value Assets and Liabilities measured on nonrecurring basis (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FairValueImpairedfinancingreceivablesDetails" roleURI="http://www.parknationalbank.com/role/FairValueImpairedfinancingreceivablesDetails">
+        <link:definition>241244075 - Disclosure - Fair Value Impaired financing receivables (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FairValueScheduleofqualitativeinformationonLevel3measurementsDetails" roleURI="http://www.parknationalbank.com/role/FairValueScheduleofqualitativeinformationonLevel3measurementsDetails">
+        <link:definition>241254076 - Disclosure - Fair Value Schedule of qualitative information on Level 3 measurements (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FairValuebyBalanceSheetgroupingDetails" roleURI="http://www.parknationalbank.com/role/FairValuebyBalanceSheetgroupingDetails">
+        <link:definition>241264077 - Disclosure - Fair Value by Balance Sheet grouping (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CapitalRatios" roleURI="http://www.parknationalbank.com/role/CapitalRatios">
+        <link:definition>211271028 - Disclosure - Capital Ratios</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CapitalRatiosTables" roleURI="http://www.parknationalbank.com/role/CapitalRatiosTables">
+        <link:definition>231283024 - Disclosure - Capital Ratios (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CapitalRatiosDetails" roleURI="http://www.parknationalbank.com/role/CapitalRatiosDetails">
+        <link:definition>241294078 - Disclosure - Capital Ratios (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SegmentReporting" roleURI="http://www.parknationalbank.com/role/SegmentReporting">
+        <link:definition>211301029 - Disclosure - Segment Reporting</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SegmentReportingTables" roleURI="http://www.parknationalbank.com/role/SegmentReportingTables">
+        <link:definition>231313025 - Disclosure - Segment Reporting (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SegmentReportingDetails" roleURI="http://www.parknationalbank.com/role/SegmentReportingDetails">
+        <link:definition>241324079 - Disclosure - Segment Reporting (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ParentCompanyStatements" roleURI="http://www.parknationalbank.com/role/ParentCompanyStatements">
+        <link:definition>211331030 - Disclosure - Parent Company Statements</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ParentCompanyStatementsTables" roleURI="http://www.parknationalbank.com/role/ParentCompanyStatementsTables">
+        <link:definition>231343026 - Disclosure - Parent Company Statements (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ParentCompanyStatementsDetails" roleURI="http://www.parknationalbank.com/role/ParentCompanyStatementsDetails">
+        <link:definition>241354080 - Disclosure - Parent Company Statements (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ParentCompanyBalanceSheetDetails" roleURI="http://www.parknationalbank.com/role/ParentCompanyBalanceSheetDetails">
+        <link:definition>241364081 - Disclosure - Parent Company Balance Sheet (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ParentCompanyStatementsofIncomeDetails" roleURI="http://www.parknationalbank.com/role/ParentCompanyStatementsofIncomeDetails">
+        <link:definition>241374082 - Disclosure - Parent Company Statements of Income (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ParentCompanyStatementofCashFlowsDetails" roleURI="http://www.parknationalbank.com/role/ParentCompanyStatementofCashFlowsDetails">
+        <link:definition>241384083 - Disclosure - Parent Company Statement of Cash Flows (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RevenuefromContractwithCustomer" roleURI="http://www.parknationalbank.com/role/RevenuefromContractwithCustomer">
+        <link:definition>211391031 - Disclosure - Revenue from Contract with Customer</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RevenuefromContractwithCustomerTables" roleURI="http://www.parknationalbank.com/role/RevenuefromContractwithCustomerTables">
+        <link:definition>231403027 - Disclosure - Revenue from Contract with Customer (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RevenuefromContractwithCustomerDetails" roleURI="http://www.parknationalbank.com/role/RevenuefromContractwithCustomerDetails">
+        <link:definition>241414084 - Disclosure - Revenue from Contract with Customer (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element id="prk_SBAPPPFeesRecognized" abstract="false" name="SBAPPPFeesRecognized" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="prk_SixRatedMember" abstract="true" name="SixRatedMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="prk_FederalHomeLoanBankAndFederalReserveBankStockPolicyPolicyTextBlock" abstract="false" name="FederalHomeLoanBankAndFederalReserveBankStockPolicyPolicyTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:textBlockItemType"/>
+  <xs:element id="prk_ImpairedFinancingReceivableCarriedAtFairValueRelatedExpense" abstract="false" name="ImpairedFinancingReceivableCarriedAtFairValueRelatedExpense" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="prk_LoansHeldForSaleDisclosureTextBlockTextBlock" abstract="false" name="LoansHeldForSaleDisclosureTextBlockTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:textBlockItemType"/>
+  <xs:element id="prk_PrincipalAmountOutstandingOnSoldLoansServicingRetained" abstract="false" name="PrincipalAmountOutstandingOnSoldLoansServicingRetained" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="prk_LeverageCapitalRequiredForCapitalAdequacypluscapitalconservationbufferToAverageTotalAssets" abstract="false" name="LeverageCapitalRequiredForCapitalAdequacypluscapitalconservationbufferToAverageTotalAssets" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="dtr-types:percentItemType"/>
+  <xs:element id="prk_ProceedsfromSaleofDebtSecurities" abstract="false" name="ProceedsfromSaleofDebtSecurities" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="prk_BorrowingDerivativeMember" abstract="true" name="BorrowingDerivativeMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="prk_Otherinvestingactivitiesnet" abstract="false" name="Otherinvestingactivitiesnet" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="prk_ConsumerLessGFSCAndCheckLoansMember" abstract="true" name="ConsumerLessGFSCAndCheckLoansMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="prk_FinancingReceivableRecordedInvestmentAccruingLoans30To89DaysPastDue" abstract="false" name="FinancingReceivableRecordedInvestmentAccruingLoans30To89DaysPastDue" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="prk_OtherInvestmentSecuritiesTableTextBlock" abstract="false" name="OtherInvestmentSecuritiesTableTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:textBlockItemType"/>
+  <xs:element id="prk_ImpairedFinancingReceivableCarryingValue" abstract="false" name="ImpairedFinancingReceivableCarryingValue" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="prk_DebitCardFeeIncome" abstract="false" name="DebitCardFeeIncome" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="prk_UndistributedLossesOfSubsidiaries" abstract="false" name="UndistributedLossesOfSubsidiaries" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="prk_FinancingReceivableWithNoRelatedAllowanceRecordedMember" abstract="true" name="FinancingReceivableWithNoRelatedAllowanceRecordedMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="prk_ModifiedSubstandardCommercialLoansTotalRecordedInvestment" abstract="false" name="ModifiedSubstandardCommercialLoansTotalRecordedInvestment" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="prk_LoansAndLeasesReceivableRatioOfAllowanceForLoanLossesToTotalLoansIndividuallyEvaluatedForImpairment" abstract="false" name="LoansAndLeasesReceivableRatioOfAllowanceForLoanLossesToTotalLoansIndividuallyEvaluatedForImpairment" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="dtr-types:percentItemType"/>
+  <xs:element id="prk_IncomeBeforeTaxesAndEquityInUndistributedLossesOfSubsidiaries" abstract="false" name="IncomeBeforeTaxesAndEquityInUndistributedLossesOfSubsidiaries" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="prk_DiscountPercentageAppliedToLotDevelopmentAppraisedValues" abstract="false" name="DiscountPercentageAppliedToLotDevelopmentAppraisedValues" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:percentItemType"/>
+  <xs:element id="prk_LongTermDebtExcludingUnamortizedCostOfDebtExtinguishmentCosts" abstract="false" name="LongTermDebtExcludingUnamortizedCostOfDebtExtinguishmentCosts" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="prk_CashPaymentForFractionalShares" abstract="false" name="CashPaymentForFractionalShares" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="prk_MortgageLoansHeldForSalePolicyPolicyTextBlock" abstract="false" name="MortgageLoansHeldForSalePolicyPolicyTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:textBlockItemType"/>
+  <xs:element id="prk_Underage30Member" abstract="true" name="Underage30Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="prk_Creditcardotherserviceincome" abstract="false" name="Creditcardotherserviceincome" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="prk_MortgageLoansSoldWithRecourseReserve" abstract="false" name="MortgageLoansSoldWithRecourseReserve" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="prk_CompositionOfLoanPortfolioByClassOfLoanTableTextBlock" abstract="false" name="CompositionOfLoanPortfolioByClassOfLoanTableTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:textBlockItemType"/>
+  <xs:element id="prk_CheckLoansMember" abstract="true" name="CheckLoansMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="prk_PurchasedcreditimpairedMember" abstract="true" name="PurchasedcreditimpairedMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="prk_ImpairedMember" abstract="true" name="ImpairedMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="prk_LoansAndLeasesReceivableRelatedPartiesAdvances" abstract="false" name="LoansAndLeasesReceivableRelatedPartiesAdvances" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="prk_IncreaseDecreaseInOneWaySellDeposits" abstract="false" name="IncreaseDecreaseInOneWaySellDeposits" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="prk_Equityinvestmentpurchasedshares" abstract="false" name="Equityinvestmentpurchasedshares" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:sharesItemType"/>
+  <xs:element id="prk_PPPLoansMember" abstract="true" name="PPPLoansMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="prk_ShareBasePaymentArrangementCostNotYetRecognizedYearTwoAmount" abstract="false" name="ShareBasePaymentArrangementCostNotYetRecognizedYearTwoAmount" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="prk_TroubledDebtRestructuringIncludedInNonaccrualLoans" abstract="false" name="TroubledDebtRestructuringIncludedInNonaccrualLoans" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="prk_OtherLiabilitiesUnclassified" abstract="false" name="OtherLiabilitiesUnclassified" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="prk_ScheduleOfLoansIndividuallyEvaluatedForImpairmentByClassOfLoansTableTextBlock" abstract="false" name="ScheduleOfLoansIndividuallyEvaluatedForImpairmentByClassOfLoansTableTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:textBlockItemType"/>
+  <xs:element id="prk_BankOwnedLifeInsurancePolicyTextBlock" abstract="false" name="BankOwnedLifeInsurancePolicyTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:textBlockItemType"/>
+  <xs:element id="prk_DefinedBenefitPlanExpectedReturnOnPlanAssetsPercentage" abstract="false" name="DefinedBenefitPlanExpectedReturnOnPlanAssetsPercentage" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:percentItemType"/>
+  <xs:element id="prk_OtherCollateralMember" abstract="true" name="OtherCollateralMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="prk_LoansAndLeasesReceivableRatioOfAllowanceForLoanLossesToTotalLoansCollectivelyEvaluatedForImpairment" abstract="false" name="LoansAndLeasesReceivableRatioOfAllowanceForLoanLossesToTotalLoansCollectivelyEvaluatedForImpairment" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="dtr-types:percentItemType"/>
+  <xs:element id="prk_PartialChargeOffsOnImpairedLoansCarriedAtFairValue" abstract="false" name="PartialChargeOffsOnImpairedLoansCarriedAtFairValue" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="prk_Installmentotherserviceincome" abstract="false" name="Installmentotherserviceincome" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="prk_JuniorSubordinatedDebtPurchasedByTrust" abstract="false" name="JuniorSubordinatedDebtPurchasedByTrust" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="prk_CommercialFinancialAndAgriculturalMember" abstract="true" name="CommercialFinancialAndAgriculturalMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="prk_ScheduleOfReconciliationOfFinancialInformationTableTextBlock" abstract="false" name="ScheduleOfReconciliationOfFinancialInformationTableTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:textBlockItemType"/>
+  <xs:element id="prk_FinancingReceivableNonaccrualWithAllowance" abstract="false" name="FinancingReceivableNonaccrualWithAllowance" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="prk_ModifiedSubstandardConsumerLoansTotalRecordedInvestment" abstract="false" name="ModifiedSubstandardConsumerLoansTotalRecordedInvestment" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="prk_AlternativeInvestmentincomerecognized" abstract="false" name="AlternativeInvestmentincomerecognized" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="prk_PaymentsForLoanOriginationsLoansToBeSoldInSecondaryMarket" abstract="false" name="PaymentsForLoanOriginationsLoansToBeSoldInSecondaryMarket" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="prk_PartialChargeOffsOnImpairedLoans" abstract="false" name="PartialChargeOffsOnImpairedLoans" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="prk_LoansAndLeasesReceivableRecordedInvestment" abstract="false" name="LoansAndLeasesReceivableRecordedInvestment" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="prk_NonaccruingFinancingReceivableModificationsMember" abstract="true" name="NonaccruingFinancingReceivableModificationsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="prk_ResidentialRealEstateCommercialMember" abstract="true" name="ResidentialRealEstateCommercialMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="prk_DeferredTaxAssetsOperatingLeaseLiability" abstract="false" name="DeferredTaxAssetsOperatingLeaseLiability" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="prk_ReclassificationsPolicyPolicyTextBlock" abstract="false" name="ReclassificationsPolicyPolicyTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:textBlockItemType"/>
+  <xs:element id="prk_FinancingReceivableRecordedInvestmentNinetyDaysOrMorePastDueAndAccruingPlusPastDueNonaccrualLoans" abstract="false" name="FinancingReceivableRecordedInvestmentNinetyDaysOrMorePastDueAndAccruingPlusPastDueNonaccrualLoans" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="prk_CommonSharesHeldUnderPensionPlanFairValue" abstract="false" name="CommonSharesHeldUnderPensionPlanFairValue" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="prk_ExecutiveOfficersAndDirectorsMember" abstract="true" name="ExecutiveOfficersAndDirectorsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="prk_Deferredtaxassetdeferredloanfees" abstract="false" name="Deferredtaxassetdeferredloanfees" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="prk_TroubledDebtRestructuringClassificationremoved" abstract="false" name="TroubledDebtRestructuringClassificationremoved" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="prk_LoansAndLeasesReceivableRecordedInvestmentCollectivelyEvaluatedForImpairment" abstract="false" name="LoansAndLeasesReceivableRecordedInvestmentCollectivelyEvaluatedForImpairment" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="prk_FinancingReceivablesCOVIDModificationsRecordedInvestmentDuringPeriod" abstract="false" name="FinancingReceivablesCOVIDModificationsRecordedInvestmentDuringPeriod" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="prk_Expenserelatedtootherrepossessedassets" abstract="false" name="Expenserelatedtootherrepossessedassets" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="prk_TotalRecognizedInNetBenefitCostAndOtherComprehensiveLossIncome" abstract="false" name="TotalRecognizedInNetBenefitCostAndOtherComprehensiveLossIncome" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="prk_DeferredTaxLiabilitiesPartnershipAdjustments" abstract="false" name="DeferredTaxLiabilitiesPartnershipAdjustments" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="prk_GFSCLoansMember" abstract="true" name="GFSCLoansMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="prk_DefinedBenefitPlanExpectedFutureBenefitPaymentsTotal" abstract="false" name="DefinedBenefitPlanExpectedFutureBenefitPaymentsTotal" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="prk_Ages50To54Member" abstract="true" name="Ages50To54Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="prk_MortgageLoanServicingRightsPolicyPolicyTextBlock" abstract="false" name="MortgageLoanServicingRightsPolicyPolicyTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:textBlockItemType"/>
+  <xs:element id="prk_LoansAndLeasesReceivableRatioOfAllowanceForLoanLossesToTotalLoans" abstract="false" name="LoansAndLeasesReceivableRatioOfAllowanceForLoanLossesToTotalLoans" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="dtr-types:percentItemType"/>
+  <xs:element id="prk_ScheduleOfReconciliationOfLevel3InputForFinancialInstrumentsMeasuredOnRecurringBasisTableTextBlock" abstract="false" name="ScheduleOfReconciliationOfLevel3InputForFinancialInstrumentsMeasuredOnRecurringBasisTableTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:textBlockItemType"/>
+  <xs:element id="prk_FHLBPrepaymentPenalty" abstract="false" name="FHLBPrepaymentPenalty" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="prk_AdditionalSpecificReservesRelatedToTroubledDebtRestructuring" abstract="false" name="AdditionalSpecificReservesRelatedToTroubledDebtRestructuring" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="prk_Acquiredgoodwillandintangibles" abstract="false" name="Acquiredgoodwillandintangibles" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="prk_AvailableforSaleSecuritiesWeightedAvgYield" abstract="false" name="AvailableforSaleSecuritiesWeightedAvgYield" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="dtr-types:percentItemType"/>
+  <xs:element id="prk_DeferredTaxLiabilitiesOperatingLeaseRightOfUseAsset" abstract="false" name="DeferredTaxLiabilitiesOperatingLeaseRightOfUseAsset" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="prk_OtherRealEstateOwnedResidentialMember" abstract="true" name="OtherRealEstateOwnedResidentialMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="prk_ScheduleofAssetsRepossessedorForeclosedorloansinprocessofforeclosureTableTextBlockTextBlock" abstract="false" name="ScheduleofAssetsRepossessedorForeclosedorloansinprocessofforeclosureTableTextBlockTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:textBlockItemType"/>
+  <xs:element id="prk_FinancingReceivableModificationsRecordedInvestmentNonaccrualAtPriorFiscalYearEnd" abstract="false" name="FinancingReceivableModificationsRecordedInvestmentNonaccrualAtPriorFiscalYearEnd" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="prk_CapitalRequiredForCapitalAdequacypluscapitalconservationbufferToAverageTotalAssets" abstract="false" name="CapitalRequiredForCapitalAdequacypluscapitalconservationbufferToAverageTotalAssets" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="dtr-types:percentItemType"/>
+  <xs:element id="prk_Reductionstorightofuseassetsresultingfromreductioninleaseobligations" abstract="false" name="Reductionstorightofuseassetsresultingfromreductioninleaseobligations" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="prk_ConstructionRealEstateInstallmentMember" abstract="true" name="ConstructionRealEstateInstallmentMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="prk_InterestRateLockCommitmentMember" abstract="true" name="InterestRateLockCommitmentMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="prk_FoundationContributionExpense" abstract="false" name="FoundationContributionExpense" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="prk_Othercomponentsofnetperiodicbenefitincome" abstract="false" name="Othercomponentsofnetperiodicbenefitincome" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="prk_AccruingFinancingReceivableModificationsMember" abstract="true" name="AccruingFinancingReceivableModificationsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="prk_DemographicDomain" abstract="true" name="DemographicDomain" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="prk_ConstructionRealEstateCommercialMember" abstract="true" name="ConstructionRealEstateCommercialMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="prk_Personaltrustandagencyaccountsincome" abstract="false" name="Personaltrustandagencyaccountsincome" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="prk_TimeDepositsFairValue" abstract="false" name="TimeDepositsFairValue" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="prk_Employeebenefitandretirementrelatedaccountsincome" abstract="false" name="Employeebenefitandretirementrelatedaccountsincome" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="prk_Otherincomefromfiduciaryactivities" abstract="false" name="Otherincomefromfiduciaryactivities" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="prk_Otherservicechargesondepositaccounts" abstract="false" name="Otherservicechargesondepositaccounts" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="prk_PnbSegmentMember" abstract="true" name="PnbSegmentMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="prk_TroubledDebtRestructuringPolicyTextBlock" abstract="false" name="TroubledDebtRestructuringPolicyTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:textBlockItemType"/>
+  <xs:element id="prk_CompensationExpenseForTreasuryStockToDirectors" abstract="false" name="CompensationExpenseForTreasuryStockToDirectors" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="prk_ParkMember" abstract="true" name="ParkMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="prk_FinancingReceivableWithRelatedAllowanceRecordedMember" abstract="true" name="FinancingReceivableWithRelatedAllowanceRecordedMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="prk_BookValueOfImpairedLoansCarriedAtFairValue" abstract="false" name="BookValueOfImpairedLoansCarriedAtFairValue" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="prk_Commercialotherserviceincome" abstract="false" name="Commercialotherserviceincome" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="prk_TotalBorrowings" abstract="false" name="TotalBorrowings" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="prk_DemanddepositaccountDDAcharges" abstract="false" name="DemanddepositaccountDDAcharges" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="prk_AccountingPoliciesLineItems" abstract="true" name="AccountingPoliciesLineItems" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="prk_WithinScopeDomain" abstract="true" name="WithinScopeDomain" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="prk_OtherIncomeLossAndSecurityGains" abstract="false" name="OtherIncomeLossAndSecurityGains" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="prk_PercentofOREOheldatfairvalue" abstract="false" name="PercentofOREOheldatfairvalue" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="dtr-types:percentItemType"/>
+  <xs:element id="prk_Ages4049Domain" abstract="true" name="Ages4049Domain" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="prk_FairValuePensionPlanCommonSharesHeldPerShare" abstract="false" name="FairValuePensionPlanCommonSharesHeldPerShare" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:perShareItemType"/>
+  <xs:element id="prk_ShareBasePaymentArrangementCostNotYetRecognizedYearFourAmount" abstract="false" name="ShareBasePaymentArrangementCostNotYetRecognizedYearFourAmount" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="prk_ParkNationalBankMember" abstract="true" name="ParkNationalBankMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="prk_EquityInUndistributedLossesOfSubsidiaries" abstract="false" name="EquityInUndistributedLossesOfSubsidiaries" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="prk_Ages6064Member" abstract="true" name="Ages6064Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="prk_CommonEquityTier1CapitalRequiredForCapitalAdequacypluscapitalconservationbufferToAverageTotalAssets" abstract="false" name="CommonEquityTier1CapitalRequiredForCapitalAdequacypluscapitalconservationbufferToAverageTotalAssets" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="dtr-types:percentItemType"/>
+  <xs:element id="prk_HELOCotherserviceincome" abstract="false" name="HELOCotherserviceincome" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="prk_ImpairedFinancingReceivableAmortizedCost" abstract="false" name="ImpairedFinancingReceivableAmortizedCost" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="prk_TotalLoansPortfolioMember" abstract="true" name="TotalLoansPortfolioMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="prk_CommonSharesAuthorizedForDeliveryUponExerciseOfIncentiveStockOptions" abstract="false" name="CommonSharesAuthorizedForDeliveryUponExerciseOfIncentiveStockOptions" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:sharesItemType"/>
+  <xs:element id="prk_LoansAndLeasesRelatedPartiesRemovalFromRelatedParties" abstract="false" name="LoansAndLeasesRelatedPartiesRemovalFromRelatedParties" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="prk_PPPLoansOriginated" abstract="false" name="PPPLoansOriginated" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="prk_ShareBasePaymentArrangementCostNotYetRecognizedYearThreeAmount" abstract="false" name="ShareBasePaymentArrangementCostNotYetRecognizedYearThreeAmount" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="prk_ConstructionRealEstateMortgageMember" abstract="true" name="ConstructionRealEstateMortgageMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="prk_DiscountPercentageAppliedToRealEstateAppraisedValues" abstract="false" name="DiscountPercentageAppliedToRealEstateAppraisedValues" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:percentItemType"/>
+  <xs:element id="prk_A2017NonEmployeeDirectorsLTIPMember" abstract="true" name="A2017NonEmployeeDirectorsLTIPMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="prk_OtherRealEstateForeclosedAssetsAndRepossessedAssetsFairValue" abstract="false" name="OtherRealEstateForeclosedAssetsAndRepossessedAssetsFairValue" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="prk_LossContingenciesAndGuaranteesPolicyPolicyTextBlock" abstract="false" name="LossContingenciesAndGuaranteesPolicyPolicyTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:textBlockItemType"/>
+  <xs:element id="prk_LoanDerivativeMember" abstract="true" name="LoanDerivativeMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="prk_DebtSecuritiesAvailableForSaleSoldAtGainAmortizedCostAmount" abstract="false" name="DebtSecuritiesAvailableForSaleSoldAtGainAmortizedCostAmount" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="prk_DemographicAxis" abstract="true" name="DemographicAxis" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrldt:dimensionItem" type="xbrli:stringItemType"/>
+  <xs:element id="prk_A2013LongTermIncentivePlanMember" abstract="true" name="A2013LongTermIncentivePlanMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="prk_ResidentialRealEstateMortgageMember" abstract="true" name="ResidentialRealEstateMortgageMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="prk_AdditionalReservePandemicRisk" abstract="false" name="AdditionalReservePandemicRisk" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="prk_ConstructionRealEstateMember" abstract="true" name="ConstructionRealEstateMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="prk_QualifiedAffordableHousingDomain" abstract="true" name="QualifiedAffordableHousingDomain" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="prk_TreasuryStockReissuedSharesForDirectorGrants" abstract="false" name="TreasuryStockReissuedSharesForDirectorGrants" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:sharesItemType"/>
+  <xs:element id="prk_ImpairedFinancingReceivableloansnotheldatFairValueCarryingAmount" abstract="false" name="ImpairedFinancingReceivableloansnotheldatFairValueCarryingAmount" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="prk_ProceedsFromLoanSales" abstract="false" name="ProceedsFromLoanSales" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="prk_ScheduleOfAllowanceForLoanLossesTableTextBlock" abstract="false" name="ScheduleOfAllowanceForLoanLossesTableTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:textBlockItemType"/>
+  <xs:element id="prk_MortgageBankingDerivativesPolicyPolicyTextBlock" abstract="false" name="MortgageBankingDerivativesPolicyPolicyTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:textBlockItemType"/>
+  <xs:element id="prk_DebtSecuritiesAvailableForSaleSoldAtLossAmortizedCostAmount" abstract="false" name="DebtSecuritiesAvailableForSaleSoldAtLossAmortizedCostAmount" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="prk_TreasuryStockReissuedValueForDirectorGrants" abstract="false" name="TreasuryStockReissuedValueForDirectorGrants" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="prk_Ages65AndOverMember" abstract="true" name="Ages65AndOverMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="prk_TrustIPreferredSecuritiesMember" abstract="true" name="TrustIPreferredSecuritiesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="prk_LoansAndLeasesReceivableRecordedInvestmentIndividuallyEvaluatedForImpairment" abstract="false" name="LoansAndLeasesReceivableRecordedInvestmentIndividuallyEvaluatedForImpairment" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="prk_Ages5559Member" abstract="true" name="Ages5559Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="prk_QualitativeReserveACL" abstract="false" name="QualitativeReserveACL" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="prk_DeclineInQualitativeReserveACL" abstract="false" name="DeclineInQualitativeReserveACL" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="prk_AtmFees" abstract="false" name="AtmFees" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="prk_LoansHeldforSaleAbstract" abstract="true" name="LoansHeldforSaleAbstract" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="prk_Equityinvestmentsharessold" abstract="false" name="Equityinvestmentsharessold" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:sharesItemType"/>
+  <xs:element id="prk_ScheduleOfHighRiskIndustriesAdditionalReservesTableTextBlock" abstract="false" name="ScheduleOfHighRiskIndustriesAdditionalReservesTableTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:textBlockItemType"/>
+  <xs:element id="prk_HotelsRestaurantsStripShoppingTotalMember" abstract="true" name="HotelsRestaurantsStripShoppingTotalMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="prk_FiveRatedMember" abstract="true" name="FiveRatedMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="prk_DebenturesReceivableFromSubsidiaryBanks" abstract="false" name="DebenturesReceivableFromSubsidiaryBanks" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="prk_OreoDevaluations" abstract="false" name="OreoDevaluations" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="prk_Realestateotherserviceincome" abstract="false" name="Realestateotherserviceincome" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="prk_ScheduleOfAssumptionsUsedToDetermineCostsTableTextBlock" abstract="false" name="ScheduleOfAssumptionsUsedToDetermineCostsTableTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:textBlockItemType"/>
+  <xs:element id="prk_AccruedBenefitCost" abstract="false" name="AccruedBenefitCost" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="prk_Ages3039MemberMember" abstract="true" name="Ages3039MemberMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="prk_ComprehensiveIncomePolicyTextBlock" abstract="false" name="ComprehensiveIncomePolicyTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:textBlockItemType"/>
+  <xs:element id="prk_OutofScopeDomain" abstract="true" name="OutofScopeDomain" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="prk_ConstructionRealEstateRetailMember" abstract="true" name="ConstructionRealEstateRetailMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="prk_AverageInterestRateOnFHLBSwap" abstract="false" name="AverageInterestRateOnFHLBSwap" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:percentItemType"/>
+  <xs:element id="prk_ShareBasedPaymentCostNotYetRecognizedNext12Months" abstract="false" name="ShareBasedPaymentCostNotYetRecognizedNext12Months" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="prk_ImpairedLoansReceivableMeasurementInput" abstract="false" name="ImpairedLoansReceivableMeasurementInput" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="xbrli:decimalItemType"/>
+  <xs:element id="prk_A2017EmployeesLongTermIncentivePlanMember" abstract="true" name="A2017EmployeesLongTermIncentivePlanMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="prk_NonaccrualTroubleDebtRestructuringCurrent" abstract="false" name="NonaccrualTroubleDebtRestructuringCurrent" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="prk_Loansheldforsalelowerofcostormarket" abstract="false" name="Loansheldforsalelowerofcostormarket" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="prk_BusinessAssetsMember" abstract="true" name="BusinessAssetsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="prk_TierOneRiskBasedCapitalRequiredForCapitalAdequacypluscapitalconservationbufferToAverageTotalAssets" abstract="false" name="TierOneRiskBasedCapitalRequiredForCapitalAdequacypluscapitalconservationbufferToAverageTotalAssets" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="dtr-types:percentItemType"/>
+  <xs:element id="prk_ServicingAssetRecordedAtCost" abstract="false" name="ServicingAssetRecordedAtCost" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="prk_IncomeBeforeEquityInUndistributedLossesOfSubsidiaries" abstract="false" name="IncomeBeforeEquityInUndistributedLossesOfSubsidiaries" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="prk_ImpairedFinancingReceivableloansnotheldatFairValueRecordedInvestment" abstract="false" name="ImpairedFinancingReceivableloansnotheldatFairValueRecordedInvestment" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="prk_ShareRepurchaseProgramMember" abstract="true" name="ShareRepurchaseProgramMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="prk_FinancingReceivableNotCollateralDependentDomain" abstract="true" name="FinancingReceivableNotCollateralDependentDomain" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="prk_FinancingReceivableRecordedInvestmentNonperforming" abstract="false" name="FinancingReceivableRecordedInvestmentNonperforming" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="prk_Availableunpledgedsecurities" abstract="false" name="Availableunpledgedsecurities" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="prk_ScheduleOfOffBalanceSheetFinancialInstrumentsWithCreditRiskTableTextBlock" abstract="false" name="ScheduleOfOffBalanceSheetFinancialInstrumentsWithCreditRiskTableTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:textBlockItemType"/>
+  <xs:element id="prk_USGovernmentSponsoredEntitiesAssetBackedSecuritiesMember" abstract="true" name="USGovernmentSponsoredEntitiesAssetBackedSecuritiesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="prk_SBAPPPFeesReceived" abstract="false" name="SBAPPPFeesReceived" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="prk_ScheduleOfVariousMeasuresOfCapitalRatioTableTextBlock" abstract="false" name="ScheduleOfVariousMeasuresOfCapitalRatioTableTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:textBlockItemType"/>
+  <xs:element id="prk_CommonSharesHeldUnderPensionPlanShares" abstract="false" name="CommonSharesHeldUnderPensionPlanShares" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="xbrli:sharesItemType"/>
+  <xs:element id="prk_TreasuryStockPolicyPolicyTextBlock" abstract="false" name="TreasuryStockPolicyPolicyTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:textBlockItemType"/>
+  <xs:element id="prk_ScheduleOfFinancingReceivableLoansModifiedAsTDRWithinPreviousTwelveMonthsThatSubsequentlyDefaultedTableTextBlock" abstract="false" name="ScheduleOfFinancingReceivableLoansModifiedAsTDRWithinPreviousTwelveMonthsThatSubsequentlyDefaultedTableTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:textBlockItemType"/>
+  <xs:element id="prk_CertainLoansAcquiredinTransferNotAccountedforasDebtSecuritiesAllowanceasapercentageofloanbalance" abstract="false" name="CertainLoansAcquiredinTransferNotAccountedforasDebtSecuritiesAllowanceasapercentageofloanbalance" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="dtr-types:percentItemType"/>
+  <xs:element id="prk_ScheduleOfDepreciableLivesOfPremisesAndEquipmentTableTextBlock" abstract="false" name="ScheduleOfDepreciableLivesOfPremisesAndEquipmentTableTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:textBlockItemType"/>
+  <xs:element id="prk_ScheduleOfAssumptionsUsedToDetermineBenefitObligationsTableTextBlock" abstract="false" name="ScheduleOfAssumptionsUsedToDetermineBenefitObligationsTableTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:textBlockItemType"/>
+  <xs:element id="prk_ResidentialRealEstateHomeEquityLineOfCreditMember" abstract="true" name="ResidentialRealEstateHomeEquityLineOfCreditMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="prk_AccountingPoliciesTable" abstract="true" name="AccountingPoliciesTable" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrldt:hypercubeItem" type="xbrli:stringItemType"/>
+  <xs:element id="prk_CommercialReceivablesExcludingCommercialFinancialAndAgriculturalDomain" abstract="true" name="CommercialReceivablesExcludingCommercialFinancialAndAgriculturalDomain" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="prk_TroubledDebtRestructuringRecordedInvestmentTypeAxis" abstract="true" name="TroubledDebtRestructuringRecordedInvestmentTypeAxis" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrldt:dimensionItem" type="xbrli:stringItemType"/>
+  <xs:element id="prk_ConsolidatedStatementOfCashFlowsPolicyPolicyTextBlock" abstract="false" name="ConsolidatedStatementOfCashFlowsPolicyPolicyTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:textBlockItemType"/>
+  <xs:element id="prk_CommonSharePurchasedUnderPensionPlanValue" abstract="false" name="CommonSharePurchasedUnderPensionPlanValue" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="prk_Investmentmanagementandinvestmentadvisoryagencyaccountsincome" abstract="false" name="Investmentmanagementandinvestmentadvisoryagencyaccountsincome" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="prk_ScheduleofAssetsRepossessedorForeclosedorloansinprocessofforeclosureLineItems" abstract="true" name="ScheduleofAssetsRepossessedorForeclosedorloansinprocessofforeclosureLineItems" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="prk_NonsufficientfundsNSFfees" abstract="false" name="NonsufficientfundsNSFfees" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="prk_ResidentialRealEstateInstallmentMember" abstract="true" name="ResidentialRealEstateInstallmentMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="prk_InterestIncomeonInterestrateSwap" abstract="false" name="InterestIncomeonInterestrateSwap" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="prk_OtherRealEstateOwnedPolicyPolicyTextBlock" abstract="false" name="OtherRealEstateOwnedPolicyPolicyTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:textBlockItemType"/>
+  <xs:element id="prk_LoanAndLeasesReceivableRecordedInvestment" abstract="false" name="LoanAndLeasesReceivableRecordedInvestment" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="prk_PrincipalAmountOutstandingOnSoldLoansServicingRetainedWithRecourse" abstract="false" name="PrincipalAmountOutstandingOnSoldLoansServicingRetainedWithRecourse" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="prk_DividendsFromSubsidiaries" abstract="false" name="DividendsFromSubsidiaries" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="prk_ScheduleOfAssetsRepossessedOrForeclosedOrLoansInProcessOfForeclosureTable" abstract="true" name="ScheduleOfAssetsRepossessedOrForeclosedOrLoansInProcessOfForeclosureTable" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrldt:hypercubeItem" type="xbrli:stringItemType"/>
+  <xs:element id="prk_CommercialFinancialAgriculturalMember" abstract="true" name="CommercialFinancialAgriculturalMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="prk_ScheduleOfRecordedInvestmentInNonaccrualRestructuredAndLoansPastDue90DaysOrMoreAndAccruingTableTextBlock" abstract="false" name="ScheduleOfRecordedInvestmentInNonaccrualRestructuredAndLoansPastDue90DaysOrMoreAndAccruingTableTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:textBlockItemType"/>
+  <xs:element id="prk_PercentageOfAmountGreaterThanShareholdersEquity" abstract="false" name="PercentageOfAmountGreaterThanShareholdersEquity" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:percentItemType"/>
+  <xs:element id="prk_TroubledDebtRestructuringRecordedInvestmentTypeDomain" abstract="true" name="TroubledDebtRestructuringRecordedInvestmentTypeDomain" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="prk_CommercialFinancialAgriculturalLessPPPAndOverdraftMember" abstract="true" name="CommercialFinancialAgriculturalLessPPPAndOverdraftMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="prk_PPPLoansReceivableMember" abstract="true" name="PPPLoansReceivableMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="prk_ImpairedLoanFairValue" abstract="false" name="ImpairedLoanFairValue" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="prk_CommonSharePurchasedUnderPensionPlanValuePerShare" abstract="false" name="CommonSharePurchasedUnderPensionPlanValuePerShare" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="dtr-types:perShareItemType"/>
+  <xs:element id="prk_SpecificReservesRelatedToTroubledDebtRestructuring" abstract="false" name="SpecificReservesRelatedToTroubledDebtRestructuring" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="prk_ImpairedFinancingReceivableRecordedInvestmentNonaccrualLoansWhichAreCurrentInContractualPAndIPayments" abstract="false" name="ImpairedFinancingReceivableRecordedInvestmentNonaccrualLoansWhichAreCurrentInContractualPAndIPayments" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="prk_CommonSharePurchasedUnderPensionPlanShares" abstract="false" name="CommonSharePurchasedUnderPensionPlanShares" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="xbrli:sharesItemType"/>
+  <xs:element id="prk_LongTermDebtExcludingUnamortizedCostOfDebtExtinguishmentCostsAverageRate" abstract="false" name="LongTermDebtExcludingUnamortizedCostOfDebtExtinguishmentCostsAverageRate" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="dtr-types:percentItemType"/>
+  <xs:element id="prk_PartialChargeoffsonImpairedLoanscarriedatCost" abstract="false" name="PartialChargeoffsonImpairedLoanscarriedatCost" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="prk_TroubledDebtRestructuringIncludedInAccruingLoans" abstract="false" name="TroubledDebtRestructuringIncludedInAccruingLoans" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+</xs:schema>

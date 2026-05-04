@@ -1,0 +1,635 @@
+<?xml version="1.0" encoding="us-ascii" standalone="yes"?>
+<!--XBRL Document Created with XBRLMaster-->
+<!--Version: 2.3.08-->
+<!--Based on XBRL 2.1-->
+<!--Date of creation: 03/29/2024-->
+<!--Software architectural design and coding: A'c Dharmapremananda Avt.-->
+<!--Copyright (c) 2024 I-NET Business Solutions, Inc. All Rights Reserved.-->
+<schema xmlns:xl="http://www.xbrl.org/2003/XLink" xmlns:ref="http://www.xbrl.org/2006/ref" xmlns:currency="http://xbrl.sec.gov/currency/2023" xmlns:us-gaap-att="http://fasb.org/us-gaap/attributes" xmlns:sic="http://xbrl.sec.gov/sic/2023" xmlns:exch="http://xbrl.sec.gov/exch/2023" xmlns:invest="http://xbrl.sec.gov/invest/2013-01-31" xmlns:negated="http://www.xbrl.org/2009/role/negated" xmlns:naics="http://xbrl.sec.gov/naics/2023" xmlns:us-types="http://fasb.org/us-types/2023" xmlns:stpr="http://xbrl.sec.gov/stpr/2023" xmlns="http://www.w3.org/2001/XMLSchema" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:xbrli="http://www.xbrl.org/2003/instance" xmlns:xbrldt="http://xbrl.org/2005/xbrldt" xmlns:xbrldi="http://xbrl.org/2006/xbrldi" xmlns:country="http://xbrl.sec.gov/country/2023" xmlns:utr="http://www.xbrl.org/2009/utr" xmlns:srt-types="http://fasb.org/srt-types/2023" xmlns:dtr-types="http://www.xbrl.org/dtr/type/2020-01-21" xmlns:srt-roles="http://fasb.org/srt-roles/2023" xmlns:dei="http://xbrl.sec.gov/dei/2023" xmlns:num="http://www.xbrl.org/dtr/type/numeric" xmlns:nonnum="http://www.xbrl.org/dtr/type/non-numeric" xmlns:srt="http://fasb.org/srt/2023" xmlns:us-gaap="http://fasb.org/us-gaap/2023" xmlns:sobr="http://sobr.com/20231231" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://sobr.com/20231231">
+  <annotation>
+    <appinfo>
+      <link:roleType roleURI="http://sobr.com/role/Cover" id="Cover">
+        <link:definition>000001 - Document - Cover</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://sobr.com/role/ConsolidatedBalanceSheets" id="ConsolidatedBalanceSheets">
+        <link:definition>000002 - Statement - CONSOLIDATED BALANCE SHEETS</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://sobr.com/role/ConsolidatedBalanceSheetsParenthetical" id="ConsolidatedBalanceSheetsParenthetical">
+        <link:definition>000003 - Statement - CONSOLIDATED BALANCE SHEETS (Parenthetical)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://sobr.com/role/ConsolidatedStatementsOfOperations" id="ConsolidatedStatementsOfOperations">
+        <link:definition>000004 - Statement - CONSOLIDATED STATEMENTS OF OPERATIONS</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://sobr.com/role/ConsolidatedStatementsOfChangesInStockholdersEquityDeficit" id="ConsolidatedStatementsOfChangesInStockholdersEquityDeficit">
+        <link:definition>000005 - Statement - CONSOLIDATED STATEMENTS OF CHANGES IN STOCKHOLDERS' EQUITY (DEFICIT)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://sobr.com/role/ConsolidatedStatementsOfCashFlows" id="ConsolidatedStatementsOfCashFlows">
+        <link:definition>000006 - Statement - CONSOLIDATED STATEMENTS OF CASH FLOWS</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://sobr.com/role/OrganizationOperationsAndSummaryOfSignificantAccountingPolicies" id="OrganizationOperationsAndSummaryOfSignificantAccountingPolicies">
+        <link:definition>000007 - Disclosure - ORGANIZATION OPERATIONS AND SUMMARY OF SIGNIFICANT ACCOUNTING POLICIES</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://sobr.com/role/GoingConcern" id="GoingConcern">
+        <link:definition>000008 - Disclosure - GOING CONCERN</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://sobr.com/role/INVENTORY" id="INVENTORY">
+        <link:definition>000009 - Disclosure - INVENTORY</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://sobr.com/role/PrepaidExpenses" id="PrepaidExpenses">
+        <link:definition>000010 - Disclosure - PREPAID EXPENSES</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://sobr.com/role/LEASES" id="LEASES">
+        <link:definition>000011 - Disclosure - LEASES</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://sobr.com/role/IntangibleAssets" id="IntangibleAssets">
+        <link:definition>000012 - Disclosure - INTANGIBLE ASSETS</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://sobr.com/role/RelatedPartyTransactions" id="RelatedPartyTransactions">
+        <link:definition>000013 - Disclosure - RELATED PARTY TRANSACTIONS</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://sobr.com/role/AccruedExpenses" id="AccruedExpenses">
+        <link:definition>000014 - Disclosure - ACCRUED EXPENSES</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://sobr.com/role/NotesPayable" id="NotesPayable">
+        <link:definition>000015 - Disclosure - NOTES PAYABLE</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://sobr.com/role/CommonStock" id="CommonStock">
+        <link:definition>000016 - Disclosure - COMMON STOCK</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://sobr.com/role/PreferredStock" id="PreferredStock">
+        <link:definition>000017 - Disclosure - PREFERRED STOCK</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://sobr.com/role/StockWarrantsStockOptionsAndRestrictedStockUnits" id="StockWarrantsStockOptionsAndRestrictedStockUnits">
+        <link:definition>000018 - Disclosure - STOCK WARRANTS STOCK OPTIONS AND RESTRICTED STOCK UNITS</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://sobr.com/role/CommitmentsAndContingencies" id="CommitmentsAndContingencies">
+        <link:definition>000019 - Disclosure - COMMITMENTS AND CONTINGENCIES</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://sobr.com/role/IncomeTaxes" id="IncomeTaxes">
+        <link:definition>000020 - Disclosure - INCOME TAXES</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://sobr.com/role/SubsequentEvents" id="SubsequentEvents">
+        <link:definition>000021 - Disclosure - SUBSEQUENT EVENTS</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://sobr.com/role/OrganizationOperationsAndSummaryOfSignificantAccountingPoliciesPolicies" id="OrganizationOperationsAndSummaryOfSignificantAccountingPoliciesPolicies">
+        <link:definition>000022 - Disclosure - ORGANIZATION OPERATIONS AND SUMMARY OF SIGNIFICANT ACCOUNTING POLICIES (Policies)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://sobr.com/role/InventoryTables" id="InventoryTables">
+        <link:definition>000023 - Disclosure - INVENTORY (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://sobr.com/role/PrepaidExpensesTables" id="PrepaidExpensesTables">
+        <link:definition>000024 - Disclosure - PREPAID EXPENSES (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://sobr.com/role/LeasesTables" id="LeasesTables">
+        <link:definition>000025 - Disclosure - LEASES (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://sobr.com/role/IntangibleAssetsTables" id="IntangibleAssetsTables">
+        <link:definition>000026 - Disclosure - INTANGIBLE ASSETS (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://sobr.com/role/AccruedExpensesTables" id="AccruedExpensesTables">
+        <link:definition>000027 - Disclosure - ACCRUED EXPENSES (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://sobr.com/role/NotesPayableTables" id="NotesPayableTables">
+        <link:definition>000028 - Disclosure - NOTES PAYABLE (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://sobr.com/role/StockWarrantsStockOptionsAndRestrictedStockUnitsTables" id="StockWarrantsStockOptionsAndRestrictedStockUnitsTables">
+        <link:definition>000029 - Disclosure - STOCK WARRANTS STOCK OPTIONS AND RESTRICTED STOCK UNITS (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://sobr.com/role/IncomeTaxesTables" id="IncomeTaxesTables">
+        <link:definition>000030 - Disclosure - INCOME TAXES (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://sobr.com/role/OrganizationOperationsAndSummaryOfSignificantAccountingPoliciesDetailsNarrative" id="OrganizationOperationsAndSummaryOfSignificantAccountingPoliciesDetailsNarrative">
+        <link:definition>000031 - Disclosure - ORGANIZATION OPERATIONS AND SUMMARY OF SIGNIFICANT ACCOUNTING POLICIES (Details Narrative)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://sobr.com/role/GoingConcernDetailsNarrative" id="GoingConcernDetailsNarrative">
+        <link:definition>000032 - Disclosure - GOING CONCERN (Details Narrative)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://sobr.com/role/InventoryDetails" id="InventoryDetails">
+        <link:definition>000033 - Disclosure - INVENTORY (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://sobr.com/role/PrepaidExpensesDetails" id="PrepaidExpensesDetails">
+        <link:definition>000034 - Disclosure - PREPAID EXPENSES (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://sobr.com/role/PrepaidExpensesDetailsNarrative" id="PrepaidExpensesDetailsNarrative">
+        <link:definition>000035 - Disclosure - PREPAID EXPENSES (Details Narrative)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://sobr.com/role/LeasesDetails" id="LeasesDetails">
+        <link:definition>000036 - Disclosure - LEASES (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://sobr.com/role/LeasesDetails1" id="LeasesDetails1">
+        <link:definition>000037 - Disclosure - LEASES (Details 1)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://sobr.com/role/LeasesDetailsNarrative" id="LeasesDetailsNarrative">
+        <link:definition>000038 - Disclosure - LEASES (Details Narrative)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://sobr.com/role/IntangibleAssetsDetails" id="IntangibleAssetsDetails">
+        <link:definition>000039 - Disclosure - INTANGIBLE ASSETS (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://sobr.com/role/IntangibleAssetsDetails1" id="IntangibleAssetsDetails1">
+        <link:definition>000040 - Disclosure - INTANGIBLE ASSETS (Details 1)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://sobr.com/role/IntangibleAssetsDetailsNarrative" id="IntangibleAssetsDetailsNarrative">
+        <link:definition>000041 - Disclosure - INTANGIBLE ASSETS (Details Narrative)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://sobr.com/role/RelatedPartyTransactionsDetailsNarrative" id="RelatedPartyTransactionsDetailsNarrative">
+        <link:definition>000042 - Disclosure - RELATED PARTY TRANSACTIONS (Details Narrative)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://sobr.com/role/AccruedExpensesDetails" id="AccruedExpensesDetails">
+        <link:definition>000043 - Disclosure - ACCRUED EXPENSES (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://sobr.com/role/NotesPayableDetails" id="NotesPayableDetails">
+        <link:definition>000044 - Disclosure - NOTES PAYABLE (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://sobr.com/role/NotesPayableDetails1" id="NotesPayableDetails1">
+        <link:definition>000045 - Disclosure - NOTES PAYABLE (Details 1)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://sobr.com/role/NotesPayableDetailsNarrative" id="NotesPayableDetailsNarrative">
+        <link:definition>000046 - Disclosure - NOTES PAYABLE (Details Narrative)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://sobr.com/role/CommonStockDetailsNarrative" id="CommonStockDetailsNarrative">
+        <link:definition>000047 - Disclosure - COMMON STOCK (Details Narrative)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://sobr.com/role/PreferredStockDetailsNarratve" id="PreferredStockDetailsNarratve">
+        <link:definition>000048 - Disclosure - PREFERRED STOCK (Details Narratve)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://sobr.com/role/StockWarrantsStockOptionsAndRestrictedStockUnitsDetails" id="StockWarrantsStockOptionsAndRestrictedStockUnitsDetails">
+        <link:definition>000049 - Disclosure - STOCK WARRANTS STOCK OPTIONS AND RESTRICTED STOCK UNITS (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://sobr.com/role/StockWarrantsStockOptionsAndRestrictedStockUnitsDetails1" id="StockWarrantsStockOptionsAndRestrictedStockUnitsDetails1">
+        <link:definition>000050 - Disclosure - STOCK WARRANTS STOCK OPTIONS AND RESTRICTED STOCK UNITS (Details 1)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://sobr.com/role/StockWarrantsStockOptionsAndRestrictedStockUnitsDetails2" id="StockWarrantsStockOptionsAndRestrictedStockUnitsDetails2">
+        <link:definition>000051 - Disclosure - STOCK WARRANTS STOCK OPTIONS AND RESTRICTED STOCK UNITS (Details 2)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://sobr.com/role/StockWarrantsStockOptionsAndRestrictedStockUnitsDetails3" id="StockWarrantsStockOptionsAndRestrictedStockUnitsDetails3">
+        <link:definition>000052 - Disclosure - STOCK WARRANTS STOCK OPTIONS AND RESTRICTED STOCK UNITS (Details 3)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://sobr.com/role/StockWarrantsStockOptionsAndRestrictedStockUnitsDetails4" id="StockWarrantsStockOptionsAndRestrictedStockUnitsDetails4">
+        <link:definition>000053 - Disclosure - STOCK WARRANTS STOCK OPTIONS AND RESTRICTED STOCK UNITS (Details 4)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://sobr.com/role/StockWarrantsStockOptionsAndRestrictedStockUnitsDetailsNarrative" id="StockWarrantsStockOptionsAndRestrictedStockUnitsDetailsNarrative">
+        <link:definition>000054 - Disclosure - STOCK WARRANTS STOCK OPTIONS AND RESTRICTED STOCK UNITS (Details Narrative)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://sobr.com/role/CommitmentsAndContingenciesDetailsNarrative" id="CommitmentsAndContingenciesDetailsNarrative">
+        <link:definition>000055 - Disclosure - COMMITMENTS AND CONTINGENCIES (Details Narrative)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://sobr.com/role/IncomeTaxesDetails" id="IncomeTaxesDetails">
+        <link:definition>000056 - Disclosure - INCOME TAXES (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://sobr.com/role/IncomeTaxesDetails1" id="IncomeTaxesDetails1">
+        <link:definition>000057 - Disclosure - INCOME TAXES (Details 1)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://sobr.com/role/IncomeTaxesDetailsNarrative" id="IncomeTaxesDetailsNarrative">
+        <link:definition>000058 - Disclosure - INCOME TAXES (Details Narrative)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://sobr.com/role/SubsequentEventsDetailsNarrative" id="SubsequentEventsDetailsNarrative">
+        <link:definition>000059 - Disclosure - SUBSEQUENT EVENTS (Details Narrative)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:linkbaseRef xlink:type="simple" xlink:href="sobr-20231231_pre.xml" xlink:role="http://www.xbrl.org/2003/role/presentationLinkbaseRef" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" />
+      <link:linkbaseRef xlink:type="simple" xlink:href="sobr-20231231_lab.xml" xlink:role="http://www.xbrl.org/2003/role/labelLinkbaseRef" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" />
+      <link:linkbaseRef xlink:type="simple" xlink:href="sobr-20231231_cal.xml" xlink:role="http://www.xbrl.org/2003/role/calculationLinkbaseRef" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" />
+      <link:linkbaseRef xlink:type="simple" xlink:href="sobr-20231231_def.xml" xlink:role="http://www.xbrl.org/2003/role/definitionLinkbaseRef" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" />
+    </appinfo>
+  </annotation>
+  <import namespace="http://www.xbrl.org/2003/instance" schemaLocation="http://www.xbrl.org/2003/xbrl-instance-2003-12-31.xsd" />
+  <import namespace="http://www.xbrl.org/2003/linkbase" schemaLocation="http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd" />
+  <import namespace="http://xbrl.org/2005/xbrldt" schemaLocation="http://www.xbrl.org/2005/xbrldt-2005.xsd" />
+  <import namespace="http://xbrl.sec.gov/country/2023" schemaLocation="https://xbrl.sec.gov/country/2023/country-2023.xsd" />
+  <import namespace="http://xbrl.sec.gov/currency/2023" schemaLocation="https://xbrl.sec.gov/currency/2023/currency-2023.xsd" />
+  <import namespace="http://xbrl.sec.gov/dei/2023" schemaLocation="https://xbrl.sec.gov/dei/2023/dei-2023.xsd" />
+  <import namespace="http://www.xbrl.org/dtr/type/non-numeric" schemaLocation="http://www.xbrl.org/dtr/type/nonNumeric-2009-12-16.xsd" />
+  <import namespace="http://www.xbrl.org/dtr/type/numeric" schemaLocation="http://www.xbrl.org/dtr/type/numeric-2009-12-16.xsd" />
+  <import namespace="http://xbrl.sec.gov/exch/2023" schemaLocation="https://xbrl.sec.gov/exch/2023/exch-2023.xsd" />
+  <import namespace="http://www.xbrl.org/2009/arcrole/fact-explanatoryFact" schemaLocation="http://www.xbrl.org/lrr/arcrole/factExplanatory-2009-12-16.xsd" />
+  <import namespace="http://www.xbrl.org/2009/role/negated" schemaLocation="http://www.xbrl.org/lrr/role/negated-2009-12-16.xsd" />
+  <import namespace="http://www.xbrl.org/2009/role/net" schemaLocation="http://www.xbrl.org/lrr/role/net-2009-12-16.xsd" />
+  <import namespace="http://xbrl.sec.gov/naics/2023" schemaLocation="https://xbrl.sec.gov/naics/2023/naics-2023.xsd" />
+  <import namespace="http://xbrl.sec.gov/sic/2023" schemaLocation="https://xbrl.sec.gov/sic/2023/sic-2023.xsd" />
+  <import namespace="http://fasb.org/srt-roles/2023" schemaLocation="https://xbrl.fasb.org/srt/2023/elts/srt-roles-2023.xsd" />
+  <import namespace="http://fasb.org/srt-types/2023" schemaLocation="https://xbrl.fasb.org/srt/2023/elts/srt-types-2023.xsd" />
+  <import namespace="http://www.xbrl.org/dtr/type/2020-01-21" schemaLocation="https://www.xbrl.org/dtr/type/2020-01-21/types.xsd" />
+  <import namespace="http://xbrl.sec.gov/stpr/2023" schemaLocation="https://xbrl.sec.gov/stpr/2023/stpr-2023.xsd" />
+  <import namespace="http://fasb.org/us-roles/2023" schemaLocation="https://xbrl.fasb.org/us-gaap/2023/elts/us-roles-2023.xsd" />
+  <import namespace="http://fasb.org/us-types/2023" schemaLocation="https://xbrl.fasb.org/us-gaap/2023/elts/us-types-2023.xsd" />
+  <import namespace="http://fasb.org/srt/2023" schemaLocation="https://xbrl.fasb.org/srt/2023/elts/srt-2023.xsd" />
+  <import namespace="http://fasb.org/us-gaap/2023" schemaLocation="https://xbrl.fasb.org/us-gaap/2023/elts/us-gaap-2023.xsd" />
+  <element id="sobr_DueToRelatedPartyCurrent" name="DueToRelatedPartyCurrent" nillable="true" xbrli:balance="credit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="sobr_NotesPayableRelatedPartyClassifiedCurrent" name="NotesPayableRelatedPartyClassifiedCurrent" nillable="true" xbrli:balance="credit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="sobr_InterestPayableNonCurrent" name="InterestPayableNonCurrent" nillable="true" xbrli:balance="credit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="sobr_TreasuryStockAtCost" name="TreasuryStockAtCost" nillable="true" xbrli:periodType="instant" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" />
+  <element id="sobr_DeemedDividendsRelatedToUnderwrittenPublicOfferingWarrantsDownRoundProvision" name="DeemedDividendsRelatedToUnderwrittenPublicOfferingWarrantsDownRoundProvision" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="sobr_DeemedDividendRelatedToOriginalWarrantsAndNewWarrantDownRoundProvision" name="DeemedDividendRelatedToOriginalWarrantsAndNewWarrantDownRoundProvision" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="sobr_EarningsPerCommonShareBasicAndDiluted" name="EarningsPerCommonShareBasicAndDiluted" nillable="true" xbrli:periodType="duration" type="num:perShareItemType" substitutionGroup="xbrli:item" />
+  <element id="sobr_WeightedAverageNumberOfDilutedCommonSharesOutstanding" name="WeightedAverageNumberOfDilutedCommonSharesOutstanding" nillable="true" xbrli:periodType="duration" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" />
+  <element id="sobr_CommonStockIssuedForRestrictedStockUnitsVestedShares" name="CommonStockIssuedForRestrictedStockUnitsVestedShares" nillable="true" xbrli:periodType="duration" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" />
+  <element id="sobr_CommonStockIssuedForRestrictedStockUnitsVestedAmount" name="CommonStockIssuedForRestrictedStockUnitsVestedAmount" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="sobr_CommonStockIssuedForConvertibleDebtShares" name="CommonStockIssuedForConvertibleDebtShares" nillable="true" xbrli:periodType="duration" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" />
+  <element id="sobr_CommonStockIssuedForConvertibleDebtAmount" name="CommonStockIssuedForConvertibleDebtAmount" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="sobr_CommonStockExchangedForConvertiblePreferredStockShares" name="CommonStockExchangedForConvertiblePreferredStockShares" nillable="true" xbrli:periodType="duration" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" />
+  <element id="sobr_CommonStockExchangedForConvertiblePreferredStockAmount" name="CommonStockExchangedForConvertiblePreferredStockAmount" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="sobr_AdditionalCommonStockIssuedUponReverseStockSplitOneShares" name="AdditionalCommonStockIssuedUponReverseStockSplitOneShares" nillable="true" xbrli:periodType="duration" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" />
+  <element id="sobr_AdditionalCommonStockIssuedUponReverseStockSplitOneAmount" name="AdditionalCommonStockIssuedUponReverseStockSplitOneAmount" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="sobr_CommonStockAndWarrantsIssuedInPublicEquityOfferingNetOfIssuanceCostsShares" name="CommonStockAndWarrantsIssuedInPublicEquityOfferingNetOfIssuanceCostsShares" nillable="true" xbrli:periodType="duration" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" />
+  <element id="sobr_CommonStockAndWarrantsIssuedInPublicEquityOfferingNetOfIssuanceCostsAmount" name="CommonStockAndWarrantsIssuedInPublicEquityOfferingNetOfIssuanceCostsAmount" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="sobr_CommonStockAndWarrantsIssuedInPrivateEquityOfferingNetOfIssuanceCostsShares" name="CommonStockAndWarrantsIssuedInPrivateEquityOfferingNetOfIssuanceCostsShares" nillable="true" xbrli:periodType="duration" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" />
+  <element id="sobr_CommonStockAndWarrantsIssuedInPrivateEquityOfferingNetOfIssuanceCostsAmount" name="CommonStockAndWarrantsIssuedInPrivateEquityOfferingNetOfIssuanceCostsAmount" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="sobr_CommonStockIssuedUponExerciseOfStockWarrantsNetOfIssuanceCostsShares" name="CommonStockIssuedUponExerciseOfStockWarrantsNetOfIssuanceCostsShares" nillable="true" xbrli:periodType="duration" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" />
+  <element id="sobr_CommonStockIssuedUponExerciseOfStockWarrantsNetOfIssuanceCostsAmount" name="CommonStockIssuedUponExerciseOfStockWarrantsNetOfIssuanceCostsAmount" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="sobr_CommonStockIssuedUponExerciseOfStockOptionsShares" name="CommonStockIssuedUponExerciseOfStockOptionsShares" nillable="true" xbrli:periodType="duration" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" />
+  <element id="sobr_CommonStockIssuedUponExerciseOfStockOptionsAmount" name="CommonStockIssuedUponExerciseOfStockOptionsAmount" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="sobr_PurchaseOfTreasuryStockShares" name="PurchaseOfTreasuryStockShares" nillable="true" xbrli:periodType="duration" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" />
+  <element id="sobr_PurchaseOfTreasuryStockAmount" name="PurchaseOfTreasuryStockAmount" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="sobr_CommonStockIssuedForServicesShares" name="CommonStockIssuedForServicesShares" nillable="true" xbrli:periodType="duration" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" />
+  <element id="sobr_CommonStockIssuedForServicesAmount" name="CommonStockIssuedForServicesAmount" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="sobr_PaidInCapitalFairValueOfStockOptionsAndRestrictedStockUnitsVested" name="PaidInCapitalFairValueOfStockOptionsAndRestrictedStockUnitsVested" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="sobr_PaidInCapitalRelativeFairValueOfStockWarrantsGranted" name="PaidInCapitalRelativeFairValueOfStockWarrantsGranted" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="sobr_DeemedDividendsRelatedToUnderwrittenPublicOfferingWarrantDownRoundProvision" name="DeemedDividendsRelatedToUnderwrittenPublicOfferingWarrantDownRoundProvision" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="sobr_DeemedDividendsRelatedToOriginalWarrantAndNewWarrantDownRoundProvisions" name="DeemedDividendsRelatedToOriginalWarrantAndNewWarrantDownRoundProvisions" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="sobr_CumulativeEffectOfAdopting" name="CumulativeEffectOfAdopting" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="sobr_WarrantsIssuedForService" name="WarrantsIssuedForService" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="sobr_PaidInCapitalRelativeFairValueOfStockWarrantsGrantedNetOfIssuanceCosts" name="PaidInCapitalRelativeFairValueOfStockWarrantsGrantedNetOfIssuanceCosts" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="sobr_ConversionOfPreferredStockToCommonStockShares" name="ConversionOfPreferredStockToCommonStockShares" nillable="true" xbrli:periodType="duration" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" />
+  <element id="sobr_ConversionOfPreferredStockToCommonStockAmount" name="ConversionOfPreferredStockToCommonStockAmount" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="sobr_CommonStockIssuedUponConversionOfConvertibleDebtShares" name="CommonStockIssuedUponConversionOfConvertibleDebtShares" nillable="true" xbrli:periodType="duration" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" />
+  <element id="sobr_CommonStockIssuedUponConversionOfConvertibleDebtAmount" name="CommonStockIssuedUponConversionOfConvertibleDebtAmount" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="sobr_NonCashInterestExpense" name="NonCashInterestExpense" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="sobr_NonCashLeaseExpense" name="NonCashLeaseExpense" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="sobr_IssuanceOfCommonStockAndWarrantsForPrepaidServices" name="IssuanceOfCommonStockAndWarrantsForPrepaidServices" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="sobr_NonRelatedPartyDebtConvertedToCapital" name="NonRelatedPartyDebtConvertedToCapital" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="sobr_FinancingOfPrepaidInsuranceExpenses" name="FinancingOfPrepaidInsuranceExpenses" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="sobr_ConversionOfPreferredStockToCommonStock" name="ConversionOfPreferredStockToCommonStock" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="sobr_ConversionOfCommonStockToPreferredStock" name="ConversionOfCommonStockToPreferredStock" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="sobr_PartnersCapitalAccountUnitsSoldInPublicOfferings" name="PartnersCapitalAccountUnitsSoldInPublicOfferings" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="sobr_DeemedDividendsRelatedToOriginalWarrantsAndNewWarrantDownRoundProvision" name="DeemedDividendsRelatedToOriginalWarrantsAndNewWarrantDownRoundProvision" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="sobr_ConvertibleDebenturePayableDiscount" name="ConvertibleDebenturePayableDiscount" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="sobr_StockIssuedDuringPeriodSharesIssueForServices" name="StockIssuedDuringPeriodSharesIssueForServices" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="sobr_ExchangeOfCommonSharesFromExerciseOfStockOptions" name="ExchangeOfCommonSharesFromExerciseOfStockOptions" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="sobr_ReclassificationOfCommonSharesFromReverseStockSplit" name="ReclassificationOfCommonSharesFromReverseStockSplit" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="sobr_LeasesDisclosureTextBlock" name="LeasesDisclosureTextBlock" nillable="true" xbrli:periodType="duration" type="nonnum:textBlockItemType" substitutionGroup="xbrli:item" />
+  <element id="sobr_NotesPayableDisclosureTextBlock" name="NotesPayableDisclosureTextBlock" nillable="true" xbrli:periodType="duration" type="nonnum:textBlockItemType" substitutionGroup="xbrli:item" />
+  <element id="sobr_StockWarrantsStockOptionsAndRestrictedStockUnits" name="StockWarrantsStockOptionsAndRestrictedStockUnits" nillable="true" xbrli:periodType="duration" type="nonnum:textBlockItemType" substitutionGroup="xbrli:item" />
+  <element id="sobr_PrepaidExpensesPolicyTextBlock" name="PrepaidExpensesPolicyTextBlock" nillable="true" xbrli:periodType="duration" type="nonnum:textBlockItemType" substitutionGroup="xbrli:item" />
+  <element id="sobr_BeneficialConversionFeaturesPoliciesTextBlock" name="BeneficialConversionFeaturesPoliciesTextBlock" nillable="true" xbrli:periodType="duration" type="nonnum:textBlockItemType" substitutionGroup="xbrli:item" />
+  <element id="sobr_DebtIssuanceCostsPolicyTextBlock" name="DebtIssuanceCostsPolicyTextBlock" nillable="true" xbrli:periodType="duration" type="nonnum:textBlockItemType" substitutionGroup="xbrli:item" />
+  <element id="sobr_PreferredStockPolicyTextBlock" name="PreferredStockPolicyTextBlock" nillable="true" xbrli:periodType="duration" type="nonnum:textBlockItemType" substitutionGroup="xbrli:item" />
+  <element id="sobr_MinorityInterestNoncontrollingInterestPolicyTextBlock" name="MinorityInterestNoncontrollingInterestPolicyTextBlock" nillable="true" xbrli:periodType="duration" type="nonnum:textBlockItemType" substitutionGroup="xbrli:item" />
+  <element id="sobr_LeasesPolicyTextBlock" name="LeasesPolicyTextBlock" nillable="true" xbrli:periodType="duration" type="nonnum:textBlockItemType" substitutionGroup="xbrli:item" />
+  <element id="sobr_ConcentrationOfRiskPolicyTextBlock" name="ConcentrationOfRiskPolicyTextBlock" nillable="true" xbrli:periodType="duration" type="nonnum:textBlockItemType" substitutionGroup="xbrli:item" />
+  <element id="sobr_RelatedPartiesPolicyTextBlock" name="RelatedPartiesPolicyTextBlock" nillable="true" xbrli:periodType="duration" type="nonnum:textBlockItemType" substitutionGroup="xbrli:item" />
+  <element id="sobr_ReclassificationAdjustmentFinancialStatementsDescriptionPolicy" name="ReclassificationAdjustmentFinancialStatementsDescriptionPolicy" nillable="true" xbrli:periodType="duration" type="nonnum:textBlockItemType" substitutionGroup="xbrli:item" />
+  <element id="sobr_ScheduleOfOperatingLeaseObligationsTableTextBlock" name="ScheduleOfOperatingLeaseObligationsTableTextBlock" nillable="true" xbrli:periodType="duration" type="nonnum:textBlockItemType" substitutionGroup="xbrli:item" />
+  <element id="sobr_ScheduleOfNotesPayablesNonRelatedParties" name="ScheduleOfNotesPayablesNonRelatedParties" nillable="true" xbrli:periodType="duration" type="nonnum:textBlockItemType" substitutionGroup="xbrli:item" />
+  <element id="sobr_ScheduleOfOptionsPricingModeltabletextblock" name="ScheduleOfOptionsPricingModeltabletextblock" nillable="true" xbrli:periodType="duration" type="nonnum:textBlockItemType" substitutionGroup="xbrli:item" />
+  <element id="sobr_ScheduleOfOutstandingStockOptionstabletextblock" name="ScheduleOfOutstandingStockOptionstabletextblock" nillable="true" xbrli:periodType="duration" type="nonnum:textBlockItemType" substitutionGroup="xbrli:item" />
+  <element id="sobr_ScheduleOfRsuActivityUnderThePlanTableTextBlock" name="ScheduleOfRsuActivityUnderThePlanTableTextBlock" nillable="true" xbrli:periodType="duration" type="nonnum:textBlockItemType" substitutionGroup="xbrli:item" />
+  <element id="sobr_ScheduleOfCumulativeDeferredTaxAssetTaxEffectTableTextBlock" name="ScheduleOfCumulativeDeferredTaxAssetTaxEffectTableTextBlock" nillable="true" xbrli:periodType="duration" type="nonnum:textBlockItemType" substitutionGroup="xbrli:item" />
+  <element id="sobr_WorkingCapital" name="WorkingCapital" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="sobr_ImputedInterest" name="ImputedInterest" nillable="true" xbrli:balance="debit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="sobr_MonthlyRent" name="MonthlyRent" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="sobr_NewOfficeFacilityAgreementDescription" name="NewOfficeFacilityAgreementDescription" nillable="true" xbrli:periodType="duration" type="xbrli:stringItemType" substitutionGroup="xbrli:item" />
+  <element id="sobr_LeasePayments" name="LeasePayments" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="sobr_WeightedAverageLesseeOperatingLeaseRemainingLeaseTerm" name="WeightedAverageLesseeOperatingLeaseRemainingLeaseTerm" nillable="true" xbrli:periodType="duration" type="xbrli:durationItemType" substitutionGroup="xbrli:item" />
+  <element id="sobr_AmortizationPeriod" name="AmortizationPeriod" nillable="true" xbrli:periodType="duration" type="xbrli:durationItemType" substitutionGroup="xbrli:item" />
+  <element id="sobr_CommonSharesHeldWithRelatedParties" name="CommonSharesHeldWithRelatedParties" nillable="true" xbrli:periodType="instant" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" />
+  <element id="sobr_DesignationSharesOfPreferredStock" name="DesignationSharesOfPreferredStock" nillable="true" xbrli:periodType="instant" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" />
+  <element id="sobr_ConsultingServicesCurrentAndNonCurrent" name="ConsultingServicesCurrentAndNonCurrent" nillable="true" xbrli:balance="credit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="sobr_ConvertibleNotesPayableWithWarrantsDebtOffering" name="ConvertibleNotesPayableWithWarrantsDebtOffering" nillable="true" xbrli:balance="credit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="sobr_NonConvertibleNotesPayable" name="NonConvertibleNotesPayable" nillable="true" xbrli:balance="credit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="sobr_NetRelatedPartyNotesPayable" name="NetRelatedPartyNotesPayable" nillable="true" xbrli:balance="credit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="sobr_ConvertibleNotesPayableWithWarrantsOtherDebtOffering" name="ConvertibleNotesPayableWithWarrantsOtherDebtOffering" nillable="true" xbrli:balance="credit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="sobr_ConvertibleNotesPayableWithWarrantDebtOffering" name="ConvertibleNotesPayableWithWarrantDebtOffering" nillable="true" xbrli:balance="credit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="sobr_PremiumFinancingNotePayable" name="PremiumFinancingNotePayable" nillable="true" xbrli:balance="credit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="sobr_FinancingLiability" name="FinancingLiability" nillable="true" xbrli:balance="credit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="sobr_DebtOfferingIntoSharesOfCommonStock" name="DebtOfferingIntoSharesOfCommonStock" nillable="true" xbrli:periodType="duration" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" />
+  <element id="sobr_NotePrincipalAmount" name="NotePrincipalAmount" nillable="true" xbrli:balance="credit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="sobr_IssueOfWarrantToPurchaseOfCommonShare" name="IssueOfWarrantToPurchaseOfCommonShare" nillable="true" xbrli:periodType="duration" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" />
+  <element id="sobr_NotePayableDueDate" name="NotePayableDueDate" nillable="true" xbrli:periodType="duration" type="xbrli:stringItemType" substitutionGroup="xbrli:item" />
+  <element id="sobr_InitialDownPayment" name="InitialDownPayment" nillable="true" xbrli:balance="credit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="sobr_InterestExpenseRelatedPartyTransactionAmountsOfTransaction" name="InterestExpenseRelatedPartyTransactionAmountsOfTransaction" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="sobr_InterestExpenseForNonRelatedPartyTransactionAmountsOfTransaction" name="InterestExpenseForNonRelatedPartyTransactionAmountsOfTransaction" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="sobr_PurchasePricePerShare" name="PurchasePricePerShare" nillable="true" xbrli:periodType="instant" type="num:perShareItemType" substitutionGroup="xbrli:item" />
+  <element id="sobr_ConvertibleNotesPayablePrincipleBalance" name="ConvertibleNotesPayablePrincipleBalance" nillable="true" xbrli:balance="credit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="sobr_IssuePrice" name="IssuePrice" nillable="true" xbrli:periodType="duration" type="num:perShareItemType" substitutionGroup="xbrli:item" />
+  <element id="sobr_TotalBeneficialConversionFeatureDebtDiscount" name="TotalBeneficialConversionFeatureDebtDiscount" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="sobr_ConvertiblePriceInToTheCommonStock" name="ConvertiblePriceInToTheCommonStock" nillable="true" xbrli:periodType="duration" type="num:perShareItemType" substitutionGroup="xbrli:item" />
+  <element id="sobr_OriginalIssueDiscountOfConertibleNotes" name="OriginalIssueDiscountOfConertibleNotes" nillable="true" xbrli:periodType="duration" type="num:percentItemType" substitutionGroup="xbrli:item" />
+  <element id="sobr_CommonStockConversionPrice" name="CommonStockConversionPrice" nillable="true" xbrli:periodType="duration" type="num:perShareItemType" substitutionGroup="xbrli:item" />
+  <element id="sobr_NotesDueDate" name="NotesDueDate" nillable="true" xbrli:periodType="duration" type="xbrli:stringItemType" substitutionGroup="xbrli:item" />
+  <element id="sobr_AccruedInterestPercentage" name="AccruedInterestPercentage" nillable="true" xbrli:periodType="duration" type="num:percentItemType" substitutionGroup="xbrli:item" />
+  <element id="sobr_ExcercisePrice" name="ExcercisePrice" nillable="true" xbrli:periodType="duration" type="num:perShareItemType" substitutionGroup="xbrli:item" />
+  <element id="sobr_InterestRate" name="InterestRate" nillable="true" xbrli:periodType="duration" type="num:percentItemType" substitutionGroup="xbrli:item" />
+  <element id="sobr_CommonStockPrice" name="CommonStockPrice" nillable="true" xbrli:periodType="duration" type="num:perShareItemType" substitutionGroup="xbrli:item" />
+  <element id="sobr_IssuedSharesOfCommonStockInConnectionWithACompletedPublicOffering" name="IssuedSharesOfCommonStockInConnectionWithACompletedPublicOffering" nillable="true" xbrli:periodType="duration" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" />
+  <element id="sobr_AmountOfCommonStockSharesSold" name="AmountOfCommonStockSharesSold" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="sobr_DescriptionOfCommonStockRoundingProvision" name="DescriptionOfCommonStockRoundingProvision" nillable="true" xbrli:periodType="duration" type="xbrli:stringItemType" substitutionGroup="xbrli:item" />
+  <element id="sobr_PublicOfferingPrice" name="PublicOfferingPrice" nillable="true" xbrli:periodType="duration" type="num:perShareItemType" substitutionGroup="xbrli:item" />
+  <element id="sobr_CommonStockSharesSold" name="CommonStockSharesSold" nillable="true" xbrli:periodType="duration" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" />
+  <element id="sobr_Warrantexerciseprice" name="Warrantexerciseprice" nillable="true" xbrli:periodType="duration" type="num:perShareItemType" substitutionGroup="xbrli:item" />
+  <element id="sobr_SharesPrice" name="SharesPrice" nillable="true" xbrli:periodType="duration" type="num:perShareItemType" substitutionGroup="xbrli:item" />
+  <element id="sobr_StockIssuedDuringPeriodSharesNewIssued" name="StockIssuedDuringPeriodSharesNewIssued" nillable="true" xbrli:periodType="instant" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" />
+  <element id="sobr_MinimumConversionRate" name="MinimumConversionRate" nillable="true" xbrli:periodType="instant" type="num:perShareItemType" substitutionGroup="xbrli:item" />
+  <element id="sobr_AuthorizedSharesIncreased" name="AuthorizedSharesIncreased" nillable="true" xbrli:periodType="duration" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" />
+  <element id="sobr_RightOfDividend" name="RightOfDividend" nillable="true" xbrli:periodType="instant" type="num:percentItemType" substitutionGroup="xbrli:item" />
+  <element id="sobr_PreferencesAndRightsOfPreferredStock" name="PreferencesAndRightsOfPreferredStock" nillable="true" xbrli:periodType="duration" type="xbrli:stringItemType" substitutionGroup="xbrli:item" />
+  <element id="sobr_ExchangeSharesIssuedOfCommonStcok" name="ExchangeSharesIssuedOfCommonStcok" nillable="true" xbrli:periodType="instant" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" />
+  <element id="sobr_CommonStockHeldByCompany" name="CommonStockHeldByCompany" nillable="true" xbrli:periodType="duration" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" />
+  <element id="sobr_ShareBasedCompensationArrangementByShareBasedPaymentAwardNonOptionEquityInstrumentsForfeited" name="ShareBasedCompensationArrangementByShareBasedPaymentAwardNonOptionEquityInstrumentsForfeited" nillable="true" xbrli:periodType="duration" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" />
+  <element id="sobr_ExercisePricePerShareWarrantsExpired" name="ExercisePricePerShareWarrantsExpired" nillable="true" xbrli:periodType="duration" type="num:perShareItemType" substitutionGroup="xbrli:item" />
+  <element id="sobr_BeginningShareBasedCompensationArrangementByShareBasedPaymentAwardOptionsOutstandingWeightedAverageExercisePrice" name="BeginningShareBasedCompensationArrangementByShareBasedPaymentAwardOptionsOutstandingWeightedAverageExercisePrice" nillable="true" xbrli:periodType="instant" type="num:perShareItemType" substitutionGroup="xbrli:item" />
+  <element id="sobr_ShareBasedCompensationArrangementsByShareBasedPaymentAwardOptionsgrantsInPeriodWeightedAverageExercisePrice" name="ShareBasedCompensationArrangementsByShareBasedPaymentAwardOptionsgrantsInPeriodWeightedAverageExercisePrice" nillable="true" xbrli:periodType="duration" type="num:perShareItemType" substitutionGroup="xbrli:item" />
+  <element id="sobr_ShareBasedCompensationArrangementsByShareBasedPaymentAwardOptionsExercisesInPeriodWeightedAverageExpiredPrice" name="ShareBasedCompensationArrangementsByShareBasedPaymentAwardOptionsExercisesInPeriodWeightedAverageExpiredPrice" nillable="true" xbrli:periodType="duration" type="num:perShareItemType" substitutionGroup="xbrli:item" />
+  <element id="sobr_EndingShareBasedCompensationArrangementByShareBasedPaymentAwardOptionsOutstandingWeightedAverageExercisePrice" name="EndingShareBasedCompensationArrangementByShareBasedPaymentAwardOptionsOutstandingWeightedAverageExercisePrice" nillable="true" xbrli:periodType="instant" type="num:perShareItemType" substitutionGroup="xbrli:item" />
+  <element id="sobr_WeightedAverageRemainingContractualLifeBeginningBalance" name="WeightedAverageRemainingContractualLifeBeginningBalance" nillable="true" xbrli:periodType="duration" type="xbrli:durationItemType" substitutionGroup="xbrli:item" />
+  <element id="sobr_WeightedaverageremainingcontractuallifewarrantsGranted" name="WeightedaverageremainingcontractuallifewarrantsGranted" nillable="true" xbrli:periodType="duration" type="xbrli:durationItemType" substitutionGroup="xbrli:item" />
+  <element id="sobr_WeightedaverageremainingcontractuallifewarrantsExercised" name="WeightedaverageremainingcontractuallifewarrantsExercised" nillable="true" xbrli:periodType="duration" type="xbrli:durationItemType" substitutionGroup="xbrli:item" />
+  <element id="sobr_WeightedAverageRemainingContractualLifeEndingBalance" name="WeightedAverageRemainingContractualLifeEndingBalance" nillable="true" xbrli:periodType="duration" type="xbrli:durationItemType" substitutionGroup="xbrli:item" />
+  <element id="sobr_AggregateIntrinsicBeginningBalanceValue" name="AggregateIntrinsicBeginningBalanceValue" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="sobr_AggregateIntrinsicValueWarrantsGranted" name="AggregateIntrinsicValueWarrantsGranted" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="sobr_AggregateIntrinsicValueWarrantsExpired" name="AggregateIntrinsicValueWarrantsExpired" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="sobr_AggregateIntrinsicValueEndingBalance" name="AggregateIntrinsicValueEndingBalance" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="sobr_ShareBasedCompensationArrangementsByShareBasedPaymentAwardOptionsOutstandingWeightedAverageExercisePrice" name="ShareBasedCompensationArrangementsByShareBasedPaymentAwardOptionsOutstandingWeightedAverageExercisePrice" nillable="true" xbrli:periodType="duration" type="num:perShareItemType" substitutionGroup="xbrli:item" />
+  <element id="sobr_WarrantExercisePricePerSharesGranted" name="WarrantExercisePricePerSharesGranted" nillable="true" xbrli:periodType="duration" type="num:perShareItemType" substitutionGroup="xbrli:item" />
+  <element id="sobr_ExercisePricePerShareWarrantsExercised" name="ExercisePricePerShareWarrantsExercised" nillable="true" xbrli:periodType="duration" type="num:perShareItemType" substitutionGroup="xbrli:item" />
+  <element id="sobr_WarrantExercisePricePerSharesExpired" name="WarrantExercisePricePerSharesExpired" nillable="true" xbrli:periodType="duration" type="num:perShareItemType" substitutionGroup="xbrli:item" />
+  <element id="sobr_ShareBasedCompensationsArrangementsByShareBasedPaymentAwardOptionsOutstandingWeightedAverageExercisePrice" name="ShareBasedCompensationsArrangementsByShareBasedPaymentAwardOptionsOutstandingWeightedAverageExercisePrice" nillable="true" xbrli:periodType="duration" type="num:perShareItemType" substitutionGroup="xbrli:item" />
+  <element id="sobr_ShareBasedCompensationArrangemenstByShareBasedPaymentAwardOptionsOutstandingWeightedAverageExercisePrice" name="ShareBasedCompensationArrangemenstByShareBasedPaymentAwardOptionsOutstandingWeightedAverageExercisePrice" nillable="true" xbrli:periodType="duration" type="num:perShareItemType" substitutionGroup="xbrli:item" />
+  <element id="sobr_WeightedaverageremainingcontractuallifeoptionsGranted" name="WeightedaverageremainingcontractuallifeoptionsGranted" nillable="true" xbrli:periodType="duration" type="xbrli:durationItemType" substitutionGroup="xbrli:item" />
+  <element id="sobr_WeightedAverageExercisePricePerShareBeginningBalance" name="WeightedAverageExercisePricePerShareBeginningBalance" nillable="true" xbrli:periodType="duration" type="num:perShareItemType" substitutionGroup="xbrli:item" />
+  <element id="sobr_WeightedAverageExercisePricePerShareOptionsGranted" name="WeightedAverageExercisePricePerShareOptionsGranted" nillable="true" xbrli:periodType="duration" type="num:perShareItemType" substitutionGroup="xbrli:item" />
+  <element id="sobr_WeightedAverageExercisePricePerShareOptionsExercised" name="WeightedAverageExercisePricePerShareOptionsExercised" nillable="true" xbrli:periodType="duration" type="num:perShareItemType" substitutionGroup="xbrli:item" />
+  <element id="sobr_WeightedAverageExercisePricePerShareOptionsForfieted" name="WeightedAverageExercisePricePerShareOptionsForfieted" nillable="true" xbrli:periodType="duration" type="num:perShareItemType" substitutionGroup="xbrli:item" />
+  <element id="sobr_WeightedAverageExercisePricePerShareEndingBalance" name="WeightedAverageExercisePricePerShareEndingBalance" nillable="true" xbrli:periodType="duration" type="num:perShareItemType" substitutionGroup="xbrli:item" />
+  <element id="sobr_AggregateIntrinsicValueOptionsExercised" name="AggregateIntrinsicValueOptionsExercised" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="sobr_AggregateIntrinsicValueOptionsGranted" name="AggregateIntrinsicValueOptionsGranted" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="sobr_AggregateIntrinsicValueOptionsExpiredForfeited" name="AggregateIntrinsicValueOptionsExpiredForfeited" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="sobr_AggregateIntrinsicValueExercisable" name="AggregateIntrinsicValueExercisable" nillable="true" xbrli:balance="debit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="sobr_ShareBasedCompensationArrangementsByShareBasedPaymentAwardOptionsExerciseInPeriodWeightedAverageExercisePrice" name="ShareBasedCompensationArrangementsByShareBasedPaymentAwardOptionsExerciseInPeriodWeightedAverageExercisePrice" nillable="true" xbrli:periodType="duration" type="num:perShareItemType" substitutionGroup="xbrli:item" />
+  <element id="sobr_ShareBasedCompensationArrangementByShareBasedPaymentAwardOptionsOutstandingWeightedAverageExercisablePrice" name="ShareBasedCompensationArrangementByShareBasedPaymentAwardOptionsOutstandingWeightedAverageExercisablePrice" nillable="true" xbrli:periodType="instant" type="num:perShareItemType" substitutionGroup="xbrli:item" />
+  <element id="sobr_ShareBasedCompensationArrangementByShareBasedPaymentAwardEquityInstrumentsOtherThanOptionsVestedInPeriodOne" name="ShareBasedCompensationArrangementByShareBasedPaymentAwardEquityInstrumentsOtherThanOptionsVestedInPeriodOne" nillable="true" xbrli:periodType="duration" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" />
+  <element id="sobr_WeightedAverageGrantDateFairValuePerShareBeginningBalance" name="WeightedAverageGrantDateFairValuePerShareBeginningBalance" nillable="true" xbrli:periodType="duration" type="num:perShareItemType" substitutionGroup="xbrli:item" />
+  <element id="sobr_WeightedAverageGrantDateFairValuePerShareRsuGranted" name="WeightedAverageGrantDateFairValuePerShareRsuGranted" nillable="true" xbrli:periodType="duration" type="num:perShareItemType" substitutionGroup="xbrli:item" />
+  <element id="sobr_WeightedAverageGrantDateFairValuePerShareRsuVested" name="WeightedAverageGrantDateFairValuePerShareRsuVested" nillable="true" xbrli:periodType="duration" type="num:perShareItemType" substitutionGroup="xbrli:item" />
+  <element id="sobr_WeightedAverageGrantDateFairValuePerShareEndingBalance" name="WeightedAverageGrantDateFairValuePerShareEndingBalance" nillable="true" xbrli:periodType="duration" type="num:perShareItemType" substitutionGroup="xbrli:item" />
+  <element id="sobr_ShareBasedCompensationArrangementByShareBasedPaymentAwardEquityInstrumentsOtherThanOptionsOutstandingWeightedAverageRemainingContractualTermsBeginning" name="ShareBasedCompensationArrangementByShareBasedPaymentAwardEquityInstrumentsOtherThanOptionsOutstandingWeightedAverageRemainingContractualTermsBeginning" nillable="true" xbrli:periodType="duration" type="xbrli:durationItemType" substitutionGroup="xbrli:item" />
+  <element id="sobr_ShareBasedCompensationArrangementByShareBasedPaymentAwardEquityInstrumentsOtherThanOptionsOutstandingWeightedAverageRemainingContractualTermsGranted" name="ShareBasedCompensationArrangementByShareBasedPaymentAwardEquityInstrumentsOtherThanOptionsOutstandingWeightedAverageRemainingContractualTermsGranted" nillable="true" xbrli:periodType="duration" type="xbrli:durationItemType" substitutionGroup="xbrli:item" />
+  <element id="sobr_ShareBasedCompensationArrangementByShareBasedPaymentAwardEquityInstrumentsOtherThanOptionsOutstandingWeightedAverageRemainingContractualTermsEnding" name="ShareBasedCompensationArrangementByShareBasedPaymentAwardEquityInstrumentsOtherThanOptionsOutstandingWeightedAverageRemainingContractualTermsEnding" nillable="true" xbrli:periodType="duration" type="xbrli:durationItemType" substitutionGroup="xbrli:item" />
+  <element id="sobr_BusinessOfDescription" name="BusinessOfDescription" nillable="true" xbrli:periodType="duration" type="xbrli:stringItemType" substitutionGroup="xbrli:item" />
+  <element id="sobr_CommonStockPurchase" name="CommonStockPurchase" nillable="true" xbrli:periodType="instant" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" />
+  <element id="sobr_NumberOfAuthorizedShares" name="NumberOfAuthorizedShares" nillable="true" xbrli:periodType="instant" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" />
+  <element id="sobr_AuthorizationOfSharesOfCommonStock" name="AuthorizationOfSharesOfCommonStock" nillable="true" xbrli:periodType="instant" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" />
+  <element id="sobr_StockOptionsToAcquireSharesOfCommonStock" name="StockOptionsToAcquireSharesOfCommonStock" nillable="true" xbrli:periodType="instant" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" />
+  <element id="sobr_SharebasedCompensationArrangementBySharebasedPaymentAwardOptionsVestNumberOfShares" name="SharebasedCompensationArrangementBySharebasedPaymentAwardOptionsVestNumberOfShares" nillable="true" xbrli:periodType="instant" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" />
+  <element id="sobr_DescriptionOfExercisePrices" name="DescriptionOfExercisePrices" nillable="true" xbrli:periodType="duration" type="xbrli:stringItemType" substitutionGroup="xbrli:item" />
+  <element id="sobr_FairValueOfTheOptionsIncreased" name="FairValueOfTheOptionsIncreased" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="sobr_StockOptionsShares" name="StockOptionsShares" nillable="true" xbrli:periodType="instant" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" />
+  <element id="sobr_ExercisePricesOfStockOptions" name="ExercisePricesOfStockOptions" nillable="true" xbrli:periodType="instant" type="num:perShareItemType" substitutionGroup="xbrli:item" />
+  <element id="sobr_CommonStockIssuedForRsusVested" name="CommonStockIssuedForRsusVested" nillable="true" xbrli:periodType="instant" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" />
+  <element id="sobr_WeightedAverageFairValueOfRsuPerShare" name="WeightedAverageFairValueOfRsuPerShare" nillable="true" xbrli:periodType="instant" type="num:perShareItemType" substitutionGroup="xbrli:item" />
+  <element id="sobr_RestrictedStockUnrecongnizedCompensationCostPeriod" name="RestrictedStockUnrecongnizedCompensationCostPeriod" nillable="true" xbrli:periodType="duration" type="xbrli:durationItemType" substitutionGroup="xbrli:item" />
+  <element id="sobr_UnvestedRsusGrantedToExecutiveOfficers" name="UnvestedRsusGrantedToExecutiveOfficers" nillable="true" xbrli:periodType="instant" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" />
+  <element id="sobr_RsusOutstandingExecutiveOfficers" name="RsusOutstandingExecutiveOfficers" nillable="true" xbrli:periodType="instant" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" />
+  <element id="sobr_WeightedAverageRemainingContractualLife" name="WeightedAverageRemainingContractualLife" nillable="true" xbrli:periodType="duration" type="xbrli:durationItemType" substitutionGroup="xbrli:item" />
+  <element id="sobr_RemainingWeightedAverageVestingPeriod" name="RemainingWeightedAverageVestingPeriod" nillable="true" xbrli:periodType="duration" type="xbrli:durationItemType" substitutionGroup="xbrli:item" />
+  <element id="sobr_AccruedLiabilitiesInterest" name="AccruedLiabilitiesInterest" nillable="true" xbrli:balance="credit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="sobr_LawsuitAmount" name="LawsuitAmount" nillable="true" xbrli:balance="credit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="sobr_IncomeTaxReconciliationPermanentDifferencesExpense" name="IncomeTaxReconciliationPermanentDifferencesExpense" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="sobr_ValuationAllowance" name="ValuationAllowance" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="sobr_DescriptionOfLoss" name="DescriptionOfLoss" nillable="true" xbrli:periodType="duration" type="xbrli:stringItemType" substitutionGroup="xbrli:item" />
+  <element id="sobr_ConversionAmountOfCommonStock" name="ConversionAmountOfCommonStock" nillable="true" xbrli:balance="credit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="sobr_DebtOfferingShares" name="DebtOfferingShares" nillable="true" xbrli:periodType="instant" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" />
+  <element id="sobr_DescriptionOfWarrantsPurchase" name="DescriptionOfWarrantsPurchase" nillable="true" xbrli:periodType="duration" type="xbrli:stringItemType" substitutionGroup="xbrli:item" />
+  <element id="sobr_DescriptionOfArmisticeWarrants" name="DescriptionOfArmisticeWarrants" nillable="true" xbrli:periodType="duration" type="xbrli:stringItemType" substitutionGroup="xbrli:item" />
+  <element id="sobr_ExercisePrice" name="ExercisePrice" nillable="true" xbrli:periodType="instant" type="num:perShareItemType" substitutionGroup="xbrli:item" />
+  <element id="sobr_PermanentlyWarrantExercisePrice" name="PermanentlyWarrantExercisePrice" nillable="true" xbrli:periodType="instant" type="num:perShareItemType" substitutionGroup="xbrli:item" />
+  <element id="sobr_OrganizationOperationsAndSummaryOfSignificantAccountingPoliciesAbstract" name="OrganizationOperationsAndSummaryOfSignificantAccountingPoliciesAbstract" nillable="true" abstract="true" xbrli:periodType="duration" type="xbrli:stringItemType" substitutionGroup="xbrli:item" />
+  <element id="sobr_PrepaidExpensesAbstract" name="PrepaidExpensesAbstract" nillable="true" abstract="true" xbrli:periodType="duration" type="xbrli:stringItemType" substitutionGroup="xbrli:item" />
+  <element id="sobr_LeasesDisclosureAbstract" name="LeasesDisclosureAbstract" nillable="true" abstract="true" xbrli:periodType="duration" type="xbrli:stringItemType" substitutionGroup="xbrli:item" />
+  <element id="sobr_AccruedExpensesAbstract" name="AccruedExpensesAbstract" nillable="true" abstract="true" xbrli:periodType="duration" type="xbrli:stringItemType" substitutionGroup="xbrli:item" />
+  <element id="sobr_NotesPayableDisclosureAbstract" name="NotesPayableDisclosureAbstract" nillable="true" abstract="true" xbrli:periodType="duration" type="xbrli:stringItemType" substitutionGroup="xbrli:item" />
+  <element id="sobr_PREFERREDSTOCKAbstract" name="PREFERREDSTOCKAbstract" nillable="true" abstract="true" xbrli:periodType="duration" type="xbrli:stringItemType" substitutionGroup="xbrli:item" />
+  <element id="sobr_StockWarrantsStockOptionsAndRestrictedStockUnitsAbstract" name="StockWarrantsStockOptionsAndRestrictedStockUnitsAbstract" nillable="true" abstract="true" xbrli:periodType="duration" type="xbrli:stringItemType" substitutionGroup="xbrli:item" />
+  <element id="sobr_IncomeTaxesAbstract" name="IncomeTaxesAbstract" nillable="true" abstract="true" xbrli:periodType="duration" type="xbrli:stringItemType" substitutionGroup="xbrli:item" />
+  <element name="MinorityInterestMember" id="sobr_MinorityInterestMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="officeFacilityLeaseAgreementMember" id="sobr_officeFacilityLeaseAgreementMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="IntellectualTechnologyMember" id="sobr_IntellectualTechnologyMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="DirectorsMember" id="sobr_DirectorsMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="SeriesBConvertiblePreferredStockMember" id="sobr_SeriesBConvertiblePreferredStockMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="RelatedPartyNotesPayableMember" id="sobr_RelatedPartyNotesPayableMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="TwoZeroTwoThreeDebtMember" id="sobr_TwoZeroTwoThreeDebtMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="NonConvertibleNotesPayableMember" id="sobr_NonConvertibleNotesPayableMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="convertibleNotesPayableWithWarrantTwoThousandTwentyOneDebtOfferingMember" id="sobr_convertibleNotesPayableWithWarrantTwoThousandTwentyOneDebtOfferingMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="NonRelatedPartyNotesPayableMember" id="sobr_NonRelatedPartyNotesPayableMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="RelatedPartyNonConvertibleNotesPayableMember" id="sobr_RelatedPartyNonConvertibleNotesPayableMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="ConvertibleNotesPayableTwoMember" id="sobr_ConvertibleNotesPayableTwoMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="NotesPayableMember" id="sobr_NotesPayableMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="NonRelatedPartyMember" id="sobr_NonRelatedPartyMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="FederalIncomeTaxMember" id="sobr_FederalIncomeTaxMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="FederalMember" id="sobr_FederalMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="StateMember" id="sobr_StateMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="SeriesAOneConvertiblePreferredStockMember" id="sobr_SeriesAOneConvertiblePreferredStockMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="SeriesAConvertiblePreferredStockMember" id="sobr_SeriesAConvertiblePreferredStockMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="SeriesBConvertiblePreferredMember" id="sobr_SeriesBConvertiblePreferredMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="SeriesBConvertiblePreferredstockMember" id="sobr_SeriesBConvertiblePreferredstockMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="SOBRSDirectorCompanyMember" id="sobr_SOBRSDirectorCompanyMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="SeriesAOnePreferredStockPurchaseAgreementMember" id="sobr_SeriesAOnePreferredStockPurchaseAgreementMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="SOBRSAFELLCMember" id="sobr_SOBRSAFELLCMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="SeriesAOneConvertiblePreferredstockMember" id="sobr_SeriesAOneConvertiblePreferredstockMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="StockholdersDeficitSOBRSafeIncMember" id="sobr_StockholdersDeficitSOBRSafeIncMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="TreasuryStocksMember" id="sobr_TreasuryStocksMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="ProfessionalServicesMember" id="sobr_ProfessionalServicesMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="RSUMember" id="sobr_RSUMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="ConvertibleNotePayableMember" id="sobr_ConvertibleNotePayableMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="UnderwrittenPublicOfferingMember" id="sobr_UnderwrittenPublicOfferingMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="PipeMember" id="sobr_PipeMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="StrategicAdvisoryAndDigitalMarketingServicesMember" id="sobr_StrategicAdvisoryAndDigitalMarketingServicesMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="consultantMember" id="sobr_consultantMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="BusinessDevelopmentConsultingServicesMember" id="sobr_BusinessDevelopmentConsultingServicesMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="ConsultingServicesMember" id="sobr_ConsultingServicesMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="NonPrefundedWarrantMember" id="sobr_NonPrefundedWarrantMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="TwoThousandTwentyThreeDebtOfferingMember" id="sobr_TwoThousandTwentyThreeDebtOfferingMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="RSUMVestedMember" id="sobr_RSUMVestedMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="PrefundedWarrantMember" id="sobr_PrefundedWarrantMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="WarrantsMember" id="sobr_WarrantsMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="StockOptionsMember" id="sobr_StockOptionsMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="StockWarrantMember" id="sobr_StockWarrantMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="ConsultingAgreementMember" id="sobr_ConsultingAgreementMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="EmploymentAgreementWithJerryWenzelMember" id="sobr_EmploymentAgreementWithJerryWenzelMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="EmploymentAgreementWithDavidGandiniMember" id="sobr_EmploymentAgreementWithDavidGandiniMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+</schema>

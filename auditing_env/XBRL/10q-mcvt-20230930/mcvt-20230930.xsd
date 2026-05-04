@@ -1,0 +1,454 @@
+<?xml version="1.0" encoding="us-ascii" standalone="yes"?>
+<!--XBRL Document Created with XBRLMaster-->
+<!--Version: 2.3.08-->
+<!--Based on XBRL 2.1-->
+<!--Date of creation: 11/17/2023-->
+<!--Software architectural design and coding: A'c Dharmapremananda Avt.-->
+<!--Copyright (c) 2023 I-NET Business Solutions, Inc. All Rights Reserved.-->
+<schema xmlns:xl="http://www.xbrl.org/2003/XLink" xmlns:ref="http://www.xbrl.org/2006/ref" xmlns:currency="http://xbrl.sec.gov/currency/2023" xmlns:us-gaap-att="http://fasb.org/us-gaap/attributes" xmlns:sic="http://xbrl.sec.gov/sic/2023" xmlns:exch="http://xbrl.sec.gov/exch/2023" xmlns:invest="http://xbrl.sec.gov/invest/2013-01-31" xmlns:negated="http://www.xbrl.org/2009/role/negated" xmlns:naics="http://xbrl.sec.gov/naics/2023" xmlns:us-types="http://fasb.org/us-types/2023" xmlns:stpr="http://xbrl.sec.gov/stpr/2023" xmlns="http://www.w3.org/2001/XMLSchema" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:xbrli="http://www.xbrl.org/2003/instance" xmlns:xbrldt="http://xbrl.org/2005/xbrldt" xmlns:xbrldi="http://xbrl.org/2006/xbrldi" xmlns:country="http://xbrl.sec.gov/country/2023" xmlns:utr="http://www.xbrl.org/2009/utr" xmlns:srt-types="http://fasb.org/srt-types/2023" xmlns:dtr-types="http://www.xbrl.org/dtr/type/2020-01-21" xmlns:srt-roles="http://fasb.org/srt-roles/2023" xmlns:dei="http://xbrl.sec.gov/dei/2023" xmlns:num="http://www.xbrl.org/dtr/type/numeric" xmlns:nonnum="http://www.xbrl.org/dtr/type/non-numeric" xmlns:srt="http://fasb.org/srt/2023" xmlns:us-gaap="http://fasb.org/us-gaap/2023" xmlns:mcvt="http://mcvt.com/20230930" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://mcvt.com/20230930">
+  <annotation>
+    <appinfo>
+      <link:roleType roleURI="http://mcvt.com/role/Cover" id="Cover">
+        <link:definition>000001 - Document - Cover</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://mcvt.com/role/CondensedBalanceSheets" id="CondensedBalanceSheets">
+        <link:definition>000002 - Statement - CONDENSED BALANCE SHEETS</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://mcvt.com/role/CondensedBalanceSheetsParenthetical" id="CondensedBalanceSheetsParenthetical">
+        <link:definition>000003 - Statement - CONDENSED BALANCE SHEETS (Parenthetical)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://mcvt.com/role/CondensedStatementsOfOperationsUnaudited" id="CondensedStatementsOfOperationsUnaudited">
+        <link:definition>000004 - Statement - CONDENSED STATEMENTS OF OPERATIONS (UNAUDITED)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://mcvt.com/role/CondensedStatementsOfShareholdersEquityUnaudited" id="CondensedStatementsOfShareholdersEquityUnaudited">
+        <link:definition>000005 - Statement - CONDENSED STATEMENTS OF SHAREHOLDERS' EQUITY (UNAUDITED)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://mcvt.com/role/CondensedStatementsOfCashFlowsUnaudited" id="CondensedStatementsOfCashFlowsUnaudited">
+        <link:definition>000006 - Statement - CONDENSED STATEMENTS OF CASH FLOWS (UNAUDITED)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://mcvt.com/role/CondensedScheduleOfInvestmentsUnaudited" id="CondensedScheduleOfInvestmentsUnaudited">
+        <link:definition>000007 - Statement - CONDENSED SCHEDULE OF INVESTMENTS (UNAUDITED)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://mcvt.com/role/ORGANIZATION" id="ORGANIZATION">
+        <link:definition>000008 - Disclosure - ORGANIZATION</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://mcvt.com/role/SummaryOfSignificantAccountingPolicies" id="SummaryOfSignificantAccountingPolicies">
+        <link:definition>000009 - Disclosure - SUMMARY OF SIGNIFICANT ACCOUNTING POLICIES</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://mcvt.com/role/INVESTMENTS" id="INVESTMENTS">
+        <link:definition>000010 - Disclosure - INVESTMENTS</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://mcvt.com/role/FairValueOfFinancialInstruments" id="FairValueOfFinancialInstruments">
+        <link:definition>000011 - Disclosure - FAIR VALUE OF FINANCIAL INSTRUMENTS</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://mcvt.com/role/RelatedpartyTransactions" id="RelatedpartyTransactions">
+        <link:definition>000012 - Disclosure - RELATEDPARTY TRANSACTIONS</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://mcvt.com/role/IncomeTaxes" id="IncomeTaxes">
+        <link:definition>000013 - Disclosure - INCOME TAXES</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://mcvt.com/role/LineOfCredit" id="LineOfCredit">
+        <link:definition>000014 - Disclosure - LINE OF CREDIT</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://mcvt.com/role/StockbasedCompensation" id="StockbasedCompensation">
+        <link:definition>000015 - Disclosure - STOCKBASED COMPENSATION</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://mcvt.com/role/ShareholdersEquity" id="ShareholdersEquity">
+        <link:definition>000016 - Disclosure - SHAREHOLDERS EQUITY</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://mcvt.com/role/PerShareInformation" id="PerShareInformation">
+        <link:definition>000017 - Disclosure - PER SHARE INFORMATION</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://mcvt.com/role/OperatingLeases" id="OperatingLeases">
+        <link:definition>000018 - Disclosure - OPERATING LEASES</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://mcvt.com/role/FinancialHighlights" id="FinancialHighlights">
+        <link:definition>000019 - Disclosure - FINANCIAL HIGHLIGHTS</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://mcvt.com/role/SubsequentEvents" id="SubsequentEvents">
+        <link:definition>000020 - Disclosure - SUBSEQUENT EVENTS</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://mcvt.com/role/SignificantAccountingPoliciesPolicies" id="SignificantAccountingPoliciesPolicies">
+        <link:definition>000021 - Disclosure - SIGNIFICANT ACCOUNTING POLICIES (Policies)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://mcvt.com/role/InvestmentsTables" id="InvestmentsTables">
+        <link:definition>000022 - Disclosure - INVESTMENTS (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://mcvt.com/role/FairValueOfFinancialInstrumentsTables" id="FairValueOfFinancialInstrumentsTables">
+        <link:definition>000023 - Disclosure - FAIR VALUE OF FINANCIAL INSTRUMENTS (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://mcvt.com/role/StockbasedCompensationTables" id="StockbasedCompensationTables">
+        <link:definition>000024 - Disclosure - STOCKBASED COMPENSATION (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://mcvt.com/role/PerShareInformationTables" id="PerShareInformationTables">
+        <link:definition>000025 - Disclosure - PER SHARE INFORMATION (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://mcvt.com/role/OperatingLeasesTables" id="OperatingLeasesTables">
+        <link:definition>000026 - Disclosure - OPERATING LEASES (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://mcvt.com/role/FinancialHighlightsTables" id="FinancialHighlightsTables">
+        <link:definition>000027 - Disclosure - FINANCIAL HIGHLIGHTS (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://mcvt.com/role/OrganizationDetailsNarrative" id="OrganizationDetailsNarrative">
+        <link:definition>000028 - Disclosure - ORGANIZATION (Details Narrative)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://mcvt.com/role/InvestmentsDetails" id="InvestmentsDetails">
+        <link:definition>000029 - Disclosure - INVESTMENTS (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://mcvt.com/role/InvestmentsDetails1" id="InvestmentsDetails1">
+        <link:definition>000030 - Disclosure - INVESTMENTS (Details 1)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://mcvt.com/role/FairValueOfFinancialInstrumentsDetails" id="FairValueOfFinancialInstrumentsDetails">
+        <link:definition>000031 - Disclosure - FAIR VALUE OF FINANCIAL INSTRUMENTS (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://mcvt.com/role/FairValueOfFinancialInstrumentsDetails1" id="FairValueOfFinancialInstrumentsDetails1">
+        <link:definition>000032 - Disclosure - FAIR VALUE OF FINANCIAL INSTRUMENTS (Details 1)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://mcvt.com/role/FairValueOfFinancialInstrumentsDetails2" id="FairValueOfFinancialInstrumentsDetails2">
+        <link:definition>000033 - Disclosure - FAIR VALUE OF FINANCIAL INSTRUMENTS (Details 2)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://mcvt.com/role/FairValueOfFinancialInstrumentsDetailsNarrative" id="FairValueOfFinancialInstrumentsDetailsNarrative">
+        <link:definition>000034 - Disclosure - FAIR VALUE OF FINANCIAL INSTRUMENTS (Details Narrative)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://mcvt.com/role/RelatedpartyTransactionsDetailsNarrative" id="RelatedpartyTransactionsDetailsNarrative">
+        <link:definition>000035 - Disclosure - RELATEDPARTY TRANSACTIONS (Details Narrative)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://mcvt.com/role/IncomeTaxesDetailsNarrative" id="IncomeTaxesDetailsNarrative">
+        <link:definition>000036 - Disclosure - INCOME TAXES (Details Narrative)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://mcvt.com/role/LineOfCreditDetailsNarrative" id="LineOfCreditDetailsNarrative">
+        <link:definition>000037 - Disclosure - LINE OF CREDIT (Details Narrative)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://mcvt.com/role/StockbasedCompensationDetails" id="StockbasedCompensationDetails">
+        <link:definition>000038 - Disclosure - STOCKBASED COMPENSATION (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://mcvt.com/role/StockbasedCompensationDetails1" id="StockbasedCompensationDetails1">
+        <link:definition>000039 - Disclosure - STOCKBASED COMPENSATION (Details 1)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://mcvt.com/role/StockbasedCompensationDetails2" id="StockbasedCompensationDetails2">
+        <link:definition>000040 - Disclosure - STOCKBASED COMPENSATION (Details 2)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://mcvt.com/role/StockbasedCompensationDetailsNarrative" id="StockbasedCompensationDetailsNarrative">
+        <link:definition>000041 - Disclosure - STOCKBASED COMPENSATION (Details Narrative)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://mcvt.com/role/ShareholdersEquityDetailsNarrative" id="ShareholdersEquityDetailsNarrative">
+        <link:definition>000042 - Disclosure - SHAREHOLDERS EQUITY (Details Narrative)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://mcvt.com/role/PershareInformationDetails" id="PershareInformationDetails">
+        <link:definition>000043 - Disclosure - PERSHARE INFORMATION (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://mcvt.com/role/OperatingLeasesDetails" id="OperatingLeasesDetails">
+        <link:definition>000044 - Disclosure - OPERATING LEASES (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://mcvt.com/role/OperatingLeasesDetails1" id="OperatingLeasesDetails1">
+        <link:definition>000045 - Disclosure - OPERATING LEASES (Details 1)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://mcvt.com/role/OperatingLeasesDetails2" id="OperatingLeasesDetails2">
+        <link:definition>000046 - Disclosure - OPERATING LEASES (Details 2)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://mcvt.com/role/OperatingLeasesDetailsNarrative" id="OperatingLeasesDetailsNarrative">
+        <link:definition>000047 - Disclosure - OPERATING LEASES (Details Narrative)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://mcvt.com/role/FinancialHighlightsDetails" id="FinancialHighlightsDetails">
+        <link:definition>000048 - Disclosure - FINANCIAL HIGHLIGHTS (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:linkbaseRef xlink:type="simple" xlink:href="mcvt-20230930_pre.xml" xlink:role="http://www.xbrl.org/2003/role/presentationLinkbaseRef" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" />
+      <link:linkbaseRef xlink:type="simple" xlink:href="mcvt-20230930_lab.xml" xlink:role="http://www.xbrl.org/2003/role/labelLinkbaseRef" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" />
+      <link:linkbaseRef xlink:type="simple" xlink:href="mcvt-20230930_cal.xml" xlink:role="http://www.xbrl.org/2003/role/calculationLinkbaseRef" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" />
+      <link:linkbaseRef xlink:type="simple" xlink:href="mcvt-20230930_def.xml" xlink:role="http://www.xbrl.org/2003/role/definitionLinkbaseRef" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" />
+    </appinfo>
+  </annotation>
+  <import namespace="http://www.xbrl.org/2003/instance" schemaLocation="http://www.xbrl.org/2003/xbrl-instance-2003-12-31.xsd" />
+  <import namespace="http://www.xbrl.org/2003/linkbase" schemaLocation="http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd" />
+  <import namespace="http://xbrl.org/2005/xbrldt" schemaLocation="http://www.xbrl.org/2005/xbrldt-2005.xsd" />
+  <import namespace="http://xbrl.sec.gov/country/2023" schemaLocation="https://xbrl.sec.gov/country/2023/country-2023.xsd" />
+  <import namespace="http://xbrl.sec.gov/currency/2023" schemaLocation="https://xbrl.sec.gov/currency/2023/currency-2023.xsd" />
+  <import namespace="http://xbrl.sec.gov/dei/2023" schemaLocation="https://xbrl.sec.gov/dei/2023/dei-2023.xsd" />
+  <import namespace="http://www.xbrl.org/dtr/type/non-numeric" schemaLocation="http://www.xbrl.org/dtr/type/nonNumeric-2009-12-16.xsd" />
+  <import namespace="http://www.xbrl.org/dtr/type/numeric" schemaLocation="http://www.xbrl.org/dtr/type/numeric-2009-12-16.xsd" />
+  <import namespace="http://xbrl.sec.gov/exch/2023" schemaLocation="https://xbrl.sec.gov/exch/2023/exch-2023.xsd" />
+  <import namespace="http://www.xbrl.org/2009/arcrole/fact-explanatoryFact" schemaLocation="http://www.xbrl.org/lrr/arcrole/factExplanatory-2009-12-16.xsd" />
+  <import namespace="http://www.xbrl.org/2009/role/negated" schemaLocation="http://www.xbrl.org/lrr/role/negated-2009-12-16.xsd" />
+  <import namespace="http://www.xbrl.org/2009/role/net" schemaLocation="http://www.xbrl.org/lrr/role/net-2009-12-16.xsd" />
+  <import namespace="http://xbrl.sec.gov/naics/2023" schemaLocation="https://xbrl.sec.gov/naics/2023/naics-2023.xsd" />
+  <import namespace="http://xbrl.sec.gov/sic/2023" schemaLocation="https://xbrl.sec.gov/sic/2023/sic-2023.xsd" />
+  <import namespace="http://fasb.org/srt-roles/2023" schemaLocation="https://xbrl.fasb.org/srt/2023/elts/srt-roles-2023.xsd" />
+  <import namespace="http://fasb.org/srt-types/2023" schemaLocation="https://xbrl.fasb.org/srt/2023/elts/srt-types-2023.xsd" />
+  <import namespace="http://www.xbrl.org/dtr/type/2020-01-21" schemaLocation="https://www.xbrl.org/dtr/type/2020-01-21/types.xsd" />
+  <import namespace="http://xbrl.sec.gov/stpr/2023" schemaLocation="https://xbrl.sec.gov/stpr/2023/stpr-2023.xsd" />
+  <import namespace="http://fasb.org/us-roles/2023" schemaLocation="https://xbrl.fasb.org/us-gaap/2023/elts/us-roles-2023.xsd" />
+  <import namespace="http://fasb.org/us-types/2023" schemaLocation="https://xbrl.fasb.org/us-gaap/2023/elts/us-types-2023.xsd" />
+  <import namespace="http://fasb.org/srt/2023" schemaLocation="https://xbrl.fasb.org/srt/2023/elts/srt-2023.xsd" />
+  <import namespace="http://fasb.org/us-gaap/2023" schemaLocation="https://xbrl.fasb.org/us-gaap/2023/elts/us-gaap-2023.xsd" />
+  <element id="mcvt_AccumulatedOtherComprehensiveIncomeLossUndistributedInvestmentLoss" name="AccumulatedOtherComprehensiveIncomeLossUndistributedInvestmentLoss" nillable="true" xbrli:balance="credit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="mcvt_AccumulatedOtherComprehensiveIncomeLossUndistributedNetRealizedGainsLossOnInvestmentTransactions" name="AccumulatedOtherComprehensiveIncomeLossUndistributedNetRealizedGainsLossOnInvestmentTransactions" nillable="true" xbrli:balance="credit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="mcvt_StockholdersEquityUnrealizedAppreciationInValueOfInvestments" name="StockholdersEquityUnrealizedAppreciationInValueOfInvestments" nillable="true" xbrli:balance="credit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="mcvt_NonControlNonAffiliateInvestmentAtCost" name="NonControlNonAffiliateInvestmentAtCost" nillable="true" xbrli:balance="debit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="mcvt_NetChangeInUnrealizedAppreciationDepreciationOnInvestments" name="NetChangeInUnrealizedAppreciationDepreciationOnInvestments" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="mcvt_InvestmentCompanyNetAssetsFromOperationsIncreaseDecreaseBeforeTax" name="InvestmentCompanyNetAssetsFromOperationsIncreaseDecreaseBeforeTax" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="mcvt_InvestmentCompanyNetAssetsFromOperationsIncreaseDecreaseNetOfTax" name="InvestmentCompanyNetAssetsFromOperationsIncreaseDecreaseNetOfTax" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="mcvt_NetIncreaseDecreaseInNetAssetsResultingFromOperationsPerShareAbstract" name="NetIncreaseDecreaseInNetAssetsResultingFromOperationsPerShareAbstract" nillable="true" abstract="true" xbrli:periodType="duration" type="xbrli:stringItemType" substitutionGroup="xbrli:item" />
+  <element id="mcvt_CommonSharesIssuedInPublicOfferingShares" name="CommonSharesIssuedInPublicOfferingShares" nillable="true" xbrli:periodType="duration" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" />
+  <element id="mcvt_CommonSharesIssuedInPublicOfferingAmount" name="CommonSharesIssuedInPublicOfferingAmount" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="mcvt_CommonSharesIssuedInReverseStockSplitRoundingShares" name="CommonSharesIssuedInReverseStockSplitRoundingShares" nillable="true" xbrli:periodType="duration" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" />
+  <element id="mcvt_CommonSharesIssuedInReverseStockSplitRoundingAmount" name="CommonSharesIssuedInReverseStockSplitRoundingAmount" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="mcvt_CommonSharesIssuedInStockBasedCompensationShares" name="CommonSharesIssuedInStockBasedCompensationShares" nillable="true" xbrli:periodType="duration" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" />
+  <element id="mcvt_CommonSharesIssuedInStockBasedCompensationAmount" name="CommonSharesIssuedInStockBasedCompensationAmount" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="mcvt_CommonSharesIssuedInConsiderationForExpensePaymentShares" name="CommonSharesIssuedInConsiderationForExpensePaymentShares" nillable="true" xbrli:periodType="duration" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" />
+  <element id="mcvt_CommonSharesIssuedInConsiderationForExpensePaymentAmount" name="CommonSharesIssuedInConsiderationForExpensePaymentAmount" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="mcvt_UndistributedNetRealizedGainOnInvestmentTransactions" name="UndistributedNetRealizedGainOnInvestmentTransactions" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="mcvt_DepreciationInValueOfInvestments" name="DepreciationInValueOfInvestments" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="mcvt_UndistributedNetInvestmentLoss" name="UndistributedNetInvestmentLoss" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="mcvt_StockOptionsIssued" name="StockOptionsIssued" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="mcvt_ExerciseOfStockOptionsShares" name="ExerciseOfStockOptionsShares" nillable="true" xbrli:periodType="duration" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" />
+  <element id="mcvt_ExerciseOfStockOptionsAmount" name="ExerciseOfStockOptionsAmount" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="mcvt_NetInvestmentLossNetOfTaxBenefit" name="NetInvestmentLossNetOfTaxBenefit" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="mcvt_UndistributedNetRealizedLossOnInvestmentTransactions" name="UndistributedNetRealizedLossOnInvestmentTransactions" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="mcvt_AppreciationInValueOfInvestments" name="AppreciationInValueOfInvestments" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="mcvt_NetIncreaseDecreaseInNetAssetsResultingFromOperations" name="NetIncreaseDecreaseInNetAssetsResultingFromOperations" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="mcvt_FromOperationsToNetCashUsedInOperatingActivitiesAbstract" name="FromOperationsToNetCashUsedInOperatingActivitiesAbstract" nillable="true" abstract="true" xbrli:periodType="duration" type="xbrli:stringItemType" substitutionGroup="xbrli:item" />
+  <element id="mcvt_PurchasesOfInvestments" name="PurchasesOfInvestments" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="mcvt_IssuanceOfStockOptions" name="IssuanceOfStockOptions" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="mcvt_CommonSharesIssuedForExpensePayment" name="CommonSharesIssuedForExpensePayment" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="mcvt_IncreaseDecreaseInIncomeTaxesPayable" name="IncreaseDecreaseInIncomeTaxesPayable" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="mcvt_IncreaseDecreaseInDeferredInterestIncome" name="IncreaseDecreaseInDeferredInterestIncome" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="mcvt_SupplementalDisclosureOfCashFlowInformationNewAbstract" name="SupplementalDisclosureOfCashFlowInformationNewAbstract" nillable="true" abstract="true" xbrli:periodType="duration" type="xbrli:stringItemType" substitutionGroup="xbrli:item" />
+  <element id="mcvt_NoncashInvestingActivitiesNewAbstract" name="NoncashInvestingActivitiesNewAbstract" nillable="true" abstract="true" xbrli:periodType="duration" type="xbrli:stringItemType" substitutionGroup="xbrli:item" />
+  <element id="mcvt_CashAndCashEquivalentsPercentOfNetAssets" name="CashAndCashEquivalentsPercentOfNetAssets" nillable="true" xbrli:periodType="duration" type="num:percentItemType" substitutionGroup="xbrli:item" />
+  <element id="mcvt_InvestmentsAndCashCost" name="InvestmentsAndCashCost" nillable="true" xbrli:balance="debit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="mcvt_InvestmentsAndCashFairValue" name="InvestmentsAndCashFairValue" nillable="true" xbrli:balance="debit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="mcvt_InvestmentsAndCashPercentageOfNetAssets" name="InvestmentsAndCashPercentageOfNetAssets" nillable="true" xbrli:periodType="duration" type="num:percentItemType" substitutionGroup="xbrli:item" />
+  <element id="mcvt_ValuationOfInvestmentsPolicyTextBlock" name="ValuationOfInvestmentsPolicyTextBlock" nillable="true" xbrli:periodType="duration" type="nonnum:textBlockItemType" substitutionGroup="xbrli:item" />
+  <element id="mcvt_ProceduresAndValuationPolicyTextBlock" name="ProceduresAndValuationPolicyTextBlock" nillable="true" xbrli:periodType="duration" type="nonnum:textBlockItemType" substitutionGroup="xbrli:item" />
+  <element id="mcvt_InvestmentHoldingsScheduleOfInvestmentsIndustryGroupingTableTextBlock" name="InvestmentHoldingsScheduleOfInvestmentsIndustryGroupingTableTextBlock" nillable="true" xbrli:periodType="duration" type="nonnum:textBlockItemType" substitutionGroup="xbrli:item" />
+  <element id="mcvt_LesseeOperatingLeaseSupplementalBalanceSheetInformationTableTextBlock" name="LesseeOperatingLeaseSupplementalBalanceSheetInformationTableTextBlock" nillable="true" xbrli:periodType="duration" type="nonnum:textBlockItemType" substitutionGroup="xbrli:item" />
+  <element id="mcvt_InvestmentAndLoansAmortizedCost" name="InvestmentAndLoansAmortizedCost" nillable="true" xbrli:periodType="duration" type="num:percentItemType" substitutionGroup="xbrli:item" />
+  <element id="mcvt_InvestmentAndLoanPercentageOfFairValue" name="InvestmentAndLoanPercentageOfFairValue" nillable="true" xbrli:periodType="duration" type="num:percentItemType" substitutionGroup="xbrli:item" />
+  <element id="mcvt_FairValueOfPreferredStock" name="FairValueOfPreferredStock" nillable="true" xbrli:balance="credit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="mcvt_FairValueWarrants" name="FairValueWarrants" nillable="true" xbrli:balance="credit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="mcvt_FairValueOtherEquity" name="FairValueOtherEquity" nillable="true" xbrli:balance="credit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="mcvt_FairValueTotalEquity" name="FairValueTotalEquity" nillable="true" xbrli:balance="debit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="mcvt_FairValueMeasurementWithUnobservableInputsReconciliationRecurringBasisAssetNetChangeInUnrealizedAppreciation" name="FairValueMeasurementWithUnobservableInputsReconciliationRecurringBasisAssetNetChangeInUnrealizedAppreciation" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="mcvt_PromissoryNoteTerm" name="PromissoryNoteTerm" nillable="true" xbrli:periodType="duration" type="xbrli:stringItemType" substitutionGroup="xbrli:item" />
+  <element id="mcvt_RelatedPartyTransactionSharesOfCommonStockOwned" name="RelatedPartyTransactionSharesOfCommonStockOwned" nillable="true" xbrli:periodType="instant" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" />
+  <element id="mcvt_InterestPayableMonthlyAsAPercent" name="InterestPayableMonthlyAsAPercent" nillable="true" xbrli:periodType="instant" type="num:percentItemType" substitutionGroup="xbrli:item" />
+  <element id="mcvt_RelatedPartyTransactionPrincipalAmountOfNoteObtained" name="RelatedPartyTransactionPrincipalAmountOfNoteObtained" nillable="true" xbrli:balance="credit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="mcvt_RelatedPartyTransactionDebtorsPledgeInNumberOfCommonStock" name="RelatedPartyTransactionDebtorsPledgeInNumberOfCommonStock" nillable="true" xbrli:periodType="instant" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" />
+  <element id="mcvt_FederealNolDescription" name="FederealNolDescription" nillable="true" xbrli:periodType="duration" type="xbrli:stringItemType" substitutionGroup="xbrli:item" />
+  <element id="mcvt_ShareBasedCompensationArrangementByShareBasedPaymentAwardOptionsExercisedInPeriodGross" name="ShareBasedCompensationArrangementByShareBasedPaymentAwardOptionsExercisedInPeriodGross" nillable="true" xbrli:periodType="duration" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" />
+  <element id="mcvt_WeightedAverageGrantDateFairValueForOptionsGrantedDuringThePeriod" name="WeightedAverageGrantDateFairValueForOptionsGrantedDuringThePeriod" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="mcvt_ShareBasedCompensationArrangementByShareBasedPaymentAwardOptionsExercisableIntrinsicValue" name="ShareBasedCompensationArrangementByShareBasedPaymentAwardOptionsExercisableIntrinsicValue" nillable="true" xbrli:balance="debit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="mcvt_LeavingSharesAvailableForIssuance" name="LeavingSharesAvailableForIssuance" nillable="true" xbrli:periodType="instant" type="xbrli:sharesItemType" substitutionGroup="xbrli:item" />
+  <element id="mcvt_StockholdersEquityReverseStock" name="StockholdersEquityReverseStock" nillable="true" xbrli:periodType="duration" type="xbrli:stringItemType" substitutionGroup="xbrli:item" />
+  <element id="mcvt_InvestmentCompanyNetIncreaseDecreaseInNetAssetsFromOperations" name="InvestmentCompanyNetIncreaseDecreaseInNetAssetsFromOperations" nillable="true" xbrli:balance="credit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="mcvt_OperatingLeasesLiability" name="OperatingLeasesLiability" nillable="true" xbrli:balance="credit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="mcvt_LessShortTermPortion" name="LessShortTermPortion" nillable="true" xbrli:balance="credit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="mcvt_OperatingLeaseInterest" name="OperatingLeaseInterest" nillable="true" xbrli:balance="credit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="mcvt_RentExpense" name="RentExpense" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="mcvt_OperatingLeaseWeightedAverageRemainingLeaseTerm" name="OperatingLeaseWeightedAverageRemainingLeaseTerm" nillable="true" xbrli:periodType="duration" type="xbrli:stringItemType" substitutionGroup="xbrli:item" />
+  <element id="mcvt_InvestmentCompanyFinancialHighlightsRollForwardAbstract" name="InvestmentCompanyFinancialHighlightsRollForwardAbstract" nillable="true" abstract="true" xbrli:periodType="duration" type="xbrli:stringItemType" substitutionGroup="xbrli:item" />
+  <element id="mcvt_InvestmentCompanyProvisionForIncomeTaxesPerShare" name="InvestmentCompanyProvisionForIncomeTaxesPerShare" nillable="true" xbrli:periodType="duration" type="num:perShareItemType" substitutionGroup="xbrli:item" />
+  <element id="mcvt_InvestmentcompanyissuanceOfStockOptions" name="InvestmentcompanyissuanceOfStockOptions" nillable="true" xbrli:periodType="duration" type="num:perShareItemType" substitutionGroup="xbrli:item" />
+  <element id="mcvt_InvestmentIssuanceOfCommonStock" name="InvestmentIssuanceOfCommonStock" nillable="true" xbrli:periodType="duration" type="num:perShareItemType" substitutionGroup="xbrli:item" />
+  <element id="mcvt_InvestmentStockBasedCompensation" name="InvestmentStockBasedCompensation" nillable="true" xbrli:periodType="duration" type="num:perShareItemType" substitutionGroup="xbrli:item" />
+  <element id="mcvt_OtherChangesInEquityPerShareData" name="OtherChangesInEquityPerShareData" nillable="true" xbrli:periodType="duration" type="num:perShareItemType" substitutionGroup="xbrli:item" />
+  <element id="mcvt_MarketValueOfInvestmentsPerShare" name="MarketValueOfInvestmentsPerShare" nillable="true" xbrli:periodType="instant" type="num:perShareItemType" substitutionGroup="xbrli:item" />
+  <element id="mcvt_NetAssetsAtEndOfPeriod" name="NetAssetsAtEndOfPeriod" nillable="true" xbrli:balance="debit" xbrli:periodType="instant" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="mcvt_AverageNetAssets" name="AverageNetAssets" nillable="true" xbrli:balance="debit" xbrli:periodType="duration" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" />
+  <element id="mcvt_InvestmentCompanyPortfolioTurnoverRate" name="InvestmentCompanyPortfolioTurnoverRate" nillable="true" xbrli:periodType="duration" type="num:percentItemType" substitutionGroup="xbrli:item" />
+  <element id="mcvt_InvestmentsCompanyExpenseRatioAfterIncentiveAllocation" name="InvestmentsCompanyExpenseRatioAfterIncentiveAllocation" nillable="true" xbrli:periodType="duration" type="num:percentItemType" substitutionGroup="xbrli:item" />
+  <element id="mcvt_CondensedScheduleOfInvestmentsAbstract" name="CondensedScheduleOfInvestmentsAbstract" nillable="true" abstract="true" xbrli:periodType="duration" type="xbrli:stringItemType" substitutionGroup="xbrli:item" />
+  <element id="mcvt_StockBasedCompensationAbstract" name="StockBasedCompensationAbstract" nillable="true" abstract="true" xbrli:periodType="duration" type="xbrli:stringItemType" substitutionGroup="xbrli:item" />
+  <element id="mcvt_FinancialHighlightsAbstract" name="FinancialHighlightsAbstract" nillable="true" abstract="true" xbrli:periodType="duration" type="xbrli:stringItemType" substitutionGroup="xbrli:item" />
+  <element name="AccumulatedUndistributedNetInvestmentLossMember" id="mcvt_AccumulatedUndistributedNetInvestmentLossMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="AccumulatedUndistributedNetRealizedGainOnInvestmentsTransactionMember" id="mcvt_AccumulatedUndistributedNetRealizedGainOnInvestmentsTransactionMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="NetUnrealizedAppreciationDepreciationInValueOfInvestmentsMember" id="mcvt_NetUnrealizedAppreciationDepreciationInValueOfInvestmentsMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="PreferredStocksSharesMember" id="mcvt_PreferredStocksSharesMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="ShortTermBankingLoansMember" id="mcvt_ShortTermBankingLoansMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="CommonStocksShareMember" id="mcvt_CommonStocksShareMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="WarrantsMember" id="mcvt_WarrantsMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="OthersEquityMember" id="mcvt_OthersEquityMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="BusinessServicesServicesSectorsMember" id="mcvt_BusinessServicesServicesSectorsMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="CommercialsAndIndustrialSectorMember" id="mcvt_CommercialsAndIndustrialSectorMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="FinancialServicesSectorsMember" id="mcvt_FinancialServicesSectorsMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="TechnologySectorsMember" id="mcvt_TechnologySectorsMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="RealEstatesSectorMember" id="mcvt_RealEstatesSectorMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="OtherEquitySecuritiesMember" id="mcvt_OtherEquitySecuritiesMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="PreferredStockSharesMember" id="mcvt_PreferredStockSharesMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="TotalLableMember" id="mcvt_TotalLableMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="AttributableToLevelThreePortfolioInvestmentMember" id="mcvt_AttributableToLevelThreePortfolioInvestmentMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="MsZbikowskiAlongWithHerHusbandScottZbikowskiMember" id="mcvt_MsZbikowskiAlongWithHerHusbandScottZbikowskiMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="EastmanInvestmentIncMember" id="mcvt_EastmanInvestmentIncMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="LoanAndSecurityAgreementMember" id="mcvt_LoanAndSecurityAgreementMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="OptionsMember" id="mcvt_OptionsMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="TwoZeroTwoTwoStockIncentivePlanMember" id="mcvt_TwoZeroTwoTwoStockIncentivePlanMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="CommonStocksMember" id="mcvt_CommonStocksMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="ConsumerMember" id="mcvt_ConsumerMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="ShortTermBankingLoansInformationMember" id="mcvt_ShortTermBankingLoansInformationMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="WisdomGamingIncMember" id="mcvt_WisdomGamingIncMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="PreferredStocksMember" id="mcvt_PreferredStocksMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="WarrantOneMember" id="mcvt_WarrantOneMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="HealthCareServicesMember" id="mcvt_HealthCareServicesMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="OtherEquitySecuritiesInformationMember" id="mcvt_OtherEquitySecuritiesInformationMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="FinancialServicesInformationMember" id="mcvt_FinancialServicesInformationMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="CommercialAndIndustrialConsumerMember" id="mcvt_CommercialAndIndustrialConsumerMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="TechnologyesSectorsMember" id="mcvt_TechnologyesSectorsMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="FifteenPercentSecuredLoansInformationMember" id="mcvt_FifteenPercentSecuredLoansInformationMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="ThirtyThreePercentSecuredLoansInformationMember" id="mcvt_ThirtyThreePercentSecuredLoansInformationMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="FinancialServicesLoansMember" id="mcvt_FinancialServicesLoansMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="TwelvePercentSecuredLoansInformationMember" id="mcvt_TwelvePercentSecuredLoansInformationMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="RealEstatesInformationMember" id="mcvt_RealEstatesInformationMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="EighteenPercentSecuredLoansInformationMember" id="mcvt_EighteenPercentSecuredLoansInformationMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="RealEstateInformationMember" id="mcvt_RealEstateInformationMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="AlatusDevelopmentCorpInformationMember" id="mcvt_AlatusDevelopmentCorpInformationMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="InformationTechnologySectorsMember" id="mcvt_InformationTechnologySectorsMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="FifteenPercentconvertiblenoteInformationMember" id="mcvt_FifteenPercentconvertiblenoteInformationMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="BasicMember" id="mcvt_BasicMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="DilutedMember" id="mcvt_DilutedMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="FifteenPercentSecuredLoanSecuredLoansInformationMember" id="mcvt_FifteenPercentSecuredLoanSecuredLoansInformationMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+  <element name="EighteenPercentSecuredLoansSecuredLoansInformationMember" id="mcvt_EighteenPercentSecuredLoansSecuredLoansInformationMember" nillable="true" xbrli:periodType="duration" type="nonnum:domainItemType" substitutionGroup="xbrli:item" />
+</schema>

@@ -1,0 +1,118 @@
+<?xml version='1.0' encoding='iso-8859-1'?>
+<!-- Produced by EDGARsuite software, Advanced Computer Innovations, Inc., Copyright (C) 2008-2022 [PPXK5GW761L0VGS139PY]. www.edgarsuite.com -->
+<link:linkbase xmlns="http://www.xbrl.org/2003/linkbase"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:schemaLocation="http://www.xbrl.org/2003/linkbase http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd"
+		xmlns:fil="http://www.santafegoldcorp.com/20220930"
+		xmlns:link="http://www.xbrl.org/2003/linkbase"
+		xmlns:xlink="http://www.w3.org/1999/xlink"
+		xmlns:xbrldt="http://xbrl.org/2005/xbrldt"
+		xmlns:xbrli="http://www.xbrl.org/2003/instance">
+	<link:roleRef roleURI="http://www.santafegoldcorp.com/20220930/role/idr_StatementConsolidatedBalanceSheets" xlink:type="simple" xlink:href="sfgc-20220930.xsd#idr_StatementConsolidatedBalanceSheets"/>
+	<link:calculationLink xlink:type="extended" xlink:role="http://www.santafegoldcorp.com/20220930/role/idr_StatementConsolidatedBalanceSheets">
+		<link:loc xlink:type='locator' xlink:href='https://xbrl.fasb.org/us-gaap/2022/elts/us-gaap-2022.xsd#us-gaap_AssetsCurrent' xlink:label='us-gaap_AssetsCurrent'/>
+		<link:loc xlink:type='locator' xlink:href='https://xbrl.fasb.org/us-gaap/2022/elts/us-gaap-2022.xsd#us-gaap_CashAndCashEquivalentsAtCarryingValue' xlink:label='us-gaap_CashAndCashEquivalentsAtCarryingValue'/>
+		<link:calculationArc xlink:type='arc' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='us-gaap_AssetsCurrent' xlink:to='us-gaap_CashAndCashEquivalentsAtCarryingValue' use='optional' order='1.0' weight='1.0'/>
+		<link:loc xlink:type='locator' xlink:href='https://xbrl.fasb.org/us-gaap/2022/elts/us-gaap-2022.xsd#us-gaap_PrepaidExpenseAndOtherAssetsCurrent' xlink:label='us-gaap_PrepaidExpenseAndOtherAssetsCurrent'/>
+		<link:calculationArc xlink:type='arc' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='us-gaap_AssetsCurrent' xlink:to='us-gaap_PrepaidExpenseAndOtherAssetsCurrent' use='optional' order='2.0' weight='1.0'/>
+		<link:loc xlink:type='locator' xlink:href='https://xbrl.fasb.org/us-gaap/2022/elts/us-gaap-2022.xsd#us-gaap_Assets' xlink:label='us-gaap_Assets'/>
+		<link:calculationArc xlink:type='arc' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='us-gaap_Assets' xlink:to='us-gaap_AssetsCurrent' use='optional' order='1.0' weight='1.0'/>
+		<link:loc xlink:type='locator' xlink:href='https://xbrl.fasb.org/us-gaap/2022/elts/us-gaap-2022.xsd#us-gaap_PropertyPlantAndEquipmentNet' xlink:label='us-gaap_PropertyPlantAndEquipmentNet'/>
+		<link:calculationArc xlink:type='arc' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='us-gaap_Assets' xlink:to='us-gaap_PropertyPlantAndEquipmentNet' use='optional' order='2.0' weight='1.0'/>
+		<link:loc xlink:type='locator' xlink:href='https://xbrl.fasb.org/us-gaap/2022/elts/us-gaap-2022.xsd#us-gaap_MineralPropertiesNet' xlink:label='us-gaap_MineralPropertiesNet'/>
+		<link:calculationArc xlink:type='arc' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='us-gaap_Assets' xlink:to='us-gaap_MineralPropertiesNet' use='optional' order='3.0' weight='1.0'/>
+		<link:loc xlink:type='locator' xlink:href='https://xbrl.fasb.org/us-gaap/2022/elts/us-gaap-2022.xsd#us-gaap_AssetsNoncurrent' xlink:label='us-gaap_AssetsNoncurrent'/>
+		<link:calculationArc xlink:type='arc' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='us-gaap_Assets' xlink:to='us-gaap_AssetsNoncurrent' use='optional' order='4.0' weight='1.0'/>
+		<link:loc xlink:type='locator' xlink:href='https://xbrl.fasb.org/us-gaap/2022/elts/us-gaap-2022.xsd#us-gaap_AssetsHeldForSaleNotPartOfDisposalGroup' xlink:label='us-gaap_AssetsHeldForSaleNotPartOfDisposalGroup'/>
+		<link:calculationArc xlink:type='arc' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='us-gaap_Assets' xlink:to='us-gaap_AssetsHeldForSaleNotPartOfDisposalGroup' use='optional' order='5.0' weight='1.0'/>
+		<link:loc xlink:type='locator' xlink:href='https://xbrl.fasb.org/us-gaap/2022/elts/us-gaap-2022.xsd#us-gaap_LiabilitiesCurrent' xlink:label='us-gaap_LiabilitiesCurrent'/>
+		<link:loc xlink:type='locator' xlink:href='https://xbrl.fasb.org/us-gaap/2022/elts/us-gaap-2022.xsd#us-gaap_AccountsPayableCurrent' xlink:label='us-gaap_AccountsPayableCurrent'/>
+		<link:calculationArc xlink:type='arc' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='us-gaap_LiabilitiesCurrent' xlink:to='us-gaap_AccountsPayableCurrent' use='optional' order='1.0' weight='1.0'/>
+		<link:loc xlink:type='locator' xlink:href='https://xbrl.fasb.org/us-gaap/2022/elts/us-gaap-2022.xsd#us-gaap_AccruedLiabilitiesCurrent' xlink:label='us-gaap_AccruedLiabilitiesCurrent'/>
+		<link:calculationArc xlink:type='arc' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='us-gaap_LiabilitiesCurrent' xlink:to='us-gaap_AccruedLiabilitiesCurrent' use='optional' order='2.0' weight='1.0'/>
+		<link:loc xlink:type='locator' xlink:href='https://xbrl.fasb.org/us-gaap/2022/elts/us-gaap-2022.xsd#us-gaap_NotesPayableCurrent' xlink:label='us-gaap_NotesPayableCurrent'/>
+		<link:calculationArc xlink:type='arc' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='us-gaap_LiabilitiesCurrent' xlink:to='us-gaap_NotesPayableCurrent' use='optional' order='3.0' weight='1.0'/>
+		<link:loc xlink:type='locator' xlink:href='https://xbrl.fasb.org/us-gaap/2022/elts/us-gaap-2022.xsd#us-gaap_NotesPayableRelatedPartiesClassifiedCurrent' xlink:label='us-gaap_NotesPayableRelatedPartiesClassifiedCurrent'/>
+		<link:calculationArc xlink:type='arc' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='us-gaap_LiabilitiesCurrent' xlink:to='us-gaap_NotesPayableRelatedPartiesClassifiedCurrent' use='optional' order='4.0' weight='1.0'/>
+		<link:loc xlink:type='locator' xlink:href='https://xbrl.fasb.org/us-gaap/2022/elts/us-gaap-2022.xsd#us-gaap_Liabilities' xlink:label='us-gaap_Liabilities'/>
+		<link:calculationArc xlink:type='arc' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='us-gaap_Liabilities' xlink:to='us-gaap_LiabilitiesCurrent' use='optional' order='1.0' weight='1.0'/>
+		<link:loc xlink:type='locator' xlink:href='https://xbrl.fasb.org/us-gaap/2022/elts/us-gaap-2022.xsd#us-gaap_LongTermNotesPayable' xlink:label='us-gaap_LongTermNotesPayable'/>
+		<link:calculationArc xlink:type='arc' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='us-gaap_Liabilities' xlink:to='us-gaap_LongTermNotesPayable' use='optional' order='2.0' weight='1.0'/>
+		<link:loc xlink:type='locator' xlink:href='https://xbrl.fasb.org/us-gaap/2022/elts/us-gaap-2022.xsd#us-gaap_LiabilitiesAndStockholdersEquity' xlink:label='us-gaap_LiabilitiesAndStockholdersEquity'/>
+		<link:calculationArc xlink:type='arc' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='us-gaap_LiabilitiesAndStockholdersEquity' xlink:to='us-gaap_Liabilities' use='optional' order='1.0' weight='1.0'/>
+		<link:loc xlink:type='locator' xlink:href='https://xbrl.fasb.org/us-gaap/2022/elts/us-gaap-2022.xsd#us-gaap_StockholdersEquity' xlink:label='us-gaap_StockholdersEquity'/>
+		<link:calculationArc xlink:type='arc' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='us-gaap_LiabilitiesAndStockholdersEquity' xlink:to='us-gaap_StockholdersEquity' use='optional' order='2.0' weight='1.0'/>
+		<link:loc xlink:type='locator' xlink:href='https://xbrl.fasb.org/us-gaap/2022/elts/us-gaap-2022.xsd#us-gaap_CommonStockValue' xlink:label='us-gaap_CommonStockValue'/>
+		<link:calculationArc xlink:type='arc' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='us-gaap_StockholdersEquity' xlink:to='us-gaap_CommonStockValue' use='optional' order='1.0' weight='1.0'/>
+		<link:loc xlink:type='locator' xlink:href='https://xbrl.fasb.org/us-gaap/2022/elts/us-gaap-2022.xsd#us-gaap_AdditionalPaidInCapital' xlink:label='us-gaap_AdditionalPaidInCapital'/>
+		<link:calculationArc xlink:type='arc' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='us-gaap_StockholdersEquity' xlink:to='us-gaap_AdditionalPaidInCapital' use='optional' order='2.0' weight='1.0'/>
+		<link:loc xlink:type='locator' xlink:href='https://xbrl.fasb.org/us-gaap/2022/elts/us-gaap-2022.xsd#us-gaap_RetainedEarningsAccumulatedDeficit' xlink:label='us-gaap_RetainedEarningsAccumulatedDeficit'/>
+		<link:calculationArc xlink:type='arc' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='us-gaap_StockholdersEquity' xlink:to='us-gaap_RetainedEarningsAccumulatedDeficit' use='optional' order='3.0' weight='1.0'/>
+	</link:calculationLink>
+	<link:roleRef roleURI="http://www.santafegoldcorp.com/20220930/role/idr_StatementConsolidatedStatementOfOperations" xlink:type="simple" xlink:href="sfgc-20220930.xsd#idr_StatementConsolidatedStatementOfOperations"/>
+	<link:calculationLink xlink:type="extended" xlink:role="http://www.santafegoldcorp.com/20220930/role/idr_StatementConsolidatedStatementOfOperations">
+		<link:loc xlink:type='locator' xlink:href='https://xbrl.fasb.org/us-gaap/2022/elts/us-gaap-2022.xsd#us-gaap_OperatingExpenses' xlink:label='us-gaap_OperatingExpenses'/>
+		<link:loc xlink:type='locator' xlink:href='https://xbrl.fasb.org/us-gaap/2022/elts/us-gaap-2022.xsd#us-gaap_ExplorationExpense' xlink:label='us-gaap_ExplorationExpense'/>
+		<link:calculationArc xlink:type='arc' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='us-gaap_OperatingExpenses' xlink:to='us-gaap_ExplorationExpense' use='optional' order='1.0' weight='1.0'/>
+		<link:loc xlink:type='locator' xlink:href='https://xbrl.fasb.org/us-gaap/2022/elts/us-gaap-2022.xsd#us-gaap_GeneralAndAdministrativeExpense' xlink:label='us-gaap_GeneralAndAdministrativeExpense'/>
+		<link:calculationArc xlink:type='arc' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='us-gaap_OperatingExpenses' xlink:to='us-gaap_GeneralAndAdministrativeExpense' use='optional' order='2.0' weight='1.0'/>
+		<link:loc xlink:type='locator' xlink:href='https://xbrl.fasb.org/us-gaap/2022/elts/us-gaap-2022.xsd#us-gaap_OperatingIncomeLoss' xlink:label='us-gaap_OperatingIncomeLoss'/>
+		<link:calculationArc xlink:type='arc' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='us-gaap_OperatingIncomeLoss' xlink:to='us-gaap_OperatingExpenses' use='optional' order='1.0' weight='-1.0'/>
+		<link:loc xlink:type='locator' xlink:href='https://xbrl.fasb.org/us-gaap/2022/elts/us-gaap-2022.xsd#us-gaap_IncomeLossFromContinuingOperationsBeforeIncomeTaxesMinorityInterestAndIncomeLossFromEquityMethodInvestments' xlink:label='us-gaap_IncomeLossFromContinuingOperationsBeforeIncomeTaxesMinorityInterestAndIncomeLossFromEquityMethodInvestments'/>
+		<link:calculationArc xlink:type='arc' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='us-gaap_IncomeLossFromContinuingOperationsBeforeIncomeTaxesMinorityInterestAndIncomeLossFromEquityMethodInvestments' xlink:to='us-gaap_OperatingIncomeLoss' use='optional' order='1.0' weight='1.0'/>
+		<link:loc xlink:type='locator' xlink:href='https://xbrl.fasb.org/us-gaap/2022/elts/us-gaap-2022.xsd#us-gaap_OtherNonoperatingIncomeExpense' xlink:label='us-gaap_OtherNonoperatingIncomeExpense'/>
+		<link:calculationArc xlink:type='arc' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='us-gaap_IncomeLossFromContinuingOperationsBeforeIncomeTaxesMinorityInterestAndIncomeLossFromEquityMethodInvestments' xlink:to='us-gaap_OtherNonoperatingIncomeExpense' use='optional' order='2.0' weight='1.0'/>
+		<link:loc xlink:type='locator' xlink:href='https://xbrl.fasb.org/us-gaap/2022/elts/us-gaap-2022.xsd#us-gaap_OtherIncome' xlink:label='us-gaap_OtherIncome'/>
+		<link:calculationArc xlink:type='arc' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='us-gaap_OtherNonoperatingIncomeExpense' xlink:to='us-gaap_OtherIncome' use='optional' order='1.0' weight='1.0'/>
+		<link:loc xlink:type='locator' xlink:href='sfgc-20220930.xsd#fil_RecoveryMisappropriationOfFunds' xlink:label='fil_RecoveryMisappropriationOfFunds'/>
+		<link:calculationArc xlink:type='arc' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='us-gaap_OtherNonoperatingIncomeExpense' xlink:to='fil_RecoveryMisappropriationOfFunds' use='optional' order='2.0' weight='-1.0'/>
+		<link:loc xlink:type='locator' xlink:href='sfgc-20220930.xsd#fil_FinancingCostsCommoditySupplyAgreement' xlink:label='fil_FinancingCostsCommoditySupplyAgreement'/>
+		<link:calculationArc xlink:type='arc' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='us-gaap_OtherNonoperatingIncomeExpense' xlink:to='fil_FinancingCostsCommoditySupplyAgreement' use='optional' order='3.0' weight='-1.0'/>
+		<link:loc xlink:type='locator' xlink:href='https://xbrl.fasb.org/us-gaap/2022/elts/us-gaap-2022.xsd#us-gaap_InterestExpense' xlink:label='us-gaap_InterestExpense'/>
+		<link:calculationArc xlink:type='arc' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='us-gaap_OtherNonoperatingIncomeExpense' xlink:to='us-gaap_InterestExpense' use='optional' order='4.0' weight='-1.0'/>
+		<link:loc xlink:type='locator' xlink:href='https://xbrl.fasb.org/us-gaap/2022/elts/us-gaap-2022.xsd#us-gaap_NetIncomeLoss' xlink:label='us-gaap_NetIncomeLoss'/>
+		<link:calculationArc xlink:type='arc' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='us-gaap_NetIncomeLoss' xlink:to='us-gaap_IncomeLossFromContinuingOperationsBeforeIncomeTaxesMinorityInterestAndIncomeLossFromEquityMethodInvestments' use='optional' order='1.0' weight='1.0'/>
+		<link:loc xlink:type='locator' xlink:href='https://xbrl.fasb.org/us-gaap/2022/elts/us-gaap-2022.xsd#us-gaap_IncomeTaxExpenseBenefit' xlink:label='us-gaap_IncomeTaxExpenseBenefit'/>
+		<link:calculationArc xlink:type='arc' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='us-gaap_NetIncomeLoss' xlink:to='us-gaap_IncomeTaxExpenseBenefit' use='optional' order='2.0' weight='-1.0'/>
+	</link:calculationLink>
+	<link:roleRef roleURI="http://www.santafegoldcorp.com/20220930/role/idr_StatementConsolidatedStatementsOfCashFlows" xlink:type="simple" xlink:href="sfgc-20220930.xsd#idr_StatementConsolidatedStatementsOfCashFlows"/>
+	<link:calculationLink xlink:type="extended" xlink:role="http://www.santafegoldcorp.com/20220930/role/idr_StatementConsolidatedStatementsOfCashFlows">
+		<link:loc xlink:type='locator' xlink:href='https://xbrl.fasb.org/us-gaap/2022/elts/us-gaap-2022.xsd#us-gaap_NetCashProvidedByUsedInOperatingActivities' xlink:label='us-gaap_NetCashProvidedByUsedInOperatingActivities'/>
+		<link:loc xlink:type='locator' xlink:href='https://xbrl.fasb.org/us-gaap/2022/elts/us-gaap-2022.xsd#us-gaap_NetIncomeLoss' xlink:label='us-gaap_NetIncomeLoss'/>
+		<link:calculationArc xlink:type='arc' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='us-gaap_NetCashProvidedByUsedInOperatingActivities' xlink:to='us-gaap_NetIncomeLoss' use='optional' order='1.0' weight='1.0'/>
+		<link:loc xlink:type='locator' xlink:href='sfgc-20220930.xsd#fil_WarrantOptionExpenseFromDerivativeLiability' xlink:label='fil_WarrantOptionExpenseFromDerivativeLiability'/>
+		<link:calculationArc xlink:type='arc' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='us-gaap_NetCashProvidedByUsedInOperatingActivities' xlink:to='fil_WarrantOptionExpenseFromDerivativeLiability' use='optional' order='2.0' weight='1.0'/>
+		<link:loc xlink:type='locator' xlink:href='https://xbrl.fasb.org/us-gaap/2022/elts/us-gaap-2022.xsd#us-gaap_Depreciation' xlink:label='us-gaap_Depreciation'/>
+		<link:calculationArc xlink:type='arc' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='us-gaap_NetCashProvidedByUsedInOperatingActivities' xlink:to='us-gaap_Depreciation' use='optional' order='3.0' weight='1.0'/>
+		<link:loc xlink:type='locator' xlink:href='sfgc-20220930.xsd#fil_NonCashInterestExpense' xlink:label='fil_NonCashInterestExpense'/>
+		<link:calculationArc xlink:type='arc' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='us-gaap_NetCashProvidedByUsedInOperatingActivities' xlink:to='fil_NonCashInterestExpense' use='optional' order='4.0' weight='1.0'/>
+		<link:loc xlink:type='locator' xlink:href='https://xbrl.fasb.org/us-gaap/2022/elts/us-gaap-2022.xsd#us-gaap_OtherNoncashExpense' xlink:label='us-gaap_OtherNoncashExpense'/>
+		<link:calculationArc xlink:type='arc' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='us-gaap_NetCashProvidedByUsedInOperatingActivities' xlink:to='us-gaap_OtherNoncashExpense' use='optional' order='5.0' weight='1.0'/>
+		<link:loc xlink:type='locator' xlink:href='sfgc-20220930.xsd#fil_NonCashLossRecoveryAssociatedWithMisappropriatedFunds' xlink:label='fil_NonCashLossRecoveryAssociatedWithMisappropriatedFunds'/>
+		<link:calculationArc xlink:type='arc' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='us-gaap_NetCashProvidedByUsedInOperatingActivities' xlink:to='fil_NonCashLossRecoveryAssociatedWithMisappropriatedFunds' use='optional' order='6.0' weight='1.0'/>
+		<link:loc xlink:type='locator' xlink:href='https://xbrl.fasb.org/us-gaap/2022/elts/us-gaap-2022.xsd#us-gaap_IncreaseDecreaseInOtherOperatingCapitalNet' xlink:label='us-gaap_IncreaseDecreaseInOtherOperatingCapitalNet'/>
+		<link:calculationArc xlink:type='arc' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='us-gaap_NetCashProvidedByUsedInOperatingActivities' xlink:to='us-gaap_IncreaseDecreaseInOtherOperatingCapitalNet' use='optional' order='7.0' weight='-1.0'/>
+		<link:loc xlink:type='locator' xlink:href='https://xbrl.fasb.org/us-gaap/2022/elts/us-gaap-2022.xsd#us-gaap_IncreaseDecreaseInAccountsPayableAndAccruedLiabilities' xlink:label='us-gaap_IncreaseDecreaseInAccountsPayableAndAccruedLiabilities'/>
+		<link:calculationArc xlink:type='arc' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='us-gaap_NetCashProvidedByUsedInOperatingActivities' xlink:to='us-gaap_IncreaseDecreaseInAccountsPayableAndAccruedLiabilities' use='optional' order='8.0' weight='1.0'/>
+		<link:loc xlink:type='locator' xlink:href='https://xbrl.fasb.org/us-gaap/2022/elts/us-gaap-2022.xsd#us-gaap_CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalentsPeriodIncreaseDecreaseExcludingExchangeRateEffect' xlink:label='us-gaap_CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalentsPeriodIncreaseDecreaseExcludingExchangeRateEffect'/>
+		<link:calculationArc xlink:type='arc' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='us-gaap_CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalentsPeriodIncreaseDecreaseExcludingExchangeRateEffect' xlink:to='us-gaap_NetCashProvidedByUsedInOperatingActivities' use='optional' order='1.0' weight='1.0'/>
+		<link:loc xlink:type='locator' xlink:href='https://xbrl.fasb.org/us-gaap/2022/elts/us-gaap-2022.xsd#us-gaap_NetCashProvidedByUsedInInvestingActivities' xlink:label='us-gaap_NetCashProvidedByUsedInInvestingActivities'/>
+		<link:calculationArc xlink:type='arc' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='us-gaap_CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalentsPeriodIncreaseDecreaseExcludingExchangeRateEffect' xlink:to='us-gaap_NetCashProvidedByUsedInInvestingActivities' use='optional' order='2.0' weight='1.0'/>
+		<link:loc xlink:type='locator' xlink:href='https://xbrl.fasb.org/us-gaap/2022/elts/us-gaap-2022.xsd#us-gaap_NetCashProvidedByUsedInFinancingActivities' xlink:label='us-gaap_NetCashProvidedByUsedInFinancingActivities'/>
+		<link:calculationArc xlink:type='arc' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='us-gaap_CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalentsPeriodIncreaseDecreaseExcludingExchangeRateEffect' xlink:to='us-gaap_NetCashProvidedByUsedInFinancingActivities' use='optional' order='3.0' weight='1.0'/>
+		<link:loc xlink:type='locator' xlink:href='https://xbrl.fasb.org/us-gaap/2022/elts/us-gaap-2022.xsd#us-gaap_PaymentsToAcquireMineralRights' xlink:label='us-gaap_PaymentsToAcquireMineralRights'/>
+		<link:calculationArc xlink:type='arc' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='us-gaap_NetCashProvidedByUsedInInvestingActivities' xlink:to='us-gaap_PaymentsToAcquireMineralRights' use='optional' order='1.0' weight='-1.0'/>
+		<link:loc xlink:type='locator' xlink:href='https://xbrl.fasb.org/us-gaap/2022/elts/us-gaap-2022.xsd#us-gaap_GainLossOnSaleOfProperty' xlink:label='us-gaap_GainLossOnSaleOfProperty'/>
+		<link:calculationArc xlink:type='arc' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='us-gaap_NetCashProvidedByUsedInInvestingActivities' xlink:to='us-gaap_GainLossOnSaleOfProperty' use='optional' order='2.0' weight='-1.0'/>
+		<link:loc xlink:type='locator' xlink:href='https://xbrl.fasb.org/us-gaap/2022/elts/us-gaap-2022.xsd#us-gaap_ProceedsFromSaleOfPropertyPlantAndEquipment' xlink:label='us-gaap_ProceedsFromSaleOfPropertyPlantAndEquipment'/>
+		<link:calculationArc xlink:type='arc' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='us-gaap_NetCashProvidedByUsedInInvestingActivities' xlink:to='us-gaap_ProceedsFromSaleOfPropertyPlantAndEquipment' use='optional' order='3.0' weight='1.0'/>
+		<link:loc xlink:type='locator' xlink:href='https://xbrl.fasb.org/us-gaap/2022/elts/us-gaap-2022.xsd#us-gaap_PaymentsForRent' xlink:label='us-gaap_PaymentsForRent'/>
+		<link:calculationArc xlink:type='arc' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='us-gaap_NetCashProvidedByUsedInInvestingActivities' xlink:to='us-gaap_PaymentsForRent' use='optional' order='4.0' weight='-1.0'/>
+		<link:loc xlink:type='locator' xlink:href='https://xbrl.fasb.org/us-gaap/2022/elts/us-gaap-2022.xsd#us-gaap_PaymentsToAcquirePropertyPlantAndEquipment' xlink:label='us-gaap_PaymentsToAcquirePropertyPlantAndEquipment'/>
+		<link:calculationArc xlink:type='arc' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='us-gaap_NetCashProvidedByUsedInInvestingActivities' xlink:to='us-gaap_PaymentsToAcquirePropertyPlantAndEquipment' use='optional' order='5.0' weight='-1.0'/>
+		<link:loc xlink:type='locator' xlink:href='https://xbrl.fasb.org/us-gaap/2022/elts/us-gaap-2022.xsd#us-gaap_ProceedsFromIssuanceOfCommonStock' xlink:label='us-gaap_ProceedsFromIssuanceOfCommonStock'/>
+		<link:calculationArc xlink:type='arc' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='us-gaap_NetCashProvidedByUsedInFinancingActivities' xlink:to='us-gaap_ProceedsFromIssuanceOfCommonStock' use='optional' order='1.0' weight='1.0'/>
+		<link:loc xlink:type='locator' xlink:href='https://xbrl.fasb.org/us-gaap/2022/elts/us-gaap-2022.xsd#us-gaap_PaymentsForProceedsFromOtherLoansAndLeases' xlink:label='us-gaap_PaymentsForProceedsFromOtherLoansAndLeases'/>
+		<link:calculationArc xlink:type='arc' xlink:arcrole='http://www.xbrl.org/2003/arcrole/summation-item' xlink:from='us-gaap_NetCashProvidedByUsedInFinancingActivities' xlink:to='us-gaap_PaymentsForProceedsFromOtherLoansAndLeases' use='optional' order='2.0' weight='-1.0'/>
+	</link:calculationLink>
+</link:linkbase>

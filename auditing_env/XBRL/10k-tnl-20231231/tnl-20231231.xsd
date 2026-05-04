@@ -1,0 +1,1144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--XBRL Document Created with the Workiva Platform-->
+<!--Copyright 2024 Workiva-->
+<!--r:a154cc90-51be-4f26-ab8b-d0034c33c118,g:8fde6842-dbb6-496e-bb41-c5a546f413bd-->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:tnl="http://www.travelandleisureco.com/20231231" xmlns:xbrli="http://www.xbrl.org/2003/instance" xmlns:dtr-types1="http://www.xbrl.org/dtr/type/2020-01-21" xmlns:xbrldt="http://xbrl.org/2005/xbrldt" xmlns:dtr-types="http://www.xbrl.org/dtr/type/2022-03-31" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://www.travelandleisureco.com/20231231">
+  <xs:import namespace="http://fasb.org/srt/2023" schemaLocation="https://xbrl.fasb.org/srt/2023/elts/srt-2023.xsd"/>
+  <xs:import namespace="http://fasb.org/us-gaap/2023" schemaLocation="https://xbrl.fasb.org/us-gaap/2023/elts/us-gaap-2023.xsd"/>
+  <xs:import namespace="http://www.w3.org/1999/xlink" schemaLocation="http://www.xbrl.org/2003/xlink-2003-12-31.xsd"/>
+  <xs:import namespace="http://www.xbrl.org/2003/instance" schemaLocation="http://www.xbrl.org/2003/xbrl-instance-2003-12-31.xsd"/>
+  <xs:import namespace="http://www.xbrl.org/2003/linkbase" schemaLocation="http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd"/>
+  <xs:import namespace="http://www.xbrl.org/dtr/type/2020-01-21" schemaLocation="https://www.xbrl.org/dtr/type/2020-01-21/types.xsd"/>
+  <xs:import namespace="http://www.xbrl.org/dtr/type/2022-03-31" schemaLocation="https://www.xbrl.org/dtr/type/2022-03-31/types.xsd"/>
+  <xs:import namespace="http://xbrl.org/2005/xbrldt" schemaLocation="http://www.xbrl.org/2005/xbrldt-2005.xsd"/>
+  <xs:import namespace="http://xbrl.sec.gov/country/2023" schemaLocation="https://xbrl.sec.gov/country/2023/country-2023.xsd"/>
+  <xs:import namespace="http://xbrl.sec.gov/dei/2023" schemaLocation="https://xbrl.sec.gov/dei/2023/dei-2023.xsd"/>
+  <xs:import namespace="http://xbrl.sec.gov/ecd/2023" schemaLocation="https://xbrl.sec.gov/ecd/2023/ecd-2023.xsd"/>
+  <xs:import namespace="http://xbrl.sec.gov/stpr/2023" schemaLocation="https://xbrl.sec.gov/stpr/2023/stpr-2023.xsd"/>
+  <xs:annotation>
+    <xs:appinfo>
+      <link:linkbaseRef xmlns:xlink="http://www.w3.org/1999/xlink" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="tnl-20231231_pre.xml" xlink:role="http://www.xbrl.org/2003/role/presentationLinkbaseRef" xlink:type="simple"/>
+      <link:linkbaseRef xmlns:xlink="http://www.w3.org/1999/xlink" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="tnl-20231231_def.xml" xlink:role="http://www.xbrl.org/2003/role/definitionLinkbaseRef" xlink:type="simple"/>
+      <link:linkbaseRef xmlns:xlink="http://www.w3.org/1999/xlink" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="tnl-20231231_lab.xml" xlink:role="http://www.xbrl.org/2003/role/labelLinkbaseRef" xlink:type="simple"/>
+      <link:linkbaseRef xmlns:xlink="http://www.w3.org/1999/xlink" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="tnl-20231231_cal.xml" xlink:role="http://www.xbrl.org/2003/role/calculationLinkbaseRef" xlink:type="simple"/>
+      <link:roleType id="DocumentAndEntityInformation" roleURI="http://www.travelandleisureco.com/role/DocumentAndEntityInformation">
+        <link:definition>0000001 - Document - Document And Entity Information</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ConsolidatedStatementsOfIncome" roleURI="http://www.travelandleisureco.com/role/ConsolidatedStatementsOfIncome">
+        <link:definition>0000002 - Statement - Consolidated Statements Of Income</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ConsolidatedStatementsOfComprehensiveIncome" roleURI="http://www.travelandleisureco.com/role/ConsolidatedStatementsOfComprehensiveIncome">
+        <link:definition>0000003 - Statement - Consolidated Statements Of Comprehensive Income</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ConsolidatedBalanceSheets" roleURI="http://www.travelandleisureco.com/role/ConsolidatedBalanceSheets">
+        <link:definition>0000004 - Statement - Consolidated Balance Sheets</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ConsolidatedBalanceSheetsParenthetical" roleURI="http://www.travelandleisureco.com/role/ConsolidatedBalanceSheetsParenthetical">
+        <link:definition>0000005 - Statement - Consolidated Balance Sheets (Parenthetical)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ConsolidatedStatementsOfCashFlows" roleURI="http://www.travelandleisureco.com/role/ConsolidatedStatementsOfCashFlows">
+        <link:definition>0000006 - Statement - Consolidated Statements Of Cash Flows</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ConsolidatedStatementsOfEquityDeficit" roleURI="http://www.travelandleisureco.com/role/ConsolidatedStatementsOfEquityDeficit">
+        <link:definition>0000007 - Statement - Consolidated Statements Of Equity/(Deficit)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ConsolidatedStatementsOfEquityDeficitParenthetical" roleURI="http://www.travelandleisureco.com/role/ConsolidatedStatementsOfEquityDeficitParenthetical">
+        <link:definition>0000008 - Statement - Consolidated Statements Of Equity/(Deficit) (Parenthetical)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="BackgroundandBasisOfPresentation" roleURI="http://www.travelandleisureco.com/role/BackgroundandBasisOfPresentation">
+        <link:definition>0000009 - Disclosure - Background and Basis Of Presentation</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SummaryofSignificantAccountingPolicies" roleURI="http://www.travelandleisureco.com/role/SummaryofSignificantAccountingPolicies">
+        <link:definition>0000010 - Disclosure - Summary of Significant Accounting Policies</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RevenueRecognition" roleURI="http://www.travelandleisureco.com/role/RevenueRecognition">
+        <link:definition>0000011 - Disclosure - Revenue Recognition</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="EarningsLossPerShare" roleURI="http://www.travelandleisureco.com/role/EarningsLossPerShare">
+        <link:definition>0000012 - Disclosure - Earnings/(Loss) Per Share</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="Acquisitions" roleURI="http://www.travelandleisureco.com/role/Acquisitions">
+        <link:definition>0000013 - Disclosure - Acquisitions</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="DiscontinuedOperations" roleURI="http://www.travelandleisureco.com/role/DiscontinuedOperations">
+        <link:definition>0000014 - Disclosure - Discontinued Operations</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IntangibleAssets" roleURI="http://www.travelandleisureco.com/role/IntangibleAssets">
+        <link:definition>0000015 - Disclosure - Intangible Assets</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IncomeTaxes" roleURI="http://www.travelandleisureco.com/role/IncomeTaxes">
+        <link:definition>0000016 - Disclosure - Income Taxes</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="VacationOwnershipContractReceivables" roleURI="http://www.travelandleisureco.com/role/VacationOwnershipContractReceivables">
+        <link:definition>0000017 - Disclosure - Vacation Ownership Contract Receivables</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="Inventory" roleURI="http://www.travelandleisureco.com/role/Inventory">
+        <link:definition>0000018 - Disclosure - Inventory</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="PropertyAndEquipmentNet" roleURI="http://www.travelandleisureco.com/role/PropertyAndEquipmentNet">
+        <link:definition>0000019 - Disclosure - Property And Equipment, Net</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="Leases" roleURI="http://www.travelandleisureco.com/role/Leases">
+        <link:definition>0000020 - Disclosure - Leases</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="OtherAssets" roleURI="http://www.travelandleisureco.com/role/OtherAssets">
+        <link:definition>0000021 - Disclosure - Other Assets</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="AccruedExpensesandOtherLiabilities" roleURI="http://www.travelandleisureco.com/role/AccruedExpensesandOtherLiabilities">
+        <link:definition>0000022 - Disclosure - Accrued Expenses and Other Liabilities</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="Debt" roleURI="http://www.travelandleisureco.com/role/Debt">
+        <link:definition>0000023 - Disclosure - Debt</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="VariableInterestEntities" roleURI="http://www.travelandleisureco.com/role/VariableInterestEntities">
+        <link:definition>0000024 - Disclosure - Variable Interest Entities</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FairValue" roleURI="http://www.travelandleisureco.com/role/FairValue">
+        <link:definition>0000025 - Disclosure - Fair Value</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FinancialInstruments" roleURI="http://www.travelandleisureco.com/role/FinancialInstruments">
+        <link:definition>0000026 - Disclosure - Financial Instruments</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CommitmentsAndContingencies" roleURI="http://www.travelandleisureco.com/role/CommitmentsAndContingencies">
+        <link:definition>0000027 - Disclosure - Commitments And Contingencies</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="AccumulatedOtherComprehensiveLoss" roleURI="http://www.travelandleisureco.com/role/AccumulatedOtherComprehensiveLoss">
+        <link:definition>0000028 - Disclosure - Accumulated Other Comprehensive Loss</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="StockBasedCompensation" roleURI="http://www.travelandleisureco.com/role/StockBasedCompensation">
+        <link:definition>0000029 - Disclosure - Stock-Based Compensation</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="EmployeeBenefitPlans" roleURI="http://www.travelandleisureco.com/role/EmployeeBenefitPlans">
+        <link:definition>0000030 - Disclosure - Employee Benefit Plans</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SegmentInformation" roleURI="http://www.travelandleisureco.com/role/SegmentInformation">
+        <link:definition>0000031 - Disclosure - Segment Information</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="COVID19RelatedItemsNotes" roleURI="http://www.travelandleisureco.com/role/COVID19RelatedItemsNotes">
+        <link:definition>0000032 - Disclosure - COVID-19 Related Items (Notes)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ImpairmentsandOtherCharges" roleURI="http://www.travelandleisureco.com/role/ImpairmentsandOtherCharges">
+        <link:definition>0000033 - Disclosure - Impairments and Other Charges</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="Restructuring" roleURI="http://www.travelandleisureco.com/role/Restructuring">
+        <link:definition>0000034 - Disclosure - Restructuring</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="TransactionswithFormerParentandFormerSubsidiaries" roleURI="http://www.travelandleisureco.com/role/TransactionswithFormerParentandFormerSubsidiaries">
+        <link:definition>0000035 - Disclosure - Transactions with Former Parent and Former Subsidiaries</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RelatedPartyTransactions" roleURI="http://www.travelandleisureco.com/role/RelatedPartyTransactions">
+        <link:definition>0000036 - Disclosure - Related Party Transactions</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SubsequentEvent" roleURI="http://www.travelandleisureco.com/role/SubsequentEvent">
+        <link:definition>0000037 - Disclosure - Subsequent Event</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="BackgroundandBasisofPresentationBackgroundandBasisofPresentationPolicies" roleURI="http://www.travelandleisureco.com/role/BackgroundandBasisofPresentationBackgroundandBasisofPresentationPolicies">
+        <link:definition>9954471 - Disclosure - Background and Basis of Presentation Background and Basis of Presentation (Policies)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SummaryofSignificantAccountingPoliciesPolicies" roleURI="http://www.travelandleisureco.com/role/SummaryofSignificantAccountingPoliciesPolicies">
+        <link:definition>9954472 - Disclosure - Summary of Significant Accounting Policies (Policies)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RevenueRecognitionPolicies" roleURI="http://www.travelandleisureco.com/role/RevenueRecognitionPolicies">
+        <link:definition>9954473 - Disclosure - Revenue Recognition (Policies)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="EarningsPerSharePolicies" roleURI="http://www.travelandleisureco.com/role/EarningsPerSharePolicies">
+        <link:definition>9954474 - Disclosure - Earnings Per Share (Policies)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="BusinessCombinationsPolicies" roleURI="http://www.travelandleisureco.com/role/BusinessCombinationsPolicies">
+        <link:definition>9954475 - Disclosure - Business Combinations (Policies)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ReceivablesLoansNotesReceivableandOthersPolicies" roleURI="http://www.travelandleisureco.com/role/ReceivablesLoansNotesReceivableandOthersPolicies">
+        <link:definition>9954476 - Disclosure - Receivables, Loans, Notes Receivable, and Others (Policies)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LeasesPolicies" roleURI="http://www.travelandleisureco.com/role/LeasesPolicies">
+        <link:definition>9954477 - Disclosure - Leases (Policies)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="DebtPolicies" roleURI="http://www.travelandleisureco.com/role/DebtPolicies">
+        <link:definition>9954478 - Disclosure - Debt (Policies)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="VariableInterestEntitiesPolicies" roleURI="http://www.travelandleisureco.com/role/VariableInterestEntitiesPolicies">
+        <link:definition>9954479 - Disclosure - Variable Interest Entities (Policies)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FairValueMeasuresandDisclosuresPolicies" roleURI="http://www.travelandleisureco.com/role/FairValueMeasuresandDisclosuresPolicies">
+        <link:definition>9954480 - Disclosure - Fair Value Measures and Disclosures (Policies)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="DerivativeInstrumentsandHedgingActivitiesPolicies" roleURI="http://www.travelandleisureco.com/role/DerivativeInstrumentsandHedgingActivitiesPolicies">
+        <link:definition>9954481 - Disclosure - Derivative Instruments and Hedging Activities (Policies)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CommitmentandContingenciesPolicies" roleURI="http://www.travelandleisureco.com/role/CommitmentandContingenciesPolicies">
+        <link:definition>9954482 - Disclosure - Commitment and Contingencies (Policies)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ComprehensiveTextBlockListPolicies" roleURI="http://www.travelandleisureco.com/role/ComprehensiveTextBlockListPolicies">
+        <link:definition>9954483 - Disclosure - Comprehensive Text Block List (Policies)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="StockBasedCompensationPolicies" roleURI="http://www.travelandleisureco.com/role/StockBasedCompensationPolicies">
+        <link:definition>9954484 - Disclosure - Stock-Based Compensation (Policies)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CompensationRelatedCostsRetirementBenefitsPolicies" roleURI="http://www.travelandleisureco.com/role/CompensationRelatedCostsRetirementBenefitsPolicies">
+        <link:definition>9954485 - Disclosure - Compensation Related Costs, Retirement Benefits (Policies)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SegmentReportingPolicies" roleURI="http://www.travelandleisureco.com/role/SegmentReportingPolicies">
+        <link:definition>9954486 - Disclosure - Segment Reporting (Policies)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SummaryofSignificantAccountingPoliciesTables" roleURI="http://www.travelandleisureco.com/role/SummaryofSignificantAccountingPoliciesTables">
+        <link:definition>9954487 - Disclosure - Summary of Significant Accounting Policies (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RevenueRecognitionTables" roleURI="http://www.travelandleisureco.com/role/RevenueRecognitionTables">
+        <link:definition>9954488 - Disclosure - Revenue Recognition (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="EarningsLossPerShareTables" roleURI="http://www.travelandleisureco.com/role/EarningsLossPerShareTables">
+        <link:definition>9954489 - Disclosure - Earnings/(Loss) Per Share (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IntangibleAssetsTables" roleURI="http://www.travelandleisureco.com/role/IntangibleAssetsTables">
+        <link:definition>9954490 - Disclosure - Intangible Assets (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IncomeTaxTables" roleURI="http://www.travelandleisureco.com/role/IncomeTaxTables">
+        <link:definition>9954491 - Disclosure - Income Tax (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="VacationOwnershipContractReceivablesTables" roleURI="http://www.travelandleisureco.com/role/VacationOwnershipContractReceivablesTables">
+        <link:definition>9954492 - Disclosure - Vacation Ownership Contract Receivables (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="InventoryTables" roleURI="http://www.travelandleisureco.com/role/InventoryTables">
+        <link:definition>9954493 - Disclosure - Inventory (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="PropertyAndEquipmentNetTables" roleURI="http://www.travelandleisureco.com/role/PropertyAndEquipmentNetTables">
+        <link:definition>9954494 - Disclosure - Property And Equipment, Net (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LeasesTables" roleURI="http://www.travelandleisureco.com/role/LeasesTables">
+        <link:definition>9954495 - Disclosure - Leases (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="OtherAssetsTables" roleURI="http://www.travelandleisureco.com/role/OtherAssetsTables">
+        <link:definition>9954496 - Disclosure - Other Assets (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="AccruedExpensesandOtherLiabilitiesTables" roleURI="http://www.travelandleisureco.com/role/AccruedExpensesandOtherLiabilitiesTables">
+        <link:definition>9954497 - Disclosure - Accrued Expenses and Other Liabilities (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="DebtTables" roleURI="http://www.travelandleisureco.com/role/DebtTables">
+        <link:definition>9954498 - Disclosure - Debt (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="VariableInterestEntitiesTables" roleURI="http://www.travelandleisureco.com/role/VariableInterestEntitiesTables">
+        <link:definition>9954499 - Disclosure - Variable Interest Entities (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FairValueTables" roleURI="http://www.travelandleisureco.com/role/FairValueTables">
+        <link:definition>9954500 - Disclosure - Fair Value (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FinancialInstrumentsTables" roleURI="http://www.travelandleisureco.com/role/FinancialInstrumentsTables">
+        <link:definition>9954501 - Disclosure - Financial Instruments (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="AccumulatedOtherComprehensiveIncomeLossTables" roleURI="http://www.travelandleisureco.com/role/AccumulatedOtherComprehensiveIncomeLossTables">
+        <link:definition>9954502 - Disclosure - Accumulated Other Comprehensive Income Loss (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="StockBasedCompensationTables" roleURI="http://www.travelandleisureco.com/role/StockBasedCompensationTables">
+        <link:definition>9954503 - Disclosure - Stock-Based Compensation (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SegmentInformationTables" roleURI="http://www.travelandleisureco.com/role/SegmentInformationTables">
+        <link:definition>9954504 - Disclosure - Segment Information (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="COVID19RelatedItemsTables" roleURI="http://www.travelandleisureco.com/role/COVID19RelatedItemsTables">
+        <link:definition>9954505 - Disclosure - COVID-19 Related Items (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RestructuringTables" roleURI="http://www.travelandleisureco.com/role/RestructuringTables">
+        <link:definition>9954506 - Disclosure - Restructuring (Tables)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="BackgroundandBasisOfPresentationDetails" roleURI="http://www.travelandleisureco.com/role/BackgroundandBasisOfPresentationDetails">
+        <link:definition>9954507 - Disclosure - Background and Basis Of Presentation (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SummaryofSignificantAccountingPoliciesNarrativeDetails" roleURI="http://www.travelandleisureco.com/role/SummaryofSignificantAccountingPoliciesNarrativeDetails">
+        <link:definition>9954508 - Disclosure - Summary of Significant Accounting Policies (Narrative) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SummaryofSignificantAccountingPoliciesSummaryofActivityofAllowanceForDoubtfulAccountsDetails" roleURI="http://www.travelandleisureco.com/role/SummaryofSignificantAccountingPoliciesSummaryofActivityofAllowanceForDoubtfulAccountsDetails">
+        <link:definition>9954509 - Disclosure - Summary of Significant Accounting Policies (Summary of Activity of Allowance For Doubtful Accounts) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RevenueRecognitionNarrativeDetails" roleURI="http://www.travelandleisureco.com/role/RevenueRecognitionNarrativeDetails">
+        <link:definition>9954510 - Disclosure - Revenue Recognition (Narrative) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RevenueRecognitionPropMgmtRevenuesDetails" roleURI="http://www.travelandleisureco.com/role/RevenueRecognitionPropMgmtRevenuesDetails">
+        <link:definition>9954511 - Disclosure - Revenue Recognition (Prop Mgmt Revenues) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RevenueRecognitionContractLiabilitiesDetails" roleURI="http://www.travelandleisureco.com/role/RevenueRecognitionContractLiabilitiesDetails">
+        <link:definition>9954512 - Disclosure - Revenue Recognition (Contract Liabilities) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RevenueRecognitionContractLiabilitiesRollforwardDetails" roleURI="http://www.travelandleisureco.com/role/RevenueRecognitionContractLiabilitiesRollforwardDetails">
+        <link:definition>9954513 - Disclosure - Revenue Recognition (Contract Liabilities Rollforward) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RevenueRecognitionCapitalizedContractCostsDetails" roleURI="http://www.travelandleisureco.com/role/RevenueRecognitionCapitalizedContractCostsDetails">
+        <link:definition>9954514 - Disclosure - Revenue Recognition (Capitalized Contract Costs) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RevenueRecognitionPerformanceObligationsDetails" roleURI="http://www.travelandleisureco.com/role/RevenueRecognitionPerformanceObligationsDetails">
+        <link:definition>9954515 - Disclosure - Revenue Recognition (Performance Obligations) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RevenueRecognitionPerformanceObligationsDetails_1" roleURI="http://www.travelandleisureco.com/role/RevenueRecognitionPerformanceObligationsDetails_1">
+        <link:definition>9954515 - Disclosure - Revenue Recognition (Performance Obligations) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RevenueRecognitionDisaggregationofNetRevenuesDetails" roleURI="http://www.travelandleisureco.com/role/RevenueRecognitionDisaggregationofNetRevenuesDetails">
+        <link:definition>9954516 - Disclosure - Revenue Recognition (Disaggregation of Net Revenues) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="EarningsLossPerShareComputationOfBasicAndDilutedEPSDetails" roleURI="http://www.travelandleisureco.com/role/EarningsLossPerShareComputationOfBasicAndDilutedEPSDetails">
+        <link:definition>9954517 - Disclosure - Earnings/(Loss) Per Share (Computation Of Basic And Diluted EPS) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="EarningsLossPerShareNarrativeDetails" roleURI="http://www.travelandleisureco.com/role/EarningsLossPerShareNarrativeDetails">
+        <link:definition>9954518 - Disclosure - Earnings/(Loss) Per Share (Narrative) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="EarningsLossPerShareCurrentShareRepurchaseProgramDetails" roleURI="http://www.travelandleisureco.com/role/EarningsLossPerShareCurrentShareRepurchaseProgramDetails">
+        <link:definition>9954519 - Disclosure - Earnings/(Loss) Per Share (Current Share Repurchase Program) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="AcquisitionsNarrativeDetails" roleURI="http://www.travelandleisureco.com/role/AcquisitionsNarrativeDetails">
+        <link:definition>9954520 - Disclosure - Acquisitions (Narrative) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="DiscontinuedOperationsNarrativeDetails" roleURI="http://www.travelandleisureco.com/role/DiscontinuedOperationsNarrativeDetails">
+        <link:definition>9954521 - Disclosure - Discontinued Operations (Narrative) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IntangibleAssetsComponentsOfIntangibleAssetsDetails" roleURI="http://www.travelandleisureco.com/role/IntangibleAssetsComponentsOfIntangibleAssetsDetails">
+        <link:definition>9954522 - Disclosure - Intangible Assets (Components Of Intangible Assets) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IntangibleAssetsChangesInCarryingAmountOfGoodwillBySegmentDetails" roleURI="http://www.travelandleisureco.com/role/IntangibleAssetsChangesInCarryingAmountOfGoodwillBySegmentDetails">
+        <link:definition>9954523 - Disclosure - Intangible Assets (Changes In Carrying Amount Of Goodwill By Segment) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IntangibleAssetsAmortizationExpenseRelatedToIntangibleAssetsByMajorClassDetails" roleURI="http://www.travelandleisureco.com/role/IntangibleAssetsAmortizationExpenseRelatedToIntangibleAssetsByMajorClassDetails">
+        <link:definition>9954524 - Disclosure - Intangible Assets (Amortization Expense Related To Intangible Assets By Major Class) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IntangibleAssetsIntangibleAssetsFutureAmortizationExpensesDetails" roleURI="http://www.travelandleisureco.com/role/IntangibleAssetsIntangibleAssetsFutureAmortizationExpensesDetails">
+        <link:definition>9954525 - Disclosure - Intangible Assets (Intangible Assets Future Amortization Expenses) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IncomeTaxesIncomeTaxProvisionDetails" roleURI="http://www.travelandleisureco.com/role/IncomeTaxesIncomeTaxProvisionDetails">
+        <link:definition>9954526 - Disclosure - Income Taxes (Income Tax Provision) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IncomeTaxesPreTaxIncomeLossForDomesticAndForeignOperationsDetails" roleURI="http://www.travelandleisureco.com/role/IncomeTaxesPreTaxIncomeLossForDomesticAndForeignOperationsDetails">
+        <link:definition>9954527 - Disclosure - Income Taxes (Pre-Tax Income/(Loss) For Domestic And Foreign Operations) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IncomeTaxesDeferredIncomeTaxAssetsandLiabilitiesDetails" roleURI="http://www.travelandleisureco.com/role/IncomeTaxesDeferredIncomeTaxAssetsandLiabilitiesDetails">
+        <link:definition>9954528 - Disclosure - Income Taxes (Deferred Income Tax Assets and Liabilities) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IncomeTaxesNarrativeDetails" roleURI="http://www.travelandleisureco.com/role/IncomeTaxesNarrativeDetails">
+        <link:definition>9954529 - Disclosure - Income Taxes (Narrative) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IncomeTaxesDifferenceofEffectiveIncomeTaxRateFromUSFederalStatutorRateDetails" roleURI="http://www.travelandleisureco.com/role/IncomeTaxesDifferenceofEffectiveIncomeTaxRateFromUSFederalStatutorRateDetails">
+        <link:definition>9954530 - Disclosure - Income Taxes (Difference of Effective Income Tax Rate From US Federal Statutor Rate) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="IncomeTaxesSummaryofActivitiesRelatedtoUnrecognizedTaxBenefitsDetails" roleURI="http://www.travelandleisureco.com/role/IncomeTaxesSummaryofActivitiesRelatedtoUnrecognizedTaxBenefitsDetails">
+        <link:definition>9954531 - Disclosure - Income Taxes (Summary of Activities Related to Unrecognized Tax Benefits) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="VacationOwnershipContractReceivablesCurrentAndLongTermVacationOwnershipContractReceivablesDetails" roleURI="http://www.travelandleisureco.com/role/VacationOwnershipContractReceivablesCurrentAndLongTermVacationOwnershipContractReceivablesDetails">
+        <link:definition>9954532 - Disclosure - Vacation Ownership Contract Receivables (Current And Long-Term Vacation Ownership Contract Receivables) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="VacationOwnershipContractReceivablesPrincipalPaymentsDueOnVacationOwnershipContractReceivablesDetails" roleURI="http://www.travelandleisureco.com/role/VacationOwnershipContractReceivablesPrincipalPaymentsDueOnVacationOwnershipContractReceivablesDetails">
+        <link:definition>9954533 - Disclosure - Vacation Ownership Contract Receivables (Principal Payments Due On Vacation Ownership Contract Receivables) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="VacationOwnershipContractReceivablesNarrativeDetails" roleURI="http://www.travelandleisureco.com/role/VacationOwnershipContractReceivablesNarrativeDetails">
+        <link:definition>9954534 - Disclosure - Vacation Ownership Contract Receivables (Narrative) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="VacationOwnershipContractReceivablesAllowanceForLoanLossesOnVacationOwnershipContractReceivablesDetails" roleURI="http://www.travelandleisureco.com/role/VacationOwnershipContractReceivablesAllowanceForLoanLossesOnVacationOwnershipContractReceivablesDetails">
+        <link:definition>9954535 - Disclosure - Vacation Ownership Contract Receivables (Allowance For Loan Losses On Vacation Ownership Contract Receivables) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="VacationOwnershipContractReceivablesSummaryOfTheAgedAnalysisOfFinancingReceivablesUsingTheMostRecentlyUpdatedFICOScoresDetails" roleURI="http://www.travelandleisureco.com/role/VacationOwnershipContractReceivablesSummaryOfTheAgedAnalysisOfFinancingReceivablesUsingTheMostRecentlyUpdatedFICOScoresDetails">
+        <link:definition>9954536 - Disclosure - Vacation Ownership Contract Receivables (Summary Of The Aged Analysis Of Financing Receivables Using The Most Recently Updated FICO Scores) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="VacationOwnershipContractReceivablesYearofOriginationDetails" roleURI="http://www.travelandleisureco.com/role/VacationOwnershipContractReceivablesYearofOriginationDetails">
+        <link:definition>9954537 - Disclosure - Vacation Ownership Contract Receivables (Year of Origination) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="VacationOwnershipContractReceivablesAllowanceForLoanLossesOnVacationOwnershipContractReceivablesGrossWriteOffsDetails" roleURI="http://www.travelandleisureco.com/role/VacationOwnershipContractReceivablesAllowanceForLoanLossesOnVacationOwnershipContractReceivablesGrossWriteOffsDetails">
+        <link:definition>9954538 - Disclosure - Vacation Ownership Contract Receivables (Allowance For Loan Losses On Vacation Ownership Contract Receivables Gross Write-Offs) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="InventoryInventoryDetails" roleURI="http://www.travelandleisureco.com/role/InventoryInventoryDetails">
+        <link:definition>9954539 - Disclosure - Inventory (Inventory) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="InventoryNarrativeDetails" roleURI="http://www.travelandleisureco.com/role/InventoryNarrativeDetails">
+        <link:definition>9954540 - Disclosure - Inventory (Narrative) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="InventoryActivityRelatedtoInventoryObligationsTablesDetails" roleURI="http://www.travelandleisureco.com/role/InventoryActivityRelatedtoInventoryObligationsTablesDetails">
+        <link:definition>9954541 - Disclosure - Inventory Activity Related to Inventory Obligations (Tables) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="PropertyAndEquipmentNetScheduleOfPropertyAndEquipmentDetails" roleURI="http://www.travelandleisureco.com/role/PropertyAndEquipmentNetScheduleOfPropertyAndEquipmentDetails">
+        <link:definition>9954542 - Disclosure - Property And Equipment, Net (Schedule Of Property And Equipment) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="PropertyAndEquipmentNetNarrativeDetails" roleURI="http://www.travelandleisureco.com/role/PropertyAndEquipmentNetNarrativeDetails">
+        <link:definition>9954543 - Disclosure - Property And Equipment, Net (Narrative) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LeasesNarrativeDetails" roleURI="http://www.travelandleisureco.com/role/LeasesNarrativeDetails">
+        <link:definition>9954544 - Disclosure - Leases Narrative (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LeasesLeaseCostsDetails" roleURI="http://www.travelandleisureco.com/role/LeasesLeaseCostsDetails">
+        <link:definition>9954545 - Disclosure - Leases Lease Costs (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LeasesLeaseAssetsandLiabilitiesDetails" roleURI="http://www.travelandleisureco.com/role/LeasesLeaseAssetsandLiabilitiesDetails">
+        <link:definition>9954546 - Disclosure - Leases Lease Assets and Liabilities (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LeasesCashFlowPresentationDetails" roleURI="http://www.travelandleisureco.com/role/LeasesCashFlowPresentationDetails">
+        <link:definition>9954547 - Disclosure - Leases Cash Flow Presentation (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="LeasesLeaseMaturitiesDetails" roleURI="http://www.travelandleisureco.com/role/LeasesLeaseMaturitiesDetails">
+        <link:definition>9954548 - Disclosure - Leases Lease Maturities (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="OtherAssetsDetails" roleURI="http://www.travelandleisureco.com/role/OtherAssetsDetails">
+        <link:definition>9954549 - Disclosure - Other Assets (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="AccruedExpensesandOtherLiabilitiesScheduleofAccruedExpensesAndOtherCurrentLiabilitiesDetails" roleURI="http://www.travelandleisureco.com/role/AccruedExpensesandOtherLiabilitiesScheduleofAccruedExpensesAndOtherCurrentLiabilitiesDetails">
+        <link:definition>9954550 - Disclosure - Accrued Expenses and Other Liabilities (Schedule of Accrued Expenses And Other Current Liabilities) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="DebtSummaryOfIndebtednessLongTermDebtDetails" roleURI="http://www.travelandleisureco.com/role/DebtSummaryOfIndebtednessLongTermDebtDetails">
+        <link:definition>9954551 - Disclosure - Debt (Summary Of Indebtedness-Long-Term Debt) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="DebtSummaryOfOutstandingDebtMaturitiesDetails" roleURI="http://www.travelandleisureco.com/role/DebtSummaryOfOutstandingDebtMaturitiesDetails">
+        <link:definition>9954552 - Disclosure - Debt (Summary Of Outstanding Debt Maturities) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="DebtSummaryOfAvailableCapacityUnderBorrowingArrangementsDetails" roleURI="http://www.travelandleisureco.com/role/DebtSummaryOfAvailableCapacityUnderBorrowingArrangementsDetails">
+        <link:definition>9954553 - Disclosure - Debt (Summary Of Available Capacity Under Borrowing Arrangements) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="DebtNonrecourseVacationOwnershipDebtNarrativeDetails" roleURI="http://www.travelandleisureco.com/role/DebtNonrecourseVacationOwnershipDebtNarrativeDetails">
+        <link:definition>9954554 - Disclosure - Debt (Non-recourse Vacation Ownership Debt) (Narrative) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="DebtNarrativeDetails" roleURI="http://www.travelandleisureco.com/role/DebtNarrativeDetails">
+        <link:definition>9954555 - Disclosure - Debt (Narrative) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="DebtDebtDebtCovenantsNarrativeDetails" roleURI="http://www.travelandleisureco.com/role/DebtDebtDebtCovenantsNarrativeDetails">
+        <link:definition>9954556 - Disclosure - Debt Debt (Debt Covenants) (Narrative) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="DebtInterestExpenseNarrativeDetails" roleURI="http://www.travelandleisureco.com/role/DebtInterestExpenseNarrativeDetails">
+        <link:definition>9954557 - Disclosure - Debt (Interest Expense) (Narrative) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="VariableInterestEntitiesAssetsAndLiabilitiesOfVacationOwnershipSPEsDetails" roleURI="http://www.travelandleisureco.com/role/VariableInterestEntitiesAssetsAndLiabilitiesOfVacationOwnershipSPEsDetails">
+        <link:definition>9954558 - Disclosure - Variable Interest Entities (Assets And Liabilities Of Vacation Ownership SPEs) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="VariableInterestEntitiesNarrativeDetails" roleURI="http://www.travelandleisureco.com/role/VariableInterestEntitiesNarrativeDetails">
+        <link:definition>9954559 - Disclosure - Variable Interest Entities (Narrative) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="VariableInterestEntitiesSummaryOfTotalVacationOwnershipReceivablesAndOtherSecuritizedAssetsNetOfSecuritizedLiabilitiesAndAllowanceForLoanLossesDetails" roleURI="http://www.travelandleisureco.com/role/VariableInterestEntitiesSummaryOfTotalVacationOwnershipReceivablesAndOtherSecuritizedAssetsNetOfSecuritizedLiabilitiesAndAllowanceForLoanLossesDetails">
+        <link:definition>9954560 - Disclosure - Variable Interest Entities (Summary Of Total Vacation Ownership Receivables And Other Securitized Assets, Net Of Securitized Liabilities And Allowance For Loan Losses) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FairValueCarryingAmountsAndEstimatedFairValuesOfFinancialInstrumentsDetails" roleURI="http://www.travelandleisureco.com/role/FairValueCarryingAmountsAndEstimatedFairValuesOfFinancialInstrumentsDetails">
+        <link:definition>9954561 - Disclosure - Fair Value (Carrying Amounts And Estimated Fair Values Of Financial Instruments) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FinancialInstrumentsNarrativeDetails" roleURI="http://www.travelandleisureco.com/role/FinancialInstrumentsNarrativeDetails">
+        <link:definition>9954562 - Disclosure - Financial Instruments (Narrative) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="FinancialInstrumentsSummaryOfGainLossRecognizedInIncomeDetails" roleURI="http://www.travelandleisureco.com/role/FinancialInstrumentsSummaryOfGainLossRecognizedInIncomeDetails">
+        <link:definition>9954563 - Disclosure - Financial Instruments (Summary Of Gain/(Loss) Recognized In Income) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="CommitmentsAndContingenciesNarrativeDetails" roleURI="http://www.travelandleisureco.com/role/CommitmentsAndContingenciesNarrativeDetails">
+        <link:definition>9954564 - Disclosure - Commitments And Contingencies (Narrative) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="AccumulatedOtherComprehensiveIncomeLossComponentsOfAccumulatedOtherComprehensiveIncomeDetails" roleURI="http://www.travelandleisureco.com/role/AccumulatedOtherComprehensiveIncomeLossComponentsOfAccumulatedOtherComprehensiveIncomeDetails">
+        <link:definition>9954565 - Disclosure - Accumulated Other Comprehensive Income Loss (Components Of Accumulated Other Comprehensive Income) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="AccumulatedOtherComprehensiveIncomeLossReclassificationoutofAOCLDetails" roleURI="http://www.travelandleisureco.com/role/AccumulatedOtherComprehensiveIncomeLossReclassificationoutofAOCLDetails">
+        <link:definition>9954566 - Disclosure - Accumulated Other Comprehensive Income Loss (Reclassification out of AOCL) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="StockBasedCompensationNarrativeDetails" roleURI="http://www.travelandleisureco.com/role/StockBasedCompensationNarrativeDetails">
+        <link:definition>9954567 - Disclosure - Stock-Based Compensation (Narrative) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="StockBasedCompensationIncentiveEquityAwardsGrantedByTheCompanyDetails" roleURI="http://www.travelandleisureco.com/role/StockBasedCompensationIncentiveEquityAwardsGrantedByTheCompanyDetails">
+        <link:definition>9954568 - Disclosure - Stock-Based Compensation (Incentive Equity Awards Granted By The Company) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="StockBasedCompensationWeightedAverageGrantDateFairValueAssumptionsDetails" roleURI="http://www.travelandleisureco.com/role/StockBasedCompensationWeightedAverageGrantDateFairValueAssumptionsDetails">
+        <link:definition>9954569 - Disclosure - Stock-Based Compensation (Weighted Average Grant Date Fair Value Assumptions) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="EmployeeBenefitPlansDefinedContributionPlansDetails" roleURI="http://www.travelandleisureco.com/role/EmployeeBenefitPlansDefinedContributionPlansDetails">
+        <link:definition>9954570 - Disclosure - Employee Benefit Plans - Defined Contribution Plans (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="EmployeeBenefitPlansDefinedBenefitPensionPlansDetails" roleURI="http://www.travelandleisureco.com/role/EmployeeBenefitPlansDefinedBenefitPensionPlansDetails">
+        <link:definition>9954571 - Disclosure - Employee Benefit Plans - Defined Benefit Pension Plans (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SegmentInformationSummaryOfSegmentInformationDetails" roleURI="http://www.travelandleisureco.com/role/SegmentInformationSummaryOfSegmentInformationDetails">
+        <link:definition>9954572 - Disclosure - Segment Information (Summary Of Segment Information) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SegmentInformationScheduleofGeographicSegmentInformationDetails" roleURI="http://www.travelandleisureco.com/role/SegmentInformationScheduleofGeographicSegmentInformationDetails">
+        <link:definition>9954573 - Disclosure - Segment Information (Schedule of Geographic Segment Information) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="COVID19RelatedItemsNarrativeDetails" roleURI="http://www.travelandleisureco.com/role/COVID19RelatedItemsNarrativeDetails">
+        <link:definition>9954574 - Disclosure - COVID-19 Related Items Narrative (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="COVID19RelatedImpactsDetails" roleURI="http://www.travelandleisureco.com/role/COVID19RelatedImpactsDetails">
+        <link:definition>9954575 - Disclosure - COVID-19 Related Impacts (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="COVID19RelatedLiabilitiesDetails" roleURI="http://www.travelandleisureco.com/role/COVID19RelatedLiabilitiesDetails">
+        <link:definition>9954576 - Disclosure - COVID-19 Related Liabilities (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="ImpairmentsandOtherChargesDetails" roleURI="http://www.travelandleisureco.com/role/ImpairmentsandOtherChargesDetails">
+        <link:definition>9954577 - Disclosure - Impairments and Other Charges (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RestructuringNarrativeDetails" roleURI="http://www.travelandleisureco.com/role/RestructuringNarrativeDetails">
+        <link:definition>9954578 - Disclosure - Restructuring (Narrative) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RestructuringActivityRelatedToTheRestructuringCostsDetails" roleURI="http://www.travelandleisureco.com/role/RestructuringActivityRelatedToTheRestructuringCostsDetails">
+        <link:definition>9954579 - Disclosure - Restructuring (Activity Related To The Restructuring Costs) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="TransactionswithFormerParentandFormerSubsidiariesNarrativeDetails" roleURI="http://www.travelandleisureco.com/role/TransactionswithFormerParentandFormerSubsidiariesNarrativeDetails">
+        <link:definition>9954580 - Disclosure - Transactions with Former Parent and Former Subsidiaries (Narrative) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="RelatedPartyTransactionDetails" roleURI="http://www.travelandleisureco.com/role/RelatedPartyTransactionDetails">
+        <link:definition>9954581 - Disclosure - Related Party Transaction (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType id="SubsequentEventsNarrativeDetails" roleURI="http://www.travelandleisureco.com/role/SubsequentEventsNarrativeDetails">
+        <link:definition>9954582 - Disclosure - Subsequent Events (Narrative) (Details)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element id="tnl_LeasesAssetsandLiabilitiesTableTextBlock" abstract="false" name="LeasesAssetsandLiabilitiesTableTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:textBlockItemType"/>
+  <xs:element id="tnl_SeparationandDistributionAgreementPortionofProceedsFromContingentandOtherCorporateAssets" abstract="false" name="SeparationandDistributionAgreementPortionofProceedsFromContingentandOtherCorporateAssets" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="xbrli:pureItemType"/>
+  <xs:element id="tnl_RevolvingCreditFacilityTermLoanBMember" abstract="true" name="RevolvingCreditFacilityTermLoanBMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="tnl_AssetImpairmentsrecoveryNetMember" abstract="true" name="AssetImpairmentsrecoveryNetMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="tnl_ScheduleOfTransferAndFinancialAssetsLineItems" abstract="true" name="ScheduleOfTransferAndFinancialAssetsLineItems" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="tnl_BuildingClassificationDomain" abstract="true" name="BuildingClassificationDomain" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="tnl_SixtyOneToNinetyDaysMember" abstract="true" name="SixtyOneToNinetyDaysMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="tnl_SierraTimeshare20232Member" abstract="true" name="SierraTimeshare20232Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="tnl_InventorySoldUnderAgreementtoRepurchaseRepurchaseLiability" abstract="false" name="InventorySoldUnderAgreementtoRepurchaseRepurchaseLiability" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="tnl_VOIPurchaserFundsPercentage" abstract="false" name="VOIPurchaserFundsPercentage" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+  <xs:element id="tnl_ShareRepurchaseProgramMember" abstract="true" name="ShareRepurchaseProgramMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="tnl_SeparationandDistributionAgreementContingentandOtherCorporateLiabilitiesRetained" abstract="false" name="SeparationandDistributionAgreementContingentandOtherCorporateLiabilitiesRetained" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="xbrli:pureItemType"/>
+  <xs:element id="tnl_PercentageOfVacationOwnershipContractReceivableRelatesToCustomerResideInGeographicSegment" abstract="false" name="PercentageOfVacationOwnershipContractReceivableRelatesToCustomerResideInGeographicSegment" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+  <xs:element id="tnl_EmployeeRetentionCredits" abstract="false" name="EmployeeRetentionCredits" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="tnl_PostclosingCreditSupportPortionofEscrowReceivedUponRelease" abstract="false" name="PostclosingCreditSupportPortionofEscrowReceivedUponRelease" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="xbrli:pureItemType"/>
+  <xs:element id="tnl_ShareRepurchaseActivityRollForward" abstract="true" name="ShareRepurchaseActivityRollForward" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="tnl_ReimbursementRevenueMember" abstract="true" name="ReimbursementRevenueMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="tnl_COVID19RelatedCostsMember" abstract="true" name="COVID19RelatedCostsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="tnl_ContractwithCustomerLiabilityRevenueRecognitionTerm" abstract="false" name="ContractwithCustomerLiabilityRevenueRecognitionTerm" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:durationItemType"/>
+  <xs:element id="tnl_TotalCOVID19Impact" abstract="false" name="TotalCOVID19Impact" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="tnl_ExercisableOptionsAxis" abstract="true" name="ExercisableOptionsAxis" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrldt:dimensionItem" type="xbrli:stringItemType"/>
+  <xs:element id="tnl_AccruedExpensesAndOtherLiabilitiesMember" abstract="true" name="AccruedExpensesAndOtherLiabilitiesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="tnl_ResortRelatedObligations" abstract="false" name="ResortRelatedObligations" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="tnl_LesseeOperatingLeaseTerminationPeriod" abstract="false" name="LesseeOperatingLeaseTerminationPeriod" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="xbrli:durationItemType"/>
+  <xs:element id="tnl_A6.625SeniorSecuredNotesDueJuly2026Member" abstract="true" name="A6.625SeniorSecuredNotesDueJuly2026Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="tnl_AllianceReservationsNetworkMember" abstract="true" name="AllianceReservationsNetworkMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="tnl_A598M2023SecuredIncrementalTermLoanBDueDecember2029Member" abstract="true" name="A598M2023SecuredIncrementalTermLoanBDueDecember2029Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="tnl_SubscriptionRevenueMember" abstract="true" name="SubscriptionRevenueMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="tnl_SecuredNotesMember" abstract="true" name="SecuredNotesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="tnl_VacationExchangeCreditsAndOther" abstract="false" name="VacationExchangeCreditsAndOther" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="tnl_RestructuringPlan2023Member" abstract="true" name="RestructuringPlan2023Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="tnl_PostclosingCreditSupportPortionofGuaranteesAssumed" abstract="false" name="PostclosingCreditSupportPortionofGuaranteesAssumed" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="xbrli:pureItemType"/>
+  <xs:element id="tnl_EffectiveIncomeTaxRateRecInstallmentSaleInterest" abstract="false" name="EffectiveIncomeTaxRateRecInstallmentSaleInterest" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+  <xs:element id="tnl_COVID19relatedcostsAdjEBITDA" abstract="false" name="COVID19relatedcostsAdjEBITDA" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="tnl_OtherRestructuringActivityDomain" abstract="true" name="OtherRestructuringActivityDomain" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="tnl_Otherinventoryobligations" abstract="false" name="Otherinventoryobligations" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="tnl_EarningsPerShareLineItems" abstract="true" name="EarningsPerShareLineItems" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="tnl_TravelAndMembershipMember" abstract="true" name="TravelAndMembershipMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="tnl_ContractWithCustomerLiabilityRollforwardRollForward" abstract="true" name="ContractWithCustomerLiabilityRollforwardRollForward" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="tnl_ScheduleOfTransferAndFinancialAssetsTable" abstract="true" name="ScheduleOfTransferAndFinancialAssetsTable" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrldt:hypercubeItem" type="xbrli:stringItemType"/>
+  <xs:element id="tnl_A450SecuredNotesDueDec2029Member" abstract="true" name="A450SecuredNotesDueDec2029Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="tnl_TransactionRevenuesMember" abstract="true" name="TransactionRevenuesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="tnl_Deferredtaxassetsaccruedliabilitiesanddeferredincomenoncurrent" abstract="false" name="Deferredtaxassetsaccruedliabilitiesanddeferredincomenoncurrent" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="tnl_BuildingClassificationAxis" abstract="true" name="BuildingClassificationAxis" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrldt:dimensionItem" type="xbrli:stringItemType"/>
+  <xs:element id="tnl_ShareBasedCompensationArrangementAwardsVestedInPeriodFairValue" abstract="false" name="ShareBasedCompensationArrangementAwardsVestedInPeriodFairValue" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="tnl_CurrentMember" abstract="true" name="CurrentMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="tnl_OtherDeferredTaxAssetsValuationAllowance" abstract="false" name="OtherDeferredTaxAssetsValuationAllowance" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="tnl_NotProbableMember" abstract="true" name="NotProbableMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="tnl_SeparationAdjustmentsAndTransactionsWithFormerParentAndSubsidiariesTable" abstract="true" name="SeparationAdjustmentsAndTransactionsWithFormerParentAndSubsidiariesTable" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrldt:hypercubeItem" type="xbrli:stringItemType"/>
+  <xs:element id="tnl_AccorVacationClubMember" abstract="true" name="AccorVacationClubMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="tnl_AssembledCommitmentsAmount" abstract="false" name="AssembledCommitmentsAmount" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="tnl_FeeforserviceCommissionsMember" abstract="true" name="FeeforserviceCommissionsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="tnl_EstimatedRecoveriesInventory" abstract="false" name="EstimatedRecoveriesInventory" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="tnl_Financeleasecost" abstract="false" name="Financeleasecost" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="tnl_ScheduleOfInventoryUnclassifiedTableTextBlock" abstract="false" name="ScheduleOfInventoryUnclassifiedTableTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:textBlockItemType"/>
+  <xs:element id="tnl_ManagedPropertyOwnersAssociation" abstract="false" name="ManagedPropertyOwnersAssociation" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:integerItemType"/>
+  <xs:element id="tnl_AwazeMember" abstract="true" name="AwazeMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="tnl_CommitmentsAndContingenciesTable" abstract="true" name="CommitmentsAndContingenciesTable" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrldt:hypercubeItem" type="xbrli:stringItemType"/>
+  <xs:element id="tnl_RestructuringPlan2022Member" abstract="true" name="RestructuringPlan2022Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="tnl_AncillaryRevenuesMember" abstract="true" name="AncillaryRevenuesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="tnl_OptionExercisesMember" abstract="true" name="OptionExercisesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="tnl_LesseeLeaseObligation" abstract="false" name="LesseeLeaseObligation" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="tnl_COVID19ImpactDomain" abstract="true" name="COVID19ImpactDomain" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="tnl_DebtInstrumentCovenantInterestCoverageRatioMinimum" abstract="false" name="DebtInstrumentCovenantInterestCoverageRatioMinimum" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="xbrli:pureItemType"/>
+  <xs:element id="tnl_TerminationPaymentReimbursementMember" abstract="true" name="TerminationPaymentReimbursementMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="tnl_NetVacationOwnershipReceivablesAndOtherSecuritizedAssetsNetOfSecuritizedLiabilitiesAndTheAllowanceForLoanLosses" abstract="false" name="NetVacationOwnershipReceivablesAndOtherSecuritizedAssetsNetOfSecuritizedLiabilitiesAndTheAllowanceForLoanLosses" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="tnl_PremiumYieldFacility2023AMember" abstract="true" name="PremiumYieldFacility2023AMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="tnl_COVID19RelatedLiabilitiesTableTextBlock" abstract="false" name="COVID19RelatedLiabilitiesTableTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:textBlockItemType"/>
+  <xs:element id="tnl_OtherRevenueMember" abstract="true" name="OtherRevenueMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="tnl_SaleOfNorthAmericanVacationRentalBusinessMember" abstract="true" name="SaleOfNorthAmericanVacationRentalBusinessMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="tnl_PayablesAssociatedwithSeparationActivities" abstract="false" name="PayablesAssociatedwithSeparationActivities" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="tnl_ExercisableOptionsMember" abstract="true" name="ExercisableOptionsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="tnl_NetInventoryTransferredToPropertyAndEquipment" abstract="false" name="NetInventoryTransferredToPropertyAndEquipment" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="tnl_COVID19relatedcosts" abstract="false" name="COVID19relatedcosts" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="tnl_WyndhamHotelsResortsIncMember" abstract="true" name="WyndhamHotelsResortsIncMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="tnl_EuropeanvacationrentalsbusinessMember" abstract="true" name="EuropeanvacationrentalsbusinessMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="tnl_OtherProductsandServicesMember" abstract="true" name="OtherProductsandServicesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="tnl_AssetImpairmentsrecoveriesnetAndCostOfVacationOwnershipInterestsMember" abstract="true" name="AssetImpairmentsrecoveriesnetAndCostOfVacationOwnershipInterestsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="tnl_COVID19RelatedImpactsTable" abstract="true" name="COVID19RelatedImpactsTable" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrldt:hypercubeItem" type="xbrli:stringItemType"/>
+  <xs:element id="tnl_NinetyOneToOnehundredandTwentyDaysMember" abstract="true" name="NinetyOneToOnehundredandTwentyDaysMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="tnl_PropertyManagementFeesandReimbursableRevenuesMember" abstract="true" name="PropertyManagementFeesandReimbursableRevenuesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="tnl_UnregisteredVOIInventoryMember" abstract="true" name="UnregisteredVOIInventoryMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="tnl_LeasesLiabilityMaturityTableTextBlock" abstract="false" name="LeasesLiabilityMaturityTableTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:textBlockItemType"/>
+  <xs:element id="tnl_SeparationandDistributionAgreementPortionofCertainContingentandOtherCorporateLiabilitiesAssumed" abstract="false" name="SeparationandDistributionAgreementPortionofCertainContingentandOtherCorporateLiabilitiesAssumed" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="xbrli:pureItemType"/>
+  <xs:element id="tnl_DebtInstrumentAdvanceRate" abstract="false" name="DebtInstrumentAdvanceRate" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+  <xs:element id="tnl_InventorySoldUnderAgreementtoRepurchaseRepurchaseLiabilityCurrent" abstract="false" name="InventorySoldUnderAgreementtoRepurchaseRepurchaseLiabilityCurrent" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="tnl_EliminationsMember" abstract="true" name="EliminationsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="tnl_NumberOfMembers" abstract="false" name="NumberOfMembers" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="xbrli:integerItemType"/>
+  <xs:element id="tnl_OutstandingBorrowings" abstract="false" name="OutstandingBorrowings" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="tnl_SummaryOfVacationOwnershipReceivablesAndOtherSecuritizedAssetsTableTextBlock" abstract="false" name="SummaryOfVacationOwnershipReceivablesAndOtherSecuritizedAssetsTableTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:textBlockItemType"/>
+  <xs:element id="tnl_VacationRentalPropertiesMember" abstract="true" name="VacationRentalPropertiesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="tnl_Playbook365Member" abstract="true" name="Playbook365Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="tnl_NumberSuretyProvidersAssembledCommitments" abstract="false" name="NumberSuretyProvidersAssembledCommitments" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:integerItemType"/>
+  <xs:element id="tnl_AccruedDeferredConsideration" abstract="false" name="AccruedDeferredConsideration" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="tnl_PeriodicPrincipalPaymentPercentage" abstract="false" name="PeriodicPrincipalPaymentPercentage" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:percentItemType"/>
+  <xs:element id="tnl_JamesSavinaMember" abstract="true" name="JamesSavinaMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="tnl_VOIIncentiveRevenueMember" abstract="true" name="VOIIncentiveRevenueMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="tnl_ContractwithcustomerliabilityrollforwardTableTextBlock" abstract="false" name="ContractwithcustomerliabilityrollforwardTableTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:textBlockItemType"/>
+  <xs:element id="tnl_GeneralPurposeSuretyBondsOutstanding" abstract="false" name="GeneralPurposeSuretyBondsOutstanding" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="tnl_FundsOnDepositMember" abstract="true" name="FundsOnDepositMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="tnl_SecuritizedReceivableMember" abstract="true" name="SecuritizedReceivableMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="tnl_A565SecuredNotesDueApril2024Member" abstract="true" name="A565SecuredNotesDueApril2024Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="tnl_A4.625SecurednotesdueMarch2030Member" abstract="true" name="A4.625SecurednotesdueMarch2030Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="tnl_ScheduleOfAvailableCapacityUnderBorrowingArrangementsTableTextBlock" abstract="false" name="ScheduleOfAvailableCapacityUnderBorrowingArrangementsTableTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:textBlockItemType"/>
+  <xs:element id="tnl_DeferredTaxLiabilitiesFutureRecoveredInventory" abstract="false" name="DeferredTaxLiabilitiesFutureRecoveredInventory" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="tnl_MarketingMember" abstract="true" name="MarketingMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="tnl_PersonnelAndFacilityMember" abstract="true" name="PersonnelAndFacilityMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="tnl_EstimatedInventoryrecoveriesduringtheperiod" abstract="false" name="EstimatedInventoryrecoveriesduringtheperiod" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="tnl_ProvisionForIncomeTaxesMember" abstract="true" name="ProvisionForIncomeTaxesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="tnl_SeparationAdjustmentsAndTransactionsWithFormerParentAndSubsidiariesLineItems" abstract="true" name="SeparationAdjustmentsAndTransactionsWithFormerParentAndSubsidiariesLineItems" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="tnl_AUDNZDBankConduitFacilityDueDecember2024Member" abstract="true" name="AUDNZDBankConduitFacilityDueDecember2024Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="tnl_ConsumerFinancingRevenueMember" abstract="true" name="ConsumerFinancingRevenueMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="tnl_RealogyMember" abstract="true" name="RealogyMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="tnl_COVID19RelatedLiabilitiesTable" abstract="true" name="COVID19RelatedLiabilitiesTable" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrldt:hypercubeItem" type="xbrli:stringItemType"/>
+  <xs:element id="tnl_ServiceandMembershipFeesMember" abstract="true" name="ServiceandMembershipFeesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="tnl_DebtInstrumentCovenantLeverageRatioMaximum" abstract="false" name="DebtInstrumentCovenantLeverageRatioMaximum" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="xbrli:pureItemType"/>
+  <xs:element id="tnl_ProbabilityOfVestingDomain" abstract="true" name="ProbabilityOfVestingDomain" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="tnl_CompletedVOIInventory" abstract="false" name="CompletedVOIInventory" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="tnl_A3.90SecuredNotesDueMarch2023Member" abstract="true" name="A3.90SecuredNotesDueMarch2023Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="tnl_CashFlowStatementLocationAxis" abstract="true" name="CashFlowStatementLocationAxis" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrldt:dimensionItem" type="xbrli:stringItemType"/>
+  <xs:element id="tnl_OriginationsOfFinanceReceivables" abstract="false" name="OriginationsOfFinanceReceivables" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="tnl_AccruedCustomerAdvances" abstract="false" name="AccruedCustomerAdvances" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="tnl_OtherIntangiblesNetMember" abstract="true" name="OtherIntangiblesNetMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="tnl_SecuritizationrestrictedCashMember" abstract="true" name="SecuritizationrestrictedCashMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="tnl_DeferredIncomeTaxesMember" abstract="true" name="DeferredIncomeTaxesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="tnl_NonSecuritizedReceivableMember" abstract="true" name="NonSecuritizedReceivableMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="tnl_RestructuringPlan2020Member" abstract="true" name="RestructuringPlan2020Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="tnl_CapacityIncreaseAxis" abstract="true" name="CapacityIncreaseAxis" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrldt:dimensionItem" type="xbrli:stringItemType"/>
+  <xs:element id="tnl_AllOtherCountriesMember" abstract="true" name="AllOtherCountriesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="tnl_CaliforniaOfficeOfTaxAppealsMember" abstract="true" name="CaliforniaOfficeOfTaxAppealsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="tnl_OtherAcquisitionsMember" abstract="true" name="OtherAcquisitionsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="tnl_AverageRecissionPeriod" abstract="false" name="AverageRecissionPeriod" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:durationItemType"/>
+  <xs:element id="tnl_InventoryObligationsTableTextBlock" abstract="false" name="InventoryObligationsTableTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:textBlockItemType"/>
+  <xs:element id="tnl_TermNotesMember" abstract="true" name="TermNotesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="tnl_TermLoanBFloorMember" abstract="true" name="TermLoanBFloorMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="tnl_COVID19PlanMember" abstract="true" name="COVID19PlanMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="tnl_ManagementFeeRevenueMember" abstract="true" name="ManagementFeeRevenueMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="tnl_ProbableMember" abstract="true" name="ProbableMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="tnl_A300M2018SecuredTermLoanBDueMay2025Member" abstract="true" name="A300M2018SecuredTermLoanBDueMay2025Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="tnl_COVID19RelatedImpactsTableTextBlock" abstract="false" name="COVID19RelatedImpactsTableTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:textBlockItemType"/>
+  <xs:element id="tnl_FirstLienLeverageRatio" abstract="false" name="FirstLienLeverageRatio" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="xbrli:pureItemType"/>
+  <xs:element id="tnl_VOITrialPackageRevenueMember" abstract="true" name="VOITrialPackageRevenueMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="tnl_PurchasesfromThirdPartyDeveloper" abstract="false" name="PurchasesfromThirdPartyDeveloper" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="tnl_ManagementAgreementsMember" abstract="true" name="ManagementAgreementsMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="tnl_RecognizedLiabilityAssociatedWithGuarantees" abstract="false" name="RecognizedLiabilityAssociatedWithGuarantees" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="tnl_AdjustedEarningsBeforeInterestTaxesDepreciationandAmortization" abstract="false" name="AdjustedEarningsBeforeInterestTaxesDepreciationandAmortization" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="tnl_VacationOwnershipSPEMember" abstract="true" name="VacationOwnershipSPEMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="tnl_NonrecoursebankconduitfacilityMember" abstract="true" name="NonrecoursebankconduitfacilityMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="tnl_ManagementServicesTerm" abstract="false" name="ManagementServicesTerm" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:durationItemType"/>
+  <xs:element id="tnl_A600SecuredNotesDueApril2027Member" abstract="true" name="A600SecuredNotesDueApril2027Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="tnl_EarningsPerShareDisclosureLineItems" abstract="true" name="EarningsPerShareDisclosureLineItems" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="tnl_LasVegasNVMember" abstract="true" name="LasVegasNVMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="tnl_AtlantaGAMember" abstract="true" name="AtlantaGAMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="tnl_FicoScoresLessThan600Member" abstract="true" name="FicoScoresLessThan600Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="tnl_RestructuringPlansPriorTo2021Member" abstract="true" name="RestructuringPlansPriorTo2021Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="tnl_RestructuringMember" abstract="true" name="RestructuringMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="tnl_CommitmentsAndContingenciesLineItems" abstract="true" name="CommitmentsAndContingenciesLineItems" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="tnl_VacationOwnershipContractReceivablesAbstract" abstract="true" name="VacationOwnershipContractReceivablesAbstract" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="tnl_EffectiveIncomeTaxRateReconciliationValuationAllowance" abstract="false" name="EffectiveIncomeTaxRateReconciliationValuationAllowance" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+  <xs:element id="tnl_EarningsPerShareDisclosureTable" abstract="true" name="EarningsPerShareDisclosureTable" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrldt:hypercubeItem" type="xbrli:stringItemType"/>
+  <xs:element id="tnl_PercentageOfNetRevenuesGeneratedFromTransactionsInGeographicLocations" abstract="false" name="PercentageOfNetRevenuesGeneratedFromTransactionsInGeographicLocations" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+  <xs:element id="tnl_TotalInventoryobligations" abstract="false" name="TotalInventoryobligations" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="tnl_NonRecourseVacationOwnershipDebtMember" abstract="true" name="NonRecourseVacationOwnershipDebtMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="tnl_EffectiveIncomeTaxRateReconciliationTaxesOnForeignIncomeNetOfTaxCredits" abstract="false" name="EffectiveIncomeTaxRateReconciliationTaxesOnForeignIncomeNetOfTaxCredits" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+  <xs:element id="tnl_SaleOfEuropeanVacationRentalBusinessMember" abstract="true" name="SaleOfEuropeanVacationRentalBusinessMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="tnl_WyndhamHotelsAndResortsInc.Member" abstract="true" name="WyndhamHotelsAndResortsInc.Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="tnl_ExchangeRelatedRevenueMember" abstract="true" name="ExchangeRelatedRevenueMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="tnl_CashUsedInInvestingActivitiesMember" abstract="true" name="CashUsedInInvestingActivitiesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="tnl_CapitalizedcontractcostspolicytextblockPolicyTextBlock" abstract="false" name="CapitalizedcontractcostspolicytextblockPolicyTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:textBlockItemType"/>
+  <xs:element id="tnl_TravelLeisureBrandMember" abstract="true" name="TravelLeisureBrandMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="tnl_ResponsibleLiabilityForSeparationAgreement" abstract="false" name="ResponsibleLiabilityForSeparationAgreement" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+  <xs:element id="tnl_RepaymentsofSaleofAssetsFinancingActivities" abstract="false" name="RepaymentsofSaleofAssetsFinancingActivities" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="tnl_OtherInventorySalesMember" abstract="true" name="OtherInventorySalesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="tnl_TermLoanBMember" abstract="true" name="TermLoanBMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="tnl_CashPaidToThirdPartyDeveloper" abstract="false" name="CashPaidToThirdPartyDeveloper" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="tnl_BritishTravelAssociationandRegulatoryAuthoritiesMember" abstract="true" name="BritishTravelAssociationandRegulatoryAuthoritiesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="tnl_VacationOwnershipMember" abstract="true" name="VacationOwnershipMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="tnl_NetCOVID19ProvisionimpactonAdjEBITDA" abstract="false" name="NetCOVID19ProvisionimpactonAdjEBITDA" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="tnl_FeesForPropertyManagementServicesBudgetedOperatingExpensesPercentage" abstract="false" name="FeesForPropertyManagementServicesBudgetedOperatingExpensesPercentage" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+  <xs:element id="tnl_A660SecuredNotesDueOctober2025Member" abstract="true" name="A660SecuredNotesDueOctober2025Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="tnl_SecuredRevolvingCreditFacilityDueOct2026Member" abstract="true" name="SecuredRevolvingCreditFacilityDueOct2026Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="tnl_SOFRAdjustmentMember" abstract="true" name="SOFRAdjustmentMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="tnl_DeferredTaxesLineItems" abstract="true" name="DeferredTaxesLineItems" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:stringItemType"/>
+  <xs:element id="tnl_PercentageOfVacationOwnershipInterestSalesRevenueGeneratedFromGeographicSalesOffice" abstract="false" name="PercentageOfVacationOwnershipInterestSalesRevenueGeneratedFromGeographicSalesOffice" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+  <xs:element id="tnl_VacationOwnershipInterestSalesMember" abstract="true" name="VacationOwnershipInterestSalesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="tnl_COVID19Member" abstract="true" name="COVID19Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="tnl_WyndhamVacationResortsAsiaPacificMember" abstract="true" name="WyndhamVacationResortsAsiaPacificMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="tnl_ProbabilityOfVestingAxis" abstract="true" name="ProbabilityOfVestingAxis" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrldt:dimensionItem" type="xbrli:stringItemType"/>
+  <xs:element id="tnl_InformationTechnologyMember" abstract="true" name="InformationTechnologyMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="tnl_NetRevenueMember" abstract="true" name="NetRevenueMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="tnl_AccruedVOIMaintenanceFees" abstract="false" name="AccruedVOIMaintenanceFees" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="tnl_CendantMember" abstract="true" name="CendantMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="tnl_Deferredtaxliabilitiesinstallmentsalesofvacationownershipinterestsnoncurrent" abstract="false" name="Deferredtaxliabilitiesinstallmentsalesofvacationownershipinterestsnoncurrent" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="tnl_OtherRestructuringActivityAxis" abstract="true" name="OtherRestructuringActivityAxis" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrldt:dimensionItem" type="xbrli:stringItemType"/>
+  <xs:element id="tnl_FicoScoresNoScoreMember" abstract="true" name="FicoScoresNoScoreMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="tnl_NonRecourseVacationOwnershipDebtVIE" abstract="false" name="NonRecourseVacationOwnershipDebtVIE" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="tnl_InterestCoverageRatio" abstract="false" name="InterestCoverageRatio" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="xbrli:pureItemType"/>
+  <xs:element id="tnl_LicenseFeeReimbursementMember" abstract="true" name="LicenseFeeReimbursementMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="tnl_COVID19ImpactAxis" abstract="true" name="COVID19ImpactAxis" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrldt:dimensionItem" type="xbrli:stringItemType"/>
+  <xs:element id="tnl_CashFlowStatementLocationDomain" abstract="true" name="CashFlowStatementLocationDomain" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="tnl_LegacyItems" abstract="false" name="LegacyItems" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="tnl_ThirtyOneToSixtyDaysMember" abstract="true" name="ThirtyOneToSixtyDaysMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="tnl_USDBankConduitFacilityDueJuly2024Member" abstract="true" name="USDBankConduitFacilityDueJuly2024Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="tnl_DeferredTaxLiabilitiesDepreciationAndAmortization" abstract="false" name="DeferredTaxLiabilitiesDepreciationAndAmortization" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="tnl_BankofAmericaN.A.Member" abstract="true" name="BankofAmericaN.A.Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="tnl_CostofvacationownershipinterestMember" abstract="true" name="CostofvacationownershipinterestMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="tnl_DeferredTaxesTable" abstract="true" name="DeferredTaxesTable" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrldt:hypercubeItem" type="xbrli:stringItemType"/>
+  <xs:element id="tnl_SierraTimeshare20231Member" abstract="true" name="SierraTimeshare20231Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="tnl_ExercisableOptionsDomain" abstract="true" name="ExercisableOptionsDomain" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="tnl_CapacityIncreaseDomain" abstract="true" name="CapacityIncreaseDomain" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types:domainItemType"/>
+  <xs:element id="tnl_AssetsNetofInvestmentinUnconsolidatedSubsidiaries" abstract="false" name="AssetsNetofInvestmentinUnconsolidatedSubsidiaries" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="tnl_DebtRefinancedAmount" abstract="false" name="DebtRefinancedAmount" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"/>
+  <xs:element id="tnl_ContractReceivableWeightedAverageInterestRate" abstract="false" name="ContractReceivableWeightedAverageInterestRate" nillable="true" xbrli:periodType="instant" substitutionGroup="xbrli:item" type="dtr-types1:percentItemType"/>
+  <xs:element id="tnl_CashUsedInFinancingActivitiesMember" abstract="true" name="CashUsedInFinancingActivitiesMember" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="tnl_SierraTimeshare20233Member" abstract="true" name="SierraTimeshare20233Member" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:domainItemType"/>
+  <xs:element id="tnl_NoncashIncentivesExpirationPeriod" abstract="false" name="NoncashIncentivesExpirationPeriod" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="xbrli:durationItemType"/>
+  <xs:element id="tnl_LeasesCashFlowPresentationTableTextBlock" abstract="false" name="LeasesCashFlowPresentationTableTextBlock" nillable="true" xbrli:periodType="duration" substitutionGroup="xbrli:item" type="dtr-types1:textBlockItemType"/>
+</xs:schema>
