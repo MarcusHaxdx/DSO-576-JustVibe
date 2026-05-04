@@ -223,4 +223,4 @@ report failure cases alongside aggregate scores.
 
 ## Contact
 
-xueqing.peng@yale.edu
+xueqing.peng2024@gmail.com
