@@ -32,7 +32,7 @@ A trading-technology manager at an asset manager must decide which specific agen
 
 ## Core data source we confirmed we can access
 
-TheFinAI/Herculean on Hugging Face (https://huggingface.co/datasets/TheFinAI/Herculean). Verified so far: env.duckdb / equivalent Parquet tables for prices (2,656 rows), news (3,888 rows), filings (73 rows) covering 8 mega-cap tickers, 2024-12-01 to 2026-03-31 and auditing_env/ (158 SEC XBRL filings with full linkbases, chunked US-GAAP taxonomy 2021–2024, and a 4,959-row DQC ground-truth CSV).
+TheFinAI/Herculean on Hugging Face (https://huggingface.co/datasets/TheFinAI/Herculean). what we have verified so far: env.duckdb / equivalent Parquet tables for prices (2,656 rows), news (3,888 rows), filings (73 rows) covering 8 mega-cap tickers, 2024-12-01 to 2026-03-31 and auditing_env/ (158 SEC XBRL filings with full linkbases, chunked US-GAAP taxonomy 2021–2024, and a 4,959-row DQC ground-truth CSV).
 
 ## Three questions we still need to resolve
 
@@ -46,11 +46,11 @@ Use one of these status labels: **Not started**, **In progress**, **Ready for te
 
 | Role file | Owner | Status |
 |---|---|---|
-| [`objectives.md`](objectives.md) | Man To Ho | In progress |
-| [`alternatives.md`](alternatives.md) | Ling Zhong | In progress |
-| [`data-fit.md`](data-fit.md) | Jinyang Yuan | In progress |
-| [`auxiliary.md`](auxiliary.md) | Jiawei'Bella' Xue | In progress |
-| [`technical.md`](technical.md) | Lingxiao He | In progress |
+| [`objectives.md`](objectives.md) | Man To Ho | Complete |
+| [`alternatives.md`](alternatives.md) | Ling Zhong | Complete |
+| [`data-fit.md`](data-fit.md) | Jinyang Yuan | Complete |
+| [`auxiliary.md`](auxiliary.md) | Bella Xue | Complete |
+| [`technical.md`](technical.md) | Lingxiao He | Complete |
 
 
 ## Team check
