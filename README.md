@@ -54,4 +54,4 @@ The HERCULEAN numbers are published aggregate results across 65 auditing instanc
 
 - Active local branch: `Ling_Zhong_part`.
 - Existing branch URL: https://github.com/MarcusHaxdx/DSO-576-JustVibe/tree/Ling_Zhong_part
-- Submitted commit ID: **Pending review**. No commit, push, or merge was made while preparing this draft. The URL identifies the existing remote branch; these local draft changes are not visible there yet.
+- Assignment commit ID: `04c0c81` (full ID: `04c0c81b15cfe928305772533b6ecb601b0cc391`). This commit contains the staged assignment files; this README records the ID in a follow-up metadata commit.
