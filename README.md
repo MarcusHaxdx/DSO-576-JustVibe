@@ -224,3 +224,41 @@ report failure cases alongside aggregate scores.
 ## Contact
 
 xueqing.peng2024@gmail.com
+
+## DSO 576 Module 6 submission notes
+
+### Branch and commit metadata
+
+- Branch name: cleaning-bella
+- Branch URL: not available in this environment because the repository remote is configured as a Hugging Face dataset repo, not a GitHub branch URL for the course project.
+- Commit ID: e847c6387a92d9440b28446815ec6d1efaf7e02f
+
+### Data source and version
+
+- Data source: TheFinAI/Herculean public dataset, loaded from the local Parquet file in `data/filings.parquet`.
+- Version used: project snapshot for the current workspace, with 73 filing records and 6 columns: `id`, `symbol`, `date`, `document_type`, `mda_content`, and `risk_content`.
+
+### Run instructions
+
+1. Create or activate a Python environment with `pandas` and `pyarrow` installed.
+2. Run the notebook in `herculean_cleaning.ipynb` to inspect and validate the raw filings data.
+3. Run the cleaning script:
+
+```bash
+python3 cleaning_pipeline.py
+```
+
+4. Confirm that the output file is generated in `outputs/filings_clean_sample.csv`.
+
+### Expected output files
+
+- `herculean_cleaning.ipynb` — notebook with inspection, cleaning decision log, and validation evidence.
+- `cleaning_pipeline.py` — reproducible cleaning script that converts the `date` field to pandas datetime without changing other columns.
+- `outputs/filings_clean_sample.csv` — sample cleaned dataset showing up to 50 rows without the long text columns.
+- `requirements.txt` — Python dependencies required to reproduce the notebook and script.
+
+### Submission notes
+
+- This assignment keeps the original `data/filings.parquet` file unchanged.
+- The cleaning decision is limited to converting the `date` field to pandas datetime using `errors="coerce"` in a copied DataFrame called `filings_clean`.
+- No rows were removed, because the inspection found 0 missing values, 0 exact duplicates, 0 repeated IDs, 0 blank text rows, and 0 suspicious records.
