@@ -1,9 +1,57 @@
 {
-  "run_date": "2026-10-02",
+  "run_date": "2026-10-18",
   "dqc": {
     "source": "https://huggingface.co/datasets/TheFinAI/Herculean",
     "source_file": "auditing_env/XBRL/mathematical_reasoning.csv",
-    "local_file": "data/mathematical_reasoning.csv",
+    "local_file": "data/raw/mathematical_reasoning.csv",
+    "clean_file": "data/clean/auditing_clean.csv",
+    "clean_shape": [
+      362,
+      34
+    ],
+    "entity_name_whitespace_changes": 7,
+    "derived": {
+      "derived_columns": [
+        "timestamp",
+        "concept_prefix",
+        "concept",
+        "period",
+        "unit",
+        "rule_element_id",
+        "rule_version",
+        "comparison_type",
+        "reported_value",
+        "calculated_value",
+        "period_start",
+        "period_end",
+        "period_after_filing",
+        "sign_flip"
+      ],
+      "unexpected_missing_derived_values": 0,
+      "period_ranges": 237,
+      "period_instants": 125,
+      "period_parse_failures": 0,
+      "reported_value_missing": 0,
+      "calculated_value_missing": 116,
+      "sign_flip": 9,
+      "period_after_filing": 2,
+      "reported_equals_calculated": 0,
+      "unit_counts": {
+        "USD": 330,
+        "shares": 15,
+        "pure": 12,
+        "bbl": 4,
+        "USD/bbl": 1
+      },
+      "concept_prefix_counts": {
+        "us-gaap": 350,
+        "ncmi": 6,
+        "srt": 3,
+        "nmrk": 1,
+        "orcl": 1,
+        "king": 1
+      }
+    },
     "sha256": "fa52ccea5b80ea8ff1b27e5e38b5510caf74a82682858e1cc53641bbd1f7fdf2",
     "sha256_after": "fa52ccea5b80ea8ff1b27e5e38b5510caf74a82682858e1cc53641bbd1f7fdf2",
     "physical_line_count": 4959,
@@ -148,7 +196,7 @@
     "example_accession": "0001477932-22-000209"
   },
   "published_results": {
-    "source_file": "data/benchmark_results.csv",
+    "source_file": "data/raw/benchmark_results.csv",
     "source": "https://arxiv.org/abs/2605.14355",
     "paper_version": "arXiv:2605.14355v3, 2026-05-29",
     "source_table": "Table 2, Auditing block",
@@ -173,7 +221,7 @@
   "git": {
     "active_branch": "Ling_Zhong_part",
     "requested_branch": "Ling_Zhong_part",
-    "base_commit": "99e5f5003d7619504675d01f203b3a3778168084",
+    "base_commit": "35a9073867ea0697c41938a4c3bd10052abbe98f",
     "origin": "https://github.com/MarcusHaxdx/DSO-576-JustVibe",
     "branch_url": "https://github.com/MarcusHaxdx/DSO-576-JustVibe/tree/Ling_Zhong_part",
     "requested_branch_matches_active": true,

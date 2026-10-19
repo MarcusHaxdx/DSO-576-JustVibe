@@ -9,12 +9,18 @@ from textwrap import wrap
 
 import pandas as pd
 
+from parse_detail import add_derived_fields
 
-ROOT = Path(__file__).resolve().parent
-DATA_DIR = ROOT / "data"
+
+ROOT = Path(__file__).resolve().parents[2]
+RAW_DIR = ROOT / "data" / "raw"
+CLEAN_DIR = ROOT / "data" / "clean"
 OUTPUT_DIR = ROOT / "outputs"
-SOURCE_CSV = DATA_DIR / "mathematical_reasoning.csv"
-EXISTING_RESULTS_CSV = DATA_DIR / "benchmark_results.csv"
+SOURCE_CSV = RAW_DIR / "mathematical_reasoning.csv"
+EXISTING_RESULTS_CSV = RAW_DIR / "benchmark_results.csv"
+CLEAN_DQC_CSV = CLEAN_DIR / "auditing_clean.csv"
+CLEAN_PUBLISHED_CSV = CLEAN_DIR / "published_auditing_results.csv"
+RUN_COMMAND = "python src/cleaning/clean_project_data.py"
 PAPER_URL = "https://arxiv.org/abs/2605.14355"
 DATASET_URL = "https://huggingface.co/datasets/TheFinAI/Herculean"
 PAPER_VERSION = "arXiv:2605.14355v3, 2026-05-29"
@@ -30,7 +36,6 @@ TRIM_COLUMNS = [
     "assertion.code",
     "assertion.severity",
     "assertion.source",
-    "entity.name",
     "report.base-taxonomy",
     "report.creation-software",
     "report.document-type",
@@ -194,10 +199,10 @@ def make_checklist(summary: dict) -> list[tuple[int, str, str]]:
         (7, "Done", f"Missing/blank values before and after: {dqc['missing_before_total']} / {dqc['missing_after_total']} across all 20 fields. No values imputed or rows removed."),
         (8, "Done", f"Full-file checks: invalid date parses={dqc['date_parse_failures']}; filing-year/date mismatches={dqc['filing_year_date_mismatches']}; invalid document types/severities/sources={dqc['invalid_document_types']}/{dqc['invalid_severities']}/{dqc['invalid_sources']}; negative-value assertion details={dqc['negative_value_details']} retained for review, not corrected."),
         (9, "Not applicable", "No merge was performed. The 362 DQC assertions have no verified case-level join key to the paper's 65-instance aggregate evaluation; joining would fabricate case attribution."),
-        (10, "Done", f"DQC full source {dqc['record_count']} -> full in-memory cleaned records {dqc['records_after_cleaning']} (0 removed); exported cleaned sample {dqc['sample_record_count']} rows. Published results: {published['configuration_count']} -> {published['configuration_count']} configurations."),
+        (10, "Done", f"DQC full source {dqc['record_count']} -> full in-memory cleaned records {dqc['records_after_cleaning']} (0 removed); exported cleaned sample {dqc['sample_record_count']} rows and the full 362-row data/clean/auditing_clean.csv. Published results: {published['configuration_count']} -> {published['configuration_count']} configurations."),
         (11, "Done", f"Each published ACC, SER, EER, and CER uses all {AUDIT_INSTANCE_COUNT} audit instances per configuration; rate-specific integer counts for all 20 rows are in outputs/ranked_configurations.csv. DQC missing group keys: {dqc['missing_group_key_records']}; no DQC totals or averages are inferred. The four rates sum to 100% within 0.01 percentage point of rounding."),
         (12, "Done", f"Five predeclared source records compared with cleaned sample; matches={summary['record_checks']['passed']}/{summary['record_checks']['total']}. Original, expected, actual, reason are in outputs/record_checks.csv."),
-        (13, "Done", f"Fresh run on {summary['run_date']} using `python clean_project_data.py` completed successfully from the unchanged original CSV. Full-source rows reconciled {dqc['record_count']} -> {dqc['records_after_cleaning']}; exported sample={dqc['sample_record_count']} rows; predeclared record checks={summary['record_checks']['passed']}/{summary['record_checks']['total']}; source SHA-256 before and after matched ({dqc['sha256']}). Reproduce after installing dependencies with `python -m pip install -r requirements.txt`; the notebook can restart and Run All to invoke the same script and reload its outputs."),
+        (13, "Done", f"Fresh run on {summary['run_date']} using `python src/cleaning/clean_project_data.py` completed successfully from the unchanged original CSV. Full-source rows reconciled {dqc['record_count']} -> {dqc['records_after_cleaning']}; exported sample={dqc['sample_record_count']} rows; predeclared record checks={summary['record_checks']['passed']}/{summary['record_checks']['total']}; source SHA-256 before and after matched ({dqc['sha256']}). Reproduce after installing dependencies with `python -m pip install -r requirements.txt`; the notebook can restart and Run All to invoke the same script and reload its outputs."),
         (14, "Done", "Results are aggregate-only, based on one published configuration result over 65 instances. No case-level predictions, run traces, repeated-run uncertainty, cost, or latency are available. DQC assertions and agent outcomes are separate sources."),
     ]
 
@@ -206,7 +211,7 @@ def write_evidence_markdown(path: Path, summary: dict, checks: list[tuple[int, s
     lines = [
         "# Module 6 Cleaning Checklist Evidence",
         "",
-        "Generated by `clean_project_data.py` from full-source checks.",
+        "Generated by `src/cleaning/clean_project_data.py` from full-source checks.",
         "",
     ]
     for item, status, evidence in checks:
@@ -364,7 +369,7 @@ def write_pdf(path: Path, summary: dict, checks: list[tuple[int, str, str]], rec
             ("Rule, reason, check", "The DQC table describes assertion occurrences, not agent outcomes. The different assertions under report.id 411725 demonstrate why deduplicating on the filing identifier would discard assertion records. The user reviewed and accepted retaining both examples; the full-row duplicate and repeated-ID counts were computed from the unchanged original CSV."),
             ("Verification results", "\n".join(summary_lines)),
             ("Limitations", "Published results are configuration-level percentages over 65 audit instances. The attached paper does not provide per-instance predictions or a verified mapping to this 362-row DQC file. The table alone cannot support per-configuration case attribution, cost, latency, repeatability, confidence intervals, or deployment readiness. The table values were visually checked against Table 2 and programmatically reconciled to the existing structured transcription and 65-instance denominator."),
-            ("Reproduction", "Install requirements.txt, run python clean_project_data.py, then restart the notebook kernel and Run All. Outputs include the evidence JSON/Markdown, record checks, sourced aggregate table, ranked table, cleaned sample, and this PDF."),
+            ("Reproduction", "Install requirements.txt, run python src/cleaning/clean_project_data.py, then restart the notebook kernel and Run All. Outputs include the evidence JSON/Markdown, record checks, sourced aggregate table, ranked table, cleaned sample, and this PDF."),
         ],
     ))
     write_pdf_document(path, pages)
@@ -450,7 +455,7 @@ def write_pdf_markdown(path: Path, summary: dict, checks: list[tuple[int, str, s
         "Published results are configuration-level percentages over 65 audit instances. The attached paper does not provide per-instance predictions or a verified mapping to this 362-row DQC file. The table alone cannot support per-configuration case attribution, cost, latency, repeatability, confidence intervals, or deployment readiness. The table values were visually checked against Table 2 and programmatically reconciled to the existing structured transcription and 65-instance denominator.",
         "",
         "## Reproduction",
-        "Install `requirements.txt`, run `python clean_project_data.py`, then restart the notebook kernel and Run All. Outputs include the evidence JSON/Markdown, record checks, sourced aggregate table, ranked table, cleaned sample, and PDF.",
+        "Install `requirements.txt`, run `python src/cleaning/clean_project_data.py`, then restart the notebook kernel and Run All. Outputs include the evidence JSON/Markdown, record checks, sourced aggregate table, ranked table, cleaned sample, and PDF.",
         "",
         "DSO 576 | Individual Module 6 draft | For review; not pushed",
     ])
@@ -524,6 +529,13 @@ def main() -> None:
         after = before.str.strip()
         trimmed_values += int((before != after).sum())
         cleaned[column] = after
+    # Team rule (Phase 2, from Jinyang's cleaner): non-breaking space -> space, collapse, trim.
+    names_before = cleaned["entity.name"]
+    names_after = names_before.str.replace(r"\s+", " ", regex=True).str.strip()
+    entity_name_changes = int((names_before != names_after).sum())
+    cleaned["entity.name"] = names_after
+    if names_after.nunique() != names_before.nunique():
+        raise AssertionError("entity.name normalization merged or split company names.")
     for column in numeric_values:
         cleaned[column] = numeric_values[column].astype("int64")
 
@@ -549,7 +561,7 @@ def main() -> None:
     sample.insert(0, "source_record_number", [position + 1 for position in selected_positions])
     if len(sample) > 50:
         raise AssertionError(f"Sample exceeds 50 rows: {len(sample)}")
-    sample_path = DATA_DIR / "cleaned_sample.csv"
+    sample_path = OUTPUT_DIR / "cleaned_sample.csv"
     sample.to_csv(sample_path, index=False, encoding="utf-8", lineterminator="\n")
     sample_reread = pd.read_csv(sample_path, dtype="string", keep_default_na=False)
     expected_sample = cleaned.iloc[selected_positions].astype("string").reset_index(drop=True)
@@ -564,6 +576,25 @@ def main() -> None:
     record_checks.to_csv(
         OUTPUT_DIR / "record_checks.csv", index=False, encoding="utf-8", lineterminator="\n"
     )
+
+    # Canonical full DQC file: 20 cleaned source columns + 14 fields parsed from the detail text.
+    full, derived_checks = add_derived_fields(cleaned)
+    row_key = ["report.accession", "assertion.code", "assertion.detail"]
+    if full[row_key].duplicated().any():
+        raise AssertionError("Row key (accession, code, detail) is not unique.")
+    if derived_checks["unexpected_missing_derived_values"] or derived_checks["period_parse_failures"]:
+        raise AssertionError("Unexpected missing or unparsable derived field; review the parser.")
+    if derived_checks["reported_equals_calculated"]:
+        raise AssertionError("A DQC error row has reported == calculated; review the parser.")
+    if full.shape != (362, 34):
+        raise AssertionError(f"Expected clean DQC shape (362, 34); found {full.shape}.")
+    CLEAN_DIR.mkdir(parents=True, exist_ok=True)
+    full.to_csv(CLEAN_DQC_CSV, index=False, encoding="utf-8", lineterminator="\n")
+    reread = pd.read_csv(CLEAN_DQC_CSV, dtype="string", keep_default_na=False)
+    if reread.shape != full.shape or not reread["assertion.detail"].equals(
+        cleaned["assertion.detail"].astype("string").reset_index(drop=True)
+    ):
+        raise AssertionError("Clean DQC file does not round-trip.")
 
     existing = pd.read_csv(EXISTING_RESULTS_CSV)
     expected_columns = ["framework", "model", "acc", "ser", "eer", "cer"]
@@ -588,15 +619,17 @@ def main() -> None:
     if not (counts[count_columns].sum(axis=1) == AUDIT_INSTANCE_COUNT).all():
         raise AssertionError("Derived mutually exclusive outcome counts do not sum to 65.")
     counts = counts.rename(columns=METRIC_NAMES)
-    counts.insert(6, "audit_instances_per_configuration", AUDIT_INSTANCE_COUNT)
+    counts.insert(2, "model_name", counts["model"].map(MODEL_NAMES))
+    if counts["model_name"].isna().any():
+        raise AssertionError("A model code has no display name.")
+    counts.insert(7, "audit_instances", AUDIT_INSTANCE_COUNT)
     counts["results_scope"] = "Published aggregate results; not case-level predictions"
     counts["source"] = PAPER_URL
-    counts["paper"] = PAPER_URL
     counts["paper_version"] = PAPER_VERSION
     counts["source_table"] = "Table 2, Auditing block"
     counts["source_page"] = 9
     counts.to_csv(
-        DATA_DIR / "published_auditing_results.csv",
+        CLEAN_PUBLISHED_CSV,
         index=False,
         encoding="utf-8",
         lineterminator="\n",
@@ -630,7 +663,11 @@ def main() -> None:
         "dqc": {
             "source": DATASET_URL,
             "source_file": "auditing_env/XBRL/mathematical_reasoning.csv",
-            "local_file": "data/mathematical_reasoning.csv",
+            "local_file": "data/raw/mathematical_reasoning.csv",
+            "clean_file": "data/clean/auditing_clean.csv",
+            "clean_shape": list(full.shape),
+            "entity_name_whitespace_changes": entity_name_changes,
+            "derived": derived_checks,
             "sha256": source_hash_before,
             "sha256_after": source_hash_after,
             "physical_line_count": physical_line_count,
@@ -667,7 +704,7 @@ def main() -> None:
             "example_accession": source.iloc[0]["report.accession"],
         },
         "published_results": {
-            "source_file": "data/benchmark_results.csv",
+            "source_file": "data/raw/benchmark_results.csv",
             "source": PAPER_URL,
             "paper_version": PAPER_VERSION,
             "source_table": "Table 2, Auditing block",

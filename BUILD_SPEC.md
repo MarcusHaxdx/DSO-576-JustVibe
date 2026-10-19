@@ -1,6 +1,6 @@
 # BUILD_SPEC: XBRL Audit-Agent Dashboard (DSO 576, Phase 3 MVP)
 
-Build a local Streamlit dashboard on the team's two cleaned datasets. Follow the sections in order. Do not change the data or the analysis functions to fit the UI; if something is missing, add it to the layer that owns it (section 5).
+Build a local Streamlit dashboard on the team's two cleaned datasets. The cleaning pipeline and the analysis backend (`src/`) already exist and pass `pytest`; Phase 3 adds only `app/`. Follow the sections in order. Do not change the data or the analysis functions to fit the UI; if something is missing, add it to the layer that owns it (section 5).
 
 ## 1. Revised vision
 
@@ -59,7 +59,8 @@ Rules: never sum or average amounts across units; any amount statistic uses `uni
 
 | Topic | Disagreement | Decision |
 |---|---|---|
-| Base pipeline | five individual cleanings | Ling's `clean_project_data.py` (full-file checks, published table), extended with Jinyang's 14 parsed fields |
+| Base pipeline | five individual cleanings | Ling's `clean_project_data.py` (full-file checks, published table), extended with Jinyang's 14 parsed fields (`src/cleaning/parse_detail.py`) |
+| `entity.cik` | kept as source text (Ling, Lingxiao) vs zero-padded to 10 digits (Jinyang) | source text, not padded |
 | `assertion.type` | integer (Ling) vs string (Lingxiao) | integer; labels come from the table in 2a |
 | `entity.name` | trim only (Ling, Lingxiao) vs also replace `\xa0` (Jinyang) | Jinyang's rule: `\xa0` → space, collapse repeated whitespace, trim (7 values change, 5 of them `\xa0`; company count stays 125) |
 | Dates | kept as text (Ling) vs parsed (Lingxiao) | kept as text in the file, validated at clean time (0 failures) |
@@ -100,10 +101,10 @@ Own controls at the top of the page (the sidebar is hidden or shows only "Filter
 | Heatmap metric radio: ACC / SER / EER / CER | ACC |
 
 Content, in this order:
-1. KPI row: setups shown (N of 20), best ACC (with its count, e.g. "66.15% · 43/65"), number of setups tied at the best ACC.
-2. Ranked table (`rank_configs` → `shortlist`): rank, framework, model, ACC, 95% interval, SER, EER, CER, `acc_instances`/65. A note under the table: "Setups whose intervals overlap the leader's are not statistically separated; 65 instances per setup; published aggregates, not our own runs."
-3. 100% stacked horizontal bar per shown setup: ACC, SER, EER, CER, in table order.
-4. Framework × model heatmap of the chosen metric (all 20 setups regardless of the shortlist sliders, values written in cells), with a caption from `framework_model_effects`: range of framework means vs range of model means.
+1. KPI row from `shortlist_kpis`: setups shown (N of 20), best ACC with its count (e.g. "66.15% · 43/65"), number of setups tied at the best ACC.
+2. Ranked table (`rank_configs` → `shortlist`): rank, framework, model, ACC, 95% interval, SER, EER, CER, `acc_instances`/65. Rows with `overlaps_leader` true get a marker. Note under the table: "Marked setups' intervals overlap the leader's, so they are not statistically separated; 65 instances per setup; published aggregates, not our own runs."
+3. 100% stacked horizontal bar per shown setup from `error_mix`: ACC, SER, EER, CER, in table order.
+4. Framework × model heatmap from `framework_model_matrix` (all 20 setups regardless of the shortlist controls; fixed row/column order; values written in cells), with a caption from `framework_model_effects`: range of framework means vs range of model means.
 
 Empty state: when no setup passes the controls, show "No setup meets these thresholds" and hide items 2–3.
 
@@ -130,21 +131,21 @@ Options are the values present in the data. A reset button clears these filters 
 6. Collapsed sections: "Cases by rule code" (M1) and "Top 10 companies" (M4).
 
 ### Page 3, Case Explorer (UC4)
-Sortable table with single-row selection (`st.dataframe` `on_select`): company, filing date, rule code, concept (`prefix:concept`), period, unit, reported, calculated, flags (comma list). Default sort: filing date descending. Selecting a row shows a detail panel: the full `assertion.detail` text, the parsed fields, `abs_diff` and `rel_diff` (where M3 defines them; otherwise "—" and the reason), the flags, a link button to `report.sec-url`, and a queue status line: rank, points and reasons under the current Review Queue settings, or "not in the queue under the current triage settings". With nothing selected, show "Select a case to see its details".
+Sortable table with single-row selection (`st.dataframe` `on_select`): company, filing date, rule code, concept (`prefix:concept`), period, unit, reported, calculated, flags (comma list). Default sort: filing date descending. Selecting a row shows a detail panel: the full `assertion.detail` text, the parsed fields, `abs_diff` and `rel_diff` (where M3 defines them; otherwise "—" and the reason), the flags, a link button to `report.sec-url`, and a queue status line from `queue_status`: rank, points and reasons under the current Review Queue settings, or "not in the queue under the current triage settings". With nothing selected, show "Select a case to see its details".
 
 ### Page 4, Review Queue (UC5)
-Toggles for the five triage rules (all on at start), a slider for the gap threshold (0–500%, step 1%, default 10%, disabled while the large-gap rule is off), the ranked table returned by `rank_cases` (`reasons` labeled "why"), and a CSV download of that same DataFrame. Reset filters does not reset these settings. Visible note: "Rule-based triage, not a model and not validated."
+Toggles for the five triage rules (all on at start), a slider for the gap threshold (0–500%, step 1%, default 10%, disabled while the large-gap rule is off; passed to `TriageConfig.gap_threshold` divided by 100), the ranked table returned by `rank_cases` (`reasons` labeled "why"), and a CSV download of that same DataFrame. Reset filters does not reset these settings. Visible note: "Rule-based triage, not a model and not validated."
 
 ## 5. Architecture (each piece built and checked alone)
 
 | Layer | Job | Public functions | Input → output | Must not |
 |---|---|---|---|---|
-| `src/cleaning/clean_project_data.py` | raw → the two clean files + evidence | `main` (CLI) | `data/raw/*` → `data/clean/*.csv`, `outputs/*` | be imported by the app |
+| `src/cleaning/clean_project_data.py` (+ `parse_detail.py`) | raw → the two clean files + Module 6 evidence | `main` (CLI); `add_derived_fields` | `data/raw/*` → `data/clean/*.csv`, `outputs/*` | be imported by the app |
 | `analysis/loader.py` | read and validate the DQC file, add `case_id` | `load_clean` | path → DataFrame (34 + `case_id`); raises if a column is missing or the key is not unique | compute metrics |
 | `analysis/filters.py` | apply DQC filter state | `FilterSpec`, `apply_filters` | DataFrame + `FilterSpec` → DataFrame | read files, draw |
 | `analysis/metrics.py` | M1–M4 and KPIs | `kpis`, `cases_by_type`, `cases_by_code`, `flag_summary`, `discrepancy`, `discrepancy_summary`, `histogram_counts`, `cases_by_year`, `top_companies` | filtered DataFrame → DataFrame or dict | read files, use global state |
-| `analysis/triage.py` | M5 | `TriageConfig`, `rank_cases` | filtered DataFrame + `TriageConfig` → ranked DataFrame (`rank`, `case_id`, `points`, `reasons`, display columns) | read files |
-| `analysis/published.py` | M6–M8 | `load_published`, `wilson_ci`, `rank_configs`, `shortlist`, `error_mix`, `framework_model_matrix`, `framework_model_effects` | path → validated DataFrame; DataFrame + thresholds → DataFrame | touch the DQC data or the UI |
+| `analysis/triage.py` | M5 | `TriageConfig`, `rank_cases`, `queue_status` | filtered DataFrame + `TriageConfig` → ranked DataFrame (`rank`, `case_id`, `points`, `reasons`, display columns incl. `rel_diff`); ranked + `case_id` → dict or None | read files |
+| `analysis/published.py` | M6–M8 | `load_published`, `wilson_ci`, `rank_configs`, `shortlist`, `shortlist_kpis`, `error_mix`, `framework_model_matrix`, `framework_model_effects` | path → validated DataFrame (adds `setup` = "framework + model_name"); DataFrame + controls → DataFrame or dict | touch the DQC data or the UI |
 | `app/main.py` | render only: navigation, widgets, charts | — | calls the layers above; owns widget state | count, aggregate, score or read a CSV itself |
 
 `load_published` raises if there are not 20 rows, a rate is outside 0–100, or a row's four rates do not sum to 100 ± 0.01. Every number on screen comes from one of these functions, so a test can check it without the app.
@@ -155,10 +156,10 @@ Toggles for the five triage rules (all on at start), a slider for the gap thresh
 |---|---|---|---|---|
 | M1 | Which rule types produce the most cases? | `assertion.type`, `assertion.code` | row count and share of filtered rows, by type and by code | DQC filters |
 | M2 | How many cases look unusual? | `sign_flip`, `period_after_filing`, `unit`, `concept_prefix` | count per flag; sign_flip rate = sign_flip rows / rows with a `calculated_value` (9 / 246 = 3.7%) | DQC filters |
-| M3 | How far apart are reported and calculated? | `reported_value`, `calculated_value`, `unit` | `abs_diff = |reported − calculated|`; `rel_diff = abs_diff / |reported|`, empty if reported is 0 or calculated missing; USD rows of types 117 and 126 only; median, max, histogram (drawn = `rel_diff <= max_rel`, above = `> max_rel`) | DQC filters |
+| M3 | How far apart are reported and calculated? | `reported_value`, `calculated_value`, `unit` | `abs_diff = |reported − calculated|`; `rel_diff = abs_diff / |reported|` as a fraction (2.0 = 200%; the UI shows %), empty if reported is 0 or calculated missing; USD rows of types 117 and 126 only; median, max, histogram (drawn = `rel_diff <= max_rel`, above = `> max_rel`) | DQC filters |
 | M4 | Where are cases concentrated? | `report.filing-year`, `entity.name`, `entity.cik` | count by year; top 10 companies by count, ties broken by name A–Z | DQC filters |
 | M5 | Which cases should a human see first? | flags, `rel_diff`, `concept_prefix`, `unit` | one point per rule triggered: sign_flip; period_after_filing; unit ≠ USD; prefix ≠ `us-gaap`; `rel_diff` ≥ threshold. Sort by points desc, `rel_diff` desc (empty last), filing date desc; `rank` = 1..N in that order; `reasons` lists the rules | rule toggles, threshold |
-| M6 | Which setups are most accurate, and is the lead real? | `accuracy_pct`, `acc_instances`, `audit_instances` | Wilson 95% interval (z = 1.96) on `acc_instances`/65; `rank` = competition rank on ACC desc (ties share a rank); display order ACC desc, SER asc, CER asc, framework A–Z, model A–Z | shortlist controls |
+| M6 | Which setups are most accurate, and is the lead real? | `accuracy_pct`, `acc_instances`, `audit_instances` | Wilson 95% interval (z = 1.96, in %) on `acc_instances`/65; `rank` = competition rank on ACC desc over all 20 (ties share a rank; filtering never re-ranks); `overlaps_leader` = interval high ≥ leader's interval low; display order ACC desc, SER asc, CER asc, framework A–Z, model A–Z | shortlist controls |
 | M7 | How does each setup fail? | SER, EER, CER, ACC columns | the four published % per setup (`error_mix`, long format) | shortlist controls |
 | M8 | Does framework or model matter more? | `framework`, `model`, chosen metric | 5 × 4 matrix; mean per framework and per model; range (max − min) of each set of means | heatmap metric |
 
@@ -166,7 +167,7 @@ Why these triage rules: a sign flip is quick to verify; a late period is a date 
 
 ## 7. Technical choices
 
-- Python 3.12, pandas, Streamlit (≥ 1.40, for `st.dataframe` row selection), Plotly, pytest. Exact pins live in `requirements.txt`.
+- Python ≥ 3.11 (backend tested on 3.11.8 with pandas 3.0.5), Streamlit ≥ 1.40 (for `st.dataframe` row selection), Plotly, pytest; see `requirements.txt`.
 - No database: the two files total about 1 MB; pandas boolean masks in memory are fast enough.
 - Load both clean files once with `st.cache_data`, keyed by file modified time.
 - `app/main.py` adds `<repo>/src` to `sys.path` and resolves data paths from the repo root, so it runs from any directory. `pytest.ini` sets `pythonpath = src`. Imports look like `from analysis.loader import load_clean`.
@@ -176,13 +177,13 @@ Why these triage rules: a sign flip is quick to verify; a late period is a date 
 ```
 data/raw/mathematical_reasoning.csv   data/raw/benchmark_results.csv
 data/clean/auditing_clean.csv         data/clean/published_auditing_results.csv
-src/cleaning/clean_project_data.py    src/analysis/{loader,filters,metrics,triage,published}.py
-app/main.py   tests/test_*.py   outputs/   requirements.txt   pytest.ini
+src/cleaning/{clean_project_data,parse_detail}.py   src/analysis/{loader,filters,metrics,triage,published}.py
+app/main.py (Phase 3)   tests/{conftest,test_units,test_real_data}.py   outputs/   requirements.txt   pytest.ini
 ```
 
 ## 8. Build order (stop and check after each step)
 
-0. Run the cleaning script, then `pytest` (backend and acceptance items 1–8 on the real files).
+0. Already done in Phase 2: run `python src/cleaning/clean_project_data.py`, then `pytest` (33 tests: unit tests per layer, and `test_real_data.py` checks acceptance items 1–8 plus the backend parts of 9 and 11 on the real files). Phase 3 starts at step 1 and adds only `app/`.
 1. App shell: navigation and Configuration Shortlist page.
 2. DQC sidebar filters and DQC Overview.
 3. Case Explorer and detail panel.
