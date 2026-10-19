@@ -61,7 +61,7 @@ Rules: never sum or average amounts across units; any amount statistic uses `uni
 |---|---|---|
 | Base pipeline | five individual cleanings | Ling's `clean_project_data.py` (full-file checks, published table), extended with Jinyang's 14 parsed fields |
 | `assertion.type` | integer (Ling) vs string (Lingxiao) | integer; labels come from the table in 2a |
-| `entity.name` | trim only (Ling, Lingxiao) vs also replace `\xa0` (Jinyang) | replace `\xa0` with a space, then trim (7 BARNWELL rows; company count stays 125) |
+| `entity.name` | trim only (Ling, Lingxiao) vs also replace `\xa0` (Jinyang) | Jinyang's rule: `\xa0` → space, collapse repeated whitespace, trim (7 values change, 5 of them `\xa0`; company count stays 125) |
 | Dates | kept as text (Ling) vs parsed (Lingxiao) | kept as text in the file, validated at clean time (0 failures) |
 | Row key | none (Ling), body without timestamp (Jinyang), full detail (Lingxiao) | Lingxiao's key; unique on all 362 rows |
 | Repeated `report.id` | all agreed | keep all rows; no imputation, no drops (362 in, 362 out) |
