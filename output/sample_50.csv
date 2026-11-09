@@ -1,0 +1,789 @@
+sample_reason,assertion.code,assertion.detail,assertion.run-date,assertion.severity,assertion.source,assertion.type,entity.cik,entity.name,report.accepted-timestamp,report.accession,report.base-taxonomy,report.creation-software,report.document-type,report.entry-url,report.filing-date,report.filing-year,report.id,report.sec-url,report.sic-code,folder_name,timestamp,concept_prefix,concept,period,unit,rule_element_id,rule_version,comparison_type,reported_value,calculated_value,period_start,period_end,period_after_filing,sign_flip
+record check,DQC.US.0126.9590,"2022-03-09 20:00:03,338 [DQC.US.0126.9590] The statement 000006 - Statement - Statements of Cash Flows includes an inconsistent calculation. The value of the concept us-gaap:NetCashProvidedByUsedInOperatingActivities of -1,313,536  should be equal to the sum of its child components defined in the calculation linkbase. The sum of these child components is -1,212,736. The values of the addends is determined by adding the values of the child concepts.  The values reported in the financial statement in the current reporting period of 2020-10-01 to 2021-09-30 should be complete if the financial statement is to be mathematically accurate and complete. The components of us-gaap:NetCashProvidedByUsedInOperatingActivities that should add to -1,313,536 are comprised of the following:
+
++  	CommonStockIssuedForTechnology                                                                                                                       0 
++  	DepreciationAndAmortization                                                                                                                     40,866 
++  	EmployeeBenefitsAndShareBasedCompensation                                                                                                    1,365,667 
++  	IncreaseDecreaseInAccountsAndOtherReceivables                                                                                                  -27,694 
++  	IncreaseDecreaseInAccountsPayableAndAccruedLiabilities                                                                                          18,846 
++  	IncreaseDecreaseInAccountsReceivableRelatedParties                                                                                              12,551 
++  	IncreaseDecreaseInContractWithCustomerAsset                                                                                                    -50,480 
++  	IncreaseDecreaseInDeferredCharges                                                                                                                3,588 
++  	IncreaseDecreaseInInventories                                                                                                                  -44,566 
++  	IncreaseDecreaseInPrepaidExpense                                                                                                                -9,410 
++  	NetIncomeLoss                                                                                                                               -2,593,537 
++  	PaymentsForDeposits                                                                                                                             50,400 
++  	PaymentsOfDividends                                                                                                                             21,033 
+
+
+The addends are calculated based on the calculation linkbase defined for 000006 - Statement - Statements of Cash Flows. If addends are missing then the calculation tree should be amended. The rule will not add dimension components as the financial statement does not include a table. If dimensions are used on the statement then add a table to ensure that the dimensions are defined correctly. 
+
+
+Total Element : us-gaap:NetCashProvidedByUsedInOperatingActivities
+Total Value : -1,313,536 
+Total period : 2020-10-01 to 2021-09-30 
+Dimensions : 
+Decimals of Total: 0
+Unit of Total: USD
+Rule Element Id:9590
+Rule version: 17.0.2 - cyca-20210930.xml 1313",2022-03-10,ERROR,DQC,126,0001383088,CYTTA CORP.,2022-01-12 13:46:00,0001477932-22-000209,US GAAP 2020,XBRL Document Created with XBRLMaster,10-K,http://www.sec.gov/Archives/edgar/data/1383088/000147793222000209/cyca-20210930.xml,2022-01-12,2022,411725,https://www.sec.gov/Archives/edgar/data/1383088/000147793222000209/0001477932-22-000209-index.htm,7372,10k-cyca-20210930,2022-03-09 20:00:03.338,us-gaap,NetCashProvidedByUsedInOperatingActivities,2020-10-01 to 2021-09-30,USD,9590,17.0.2 - cyca-20210930.xml 1313,calculation_sum,-1313536.0,-1212736.0,2020-10-01,2021-09-30,False,False
+sign flip (calculated == -reported),DQC.US.0126.9590,"2022-03-09 20:00:03,339 [DQC.US.0126.9590] The statement 000006 - Statement - Statements of Cash Flows includes an inconsistent calculation. The value of the concept us-gaap:NetCashProvidedByUsedInFinancingActivities of 707,500  should be equal to the sum of its child components defined in the calculation linkbase. The sum of these child components is -707,500. The values of the addends is determined by adding the values of the child concepts.  The values reported in the financial statement in the current reporting period of 2020-10-01 to 2021-09-30 should be complete if the financial statement is to be mathematically accurate and complete. The components of us-gaap:NetCashProvidedByUsedInFinancingActivities that should add to 707,500 are comprised of the following:
+
++  	ProceedsFromStockPlans                                                                                                                        -707,500 
+
+
+The addends are calculated based on the calculation linkbase defined for 000006 - Statement - Statements of Cash Flows. If addends are missing then the calculation tree should be amended. The rule will not add dimension components as the financial statement does not include a table. If dimensions are used on the statement then add a table to ensure that the dimensions are defined correctly. 
+
+
+Total Element : us-gaap:NetCashProvidedByUsedInFinancingActivities
+Total Value : 707,500 
+Total period : 2020-10-01 to 2021-09-30 
+Dimensions : 
+Decimals of Total: 0
+Unit of Total: USD
+Rule Element Id:9590
+Rule version: 17.0.2 - cyca-20210930.xml 1321",2022-03-10,ERROR,DQC,126,0001383088,CYTTA CORP.,2022-01-12 13:46:00,0001477932-22-000209,US GAAP 2020,XBRL Document Created with XBRLMaster,10-K,http://www.sec.gov/Archives/edgar/data/1383088/000147793222000209/cyca-20210930.xml,2022-01-12,2022,411725,https://www.sec.gov/Archives/edgar/data/1383088/000147793222000209/0001477932-22-000209-index.htm,7372,10k-cyca-20210930,2022-03-09 20:00:03.339,us-gaap,NetCashProvidedByUsedInFinancingActivities,2020-10-01 to 2021-09-30,USD,9590,17.0.2 - cyca-20210930.xml 1321,calculation_sum,707500.0,-707500.0,2020-10-01,2021-09-30,False,True
+"random sample, type 126",DQC.US.0126.9590,"2022-03-04 20:32:57,578 [DQC.US.0126.9590] The statement 00000006 - Statement - STATEMENTS OF CASH FLOWS includes an inconsistent calculation. The value of the concept us-gaap:NetCashProvidedByUsedInOperatingActivities of -4,771,555  should be equal to the sum of its child components defined in the calculation linkbase. The sum of these child components is 48,795,405. The values of the addends is determined by adding the values of the child concepts.  The values reported in the financial statement in the current reporting period of 2020-10-01 to 2021-09-30 should be complete if the financial statement is to be mathematically accurate and complete. The components of us-gaap:NetCashProvidedByUsedInOperatingActivities that should add to -4,771,555 are comprised of the following:
+
+-  	GainFromReversalOfDeferredRevenueDueToDiscontinuanceOfAirtokenProject                                                                      -12,529,824 
+-  	GainOnAirTokenIssuance                                                                                                                         396,790 
++  	IncreaseDecreaseInAirTokenRefundLiability                                                                                                      -43,771 
++  	IncreaseDecreaseInOtherDeferredRevenue                                                                                                         -18,858 
++  	IncreaseDecreaseOperatingLeaseRightOfUseAssetsAndLiabilities                                                                                     8,065 
+-  	InflationAdjustmentToDeferredRevenueMasterCardProgram                                                                                        1,560,768 
+-  	TransferOutOfCashAndRestrictedCashAsPartOfDeconsolidation                                                                                   -6,320,023 
++  	AssetImpairmentCharges                                                                                                                       4,092,055 
++  	DepreciationAndAmortization                                                                                                                  1,213,738 
+-  	IncomeLossFromContinuingOperations                                                                                                           1,292,233 
+-  	IncomeLossFromDiscontinuedOperationsNetOfTax                                                                                               -10,851,961 
++  	IncreaseDecreaseInAccountsPayable                                                                                                             -301,003 
++  	IncreaseDecreaseInAccruedLiabilities                                                                                                         4,764,452 
+-  	IncreaseDecreaseInDueFromRelatedParties                                                                                                     -1,400,000 
++  	IncreaseDecreaseInDueToRelatedPartiesCurrent                                                                                                10,756,899 
+-  	IncreaseDecreaseInOtherOperatingAssets                                                                                                         130,664 
+-  	IncreaseDecreaseInPrepaidDeferredExpenseAndOtherAssets                                                                                      -1,023,743 
+-  	IncreaseDecreaseInReceivables                                                                                                                  421,268 
+
+
+The addends are calculated based on the calculation linkbase defined for 00000006 - Statement - STATEMENTS OF CASH FLOWS. If addends are missing then the calculation tree should be amended. The rule will not add dimension components as the financial statement does not include a table. If dimensions are used on the statement then add a table to ensure that the dimensions are defined correctly. 
+
+
+Total Element : us-gaap:NetCashProvidedByUsedInOperatingActivities
+Total Value : -4,771,555 
+Total period : 2020-10-01 to 2021-09-30 
+Dimensions : 
+Decimals of Total: 0
+Unit of Total: USD
+Rule Element Id:9590
+Rule version: 17.0.1 - airfox_10k-093021.htm 7605",2022-03-05,ERROR,DQC,126,0001766352,"Carrier EQ, LLC",2022-01-21 19:05:00,0001553350-22-000052,US GAAP 2021,Field: Set; Name: xdx; ID: xdx_06B_USD_1_iso4217%2D%2DUSD,10-K,http://www.sec.gov/Archives/edgar/data/1766352/000155335022000052/airfox_10k-093021.htm,2022-01-24,2022,413266,https://www.sec.gov/Archives/edgar/data/1766352/000155335022000052/0001553350-22-000052-index.htm,7372,10k-airfox-20210930,2022-03-04 20:32:57.578,us-gaap,NetCashProvidedByUsedInOperatingActivities,2020-10-01 to 2021-09-30,USD,9590,17.0.1 - airfox_10k-093021.htm 7605,calculation_sum,-4771555.0,48795405.0,2020-10-01,2021-09-30,False,False
+sign flip (calculated == -reported),DQC.US.0126.9590,"2022-03-09 20:10:36,330 [DQC.US.0126.9590] The statement 1005006 - Statement - Condensed Consolidated Statements Of Cash Flows includes an inconsistent calculation. The value of the concept us-gaap:NetCashProvidedByUsedInInvestingActivities of 2,771,000,000  should be equal to the sum of its child components defined in the calculation linkbase. The sum of these child components is -2,771,000,000. The values of the addends is determined by adding the values of the child concepts.  The values reported in the financial statement in the current reporting period of 2021-04-01 to 2021-12-31 should be complete if the financial statement is to be mathematically accurate and complete. The components of us-gaap:NetCashProvidedByUsedInInvestingActivities that should add to 2,771,000,000 are comprised of the following:
+
+-  	PaymentsToAcquireBusinessesNetOfCashAcquired                                                                                             3,391,000,000 
+-  	PaymentsToAcquireOtherPropertyPlantAndEquipment                                                                                            135,000,000 
+-  	PaymentsToAcquireShortTermInvestments                                                                                                      438,000,000 
++  	ProceedsFromSaleOfShortTermInvestments                                                                                                   1,193,000,000 
+
+
+The addends are calculated based on the calculation linkbase defined for 1005006 - Statement - Condensed Consolidated Statements Of Cash Flows. If addends are missing then the calculation tree should be amended. The rule will not add dimension components as the financial statement does not include a table. If dimensions are used on the statement then add a table to ensure that the dimensions are defined correctly. 
+
+
+Total Element : us-gaap:NetCashProvidedByUsedInInvestingActivities
+Total Value : 2,771,000,000 
+Total period : 2021-04-01 to 2021-12-31 
+Dimensions : 
+Decimals of Total: -6
+Unit of Total: USD
+Rule Element Id:9590
+Rule version: 17.0.2 - ea-20211231.htm 4",2022-03-10,ERROR,DQC,126,0000712515,ELECTRONIC ARTS INC.,2022-02-08 16:06:00,0000712515-22-000003,US GAAP 2021,XBRL Document Created with Wdesk from Workiva,10-Q,http://www.sec.gov/Archives/edgar/data/712515/000071251522000003/ea-20211231.htm,2022-02-08,2022,416925,https://www.sec.gov/Archives/edgar/data/712515/000071251522000003/0000712515-22-000003-index.htm,7372,10q-ea-20211231,2022-03-09 20:10:36.330,us-gaap,NetCashProvidedByUsedInInvestingActivities,2021-04-01 to 2021-12-31,USD,9590,17.0.2 - ea-20211231.htm 4,calculation_sum,2771000000.0,-2771000000.0,2021-04-01,2021-12-31,False,True
+sign flip (calculated == -reported),DQC.US.0126.9590,"2022-02-23 06:53:06,905 [DQC.US.0126.9590] The statement 000006 - Statement - Condensed Statements of Cash Flows (Unaudited) includes an inconsistent calculation. The value of the concept us-gaap:NetCashProvidedByUsedInOperatingActivities of 41,260  should be equal to the sum of its child components defined in the calculation linkbase. The sum of these child components is -41,260. The values of the addends is determined by adding the values of the child concepts.  The values reported in the financial statement in the current reporting period of 2021-07-01 to 2021-12-31 should be complete if the financial statement is to be mathematically accurate and complete. The components of us-gaap:NetCashProvidedByUsedInOperatingActivities that should add to 41,260 are comprised of the following:
+
+-  	IncreaseDecreaseInAccountsAndOtherReceivables                                                                                                   55,918 
+-  	NetIncomeLoss                                                                                                                               -1,079,658 
+-  	RepaymentsOfNotesPayable                                                                                                                     1,000,000 
+-  	IncreasedecreaseinaccountsPayableAndAccruedExpensesRelatedParty                                                                                 65,000 
+
+
+The addends are calculated based on the calculation linkbase defined for 000006 - Statement - Condensed Statements of Cash Flows (Unaudited). If addends are missing then the calculation tree should be amended. The rule will not add dimension components as the financial statement does not include a table. If dimensions are used on the statement then add a table to ensure that the dimensions are defined correctly. 
+
+
+Total Element : us-gaap:NetCashProvidedByUsedInOperatingActivities
+Total Value : 41,260 
+Total period : 2021-07-01 to 2021-12-31 
+Dimensions : 
+Decimals of Total: 0
+Unit of Total: USD
+Rule Element Id:9590
+Rule version: 17.0.0 - thcc_10q.htm 1",2022-02-23,ERROR,DQC,126,0001441082,THE HEALING COMPANY INC.,2022-02-22 17:17:00,0001477932-22-001015,US GAAP 2021,Document Created by XBRLMaster,10-Q,http://www.sec.gov/Archives/edgar/data/1441082/000147793222001015/thcc_10q.htm,2022-02-22,2022,435565,https://www.sec.gov/Archives/edgar/data/1441082/000147793222001015/0001477932-22-001015-index.htm,1000,10q-thcc-20211231,2022-02-23 06:53:06.905,us-gaap,NetCashProvidedByUsedInOperatingActivities,2021-07-01 to 2021-12-31,USD,9590,17.0.0 - thcc_10q.htm 1,calculation_sum,41260.0,-41260.0,2021-07-01,2021-12-31,False,True
+record check,DQC.US.0126.9590,"2022-03-03 13:46:28,493 [DQC.US.0126.9590] The statement 100080010 - Statement - CONSOLIDATED STATEMENTS OF CASH FLOWS includes an inconsistent calculation. The value of the concept nmrk:NetIncomeLossAfterAdjustmentsForNonCashAndNonoperatingItems of -300,897,000  should be equal to the sum of its child components defined in the calculation linkbase. The sum of these child components is 1,655,371,000. The values of the addends is determined by adding the values of the child concepts.  The values reported in the financial statement in the current reporting period of 2021-01-01 to 2021-12-31 should be complete if the financial statement is to be mathematically accurate and complete. The components of nmrk:NetIncomeLossAfterAdjustmentsForNonCashAndNonoperatingItems that should add to -300,897,000 are comprised of the following:
+
+-  	AdjustmentForAmortization                                                                                                                   79,418,000 
+-  	DeferredIncomeTaxExpenseBenefit                                                                                                            118,649,000 
+-  	DepreciationAndAmortization                                                                                                                121,729,000 
++  	IncomeLossFromEquityMethodInvestments                                                                                                                0 
++  	MarketableSecuritiesRealizedGainLoss                                                                                                        24,468,000 
++  	MarketableSecuritiesUnrealizedGainLoss                                                                                                      77,266,000 
+-  	OtherOperatingActivitiesCashFlowStatement                                                                                                    3,610,000 
++  	PaymentsForOriginationOfMortgageLoansHeldForSale                                                                                         9,142,148,000 
+-  	ProceedsFromSaleOfMortgageLoansHeldForSale                                                                                               9,177,733,000 
++  	ProfitLoss                                                                                                                                 978,134,000 
+-  	ProvisionForDoubtfulAccounts                                                                                                                 6,338,000 
++  	UnrealizedGainLossOnDerivatives                                                                                                            -12,475,000 
++  	UnrealizedGainLossOnInvestments                                                                                                             27,825,000 
+-  	EquityBasedCompensationAndAllocationOfNetIncomeToLimitedPartnershipUnitsAndFPUs                                                            356,345,000 
++  	GainOnOriginatedMortgageServicingRights                                                                                                    147,789,000 
++  	NasdaqEarnout                                                                                                                            1,108,012,000 
+-  	NoncashChangesInAcquisitionEarnouts                                                                                                            415,000 
+-  	ProvisionReversalForCreditLossesSharingGuarantee                                                                                            -3,592,000 
++  	RealizedGainLossOnNonMarketableInvestments                                                                                                   1,590,000 
++  	UnrealizedGainsLossOnLoansHeldForSale                                                                                                       21,259,000 
+
+
+The addends are calculated based on the calculation linkbase defined for 100080010 - Statement - CONSOLIDATED STATEMENTS OF CASH FLOWS. If addends are missing then the calculation tree should be amended. The rule will not add dimension components as the financial statement does not include a table. If dimensions are used on the statement then add a table to ensure that the dimensions are defined correctly. 
+
+
+Total Element : nmrk:NetIncomeLossAfterAdjustmentsForNonCashAndNonoperatingItems
+Total Value : -300,897,000 
+Total period : 2021-01-01 to 2021-12-31 
+Dimensions : 
+Decimals of Total: -3
+Unit of Total: USD
+Rule Element Id:9590
+Rule version: 17.0.1 - nmrk-20211231.htm 4",2022-03-03,ERROR,DQC,126,0001690680,"Newmark Group, Inc.",2022-02-28 17:46:00,0001690680-22-000011,US GAAP 2021,XBRL Document Created with Wdesk from Workiva,10-K,http://www.sec.gov/Archives/edgar/data/1690680/000169068022000011/nmrk-20211231.htm,2022-03-01,2022,448165,https://www.sec.gov/Archives/edgar/data/1690680/000169068022000011/0001690680-22-000011-index.htm,6531,10k-nmrk-20211231,2022-03-03 13:46:28.493,nmrk,NetIncomeLossAfterAdjustmentsForNonCashAndNonoperatingItems,2021-01-01 to 2021-12-31,USD,9590,17.0.1 - nmrk-20211231.htm 4,calculation_sum,-300897000.0,1655371000.0,2021-01-01,2021-12-31,False,False
+"random sample, type 126",DQC.US.0126.9590,"2022-03-04 06:33:27,427 [DQC.US.0126.9590] The statement 100010 - Statement - Consolidated Balance Sheets includes an inconsistent calculation. The value of the concept us-gaap:LiabilitiesAndStockholdersEquity of 260,841,000  should be equal to the sum of its child components defined in the calculation linkbase. The sum of these child components is 181,648,000. The values of the addends is determined by adding the values of the child concepts.  The values reported in the financial statement in the current reporting period of 2021-12-31 should be complete if the financial statement is to be mathematically accurate and complete. The components of us-gaap:LiabilitiesAndStockholdersEquity that should add to 260,841,000 are comprised of the following:
+
++  	CommitmentsAndContingencies                                                                                                                          0 
++  	Liabilities                                                                                                                                257,965,000 
++  	StockholdersEquity                                                                                                                         -76,317,000 
+
+
+The addends are calculated based on the calculation linkbase defined for 100010 - Statement - Consolidated Balance Sheets. If addends are missing then the calculation tree should be amended. The rule will not add dimension components as the financial statement does not include a table. If dimensions are used on the statement then add a table to ensure that the dimensions are defined correctly. 
+
+
+Total Element : us-gaap:LiabilitiesAndStockholdersEquity
+Total Value : 260,841,000 
+Total period : 2021-12-31 
+Dimensions : 
+Decimals of Total: -3
+Unit of Total: USD
+Rule Element Id:9590
+Rule version: 17.0.1 - bnft-10k_20211231.htm 16085",2022-03-04,ERROR,DQC,126,0001576169,"BENEFITFOCUS, INC.",2022-03-03 19:40:00,0001564590-22-008597,US GAAP 2021,DFIN ActiveDisclosure(SM) Inline XBRL Document - http://www.dfinsolutions.com/,10-K,http://www.sec.gov/Archives/edgar/data/1576169/000156459022008597/bnft-10k_20211231.htm,2022-03-04,2022,449765,https://www.sec.gov/Archives/edgar/data/1576169/000156459022008597/0001564590-22-008597-index.htm,7372,10k-bnft-20211231,2022-03-04 06:33:27.427,us-gaap,LiabilitiesAndStockholdersEquity,2021-12-31,USD,9590,17.0.1 - bnft-10k_20211231.htm 16085,calculation_sum,260841000.0,181648000.0,,2021-12-31,False,False
+sign flip (calculated == -reported),DQC.US.0126.9590,"2022-03-09 21:06:54,900 [DQC.US.0126.9590] The statement 000006 - Statement - Consolidated Statements of Cash Flow (Unaudited) includes an inconsistent calculation. The value of the concept us-gaap:NetCashProvidedByUsedInInvestingActivities of -3,395,318  should be equal to the sum of its child components defined in the calculation linkbase. The sum of these child components is 3,395,318. The values of the addends is determined by adding the values of the child concepts.  The values reported in the financial statement in the current reporting period of 2021-11-01 to 2022-01-31 should be complete if the financial statement is to be mathematically accurate and complete. The components of us-gaap:NetCashProvidedByUsedInInvestingActivities that should add to -3,395,318 are comprised of the following:
+
+-  	CashPaidForPurchaseOfFixedAssets                                                                                                                -5,992 
+-  	CashPaidForPurchaseOfIntangibleAssets                                                                                                          -47,873 
+-  	CashPaidForPurchaseOfRkings                                                                                                                 -3,341,453 
++  	CashReceivedFromInvestmentInGlobalTechnologyGroupPtyLtdRelatedParty                                                                                  0 
+
+
+The addends are calculated based on the calculation linkbase defined for 000006 - Statement - Consolidated Statements of Cash Flow (Unaudited). If addends are missing then the calculation tree should be amended. The rule will not add dimension components as the financial statement does not include a table. If dimensions are used on the statement then add a table to ensure that the dimensions are defined correctly. 
+
+
+Total Element : us-gaap:NetCashProvidedByUsedInInvestingActivities
+Total Value : -3,395,318 
+Total period : 2021-11-01 to 2022-01-31 
+Dimensions : 
+Decimals of Total: 0
+Unit of Total: USD
+Rule Element Id:9590
+Rule version: 17.0.2 - gmgi_10q.htm 1",2022-03-10,ERROR,DQC,126,0001437925,"GOLDEN MATRIX GROUP, INC.",2022-03-08 13:52:00,0001477932-22-001246,US GAAP 2021,Document Created by XBRLMaster,10-Q,http://www.sec.gov/Archives/edgar/data/1437925/000147793222001246/gmgi_10q.htm,2022-03-08,2022,450612,https://www.sec.gov/Archives/edgar/data/1437925/000147793222001246/0001477932-22-001246-index.htm,7372,10q-gmgi-20220131,2022-03-09 21:06:54.900,us-gaap,NetCashProvidedByUsedInInvestingActivities,2021-11-01 to 2022-01-31,USD,9590,17.0.2 - gmgi_10q.htm 1,calculation_sum,-3395318.0,3395318.0,2021-11-01,2022-01-31,False,True
+"random sample, type 126",DQC.US.0126.9590,"2022-03-11 17:03:45,198 [DQC.US.0126.9590] The statement 100030 - Statement - CONDENSED CONSOLIDATED STATEMENTS OF OPERATIONS includes an inconsistent calculation. The value of the concept orcl:IncomeLossFromContinuingOperationsIncludingNoncontrollingInterestBeforeIncomeTaxesExtraordinaryItems of 4,025,000,000  should be equal to the sum of its child components defined in the calculation linkbase. The sum of these child components is 21,934,000,000. The values of the addends is determined by adding the values of the child concepts.  The values reported in the financial statement in the current reporting period of 2021-06-01 to 2022-02-28 should be complete if the financial statement is to be mathematically accurate and complete. The components of orcl:IncomeLossFromContinuingOperationsIncludingNoncontrollingInterestBeforeIncomeTaxesExtraordinaryItems that should add to 4,025,000,000 are comprised of the following:
+
+-  	AmortizationOfIntangibleAssets                                                                                                             882,000,000 
+-  	BusinessCombinationAcquisitionRelatedCosts                                                                                               4,707,000,000 
+-  	GeneralAndAdministrativeExpense                                                                                                            953,000,000 
+-  	InterestExpense                                                                                                                          2,051,000,000 
++  	OperatingIncomeLoss                                                                                                                      6,424,000,000 
+-  	ResearchAndDevelopmentExpense                                                                                                            5,254,000,000 
+-  	RestructuringCharges                                                                                                                        89,000,000 
++  	RevenueFromContractWithCustomerExcludingAssessedTax                                                                                     30,600,000,000 
+-  	ExpenseAllocationsAndOtherNet                                                                                                              273,000,000 
++  	NonoperatingIncomeExpenseIncludingEliminationOfNetIncomeLossAttributableToNoncontrollingInterests                                         -348,000,000 
+-  	StockBasedCompensationSegment                                                                                                              533,000,000 
+
+
+The addends are calculated based on the calculation linkbase defined for 100030 - Statement - CONDENSED CONSOLIDATED STATEMENTS OF OPERATIONS. If addends are missing then the calculation tree should be amended. The rule will not add dimension components as the financial statement does not include a table. If dimensions are used on the statement then add a table to ensure that the dimensions are defined correctly. 
+
+
+Total Element : orcl:IncomeLossFromContinuingOperationsIncludingNoncontrollingInterestBeforeIncomeTaxesExtraordinaryItems
+Total Value : 4,025,000,000 
+Total period : 2021-06-01 to 2022-02-28 
+Dimensions : 
+Decimals of Total: -6
+Unit of Total: USD
+Rule Element Id:9590
+Rule version: 17.0.2 - orcl-10q_20220228.htm 11463",2022-03-11,ERROR,DQC,126,0001341439,Oracle Corporation,2022-03-11 16:14:00,0001564590-22-009859,US GAAP 2021,DFIN ActiveDisclosure(SM) Inline XBRL Document - http://www.dfinsolutions.com/,10-Q,http://www.sec.gov/Archives/edgar/data/1341439/000156459022009859/orcl-10q_20220228.htm,2022-03-11,2022,451900,https://www.sec.gov/Archives/edgar/data/1341439/000156459022009859/0001564590-22-009859-index.htm,7372,10q-orcl-20220228,2022-03-11 17:03:45.198,orcl,IncomeLossFromContinuingOperationsIncludingNoncontrollingInterestBeforeIncomeTaxesExtraordinaryItems,2021-06-01 to 2022-02-28,USD,9590,17.0.2 - orcl-10q_20220228.htm 11463,calculation_sum,4025000000.0,21934000000.0,2021-06-01,2022-02-28,False,False
+"random sample, type 126",DQC.US.0126.9590,"2022-12-20 09:46:01,245 [DQC.US.0126.9590] The statement 000006 - Statement - Consolidated Statements of Cash Flows (unaudited) includes an inconsistent calculation. The value of the concept us-gaap:NetCashProvidedByUsedInOperatingActivities of -1,523,000  should be equal to the sum of its child components defined in the calculation linkbase. The sum of these child components is 9,647,000. The values of the addends is determined by adding the values of the child concepts.  The values reported in the financial statement in the current reporting period of 2022-02-01 to 2022-10-31 should be complete if the financial statement is to be mathematically accurate and complete. The components of us-gaap:NetCashProvidedByUsedInOperatingActivities that should add to -1,523,000 are comprised of the following:
+
+-  	NetLossOnExchanges                                                                                                                               4,000 
+-  	RealizedNetGainLossOnInvestmentInCryptocurrency                                                                                                186,000 
+-  	ReverseOfBadDebt                                                                                                                                     0 
++  	AssetsFairValueAdjustment                                                                                                                    2,206,000 
++  	DeferredIncomeTaxExpenseBenefit                                                                                                             -1,601,000 
++  	DepreciationAndAmortization                                                                                                                    140,000 
++  	EmployeeBenefitsAndShareBasedCompensation                                                                                                    2,197,000 
++  	ImpairmentOfIntangibleAssetsFinitelived                                                                                                              0 
++  	IncreaseDecreaseInAccountsPayableAndAccruedLiabilities                                                                                         977,000 
++  	IncreaseDecreaseInAccountsPayableRelatedParties                                                                                                -30,000 
+-  	IncreaseDecreaseInAccountsReceivable                                                                                                          -211,000 
++  	IncreaseDecreaseInDeferredRevenue                                                                                                              173,000 
+-  	IncreaseDecreaseInInventories                                                                                                                   -5,000 
+-  	IncreaseDecreaseInOtherOperatingAssets                                                                                                         -69,000 
+-  	IncreaseDecreaseInPrepaidExpense                                                                                                              -104,000 
+-  	InterestIncomePurchasedReceivables                                                                                                                   0 
+-  	ProfitLoss                                                                                                                                  -5,386,000 
+
+
+The addends are calculated based on the calculation linkbase defined for 000006 - Statement - Consolidated Statements of Cash Flows (unaudited). If addends are missing then the calculation tree should be amended. The rule will not add dimension components as the financial statement does not include a table. If dimensions are used on the statement then add a table to ensure that the dimensions are defined correctly. 
+
+
+Total Element : us-gaap:NetCashProvidedByUsedInOperatingActivities
+Total Value : -1,523,000 
+Total period : 2022-02-01 to 2022-10-31 
+Dimensions : 
+Decimals of Total: -3
+Unit of Total: USD
+Rule Element Id:9590
+Rule version: 19.0.6 - ebi_10q.htm 1",2022-12-20,ERROR,DQC,126,0001730869,"Everything Blockchain, Inc.",2022-12-20 09:10:00,0001477932-22-009419,US GAAP 2022,XBRL Document Created with XBRLMaster,10-Q,http://www.sec.gov/Archives/edgar/data/1730869/000147793222009419/ebi_10q.htm,2022-12-20,2022,536460,https://www.sec.gov/Archives/edgar/data/1730869/000147793222009419/0001477932-22-009419-index.htm,7372,10q-ebi-20221031,2022-12-20 09:46:01.245,us-gaap,NetCashProvidedByUsedInOperatingActivities,2022-02-01 to 2022-10-31,USD,9590,19.0.6 - ebi_10q.htm 1,calculation_sum,-1523000.0,9647000.0,2022-02-01,2022-10-31,False,False
+"random sample, type 126",DQC.US.0126.9590,"2022-12-19 13:18:17,662 [DQC.US.0126.9590] The statement 00000004 - Statement - Consolidated Statements Of Operations (Unaudited) includes an inconsistent calculation. The value of the concept us-gaap:NetIncomeLoss of -10,056,076  should be equal to the sum of its child components defined in the calculation linkbase. The sum of these child components is -10,470,830. The values of the addends is determined by adding the values of the child concepts.  The values reported in the financial statement in the current reporting period of 2022-05-01 to 2022-10-31 should be complete if the financial statement is to be mathematically accurate and complete. The components of us-gaap:NetIncomeLoss that should add to -10,056,076 are comprised of the following:
+
++  	IncomeLossFromContinuingOperationsBeforeIncomeTaxesDomestic                                                                                -10,470,830 
+
+
+The addends are calculated based on the calculation linkbase defined for 00000004 - Statement - Consolidated Statements Of Operations (Unaudited). If addends are missing then the calculation tree should be amended. The rule will not add dimension components as the financial statement does not include a table. If dimensions are used on the statement then add a table to ensure that the dimensions are defined correctly. 
+
+
+Total Element : us-gaap:NetIncomeLoss
+Total Value : -10,056,076 
+Total period : 2022-05-01 to 2022-10-31 
+Dimensions : 
+Decimals of Total: 0
+Unit of Total: USD
+Rule Element Id:9590
+Rule version: 19.0.6 - rcat1215form10q.htm 4362",2022-12-19,ERROR,DQC,126,0000748268,"Red Cat Holdings, Inc.",2022-12-15 16:28:00,0001554795-22-000405,US GAAP 2022,Novaworks,10-Q,http://www.sec.gov/Archives/edgar/data/748268/000155479522000405/rcat1215form10q.htm,2022-12-15,2022,535639,https://www.sec.gov/Archives/edgar/data/748268/000155479522000405/0001554795-22-000405-index.htm,7372,10q-rcat-20221031,2022-12-19 13:18:17.662,us-gaap,NetIncomeLoss,2022-05-01 to 2022-10-31,USD,9590,19.0.6 - rcat1215form10q.htm 4362,calculation_sum,-10056076.0,-10470830.0,2022-05-01,2022-10-31,False,False
+sign flip (calculated == -reported),DQC.US.0126.9590,"2022-11-21 08:45:40,151 [DQC.US.0126.9590] The statement 000004 - Statement - CONSOLIDATED STATEMENTS OF OPERATIONS (Unaudited) includes an inconsistent calculation. The value of the concept us-gaap:OtherOperatingIncomeExpenseNet of -32,002  should be equal to the sum of its child components defined in the calculation linkbase. The sum of these child components is 32,002. The values of the addends is determined by adding the values of the child concepts.  The values reported in the financial statement in the current reporting period of 2022-01-01 to 2022-09-30 should be complete if the financial statement is to be mathematically accurate and complete. The components of us-gaap:OtherOperatingIncomeExpenseNet that should add to -32,002 are comprised of the following:
+
++  	GainLossOnSaleOfDerivatives                                                                                                                    577,282 
++  	GainsLossesOnExtinguishmentOfDebt                                                                                                              108,087 
+-  	InterestExpense                                                                                                                                653,367 
+
+
+The addends are calculated based on the calculation linkbase defined for 000004 - Statement - CONSOLIDATED STATEMENTS OF OPERATIONS (Unaudited). If addends are missing then the calculation tree should be amended. The rule will not add dimension components as the financial statement does not include a table. If dimensions are used on the statement then add a table to ensure that the dimensions are defined correctly. 
+
+
+Total Element : us-gaap:OtherOperatingIncomeExpenseNet
+Total Value : -32,002 
+Total period : 2022-01-01 to 2022-09-30 
+Dimensions : 
+Decimals of Total: 0
+Unit of Total: USD
+Rule Element Id:9590
+Rule version: 19.0.4 - ttcm_10q.htm 1",2022-11-21,ERROR,DQC,126,0001389067,"ARtelligence Holdings, Inc.",2022-11-21 08:12:00,0001477932-22-008734,US GAAP 2022,XBRL Document Created with XBRLMaster,10-Q,http://www.sec.gov/Archives/edgar/data/1389067/000147793222008734/ttcm_10q.htm,2022-11-21,2022,530903,https://www.sec.gov/Archives/edgar/data/1389067/000147793222008734/0001477932-22-008734-index.htm,7372,10q-ttcm-20220930,2022-11-21 08:45:40.151,us-gaap,OtherOperatingIncomeExpenseNet,2022-01-01 to 2022-09-30,USD,9590,19.0.4 - ttcm_10q.htm 1,calculation_sum,-32002.0,32002.0,2022-01-01,2022-09-30,False,True
+"random sample, type 126",DQC.US.0126.9590,"2022-11-21 08:45:40,151 [DQC.US.0126.9590] The statement 000006 - Statement - CONSOLIDATED STATEMENTS OF CASH FLOWS (Unaudited) includes an inconsistent calculation. The value of the concept us-gaap:CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalentsPeriodIncreaseDecreaseIncludingExchangeRateEffect of -115,117  should be equal to the sum of its child components defined in the calculation linkbase. The sum of these child components is -115,417. The values of the addends is determined by adding the values of the child concepts.  The values reported in the financial statement in the current reporting period of 2022-01-01 to 2022-09-30 should be complete if the financial statement is to be mathematically accurate and complete. The components of us-gaap:CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalentsPeriodIncreaseDecreaseIncludingExchangeRateEffect that should add to -115,117 are comprised of the following:
+
++  	EffectOfExchangeRateOnCashCashEquivalentsRestrictedCashAndRestrictedCashEquivalentsIncludingDisposalGroupAndDiscontinuedOperations             178,282 
++  	NetCashProvidedByUsedInFinancingActivities                                                                                                     223,400 
++  	NetCashProvidedByUsedInInvestingActivities                                                                                                           0 
++  	NetCashProvidedByUsedInOperatingActivities                                                                                                    -517,099 
+
+
+The addends are calculated based on the calculation linkbase defined for 000006 - Statement - CONSOLIDATED STATEMENTS OF CASH FLOWS (Unaudited). If addends are missing then the calculation tree should be amended. The rule will not add dimension components as the financial statement does not include a table. If dimensions are used on the statement then add a table to ensure that the dimensions are defined correctly. 
+
+
+Total Element : us-gaap:CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalentsPeriodIncreaseDecreaseIncludingExchangeRateEffect
+Total Value : -115,117 
+Total period : 2022-01-01 to 2022-09-30 
+Dimensions : 
+Decimals of Total: 0
+Unit of Total: USD
+Rule Element Id:9590
+Rule version: 19.0.4 - ttcm_10q.htm 1",2022-11-21,ERROR,DQC,126,0001389067,"ARtelligence Holdings, Inc.",2022-11-21 08:12:00,0001477932-22-008734,US GAAP 2022,XBRL Document Created with XBRLMaster,10-Q,http://www.sec.gov/Archives/edgar/data/1389067/000147793222008734/ttcm_10q.htm,2022-11-21,2022,530903,https://www.sec.gov/Archives/edgar/data/1389067/000147793222008734/0001477932-22-008734-index.htm,7372,10q-ttcm-20220930,2022-11-21 08:45:40.151,us-gaap,CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalentsPeriodIncreaseDecreaseIncludingExchangeRateEffect,2022-01-01 to 2022-09-30,USD,9590,19.0.4 - ttcm_10q.htm 1,calculation_sum,-115117.0,-115417.0,2022-01-01,2022-09-30,False,False
+"random sample, type 126",DQC.US.0126.9590,"2022-11-21 06:30:45,317 [DQC.US.0126.9590] The statement 00000006 - Statement - CONDENSED CONSOLIDATED STATEMENTS OF CASH FLOWS (UNAUDITED) includes an inconsistent calculation. The value of the concept us-gaap:NetCashProvidedByUsedInOperatingActivities of -112,918,000  should be equal to the sum of its child components defined in the calculation linkbase. The sum of these child components is -63,658,000. The values of the addends is determined by adding the values of the child concepts.  The values reported in the financial statement in the current reporting period of 2022-01-01 to 2022-09-30 should be complete if the financial statement is to be mathematically accurate and complete. The components of us-gaap:NetCashProvidedByUsedInOperatingActivities that should add to -112,918,000 are comprised of the following:
+
++  	AccumulatedDepreciationDepletionAndAmortizationSaleOfPropertyPlantAndEquipment1                                                              4,026,000 
++  	AmortizationOfFinancingCostsAndDiscounts                                                                                                     2,378,000 
++  	DeferredForeignIncomeTaxExpenseBenefit                                                                                                          41,000 
+-  	GainLossOnDispositionOfAssets                                                                                                                  -23,000 
++  	IncreaseDecreaseInAccountsPayable                                                                                                           10,967,000 
+-  	IncreaseDecreaseInAccountsReceivable                                                                                                       -13,636,000 
++  	IncreaseDecreaseInAccruedLiabilities                                                                                                        52,450,000 
+-  	IncreaseDecreaseInContractWithCustomerAsset                                                                                                 -5,821,000 
++  	IncreaseDecreaseInContractWithCustomerLiability                                                                                               -142,000 
++  	IncreaseDecreaseInOperatingLeaseLiability                                                                                                   -1,273,000 
+-  	IncreaseDecreaseInOtherCurrentAssets                                                                                                           131,000 
+-  	IncreaseDecreaseInOtherNoncurrentAssets                                                                                                        355,000 
++  	IncreaseDecreaseInOtherNoncurrentLiabilities                                                                                                   150,000 
+-  	IncreaseDecreaseInPrepaidExpense                                                                                                            -5,528,000 
++  	NetIncomeLoss                                                                                                                             -263,738,000 
++  	BadDebtReserve                                                                                                                              -2,366,000 
++  	DeferredCompensationExpense                                                                                                                  1,250,000 
+-  	EquitybasedCompensation                                                                                                                    -88,546,000 
++  	ExcessFairValueOverConsiderationReceivedForSafe                                                                                                800,000 
+-  	GainOnChangesInFairValueOfEarnoutLiabilities                                                                                                67,100,000 
++  	IncreaseDecreaseInOperatingLeasesAssets                                                                                                        801,000 
++  	LossOnChangeInFairValueOfForwardPurchaseOptionsDerivative                                                                                   76,919,000 
++  	LossOnChangeInFairValueOfWarrants                                                                                                              436,000 
++  	PhantomUnitExpense                                                                                                                           6,783,000 
++  	SepaCommitmentFeeSettledInClassCommonStock                                                                                                     892,000 
+
+
+The addends are calculated based on the calculation linkbase defined for 00000006 - Statement - CONDENSED CONSOLIDATED STATEMENTS OF CASH FLOWS (UNAUDITED). If addends are missing then the calculation tree should be amended. The rule will not add dimension components as the financial statement does not include a table. If dimensions are used on the statement then add a table to ensure that the dimensions are defined correctly. 
+
+
+Total Element : us-gaap:NetCashProvidedByUsedInOperatingActivities
+Total Value : -112,918,000 
+Total period : 2022-01-01 to 2022-09-30 
+Dimensions : 
+Decimals of Total: -3
+Unit of Total: USD
+Rule Element Id:9590
+Rule version: 19.0.4 - rubicontechnologies_10q.htm 4966",2022-11-21,ERROR,DQC,126,0001862068,"Rubicon Technologies, Inc.",2022-11-18 21:57:00,0001829126-22-019405,US GAAP 2022,Novaworks,10-Q,http://www.sec.gov/Archives/edgar/data/1862068/000182912622019405/rubicontechnologies_10q.htm,2022-11-21,2022,530848,https://www.sec.gov/Archives/edgar/data/1862068/000182912622019405/0001829126-22-019405-index.htm,7372,10q-rbt-20220930,2022-11-21 06:30:45.317,us-gaap,NetCashProvidedByUsedInOperatingActivities,2022-01-01 to 2022-09-30,USD,9590,19.0.4 - rubicontechnologies_10q.htm 4966,calculation_sum,-112918000.0,-63658000.0,2022-01-01,2022-09-30,False,False
+"random sample, type 126",DQC.US.0126.9590,"2022-11-17 19:31:53,877 [DQC.US.0126.9590] The statement 000006 - Statement - STATEMENTS OF CASH FLOWS (Unaudited) includes an inconsistent calculation. The value of the concept us-gaap:NetCashProvidedByUsedInInvestingActivities of -166,405  should be equal to the sum of its child components defined in the calculation linkbase. The sum of these child components is 164,467. The values of the addends is determined by adding the values of the child concepts.  The values reported in the financial statement in the current reporting period of 2022-01-01 to 2022-09-30 should be complete if the financial statement is to be mathematically accurate and complete. The components of us-gaap:NetCashProvidedByUsedInInvestingActivities that should add to -166,405 are comprised of the following:
+
++  	CapitalizedComputerSoftwareAdditions                                                                                                           165,436 
+-  	PaymentsToAcquirePropertyPlantAndEquipment                                                                                                         969 
+
+
+The addends are calculated based on the calculation linkbase defined for 000006 - Statement - STATEMENTS OF CASH FLOWS (Unaudited). If addends are missing then the calculation tree should be amended. The rule will not add dimension components as the financial statement does not include a table. If dimensions are used on the statement then add a table to ensure that the dimensions are defined correctly. 
+
+
+Total Element : us-gaap:NetCashProvidedByUsedInInvestingActivities
+Total Value : -166,405 
+Total period : 2022-01-01 to 2022-09-30 
+Dimensions : 
+Decimals of Total: 0
+Unit of Total: USD
+Rule Element Id:9590
+Rule version: 19.0.4 - imci_10q.htm 2",2022-11-18,ERROR,DQC,126,0000884650,"Infinite Group, Inc.",2022-11-17 16:30:00,0001654954-22-015502,US GAAP 2022,XBRL Document Created with XBRLMaster,10-Q,http://www.sec.gov/Archives/edgar/data/884650/000165495422015502/imci_10q.htm,2022-11-17,2022,530462,https://www.sec.gov/Archives/edgar/data/884650/000165495422015502/0001654954-22-015502-index.htm,7372,10q-imci-20220930,2022-11-17 19:31:53.877,us-gaap,NetCashProvidedByUsedInInvestingActivities,2022-01-01 to 2022-09-30,USD,9590,19.0.4 - imci_10q.htm 2,calculation_sum,-166405.0,164467.0,2022-01-01,2022-09-30,False,False
+"random sample, type 126",DQC.US.0126.9590,"2022-11-17 06:17:09,887 [DQC.US.0126.9590] The statement 00000002 - Statement - Consolidated Balance Sheets includes an inconsistent calculation. The value of the concept us-gaap:StockholdersEquity of 624,250  should be equal to the sum of its child components defined in the calculation linkbase. The sum of these child components is 590,950. The values of the addends is determined by adding the values of the child concepts.  The values reported in the financial statement in the current reporting period of 2022-09-30 should be complete if the financial statement is to be mathematically accurate and complete. The components of us-gaap:StockholdersEquity that should add to 624,250 are comprised of the following:
+
++  	AdditionalPaidInCapital                                                                                                                     30,656,277 
++  	CommonStockValue                                                                                                                                 4,917 
++  	RetainedEarningsAccumulatedDeficit                                                                                                         -30,049,433 
+-  	TreasuryStockValue                                                                                                                              20,811 
+
+
+The addends are calculated based on the calculation linkbase defined for 00000002 - Statement - Consolidated Balance Sheets. If addends are missing then the calculation tree should be amended. The rule will not add dimension components as the financial statement does not include a table. If dimensions are used on the statement then add a table to ensure that the dimensions are defined correctly. 
+
+
+Total Element : us-gaap:StockholdersEquity
+Total Value : 624,250 
+Total period : 2022-09-30 
+Dimensions : 
+Decimals of Total: 0
+Unit of Total: USD
+Rule Element Id:9590
+Rule version: 19.0.2 - lgtg-20220930.xml 463",2022-11-17,ERROR,DQC,126,0001392545,"Lightning Gaming, Inc.",2022-11-14 16:47:00,0000890163-22-000052,US GAAP 2021,Field: Doc-Info; Name: Generator; Value: GoFiler Complete; Version: 5.12b,10-Q,http://www.sec.gov/Archives/edgar/data/1392545/000089016322000052/lgtg-20220930.xml,2022-11-14,2022,529792,https://www.sec.gov/Archives/edgar/data/1392545/000089016322000052/0000890163-22-000052-index.htm,7372,10q-lgtg-20220930,2022-11-17 06:17:09.887,us-gaap,StockholdersEquity,2022-09-30,USD,9590,19.0.2 - lgtg-20220930.xml 463,calculation_sum,624250.0,590950.0,,2022-09-30,False,False
+sign flip (calculated == -reported) | record check,DQC.US.0126.9590,"2022-11-13 00:53:24,375 [DQC.US.0126.9590] The statement 000004 - Statement - CONDENSED CONSOLIDATED STATEMENTS OF OPERATIONS AND COMPREHENSIVE INCOME (LOSS) (Unaudited) includes an inconsistent calculation. The value of the concept us-gaap:OperatingExpenses of -614,011  should be equal to the sum of its child components defined in the calculation linkbase. The sum of these child components is 614,011. The values of the addends is determined by adding the values of the child concepts.  The values reported in the financial statement in the current reporting period of 2022-01-01 to 2022-09-30 should be complete if the financial statement is to be mathematically accurate and complete. The components of us-gaap:OperatingExpenses that should add to -614,011 are comprised of the following:
+
++  	DepreciationAndAmortization                                                                                                                      2,932 
++  	GeneralInsuranceExpense                                                                                                                         23,052 
++  	LaborAndRelatedExpense                                                                                                                         180,256 
++  	LegalFees                                                                                                                                       18,363 
++  	ProfessionalFees                                                                                                                                87,261 
++  	ShareBasedCompensation                                                                                                                         149,669 
++  	ExplorationRecovery                                                                                                                             -8,455 
++  	GeneralAndAdministrativeExpenses                                                                                                               160,933 
+
+
+The addends are calculated based on the calculation linkbase defined for 000004 - Statement - CONDENSED CONSOLIDATED STATEMENTS OF OPERATIONS AND COMPREHENSIVE INCOME (LOSS) (Unaudited). If addends are missing then the calculation tree should be amended. The rule will not add dimension components as the financial statement does not include a table. If dimensions are used on the statement then add a table to ensure that the dimensions are defined correctly. 
+
+
+Total Element : us-gaap:OperatingExpenses
+Total Value : -614,011 
+Total period : 2022-01-01 to 2022-09-30 
+Dimensions : 
+Decimals of Total: 0
+Unit of Total: USD
+Rule Element Id:9590
+Rule version: 19.0.2 - scy_10q.htm 1",2022-11-13,ERROR,DQC,126,0001408146,SCANDIUM INTERNATIONAL MINING CORP.,2022-11-10 15:51:00,0001654954-22-015016,US GAAP 2022,Document Created by XBRLMaster,10-Q,http://www.sec.gov/Archives/edgar/data/1408146/000165495422015016/scy_10q.htm,2022-11-10,2022,526750,https://www.sec.gov/Archives/edgar/data/1408146/000165495422015016/0001654954-22-015016-index.htm,1000,10q-scy-20220930,2022-11-13 00:53:24.375,us-gaap,OperatingExpenses,2022-01-01 to 2022-09-30,USD,9590,19.0.2 - scy_10q.htm 1,calculation_sum,-614011.0,614011.0,2022-01-01,2022-09-30,False,True
+record check: type 117 total vs dimensional breakdown,DQC.US.0117.9574,"2022-02-07 17:45:51,654 [DQC.US.0117.9574] In the statement 1003004 - Statement - Condensed Consolidated Income Statements the concept us-gaap:RevenueFromContractWithCustomerIncludingAssessedTax with a value of 255,500,000 is not equal to the dimensional breakdown of 142,400,000 which is comprised of the members:
+	ConsultingManagementAndAccountFeesMember 	 --> 23,000,000 	 --> srt:ProductOrServiceAxis=intl:ConsultingManagementAndAccountFeesMember 
+	CommissionandClearingFeesMember 	 --> 119,400,000 	 --> srt:ProductOrServiceAxis=intl:CommissionandClearingFeesMember 
+
+
+On the face financial statements it is expected that values reported are dimensionally complete for a given line item. If you added up the values of the dimensions the resulting sum should represent the actual aggregate value.  This rule takes the dimensional values of an axis reported on the face financial statements and adds them up and compares them to the actual aggregate value reported anywhere in the filing. If they are different the rule reports an error.
+When breaking down 606 revenue using the product or service axis and the total does not aggregate, then the element NoninterestIncome income should be used as the total to comply with the FASB guidance for breaking down 606 revenue. To correct this error ensure that a the element NoninterestIncome is included in the presentation and definition linkbases.
+The properties of this us-gaap:RevenueFromContractWithCustomerIncludingAssessedTax fact are:
+Period :2020-10-01 to 2020-12-31
+Unit : USD
+Dimensions : 
+Rule Element Id:9574
+Rule version: 16.0.10 - intl-20211231.htm 4",2022-02-07,ERROR,DQC,117,0000913760,StoneX Group Inc.,2022-02-07 17:24:00,0000913760-22-000029,US GAAP 2021,XBRL Document Created with Wdesk from Workiva,10-Q,http://www.sec.gov/Archives/edgar/data/913760/000091376022000029/intl-20211231.htm,2022-02-07,2022,416718,https://www.sec.gov/Archives/edgar/data/913760/000091376022000029/0000913760-22-000029-index.htm,6200,10q-intl-20211231,2022-02-07 17:45:51.654,us-gaap,RevenueFromContractWithCustomerIncludingAssessedTax,2020-10-01 to 2020-12-31,USD,9574,16.0.10 - intl-20211231.htm 4,dimensional_breakdown,255500000.0,142400000.0,2020-10-01,2020-12-31,False,False
+sign flip (calculated == -reported),DQC.US.0117.9574,"2022-02-15 18:16:50,994 [DQC.US.0117.9574] In the statement 1410408 - Statement - Preneed Activities Preneed Activities Receivables Net and Trust Invesments (Details) the concept us-gaap:AllowanceForDoubtfulAccountsPremiumsAndOtherReceivables with a value of 19,204,000 is not equal to the dimensional breakdown of -19,204,000 which is comprised of the members:
+	FuneralMember 	 --> -10,940,000 	 --> us-gaap:StatementBusinessSegmentsAxis=sci:FuneralMember 
+	CemeteryMember 	 --> -8,264,000 	 --> us-gaap:StatementBusinessSegmentsAxis=sci:CemeteryMember 
+
+
+On the face financial statements it is expected that values reported are dimensionally complete for a given line item. If you added up the values of the dimensions the resulting sum should represent the actual aggregate value.  This rule takes the dimensional values of an axis reported on the face financial statements and adds them up and compares them to the actual aggregate value reported anywhere in the filing. If they are different the rule reports an error.
+
+The properties of this us-gaap:AllowanceForDoubtfulAccountsPremiumsAndOtherReceivables fact are:
+Period :2021-12-31
+Unit : USD
+Dimensions : 
+Rule Element Id:9574
+Rule version: 16.0.11 - sci-20211231.htm 4",2022-02-15,ERROR,DQC,117,0000089089,Service Corporation International,2022-02-15 17:23:00,0000089089-22-000012,US GAAP 2021,XBRL Document Created with Wdesk from Workiva,10-K,http://www.sec.gov/Archives/edgar/data/89089/000008908922000012/sci-20211231.htm,2022-02-15,2022,420057,https://www.sec.gov/Archives/edgar/data/89089/000008908922000012/0000089089-22-000012-index.htm,7200,10k-sci-20211231,2022-02-15 18:16:50.994,us-gaap,AllowanceForDoubtfulAccountsPremiumsAndOtherReceivables,2021-12-31,USD,9574,16.0.11 - sci-20211231.htm 4,dimensional_breakdown,19204000.0,-19204000.0,,2021-12-31,False,True
+"random sample, type 117",DQC.US.0117.9574,"2022-02-17 07:02:22,182 [DQC.US.0117.9574] In the statement 100260028 - Statement - Statements of Income - MPC the concept us-gaap:Revenues with a value of 23,113,000,000 is not equal to the dimensional breakdown of 18,015,000,000 which is comprised of the members:
+	ProductAndServiceOtherMember 	 --> 708,000,000 	 --> srt:ProductOrServiceAxis=us-gaap:ProductAndServiceOtherMember 
+	RetailMember 	 --> 14,852,000,000 	 --> srt:ProductOrServiceAxis=us-gaap:RetailMember 
+	WholesaleNonAffiliatesMember 	 --> 2,455,000,000 	 --> srt:ProductOrServiceAxis=so:WholesaleNonAffiliatesMember 
+
+
+On the face financial statements it is expected that values reported are dimensionally complete for a given line item. If you added up the values of the dimensions the resulting sum should represent the actual aggregate value.  This rule takes the dimensional values of an axis reported on the face financial statements and adds them up and compares them to the actual aggregate value reported anywhere in the filing. If they are different the rule reports an error.
+
+The properties of this us-gaap:Revenues fact are:
+Period :2021-01-01 to 2021-12-31
+Unit : USD
+Dimensions : 
+Rule Element Id:9574
+Rule version: 16.0.11 - so-20211231.htm 4",2022-02-17,ERROR,DQC,117,0000092122,The Southern Company,2022-02-16 17:44:00,0000092122-22-000003,US GAAP 2021,XBRL Document Created with Wdesk from Workiva,10-K,http://www.sec.gov/Archives/edgar/data/92122/000009212222000003/so-20211231.htm,2022-02-17,2022,420498,https://www.sec.gov/Archives/edgar/data/92122/000009212222000003/0000092122-22-000003-index.htm,4911,10k-so-20211231,2022-02-17 07:02:22.182,us-gaap,Revenues,2021-01-01 to 2021-12-31,USD,9574,16.0.11 - so-20211231.htm 4,dimensional_breakdown,23113000000.0,18015000000.0,2021-01-01,2021-12-31,False,False
+"random sample, type 117",DQC.US.0117.9574,"2022-02-25 09:17:47,579 [DQC.US.0117.9574] In the statement 100030003 - Statement - Consolidated Statements of Income the concept us-gaap:NoninterestIncomeOther with a value of 7,248,000 is not equal to the dimensional breakdown of 15,500,000 which is comprised of the members:
+	BankServicingMember 	 --> 15,500,000 	 --> srt:ProductOrServiceAxis=us-gaap:BankServicingMember 
+
+
+On the face financial statements it is expected that values reported are dimensionally complete for a given line item. If you added up the values of the dimensions the resulting sum should represent the actual aggregate value.  This rule takes the dimensional values of an axis reported on the face financial statements and adds them up and compares them to the actual aggregate value reported anywhere in the filing. If they are different the rule reports an error.
+
+The properties of this us-gaap:NoninterestIncomeOther fact are:
+Period :2019-01-01 to 2019-12-31
+Unit : USD
+Dimensions : 
+Rule Element Id:9574
+Rule version: 17.0.0 - prk-20211231.htm 4",2022-02-25,ERROR,DQC,117,0000805676,PARK NATIONAL CORPORATION,2022-02-24 16:16:00,0000805676-22-000034,US GAAP 2021,XBRL Document Created with Wdesk from Workiva,10-K,http://www.sec.gov/Archives/edgar/data/805676/000080567622000034/prk-20211231.htm,2022-02-24,2022,442963,https://www.sec.gov/Archives/edgar/data/805676/000080567622000034/0000805676-22-000034-index.htm,6021,10k-prk-20211231,2022-02-25 09:17:47.579,us-gaap,NoninterestIncomeOther,2019-01-01 to 2019-12-31,USD,9574,17.0.0 - prk-20211231.htm 4,dimensional_breakdown,7248000.0,15500000.0,2019-01-01,2019-12-31,False,False
+"random sample, type 15",DQC.US.0015.576,"2022-02-23 06:12:12,070 [DQC.US.0015.576] us-gaap:CostsIncurredAcquisitionOfOilAndGasPropertiesWithProvedReserves has a value of -157,000,000 which is less than zero. This element should not have a negative value. The preparer should consider if the value is input correctly for this assertion and, after considering the appropriateness of the input, if incorrect, input the amount as a positive (i.e., absolute) value and provide a negated label.
+
+The properties of this us-gaap:CostsIncurredAcquisitionOfOilAndGasPropertiesWithProvedReserves fact are:
+Period :2021-01-01 to 2021-12-31
+Dimensions : 
+Unit : USD
+Rule version: 17.0.0 - apa-20211231.htm 4",2022-02-23,ERROR,DQC,15,0001841666,APA Corp,2022-02-22 14:30:00,0001784031-22-000009,US GAAP 2021,XBRL Document Created with Wdesk from Workiva,10-K,http://www.sec.gov/Archives/edgar/data/1841666/000178403122000009/apa-20211231.htm,2022-02-22,2022,435265,https://www.sec.gov/Archives/edgar/data/1841666/000178403122000009/0001784031-22-000009-index.htm,1311,10k-apa-20211231,2022-02-23 06:12:12.070,us-gaap,CostsIncurredAcquisitionOfOilAndGasPropertiesWithProvedReserves,2021-01-01 to 2021-12-31,USD,,17.0.0 - apa-20211231.htm 4,sign_check,-157000000.0,,2021-01-01,2021-12-31,False,False
+"random sample, type 15",DQC.US.0015.7635,"2022-12-29 16:45:43,439 [DQC.US.0015.7635] srt:StandardizedMeasureOfDiscountedFutureNetCashFlowRelatingToProvedOilAndGasReservesAccretionOfDiscount has a value of -176,000 which is less than zero. This element should not have a negative value. The preparer should consider if the value is input correctly for this assertion and, after considering the appropriateness of the input, if incorrect, input the amount as a positive (i.e., absolute) value and provide a negated label.
+
+The properties of this srt:StandardizedMeasureOfDiscountedFutureNetCashFlowRelatingToProvedOilAndGasReservesAccretionOfDiscount fact are:
+Period :2020-10-01 to 2021-09-30
+Dimensions : 
+Unit : USD
+Rule version: 19.0.6 - brn-20220930.htm 4",2022-12-29,ERROR,DQC,15,0000010048,"BARNWELL INDUSTRIES, INC.",2022-12-29 16:12:00,0000010048-22-000029,US GAAP 2021,XBRL Document Created with Wdesk from Workiva,10-K,http://www.sec.gov/Archives/edgar/data/10048/000001004822000029/brn-20220930.htm,2022-12-29,2022,537848,https://www.sec.gov/Archives/edgar/data/10048/000001004822000029/0000010048-22-000029-index.htm,1311,10k-brn-20220930,2022-12-29 16:45:43.439,srt,StandardizedMeasureOfDiscountedFutureNetCashFlowRelatingToProvedOilAndGasReservesAccretionOfDiscount,2020-10-01 to 2021-09-30,USD,,19.0.6 - brn-20220930.htm 4,sign_check,-176000.0,,2020-10-01,2021-09-30,False,False
+"random sample, type 15",DQC.US.0015.7638,"2022-12-29 16:45:43,439 [DQC.US.0015.7638] srt:StandardizedMeasureOfDiscountedFutureNetCashFlowsRelatingToProvedOilAndGasReserves has a value of -1,685,000 which is less than zero. This element should not have a negative value. The preparer should consider if the value is input correctly for this assertion and, after considering the appropriateness of the input, if incorrect, input the amount as a positive (i.e., absolute) value and provide a negated label.
+
+The properties of this srt:StandardizedMeasureOfDiscountedFutureNetCashFlowsRelatingToProvedOilAndGasReserves fact are:
+Period :2020-09-30
+Dimensions : 
+Unit : USD
+Rule version: 19.0.6 - brn-20220930.htm 4",2022-12-29,ERROR,DQC,15,0000010048,"BARNWELL INDUSTRIES, INC.",2022-12-29 16:12:00,0000010048-22-000029,US GAAP 2021,XBRL Document Created with Wdesk from Workiva,10-K,http://www.sec.gov/Archives/edgar/data/10048/000001004822000029/brn-20220930.htm,2022-12-29,2022,537848,https://www.sec.gov/Archives/edgar/data/10048/000001004822000029/0000010048-22-000029-index.htm,1311,10k-brn-20220930,2022-12-29 16:45:43.439,srt,StandardizedMeasureOfDiscountedFutureNetCashFlowsRelatingToProvedOilAndGasReserves,2020-09-30,USD,,19.0.6 - brn-20220930.htm 4,sign_check,-1685000.0,,,2020-09-30,False,False
+"random sample, type 117",DQC.US.0117.9574,"2023-03-13 11:01:05,751 [DQC.US.0117.9574] In the statement 00200 - Statement - Consolidated Statements Of Operations And Comprehensive Income (Loss) the concept us-gaap:InterestAndOtherIncome with a value of 81,691,000 is not equal to the dimensional breakdown of 81,300,000 which is comprised of the members:
+	SalesOfVoisMember 	 --> 81,300,000 	 --> srt:ProductOrServiceAxis=bvh:SalesOfVoisMember 
+
+
+On the face financial statements it is expected that values reported are dimensionally complete for a given line item. If you added up the values of the dimensions the resulting sum should represent the actual aggregate value.  This rule takes the dimensional values of an axis reported on the face financial statements and adds them up and compares them to the actual aggregate value reported anywhere in the filing. If they are different the rule reports an error.
+
+The properties of this us-gaap:InterestAndOtherIncome fact are:
+Period :2021-01-01 to 2021-12-31
+Unit : USD
+Dimensions : 
+Rule Element Id:9574
+Rule version: 20.0.2 - bvh-20221231x10k.htm 177",2023-03-13,ERROR,DQC,117,0000315858,Bluegreen Vacations Holding Corp,2023-03-13 10:40:00,0000315858-23-000011,US GAAP 2022,XBRL document created by Certent Disclosure Management 22.4.0.1,10-K,http://www.sec.gov/Archives/edgar/data/315858/000031585823000011/bvh-20221231x10k.htm,2023-03-13,2023,557968,https://www.sec.gov/Archives/edgar/data/315858/000031585823000011/0000315858-23-000011-index.htm,6500,10k-bvh-20221231,2023-03-13 11:01:05.751,us-gaap,InterestAndOtherIncome,2021-01-01 to 2021-12-31,USD,9574,20.0.2 - bvh-20221231x10k.htm 177,dimensional_breakdown,81691000.0,81300000.0,2021-01-01,2021-12-31,False,False
+"random sample, type 117",DQC.US.0117.9574,"2023-04-13 09:16:54,135 [DQC.US.0117.9574] In the statement 0000011 - Statement - CONSOLIDATED STATEMENTS OF CASH FLOWS the concept ncmi:ProceedsFromIntegrationAndOtherEncumberedTheaterPaymentsMadeByAffiliates with a value of 2,800,000 is not equal to the dimensional breakdown of 0 which is comprised of the members:
+	RelatedPartyFoundingMembersMember 	 --> 0 	 --> us-gaap:RelatedPartyTransactionsByRelatedPartyAxis=ncmi:RelatedPartyFoundingMembersMember 
+
+
+On the face financial statements it is expected that values reported are dimensionally complete for a given line item. If you added up the values of the dimensions the resulting sum should represent the actual aggregate value.  This rule takes the dimensional values of an axis reported on the face financial statements and adds them up and compares them to the actual aggregate value reported anywhere in the filing. If they are different the rule reports an error.
+
+The properties of this ncmi:ProceedsFromIntegrationAndOtherEncumberedTheaterPaymentsMadeByAffiliates fact are:
+Period :2021-12-31 to 2022-12-29
+Unit : USD
+Dimensions : 
+Rule Element Id:9574
+Rule version: 20.0.4 - ncmi-20221229.htm 4",2023-04-13,ERROR,DQC,117,0001377630,"NATIONAL CINEMEDIA, INC.",2023-04-13 08:12:00,0001377630-23-000061,US GAAP 2022,XBRL Document Created with Wdesk from Workiva,10-K,http://www.sec.gov/Archives/edgar/data/1377630/000137763023000061/ncmi-20221229.htm,2023-04-13,2023,568712,https://www.sec.gov/Archives/edgar/data/1377630/000137763023000061/0001377630-23-000061-index.htm,7310,10k-ncmi-20221229,2023-04-13 09:16:54.135,ncmi,ProceedsFromIntegrationAndOtherEncumberedTheaterPaymentsMadeByAffiliates,2021-12-31 to 2022-12-29,USD,9574,20.0.4 - ncmi-20221229.htm 4,dimensional_breakdown,2800000.0,0.0,2021-12-31,2022-12-29,False,False
+"random sample, type 117",DQC.US.0117.9574,"2023-04-13 09:16:54,136 [DQC.US.0117.9574] In the statement 0000005 - Statement - CONSOLIDATED STATEMENTS OF INCOME the concept us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax with a value of 249,200,000 is not equal to the dimensional breakdown of 14,400,000 which is comprised of the members:
+	RelatedPartyFoundingMembersMember 	 --> 14,400,000 	 --> us-gaap:RelatedPartyTransactionsByRelatedPartyAxis=ncmi:RelatedPartyFoundingMembersMember 
+
+
+On the face financial statements it is expected that values reported are dimensionally complete for a given line item. If you added up the values of the dimensions the resulting sum should represent the actual aggregate value.  This rule takes the dimensional values of an axis reported on the face financial statements and adds them up and compares them to the actual aggregate value reported anywhere in the filing. If they are different the rule reports an error.
+
+The properties of this us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax fact are:
+Period :2021-12-31 to 2022-12-29
+Unit : USD
+Dimensions : 
+Rule Element Id:9574
+Rule version: 20.0.4 - ncmi-20221229.htm 4",2023-04-13,ERROR,DQC,117,0001377630,"NATIONAL CINEMEDIA, INC.",2023-04-13 08:12:00,0001377630-23-000061,US GAAP 2022,XBRL Document Created with Wdesk from Workiva,10-K,http://www.sec.gov/Archives/edgar/data/1377630/000137763023000061/ncmi-20221229.htm,2023-04-13,2023,568712,https://www.sec.gov/Archives/edgar/data/1377630/000137763023000061/0001377630-23-000061-index.htm,7310,10k-ncmi-20221229,2023-04-13 09:16:54.136,us-gaap,RevenueFromContractWithCustomerExcludingAssessedTax,2021-12-31 to 2022-12-29,USD,9574,20.0.4 - ncmi-20221229.htm 4,dimensional_breakdown,249200000.0,14400000.0,2021-12-31,2022-12-29,False,False
+"random sample, type 117",DQC.US.0117.9574,"2023-11-14 15:49:03,626 [DQC.US.0117.9574] In the statement 006 - Statement - Consolidated Statements of Cash Flows (Unaudited) the concept us-gaap:GainsLossesOnExtinguishmentOfDebt with a value of 0 is not equal to the dimensional breakdown of -105,000 using the dimension us-gaap:LongtermDebtTypeAxis which is comprised of the members us-gaap:NotesPayableOtherPayablesMember:
+	NotesPayableOtherPayablesMember 	 --> -105,000 	 --> us-gaap:LongtermDebtTypeAxis=us-gaap:NotesPayableOtherPayablesMember 
+
+
+On the face financial statements it is expected that values reported are dimensionally complete for a given line item. If you added up the values of the dimensions the resulting sum should represent the actual aggregate value.  This rule takes the dimensional values of an axis reported on the face financial statements and adds them up and compares them to the actual aggregate value reported anywhere in the filing. If they are different the rule reports an error.
+
+The properties of this us-gaap:GainsLossesOnExtinguishmentOfDebt fact are:
+Period :2023-01-01 to 2023-09-30
+Unit : USD
+Dimensions : 
+Rule Element Id:9574
+Rule version: 22.0.1 - minf20230829_10q.htm 1437",2023-11-14,ERROR,DQC,117,0001847874,MOBILE INFRASTRUCTURE CORPORATION,2023-11-13 17:11:00,0001437749-23-031683,US GAAP 2023,Generated by ThunderDome XBRL - 07:24PM UTC 2023-11-13,10-Q,http://www.sec.gov/Archives/edgar/data/1847874/000143774923031683/minf20230829_10q.htm,2023-11-13,2023,653965,https://www.sec.gov/Archives/edgar/data/1847874/000143774923031683/0001437749-23-031683-index.htm,6500,10q-minf-20230930,2023-11-14 15:49:03.626,us-gaap,GainsLossesOnExtinguishmentOfDebt,2023-01-01 to 2023-09-30,USD,9574,22.0.1 - minf20230829_10q.htm 1437,dimensional_breakdown,0.0,-105000.0,2023-01-01,2023-09-30,False,False
+"random sample, type 117",DQC.US.0117.9574,"2023-11-02 18:49:07,089 [DQC.US.0117.9574] In the statement 003 - Statement - Consolidated Statements of Operations and Comprehensive Loss the concept us-gaap:UnrealizedGainLossOnInvestments with a value of 33,000 is not equal to the dimensional breakdown of 2,883,000 using the dimension us-gaap:RelatedPartyTransactionsByRelatedPartyAxis which is comprised of the members rfl:InvestmentInCycloTherapeuticsIncMember, rfl:DayThreeLabsIncMember, rfl:RentalRelatedPartyMember, rfl:RPFinanceLLCMember, us-gaap:HedgeFundsMember, rfl:OtherRelatedPartyMember, rfl:RentalThirdPartyMember:
+	InvestmentInCycloTherapeuticsIncMember 	 --> 2,663,000 	 --> us-gaap:RelatedPartyTransactionsByRelatedPartyAxis=rfl:InvestmentInCycloTherapeuticsIncMember 
+	HedgeFundsMember 	 --> 220,000 	 --> us-gaap:RelatedPartyTransactionsByRelatedPartyAxis=us-gaap:HedgeFundsMember 
+
+
+On the face financial statements it is expected that values reported are dimensionally complete for a given line item. If you added up the values of the dimensions the resulting sum should represent the actual aggregate value.  This rule takes the dimensional values of an axis reported on the face financial statements and adds them up and compares them to the actual aggregate value reported anywhere in the filing. If they are different the rule reports an error.
+
+The properties of this us-gaap:UnrealizedGainLossOnInvestments fact are:
+Period :2022-08-01 to 2023-07-31
+Unit : USD
+Dimensions : 
+Rule Element Id:9574
+Rule version: 22.0.1 - f10k2023_rafaelhold.htm 10843",2023-11-02,ERROR,DQC,117,0001713863,"RAFAEL HOLDINGS, INC.",2023-10-30 17:18:00,0001213900-23-081589,US GAAP 2023,Generated by CompSci Transform (tm) - http://www.compsciresources.com,10-K,http://www.sec.gov/Archives/edgar/data/1713863/000121390023081589/f10k2023_rafaelhold.htm,2023-10-30,2023,636340,https://www.sec.gov/Archives/edgar/data/1713863/000121390023081589/0001213900-23-081589-index.htm,6500,10k-rfl-20230731,2023-11-02 18:49:07.089,us-gaap,UnrealizedGainLossOnInvestments,2022-08-01 to 2023-07-31,USD,9574,22.0.1 - f10k2023_rafaelhold.htm 10843,dimensional_breakdown,33000.0,2883000.0,2022-08-01,2023-07-31,False,False
+"random sample, type 15",DQC.US.0015.2419,"2023-01-26 09:00:53,998 [DQC.US.0015.2419] us-gaap:ShareBasedCompensationArrangementByShareBasedPaymentAwardEquityInstrumentsOtherThanOptionsVestedInPeriod has a value of -226,000 which is less than zero. This element should not have a negative value. The preparer should consider if the value is input correctly for this assertion and, after considering the appropriateness of the input, if incorrect, input the amount as a positive (i.e., absolute) value and provide a negated label.
+
+The properties of this us-gaap:ShareBasedCompensationArrangementByShareBasedPaymentAwardEquityInstrumentsOtherThanOptionsVestedInPeriod fact are:
+Period :2022-01-01 to 2022-12-31
+Dimensions : 
+Unit : shares
+Rule version: 19.0.10 - noc-20221231.htm 4",2023-01-26,ERROR,DQC,15,0001133421,NORTHROP GRUMMAN CORP /DE/,2023-01-26 08:32:00,0001133421-23-000006,US GAAP 2022,XBRL Document Created with Wdesk from Workiva,10-K,http://www.sec.gov/Archives/edgar/data/1133421/000113342123000006/noc-20221231.htm,2023-01-26,2023,542790,https://www.sec.gov/Archives/edgar/data/1133421/000113342123000006/0001133421-23-000006-index.htm,3812,10k-noc-20221231,2023-01-26 09:00:53.998,us-gaap,ShareBasedCompensationArrangementByShareBasedPaymentAwardEquityInstrumentsOtherThanOptionsVestedInPeriod,2022-01-01 to 2022-12-31,shares,,19.0.10 - noc-20221231.htm 4,sign_check,-226000.0,,2022-01-01,2022-12-31,False,False
+period ends after filing date | record check,DQC.US.0015.4007,"2023-01-26 09:00:53,991 [DQC.US.0015.4007] us-gaap:DefinedBenefitPlanAssumptionsUsedCalculatingNetPeriodicBenefitCostDiscountRate has a value of -0.0554 which is less than zero. This element should not have a negative value. The preparer should consider if the value is input correctly for this assertion and, after considering the appropriateness of the input, if incorrect, input the amount as a positive (i.e., absolute) value and provide a negated label.
+
+The properties of this us-gaap:DefinedBenefitPlanAssumptionsUsedCalculatingNetPeriodicBenefitCostDiscountRate fact are:
+Period :2023-01-01 to 2023-12-31
+Dimensions : us-gaap:RetirementPlanTypeAxis=us-gaap:PensionPlansDefinedBenefitMember, us-gaap:SubsequentEventTypeAxis=us-gaap:SubsequentEventMember
+Unit : pure
+Rule version: 19.0.10 - noc-20221231.htm 4",2023-01-26,ERROR,DQC,15,0001133421,NORTHROP GRUMMAN CORP /DE/,2023-01-26 08:32:00,0001133421-23-000006,US GAAP 2022,XBRL Document Created with Wdesk from Workiva,10-K,http://www.sec.gov/Archives/edgar/data/1133421/000113342123000006/noc-20221231.htm,2023-01-26,2023,542790,https://www.sec.gov/Archives/edgar/data/1133421/000113342123000006/0001133421-23-000006-index.htm,3812,10k-noc-20221231,2023-01-26 09:00:53.991,us-gaap,DefinedBenefitPlanAssumptionsUsedCalculatingNetPeriodicBenefitCostDiscountRate,2023-01-01 to 2023-12-31,pure,,19.0.10 - noc-20221231.htm 4,sign_check,-0.0554,,2023-01-01,2023-12-31,True,False
+period ends after filing date,DQC.US.0015.4007,"2023-01-26 09:00:53,992 [DQC.US.0015.4007] us-gaap:DefinedBenefitPlanAssumptionsUsedCalculatingNetPeriodicBenefitCostDiscountRate has a value of -0.0557 which is less than zero. This element should not have a negative value. The preparer should consider if the value is input correctly for this assertion and, after considering the appropriateness of the input, if incorrect, input the amount as a positive (i.e., absolute) value and provide a negated label.
+
+The properties of this us-gaap:DefinedBenefitPlanAssumptionsUsedCalculatingNetPeriodicBenefitCostDiscountRate fact are:
+Period :2023-01-01 to 2023-12-31
+Dimensions : us-gaap:RetirementPlanTypeAxis=us-gaap:OtherPostretirementBenefitPlansDefinedBenefitMember, us-gaap:SubsequentEventTypeAxis=us-gaap:SubsequentEventMember
+Unit : pure
+Rule version: 19.0.10 - noc-20221231.htm 4",2023-01-26,ERROR,DQC,15,0001133421,NORTHROP GRUMMAN CORP /DE/,2023-01-26 08:32:00,0001133421-23-000006,US GAAP 2022,XBRL Document Created with Wdesk from Workiva,10-K,http://www.sec.gov/Archives/edgar/data/1133421/000113342123000006/noc-20221231.htm,2023-01-26,2023,542790,https://www.sec.gov/Archives/edgar/data/1133421/000113342123000006/0001133421-23-000006-index.htm,3812,10k-noc-20221231,2023-01-26 09:00:53.992,us-gaap,DefinedBenefitPlanAssumptionsUsedCalculatingNetPeriodicBenefitCostDiscountRate,2023-01-01 to 2023-12-31,pure,,19.0.10 - noc-20221231.htm 4,sign_check,-0.0557,,2023-01-01,2023-12-31,True,False
+"random sample, type 15",DQC.US.0015.4007,"2023-01-26 09:00:54,000 [DQC.US.0015.4007] us-gaap:DefinedBenefitPlanAssumptionsUsedCalculatingNetPeriodicBenefitCostDiscountRate has a value of -0.0298 which is less than zero. This element should not have a negative value. The preparer should consider if the value is input correctly for this assertion and, after considering the appropriateness of the input, if incorrect, input the amount as a positive (i.e., absolute) value and provide a negated label.
+
+The properties of this us-gaap:DefinedBenefitPlanAssumptionsUsedCalculatingNetPeriodicBenefitCostDiscountRate fact are:
+Period :2022-01-01 to 2022-12-31
+Dimensions : us-gaap:RetirementPlanTypeAxis=us-gaap:PensionPlansDefinedBenefitMember
+Unit : pure
+Rule version: 19.0.10 - noc-20221231.htm 4",2023-01-26,ERROR,DQC,15,0001133421,NORTHROP GRUMMAN CORP /DE/,2023-01-26 08:32:00,0001133421-23-000006,US GAAP 2022,XBRL Document Created with Wdesk from Workiva,10-K,http://www.sec.gov/Archives/edgar/data/1133421/000113342123000006/noc-20221231.htm,2023-01-26,2023,542790,https://www.sec.gov/Archives/edgar/data/1133421/000113342123000006/0001133421-23-000006-index.htm,3812,10k-noc-20221231,2023-01-26 09:00:54.000,us-gaap,DefinedBenefitPlanAssumptionsUsedCalculatingNetPeriodicBenefitCostDiscountRate,2022-01-01 to 2022-12-31,pure,,19.0.10 - noc-20221231.htm 4,sign_check,-0.0298,,2022-01-01,2022-12-31,False,False
+"random sample, type 15",DQC.US.0015.5879,"2023-01-26 09:00:53,998 [DQC.US.0015.5879] us-gaap:DefinedBenefitPlanAssumptionsUsedCalculatingBenefitObligationDiscountRate has a value of -0.0258 which is less than zero. This element should not have a negative value. The preparer should consider if the value is input correctly for this assertion and, after considering the appropriateness of the input, if incorrect, input the amount as a positive (i.e., absolute) value and provide a negated label.
+
+The properties of this us-gaap:DefinedBenefitPlanAssumptionsUsedCalculatingBenefitObligationDiscountRate fact are:
+Period :2020-12-31
+Dimensions : us-gaap:RetirementPlanTypeAxis=us-gaap:OtherPostretirementBenefitPlansDefinedBenefitMember
+Unit : pure
+Rule version: 19.0.10 - noc-20221231.htm 4",2023-01-26,ERROR,DQC,15,0001133421,NORTHROP GRUMMAN CORP /DE/,2023-01-26 08:32:00,0001133421-23-000006,US GAAP 2022,XBRL Document Created with Wdesk from Workiva,10-K,http://www.sec.gov/Archives/edgar/data/1133421/000113342123000006/noc-20221231.htm,2023-01-26,2023,542790,https://www.sec.gov/Archives/edgar/data/1133421/000113342123000006/0001133421-23-000006-index.htm,3812,10k-noc-20221231,2023-01-26 09:00:53.998,us-gaap,DefinedBenefitPlanAssumptionsUsedCalculatingBenefitObligationDiscountRate,2020-12-31,pure,,19.0.10 - noc-20221231.htm 4,sign_check,-0.0258,,,2020-12-31,False,False
+"random sample, type 15",DQC.US.0015.636,"2023-01-26 09:00:53,994 [DQC.US.0015.636] us-gaap:DeferredTaxLiabilities has a value of -30,000,000 which is less than zero. This element should not have a negative value. The preparer should consider if the value is input correctly for this assertion and, after considering the appropriateness of the input, if incorrect, input the amount as a positive (i.e., absolute) value and provide a negated label.
+
+The properties of this us-gaap:DeferredTaxLiabilities fact are:
+Period :2022-12-31
+Dimensions : 
+Unit : USD
+Rule version: 19.0.10 - noc-20221231.htm 4",2023-01-26,ERROR,DQC,15,0001133421,NORTHROP GRUMMAN CORP /DE/,2023-01-26 08:32:00,0001133421-23-000006,US GAAP 2022,XBRL Document Created with Wdesk from Workiva,10-K,http://www.sec.gov/Archives/edgar/data/1133421/000113342123000006/noc-20221231.htm,2023-01-26,2023,542790,https://www.sec.gov/Archives/edgar/data/1133421/000113342123000006/0001133421-23-000006-index.htm,3812,10k-noc-20221231,2023-01-26 09:00:53.994,us-gaap,DeferredTaxLiabilities,2022-12-31,USD,,19.0.10 - noc-20221231.htm 4,sign_check,-30000000.0,,,2022-12-31,False,False
+"random sample, type 15",DQC.US.0015.2894,"2023-11-02 22:03:09,705 [DQC.US.0015.2894] us-gaap:ProceedsFromSaleOfProductiveAssets has a value of -60,000 which is less than zero. This element should not have a negative value. The preparer should consider if the value is input correctly for this assertion and, after considering the appropriateness of the input, if incorrect, input the amount as a positive (i.e., absolute) value and provide a negated label.
+
+The properties of this us-gaap:ProceedsFromSaleOfProductiveAssets fact are:
+Period :2023-01-01 to 2023-09-30
+Dimensions : us-gaap:RelatedPartyTransactionsByRelatedPartyAxis=wes:ThirdPartiesMember
+Unit : USD
+Rule version: 22.0.1 - wes-20230930.htm 4",2023-11-03,ERROR,DQC,15,0001423902,"WESTERN MIDSTREAM PARTNERS, LP",2023-11-01 16:21:00,0001423902-23-000065,US GAAP 2023,XBRL Document Created with the Workiva Platform,10-Q,http://www.sec.gov/Archives/edgar/data/1423902/000142390223000065/wes-20230930.htm,2023-11-01,2023,641830,https://www.sec.gov/Archives/edgar/data/1423902/000142390223000065/0001423902-23-000065-index.htm,4922,10q-wes-20230930,2023-11-02 22:03:09.705,us-gaap,ProceedsFromSaleOfProductiveAssets,2023-01-01 to 2023-09-30,USD,,22.0.1 - wes-20230930.htm 4,sign_check,-60000.0,,2023-01-01,2023-09-30,False,False
+"random sample, type 15",DQC.US.0015.7225,"2023-11-02 22:01:16,619 [DQC.US.0015.7225] us-gaap:FinancialLiabilitiesFairValueDisclosure has a value of -4,000,000 which is less than zero. This element should not have a negative value. The preparer should consider if the value is input correctly for this assertion and, after considering the appropriateness of the input, if incorrect, input the amount as a positive (i.e., absolute) value and provide a negated label.
+
+The properties of this us-gaap:FinancialLiabilitiesFairValueDisclosure fact are:
+Period :2023-09-30
+Dimensions : us-gaap:FairValueByMeasurementBasisAxis=us-gaap:CarryingReportedAmountFairValueDisclosureMember, us-gaap:FairValueByMeasurementFrequencyAxis=us-gaap:FairValueMeasurementsRecurringMember
+Unit : USD
+Rule version: 22.0.1 - wmb-20230930.htm 4",2023-11-03,ERROR,DQC,15,0000107263,"WILLIAMS COMPANIES, INC.",2023-11-01 16:20:00,0000107263-23-000027,US GAAP 2023,XBRL Document Created with the Workiva Platform,10-Q,http://www.sec.gov/Archives/edgar/data/107263/000010726323000027/wmb-20230930.htm,2023-11-01,2023,641847,https://www.sec.gov/Archives/edgar/data/107263/000010726323000027/0000107263-23-000027-index.htm,4922,10q-wmb-20230930,2023-11-02 22:01:16.619,us-gaap,FinancialLiabilitiesFairValueDisclosure,2023-09-30,USD,,22.0.1 - wmb-20230930.htm 4,sign_check,-4000000.0,,,2023-09-30,False,False
+"random sample, type 15",DQC.US.0015.7225,"2023-11-02 22:01:16,620 [DQC.US.0015.7225] us-gaap:FinancialLiabilitiesFairValueDisclosure has a value of -4,000,000 which is less than zero. This element should not have a negative value. The preparer should consider if the value is input correctly for this assertion and, after considering the appropriateness of the input, if incorrect, input the amount as a positive (i.e., absolute) value and provide a negated label.
+
+The properties of this us-gaap:FinancialLiabilitiesFairValueDisclosure fact are:
+Period :2023-09-30
+Dimensions : us-gaap:FairValueByMeasurementFrequencyAxis=us-gaap:FairValueMeasurementsRecurringMember, us-gaap:FairValueByMeasurementBasisAxis=us-gaap:EstimateOfFairValueFairValueDisclosureMember
+Unit : USD
+Rule version: 22.0.1 - wmb-20230930.htm 4",2023-11-03,ERROR,DQC,15,0000107263,"WILLIAMS COMPANIES, INC.",2023-11-01 16:20:00,0000107263-23-000027,US GAAP 2023,XBRL Document Created with the Workiva Platform,10-Q,http://www.sec.gov/Archives/edgar/data/107263/000010726323000027/wmb-20230930.htm,2023-11-01,2023,641847,https://www.sec.gov/Archives/edgar/data/107263/000010726323000027/0000107263-23-000027-index.htm,4922,10q-wmb-20230930,2023-11-02 22:01:16.620,us-gaap,FinancialLiabilitiesFairValueDisclosure,2023-09-30,USD,,22.0.1 - wmb-20230930.htm 4,sign_check,-4000000.0,,,2023-09-30,False,False
+"random sample, type 126",DQC.US.0126.9590,"2024-01-24 06:46:46,708 [DQC.US.0126.9590] The statement 00000006 - Statement - Statements of Cash Flows includes an inconsistent calculation. The value of the concept us-gaap:NetCashProvidedByUsedInOperatingActivities of -315,117  should be equal to the sum of its child components defined in the calculation linkbase. The sum of these child components is -589,925. The values of the addends is determined by adding the values of the child concepts.  The values reported in the financial statement in the current reporting period of 2022-03-01 to 2023-02-28 should be complete if the financial statement is to be mathematically accurate and complete. The components of us-gaap:NetCashProvidedByUsedInOperatingActivities that should add to -315,117 are comprised of the following:
+
++  	ImpairmentOfOilAndGasPropertiesProved                                                                                                          711,873 
++  	AmortizationOfDebtDiscountPremium                                                                                                               56,885 
++  	DepreciationDepletionAndAmortization                                                                                                           504,088 
+-  	IncreaseDecreaseInAccountsAndOtherReceivables                                                                                                  267,670 
++  	IncreaseDecreaseInAccountsPayableAndAccruedLiabilities                                                                                         784,819 
++  	IncreaseDecreaseInAccountsPayableRelatedParties                                                                                                -27,291 
+-  	IncreaseDecreaseInAccountsReceivable                                                                                                          -235,034 
++  	IncreaseDecreaseInInterestPayableNet                                                                                                            -9,279 
+-  	IncreaseDecreaseInPrepaidDeferredExpenseAndOtherAssets                                                                                          21,022 
++  	NetIncomeLoss                                                                                                                               -2,429,237 
+-  	StockIssuedDuringPeriodValueOther                                                                                                              128,125 
+
+
+The addends are calculated based on the calculation linkbase defined for 00000006 - Statement - Statements of Cash Flows. If addends are missing then the calculation tree should be amended. The rule will not add dimension components as the financial statement does not include a table. If dimensions are used on the statement then add a table to ensure that the dimensions are defined correctly. 
+
+
+Total Element : us-gaap:NetCashProvidedByUsedInOperatingActivities
+Total Value : -315,117 
+Total period : 2022-03-01 to 2023-02-28 
+Dimensions : 
+Decimals of Total: 0
+Unit of Total: USD
+Rule Element Id:9590
+Rule version: 23.0.0 - dbrm10k022823.htm 9852",2024-01-24,ERROR,DQC,126,0001164256,"DAYBREAK OIL AND GAS, INC.",2024-01-23 17:44:00,0001515971-24-000014,US GAAP 2022,Novaworks,10-K,http://www.sec.gov/Archives/edgar/data/1164256/000151597124000014/dbrm10k022823.htm,2024-01-24,2024,669051,https://www.sec.gov/Archives/edgar/data/1164256/000151597124000014/0001515971-24-000014-index.htm,1311,10k-dbrm-20230228,2024-01-24 06:46:46.708,us-gaap,NetCashProvidedByUsedInOperatingActivities,2022-03-01 to 2023-02-28,USD,9590,23.0.0 - dbrm10k022823.htm 9852,calculation_sum,-315117.0,-589925.0,2022-03-01,2023-02-28,False,False
+sign flip (calculated == -reported),DQC.US.0126.9590,"2024-02-14 19:52:15,156 [DQC.US.0126.9590] The statement 000004 - Statement - STATEMENTS OF OPERATIONS (UNAUDIED) includes an inconsistent calculation. The value of the concept us-gaap:OtherNonoperatingIncomeExpense of 4,675  should be equal to the sum of its child components defined in the calculation linkbase. The sum of these child components is -4,675. The values of the addends is determined by adding the values of the child concepts.  The values reported in the financial statement in the current reporting period of 2023-10-01 to 2023-12-31 should be complete if the financial statement is to be mathematically accurate and complete. The components of us-gaap:OtherNonoperatingIncomeExpense that should add to 4,675 are comprised of the following:
+
+-  	InterestExpense                                                                                                                                  4,675 
+
+
+The addends are calculated based on the calculation linkbase defined for 000004 - Statement - STATEMENTS OF OPERATIONS (UNAUDIED). If addends are missing then the calculation tree should be amended. The rule will not add dimension components as the financial statement does not include a table. If dimensions are used on the statement then add a table to ensure that the dimensions are defined correctly. 
+
+
+Total Element : us-gaap:OtherNonoperatingIncomeExpense
+Total Value : 4,675 
+Total period : 2023-10-01 to 2023-12-31 
+Dimensions : 
+Decimals of Total: 0
+Unit of Total: USD
+Rule Element Id:9590
+Rule version: 23.0.3 - king_10q.htm 2",2024-02-15,ERROR,DQC,126,0001374881,Kingfish Holding Corporation,2024-02-14 17:13:00,0001477932-24-000736,US GAAP 2023,XBRL Document Created with XBRLMaster,10-Q,http://www.sec.gov/Archives/edgar/data/1374881/000147793224000736/king_10q.htm,2024-02-14,2024,675073,https://www.sec.gov/Archives/edgar/data/1374881/000147793224000736/0001477932-24-000736-index.htm,1540,10q-king-20231231,2024-02-14 19:52:15.156,us-gaap,OtherNonoperatingIncomeExpense,2023-10-01 to 2023-12-31,USD,9590,23.0.3 - king_10q.htm 2,calculation_sum,4675.0,-4675.0,2023-10-01,2023-12-31,False,True
+"random sample, type 126",DQC.US.0126.9590,"2024-03-14 17:34:25,357 [DQC.US.0126.9590] The statement 000006 - Statement - CONSOLIDATED STATEMENTS OF CASH FLOWS includes an inconsistent calculation. The value of the concept us-gaap:NetCashProvidedByUsedInOperatingActivities of -118,456  should be equal to the sum of its child components defined in the calculation linkbase. The sum of these child components is 250,120. The values of the addends is determined by adding the values of the child concepts.  The values reported in the financial statement in the current reporting period of 2023-01-01 to 2023-12-31 should be complete if the financial statement is to be mathematically accurate and complete. The components of us-gaap:NetCashProvidedByUsedInOperatingActivities that should add to -118,456 are comprised of the following:
+
+-  	AdjustmentsToAdditionalPaidInCapitalOther                                                                                                      -10,000 
+-  	IncreaseDecreaseInDueFromRelatedParties                                                                                                        -55,832 
+-  	ProfitLoss                                                                                                                                    -184,288 
+-  	StockIssuedDuringPeriodValueIssuedForServices                                                                                                        0 
+
+
+The addends are calculated based on the calculation linkbase defined for 000006 - Statement - CONSOLIDATED STATEMENTS OF CASH FLOWS. If addends are missing then the calculation tree should be amended. The rule will not add dimension components as the financial statement does not include a table. If dimensions are used on the statement then add a table to ensure that the dimensions are defined correctly. 
+
+
+Total Element : us-gaap:NetCashProvidedByUsedInOperatingActivities
+Total Value : -118,456 
+Total period : 2023-01-01 to 2023-12-31 
+Dimensions : 
+Decimals of Total: 0
+Unit of Total: USD
+Rule Element Id:9590
+Rule version: 23.0.6 - kenilworth_10k.htm 2",2024-03-14,ERROR,DQC,126,0000055234,KENILWORTH SYSTEMS CORPORATION,2024-03-14 14:31:00,0001477932-24-001211,US GAAP 2023,XBRL Document Created with XBRLMaster,10-K,http://www.sec.gov/Archives/edgar/data/55234/000147793224001211/kenilworth_10k.htm,2024-03-14,2024,685353,https://www.sec.gov/Archives/edgar/data/55234/000147793224001211/0001477932-24-001211-index.htm,7990,10k-kens-20231231,2024-03-14 17:34:25.357,us-gaap,NetCashProvidedByUsedInOperatingActivities,2023-01-01 to 2023-12-31,USD,9590,23.0.6 - kenilworth_10k.htm 2,calculation_sum,-118456.0,250120.0,2023-01-01,2023-12-31,False,False
+"random sample, type 126",DQC.US.0126.9590,"2024-03-25 18:03:30,883 [DQC.US.0126.9590] The statement 000007 - Statement - CONSOLIDATED STATEMENTS OF CASH FLOWS includes an inconsistent calculation. The value of the concept us-gaap:NetCashProvidedByUsedInOperatingActivities of -5,342,265  should be equal to the sum of its child components defined in the calculation linkbase. The sum of these child components is -4,038,018. The values of the addends is determined by adding the values of the child concepts.  The values reported in the financial statement in the current reporting period of 2023-01-01 to 2023-12-31 should be complete if the financial statement is to be mathematically accurate and complete. The components of us-gaap:NetCashProvidedByUsedInOperatingActivities that should add to -5,342,265 are comprised of the following:
+
++  	BadDebtExpense                                                                                                                                 207,582 
+-  	IncreaseDecreaseUndistributedEarnings                                                                                                          744,901 
++  	AmortizationOfDebtDiscountPremium                                                                                                            1,711,518 
++  	AssetRetirementObligationAccretionExpense                                                                                                      155,463 
++  	DepreciationAmortizationAndAccretionNet                                                                                                      1,002,562 
+-  	GainLossOnDispositionOfAssets1                                                                                                                 854,465 
+-  	GainsLossesOnExtinguishmentOfDebt                                                                                                             -605,507 
++  	GoodwillAndIntangibleAssetImpairment                                                                                                           669,710 
++  	GoodwillImpairmentLoss                                                                                                                      14,486,745 
++  	ImpairmentOfOilAndGasProperties                                                                                                                347,050 
++  	IncreaseDecreaseInAccountsPayable                                                                                                            1,225,903 
+-  	IncreaseDecreaseInAccountsReceivable                                                                                                         3,476,409 
++  	IncreaseDecreaseInCustomerDeposits                                                                                                          -2,677,539 
++  	IncreaseDecreaseInDerivativeLiabilities                                                                                                      9,150,459 
++  	IncreaseDecreaseInDueToRelatedParties                                                                                                            6,743 
+-  	IncreaseDecreaseInInventories                                                                                                                 -480,693 
++  	IncreaseDecreaseInOtherCurrentLiabilities                                                                                                    5,144,360 
+-  	IncreaseDecreaseInPrepaidExpensesOther                                                                                                         -47,104 
++  	OperatingLeaseRightOfUseAssetAmortizationExpense                                                                                             1,318,822 
+-  	OtherComprehensiveIncomeLossForeignCurrencyTransactionAndTranslationAdjustmentNetOfTax                                                        -176,887 
+-  	ProfitLoss                                                                                                                                  33,021,812 
++  	ShareBasedCompensation                                                                                                                               0 
+
+
+The addends are calculated based on the calculation linkbase defined for 000007 - Statement - CONSOLIDATED STATEMENTS OF CASH FLOWS. If addends are missing then the calculation tree should be amended. The rule will not add dimension components as the financial statement does not include a table. If dimensions are used on the statement then add a table to ensure that the dimensions are defined correctly. 
+
+
+Total Element : us-gaap:NetCashProvidedByUsedInOperatingActivities
+Total Value : -5,342,265 
+Total period : 2023-01-01 to 2023-12-31 
+Dimensions : 
+Decimals of Total: 0
+Unit of Total: USD
+Rule Element Id:9590
+Rule version: 23.0.7 - cei_10k.htm 2",2024-03-25,ERROR,DQC,126,0001309082,"Camber Energy, Inc.",2024-03-25 08:55:00,0001477932-24-001445,US GAAP 2023,XBRL Document Created with XBRLMaster,10-K,http://www.sec.gov/Archives/edgar/data/1309082/000147793224001445/cei_10k.htm,2024-03-25,2024,692016,https://www.sec.gov/Archives/edgar/data/1309082/000147793224001445/0001477932-24-001445-index.htm,1311,10k-cei-20231231,2024-03-25 18:03:30.883,us-gaap,NetCashProvidedByUsedInOperatingActivities,2023-01-01 to 2023-12-31,USD,9590,23.0.7 - cei_10k.htm 2,calculation_sum,-5342265.0,-4038018.0,2023-01-01,2023-12-31,False,False
+sign flip (calculated == -reported),DQC.US.0126.9590,"2024-11-18 06:31:56,665 [DQC.US.0126.9590] The statement 000004 - Statement - CONSOLIDATED STATEMENTS OF OPERATIONS (Unaudited) includes an inconsistent calculation. The value of the concept us-gaap:OperatingExpenses of -252,587  should be equal to the sum of its child components defined in the calculation linkbase. The sum of these child components is 252,587. The values of the addends is determined by adding the values of the child concepts.  The values reported in the financial statement in the current reporting period of 2024-01-01 to 2024-09-30 should be complete if the financial statement is to be mathematically accurate and complete. The components of us-gaap:OperatingExpenses that should add to -252,587 are comprised of the following:
+
++  	ExchangeFees                                                                                                                                     1,427 
++  	GeneralAndAdministrativeExpense                                                                                                                216,410 
++  	ProfessionalFees                                                                                                                                34,750 
+
+
+The addends are calculated based on the calculation linkbase defined for 000004 - Statement - CONSOLIDATED STATEMENTS OF OPERATIONS (Unaudited). If addends are missing then the calculation tree should be amended. The rule will not add dimension components as the financial statement does not include a table. If dimensions are used on the statement then add a table to ensure that the dimensions are defined correctly. 
+
+
+Total Element : us-gaap:OperatingExpenses
+Total Value : -252,587 
+Total period : 2024-01-01 to 2024-09-30 
+Dimensions : 
+Decimals of Total: 0
+Unit of Total: USD
+Rule Element Id:9590
+Rule version: 25.0.4 - kens_10q.htm 2",2024-11-18,ERROR,DQC,126,0000055234,KENILWORTH SYSTEMS CORPORATION,2024-11-14 11:53:00,0001477932-24-007166,US GAAP 2024,XBRL Document Created with XBRLMaster,10-Q,http://www.sec.gov/Archives/edgar/data/55234/000147793224007166/kens_10q.htm,2024-11-14,2024,781151,https://www.sec.gov/Archives/edgar/data/55234/000147793224007166/0001477932-24-007166-index.htm,7990,10q-kenilworth-20240930,2024-11-18 06:31:56.665,us-gaap,OperatingExpenses,2024-01-01 to 2024-09-30,USD,9590,25.0.4 - kens_10q.htm 2,calculation_sum,-252587.0,252587.0,2024-01-01,2024-09-30,False,True
+"random sample, type 117",DQC.US.0117.9574,"2024-05-15 20:19:03,119 [DQC.US.0117.9574] In the statement 000002 - Statement - Consolidated Balance Sheets the concept us-gaap:CommonStockValue with a value of 3,630 is not equal to the dimensional breakdown of 1,000 using the dimension us-gaap:StatementClassOfStockAxis which is comprised of the members gevi:ConvertiblesSeriesCPreferredSockMember, gevi:ConvertiblesSeriesAPreferredStockMember:
+	ConvertiblesSeriesAPreferredStockMember 	 --> 1,000 	 --> us-gaap:StatementClassOfStockAxis=gevi:ConvertiblesSeriesAPreferredStockMember 
+
+
+On the face financial statements it is expected that values reported are dimensionally complete for a given line item. If you added up the values of the dimensions the resulting sum should represent the actual aggregate value.  This rule takes the dimensional values of an axis reported on the face financial statements and adds them up and compares them to the actual aggregate value reported anywhere in the filing. If they are different the rule reports an error.
+
+The properties of this us-gaap:CommonStockValue fact are:
+Period :2024-03-31
+Unit : USD
+Dimensions : 
+Rule Element Id:9574
+Rule version: 23.0.11 - gevi_10q.htm 2",2024-05-16,ERROR,DQC,117,0000894556,"General Enterprise Ventures, Inc.",2024-05-15 17:30:00,0001640334-24-000811,US GAAP 2023,XBRL Document Created with XBRLMaster,10-Q,http://www.sec.gov/Archives/edgar/data/894556/000164033424000811/gevi_10q.htm,2024-05-15,2024,716851,https://www.sec.gov/Archives/edgar/data/894556/000164033424000811/0001640334-24-000811-index.htm,4955,10q-gevi-20240331,2024-05-15 20:19:03.119,us-gaap,CommonStockValue,2024-03-31,USD,9574,23.0.11 - gevi_10q.htm 2,dimensional_breakdown,3630.0,1000.0,,2024-03-31,False,False
+"random sample, type 117",DQC.US.0117.9574,"2024-05-15 20:19:03,119 [DQC.US.0117.9574] In the statement 000002 - Statement - Consolidated Balance Sheets the concept us-gaap:CommonStockValue with a value of 9,755 is not equal to the dimensional breakdown of 1,000 using the dimension us-gaap:StatementClassOfStockAxis which is comprised of the members gevi:ConvertiblesSeriesCPreferredSockMember, gevi:ConvertiblesSeriesAPreferredStockMember:
+	ConvertiblesSeriesAPreferredStockMember 	 --> 1,000 	 --> us-gaap:StatementClassOfStockAxis=gevi:ConvertiblesSeriesAPreferredStockMember 
+
+
+On the face financial statements it is expected that values reported are dimensionally complete for a given line item. If you added up the values of the dimensions the resulting sum should represent the actual aggregate value.  This rule takes the dimensional values of an axis reported on the face financial statements and adds them up and compares them to the actual aggregate value reported anywhere in the filing. If they are different the rule reports an error.
+
+The properties of this us-gaap:CommonStockValue fact are:
+Period :2023-12-31
+Unit : USD
+Dimensions : 
+Rule Element Id:9574
+Rule version: 23.0.11 - gevi_10q.htm 2",2024-05-16,ERROR,DQC,117,0000894556,"General Enterprise Ventures, Inc.",2024-05-15 17:30:00,0001640334-24-000811,US GAAP 2023,XBRL Document Created with XBRLMaster,10-Q,http://www.sec.gov/Archives/edgar/data/894556/000164033424000811/gevi_10q.htm,2024-05-15,2024,716851,https://www.sec.gov/Archives/edgar/data/894556/000164033424000811/0001640334-24-000811-index.htm,4955,10q-gevi-20240331,2024-05-15 20:19:03.119,us-gaap,CommonStockValue,2023-12-31,USD,9574,23.0.11 - gevi_10q.htm 2,dimensional_breakdown,9755.0,1000.0,,2023-12-31,False,False
+"random sample, type 117",DQC.US.0117.9574,"2024-06-25 17:40:35,243 [DQC.US.0117.9574] In the statement 00000002 - Statement - BALANCE SHEETS the concept us-gaap:NotesPayableCurrent with a value of 2,400,000 is not equal to the dimensional breakdown of 585,550 using the dimension us-gaap:RelatedPartyTransactionsByRelatedPartyAxis which is comprised of the members RGPX:ShareholderMember, us-gaap:OtherAffiliatesMember:
+	ShareholderMember 	 --> 475,050 	 --> us-gaap:RelatedPartyTransactionsByRelatedPartyAxis=RGPX:ShareholderMember 
+	OtherAffiliatesMember 	 --> 110,500 	 --> us-gaap:RelatedPartyTransactionsByRelatedPartyAxis=us-gaap:OtherAffiliatesMember 
+
+
+On the face financial statements it is expected that values reported are dimensionally complete for a given line item. If you added up the values of the dimensions the resulting sum should represent the actual aggregate value.  This rule takes the dimensional values of an axis reported on the face financial statements and adds them up and compares them to the actual aggregate value reported anywhere in the filing. If they are different the rule reports an error.
+
+The properties of this us-gaap:NotesPayableCurrent fact are:
+Period :2024-03-31
+Unit : USD
+Dimensions : 
+Rule Element Id:9574
+Rule version: 23.0.14 - ixform10k.htm 3851",2024-06-25,ERROR,DQC,117,0001357878,"REGENEREX PHARMA, INC.",2024-06-24 12:02:00,0001472375-24-000045,US GAAP 2023,(c) XBRL International.  See www.xbrl.org/legal,10-K,http://www.sec.gov/Archives/edgar/data/1357878/000147237524000045/ixform10k.htm,2024-06-24,2024,735855,https://www.sec.gov/Archives/edgar/data/1357878/000147237524000045/0001472375-24-000045-index.htm,2834,10k-rgpx-20240331,2024-06-25 17:40:35.243,us-gaap,NotesPayableCurrent,2024-03-31,USD,9574,23.0.14 - ixform10k.htm 3851,dimensional_breakdown,2400000.0,585550.0,,2024-03-31,False,False
+"random sample, type 117",DQC.US.0117.9574,"2024-06-28 20:22:57,892 [DQC.US.0117.9574] In the statement 00000002 - Statement - CONSOLIDATED BALANCE SHEETS (Unaudited) the concept us-gaap:StockholdersEquity with a value of -1,290,670 is not equal to the dimensional breakdown of 1,639 using the dimension us-gaap:StatementClassOfStockAxis which is comprised of the members us-gaap:SeriesEPreferredStockMember, us-gaap:SeriesFPreferredStockMember, us-gaap:SeriesAPreferredStockMember, us-gaap:SeriesDPreferredStockMember:
+	SeriesEPreferredStockMember 	 --> 1,000 	 --> us-gaap:StatementClassOfStockAxis=us-gaap:SeriesEPreferredStockMember 
+	SeriesFPreferredStockMember 	 --> 129 	 --> us-gaap:StatementClassOfStockAxis=us-gaap:SeriesFPreferredStockMember 
+	SeriesDPreferredStockMember 	 --> 510 	 --> us-gaap:StatementClassOfStockAxis=us-gaap:SeriesDPreferredStockMember 
+
+
+On the face financial statements it is expected that values reported are dimensionally complete for a given line item. If you added up the values of the dimensions the resulting sum should represent the actual aggregate value.  This rule takes the dimensional values of an axis reported on the face financial statements and adds them up and compares them to the actual aggregate value reported anywhere in the filing. If they are different the rule reports an error.
+
+The properties of this us-gaap:StockholdersEquity fact are:
+Period :2023-03-31
+Unit : USD
+Dimensions : 
+Rule Element Id:9574
+Rule version: 23.0.14 - form_10-q.htm 3833",2024-06-29,ERROR,DQC,117,0001502152,GlobeStar Therapeutics Corp,2024-06-28 17:08:00,0001161697-24-000285,US GAAP 2024,Novaworks,10-Q,http://www.sec.gov/Archives/edgar/data/1502152/000116169724000285/form_10-q.htm,2024-06-28,2024,737150,https://www.sec.gov/Archives/edgar/data/1502152/000116169724000285/0001161697-24-000285-index.htm,2834,10q-gstc-20240331,2024-06-28 20:22:57.892,us-gaap,StockholdersEquity,2023-03-31,USD,9574,23.0.14 - form_10-q.htm 3833,dimensional_breakdown,-1290670.0,1639.0,,2023-03-31,False,False
+"random sample, type 117",DQC.US.0117.9574,"2024-11-18 21:31:52,872 [DQC.US.0117.9574] In the statement 000002 - Statement - CONDENSED CONSOLIDATED BALANCE SHEETS the concept us-gaap:PreferredStockValue with a value of 2,455,000 is not equal to the dimensional breakdown of 834,416 using the dimension us-gaap:StatementClassOfStockAxis which is comprised of the members us-gaap:SeriesBPreferredStockMember, us-gaap:SeriesAPreferredStockMember, us-gaap:SeriesCPreferredStockMember:
+	SeriesAPreferredStockMember 	 --> 84,416 	 --> us-gaap:StatementClassOfStockAxis=us-gaap:SeriesAPreferredStockMember 
+	SeriesCPreferredStockMember 	 --> 750,000 	 --> us-gaap:StatementClassOfStockAxis=us-gaap:SeriesCPreferredStockMember 
+
+
+On the face financial statements it is expected that values reported are dimensionally complete for a given line item. If you added up the values of the dimensions the resulting sum should represent the actual aggregate value.  This rule takes the dimensional values of an axis reported on the face financial statements and adds them up and compares them to the actual aggregate value reported anywhere in the filing. If they are different the rule reports an error.
+
+The properties of this us-gaap:PreferredStockValue fact are:
+Period :2023-12-31
+Unit : USD
+Dimensions : 
+Rule Element Id:9574
+Rule version: 25.0.4 - isdr_10q.htm 2",2024-11-19,ERROR,DQC,117,0001081938,"CannaPharmaRX, Inc.",2024-11-13 17:46:00,0001654954-24-014287,US GAAP 2024,XBRL Document Created with XBRLMaster,10-Q,http://www.sec.gov/Archives/edgar/data/1081938/000165495424014287/isdr_10q.htm,2024-11-14,2024,781578,https://www.sec.gov/Archives/edgar/data/1081938/000165495424014287/0001654954-24-014287-index.htm,2834,10q-celz-20240930,2024-11-18 21:31:52.872,us-gaap,PreferredStockValue,2023-12-31,USD,9574,25.0.4 - isdr_10q.htm 2,dimensional_breakdown,2455000.0,834416.0,,2023-12-31,False,False
+"random sample, type 15",DQC.US.0015.240,"2024-08-02 16:12:51,530 [DQC.US.0015.240] us-gaap:AdjustmentsRelatedToTaxWithholdingForShareBasedCompensation has a value of -4,527,000 which is less than zero. This element should not have a negative value. The preparer should consider if the value is input correctly for this assertion and, after considering the appropriateness of the input, if incorrect, input the amount as a positive (i.e., absolute) value and provide a negated label.
+
+The properties of this us-gaap:AdjustmentsRelatedToTaxWithholdingForShareBasedCompensation fact are:
+Period :2022-01-01 to 2022-12-31
+Dimensions : 
+Unit : USD
+Rule version: 24.0.1 - rrr-20231231.htm 5",2024-08-02,ERROR,DQC,15,0001653653,"RED ROCK RESORTS, INC.",2024-02-21 14:28:00,0001653653-24-000004,US GAAP 2023,XBRL Document Created with the Workiva Platform,10-K,http://www.sec.gov/Archives/edgar/data/1653653/000165365324000004/rrr-20231231.htm,2024-02-21,2024,676650,https://www.sec.gov/Archives/edgar/data/1653653/000165365324000004/0001653653-24-000004-index.htm,7011,10k-rrr-20231231,2024-08-02 16:12:51.530,us-gaap,AdjustmentsRelatedToTaxWithholdingForShareBasedCompensation,2022-01-01 to 2022-12-31,USD,,24.0.1 - rrr-20231231.htm 5,sign_check,-4527000.0,,2022-01-01,2022-12-31,False,False
+"random sample, type 15",DQC.US.0015.7210,"2024-11-18 06:10:55,264 [DQC.US.0015.7210] us-gaap:DividendsPreferredStock has a value of -816,480 which is less than zero. This element should not have a negative value. The preparer should consider if the value is input correctly for this assertion and, after considering the appropriateness of the input, if incorrect, input the amount as a positive (i.e., absolute) value and provide a negated label.
+
+The properties of this us-gaap:DividendsPreferredStock fact are:
+Period :2023-01-01 to 2023-09-30
+Dimensions : 
+Unit : USD
+Rule version: 25.0.4 - iqst10q3_093024.htm 4464",2024-11-18,ERROR,DQC,15,0001527702,iQSTEL Inc.,2024-11-14 08:06:00,0001663577-24-000281,US GAAP 2024,Novaworks,10-Q,http://www.sec.gov/Archives/edgar/data/1527702/000166357724000281/iqst10q3_093024.htm,2024-11-14,2024,781067,https://www.sec.gov/Archives/edgar/data/1527702/000166357724000281/0001663577-24-000281-index.htm,4813,10q-iqst-20240930,2024-11-18 06:10:55.264,us-gaap,DividendsPreferredStock,2023-01-01 to 2023-09-30,USD,,25.0.4 - iqst10q3_093024.htm 4464,sign_check,-816480.0,,2023-01-01,2023-09-30,False,False

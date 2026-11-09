@@ -1,0 +1,51 @@
+input file : herculean_data/auditing_env/XBRL/mathematical_reasoning.csv
+rows, cols : (362, 20)
+
+[item 4] type conversions (failed = values that could not be converted, set to NaN)
+  reported_value: non-null before=362, after=362, failed=0
+  calculated_value: non-null before=246, after=246, failed=0
+  report.filing-date: failed conversions = 0
+  report.accepted-timestamp: failed conversions = 0
+  assertion.run-date: failed conversions = 0
+  timestamp (from detail text): failed conversions = 0
+  period: 237 ranges, 125 single dates (instant)
+
+[item 5] entity.name changed by trim / whitespace collapse: 7
+  'BARNWELL INDUSTRIES,\xa0INC.' -> 'BARNWELL INDUSTRIES, INC.'
+  'BARNWELL INDUSTRIES,\xa0INC.' -> 'BARNWELL INDUSTRIES, INC.'
+  'BARNWELL INDUSTRIES,\xa0INC.' -> 'BARNWELL INDUSTRIES, INC.'
+  unique entity.name before/after: 125/125 | unique entity.cik: 125 | max names per cik: 1
+
+[item 6] duplicates
+  exact duplicate rows (original file): 0
+  repeated report.id: 204 (a filing has several assertions)
+  repeated on a short key ['report.accession', 'assertion.code', 'concept_prefix', 'concept', 'period', 'reported_value']: 18 (different statements / dimensions, so NOT removed)
+  repeated on the final row key ['report.accession', 'assertion.code', 'body']: 0
+
+[item 7] missing values in extracted fields, by assertion.type
+assertion.type    15   117  126
+timestamp           0    0    0
+concept_prefix      0    0    0
+concept             0    0    0
+period              0    0    0
+unit                0    0    0
+rule_element_id   116    0    0
+rule_version        0    0    0
+reported_value      0    0    0
+calculated_value  116    0    0
+  unexpected missing values (not structural): 0
+  structural = type 15 has no rule element id and no expected value, so these stay empty (not filled, rows kept)
+
+[item 8] suspicious values: flagged, values are NOT changed
+  sign_flip (calculated == -reported): 9
+  period_after_filing: 2
+  reported == calculated (every row is a DQC error, so expected 0): 0
+  period_start after period_end: 0
+
+[item 10] reconciliation
+  rows: original 362 -> cleaned 362 | dropped: 0
+  rows by assertion.type (original / cleaned): 15: 116/116, 117: 136/136, 126: 110/110
+[item 11] denominators
+  sign_flip rate = 9/246 = 3.7% (denominator = rows that have a calculated_value; 116 type-15 rows have none)
+
+wrote output/auditing_clean.csv (362 rows), output/sample_50.csv (50 rows), output/cleaning_report.txt
